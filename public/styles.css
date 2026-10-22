@@ -78,14 +78,6 @@ h1, h2, h3, .display {
 .btn-row { display: flex; flex-wrap: wrap; gap: 0.9rem; margin-top: 1.8rem; }
 .center .btn-row { justify-content: center; }
 
-/* ---------- announcement bar ---------- */
-.announce {
-  background: var(--ink); color: var(--cream);
-  font-size: 0.85rem; font-weight: 600; letter-spacing: 0.04em;
-  text-align: center; padding: 0.6rem 1rem;
-}
-.announce a { color: #e8a76f; text-decoration: none; border-bottom: 1px solid #e8a76f; }
-
 /* ---------- header ---------- */
 .site-header {
   position: sticky; top: 0; z-index: 50;
@@ -93,15 +85,33 @@ h1, h2, h3, .display {
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--line);
 }
-.nav-wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.85rem 0; }
+.nav-wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.5rem 0; }
 .brand { display: flex; align-items: center; gap: 0.7rem; text-decoration: none; }
-.brand-logo { height: 42px; width: auto; display: block; }
+.brand-logo { height: 56px; width: auto; display: block; }
 /* Logo file is a white decal: invert to ink for the light header. */
 .brand-logo-dark { filter: invert(1); }
 .site-footer .brand-logo { height: 48px; }
-.nav-links { display: flex; align-items: center; gap: 1.4rem; list-style: none; }
-.nav-links a { text-decoration: none; font-weight: 600; font-size: 0.95rem; opacity: 0.82; }
+.nav-links { display: flex; align-items: center; gap: 2rem; list-style: none; }
+.nav-links a { text-decoration: none; font-weight: 600; font-size: 1.05rem; letter-spacing: 0.06em; text-transform: uppercase; opacity: 0.82; }
 .nav-links a:hover, .nav-links a.active { opacity: 1; color: var(--clay-dark); }
+/* hover dropdowns */
+.nav-links > li.has-menu { position: relative; padding: 0.8rem 0; margin: -0.8rem 0; }
+.nav-links > li.has-menu::after {
+  content: ""; position: absolute; top: 100%; left: -1rem; right: -1rem; height: 1rem;
+}
+.dropdown {
+  display: none; position: absolute; top: calc(100% + 0.9rem); left: 50%; transform: translateX(-50%);
+  background: #fff; border: 1px solid var(--line); border-radius: 16px;
+  box-shadow: 0 24px 50px -20px rgba(23, 19, 16, 0.35);
+  list-style: none; min-width: 250px; padding: 0.6rem; z-index: 60;
+}
+.nav-links > li.has-menu:hover .dropdown,
+.nav-links > li.has-menu:focus-within .dropdown { display: block; }
+.dropdown a {
+  display: block; padding: 0.7rem 1rem; border-radius: 10px; white-space: nowrap;
+  font-size: 0.88rem; letter-spacing: 0.06em; text-transform: uppercase;
+}
+.dropdown a:hover { background: var(--cream-2); }
 .nav-cta { display: flex; align-items: center; gap: 0.8rem; }
 .nav-cta .btn { padding: 0.7rem 1.4rem; font-size: 0.88rem; }
 .hamburger { display: none; background: none; border: 1px solid var(--line); border-radius: 10px; padding: 0.5rem 0.7rem; font-size: 1.2rem; cursor: pointer; color: var(--ink); }
@@ -117,6 +127,17 @@ h1, h2, h3, .display {
 .hero-bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(15,12,9,0.45) 0%, rgba(15,12,9,0.25) 45%, rgba(15,12,9,0.78) 100%); }
 .hero-inner { position: relative; z-index: 1; padding: clamp(5rem, 11vw, 9rem) 0 clamp(3.5rem, 7vw, 5.5rem); }
 .hero-inner p.sub { margin-top: 1.2rem; font-size: clamp(1.05rem, 1.8vw, 1.35rem); max-width: 40rem; color: #efe6d8; }
+.hero-kicker {
+  font-family: var(--font-display); font-weight: 800; text-transform: uppercase;
+  font-size: clamp(2.2rem, 5.5vw, 4.2rem); line-height: 1.02; letter-spacing: -0.02em;
+  margin-top: 1rem;
+}
+.hero-place {
+  margin-top: 0.9rem; font-weight: 700; letter-spacing: 0.24em; text-transform: uppercase;
+  font-size: clamp(0.95rem, 1.6vw, 1.2rem); color: #efe6d8;
+}
+.hero .btn-row .btn { background: transparent; color: var(--cream); border-color: var(--line-light); }
+.hero .btn-row .btn:hover { background: rgba(255, 255, 255, 0.12); }
 .chip-row { display: flex; flex-wrap: wrap; gap: 0.7rem; margin-top: 1.8rem; }
 .chip {
   display: inline-flex; align-items: center; gap: 0.5rem;
