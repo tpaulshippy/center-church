@@ -95,16 +95,10 @@ h1, h2, h3, .display {
 }
 .nav-wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.85rem 0; }
 .brand { display: flex; align-items: center; gap: 0.7rem; text-decoration: none; }
-.brand-mark {
-  width: 42px; height: 42px; border-radius: 50%;
-  background: var(--ink); color: var(--cream);
-  display: grid; place-items: center;
-  font-family: var(--font-display); font-weight: 800; font-size: 1.05rem;
-  flex: none;
-}
-.brand-text { line-height: 1.1; }
-.brand-text strong { display: block; font-family: var(--font-display); font-weight: 800; letter-spacing: 0.06em; font-size: 1rem; }
-.brand-text span { font-size: 0.72rem; letter-spacing: 0.28em; color: var(--muted); font-weight: 600; }
+.brand-logo { height: 42px; width: auto; display: block; }
+/* Logo file is a white decal: invert to ink for the light header. */
+.brand-logo-dark { filter: invert(1); }
+.site-footer .brand-logo { height: 48px; }
 .nav-links { display: flex; align-items: center; gap: 1.4rem; list-style: none; }
 .nav-links a { text-decoration: none; font-weight: 600; font-size: 0.95rem; opacity: 0.82; }
 .nav-links a:hover, .nav-links a.active { opacity: 1; color: var(--clay-dark); }
