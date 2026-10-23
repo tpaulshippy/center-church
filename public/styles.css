@@ -126,8 +126,13 @@ h1, h2, h3, .display {
 .hero-bg img { width: 100%; height: 100%; object-fit: cover; opacity: 0.55; will-change: transform; }
 .hero-bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(15,12,9,0.45) 0%, rgba(15,12,9,0.25) 45%, rgba(15,12,9,0.78) 100%); }
 .hero-inner { position: relative; z-index: 1; padding: clamp(5rem, 11vw, 9rem) 0 clamp(3.5rem, 7vw, 5.5rem); }
-/* home hero: taller than the viewport, content anchored to the bottom */
-.hero .hero-inner { min-height: 108svh; display: flex; flex-direction: column; justify-content: flex-end; }
+/* home hero: taller than the viewport, content anchored to the bottom.
+   min-height on both section + inner, with vh fallback for older mobile Safari. */
+.hero { min-height: 108vh; min-height: 108svh; }
+.hero .hero-inner {
+  min-height: 108vh; min-height: 108svh;
+  display: flex; flex-direction: column; justify-content: flex-end;
+}
 .hero-inner p.sub { margin-top: 1.2rem; font-size: clamp(1.05rem, 1.8vw, 1.35rem); max-width: 40rem; color: #efe6d8; }
 .hero-kicker {
   font-family: var(--font-display); font-weight: 800; text-transform: uppercase;
