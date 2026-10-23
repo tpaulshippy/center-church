@@ -25,6 +25,12 @@ document.addEventListener("DOMContentLoaded", () => {
         if (r.bottom > 0 && r.top < window.innerHeight) {
           const progress = Math.min(Math.max(-r.top / r.height, 0), 1);
           img.style.transform = `scale(1.2) translateY(${(progress * 10).toFixed(2)}%)`;
+          // Text drifts up faster than the image and fades — prominent scroll separation.
+          const content = hero.querySelector(".hero-inner");
+          if (content) {
+            content.style.transform = `translateY(${(-progress * 160).toFixed(1)}px)`;
+            content.style.opacity = (1 - progress * 0.75).toFixed(3);
+          }
         }
       });
       ticking = false;
