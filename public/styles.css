@@ -291,11 +291,22 @@ a.chip:hover { background: rgba(0,0,0,0.55); }
 .partner-card:hover { transform: translateY(-4px); }
 .partner-card img { max-height: 95px; max-width: 100%; object-fit: contain; }
 
+/* photo galleries (real church photos) */
+.photo-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-top: 2.5rem; }
+.photo-grid figure { margin: 0; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); background: #fff; }
+.photo-grid img { width: 100%; height: 220px; object-fit: cover; }
+.photo-grid figcaption { padding: 0.7rem 1rem; font-size: 0.85rem; font-weight: 600; color: var(--muted); }
+.photo-grid-3 { grid-template-columns: repeat(3, 1fr); }
+.photo-grid-3 img { height: 260px; }
+.ministry-photo { height: 210px; width: 100%; object-fit: cover; }
+.leader-photo { width: 96px; height: 96px; border-radius: 50%; object-fit: cover; margin: 0 auto 1.1rem; display: block; }
+
 /* responsive */
 @media (max-width: 900px) {
   .nav-links, .nav-cta .btn { display: none; }
   .hamburger { display: block; }
   .grid-3, .leader-grid, .quotes, .info-grid { grid-template-columns: 1fr 1fr; }
+  .photo-grid { grid-template-columns: 1fr 1fr; }
   .partner-grid { grid-template-columns: 1fr 1fr; }
   .partner-card { min-height: 150px; }
   .steps { grid-template-columns: 1fr 1fr; }
@@ -305,6 +316,7 @@ a.chip:hover { background: rgba(0,0,0,0.55); }
 }
 @media (max-width: 600px) {
   .grid-3, .leader-grid, .quotes, .info-grid, .steps { grid-template-columns: 1fr; }
+  .photo-grid, .photo-grid-3 { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
   .sermon { grid-template-columns: 1fr; }
   /* compact header + vertically centered hero content, like the reference */
