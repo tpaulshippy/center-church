@@ -201,9 +201,9 @@ a.chip:hover { background: rgba(0,0,0,0.55); }
 /* split feature */
 .split { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1.5rem, 4vw, 3.5rem); align-items: center; }
 .split img { border-radius: var(--radius); width: 100%; height: 100%; min-height: 320px; object-fit: cover; }
-.split ul.check { list-style: none; margin-top: 1.2rem; display: grid; gap: 0.7rem; }
-.split ul.check li { padding-left: 2rem; position: relative; color: var(--muted); }
-.split ul.check li::before { content: "✓"; position: absolute; left: 0; color: var(--clay-dark); font-weight: 800; }
+.split ul.check, ul.check { list-style: none; margin-top: 2rem; display: grid; gap: 1.4rem; }
+.split ul.check li, ul.check li { padding-left: 2rem; padding-block: 0.35rem; position: relative; color: var(--muted); line-height: 1.7; }
+.split ul.check li::before, ul.check li::before { content: "✓"; position: absolute; left: 0; color: var(--clay-dark); font-weight: 800; }
 
 /* sunday fixed-background band (parallax effect from the previous site) */
 .sunday-fixed {
