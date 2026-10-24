@@ -96,17 +96,16 @@ h1, h2, h3, .display {
 .nav-links a:hover, .nav-links a.active { opacity: 1; color: var(--clay-dark); }
 /* hover dropdowns */
 .nav-links > li.has-menu { position: relative; padding: 0.8rem 0; margin: -0.8rem 0; }
-.nav-links > li.has-menu::after {
-  content: ""; position: absolute; top: 100%; left: -1rem; right: -1rem; height: 1rem;
-}
 .dropdown {
-  display: none; position: absolute; top: calc(100% + 0.9rem); left: 50%; transform: translateX(-50%);
-  background: #fff; border: 1px solid var(--line); border-radius: 16px;
+  display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%);
+  background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent;
+  background-clip: padding-box; border-radius: 16px;
   box-shadow: 0 24px 50px -20px rgba(23, 19, 16, 0.35);
   list-style: none; min-width: 250px; padding: 0.6rem; z-index: 60;
 }
 .nav-links > li.has-menu:hover .dropdown,
-.nav-links > li.has-menu:focus-within .dropdown { display: block; }
+.nav-links > li.has-menu:focus-within .dropdown,
+.nav-links > li.has-menu.open .dropdown { display: block; }
 .dropdown a {
   display: block; padding: 0.7rem 1rem; border-radius: 10px; white-space: nowrap;
   font-size: 0.88rem; letter-spacing: 0.06em; text-transform: uppercase;

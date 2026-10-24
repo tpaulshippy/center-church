@@ -12,6 +12,31 @@ document.addEventListener("DOMContentLoaded", () => {
     el.textContent = new Date().getFullYear();
   });
 
+  // Tap/click support for nav dropdowns (touch laptops, and backup for hover).
+  // First tap opens the menu; second tap follows the link.
+  document.querySelectorAll(".nav-links > li.has-menu > a").forEach((link) => {
+    link.addEventListener("click", (e) => {
+      const item = link.parentElement;
+      if (!item.classList.contains("open")) {
+        e.preventDefault();
+        document.querySelectorAll(".nav-links > li.has-menu.open").forEach((o) => {
+          if (o !== item) o.classList.remove("open");
+        });
+        item.classList.add("open");
+      }
+    });
+  });
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest(".nav-links > li.has-menu")) {
+      document.querySelectorAll(".nav-links > li.has-menu.open").forEach((o) => o.classList.remove("open"));
+    }
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      document.querySelectorAll(".nav-links > li.has-menu.open").forEach((o) => o.classList.remove("open"));
+    }
+  });
+
   // Hero background parallax in the style of the reference site's Squarespace
   // image-effect-parallax (vertical drift across the viewport traversal,
   // image outrunning the text), dialed up to clearly-visible strength.
