@@ -12,9 +12,9 @@ document.addEventListener("DOMContentLoaded", () => {
     el.textContent = new Date().getFullYear();
   });
 
-  // Hero background parallax, replicating the reference site's Squarespace
-  // image-effect-parallax (intensity 30, rotation 90): the image zooms slightly
-  // and drifts across the full viewport traversal, moving faster than the text.
+  // Hero background parallax in the style of the reference site's Squarespace
+  // image-effect-parallax (vertical drift across the viewport traversal,
+  // image outrunning the text), dialed up to clearly-visible strength.
   // Skipped for reduced-motion users.
   const heroImgs = Array.from(document.querySelectorAll(".hero-bg img"));
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const r = hero.getBoundingClientRect();
         if (r.bottom > 0 && r.top < vh) {
           const progress = Math.min(Math.max((vh - r.top) / (vh + r.height), 0), 1);
-          img.style.transform = `scale(1.18) translateY(${((0.5 - progress) * 15).toFixed(2)}%)`;
+          img.style.transform = `scale(1.4) translateY(${((0.5 - progress) * 36).toFixed(2)}%)`;
         }
       });
       ticking = false;
