@@ -141,8 +141,9 @@ h1, h2, h3, .display {
 /* home hero: taller than the viewport, content anchored to the bottom.
    lvh (not svh) so the hero still fills the screen when mobile browser
    chrome hides and the viewport grows; vh fallback for older browsers. */
-.hero { min-height: 108vh; min-height: 108lvh; }
-.hero .hero-inner {
+.hero, .page-hero { min-height: 108vh; min-height: 108lvh; }
+.hero .hero-inner,
+.page-hero .hero-inner {
   min-height: 108vh; min-height: 108lvh;
   display: flex; flex-direction: column; justify-content: flex-end;
 }
@@ -167,10 +168,9 @@ h1, h2, h3, .display {
 }
 a.chip:hover { background: rgba(0,0,0,0.55); }
 
-/* page hero (smaller, for interior pages) */
+/* page hero (same tall treatment as home hero, for interior pages) */
 .page-hero { background: var(--ink); color: var(--cream); position: relative; overflow: hidden; }
 .page-hero .hero-bg img { opacity: 0.35; }
-.page-hero .hero-inner { padding: clamp(3.5rem, 7vw, 5.5rem) 0 clamp(2.5rem, 5vw, 4rem); }
 
 /* ---------- cards & grids ---------- */
 .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; margin-top: 2.5rem; }
@@ -334,5 +334,5 @@ a.chip:hover { background: rgba(0,0,0,0.55); }
   /* compact header + vertically centered hero content, like the reference */
   .nav-wrap { padding: 0.9rem 0; }
   .brand-logo { height: 40px; }
-  .hero .hero-inner { justify-content: center; }
+  .hero .hero-inner, .page-hero .hero-inner { justify-content: center; }
 }
