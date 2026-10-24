@@ -205,6 +205,35 @@ a.chip:hover { background: rgba(0,0,0,0.55); }
 .split ul.check li { padding-left: 2rem; position: relative; color: var(--muted); }
 .split ul.check li::before { content: "✓"; position: absolute; left: 0; color: var(--clay-dark); font-weight: 800; }
 
+/* sunday fixed-background band (parallax effect from the previous site) */
+.sunday-fixed {
+  position: relative;
+  isolation: isolate;
+  color: var(--cream);
+  background-color: var(--ink);
+  background-image: url("/photos/sunday-building.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.sunday-fixed::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.73);
+}
+.sunday-fixed-inner { max-width: 48rem; }
+.sunday-fixed .display-lg { color: #fff; }
+.sunday-fixed ul.check li { color: #d9cdbd; }
+.sunday-fixed ul.check li strong { color: #fff; }
+@media (min-width: 1025px) {
+  .sunday-fixed { background-attachment: fixed; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sunday-fixed { background-attachment: scroll; }
+}
+
 /* dark section */
 .dark { background: var(--ink); color: var(--cream); }
 .dark .lede { color: #d9cdbd; }
