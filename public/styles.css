@@ -136,6 +136,7 @@ h1, h2, h3, .display {
 .hero { position: relative; color: var(--cream); overflow: hidden; background: var(--ink); }
 .hero-bg { position: absolute; inset: 0; }
 .hero-bg img { width: 100%; height: 100%; object-fit: cover; opacity: 0.55; will-change: transform; }
+.hero-bg picture { display: block; width: 100%; height: 100%; }
 /* focal-point helpers for hero images whose subject is off-center (e.g. pastor at the pulpit on the right) */
 .hero-bg img.focus-right { object-position: 75% center; }
 .hero-bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(15,12,9,0.45) 0%, rgba(15,12,9,0.25) 45%, rgba(15,12,9,0.78) 100%); }
