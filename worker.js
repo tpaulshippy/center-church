@@ -1,5 +1,5 @@
 const SERMON_FEED_URL = "https://hub.centergilbert.com/media/podcast/30626/feed.rss";
-const SERMON_API_TTL = 3600; // seconds to cache the parsed feed in Cloudflare's cache
+const SERMON_API_TTL = 300; // seconds to cache the parsed feed; short so newly published sermons show up within minutes
 
 // Canonical Bible book names keyed by lowercase lookup (with common aliases).
 const BIBLE_BOOKS = {
@@ -169,7 +169,7 @@ async function handleSermons(request, ctx) {
     const res = new Response(JSON.stringify(payload), {
       headers: {
         "content-type": "application/json;charset=UTF-8",
-        "cache-control": "public, max-age=300, s-maxage=" + SERMON_API_TTL,
+        "cache-control": "public, max-age=60, s-maxage=" + SERMON_API_TTL + ", stale-while-revalidate=3600",
       },
     });
     const put = cache.put(cacheKey, res.clone());
