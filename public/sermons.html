@@ -126,8 +126,8 @@
     <section class="section" style="padding-top:0">
       <div class="container">
         <span class="eyebrow">Current series</span>
-        <h2 class="display-lg" data-series-heading>Latest messages</h2>
-        <p class="lede" data-series-sub>Fresh from the pulpit — updates automatically every week.</p>
+        <h2 class="display-lg">Latest messages</h2>
+        <p class="lede">Fresh from the pulpit — updates automatically every week.</p>
         <div class="series-spotlight" data-series-spotlight hidden>
           <img data-series-art src="" alt="Current sermon series artwork" loading="lazy" />
           <div class="series-spotlight-body">
@@ -142,19 +142,15 @@
         <div class="sermon-list" data-sermons-list>
           <div class="sermon">
             <div><h3>Christ Preeminent</h3><div class="meta">Rich Richardson · Galatians 4:4</div></div>
-            <a class="btn btn-dark" href="https://hub.centergilbert.com/media/sunday-sermon-galatians-4-4">Listen</a>
           </div>
           <div class="sermon">
             <div><h3>How Shall We Be Known? As Those Who Love God</h3><div class="meta">Rich Richardson · Matthew 22:34–40</div></div>
-            <a class="btn btn-dark" href="https://hub.centergilbert.com/media/sunday-sermon-how-shall-we-be-known-as-those-who-love-god-matthew-22-34-40">Listen</a>
           </div>
           <div class="sermon">
             <div><h3>Stand Firm</h3><div class="meta">Rich Richardson · Jude 3–4</div></div>
-            <a class="btn btn-dark" href="https://hub.centergilbert.com/media/sunday-sermon-jude-3-4">Listen</a>
           </div>
           <div class="sermon">
             <div><h3>Ask God Anything: Why Is There Suffering?</h3><div class="meta">Rich Richardson · Topical</div></div>
-            <a class="btn btn-dark" href="https://hub.centergilbert.com/media/ask-god-anything-why-is-there-suffering">Listen</a>
           </div>
         </div>
       </div>
@@ -298,15 +294,9 @@
       .then(function (data) {
         if (!data || !data.latest || !data.latest.length) throw new Error("empty feed");
 
-        var heading = document.querySelector("[data-series-heading]");
-        var sub = document.querySelector("[data-series-sub]");
         var spot = document.querySelector("[data-series-spotlight]");
         if (data.series && spot) {
           var s = data.series;
-          if (heading) heading.textContent = s.kind === "latest" ? "Latest messages" : s.name;
-          if (sub) sub.textContent = s.kind === "latest"
-            ? "Fresh from the pulpit — updates automatically every week."
-            : s.blurb + " Catch up on the latest messages below.";
           var art = spot.querySelector("[data-series-art]");
           if (art && s.artwork) { art.src = s.artwork; } else if (art) { art.style.display = "none"; }
           var nm = spot.querySelector("[data-series-name]");
@@ -323,12 +313,9 @@
           var audio = it.audio
             ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
             : "";
-          var btn = it.link
-            ? '<a class="btn btn-dark" href="' + esc(it.link) + '">Listen</a>'
-            : "";
           return '<div class="sermon"><div><h3>' + esc(it.title) + '</h3>' +
             (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + audio +
-            "</div>" + btn + "</div>";
+            "</div></div>";
         }).join("");
       })
       .catch(function () {
