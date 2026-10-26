@@ -136,6 +136,9 @@
             <p data-series-blurb></p>
           </div>
         </div>
+        <div class="sermon-search" data-sermons-search>
+          <input type="search" data-sermons-q placeholder="Search messages…" aria-label="Search sermons" autocomplete="off" />
+        </div>
         <div class="sermon-list" data-sermons-list>
           <div class="sermon">
             <div><h3>Christ Preeminent</h3><div class="meta">Rich Richardson · Galatians 4:4</div></div>
@@ -149,6 +152,12 @@
           <div class="sermon">
             <div><h3>Ask God Anything: Why Is There Suffering?</h3><div class="meta">Rich Richardson · Topical</div></div>
           </div>
+        </div>
+        <p class="sermon-count" data-sermons-count hidden></p>
+        <div class="pager" data-sermons-pager hidden>
+          <button class="btn btn-outline" data-sermons-prev type="button">← Newer</button>
+          <span class="pager-page" data-sermons-page></span>
+          <button class="btn btn-outline" data-sermons-next type="button">Older →</button>
         </div>
       </div>
     </section>
@@ -268,8 +277,8 @@
 
   <script src="/script.js?v=7"></script>
   <script>
-  // Live sermon feed: rendered from /api/sermons (proxied podcast RSS).
-  // Static fallback below stays for no-JS; replaced on successful fetch.
+  // Live sermon feed: spotlight from /api/sermons, browsable archive from
+  // /api/sermons/search. Static fallback list stays for no-JS.
   (function () {
     var list = document.querySelector("[data-sermons-list]");
     if (!list) return;
@@ -285,14 +294,24 @@
       if (isNaN(d)) return "";
       return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
     }
+    function row(it) {
+      var meta = [it.speaker, fmtDate(it.date)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var desc = it.description
+        ? '<p class="sermon-desc">' + esc(it.description) + "</p>"
+        : "";
+      return '<div class="sermon"><div><h3>' + esc(it.title) + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
 
     fetch("/api/sermons?v=3")
       .then(function (res) { if (!res.ok) throw new Error("feed " + res.status); return res.json(); })
       .then(function (data) {
-        if (!data || !data.latest || !data.latest.length) throw new Error("empty feed");
-
         var spot = document.querySelector("[data-series-spotlight]");
-        if (data.series && spot) {
+        if (data && data.series && spot) {
           var s = data.series;
           var art = spot.querySelector("[data-series-art]");
           if (art && s.artwork) { art.src = s.artwork; } else if (art) { art.style.display = "none"; }
@@ -302,23 +321,80 @@
           if (bl) bl.textContent = s.blurb;
           spot.hidden = false;
         }
-
-        list.innerHTML = data.latest.map(function (it) {
-          var meta = [it.speaker, fmtDate(it.date)].filter(Boolean).join(" · ");
-          var audio = it.audio
-            ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
-            : "";
-          var desc = it.description
-            ? '<p class="sermon-desc">' + esc(it.description) + "</p>"
-            : "";
-          return '<div class="sermon"><div><h3>' + esc(it.title) + '</h3>' +
-            (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
-            "</div></div>";
-        }).join("");
       })
-      .catch(function () {
-        // Keep the static fallback list below.
+      .catch(function () { /* spotlight stays hidden */ });
+
+    var PER = 10;
+    var state = { q: "", page: 1 };
+    var seq = 0;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No messages found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (countEl) {
+        var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+        var end = Math.min(data.total, data.page * data.per_page);
+        countEl.textContent = data.q
+          ? data.total + ' result' + (data.total === 1 ? "" : "s") + ' for "' + data.q + '"'
+          : "Showing " + start + "–" + end + " of " + data.total + " messages";
+        countEl.hidden = false;
+      }
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/sermons/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () { /* keep current list on error */ });
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
       });
+    }
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+
+    load(false);
   })();
   </script>
 </body>

@@ -50,7 +50,7 @@ function cleanText(s) {
 function parseFeed(xml) {
   const items = [];
   const blocks = xml.match(/<item[\s>][\s\S]*?<\/item>/gi) || [];
-  for (const b of blocks.slice(0, 30)) {
+  for (const b of blocks) {
     const get = (re) => {
       const m = b.match(re);
       return m ? cleanText(m[1]) : "";
@@ -149,44 +149,102 @@ function detectSeries(items) {
   };
 }
 
-async function handleSermons(request, ctx) {
+// Fetches and parses the full podcast feed, cached for SERMON_API_TTL so a
+// newly published sermon shows up within minutes. Shared by the spotlight
+// (/api/sermons) and the archive search (/api/sermons/search) handlers.
+async function getFeed(request, ctx) {
   const cache = caches.default;
-  const cacheKey = new Request(new URL("/api/sermons?v=2", request.url).toString(), request);
-  const cached = await cache.match(cacheKey);
-  if (cached) return cached;
+  const key = new Request(new URL("/api/sermons-feed", request.url).toString(), request);
+  const cached = await cache.match(key);
+  if (cached) {
+    const data = await cached.json();
+    if (data && data.items && data.items.length) return data;
+  }
+  const rssRes = await fetch(SERMON_FEED_URL, {
+    headers: { "user-agent": "CenterChurchSite/1.0 (+https://centergilbert.com)" },
+  });
+  if (!rssRes.ok) throw new Error("feed status " + rssRes.status);
+  const items = parseFeed(await rssRes.text());
+  if (!items.length) throw new Error("empty feed");
+  const data = { updated: new Date().toISOString(), items };
+  const res = new Response(JSON.stringify(data), {
+    headers: {
+      "content-type": "application/json;charset=UTF-8",
+      "cache-control": "public, max-age=60, s-maxage=" + SERMON_API_TTL,
+    },
+  });
+  const put = cache.put(key, res.clone());
+  if (ctx && ctx.waitUntil) ctx.waitUntil(put);
+  else await put;
+  return data;
+}
+
+function sermonError(err) {
+  return new Response(JSON.stringify({ error: "Sermon feed unavailable", detail: String(err && err.message || err) }), {
+    status: 502,
+    headers: { "content-type": "application/json;charset=UTF-8", "cache-control": "no-store" },
+  });
+}
+
+async function handleSermons(request, ctx) {
   try {
-    const rssRes = await fetch(SERMON_FEED_URL, {
-      headers: { "user-agent": "CenterChurchSite/1.0 (+https://centergilbert.com)" },
-    });
-    if (!rssRes.ok) throw new Error("feed status " + rssRes.status);
-    const items = parseFeed(await rssRes.text());
-    if (!items.length) throw new Error("empty feed");
+    const feed = await getFeed(request, ctx);
     const payload = {
-      updated: new Date().toISOString(),
-      latest: items.slice(0, 6),
-      series: detectSeries(items),
+      updated: feed.updated,
+      total: feed.items.length,
+      latest: feed.items.slice(0, 6),
+      series: detectSeries(feed.items),
     };
-    const res = new Response(JSON.stringify(payload), {
+    return new Response(JSON.stringify(payload), {
       headers: {
         "content-type": "application/json;charset=UTF-8",
         "cache-control": "public, max-age=60, s-maxage=" + SERMON_API_TTL + ", stale-while-revalidate=3600",
       },
     });
-    const put = cache.put(cacheKey, res.clone());
-    if (ctx && ctx.waitUntil) ctx.waitUntil(put);
-    else await put;
-    return res;
   } catch (err) {
-    return new Response(JSON.stringify({ error: "Sermon feed unavailable", detail: String(err && err.message || err) }), {
-      status: 502,
-      headers: { "content-type": "application/json;charset=UTF-8", "cache-control": "no-store" },
+    return sermonError(err);
+  }
+}
+
+// Paginated, searchable archive over the full feed. q matches title,
+// speaker, and description. Empty q browses everything, newest first.
+async function handleSermonSearch(request, ctx) {
+  try {
+    const url = new URL(request.url);
+    const qRaw = (url.searchParams.get("q") || "").trim().slice(0, 60);
+    const q = qRaw.toLowerCase();
+    const per = Math.min(50, Math.max(5, parseInt(url.searchParams.get("per") || "10", 10) || 10));
+    const feed = await getFeed(request, ctx);
+    const filtered = q
+      ? feed.items.filter((it) => ((it.title || "") + " " + (it.speaker || "") + " " + (it.description || "")).toLowerCase().includes(q))
+      : feed.items;
+    const total = filtered.length;
+    const totalPages = Math.max(1, Math.ceil(total / per));
+    const page = Math.min(totalPages, Math.max(1, parseInt(url.searchParams.get("page") || "1", 10) || 1));
+    const items = filtered.slice((page - 1) * per, page * per).map((it) => ({
+      title: it.title,
+      speaker: it.speaker,
+      date: it.date,
+      description: it.description,
+      audio: it.audio,
+    }));
+    return new Response(JSON.stringify({ q: qRaw, total, page, per_page: per, total_pages: totalPages, items }), {
+      headers: {
+        "content-type": "application/json;charset=UTF-8",
+        "cache-control": "public, max-age=60, s-maxage=" + SERMON_API_TTL,
+      },
     });
+  } catch (err) {
+    return sermonError(err);
   }
 }
 
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
+    if (url.pathname === "/api/sermons/search") {
+      return handleSermonSearch(request, ctx);
+    }
     if (url.pathname === "/api/sermons") {
       return handleSermons(request, ctx);
     }
