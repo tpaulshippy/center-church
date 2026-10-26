@@ -1,6 +1,5 @@
 const SERMON_FEED_URL = "https://hub.centergilbert.com/media/podcast/30626/feed.rss";
 const SERMON_API_TTL = 3600; // seconds to cache the parsed feed in Cloudflare's cache
-const SERMON_ARCHIVE_URL = "https://hub.centergilbert.com/media";
 
 // Canonical Bible book names keyed by lowercase lookup (with common aliases).
 const BIBLE_BOOKS = {
@@ -164,7 +163,6 @@ async function handleSermons(request, ctx) {
     if (!items.length) throw new Error("empty feed");
     const payload = {
       updated: new Date().toISOString(),
-      archiveUrl: SERMON_ARCHIVE_URL,
       latest: items.slice(0, 6),
       series: detectSeries(items),
     };
