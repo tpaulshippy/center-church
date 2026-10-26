@@ -285,6 +285,18 @@ a.chip:hover { background: rgba(0,0,0,0.55); }
 .sermon-list { display: grid; gap: 0.9rem; margin-top: 2rem; }
 .sermon h3 { font-size: 1.15rem; }
 .sermon .meta { color: var(--muted); font-size: 0.9rem; font-weight: 600; }
+.sermon audio { width: 100%; margin-top: 0.7rem; }
+
+/* current series spotlight */
+.series-spotlight {
+  display: grid; grid-template-columns: 240px 1fr; gap: 1.8rem; align-items: center;
+  background: var(--ink); color: var(--cream);
+  border-radius: var(--radius); padding: 1.8rem; margin-top: 2rem;
+}
+.series-spotlight img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 14px; background: var(--ink-2); }
+.series-spotlight h3 { font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 800; text-transform: uppercase; }
+.series-spotlight p { color: #d9cdbd; margin-top: 0.5rem; }
+.series-spotlight .btn-row { margin-top: 1.2rem; }
 
 /* verse band */
 .verse { background: var(--ink-2); color: var(--cream); text-align: center; }
@@ -391,6 +403,8 @@ a.chip:hover { background: rgba(0,0,0,0.55); }
 @media (max-width: 600px) {
   .grid-3, .leader-grid, .quotes, .info-grid, .steps { grid-template-columns: 1fr; }
   .photo-grid, .photo-grid-3 { grid-template-columns: 1fr; }
+  .series-spotlight { grid-template-columns: 1fr; }
+  .series-spotlight img { max-height: 240px; }
   /* beliefs hero: pastor stands center-frame; shift right on narrow screens so his face clears the headline */
   .hero-bg img.focus-beliefs { object-position: 20% center; }
   .footer-grid { grid-template-columns: 1fr; }

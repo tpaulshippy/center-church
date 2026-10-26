@@ -155,10 +155,22 @@
 
     <section class="section" style="padding-top:0">
       <div class="container">
-        <span class="eyebrow">Featured sermons</span>
-        <h2 class="display-lg">A taste of the preaching</h2>
-        <p class="lede">Handpicked messages that introduce the preaching at Center Church. Check out the full archive for all past messages.</p>
-        <div class="sermon-list">
+        <span class="eyebrow">Current series</span>
+        <h2 class="display-lg" data-series-heading>Latest messages</h2>
+        <p class="lede" data-series-sub>Fresh from the pulpit — updates automatically every week.</p>
+        <div class="series-spotlight" data-series-spotlight hidden>
+          <img data-series-art src="" alt="Current sermon series artwork" loading="lazy" />
+          <div class="series-spotlight-body">
+            <span class="eyebrow on-dark">Now preaching</span>
+            <h3 data-series-name></h3>
+            <p data-series-blurb></p>
+            <div class="btn-row">
+              <a class="btn btn-light" data-series-listen href="https://hub.centergilbert.com/media">Listen to the latest</a>
+              <a class="btn btn-outline-light" href="https://hub.centergilbert.com/media">Full archive</a>
+            </div>
+          </div>
+        </div>
+        <div class="sermon-list" data-sermons-list>
           <div class="sermon">
             <div><h3>Christ Preeminent</h3><div class="meta">Rich Richardson · Galatians 4:4</div></div>
             <a class="btn btn-dark" href="https://hub.centergilbert.com/media/sunday-sermon-galatians-4-4">Listen</a>
@@ -271,5 +283,67 @@
   </footer>
 
   <script src="/script.js?v=7"></script>
+  <script>
+  // Live sermon feed: rendered from /api/sermons (proxied podcast RSS).
+  // Static fallback below stays for no-JS; replaced on successful fetch.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+
+    fetch("/api/sermons")
+      .then(function (res) { if (!res.ok) throw new Error("feed " + res.status); return res.json(); })
+      .then(function (data) {
+        if (!data || !data.latest || !data.latest.length) throw new Error("empty feed");
+
+        var heading = document.querySelector("[data-series-heading]");
+        var sub = document.querySelector("[data-series-sub]");
+        var spot = document.querySelector("[data-series-spotlight]");
+        if (data.series && spot) {
+          var s = data.series;
+          if (heading) heading.textContent = s.kind === "latest" ? "Latest messages" : s.name;
+          if (sub) sub.textContent = s.kind === "latest"
+            ? "Fresh from the pulpit — updates automatically every week."
+            : s.blurb + " Catch up on the latest messages below.";
+          var art = spot.querySelector("[data-series-art]");
+          if (art && s.artwork) { art.src = s.artwork; } else if (art) { art.style.display = "none"; }
+          var nm = spot.querySelector("[data-series-name]");
+          if (nm) nm.textContent = s.name;
+          var bl = spot.querySelector("[data-series-blurb]");
+          if (bl) bl.textContent = s.blurb;
+          var listen = spot.querySelector("[data-series-listen]");
+          if (listen && s.sermons && s.sermons.length && s.sermons[0].link) listen.href = s.sermons[0].link;
+          spot.hidden = false;
+        }
+
+        list.innerHTML = data.latest.map(function (it) {
+          var meta = [it.speaker, fmtDate(it.date)].filter(Boolean).join(" · ");
+          var audio = it.audio
+            ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+            : "";
+          var btn = it.link
+            ? '<a class="btn btn-dark" href="' + esc(it.link) + '">Listen</a>'
+            : "";
+          return '<div class="sermon"><div><h3>' + esc(it.title) + '</h3>' +
+            (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + audio +
+            "</div>" + btn + "</div>";
+        }).join("");
+      })
+      .catch(function () {
+        // Keep the static fallback list below.
+      });
+  })();
+  </script>
 </body>
 </html>
