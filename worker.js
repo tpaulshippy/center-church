@@ -151,7 +151,7 @@ function detectSeries(items) {
 
 async function handleSermons(request, ctx) {
   const cache = caches.default;
-  const cacheKey = new Request(new URL("/api/sermons", request.url).toString(), request);
+  const cacheKey = new Request(new URL("/api/sermons?v=2", request.url).toString(), request);
   const cached = await cache.match(cacheKey);
   if (cached) return cached;
   try {

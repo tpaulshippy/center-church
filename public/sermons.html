@@ -134,9 +134,6 @@
             <span class="eyebrow on-dark">Now preaching</span>
             <h3 data-series-name></h3>
             <p data-series-blurb></p>
-            <div class="btn-row">
-              <a class="btn btn-light" data-series-listen href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Listen to the latest</a>
-            </div>
           </div>
         </div>
         <div class="sermon-list" data-sermons-list>
@@ -303,8 +300,6 @@
           if (nm) nm.textContent = s.name;
           var bl = spot.querySelector("[data-series-blurb]");
           if (bl) bl.textContent = s.blurb;
-          var listen = spot.querySelector("[data-series-listen]");
-          if (listen && s.sermons && s.sermons.length && s.sermons[0].link) listen.href = s.sermons[0].link;
           spot.hidden = false;
         }
 
@@ -313,8 +308,11 @@
           var audio = it.audio
             ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
             : "";
+          var desc = it.description
+            ? '<p class="sermon-desc">' + esc(it.description) + "</p>"
+            : "";
           return '<div class="sermon"><div><h3>' + esc(it.title) + '</h3>' +
-            (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + audio +
+            (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
             "</div></div>";
         }).join("");
       })
