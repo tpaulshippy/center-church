@@ -286,7 +286,7 @@
       return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
     }
 
-    fetch("/api/sermons")
+    fetch("/api/sermons?v=3")
       .then(function (res) { if (!res.ok) throw new Error("feed " + res.status); return res.json(); })
       .then(function (data) {
         if (!data || !data.latest || !data.latest.length) throw new Error("empty feed");
