@@ -206,18 +206,88 @@ async function handleSermons(request, ctx) {
   }
 }
 
-// Paginated, searchable archive over the full feed. q matches title,
-// speaker, and description. Empty q browses everything, newest first.
+function monthLabel(id) {
+  const m = String(id || "").match(/^(\d{4})-(\d{2})$/);
+  if (!m) return id;
+  try {
+    return new Intl.DateTimeFormat("en-US", { month: "long", year: "numeric", timeZone: "UTC" })
+      .format(new Date(Date.UTC(+m[1], +m[2] - 1, 1)));
+  } catch (e) {
+    return id;
+  }
+}
+
+// Filter dropdown contents, computed over the full feed so the lists stay
+// complete: distinct speakers (A–Z), series grouped like detectSeries
+// (most recent first), and months present in the feed (newest first).
+function buildFacets(items) {
+  const speakers = new Map();
+  const series = new Map();
+  const months = new Map();
+  items.forEach((it, idx) => {
+    if (it.speaker) {
+      const e = speakers.get(it.speaker) || { name: it.speaker, count: 0 };
+      e.count += 1;
+      speakers.set(it.speaker, e);
+    }
+    const k = seriesKeyOf(it.title);
+    if (k) {
+      const id = k.kind + ":" + k.name.toLowerCase();
+      const e = series.get(id) || { name: k.name, kind: k.kind, count: 0, last: idx };
+      e.count += 1;
+      e.last = Math.min(e.last, idx);
+      series.set(id, e);
+    }
+    if (it.date && /^\d{4}-\d{2}/.test(it.date)) {
+      const id = it.date.slice(0, 7);
+      const e = months.get(id) || { id, label: monthLabel(id), count: 0 };
+      e.count += 1;
+      months.set(id, e);
+    }
+  });
+  return {
+    speakers: [...speakers.values()].sort((a, b) => a.name.localeCompare(b.name)),
+    series: [...series.values()]
+      .sort((a, b) => a.last - b.last)
+      .filter((e) => e.count >= 2)
+      .map((e) => ({ name: e.name, kind: e.kind, count: e.count })),
+    months: [...months.values()].sort((a, b) => (a.id < b.id ? 1 : -1)),
+  };
+}
+
+// Paginated, searchable, filterable archive over the full feed. q matches
+// title, speaker, and description; speaker/series/month narrow it further
+// (all combined with AND). Empty values browse everything, newest first.
 async function handleSermonSearch(request, ctx) {
   try {
     const url = new URL(request.url);
     const qRaw = (url.searchParams.get("q") || "").trim().slice(0, 60);
     const q = qRaw.toLowerCase();
+    const speakerRaw = (url.searchParams.get("speaker") || "").trim().slice(0, 60);
+    const seriesRaw = (url.searchParams.get("series") || "").trim().slice(0, 60);
+    const monthParam = (url.searchParams.get("month") || "").trim();
+    const month = /^\d{4}-\d{2}$/.test(monthParam) ? monthParam : "";
     const per = Math.min(50, Math.max(5, parseInt(url.searchParams.get("per") || "10", 10) || 10));
     const feed = await getFeed(request, ctx);
-    const filtered = q
-      ? feed.items.filter((it) => ((it.title || "") + " " + (it.speaker || "") + " " + (it.description || "")).toLowerCase().includes(q))
-      : feed.items;
+    const facets = buildFacets(feed.items);
+    let filtered = feed.items;
+    if (q) {
+      filtered = filtered.filter((it) => ((it.title || "") + " " + (it.speaker || "") + " " + (it.description || "")).toLowerCase().includes(q));
+    }
+    if (speakerRaw) {
+      const s = speakerRaw.toLowerCase();
+      filtered = filtered.filter((it) => (it.speaker || "").toLowerCase() === s);
+    }
+    if (seriesRaw) {
+      const s = seriesRaw.toLowerCase();
+      filtered = filtered.filter((it) => {
+        const k = seriesKeyOf(it.title);
+        return k && k.name.toLowerCase() === s;
+      });
+    }
+    if (month) {
+      filtered = filtered.filter((it) => it.date && it.date.slice(0, 7) === month);
+    }
     const total = filtered.length;
     const totalPages = Math.max(1, Math.ceil(total / per));
     const page = Math.min(totalPages, Math.max(1, parseInt(url.searchParams.get("page") || "1", 10) || 1));
@@ -228,7 +298,11 @@ async function handleSermonSearch(request, ctx) {
       description: it.description,
       audio: it.audio,
     }));
-    return new Response(JSON.stringify({ q: qRaw, total, page, per_page: per, total_pages: totalPages, items }), {
+    return new Response(JSON.stringify({
+      q: qRaw, speaker: speakerRaw, series: seriesRaw, month,
+      month_label: month ? monthLabel(month) : "",
+      total, page, per_page: per, total_pages: totalPages, items, facets,
+    }), {
       headers: {
         "content-type": "application/json;charset=UTF-8",
         "cache-control": "public, max-age=60, s-maxage=" + SERMON_API_TTL,

@@ -295,6 +295,16 @@ a.chip:hover { background: rgba(0,0,0,0.55); }
   border: 1px solid var(--line); background: #fff; color: var(--ink);
 }
 .sermon-search input:focus { outline: 2px solid var(--clay); outline-offset: 1px; }
+.sermon-filters { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; margin-top: 0.8rem; }
+.sermon-filters select {
+  width: 100%; font: inherit; font-size: 0.95rem;
+  padding: 0.8rem 1rem; border-radius: 14px;
+  border: 1px solid var(--line); background: #fff; color: var(--ink);
+}
+.sermon-clear {
+  background: none; border: none; cursor: pointer; padding: 0; margin-top: 0.7rem;
+  color: var(--clay-dark); font-weight: 700; font-size: 0.9rem; font-family: inherit;
+}
 .sermon-count { margin-top: 1.2rem; color: var(--muted); font-size: 0.9rem; font-weight: 600; }
 .pager { display: flex; align-items: center; justify-content: center; gap: 1rem; margin-top: 1.8rem; }
 .pager .btn { padding: 0.7rem 1.4rem; font-size: 0.88rem; }
@@ -418,6 +428,7 @@ a.chip:hover { background: rgba(0,0,0,0.55); }
 @media (max-width: 600px) {
   .grid-3, .leader-grid, .quotes, .info-grid, .steps { grid-template-columns: 1fr; }
   .photo-grid, .photo-grid-3 { grid-template-columns: 1fr; }
+  .sermon-filters { grid-template-columns: 1fr; }
   .series-spotlight { grid-template-columns: 1fr; }
   .series-spotlight img { max-height: 240px; }
   /* beliefs hero: pastor stands center-frame; shift right on narrow screens so his face clears the headline */
