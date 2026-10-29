@@ -80,7 +80,7 @@ function parseFeed(xml) {
     items.push({
       title: get(/<title>([\s\S]*?)<\/title>/i),
       speaker: get(/<itunes:author>([\s\S]*?)<\/itunes:author>/i),
-      description: get(/<(?:itunes:summary|description)>([\s\S]*?)<\/(?:itunes:summary|description)>/i).slice(0, 220),
+      description: get(/<(?:itunes:summary|description)>([\s\S]*?)<\/(?:itunes:summary|description)>/i),
       link: get(/<link>([\s\S]*?)<\/link>/i),
       audio: enclosure.trim(),
       image: image.trim(),

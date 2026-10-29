@@ -292,6 +292,17 @@ a.chip:hover { background: rgba(0,0,0,0.55); }
 .sermon h3 a:hover { color: var(--clay-dark); text-decoration: underline; }
 .sermon .meta { color: var(--muted); font-size: 0.9rem; font-weight: 600; }
 .sermon-desc { color: var(--muted); font-size: 0.95rem; margin-top: 0.4rem; }
+/* collapsed episode descriptions (expanded via the See more toggle) */
+.sermon-desc.clamped {
+  display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.sermon-more {
+  background: none; border: none; padding: 0; margin-top: 0.25rem;
+  font: inherit; font-size: 0.9rem; font-weight: 700;
+  color: var(--clay-dark); cursor: pointer;
+}
+.sermon-more:hover { text-decoration: underline; }
 
 /* sermon search + pagination */
 .sermon-search { margin-top: 2rem; }

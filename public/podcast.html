@@ -12,7 +12,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  <link rel="stylesheet" href="/styles.css?v=16" />
+  <link rel="stylesheet" href="/styles.css?v=17" />
 </head>
 <body>
   <header class="site-header">
@@ -273,8 +273,10 @@
       var audio = it.audio
         ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
         : "";
+      var longDesc = it.description && it.description.length > 220;
       var desc = it.description
-        ? '<p class="sermon-desc">' + esc(it.description) + "</p>"
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
         : "";
       return '<div class="sermon"><div><h3>' + heading + '</h3>' +
         (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
@@ -396,6 +398,18 @@
     });
     if (nextBtn) nextBtn.addEventListener("click", function () {
       state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
     });
 
     load(false);
