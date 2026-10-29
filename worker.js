@@ -1,4 +1,5 @@
 const SERMON_FEED_URL = "https://hub.centergilbert.com/media/podcast/30626/feed.rss";
+const PODCAST_FEED_URL = "https://anchor.fm/s/e750e370/podcast/rss";
 const SERMON_API_TTL = 300; // seconds to cache the parsed feed; short so newly published sermons show up within minutes
 
 // Canonical Bible book names keyed by lowercase lookup (with common aliases).
@@ -57,6 +58,7 @@ function parseFeed(xml) {
     };
     const enclosure = (b.match(/<enclosure[^>]*url="([^"]+)"/i) || [])[1] || "";
     const image = (b.match(/<itunes:image[^>]*href="([^"]+)"/i) || [])[1] || "";
+    const duration = get(/<itunes:duration>([\s\S]*?)<\/itunes:duration>/i);
     const pubRaw = get(/<pubDate>([\s\S]*?)<\/pubDate>/i);
     const time = Date.parse(pubRaw);
     items.push({
@@ -66,6 +68,7 @@ function parseFeed(xml) {
       link: get(/<link>([\s\S]*?)<\/link>/i),
       audio: enclosure.trim(),
       image: image.trim(),
+      duration: duration.trim(),
       date: isNaN(time) ? null : new Date(time).toISOString(),
     });
   }
@@ -149,18 +152,18 @@ function detectSeries(items) {
   };
 }
 
-// Fetches and parses the full podcast feed, cached for SERMON_API_TTL so a
-// newly published sermon shows up within minutes. Shared by the spotlight
-// (/api/sermons) and the archive search (/api/sermons/search) handlers.
-async function getFeed(request, ctx) {
+// Fetches and parses a podcast feed, cached for SERMON_API_TTL so a newly
+// published episode shows up within minutes. Shared by the spotlight
+// (/api/sermons, /api/podcast) and the archive search handlers.
+async function getFeed(request, ctx, feedUrl, cachePath) {
   const cache = caches.default;
-  const key = new Request(new URL("/api/sermons-feed", request.url).toString(), request);
+  const key = new Request(new URL(cachePath, request.url).toString(), request);
   const cached = await cache.match(key);
   if (cached) {
     const data = await cached.json();
     if (data && data.items && data.items.length) return data;
   }
-  const rssRes = await fetch(SERMON_FEED_URL, {
+  const rssRes = await fetch(feedUrl, {
     headers: { "user-agent": "CenterChurchSite/1.0 (+https://centergilbert.com)" },
   });
   if (!rssRes.ok) throw new Error("feed status " + rssRes.status);
@@ -179,8 +182,8 @@ async function getFeed(request, ctx) {
   return data;
 }
 
-function sermonError(err) {
-  return new Response(JSON.stringify({ error: "Sermon feed unavailable", detail: String(err && err.message || err) }), {
+function feedError(err, label) {
+  return new Response(JSON.stringify({ error: label + " feed unavailable", detail: String(err && err.message || err) }), {
     status: 502,
     headers: { "content-type": "application/json;charset=UTF-8", "cache-control": "no-store" },
   });
@@ -188,7 +191,7 @@ function sermonError(err) {
 
 async function handleSermons(request, ctx) {
   try {
-    const feed = await getFeed(request, ctx);
+    const feed = await getFeed(request, ctx, SERMON_FEED_URL, "/api/sermons-feed");
     const payload = {
       updated: feed.updated,
       total: feed.items.length,
@@ -202,7 +205,7 @@ async function handleSermons(request, ctx) {
       },
     });
   } catch (err) {
-    return sermonError(err);
+    return feedError(err, "Sermon");
   }
 }
 
@@ -255,10 +258,10 @@ function buildFacets(items) {
   };
 }
 
-// Paginated, searchable, filterable archive over the full feed. q matches
+// Paginated, searchable, filterable archive over a full feed. q matches
 // title, speaker, and description; speaker/series/month narrow it further
 // (all combined with AND). Empty values browse everything, newest first.
-async function handleSermonSearch(request, ctx) {
+async function handleFeedSearch(request, ctx, feedUrl, cachePath, label) {
   try {
     const url = new URL(request.url);
     const qRaw = (url.searchParams.get("q") || "").trim().slice(0, 60);
@@ -268,7 +271,7 @@ async function handleSermonSearch(request, ctx) {
     const monthParam = (url.searchParams.get("month") || "").trim();
     const month = /^\d{4}-\d{2}$/.test(monthParam) ? monthParam : "";
     const per = Math.min(50, Math.max(5, parseInt(url.searchParams.get("per") || "10", 10) || 10));
-    const feed = await getFeed(request, ctx);
+    const feed = await getFeed(request, ctx, feedUrl, cachePath);
     const facets = buildFacets(feed.items);
     let filtered = feed.items;
     if (q) {
@@ -297,6 +300,7 @@ async function handleSermonSearch(request, ctx) {
       date: it.date,
       description: it.description,
       audio: it.audio,
+      ...(it.duration ? { duration: it.duration } : {}),
     }));
     return new Response(JSON.stringify({
       q: qRaw, speaker: speakerRaw, series: seriesRaw, month,
@@ -309,8 +313,42 @@ async function handleSermonSearch(request, ctx) {
       },
     });
   } catch (err) {
-    return sermonError(err);
+    return feedError(err, label);
   }
+}
+
+async function handleSermonSearch(request, ctx) {
+  return handleFeedSearch(request, ctx, SERMON_FEED_URL, "/api/sermons-feed", "Sermon");
+}
+
+async function handlePodcast(request, ctx) {
+  try {
+    const feed = await getFeed(request, ctx, PODCAST_FEED_URL, "/api/podcast-feed");
+    const payload = {
+      updated: feed.updated,
+      total: feed.items.length,
+      latest: feed.items.slice(0, 6).map((it) => ({
+        title: it.title,
+        speaker: it.speaker,
+        date: it.date,
+        description: it.description,
+        audio: it.audio,
+        ...(it.duration ? { duration: it.duration } : {}),
+      })),
+    };
+    return new Response(JSON.stringify(payload), {
+      headers: {
+        "content-type": "application/json;charset=UTF-8",
+        "cache-control": "public, max-age=60, s-maxage=" + SERMON_API_TTL + ", stale-while-revalidate=3600",
+      },
+    });
+  } catch (err) {
+    return feedError(err, "Podcast");
+  }
+}
+
+async function handlePodcastSearch(request, ctx) {
+  return handleFeedSearch(request, ctx, PODCAST_FEED_URL, "/api/podcast-feed", "Podcast");
 }
 
 export default {
@@ -321,6 +359,12 @@ export default {
     }
     if (url.pathname === "/api/sermons") {
       return handleSermons(request, ctx);
+    }
+    if (url.pathname === "/api/podcast/search") {
+      return handlePodcastSearch(request, ctx);
+    }
+    if (url.pathname === "/api/podcast") {
+      return handlePodcast(request, ctx);
     }
     const res = await env.ASSETS.fetch(request);
 
