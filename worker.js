@@ -48,6 +48,26 @@ function cleanText(s) {
     .trim();
 }
 
+// Like cleanText, but preserves paragraph/line breaks from block-level HTML
+// (<p>, <br>, list items, headings…) so episode descriptions keep their
+// structure. Render with `white-space: pre-line` to honor the newlines.
+function cleanRichText(s) {
+  const withBreaks = decodeEntities(s || "")
+    .replace(/<(br|hr)\s*\/?>/gi, "\n")
+    .replace(/<\/(p|div|h[1-6]|blockquote|li|ul|ol|tr)>/gi, "\n")
+    .replace(/<li[^>]*>/gi, "\n• ");
+  const lines = withBreaks
+    .replace(/<[^>]*>/g, "")
+    .split("\n")
+    .map((line) => line.replace(/[ \t\xa0]+/g, " ").trim());
+  const out = [];
+  for (const line of lines) {
+    if (line === "" && out.length && out[out.length - 1] === "") continue;
+    out.push(line);
+  }
+  return out.join("\n").trim();
+}
+
 // Anchor/Spotify episode audio comes as a tracking redirect
 // (…/podcast/play/<id>/<url-encoded-mp3>) which privacy-focused browsers
 // block. Unwrap it to the underlying direct mp3 URL so <audio> plays
@@ -75,12 +95,13 @@ function parseFeed(xml) {
     const enclosure = directAudio((b.match(/<enclosure[^>]*url="([^"]+)"/i) || [])[1] || "");
     const image = (b.match(/<itunes:image[^>]*href="([^"]+)"/i) || [])[1] || "";
     const duration = get(/<itunes:duration>([\s\S]*?)<\/itunes:duration>/i);
+    const rawDesc = (b.match(/<(?:itunes:summary|description)>([\s\S]*?)<\/(?:itunes:summary|description)>/i) || [])[1] || "";
     const pubRaw = get(/<pubDate>([\s\S]*?)<\/pubDate>/i);
     const time = Date.parse(pubRaw);
     items.push({
       title: get(/<title>([\s\S]*?)<\/title>/i),
       speaker: get(/<itunes:author>([\s\S]*?)<\/itunes:author>/i),
-      description: get(/<(?:itunes:summary|description)>([\s\S]*?)<\/(?:itunes:summary|description)>/i),
+      description: cleanRichText(rawDesc),
       link: get(/<link>([\s\S]*?)<\/link>/i),
       audio: enclosure.trim(),
       image: image.trim(),
@@ -291,7 +312,7 @@ async function handleFeedSearch(request, ctx, feedUrl, cachePath, label) {
     const facets = buildFacets(feed.items);
     let filtered = feed.items;
     if (q) {
-      filtered = filtered.filter((it) => ((it.title || "") + " " + (it.speaker || "") + " " + (it.description || "")).toLowerCase().includes(q));
+      filtered = filtered.filter((it) => ((it.title || "") + " " + (it.speaker || "") + " " + (it.description || "")).replace(/\s+/g, " ").toLowerCase().includes(q));
     }
     if (speakerRaw) {
       const s = speakerRaw.toLowerCase();
