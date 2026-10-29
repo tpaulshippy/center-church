@@ -48,6 +48,22 @@ function cleanText(s) {
     .trim();
 }
 
+// Anchor/Spotify episode audio comes as a tracking redirect
+// (…/podcast/play/<id>/<url-encoded-mp3>) which privacy-focused browsers
+// block. Unwrap it to the underlying direct mp3 URL so <audio> plays
+// everywhere. Non-Anchor URLs pass through unchanged.
+function directAudio(url) {
+  const u = String(url || "").trim();
+  const m = u.match(/\/play\/[^/]+\/(.+)$/);
+  if (m) {
+    try {
+      const d = decodeURIComponent(m[1]);
+      if (/^https?:\/\/.+\.mp3(\?.*)?$/i.test(d)) return d;
+    } catch (e) { /* fall through to original */ }
+  }
+  return u;
+}
+
 function parseFeed(xml) {
   const items = [];
   const blocks = xml.match(/<item[\s>][\s\S]*?<\/item>/gi) || [];
@@ -56,7 +72,7 @@ function parseFeed(xml) {
       const m = b.match(re);
       return m ? cleanText(m[1]) : "";
     };
-    const enclosure = (b.match(/<enclosure[^>]*url="([^"]+)"/i) || [])[1] || "";
+    const enclosure = directAudio((b.match(/<enclosure[^>]*url="([^"]+)"/i) || [])[1] || "");
     const image = (b.match(/<itunes:image[^>]*href="([^"]+)"/i) || [])[1] || "";
     const duration = get(/<itunes:duration>([\s\S]*?)<\/itunes:duration>/i);
     const pubRaw = get(/<pubDate>([\s\S]*?)<\/pubDate>/i);
@@ -300,6 +316,7 @@ async function handleFeedSearch(request, ctx, feedUrl, cachePath, label) {
       date: it.date,
       description: it.description,
       audio: it.audio,
+      link: it.link,
       ...(it.duration ? { duration: it.duration } : {}),
     }));
     return new Response(JSON.stringify({
@@ -333,6 +350,7 @@ async function handlePodcast(request, ctx) {
         date: it.date,
         description: it.description,
         audio: it.audio,
+        link: it.link,
         ...(it.duration ? { duration: it.duration } : {}),
       })),
     };

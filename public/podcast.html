@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fixed on Jesus Podcast — Center Church Gilbert</title>
-  <meta name="description" content="Fixed on Jesus: conversations beyond Sunday mornings from Center Church in Gilbert, AZ. New episodes every Wednesday — listen on Spotify, Apple Podcasts, and YouTube." />
+  <meta name="description" content="Fixed on Jesus: conversations beyond Sunday mornings from Center Church in Gilbert, AZ — listen on Spotify, Apple Podcasts, and YouTube." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
@@ -12,7 +12,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  <link rel="stylesheet" href="/styles.css?v=15" />
+  <link rel="stylesheet" href="/styles.css?v=16" />
 </head>
 <body>
   <header class="site-header">
@@ -93,7 +93,7 @@
       <div class="container hero-inner">
         <span class="eyebrow on-dark">Podcast</span>
         <h1 class="display-xl">Fixed<br />on Jesus.</h1>
-        <p class="sub">Conversations that go beyond Sunday mornings — interviews with our pastors, leaders, and members, plus answers to your questions. New episodes every Wednesday.</p>
+        <p class="sub">Conversations that go beyond Sunday mornings — interviews with our pastors, leaders, and members, plus answers to your questions.</p>
         <div class="btn-row">
           <a class="btn btn-light" href="https://open.spotify.com/show/4nxWfCcSjKLwOAU4kZsrDy">Spotify</a>
           <a class="btn btn-outline-light" href="https://podcasts.apple.com/us/podcast/fixed-on-jesus-by-center-church-of-gilbert-az/id1702558365">Apple Podcasts</a>
@@ -106,7 +106,7 @@
       <div class="container">
         <span class="eyebrow">Episodes</span>
         <h2 class="display-lg">Browse all episodes</h2>
-        <p class="lede">Every conversation, searchable — new episodes every Wednesday.</p>
+        <p class="lede">Every conversation, searchable.</p>
         <div class="sermon-search" data-sermons-search>
           <input type="search" data-sermons-q placeholder="Search episodes…" aria-label="Search podcast episodes" autocomplete="off" />
           <div class="sermon-filters">
@@ -126,6 +126,7 @@
           </div>
         </div>
         <p class="sermon-count" data-sermons-count hidden></p>
+        <p class="sermon-count" data-sermons-error hidden>Couldn&apos;t load the full archive here — find every episode on <a href="https://open.spotify.com/show/4nxWfCcSjKLwOAU4kZsrDy">Spotify</a>, <a href="https://podcasts.apple.com/us/podcast/fixed-on-jesus-by-center-church-of-gilbert-az/id1702558365">Apple Podcasts</a>, or <a href="https://www.youtube.com/channel/UC4Y4sKsNnC8sJJweg0Fn02w">YouTube</a>.</p>
         <div class="pager" data-sermons-pager hidden>
           <button class="btn btn-outline" data-sermons-prev type="button">← Newer</button>
           <span class="pager-page" data-sermons-page></span>
@@ -235,7 +236,7 @@
     if (!list) return;
 
     function esc(s) {
-      return String(s == null ? "" : "")
+      return String(s == null ? "" : s)
         .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
         .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
     }
@@ -258,9 +259,16 @@
         var ss = (sec < 10 ? "0" + sec : "" + sec);
         return (h > 0 ? h + ":" + mm : m) + ":" + ss;
       }
-      return str;
+      // Anchor also reports clock strings like "00:24:02" — drop the
+      // redundant leading hour so it reads "24:02".
+      return str.replace(/^00:/, "");
     }
     function row(it) {
+      it = it || {};
+      var title = esc(it.title) || "Untitled episode";
+      var heading = it.link
+        ? '<a href="' + esc(it.link) + '" target="_blank" rel="noopener">' + title + "</a>"
+        : title;
       var meta = [fmtDate(it.date), fmtDuration(it.duration)].filter(Boolean).join(" · ");
       var audio = it.audio
         ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
@@ -268,7 +276,7 @@
       var desc = it.description
         ? '<p class="sermon-desc">' + esc(it.description) + "</p>"
         : "";
-      return '<div class="sermon"><div><h3>' + esc(it.title) + '</h3>' +
+      return '<div class="sermon"><div><h3>' + heading + '</h3>' +
         (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
         "</div></div>";
     }
@@ -349,7 +357,12 @@
             searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
           }
         })
-        .catch(function () { /* keep current list on error */ });
+        .catch(function () {
+          // Keep the static list, but tell the reader where else to listen —
+          // some privacy blockers stop the archive request itself.
+          var note = document.querySelector("[data-sermons-error]");
+          if (note) note.hidden = false;
+        });
     }
 
     function resetFilters() {
