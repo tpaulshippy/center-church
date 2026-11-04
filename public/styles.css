@@ -433,6 +433,39 @@ a.chip:hover { background: rgba(0,0,0,0.55); }
 .ministry-photo { height: 210px; width: 100%; object-fit: cover; }
 .leader-photo { width: 96px; height: 96px; border-radius: 50%; object-fit: cover; margin: 0 auto 1.1rem; display: block; }
 
+/* church calendar: month grid on desktop, stacked list on mobile */
+.cal-toolbar { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 1rem 1.5rem; margin-top: 2rem; }
+.cal-month-nav { display: flex; align-items: center; gap: 0.7rem; }
+.cal-month-nav .btn { padding: 0.7rem 1.2rem; font-size: 0.88rem; }
+.cal-title { font-family: var(--font-display); font-weight: 800; font-size: 1.3rem; letter-spacing: -0.01em; min-width: 12rem; text-align: center; }
+.cal-filter { display: grid; gap: 0.35rem; min-width: min(280px, 100%); }
+.cal-filter label { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
+.cal-filter select {
+  width: 100%; font: inherit; font-size: 0.95rem;
+  padding: 0.8rem 1rem; border-radius: 14px;
+  border: 1px solid var(--line); background: #fff; color: var(--ink);
+}
+.cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 1px; margin-top: 1.5rem; background: var(--line); border: 1px solid var(--line); border-radius: 18px; overflow: hidden; }
+.cal-dow { background: var(--ink); color: var(--cream); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; text-align: center; padding: 0.8rem 0.25rem; }
+.cal-day { background: #fff; min-height: 118px; padding: 0.55rem; display: flex; flex-direction: column; gap: 0.35rem; min-width: 0; }
+.cal-day.is-outside { background: var(--cream-2); color: var(--muted); }
+.cal-day.is-outside .cal-day-num { opacity: 0.55; }
+.cal-day-num { display: inline-grid; place-items: center; width: 1.9rem; height: 1.9rem; border-radius: 50%; font-weight: 800; font-size: 0.9rem; }
+.cal-day.is-today .cal-day-num { background: var(--clay); color: #fff; }
+.cal-chip { display: block; text-decoration: none; font-size: 0.78rem; line-height: 1.35; font-weight: 600; color: var(--ink); background: #fbf3e6; border: 1px solid rgba(194, 112, 61, 0.35); border-left: 3px solid var(--clay); border-radius: 8px; padding: 0.3rem 0.45rem; overflow: hidden; }
+.cal-chip:hover { background: #f7e7d2; }
+.cal-chip.is-allday { background: var(--ink); color: var(--cream); border-color: var(--ink); border-left-color: var(--sage); }
+.cal-chip time { display: block; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--clay-dark); }
+.cal-chip.is-allday time { color: #e8a76f; }
+span.cal-chip { cursor: default; }
+.cal-empty { margin-top: 1rem; color: var(--muted); font-weight: 600; }
+/* desktop shows the grid, mobile keeps the stacked list */
+.cal-grid-wrap { display: none; }
+@media (min-width: 901px) {
+  .cal-grid-wrap { display: block; }
+  .sermon-list[data-calendar-list] { display: none; }
+}
+
 /* responsive */
 @media (max-width: 900px) {
   .nav-links, .nav-cta .btn { display: none; }

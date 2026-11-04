@@ -12,7 +12,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  <link rel="stylesheet" href="/styles.css?v=17" />
+  <link rel="stylesheet" href="/styles.css?v=18" />
 </head>
 <body>
   <header class="site-header">
@@ -108,9 +108,25 @@
 
     <section class="section">
       <div class="container">
-        <span class="eyebrow">Upcoming events</span>
-        <h2 class="display-lg">What&apos;s happening</h2>
-        <p class="lede">Pulled live from our church calendar.</p>
+        <span class="eyebrow">Church calendar</span>
+        <h2 class="display-lg">Life together, all month long</h2>
+        <p class="lede">Browse every service, class, and hangout in one place — filter by ministry to find your fit, then tap any event for details.</p>
+        <div class="cal-toolbar">
+          <div class="cal-month-nav" aria-label="Change month">
+            <button class="btn btn-outline" type="button" data-cal-prev aria-label="Previous month">← Prev</button>
+            <div class="cal-title" data-cal-title aria-live="polite"></div>
+            <button class="btn btn-outline" type="button" data-cal-next aria-label="Next month">Next →</button>
+            <button class="btn btn-outline" type="button" data-cal-today>Today</button>
+          </div>
+          <div class="cal-filter">
+            <label for="cal-tag">Ministry</label>
+            <select id="cal-tag" data-calendar-tag aria-label="Filter events by ministry"><option value="">All events</option></select>
+          </div>
+        </div>
+        <div class="cal-grid-wrap">
+          <div class="cal-grid" data-calendar-grid></div>
+          <p class="cal-empty" data-cal-empty hidden>No events this month — check back soon, or try another month or ministry.</p>
+        </div>
         <div class="sermon-list" data-calendar-list>
           <div class="sermon">
             <div><h3>Sunday Service</h3><div class="meta">Sundays · 10:00 AM · 1280 N. Cooper Rd, Gilbert, AZ</div></div>
@@ -220,34 +236,66 @@
 
   <script src="/script.js?v=7"></script>
   <script>
-  // Live church calendar: upcoming events from /api/calendar.
-  // Static fallback list stays for no-JS and on fetch failure.
+  // Live church calendar: month grid on desktop, stacked list on mobile.
+  // Both views render from /api/calendar?month=YYYY-MM&tag=Name.
+  // Static fallback list above stays for no-JS and on fetch failure.
   (function () {
     var list = document.querySelector("[data-calendar-list]");
     if (!list) return;
+    var grid = document.querySelector("[data-calendar-grid]");
+    var titleEl = document.querySelector("[data-cal-title]");
+    var tagSel = document.querySelector("[data-calendar-tag]");
     var countEl = document.querySelector("[data-calendar-count]");
+    var emptyEl = document.querySelector("[data-cal-empty]");
+    var prevBtn = document.querySelector("[data-cal-prev]");
+    var nextBtn = document.querySelector("[data-cal-next]");
+    var todayBtn = document.querySelector("[data-cal-today]");
+    var TZ = "America/Phoenix";
+    var seq = 0;
+    var facetsLoaded = false;
+
+    function phoenixTodayKey() {
+      return new Date().toLocaleDateString("en-CA", { timeZone: TZ });
+    }
+    var state = { month: phoenixTodayKey().slice(0, 7), tag: "" };
 
     function esc(s) {
       return String(s == null ? "" : s)
         .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
         .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
     }
+    function pad(n) { return (n < 10 ? "0" : "") + n; }
     function fmtDate(iso) {
       if (!iso) return "";
       var d = new Date(iso);
       if (isNaN(d)) return "";
-      return d.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric", year: "numeric", timeZone: "America/Phoenix" });
+      return d.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric", year: "numeric", timeZone: TZ });
     }
     function fmtTime(iso) {
       if (!iso) return "";
       var d = new Date(iso);
       if (isNaN(d)) return "";
-      return d.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit", timeZone: "America/Phoenix" });
+      return d.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit", timeZone: TZ });
+    }
+    function phoenixDayKey(iso) {
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-CA", { timeZone: TZ });
+    }
+    function monthTitle(monthStr) {
+      var parts = monthStr.split("-");
+      var d = new Date(Number(parts[0]), Number(parts[1]) - 1, 1);
+      return d.toLocaleDateString("en-US", { month: "long", year: "numeric" });
+    }
+    function shiftMonth(monthStr, delta) {
+      var parts = monthStr.split("-");
+      var d = new Date(Number(parts[0]), Number(parts[1]) - 1 + delta, 1);
+      return d.getFullYear() + "-" + pad(d.getMonth() + 1);
     }
     function card(ev) {
       var when;
       if (ev.all_day_event) {
-        when = fmtDate(ev.starts_at);
+        when = fmtDate(ev.starts_at) + " · All day";
       } else {
         var date = fmtDate(ev.starts_at);
         var start = fmtTime(ev.starts_at);
@@ -260,27 +308,123 @@
         ? '<p class="sermon-desc">' + esc(ev.description) + "</p>"
         : "";
       var link = ev.church_center_url
-        ? '<a class="card-link" href="' + esc(ev.church_center_url) + '">View in Church Center &rarr;</a>'
+        ? '<a class="card-link" href="' + esc(ev.church_center_url) + '" target="_blank" rel="noopener">View in Church Center &rarr;</a>'
         : "";
       return '<div class="sermon"><div><h3>' + esc(ev.name) + "</h3>" +
         (bits ? '<div class="meta">' + esc(bits) + "</div>" : "") + desc + link +
         "</div></div>";
     }
-
-    fetch("/api/calendar")
-      .then(function (res) { if (!res.ok) throw new Error("calendar " + res.status); return res.json(); })
-      .then(function (data) {
-        if (!data || !data.events || !data.events.length) {
-          if (countEl) countEl.hidden = true;
-          return; // keep the static fallback
-        }
-        list.innerHTML = data.events.map(card).join("");
+    function chip(ev) {
+      var label = ev.all_day_event ? "All day" : fmtTime(ev.starts_at);
+      var tip = [fmtDate(ev.starts_at), ev.recurrence_description, ev.location].filter(Boolean).join(" · ");
+      var inner = (label ? "<time>" + esc(label) + "</time>" : "") + "<span>" + esc(ev.name) + "</span>";
+      var cls = "cal-chip" + (ev.all_day_event ? " is-allday" : "");
+      if (ev.church_center_url) {
+        return '<a class="' + cls + '" href="' + esc(ev.church_center_url) + '" target="_blank" rel="noopener" title="' + esc(tip) + '">' + inner + "</a>";
+      }
+      return '<span class="' + cls + '" title="' + esc(tip) + '">' + inner + "</span>";
+    }
+    function renderGrid(events) {
+      if (!grid) return;
+      var parts = state.month.split("-");
+      var y = Number(parts[0]), mi = Number(parts[1]) - 1;
+      var firstDow = new Date(y, mi, 1).getDay();
+      var daysInMonth = new Date(y, mi + 1, 0).getDate();
+      var byDay = {};
+      events.forEach(function (ev) {
+        var k = phoenixDayKey(ev.starts_at);
+        if (!k) return;
+        (byDay[k] = byDay[k] || []).push(ev);
+      });
+      Object.keys(byDay).forEach(function (k) {
+        byDay[k].sort(function (a, b) { return new Date(a.starts_at) - new Date(b.starts_at); });
+      });
+      var todayKey = phoenixTodayKey();
+      var dows = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+      var html = dows.map(function (d) { return '<div class="cal-dow">' + d + "</div>"; }).join("");
+      function cell(dateY, dateM, dateD, outside) {
+        var key = dateY + "-" + pad(dateM + 1) + "-" + pad(dateD);
+        var chips = (byDay[key] || []).map(chip).join("");
+        var cls = "cal-day" + (outside ? " is-outside" : "") + (key === todayKey ? " is-today" : "");
+        return '<div class="' + cls + '"><span class="cal-day-num">' + dateD + "</span>" + chips + "</div>";
+      }
+      var cells = [];
+      for (var q = firstDow - 1; q >= 0; q--) {
+        var pd = new Date(y, mi, -q);
+        cells.push(cell(pd.getFullYear(), pd.getMonth(), pd.getDate(), true));
+      }
+      for (var d = 1; d <= daysInMonth; d++) {
+        cells.push(cell(y, mi, d, false));
+      }
+      var n = 1;
+      while (cells.length % 7 !== 0) {
+        var nd = new Date(y, mi + 1, n++);
+        cells.push(cell(nd.getFullYear(), nd.getMonth(), nd.getDate(), true));
+      }
+      grid.innerHTML = html + cells.join("");
+    }
+    function render(data) {
+      var events = (data && data.events) || [];
+      if (titleEl) titleEl.textContent = monthTitle(state.month);
+      renderGrid(events);
+      if (!events.length) {
+        list.innerHTML = '<p class="lede">No events this month — check back soon, or try another month or ministry.</p>';
+        if (emptyEl) emptyEl.hidden = false;
+        if (countEl) countEl.hidden = true;
+      } else {
+        list.innerHTML = events.map(card).join("");
+        if (emptyEl) emptyEl.hidden = true;
         if (countEl) {
-          countEl.textContent = "Showing " + data.events.length + " upcoming event" + (data.events.length === 1 ? "" : "s");
-          countEl.hidden = false;
+          var total = (data && typeof data.total === "number") ? data.total : events.length;
+          var all = (data && typeof data.total_all === "number") ? data.total_all : total;
+          countEl.textContent = "Showing " + total + " of " + all + " upcoming events";
+          countEl.hidden = total === 0;
         }
-      })
-      .catch(function () { /* keep the static fallback */ });
+      }
+      if (data && data.facets && data.facets.tags && !facetsLoaded && tagSel) {
+        facetsLoaded = true;
+        data.facets.tags.forEach(function (t) {
+          var o = document.createElement("option");
+          o.value = t.name;
+          o.textContent = t.name + " (" + t.count + ")";
+          tagSel.appendChild(o);
+        });
+        if (state.tag) tagSel.value = state.tag;
+      }
+    }
+    function url() {
+      var u = "/api/calendar?month=" + encodeURIComponent(state.month);
+      if (state.tag) u += "&tag=" + encodeURIComponent(state.tag);
+      return u;
+    }
+    function load() {
+      var my = ++seq;
+      if (titleEl) titleEl.textContent = monthTitle(state.month);
+      fetch(url())
+        .then(function (res) { if (!res.ok) throw new Error("calendar " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return;
+          render(data);
+        })
+        .catch(function () { /* keep current view on error */ });
+    }
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      state.month = shiftMonth(state.month, -1);
+      load();
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.month = shiftMonth(state.month, 1);
+      load();
+    });
+    if (todayBtn) todayBtn.addEventListener("click", function () {
+      state.month = phoenixTodayKey().slice(0, 7);
+      load();
+    });
+    if (tagSel) tagSel.addEventListener("change", function () {
+      state.tag = tagSel.value;
+      load();
+    });
+    load();
   })();
   </script>
 </body>
