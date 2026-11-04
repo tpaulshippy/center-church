@@ -12,7 +12,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  <link rel="stylesheet" href="/styles.css?v=18" />
+  <link rel="stylesheet" href="/styles.css?v=19" />
 </head>
 <body>
   <header class="site-header">
@@ -304,8 +304,10 @@
       }
       var bits = [when, ev.recurrence_description].filter(Boolean).join(" · ");
       if (ev.location) bits = [bits, ev.location].filter(Boolean).join(" · ");
+      var longDesc = ev.description && ev.description.length > 220;
       var desc = ev.description
-        ? '<p class="sermon-desc">' + esc(ev.description) + "</p>"
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(ev.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
         : "";
       var link = ev.church_center_url
         ? '<a class="card-link" href="' + esc(ev.church_center_url) + '" target="_blank" rel="noopener">View in Church Center &rarr;</a>'
@@ -423,6 +425,18 @@
     if (tagSel) tagSel.addEventListener("change", function () {
       state.tag = tagSel.value;
       load();
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row). Same pattern as sermons.html.
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var cardEl = btn.closest(".sermon");
+      var p = cardEl ? cardEl.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
     });
     load();
   })();

@@ -454,7 +454,7 @@ async function handleCalendar(request, env, ctx) {
         location: ia.location || "",
         recurrence_description: ia.recurrence_description || "",
         church_center_url: ia.church_center_url || "",
-        description: ea.description || ea.summary || "",
+        description: cleanText(ea.description || ea.summary || ""),
         tags,
       });
     }
