@@ -1,6 +1,7 @@
 const SERMON_FEED_URL = "https://hub.centergilbert.com/media/podcast/30626/feed.rss";
 const PODCAST_FEED_URL = "https://anchor.fm/s/e750e370/podcast/rss";
 const SERMON_API_TTL = 300; // seconds to cache the parsed feed; short so newly published sermons show up within minutes
+const CALENDAR_API_TTL = 300;
 
 // Canonical Bible book names keyed by lowercase lookup (with common aliases).
 const BIBLE_BOOKS = {
@@ -390,6 +391,72 @@ async function handlePodcastSearch(request, ctx) {
   return handleFeedSearch(request, ctx, PODCAST_FEED_URL, "/api/podcast-feed", "Podcast");
 }
 
+async function handleCalendar(request, env, ctx) {
+  try {
+    const id = env.PLANNING_CENTER_CLIENT_ID;
+    const secret = env.PLANNING_CENTER_SECRET;
+    if (!id || !secret) throw new Error("calendar credentials not configured");
+    const cache = caches.default;
+    const key = new Request(new URL("/api/calendar-feed", request.url).toString(), request);
+    const cached = await cache.match(key);
+    if (cached) {
+      const data = await cached.json();
+      if (data && data.events && data.events.length) return new Response(JSON.stringify(data), {
+        headers: {
+          "content-type": "application/json;charset=UTF-8",
+          "cache-control": "public, max-age=60, s-maxage=" + CALENDAR_API_TTL,
+        },
+      });
+    }
+    const apiRes = await fetch("https://api.planningcenteronline.com/calendar/v2/event_instances?filter=future&order=starts_at&per_page=50&include=event", {
+      headers: {
+        "Authorization": "Basic " + btoa(id + ":" + secret),
+        "Accept": "application/json",
+        "user-agent": "CenterChurchSite/1.0 (+https://centergilbert.com)",
+      },
+    });
+    if (!apiRes.ok) throw new Error("calendar status " + apiRes.status);
+    const payload = await apiRes.json();
+    const byId = new Map();
+    for (const inc of (payload && payload.included) || []) {
+      if (inc && inc.type === "Event" && inc.id) byId.set(String(inc.id), inc);
+    }
+    const events = [];
+    for (const inst of (payload && payload.data) || []) {
+      const rel = inst && inst.relationships && inst.relationships.event && inst.relationships.event.data;
+      const event = rel ? byId.get(String(rel.id)) : null;
+      if (!event) continue;
+      if (!event.attributes || event.attributes.visible_in_church_center !== true) continue;
+      const ia = inst.attributes || {};
+      const ea = event.attributes || {};
+      events.push({
+        id: inst.id,
+        name: ea.name || "",
+        starts_at: ia.starts_at || null,
+        ends_at: ia.ends_at || null,
+        all_day_event: ia.all_day_event === true,
+        location: ia.location || "",
+        recurrence_description: ia.recurrence_description || "",
+        church_center_url: ia.church_center_url || "",
+        description: ea.description || ea.summary || "",
+      });
+    }
+    const data = { updated: new Date().toISOString(), total: events.length, events };
+    const res = new Response(JSON.stringify(data), {
+      headers: {
+        "content-type": "application/json;charset=UTF-8",
+        "cache-control": "public, max-age=60, s-maxage=" + CALENDAR_API_TTL,
+      },
+    });
+    const put = cache.put(key, res.clone());
+    if (ctx && ctx.waitUntil) ctx.waitUntil(put);
+    else await put;
+    return res;
+  } catch (err) {
+    return feedError(err, "Calendar");
+  }
+}
+
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
@@ -404,6 +471,9 @@ export default {
     }
     if (url.pathname === "/api/podcast") {
       return handlePodcast(request, ctx);
+    }
+    if (url.pathname === "/api/calendar") {
+      return handleCalendar(request, env, ctx);
     }
     const res = await env.ASSETS.fetch(request);
 
