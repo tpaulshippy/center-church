@@ -341,6 +341,18 @@ a.chip:hover { background: rgba(0,0,0,0.55); }
   min-width: 0;
   overflow-wrap: anywhere;
 }
+/* calendar cards: the generated markup places the See more toggle and the
+   Church Center link adjacent with no whitespace, and both are inline-level,
+   so separation must come from margins. Gap on the toggle keeps one line
+   breathing when they fit (without indenting the link if it wraps); the link
+   is inline-block so it wraps as a unit with a top margin when it doesn't. */
+.sermon-list[data-calendar-list] .sermon-more { margin-right: 0.9rem; }
+.sermon-list[data-calendar-list] .card-link {
+  display: inline-block;
+  margin-top: 0.6rem;
+  padding-top: 0;
+  vertical-align: baseline;
+}
 
 /* current series spotlight */
 .series-spotlight {
