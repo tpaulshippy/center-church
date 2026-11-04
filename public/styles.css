@@ -446,6 +446,7 @@ a.chip:hover { background: rgba(0,0,0,0.55); }
 .cal-toolbar { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 1rem 1.5rem; margin-top: 2rem; }
 .cal-month-nav { display: flex; align-items: center; gap: 0.7rem; flex-wrap: wrap; }
 .cal-month-nav .btn { padding: 0.7rem 1.2rem; font-size: 0.88rem; }
+.cal-nav-chev { display: none; }
 .cal-title { font-family: var(--font-display); font-weight: 800; font-size: 1.3rem; letter-spacing: -0.01em; min-width: 0; flex: 1 1 auto; text-align: center; }
 .cal-filter { display: grid; gap: 0.35rem; min-width: min(280px, 100%); }
 .cal-filter label { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
@@ -487,6 +488,24 @@ span.cal-chip { cursor: default; }
   .split, .grid-2 { grid-template-columns: 1fr; }
   .value-row { grid-template-columns: 1fr; gap: 0.4rem; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
+  /* mobile calendar toolbar: compact chevron control (desktop layout untouched) */
+  .cal-toolbar { flex-direction: column; align-items: stretch; }
+  .cal-month-nav {
+    display: grid; grid-template-columns: auto 1fr auto;
+    gap: 0.15rem 0.6rem; align-items: center; width: 100%;
+  }
+  .cal-month-nav [data-cal-prev] { grid-column: 1; grid-row: 1; }
+  .cal-month-nav .cal-title { grid-column: 2; grid-row: 1; font-size: 1.1rem; }
+  .cal-month-nav [data-cal-next] { grid-column: 3; grid-row: 1; }
+  .cal-month-nav [data-cal-prev],
+  .cal-month-nav [data-cal-next] { padding: 0.5rem 0; min-width: 2.75rem; }
+  .cal-month-nav .cal-nav-text { display: none; }
+  .cal-month-nav .cal-nav-chev { display: inline; font-size: 1.5rem; line-height: 1; font-weight: 400; }
+  .cal-month-nav [data-cal-today] {
+    grid-column: 1 / -1; grid-row: 2; justify-self: center;
+    background: none; border: none; padding: 0.2rem 0.6rem;
+    color: var(--clay-dark); font-size: 0.9rem;
+  }
 }
 @media (max-width: 600px) {
   .grid-3, .leader-grid, .quotes, .info-grid, .steps { grid-template-columns: 1fr; }
