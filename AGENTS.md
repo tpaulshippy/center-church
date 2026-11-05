@@ -30,31 +30,17 @@ HTTP Basic auth (`CLIENT_ID` as username, secret as password).
   Only publish events whose Event has `visible_in_church_center === true`.
   Real tag vocabulary: All Church Events, Children/Family Events,
   Men's Events, Women's Events, Youth Events, Young Adults Events.
-- Publishing Pages: reads + creates work via the public API, but
-  update/delete return 403 — PCO has no public Pages write API
-  (see planningcenter/developers#1480). To edit a page's content you must
-  either use the block-editor UI or replay the editor's internal API
-  (see below).
-
-## Editing a Publishing page via the editor's internal API
-
-The block editor saves through `https://publishing.planningcenteronline.com/~api/...`,
-authenticated with the browser session cookie + CSRF token (NOT the PAT):
-
-1. In the browser, open devtools Network tab, make an edit, and copy the
-   save request as curl. You need the `planning_center_session` cookie,
-   `x-csrf-token`, and `x-pco-api-version: 2018-08-01` headers.
-2. `GET /~api/publishing/v2/pages/<id>?include=draft_page_restrictions`
-   verifies the session works.
-3. Saves are `POST` to `/~api/publishing/v2/pages?...` with the full page
-   payload (blocks with ids, slug, title). Each save creates a NEW draft
-   row — it never updates in place. The UI collapses duplicates by slug
-   (shows latest), but rows pile up; delete spares via the UI.
-4. `PUT`/`PATCH`/`DELETE` do not work on pages through any API with this
-   token (403), session cookie included. Only the collection-`POST`
-   (create new version) path works.
-5. Sessions/cookies expire — when calls start 401/403ing, capture a fresh
-   curl. Treat the cookie like a password: never commit it.
+- Publishing Pages: reads + creates work via the public API (verified
+  2026-11-05: `POST /publishing/v2/pages` returns 201). `PUT`/`PATCH`/`DELETE`
+  return 403 on both `api.` and `~api` hosts — to change a page, `POST` a new
+  version with the same slug (each save creates a NEW draft row; the UI shows
+  the latest per slug, so delete spare rows via the UI).
+  (see planningcenter/developers#1480).
+- The `~api` host (`https://publishing.planningcenteronline.com/~api/...`)
+  accepts the same PAT over HTTP Basic (verified: GET 200, POST 201) — no
+  browser session cookie or CSRF token needed for automation. The block-editor
+  UI itself uses cookie + CSRF, but API scripts should just use the PAT
+  against either host.
 
 ## Worker conventions (see worker.js)
 
