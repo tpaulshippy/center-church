@@ -11,17 +11,22 @@ const SITE = "https://centergilbert.com";
 
 const EXACT = new Map([
   ["/", `${CHURCH_CENTER}/home`],
-  ["/give", `${CHURCH_CENTER}/giving`],
+  ["/give", `${CHURCH_CENTER}/pages/give`],
   ["/calendar", `${CHURCH_CENTER}/calendar`],
-  ["/sign-ups", `${CHURCH_CENTER}/registrations/events`],
-  ["/choose-a-small-group", `${CHURCH_CENTER}/registrations/events`],
-  ["/im-new", `${SITE}/visit/`],
-  ["/ministries", `${SITE}/get-connected/`],
-  ["/men-amp-women", `${SITE}/get-connected/`],
-  ["/children", `${SITE}/get-connected/`],
-  ["/youth", `${SITE}/get-connected/`],
-  ["/young-adult", `${SITE}/get-connected/`],
-  ["/mens-conference", `${CHURCH_CENTER}/calendar`],
+  ["/sign-ups", `${CHURCH_CENTER}/registrations`],
+  ["/announcements", `${CHURCH_CENTER}/announcements`],
+  ["/choose-a-small-group", `${CHURCH_CENTER}/pages/small-groups`],
+  ["/im-new", `${CHURCH_CENTER}/pages/im-new`],
+  ["/membership-class", `${CHURCH_CENTER}/pages/membership-class`],
+  ["/ministries", `${CHURCH_CENTER}/pages/ministries`],
+  ["/men-amp-women", `${CHURCH_CENTER}/pages/men-women`],
+  ["/children", `${CHURCH_CENTER}/pages/children`],
+  ["/youth", `${CHURCH_CENTER}/pages/youth`],
+  ["/young-adult", `${CHURCH_CENTER}/pages/college-group`],
+  ["/mens-conference", `${CHURCH_CENTER}/pages/mens-conference`],
+  // Closest available: hub hosts the 2026 plan, Church Center has the
+  // published 2025 plan page (published pages are never edited/duplicated).
+  ["/2023-bible-reading-plan-prayer-focus-1", `${CHURCH_CENTER}/pages/2025-prayer-and-bible-reading-plan`],
 ]);
 
 function normalizePath(pathname) {
