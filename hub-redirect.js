@@ -24,9 +24,7 @@ const EXACT = new Map([
   ["/youth", `${CHURCH_CENTER}/pages/youth`],
   ["/young-adult", `${CHURCH_CENTER}/pages/college-group`],
   ["/mens-conference", `${CHURCH_CENTER}/pages/mens-conference`],
-  // Closest available: hub hosts the 2026 plan, Church Center has the
-  // published 2025 plan page (published pages are never edited/duplicated).
-  ["/2023-bible-reading-plan-prayer-focus-1", `${CHURCH_CENTER}/pages/2025-prayer-and-bible-reading-plan`],
+  ["/2023-bible-reading-plan-prayer-focus-1", `${CHURCH_CENTER}/pages/2026-bible-reading-plan-prayer-focus`],
 ]);
 
 function normalizePath(pathname) {
