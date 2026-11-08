@@ -4,7 +4,7 @@
 
 // Replace after the Spotify import with the real show RSS URL.
 // Can also be supplied as a Worker secret/env var SPOTIFY_RSS_URL (env wins).
-const SPOTIFY_RSS_URL_FALLBACK = "https://anchor.fm/s/REPLACE_ME/podcast/rss";
+const SPOTIFY_RSS_URL_FALLBACK = "https://anchor.fm/s/119cbef70/podcast/rss";
 
 const CHURCH_CENTER = "https://centerchurchgilbert.churchcenter.com";
 const SITE = "https://centergilbert.com";
