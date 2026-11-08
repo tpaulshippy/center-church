@@ -35,6 +35,9 @@ HTTP Basic auth (`CLIENT_ID` as username, secret as password).
   return 403 on both `api.` and `~api` hosts — to change a page, `POST` a new
   version with the same slug (each save creates a NEW draft row; the UI shows
   the latest per slug, so delete spare rows via the UI).
+  Publishing a draft works via the API too (verified 2026-11-08):
+  `POST /publishing/v2/pages/{id}/publish` with the PAT returns 201 and the
+  draft row is superseded by the published version.
   (see planningcenter/developers#1480).
 - The `~api` host (`https://publishing.planningcenteronline.com/~api/...`)
   accepts the same PAT over HTTP Basic (verified: GET 200, POST 201) — no
