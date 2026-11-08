@@ -4,6 +4,9 @@
 // add one line here: "guid-url": "Speaker Name",
 // (Find the guid in the Spotify RSS <guid> for the episode.)
 export const SPEAKER_MAP = {
+  // Manually re-uploaded to Spotify post-import (new Spotify GUIDs, no Hub URL).
+  "3f955c89-554b-49d8-ad2f-70bd95322810": "Rich Richardson",
+  "38bd815f-ee32-402b-b502-47163dea7db6": "Rich Richardson",
   "https://hub.centergilbert.com/media/1-john-1-1-4-4": "Frank Lundy",
   "https://hub.centergilbert.com/media/2-corinthians-11-16-33-1": "Rich Richardson",
   "https://hub.centergilbert.com/media/2-corinthians-13-1-10-1": "Frank Lundy",
