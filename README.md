@@ -43,9 +43,8 @@ are untouched.
 
 To activate (only after DNS for hub.centergilbert.com is owned):
 
-1. Replace the `SPOTIFY_RSS_URL` placeholder in `hub-redirect.js` (currently
-   `https://anchor.fm/s/REPLACE_ME/podcast/rss`) with the real show RSS URL
-   after the Spotify import — or set a `SPOTIFY_RSS_URL` Worker secret/env var
+1. The `SPOTIFY_RSS_URL` in `hub-redirect.js` is now the live feed
+   (`https://anchor.fm/s/119cbef70/podcast/rss`) — or set a `SPOTIFY_RSS_URL` Worker secret/env var
    (env wins over the const).
 2. Add route `hub.centergilbert.com/*` in the Cloudflare dashboard or wrangler
    config, pointing at a Worker running `hub-redirect.js`.
