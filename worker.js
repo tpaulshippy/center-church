@@ -1,4 +1,4 @@
-import { SPEAKER_MAP } from "./speakers.js";
+import { SPEAKER_MAP, SPEAKER_NAMES } from "./speakers.js";
 
 const SERMON_FEED_URL = "https://hub.centergilbert.com/media/podcast/30626/feed.rss";
 const PODCAST_FEED_URL = "https://anchor.fm/s/e750e370/podcast/rss";
@@ -97,19 +97,34 @@ function parseFeed(xml) {
     };
     const enclosure = directAudio((b.match(/<enclosure[^>]*url="([^"]+)"/i) || [])[1] || "");
     const guid = get(/<guid[^>]*>([\s\S]*?)<\/guid>/i);
-    // Nucleus carried per-episode <itunes:author>; Spotify/Anchor does not.
-    // Fall back to the backfilled map (keyed by GUID, preserved by the import).
-    const speaker = get(/<itunes:author>([\s\S]*?)<\/itunes:author>/i) || (SPEAKER_MAP[guid] || "");
     const image = (b.match(/<itunes:image[^>]*href="([^"]+)"/i) || [])[1] || "";
     const duration = get(/<itunes:duration>([\s\S]*?)<\/itunes:duration>/i);
     const rawDesc = (b.match(/<(?:itunes:summary|description)>([\s\S]*?)<\/(?:itunes:summary|description)>/i) || [])[1] || "";
+    // Speaker convention for Spotify episodes: start the description with
+    // "Speaker: Full Name" on its own line (see PUBLISHING.md). The line is
+    // stripped from the displayed description below.
+    const richDesc = cleanRichText(rawDesc);
+    const tagMatch = richDesc.match(/^\s*Speaker\s*:\s*(.+?)\s*$/im);
+    const tagSpeaker = tagMatch ? tagMatch[1].split("|")[0].replace(/\s+/g, " ").trim() : "";
+    const flatDesc = cleanText(rawDesc);
+    const proseSpeaker =
+      SPEAKER_NAMES.find((n) => new RegExp(`\\b${n.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`, "i").test(flatDesc)) || "";
+    const shownDesc = richDesc
+      .split("\n")
+      .filter((line) => !/^\s*Speaker\s*:/i.test(line))
+      .join("\n")
+      .trim();
     const pubRaw = get(/<pubDate>([\s\S]*?)<\/pubDate>/i);
     const time = Date.parse(pubRaw);
+    // Nucleus carried per-episode <itunes:author>; Spotify/Anchor does not.
+    // Chain: feed tag -> "Speaker:" line -> known name in prose -> backfill map.
+    const speaker =
+      get(/<itunes:author>([\s\S]*?)<\/itunes:author>/i) || tagSpeaker || proseSpeaker || SPEAKER_MAP[guid] || "";
     items.push({
       title: get(/<title>([\s\S]*?)<\/title>/i),
       speaker,
       guid,
-      description: cleanRichText(rawDesc),
+      description: shownDesc,
       link: get(/<link>([\s\S]*?)<\/link>/i),
       audio: enclosure.trim(),
       image: image.trim(),

@@ -3,6 +3,31 @@
 // Hub media URL, preserved through the import). For new Spotify-only episodes,
 // add one line here: "guid-url": "Speaker Name",
 // (Find the guid in the Spotify RSS <guid> for the episode.)
+// Known speaker names, used to spot the speaker when a Spotify episode
+// description mentions them in prose (e.g. "Jon Payne preaches on ...").
+// If a brand-new speaker appears, add their name here (one line).
+export const SPEAKER_NAMES = [
+  "Dave Taylor",
+  "Eric Turbedsky",
+  "Frank Lundy",
+  "Jeff Palen",
+  "Jeff Purswell",
+  "Jim Donohue",
+  "Jim Hubek",
+  "Joel Pietila",
+  "Jon Payne",
+  "Joselo Mercado",
+  "Mark Prater",
+  "Rich Richardson",
+  "Ricky Alcantar",
+  "Rodrigo Fournier",
+  "Ron Boomsma",
+  "Sean Myers",
+  "Steve Tong",
+  "Trey Richardson",
+  "Zach Boomsma",
+];
+
 export const SPEAKER_MAP = {
   // Manually re-uploaded to Spotify post-import (new Spotify GUIDs, no Hub URL).
   "3f955c89-554b-49d8-ad2f-70bd95322810": "Rich Richardson",
