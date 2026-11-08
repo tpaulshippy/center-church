@@ -1,3 +1,5 @@
+import { SPEAKER_MAP } from "./speakers.js";
+
 const SERMON_FEED_URL = "https://hub.centergilbert.com/media/podcast/30626/feed.rss";
 const PODCAST_FEED_URL = "https://anchor.fm/s/e750e370/podcast/rss";
 const SERMON_API_TTL = 300; // seconds to cache the parsed feed; short so newly published sermons show up within minutes
@@ -94,6 +96,10 @@ function parseFeed(xml) {
       return m ? cleanText(m[1]) : "";
     };
     const enclosure = directAudio((b.match(/<enclosure[^>]*url="([^"]+)"/i) || [])[1] || "");
+    const guid = get(/<guid[^>]*>([\s\S]*?)<\/guid>/i);
+    // Nucleus carried per-episode <itunes:author>; Spotify/Anchor does not.
+    // Fall back to the backfilled map (keyed by GUID, preserved by the import).
+    const speaker = get(/<itunes:author>([\s\S]*?)<\/itunes:author>/i) || (SPEAKER_MAP[guid] || "");
     const image = (b.match(/<itunes:image[^>]*href="([^"]+)"/i) || [])[1] || "";
     const duration = get(/<itunes:duration>([\s\S]*?)<\/itunes:duration>/i);
     const rawDesc = (b.match(/<(?:itunes:summary|description)>([\s\S]*?)<\/(?:itunes:summary|description)>/i) || [])[1] || "";
@@ -101,7 +107,8 @@ function parseFeed(xml) {
     const time = Date.parse(pubRaw);
     items.push({
       title: get(/<title>([\s\S]*?)<\/title>/i),
-      speaker: get(/<itunes:author>([\s\S]*?)<\/itunes:author>/i),
+      speaker,
+      guid,
       description: cleanRichText(rawDesc),
       link: get(/<link>([\s\S]*?)<\/link>/i),
       audio: enclosure.trim(),
