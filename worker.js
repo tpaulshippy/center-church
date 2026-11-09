@@ -524,6 +524,19 @@ export default {
     if (url.pathname === "/api/calendar") {
       return handleCalendar(request, env, ctx);
     }
+    // Short link for staff: centergilbert.com/add-sermon -> Spotify for Creators episodes.
+    if (url.pathname === "/add-sermon" || url.pathname === "/add-sermon/") {
+      return Response.redirect(
+        "https://creators.spotify.com/pod/show/4bPRAwHcRw08NO9uQWWtty/episodes",
+        302
+      );
+    }
+    // Clean URL for the internal upload guide (serves public/add-sermon-guide.html).
+    if (url.pathname === "/add-sermon-guide" || url.pathname === "/add-sermon-guide/") {
+      return env.ASSETS.fetch(
+        new Request(new URL("/add-sermon-guide.html", request.url), request)
+      );
+    }
     const res = await env.ASSETS.fetch(request);
 
     // Serve our custom 404 page for unknown paths (but leave real assets alone).
