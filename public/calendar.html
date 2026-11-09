@@ -117,8 +117,10 @@
             <button class="btn btn-outline" type="button" data-cal-today>Today</button>
           </div>
           <div class="cal-filter">
-            <label for="cal-tag">Ministry</label>
-            <select id="cal-tag" data-calendar-tag aria-label="Filter events by ministry"><option value="">All events</option></select>
+            <span class="cal-filter-label" id="cal-tag-label">Ministry</span>
+            <div class="cal-pills" data-calendar-pills role="group" aria-labelledby="cal-tag-label">
+              <button class="cal-pill is-active" type="button" data-tag="" aria-pressed="true">All</button>
+            </div>
           </div>
         </div>
         <div class="cal-grid-wrap">
@@ -234,7 +236,7 @@
 
   <script src="/script.js?v=7"></script>
   <script>
-  // Live church calendar: month grid on desktop, stacked list on mobile.
+  // Live church calendar: month grid on desktop, grouped agenda on mobile.
   // Both views render from /api/calendar?month=YYYY-MM&tag=Name.
   // Static fallback list above stays for no-JS and on fetch failure.
   (function () {
@@ -242,7 +244,7 @@
     if (!list) return;
     var grid = document.querySelector("[data-calendar-grid]");
     var titleEl = document.querySelector("[data-cal-title]");
-    var tagSel = document.querySelector("[data-calendar-tag]");
+    var pillsEl = document.querySelector("[data-calendar-pills]");
     var countEl = document.querySelector("[data-calendar-count]");
     var emptyEl = document.querySelector("[data-cal-empty]");
     var prevBtn = document.querySelector("[data-cal-prev]");
@@ -290,29 +292,94 @@
       var d = new Date(Number(parts[0]), Number(parts[1]) - 1 + delta, 1);
       return d.getFullYear() + "-" + pad(d.getMonth() + 1);
     }
-    function card(ev) {
+    function shortTime(iso) {
+      // Compact agenda time: "10:00 AM" -> "10:00a", "9 PM" stays short.
+      var t = fmtTime(iso);
+      if (!t) return "";
+      return t.replace(" AM", "a").replace(" PM", "p").replace(" ", "");
+    }
+    function ministryTag(ev) {
+      if (ev.tags && ev.tags.length) return ev.tags[0];
+      return "";
+    }
+    // PCO recurrence_description sometimes restates this instance
+    // ("Sunday, November 8, 2026 from 6:00pm to 8:00pm") instead of a rule
+    // ("1st Tuesdays"). Drop it when it adds nothing to the when-line;
+    // genuine rules ("Weekly", "Every Sunday") never look like datetimes.
+    function dupRecurrence(recur, when) {
+      if (!recur || !when) return false;
+      if (!/(19|20)\d{2}|\d\s*[ap]\.?m\.?/i.test(recur)) return false;
+      function words(s) {
+        var abbrev = { sun: "sunday", mon: "monday", tue: "tuesday", tues: "tuesday", wed: "wednesday", thu: "thursday", thur: "thursday", thurs: "thursday", fri: "friday", sat: "saturday", jan: "january", feb: "february", mar: "march", apr: "april", jun: "june", jul: "july", aug: "august", sep: "september", sept: "september", oct: "october", nov: "november", dec: "december" };
+        return String(s).toLowerCase()
+          .replace(/(\d):(\d)/g, "$1$2")
+          .replace(/(\d)(am|pm)\b/g, "$1 $2")
+          .replace(/[^a-z0-9 ]/g, " ")
+          .split(/\s+/).filter(Boolean)
+          .map(function (t) { return abbrev[t] || t; });
+      }
+      var inWhen = {};
+      words(when).forEach(function (t) { inWhen[t] = true; });
+      var filler = { from: 1, to: 1, on: 1, at: 1, the: 1, and: 1, each: 1, every: 1 };
+      var rw = words(recur).filter(function (t) { return !filler[t]; });
+      return rw.length > 0 && rw.every(function (t) { return inWhen[t]; });
+    }
+    // Mobile agenda row: collapsed shows time + title + location/ministry;
+    // expanded adds full when-line, recurrence, description, and link.
+    // The <details> row itself is the toggle — no See more button needed.
+    function row(ev) {
+      var time = ev.all_day_event ? "ALL DAY" : (shortTime(ev.starts_at) || "");
+      var sub = [ev.location, ministryTag(ev)].filter(Boolean).join(" · ");
+      var body = "";
       var when;
       if (ev.all_day_event) {
         when = fmtDate(ev.starts_at) + " · All day";
       } else {
-        var date = fmtDate(ev.starts_at);
         var start = fmtTime(ev.starts_at);
         var end = fmtTime(ev.ends_at);
-        when = [date, start && end ? start + " – " + end : start].filter(Boolean).join(" · ");
+        when = [fmtDate(ev.starts_at), start && end ? start + " – " + end : start].filter(Boolean).join(" · ");
       }
-      var bits = [when, ev.recurrence_description].filter(Boolean).join(" · ");
-      if (ev.location) bits = [bits, ev.location].filter(Boolean).join(" · ");
-      var longDesc = ev.description && ev.description.length > 220;
-      var desc = ev.description
-        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(ev.description) + "</p>" +
-          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
-        : "";
-      var link = ev.church_center_url
-        ? '<a class="card-link" href="' + esc(ev.church_center_url) + '" target="_blank" rel="noopener">View in Church Center &rarr;</a>'
-        : "";
-      return '<div class="sermon"><div><h3>' + esc(ev.name) + "</h3>" +
-        (bits ? '<div class="meta">' + esc(bits) + "</div>" : "") + desc + link +
-        "</div></div>";
+      var detailBits = [when, !dupRecurrence(ev.recurrence_description, when) && ev.recurrence_description].filter(Boolean).join(" · ");
+      if (detailBits) body += '<div class="meta">' + esc(detailBits) + "</div>";
+      if (ev.description) body += '<p class="cal-row-desc">' + esc(ev.description) + "</p>";
+      if (ev.church_center_url) {
+        body += '<a class="card-link" href="' + esc(ev.church_center_url) + '" target="_blank" rel="noopener">View in Church Center &rarr;</a>';
+      }
+      return '<details class="cal-row"><summary class="cal-row-sum">' +
+        '<span class="cal-row-time">' + esc(time) + "</span>" +
+        '<span class="cal-row-main"><span class="cal-row-title">' + esc(ev.name) + "</span>" +
+        (sub ? '<span class="cal-row-sub">' + esc(sub) + "</span>" : "") + "</span>" +
+        '<span class="cal-row-chev" aria-hidden="true">›</span></summary>' +
+        '<div class="cal-row-body">' + body + "</div></details>";
+    }
+    function dayHead(key, count) {
+      var parts = key.split("-");
+      // Noon UTC keeps the Phoenix calendar day stable in any viewer timezone.
+      var d = new Date(Date.UTC(Number(parts[0]), Number(parts[1]) - 1, Number(parts[2]), 12));
+      var label = d.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric", timeZone: TZ });
+      label = label.replace(/,/g, "").toUpperCase();
+      return label + " · " + (count === 1 ? "1 event" : count + " events");
+    }
+    // Group by Phoenix calendar day, days in order, events by start time.
+    function renderList(events) {
+      var byDay = {};
+      var undated = [];
+      events.forEach(function (ev) {
+        var k = phoenixDayKey(ev.starts_at);
+        if (!k) { undated.push(ev); return; }
+        (byDay[k] = byDay[k] || []).push(ev);
+      });
+      var keys = Object.keys(byDay).sort();
+      keys.forEach(function (k) {
+        byDay[k].sort(function (a, b) { return new Date(a.starts_at) - new Date(b.starts_at); });
+      });
+      var html = keys.map(function (k) {
+        var evs = byDay[k];
+        return '<section class="cal-day-group"><h3 class="cal-day-head">' + esc(dayHead(k, evs.length)) + "</h3>" +
+          evs.map(row).join("") + "</section>";
+      }).join("");
+      if (undated.length) html += undated.map(row).join("");
+      return html;
     }
     function chip(ev) {
       var label = ev.all_day_event ? "All day" : fmtTime(ev.starts_at);
@@ -363,16 +430,34 @@
       }
       grid.innerHTML = html + cells.join("");
     }
+    function syncPills() {
+      if (!pillsEl) return;
+      var btns = pillsEl.querySelectorAll("[data-tag]");
+      btns.forEach(function (b) {
+        var on = (b.getAttribute("data-tag") || "") === state.tag;
+        b.classList.toggle("is-active", on);
+        b.setAttribute("aria-pressed", on ? "true" : "false");
+      });
+    }
+    // Feed is future-only: no going back before the current month.
+    function syncNav() {
+      if (!prevBtn) return;
+      var current = phoenixTodayKey().slice(0, 7);
+      var atFloor = state.month <= current;
+      prevBtn.disabled = atFloor;
+      prevBtn.style.visibility = atFloor ? "hidden" : "";
+    }
     function render(data) {
       var events = (data && data.events) || [];
       if (titleEl) titleEl.textContent = monthTitle(state.month);
       renderGrid(events);
+      syncNav();
       if (!events.length) {
         list.innerHTML = '<p class="lede">No events this month — check back soon, or try another month or ministry.</p>';
         if (emptyEl) emptyEl.hidden = false;
         if (countEl) countEl.hidden = true;
       } else {
-        list.innerHTML = events.map(card).join("");
+        list.innerHTML = renderList(events);
         if (emptyEl) emptyEl.hidden = true;
         if (countEl) {
           var total = (data && typeof data.total === "number") ? data.total : events.length;
@@ -381,15 +466,18 @@
           countEl.hidden = total === 0;
         }
       }
-      if (data && data.facets && data.facets.tags && !facetsLoaded && tagSel) {
+      if (data && data.facets && data.facets.tags && !facetsLoaded && pillsEl) {
         facetsLoaded = true;
         data.facets.tags.forEach(function (t) {
-          var o = document.createElement("option");
-          o.value = t.name;
-          o.textContent = t.name + " (" + t.count + ")";
-          tagSel.appendChild(o);
+          var b = document.createElement("button");
+          b.type = "button";
+          b.className = "cal-pill";
+          b.setAttribute("data-tag", t.name);
+          b.textContent = t.name;
+          b.title = t.name + " (" + t.count + ")";
+          pillsEl.appendChild(b);
         });
-        if (state.tag) tagSel.value = state.tag;
+        syncPills();
       }
     }
     function url() {
@@ -400,6 +488,7 @@
     function load() {
       var my = ++seq;
       if (titleEl) titleEl.textContent = monthTitle(state.month);
+      syncNav();
       fetch(url())
         .then(function (res) { if (!res.ok) throw new Error("calendar " + res.status); return res.json(); })
         .then(function (data) {
@@ -420,21 +509,14 @@
       state.month = phoenixTodayKey().slice(0, 7);
       load();
     });
-    if (tagSel) tagSel.addEventListener("change", function () {
-      state.tag = tagSel.value;
+    if (pillsEl) pillsEl.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-tag]") : null;
+      if (!btn || !pillsEl.contains(btn)) return;
+      var next = btn.getAttribute("data-tag") || "";
+      if (next === state.tag) return;
+      state.tag = next;
+      syncPills();
       load();
-    });
-    // "See more / See less" for long descriptions (event delegation so it
-    // works for every dynamically rendered row). Same pattern as sermons.html.
-    if (list) list.addEventListener("click", function (e) {
-      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
-      if (!btn || !list.contains(btn)) return;
-      var cardEl = btn.closest(".sermon");
-      var p = cardEl ? cardEl.querySelector("[data-desc]") : null;
-      if (!p) return;
-      var nowClamped = p.classList.toggle("clamped");
-      btn.textContent = nowClamped ? "See more" : "See less";
-      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
     });
     load();
   })();
