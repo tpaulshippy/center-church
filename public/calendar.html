@@ -132,9 +132,6 @@
             <div><h3>Sunday Service</h3><div class="meta">Sundays · 10:00 AM · 1280 N. Cooper Rd, Gilbert, AZ</div></div>
           </div>
           <div class="sermon">
-            <div><h3>Shippy Small Group</h3><div class="meta">1st Tuesdays · See Church Center for details</div></div>
-          </div>
-          <div class="sermon">
             <div><h3>Fixed on Jesus Podcast</h3><div class="meta">Weekly · New episodes every week</div></div>
           </div>
         </div>
@@ -324,7 +321,18 @@
       var rw = words(recur).filter(function (t) { return !filler[t]; });
       return rw.length > 0 && rw.every(function (t) { return inWhen[t]; });
     }
-    // Mobile agenda row: collapsed shows time + title + location/ministry;
+    // Skeleton rows shown while loading: JS swaps the static no-JS
+    // fallback for these immediately, so real event names never flash
+    // as fake content. No-JS visitors keep the static fallback.
+    var fallbackHTML = list.innerHTML;
+    var hasLoaded = false;
+    function skeleton() {
+      var row = '<div class="cal-skel-row" aria-hidden="true">' +
+        '<span class="cal-skel-time"></span>' +
+        '<span class="cal-skel-main"><span class="cal-skel-bar w70"></span>' +
+        '<span class="cal-skel-bar w45"></span></span></div>';
+      return '<div class="cal-skel">' + row + row + row + row + "</div>";
+    }
     // expanded adds full when-line, recurrence, description, and link.
     // The <details> row itself is the toggle — no See more button needed.
     function row(ev) {
@@ -449,6 +457,7 @@
     }
     function render(data) {
       var events = (data && data.events) || [];
+      hasLoaded = true;
       if (titleEl) titleEl.textContent = monthTitle(state.month);
       renderGrid(events);
       syncNav();
@@ -489,13 +498,16 @@
       var my = ++seq;
       if (titleEl) titleEl.textContent = monthTitle(state.month);
       syncNav();
+      if (!hasLoaded) list.innerHTML = skeleton();
       fetch(url())
         .then(function (res) { if (!res.ok) throw new Error("calendar " + res.status); return res.json(); })
         .then(function (data) {
           if (my !== seq) return;
           render(data);
         })
-        .catch(function () { /* keep current view on error */ });
+        .catch(function () {
+          if (!hasLoaded) list.innerHTML = fallbackHTML;
+        });
     }
     if (prevBtn) prevBtn.addEventListener("click", function () {
       state.month = shiftMonth(state.month, -1);
