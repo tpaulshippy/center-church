@@ -40,9 +40,20 @@ function decodeEntities(s) {
     .replace(/&gt;/g, ">")
     .replace(/&quot;/g, '"')
     .replace(/&#39;|&apos;/g, "'")
+    .replace(/&([a-zA-Z]+);/g, (m, n) => NAMED_ENTITIES[n.toLowerCase()] ?? m)
     .replace(/&#(\d+);/g, (_, n) => String.fromCharCode(parseInt(n, 10)))
     .replace(/&#x([0-9a-fA-F]+);/g, (_, n) => String.fromCharCode(parseInt(n, 16)));
 }
+
+// Common named entities PCO descriptions actually contain (&nbsp; is the
+// usual one). Unknown entities pass through untouched.
+const NAMED_ENTITIES = {
+  nbsp: "\u00a0", hellip: "…", mdash: "—", ndash: "–",
+  lsquo: "‘", rsquo: "’", ldquo: "“", rdquo: "”",
+  bull: "•", middot: "·", laquo: "«", raquo: "»",
+  copy: "©", reg: "®", trade: "™", deg: "°",
+  times: "×", divide: "÷", plusmn: "±",
+};
 
 function cleanText(s) {
   return decodeEntities(s || "")
