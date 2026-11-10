@@ -37,8 +37,9 @@ publishes to https://centergilbert.com (Worker Custom Domains attached in
 the church Cloudflare account dashboard).
 
 Opening or updating a PR against `main` triggers the staging workflow,
-which deploys `env.staging` using the `CLOUDFLARE_STAGING_API_TOKEN` repo
-secret (personal-account token) and publishes to
+which deploys `env.staging` (same `center-church` worker name, but into the
+personal account) using the `CLOUDFLARE_STAGING_API_TOKEN` repo secret
+(personal-account token) and publishes to
 https://centergilbert.tpaulshippy.com via the
 `centergilbert.tpaulshippy.com/*` worker route in the personal account.
 

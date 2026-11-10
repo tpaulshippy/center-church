@@ -13,10 +13,13 @@
   "routes": [],
   // Staging previews (personal Cloudflare account): every PR to main deploys
   // here via .github/workflows/staging.yml, served on
-  // centergilbert.tpaulshippy.com. Never point this env at the church account.
+  // centergilbert.tpaulshippy.com. The worker name is inherited
+  // ("center-church") — same name as prod, but a different account, so
+  // they never collide. Never add this route to the default env: the
+  // tpaulshippy.com zone does not exist in the church account, so the
+  // prod deploy would fail.
   "env": {
     "staging": {
-      "name": "center-church-staging",
       "routes": [
         { "pattern": "centergilbert.tpaulshippy.com/*", "zone_name": "tpaulshippy.com" }
       ]
