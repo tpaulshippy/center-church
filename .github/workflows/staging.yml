@@ -1,0 +1,41 @@
+name: Staging preview
+
+# Every PR against main deploys to the staging worker in the PERSONAL
+# Cloudflare account, served at https://centergilbert.tpaulshippy.com.
+# Single shared slot: concurrent PRs race, last deploy wins.
+# Requires repo secret CLOUDFLARE_STAGING_API_TOKEN (personal-account token).
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches: [main]
+
+concurrency:
+  group: staging
+  cancel-in-progress: true
+
+jobs:
+  deploy-staging:
+    # Forked PRs can't read secrets; skip instead of failing.
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install Wrangler
+        run: npm install -g wrangler@4
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Deploy to staging
+        run: wrangler deploy --env staging
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_STAGING_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: 42454937997b510315154707ff81475e

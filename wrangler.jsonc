@@ -10,5 +10,16 @@
   },
   // Live domains (apex + www) are attached as Worker Custom Domains in the
   // church Cloudflare account dashboard, so no routes block is needed here.
-  "routes": []
+  "routes": [],
+  // Staging previews (personal Cloudflare account): every PR to main deploys
+  // here via .github/workflows/staging.yml, served on
+  // centergilbert.tpaulshippy.com. Never point this env at the church account.
+  "env": {
+    "staging": {
+      "name": "center-church-staging",
+      "routes": [
+        { "pattern": "centergilbert.tpaulshippy.com/*", "zone_name": "tpaulshippy.com" }
+      ]
+    }
+  }
 }
