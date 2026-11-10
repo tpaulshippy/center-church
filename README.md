@@ -3,8 +3,9 @@
 Redesigned website for **Center Church** (centergilbert.com), Gilbert, AZ.
 
 - **Live:** https://centergilbert.com
-- **Staging:** https://centergilbert.tpaulshippy.com (every PR to `main`
-  auto-deploys here — single shared slot, last deploy wins)
+- **Staging:** https://centergilbert.tpaulshippy.com (every same-repository
+  PR to `main` auto-deploys here after approval — single shared slot, last
+  deploy wins; fork PRs are skipped)
 - **Content:** ported from the current centergilbert.com (mission, values, beliefs,
   leadership, ministries, visit info, sermons).
 - **Design:** heavily inspired by [thegardenaz.com](https://thegardenaz.com) —
@@ -36,8 +37,8 @@ using the `CLOUDFLARE_API_TOKEN` / `CLOUDFLARE_ACCOUNT_ID` repo secrets and
 publishes to https://centergilbert.com (Worker Custom Domains attached in
 the church Cloudflare account dashboard).
 
-Opening or updating a PR against `main` triggers the staging workflow,
-which deploys `env.staging` (same `center-church` worker name, but into the
+Opening or updating a same-repository PR against `main` triggers the staging
+workflow (fork PRs are skipped: they can't access secrets), which deploys `env.staging` (same `center-church` worker name, but into the
 personal account) using the `CLOUDFLARE_STAGING_API_TOKEN` repo secret
 (personal-account token) and publishes to
 https://centergilbert.tpaulshippy.com via the

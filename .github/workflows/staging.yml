@@ -3,7 +3,9 @@ name: Staging preview
 # Every PR against main deploys to the staging worker in the PERSONAL
 # Cloudflare account, served at https://centergilbert.tpaulshippy.com.
 # Single shared slot: concurrent PRs race, last deploy wins.
-# Requires repo secret CLOUDFLARE_STAGING_API_TOKEN (personal-account token).
+# Requires repo secret CLOUDFLARE_STAGING_API_TOKEN (personal-account token),
+# served through the `staging` environment (repo Settings → Environments),
+# which requires a reviewer's approval before each deploy.
 
 on:
   pull_request:
@@ -18,6 +20,10 @@ jobs:
   deploy-staging:
     # Forked PRs can't read secrets; skip instead of failing.
     if: github.event.pull_request.head.repo.full_name == github.repository
+    # Secrets come from the `staging` environment, which requires a human
+    # reviewer's approval before each deploy. This repo is public, so without
+    # this a PR could rewrite this workflow and exfiltrate the token.
+    environment: staging
     runs-on: ubuntu-latest
     permissions:
       contents: read
