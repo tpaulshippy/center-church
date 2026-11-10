@@ -15,7 +15,7 @@ const EXACT = new Map([
   ["/calendar", `${CHURCH_CENTER}/calendar`],
   ["/sign-ups", `${CHURCH_CENTER}/registrations`],
   ["/announcements", `${CHURCH_CENTER}/announcements`],
-  ["/choose-a-small-group", `${CHURCH_CENTER}/pages/small-groups`],
+  ["/choose-a-small-group", `${CHURCH_CENTER}/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment`],
   ["/im-new", `${CHURCH_CENTER}/pages/im-new`],
   ["/membership-class", `${CHURCH_CENTER}/pages/membership-class`],
   ["/ministries", `${CHURCH_CENTER}/pages/ministries`],
