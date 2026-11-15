@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What Is Worship? — Podcast Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Fixed on Jesus: conversations beyond Sunday mornings from Center Church in Gilbert, AZ — listen on Spotify, Apple Podcasts, and YouTube." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=18" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a href="/sermons">Sermons</a></li>
+              <li><a class="active" href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/podcast">&larr; All podcast episodes</a>
+          <h1 class="display-lg">What Is Worship?</h1>
+          <p class="transcript-meta">2024-10-23 · 22:49</p>
+          <p class="transcript-desc">Welcome to FIXED ON JESUS, a podcast brought to you by Center Church in Gilbert, Arizona. Speaking to you today are Rich Richardson &amp; Mark Johnson Jr. Production by Heather Corbitt **SHOW NOTES** Questions asked in this episode: What is involved in the act of worship? What about idolotry? Why should</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/e750e370/podcast/play/93435958/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-9-23%2F9611d951-f2a2-eb9b-0222-4113bc54ac3c.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="0.10" data-e="3.20">What that means for all of us is that we need to prepare our hearts for Sundays.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="3.54" data-e="3.73">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="4.18" data-e="5.35">You don&#x27;t just roll in cold.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="5.78" data-e="6.01">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="6.44" data-e="8.28">I mean, you, like, Lord, speak to me.</span> <span class="tl-s" data-s="8.44" data-e="12.42">And you know, the Lord may speak through the singing, prayer, a testimony.</span> <span class="tl-s" data-s="13.07" data-e="14.47">He might speak through the sacraments.</span> <span class="tl-s" data-s="14.53" data-e="16.89">He might speak through the preaching of the word.</span> <span class="tl-s" data-s="16.93" data-e="19.61">He&#x27;s going to be speaking if we listen, if we have ears to hear.</span> <span class="tl-s" data-s="19.66" data-e="24.83">But if we just roll in cold and we&#x27;re not praying, Lord, help me to have a heart to be responsive.</span> <span class="tl-s" data-s="25.09" data-e="30.36">Help me to recognize this is a completely different context of all the 168 hours I have in a week.</span> <span class="tl-s" data-s="30.96" data-e="32.74">This is the most important.</span></p>
+        <p><span class="tl-s" data-s="47.59" data-e="49.98">This is Fixed on Jesus.</span></p>
+        <p><span class="tl-s" data-s="63.65" data-e="67.76">Hey everybody, welcome back to Fixed on Jesus.</span> <span class="tl-s" data-s="67.81" data-e="69.49">This is that podcast.</span> <span class="tl-s" data-s="69.61" data-e="76.34">It&#x27;s kind of a runaway train that meanders and careens here and there and everywhere, but we get to do it together.</span> <span class="tl-s" data-s="76.41" data-e="78.75">My name is Rich, and I&#x27;m joined by Mark Johnson Jr.</span> <span class="tl-s" data-s="78.81" data-e="79.45">How you doing, Mark?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="79.76" data-e="79.87">Good.</span> <span class="tl-s" data-s="79.92" data-e="80.33">How are you?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="80.90" data-e="81.17">I am.</span> <span class="tl-s" data-s="81.80" data-e="82.02">I&#x27;m okay.</span> <span class="tl-s" data-s="82.02" data-e="82.32">Okay.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="82.58" data-e="83.11">All right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="83.11" data-e="84.68">And as always, what&#x27;s that?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="84.68" data-e="85.52">Go ahead.</span> <span class="tl-s" data-s="85.53" data-e="85.72">Sorry.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="85.79" data-e="86.09">All right.</span> <span class="tl-s" data-s="86.09" data-e="89.43">And as always, behind the glass, we have Heather Corbett, who is now she has.</span> <span class="tl-s" data-s="89.80" data-e="95.25">She has no need of sound effects, but because she can make her own sound, right, Heather?</span> <span class="tl-s" data-s="95.25" data-e="95.27">Yes.</span> <span class="tl-s" data-s="95.27" data-e="95.51">Okay.</span> <span class="tl-s" data-s="95.61" data-e="98.95">So what are we talking about today, Mark?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="98.95" data-e="102.15">Well, I think we&#x27;re going to talk about the elephant in the room first and foremost.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="102.15" data-e="102.89">Okay, friends.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="103.77" data-e="108.16">Depending on when you hear this, you may or may not have seen the— [Speaker A] This is a whole big side.</span> <span class="tl-s" data-s="108.73" data-e="111.35">This is going to be a dog and pony show nobody wants, but go ahead.</span> <span class="tl-s" data-s="111.45" data-e="111.97">That&#x27;s all right.</span> <span class="tl-s" data-s="111.97" data-e="112.39">Okay.</span> <span class="tl-s" data-s="112.39" data-e="113.30">We&#x27;ll let them decide.</span> <span class="tl-s" data-s="114.35" data-e="118.07">You know, the light&#x27;s shining on you a different way because there&#x27;s a shiner on your eye.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="118.17" data-e="119.77">Yes, I have a black eye.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="119.85" data-e="121.05">The crowd, our legion of fans want to know what happened.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="122.20" data-e="125.17">Well, first of all, this is— there&#x27;s a good reason why this is only audio.</span> <span class="tl-s" data-s="125.25" data-e="128.36">One, [Speaker B] because so no one can see that black eye you got.</span> <span class="tl-s" data-s="128.36" data-e="130.23">Well, and I have a face for radio, right?</span> <span class="tl-s" data-s="130.30" data-e="132.25">And so like, there&#x27;s that.</span> <span class="tl-s" data-s="132.61" data-e="139.18">And so, uh, but yes, I do have— I&#x27;m sporting on my right eye a black eye, a bruise.</span> <span class="tl-s" data-s="139.18" data-e="140.37">Yes, that&#x27;s correct.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="140.40" data-e="151.17">I was just talking to him before we started just to make sure that we didn&#x27;t have to get him into some, some men&#x27;s recovery or some, some reaching out and making sure he&#x27;s not a battered male.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="151.24" data-e="153.23">I am not.</span> <span class="tl-s" data-s="153.72" data-e="156.52">That nope, [Speaker B] and we&#x27;re joking about that because that didn&#x27;t happen.</span> <span class="tl-s" data-s="156.52" data-e="159.36">So you want to tell the story, or you want to just?</span> <span class="tl-s" data-s="159.44" data-e="160.69">I&#x27;ll tell the story.</span> <span class="tl-s" data-s="160.69" data-e="173.52">It&#x27;s just like you know it&#x27;s it&#x27;s one thing to have exciting and like cool [Speaker B] beat [Speaker A] up by a box injury stories that are like great, but this is not.</span> <span class="tl-s" data-s="173.52" data-e="178.70">This is stupid, which most of my injuries are stupid.</span> <span class="tl-s" data-s="178.87" data-e="179.41">I was on Fridays.</span> <span class="tl-s" data-s="179.41" data-e="180.29">I go to Costco and.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="180.29" data-e="181.55">You shouldn&#x27;t have told them that.</span> <span class="tl-s" data-s="181.59" data-e="182.78">There&#x27;s gonna be people showing up at Costco.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="182.78" data-e="184.23">No, they&#x27;re not.</span> <span class="tl-s" data-s="185.41" data-e="186.68">They don&#x27;t care what I do.</span> <span class="tl-s" data-s="186.78" data-e="189.68">Uh, I— so, you know, in Costco, as you know, they say, do you want a box?</span> <span class="tl-s" data-s="189.68" data-e="193.04">I want a box every time because you can carry your stuff in, right?</span> <span class="tl-s" data-s="193.44" data-e="201.48">And so I&#x27;m carrying everything in and I put the box down in the laundry room and unload the things into the freezer that&#x27;s in the laundry room.</span> <span class="tl-s" data-s="201.48" data-e="211.18">And as I go to pass from the laundry room to the rest of the house, I had this box which was like a Kind of a thick box that was— [Speaker B] Real thick.</span> <span class="tl-s" data-s="211.18" data-e="211.69">Yeah.</span> <span class="tl-s" data-s="211.74" data-e="226.54">And so I was carrying it and I got distracted, looked down the box as I was holding the box, it hit the door and the box, the corner of the box hit my eye.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="226.54" data-e="226.63">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="226.63" data-e="231.74">And it was, I mean, I&#x27;m telling you, that&#x27;s what happened, but it&#x27;s a stupid story, but that&#x27;s what happened.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="231.74" data-e="232.37">All right.</span> <span class="tl-s" data-s="232.95" data-e="234.39">Well, so there you have it.</span> <span class="tl-s" data-s="234.39" data-e="241.88">Our pastor was in Costco getting toilet paper on a Friday on his day off, and then he was doing laundry, and next thing you know, he has a black eye.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="241.95" data-e="243.44">Yeah, no, uh, close.</span> <span class="tl-s" data-s="243.95" data-e="246.07">This is how rumors started, Mark.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="246.20" data-e="248.62">That&#x27;s, that&#x27;s box 1, Rich 0.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="249.09" data-e="249.47">Yes.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="249.47" data-e="250.75">Yeah, well, I destroyed the box.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="250.75" data-e="251.25">No, I didn&#x27;t.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="251.25" data-e="255.86">It&#x27;s on the back patio waiting for my kids to take it to recycle.</span> <span class="tl-s" data-s="255.90" data-e="260.31">So, [Speaker B] okay, well, he recycles too.</span> <span class="tl-s" data-s="260.31" data-e="261.52">Well, anyways, our actual topic.</span> <span class="tl-s" data-s="261.52" data-e="262.12">Yes, [Speaker B] worship.</span> <span class="tl-s" data-s="262.17" data-e="262.48">What is worship.</span> <span class="tl-s" data-s="262.51" data-e="262.57">Worship.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="262.57" data-e="264.92">We hear that word tossed around a lot.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="264.92" data-e="264.95">Yeah.</span> <span class="tl-s" data-s="264.95" data-e="268.94">What are some of the ways you&#x27;ve heard it tossed around?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="268.99" data-e="270.84">Mostly in the context of music or Sunday morning.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="270.84" data-e="270.89">Right.</span> <span class="tl-s" data-s="270.89" data-e="270.94">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="270.99" data-e="275.50">Or in the car, I like to worship before I go to work.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="275.50" data-e="275.74">Yeah.</span> <span class="tl-s" data-s="275.74" data-e="276.18">Worship music.</span> <span class="tl-s" data-s="276.18" data-e="276.38">Right.</span> <span class="tl-s" data-s="276.38" data-e="277.01">Yeah, exactly.</span> <span class="tl-s" data-s="277.11" data-e="288.56">I think when we talk about the word worship, we need to recognize that it&#x27;s a category much bigger than we normally think.</span> <span class="tl-s" data-s="288.67" data-e="289.12">Right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="289.30" data-e="289.43">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="289.57" data-e="295.75">Sometimes we can, We can isolate worship to only the singing portion of our Sunday morning service.</span> <span class="tl-s" data-s="295.75" data-e="303.51">And in fact, when I was growing up in the tradition I grew up in, we would say there was praise and worship.</span> <span class="tl-s" data-s="303.59" data-e="305.17">Have you heard of that?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="305.54" data-e="305.62">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="305.62" data-e="306.65">So the praise songs were faster.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="306.65" data-e="306.74">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="306.74" data-e="308.33">The worship songs were slower.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="308.33" data-e="309.39">I did not know that.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="309.39" data-e="310.08">You didn&#x27;t know that?</span> <span class="tl-s" data-s="310.28" data-e="312.11">That was how it was for us.</span> <span class="tl-s" data-s="312.17" data-e="315.19">At least that was— [Speaker B] You praise and then you worship.</span> <span class="tl-s" data-s="315.19" data-e="315.43">They&#x27;re separate.</span> <span class="tl-s" data-s="315.43" data-e="315.63">Exactly.</span> <span class="tl-s" data-s="315.63" data-e="315.87">Okay.</span> <span class="tl-s" data-s="315.87" data-e="317.45">So they weren&#x27;t the same.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="317.45" data-e="318.37">All right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="318.47" data-e="319.55">The praise songs were a little bit more upbeat.</span> <span class="tl-s" data-s="319.55" data-e="321.85">People were clapping and more excited.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="321.85" data-e="323.55">Oh, [Speaker A] okay.</span> <span class="tl-s" data-s="323.65" data-e="325.77">Worship songs were a little down.</span> <span class="tl-s" data-s="325.77" data-e="327.99">Do a mixture of both now.</span> <span class="tl-s" data-s="328.71" data-e="328.81">Nope.</span> <span class="tl-s" data-s="328.81" data-e="329.93">That&#x27;s a false dichotomy.</span> <span class="tl-s" data-s="329.93" data-e="330.05">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="330.05" data-e="331.89">So, but the worship songs were just a little less boisterous.</span> <span class="tl-s" data-s="332.29" data-e="335.11">And, you know, back then it&#x27;s like, It Only Takes a Spark.</span> <span class="tl-s" data-s="335.11" data-e="335.94">Do you know that song?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="335.94" data-e="336.49">No, go ahead.</span> <span class="tl-s" data-s="336.49" data-e="338.71">Can you sing it?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="338.71" data-e="339.65">I cannot sing it.</span> <span class="tl-s" data-s="339.65" data-e="340.85">I will not sing it.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="340.85" data-e="343.33">I&#x27;m condemned from singing, but you&#x27;re [Speaker A] not.</span> <span class="tl-s" data-s="343.69" data-e="346.10">You&#x27;re shining like a star too with that eye.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="346.10" data-e="349.27">It&#x27;s because I know my limitations and you do not.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="349.31" data-e="349.81">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="349.88" data-e="353.08">Do you know, Heather knows it only takes a spark, right, Heather?</span> <span class="tl-s" data-s="353.18" data-e="353.24">Yeah.</span> <span class="tl-s" data-s="353.29" data-e="358.66">So— [Speaker B] It only takes a spark.</span> <span class="tl-s" data-s="358.70" data-e="360.30">Does it go like that?</span> <span class="tl-s" data-s="360.30" data-e="360.54">No.</span> <span class="tl-s" data-s="360.56" data-e="362.92">My ears are bleeding now.</span> <span class="tl-s" data-s="364.02" data-e="365.15">My ears are bleeding.</span> <span class="tl-s" data-s="365.15" data-e="368.95">But anyway, worship is actually something we do every moment of every day.</span> <span class="tl-s" data-s="369.11" data-e="372.32">We are, as humans, made to be, we&#x27;re creatures that worship.</span> <span class="tl-s" data-s="372.41" data-e="375.29">We will worship something all the time.</span></p>
+        <p><span class="tl-s" data-s="375.37" data-e="379.01">So we don&#x27;t ever have a moment we&#x27;re not worshiping something.</span> <span class="tl-s" data-s="379.14" data-e="379.33">Right.</span> <span class="tl-s" data-s="379.70" data-e="383.81">And so in a real, like the broadest way, worship is part of life.</span> <span class="tl-s" data-s="384.03" data-e="385.22">It is all of life, right?</span> <span class="tl-s" data-s="385.32" data-e="390.08">And so we need to recognize that worship is not just singing.</span> <span class="tl-s" data-s="390.23" data-e="403.20">And even when it comes to Sunday morning, when you have the Sunday morning gathering of the local church, worship is every element of that gathering.</span> <span class="tl-s" data-s="403.20" data-e="406.31">It&#x27;s not just the singing.</span> <span class="tl-s" data-s="406.90" data-e="408.17">And so worship involves prayer.</span> <span class="tl-s" data-s="408.19" data-e="408.60">It involves Bible reading.</span> <span class="tl-s" data-s="408.65" data-e="410.16">It involves the celebration of the sacraments.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="410.33" data-e="410.57">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="410.57" data-e="413.28">It involves preaching and it involves singing.</span> <span class="tl-s" data-s="413.39" data-e="422.99">And so I think a lot of times we think worship is this one small little category and that category is singing.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="422.99" data-e="423.09">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="423.09" data-e="426.30">But that&#x27;s not the way the scriptures communicate what worship is.</span> <span class="tl-s" data-s="426.30" data-e="434.88">Worship is, as Bob Coughlin, who&#x27;s one of my friends and done a lot of work on this, He famously said, worship is all of life, right?</span> <span class="tl-s" data-s="434.88" data-e="435.72">And that&#x27;s the truth.</span> <span class="tl-s" data-s="435.75" data-e="438.90">And so that&#x27;s kind of the big answer when it comes to worship.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="438.90" data-e="439.44">Yeah, no, that&#x27;s great.</span> <span class="tl-s" data-s="439.44" data-e="453.75">Before we go into— I want to go into Sunday morning, but before that, just kind of as you were saying that, would idolatry be defined as worship of things that are not in what you just said?</span> <span class="tl-s" data-s="453.86" data-e="455.93">Like, we&#x27;re beings that worship.</span> <span class="tl-s" data-s="455.96" data-e="457.81">We&#x27;re either worshiping God.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="457.81" data-e="466.37">Yeah, I mean, that&#x27;s the whole So if there&#x27;s— we&#x27;re worshiping false gods on many levels, right?</span> <span class="tl-s" data-s="466.38" data-e="476.83">And so if we offer fealty to money or leisure or sex or anything, essentially we&#x27;re propping those things up to be false gods.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="476.83" data-e="477.12">Right.</span> <span class="tl-s" data-s="477.30" data-e="477.65">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="477.78" data-e="480.91">And so absolutely, yeah, that&#x27;s the negative side of it.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="480.91" data-e="481.15">Yeah.</span> <span class="tl-s" data-s="481.15" data-e="481.52">Okay.</span> <span class="tl-s" data-s="482.06" data-e="484.14">So for Sunday, why should we sing?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="484.16" data-e="484.32">Yeah.</span> <span class="tl-s" data-s="484.32" data-e="495.60">And I think, So even though worship is more than just singing, singing is an element of worship and it&#x27;s an important element.</span> <span class="tl-s" data-s="495.60" data-e="502.34">And so, in fact, music is an aid to help us sing.</span> <span class="tl-s" data-s="502.34" data-e="510.09">And so sometimes musicians can get all locked up about this because they&#x27;re going to say that music is a necessary element in worship.</span> <span class="tl-s" data-s="510.09" data-e="510.35">Mm-hmm.</span> <span class="tl-s" data-s="510.48" data-e="513.90">I think it&#x27;s a helpful element, but not as necessary as they might think sometimes.</span> <span class="tl-s" data-s="513.93" data-e="515.59">I&#x27;m with them.</span> <span class="tl-s" data-s="515.70" data-e="522.21">I mean, yeah, we have on Sunday morning, if you come to our church on Sunday morning, we have guitars, both electric and acoustic.</span> <span class="tl-s" data-s="522.21" data-e="528.47">We have a bass, we have drums, we have piano, we have people who are singing.</span> <span class="tl-s" data-s="528.70" data-e="530.27">Sometimes we have a cello.</span></p>
+        <p><span class="tl-s" data-s="530.38" data-e="537.70">We have all kinds of instruments, but the instruments are in service to the worship, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="537.70" data-e="538.37">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="538.42" data-e="539.83">We&#x27;re not shooting for a concert.</span> <span class="tl-s" data-s="540.26" data-e="545.98">So there are churches out there that the worship band is there to perform and for the people to watch, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="546.66" data-e="549.30">Some of them are brought from the outside.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="549.32" data-e="553.09">There&#x27;s, like, in some of the big secret churches, they will pay the musicians to play on the stage.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="553.49" data-e="555.64">And they&#x27;re not members of the church.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="556.04" data-e="558.02">Well, they may not even be Christians.</span> <span class="tl-s" data-s="558.14" data-e="558.86">I know a lot.</span> <span class="tl-s" data-s="558.86" data-e="561.49">I know of some personally where they&#x27;re not Christians.</span> <span class="tl-s" data-s="561.49" data-e="563.50">They&#x27;re really good musicians.</span> <span class="tl-s" data-s="563.58" data-e="570.85">And so they bring in the best musicians, pay them, a lot of money so that they play, and it&#x27;s a concert, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="570.98" data-e="571.11">Mm-hmm.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="571.14" data-e="573.51">So when we gather and sing, we&#x27;re not doing a concert.</span> <span class="tl-s" data-s="574.09" data-e="578.46">So you&#x27;ll notice when we gather, we&#x27;re not going to be dimming the lights.</span> <span class="tl-s" data-s="578.46" data-e="580.42">We&#x27;re not going to be using laser lights.</span> <span class="tl-s" data-s="580.61" data-e="584.01">We&#x27;re not going to be using smoke machines.</span> <span class="tl-s" data-s="584.06" data-e="597.32">We&#x27;re not going to be doing that stuff because all of those things sort of give an impression of this is a performance for you to Observe, but when we gather and sing, this is something for us all to participate in.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="597.32" data-e="599.30">Yeah, [Speaker A] right.</span> <span class="tl-s" data-s="599.30" data-e="606.67">And so, like every week we have after the first song what&#x27;s called a call to worship.</span> <span class="tl-s" data-s="606.68" data-e="616.94">This is where the whoever&#x27;s leading the the worship team, this is where they say here&#x27;s why we are here&#x27;s a reason for us to sing today.</span> <span class="tl-s" data-s="617.05" data-e="618.87">And so we sing together.</span> <span class="tl-s" data-s="618.97" data-e="626.29">And so singing is important because like Colossians three sixteen says let the word of Christ.</span> <span class="tl-s" data-s="626.29" data-e="634.61">Dwell in you richly, teaching and admonishing one another in all wisdom, singing psalms and hymns and spiritual songs with thankfulness in your hearts to God.</span> <span class="tl-s" data-s="634.65" data-e="641.28">So when we sing, we&#x27;re not just singing to the Lord, we&#x27;re singing to each other.</span> <span class="tl-s" data-s="641.86" data-e="649.19">There&#x27;s something that happens when the body of Christ gathers together and we take these songs and proclaim them.</span> <span class="tl-s" data-s="649.24" data-e="652.93">We&#x27;re proclaiming biblical truth to each other, right?</span> <span class="tl-s" data-s="652.93" data-e="653.04">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="653.17" data-e="661.68">And so there&#x27;s something that happens that&#x27;s different than if you listen to, have a playlist that&#x27;s worship music in your car.</span> <span class="tl-s" data-s="661.68" data-e="663.23">That&#x27;s good, but it&#x27;s not the same thing.</span> <span class="tl-s" data-s="663.27" data-e="668.97">When we all gather together and sing, we are proclaiming true things about the Lord, to the Lord, and to each other.</span> <span class="tl-s" data-s="668.97" data-e="670.89">And it gives us an opportunity.</span> <span class="tl-s" data-s="671.45" data-e="678.51">This is the only time we have this opportunity when you gather with your local church.</span> <span class="tl-s" data-s="678.51" data-e="685.16">You get together and you hear other people singing to the Lord, you hear other people proclaiming true things about the Lord, and it builds your faith.</span> <span class="tl-s" data-s="685.19" data-e="688.16">And you&#x27;re like, hey, I&#x27;m not the only one.</span> <span class="tl-s" data-s="688.16" data-e="691.58">Because we live in a world and in a culture that loves music.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="691.67" data-e="691.74">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="691.77" data-e="694.95">And worships, puts up all kinds of different false gods to worship.</span> <span class="tl-s" data-s="694.98" data-e="700.66">When we gather on Sunday, what we&#x27;re doing is we&#x27;re reminding ourselves there is one God, and there&#x27;s only one God who&#x27;s worthy of worship.</span> <span class="tl-s" data-s="700.66" data-e="703.72">And I&#x27;m not the only one who believes that.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="703.72" data-e="703.94">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="704.29" data-e="709.19">Even though I might be the only one at work, at school, on my block that believes this kind of thing.</span> <span class="tl-s" data-s="709.35" data-e="711.09">I&#x27;m not as alone as I thought.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="711.18" data-e="711.22">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="711.22" data-e="731.43">And I can hear the person next to me singing, and I know that they&#x27;re going through something with one of their kids, or I know that this person over there is a caregiver to her parents, or I know this person over here has just lost their job, and yet they&#x27;re singing, communicating trust to the Lord with their song.</span> <span class="tl-s" data-s="731.43" data-e="735.94">And so it&#x27;s this wonderful corporate expression of faith That&#x27;s completely unique.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="735.94" data-e="736.55">Yeah, love it.</span> <span class="tl-s" data-s="736.55" data-e="746.73">You kind of touched on it a little bit, but how does that definition dictate the types of songs or the selection of songs that we use on a Sunday morning?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="746.73" data-e="748.48">Yeah, so that&#x27;s a great question.</span> <span class="tl-s" data-s="749.23" data-e="750.68">Music has a power, right?</span> <span class="tl-s" data-s="750.84" data-e="758.09">Because when we introduce a song, there&#x27;s a way in which our minds can remember it because of the music.</span> <span class="tl-s" data-s="758.13" data-e="762.98">Like, nobody is going to walk away, you know, remembering the exact words I preach on a sermon.</span> <span class="tl-s" data-s="763.01" data-e="764.51">But they will with songs.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="764.87" data-e="764.95">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="764.95" data-e="777.67">And so there&#x27;s— so that&#x27;s one of the things that&#x27;s a blessing here is that we want to take truth, the truth of the scriptures, and embed them in a different way in our minds and hearts, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="777.67" data-e="777.98">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="778.25" data-e="791.72">And so that&#x27;s one of the reasons when, if you look up on our screens and you see what we&#x27;re singing, you&#x27;ll notice that there are scripture references on the screens most of the time so that you can recognize where these songs originate from.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="791.78" data-e="792.60">Shout out to Heather.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="792.76" data-e="793.57">Heather does all that work, right?</span> <span class="tl-s" data-s="793.70" data-e="795.75">And so, [Speaker B] She oversees it.</span> <span class="tl-s" data-s="795.95" data-e="797.24">She does.</span> <span class="tl-s" data-s="797.64" data-e="803.78">Well, she&#x27;s shaking her head no, but anyway, she does a lot with that.</span> <span class="tl-s" data-s="803.89" data-e="808.43">And so because the Bible is a God-centered book, we want our singing to be God-centered as well.</span> <span class="tl-s" data-s="808.86" data-e="813.99">It&#x27;s possible to sing songs about how I&#x27;m going to be brave and how I&#x27;m going to be strong.</span> <span class="tl-s" data-s="814.23" data-e="816.71">It&#x27;s possible to sing man-centered songs that are focused on experience, right?</span> <span class="tl-s" data-s="816.71" data-e="826.18">And sometimes you get this kind of song, which is like, and I&#x27;m going to be consecrated and I&#x27;m going to be this and I&#x27;m going to do that.</span> <span class="tl-s" data-s="826.18" data-e="833.13">The focus then becomes on ourselves instead of God and his word, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="833.79" data-e="834.00">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="834.05" data-e="844.76">And so you&#x27;ll notice that the pattern of our songs are, it&#x27;s focusing us on who God is, how good he is, who the Son of God is, and why we can trust him, right?</span> <span class="tl-s" data-s="845.24" data-e="847.02">And not necessarily always on my problems or troubles, right?</span> <span class="tl-s" data-s="847.07" data-e="851.59">And this is not the kind of song that&#x27;s popular on K-LOVE, right?</span> <span class="tl-s" data-s="851.62" data-e="856.96">And so if you&#x27;re thinking, well, why don&#x27;t we sing songs that are on K-LOVE?</span> <span class="tl-s" data-s="857.09" data-e="866.29">And a lot of times it&#x27;s because those songs, like, listen to those songs and ask yourself, do they point toward the Lord or do they point toward me?</span> <span class="tl-s" data-s="866.60" data-e="876.23">And so we&#x27;re going to, in our singing, try to embed songs in our minds and hearts that point toward the Lord and not toward me and my experiences.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="876.23" data-e="876.59">Love it.</span> <span class="tl-s" data-s="876.62" data-e="887.63">Okay, so you laid a good foundation. and understanding worship, especially on a Sunday morning, in regards to what songs and how we&#x27;re all worshiping and singing together.</span> <span class="tl-s" data-s="887.80" data-e="891.25">How does that relate to the outward expression during worship?</span> <span class="tl-s" data-s="891.32" data-e="897.79">So just kind of a, just give you a quick context.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="897.98" data-e="898.14">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="898.14" data-e="902.91">I had a dinner conversation with Becca Litz and Michelle and Zach Tripoli.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="902.91" data-e="903.02">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="903.06" data-e="907.31">About the contents of one&#x27;s heart and how that relates to their outward expression during worship.</span> <span class="tl-s" data-s="907.31" data-e="908.83">And there was a lot of thoughts about that.</span> <span class="tl-s" data-s="908.83" data-e="910.50">So I was just wondering what you thought.</span> <span class="tl-s" data-s="910.50" data-e="915.38">Well, I guess I can even ask a more direct question if that would be helpful.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="915.66" data-e="918.05">Well, maybe I&#x27;ll try to answer it.</span> <span class="tl-s" data-s="918.05" data-e="920.56">And if I don&#x27;t, you can ask.</span> <span class="tl-s" data-s="920.64" data-e="921.14">Okay.</span> <span class="tl-s" data-s="921.21" data-e="928.65">I think some people are not as— there&#x27;s lots of different personality styles in the room, right?</span> <span class="tl-s" data-s="928.65" data-e="933.91">Some people are not expressive by nature, but they&#x27;re engaged in their heart, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="933.95" data-e="934.65">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="934.65" data-e="936.61">Some people are, let&#x27;s just say they&#x27;re drama and they&#x27;re extra, right?</span> <span class="tl-s" data-s="936.61" data-e="943.70">And so like, they&#x27;re gonna be, they&#x27;re gonna probably— [Speaker B] Heather&#x27;s choking.</span> <span class="tl-s" data-s="943.73" data-e="945.24">Heather, are you okay over there?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="945.25" data-e="946.83">Heather, we gotta do some CPR.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="946.96" data-e="951.03">And in my experience, those kind of folks are more willing to be expressive in worship, right?</span> <span class="tl-s" data-s="951.03" data-e="953.24">And so some of it&#x27;s personality style, right?</span> <span class="tl-s" data-s="953.50" data-e="967.15">And so like, one of the ways I&#x27;ve thought about in the past is I want to be most excited about what I&#x27;m singing on Sunday, and I want to be most expressive about that more so than a football game.</span> <span class="tl-s" data-s="967.29" data-e="972.90">So if I&#x27;m more eager to cheer and go crazy at a football game than I am on Sunday morning, something&#x27;s wrong.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="972.98" data-e="973.48">Oh.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="973.48" data-e="977.60">Like, I want that to be where I&#x27;m most excited.</span> <span class="tl-s" data-s="977.65" data-e="981.43">I want that to be where I&#x27;m most passionate, right?</span> <span class="tl-s" data-s="981.43" data-e="990.88">And I want, however I express that passion physically, whether it be with arms raised or clapping or, you know, whatever, I want to do that in worship.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="990.96" data-e="996.44">So you&#x27;re saying it&#x27;s relative to you as an individual, as in like your highest extremity and your lowest.</span> <span class="tl-s" data-s="996.49" data-e="1000.17">Worship on a Sunday should be the upper echelon of your extremity.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1000.17" data-e="1005.37">I think what I wanna do is say everybody should examine that for themselves.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1005.38" data-e="1005.53">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1005.53" data-e="1008.98">And I don&#x27;t wanna make an external standard that&#x27;s totally arbitrary without understanding where people are coming from, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1008.98" data-e="1009.09">Gotcha.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1009.62" data-e="1013.72">I&#x27;ve talked to a lot of people who are like, I just don&#x27;t like to sing.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1014.02" data-e="1014.18">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1014.28" data-e="1020.16">And so I&#x27;m like, you know what? you need to obey the word of God.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1020.22" data-e="1020.35">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1020.35" data-e="1021.63">It doesn&#x27;t matter what you like.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1021.71" data-e="1021.94">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1021.96" data-e="1023.72">It matters that you&#x27;re called as a Christian to sing.</span> <span class="tl-s" data-s="1023.72" data-e="1025.46">And so you&#x27;re in disobedience if you don&#x27;t sing.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1025.58" data-e="1027.10">I see.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1027.10" data-e="1032.24">So whether you like it or not, I mean, I don&#x27;t like eating greens, but I have to eat greens.</span> <span class="tl-s" data-s="1032.24" data-e="1037.88">I don&#x27;t like waking up early, but sometimes I have to wake up early.</span> <span class="tl-s" data-s="1038.06" data-e="1045.89">And so we&#x27;re all called to make a joyful noise because it gives an expression to Something that we may not always be thinking about.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1046.08" data-e="1046.24">Okay.</span> <span class="tl-s" data-s="1046.34" data-e="1052.76">So just to follow up, do you think that, I mean, obviously you explained that it&#x27;s relative to each individual.</span> <span class="tl-s" data-s="1052.76" data-e="1055.63">Can you judge the contents of someone&#x27;s heart based on their outward expression?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1055.63" data-e="1056.61">No, I don&#x27;t think so.</span> <span class="tl-s" data-s="1057.09" data-e="1061.96">I think you can ask, if you have a good enough relationship with this person, you can ask questions.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1061.96" data-e="1062.24">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1062.24" data-e="1067.99">I mean, I knew the most expressive lady in worship I ever saw was living a double life and committed adultery.</span> <span class="tl-s" data-s="1067.99" data-e="1074.81">So like, but that doesn&#x27;t mean all the expressive people, we should be thinking, ah, what are they trying to hide?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1074.81" data-e="1075.13">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1075.60" data-e="1076.72">No, I think everybody&#x27;s different.</span> <span class="tl-s" data-s="1076.80" data-e="1088.35">Like if I know somebody and I&#x27;ve watched them in different venues and let&#x27;s say at the ASU game, they&#x27;re painted maroon and gold, right?</span> <span class="tl-s" data-s="1088.35" data-e="1091.41">And they come to church and they&#x27;re super, super reserved.</span> <span class="tl-s" data-s="1091.41" data-e="1092.55">I&#x27;m like, okay, something&#x27;s wrong, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1092.60" data-e="1092.64">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1092.69" data-e="1097.89">But if the drama extra people are dramatic and extra in every area of their life, okay, great.</span> <span class="tl-s" data-s="1097.89" data-e="1099.91">You know that.</span> <span class="tl-s" data-s="1100.21" data-e="1101.53">That seems to fit, right?</span> <span class="tl-s" data-s="1101.63" data-e="1106.40">And so, I mean, there are some people who will cry at a McDonald&#x27;s commercial, right?</span> <span class="tl-s" data-s="1106.40" data-e="1108.20">And there&#x27;s some people— [Speaker B] Really?</span> <span class="tl-s" data-s="1108.41" data-e="1110.54">Oh yeah, sure, absolutely.</span> <span class="tl-s" data-s="1110.64" data-e="1112.35">And there&#x27;s some people who don&#x27;t cry.</span> <span class="tl-s" data-s="1112.35" data-e="1115.03">So I don&#x27;t wanna set some external standard.</span> <span class="tl-s" data-s="1115.13" data-e="1124.26">Well, you have to clap 12 times and raise your hands 3 times in a month, and if you don&#x27;t, I&#x27;m not doing that like that.</span> <span class="tl-s" data-s="1124.29" data-e="1129.17">But I do think expression in worship is important Because it shows what you care about.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1129.17" data-e="1129.20">Right.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1129.27" data-e="1145.71">I wanted to add something to this too, because being someone who is extra, which is why I was choking when you said that, it is an interesting concept though, to understand that your heart being in the right place at the right time plays a huge factor into it.</span> <span class="tl-s" data-s="1145.71" data-e="1147.62">Because for me personally, I can be very expressive.</span> <span class="tl-s" data-s="1147.65" data-e="1151.49">And if you&#x27;ve spent 5 minutes with me, you know that.</span> <span class="tl-s" data-s="1151.49" data-e="1160.64">I can also be in a place where the Lord is working on me and I&#x27;m not going to express much because a lot is happening in here.</span> <span class="tl-s" data-s="1160.64" data-e="1166.08">So it&#x27;s kind of an interesting concept listening to you guys talk about this.</span> <span class="tl-s" data-s="1166.19" data-e="1172.57">Like, what does worship really look like and what does it mean and what is it?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1172.61" data-e="1176.79">Well, there&#x27;s singing and singing is a subset of worship.</span> <span class="tl-s" data-s="1176.79" data-e="1176.96">Worship.</span> <span class="tl-s" data-s="1176.96" data-e="1181.77">And so worship&#x27;s the big category and singing is just one expression of that, right?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1181.77" data-e="1185.03">Right, exactly. [Speaker A] we have to keep that in mind.</span> <span class="tl-s" data-s="1185.30" data-e="1193.83">Now, I do think there&#x27;s something different than if you&#x27;re leading the church in worship, right?</span> <span class="tl-s" data-s="1194.21" data-e="1198.87">So the people on stage are not just musicians, they&#x27;re lead worshipers.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1199.09" data-e="1199.27">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1199.57" data-e="1202.00">And so they should be more expressive.</span> <span class="tl-s" data-s="1202.32" data-e="1206.25">They should look like they believe what they&#x27;re singing.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1206.32" data-e="1206.51">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1206.51" data-e="1210.33">Which means their faces are gonna look like, hey, this is joyful.</span> <span class="tl-s" data-s="1210.33" data-e="1213.23">And so there should be some level expression there because It&#x27;s not a performance.</span> <span class="tl-s" data-s="1213.69" data-e="1220.72">And so a lot of that, what that means for all of us is that we need to prepare our hearts for Sundays.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1221.26" data-e="1221.28">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1221.33" data-e="1223.49">You don&#x27;t just roll in cold.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1223.49" data-e="1224.07">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1224.12" data-e="1226.07">I mean, you, Lord, speak to me.</span> <span class="tl-s" data-s="1226.12" data-e="1228.67">And the Lord may speak through the singing, prayer, a testimony.</span> <span class="tl-s" data-s="1228.67" data-e="1229.34">He might speak through the sacraments.</span> <span class="tl-s" data-s="1229.34" data-e="1231.19">He might speak through the preaching of the word.</span> <span class="tl-s" data-s="1231.19" data-e="1234.80">He&#x27;s going to be speaking if we listen, if we have ears to hear.</span> <span class="tl-s" data-s="1234.80" data-e="1241.49">But if we just roll in cold and we&#x27;re not praying, Lord, help me to have a heart to be To be responsive.</span> <span class="tl-s" data-s="1241.49" data-e="1250.07">Help me to recognize this is a completely different context of all the 168 hours I have in a week.</span> <span class="tl-s" data-s="1250.07" data-e="1252.02">This is the most important.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1252.02" data-e="1252.15">Yes.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1252.15" data-e="1258.51">So I want that to— I want to prepare in a greater way for Sunday morning than for going to work.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1258.51" data-e="1258.63">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1258.63" data-e="1265.14">I want to prepare in a greater way for Sunday morning than if I go on a date night with my wife.</span> <span class="tl-s" data-s="1265.14" data-e="1272.52">I want to prepare in a greater way for Sunday morning than Than any other, any other time, any other thing I do.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1272.54" data-e="1273.39">Love it.</span> <span class="tl-s" data-s="1273.56" data-e="1274.46">Uh, 2 things.</span> <span class="tl-s" data-s="1274.46" data-e="1278.58">First one, I recently got a devotional that&#x27;s for Sunday mornings to help prepare your heart.</span> <span class="tl-s" data-s="1278.58" data-e="1278.89">Paul David Tripp, Sunday Matters.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1278.89" data-e="1279.21">Yeah, right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1279.21" data-e="1279.66">It&#x27;s great.</span> <span class="tl-s" data-s="1279.66" data-e="1280.09">It is.</span> <span class="tl-s" data-s="1280.14" data-e="1280.32">Yeah.</span> <span class="tl-s" data-s="1280.32" data-e="1283.09">Walking into church after reading through that.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1283.12" data-e="1283.44">It helps.</span> <span class="tl-s" data-s="1283.44" data-e="1283.62">Yeah.</span> <span class="tl-s" data-s="1283.62" data-e="1284.31">That&#x27;s a good tool.</span> <span class="tl-s" data-s="1284.31" data-e="1287.78">I&#x27;m in a better mind frame or heart frame.</span> <span class="tl-s" data-s="1287.78" data-e="1289.60">That&#x27;s a good tool.</span> <span class="tl-s" data-s="1289.63" data-e="1289.80">Absolutely.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1289.80" data-e="1293.52">And then you&#x27;ve mentioned a little bit about the people up front.</span> <span class="tl-s" data-s="1293.52" data-e="1303.99">So what impact does the level of expression in the environment you&#x27;re in, is it supposed to affect your worship or is it just a personal thing with the Lord?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1304.54" data-e="1306.82">I mean, it&#x27;s easier if other people around you are being expressive.</span> <span class="tl-s" data-s="1306.82" data-e="1306.96">Yeah.</span> <span class="tl-s" data-s="1306.96" data-e="1307.06">Right?</span> <span class="tl-s" data-s="1307.06" data-e="1308.09">And so, I don&#x27;t know.</span> <span class="tl-s" data-s="1308.09" data-e="1309.63">I mean, it&#x27;s both.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1309.63" data-e="1309.79">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1309.79" data-e="1313.05">I want, I mean, I think it&#x27;s both.</span> <span class="tl-s" data-s="1313.05" data-e="1318.68">I want to, I want us to be excited about the right things.</span> <span class="tl-s" data-s="1318.68" data-e="1320.67">I want us to be impacted by the right things.</span> <span class="tl-s" data-s="1320.67" data-e="1322.13">And that&#x27;s the Lord and his purposes.</span> <span class="tl-s" data-s="1322.21" data-e="1322.31">So.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1322.36" data-e="1322.60">Gotcha.</span> <span class="tl-s" data-s="1322.60" data-e="1322.65">Okay.</span> <span class="tl-s" data-s="1322.84" data-e="1330.48">Well, any other things you&#x27;d like to add before we— [Speaker A] I think if you have questions on this, let me know.</span> <span class="tl-s" data-s="1330.50" data-e="1339.25">If you are interested in maybe, let me know if you think, I&#x27;d love a whole podcast on how to prepare for Sunday.</span> <span class="tl-s" data-s="1339.25" data-e="1340.42">I think we should do that.</span> <span class="tl-s" data-s="1340.42" data-e="1344.97">But anyway, just if you have thoughts, just email us at production@sinnergilbert.com and we&#x27;ll get to &#x27;em.</span> <span class="tl-s" data-s="1344.97" data-e="1345.07">Yep.</span> <span class="tl-s" data-s="1345.09" data-e="1346.59">Thank you guys for tuning in.</span> <span class="tl-s" data-s="1346.59" data-e="1347.09">We love you.</span> <span class="tl-s" data-s="1347.09" data-e="1347.09">Check the show notes, check for polls.</span></p>
+        <p><span class="tl-s" data-s="1347.09" data-e="1347.09">Feel free to share this with a friend.</span> <span class="tl-s" data-s="1347.09" data-e="1347.09">And yeah, thanks for supporting.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1347.09" data-e="1347.09">All right.</span> <span class="tl-s" data-s="1347.09" data-e="1347.09">See you next time.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Fixed on Jesus episode archive, backed by /api/podcast/search.
+  // Static fallback list above stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function fmtDuration(raw) {
+      if (!raw) return "";
+      var str = String(raw).trim();
+      // Anchor feeds report seconds; render as H:MM:SS or M:SS.
+      if (/^\d+$/.test(str)) {
+        var total = parseInt(str, 10);
+        var h = Math.floor(total / 3600);
+        var m = Math.floor((total % 3600) / 60);
+        var sec = total % 60;
+        var mm = (h > 0 && m < 10 ? "0" + m : "" + m);
+        var ss = (sec < 10 ? "0" + sec : "" + sec);
+        return (h > 0 ? h + ":" + mm : m) + ":" + ss;
+      }
+      // Anchor also reports clock strings like "00:24:02" — drop the
+      // redundant leading hour so it reads "24:02".
+      return str.replace(/^00:/, "");
+    }
+    function row(it) {
+      it = it || {};
+      var title = esc(it.title) || "Untitled episode";
+      var tUrl = it.guid && transcriptMap[it.guid];
+      var heading = tUrl
+        ? '<a href="' + esc(tUrl) + '">' + title + "</a>"
+        : (it.link
+          ? '<a href="' + esc(it.link) + '" target="_blank" rel="noopener">' + title + "</a>"
+          : title);
+      var meta = [fmtDate(it.date), fmtDuration(it.duration)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      return '<div class="sermon"><div><h3>' + heading + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    var PER = 10;
+    var state = { q: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No episodes found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " episode" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " episodes";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/podcast/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () {
+          // Keep the static list, but tell the reader where else to listen —
+          // some privacy blockers stop the archive request itself.
+          var note = document.querySelector("[data-sermons-error]");
+          if (note) note.hidden = false;
+        });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    if (monthSel) {
+      monthSel.addEventListener("change", function () {
+        state.month = monthSel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: 706afac4-6165-4262-b5c1-5714932bb4ac -->
+</body>
+</html>
