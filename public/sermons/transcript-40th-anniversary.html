@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>40th Anniversary — Sermon Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Listen to the latest sermons from Center Church, or follow along on Apple Podcasts and Spotify." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=17" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a class="active" href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/sermons">&larr; All sermons</a>
+          <h1 class="display-lg">40th Anniversary</h1>
+          <p class="transcript-meta">Rich Richardson · 2026-10-18 · 00:50:12</p>
+          <p class="transcript-desc">See God&#x27;s Grace</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/119cbef70/podcast/play/128974077/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-7%2F436123725-44100-2-b60ecd79753754c6.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><span class="tl-s" data-s="0.02" data-e="10.68">Well, good morning, everyone.</span> <span class="tl-s" data-s="11.10" data-e="16.82">It really is a joy to be with you whenever we can be here.</span> <span class="tl-s" data-s="17.34" data-e="43.10">My wife, Lori, was thrilled to be able to come this time, and when I mentioned the possibility of us joining this celebration, the pastors at my church were thrilled to send us because our church is indebted to this church, and I&#x27;m personally indebted to this church, frankly, for more reasons than I could possibly list, unless we skip the message, which I don&#x27;t think Rich wants us to do.</span> <span class="tl-s" data-s="43.22" data-e="45.00">I mean, I guess I could just talk about him the whole time.</span> <span class="tl-s" data-s="45.08" data-e="46.22">Maybe he would enjoy that, I guess.</span> <span class="tl-s" data-s="47.24" data-e="53.40">But I do want to take a moment and just express my personal gratefulness to this church for a couple of reasons.</span> <span class="tl-s" data-s="54.74" data-e="68.86">I want to express my gratefulness to you as a body, and if you&#x27;re new here, you get to receive gratefulness that maybe you haven&#x27;t earned, but since you joined this church, you get to be, you know, thanked as well.</span></p>
+        <p><span class="tl-s" data-s="69.36" data-e="74.50">But those of you who were here when I was here, you really are extended family to us.</span> <span class="tl-s" data-s="75.16" data-e="79.64">We could just point to countless personal moments of love, affection, encouragement.</span> <span class="tl-s" data-s="79.86" data-e="81.68">Our first three children were born here.</span> <span class="tl-s" data-s="81.86" data-e="83.20">You were the ones that brought us meals.</span> <span class="tl-s" data-s="83.60" data-e="84.70">We came home from the hospital.</span> <span class="tl-s" data-s="84.86" data-e="87.12">You helped us move and then move again.</span> <span class="tl-s" data-s="87.38" data-e="92.48">You cared for us, and you continue to care for us through expressions of encouragement.</span> <span class="tl-s" data-s="92.70" data-e="97.78">Some of you come and visit our church from time to time, and it is like a family reunion whenever that happens.</span> <span class="tl-s" data-s="97.90" data-e="101.50">So I can&#x27;t list all of you, but thank you.</span> <span class="tl-s" data-s="102.32" data-e="104.50">Thank you for loving us so faithfully.</span></p>
+        <p><span class="tl-s" data-s="104.60" data-e="109.10">Thank you for teaching us what it means to have a family that loves you even when you&#x27;re far away.</span> <span class="tl-s" data-s="109.66" data-e="114.50">I also want to just express briefly my indebtedness and gratefulness to your pastors.</span> <span class="tl-s" data-s="115.46" data-e="120.76">I was thinking this morning, how do I encapsulate my gratefulness?</span> <span class="tl-s" data-s="120.78" data-e="140.46">I was thinking about my gratefulness for Trey, because Trey discipled a very zealous and very inexperienced young pastoral intern who had all kinds of dreams for youth ministry and needed Trey Richardson to say, well, just walk me through what you&#x27;re planning to do.</span></p>
+        <p><span class="tl-s" data-s="142.02" data-e="148.22">I&#x27;m so grateful for the many lessons that I learned from Trey, and they affect me to this day.</span> <span class="tl-s" data-s="148.52" data-e="157.42">I believe that that season of being mentored by Trey impacted me and still impacts me in how I think about people, how I think about prayer.</span> <span class="tl-s" data-s="157.52" data-e="166.82">I&#x27;ve mentioned multiple times, Trey&#x27;s almost, I think, the only person in my life that truly waits for the other person to stop talking.</span></p>
+        <p><span class="tl-s" data-s="169.20" data-e="177.70">So much so that after, I don&#x27;t know, 12 or 15 minutes, I found myself saying to myself, why am I still talking?</span> <span class="tl-s" data-s="178.66" data-e="183.96">And I realized it&#x27;s because the rest of us just jump in, and Trey doesn&#x27;t.</span> <span class="tl-s" data-s="184.04" data-e="191.42">He just waits, and I realized, oh, he&#x27;s actually waiting for me to finish, and I guess I&#x27;ll have to stand here awkwardly for two seconds, and then he will begin.</span></p>
+        <p><span class="tl-s" data-s="193.36" data-e="201.18">But I learned about listening and the value of it, and was grateful for Trey&#x27;s example in that.</span> <span class="tl-s" data-s="201.26" data-e="207.08">I&#x27;m grateful for Steve Tong, who was our family since we didn&#x27;t have family here.</span> <span class="tl-s" data-s="207.22" data-e="215.78">Steve and Marion have loved us, have watched our children, have been substitute grandparents for us, continue to be means of great encouragement and grace.</span> <span class="tl-s" data-s="215.92" data-e="218.92">I told Steve the other night, listening to him share encouragement.</span> <span class="tl-s" data-s="219.20" data-e="225.14">Steve, I knew as an administrator, but now Steve has become a pastor.</span> <span class="tl-s" data-s="226.04" data-e="231.36">Steve, your sharing is not merely general encouragement.</span> <span class="tl-s" data-s="231.60" data-e="232.86">It&#x27;s instruction from the Word.</span> <span class="tl-s" data-s="232.99" data-e="237.86">It&#x27;s comfort from the Gospel, and it was a joy to see that transformation in his life.</span> <span class="tl-s" data-s="238.88" data-e="240.44">I&#x27;m thankful for Rich.</span> <span class="tl-s" data-s="241.01" data-e="259.44">Rich had faith to hire a very young intern because he wanted to position this church, and he wanted to hire people who could serve this church, and he was willing to take a chance on a young and eager pastoral intern.</span></p>
+        <p><span class="tl-s" data-s="259.46" data-e="266.78">And I, I was just talking to Rich and Tiffany yesterday, I genuinely don&#x27;t know where my life would be without his faith.</span> <span class="tl-s" data-s="267.76" data-e="285.12">Some of the things that happened where I was after I departed, I, I thought I, I, I might not be in ministry if it weren&#x27;t for his faith, if it weren&#x27;t for his encouragement, and also if it weren&#x27;t for his desire to plant churches at great sacrifice.</span> <span class="tl-s" data-s="285.14" data-e="303.28">I, I, I still remember sitting out there in that room 13 years ago, 14 years ago now, with all of the leaders of this church, many are still here, and Rich announcing, we, we think we&#x27;re called to plant another church, and you just feel in the room, oh, we know what that means.</span> <span class="tl-s" data-s="303.36" data-e="304.18">That&#x27;s painful.</span> <span class="tl-s" data-s="304.20" data-e="314.48">That is a painful announcement, and, and somebody in the room, very genuine question just said in the midst of the, the grief of that, are we just going to sort of keep doing this?</span> <span class="tl-s" data-s="314.56" data-e="324.76">We, we raise up leaders and send them out, and if you&#x27;d feel the, the emotional pain of that, and, and Rich just stood there in front of all those dear leaders and just said, yes, yes, yes, yes, we are.</span></p>
+        <p><span class="tl-s" data-s="325.48" data-e="327.02">That&#x27;s what we&#x27;re called to.</span> <span class="tl-s" data-s="327.94" data-e="334.58">I&#x27;ve told that story so many times because I, I think it illustrates what the local church does for the broader mission.</span> <span class="tl-s" data-s="335.62" data-e="338.96">It&#x27;s an example, but it&#x27;s a, it&#x27;s a sending example.</span> <span class="tl-s" data-s="338.98" data-e="340.28">It&#x27;s a giving example.</span> <span class="tl-s" data-s="341.40" data-e="352.20">And, and Rich and his willingness to embody that faith and to lead the church in that faith, I, I believe, is one of the ways God has preserved and kept this church for 40 years.</span> <span class="tl-s" data-s="353.20" data-e="358.60">Churches do not thrive if they do not sacrifice, and it takes faith to sacrifice and send.</span> <span class="tl-s" data-s="358.72" data-e="362.66">But because of that faith, this morning, now they&#x27;re two hours ahead, right?</span> <span class="tl-s" data-s="362.68" data-e="370.78">But this morning, just now, a group of hundreds of people met there in Georgetown, Texas, worshiped the Lord, heard a sermon.</span> <span class="tl-s" data-s="370.96" data-e="375.34">We&#x27;re building a, a building that hopefully can serve as this has served over the years.</span> <span class="tl-s" data-s="375.84" data-e="378.24">All that came from this church&#x27;s faith.</span></p>
+        <p><span class="tl-s" data-s="378.42" data-e="386.62">So, so forgive me for taking a little extra time, but I just want to express your church is making a difference all over the place.</span> <span class="tl-s" data-s="386.68" data-e="388.18">I&#x27;m just one of the stories.</span> <span class="tl-s" data-s="388.34" data-e="389.50">You could talk about Mexico.</span> <span class="tl-s" data-s="389.65" data-e="390.84">You could talk about Tucson.</span> <span class="tl-s" data-s="391.06" data-e="392.26">You could talk about Idaho.</span> <span class="tl-s" data-s="392.28" data-e="405.46">You could talk about places all over the world that this church, through your faithfulness, your giving, your support of your pastors, your endurance of the ups and downs of church life, you, you are having an impact.</span> <span class="tl-s" data-s="405.48" data-e="406.96">You&#x27;re having an impact around the world.</span></p>
+        <p><span class="tl-s" data-s="408.88" data-e="409.50">Thank you.</span> <span class="tl-s" data-s="410.50" data-e="411.10">Thank you.</span> <span class="tl-s" data-s="411.42" data-e="418.28">On behalf of our church, certainly on behalf of my wife, Lori, and I, our children, and on behalf of our family of churches, thank you.</span> <span class="tl-s" data-s="418.46" data-e="424.00">You are, if I could put it this way, one of the grandfather churches of a very young family of churches.</span> <span class="tl-s" data-s="425.18" data-e="427.30">Lynn might be the grandfather of the grandfather.</span></p>
+        <p><span class="tl-s" data-s="429.82" data-e="432.16">And, and, and, you know, I say that with a great affection.</span> <span class="tl-s" data-s="432.38" data-e="435.86">Actually, my friends in the Philippines, they call him Daddy Lynn.</span> <span class="tl-s" data-s="435.96" data-e="437.56">I think we should call him Granddaddy Lynn.</span> <span class="tl-s" data-s="437.66" data-e="455.26">But, you know, I, I, I was thinking last night as we were celebrating, what, what, what a moment for a man to see the multiple churches, the multiple generations, the multiple countries that are affected by a step of faith to start a church.</span> <span class="tl-s" data-s="456.18" data-e="457.38">So, Lynn, thank you.</span> <span class="tl-s" data-s="457.72" data-e="462.26">And, and many more that I couldn&#x27;t name on the team and leaders and so forth.</span> <span class="tl-s" data-s="462.34" data-e="463.84">But please receive my gratefulness.</span> <span class="tl-s" data-s="464.00" data-e="467.74">And, and please hear in that God is with you.</span> <span class="tl-s" data-s="468.62" data-e="470.64">God is using you.</span> <span class="tl-s" data-s="471.42" data-e="483.34">It&#x27;s a great danger to a church of any age to forget and to overlook and to be burdened in such a way that we forget to see the harvest of God&#x27;s grace.</span></p>
+        <p><span class="tl-s" data-s="483.66" data-e="490.52">But we need to see it so that we can bring him glory and so that we can have faith for the new steps of faith we&#x27;re meant to take.</span> <span class="tl-s" data-s="491.20" data-e="495.80">And to that end, I want to ask if you would turn to the book of 1 Thessalonians.</span> <span class="tl-s" data-s="496.78" data-e="510.06">1 Thessalonians, chapter 1, Rich asked me this morning to preach from one of the prayers of Paul, he said, which, you know, is about, kind of like saying, somewhere in the Bible, pick something.</span> <span class="tl-s" data-s="510.36" data-e="513.90">And, you know, Paul prays constantly, picking one.</span> <span class="tl-s" data-s="514.06" data-e="515.68">But this, I think, will serve us this morning.</span> <span class="tl-s" data-s="515.78" data-e="519.82">So, 1 Thessalonians, chapter 1, and verse 2 and 3.</span> <span class="tl-s" data-s="520.12" data-e="523.48">And let&#x27;s remember as we read it, I know you know this well, let&#x27;s remember this is God&#x27;s word.</span> <span class="tl-s" data-s="524.12" data-e="527.56">And it comes to us every time we read it with fresh power.</span> <span class="tl-s" data-s="527.81" data-e="533.88">Every time, no matter how many times we&#x27;ve heard it before, it comes with fresh power to change us, to breathe life into our souls.</span></p>
+        <p><span class="tl-s" data-s="533.96" data-e="535.10">Let&#x27;s read it with that expectation.</span> <span class="tl-s" data-s="535.28" data-e="537.54">1 Thessalonians, chapter 1, verse 2.</span> <span class="tl-s" data-s="538.72" data-e="565.80">We give thanks to God always for all of you, constantly mentioning you in our prayers, remembering before our God and Father your work of faith and labor of love and steadfastness of hope in our Lord Jesus Christ.</span> <span class="tl-s" data-s="566.80" data-e="570.66">Lord, bless the preaching and the believing of your word.</span> <span class="tl-s" data-s="570.82" data-e="572.14">In Jesus&#x27; name, amen.</span></p>
+        <p><span class="tl-s" data-s="574.48" data-e="580.34">Several years ago, my wife, who is determined to plant things in Austin.</span> <span class="tl-s" data-s="580.52" data-e="584.18">But, by the way, things don&#x27;t grow in Texas nearly as well as they grow here, so you get credit.</span> <span class="tl-s" data-s="584.64" data-e="587.02">I think there&#x27;s bugs more there, and it&#x27;s, you know, wetter.</span> <span class="tl-s" data-s="587.04" data-e="587.60">I don&#x27;t know what it is.</span> <span class="tl-s" data-s="587.68" data-e="607.32">Anyways, they don&#x27;t grow, and she was determined to plant, so she planted a fig tree, and like many of our planting experiments, it didn&#x27;t do well for a little while, or at least it didn&#x27;t produce any figs very immediately, and so we were waiting and we were waiting, and then one day, she came bounding into the kitchen, and she had gathered a harvest, finally, of figs.</span> <span class="tl-s" data-s="607.84" data-e="611.46">And if you&#x27;ve tried to grow anything, you know how exciting that finally is.</span> <span class="tl-s" data-s="611.52" data-e="613.20">Look, look, look what has grown!</span> <span class="tl-s" data-s="613.84" data-e="615.00">And she wanted me to try one.</span> <span class="tl-s" data-s="615.04" data-e="618.88">I didn&#x27;t grow up eating figs, but she wanted me to try, try this fig.</span></p>
+        <p><span class="tl-s" data-s="618.98" data-e="619.70">This is amazing.</span> <span class="tl-s" data-s="619.84" data-e="623.44">We have grown a harvest of figs in the wasteland of Austin, Texas.</span> <span class="tl-s" data-s="623.76" data-e="624.94">Here it is, figs.</span> <span class="tl-s" data-s="624.96" data-e="625.64">We have a harvest.</span> <span class="tl-s" data-s="625.98" data-e="635.54">And I think farmers, gardeners of any kind, of any land, can identify with that joy, that there is a joy, there&#x27;s a gratefulness, isn&#x27;t there, in the harvest?</span> <span class="tl-s" data-s="635.72" data-e="642.76">When you&#x27;ve been waiting, you&#x27;ve been looking, you&#x27;ve been hoping, you&#x27;ve been believing this green thing that looks like a tree actually is a fruit tree.</span> <span class="tl-s" data-s="643.38" data-e="646.70">And now, the harvest has come, and there&#x27;s a sense of celebration.</span> <span class="tl-s" data-s="647.20" data-e="648.44">There&#x27;s a sense of joy.</span> <span class="tl-s" data-s="648.64" data-e="652.70">You don&#x27;t look for a harvest and then respond to the harvest with indifference.</span> <span class="tl-s" data-s="653.42" data-e="655.24">You respond with grateful joy.</span></p>
+        <p><span class="tl-s" data-s="655.50" data-e="657.14">Well, that&#x27;s what Paul does.</span> <span class="tl-s" data-s="657.88" data-e="658.56">He does it here.</span> <span class="tl-s" data-s="658.66" data-e="659.98">He does it all over the place.</span> <span class="tl-s" data-s="660.08" data-e="664.78">If you know Paul&#x27;s letters, Paul was an incredibly exuberant, thankful man.</span> <span class="tl-s" data-s="664.90" data-e="666.48">It wasn&#x27;t because he was superficial.</span> <span class="tl-s" data-s="666.50" data-e="669.84">It wasn&#x27;t because he was unaware of the burdens or griefs of life.</span> <span class="tl-s" data-s="669.92" data-e="674.04">It wasn&#x27;t because he didn&#x27;t have a lot to say about maturity and growth and suffering.</span> <span class="tl-s" data-s="674.26" data-e="678.28">It was because he had his eyes fixed on the harvest of God&#x27;s grace.</span> <span class="tl-s" data-s="678.70" data-e="681.52">And like a good farmer, he wanted to celebrate the harvest.</span> <span class="tl-s" data-s="682.02" data-e="683.94">And he models that here for us.</span></p>
+        <p><span class="tl-s" data-s="684.02" data-e="698.04">And it is important for us at any stage in our Christian journey, at any stage in our church&#x27;s journey, to remember and review the celebration of gratefulness as the right response to the harvest of God&#x27;s grace.</span> <span class="tl-s" data-s="698.78" data-e="700.58">That&#x27;s what Paul is modeling.</span> <span class="tl-s" data-s="700.78" data-e="704.52">That&#x27;s what he&#x27;s handing to this young Thessalonian church as a gift.</span> <span class="tl-s" data-s="704.64" data-e="709.00">He wants them to receive his gratefulness as a reminder of how God is at work in them.</span> <span class="tl-s" data-s="709.10" data-e="714.98">I think he also wants to model this disposition for how they should think about themselves and about others.</span> <span class="tl-s" data-s="715.06" data-e="718.42">And I think he would want to do the same for you this morning and for me.</span> <span class="tl-s" data-s="718.94" data-e="726.92">We are all prone, no matter how long we&#x27;ve been a Christian, we are prone to drift from gratefulness to anxiety and critique.</span> <span class="tl-s" data-s="727.62" data-e="729.50">We just do it naturally.</span> <span class="tl-s" data-s="729.74" data-e="731.56">It comes naturally to us.</span> <span class="tl-s" data-s="731.66" data-e="736.86">We drift from gratefulness to anxiety on the one hand and critique on the other.</span></p>
+        <p><span class="tl-s" data-s="736.98" data-e="738.06">And we live there.</span> <span class="tl-s" data-s="738.62" data-e="748.28">No matter how much harvest is growing around us, we live in a place of anxiety and critique instead of in a place that is marked by gratefulness.</span> <span class="tl-s" data-s="748.34" data-e="759.42">I just want to study these two brief verses so that we can learn again from Paul what we surely have learned before in this church and in our family of churches, the priority of gratefulness.</span> <span class="tl-s" data-s="759.47" data-e="765.38">I&#x27;m going to make two points this morning, the manner of our gratefulness and then the harvest of our gratefulness.</span> <span class="tl-s" data-s="765.44" data-e="766.92">Let&#x27;s notice the manner, point number one.</span> <span class="tl-s" data-s="767.04" data-e="767.82">Look down there at the beginning.</span> <span class="tl-s" data-s="767.96" data-e="769.82">Paul says, we give thanks.</span> <span class="tl-s" data-s="769.84" data-e="772.90">And first of all, he says, to God.</span> <span class="tl-s" data-s="773.06" data-e="776.12">This thankfulness is going to be Godward.</span> <span class="tl-s" data-s="776.76" data-e="779.96">It is constant and it is comprehensive.</span></p>
+        <p><span class="tl-s" data-s="780.64" data-e="783.46">Godward, constant and comprehensive.</span> <span class="tl-s" data-s="783.66" data-e="784.56">It&#x27;s Godward.</span> <span class="tl-s" data-s="784.58" data-e="797.52">We give thanks to God because Paul knows and he is determined to state at the outset of this communication, God is the source of all good things in this young church.</span> <span class="tl-s" data-s="798.08" data-e="799.22">God is the source of it.</span> <span class="tl-s" data-s="799.36" data-e="805.22">Paul is under no illusions about who the ultimate source of power for growth is.</span> <span class="tl-s" data-s="805.42" data-e="806.12">It&#x27;s God.</span> <span class="tl-s" data-s="807.14" data-e="815.98">Now he planted this young church and he had to be hustled immediately out of town because of suffering and persecution and he was concerned for their well-being.</span> <span class="tl-s" data-s="816.20" data-e="825.66">He perhaps had been there a couple of weeks, a couple of months at the most and he&#x27;s been wondering how they&#x27;re doing with such a brief time of teaching from him.</span> <span class="tl-s" data-s="825.68" data-e="841.00">They went from paganism to Christianity over a matter of a couple of weeks and he&#x27;s understandably concerned about their maturity, their well-being, especially because the culture had pressured they were causing suffering and he wondered, how is my little seed doing?</span></p>
+        <p><span class="tl-s" data-s="841.92" data-e="842.88">How is it doing?</span> <span class="tl-s" data-s="843.14" data-e="849.98">I had to leave and it&#x27;s just the smallest little fig tree there and there was a gale blowing and I&#x27;m not there to tend it.</span> <span class="tl-s" data-s="850.08" data-e="851.92">How is it doing?</span> <span class="tl-s" data-s="852.04" data-e="852.76">Is it growing?</span> <span class="tl-s" data-s="852.86" data-e="853.88">Is it producing any fruit?</span> <span class="tl-s" data-s="853.96" data-e="856.28">So he sent Timothy, his beloved co-worker.</span> <span class="tl-s" data-s="856.76" data-e="859.78">Paul hated being alone, but he loved the church more than he loved himself.</span> <span class="tl-s" data-s="859.92" data-e="863.90">So he sent Timothy and he says, you&#x27;ve got to go check on them and bring me back word.</span> <span class="tl-s" data-s="864.90" data-e="868.18">We find in the letter, here comes Timothy back with a glowing report.</span> <span class="tl-s" data-s="868.26" data-e="871.42">If I could put it this way, metaphorically, it is a basket full of figs.</span></p>
+        <p><span class="tl-s" data-s="871.44" data-e="877.20">It is a fig report for the Apostle Paul and he says, Paul, you&#x27;ve got to check it out.</span> <span class="tl-s" data-s="878.60" data-e="881.80">The fig tree is already growing figs.</span> <span class="tl-s" data-s="881.92" data-e="889.58">That little stick thing that you left, I&#x27;ve gathered fig reports and I have to tell you about it.</span> <span class="tl-s" data-s="889.60" data-e="896.78">So he comes hustling back to Paul, he runs in, he tells them all about the church and Paul is thrilled and he sits down and he writes this letter and what does he say?</span> <span class="tl-s" data-s="896.88" data-e="898.64">We thank God for you.</span></p>
+        <p><span class="tl-s" data-s="900.40" data-e="905.32">Because he knows those good reports only have one ultimate source.</span> <span class="tl-s" data-s="905.55" data-e="911.16">It wasn&#x27;t ultimately my articulation, my leadership.</span> <span class="tl-s" data-s="911.44" data-e="914.52">It wasn&#x27;t ultimately the strategy that I came up with for the church plant.</span> <span class="tl-s" data-s="914.66" data-e="919.10">It wasn&#x27;t ultimately the fact that you even have worked extra hard.</span> <span class="tl-s" data-s="919.70" data-e="921.70">Ultimately, the source is God.</span> <span class="tl-s" data-s="922.34" data-e="923.70">God gives the growth.</span> <span class="tl-s" data-s="924.24" data-e="925.04">God gives the growth.</span> <span class="tl-s" data-s="925.17" data-e="926.98">He directs their eyes Godward.</span> <span class="tl-s" data-s="927.06" data-e="927.54">What&#x27;s he doing?</span> <span class="tl-s" data-s="927.66" data-e="930.96">He&#x27;s honoring God and he&#x27;s teaching them.</span></p>
+        <p><span class="tl-s" data-s="931.80" data-e="937.20">Every good thing that comes to you and through you comes from God.</span> <span class="tl-s" data-s="937.60" data-e="939.28">Point your eyes heavenward.</span> <span class="tl-s" data-s="939.86" data-e="941.34">God gives the growth.</span> <span class="tl-s" data-s="941.86" data-e="951.34">Paul&#x27;s determined he will not allow, he will not allow Christians of any age to be distracted from God towards their own credit.</span> <span class="tl-s" data-s="952.28" data-e="953.32">He will not allow it.</span> <span class="tl-s" data-s="953.56" data-e="954.70">He forces their head.</span> <span class="tl-s" data-s="954.86" data-e="955.78">Again, nope, nope, nope.</span> <span class="tl-s" data-s="955.98" data-e="956.58">Look at God.</span> <span class="tl-s" data-s="956.78" data-e="957.92">God gave the growth.</span> <span class="tl-s" data-s="958.30" data-e="962.80">Don&#x27;t you be distracted by your own pride, your desire to take credit in your little figs.</span></p>
+        <p><span class="tl-s" data-s="962.86" data-e="963.12">No, no.</span> <span class="tl-s" data-s="963.42" data-e="965.20">God gave the growth.</span> <span class="tl-s" data-s="965.96" data-e="968.08">We give thanks to God.</span> <span class="tl-s" data-s="968.58" data-e="971.88">But notice also, it is constant.</span> <span class="tl-s" data-s="972.38" data-e="974.78">It is a constant thankfulness.</span> <span class="tl-s" data-s="974.88" data-e="977.74">We give thanks to God always.</span> <span class="tl-s" data-s="978.20" data-e="978.58">Always.</span> <span class="tl-s" data-s="979.76" data-e="984.12">Apparently, that&#x27;s what Paul&#x27;s been doing there since Timothy brought this report and perhaps before.</span> <span class="tl-s" data-s="984.50" data-e="985.86">He&#x27;s just thanking God.</span> <span class="tl-s" data-s="985.96" data-e="988.36">When he thinks of them, he thanks God for them.</span></p>
+        <p><span class="tl-s" data-s="988.52" data-e="990.12">And it&#x27;s not difficult to know why.</span> <span class="tl-s" data-s="990.56" data-e="1001.74">Paul, of all people, understood the hardness of heart of people who were turning away from Christ and towards sin and their own self-exaltation.</span> <span class="tl-s" data-s="1001.84" data-e="1002.74">He knew about this.</span> <span class="tl-s" data-s="1002.97" data-e="1003.86">Paul knew very well.</span> <span class="tl-s" data-s="1004.15" data-e="1007.80">When you turn away from God, you turn inward toward yourself.</span> <span class="tl-s" data-s="1008.30" data-e="1011.96">And the only person that can break into that prison is God himself.</span> <span class="tl-s" data-s="1012.08" data-e="1014.78">And he knew that&#x27;s what happened with the Thessalonians.</span> <span class="tl-s" data-s="1015.04" data-e="1021.38">I told them about Jesus and they went from worshiping idols to worshiping Jesus.</span> <span class="tl-s" data-s="1021.66" data-e="1026.08">They went from loving their lust and their sin to loving Jesus.</span> <span class="tl-s" data-s="1026.68" data-e="1029.04">They believed that Jesus was the Son of God.</span></p>
+        <p><span class="tl-s" data-s="1029.18" data-e="1033.28">They trusted my message of the gospel as God&#x27;s very word.</span> <span class="tl-s" data-s="1033.38" data-e="1034.98">You can read about it in the rest of the letter.</span> <span class="tl-s" data-s="1035.00" data-e="1036.24">He says, it was remarkable.</span> <span class="tl-s" data-s="1036.44" data-e="1039.32">You turned from idols to the living God.</span> <span class="tl-s" data-s="1039.46" data-e="1045.28">And so what comes to my mind when I think about people like that is thankfulness to God.</span></p>
+        <p><span class="tl-s" data-s="1046.74" data-e="1047.18">Always.</span> <span class="tl-s" data-s="1047.38" data-e="1048.50">It always comes to mind.</span> <span class="tl-s" data-s="1048.52" data-e="1051.32">It doesn&#x27;t mean that nothing else comes to mind.</span> <span class="tl-s" data-s="1051.40" data-e="1054.86">He has exhortations and encouragements and warnings and teachings.</span> <span class="tl-s" data-s="1055.34" data-e="1066.42">But he says, the one thing that is always on my mind when I think about you Christians, it is I&#x27;m grateful to God for you because God saved you in Christ.</span> <span class="tl-s" data-s="1066.88" data-e="1074.18">And whatever else is going on, whatever suffering, whatever teaching you need, whatever difficulty you might have, I&#x27;m always aware of this.</span> <span class="tl-s" data-s="1074.84" data-e="1077.44">You were worshiping idols and now you&#x27;re worshiping Jesus.</span> <span class="tl-s" data-s="1077.68" data-e="1078.98">And only God could do that.</span> <span class="tl-s" data-s="1079.12" data-e="1081.86">And I can&#x27;t help but always be thinking about you with gratefulness.</span> <span class="tl-s" data-s="1082.36" data-e="1085.78">It&#x27;s worth pondering, isn&#x27;t it?</span></p>
+        <p><span class="tl-s" data-s="1085.96" data-e="1094.10">As you look around this room at Christians, is that same gratefulness currently always on my mind and heart?</span> <span class="tl-s" data-s="1094.76" data-e="1098.76">It should be because you&#x27;re sitting next to an idol worshiper who now believes in Jesus.</span> <span class="tl-s" data-s="1099.38" data-e="1101.56">Now, maybe they&#x27;re struggling with some sin.</span> <span class="tl-s" data-s="1101.66" data-e="1102.86">Maybe they&#x27;re suffering in some way.</span> <span class="tl-s" data-s="1102.96" data-e="1103.86">Maybe they&#x27;re annoying.</span> <span class="tl-s" data-s="1104.20" data-e="1108.10">There could be all kinds of things that you&#x27;re aware of in them, but you better be aware of this.</span> <span class="tl-s" data-s="1108.24" data-e="1111.10">One time they were worshiping idols and now they&#x27;re worshiping Jesus.</span> <span class="tl-s" data-s="1111.20" data-e="1117.64">If they&#x27;re a Christian, that&#x27;s the reason why your heart and my heart should look at them and beam with gratefulness.</span> <span class="tl-s" data-s="1117.74" data-e="1118.98">Look, look, look at this.</span> <span class="tl-s" data-s="1119.42" data-e="1122.52">You idol worshipping pagan, you worship Jesus now.</span></p>
+        <p><span class="tl-s" data-s="1124.42" data-e="1125.88">And I thank God for you.</span> <span class="tl-s" data-s="1127.02" data-e="1127.60">I thank God.</span> <span class="tl-s" data-s="1127.68" data-e="1131.16">You&#x27;re just a living trophy of Jesus Christ walking around here.</span> <span class="tl-s" data-s="1131.22" data-e="1132.58">I thank God for you.</span></p>
+        <p><span class="tl-s" data-s="1134.12" data-e="1140.24">Sure, you&#x27;re a little knobbly and you&#x27;ve got all kinds of weird branches and you&#x27;ve got lots of pruning that&#x27;s needed in your life.</span> <span class="tl-s" data-s="1140.26" data-e="1145.16">Yes, yes, but one time you were an idol worshipping pagan and now you worship Jesus.</span> <span class="tl-s" data-s="1145.30" data-e="1146.54">And I thank God for that.</span> <span class="tl-s" data-s="1147.18" data-e="1149.82">I thank God for you always.</span></p>
+        <p><span class="tl-s" data-s="1151.44" data-e="1153.12">Not just in your best moments.</span></p>
+        <p><span class="tl-s" data-s="1154.74" data-e="1156.38">Not just in your strong moments.</span> <span class="tl-s" data-s="1156.54" data-e="1158.50">Not just in the moments you benefit me.</span> <span class="tl-s" data-s="1159.48" data-e="1161.32">Not just in the moments you agree with me.</span></p>
+        <p><span class="tl-s" data-s="1163.00" data-e="1164.64">Not just in the moments you get it.</span> <span class="tl-s" data-s="1165.72" data-e="1167.04">Not in the moments you don&#x27;t.</span></p>
+        <p><span class="tl-s" data-s="1168.44" data-e="1176.30">Not just when you&#x27;re starting to grow and not when you&#x27;ve been trying to grow for 50 years and it&#x27;s the same category.</span> <span class="tl-s" data-s="1176.40" data-e="1177.68">Not always.</span> <span class="tl-s" data-s="1177.70" data-e="1178.24">Not always.</span> <span class="tl-s" data-s="1179.10" data-e="1180.62">Because at a fundamental level.</span></p>
+        <p><span class="tl-s" data-s="1182.30" data-e="1183.56">You&#x27;re a fig tree, man.</span></p>
+        <p><span class="tl-s" data-s="1185.08" data-e="1186.08">You didn&#x27;t used to be.</span> <span class="tl-s" data-s="1186.80" data-e="1187.84">You used to be dirt.</span></p>
+        <p><span class="tl-s" data-s="1192.32" data-e="1193.42">And I thank God for you.</span> <span class="tl-s" data-s="1193.42" data-e="1193.46">I thank God for you.</span> <span class="tl-s" data-s="1194.68" data-e="1196.74">He thanks God always.</span> <span class="tl-s" data-s="1196.94" data-e="1200.76">Notice this constant thankfulness also.</span> <span class="tl-s" data-s="1200.96" data-e="1211.28">It&#x27;s only possible if our eyes are on God and not on our own earthly treasures or our own earthly comfort.</span></p>
+        <p><span class="tl-s" data-s="1213.40" data-e="1220.06">When we are consumed with how we are doing, we have no eyes to see God&#x27;s grace in other people.</span> <span class="tl-s" data-s="1220.88" data-e="1230.42">And all of us are prone to wake up and the first thought, I think, the first thought that most naturally comes to my mind is, how am I doing right now?</span> <span class="tl-s" data-s="1231.68" data-e="1234.20">How am I feeling right now?</span> <span class="tl-s" data-s="1235.18" data-e="1237.84">What do I think about yesterday in terms of me?</span> <span class="tl-s" data-s="1239.02" data-e="1240.62">Tomorrow in terms of me?</span> <span class="tl-s" data-s="1241.48" data-e="1245.38">What do I think in terms of that conversation and me?</span></p>
+        <p><span class="tl-s" data-s="1247.38" data-e="1250.60">Paul is concerned about God and others.</span> <span class="tl-s" data-s="1250.84" data-e="1253.90">And it frees him to celebrate God&#x27;s grace.</span> <span class="tl-s" data-s="1254.66" data-e="1259.52">He&#x27;s not walking around wondering, how does this person stack up against me?</span> <span class="tl-s" data-s="1260.18" data-e="1267.68">Stronger, better, wiser, more handsome, more beautiful, richer, more trained, wittier, more humorous.</span> <span class="tl-s" data-s="1268.42" data-e="1271.90">I think I&#x27;m maybe even, a little below.</span> <span class="tl-s" data-s="1272.44" data-e="1277.62">No, no, Paul&#x27;s totally, totally freed from that kind of self-centered thinking.</span> <span class="tl-s" data-s="1277.74" data-e="1278.58">He just said, look, look at this.</span> <span class="tl-s" data-s="1278.86" data-e="1285.82">I have no sense of self-evaluation as I come to this fruit tree and say, look, look, look at you.</span> <span class="tl-s" data-s="1286.38" data-e="1288.80">God has done amazing work in you.</span></p>
+        <p><span class="tl-s" data-s="1290.98" data-e="1294.76">Comparison, envy, self-focus, self-awareness, you know what it does?</span> <span class="tl-s" data-s="1294.86" data-e="1301.74">It robs us of celebrating God&#x27;s grace in others because we&#x27;re too distracted by me.</span></p>
+        <p><span class="tl-s" data-s="1304.54" data-e="1307.14">Listen, this doesn&#x27;t go away as you mature as a Christian.</span> <span class="tl-s" data-s="1307.26" data-e="1309.70">You just get more sophisticated about how you talk about it.</span> <span class="tl-s" data-s="1310.00" data-e="1315.12">You talk about it in terms of, well, I&#x27;ve discerned some needs in you.</span> <span class="tl-s" data-s="1315.74" data-e="1317.92">And that&#x27;s why I have this perspective.</span> <span class="tl-s" data-s="1318.18" data-e="1322.70">And I thought, you know, you need to be, listen, the child just says, give it to me.</span> <span class="tl-s" data-s="1322.80" data-e="1324.04">That&#x27;s what the child says.</span> <span class="tl-s" data-s="1324.06" data-e="1325.82">But the adult, they&#x27;re a little smoother.</span> <span class="tl-s" data-s="1326.32" data-e="1328.40">But the same heart is there.</span> <span class="tl-s" data-s="1329.68" data-e="1336.80">And what Paul would say is, get your eyes off of yourself and learn to celebrate the grace of God in others.</span></p>
+        <p><span class="tl-s" data-s="1339.60" data-e="1349.46">If anybody had reason to be aware of themselves and their suffering and their efforts and their labors, it was definitely the Apostle Paul.</span></p>
+        <p><span class="tl-s" data-s="1351.28" data-e="1357.50">But Paul is freed from me and celebrating the grace of God in others.</span> <span class="tl-s" data-s="1357.64" data-e="1361.76">It is a delightfully biblical, obedient way to live.</span></p>
+        <p><span class="tl-s" data-s="1363.36" data-e="1366.50">This is his constant perspective.</span> <span class="tl-s" data-s="1366.64" data-e="1367.78">It&#x27;s also his comprehensive.</span> <span class="tl-s" data-s="1367.98" data-e="1372.76">Notice he gives thanks to God always for all of you.</span> <span class="tl-s" data-s="1372.78" data-e="1384.08">You could imagine if he just said always, there&#x27;s the persistent doubters and self-pityers and self-condemners in the crowd that say, oh, yes, well, sure.</span> <span class="tl-s" data-s="1385.06" data-e="1387.40">I mean, Bob is amazing.</span> <span class="tl-s" data-s="1387.56" data-e="1389.20">I&#x27;m sure he&#x27;s thinking of Bob and not me.</span> <span class="tl-s" data-s="1390.10" data-e="1393.84">I&#x27;m sure I&#x27;m what&#x27;s in view at the corrective part of the letter.</span> <span class="tl-s" data-s="1393.94" data-e="1395.02">I&#x27;m waiting for that later.</span></p>
+        <p><span class="tl-s" data-s="1396.42" data-e="1397.80">Don&#x27;t we all have that tendency?</span> <span class="tl-s" data-s="1397.82" data-e="1402.14">See, no, no, I don&#x27;t think he means me.</span> <span class="tl-s" data-s="1403.30" data-e="1421.62">So Paul clears out that objection, just says, all of you, all of you, all of you, the rich, the poor, the spiritually stronger, the spiritually weaker, those who are experiencing a triumph of God&#x27;s grace in their lives clearly, and those who are enduring and experiencing preserving grace.</span> <span class="tl-s" data-s="1422.10" data-e="1423.92">I&#x27;m giving thanks to God for all of you.</span> <span class="tl-s" data-s="1424.02" data-e="1424.18">Why?</span> <span class="tl-s" data-s="1424.46" data-e="1431.70">Because all of you, all of you have experienced the gospel and there&#x27;s fruit in your life, and I want to celebrate that.</span></p>
+        <p><span class="tl-s" data-s="1433.96" data-e="1442.28">It&#x27;s tempting to stop our thankfulness short with people that are thankful for us or that are strong in ways that we enjoy.</span></p>
+        <p><span class="tl-s" data-s="1443.82" data-e="1446.48">Paul is thankful for all of you.</span> <span class="tl-s" data-s="1447.60" data-e="1453.10">He&#x27;s thankful for the people that require us to press into God&#x27;s grace because they&#x27;re difficult for us.</span> <span class="tl-s" data-s="1453.26" data-e="1465.84">He&#x27;s thankful for people that are currently struggling with the same area again and again, but they are in our life, and for some reason, God wants us to give thanks to God for God&#x27;s grace in their life, however difficult it might be to perceive it.</span> <span class="tl-s" data-s="1466.06" data-e="1487.46">All of you, I just want us to consider this morning, where is there a Christian in your life that you are tempted to be more aware of their vulnerabilities, of their weaknesses, of their difficulties for you, than you are aware that Christ Jesus saved them and God&#x27;s grace is at work in their life.</span></p>
+        <p><span class="tl-s" data-s="1490.16" data-e="1491.34">Don&#x27;t be naive.</span> <span class="tl-s" data-s="1491.46" data-e="1497.48">You can hear about thankfulness, I&#x27;ve heard about it, my whole life, from pastors like Trey and Lynn and these guys, my whole life.</span> <span class="tl-s" data-s="1497.50" data-e="1504.84">I can easily have people, I am more aware of my disappointment in them than my gratefulness for them.</span> <span class="tl-s" data-s="1504.96" data-e="1511.70">I was convicted this morning, just sharing something with Lori yesterday about, oh, there&#x27;s this person and I&#x27;m disappointed, they&#x27;ve disappointed me.</span> <span class="tl-s" data-s="1512.16" data-e="1525.24">I thought they would have been further along and they&#x27;re making this decision and it&#x27;s hard for me to see and I thought, yes, Lord, am I, I&#x27;m more aware of that than of the many evidences of God&#x27;s grace that is present in their life.</span> <span class="tl-s" data-s="1526.52" data-e="1538.68">I don&#x27;t have to be unaware of areas of failure but it should be within and inside of and grounded in and covered by my gratefulness for God&#x27;s grace in their life.</span> <span class="tl-s" data-s="1539.34" data-e="1558.46">They haven&#x27;t abandoned the faith, they&#x27;ve disappointed me a little bit, perhaps there&#x27;s some immaturity still, sure, sure, but there&#x27;s gratefulness because they were dirt, now they&#x27;re a fruit tree, they were a sinner, now they&#x27;re a saint, they have been brought from death to life, they&#x27;re headed to heaven and God has done all of that work and so I must see God&#x27;s grace in this individual&#x27;s life.</span></p>
+        <p><span class="tl-s" data-s="1558.70" data-e="1565.64">Listen, we can&#x27;t just affirm gratefulness as a wonderful Christian idea, we have to be grateful for the people we want to complain about.</span></p>
+        <p><span class="tl-s" data-s="1567.66" data-e="1570.92">Anybody can sit in church, oh great, I&#x27;m all for gratefulness.</span> <span class="tl-s" data-s="1571.88" data-e="1577.16">And then walk home and have a conversation in the privacy of their own marriage and say, I don&#x27;t know what&#x27;s going on with that dude.</span> <span class="tl-s" data-s="1578.56" data-e="1581.62">And be more aware of complaint and grumbling than gratefulness.</span> <span class="tl-s" data-s="1581.74" data-e="1586.86">Listen, parents, we do this with our children, we do this towards our spouses, we do this with that one person.</span> <span class="tl-s" data-s="1587.16" data-e="1591.24">We affirm gratefulness in a general sense, but what about that one person?</span> <span class="tl-s" data-s="1591.40" data-e="1594.14">Paul says, all of you.</span> <span class="tl-s" data-s="1594.28" data-e="1603.16">Take your heart to task this morning, like I have to, we have to, because a church, a church that honors the Lord is a grateful church.</span> <span class="tl-s" data-s="1604.10" data-e="1606.92">A church that survives is a grateful church.</span> <span class="tl-s" data-s="1607.02" data-e="1609.32">A church that endures is a grateful church.</span> <span class="tl-s" data-s="1609.34" data-e="1614.88">You won&#x27;t get anywhere unless you are starting with gratefulness for God&#x27;s grace.</span></p>
+        <p><span class="tl-s" data-s="1616.08" data-e="1623.66">And that has to be applied towards particular people that you and I, we, are very, very prone to grumble about.</span></p>
+        <p><span class="tl-s" data-s="1625.98" data-e="1627.96">People are annoying.</span></p>
+        <p><span class="tl-s" data-s="1632.28" data-e="1635.42">They do dumb things like we do.</span></p>
+        <p><span class="tl-s" data-s="1638.52" data-e="1639.96">They forget things.</span> <span class="tl-s" data-s="1640.08" data-e="1640.90">They ought to remember.</span> <span class="tl-s" data-s="1642.14" data-e="1643.20">Like we do.</span></p>
+        <p><span class="tl-s" data-s="1644.68" data-e="1646.28">They say things.</span></p>
+        <p><span class="tl-s" data-s="1648.58" data-e="1650.02">They break things.</span></p>
+        <p><span class="tl-s" data-s="1654.78" data-e="1659.84">Listen, this, this, I believe, is the secret to joy.</span> <span class="tl-s" data-s="1661.16" data-e="1663.20">In many ways, it&#x27;s the secret to obedience.</span> <span class="tl-s" data-s="1663.64" data-e="1664.68">It&#x27;s the secret to unity.</span> <span class="tl-s" data-s="1665.26" data-e="1667.42">It&#x27;s the secret to a Godward life.</span> <span class="tl-s" data-s="1667.70" data-e="1680.98">When my heart is prone to wander into the weeds of grumbling, will I remain fixed in the garden of gratefulness?</span></p>
+        <p><span class="tl-s" data-s="1685.08" data-e="1686.18">It&#x27;s comprehensive.</span></p>
+        <p><span class="tl-s" data-s="1688.84" data-e="1707.66">Imagine that someone gave you a tour of a beautiful, glorious orchard, branches laden with fruit, even allowing us to enjoy some of the fruit for ourselves and give it to our children, give it to others, tree after tree, plant after plant, land that was once a barren wasteland, now full of fruit and light and beauty.</span> <span class="tl-s" data-s="1708.68" data-e="1713.44">Surely, you would rejoice with that gardener who has worked such a change.</span> <span class="tl-s" data-s="1713.46" data-e="1715.16">That&#x27;s what God invites you to do.</span> <span class="tl-s" data-s="1715.48" data-e="1717.16">Look, look at my church.</span></p>
+        <p><span class="tl-s" data-s="1718.86" data-e="1719.86">Look, look.</span></p>
+        <p><span class="tl-s" data-s="1721.32" data-e="1723.50">Do you know what they were like before I got to them?</span></p>
+        <p><span class="tl-s" data-s="1727.12" data-e="1731.16">When we pick and choose, well, that&#x27;s a little misshapen.</span></p>
+        <p><span class="tl-s" data-s="1732.66" data-e="1734.44">That one&#x27;s branches are weird.</span> <span class="tl-s" data-s="1735.78" data-e="1736.94">That one&#x27;s short.</span> <span class="tl-s" data-s="1737.94" data-e="1740.40">That one produces less fruit than that one.</span></p>
+        <p><span class="tl-s" data-s="1742.42" data-e="1744.80">That one tripped me when I walked by.</span></p>
+        <p><span class="tl-s" data-s="1746.68" data-e="1756.30">God the gardener says, Yes, but do you see the fruit that I have produced out of nothing?</span></p>
+        <p><span class="tl-s" data-s="1758.06" data-e="1763.82">God invites us to celebrate His grace in the harvest of His people.</span></p>
+        <p><span class="tl-s" data-s="1766.08" data-e="1767.80">Think of that as a mission for your life.</span> <span class="tl-s" data-s="1768.66" data-e="1779.06">He&#x27;s inviting you in your small group, in your Bible study, next time you talk to a pastor, next time you meet a new Christian to celebrate His harvest of grace in His people.</span></p>
+        <p><span class="tl-s" data-s="1781.48" data-e="1794.32">Now, there is no more important harvest than the simple confession that Christ is Lord, a person who has cast their sins on Christ and now, as the passage says, can call God Father.</span> <span class="tl-s" data-s="1795.18" data-e="1801.22">That gospel, that gospel fruit is the great and ultimate reason for gratefulness.</span> <span class="tl-s" data-s="1801.30" data-e="1808.20">And even if you can see nothing else, if you have a person who can call God Father, you have a reason to celebrate the gardener.</span> <span class="tl-s" data-s="1809.32" data-e="1811.00">But Paul doesn&#x27;t stop there.</span> <span class="tl-s" data-s="1811.12" data-e="1817.70">He goes on to talk about, point number two, the harvest of God&#x27;s grace, a particular harvest.</span> <span class="tl-s" data-s="1818.38" data-e="1825.60">He notes the particular harvest of the Thessalonians and I think He instructs us for the kind of harvest we should be looking for.</span> <span class="tl-s" data-s="1825.62" data-e="1827.66">What is He remembering with gratefulness?</span> <span class="tl-s" data-s="1828.88" data-e="1832.52">Now, remember, Paul was only with them a matter of weeks.</span> <span class="tl-s" data-s="1833.76" data-e="1839.22">How tempting would it be for someone with someone in a matter of weeks to be cynical?</span></p>
+        <p><span class="tl-s" data-s="1840.80" data-e="1842.94">I would be tempted to be cynical.</span> <span class="tl-s" data-s="1843.32" data-e="1845.18">I mean, we&#x27;ll see.</span></p>
+        <p><span class="tl-s" data-s="1847.12" data-e="1848.48">I would be cynical.</span> <span class="tl-s" data-s="1848.74" data-e="1857.32">It&#x27;s a few weeks with people that were just walking the temple to sacrifice to an idol and then they had some initial response to Paul.</span> <span class="tl-s" data-s="1857.48" data-e="1860.26">Paul is not some neophyte preacher.</span> <span class="tl-s" data-s="1860.42" data-e="1863.56">He is very aware, well, things don&#x27;t always turn out so great.</span> <span class="tl-s" data-s="1864.06" data-e="1865.46">Don&#x27;t you think you&#x27;d be cynical?</span> <span class="tl-s" data-s="1865.64" data-e="1868.02">I&#x27;m not going to be a sucker here.</span> <span class="tl-s" data-s="1868.10" data-e="1869.76">I&#x27;m not going to give a lot of gratefulness.</span> <span class="tl-s" data-s="1869.86" data-e="1871.26">Let&#x27;s see how it plays out.</span> <span class="tl-s" data-s="1871.36" data-e="1878.96">No, Paul is thrilled at early fruit in this young church plant and he wants them to know about it.</span> <span class="tl-s" data-s="1879.08" data-e="1886.86">He&#x27;s not concerned, well, if I celebrate their grace in their life, maybe that&#x27;ll take away the motivation for them to grow.</span></p>
+        <p><span class="tl-s" data-s="1887.16" data-e="1888.62">Maybe they&#x27;ll think they&#x27;re good enough.</span> <span class="tl-s" data-s="1889.18" data-e="1891.30">Hasn&#x27;t every parent felt that temptation?</span> <span class="tl-s" data-s="1891.49" data-e="1899.74">Look, I mean, yes, you did better today, but let&#x27;s remember that in general, we are focused on how bad you&#x27;re doing, okay?</span> <span class="tl-s" data-s="1900.12" data-e="1911.80">This was an early return, but we&#x27;re not going to get too excited because you need the thumb of my disapproval over your life lest you let up.</span> <span class="tl-s" data-s="1912.56" data-e="1913.48">Not so Paul.</span> <span class="tl-s" data-s="1914.62" data-e="1920.26">Paul is generous with his gratefulness and he&#x27;s generous pointing out particular areas of grace in their life.</span> <span class="tl-s" data-s="1920.36" data-e="1921.24">Notice his phrases here.</span> <span class="tl-s" data-s="1921.26" data-e="1925.94">He remembers before our God and Father your work of faith.</span> <span class="tl-s" data-s="1926.20" data-e="1930.50">This is not a work that is faith or a work that saves them.</span> <span class="tl-s" data-s="1930.60" data-e="1933.04">This is the work that comes from their faith.</span></p>
+        <p><span class="tl-s" data-s="1933.14" data-e="1938.80">Because they have faith in God, it produces a working for God&#x27;s glory.</span> <span class="tl-s" data-s="1939.74" data-e="1941.16">He doesn&#x27;t go into what this was.</span> <span class="tl-s" data-s="1941.26" data-e="1946.22">Perhaps it was their work of evangelism or their work of serving in the young church community.</span> <span class="tl-s" data-s="1946.52" data-e="1957.56">They&#x27;re giving themselves to God in God-glorifying labor, not based on immediate reward or a master they can see, but because of faith in a God they cannot see.</span> <span class="tl-s" data-s="1957.63" data-e="1964.72">Now, you just want to note there is zero contradiction in the Bible between a celebration of grace and the work that comes from faith.</span> <span class="tl-s" data-s="1965.66" data-e="1966.50">Zero contradiction.</span> <span class="tl-s" data-s="1966.66" data-e="1969.10">And we have in our family of churches no contradiction either.</span> <span class="tl-s" data-s="1969.22" data-e="1977.46">We believe that Christians are called to work hard for the glory of God, but not to earn their salvation, but out of gratefulness that they&#x27;ve received it.</span> <span class="tl-s" data-s="1977.52" data-e="1979.52">And that&#x27;s the kind of work Paul is celebrating.</span> <span class="tl-s" data-s="1979.66" data-e="1980.00">Yeah, yeah.</span></p>
+        <p><span class="tl-s" data-s="1980.20" data-e="1983.00">A person who has received faith, what do they start to do?</span> <span class="tl-s" data-s="1983.16" data-e="1983.74">They work.</span> <span class="tl-s" data-s="1984.60" data-e="1985.28">They work.</span> <span class="tl-s" data-s="1985.40" data-e="1986.16">They serve.</span> <span class="tl-s" data-s="1986.58" data-e="1987.34">They give.</span> <span class="tl-s" data-s="1987.48" data-e="1988.28">They sacrifice.</span> <span class="tl-s" data-s="1988.58" data-e="1989.14">They labor.</span> <span class="tl-s" data-s="1989.30" data-e="1990.10">They send.</span></p>
+        <p><span class="tl-s" data-s="1992.60" data-e="1996.44">A Christian is not indulged in a life of laziness.</span> <span class="tl-s" data-s="1996.82" data-e="2001.78">He&#x27;s motivated to a life of work, a particular kind of work.</span> <span class="tl-s" data-s="2001.94" data-e="2003.08">Build the kingdom.</span> <span class="tl-s" data-s="2003.36" data-e="2004.18">Serve the church.</span> <span class="tl-s" data-s="2004.50" data-e="2005.44">Preach the gospel.</span> <span class="tl-s" data-s="2005.68" data-e="2006.42">Love the lost.</span> <span class="tl-s" data-s="2006.68" data-e="2007.56">Love the community.</span> <span class="tl-s" data-s="2007.94" data-e="2008.60">Lay down your life.</span> <span class="tl-s" data-s="2008.68" data-e="2010.08">Yes, this is work of faith.</span> <span class="tl-s" data-s="2010.24" data-e="2013.46">Paul, looking at this baby church, said, I see it.</span></p>
+        <p><span class="tl-s" data-s="2013.62" data-e="2015.08">I see the work of faith.</span></p>
+        <p><span class="tl-s" data-s="2017.70" data-e="2023.34">Where is there anyone in your life, or where are you, into a labor of love?</span> <span class="tl-s" data-s="2024.62" data-e="2027.34">So it&#x27;s not just for the Lord.</span> <span class="tl-s" data-s="2027.54" data-e="2034.42">I think it&#x27;s also a labor motivated by love towards God, love towards others, I think is probably particularly in view.</span> <span class="tl-s" data-s="2034.58" data-e="2042.62">Paul accents love for one another in this letter, that it was something that God had wrought in the early days of this church.</span> <span class="tl-s" data-s="2042.72" data-e="2046.24">There was a love for one another, and Paul was thrilled by that.</span> <span class="tl-s" data-s="2046.84" data-e="2055.24">He knows that sin causes us to hate God and hate one another and look out only for our own interests, and instead he sees a young church plant that loves each other.</span> <span class="tl-s" data-s="2056.58" data-e="2061.70">Perhaps in hospitality, perhaps in service, perhaps in encouragement, perhaps in forgiveness.</span> <span class="tl-s" data-s="2062.04" data-e="2068.18">He says, this is a labor of love, and I praise God that this is present in this church.</span> <span class="tl-s" data-s="2068.20" data-e="2074.02">And I praise God that this has been present in this church for 40 years.</span></p>
+        <p><span class="tl-s" data-s="2074.44" data-e="2076.48">Labors of love.</span> <span class="tl-s" data-s="2077.86" data-e="2089.98">We believe that the Christian gospel rejects the idea that self-protection is the most important trait of mental health.</span></p>
+        <p><span class="tl-s" data-s="2092.26" data-e="2094.92">Are you aware of that&#x27;s like common today?</span> <span class="tl-s" data-s="2096.10" data-e="2098.00">Self-protection.</span> <span class="tl-s" data-s="2098.12" data-e="2099.60">Me protection.</span> <span class="tl-s" data-s="2099.86" data-e="2103.08">I need to guard myself.</span> <span class="tl-s" data-s="2103.21" data-e="2108.24">Now, there are good reasons to guard against certain kinds of physical dangers.</span> <span class="tl-s" data-s="2108.44" data-e="2112.90">Of course, good reasons for godly men to protect women who are in danger.</span> <span class="tl-s" data-s="2113.00" data-e="2113.68">Of course.</span> <span class="tl-s" data-s="2114.48" data-e="2124.80">But this can be taken to a place where the ultimate goal of all counsel is, are you watching out for you?</span> <span class="tl-s" data-s="2126.14" data-e="2128.24">Are you guarding yourself?</span> <span class="tl-s" data-s="2128.62" data-e="2137.20">Are you self-watchful against anybody that might possibly get in the way?</span></p>
+        <p><span class="tl-s" data-s="2138.14" data-e="2141.58">The biblical gospel says, no, no, we&#x27;re being like Christ.</span> <span class="tl-s" data-s="2141.72" data-e="2142.84">We love other people.</span> <span class="tl-s" data-s="2143.04" data-e="2145.08">We give up our life for other people.</span> <span class="tl-s" data-s="2145.62" data-e="2149.38">That the first question of love in the Bible is not, are you loving yourself enough?</span> <span class="tl-s" data-s="2149.78" data-e="2152.78">But are you giving up that love to love others enough?</span> <span class="tl-s" data-s="2153.56" data-e="2158.18">Paul looked at the Thessalonians and says, I see that kind of otherworldly love.</span> <span class="tl-s" data-s="2159.44" data-e="2162.44">I see the kind of love that says, yes, I can give you my time.</span> <span class="tl-s" data-s="2162.68" data-e="2165.40">I can give you my heart, my friendship, my forgiveness.</span> <span class="tl-s" data-s="2165.96" data-e="2171.24">I can give up the thing that I would naturally enjoy in order to bless you.</span> <span class="tl-s" data-s="2172.20" data-e="2173.12">Yes, he says, there it is.</span></p>
+        <p><span class="tl-s" data-s="2173.22" data-e="2174.04">There it is.</span> <span class="tl-s" data-s="2174.44" data-e="2175.46">That&#x27;s not natural.</span> <span class="tl-s" data-s="2176.70" data-e="2177.98">What&#x27;s natural is self-love.</span> <span class="tl-s" data-s="2178.12" data-e="2180.64">What&#x27;s unnatural is others&#x27; love and God love.</span> <span class="tl-s" data-s="2180.70" data-e="2185.44">And I see that love in you and I&#x27;ve seen that love in this church for all the time I&#x27;ve known you.</span></p>
+        <p><span class="tl-s" data-s="2187.08" data-e="2188.02">I saw it last night.</span> <span class="tl-s" data-s="2188.12" data-e="2189.50">People loving by serving.</span> <span class="tl-s" data-s="2189.70" data-e="2191.38">People loving others by greeting them.</span> <span class="tl-s" data-s="2191.50" data-e="2193.38">People loving others by caring for them.</span> <span class="tl-s" data-s="2193.50" data-e="2194.26">Praying for them.</span> <span class="tl-s" data-s="2194.58" data-e="2195.48">Checking on them.</span> <span class="tl-s" data-s="2195.80" data-e="2198.12">That&#x27;s gospel fruit.</span> <span class="tl-s" data-s="2198.28" data-e="2199.80">That is grace fruit.</span> <span class="tl-s" data-s="2199.94" data-e="2201.46">Now here&#x27;s the key thing for this passage.</span> <span class="tl-s" data-s="2202.14" data-e="2206.36">It&#x27;s meant to resound in glory to God.</span></p>
+        <p><span class="tl-s" data-s="2208.56" data-e="2221.78">My prayer on this anniversary day and as you look ahead to the next 40 years is that there will be a revival of gratefulness, eyes to see God&#x27;s grace.</span> <span class="tl-s" data-s="2221.80" data-e="2244.74">It is tempting the older we live and the older our church is and I would even say the older a family of churches is it&#x27;s tempting to become more aware of the length of our endurance in the Christian life and the present pains and disappointments in our Christian life than we are of the current labors of love.</span> <span class="tl-s" data-s="2244.76" data-e="2249.50">We lose some of that early harvest enthusiasm.</span></p>
+        <p><span class="tl-s" data-s="2252.52" data-e="2255.82">I mean you that are senior saints you know this to be a temptation.</span> <span class="tl-s" data-s="2256.66" data-e="2260.54">The temptation is you lose some of that early harvest enthusiasm.</span></p>
+        <p><span class="tl-s" data-s="2262.60" data-e="2266.74">Time has a way of drawing us towards cynicism and complaining.</span> <span class="tl-s" data-s="2267.10" data-e="2270.18">But Paul, Paul, he&#x27;s thrilled.</span> <span class="tl-s" data-s="2270.28" data-e="2270.92">He&#x27;s excited.</span> <span class="tl-s" data-s="2271.34" data-e="2271.66">Look at this.</span> <span class="tl-s" data-s="2271.74" data-e="2272.12">Look at this.</span> <span class="tl-s" data-s="2272.18" data-e="2273.24">Isn&#x27;t this amazing?</span> <span class="tl-s" data-s="2273.80" data-e="2274.98">This labor of love.</span></p>
+        <p><span class="tl-s" data-s="2276.94" data-e="2281.96">Center Church, I pray that you will grow in a fresh way.</span> <span class="tl-s" data-s="2282.24" data-e="2283.42">Grow still more.</span> <span class="tl-s" data-s="2284.68" data-e="2290.30">Not just in laboring in love because you can labor in love without celebrating the grace in it.</span> <span class="tl-s" data-s="2291.24" data-e="2296.34">And then it becomes a monotonous drudgery instead of a celebration.</span></p>
+        <p><span class="tl-s" data-s="2298.54" data-e="2304.46">You can produce love and faith and okay, gotta serve again.</span></p>
+        <p><span class="tl-s" data-s="2308.94" data-e="2310.54">When it ought to be this celebration.</span> <span class="tl-s" data-s="2310.70" data-e="2311.32">Look, look, look.</span> <span class="tl-s" data-s="2311.46" data-e="2312.86">This is proof.</span></p>
+        <p><span class="tl-s" data-s="2314.54" data-e="2317.04">God is at work in me, in you.</span> <span class="tl-s" data-s="2317.48" data-e="2318.32">Look, look at that.</span> <span class="tl-s" data-s="2318.66" data-e="2319.76">Thank you for serving.</span> <span class="tl-s" data-s="2320.70" data-e="2322.46">Glory to God for your serving.</span></p>
+        <p><span class="tl-s" data-s="2327.54" data-e="2341.08">I pray every godly man in this room that is working to provide for his household is a cause for gratefulness from his wife and his children for the glory of God.</span> <span class="tl-s" data-s="2342.08" data-e="2356.08">I pray every godly wife working behind the scenes with small children doing a thousand tasks no one sees but God is the cause of regular communicated gratefulness to God for her labor of love.</span></p>
+        <p><span class="tl-s" data-s="2357.52" data-e="2387.18">I pray every servant in the church sweeping floors after an event or cooking food for church members or visiting someone in the hospital or hosting small group or organizing a youth ministry or a young adult&#x27;s outreach those are labors born of love for God and for his people and they can be easily assumed and must not be. they must be a cause take it as a personal mission you are responsible Christian to celebrate the grace of God and those around you who are laboring in love.</span></p>
+        <p><span class="tl-s" data-s="2389.50" data-e="2393.68">Paul ends his harvest tour with his steadfastness of hope.</span></p>
+        <p><span class="tl-s" data-s="2395.24" data-e="2407.68">Paul&#x27;s aware that labors of love and works of faith are hard over time and through suffering and so he&#x27;s thrilled that this young church has not given up their hope in spite of early suffering.</span></p>
+        <p><span class="tl-s" data-s="2409.14" data-e="2418.24">He&#x27;s thrilled that they have endured that their early test of a gale of suffering and losing their church planter think about how difficult that was.</span></p>
+        <p><span class="tl-s" data-s="2419.88" data-e="2434.82">A month ago you didn&#x27;t know anything about Jesus you heard this guy Paul preaching it rocked your world you believed in Jesus and he says well the first thing you got to do is you got to start gathering on Sundays why Sundays?</span> <span class="tl-s" data-s="2435.34" data-e="2440.50">Well Jesus rose from the dead on Sundays so what we do as Christians well do you bring sacrifices?</span> <span class="tl-s" data-s="2440.72" data-e="2444.64">No no just yourselves oh well how do we relate to each other?</span> <span class="tl-s" data-s="2444.70" data-e="2450.50">Well you&#x27;re supposed to love each other oh oh let me tell you about Jesus there&#x27;s a trinity I mean how much can you get done in three weeks?</span></p>
+        <p><span class="tl-s" data-s="2452.34" data-e="2476.04">And then the community says I hate this guy Paul get him out and there you are little church little Thessalonian church Paul&#x27;s gone Timothy&#x27;s gone Silas is gone and just staring at each other what do we do now? these people are dangerous people hate them I don&#x27;t know very much about anything do you know very much about I don&#x27;t know anything about anything we don&#x27;t have any letters there&#x27;s no communication there&#x27;s no cell phones what are we supposed to do?</span> <span class="tl-s" data-s="2476.24" data-e="3011.96">Well Paul said we&#x27;re supposed to love each other and worship Jesus and we&#x27;re supposed to endure that&#x27;s what we&#x27;re going to do we&#x27;ll gather and we&#x27;ll just talk about what he told us can anybody find a Jewish Bible? we&#x27;ve got to look let&#x27;s read no wonder Paul was freaked out so when Timothy comes back and says you won&#x27;t believe this those Thessalonians they love each other they&#x27;re working good works clearly born of their faith in Christ and they&#x27;re enduring they didn&#x27;t scatter they didn&#x27;t give up they didn&#x27;t decide you were just a charlatan a wandering preacher looking to peddle gospel message for money they still believe in what you said they&#x27;re holding on I mean I think Paul would have been floored and no wonder he says thank God for your steadfastness of hope we look to the future promises of Christ like they did not with a wishful feeling or a temporary optimism but a steadfast hope we don&#x27;t give up and that is a harvest of God&#x27;s grace we don&#x27;t look to what we see we look to what we don&#x27;t see that&#x27;s one of the marks of a Christian there&#x27;s a person looking to what they don&#x27;t see do you see that person looking to what they don&#x27;t see there&#x27;s a Christian do you see a single mother with shattered dreams still singing on Sunday that&#x27;s steadfastness of hope it must be celebrated do you see a friend whose child or whose parent continues to reject the gospel and yet they still sing about the power of saving grace that is steadfastness of hope do you see a cancer riddled saint still declare their love for Jesus that is steadfast hope you see an elderly Christian who glows with godly joy even as their body betrays them that is steadfast hope do you see a citizen of a country a world riddled with immoralities and divisions whose future is uncertain and yet they are still peacefully sitting under god&#x27;s word sunday after sunday looking for the city not made with hands with the land that is not stained by sin unaffected by the turmoil of the culture around them that is steadfast hope hope doesn&#x27;t always look brazen doesn&#x27;t sound cocky or self confident it just quietly and certainly looks upward and sounds determined to persevere it is steadfast and where that is wherever that hope is we have a responsibility as a church to celebrate the grace of god the church is like a an orchard farmer that wanders around with gospel lenses on looking to see where god&#x27;s grace is producing fruit our sin is like a blindness that keeps us from seeing where god&#x27;s grace is present in his people this passage is saying take off the blinders and see god&#x27;s grace don&#x27;t give in to the lie of cynicism don&#x27;t give in to the lie of legalism that says well they&#x27;re just naturally amazing people no they&#x27;re not neither are you what good do you see what good do you see think about it right now think about it right now there&#x27;s people there&#x27;s people that mostly are aware of their problems think about right now think about a person right now go to the second go to the third go to the fourth pick the people that it&#x27;s hardest there&#x27;s people that they&#x27;re easy right go to the hard people go right now to the hard people in in your mind I don&#x27;t particularly care if you listen to a message in one sense I care if it changes us go to the people go to the people that are hard go to the people that are difficult in your family in your life in your small group in your church go to people and think of where these things are present somewhere in their life are you doing it now go to people that are less hard should be easier people that have served you people that have labored for you people that have loved you people that have had faith for you people that have forgiven you go to them in your mind right now go there go to people that have labored among you go to your pastors they&#x27;ve worked hard for decades to preach the word in season out love that&#x27;s not from them they were dirt and God raised up a tree where is it it&#x27;s everywhere in this room it&#x27;s everywhere in this room and if somehow you happen to come here and you don&#x27;t know what the deal is with Jesus or with grace but you&#x27;ve met somebody nice or maybe you wandered by the building or wandered past the website and you thought I&#x27;ll check it out and see listen what we are talking about this morning is the good news that God gives salvation to sinners and then having saved them from his own judgment by the death of Jesus on the cross he changes them to be like Jesus little by little and gradually so if you can use the metaphor it&#x27;s like you come in as a dirt field and God turns you into an orchard that&#x27;s the good news and if you believe in Jesus that good news starts with you immediately and if you are a Christian especially on this 40th anniversary as we look ahead to the future of this church let&#x27;s be like Paul let&#x27;s celebrate the grace of God let&#x27;s let&#x27;s do it today there&#x27;s a picnic out there we could talk about nothing I guess for a couple of hours or or we could find moments to say I thank God for this in your life I thank God that you&#x27;re my friend still I thank God that you love me I thank God that you work for the church I thank God that you serve on this team that team the youth young adults evangelism I thank God I thank God that you sing his praises every Sunday God has called me he&#x27;s called you to celebrate the harvest of his grace it brings him glory it strengthens the church and it gives us great joy let&#x27;s pray Lord I thank you for the countless evidences of your grace in center church Gilbert Lord I thank you for their works of faith in planting churches in serving your gospel here and around the world and loving each other with labors of sacrifice of hospitality of hard work behind the scenes of giving sacrificial giving for the building up of this church Lord thank you for their steadfastness of hope through trials through pains through suffering through losses through uncertainties through mysteries Lord they have been steadfast in keeping their eyes towards you and for all of those reasons Lord I give you praise you have raised an orchard of your grace it is seated before me and may it bring you great glory now and into the future and I pray Lord that you would Lord cause them still more to abound in a gratefulness in eyes that see your grace in hearts that love your grace in mouths that celebrate your grace cause them still more for decades and decades to come to be a choir of gratefulness celebrating your harvest of grace in Jesus name we pray amen John thank you so much for serving us</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Live sermon feed: spotlight from /api/sermons, browsable archive from
+  // /api/sermons/search. Static fallback list stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function row(it) {
+      var meta = [it.speaker, fmtDate(it.date)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      var titleHtml = esc(it.title);
+      var tUrl = it.guid && transcriptMap[it.guid];
+      if (tUrl) titleHtml = '<a href="' + esc(tUrl) + '">' + titleHtml + "</a>";
+      return '<div class="sermon"><div><h3>' + titleHtml + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    fetch("/api/sermons?v=3")
+      .then(function (res) { if (!res.ok) throw new Error("feed " + res.status); return res.json(); })
+      .then(function (data) {
+        var spot = document.querySelector("[data-series-spotlight]");
+        if (data && data.series && spot) {
+          var s = data.series;
+          var art = spot.querySelector("[data-series-art]");
+          if (art && s.artwork) { art.src = s.artwork; } else if (art) { art.style.display = "none"; }
+          var nm = spot.querySelector("[data-series-name]");
+          if (nm) nm.textContent = s.name;
+          var bl = spot.querySelector("[data-series-blurb]");
+          if (bl) bl.textContent = s.blurb;
+          spot.hidden = false;
+        }
+      })
+      .catch(function () { /* spotlight stays hidden */ });
+
+    var PER = 10;
+    var state = { q: "", speaker: "", series: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var speakerSel = document.querySelector("[data-sermons-speaker]");
+    var seriesSel = document.querySelector("[data-sermons-series]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No messages found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(speakerSel, data.facets.speakers || [], function (e) { return e.name; }, function (e) { return e.name + " (" + e.count + ")"; });
+        fill(seriesSel, data.facets.series || [], function (e) { return e.name; }, function (e) { return e.name + " (" + e.count + ")"; });
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.speaker || data.series || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.speaker) parts.push("by " + data.speaker);
+          if (data.series) parts.push("in " + data.series);
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " result" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " messages";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/sermons/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.speaker ? "&speaker=" + encodeURIComponent(state.speaker) : "") +
+        (state.series ? "&series=" + encodeURIComponent(state.series) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () { /* keep current list on error */ });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.speaker = ""; state.series = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (speakerSel) speakerSel.value = "";
+      if (seriesSel) seriesSel.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    function bindSelect(sel, key) {
+      if (!sel) return;
+      sel.addEventListener("change", function () {
+        state[key] = sel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    bindSelect(speakerSel, "speaker");
+    bindSelect(seriesSel, "series");
+    bindSelect(monthSel, "month");
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: https://hub.centergilbert.com/media/40th-anniversary -->
+</body>
+</html>
