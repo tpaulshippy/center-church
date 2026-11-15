@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 # Local sermon transcription with whisper.cpp (free, no API key).
 #
-#   ./scripts/transcribe-local.sh "https://.../sermon.mp3" [out-prefix]
-#   ./scripts/transcribe-local.sh /path/to/sermon.mp3 [out-prefix]
+#   ./scripts/transcripts/transcribe-local.sh "https://.../sermon.mp3" [out-prefix]
+#   ./scripts/transcripts/transcribe-local.sh /path/to/sermon.mp3 [out-prefix]
 #
 # Downloads ggml-large-v3-turbo into $MODEL_DIR on first run, transcribes
 # with word-level timestamps, and writes <out>.txt + <out>.words.json.
 # Then:
-#   ./scripts/add-transcript.sh --transcript-file <out>.txt \
+#   ./scripts/transcripts/add-transcript.sh --transcript-file <out>.txt \
 #       --transcript-words <out>.words.json --pause-gap 1.4 [other flags]
 #
 # Deps: bash, curl, python3 (stdlib only), whisper-cli
@@ -58,5 +58,5 @@ whisper-cli -m "$MODEL_DIR/$MODEL_NAME" -l en --split-on-word \
 
 echo
 echo "Next:"
-echo "  ./scripts/add-transcript.sh --transcript-file ${OUT}.txt \\"
+echo "  ./scripts/transcripts/add-transcript.sh --transcript-file ${OUT}.txt \\"
 echo "      --transcript-words ${OUT}.words.json --pause-gap 1.4 [other flags]"

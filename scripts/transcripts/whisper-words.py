@@ -2,7 +2,7 @@
 """Convert whisper.cpp full-JSON output to the words file add-transcript.sh wants.
 
 Usage:
-    scripts/whisper-words.py whisper.json words.json
+    scripts/transcripts/whisper-words.py whisper.json words.json
 
 Input:  whisper.cpp `--output-json-full` file (use `--split-on-word` for true
         word-level times; without it token times are coarse).
@@ -11,7 +11,7 @@ Output: JSON list [{"t": word, "start": seconds, "end": seconds}] — the
         ([_BEG_], [_TT_*], ...) are dropped and subword pieces merged.
 
 Stdlib only. Then:
-    ./scripts/add-transcript.sh --transcript-file sermon.txt \
+    ./scripts/transcripts/add-transcript.sh --transcript-file sermon.txt \
         --transcript-words words.json --pause-gap 1.4
 """
 import json

@@ -7,22 +7,22 @@
 #   AUDIO_URL TITLE SPEAKER SERIES DESCRIPTION PUBDATE DURATION GUID SLUG OUTPUT TRANSCRIPT_FILE TRANSCRIPT_ID PAUSE_GAP
 #
 # Examples:
-#   ./scripts/add-transcript.sh
-#   AUDIO_URL="https://.../sermon.mp3" TITLE="Acts 21:1-14" ./scripts/add-transcript.sh
-#   ./scripts/add-transcript.sh --audio-url https://.../x.mp3 --title "Acts 21:1-14" \
+#   ./scripts/transcripts/add-transcript.sh
+#   AUDIO_URL="https://.../sermon.mp3" TITLE="Acts 21:1-14" ./scripts/transcripts/add-transcript.sh
+#   ./scripts/transcripts/add-transcript.sh --audio-url https://.../x.mp3 --title "Acts 21:1-14" \
 #     --speaker "Rich Richardson" --series Acts --pubdate 2026-11-15 --slug transcript-acts-21-1-14
-#   ./scripts/add-transcript.sh --transcript-id 098422e6-80de-420f-ad1c-d0fec7462169  # reuse completed transcript, no re-transcribe
-#   ./scripts/add-transcript.sh --transcript-file /tmp/sermon.txt   # skip AssemblyAI, use local text
-#   ./scripts/add-transcript.sh --transcript-file /tmp/sermon.txt --transcript-words /tmp/words.json  # local text + word timings
+#   ./scripts/transcripts/add-transcript.sh --transcript-id 098422e6-80de-420f-ad1c-d0fec7462169  # reuse completed transcript, no re-transcribe
+#   ./scripts/transcripts/add-transcript.sh --transcript-file /tmp/sermon.txt   # skip AssemblyAI, use local text
+#   ./scripts/transcripts/add-transcript.sh --transcript-file /tmp/sermon.txt --transcript-words /tmp/words.json  # local text + word timings
 #
 # Local whisper.cpp flow (free, no API key):
-#   ./scripts/transcribe-local.sh "https://.../sermon.mp3" sermon
-#   ./scripts/add-transcript.sh --transcript-file sermon.txt \
+#   ./scripts/transcripts/transcribe-local.sh "https://.../sermon.mp3" sermon
+#   ./scripts/transcripts/add-transcript.sh --transcript-file sermon.txt \
 #       --transcript-words sermon.words.json --pause-gap 1.4 [other flags]
 # (whisper timings run wider than AssemblyAI's, so use --pause-gap 1.4.)
-#   ./scripts/add-transcript.sh --no-push                            # write HTML only, print manual git commands
-#   ./scripts/add-transcript.sh --message "Custom commit msg"        # override commit message
-#   ./scripts/add-transcript.sh --pause-gap 1.5                  # pause threshold (s) for paragraph breaks, default 1.2
+#   ./scripts/transcripts/add-transcript.sh --no-push                            # write HTML only, print manual git commands
+#   ./scripts/transcripts/add-transcript.sh --message "Custom commit msg"        # override commit message
+#   ./scripts/transcripts/add-transcript.sh --pause-gap 1.5                  # pause threshold (s) for paragraph breaks, default 1.2
 #
 # Chunking is pause-based when word timestamps exist: a new paragraph starts
 # wherever the gap between consecutive words exceeds PAUSE_GAP seconds, with
@@ -31,7 +31,7 @@
 #
 # After writing the HTML the script auto-commits (message
 # "Add sermon transcript: <TITLE>") and pushes to main, unless --no-push.
-#   ./scripts/add-transcript.sh --placeholder                          # placeholder page, no API call
+#   ./scripts/transcripts/add-transcript.sh --placeholder                          # placeholder page, no API call
 #
 # Deps: bash, curl, python3 (stdlib only). No npm.
 set -euo pipefail
@@ -81,7 +81,7 @@ while [ $# -gt 0 ]; do
   esac
 done
 
-ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
 cd "$ROOT"
 TEMPLATE="public/sermons.html"
 [ -f "$TEMPLATE" ] || { echo "Template not found: $TEMPLATE" >&2; exit 1; }
@@ -99,7 +99,7 @@ fi
 
 write_placeholder() {
   cat > "$TRANSCRIPT_TXT" <<'EOF'
-[TRANSCRIPT PLACEHOLDER — re-run scripts/add-transcript.sh with $ASSEMBLYAI_API_KEY set to fill this in.]
+[TRANSCRIPT PLACEHOLDER — re-run scripts/transcripts/add-transcript.sh with $ASSEMBLYAI_API_KEY set to fill this in.]
 
 The audio for this sermon is available above. The full transcript will appear here once generated.
 EOF
@@ -405,7 +405,7 @@ else:
 notice = ""
 if placeholder:
     notice = ('        <p class="transcript-notice"><strong>Note:</strong> this is a placeholder transcript. '
-              'Re-run <code>scripts/add-transcript.sh</code> with <code>$ASSEMBLYAI_API_KEY</code> set '
+              'Re-run <code>scripts/transcripts/add-transcript.sh</code> with <code>$ASSEMBLYAI_API_KEY</code> set '
               'to generate the full transcript.</p>\n')
 
 meta_bits = " · ".join(b for b in [speaker, series, pubdate, duration] if b)
@@ -415,7 +415,6 @@ main = """  <main>
       <div class="container">
         <div class="transcript-head">
           <a class="transcript-back" href="/sermons">&larr; All sermons</a>
-          <span class="eyebrow">Sermon transcript</span>
           <h1 class="display-lg">%s</h1>
           <p class="transcript-meta">%s</p>
           <p class="transcript-desc">%s</p>
@@ -444,7 +443,7 @@ dark_style = """  <style>
        Inline here so only transcript pages are affected; the rest of the
        site keeps its light theme. No toggle, no JS. */
     /* Transcript header: calm type-led top (no photo hero). Single
-       eyebrow, title (page h1, read by the read-along mini-bar) and meta
+       title (page h1, read by the read-along mini-bar) and meta
        line, then the description and the audio player grouped as the
        .sermon unit below. */
     .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
@@ -456,7 +455,6 @@ dark_style = """  <style>
     .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
     .transcript-head .sermon audio { margin-top: 0; }
     @media (prefers-color-scheme: dark) {
-      .eyebrow { color: #e8a76f; }
       .transcript-back { color: #e8a76f; }
       .transcript-meta { color: var(--muted-dark); }
       .transcript-desc { color: var(--muted-dark); }
@@ -504,7 +502,9 @@ with open(os.environ["OUTPUT"], "w") as f:
 print("Wrote %s" % os.environ["OUTPUT"])
 EOF
 
+if [ "$NO_PUSH" -eq 0 ]; then
 # Maintain the transcript manifest consulted by /sermons (guid -> path).
+# Only on real runs: --no-push is a side-effect-free dry run.
 python3 - "$GUID" "/sermons/${SLUG}" <<'EOF'
 import json, sys
 p = "public/transcripts.json"
@@ -518,23 +518,24 @@ with open(p, "w") as f:
     f.write("\n")
 print("Manifest %s: %s -> %s" % (p, sys.argv[1], sys.argv[2]))
 EOF
+fi
 
 echo
 MSG="${MESSAGE:-Add sermon transcript: ${TITLE}}"
 if [ "$NO_PUSH" -eq 1 ]; then
   echo "Next steps (--no-push: commit+push skipped):"
   echo "  1. Review ${OUTPUT} in a browser (unlinked draft — not in nav or sitemap)."
-  echo "  2. git add ${OUTPUT} scripts/add-transcript.sh public/transcripts.json && git commit -m \"${MSG}\" && git push"
+  echo "  2. git add ${OUTPUT} scripts/transcripts/add-transcript.sh public/transcripts.json && git commit -m \"${MSG}\" && git push"
   echo "     (push to main deploys via the existing GitHub Action)"
   echo "  3. Share the direct URL path: /sermons/${SLUG}"
 else
   # Stage ONLY these three paths — never `git add -A`. Unrelated dirty files
   # (staged or not) are left untouched.
-  git add -- "${OUTPUT}" scripts/add-transcript.sh public/transcripts.json
-  if git diff --cached --quiet -- "${OUTPUT}" scripts/add-transcript.sh public/transcripts.json; then
+  git add -- "${OUTPUT}" scripts/transcripts/add-transcript.sh public/transcripts.json
+  if git diff --cached --quiet -- "${OUTPUT}" scripts/transcripts/add-transcript.sh public/transcripts.json; then
     echo "Nothing new to commit (${OUTPUT} and script unchanged)."
   else
-    git commit -m "${MSG}" -- "${OUTPUT}" scripts/add-transcript.sh
+    git commit -m "${MSG}" -- "${OUTPUT}" scripts/transcripts/add-transcript.sh
     if git push; then
       echo "Pushed to main (deploys via the existing GitHub Action)."
     else
