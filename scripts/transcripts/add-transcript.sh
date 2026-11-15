@@ -574,13 +574,13 @@ dark_style = """  <style>
 new = new.replace("</head>", dark_style + "\n</head>", 1)
 
 # Read-along audio (sticky mini player, sentence highlight, auto-follow).
-# Shared files — bump ?v= in public/readalong.css, public/readalong.js, AND
-# here together so browsers pick up changes. Page-specific copy
-# (transcript-acts-20-13-38) links the same files. The mini-bar label is
-# read from the page h1 by the shared JS. Without word timings the JS finds
-# no .tl-s nodes and stays idle (the sticky player bar still works).
-new = new.replace("</head>", '  <link rel="stylesheet" href="/readalong.css?v=1" />\n</head>', 1)
-new = new.replace("</body>", '  <script src="/readalong.js?v=1"></script>\n</body>', 1)
+# Shared files — bump ?v= in public/readalong.css, public/readalong.js,
+# here, AND every generated transcript page together so browsers pick up
+# changes. Page-specific copy (transcript-acts-20-13-38) links the same
+# files. Without word timings the JS finds no .tl-s nodes and stays idle
+# (the sticky player bar still works).
+new = new.replace("</head>", '  <link rel="stylesheet" href="/readalong.css?v=2" />\n</head>', 1)
+new = new.replace("</body>", '  <script src="/readalong.js?v=2"></script>\n</body>', 1)
 if "<!-- guid: " not in new:
     new = new.replace("</body>", "<!-- guid: %s -->\n</body>" % html.escape(guid))
 

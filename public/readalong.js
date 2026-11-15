@@ -14,11 +14,7 @@
     var bar = document.createElement("div");
     bar.id = "tl-minibar";
     bar.setAttribute("role", "region");
-    bar.setAttribute("aria-label", "Sermon audio");
-    var label = document.createElement("span");
-    label.className = "tl-mini-label";
-    var titleEl = document.querySelector("main h1");
-    label.textContent = titleEl ? titleEl.textContent.trim() : "Sermon";
+    bar.setAttribute("aria-label", "Transcript audio");
     var slot = document.createElement("div");
     slot.className = "tl-mini-slot";
     var followBtn = document.createElement("button");
@@ -26,7 +22,6 @@
     followBtn.className = "tl-follow";
     followBtn.textContent = "Following";
     followBtn.setAttribute("aria-pressed", "true");
-    bar.appendChild(label);
     bar.appendChild(slot);
     bar.appendChild(followBtn);
     document.body.appendChild(bar);
