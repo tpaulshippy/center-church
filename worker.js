@@ -570,7 +570,7 @@ export default {
     }
     // Clean URL for the internal upload guide (serves public/add-sermon-guide.html).
     if (url.pathname === "/add-sermon-guide" || url.pathname === "/add-sermon-guide/") {
-      return env.ASSETS.fetch(
+      return await env.ASSETS.fetch(
         new Request(new URL("/add-sermon-guide.html", request.url), request)
       );
     }
@@ -589,7 +589,7 @@ export default {
         });
       }
     }
-    if (res.status === 404) {
+    if (res.status === 404 && url.pathname.includes(".")) {
       logApp(env, "404", url.pathname, "", url.hostname);
     }
     return res;
