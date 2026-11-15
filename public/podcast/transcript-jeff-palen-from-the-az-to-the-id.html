@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jeff Palen: from the AZ to the ID — Podcast Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Fixed on Jesus: conversations beyond Sunday mornings from Center Church in Gilbert, AZ — listen on Spotify, Apple Podcasts, and YouTube." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=18" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a href="/sermons">Sermons</a></li>
+              <li><a class="active" href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/podcast">&larr; All podcast episodes</a>
+          <h1 class="display-lg">Jeff Palen: from the AZ to the ID</h1>
+          <p class="transcript-meta">2024-09-11 · 44:42</p>
+          <p class="transcript-desc">FIXED ON JESUS, a podcast brought to you by Center Church in Gilbert, Arizona. Speaking to you today are Rich Richardson &amp; Mark Johnson Jr. and special guest, Jeff Palen. Production by Heather Corbitt **SHOW NOTES** In today&#x27;s VERY SPECIAL episode we have our very first interview with one of our pas</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/e750e370/podcast/play/91510162/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-8-10%2F05bc3515-ddcd-5a5a-f21e-3e731b9bb821.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1.27" data-e="3.93">So there was another thing going on around this time.</span> <span class="tl-s" data-s="4.44" data-e="12.13">As a church, we sent Frank Lundy to the pastor&#x27;s college with the intention of him coming back and planting a church locally, relatively locally.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="12.17" data-e="13.06">We prayed about Mesa.</span> <span class="tl-s" data-s="13.27" data-e="13.39">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="13.44" data-e="14.15">Prayed about Mesa.</span> <span class="tl-s" data-s="14.77" data-e="17.21">And Jeff was going to stay here on staff.</span> <span class="tl-s" data-s="17.68" data-e="23.58">And then at some point, looking from the outside in, and I heard a little bit about it, that shifted.</span> <span class="tl-s" data-s="23.85" data-e="31.20">Can you walk us through how you guys walked through that as a team, but also how the Lord was pulling on different strings that all worked out together?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="44.06" data-e="48.01">Hey everybody, we&#x27;re going to be interviewing Jeff Palin, and we&#x27;ve got it in 3 parts.</span> <span class="tl-s" data-s="48.15" data-e="51.33">The first part is who he is, his background, how he got saved.</span> <span class="tl-s" data-s="51.83" data-e="61.31">The second part is his life and ministry here at Center Church, and the third part is his plans, hopes, and dreams for Planting a church in Boise, Idaho.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="61.81" data-e="66.57">So if you&#x27;re hearing one of the parts right now, stay tuned for the following week to hear your next part.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="70.09" data-e="70.67">Here&#x27;s part three.</span> <span class="tl-s" data-s="71.57" data-e="79.77">What was funny because it was kind it was kind of concurrent because Jeff and I are talking about what if you&#x27;re called to plant, and I&#x27;m not pushing him.</span> <span class="tl-s" data-s="79.82" data-e="80.85">I&#x27;m saying you need to pray about this.</span> <span class="tl-s" data-s="80.85" data-e="81.49">This is a big deal.</span> <span class="tl-s" data-s="81.49" data-e="82.15">It&#x27;s really hard.</span> <span class="tl-s" data-s="82.20" data-e="83.75">You need to pray about this.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="83.75" data-e="85.57">I don&#x27;t even think we like put it in the context.</span> <span class="tl-s" data-s="85.57" data-e="87.08">We [Speaker B] didn&#x27;t say about planting.</span> <span class="tl-s" data-s="87.13" data-e="88.21">Yeah, we just said preaching and teaching.</span> <span class="tl-s" data-s="88.26" data-e="88.56">It&#x27;s just.</span> <span class="tl-s" data-s="88.81" data-e="90.65">This is clearly the way that you&#x27;re made.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="90.97" data-e="91.10">Right.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="91.24" data-e="92.43">So what does that mean for us?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="92.59" data-e="92.83">Right.</span> <span class="tl-s" data-s="92.99" data-e="93.76">Preaching and teaching.</span> <span class="tl-s" data-s="94.92" data-e="95.36">What does that mean?</span> <span class="tl-s" data-s="95.41" data-e="96.17">We haven&#x27;t asked that.</span> <span class="tl-s" data-s="96.34" data-e="98.51">We&#x27;re still holding that sort of loosely, right?</span> <span class="tl-s" data-s="98.75" data-e="109.04">And so then we go to the pastors conference and Frank asked to meet with me and he goes, man, the Lord&#x27;s been doing something in my heart.</span> <span class="tl-s" data-s="109.09" data-e="109.93">And I go, what do you mean?</span> <span class="tl-s" data-s="109.97" data-e="111.40">Because I&#x27;m not talking to anybody.</span> <span class="tl-s" data-s="111.50" data-e="113.44">You [Speaker A] thought he was going to drop out of ministry.</span> <span class="tl-s" data-s="113.44" data-e="114.87">No, I didn&#x27;t think that.</span></p>
+        <p><span class="tl-s" data-s="115.03" data-e="115.20">That&#x27;s right.</span> <span class="tl-s" data-s="115.20" data-e="118.50">I did not think that, but I thought something&#x27;s going on.</span> <span class="tl-s" data-s="118.50" data-e="129.19">He actually says the Lord has been sort of working on him and saying, I feel like I want to be someone who counsels and disciples at our church.</span> <span class="tl-s" data-s="129.25" data-e="131.98">And he goes, I know that this is bad timing.</span> <span class="tl-s" data-s="132.06" data-e="135.00">I know that we had talked about planting.</span> <span class="tl-s" data-s="135.10" data-e="138.52">I know that, you know, this is kind of a shift.</span> <span class="tl-s" data-s="138.57" data-e="139.22">And so what do you think?</span> <span class="tl-s" data-s="139.27" data-e="141.66">And I was like, well, That&#x27;s interesting.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="141.79" data-e="142.72">How quickly did you make that?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="142.74" data-e="151.11">I didn&#x27;t want— I didn&#x27;t— well, I made the connection immediately, but I didn&#x27;t want to, I didn&#x27;t want to like step or say something out of turn.</span> <span class="tl-s" data-s="151.66" data-e="154.53">And so, so I held it back.</span> <span class="tl-s" data-s="154.53" data-e="161.92">And then we just started, we continued to talk about it as a team, because Jeff, Jeff was processing this stuff, right?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="161.95" data-e="162.09">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="162.09" data-e="165.95">And so it wasn&#x27;t like he was, when I suggested it the first— [Speaker A] Like, oh yeah, I&#x27;ll do that.</span> <span class="tl-s" data-s="165.95" data-e="167.76">It was not like that.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="167.86" data-e="175.81">I mean, I probably reach out in October, like, I&#x27;m seriously considering what this means.</span> <span class="tl-s" data-s="175.81" data-e="180.44">And then it looks like it might be different than Gilbert.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="180.53" data-e="181.21">Right.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="181.51" data-e="184.80">And it&#x27;s in November that Frank pulls you aside.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="184.80" data-e="185.04">Right.</span> <span class="tl-s" data-s="185.04" data-e="186.64">And so I didn&#x27;t say anything about anything.</span> <span class="tl-s" data-s="186.71" data-e="187.97">I was talking with Jeff.</span> <span class="tl-s" data-s="188.15" data-e="191.36">I haven&#x27;t been talking— I wanted Jeff to be able to make the decision.</span> <span class="tl-s" data-s="191.36" data-e="195.32">Well, we would do it together, but not with pressure or any of that stuff, right?</span> <span class="tl-s" data-s="195.32" data-e="197.37">And I didn&#x27;t breathe a word to Frank.</span> <span class="tl-s" data-s="197.47" data-e="199.98">And so, it was really— [Speaker A] They weren&#x27;t in cahoots?</span> <span class="tl-s" data-s="199.98" data-e="200.24">No.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="200.30" data-e="201.36">No, he&#x27;s out of the loop.</span> <span class="tl-s" data-s="201.41" data-e="204.47">I mean, he is buried.</span> <span class="tl-s" data-s="204.47" data-e="206.86">Yeah, he&#x27;s buried [Speaker B] in schoolwork and everything.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="206.91" data-e="207.36">Louisville.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="207.62" data-e="207.70">Yeah.</span> <span class="tl-s" data-s="207.78" data-e="213.47">And so, it was a real shocker to us, to me, right?</span> <span class="tl-s" data-s="213.50" data-e="219.56">And then as we continued to talk, and as we continued to process, Jeff&#x27;s like, yeah, I think I can see what you mean.</span> <span class="tl-s" data-s="219.58" data-e="224.25">I mean, I&#x27;m truncating it a lot, but [Speaker C] No, I think that&#x27;s fair.</span></p>
+        <p><span class="tl-s" data-s="225.47" data-e="232.51">And then we start talking about planting and, and, um, because Jeff can preach and teach and lead and— [Speaker A] Yeah.</span> <span class="tl-s" data-s="232.52" data-e="236.48">And so we&#x27;re thinking, yeah, this, this is a good fit.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="236.48" data-e="246.66">So just, just to sum up some of it, Jeff stepped into the youth role, got to wear many hats in ministry, got to juggle multiple things.</span> <span class="tl-s" data-s="246.71" data-e="257.38">And whereas counseling and discipling might be a little bit more of like one or two lanes, Whereas planting a church is multiple facets, lots of lanes, lots of things go into that.</span> <span class="tl-s" data-s="257.38" data-e="260.25">Leading a team, shepherding people, preaching and teaching on a regular basis.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="260.36" data-e="261.61">Primarily preaching and teaching and leading.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="261.73" data-e="262.98">That&#x27;s what I mean.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="262.99" data-e="265.87">That&#x27;s the main thing.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="265.88" data-e="267.69">Right, so this, like you said, it&#x27;s formidable in preparing you for that.</span> <span class="tl-s" data-s="267.81" data-e="269.06">And you just see the Lord&#x27;s hand in that.</span> <span class="tl-s" data-s="269.43" data-e="283.80">And then all of a sudden you have this situation where one guy who feels called and he goes to the pastor&#x27;s college, Frank Lundy, And at the same time, Frank realizes he feels called to counsel and disciple at his local church.</span> <span class="tl-s" data-s="283.80" data-e="292.20">And the Lord&#x27;s starting to work in Jeff&#x27;s heart through some of your suggestion, but also you&#x27;re seeking his wisdom to plant or consider planting.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="292.25" data-e="294.22">At least preaching and teaching.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="294.30" data-e="299.06">Preaching and teaching, which is the primary thing that you would utilize in a church plant.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="299.12" data-e="299.35">That&#x27;s right.</span> <span class="tl-s" data-s="299.38" data-e="299.46">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="299.46" data-e="303.28">So that kind of sums it up in a quick way.</span> <span class="tl-s" data-s="303.38" data-e="306.95">Now we can kind of turn to What is happening in the next year?</span> <span class="tl-s" data-s="306.95" data-e="308.91">What do you want to— what&#x27;s the time?</span> <span class="tl-s" data-s="308.94" data-e="314.32">Let&#x27;s start with the timeline, the location.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="314.34" data-e="315.05">Yeah, Lord willing.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="315.10" data-e="315.31">Boise Metro.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="315.31" data-e="317.78">Lord willing, we&#x27;re looking at next summer.</span> <span class="tl-s" data-s="317.83" data-e="320.60">So that would be the summer of 2025.</span> <span class="tl-s" data-s="320.89" data-e="321.67">Now we serve a sovereign God.</span> <span class="tl-s" data-s="321.67" data-e="322.27">Things might change.</span> <span class="tl-s" data-s="322.37" data-e="323.55">We don&#x27;t— we hope not.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="323.57" data-e="324.15">We saw that already.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="324.17" data-e="330.22">Yeah, you know, there&#x27;s things that happen and we don&#x27;t— we hope that&#x27;s— I mean, we hope that doesn&#x27;t happen.</span> <span class="tl-s" data-s="330.22" data-e="331.39">But that&#x27;s what we&#x27;ve been aiming at.</span> <span class="tl-s" data-s="331.42" data-e="336.55">And we&#x27;ve been— I mean, obviously, if you&#x27;ve been around, you&#x27;ve heard us saying, hey, please be praying about this, please be praying about this.</span> <span class="tl-s" data-s="336.55" data-e="336.95">We talked about this.</span> <span class="tl-s" data-s="337.01" data-e="342.16">We&#x27;ve been just talking about it a lot.</span></p>
+        <p><span class="tl-s" data-s="343.38" data-e="346.00">We&#x27;ve had 2 different interest meetings.</span> <span class="tl-s" data-s="346.29" data-e="357.39">But so when we start to think about preaching and teaching for Jeff, then we start talking about planting, and Greater Boise&#x27;s on your heart.</span> <span class="tl-s" data-s="357.48" data-e="357.85">Yes?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="357.90" data-e="358.40">Yeah, that&#x27;s right.</span> <span class="tl-s" data-s="358.44" data-e="361.02">Uh, for no real reason that we could really put our finger on.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="361.11" data-e="364.02">Yeah, yeah, that&#x27;s what I was gonna ask.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="364.38" data-e="375.34">We had— we, you know, outside of my, uh, Barb&#x27;s got a cousin that moved there about 6 or so years ago, but like we hadn&#x27;t even put foot on the ground or anything, didn&#x27;t know anything about it.</span> <span class="tl-s" data-s="376.41" data-e="378.88">So really we&#x27;re unsure why that was sprouting.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="378.90" data-e="386.78">Which, you know, if someone is— my philosophy on planting, and we&#x27;ve planted 3 churches on purpose.</span> <span class="tl-s" data-s="386.78" data-e="389.44">This will be our 4th.</span> <span class="tl-s" data-s="389.44" data-e="393.24">And it&#x27;s hard enough that— it&#x27;s hard enough to plant a church.</span> <span class="tl-s" data-s="393.36" data-e="397.77">When it comes to the location, my philosophy is, man, that location needs to be on your heart.</span> <span class="tl-s" data-s="397.86" data-e="408.71">It needs to be something that you think, man, this is where I feel like God has called me to live and minister and die and be buried.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="409.66" data-e="409.88">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="410.54" data-e="413.52">And so, That&#x27;s how I&#x27;ve thought about it.</span> <span class="tl-s" data-s="413.57" data-e="424.44">And that&#x27;s where— so that&#x27;s where Jeff has done an outstanding job getting to know Boise, Greater Boise.</span> <span class="tl-s" data-s="424.87" data-e="432.52">And so he has tons of information on why and what the landscape&#x27;s like, which I really want people to hear about.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="432.58" data-e="432.98">Yes, definitely.</span> <span class="tl-s" data-s="432.98" data-e="435.92">I want to dive into that.</span> <span class="tl-s" data-s="436.03" data-e="449.10">But just before the information specifically, for those that are curious, you mentioned the location, like it&#x27;s hard to put your finger on the exact reason you joined that location or you decided on that location or the Lord put that location on your heart.</span> <span class="tl-s" data-s="449.10" data-e="454.87">What did those early conversations look like with the pastoral team, with your wife?</span> <span class="tl-s" data-s="455.18" data-e="462.57">What were the early steps that you took to explore and pray about the Boise metro area before we go into the details of that?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="465.22" data-e="468.92">Yeah, that could probably be its own episode.</span> <span class="tl-s" data-s="469.38" data-e="485.57">In a nutshell, once we were working through what it looks like for me to potentially lead and teach a church primarily, it became clear that there was a couple of options and one of them had heat and the others were falling flat.</span> <span class="tl-s" data-s="485.57" data-e="490.70">And the one that had heat was the idea of planting a church in the Boise metro.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="490.70" data-e="498.88">So, and that&#x27;s one thing, just to maybe jump in on that, there&#x27;s a difference between, like, there&#x27;s people who are called to preach and teach, That can happen one of two ways.</span> <span class="tl-s" data-s="498.88" data-e="502.40">You can take over a church that needs a senior pastor.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="503.44" data-e="503.59">Yes.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="503.62" data-e="506.62">Or you can plant something brand new.</span> <span class="tl-s" data-s="506.62" data-e="510.78">Those take two different kinds of giftings, two different kinds of— [Speaker A] Different challenges.</span> <span class="tl-s" data-s="510.78" data-e="511.57">They&#x27;re different.</span> <span class="tl-s" data-s="511.57" data-e="512.85">They both have significant challenges.</span> <span class="tl-s" data-s="512.85" data-e="520.29">They come with different kinds of— men are fitted for different kinds of leadership.</span> <span class="tl-s" data-s="520.40" data-e="527.28">And so, Jeff, what really got Jeff&#x27;s fire going is something new.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="527.28" data-e="527.39">Yeah.</span></p>
+        <p><span class="tl-s" data-s="529.11" data-e="530.51">And so remind me the question.</span> <span class="tl-s" data-s="530.56" data-e="530.62">Sorry.</span> <span class="tl-s" data-s="530.81" data-e="531.18">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="531.20" data-e="536.76">Just how, what did the process look like when Boise Metro started to pick up steam in your heart?</span> <span class="tl-s" data-s="536.76" data-e="538.70">Did you first tell your pastoral team?</span> <span class="tl-s" data-s="538.77" data-e="542.52">Did you discuss with people who might be interested in going?</span> <span class="tl-s" data-s="542.96" data-e="553.64">Kind of like walk us through those thoughts and conversations before you started diving in the research and really turning this idea into an actionable plan.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="553.64" data-e="553.82">Yeah.</span> <span class="tl-s" data-s="553.82" data-e="561.32">So there are concurrent conversations, you know, with the elder team and predominantly with Rich, who leads our team.</span> <span class="tl-s" data-s="561.75" data-e="566.08">The conversation is simply around, I think the Lord is drawing us.</span> <span class="tl-s" data-s="566.24" data-e="569.11">He&#x27;s at least drawing my attention to the Boise Metro.</span> <span class="tl-s" data-s="569.13" data-e="571.93">Is that like way off out of like— [Speaker A] Is this possible?</span> <span class="tl-s" data-s="571.93" data-e="574.18">Like, do we, is that a bad idea?</span> <span class="tl-s" data-s="574.18" data-e="577.53">Should I put that one to death or not?</span> <span class="tl-s" data-s="578.35" data-e="584.00">And then the other conversation that&#x27;s happening is with my wife and then subsequently my children.</span> <span class="tl-s" data-s="584.05" data-e="590.80">This is like, do you have faith that God could call us to do something like this?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="590.93" data-e="591.53">Wow.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="591.53" data-e="598.93">And so those conversations together by the care of the Holy Spirit led us to a position to say, this sounds right.</span></p>
+        <p><span class="tl-s" data-s="601.30" data-e="602.25">Let&#x27;s look at this.</span> <span class="tl-s" data-s="602.25" data-e="602.63">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="602.89" data-e="604.64">How many times have you visited?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="604.75" data-e="605.96">Man, that&#x27;s a good question.</span> <span class="tl-s" data-s="605.96" data-e="608.36">We&#x27;re probably around half a dozen to 8 times.</span> <span class="tl-s" data-s="608.36" data-e="609.84">So 6 or 8 times somewhere.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="609.84" data-e="609.99">Yeah.</span> <span class="tl-s" data-s="609.99" data-e="613.31">And so— [Speaker C] It&#x27;s hard to remember now.</span> <span class="tl-s" data-s="613.32" data-e="615.39">And the sense of it has only grown, correct?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="615.41" data-e="615.48">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="615.48" data-e="615.64">Yeah.</span> <span class="tl-s" data-s="615.64" data-e="619.95">So talk to us about where in greater Boise.</span> <span class="tl-s" data-s="620.42" data-e="623.89">I mean, a lot of us don&#x27;t know the area.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="624.68" data-e="624.79">Yeah.</span> <span class="tl-s" data-s="624.79" data-e="633.70">So Boise is the largest city and the capital of the state, but it sits at the east end of a valley that is known as the Treasure Valley.</span> <span class="tl-s" data-s="633.71" data-e="644.24">And within that valley, it was for many, many years, a long time, just full of farms with a bunch of small towns that sort of Out on the outlies of the valley.</span> <span class="tl-s" data-s="644.24" data-e="653.38">And where we&#x27;re looking at is a small town that is not going to be able to be said, that won&#x27;t be able to be said for much longer, named Star.</span> <span class="tl-s" data-s="653.38" data-e="660.53">And essentially what it is, is it&#x27;s to the northwest of Boise by about 30 minutes when you&#x27;re driving surface streets.</span> <span class="tl-s" data-s="660.76" data-e="663.18">And Star was for many, many years a bedroom community.</span> <span class="tl-s" data-s="663.18" data-e="673.46">It&#x27;s somewhere that, you know, people would buy a home relatively cheap and then they would commute into Boise or Mountain Home or maybe the surrounding area like Nampa or something like that.</span></p>
+        <p><span class="tl-s" data-s="673.46" data-e="676.21">And they would just basically live there.</span> <span class="tl-s" data-s="676.86" data-e="678.40">And what&#x27;s happened is that community has exploded.</span> <span class="tl-s" data-s="678.40" data-e="688.94">So in something like 2018, I believe it was, there was less than 10,000 people under the census that were there.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="688.94" data-e="689.40">In Star?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="689.40" data-e="690.18">In Star.</span> <span class="tl-s" data-s="690.18" data-e="692.86">And it is estimated to be 20-plus thousand people now.</span> <span class="tl-s" data-s="692.86" data-e="694.66">So it&#x27;s— [Speaker B] It&#x27;s double.</span> <span class="tl-s" data-s="694.66" data-e="695.74">It&#x27;s quite a bit big.</span> <span class="tl-s" data-s="695.74" data-e="696.48">Yeah, much bigger.</span> <span class="tl-s" data-s="696.48" data-e="704.06">So, and when I say under 10, I think the numbers were somewhere around like 6,000 or 8,000 people.</span> <span class="tl-s" data-s="704.06" data-e="707.11">So it&#x27;s— Almost tripled.</span> <span class="tl-s" data-s="707.11" data-e="708.07">Yeah, it&#x27;s— Or more than tripled.</span> <span class="tl-s" data-s="708.07" data-e="709.14">Tremendously grown.</span> <span class="tl-s" data-s="709.19" data-e="718.26">So the town is composed mostly of people that aren&#x27;t from the area, and even more so when you look at the demographics, they&#x27;re really from outside of the state altogether.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="718.26" data-e="718.31">Gotcha.</span> <span class="tl-s" data-s="718.33" data-e="721.52">So they&#x27;re new to Idaho just like you would be.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="721.52" data-e="724.63">That&#x27;s the way it looks, yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="724.66" data-e="728.17">And so there&#x27;s a certain value in that too, yes?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="728.17" data-e="729.27">Yeah, absolutely.</span> <span class="tl-s" data-s="730.01" data-e="735.38">So Tim Keller wrote an awesome article I think everybody should read it.</span> <span class="tl-s" data-s="735.38" data-e="746.78">Essentially, he says that when you think about planting a church, one of the most valuable things that a church plant brings to an area is it serves better than anybody people that are new to the area as well.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="746.78" data-e="747.20">Exactly.</span> <span class="tl-s" data-s="747.26" data-e="759.92">Because they&#x27;re more like— somebody who&#x27;s there for years is less likely to shop at a different store, less likely to pull their kids to go to a different school, less likely to change their habits.</span> <span class="tl-s" data-s="759.92" data-e="771.65">But someone who&#x27;s new looking for a church and all those other things, there&#x27;s an opportunity there that is, you&#x27;re not breaking into a demographic that&#x27;s sort of walled off.</span> <span class="tl-s" data-s="771.65" data-e="771.86">Yes?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="771.86" data-e="772.02">Yeah.</span> <span class="tl-s" data-s="772.35" data-e="776.28">And you share the similarity of we&#x27;re looking for people that we don&#x27;t know.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="776.28" data-e="776.52">Right.</span> <span class="tl-s" data-s="776.52" data-e="778.61">Because so many people don&#x27;t know people.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="778.61" data-e="785.34">We&#x27;ll do our best to link that article if you&#x27;re curious about, by Tim Keller.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="785.34" data-e="785.64">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="785.66" data-e="785.67">Yeah.</span> <span class="tl-s" data-s="785.67" data-e="786.72">Jeff can get that.</span> <span class="tl-s" data-s="786.72" data-e="793.01">Okay, so talk to— so like, give me maybe a picture of Boise in general.</span> <span class="tl-s" data-s="793.62" data-e="800.18">So we&#x27;re all living here in Phoenix, and Gilbert is connected to Phoenix, but in a sense, right?</span> <span class="tl-s" data-s="800.29" data-e="810.35">So it used to be that there was space, desert, between Gilbert and Chandler and Gilbert and Mesa and Gilbert and Tempe, or, you know, all that area.</span> <span class="tl-s" data-s="810.46" data-e="813.65">Is there still space between some of the cities in Boise?</span> <span class="tl-s" data-s="813.75" data-e="815.56">Today we&#x27;re all grown together.</span> <span class="tl-s" data-s="815.59" data-e="816.59">Are they all grown together like that?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="816.59" data-e="816.87">Yeah.</span> <span class="tl-s" data-s="816.87" data-e="818.03">So it&#x27;s going that direction.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="818.03" data-e="819.10">But it&#x27;s not there yet.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="819.13" data-e="821.71">It&#x27;s not there yet though.</span> <span class="tl-s" data-s="821.71" data-e="833.94">So when I moved to the Phoenix Metro in 2005, that was the— you didn&#x27;t have to go very far to be the furthest east in regards to where you were living or shopping or anything like that.</span> <span class="tl-s" data-s="834.04" data-e="837.90">Now you can drive pretty long ways.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="836.59" data-e="837.75">East and south for sure.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="837.75" data-e="845.82">And you&#x27;re in a contiguous, you don&#x27;t know where Gilbert stops and Queen Creek starts and so on and so forth.</span> <span class="tl-s" data-s="845.82" data-e="861.68">What I&#x27;m seeing right now in the Boise metro to me resembles very much what I moved to in Phoenix in 2005, where essentially you have a massive amount of people that are coming there for one reason or another, looking to start a life or retire or something like that.</span> <span class="tl-s" data-s="861.94" data-e="867.64">And what they&#x27;re doing is they&#x27;re just blowing the area up essentially.</span> <span class="tl-s" data-s="868.04" data-e="870.10">And it very much resembles Phoenix metro 20 years ago.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="870.20" data-e="870.45">Okay, excellent.</span> <span class="tl-s" data-s="870.45" data-e="878.61">So like, for those of you that don&#x27;t know, Gilbert today is over a quarter million people, but 20, 25 years ago it was a farming community.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="878.64" data-e="879.91">Yeah, much smaller than that.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="879.91" data-e="880.39">Much smaller.</span> <span class="tl-s" data-s="880.39" data-e="887.78">And so would you say, you know, we can&#x27;t project into the future, but that&#x27;s what Star looks like it would be down the road, yes?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="887.88" data-e="890.93">Yeah, it&#x27;s definitely, uh, it&#x27;s definitely taking a move in that direction.</span> <span class="tl-s" data-s="890.93" data-e="910.90">So just, I&#x27;ve had the fortunate benefit of being able to speak to some people that think about these things, and they&#x27;re, they&#x27;re seeing that, uh, the metro area is growing tremendously and these towns are merging into each other and they&#x27;re starting to lose the ability to even be called townships in some cases or villages or whatever.</span> <span class="tl-s" data-s="910.90" data-e="923.98">And so it&#x27;s at the point now, there&#x27;s many news articles, there&#x27;s been a lot of reporting over the fact that city councils in these townships are, the growth is much more than what they&#x27;re prepared to handle.</span> <span class="tl-s" data-s="923.98" data-e="936.86">And in a state like Idaho where there&#x27;s very low property tax and that sort of thing, it&#x27;s like, They can&#x27;t keep up with the infrastructure simply because there&#x27;s just more growth than what they can handle.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="937.02" data-e="939.16">So now tell me this.</span> <span class="tl-s" data-s="939.62" data-e="948.37">One of the perceptions people might have about Idaho is it&#x27;s a red state where there&#x27;s probably a lot of churches.</span> <span class="tl-s" data-s="948.43" data-e="950.55">And so why are we going there?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="950.55" data-e="951.36">That&#x27;s a good question.</span> <span class="tl-s" data-s="951.47" data-e="960.00">I think that what really helped me to get my head around that is the fact that Arizona was a red state at one point.</span> <span class="tl-s" data-s="960.11" data-e="966.00">We would look at the state of Arizona, we would say that is an immovable demographic.</span> <span class="tl-s" data-s="966.00" data-e="968.02">They&#x27;re always gonna be on the conservative side.</span> <span class="tl-s" data-s="968.99" data-e="975.78">They&#x27;re always gonna be the sort of Western cowboys, the Southwest and all that.</span> <span class="tl-s" data-s="975.78" data-e="982.98">And we&#x27;ve seen that that&#x27;s changed tremendously over the last 20 years to where it&#x27;s considered a battleground state, essentially.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="983.17" data-e="983.22">Yeah.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="983.23" data-e="983.48">Politics aside.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="983.55" data-e="987.95">Yeah, &#x27;cause politics and church don&#x27;t always go hand in hand.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="987.99" data-e="989.51">Yeah, yeah.</span> <span class="tl-s" data-s="989.91" data-e="996.06">And I think that the story there is to say that things change.</span> <span class="tl-s" data-s="996.10" data-e="996.27">Yeah.</span> <span class="tl-s" data-s="996.27" data-e="1004.22">And what I found just in looking is that people being conservative does not equate to them being biblical in mind.</span> <span class="tl-s" data-s="1004.28" data-e="1015.47">And so what we need to think about ultimately when we think about how people vote is to realize that that to them can be very much an idol.</span> <span class="tl-s" data-s="1015.58" data-e="1023.39">And so we&#x27;re in the business of seeing the kingdom of Jesus expand and not necessarily the kingdom of conservatism or any of those ideas.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1023.74" data-e="1024.72">Right, right, right, right.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1024.74" data-e="1033.25">And so we would say that though there are many churches there, we do think we already have established where we are going to be more equipped to serve people that are from out of the area.</span> <span class="tl-s" data-s="1033.30" data-e="1040.64">And we&#x27;re going to go there with a mindset that this has nothing to do with how you vote or how you think from a political perspective.</span> <span class="tl-s" data-s="1040.67" data-e="1043.57">This is about bending the knee to Jesus Christ.</span> <span class="tl-s" data-s="1043.64" data-e="1051.94">And so we&#x27;re aiming to see people become fixed on Jesus and to worship him with all of their life, not just in the ballot.</span> <span class="tl-s" data-s="1051.97" data-e="1053.88">And so we desire to do that.</span> <span class="tl-s" data-s="1053.96" data-e="1058.59">And we think that that&#x27;s probably gonna be our biggest opportunity.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1058.78" data-e="1058.99">Yeah.</span> <span class="tl-s" data-s="1059.12" data-e="1067.24">And so like in a place like Star, So our church, given some of the distinctives we have, we&#x27;re not saying that we&#x27;re the best.</span> <span class="tl-s" data-s="1067.27" data-e="1069.48">We&#x27;re not saying that we&#x27;re somehow the top of the heap.</span> <span class="tl-s" data-s="1069.53" data-e="1073.60">But we have, you know, we&#x27;re going to preach Christ and him crucified.</span> <span class="tl-s" data-s="1073.60" data-e="1074.66">We&#x27;re going to preach expositionally.</span> <span class="tl-s" data-s="1074.66" data-e="1080.85">We&#x27;re going to try to make sure that every aspect of our service and our lives are focused on Jesus.</span> <span class="tl-s" data-s="1080.85" data-e="1089.86">And I know other— I&#x27;m not trying to throw shade on any other churches or anything like [Speaker C] that.</span> <span class="tl-s" data-s="1089.94" data-e="1094.00">No, there&#x27;s Many good churches in the vicinity, for sure.</span> <span class="tl-s" data-s="1094.00" data-e="1098.40">How many churches would you say are like us?</span> <span class="tl-s" data-s="1098.40" data-e="1108.16">And is there a need in Starr for— is there room in Starr for someone like us who want to come and plant a specific kind of church?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1108.18" data-e="1109.28">Yeah, so absolutely.</span> <span class="tl-s" data-s="1109.31" data-e="1126.15">So just doing the little bit of research I did and actually making connections, I think I was able to speak with at least 3 pastors in the general vicinity, and they were all in agreement that there is just simply more people here to be served than there are churches that can serve them well.</span> <span class="tl-s" data-s="1126.25" data-e="1126.73">Mm-hmm.</span> <span class="tl-s" data-s="1126.73" data-e="1148.21">And there are some projections that said that if we thought about having 200 people to attend on a Sunday, with the amount of growth that we would need, there was just way more churches that would be needed to be planted in just the Treasure Valley at large than we could possibly do personally, and then that would be able to serve all those people.</span> <span class="tl-s" data-s="1148.24" data-e="1151.68">And that only cuts into something like 15 or 20% of that growth.</span> <span class="tl-s" data-s="1151.71" data-e="1159.32">So that&#x27;s with the assumption that most people aren&#x27;t going to even be thinking about going to church.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1159.47" data-e="1159.52">Right.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1159.64" data-e="1162.76">In addition to that, Starr itself is only about 6 square miles.</span> <span class="tl-s" data-s="1162.76" data-e="1172.99">And in that square mileage, when you think about the number of people that are there, it&#x27;s like I said, right around 20 or so, 20,000 roughly.</span> <span class="tl-s" data-s="1173.77" data-e="1176.25">There&#x27;s maybe about 8 churches in the vicinity.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1176.33" data-e="1177.26">8 churches for 20,000 people.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1177.28" data-e="1181.94">Now, we in Phoenix would be like, oh, okay, so then you just have to drive further.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1182.02" data-e="1182.24">Right.</span> <span class="tl-s" data-s="1182.24" data-e="1183.78">But you can&#x27;t do that.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1183.78" data-e="1185.67">But that&#x27;s not necessarily how people think.</span> <span class="tl-s" data-s="1185.77" data-e="1189.44">So this is— [Speaker B] There&#x27;s a psychological barrier leaving Starr, yes?</span> <span class="tl-s" data-s="1189.94" data-e="1190.15">Well, yeah.</span> <span class="tl-s" data-s="1190.21" data-e="1191.78">I mean, and it&#x27;s not just Starr.</span> <span class="tl-s" data-s="1191.78" data-e="1193.74">It&#x27;s anybody essentially doesn&#x27;t like to go.</span> <span class="tl-s" data-s="1193.79" data-e="1197.07">And this is information I learned from people that actually live there.</span> <span class="tl-s" data-s="1197.07" data-e="1200.23">So, you know, [Speaker B] Yeah, yeah, yeah.</span> <span class="tl-s" data-s="1201.16" data-e="1205.97">What I found was, is that driving more than 15 minutes, certainly more than 20, is just unreasonable.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1206.00" data-e="1206.14">Gotcha.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1206.14" data-e="1218.34">So, you know, the idea is, is that you want to stay within like a sort of, if you think of it as like a 15-minute bubble and you try to do all of your life, at least most of it in that bubble.</span> <span class="tl-s" data-s="1218.90" data-e="1224.35">And so doing church outside of that is just something that would be considered generally unreasonable for people.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1224.41" data-e="1224.78">Okay.</span> <span class="tl-s" data-s="1225.22" data-e="1229.38">So the other thing I want to just touch on there is 20,000 people, and there&#x27;s 8 churches.</span> <span class="tl-s" data-s="1229.38" data-e="1232.11">I mean, that&#x27;s, that&#x27;s, I mean, I&#x27;m not good at math.</span> <span class="tl-s" data-s="1232.11" data-e="1235.41">And so I&#x27;m gonna have to pull out my handy-dandy calculator here.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1235.48" data-e="1236.62">Oh, here we go.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1236.66" data-e="1241.86">But if we take 20,000 and divide it by 8, I mean, that&#x27;s 2,500 people per.</span> <span class="tl-s" data-s="1242.04" data-e="1247.24">All right, so there&#x27;s clearly a significant need in Star, and I presume in other towns in that Treasure Valley.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1247.33" data-e="1247.37">Right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1247.37" data-e="1254.27">You know, when you go and you do, when you scout an area, you don&#x27;t just say, I&#x27;m going to come and be by myself.</span> <span class="tl-s" data-s="1254.30" data-e="1262.89">You want to have a connection to other kinds of church, other churches up there.</span> <span class="tl-s" data-s="1262.89" data-e="1264.58">What&#x27;s been your experience there?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1264.58" data-e="1264.72">Yeah.</span> <span class="tl-s" data-s="1264.72" data-e="1272.32">Well, it started with another intent, which was to basically kick the tires on the Boise Metro and say, am I crazy for thinking this is even a good idea?</span> <span class="tl-s" data-s="1272.75" data-e="1279.58">Sure, in Gilbert we&#x27;re like, yeah, we could see that, but maybe there&#x27;s something we don&#x27;t know, which is probably true.</span> <span class="tl-s" data-s="1279.71" data-e="1288.32">So I just did a little research and I found, had made a connection with a young guy who is in the middle of a plant himself in Eagle, which is the next town over, and talked to him.</span> <span class="tl-s" data-s="1288.32" data-e="1295.28">And then I reached out to churches on either side of the valley, one in Nampa and one in Boise itself, and reached out to them.</span> <span class="tl-s" data-s="1295.28" data-e="1300.06">And they oddly enough responded and agreed to talk and wanted to hear kind of about what we were thinking.</span> <span class="tl-s" data-s="1300.06" data-e="1302.84">And both of them, I asked them the question.</span> <span class="tl-s" data-s="1302.84" data-e="1305.52">I said, hey guys, like, we can make this a really short call.</span></p>
+        <p><span class="tl-s" data-s="1305.52" data-e="1305.84">Are we crazy?</span> <span class="tl-s" data-s="1305.84" data-e="1308.26">Like, is this something that we just don&#x27;t need?</span> <span class="tl-s" data-s="1308.26" data-e="1311.38">Like, do you guys just seem like you would have a lot of churches?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1311.38" data-e="1311.98">Yeah, it&#x27;s conservative.</span> <span class="tl-s" data-s="1311.98" data-e="1315.29">I mean, there&#x27;s got to be a glut of churches.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1315.58" data-e="1315.72">Yes.</span> <span class="tl-s" data-s="1316.00" data-e="1316.16">Yeah.</span> <span class="tl-s" data-s="1316.16" data-e="1316.33">Yeah.</span> <span class="tl-s" data-s="1316.38" data-e="1321.22">And so I asked them in The first one we spoke to was in Nampa, and really great guys over there.</span> <span class="tl-s" data-s="1321.22" data-e="1322.73">And they just said, you know what?</span> <span class="tl-s" data-s="1322.73" data-e="1328.61">There is way too many people here for us to be able to serve even a portion of them.</span> <span class="tl-s" data-s="1329.06" data-e="1333.27">So we need a lot of churches.</span> <span class="tl-s" data-s="1333.30" data-e="1337.87">And some of the data that I was hearing from them was insane.</span> <span class="tl-s" data-s="1337.87" data-e="1346.71">And then I got connected probably a month later with a church that caught my eye, Table Rock Church there in Boise.</span> <span class="tl-s" data-s="1346.85" data-e="1348.01">Right. right by Boise State University.</span></p>
+        <p><span class="tl-s" data-s="1348.01" data-e="1353.83">And they were very, very good to be cautious and say, hey, who is this guy that&#x27;s like sort of cold calling us?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1353.83" data-e="1353.93">Right.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1354.06" data-e="1356.78">Wants to have all these conversations with us and this and that.</span> <span class="tl-s" data-s="1356.78" data-e="1360.33">And so they talked to me for a bit and then we eventually had a call.</span> <span class="tl-s" data-s="1360.35" data-e="1361.44">And what I found was same thing.</span> <span class="tl-s" data-s="1361.44" data-e="1364.66">I said, hey, does this make sense to you guys?</span> <span class="tl-s" data-s="1364.66" data-e="1366.49">Like, is this a bad idea?</span> <span class="tl-s" data-s="1366.49" data-e="1370.40">We don&#x27;t want to bark up the wrong tree.</span> <span class="tl-s" data-s="1370.42" data-e="1372.97">And the feedback I got was, we need you guys here like yesterday.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1373.00" data-e="1373.53">Wow.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1373.55" data-e="1375.26">And I, well, what do you mean?</span> <span class="tl-s" data-s="1375.26" data-e="1376.77">What are you talking about?</span> <span class="tl-s" data-s="1376.77" data-e="1384.19">And what the expression was essentially is that people are responding to the Gospel and there&#x27;s simply just not enough people to take the Gospel and preach it.</span> <span class="tl-s" data-s="1384.22" data-e="1385.33">It&#x27;s that simple.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1385.41" data-e="1387.75">There&#x27;s not enough churches for people to go to.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1387.75" data-e="1388.33">Exactly.</span> <span class="tl-s" data-s="1388.39" data-e="1392.81">And so there&#x27;s all these different dynamics and each sort of town is its own sort of isolated culture.</span> <span class="tl-s" data-s="1392.88" data-e="1398.17">And there&#x27;s a need in each one of them that&#x27;s different than the other.</span> <span class="tl-s" data-s="1398.17" data-e="1404.43">So the guys in Boise would sort of specialize in serving Boise, but wouldn&#x27;t maybe be as equipped to go and serve Star is kind of the way They would think about it.</span> <span class="tl-s" data-s="1404.43" data-e="1410.57">In fact, it&#x27;s funny because even though it&#x27;s only 30 minutes away, when you ask them, they&#x27;d be like, well, I don&#x27;t know anything about Star.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1410.68" data-e="1410.82">Yeah.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1410.86" data-e="1422.44">And the guys in Nampa would say, you need to realize that Star is not the same thing as Boise, and it&#x27;s certainly not the same thing as Nampa.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1422.49" data-e="1422.86">Right.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1423.07" data-e="1433.27">And so just received massive encouragement from the folks that we talked to, and they all expressed something very similar, which is we absolutely need more churches.</span> <span class="tl-s" data-s="1433.33" data-e="1439.62">And we absolutely need more churches that want to glorify Jesus, preach the Gospel, and speak Scripture to people and show them that this is our authority.</span> <span class="tl-s" data-s="1439.62" data-e="1445.86">The Word of God is our authority and not a number of other things that the world presents to them.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1445.86" data-e="1446.28">Excellent.</span> <span class="tl-s" data-s="1446.59" data-e="1447.49">That&#x27;s good.</span> <span class="tl-s" data-s="1447.49" data-e="1451.41">So like, if you were to encapsulate, what do you want to take up to Starr?</span> <span class="tl-s" data-s="1451.49" data-e="1456.93">So you plant the church, you get up there in the spring, you have public meetings.</span> <span class="tl-s" data-s="1456.96" data-e="1472.59">What do you want the experience of the person who is in Star right now, what do you want them to experience in, you know, 12, 15, 18, 20 months when they walk in the doors?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1472.62" data-e="1495.18">Yeah, as I expressed when I first walked into Sovereign Grace Church in Gilbert, and I was weighed heavily down by just the awe of the way that the church cared for each other, That the love of the congregation for each other was just very evident and their admiration for the word preached and their passion for the Lord Jesus.</span></p>
+        <p><span class="tl-s" data-s="1496.59" data-e="1497.84">It was very unique in my experience.</span> <span class="tl-s" data-s="1497.86" data-e="1503.57">I was a young man at that time, maybe younger man, but I had seen in a number of places that that was different.</span> <span class="tl-s" data-s="1503.57" data-e="1509.35">And it was unique here in a lot of different ways that we could talk about maybe at another time.</span> <span class="tl-s" data-s="1509.40" data-e="1523.56">But what was clear to me is that I was just overwhelmed across the board with a passion for Jesus Christ and see him glorified. glorified in all things and to conquer all of our life and transform us in all ways.</span> <span class="tl-s" data-s="1524.65" data-e="1534.49">And my desire is to simply take and to see that same kind of experience, if you will, take that same message, that same community to a place like Starr where it may not be.</span> <span class="tl-s" data-s="1534.49" data-e="1539.67">And as far as I can tell, you know, I want that to be us.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1539.73" data-e="1543.53">So you want to replicate your experience here for other people in Starr?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1543.63" data-e="1543.77">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1543.80" data-e="1544.25">Excellent.</span> <span class="tl-s" data-s="1545.07" data-e="1545.74">That&#x27;s outstanding.</span> <span class="tl-s" data-s="1545.74" data-e="1546.53">There&#x27;s a lot of logistics, right?</span> <span class="tl-s" data-s="1546.54" data-e="1560.84">So here locally, you&#x27;ve stepped away from leading youth ministry and, you know, we&#x27;re not doing the core studies in the same way right now, and you&#x27;re focusing your time, really energy and attention on the team that&#x27;s been identified here, right?</span> <span class="tl-s" data-s="1561.28" data-e="1562.85">And so what does that look like?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1562.96" data-e="1569.46">Yeah, so including my family, there are 5 families that have sort of hitched their wagon to this mission of planting in Starr.</span> <span class="tl-s" data-s="1569.46" data-e="1578.06">So we meet every week and we have, we&#x27;ve been meeting all year Yeah, we&#x27;ve been meeting for about a year and we met periodically sort of in batches before that.</span> <span class="tl-s" data-s="1578.06" data-e="1581.44">So now we&#x27;re officially a small group here at Center Church Gilbert.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1581.44" data-e="1582.44">Yes, what day?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1582.54" data-e="1583.94">On Sundays at 1 o&#x27;clock.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1583.94" data-e="1584.28">There we go.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1584.28" data-e="1586.44">And so just about 10 minutes from the church campus.</span> <span class="tl-s" data-s="1586.44" data-e="1588.84">So if you wanna come check it out, you can.</span> <span class="tl-s" data-s="1588.84" data-e="1601.80">And we actually do have, we have at least 1, if not 2 or 3 families that do pop in with us that don&#x27;t have intentions of going, but they wanna be a part of this team being built.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1601.83" data-e="1612.02">If someone is interested in maybe asking you questions, what&#x27;s your vision, what&#x27;s your purpose? about whether or not they should go on this church plant, how should they go about asking those questions?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1612.02" data-e="1621.49">Yeah, so there&#x27;s, you know, obviously on Sundays I&#x27;m happy to talk with people, but if you, for whatever reason, can&#x27;t connect with me, you can always email me at jeff@centergilbert.com.</span> <span class="tl-s" data-s="1621.49" data-e="1622.95">And I generally respond to those relatively quickly.</span> <span class="tl-s" data-s="1622.95" data-e="1629.04">If we connect in person, I&#x27;m happy to give you a number and set up a time to meet with you as well.</span> <span class="tl-s" data-s="1629.12" data-e="1636.90">I even have a meeting scheduler that you can, jump on if you want to get some time to sit down that&#x27;s attached to my email.</span> <span class="tl-s" data-s="1636.98" data-e="1638.98">So there&#x27;s some really good ways.</span> <span class="tl-s" data-s="1638.98" data-e="1650.42">And then really honestly, you could also just go up to any of the elders and they&#x27;d be able to help you out and point you in my direction if that&#x27;s what&#x27;s needed and happy to talk about it.</span> <span class="tl-s" data-s="1650.47" data-e="1650.84">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1650.92" data-e="1651.47">Yeah.</span> <span class="tl-s" data-s="1651.58" data-e="1651.80">Excellent.</span> <span class="tl-s" data-s="1651.80" data-e="1662.82">And then as you think about moving forward and moving and transitioning and all that stuff, getting out there, there will be a time that you guys are on the ground, not necessarily having public meetings yet, right?</span> <span class="tl-s" data-s="1663.27" data-e="1665.53">I mean, that&#x27;s probably how it&#x27;s going to go.</span> <span class="tl-s" data-s="1665.53" data-e="1667.57">Have you given thought to that?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1667.69" data-e="1689.46">Yeah, so under a couple of different folks giving us some really good helpful guidance and input, we determined that the best way for us to make this transition is we are planning to tentatively start leaving as some of us will be moving up as soon as this winter, so around December, and then we&#x27;ll really have a major movement to move probably next spring.</span> <span class="tl-s" data-s="1689.50" data-e="1693.80">So around May, May or June, and we&#x27;ll all start to make our move up there.</span> <span class="tl-s" data-s="1693.81" data-e="1713.78">And as that&#x27;s happening, as people are starting to transition from Phoenix to the Boise metro, we&#x27;re going to take a period of what we think is going to look something like possibly 9 to 10 months roughly to just get our feet on the ground, learn the area, get into our homes, get settled, really start to meet our neighbors.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1713.81" data-e="1714.05">Yeah.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1714.05" data-e="1733.21">And worship together with one of these churches, actually the church in Boise that we mentioned earlier, Table Rock, and just learn from other believers, learn from Table Rock, learn from being around these people and doing life with them, and then hit the ground running probably somewhere right around Easter of 2026.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1733.21" data-e="1738.33">So you&#x27;ll probably go to church at Table Rock on Sundays and have small group during the week each week.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1738.33" data-e="1738.49">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1738.49" data-e="1741.53">As you guys build your identity and your team.</span> <span class="tl-s" data-s="1741.53" data-e="1741.92">Yes?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1742.11" data-e="1742.32">Exactly.</span> <span class="tl-s" data-s="1742.34" data-e="1742.45">Yeah.</span> <span class="tl-s" data-s="1742.49" data-e="1760.51">Yeah, so we&#x27;ll use that period of time to essentially, like you said, build our identity, have them, you know, everybody will be on the same page as far as what culture is and what we are as a church, what that looks like, as well as taking input from churches that wanna be a part of it that are local and that have already expressed a desire to partner in some way.</span> <span class="tl-s" data-s="1760.69" data-e="1766.28">That&#x27;ll also give time for people that we&#x27;ve heard that there is some interest outside of Phoenix within the denomination.</span> <span class="tl-s" data-s="1766.38" data-e="1766.59">Yeah.</span> <span class="tl-s" data-s="1766.72" data-e="1769.17">And so give them some time to come over.</span> <span class="tl-s" data-s="1769.13" data-e="1770.26">And then really that time&#x27;s gonna be used to establish a meeting place.</span> <span class="tl-s" data-s="1770.26" data-e="1778.87">That time&#x27;s gonna be used Yeah, I think it&#x27;s been a great opportunity to use to, for me to frankly get a very large head start on a preaching series.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1779.32" data-e="1779.37">Yeah.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1779.46" data-e="1781.60">And to prep for that.</span> <span class="tl-s" data-s="1781.64" data-e="1785.29">And then for us to really decide what ways we&#x27;re gonna deploy in STAR.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1785.40" data-e="1785.56">Right.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1785.56" data-e="1786.08">And think about that.</span> <span class="tl-s" data-s="1786.08" data-e="1786.45">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1786.45" data-e="1786.67">Yeah.</span> <span class="tl-s" data-s="1786.70" data-e="1805.17">And so one of the things that I think is important for all of us at Center Church to recognize is, you know, this is happening not just as something that&#x27;s a preoccupation of Jeff and Barb, That the Lord has called us as a church all to participate in, right?</span> <span class="tl-s" data-s="1805.17" data-e="1807.87">And so you might not be planning on going, which is fine.</span> <span class="tl-s" data-s="1807.90" data-e="1811.14">I would encourage all of us to pray about it.</span> <span class="tl-s" data-s="1811.17" data-e="1817.63">You might not be planning on going, but you&#x27;re still a participant nonetheless.</span> <span class="tl-s" data-s="1817.68" data-e="1823.97">Even if you&#x27;re— even if you don&#x27;t move from the AZ to the ID, you&#x27;ve got— You&#x27;ve got— you have a part to play in this.</span> <span class="tl-s" data-s="1823.97" data-e="1831.91">It&#x27;s not just something that is happening and other people are, you know, It&#x27;s happening over there and I&#x27;ll just let them do their thing and I&#x27;ll do my thing.</span> <span class="tl-s" data-s="1831.94" data-e="1834.30">No, this is— there are ways that you need to participate.</span></p>
+        <p><span class="tl-s" data-s="1834.36" data-e="1839.11">This is a significant thing that we are doing here and you need to participate.</span> <span class="tl-s" data-s="1839.12" data-e="1841.67">One of the primary ways is to pray.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1841.67" data-e="1841.85">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1841.85" data-e="1853.97">We need to be praying for the team, we need to be praying for the Palins, we need to be praying for all of these transitional things, all these transitional moves, all the transition that happens.</span> <span class="tl-s" data-s="1854.02" data-e="1854.63">Transitions are hard.</span> <span class="tl-s" data-s="1854.66" data-e="1861.63">It&#x27;s not easy to uproot your life, to try to find a new job, all those kinds of things.</span> <span class="tl-s" data-s="1861.63" data-e="1868.04">And so this is something that is something we&#x27;re all doing, and that&#x27;s going to be really important for us to realize.</span> <span class="tl-s" data-s="1868.10" data-e="1877.55">And so feel free to, as you know, people who are a part of the church plant, the prospective folks that are going, which are 10 adults, how many kids do you know?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1877.55" data-e="1878.53">Well, that&#x27;s a good question.</span> <span class="tl-s" data-s="1878.55" data-e="1879.30">Probably 6 right now.</span> <span class="tl-s" data-s="1879.41" data-e="1883.87">Some of them will be adults by the time we do this, though.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1883.97" data-e="1886.41">Okay, so we&#x27;re looking at like You know, sixteen people right now.</span> <span class="tl-s" data-s="1886.41" data-e="1894.58">These as you interact with these people, you can say, &quot;Hey, what can we be praying for?&quot; You know, what&#x27;s what&#x27;s something that we can carry in our hearts to pray for you guys?</span> <span class="tl-s" data-s="1894.58" data-e="1896.01">What are some needs?</span> <span class="tl-s" data-s="1896.09" data-e="1896.27">Right?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1896.27" data-e="1896.41">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1896.41" data-e="1899.29">And so, like it&#x27;s a massive deal to uproot and go.</span> <span class="tl-s" data-s="1899.32" data-e="1900.27">I also think it&#x27;s worthwhile.</span> <span class="tl-s" data-s="1900.27" data-e="1909.64">Like if you&#x27;re thinking about this, if you&#x27;re praying about this, just to take a step and just sit and talk to Jeff and let him let his excitement for what&#x27;s going to happen in Star. wear off on you.</span> <span class="tl-s" data-s="1909.75" data-e="1912.97">And you can talk to any of the elders because we are excited about it, too.</span> <span class="tl-s" data-s="1913.02" data-e="1913.16">Mm-hmm.</span> <span class="tl-s" data-s="1913.20" data-e="1918.74">This is one of those things as we think about the expansion of the kingdom.</span> <span class="tl-s" data-s="1918.74" data-e="1921.77">The kingdom of God expands as Christians take risks.</span> <span class="tl-s" data-s="1921.84" data-e="1937.32">They take risks to move out of their comfort zone, they take risks to step away from what they have known, they take risks to go do something that is a little bit out of what they ever considered themselves even able to do to give the Lord a chance to do more than they thought he could do.</span></p>
+        <p><span class="tl-s" data-s="1937.37" data-e="1940.98">And so that is what a church plant is, that is part of where it is.</span> <span class="tl-s" data-s="1941.01" data-e="1944.84">I mean, there is a lot of work, but the Lord rewards risk.</span> <span class="tl-s" data-s="1944.86" data-e="1947.18">And I think that is what we are doing here.</span> <span class="tl-s" data-s="1947.18" data-e="1952.86">We don&#x27;t want to send away these people from our church.</span> <span class="tl-s" data-s="1953.02" data-e="1961.53">We would want them to be here forever, but our goal is not to maintain and become comfortable exiles.</span> <span class="tl-s" data-s="1961.54" data-e="1965.58">We are ambassadors for Christ and our goal is to set up another embassy in another place.</span> <span class="tl-s" data-s="1965.68" data-e="1987.34">Obviously, there are other embassies for the kingdom, there are other outposts of heaven up in the Boise area, but we want to do our part to be able to sacrifice so we might be able to send people that we love up there to meet other people that we would love if we meet them, and to also share the Gospel so that people can be saved, right?</span></p>
+        <p><span class="tl-s" data-s="1987.34" data-e="1998.94">And so I really would encourage you to consider this as a real option, even if, even if as you think about it, you think, man, there&#x27;s all these impossible things that would lay in front of that decision that I just don&#x27;t think I can do.</span> <span class="tl-s" data-s="1999.23" data-e="2000.18">Okay, well, pray about it.</span> <span class="tl-s" data-s="2000.18" data-e="2002.67">And Talk to Jeff and talk to one of the elders.</span> <span class="tl-s" data-s="2002.67" data-e="2006.57">And if if you still don&#x27;t feel like that&#x27;s the thing, that&#x27;s fine.</span> <span class="tl-s" data-s="2006.60" data-e="2007.36">There&#x27;s no pressure.</span> <span class="tl-s" data-s="2007.40" data-e="2009.44">We&#x27;re not trying to push people out the door.</span> <span class="tl-s" data-s="2009.57" data-e="2013.98">But pray, like put them on your prayer list and ask that ask the Lord to bless them and keep them.</span> <span class="tl-s" data-s="2013.98" data-e="2015.09">And there&#x27;ll be other opportunities.</span> <span class="tl-s" data-s="2015.12" data-e="2026.75">We want to give and be generous so that they can go up there with you know as generously whatever financial resources we can to send them up there so that they can they can have the best chance of success up there.</span></p>
+        <p><span class="tl-s" data-s="2026.75" data-e="2036.94">One of the other things that Jeff and I have talked about, we&#x27;ve made— we&#x27;re not just going to send them up and go, okay, see ya.</span> <span class="tl-s" data-s="2037.11" data-e="2048.86">You know, we want to send up multiple different evangelism teams, like in the first 3 years, at least go up 3 different times to be able to support the work that&#x27;s happening there.</span> <span class="tl-s" data-s="2048.86" data-e="2054.72">And in fact, one of the things that is sort of a culture dynamic in Starr is July 4th, correct?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2054.72" data-e="2055.43">Yeah, it&#x27;s huge there.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2055.43" data-e="2059.51">So they have a big parade, have a big festival.</span> <span class="tl-s" data-s="2059.70" data-e="2062.25">People up there can be outside in the summertime, I hear, correct?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2062.36" data-e="2063.26">Yeah, it&#x27;s crazy.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2063.63" data-e="2064.02">Yeah, it&#x27;s amazing.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2064.02" data-e="2067.87">I think the sweatshirts even stay out because it still cools off.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2067.87" data-e="2068.01">Okay.</span> <span class="tl-s" data-s="2068.05" data-e="2068.14">Yeah.</span> <span class="tl-s" data-s="2068.45" data-e="2068.78">Wow.</span> <span class="tl-s" data-s="2069.81" data-e="2071.31">That&#x27;s like a different world.</span> <span class="tl-s" data-s="2071.42" data-e="2086.42">And so, but going up there, you want to be able to have the church involved in those festivities, to be able to have people from our church up there to help serve and And, you know, do whatever outreach you&#x27;re doing and that kind of thing would be something that&#x27;d be really helpful.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2086.42" data-e="2086.64">Yes?</span> <span class="tl-s" data-s="2086.64" data-e="2086.78">Absolutely.</span> <span class="tl-s" data-s="2086.78" data-e="2087.68">Yeah.</span> <span class="tl-s" data-s="2087.78" data-e="2091.72">One of many ways that we can meet people where they are and just introduce them to Jesus.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2091.72" data-e="2091.92">Absolutely.</span> <span class="tl-s" data-s="2091.92" data-e="2097.76">And so we&#x27;re gonna just try to be as creative as possible to come up with as many ways as possible to support the church.</span> <span class="tl-s" data-s="2097.76" data-e="2100.38">Now, what&#x27;s the name of the church gonna be?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2100.38" data-e="2101.92">That&#x27;s what I was gonna ask.</span> <span class="tl-s" data-s="2101.92" data-e="2104.36">I got a few simple softball questions for you like that.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2104.36" data-e="2104.38">Yeah.</span> <span class="tl-s" data-s="2104.38" data-e="2104.50">Yeah.</span> <span class="tl-s" data-s="2104.50" data-e="2105.10">So do you guys have any good ideas?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2106.02" data-e="2109.03">Do we have any good ideas?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2109.03" data-e="2114.09">You know, I think you should put the name science in it.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2114.16" data-e="2114.31">Science?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2114.34" data-e="2114.50">Yeah.</span> <span class="tl-s" data-s="2114.50" data-e="2114.95">Like, okay.</span> <span class="tl-s" data-s="2114.97" data-e="2117.26">Yeah, that always goes well.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2117.31" data-e="2117.39">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2117.39" data-e="2118.08">Acquire the fire.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2118.19" data-e="2118.88">Acquire the fire.</span> <span class="tl-s" data-s="2118.91" data-e="2119.26">Okay.</span> <span class="tl-s" data-s="2119.31" data-e="2120.68">We&#x27;ll bring that one back, huh?</span> <span class="tl-s" data-s="2120.74" data-e="2120.80">Okay.</span> <span class="tl-s" data-s="2120.92" data-e="2121.06">Yeah.</span> <span class="tl-s" data-s="2121.06" data-e="2135.01">So one of the things early on that was important to me was that, you know, when the church is well beyond my lifetime, we could look back and we could still see that we came from the Gilbert Church.</span> <span class="tl-s" data-s="2135.01" data-e="2137.03">So we&#x27;re going to actually keep the name Center Church.</span> <span class="tl-s" data-s="2137.03" data-e="2145.29">And it will be— [Speaker B] Even though it&#x27;s trademarked, you can go ahead and— I mean, there&#x27;s a fee associated with that, Mark Johnson Jr.</span> <span class="tl-s" data-s="2145.29" data-e="2145.53">Yeah.</span> <span class="tl-s" data-s="2145.53" data-e="2146.03">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2146.05" data-e="2146.07">Yeah.</span> <span class="tl-s" data-s="2146.07" data-e="2150.21">I&#x27;ll get you the contract to your email that you gave us.</span> <span class="tl-s" data-s="2150.21" data-e="2150.47">All right.</span> <span class="tl-s" data-s="2150.47" data-e="2151.71">We&#x27;ll get that pushed through.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2151.71" data-e="2151.95">Yeah.</span> <span class="tl-s" data-s="2151.95" data-e="2152.65">Go ahead.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2152.65" data-e="2153.21">Yep.</span> <span class="tl-s" data-s="2153.21" data-e="2154.33">So we&#x27;ll be Center Church.</span> <span class="tl-s" data-s="2154.33" data-e="2160.64">I think our branding will be a little different just to distinguish us.</span> <span class="tl-s" data-s="2160.64" data-e="2165.16">But one of the great things about Sovereign Grace Churches is that there are maybe 6 names.</span> <span class="tl-s" data-s="2165.16" data-e="2166.70">Everybody sort of shares and pulls from.</span> <span class="tl-s" data-s="2166.70" data-e="2174.02">So we feel like we&#x27;re still being unique because we would only be the second church that has that name.</span> <span class="tl-s" data-s="2174.02" data-e="2174.44">That&#x27;s correct.</span> <span class="tl-s" data-s="2174.44" data-e="2178.95">But we would also be consistent with taking the name from a church that we admire and frankly were planted from.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2178.95" data-e="2178.96">Excellent.</span> <span class="tl-s" data-s="2178.96" data-e="2179.34">All right.</span> <span class="tl-s" data-s="2179.54" data-e="2180.18">Center Church of Star.</span> <span class="tl-s" data-s="2180.18" data-e="2182.64">That&#x27;s [Speaker A] our name.</span> <span class="tl-s" data-s="2182.64" data-e="2183.26">Center Church of Star.</span> <span class="tl-s" data-s="2183.26" data-e="2188.02">So just a few— [Speaker B] I&#x27;m happy to say that.</span> <span class="tl-s" data-s="2188.02" data-e="2189.34">Yeah, go ahead.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2189.34" data-e="2189.50">A few random follow-up questions.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2189.50" data-e="2189.52">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2189.52" data-e="2193.33">Did you buy a jacket yet?</span> <span class="tl-s" data-s="2193.38" data-e="2195.46">From the AZ to the ID.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2195.54" data-e="2195.78">Yes.</span> <span class="tl-s" data-s="2195.78" data-e="2207.48">So my favorite story about buying jackets is one of the guys that&#x27;s going with us, I think for about 2 weeks, went to Sheil&#x27;s probably 2 or 3 times and bought, he probably has bought like 2 or 3 jackets.</span> <span class="tl-s" data-s="2207.50" data-e="2208.46">Oh, [Speaker A] wow.</span> <span class="tl-s" data-s="2208.46" data-e="2211.30">I heard that place is expensive too.</span> <span class="tl-s" data-s="2211.65" data-e="2216.59">Well, he, it might&#x27;ve been a good time of year.</span> <span class="tl-s" data-s="2216.62" data-e="2217.21">Who knows?</span> <span class="tl-s" data-s="2217.41" data-e="2220.76">But yeah, no, we definitely have got some cold weather gear for sure.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2220.79" data-e="2220.88">Excellent.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2221.03" data-e="2222.55">Jeff already did give his email, jeff@centergilbert.com.</span> <span class="tl-s" data-s="2222.57" data-e="2224.16">He&#x27;s a very approachable guy.</span> <span class="tl-s" data-s="2224.16" data-e="2227.13">I know we painted him as an intimidating beard growing.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2227.13" data-e="2227.88">No one painted me.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2228.01" data-e="2229.86">Oh, I did that.</span> <span class="tl-s" data-s="2229.86" data-e="2229.99">Sorry.</span> <span class="tl-s" data-s="2230.08" data-e="2230.71">I&#x27;ll take responsibility.</span> <span class="tl-s" data-s="2230.76" data-e="2233.20">But I can promise you that— [Speaker B] Your tomfoolery.</span> <span class="tl-s" data-s="2233.22" data-e="2233.51">Anyway, go ahead.</span> <span class="tl-s" data-s="2234.26" data-e="2241.07">I can promise you that he will respond graciously and give you all the information that you need.</span> <span class="tl-s" data-s="2241.07" data-e="2244.40">So don&#x27;t hesitate to reach out to him there.</span> <span class="tl-s" data-s="2244.55" data-e="2246.33">I just have one more semi-important question.</span> <span class="tl-s" data-s="2246.33" data-e="2248.47">Have you tried their potatoes yet?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2248.72" data-e="2249.00">Oh, absolutely.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2249.40" data-e="2250.75">They&#x27;re known for potatoes.</span> <span class="tl-s" data-s="2250.75" data-e="2251.83">Have you had them?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2251.83" data-e="2252.51">Absolutely.</span> <span class="tl-s" data-s="2252.51" data-e="2252.61">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2252.61" data-e="2254.45">All right.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2254.55" data-e="2258.17">There&#x27;s a great little chain there called the Boise Fry Company.</span> <span class="tl-s" data-s="2258.17" data-e="2258.67">All right.</span> <span class="tl-s" data-s="2258.67" data-e="2260.95">They do a A bunch of different variations of French fries, and it&#x27;s wonderful.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2260.95" data-e="2261.19">Okay, great.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2261.19" data-e="2261.93">That&#x27;s— I think that&#x27;s all I got.</span> <span class="tl-s" data-s="2261.93" data-e="2265.39">Is there anything you would like to share?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2265.45" data-e="2272.77">Yeah, because we need to just talk about— I think one of the things we need to talk about is like regions within Sovereign Grace.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2272.77" data-e="2273.67">Gosh.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2273.67" data-e="2273.89">Yeah.</span> <span class="tl-s" data-s="2273.89" data-e="2280.68">You know, and so like our region, our church is in the Western Region, which has 8 churches, I believe.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2280.68" data-e="2280.74">Yes.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2280.74" data-e="2282.88">You&#x27;re gonna jump regions.</span> <span class="tl-s" data-s="2282.99" data-e="2285.33">They call it the Bigfoot Region.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2285.38" data-e="2285.39">Yes?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2285.41" data-e="2292.07">Yeah, there&#x27;s a few names I&#x27;ve heard, and that&#x27;s one of many.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2292.11" data-e="2295.26">It&#x27;s kind of the most gerrymandered region in Sovereign Grace.</span> <span class="tl-s" data-s="2295.26" data-e="2295.91">And it&#x27;s big.</span> <span class="tl-s" data-s="2295.96" data-e="2298.45">I mean, it has Kansas City.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2298.46" data-e="2298.64">Yep.</span> <span class="tl-s" data-s="2298.69" data-e="2303.16">So it serves Oregon, which we have the Roseburg Church in Oregon.</span> <span class="tl-s" data-s="2303.18" data-e="2308.17">And then the next closest church to that is in Bozeman, Montana.</span> <span class="tl-s" data-s="2308.33" data-e="2314.57">And then you have Kansas City, which is, I think the church is actually on the Kansas side.</span> <span class="tl-s" data-s="2314.57" data-e="2316.12">And then there&#x27;s Nebraska.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2316.68" data-e="2317.18">Hastings, Nebraska.</span> <span class="tl-s" data-s="2317.30" data-e="2317.45">Yep.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2317.48" data-e="2318.53">And then we have Minneapolis.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2318.53" data-e="2319.01">2 in Minneapolis.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2319.01" data-e="2320.20">2 in the Minneapolis area.</span> <span class="tl-s" data-s="2320.20" data-e="2322.51">And then we have Sioux Falls, South Dakota.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2322.61" data-e="2322.91">Yep.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2322.94" data-e="2324.45">And I feel like I&#x27;m missing one.</span> <span class="tl-s" data-s="2324.45" data-e="2327.09">I [Speaker B] think you got &#x27;em all.</span> <span class="tl-s" data-s="2327.09" data-e="2328.80">I think you got &#x27;em all.</span> <span class="tl-s" data-s="2328.80" data-e="2329.25">Close.</span> <span class="tl-s" data-s="2329.43" data-e="2329.77">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2329.85" data-e="2331.74">And so it&#x27;s really spread out.</span> <span class="tl-s" data-s="2331.78" data-e="2333.00">They call it the Bigfoot region.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2333.00" data-e="2333.20">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2333.20" data-e="2335.06">They call it the Midwest Northwest region.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2335.06" data-e="2336.07">Midwest Northwest.</span> <span class="tl-s" data-s="2336.19" data-e="2338.83">I&#x27;ve heard Louisiana Purchase.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2338.83" data-e="2339.26">Yeah.</span> <span class="tl-s" data-s="2339.31" data-e="2340.66">There&#x27;s a bunch of regional.</span> <span class="tl-s" data-s="2340.66" data-e="2344.18">So you would be another church in that region.</span> <span class="tl-s" data-s="2344.20" data-e="2350.79">And so, I mean, obviously we&#x27;re planting this church within the oversight direction under the auspices of Sovereign Grace Ministries.</span> <span class="tl-s" data-s="2350.79" data-e="2353.42">And so like what remains to be done there?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2353.42" data-e="2362.54">Yeah, so we&#x27;re at a point right now where essentially we have some documentation to get together that essentially formalizes who we are as a church when we go to plant.</span> <span class="tl-s" data-s="2362.62" data-e="2372.81">Once that is put together, then we go to the church plant committee in the region and they&#x27;ll essentially We put it to a vote to the elders of the region.</span> <span class="tl-s" data-s="2372.81" data-e="2384.34">Once they vote to affirm, then the Sovereign Grace at large will recognize it as an official church plant project, and essentially from there all the resources are unlocked and we are locked and loaded, and it&#x27;s just a matter of getting it done.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2384.34" data-e="2389.55">Yeah, and so right now as Jeff and I interact with the regional leader of the Bigfoot region, we have green lights.</span> <span class="tl-s" data-s="2389.63" data-e="2392.05">We&#x27;re trying to take our lead from them.</span> <span class="tl-s" data-s="2392.05" data-e="2399.18">I mean, it&#x27;s not, you know, we don&#x27;t want to sort of thrust our timing upon them.</span> <span class="tl-s" data-s="2399.18" data-e="2403.86">He said, hey, have the interest meetings, put together— Jeff&#x27;s talking about the prospectus.</span> <span class="tl-s" data-s="2403.86" data-e="2406.88">Jeff&#x27;s getting to know the elders in the region.</span> <span class="tl-s" data-s="2406.93" data-e="2410.59">I&#x27;ve talked to the church plant committee chair and they&#x27;re excited about this.</span> <span class="tl-s" data-s="2410.59" data-e="2414.07">There is no hesitancy from anybody that we are aware of.</span> <span class="tl-s" data-s="2414.12" data-e="2419.63">That whole region is excited about what the Lord would do through Jeff and the church plant team from here in Boise.</span> <span class="tl-s" data-s="2419.63" data-e="2426.56">And so while a vote remains to be taken, all the signs are like, yeah, this is— [Speaker C] Yeah, and to be fair, that&#x27;s almost always the last step.</span> <span class="tl-s" data-s="2426.56" data-e="2426.74">Yeah.</span></p>
+        <p><span class="tl-s" data-s="2426.74" data-e="2430.19">So it&#x27;s not like we&#x27;re— [Speaker A] Nothing out of the ordinary.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2430.19" data-e="2430.62">Right, exactly.</span> <span class="tl-s" data-s="2430.89" data-e="2437.28">And it can sound maybe a little weird to say it that way, but— [Speaker B] Yeah, that&#x27;s right though.</span> <span class="tl-s" data-s="2437.55" data-e="2439.76">I think that&#x27;s right.</span> <span class="tl-s" data-s="2440.05" data-e="2440.52">That&#x27;s right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2440.52" data-e="2451.96">So our hope for you is that all of that goes extremely well and that all the boxes are checked and the Lord just really blesses your transfer and transition into the Boise metro area, specifically Star.</span> <span class="tl-s" data-s="2452.23" data-e="2456.80">And knowing that we&#x27;re planting a church, I hope that we get to see the day when Your church.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2456.80" data-e="2457.04">Yes.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2457.04" data-e="2457.30">Oh man.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2457.30" data-e="2458.07">Hear, hear.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2458.10" data-e="2458.79">Look forward to that.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2458.82" data-e="2459.48">Hear, hear.</span> <span class="tl-s" data-s="2459.53" data-e="2459.82">That&#x27;s right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2459.93" data-e="2467.45">And just to plug one more thing, we did a full episode on why we plant churches, because I love that we&#x27;re a denomination and a church that plant churches.</span> <span class="tl-s" data-s="2467.74" data-e="2471.88">Our goal is to fulfill the Great Commission in any way we can.</span> <span class="tl-s" data-s="2471.88" data-e="2473.69">And this is one of our efforts of many.</span> <span class="tl-s" data-s="2473.80" data-e="2477.74">So if you&#x27;re more interested in that, that&#x27;s episode 41.</span> <span class="tl-s" data-s="2477.75" data-e="2487.30">Is there any last closing things that you guys have for someone who&#x27;s thinking about going, who wants to know how they can help?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2487.36" data-e="2487.63">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2487.68" data-e="2488.34">Anything like that?</span> <span class="tl-s" data-s="2488.50" data-e="2488.97">Any last-minute thoughts?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2488.97" data-e="2494.10">Yeah, I would just thank everyone for even praying for us and considering something like going.</span> <span class="tl-s" data-s="2494.10" data-e="2504.14">You know, I would just push you if I could to just say, you know, if you&#x27;re able to go, then ask the Lord to show you how that can happen and help you with any reasons why you wouldn&#x27;t want to or may not be inclined to.</span> <span class="tl-s" data-s="2504.14" data-e="2510.68">And if you don&#x27;t feel like you can go, but you would desire to, that you would ask him to remove any obstacles that would keep you from doing that.</span> <span class="tl-s" data-s="2511.21" data-e="2520.17">Hopefully I can hear from you soon if that&#x27;s the case and you fall in any of those categories.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2520.17" data-e="2521.50">Yeah, and you know what?</span> <span class="tl-s" data-s="2521.53" data-e="2525.03">I guess I would say, please be praying.</span> <span class="tl-s" data-s="2525.06" data-e="2525.99">Please be considering.</span> <span class="tl-s" data-s="2526.01" data-e="2532.96">And just because there are 10 adults that have committed to go at this point, that doesn&#x27;t mean they&#x27;re not welcoming more.</span> <span class="tl-s" data-s="2533.00" data-e="2539.50">And if you&#x27;re from another area of town that&#x27;s not here, if you&#x27;re not in another part of Sovereign Grace or [Speaker A] Yeah.</span> <span class="tl-s" data-s="2539.73" data-e="2543.59">You&#x27;re not a part of our church, you&#x27;re more than welcome to reach out to Jeff as well.</span> <span class="tl-s" data-s="2543.59" data-e="2555.72">And maybe you&#x27;ve had a thought or a hope or a desire to be able to, or be a part of a church plant in the Boise area.</span> <span class="tl-s" data-s="2555.82" data-e="2558.00">Reach out to Jeff, just start a conversation.</span> <span class="tl-s" data-s="2558.00" data-e="2559.10">His email is jeff@centergilbert.com.</span> <span class="tl-s" data-s="2559.10" data-e="2562.20">You can reach out to me.</span></p>
+        <p><span class="tl-s" data-s="2562.25" data-e="2565.94">Mine is rich@centergilbert.com, and I&#x27;d be glad to talk to you as well.</span> <span class="tl-s" data-s="2566.02" data-e="2572.42">But we really are excited that the Lord has given us the opportunity to be able to do this.</span> <span class="tl-s" data-s="2572.44" data-e="2574.43">And it&#x27;s not something that we take for granted.</span> <span class="tl-s" data-s="2574.51" data-e="2577.73">It&#x27;s not something that is rote.</span> <span class="tl-s" data-s="2577.96" data-e="2585.52">We&#x27;re not in the church business, quote unquote, to sort of be professionals or to be, you know, just kind of do our job, go home.</span> <span class="tl-s" data-s="2585.52" data-e="2589.45">I mean, we&#x27;re throwing our lives into the mission and vision of God in our day, right?</span> <span class="tl-s" data-s="2589.45" data-e="2593.67">And so this is one of the ways that we look to do that.</span> <span class="tl-s" data-s="2594.42" data-e="2600.30">So I would encourage all of us, we all, I mean, it&#x27;s not just because we&#x27;re in ministry that we do this.</span> <span class="tl-s" data-s="2600.35" data-e="2602.04">Christians are called to do this.</span> <span class="tl-s" data-s="2602.04" data-e="2602.34">Right.</span></p>
+        <p><span class="tl-s" data-s="2602.34" data-e="2609.88">And so as a Christian, you can do that as well by, you know, maybe you&#x27;re not called to go to Boise, throw your life into your church.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2609.88" data-e="2609.94">Yep.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2609.96" data-e="2618.23">Whether it&#x27;s here at Center Gilbert or anywhere else, and maybe leave room in your heart just to pray, hey, maybe I&#x27;m supposed to go.</span> <span class="tl-s" data-s="2618.46" data-e="2624.20">Maybe I&#x27;m supposed to, supposed to be able to accompany that team and be a part of that plant up there.</span> <span class="tl-s" data-s="2624.20" data-e="2628.34">So if you wanna reach out to Jeff again, it&#x27;s jeff@centergilbert.com and rich@centergilbert.com.</span> <span class="tl-s" data-s="2628.34" data-e="2633.04">And you can reach out to me at jeff@sinnergilbert.com, and we&#x27;d love to be able to engage and talk.</span> <span class="tl-s" data-s="2633.04" data-e="2633.82">So there we are.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2633.82" data-e="2636.16">Our first interview comes to a close.</span> <span class="tl-s" data-s="2636.16" data-e="2639.10">Thank you so much for joining us, Jeff.</span> <span class="tl-s" data-s="2639.10" data-e="2640.14">We really appreciate it.</span> <span class="tl-s" data-s="2640.14" data-e="2653.21">And we&#x27;d love to see what you&#x27;re doing and the way that the Lord&#x27;s working through you and hopefully as well in Star, Idaho.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2654.35" data-e="2655.28">Well, yeah.</span> <span class="tl-s" data-s="2655.56" data-e="2661.76">And we&#x27;ll have to do like a, either in the future, a special onsite interview in Star or— [Speaker A] Heather&#x27;s flying first class to get there.</span> <span class="tl-s" data-s="2661.80" data-e="2662.33">Rolls, folks.</span> <span class="tl-s" data-s="2662.38" data-e="2662.62">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2662.62" data-e="2663.28">Behind the glass.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2663.28" data-e="2663.39">Exactly.</span> <span class="tl-s" data-s="2663.43" data-e="2667.78">And, or we can, we can do something on the phone, but we&#x27;ll, you know, we&#x27;ll be, we&#x27;ll be in touch.</span> <span class="tl-s" data-s="2667.78" data-e="2667.78">So.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2667.78" data-e="2667.78">All right.</span> <span class="tl-s" data-s="2667.78" data-e="2667.78">Looking forward to it, guys.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2667.78" data-e="2667.78">Thanks, everybody.</span> <span class="tl-s" data-s="2667.78" data-e="2667.78">Thanks for listening.</span> <span class="tl-s" data-s="2667.78" data-e="2667.78">Thanks for tuning in to the Fixed on Jesus podcast.</span> <span class="tl-s" data-s="2667.78" data-e="2667.78">We&#x27;ll see you later.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2667.78" data-e="2667.78">Later.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Fixed on Jesus episode archive, backed by /api/podcast/search.
+  // Static fallback list above stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function fmtDuration(raw) {
+      if (!raw) return "";
+      var str = String(raw).trim();
+      // Anchor feeds report seconds; render as H:MM:SS or M:SS.
+      if (/^\d+$/.test(str)) {
+        var total = parseInt(str, 10);
+        var h = Math.floor(total / 3600);
+        var m = Math.floor((total % 3600) / 60);
+        var sec = total % 60;
+        var mm = (h > 0 && m < 10 ? "0" + m : "" + m);
+        var ss = (sec < 10 ? "0" + sec : "" + sec);
+        return (h > 0 ? h + ":" + mm : m) + ":" + ss;
+      }
+      // Anchor also reports clock strings like "00:24:02" — drop the
+      // redundant leading hour so it reads "24:02".
+      return str.replace(/^00:/, "");
+    }
+    function row(it) {
+      it = it || {};
+      var title = esc(it.title) || "Untitled episode";
+      var tUrl = it.guid && transcriptMap[it.guid];
+      var heading = tUrl
+        ? '<a href="' + esc(tUrl) + '">' + title + "</a>"
+        : (it.link
+          ? '<a href="' + esc(it.link) + '" target="_blank" rel="noopener">' + title + "</a>"
+          : title);
+      var meta = [fmtDate(it.date), fmtDuration(it.duration)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      return '<div class="sermon"><div><h3>' + heading + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    var PER = 10;
+    var state = { q: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No episodes found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " episode" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " episodes";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/podcast/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () {
+          // Keep the static list, but tell the reader where else to listen —
+          // some privacy blockers stop the archive request itself.
+          var note = document.querySelector("[data-sermons-error]");
+          if (note) note.hidden = false;
+        });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    if (monthSel) {
+      monthSel.addEventListener("change", function () {
+        state.month = monthSel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: fe6c38c9-b451-4c2b-b3a8-b6548db938e1 -->
+</body>
+</html>
