@@ -270,9 +270,12 @@
     function row(it) {
       it = it || {};
       var title = esc(it.title) || "Untitled episode";
-      var heading = it.link
-        ? '<a href="' + esc(it.link) + '" target="_blank" rel="noopener">' + title + "</a>"
-        : title;
+      var tUrl = it.guid && transcriptMap[it.guid];
+      var heading = tUrl
+        ? '<a href="' + esc(tUrl) + '">' + title + "</a>"
+        : (it.link
+          ? '<a href="' + esc(it.link) + '" target="_blank" rel="noopener">' + title + "</a>"
+          : title);
       var meta = [fmtDate(it.date), fmtDuration(it.duration)].filter(Boolean).join(" · ");
       var audio = it.audio
         ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
@@ -289,6 +292,9 @@
 
     var PER = 10;
     var state = { q: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
     var seq = 0;
     var facetsLoaded = false;
     var pager = document.querySelector("[data-sermons-pager]");
@@ -416,7 +422,12 @@
       btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
     });
 
-    load(false);
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
   })();
   </script>
 </body>

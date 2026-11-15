@@ -622,7 +622,7 @@ else
   if git diff --cached --quiet -- "${OUTPUT}" scripts/transcripts/add-transcript.sh public/transcripts.json; then
     echo "Nothing new to commit (${OUTPUT} and script unchanged)."
   else
-    git commit -m "${MSG}" -- "${OUTPUT}" scripts/transcripts/add-transcript.sh
+    git commit -m "${MSG}" -- "${OUTPUT}" scripts/transcripts/add-transcript.sh public/transcripts.json
     if git push; then
       echo "Pushed to main (deploys via the existing GitHub Action)."
     else
