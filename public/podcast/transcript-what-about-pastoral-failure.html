@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What About Pastoral Failure? — Podcast Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Fixed on Jesus: conversations beyond Sunday mornings from Center Church in Gilbert, AZ — listen on Spotify, Apple Podcasts, and YouTube." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=18" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a href="/sermons">Sermons</a></li>
+              <li><a class="active" href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/podcast">&larr; All podcast episodes</a>
+          <h1 class="display-lg">What About Pastoral Failure?</h1>
+          <p class="transcript-meta">2024-10-16 · 21:30</p>
+          <p class="transcript-desc">Welcome to FIXED ON JESUS, a podcast brought to you by Center Church in Gilbert, Arizona. Speaking to you today are Rich Richardson &amp; Mark Johnson Jr. Production by Heather Corbitt **SHOW NOTES** Questions asked in this episode: Is Rich too hard on Mark? What do I do of the person who fell impacted </p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/e750e370/podcast/play/93127107/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-9-16%2Fbcd023f5-6046-3176-b951-87f5ffc40a95.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="0.15" data-e="10.16">If you think about baptism, the power of baptism is not in the person who does it, who performs the sacrament, [Speaker B] who [Speaker A] leads you in performing the sacrament.</span> <span class="tl-s" data-s="10.20" data-e="12.44">The power is in what it points to, right?</span> <span class="tl-s" data-s="12.44" data-e="16.03">And baptism is a picture of what happens when we become Christians.</span> <span class="tl-s" data-s="16.13" data-e="18.47">We were once dead to sin and now we&#x27;re made alive in Christ.</span> <span class="tl-s" data-s="18.47" data-e="21.67">And so you have this picture of being buried and brought back.</span> <span class="tl-s" data-s="21.67" data-e="35.75">And so that picture stands, even though the pastor who performed the baptism might be, you know, saying he doesn&#x27;t believe in Jesus anymore, or he doesn&#x27;t believe in the Bible, or he&#x27;s living a life that communicates he&#x27;s not a Christian.</span> <span class="tl-s" data-s="35.86" data-e="38.60">The truth is, is that Jesus still reigns.</span> <span class="tl-s" data-s="38.60" data-e="42.88">Jesus is still a Savior that we can put our trust in.</span> <span class="tl-s" data-s="43.06" data-e="43.25">Yeah.</span> <span class="tl-s" data-s="43.25" data-e="69.06">And so even if someone who&#x27;s compromised or has disqualified themselves, even if that happened, even if that person performed your baptism, doesn&#x27;t mean that it&#x27;s negated.</span></p>
+        <p><span class="tl-s" data-s="69.09" data-e="89.14">This is Fixed on Jesus.</span> <span class="tl-s" data-s="89.14" data-e="91.67">Hey everybody, welcome to Fixed on Jesus.</span> <span class="tl-s" data-s="92.33" data-e="98.33">This is the podcast, which is primarily looking to serve Center Church of Gilbert, Arizona.</span> <span class="tl-s" data-s="98.33" data-e="101.70">And sometimes this podcast has clear and tidy direction.</span> <span class="tl-s" data-s="101.79" data-e="109.86">Sometimes it feels like a hike that&#x27;s gone wrong and you get lost, but I don&#x27;t know which one it&#x27;ll be today, but we&#x27;re gonna find out.</span> <span class="tl-s" data-s="110.14" data-e="114.78">My name is Rich and I am joined by Mark Johnson Jr.</span> <span class="tl-s" data-s="114.86" data-e="115.24">Hello, Mark.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="115.27" data-e="115.35">Hello.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="115.35" data-e="119.91">And then behind the glass, we have Heather Corbett, who&#x27;s back there.</span> <span class="tl-s" data-s="119.91" data-e="120.38">Hello, Heather.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="120.41" data-e="124.00">Hey, thanks for letting me speak, Rich.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="124.48" data-e="127.34">I, this, I never, like, I never told you not to speak, Heather.</span> <span class="tl-s" data-s="127.39" data-e="131.87">You&#x27;re giving the wrong impression to our legion of fans.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="131.95" data-e="132.32">And muted.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="132.32" data-e="132.47">Uh-huh.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="132.56" data-e="132.77">Okay.</span> <span class="tl-s" data-s="132.77" data-e="134.60">Well, I&#x27;m just— [Speaker B] Fogging up the glass again.</span> <span class="tl-s" data-s="134.60" data-e="138.34">Well, I&#x27;ll tell you what, we are in a secret location.</span> <span class="tl-s" data-s="139.18" data-e="144.59">Our normal, uh, our normal recording area was spoken for, and here we are now in a secret undisclosed location.</span> <span class="tl-s" data-s="144.59" data-e="145.98">So, uh, this is a little bit different.</span> <span class="tl-s" data-s="146.01" data-e="147.70">It feels a little bit weird, but that&#x27;s okay.</span> <span class="tl-s" data-s="147.70" data-e="149.95">We&#x27;re going to persevere and make it right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="149.95" data-e="150.33">That&#x27;s right.</span> <span class="tl-s" data-s="150.33" data-e="150.51">That&#x27;s right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="150.51" data-e="153.11">All right, Mark, what are we talking about?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="153.19" data-e="154.87">Yeah, we&#x27;re talking about something interesting.</span> <span class="tl-s" data-s="154.87" data-e="159.03">But before that, you know, one of us has a wife and this wife has a question.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="159.03" data-e="162.09">Wait, so there&#x27;s 3 people in this room and only one of us has a wife?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="162.09" data-e="162.39">That&#x27;s correct.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="162.39" data-e="163.85">You have no wife &#x27;cause you&#x27;re single.</span> <span class="tl-s" data-s="163.85" data-e="164.33">That&#x27;s correct.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="164.37" data-e="165.33">And Heather has no wife.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="165.35" data-e="166.59">And Heather has no wife.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="166.59" data-e="167.91">That is also correct.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="168.01" data-e="168.85">That&#x27;s so good.</span> <span class="tl-s" data-s="168.85" data-e="169.09">Okay, what?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="169.09" data-e="176.77">Someone&#x27;s wife, I&#x27;m not gonna name names, wants to know if you, and we&#x27;re gonna put a poll, the idea is to put a poll up.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="176.77" data-e="177.27">A poll.</span> <span class="tl-s" data-s="177.35" data-e="178.05">We&#x27;re gonna poll our fans.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="178.05" data-e="178.15">We&#x27;re gonna poll our fans.</span> <span class="tl-s" data-s="178.15" data-e="184.25">So you can email us, but there&#x27;s also gonna be a poll Here on the episode.</span> <span class="tl-s" data-s="184.25" data-e="190.29">If this person&#x27;s wife wants to know if Rich is too harsh on Mark during the podcast.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="190.29" data-e="195.47">Wait a minute before we get to do— whoa, hey.</span> <span class="tl-s" data-s="195.47" data-e="195.65">Okay.</span> <span class="tl-s" data-s="195.65" data-e="197.51">As the producer, Tiffany, I&#x27;m saying the name.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="197.51" data-e="199.97">It&#x27;s my wife Tiffany, for people who don&#x27;t know.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="199.97" data-e="201.43">Sorry, [Speaker C] Tiffany.</span> <span class="tl-s" data-s="201.43" data-e="206.82">Tiffany, as the producer, you have no idea the amount of things I cut out.</span> <span class="tl-s" data-s="207.11" data-e="207.91">He does not give him enough grief.</span> <span class="tl-s" data-s="207.91" data-e="208.27">Okay?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="208.27" data-e="208.87">That&#x27;s 100%.</span> <span class="tl-s" data-s="208.87" data-e="214.85">Well, I&#x27;ll tell you what, this week when we were walking, one of the things we do just to catch up on our days, go for a walk.</span> <span class="tl-s" data-s="214.85" data-e="220.23">And so we&#x27;re walking and she&#x27;s like, man, the podcast is really good, but I really feel bad for Mark.</span> <span class="tl-s" data-s="220.23" data-e="221.51">And I was like, why?</span> <span class="tl-s" data-s="221.51" data-e="221.95">Mark&#x27;s fine.</span> <span class="tl-s" data-s="221.95" data-e="222.15">Yeah.</span> <span class="tl-s" data-s="222.15" data-e="226.57">She&#x27;s like, she goes, you&#x27;re way too hard on him.</span> <span class="tl-s" data-s="226.57" data-e="227.49">I&#x27;m like, I hold back.</span> <span class="tl-s" data-s="227.49" data-e="229.19">And she&#x27;s like, I don&#x27;t think it&#x27;s right.</span> <span class="tl-s" data-s="229.19" data-e="232.21">And I&#x27;m like, I don&#x27;t think anybody agrees with you, sweetie.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="232.21" data-e="232.39">Ooh.</span> <span class="tl-s" data-s="232.39" data-e="233.77">And so no one agrees.</span> <span class="tl-s" data-s="233.77" data-e="234.15">No one agrees.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="234.15" data-e="236.43">She threw the gauntlet down and she goes, well, I&#x27;m gonna ask.</span> <span class="tl-s" data-s="236.43" data-e="239.81">I&#x27;m gonna— and I&#x27;m like, all right, I&#x27;ll make sure it gets airtime.</span> <span class="tl-s" data-s="240.46" data-e="242.94">And so here we are.</span> <span class="tl-s" data-s="242.94" data-e="245.59">People, friends, Legion of Fan, tell me if I am too hard on Mark.</span> <span class="tl-s" data-s="245.59" data-e="251.44">We need a poll and then we will report on the findings as time goes on.</span> <span class="tl-s" data-s="252.02" data-e="252.82">It&#x27;ll be entirely scientific and objective.</span> <span class="tl-s" data-s="253.06" data-e="254.26">So please let me know.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="254.26" data-e="257.52">So if you&#x27;re on, if you are listening on Spotify, there is a poll.</span> <span class="tl-s" data-s="257.56" data-e="263.90">And if you&#x27;re not listening on Spotify, I will be in the lobby on Church on [Speaker A] the Go.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="263.91" data-e="265.73">You can also email us too.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="265.73" data-e="269.31">Yeah, you can [Speaker C] email production at He&#x27;s the one who gets those, Mark.</span> <span class="tl-s" data-s="269.31" data-e="272.57">Oh, he&#x27;s gonna, he&#x27;s gonna, he&#x27;s gonna cook the books.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="272.57" data-e="273.53">Yeah, for sure.</span> <span class="tl-s" data-s="273.53" data-e="275.07">I already do.</span> <span class="tl-s" data-s="275.07" data-e="276.51">Send any emails about that because no.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="276.51" data-e="277.28">Oh man.</span> <span class="tl-s" data-s="278.19" data-e="278.92">All [Speaker B] right.</span> <span class="tl-s" data-s="278.97" data-e="281.61">Anyways, what we&#x27;re actually talking about today, thanks for the question, Tiffany.</span> <span class="tl-s" data-s="281.75" data-e="281.99">Thank you.</span> <span class="tl-s" data-s="281.99" data-e="282.91">We appreciate it.</span> <span class="tl-s" data-s="282.91" data-e="283.80">I don&#x27;t think we do actually.</span> <span class="tl-s" data-s="283.80" data-e="285.23">We didn&#x27;t need that question, but go ahead, Mark.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="285.23" data-e="286.35">We need it.</span> <span class="tl-s" data-s="286.35" data-e="288.17">And you were faithful to let her have it.</span> <span class="tl-s" data-s="288.17" data-e="290.87">So, but let&#x27;s talk about a different topic.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="290.87" data-e="294.22">My wife, my wife, like she&#x27;s a force of nature or something.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="294.52" data-e="295.76">She&#x27;s a force of nature.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="295.76" data-e="297.48">Anyway, go ahead.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="297.57" data-e="297.99">Yeah.</span> <span class="tl-s" data-s="298.30" data-e="298.63">Exactly.</span> <span class="tl-s" data-s="299.02" data-e="302.50">So our topic, our actual topic today is pastoral failure.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="302.50" data-e="302.67">Yes.</span> <span class="tl-s" data-s="302.67" data-e="302.99">Yeah, right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="302.99" data-e="305.52">So this happens from time to time.</span> <span class="tl-s" data-s="305.52" data-e="310.22">You&#x27;ll read about it in the media by a big personality or a big pastor.</span> <span class="tl-s" data-s="310.22" data-e="312.50">Something happened and they&#x27;re disqualified from the ministry.</span> <span class="tl-s" data-s="312.67" data-e="314.94">What do we make of this?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="315.08" data-e="316.16">Man, that&#x27;s a hard question.</span> <span class="tl-s" data-s="316.21" data-e="319.28">I&#x27;ll tell you what, there&#x27;s a lot that goes into that.</span> <span class="tl-s" data-s="319.28" data-e="328.56">I mean, I know the gentleman you&#x27;re referring to, he&#x27;s kind of a big conference speaker. that had a big footprint.</span> <span class="tl-s" data-s="328.64" data-e="344.29">But I also think, I mean, that&#x27;s discouraging and that&#x27;s difficult, but another piece of this that&#x27;s discouraging and difficult is if you have a pastor, someone who&#x27;s shepherded you through the years, that falls away or fails.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="344.29" data-e="344.56">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="344.61" data-e="352.29">And I think that might be one of the hardest things that Christians face is Sort of determining, you know, what how do I think about this?</span> <span class="tl-s" data-s="352.29" data-e="353.59">How do I process this?</span> <span class="tl-s" data-s="353.59" data-e="355.21">How do I how do I respond?</span> <span class="tl-s" data-s="355.76" data-e="356.05">Right.</span> <span class="tl-s" data-s="356.14" data-e="359.45">Well, I can just tell you something from my life growing up.</span> <span class="tl-s" data-s="360.25" data-e="377.90">I grew up going to church my whole life, and a couple well one of the pastors in particular who was who was a huge force for a help for me and actually did my Tiffany and I our premarital counseling and was super helpful and played a role in our wedding.</span> <span class="tl-s" data-s="377.90" data-e="379.76">He&#x27;s not following the Lord anymore, and it&#x27;s.</span> <span class="tl-s" data-s="379.81" data-e="379.96">It&#x27;s hard.</span> <span class="tl-s" data-s="379.97" data-e="382.81">It&#x27;s like, okay, what do I believe about that?</span> <span class="tl-s" data-s="382.88" data-e="383.60">What do I think about that?</span></p>
+        <p><span class="tl-s" data-s="383.60" data-e="384.99">How do I process that?</span> <span class="tl-s" data-s="385.04" data-e="391.73">One of the things I didn&#x27;t realize is that when I was young, I just thought, if you follow Jesus, you&#x27;re gonna keep following Jesus.</span> <span class="tl-s" data-s="391.76" data-e="398.00">But as I&#x27;ve gotten older, it&#x27;s like, man, there&#x27;s a ton of people, even pastors who fall away.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="398.04" data-e="398.10">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="398.18" data-e="399.13">Or who end their race poorly.</span> <span class="tl-s" data-s="399.25" data-e="401.37">It&#x27;s a hard question and it&#x27;s one I get a lot.</span> <span class="tl-s" data-s="401.47" data-e="412.03">I think a couple ways I try to think about it is first, just to help people recognize that pastors are people who fail.</span> <span class="tl-s" data-s="412.14" data-e="419.88">They&#x27;re just men. who are limited and weak and have their own sin patterns and struggles, and they&#x27;re in process just like anyone else.</span> <span class="tl-s" data-s="419.93" data-e="421.71">They have their own temptations to deal with.</span> <span class="tl-s" data-s="421.71" data-e="422.44">They have their own weaknesses.</span> <span class="tl-s" data-s="422.44" data-e="426.07">And so you need to pray for them more than you think.</span> <span class="tl-s" data-s="426.11" data-e="435.57">There&#x27;s a way to build a ministry where you present yourself as a pastor sort of above everybody else, or like you don&#x27;t deal with the same kinds of things everybody else does.</span> <span class="tl-s" data-s="435.59" data-e="439.47">And that does a great disservice to people because pastors are just like everybody else.</span> <span class="tl-s" data-s="439.76" data-e="440.06">Yeah.</span></p>
+        <p><span class="tl-s" data-s="440.32" data-e="441.20">We just have a different role.</span> <span class="tl-s" data-s="441.30" data-e="444.44">And so like, that&#x27;s really, I think that&#x27;s one of the big dangers.</span> <span class="tl-s" data-s="444.57" data-e="456.75">And I&#x27;m not pointing fingers at anybody, but like, if the pastor is never communicating ways like, you know, how he is like just everybody else and has the same kind of troubles and trials and hardship, then the fall is a lot harder.</span> <span class="tl-s" data-s="456.75" data-e="461.00">And it&#x27;s like, man, I didn&#x27;t ever think that that could happen to him, but he&#x27;s just a guy.</span> <span class="tl-s" data-s="461.00" data-e="462.30">I mean, we&#x27;re just men.</span> <span class="tl-s" data-s="462.30" data-e="471.57">I think it&#x27;s, and the stakes are high because like, when a pastor falls away, when a pastor has moral failure, it really damages the cause of Christ and the gospel.</span> <span class="tl-s" data-s="471.58" data-e="471.94">Yeah.</span> <span class="tl-s" data-s="472.32" data-e="472.39">Right?</span> <span class="tl-s" data-s="472.40" data-e="475.16">And so it makes it harder for people to hear.</span> <span class="tl-s" data-s="475.21" data-e="484.62">And so that&#x27;s why the Bible has, when it comes to pastoral ministry, the emphasis, the primary emphasis is not on gifting, but on character.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="485.00" data-e="485.07">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="485.17" data-e="489.98">And we see the character qualifications in 1 Timothy 3 and Titus 1.</span> <span class="tl-s" data-s="489.98" data-e="493.88">In 2 different places, we see the character qualifications.</span> <span class="tl-s" data-s="493.90" data-e="500.89">And if you notice in the character qualifications, it&#x27;s more about who the man is than what he can do.</span> <span class="tl-s" data-s="500.89" data-e="508.04">But in our culture, oftentimes we&#x27;re drawn to people because they&#x27;re gifted, because they&#x27;re smart, because they&#x27;re— [Speaker B] Charismatic speaker.</span> <span class="tl-s" data-s="508.33" data-e="512.49">Charismatic or articulate, because even they have a crowd that would follow them.</span> <span class="tl-s" data-s="512.57" data-e="521.31">And so, like, a lot of times it can be tempting to overlook character deficiencies because of gifting, and that&#x27;s a deadly path to walk down.</span> <span class="tl-s" data-s="521.55" data-e="534.28">And so, you know, I&#x27;m not trying to point fingers or say that, you know, any— anybody did this or did that or whatever, but I&#x27;m telling you, That&#x27;s why pastoral ministry is a character ministry.</span> <span class="tl-s" data-s="534.31" data-e="534.53">Yeah.</span> <span class="tl-s" data-s="534.53" data-e="539.60">But this whole category of pastors or leaders who fall, I mean, this isn&#x27;t new.</span></p>
+        <p><span class="tl-s" data-s="539.68" data-e="543.73">I mean, this is something that has happened throughout all of history.</span> <span class="tl-s" data-s="543.85" data-e="556.47">I mean, one of the reasons we have the narratives that shows Abraham, Father Abraham, the father of the nation of Israel, he called his wife his sister twice to save his own skin.</span> <span class="tl-s" data-s="556.59" data-e="557.88">Not a great example.</span> <span class="tl-s" data-s="557.88" data-e="566.12">David, the king of Israel that led during their most— during their golden age, committed adultery and murder more seriously.</span> <span class="tl-s" data-s="566.20" data-e="572.24">Moses hits a rock instead of speaks to the rock and can&#x27;t enter into the Promised Land.</span> <span class="tl-s" data-s="572.24" data-e="576.09">In the New Testament, we see people fall away like Judas.</span> <span class="tl-s" data-s="576.09" data-e="579.12">We see Demas and Alexander the silversmith.</span> <span class="tl-s" data-s="579.12" data-e="581.07">I mean, this is a common experience.</span> <span class="tl-s" data-s="581.15" data-e="586.96">And so It&#x27;s really important just to recognize that this is not new.</span> <span class="tl-s" data-s="586.97" data-e="593.64">It just, it hurts and it&#x27;s destabilizing when we see these things happen, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="593.87" data-e="594.01">Yeah.</span> <span class="tl-s" data-s="594.03" data-e="599.46">So you mentioned, you know, your previous experience with someone who was no longer following the Lord.</span> <span class="tl-s" data-s="599.57" data-e="607.51">How would you say, let&#x27;s say I&#x27;m an individual that was impacted by the ministry of one of these folks and it had a positive impact on my life and on my walk with the Lord.</span> <span class="tl-s" data-s="607.51" data-e="609.37">What do I do?</span> <span class="tl-s" data-s="609.96" data-e="611.72">Like, how do I interpret that?</span> <span class="tl-s" data-s="611.74" data-e="617.38">Do I interpret that teaching different? or good understanding of the Bible come from a flawed teacher, or should I discard all of that?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="617.53" data-e="623.99">Yeah, I think that&#x27;s the question and kind of the temptation.</span> <span class="tl-s" data-s="624.00" data-e="624.26">Yeah.</span> <span class="tl-s" data-s="625.45" data-e="629.20">And yes, a morally compromised person can still teach good truth, right?</span> <span class="tl-s" data-s="629.23" data-e="635.90">That doesn&#x27;t mean— so like, the temptation is like when someone falls to go, anything I learned or benefited from this person now is gone.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="636.04" data-e="636.11">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="636.12" data-e="637.55">And it was all a lie.</span> <span class="tl-s" data-s="637.55" data-e="638.19">That&#x27;s the temptation.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="638.35" data-e="638.45">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="638.51" data-e="638.93">And it&#x27;s not.</span> <span class="tl-s" data-s="638.93" data-e="639.95">It wasn&#x27;t.</span> <span class="tl-s" data-s="640.07" data-e="641.80">And we shouldn&#x27;t do that.</span> <span class="tl-s" data-s="641.81" data-e="651.61">We just need to recognize that sometimes in ministry, You can be tempted to work hard on your craft, whether that&#x27;s public speaking or counseling or leadership.</span> <span class="tl-s" data-s="651.75" data-e="659.19">You can work hard on that craft and yet not work as hard on your character.</span> <span class="tl-s" data-s="660.28" data-e="660.60">And that&#x27;s hard.</span> <span class="tl-s" data-s="660.60" data-e="669.48">And this is one of the books that I think is most helpful in this conversation is by Paul David Tripp called Dangerous Calling, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="669.51" data-e="669.79">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="669.82" data-e="673.49">So if you&#x27;re thinking about pastoral ministry, you gotta recognize that you&#x27;re put under a microscope.</span> <span class="tl-s" data-s="673.59" data-e="678.67">And you&#x27;re sort of, you sort of become a target in a way that is unique.</span> <span class="tl-s" data-s="678.67" data-e="680.82">I mean, the evil one comes after you.</span> <span class="tl-s" data-s="681.28" data-e="681.80">There&#x27;s temptations.</span> <span class="tl-s" data-s="681.86" data-e="689.39">It&#x27;s a tempting thing to, you know, to be used by the Lord in ministry and for people to come up and express that to you subtly.</span> <span class="tl-s" data-s="689.39" data-e="694.28">You can think, man, this is about me and what I can do, what I&#x27;ve done, right?</span> <span class="tl-s" data-s="694.28" data-e="699.25">I mean, it&#x27;s tempting and it&#x27;s always wrong, but that&#x27;s a temptation for guys.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="699.25" data-e="700.17">Right, exactly.</span> <span class="tl-s" data-s="700.21" data-e="706.77">Okay, so just even more to dig a little bit deeper and a little bit more focused.</span> <span class="tl-s" data-s="706.77" data-e="712.40">What if this person who is disqualified from ministry performed your wedding ceremony or your baptism, for example?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="712.62" data-e="714.74">Yeah, like— [Speaker B] Should you get rebaptized?</span> <span class="tl-s" data-s="714.96" data-e="716.42">No, no, no, no, no, no, definitely not.</span> <span class="tl-s" data-s="716.42" data-e="718.17">Yeah, so for sure.</span> <span class="tl-s" data-s="718.31" data-e="720.85">I mean, that&#x27;s a great question.</span> <span class="tl-s" data-s="720.96" data-e="729.61">So like, if you think about baptism, the power of baptism is not in the person who does it, who performs the sacrament, who leads you in performing the sacrament.</span> <span class="tl-s" data-s="729.61" data-e="732.29">The power is in what it points to, right?</span> <span class="tl-s" data-s="732.42" data-e="735.18">And baptism is a picture of what happens when we become Christians.</span> <span class="tl-s" data-s="735.23" data-e="737.37">We were once dead to sin and now we&#x27;re made alive in Christ.</span> <span class="tl-s" data-s="737.50" data-e="742.54">And so you have this picture of being buried and brought back.</span> <span class="tl-s" data-s="742.54" data-e="755.89">And so that picture stands, even though the pastor who performed the baptism might be, you know, saying he doesn&#x27;t believe in Jesus anymore, or he doesn&#x27;t believe in the Bible, or he&#x27;s living a life that communicates he&#x27;s not a Christian.</span></p>
+        <p><span class="tl-s" data-s="755.89" data-e="757.39">The truth is, is that Jesus still reigns.</span> <span class="tl-s" data-s="757.75" data-e="763.96">Jesus is still a Savior that we can put our trust in.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="764.72" data-e="764.86">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="764.86" data-e="772.31">And so even if someone who&#x27;s compromised or has disqualified themselves, even if that happened, even if that person performed your baptism, doesn&#x27;t mean that it&#x27;s negated.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="772.33" data-e="772.57">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="772.57" data-e="785.07">I mean, another thing is like some people preach the Gospel, like you hear the Gospel preached, someone who ends up falling away, and then you get saved, and then that person falls away.</span> <span class="tl-s" data-s="785.07" data-e="787.11">Like, does that negate the Gospel?</span> <span class="tl-s" data-s="787.11" data-e="787.27">No.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="787.27" data-e="787.81">Right.</span> <span class="tl-s" data-s="787.81" data-e="790.81">Yeah, I can definitely relate to that.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="790.89" data-e="791.15">Yeah, exactly.</span> <span class="tl-s" data-s="791.15" data-e="792.33">I mean, it&#x27;s confusing and it&#x27;s hard.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="792.33" data-e="793.27">Yeah, for sure.</span> <span class="tl-s" data-s="793.27" data-e="801.45">So just to sum it up, the Lord can still work through someone who&#x27;s fallen or who&#x27;s morally corrupted for— [Speaker A] I would say the Lord, I would, I mean, this gets to then the restoration question, right?</span> <span class="tl-s" data-s="801.45" data-e="801.63">Right.</span> <span class="tl-s" data-s="801.63" data-e="806.41">So yeah, that&#x27;s, let me, do you want me to just go right into that?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="806.51" data-e="810.74">Well, before we do that, like, yeah, everybody at some level is compromised, right?</span> <span class="tl-s" data-s="810.74" data-e="812.73">We&#x27;re all like, we&#x27;re all jars of clay.</span> <span class="tl-s" data-s="812.73" data-e="815.06">They have different kind of cracks, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="815.11" data-e="815.25">Mm-hmm.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="815.25" data-e="821.08">And so I don&#x27;t want to say, hey, because someone&#x27;s compromised, then it&#x27;s okay, there&#x27;s going to be blessing that comes from it.</span> <span class="tl-s" data-s="821.11" data-e="823.67">But it&#x27;s more in retrospect that I&#x27;m answering that question.</span> <span class="tl-s" data-s="823.67" data-e="829.16">Like when no one knew about the compromise or the sin, or when the pattern wasn&#x27;t there yet, you know?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="829.22" data-e="829.38">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="829.38" data-e="842.84">Like you can look back and say, oh, I still benefited from this person because under this person&#x27;s ministry, I became a Christian or got baptized or celebrated communion or benefited in many different ways.</span> <span class="tl-s" data-s="842.84" data-e="843.00">Yeah.</span> <span class="tl-s" data-s="843.26" data-e="848.63">The restoration question is, is also something that&#x27;s a little bit different too.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="848.76" data-e="848.94">Yeah.</span> <span class="tl-s" data-s="848.94" data-e="854.55">So just to lead right into that, what does restoration look like?</span> <span class="tl-s" data-s="854.55" data-e="860.32">Can this fallen or disqualified pastor be restored to ministry, maybe in the same church, in a different church?</span> <span class="tl-s" data-s="860.32" data-e="862.24">What does that look like?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="862.24" data-e="862.61">Yeah.</span> <span class="tl-s" data-s="862.71" data-e="868.81">I mean, I think the real important question there is, can this person be restored to Christ, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="868.91" data-e="869.15">For sure.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="869.15" data-e="869.71">Set the ministry aside.</span> <span class="tl-s" data-s="869.71" data-e="870.61">First and foremost.</span> <span class="tl-s" data-s="870.69" data-e="870.91">Yeah.</span> <span class="tl-s" data-s="870.91" data-e="886.95">Set the ministry— I think that&#x27;s one of the questions that gets brought up premature because I&#x27;m not saying you&#x27;re doing this, but when somebody who&#x27;s in ministry falls and they refuse to repent, they should be put under church discipline.</span> <span class="tl-s" data-s="887.12" data-e="890.39">The church discipline process should start, right?</span> <span class="tl-s" data-s="890.51" data-e="899.33">And that&#x27;s a slow process of confrontation and calling people, calling that person to repent, et cetera.</span> <span class="tl-s" data-s="899.33" data-e="907.02">And so that is, you know, that if they then repent, then they&#x27;re restored to Christ and restored to that local church.</span> <span class="tl-s" data-s="907.02" data-e="910.05">Now then it becomes another question entirely.</span> <span class="tl-s" data-s="910.05" data-e="913.38">Should this person be restored to ministry, right?</span> <span class="tl-s" data-s="913.42" data-e="924.28">Because at some level, in any moral failure that&#x27;s significant enough to disqualify you, which I&#x27;m thinking adultery, I&#x27;m thinking, you know, sins like homosexuality, I&#x27;m thinking like if you are stealing money.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="924.32" data-e="924.49">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="924.49" data-e="926.44">You know, those kinds of things.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="926.66" data-e="929.54">And dangerous calling, it always, Almost said it was almost always adultery.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="929.62" data-e="930.08">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="930.37" data-e="931.58">So that&#x27;s the most common.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="931.63" data-e="933.41">That is the most common, right?</span> <span class="tl-s" data-s="933.41" data-e="939.37">And generally, I mean, there&#x27;s other things that disqualify someone, but like that&#x27;s false teaching and such, but I&#x27;m not thinking about that.</span> <span class="tl-s" data-s="939.37" data-e="941.02">I&#x27;m thinking about somebody&#x27;s character.</span> <span class="tl-s" data-s="941.04" data-e="945.39">Or, you know, I&#x27;ve known guys disqualified because of their anger, right?</span> <span class="tl-s" data-s="945.39" data-e="947.41">And so, or because they&#x27;re heavy-handed, legalistic, right?</span> <span class="tl-s" data-s="947.46" data-e="957.84">So then when it comes to restoration, I mean, what they have to recognize, first of all, there&#x27;s question If someone commits adultery, can they ever be restored to ministry?</span> <span class="tl-s" data-s="957.88" data-e="959.63">That&#x27;s an open question that Christians disagree about.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="959.63" data-e="960.05">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="960.05" data-e="964.99">And so, like, I would say, you know, this person can be restored to Christ, but ministry?</span> <span class="tl-s" data-s="965.18" data-e="974.87">I mean, I would say it has to be a super long process and something— I&#x27;m never gonna say never, but I&#x27;m not gonna say, oh, here&#x27;s the easy path.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="974.87" data-e="975.24">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="975.27" data-e="976.96">It&#x27;s decades, you know?</span> <span class="tl-s" data-s="976.96" data-e="981.59">I have known somebody who I trust and love who repented.</span> <span class="tl-s" data-s="981.61" data-e="985.91">He misused church funds and repented and was restored after 20 years.</span> <span class="tl-s" data-s="986.66" data-e="988.27">And so I do know that one.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="988.27" data-e="988.35">Wow.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="988.35" data-e="990.58">And he responded super humbly.</span> <span class="tl-s" data-s="990.61" data-e="993.02">And so it all really depends on the situation.</span> <span class="tl-s" data-s="993.08" data-e="996.50">And so, but jumping to restoration too fast.</span> <span class="tl-s" data-s="996.84" data-e="1005.97">So sometimes people jump to restoration, to ministry— [Speaker B] Based on gifting rather than— [Speaker A] Well, based on gifting, based on, you know, like, hey, we can&#x27;t lose this person and what they&#x27;re doing, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1006.72" data-e="1007.83">This person&#x27;s pulling a huge crowd.</span> <span class="tl-s" data-s="1007.83" data-e="1009.93">We should move this restoration process up a little bit faster.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1009.93" data-e="1015.31">Or, I mean, you gotta slow it down and say, well, let&#x27;s make sure this person&#x27;s restored to Christ.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1015.31" data-e="1015.39">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1015.39" data-e="1015.92">Sometimes people miss that step.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1015.95" data-e="1016.18">Gotcha.</span> <span class="tl-s" data-s="1016.18" data-e="1016.35">Okay.</span> <span class="tl-s" data-s="1016.50" data-e="1018.58">So what does repentance look like for someone in such a situation?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1018.64" data-e="1019.75">Well, let me tell this.</span> <span class="tl-s" data-s="1020.01" data-e="1023.15">Let me just tell a quick story on this one.</span> <span class="tl-s" data-s="1023.21" data-e="1032.63">I have, I know of a situation, not in our denomination, but I was interacting with somebody who told me that his senior pastor was plagiarizing.</span> <span class="tl-s" data-s="1032.67" data-e="1034.54">He was plagiarizing full sermons.</span> <span class="tl-s" data-s="1034.59" data-e="1039.85">And as a result— [Speaker B] For like 20 years.</span> <span class="tl-s" data-s="1039.90" data-e="1043.66">For 20 years. and calling them his own.</span> <span class="tl-s" data-s="1043.66" data-e="1053.84">Now, his elder board knew of this and they refused to call him out publicly because it would impact their attendance and their giving.</span> <span class="tl-s" data-s="1053.84" data-e="1054.10">So that&#x27;s evil.</span> <span class="tl-s" data-s="1054.10" data-e="1054.48">That&#x27;s evil.</span> <span class="tl-s" data-s="1054.48" data-e="1054.57">Yeah.</span></p>
+        <p><span class="tl-s" data-s="1054.57" data-e="1064.77">That kind of evil, that kind of cowardice is— that&#x27;s out there and you got to watch out for that too.</span> <span class="tl-s" data-s="1065.39" data-e="1073.11">And so anyway, Like that guy should have been disciplined and, you know, that guy should have been, uh, you know, gone through a process of restoration to Christ.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1073.11" data-e="1073.32">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1073.43" data-e="1076.84">Uh, and not be in ministry, but he&#x27;s functioning in ministry and his elders are backing him.</span> <span class="tl-s" data-s="1076.96" data-e="1079.35">So that, that stuff happens and that&#x27;s evil.</span> <span class="tl-s" data-s="1079.35" data-e="1079.63">That&#x27;s wrong.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1079.63" data-e="1079.68">Yeah.</span> <span class="tl-s" data-s="1079.68" data-e="1084.96">So some of that has to do with church governance, governance, but yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1084.96" data-e="1088.16">Some of it has to do with guts and these elders are cowards.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1088.42" data-e="1089.32">Yeah, for sure.</span> <span class="tl-s" data-s="1089.38" data-e="1089.49">Okay.</span> <span class="tl-s" data-s="1089.54" data-e="1091.06">That&#x27;s pretty much all I have.</span> <span class="tl-s" data-s="1091.08" data-e="1093.48">Is there any other things that you want to share?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1093.48" data-e="1101.22">Just maybe one other idea is sometimes when we see people fall like this, it&#x27;s like, man, we really need to up accountability for pastors.</span> <span class="tl-s" data-s="1101.22" data-e="1102.00">And that&#x27;s true.</span> <span class="tl-s" data-s="1102.05" data-e="1102.64">And we should.</span></p>
+        <p><span class="tl-s" data-s="1103.86" data-e="1108.16">But here&#x27;s an idea that we just need to remember, that if someone wants to hide sin, they can.</span> <span class="tl-s" data-s="1108.44" data-e="1109.37">You know what?</span> <span class="tl-s" data-s="1109.47" data-e="1115.07">If someone wants to hide a pattern of sin or hide a double life, they can.</span> <span class="tl-s" data-s="1115.16" data-e="1116.13">It&#x27;s not impossible.</span> <span class="tl-s" data-s="1116.13" data-e="1123.59">And there&#x27;s no level of accountability that makes it to where Someone is so protected from disqualifying sin that they won&#x27;t commit anything.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1123.85" data-e="1124.59">Right, exactly.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1124.59" data-e="1125.46">That&#x27;s naive.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1125.46" data-e="1131.16">You can put some safeguards up, but that&#x27;s not addressing the problem.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1131.16" data-e="1132.59">No, right, exactly.</span> <span class="tl-s" data-s="1132.59" data-e="1151.87">So I mean, it&#x27;s tragic and it tears your heart out, but man, I mean, this just emphasizes my most common prayer for, as I pray, is not, Lord, help the church to sort of come up, you know, like grow in godliness as much as I hope Protect me from falling away.</span> <span class="tl-s" data-s="1151.87" data-e="1153.56">Protect me from disqualifying sins.</span> <span class="tl-s" data-s="1153.56" data-e="1165.32">Protect me from times that when nobody&#x27;s looking, protect me so that I don&#x27;t lead a life or have a lifestyle that disqualifies me or brings dishonor to the name of the Lord.</span> <span class="tl-s" data-s="1165.42" data-e="1166.99">Because that&#x27;s huge.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1167.04" data-e="1169.58">Yeah, that&#x27;s the one thing I wanted to just ask about.</span> <span class="tl-s" data-s="1169.67" data-e="1170.06">Last follow-up.</span> <span class="tl-s" data-s="1170.21" data-e="1176.32">How does this affect someone&#x27;s spiritual walk when they see someone who they look up to in the faith a giant in the faith fall or do it?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1176.35" data-e="1178.42">Well, they have to ask, is this all a fake?</span> <span class="tl-s" data-s="1178.84" data-e="1181.71">Is it like you talk about trusting Jesus and you&#x27;re not?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1181.73" data-e="1182.13">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1182.13" data-e="1183.69">Like you say this and you&#x27;re not.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1183.72" data-e="1186.35">How can this rock someone&#x27;s faith at the core?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1186.62" data-e="1192.13">It rocks people&#x27;s faith because it&#x27;s like, man, everything I was taught about what you said from your perspective, it&#x27;s a lie.</span> <span class="tl-s" data-s="1192.16" data-e="1194.17">I mean, I had a former pastor.</span> <span class="tl-s" data-s="1194.18" data-e="1198.77">He talked about local church and commitment to local church, which is committing to other people a ton.</span> <span class="tl-s" data-s="1199.13" data-e="1207.32">But then when the rubber met the road and he had people who were confronting him, he left.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1207.32" data-e="1207.42">Wow.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1207.42" data-e="1208.28">I mean, that&#x27;s hypocrisy.</span> <span class="tl-s" data-s="1208.28" data-e="1208.46">It&#x27;s hypocrisy.</span> <span class="tl-s" data-s="1208.46" data-e="1210.93">You can&#x27;t have it both ways.</span> <span class="tl-s" data-s="1210.93" data-e="1212.52">And so that is destabilizing.</span> <span class="tl-s" data-s="1212.52" data-e="1218.06">But at the same time, I want to say most preachers will preach better than they live.</span> <span class="tl-s" data-s="1218.06" data-e="1219.94">And that&#x27;s just the reality of it.</span> <span class="tl-s" data-s="1219.99" data-e="1223.59">And so because we&#x27;re flawed and in different ways.</span> <span class="tl-s" data-s="1223.59" data-e="1226.62">And so at the same time, we&#x27;re not looking perfection.</span> <span class="tl-s" data-s="1226.62" data-e="1229.23">We&#x27;re looking to just faithfulness, faithfulness, faithfulness.</span> <span class="tl-s" data-s="1229.23" data-e="1233.07">A general pattern of obedience, a general pattern of growth, a general pattern of Trusting the Lord.</span></p>
+        <p><span class="tl-s" data-s="1233.07" data-e="1233.27">Yeah.</span> <span class="tl-s" data-s="1233.27" data-e="1236.09">And, you know, it&#x27;s— and, and pray more for your pastors than you think you need to.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1236.09" data-e="1236.47">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1236.47" data-e="1238.81">&#x27;Cause they have a harder job than you think.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1238.81" data-e="1242.69">And I, I think I asked you this before, but you kind of just answered it.</span> <span class="tl-s" data-s="1242.69" data-e="1245.59">Is it harder to watch your doctrine or to watch your life?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1245.59" data-e="1246.21">Your life, 100%.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1246.21" data-e="1247.65">And that&#x27;s kind of what you&#x27;re advocating for.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1247.65" data-e="1248.19">Absolutely.</span> <span class="tl-s" data-s="1248.19" data-e="1251.15">Your doctrine&#x27;s a lot easier to watch &#x27;cause it&#x27;s more fun.</span> <span class="tl-s" data-s="1251.15" data-e="1255.61">If you&#x27;re a pastor, you want to think and talk about theology.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1255.63" data-e="1255.80">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1255.80" data-e="1257.79">If you&#x27;re— you don&#x27;t want to talk about lust.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1258.11" data-e="1258.23">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1258.28" data-e="1258.43">Totally.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1258.43" data-e="1258.82">For sure.</span> <span class="tl-s" data-s="1258.82" data-e="1258.98">Okay.</span> <span class="tl-s" data-s="1258.98" data-e="1263.34">Well, hey, if this is a topic that you have more questions on, feel free to reach out to us at production@centergilbert.com.</span> <span class="tl-s" data-s="1263.34" data-e="1263.34">And yeah, thank you guys.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1263.34" data-e="1263.34">We&#x27;ll see you next time.</span> <span class="tl-s" data-s="1263.34" data-e="1263.34">Thanks.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Fixed on Jesus episode archive, backed by /api/podcast/search.
+  // Static fallback list above stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function fmtDuration(raw) {
+      if (!raw) return "";
+      var str = String(raw).trim();
+      // Anchor feeds report seconds; render as H:MM:SS or M:SS.
+      if (/^\d+$/.test(str)) {
+        var total = parseInt(str, 10);
+        var h = Math.floor(total / 3600);
+        var m = Math.floor((total % 3600) / 60);
+        var sec = total % 60;
+        var mm = (h > 0 && m < 10 ? "0" + m : "" + m);
+        var ss = (sec < 10 ? "0" + sec : "" + sec);
+        return (h > 0 ? h + ":" + mm : m) + ":" + ss;
+      }
+      // Anchor also reports clock strings like "00:24:02" — drop the
+      // redundant leading hour so it reads "24:02".
+      return str.replace(/^00:/, "");
+    }
+    function row(it) {
+      it = it || {};
+      var title = esc(it.title) || "Untitled episode";
+      var tUrl = it.guid && transcriptMap[it.guid];
+      var heading = tUrl
+        ? '<a href="' + esc(tUrl) + '">' + title + "</a>"
+        : (it.link
+          ? '<a href="' + esc(it.link) + '" target="_blank" rel="noopener">' + title + "</a>"
+          : title);
+      var meta = [fmtDate(it.date), fmtDuration(it.duration)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      return '<div class="sermon"><div><h3>' + heading + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    var PER = 10;
+    var state = { q: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No episodes found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " episode" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " episodes";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/podcast/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () {
+          // Keep the static list, but tell the reader where else to listen —
+          // some privacy blockers stop the archive request itself.
+          var note = document.querySelector("[data-sermons-error]");
+          if (note) note.hidden = false;
+        });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    if (monthSel) {
+      monthSel.addEventListener("change", function () {
+        state.month = monthSel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: ee31cac2-9b3c-4661-9e6f-994d3616afee -->
+</body>
+</html>
