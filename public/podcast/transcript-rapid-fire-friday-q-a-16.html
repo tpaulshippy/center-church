@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rapid Fire Friday - Q&amp;A #16 — Podcast Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Fixed on Jesus: conversations beyond Sunday mornings from Center Church in Gilbert, AZ — listen on Spotify, Apple Podcasts, and YouTube." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=18" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a href="/sermons">Sermons</a></li>
+              <li><a class="active" href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/podcast">&larr; All podcast episodes</a>
+          <h1 class="display-lg">Rapid Fire Friday - Q&amp;A #16</h1>
+          <p class="transcript-meta">2024-10-25 · 9:29</p>
+          <p class="transcript-desc">Rapid Fire Friday is a special series from the Fixed On Jesus Podcast crew (Rich, Mark and Heather) Sometimes we get questions that have short enough answers to answer many of them in one episode that we like to call Rapid Fire Fridays. Look for these to be released on Fridays if and when we get eno</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/e750e370/podcast/play/93547912/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-9-25%2F58454d2d-de60-f9d1-a408-6a7c3c3accef.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="0.03" data-e="0.70">What day is it, Mark?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1.30" data-e="1.97">Oh, good question.</span> <span class="tl-s" data-s="2.02" data-e="4.02">I was gonna go on the Google machine, but I think it&#x27;s Friday.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="4.42" data-e="4.92">It&#x27;s Friday.</span> <span class="tl-s" data-s="5.14" data-e="5.96">You know what that means, Mark?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="6.52" data-e="8.53">Rapid Fire Friday.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="12.05" data-e="16.53">Boom boom boom.</span> <span class="tl-s" data-s="16.62" data-e="18.31">Rapid Fire Friday.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="21.51" data-e="26.69">Three two one.</span> <span class="tl-s" data-s="27.19" data-e="29.37">Rapid Fire Friday.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="32.59" data-e="34.86">This question&#x27;s from Ken Stout.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="35.46" data-e="35.79">Yes.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="36.48" data-e="39.75">Why was Joseph excluded from the 12 tribes of Israel?</span> <span class="tl-s" data-s="40.41" data-e="41.35">Thanks for the question, Ken.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="41.47" data-e="43.00">Yeah, he got a double portion, actually.</span> <span class="tl-s" data-s="43.21" data-e="51.43">Even though there&#x27;s no, there&#x27;s no mention of Joseph&#x27;s tribe, he has his sons, Ephraim and Manasseh, who receive his inheritance.</span> <span class="tl-s" data-s="51.48" data-e="55.98">So, he gets 2 of his kids who receive the inheritance as leaders of their tribe.</span> <span class="tl-s" data-s="56.21" data-e="58.27">All the rest were, you know, the same generation.</span> <span class="tl-s" data-s="58.61" data-e="64.67">And Ephraim and Manasseh are grandchildren of that they receive the same blessing.</span> <span class="tl-s" data-s="64.88" data-e="67.77">So, [Speaker B] gotcha.</span> <span class="tl-s" data-s="67.91" data-e="68.23">Thank you.</span> <span class="tl-s" data-s="68.30" data-e="70.61">He gets double the benefit.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="71.18" data-e="71.38">Double.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="71.42" data-e="71.44">Yes.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="71.44" data-e="72.71">Here&#x27;s a list of my questions.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="72.79" data-e="73.44">All right, here we go.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="73.44" data-e="74.81">Here we go.</span> <span class="tl-s" data-s="75.06" data-e="76.62">Is church membership biblical?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="76.64" data-e="77.77">Is church membership biblical?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="78.72" data-e="79.38">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="79.68" data-e="86.48">Yeah, you&#x27;re never going to find a you&#x27;re never ever going to find a verse in the Bible that says thou shalt not thou shalt become a member. of a church.</span> <span class="tl-s" data-s="87.31" data-e="97.27">But every time we see language of like how to live as Christians, there&#x27;s always an assumption you&#x27;re in a church, right?</span> <span class="tl-s" data-s="97.59" data-e="103.84">So it&#x27;s a basic assumption that undergirds everything Paul primarily has to say, right?</span> <span class="tl-s" data-s="103.97" data-e="104.67">Even Peter, right?</span> <span class="tl-s" data-s="105.81" data-e="109.11">Peter says in 1 Peter 5, shepherd the flock that is among you.</span> <span class="tl-s" data-s="109.76" data-e="114.93">And so clearly there&#x27;s some people that are there that are identifying as members, right?</span> <span class="tl-s" data-s="115.05" data-e="115.22">Yeah.</span> <span class="tl-s" data-s="115.27" data-e="119.94">And so like also all over the place, you You don&#x27;t think about it as a membership issue.</span> <span class="tl-s" data-s="120.72" data-e="133.11">But all over the place, like in Colossians 3:12, it says, put on then, as God&#x27;s chosen ones, holy and beloved, compassionate hearts, kindness, humility, meekness, and patience, bearing with one another, right?</span></p>
+        <p><span class="tl-s" data-s="133.60" data-e="138.06">So, you don&#x27;t have to bear with somebody who&#x27;s in the, quote, universal church that lives in Minnesota.</span> <span class="tl-s" data-s="138.45" data-e="141.84">You have to bear with a person who&#x27;s in your small group that drives you nuts.</span> <span class="tl-s" data-s="142.32" data-e="147.52">The whole idea there is that you have a certain set of people that you&#x27;re associated with, right?</span> <span class="tl-s" data-s="148.24" data-e="149.72">And we call it church membership.</span> <span class="tl-s" data-s="149.94" data-e="159.02">And there&#x27;s, you know, you can see this in Ephesians, the way that the Lord works in the day, in the world today is through churches, right?</span> <span class="tl-s" data-s="159.40" data-e="159.48">Yeah.</span> <span class="tl-s" data-s="159.56" data-e="185.27">And so, a person can choose just to attend, but membership is a way of saying, I want to identify with these people and this teaching, And I want you to hold me accountable so that if I ever, if I ever go off the rails, uh, get trapped in sin and am, or am not willing to repent, I want you to chase me down and challenge me to repent.</span></p>
+        <p><span class="tl-s" data-s="185.41" data-e="185.66">Yeah.</span> <span class="tl-s" data-s="185.83" data-e="191.48">And we need to do that, you know, at the right time when we&#x27;re, when we have our faculties.</span> <span class="tl-s" data-s="191.84" data-e="204.21">Um, and that way we can protect ourselves so that it&#x27;s not, so that when, when our emotions get You know, taken over and we decide I&#x27;m going to divorce my wife for no good reason to go marry someone else, we need a church to step in and stop us.</span> <span class="tl-s" data-s="204.84" data-e="211.96">And so, that&#x27;s part of— but if someone&#x27;s just attending, they just show up on Sundays, we have no authority in their life.</span> <span class="tl-s" data-s="212.23" data-e="217.33">And so, we have authority in the lives of people to, you know, help hold them accountable.</span> <span class="tl-s" data-s="217.38" data-e="223.27">That doesn&#x27;t mean we weigh in on every decision they make when it comes to spending money or all kinds of things.</span> <span class="tl-s" data-s="223.38" data-e="223.76">Yeah.</span> <span class="tl-s" data-s="224.04" data-e="229.78">Those things that Scripture says, hey, you must toe the line here, that&#x27;s where we hold.</span></p>
+        <p><span class="tl-s" data-s="229.98" data-e="230.21">So.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="230.68" data-e="232.54">Yeah, 2 follow-ups to that.</span> <span class="tl-s" data-s="233.16" data-e="244.18">The first one, if someone is listening and they have just been regularly attending a church, and you&#x27;ve expressed some of the benefits already, how do you, like, how would you suggest they begin to pursue membership?</span> <span class="tl-s" data-s="244.27" data-e="246.91">Because of course, it&#x27;s a big deal for both sides.</span> <span class="tl-s" data-s="246.96" data-e="249.19">Like, what precautions should they take?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="249.50" data-e="253.08">I think they should recognize— they should ask, do I agree with the teaching in this church?</span> <span class="tl-s" data-s="253.79" data-e="255.78">You should look and see what their statement of faith is.</span> <span class="tl-s" data-s="255.97" data-e="258.99">You should ask, do I trust the pastors?</span> <span class="tl-s" data-s="259.91" data-e="261.79">Can I entrust myself to the people here?</span> <span class="tl-s" data-s="262.56" data-e="264.26">And so you ask all those questions.</span> <span class="tl-s" data-s="264.40" data-e="265.74">You shouldn&#x27;t enter into it lightly.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="266.24" data-e="266.48">Right.</span> <span class="tl-s" data-s="266.67" data-e="269.49">You also shouldn&#x27;t be scared of— [Speaker A] You shouldn&#x27;t be scared.</span> <span class="tl-s" data-s="269.62" data-e="271.37">Being vulnerable or submitting your life.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="271.39" data-e="271.52">Exactly.</span> <span class="tl-s" data-s="271.52" data-e="277.96">Like, for example, if you&#x27;re in a church that&#x27;s doing church discipline every other week, Chances are you should not go.</span> <span class="tl-s" data-s="277.96" data-e="279.26">Get out of that, right?</span> <span class="tl-s" data-s="279.26" data-e="283.64">But if you&#x27;re in a church that never practices church discipline, that&#x27;s unbiblical too.</span> <span class="tl-s" data-s="283.84" data-e="285.22">And so, both are wrong.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="285.22" data-e="287.06">3 times a year.</span> <span class="tl-s" data-s="287.21" data-e="287.39">Not even.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="287.39" data-e="288.27">Well, I don&#x27;t know, man.</span> <span class="tl-s" data-s="288.32" data-e="297.57">I mean, like, there are people, there are big mega churches around there, around that are, that don&#x27;t have membership, have a bunch of people, but that&#x27;s not really a church because they&#x27;re not accountable.</span> <span class="tl-s" data-s="297.57" data-e="299.32">They&#x27;re not identified.</span> <span class="tl-s" data-s="299.32" data-e="302.38">Hey, they&#x27;re not saying, help me. with my life, right?</span> <span class="tl-s" data-s="302.38" data-e="305.85">As I live with my girlfriend or my boyfriend and live however I want to live.</span> <span class="tl-s" data-s="305.85" data-e="306.69">They&#x27;re not saying that.</span> <span class="tl-s" data-s="306.69" data-e="314.79">They&#x27;re just saying, I want to come on Sunday, have a pep rally, get excited, and then go live how I want to live Monday through Saturday.</span> <span class="tl-s" data-s="315.04" data-e="323.52">That&#x27;s not— so that&#x27;s where with membership, we say, okay, I associate with this group of people and I need help in my life.</span> <span class="tl-s" data-s="323.54" data-e="325.78">And everybody should have this kind of help.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="325.78" data-e="326.36">Yeah, love it.</span> <span class="tl-s" data-s="326.68" data-e="326.96">Thank you.</span> <span class="tl-s" data-s="326.96" data-e="331.31">I forgot my other follow-up.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="332.24" data-e="332.64">Okay, good.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="332.64" data-e="336.41">But just tying into that, can one live— oh, I do remember my other follow-up.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="337.25" data-e="337.89">Okay, good.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="337.89" data-e="340.05">You might&#x27;ve sort of touched on this.</span> <span class="tl-s" data-s="340.05" data-e="352.31">Basically, it would be if you were talking to a believer right when Christianity began and you explained to them that some people choose to live outside of the community on their own, they would think that was crazy.</span> <span class="tl-s" data-s="352.36" data-e="353.03">It was almost like a presumption.</span> <span class="tl-s" data-s="353.03" data-e="354.91">They would think they&#x27;re not Christians.</span> <span class="tl-s" data-s="355.17" data-e="355.39">Exactly.</span> <span class="tl-s" data-s="355.39" data-e="370.36">So my question is, knowing that and the model that we see in the New Testament of communal living, of, you know, fellowship together, like even like combination of good— of assets and goods for the distribution to the poor and all that.</span> <span class="tl-s" data-s="370.41" data-e="373.19">Can one be a lone wolf Christian, like doing it all on their own?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="373.22" data-e="373.93">Not long term.</span> <span class="tl-s" data-s="374.25" data-e="374.75">No way.</span> <span class="tl-s" data-s="374.75" data-e="380.82">Someone who&#x27;s not meaningfully connected to a local church should have no confidence they&#x27;re a Christian.</span> <span class="tl-s" data-s="380.92" data-e="389.83">And so like, are there seasons where with jobs or time or sickness or whatever, that a person is alone and not connected?</span> <span class="tl-s" data-s="389.83" data-e="391.64">Sure, there can be.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="391.69" data-e="392.03">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="392.03" data-e="395.08">I&#x27;m not trying to draw a hard and fast line.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="395.46" data-e="395.56">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="395.56" data-e="402.36">But the normal pattern for believers is to be connected to local churches.</span> <span class="tl-s" data-s="402.53" data-e="402.56">Absolutely.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="402.61" data-e="402.84">Yeah.</span> <span class="tl-s" data-s="402.84" data-e="403.58">I just love this topic.</span> <span class="tl-s" data-s="403.58" data-e="405.89">So, I&#x27;m going to ask one more.</span> <span class="tl-s" data-s="405.89" data-e="410.93">Knowing, let&#x27;s say you&#x27;re a believer who understands the importance of being plugged into a local body.</span> <span class="tl-s" data-s="410.96" data-e="416.78">You&#x27;re fellowshipping with the saints, you&#x27;re worshipping together, you&#x27;re spending time with each other, you have accountability.</span> <span class="tl-s" data-s="416.90" data-e="432.02">How much does, and this is a wisdom question, how much does this impact the type of jobs you take, the type of vacations you go on, how you spend your weekends, how you spend your Tuesday or Wednesday when you might otherwise have small group or home study, whatever you want to call it?</span> <span class="tl-s" data-s="432.07" data-e="437.39">How much of your life choices are affected by your desire to fellowship with the saints?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="437.05" data-e="439.43">I think A lot of them, maybe all of them.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="439.51" data-e="439.63">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="439.67" data-e="439.78">Right?</span> <span class="tl-s" data-s="439.81" data-e="450.79">Because the way that we— so, even like thinking about the gathering on Sunday morning, that&#x27;s completely unique because when the preacher preaches, Christ addresses us, right?</span> <span class="tl-s" data-s="450.79" data-e="452.48">You can&#x27;t get that in a podcast.</span> <span class="tl-s" data-s="452.49" data-e="455.34">You can&#x27;t get that anywhere else, right?</span> <span class="tl-s" data-s="455.68" data-e="458.58">And so, we&#x27;re going to want to orient our lives to hear from Jesus.</span> <span class="tl-s" data-s="458.58" data-e="460.52">That&#x27;s what happens on Sunday morning.</span> <span class="tl-s" data-s="460.99" data-e="465.49">And so, we&#x27;re going to want to be connected to people so that we can know Jesus better.</span> <span class="tl-s" data-s="465.56" data-e="478.60">Because oftentimes what happens is, you know, we have our filter, we have our orientation, We have our background, and we need other people to be able to say, hey, listen, let&#x27;s think about following Jesus in this way, or I thought about this, or whatever, right?</span> <span class="tl-s" data-s="478.64" data-e="483.13">There&#x27;s also ways in which we can practically serve the saints, right?</span> <span class="tl-s" data-s="483.23" data-e="486.21">We become the hands and feet of Jesus as we serve other people.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="486.29" data-e="486.57">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="486.78" data-e="489.02">And so, that is— those are all realities.</span> <span class="tl-s" data-s="489.06" data-e="498.31">And so, I think, like, when we think about taking jobs, when we think about going to school, when we think about those kinds of things, I think church should be a factor.</span> <span class="tl-s" data-s="498.31" data-e="503.19">It shouldn&#x27;t be the only factor, but it should be a factor and not just assume, when I move, I&#x27;ll find something.</span> <span class="tl-s" data-s="503.19" data-e="503.67">It&#x27;ll be fine.</span> <span class="tl-s" data-s="503.67" data-e="505.32">There&#x27;s a lot of them out there.</span> <span class="tl-s" data-s="505.76" data-e="505.93">Not necessarily.</span> <span class="tl-s" data-s="506.00" data-e="525.05">There&#x27;s a ton of people who I&#x27;ve interacted with over the years who say, well, I&#x27;m having a hard time finding, you know, like, for example, in the north— in the northeastern part of the United States, in the New England area, there&#x27;s a ton of local little towns that have no faithful presence anymore of the Gospel.</span> <span class="tl-s" data-s="525.07" data-e="527.30">And so, like, we shouldn&#x27;t assume that.</span> <span class="tl-s" data-s="527.30" data-e="531.71">We need to make sure we do our due diligence before, before if the Lord calls us to move.</span></p>
+        <p><span class="tl-s" data-s="531.71" data-e="538.38">One of the ways you can tell the Lord&#x27;s calling you to move is that you find a body in another context that you can serve in with, with a whole heart.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="539.27" data-e="539.67">Love it.</span> <span class="tl-s" data-s="539.73" data-e="542.03">And that&#x27;s all the questions I have for now.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="542.32" data-e="542.77">For now.</span> <span class="tl-s" data-s="542.86" data-e="545.57">But there will be another Friday that comes because you know what, Mark?</span> <span class="tl-s" data-s="545.67" data-e="548.25">They come once every 7 days.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="548.48" data-e="549.01">Every 7.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="549.06" data-e="549.38">Every 7.</span> <span class="tl-s" data-s="549.38" data-e="551.38">It&#x27;s a rapid-fire Friday.</span> <span class="tl-s" data-s="551.38" data-e="552.51">We&#x27;ll be back.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="552.58" data-e="553.88">All right, well, I&#x27;m gonna hold you to that.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="553.91" data-e="554.77">All right, sounds good.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="554.79" data-e="554.92">Take care, guys.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Fixed on Jesus episode archive, backed by /api/podcast/search.
+  // Static fallback list above stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function fmtDuration(raw) {
+      if (!raw) return "";
+      var str = String(raw).trim();
+      // Anchor feeds report seconds; render as H:MM:SS or M:SS.
+      if (/^\d+$/.test(str)) {
+        var total = parseInt(str, 10);
+        var h = Math.floor(total / 3600);
+        var m = Math.floor((total % 3600) / 60);
+        var sec = total % 60;
+        var mm = (h > 0 && m < 10 ? "0" + m : "" + m);
+        var ss = (sec < 10 ? "0" + sec : "" + sec);
+        return (h > 0 ? h + ":" + mm : m) + ":" + ss;
+      }
+      // Anchor also reports clock strings like "00:24:02" — drop the
+      // redundant leading hour so it reads "24:02".
+      return str.replace(/^00:/, "");
+    }
+    function row(it) {
+      it = it || {};
+      var title = esc(it.title) || "Untitled episode";
+      var tUrl = it.guid && transcriptMap[it.guid];
+      var heading = tUrl
+        ? '<a href="' + esc(tUrl) + '">' + title + "</a>"
+        : (it.link
+          ? '<a href="' + esc(it.link) + '" target="_blank" rel="noopener">' + title + "</a>"
+          : title);
+      var meta = [fmtDate(it.date), fmtDuration(it.duration)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      return '<div class="sermon"><div><h3>' + heading + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    var PER = 10;
+    var state = { q: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No episodes found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " episode" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " episodes";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/podcast/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () {
+          // Keep the static list, but tell the reader where else to listen —
+          // some privacy blockers stop the archive request itself.
+          var note = document.querySelector("[data-sermons-error]");
+          if (note) note.hidden = false;
+        });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    if (monthSel) {
+      monthSel.addEventListener("change", function () {
+        state.month = monthSel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: bdcd4208-ebd1-4092-8612-4e68ea45c570 -->
+</body>
+</html>
