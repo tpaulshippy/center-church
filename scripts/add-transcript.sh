@@ -330,6 +330,11 @@ if not placeholder:
         except (ValueError, OSError):
             timed = []
     text = " ".join(paras)
+    # Collapse all runs of whitespace (including single newlines from
+    # line-per-segment transcript files) so no literal newlines survive
+    # inside <p>s — the transcript div uses white-space:pre-line, which
+    # would otherwise render each one as a forced line break.
+    text = re.sub(r"\s+", " ", text).strip()
     paras = chunk_paragraphs(text, timed, pause_gap)
 body_html = "\n".join("        <p>%s</p>" % html.escape(p) for p in paras) or "        <p>(Empty transcript.)</p>"
 notice = ""
