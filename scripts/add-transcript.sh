@@ -4,7 +4,7 @@
 # Default targets last week's sermon (Acts 20:13-38, 2026-11-08).
 # Override any field via env vars or CLI flags for future sermons:
 #
-#   AUDIO_URL TITLE SPEAKER SERIES DESCRIPTION PUBDATE DURATION GUID SLUG OUTPUT TRANSCRIPT_FILE TRANSCRIPT_ID
+#   AUDIO_URL TITLE SPEAKER SERIES DESCRIPTION PUBDATE DURATION GUID SLUG OUTPUT TRANSCRIPT_FILE TRANSCRIPT_ID PAUSE_GAP
 #
 # Examples:
 #   ./scripts/add-transcript.sh
@@ -15,6 +15,12 @@
 #   ./scripts/add-transcript.sh --transcript-file /tmp/sermon.txt   # skip AssemblyAI, use local text
 #   ./scripts/add-transcript.sh --no-push                            # write HTML only, print manual git commands
 #   ./scripts/add-transcript.sh --message "Custom commit msg"        # override commit message
+#   ./scripts/add-transcript.sh --pause-gap 1.5                  # pause threshold (s) for paragraph breaks, default 1.2
+#
+# Chunking is pause-based when word timestamps exist: a new paragraph starts
+# wherever the gap between consecutive words exceeds PAUSE_GAP seconds, with
+# the existing ~150-200 word / 6-10 sentence caps and speaker-change breaks as
+# backstops. Plain-text input (no timings) falls back to sentence-chunking.
 #
 # After writing the HTML the script auto-commits (message
 # "Add sermon transcript: <TITLE>") and pushes to main, unless --no-push.
@@ -36,6 +42,7 @@ OUTPUT="${OUTPUT:-public/sermons/${SLUG}.html}"
 TRANSCRIPT_FILE="${TRANSCRIPT_FILE:-}"
 TRANSCRIPT_ID="${TRANSCRIPT_ID:-}"
 MESSAGE="${MESSAGE:-}"
+PAUSE_GAP="${PAUSE_GAP:-1.2}"
 NO_PUSH=0
 PLACEHOLDER=0
 
@@ -59,6 +66,7 @@ while [ $# -gt 0 ]; do
     --transcript-id)   TRANSCRIPT_ID="$2"; shift 2 ;;
     --message)         MESSAGE="$2"; shift 2 ;;
     --no-push)         NO_PUSH=1; shift ;;
+    --pause-gap)       PAUSE_GAP="$2"; shift 2 ;;
     --placeholder)     PLACEHOLDER=1; shift ;;
     -h|--help)         usage; exit 0 ;;
     *) echo "Unknown arg: $1 (see --help)" >&2; exit 1 ;;
@@ -73,6 +81,8 @@ TEMPLATE="public/sermons.html"
 TMPDIR="$(mktemp -d)"
 trap 'rm -rf "$TMPDIR"' EXIT
 TRANSCRIPT_TXT="$TMPDIR/transcript.txt"
+TRANSCRIPT_WORDS="$TMPDIR/words.json"
+: > "$TRANSCRIPT_WORDS"  # render_json fills this when word timings exist
 
 write_placeholder() {
   cat > "$TRANSCRIPT_TXT" <<'EOF'
@@ -98,16 +108,16 @@ else
     exit 1
   fi
 
-  # Transcript JSON (completed) -> plain paragraph-per-line text file.
+  # Transcript JSON (completed) -> plain text file + word timings JSON.
   # Single-speaker audio collapses to one text stream (speaker-grouping would
-  # yield a single giant paragraph); sentence-aware chunking into readable
-  # <p>s happens at render time. [Speaker X] prefixes are kept only where
+  # yield a single giant paragraph); pause-based chunking into readable <p>s
+  # happens at render time. [Speaker X] prefixes are kept only where
   # diarization actually switches speakers.
   render_json() {
-    python3 - "$1" "$TRANSCRIPT_TXT" <<'EOF'
+    python3 - "$1" "$TRANSCRIPT_TXT" "$TRANSCRIPT_WORDS" <<'EOF'
 import json, sys
 data = json.load(open(sys.argv[1]))
-out_path = sys.argv[2]
+out_path, words_path = sys.argv[2], sys.argv[3]
 utterances = data.get("utterances") or []
 if utterances:
     multi = len({u.get("speaker") for u in utterances}) > 1
@@ -132,6 +142,16 @@ else:
     text = (data.get("text") or "").strip()
 with open(out_path, "w") as f:
     f.write(text.strip() + "\n" if text.strip() else "")
+# Preserve word-level timings (ms -> s) for pause-based chunking.
+words = data.get("words") or []
+if not words:
+    for u in utterances:
+        words.extend(u.get("words") or [])
+timed = [{"t": w.get("text", ""), "start": (w.get("start") or 0) / 1000.0,
+          "end": (w.get("end") or 0) / 1000.0, "speaker": w.get("speaker")}
+         for w in words if w.get("text")]
+with open(words_path, "w") as f:
+    json.dump(timed, f)
 EOF
   }
 
@@ -196,12 +216,15 @@ EOF
 fi
 
 mkdir -p "$(dirname "$OUTPUT")"
-export TITLE PUBDATE GUID AUDIO_URL DURATION DESCRIPTION SPEAKER SERIES TRANSCRIPT_TXT OUTPUT TEMPLATE
+export TITLE PUBDATE GUID AUDIO_URL DURATION DESCRIPTION SPEAKER SERIES TRANSCRIPT_TXT OUTPUT TEMPLATE TRANSCRIPT_WORDS PAUSE_GAP
 python3 <<'EOF'
-import html, os, re
+import html, json, os, re
 
 SENT_SPLIT = re.compile(r"(?<=[.!?])\s+(?=(?:\[Speaker [^\]]+\]\s*)?[A-Z0-9\"'])")
 SPEAKER_RE = re.compile(r"^\[Speaker ([^\]]+)\]\s*")
+
+def normtok(s):
+    return re.sub(r"[^\w']", "", s, flags=re.UNICODE).lower()
 
 def split_sentences(text):
     """Flatten text into (speaker_or_None, sentence) pairs."""
@@ -216,15 +239,51 @@ def split_sentences(text):
             out.append((cur_spk, part))
     return out
 
-def chunk_paragraphs(text):
-    """Sentence-aware chunking: ~6-10 sentences or ~150-200 words per
-    paragraph, whichever comes first. Speaker-change forces a break and keeps
-    its [Speaker X] label; single-speaker text gets plain <p>s."""
+def pause_gaps(sentences, timed):
+    """Align sentences to word timings; return gap-before (seconds) per
+    sentence, None where unknown. Pauses snap to sentence boundaries."""
+    gaps = [None] * len(sentences)
+    if not timed:
+        return gaps
+    toks = [[t for t in (normtok(w) for w in s.split()) if t] for _, s in sentences]
+    p, prev_end, n = 0, None, len(timed)
+    for i, ts in enumerate(toks):
+        if not ts:
+            continue
+        nxt = next((toks[j][0] for j in range(i + 1, len(toks)) if toks[j]), None)
+        first_start, last_end, taken = None, None, 0
+        while p < n and taken < len(ts):
+            w = timed[p]
+            p += 1
+            if first_start is None:
+                first_start = w.get("start")
+            last_end = w.get("end")
+            if not normtok(w.get("t", "")):
+                continue
+            taken += 1
+            if (taken >= len(ts) - 1 and nxt and p < n
+                    and normtok(timed[p].get("t", "")) == nxt):
+                break
+        if first_start is not None and prev_end is not None:
+            gaps[i] = first_start - prev_end
+        if last_end is not None:
+            prev_end = last_end
+    return gaps
+
+def chunk_paragraphs(text, timed, pause_gap):
+    """Pause-based chunking: a new paragraph starts wherever the inter-word
+    gap exceeds pause_gap seconds. Backstops: ~6-10 sentences or ~150-200
+    words (whichever first), plus speaker-change breaks. Without timings,
+    falls back to pure sentence-chunking."""
     sentences = split_sentences(text)
     multi = len({s for s, _ in sentences if s}) > 1
+    gaps = pause_gaps(sentences, timed)
     grouped, cur, words, cur_spk = [], [], 0, None
-    for spk, sent in sentences:
-        if cur and (spk != cur_spk or (len(cur) >= 6 and words >= 150)
+    for idx, (spk, sent) in enumerate(sentences):
+        gap = gaps[idx]
+        if cur and (spk != cur_spk
+                     or (gap is not None and gap > pause_gap)
+                     or (len(cur) >= 6 and words >= 150)
                      or len(cur) >= 10 or words >= 200):
             grouped.append((cur_spk, cur))
             cur, words = [], 0
@@ -257,10 +316,21 @@ raw = open(os.environ["TRANSCRIPT_TXT"]).read().strip()
 placeholder = "TRANSCRIPT PLACEHOLDER" in raw
 paras = [p.strip() for p in re.split(r"\n\s*\n", raw) if p.strip()]
 if not placeholder:
-    # Sentence-chunk every block so single-speaker transcripts don't collapse
-    # into one giant <p>; short blocks pass through unchanged.
+    # Pause-based chunking when word timings exist (falls back to pure
+    # sentence-chunking for plain-text input).
+    try:
+        pause_gap = float(os.environ.get("PAUSE_GAP", "1.2"))
+    except ValueError:
+        pause_gap = 1.2
+    timed = []
+    words_path = os.environ.get("TRANSCRIPT_WORDS", "")
+    if words_path and os.path.exists(words_path):
+        try:
+            timed = json.load(open(words_path))
+        except (ValueError, OSError):
+            timed = []
     text = " ".join(paras)
-    paras = chunk_paragraphs(text)
+    paras = chunk_paragraphs(text, timed, pause_gap)
 body_html = "\n".join("        <p>%s</p>" % html.escape(p) for p in paras) or "        <p>(Empty transcript.)</p>"
 notice = ""
 if placeholder:
