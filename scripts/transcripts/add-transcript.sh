@@ -1,16 +1,21 @@
 #!/usr/bin/env bash
-# Add an unlinked sermon-transcript static page.
+# Add an unlinked sermon- or podcast-transcript static page.
 #
 # Default targets last week's sermon (Acts 20:13-38, 2026-11-08).
-# Override any field via env vars or CLI flags for future sermons:
+# KIND selects sermon (default) or podcast; it switches the template,
+# output dir, back link, <title>, manifest path, and AssemblyAI keyterms.
+# Override any field via env vars or CLI flags for future episodes:
 #
 #   AUDIO_URL TITLE SPEAKER SERIES DESCRIPTION PUBDATE DURATION GUID SLUG OUTPUT TRANSCRIPT_FILE TRANSCRIPT_ID PAUSE_GAP
+#   KIND TEMPLATE BACK_LINK BACK_LABEL KEYTERMS
 #
 # Examples:
 #   ./scripts/transcripts/add-transcript.sh
 #   AUDIO_URL="https://.../sermon.mp3" TITLE="Acts 21:1-14" ./scripts/transcripts/add-transcript.sh
 #   ./scripts/transcripts/add-transcript.sh --audio-url https://.../x.mp3 --title "Acts 21:1-14" \
 #     --speaker "Rich Richardson" --series Acts --pubdate 2026-11-15 --slug transcript-acts-21-1-14
+#   ./scripts/transcripts/add-transcript.sh --kind podcast --slug transcript-foj-42 --title "Episode 42 Title" \
+#     --audio-url https://.../ep.mp3 --pubdate 2026-11-15 --guid <episode-guid> --placeholder --no-push
 #   ./scripts/transcripts/add-transcript.sh --transcript-id 098422e6-80de-420f-ad1c-d0fec7462169  # reuse completed transcript, no re-transcribe
 #   ./scripts/transcripts/add-transcript.sh --transcript-file /tmp/sermon.txt   # skip AssemblyAI, use local text
 #   ./scripts/transcripts/add-transcript.sh --transcript-file /tmp/sermon.txt --transcript-words /tmp/words.json  # local text + word timings
@@ -23,6 +28,10 @@
 #   ./scripts/transcripts/add-transcript.sh --no-push                            # write HTML only, print manual git commands
 #   ./scripts/transcripts/add-transcript.sh --message "Custom commit msg"        # override commit message
 #   ./scripts/transcripts/add-transcript.sh --pause-gap 1.5                  # pause threshold (s) for paragraph breaks, default 1.2
+#   ./scripts/transcripts/add-transcript.sh --kind sermon|podcast            # or KIND=podcast; --type is an alias
+#   ./scripts/transcripts/add-transcript.sh --template public/podcast.html   # or TEMPLATE env; default follows KIND
+#   ./scripts/transcripts/add-transcript.sh --back-link /podcast --back-label "All podcast episodes"  # or BACK_LINK/BACK_LABEL env
+# KEYTERMS env (comma-separated) overrides the AssemblyAI keyterms list.
 #
 # Chunking is pause-based when word timestamps exist: a new paragraph starts
 # wherever the gap between consecutive words exceeds PAUSE_GAP seconds, with
@@ -30,11 +39,24 @@
 # backstops. Plain-text input (no timings) falls back to sentence-chunking.
 #
 # After writing the HTML the script auto-commits (message
-# "Add sermon transcript: <TITLE>") and pushes to main, unless --no-push.
+# "Add <kind> transcript: <TITLE>") and pushes to main, unless --no-push.
 #   ./scripts/transcripts/add-transcript.sh --placeholder                          # placeholder page, no API call
 #
 # Deps: bash, curl, python3 (stdlib only). No npm.
 set -euo pipefail
+
+KIND="${KIND:-sermon}"
+# Track explicitly-provided values (env or flag) so KIND defaults only
+# fill in what the caller left unset; explicit empty still counts as given.
+SERIES_GIVEN=0; SPEAKER_GIVEN=0; TEMPLATE_GIVEN=0; OUTPUT_GIVEN=0
+OUTPUT_FLAG=0; SLUG_GIVEN=0; SLUG_FLAG=0; BACK_LINK_GIVEN=0; BACK_LABEL_GIVEN=0
+[ -n "${SERIES+x}" ] && SERIES_GIVEN=1
+[ -n "${SPEAKER+x}" ] && SPEAKER_GIVEN=1
+[ -n "${TEMPLATE+x}" ] && TEMPLATE_GIVEN=1
+[ -n "${OUTPUT+x}" ] && OUTPUT_GIVEN=1
+[ -n "${SLUG+x}" ] && SLUG_GIVEN=1
+[ -n "${BACK_LINK+x}" ] && BACK_LINK_GIVEN=1
+[ -n "${BACK_LABEL+x}" ] && BACK_LABEL_GIVEN=1
 
 TITLE="${TITLE:-Acts 20:13-38}"
 PUBDATE="${PUBDATE:-2026-11-08}"
@@ -42,10 +64,14 @@ GUID="${GUID:-3f955c89-554b-49d8-ad2f-70bd95322810}"
 AUDIO_URL="${AUDIO_URL:-https://d3ctxlq1ktw2nl.cloudfront.net/staging/2026-10-8/6380d55e-b173-d3e1-8e8f-485108363255.mp3}"
 DURATION="${DURATION:-00:38:30}"
 DESCRIPTION="${DESCRIPTION:-What is a pastor and what does he do?}"
-SPEAKER="${SPEAKER:-Rich Richardson}"
-SERIES="${SERIES:-Acts}"
+SPEAKER="${SPEAKER:-}"
+SERIES="${SERIES:-}"
 SLUG="${SLUG:-transcript-acts-20-13-38}"
-OUTPUT="${OUTPUT:-public/sermons/${SLUG}.html}"
+OUTPUT="${OUTPUT:-}"
+TEMPLATE="${TEMPLATE:-}"
+BACK_LINK="${BACK_LINK:-}"
+BACK_LABEL="${BACK_LABEL:-}"
+KEYTERMS="${KEYTERMS:-}"
 TRANSCRIPT_FILE="${TRANSCRIPT_FILE:-}"
 TRANSCRIPT_ID="${TRANSCRIPT_ID:-}"
 MESSAGE="${MESSAGE:-}"
@@ -61,14 +87,19 @@ while [ $# -gt 0 ]; do
   case "$1" in
     --audio-url)       AUDIO_URL="$2"; shift 2 ;;
     --title)           TITLE="$2"; shift 2 ;;
-    --speaker)         SPEAKER="$2"; shift 2 ;;
-    --series)          SERIES="$2"; shift 2 ;;
+    --speaker)         SPEAKER="$2"; SPEAKER_GIVEN=1; shift 2 ;;
+    --series)          SERIES="$2"; SERIES_GIVEN=1; shift 2 ;;
     --description)     DESCRIPTION="$2"; shift 2 ;;
     --pubdate|--date)  PUBDATE="$2"; shift 2 ;;
     --duration)        DURATION="$2"; shift 2 ;;
     --guid)            GUID="$2"; shift 2 ;;
-    --slug)            SLUG="$2"; OUTPUT="public/sermons/$2.html"; shift 2 ;;
-    --output|--out)    OUTPUT="$2"; shift 2 ;;
+    --slug)            SLUG="$2"; SLUG_GIVEN=1; SLUG_FLAG=1; shift 2 ;;
+    --output|--out)    OUTPUT="$2"; OUTPUT_GIVEN=1; OUTPUT_FLAG=1; shift 2 ;;
+    --kind|--type)
+      KIND="$2"; shift 2 ;;
+    --template)        TEMPLATE="$2"; TEMPLATE_GIVEN=1; shift 2 ;;
+    --back-link)       BACK_LINK="$2"; BACK_LINK_GIVEN=1; shift 2 ;;
+    --back-label)      BACK_LABEL="$2"; BACK_LABEL_GIVEN=1; shift 2 ;;
     --transcript-file) TRANSCRIPT_FILE="$2"; shift 2 ;;
     --transcript-words) TRANSCRIPT_WORDS="$2"; TRANSCRIPT_WORDS_GIVEN=1; shift 2 ;;
     --transcript-id)   TRANSCRIPT_ID="$2"; shift 2 ;;
@@ -81,9 +112,41 @@ while [ $# -gt 0 ]; do
   esac
 done
 
+case "$KIND" in
+  sermon|podcast) ;;
+  *) echo "Unknown --kind: $KIND (want sermon|podcast)" >&2; exit 1 ;;
+esac
+
+# KIND-derived defaults (only where the caller gave nothing explicitly).
+if [ "$KIND" = "podcast" ]; then
+  KIND_DIR="public/podcast"; SHARE_DIR="/podcast"
+  KIND_TITLE="Podcast"; NOUN="episode"
+  [ "$TEMPLATE_GIVEN" -eq 0 ] && TEMPLATE="public/podcast.html"
+  [ "$BACK_LINK_GIVEN" -eq 0 ] && BACK_LINK="/podcast"
+  [ "$BACK_LABEL_GIVEN" -eq 0 ] && BACK_LABEL="All podcast episodes"
+else
+  KIND_DIR="public/sermons"; SHARE_DIR="/sermons"
+  KIND_TITLE="Sermon"; NOUN="sermon"
+  [ "$SERIES_GIVEN" -eq 0 ] && SERIES="Acts"
+  [ "$SPEAKER_GIVEN" -eq 0 ] && SPEAKER="Rich Richardson"
+  [ "$TEMPLATE_GIVEN" -eq 0 ] && TEMPLATE="public/sermons.html"
+  [ "$BACK_LINK_GIVEN" -eq 0 ] && BACK_LINK="/sermons"
+  [ "$BACK_LABEL_GIVEN" -eq 0 ] && BACK_LABEL="All sermons"
+fi
+# --output wins over everything; otherwise --slug re-derives the path for
+# the kind; otherwise an explicit OUTPUT env wins; otherwise kind default.
+if [ "$OUTPUT_FLAG" -eq 1 ]; then
+  :
+elif [ "$SLUG_FLAG" -eq 1 ]; then
+  OUTPUT="${KIND_DIR}/${SLUG}.html"
+elif [ "$OUTPUT_GIVEN" -eq 0 ]; then
+  OUTPUT="${KIND_DIR}/${SLUG}.html"
+fi
+SHARE_PATH="${SHARE_DIR}/${SLUG}"
+export KIND KEYTERMS KIND_TITLE NOUN BACK_LINK BACK_LABEL
+
 ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
 cd "$ROOT"
-TEMPLATE="public/sermons.html"
 [ -f "$TEMPLATE" ] || { echo "Template not found: $TEMPLATE" >&2; exit 1; }
 
 TMPDIR="$(mktemp -d)"
@@ -98,11 +161,19 @@ elif [ "$TRANSCRIPT_WORDS_GIVEN" -eq 1 ]; then
 fi
 
 write_placeholder() {
-  cat > "$TRANSCRIPT_TXT" <<'EOF'
+  if [ "$KIND" = "podcast" ]; then
+    cat > "$TRANSCRIPT_TXT" <<'EOF'
+[TRANSCRIPT PLACEHOLDER — re-run scripts/transcripts/add-transcript.sh with $ASSEMBLYAI_API_KEY set to fill this in.]
+
+The audio for this episode is available above. The full transcript will appear here once generated.
+EOF
+  else
+    cat > "$TRANSCRIPT_TXT" <<'EOF'
 [TRANSCRIPT PLACEHOLDER — re-run scripts/transcripts/add-transcript.sh with $ASSEMBLYAI_API_KEY set to fill this in.]
 
 The audio for this sermon is available above. The full transcript will appear here once generated.
 EOF
+  fi
 }
 
 if [ "$PLACEHOLDER" -eq 1 ]; then
@@ -181,15 +252,21 @@ EOF
   echo "Submitting to AssemblyAI (model universal-3-5-pro)..."
   SUBMIT_RESP="$TMPDIR/submit.json"
   python3 - "$AUDIO_URL" "$SUBMIT_RESP" <<'EOF'
-import json, sys
+import json, os, sys
 audio_url, out = sys.argv[1], sys.argv[2]
+kt = [k.strip() for k in os.environ.get("KEYTERMS", "").split(",") if k.strip()]
+if not kt:
+    if os.environ.get("KIND") == "podcast":
+        kt = ["Jesus", "Bible", "faith", "church", "Gospel"]
+    else:
+        kt = ["Acts", "Paul", "Ephesus", "Miletus", "Holy Spirit",
+              "elders", "overseers", "shepherd", "pastor",
+              "Troas", "Assos", "Mitylene", "Luke"]
 body = {
     "audio_url": audio_url,
     "speech_model": "universal-3-5-pro",
     "speaker_labels": True,
-    "keyterms_prompt": ["Acts", "Paul", "Ephesus", "Miletus", "Holy Spirit",
-                        "elders", "overseers", "shepherd", "pastor",
-                        "Troas", "Assos", "Mitylene", "Luke"],
+    "keyterms_prompt": kt,
 }
 with open(out, "w") as f:
     json.dump(body, f)
@@ -410,11 +487,15 @@ if placeholder:
 
 meta_bits = " · ".join(b for b in [speaker, series, pubdate, duration] if b)
 
+kind_title = os.environ.get("KIND_TITLE", "Sermon")
+back_link = os.environ.get("BACK_LINK", "/sermons")
+back_label = os.environ.get("BACK_LABEL", "All sermons")
+
 main = """  <main>
     <section class="section">
       <div class="container">
         <div class="transcript-head">
-          <a class="transcript-back" href="/sermons">&larr; All sermons</a>
+          <a class="transcript-back" href="%s">&larr; %s</a>
           <h1 class="display-lg">%s</h1>
           <p class="transcript-meta">%s</p>
           <p class="transcript-desc">%s</p>
@@ -427,13 +508,20 @@ main = """  <main>
         </div>
       </div>
     </section>
-  </main>""" % (html.escape(title), html.escape(meta_bits),
+  </main>""" % (html.escape(back_link, quote=True), html.escape(back_label),
+               html.escape(title), html.escape(meta_bits),
                html.escape(desc), html.escape(audio, quote=True),
                notice, body_html)
 
 new = re.sub(r"<main>.*?</main>", lambda _: main, tpl, count=1, flags=re.DOTALL)
-new = new.replace("<title>Sermons — Center Church Gilbert</title>",
-                  "<title>%s — Sermon Transcript — Center Church Gilbert</title>" % html.escape(title))
+title_tag = ("<title>%s — %s Transcript — Center Church Gilbert</title>"
+             % (html.escape(title), kind_title))
+if "<title>Sermons — Center Church Gilbert</title>" in new:
+    new = new.replace("<title>Sermons — Center Church Gilbert</title>", title_tag)
+elif "<title>Fixed on Jesus Podcast — Center Church Gilbert</title>" in new:
+    new = new.replace("<title>Fixed on Jesus Podcast — Center Church Gilbert</title>", title_tag)
+else:
+    new = re.sub(r"<title>.*?</title>", lambda _: title_tag, new, count=1)
 # Transcript dark mode: device preference only, no toggle. Inline in <head>
 # so only transcript pages are affected — the rest of the site keeps its
 # light theme and styles.css stays untouched.
@@ -502,9 +590,9 @@ print("Wrote %s" % os.environ["OUTPUT"])
 EOF
 
 if [ "$NO_PUSH" -eq 0 ]; then
-# Maintain the transcript manifest consulted by /sermons (guid -> path).
+# Maintain the transcript manifest consulted by /sermons and /podcast (guid -> path).
 # Only on real runs: --no-push is a side-effect-free dry run.
-python3 - "$GUID" "/sermons/${SLUG}" <<'EOF'
+python3 - "$GUID" "${SHARE_PATH}" <<'EOF'
 import json, sys
 p = "public/transcripts.json"
 try:
@@ -520,13 +608,13 @@ EOF
 fi
 
 echo
-MSG="${MESSAGE:-Add sermon transcript: ${TITLE}}"
+MSG="${MESSAGE:-Add ${KIND} transcript: ${TITLE}}"
 if [ "$NO_PUSH" -eq 1 ]; then
   echo "Next steps (--no-push: commit+push skipped):"
   echo "  1. Review ${OUTPUT} in a browser (unlinked draft — not in nav or sitemap)."
   echo "  2. git add ${OUTPUT} scripts/transcripts/add-transcript.sh public/transcripts.json && git commit -m \"${MSG}\" && git push"
   echo "     (push to main deploys via the existing GitHub Action)"
-  echo "  3. Share the direct URL path: /sermons/${SLUG}"
+  echo "  3. Share the direct URL path: ${SHARE_PATH}"
 else
   # Stage ONLY these three paths — never `git add -A`. Unrelated dirty files
   # (staged or not) are left untouched.
@@ -543,5 +631,5 @@ else
     fi
   fi
   echo "Done. Review ${OUTPUT} in a browser (unlinked draft — not in nav or sitemap)."
-  echo "Share the direct URL path: /sermons/${SLUG}"
+  echo "Share the direct URL path: ${SHARE_PATH}"
 fi
