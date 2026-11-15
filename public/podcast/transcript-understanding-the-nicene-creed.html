@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Understanding The Nicene Creed — Podcast Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Fixed on Jesus: conversations beyond Sunday mornings from Center Church in Gilbert, AZ — listen on Spotify, Apple Podcasts, and YouTube." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=18" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a href="/sermons">Sermons</a></li>
+              <li><a class="active" href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/podcast">&larr; All podcast episodes</a>
+          <h1 class="display-lg">Understanding The Nicene Creed</h1>
+          <p class="transcript-meta">2025-07-23 · 26:34</p>
+          <p class="transcript-desc">Welcome to FIXED ON JESUS, a podcast brought to you by Center Church in Gilbert, Arizona. Speaking to you today are Rich Richardson &amp; Mark Johnson Jr. Production by Heather Corbitt **SHOW NOTES** In this episode you will hear we had a live studio audience. The Fixed On Jesus podcast crew hosted an e</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/e750e370/podcast/play/105784537/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-6-21%2F8fa828f7-9dfa-45de-3876-4bee1453ad6b.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="0.07" data-e="6.53">We had the Father send the Son, and the Son become a real man, and that man really live and die and rise again.</span> <span class="tl-s" data-s="7.39" data-e="10.57">And if he wasn&#x27;t Jesus, if he wasn&#x27;t equal with God, we would have no salvation.</span></p>
+        <p><span class="tl-s" data-s="25.76" data-e="27.87">This is Fixed on Jesus.</span></p>
+        <p><span class="tl-s" data-s="45.36" data-e="47.59">Hey everybody, welcome back to Fixed on Jesus.</span> <span class="tl-s" data-s="47.71" data-e="53.11">This is the podcast that is much like a runaway train, a train that starts out in the station.</span> <span class="tl-s" data-s="53.16" data-e="55.61">We know what the topic is, but we don&#x27;t always know where we&#x27;re going.</span> <span class="tl-s" data-s="55.66" data-e="56.36">Is that right, Mark?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="56.85" data-e="57.40">That&#x27;s correct.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="57.62" data-e="60.97">We&#x27;re— I am joined— my name is Rich, and I&#x27;m joined by Mark Johnson Jr.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="61.33" data-e="61.77">Hello, Rich.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="62.21" data-e="64.91">And across the way behind the glass is Heather Corbett.</span> <span class="tl-s" data-s="65.33" data-e="65.98">Hey, hey, hey.</span> <span class="tl-s" data-s="66.63" data-e="68.63">And today, what are we talking about, Mark?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="69.26" data-e="75.07">Well, first we&#x27;re talking about the joke that I&#x27;ve been saving for this exact episode, if that&#x27;s okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="75.92" data-e="76.37">That&#x27;s fine.</span> <span class="tl-s" data-s="76.42" data-e="77.48">You&#x27;re one of the co-hosts, Mark.</span> <span class="tl-s" data-s="77.87" data-e="80.52">I don&#x27;t tell you what to say, what to think, how to act.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="80.74" data-e="81.83">Well, this question&#x27;s for you.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="82.19" data-e="82.54">Oh, okay.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="83.87" data-e="86.62">Where does the pastor minister to his flock?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="88.38" data-e="89.12">Is this a joke?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="89.38" data-e="91.98">Where, where does the pastor minister to his flock?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="93.36" data-e="95.37">Where does a pastor minister to his flock?</span></p>
+        <p><span class="tl-s" data-s="96.72" data-e="96.94">I don&#x27;t know.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="97.19" data-e="98.37">In the pew pew pew.</span> <span class="tl-s" data-s="99.21" data-e="99.90">In the pews.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="100.58" data-e="100.76">Okay.</span></p>
+        <p><span class="tl-s" data-s="102.28" data-e="103.09">Did you make that up?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="103.48" data-e="103.70">I did.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="104.38" data-e="104.98">You made that up?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="105.03" data-e="105.98">Prepping for the Bridge Course.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="106.53" data-e="107.92">You should never do that again.</span></p>
+        <p><span class="tl-s" data-s="109.73" data-e="111.63">You should really never do it again.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="112.11" data-e="112.31">Wow.</span> <span class="tl-s" data-s="113.01" data-e="113.90">In the pew pew pew.</span> <span class="tl-s" data-s="114.05" data-e="114.65">You made that up?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="114.71" data-e="115.28">Yeah, say it again.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="115.97" data-e="122.64">No, because he does sound effects that are really— that&#x27;s right, exactly right.</span> <span class="tl-s" data-s="123.44" data-e="124.97">Have you— Mark, here&#x27;s a question for you.</span> <span class="tl-s" data-s="125.22" data-e="127.36">Have you ever been to a church building with pews?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="127.63" data-e="131.95">I have, yeah, not that many times, but— [Speaker A] Okay, you have.</span> <span class="tl-s" data-s="131.95" data-e="134.36">Have you ever worshipped at a church building with pews?</span> <span class="tl-s" data-s="134.36" data-e="138.65">Not like gone to a wedding or a funeral or whatever?</span> <span class="tl-s" data-s="139.14" data-e="139.22">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="139.22" data-e="139.69">Okay, all right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="139.69" data-e="141.47">Only a couple times, but yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="141.47" data-e="141.52">Okay.</span> <span class="tl-s" data-s="141.52" data-e="143.19">Do you think we should have pews?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="143.19" data-e="145.75">I think we should think about it.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="145.75" data-e="145.96">No.</span> <span class="tl-s" data-s="146.14" data-e="146.99">Just did.</span> <span class="tl-s" data-s="146.99" data-e="147.18">Nope.</span> <span class="tl-s" data-s="147.34" data-e="147.50">All right.</span> <span class="tl-s" data-s="147.50" data-e="148.53">What are we talking about?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="148.54" data-e="156.86">Anyways, we&#x27;re actually talking about something that has been on our idea list for a while, and it&#x27;s more relevant now.</span> <span class="tl-s" data-s="156.90" data-e="159.30">It&#x27;s surrounding the Nicene Creed.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="159.77" data-e="159.80">Yes.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="159.80" data-e="163.37">So I guess the first question is, why are we talking about this now?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="163.37" data-e="170.12">Yeah, the Nicene Creed is one of the most significant works of the early church.</span> <span class="tl-s" data-s="170.13" data-e="172.87">Uh, and it was from 325.</span> <span class="tl-s" data-s="172.87" data-e="178.07">So we&#x27;re coming up on— well, this is the 1,700th anniversary of the Nicene Creed.</span> <span class="tl-s" data-s="178.07" data-e="195.90">So think about how, how important that is, just because like Christians have been around for centuries and centuries, now pushing 2 millennia, and this work of the creed, this Nicene Council that was called together— Mm-hmm.</span> <span class="tl-s" data-s="195.97" data-e="207.56">325, put out one of the most significant works that we still from time to time recite in church meetings, and still actually, if you read it, is completely biblical.</span> <span class="tl-s" data-s="207.85" data-e="209.86">So yeah, let me give a little context.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="209.86" data-e="210.04">Sure.</span> <span class="tl-s" data-s="210.04" data-e="216.45">Should we read it first, or— [Speaker A] Well, let me just give a little context so that people can understand what it&#x27;s addressing, right?</span> <span class="tl-s" data-s="216.45" data-e="225.47">So in 325, we&#x27;re talking probably— we&#x27;re looking at about 220 years after the last apostle died.</span> <span class="tl-s" data-s="225.47" data-e="238.33">250 after most of them died, and in that time frame there came a heresy to the church called Arianism, and Arianism was taught by a guy named Arius.</span> <span class="tl-s" data-s="238.68" data-e="241.65">Arius believed that Jesus was created.</span> <span class="tl-s" data-s="241.65" data-e="241.94">Hmm.</span> <span class="tl-s" data-s="241.97" data-e="247.72">He had a famous saying, there was a time where Jesus was not, right?</span> <span class="tl-s" data-s="247.76" data-e="253.59">He was created, and so they believed that he was created and that he wasn&#x27;t— therefore that he wasn&#x27;t equal with God.</span></p>
+        <p><span class="tl-s" data-s="255.26" data-e="256.97">He wasn&#x27;t God.</span> <span class="tl-s" data-s="256.97" data-e="266.55">So Arianism swept the known world at the time, and it was a really, really big, a really big, uh, controversy.</span> <span class="tl-s" data-s="267.04" data-e="280.73">And so, uh, Constantinople, uh, or Constantine— Constantinople is a city— Constantine called a council, and that council is the Nicene Council in 325, to answer the question that Arius put forth: is Jesus God?</span> <span class="tl-s" data-s="280.84" data-e="281.93">That&#x27;s, that&#x27;s the question.</span> <span class="tl-s" data-s="282.13" data-e="284.69">And so the council came up with the following creed.</span> <span class="tl-s" data-s="284.69" data-e="289.90">Now, it was in Greek, but this is translated into English, fortunately, so we can understand it.</span> <span class="tl-s" data-s="289.90" data-e="290.41">Yeah, that&#x27;s right.</span> <span class="tl-s" data-s="290.46" data-e="298.65">We believe in one God, the Father, the Almighty, maker of heaven and earth, of all that is seen— of all that is seen and unseen.</span> <span class="tl-s" data-s="298.78" data-e="311.70">We believe in one Lord Jesus Christ, the only Son of God, eternally begotten of the Father, God from God, light from light, True God from true God, begotten, not made, of one being with the Father.</span></p>
+        <p><span class="tl-s" data-s="311.70" data-e="313.68">Through him all things were made.</span> <span class="tl-s" data-s="313.70" data-e="322.29">For us and for our salvation he came down from heaven, was incarnate of the Holy Spirit and the Virgin Mary, and became truly human.</span> <span class="tl-s" data-s="322.34" data-e="327.39">For our sake he was crucified under Pontius Pilate, he suffered death and was buried.</span> <span class="tl-s" data-s="327.39" data-e="334.27">On the 3rd day he rose again in accordance with the Scriptures, he ascended into heaven and is seated at the right hand of the Father.</span> <span class="tl-s" data-s="334.30" data-e="340.30">He will come again in glory to judge the living and the dead, and his kingdom will have no end.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="340.39" data-e="343.14">So now there&#x27;s some different different versions.</span> <span class="tl-s" data-s="343.14" data-e="344.04">That&#x27;s one of the versions.</span> <span class="tl-s" data-s="344.04" data-e="349.82">I mean, this is it&#x27;s essentially when you translate something in English, it gets some of it gets lost.</span> <span class="tl-s" data-s="349.82" data-e="361.40">But the idea so you can see here what we have is a couple things that you need to recognize that when when when it says we believe in one one.</span> <span class="tl-s" data-s="361.45" data-e="367.18">In one Lord Jesus Christ, the Son of God, begotten of the Father as only begotten.</span> <span class="tl-s" data-s="367.23" data-e="370.50">Begotten does not mean made.</span> <span class="tl-s" data-s="370.50" data-e="374.23">That means there&#x27;s an eternal— what&#x27;s called the eternal generation of the Son.</span> <span class="tl-s" data-s="374.23" data-e="382.94">So there was never a time the Son was not, but the Son has eternally— this is really— this is what the Creed decided, and it&#x27;s biblical.</span> <span class="tl-s" data-s="383.03" data-e="387.56">The Son eternally proceeded from the Father for all time.</span> <span class="tl-s" data-s="387.63" data-e="387.85">Amen.</span></p>
+        <p><span class="tl-s" data-s="388.83" data-e="389.30">And before time.</span> <span class="tl-s" data-s="389.30" data-e="394.34">And so he was begotten, meaning that he was eternally proceeding from the Father.</span> <span class="tl-s" data-s="394.37" data-e="402.29">And then the big thing was that he is, he is of the same essence of the Father, right?</span> <span class="tl-s" data-s="402.40" data-e="403.78">So they&#x27;re of the same.</span> <span class="tl-s" data-s="403.85" data-e="404.62">They&#x27;re the same.</span> <span class="tl-s" data-s="405.28" data-e="406.37">They&#x27;re not similar.</span> <span class="tl-s" data-s="406.90" data-e="408.83">They&#x27;re not, um, different.</span> <span class="tl-s" data-s="409.13" data-e="409.92">They&#x27;re not close.</span> <span class="tl-s" data-s="410.27" data-e="411.94">They&#x27;re the same, right?</span> <span class="tl-s" data-s="412.02" data-e="415.22">And so that, that&#x27;s a big That was, that was the big deal, right?</span></p>
+        <p><span class="tl-s" data-s="415.25" data-e="421.08">And so that was what the Nicene Creed spoke into.</span> <span class="tl-s" data-s="422.00" data-e="428.52">And it was— the Arians lost, but they actually— they lost the theological battle, but they won the political war.</span> <span class="tl-s" data-s="428.52" data-e="431.35">And sometimes that&#x27;s how that goes.</span> <span class="tl-s" data-s="431.72" data-e="435.72">And so, [Speaker B] um, before you go into that, who, who convened there?</span> <span class="tl-s" data-s="435.72" data-e="439.58">Who— what types of people would meet at a— [Speaker A] At a council?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="439.58" data-e="439.77">Yeah.</span> <span class="tl-s" data-s="439.77" data-e="442.95">Like, me and you could have went if we were around?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="442.95" data-e="445.46">Only if we were church leaders.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="445.46" data-e="446.54">So you?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="446.57" data-e="447.45">I don&#x27;t know.</span> <span class="tl-s" data-s="447.45" data-e="455.19">Um, there were anywhere from 250 to 320, we don&#x27;t know for sure, uh, church leaders who convened to ask to settle the question.</span> <span class="tl-s" data-s="455.19" data-e="457.89">And so— It&#x27;s [Speaker B] like an open debate kind of thing?</span> <span class="tl-s" data-s="457.99" data-e="465.94">It was an open debate, uh, where people had to present positions and, you know, and make a decision.</span> <span class="tl-s" data-s="465.94" data-e="467.51">And, you know, Arius was Charged.</span> <span class="tl-s" data-s="467.55" data-e="472.25">And [Speaker B] is there a language barrier amongst the people deciding this?</span> <span class="tl-s" data-s="473.31" data-e="475.15">No, at the time everybody spoke Greek.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="475.64" data-e="475.82">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="475.82" data-e="476.74">So that was 300s.</span> <span class="tl-s" data-s="476.82" data-e="478.34">It was, it was about done pretty soon.</span> <span class="tl-s" data-s="478.39" data-e="482.46">Latin was about to take over, but Greek was still what was spoken at the time.</span> <span class="tl-s" data-s="482.73" data-e="487.81">And so everybody at least understood it and could speak it, but Latin was about to take over, and Latin took over from here on out.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="487.86" data-e="488.11">Gotcha.</span> <span class="tl-s" data-s="488.11" data-e="493.63">Okay, sorry, I didn&#x27;t want to— [Speaker A] There&#x27;s a bunch of different ecumenical councils.</span> <span class="tl-s" data-s="493.63" data-e="498.26">This was what Ecumenical means like the whole church.</span> <span class="tl-s" data-s="498.30" data-e="511.43">This is the first one, um, and, uh, this is, uh, this is significant because it sets— it, it fights the battle for who Jesus is, is a battle that is something that is always fought.</span> <span class="tl-s" data-s="511.50" data-e="521.51">For example, um, all you need to do to find out if something is a cult or if something is not right, you need to look and see how they treat Jesus.</span> <span class="tl-s" data-s="521.60" data-e="527.22">If Jesus is a created being, being, it&#x27;s a cult.</span> <span class="tl-s" data-s="528.03" data-e="529.12">Like, for example, Mormons.</span> <span class="tl-s" data-s="529.25" data-e="530.58">Jehovah&#x27;s Witness, right?</span> <span class="tl-s" data-s="530.63" data-e="530.82">Islam.</span> <span class="tl-s" data-s="530.92" data-e="532.86">They all consider Jesus created.</span></p>
+        <p><span class="tl-s" data-s="533.64" data-e="536.87">Um, that— those are— that&#x27;s very— those are all unbiblical, right?</span> <span class="tl-s" data-s="536.87" data-e="551.64">And so you&#x27;ve got that— that&#x27;s the idea that here that&#x27;s being communicated here, that Jesus is not of similar substance to the Father, but Jesus is of the same substance as the Father.</span> <span class="tl-s" data-s="551.64" data-e="551.72">Awesome.</span> <span class="tl-s" data-s="551.72" data-e="559.14">Were the scriptures— so there&#x27;s a common Conception— misconception that they discussed the canon and the changing of or accepting of different books into the canon.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="559.15" data-e="561.80">Yeah, we have a live studio audience here.</span> <span class="tl-s" data-s="562.77" data-e="566.22">Now, how many of you heard that the Bible was formalized at Nicaea?</span> <span class="tl-s" data-s="566.22" data-e="569.09">Like, there was a vote, and Dan Brown made this popular, right?</span> <span class="tl-s" data-s="569.10" data-e="578.38">There was a vote in Nicaea to decide what books go in the Bible, and it was this, and it wasn&#x27;t even close, right?</span> <span class="tl-s" data-s="578.47" data-e="579.87">They didn&#x27;t even talk about the Bible at Nicaea.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="579.93" data-e="581.55">So, the canon was closed at that time?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="581.55" data-e="584.25">Canon was closed by then.</span> <span class="tl-s" data-s="584.27" data-e="587.78">The canon had been closed for over 100 years.</span> <span class="tl-s" data-s="587.78" data-e="590.43">Well, 100— let&#x27;s see, this is 325.</span> <span class="tl-s" data-s="590.51" data-e="596.94">The canon closed with Revelation in about 100, so it was closed, uh, what is that, 225 years.</span> <span class="tl-s" data-s="596.96" data-e="605.99">And the early church had, um, lists of the New Testament that, that verify this.</span> <span class="tl-s" data-s="606.00" data-e="615.87">In fact, Nicaea, what Nicaea does is, is, um, Nicaea uses Scripture, only quotes from Scripture, and uses the Scriptures the way we— like the 27 books in the New Testament.</span> <span class="tl-s" data-s="615.87" data-e="618.00">So, if anybody— you&#x27;ll hear a lot of this online.</span> <span class="tl-s" data-s="618.34" data-e="622.25">There&#x27;s a lot of chatter and a lot of debate.</span> <span class="tl-s" data-s="622.35" data-e="645.96">So, you watch the History Channel, you watch BBC, you watch different commentaries that talk about how the Bible was put together, and they make it sound mysterious, and they also make it sound like the Council of Nicaea decided and randomly pushed out like the Gospel of Thomas, you know, other— the Gospel of Mary Magdalene, those kinds of things— and randomly push those out by a mere vote.</span></p>
+        <p><span class="tl-s" data-s="646.69" data-e="648.38">That&#x27;s absolutely, positively a lie.</span> <span class="tl-s" data-s="648.38" data-e="648.91">That&#x27;s wrong.</span> <span class="tl-s" data-s="648.98" data-e="650.14">And so that did not happen.</span></p>
+        <p><span class="tl-s" data-s="652.51" data-e="656.46">And in Nicaea, they&#x27;re just talking about the deity of Christ only.</span> <span class="tl-s" data-s="656.46" data-e="664.76">And so, uh, it— that— that&#x27;s— it&#x27;s really important just to recognize that because the Bible and, and the books of the Bible had already been decided.</span> <span class="tl-s" data-s="664.80" data-e="666.42">And there was no debate.</span> <span class="tl-s" data-s="666.42" data-e="667.23">None of that was debated.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="667.23" data-e="673.11">Um, okay, so, so switching gears a little bit, why does it matter that Jesus is God?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="673.11" data-e="676.22">Why does it matter if Jesus is God?</span> <span class="tl-s" data-s="676.32" data-e="678.79">Because if he&#x27;s not God, we can&#x27;t be saved.</span> <span class="tl-s" data-s="679.38" data-e="691.32">Um, salvation has to come from the Father, um, via the Son, and the Son has to be, uh, both God and— but has to be equal with God, and he has to also be man, right?</span> <span class="tl-s" data-s="691.38" data-e="696.20">So What Jesus does is he&#x27;s a double representative in a sense, right?</span> <span class="tl-s" data-s="696.20" data-e="715.68">He represents God as God, the Son of God to mankind, and he also as a man stands in our place, taking— living the perfect life we could not live so that the sin that we&#x27;ve committed is imputed to him and the righteousness he deserved is imputed to us.</span> <span class="tl-s" data-s="715.68" data-e="725.93">So if he&#x27;s not God, We have no reason to believe that we&#x27;re saved because our salvation would be, you know, just make-believe.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="725.94" data-e="726.25">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="726.52" data-e="734.04">But we had a real— we had the Father send the Son, and the Son become a real man, and that man really live and die and rise again.</span> <span class="tl-s" data-s="734.04" data-e="739.06">And if he wasn&#x27;t Jesus, if he wasn&#x27;t equal with God, we would have no salvation.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="739.06" data-e="739.25">Amen.</span> <span class="tl-s" data-s="739.25" data-e="742.95">So is that a big part of why this council was so important?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="742.95" data-e="743.28">Yes, absolutely.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="743.28" data-e="750.75">Because they&#x27;re debating that from the— [Speaker A] Because they fought for— they fought for the identity of who Jesus is, right?</span> <span class="tl-s" data-s="750.99" data-e="755.70">Because if you don&#x27;t get that right, you mess everything up.</span> <span class="tl-s" data-s="755.73" data-e="755.98">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="756.03" data-e="756.08">Everything.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="756.13" data-e="758.46">Um, in general, why is a creed important?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="759.40" data-e="763.37">A creed is important because it reminds us that we believe in something, right?</span> <span class="tl-s" data-s="764.30" data-e="776.23">Um, it reminds us that we believe that, you know, the Scriptures are true and It&#x27;s also important just to recognize that we need to do theology and we need to think through what the Bible has to say.</span> <span class="tl-s" data-s="776.34" data-e="783.62">And sometimes— and so it&#x27;s not— sometimes you can hear people say, well, all I want to do is it&#x27;s just me and the Bible and that&#x27;s all I need.</span> <span class="tl-s" data-s="783.64" data-e="795.55">No, you need other people who&#x27;ve gone before you who&#x27;ve thought clearly about the Bible and have communicated and have written about the Bible to tell us what they see the Bible to mean and say.</span> <span class="tl-s" data-s="795.56" data-e="798.77">And so, like, that&#x27;s the benefit of the creed.</span> <span class="tl-s" data-s="798.77" data-e="801.71">And this goes back to 320— this is 325.</span> <span class="tl-s" data-s="801.82" data-e="802.40">325.</span> <span class="tl-s" data-s="802.40" data-e="802.93">325.</span> <span class="tl-s" data-s="802.95" data-e="805.13">You have another Council of Nicaea at 381.</span> <span class="tl-s" data-s="805.13" data-e="817.70">You have 4 more ecumenical councils that are answering questions, most of them about the identity of Jesus and how he could be 100% God and 100% man, right?</span></p>
+        <p><span class="tl-s" data-s="817.80" data-e="833.60">And those questions were settled in the early church that— and, and the question of who he is has never really been in debate since then because— It&#x27;s been put to bed early in the life of— early in the church.</span> <span class="tl-s" data-s="833.92" data-e="839.44">So, [Speaker B] is that concept of double representative— is that how you said it?</span> <span class="tl-s" data-s="839.47" data-e="839.55">Double representation?</span> <span class="tl-s" data-s="839.55" data-e="848.10">Is that something we can fully understand on this side of eternity, or is it a part of the Trinity that we can&#x27;t fully understand?</span> <span class="tl-s" data-s="848.12" data-e="852.53">Well, I mean, I think we can genuinely understand something without exhaustively understanding it, right?</span> <span class="tl-s" data-s="852.53" data-e="862.56">So, we can genuinely understand Jesus was Like, I don&#x27;t think there&#x27;s any person on the planet who can really understand how it is that an eternal being becomes a baby.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="862.83" data-e="866.12">Yeah, [Speaker A] like, [Speaker B] so the whole thing&#x27;s hard.</span> <span class="tl-s" data-s="866.19" data-e="871.95">Yeah, [Speaker A] I mean, that&#x27;s just— the incarnation is beyond— [Speaker B] It&#x27;s a miracle.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="872.21" data-e="874.54">It&#x27;s amazing, right?</span> <span class="tl-s" data-s="874.54" data-e="884.27">And then, then, then to have that, that person, that man die, and not just die, but have the, the sins of all imputed to him, and then have that Amputation, then go the other way.</span> <span class="tl-s" data-s="884.32" data-e="891.68">I mean, I don&#x27;t think that&#x27;s something we can— it&#x27;s— we can understand it, but I don&#x27;t think we can plumb the depths of the grandeur of it.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="891.79" data-e="891.82">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="891.87" data-e="892.83">If that makes sense.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="892.83" data-e="896.85">And that, to me, that serves as even more of a reason to believe it.</span> <span class="tl-s" data-s="896.92" data-e="903.78">If you and I were going to conspire to come up with a religion, we wouldn&#x27;t have thought of that.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="903.87" data-e="904.26">No way.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="904.27" data-e="908.76">Because it&#x27;s almost impossible— not impossible, but it&#x27;s difficult to believe.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="908.77" data-e="909.34">Yeah, no way.</span> <span class="tl-s" data-s="909.34" data-e="918.77">I mean, you can see, like, the Pharisees of the 1st century, were the smartest people in the room, in every room they went into.</span> <span class="tl-s" data-s="918.79" data-e="920.11">They knew the Old Testament.</span> <span class="tl-s" data-s="920.17" data-e="922.67">They knew the promises of the Messiah.</span> <span class="tl-s" data-s="922.67" data-e="925.47">They knew what was coming, and they missed him.</span> <span class="tl-s" data-s="925.50" data-e="925.66">Hmm.</span> <span class="tl-s" data-s="925.66" data-e="927.24">Because they were expecting something different.</span> <span class="tl-s" data-s="927.27" data-e="937.68">They wanted a, a national leader who would throw off the, the yoke of Rome because they were expecting someone to come and conquer.</span> <span class="tl-s" data-s="937.71" data-e="944.53">And Jesus and his conquering came to conquer the slavery of sin and death and not Roman oppression.</span> <span class="tl-s" data-s="945.56" data-e="953.78">So, because not every person born is now born under Roman oppression, but we are born under sin and death.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="953.92" data-e="953.98">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="954.07" data-e="955.52">Makes sense?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="955.52" data-e="965.25">Um, is understanding something like the Nicene Creed better— should it lead us to deeper worship of the miraculous power and the incarnation and resurrection, just in general?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="965.25" data-e="966.47">I think so, yeah.</span> <span class="tl-s" data-s="966.47" data-e="969.84">I think power— [Speaker B] Not studying just to study.</span> <span class="tl-s" data-s="970.13" data-e="972.44">No, we&#x27;re not— yeah, but also confidence, right?</span> <span class="tl-s" data-s="972.44" data-e="976.77">So, like, there&#x27;s a confidence that we&#x27;re not the first generation that believes this.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="976.79" data-e="976.87">Yeah.</span> <span class="tl-s" data-s="976.93" data-e="982.44">Well, just Pontius Pilate being in there makes it rooted in history, [Speaker A] right?</span> <span class="tl-s" data-s="982.47" data-e="983.39">Yeah, it&#x27;s rooted in history.</span> <span class="tl-s" data-s="983.39" data-e="983.50">Yeah.</span> <span class="tl-s" data-s="983.60" data-e="988.31">And so, like, I think it should give us confidence, like, okay, here we are 1,700 years later.</span> <span class="tl-s" data-s="988.81" data-e="991.88">We can trust that the Bible we have is true.</span> <span class="tl-s" data-s="991.88" data-e="1003.53">We can trust that, you know, people who&#x27;ve gone before us that have had the same Bible have been thinking hard about Jesus and God and the Holy Spirit for now Almost 2,000 years.</span> <span class="tl-s" data-s="1003.60" data-e="1013.46">And to be able to have the confidence that this didn&#x27;t pop up out of the idea of some, like, you know, some teenager in Palmyra, New York in the 1840s, right?</span> <span class="tl-s" data-s="1013.70" data-e="1018.23">Um, that&#x27;s— [Speaker B] Shout out to the Watchtower.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1019.13" data-e="1020.26">That&#x27;s brand new.</span> <span class="tl-s" data-s="1020.36" data-e="1025.19">Shout out to— it&#x27;s a different group, but I won&#x27;t mention names— Joseph Smith.</span> <span class="tl-s" data-s="1025.51" data-e="1028.70">But anyway, um, uh, that&#x27;s brand new.</span> <span class="tl-s" data-s="1028.70" data-e="1029.33">That&#x27;s like yesterday.</span> <span class="tl-s" data-s="1029.43" data-e="1034.03">This stands for— this is, this is secure, and it stands for, for now 2 millennia almost.</span> <span class="tl-s" data-s="1034.16" data-e="1034.18">Yeah.</span> <span class="tl-s" data-s="1034.18" data-e="1034.66">Which is amazing.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1034.66" data-e="1034.74">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1034.74" data-e="1036.71">I mean, we&#x27;ve got a rich tradition.</span> <span class="tl-s" data-s="1036.74" data-e="1049.80">And I think one of the things we need to realize too as Protestants is that a lot of times the Catholics will try to own the early church, but that&#x27;s not true.</span> <span class="tl-s" data-s="1049.80" data-e="1049.95">They deviated.</span> <span class="tl-s" data-s="1050.04" data-e="1051.15">They deviated big time.</span> <span class="tl-s" data-s="1051.18" data-e="1053.35">These are our guys, as I heard someone say.</span> <span class="tl-s" data-s="1053.35" data-e="1055.00">These are our guys.</span> <span class="tl-s" data-s="1055.26" data-e="1057.33">They&#x27;re not the Roman Catholics, right?</span> <span class="tl-s" data-s="1057.44" data-e="1073.19">Because Roman Catholicism— if you read about the Nicene Creed and you read about the Council of Nicaea in 325, there is no Roman bishop who would become pope who would be, uh, who would be— who was ruling over this.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1073.24" data-e="1073.32">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1073.32" data-e="1075.21">So this was, this was us, right?</span> <span class="tl-s" data-s="1075.23" data-e="1083.73">And so the Roman Catholic Church, uh, jumped in and deviated and went, went sideways Um, and, you know, from [Speaker B] the Creed or from the Bible?</span> <span class="tl-s" data-s="1083.83" data-e="1085.05">But yeah, from the Bible.</span> <span class="tl-s" data-s="1085.27" data-e="1087.23">Yeah, Creed too.</span> <span class="tl-s" data-s="1087.30" data-e="1089.66">No, they believe— [Speaker B] they affirm it.</span> <span class="tl-s" data-s="1089.94" data-e="1090.65">They affirm this Creed.</span> <span class="tl-s" data-s="1090.65" data-e="1090.88">Absolutely.</span> <span class="tl-s" data-s="1091.13" data-e="1095.87">Yeah, they, they don&#x27;t— [Speaker B] Eastern Orthodox too.</span> <span class="tl-s" data-s="1095.95" data-e="1097.21">Eastern— they do, but they get weird.</span> <span class="tl-s" data-s="1097.24" data-e="1098.88">But, um, the, the, uh, the Roman Catholic Church does affirm this.</span></p>
+        <p><span class="tl-s" data-s="1099.50" data-e="1102.59">They just do not have a— they don&#x27;t understand salvation.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1102.59" data-e="1102.72">Okay.</span> <span class="tl-s" data-s="1103.15" data-e="1111.92">Um, just one more and then we can probably open it up and let&#x27;s— [Speaker A] Heather had some.</span> <span class="tl-s" data-s="1111.97" data-e="1113.14">Sorry, I couldn&#x27;t see you.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1113.62" data-e="1114.14">Oh, it&#x27;s all right.</span> <span class="tl-s" data-s="1114.14" data-e="1122.37">Um, you mentioned that we need to be listening to or reading other resources, I guess, is the, is the way to— about what it says about the Bible.</span> <span class="tl-s" data-s="1122.66" data-e="1127.88">So like you were saying, look at, look at other— I can&#x27;t remember how you worded it.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1127.88" data-e="1133.93">Thinkers, other people who&#x27;ve gone before us that they&#x27;ve thought theological thoughts before us.</span> <span class="tl-s" data-s="1134.09" data-e="1134.32">Yeah.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1134.32" data-e="1143.03">I mean, just try Googling something, even just the Nicene Creed, and it&#x27;s like There&#x27;s a lot of versions out there.</span> <span class="tl-s" data-s="1143.03" data-e="1144.08">So where&#x27;s the safety?</span> <span class="tl-s" data-s="1144.08" data-e="1147.53">Give me the safety.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1147.57" data-e="1147.79">Don&#x27;t Google.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1147.83" data-e="1148.16">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1148.16" data-e="1148.61">First.</span> <span class="tl-s" data-s="1149.13" data-e="1149.61">So don&#x27;t Google.</span> <span class="tl-s" data-s="1149.62" data-e="1158.40">And if you want a recommendation, I would look at— well, I mean, there&#x27;s a lot of good historical books that will report what happened at Nicaea.</span> <span class="tl-s" data-s="1158.45" data-e="1159.46">Read just a straight history.</span> <span class="tl-s" data-s="1159.51" data-e="1163.67">I would not Google it, and I would not look on a Catholic website.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1163.68" data-e="1165.96">Ever, or just for this?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1166.01" data-e="1175.00">That&#x27;s what kind of what I was going to get at, was that it is a different version depending on what you listen to.</span> <span class="tl-s" data-s="1175.00" data-e="1176.65">Like, some of the wording is changed.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1176.70" data-e="1179.07">There&#x27;s some of it&#x27;s translation.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1179.08" data-e="1179.45">Oh, okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1179.74" data-e="1187.58">Um, and some of it&#x27;s— I— we, we shouldn&#x27;t treat this, treat this like scripture, but we should treat this— this is true, this is theological truth, right?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1187.60" data-e="1187.76">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1187.76" data-e="1198.09">And so, like, You can buy, and I have probably 2 or 3 of these upstairs, you can buy a book of the creeds of the church and just read it straight.</span> <span class="tl-s" data-s="1198.43" data-e="1206.48">And you can actually, if you have a Kindle, you can get it on the— some of it&#x27;s in the public domain and it&#x27;s like 99 cents.</span> <span class="tl-s" data-s="1206.56" data-e="1208.09">And so read it for yourself.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1208.09" data-e="1217.46">My last follow-up is, and we don&#x27;t have to go too deep into it, but what happened in 381 AD?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1217.64" data-e="1223.04">It was more so— [Speaker B] So like ChatGPT gave me, I think, a wrong answer.</span> <span class="tl-s" data-s="1223.04" data-e="1223.77">It said it ended.</span> <span class="tl-s" data-s="1223.77" data-e="1228.16">So the Nicene Creed ended and started in 325 and didn&#x27;t finalize till 381.</span> <span class="tl-s" data-s="1228.16" data-e="1229.14">Well, they amended in 381.</span> <span class="tl-s" data-s="1229.14" data-e="1237.62">It was the— so they added something about the Holy Spirit to communicate that the Holy Spirit is equal with God as well.</span> <span class="tl-s" data-s="1237.67" data-e="1244.38">So [Speaker B] that&#x27;s the main— the main— Yeah, [Speaker A] that&#x27;s just the main idea.</span> <span class="tl-s" data-s="1244.38" data-e="1253.83">And you can follow— there&#x27;s a bunch of different There&#x27;s a bunch of different ecumenical councils, and if you&#x27;re interested in that, they&#x27;re— each one of them is essentially dealing with a heresy that affects Jesus.</span> <span class="tl-s" data-s="1254.27" data-e="1260.20">And there&#x27;s so many different of those heresies that it would be too boring, and the names are really strange.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1260.30" data-e="1267.76">So, is it fair to say that this protects against heresy and helps us hold fast to the doctrine we received by the Lord?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1267.77" data-e="1268.59">Yeah, absolutely.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1268.64" data-e="1269.54">That&#x27;s its main purpose.</span> <span class="tl-s" data-s="1269.62" data-e="1270.64">It&#x27;s [Speaker A] the main thing, right?</span> <span class="tl-s" data-s="1270.64" data-e="1270.85">Absolutely.</span> <span class="tl-s" data-s="1271.30" data-e="1274.67">And that&#x27;s part of why we use catechism, our catechism at church, right?</span> <span class="tl-s" data-s="1275.39" data-e="1277.89">So catechism is just— and it&#x27;s a Latin word to mean to teach.</span> <span class="tl-s" data-s="1277.94" data-e="1283.11">And so we don&#x27;t take the catechism and say, this is what the Bible has to say.</span> <span class="tl-s" data-s="1283.17" data-e="1287.47">It&#x27;s a distillation or summary of what the Bible says on these topics.</span></p>
+        <p><span class="tl-s" data-s="1288.71" data-e="1291.12">That&#x27;s kind of what creeds are too.</span> <span class="tl-s" data-s="1291.12" data-e="1291.34">Yeah.</span> <span class="tl-s" data-s="1291.74" data-e="1294.99">The other thing is, like, you realize that creeds ask questions.</span> <span class="tl-s" data-s="1295.12" data-e="1298.36">Creeds speak to questions people are asking in that moment.</span> <span class="tl-s" data-s="1298.42" data-e="1298.54">Yeah.</span> <span class="tl-s" data-s="1298.54" data-e="1299.88">And in that culture.</span> <span class="tl-s" data-s="1299.93" data-e="1305.79">Um, so for example, if you&#x27;re— if we&#x27;re Korean, they&#x27;re asking questions about ancestor worship.</span> <span class="tl-s" data-s="1305.79" data-e="1307.49">We&#x27;re not, right?</span> <span class="tl-s" data-s="1307.49" data-e="1312.34">So there&#x27;s no creeds that are talking about ancestor worship because we&#x27;re not asking that question, but they are.</span></p>
+        <p><span class="tl-s" data-s="1314.00" data-e="1315.92">So they&#x27;re speaking to that in their context, right?</span> <span class="tl-s" data-s="1315.92" data-e="1323.93">So each context— each context has different questions and different heresies or different mistakes, and each context needs to speak to those— speak to the truth in a way that that culture can understand.</span></p>
+        <p><span class="tl-s" data-s="1326.40" data-e="1327.28">So, no, that&#x27;s great.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1327.30" data-e="1329.07">Um, now we have some people here.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1329.38" data-e="1330.02">Yeah, we do.</span> <span class="tl-s" data-s="1330.12" data-e="1333.49">We didn&#x27;t even— I didn&#x27;t even mention that at the starting.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1333.49" data-e="1336.79">We have a live studio audience.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1337.31" data-e="1337.40">That&#x27;s right.</span> <span class="tl-s" data-s="1337.40" data-e="1339.59">Yeah, thanks for coming.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1339.59" data-e="1340.15">The remnant.</span> <span class="tl-s" data-s="1340.15" data-e="1341.04">The remnant is here.</span> <span class="tl-s" data-s="1341.09" data-e="1349.46">And, uh, I don&#x27;t know if the remnant has questions, uh, on the Nicene Creed.</span> <span class="tl-s" data-s="1349.57" data-e="1353.93">Any, any questions at all?</span> <span class="tl-s" data-s="1353.99" data-e="1355.26">All right, Caleb has a question.</span> <span class="tl-s" data-s="1355.26" data-e="1355.38">Go.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="1355.38" data-e="1362.53">What other creeds are worthy of taking [Speaker B] Good question.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1362.57" data-e="1366.81">What other creeds are worthy of taking a look at?</span></p>
+        <p><span class="tl-s" data-s="1368.19" data-e="1372.66">The Apostles&#x27; Creed, the Nicene Creed, the Athanasian Creed.</span> <span class="tl-s" data-s="1372.71" data-e="1375.20">I&#x27;d start those 3.</span> <span class="tl-s" data-s="1375.20" data-e="1380.05">They&#x27;re good, but they all have different things they&#x27;re trying to answer.</span> <span class="tl-s" data-s="1380.78" data-e="1381.47">Yeah, yeah.</span> <span class="tl-s" data-s="1381.57" data-e="1384.08">Not all councils put forth a creed.</span> <span class="tl-s" data-s="1384.39" data-e="1386.74">They put— some of them put out documents.</span> <span class="tl-s" data-s="1386.74" data-e="1387.38">But that&#x27;s good.</span> <span class="tl-s" data-s="1387.38" data-e="1388.70">Any other questions on Nicaea?</span></p>
+        <p><strong>Speaker E:</strong> <span class="tl-s" data-s="1388.82" data-e="1390.42">How long was that council?</span> <span class="tl-s" data-s="1390.57" data-e="1392.03">Did they meet over years?</span> <span class="tl-s" data-s="1392.29" data-e="1394.02">I mean, you said they amended until 381.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1394.04" data-e="1401.99">No, they finalized in 325, but they met for, I think, 2 years before it was finalized, something like that.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1402.15" data-e="1404.52">And then they came back in 381 and added stuff about the Holy Spirit.</span> <span class="tl-s" data-s="1404.54" data-e="1407.25">But ChatGPT was not correct on that.</span> <span class="tl-s" data-s="1407.26" data-e="1409.97">Who was saying it was all— [Speaker A] Which AI is not inerrant.</span> <span class="tl-s" data-s="1409.97" data-e="1411.41">It&#x27;s [Speaker B] not a theologian.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1411.43" data-e="1412.86">AI has trouble, right?</span> <span class="tl-s" data-s="1412.89" data-e="1413.93">And so, like, that&#x27;s— yeah.</span> <span class="tl-s" data-s="1413.93" data-e="1415.26">So it was a long time.</span> <span class="tl-s" data-s="1415.33" data-e="1421.68">I mean, it was a big deal to travel to Turkey where Nicaea was.</span> <span class="tl-s" data-s="1421.68" data-e="1434.45">You travel to Turkey, you have to live there for a while, and you have to, like, fight with everybody about what the Bible says, and then you go back.</span> <span class="tl-s" data-s="1434.45" data-e="1436.54">So it&#x27;s like a big deal.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1436.54" data-e="1437.14">By ship.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1437.14" data-e="1439.90">Ship or overland, or who knows?</span> <span class="tl-s" data-s="1439.96" data-e="1440.32">I mean, yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1440.37" data-e="1440.65">Exactly.</span> <span class="tl-s" data-s="1440.77" data-e="1442.30">Good question.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1442.30" data-e="1442.45">Yeah.</span> <span class="tl-s" data-s="1442.45" data-e="1442.74">Anything else?</span> <span class="tl-s" data-s="1442.85" data-e="1445.61">All right, I think we&#x27;re going to call it a night.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1445.61" data-e="1445.76">Yeah.</span> <span class="tl-s" data-s="1445.76" data-e="1452.41">Well, thank you for coming to watch our 100th episode and just hanging out with us.</span> <span class="tl-s" data-s="1452.41" data-e="1462.27">And [Speaker A] absolutely, if you have questions about Nicaea, like, this is— look up the Dan Brown quote.</span> <span class="tl-s" data-s="1462.30" data-e="1464.56">Look up the Dan Brown quote.</span> <span class="tl-s" data-s="1464.56" data-e="1465.93">That&#x27;s from The Da Vinci Code, right?</span> <span class="tl-s" data-s="1465.93" data-e="1467.21">You look up the Dan Brown quote.</span> <span class="tl-s" data-s="1467.21" data-e="1469.91">And Dan Brown says something that&#x27;s absolutely a lie.</span> <span class="tl-s" data-s="1469.94" data-e="1473.72">There&#x27;s some quote out there that speaks about the biblical canon being decided at Nicaea, and it wasn&#x27;t.</span> <span class="tl-s" data-s="1473.72" data-e="1473.85">Hmm.</span> <span class="tl-s" data-s="1473.88" data-e="1475.99">And Dan Brown has perpetuated that.</span></p>
+        <p><span class="tl-s" data-s="1475.99" data-e="1481.75">There&#x27;s an idea that there was a vote to keep books out of the Bible.</span> <span class="tl-s" data-s="1481.75" data-e="1482.79">That did not happen at Nicaea.</span> <span class="tl-s" data-s="1482.79" data-e="1485.87">The book— the Bible was set.</span> <span class="tl-s" data-s="1485.87" data-e="1495.23">And if you want to look at an early— there are early lists of what the Bible is in like the 100s.</span> <span class="tl-s" data-s="1495.23" data-e="1500.95">And so everybody by the time of 325 knew what the Bible was.</span> <span class="tl-s" data-s="1500.95" data-e="1504.13">So anyway, you&#x27;re going to hear a lot about Nicaea this year because it&#x27;s the 1,700th anniversary.</span> <span class="tl-s" data-s="1504.13" data-e="1504.95">And so check it out.</span> <span class="tl-s" data-s="1504.95" data-e="1512.27">And if you joined us here in the live studio audience, I believe Heather has some swag for you in the form of magnets.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1512.38" data-e="1515.23">Yeah, we handed those out.</span> <span class="tl-s" data-s="1515.30" data-e="1518.14">I don&#x27;t know where you&#x27;ve been, man.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1518.94" data-e="1519.92">I was probably using the restroom.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1519.97" data-e="1520.96">That&#x27;s all right.</span> <span class="tl-s" data-s="1520.96" data-e="1524.50">That&#x27;s all [Speaker A] right.</span> <span class="tl-s" data-s="1524.55" data-e="1525.08">Too much?</span> <span class="tl-s" data-s="1525.88" data-e="1526.94">All right, guys, we&#x27;re out.</span></p>
+        <p><span class="tl-s" data-s="1542.21" data-e="1542.92">Yeah, thank you.</span> <span class="tl-s" data-s="1542.93" data-e="1543.75">I can sing you a song.</span> <span class="tl-s" data-s="1543.75" data-e="1544.67">This is actually episode number 99.</span> <span class="tl-s" data-s="1544.77" data-e="1548.32">Our next episode— join us next week— will be 100.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1548.32" data-e="1548.69">100.</span> <span class="tl-s" data-s="1548.78" data-e="1549.26">All right.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1549.26" data-e="1549.30">Celebration.</span> <span class="tl-s" data-s="1549.30" data-e="1549.67">All [Speaker A] right.</span> <span class="tl-s" data-s="1549.67" data-e="1552.22">Well, thank you, everybody.</span> <span class="tl-s" data-s="1552.25" data-e="1555.64">If you have questions, shoot us an email at production@centergilbert.com.</span> <span class="tl-s" data-s="1555.64" data-e="1556.93">Until next time, see you later.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1556.98" data-e="1557.27">See ya.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1557.31" data-e="1558.95">And in fact, let&#x27;s do that now.</span> <span class="tl-s" data-s="1559.15" data-e="1568.88">I&#x27;m going to look up the Dan Brown quote.</span> <span class="tl-s" data-s="1569.32" data-e="1569.71">Me too.</span> <span class="tl-s" data-s="1569.76" data-e="1574.04">Let&#x27;s see if I can do this quickly here.</span> <span class="tl-s" data-s="1574.53" data-e="1575.89">Let&#x27;s see who can do it faster.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1577.36" data-e="1578.33">I just wrote Dan Brown quote.</span> <span class="tl-s" data-s="1578.33" data-e="1578.33">Faith is a gift that I have yet to receive.</span> <span class="tl-s" data-s="1578.33" data-e="1578.33">Dan Brown, The Da Vinci Code.</span> <span class="tl-s" data-s="1578.33" data-e="1578.33">That one?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1578.33" data-e="1578.33">No, no, that&#x27;s not.</span> <span class="tl-s" data-s="1578.33" data-e="1578.33">No, it&#x27;s— yeah, [Speaker B] I can sing in the meantime.</span> <span class="tl-s" data-s="1578.33" data-e="1578.33">No, please don&#x27;t.</span> <span class="tl-s" data-s="1578.33" data-e="1578.33">No, nobody heard a yes.</span> <span class="tl-s" data-s="1578.33" data-e="1578.33">Yeah, go.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1578.33" data-e="1578.33">Okay, and this is the stuff I edit.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1578.33" data-e="1578.33">Okay, he says</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Fixed on Jesus episode archive, backed by /api/podcast/search.
+  // Static fallback list above stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function fmtDuration(raw) {
+      if (!raw) return "";
+      var str = String(raw).trim();
+      // Anchor feeds report seconds; render as H:MM:SS or M:SS.
+      if (/^\d+$/.test(str)) {
+        var total = parseInt(str, 10);
+        var h = Math.floor(total / 3600);
+        var m = Math.floor((total % 3600) / 60);
+        var sec = total % 60;
+        var mm = (h > 0 && m < 10 ? "0" + m : "" + m);
+        var ss = (sec < 10 ? "0" + sec : "" + sec);
+        return (h > 0 ? h + ":" + mm : m) + ":" + ss;
+      }
+      // Anchor also reports clock strings like "00:24:02" — drop the
+      // redundant leading hour so it reads "24:02".
+      return str.replace(/^00:/, "");
+    }
+    function row(it) {
+      it = it || {};
+      var title = esc(it.title) || "Untitled episode";
+      var tUrl = it.guid && transcriptMap[it.guid];
+      var heading = tUrl
+        ? '<a href="' + esc(tUrl) + '">' + title + "</a>"
+        : (it.link
+          ? '<a href="' + esc(it.link) + '" target="_blank" rel="noopener">' + title + "</a>"
+          : title);
+      var meta = [fmtDate(it.date), fmtDuration(it.duration)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      return '<div class="sermon"><div><h3>' + heading + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    var PER = 10;
+    var state = { q: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No episodes found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " episode" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " episodes";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/podcast/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () {
+          // Keep the static list, but tell the reader where else to listen —
+          // some privacy blockers stop the archive request itself.
+          var note = document.querySelector("[data-sermons-error]");
+          if (note) note.hidden = false;
+        });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    if (monthSel) {
+      monthSel.addEventListener("change", function () {
+        state.month = monthSel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: 8eb99a4d-758f-4f9b-b66a-b17633e2e27c -->
+</body>
+</html>
