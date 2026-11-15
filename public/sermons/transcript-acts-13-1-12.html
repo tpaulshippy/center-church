@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acts 13: 1-12 — Sermon Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Listen to the latest sermons from Center Church, or follow along on Apple Podcasts and Spotify." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=17" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a class="active" href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/sermons">&larr; All sermons</a>
+          <h1 class="display-lg">Acts 13: 1-12</h1>
+          <p class="transcript-meta">Rich Richardson · Acts · 2026-07-19 · 00:50:24</p>
+          <p class="transcript-desc">God the Spirit sends ministers of the gospel and subdues every opposition to the gospel.</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/119cbef70/podcast/play/128974016/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-7%2F436123673-44100-2-4406daf3ff4c2a2f.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><span class="tl-s" data-s="0.22" data-e="8.48">Father in heaven, thank you for just the privilege it is to have fun, to acknowledge ways that you&#x27;re at work around us.</span> <span class="tl-s" data-s="9.20" data-e="15.28">Through singing, through prayer, through testimony, Lord, you continue to amaze us.</span> <span class="tl-s" data-s="16.34" data-e="27.30">I love that song, and can it be, because as Jonathan said this morning, we should have a fresh joy for what you&#x27;re doing, for the work that you&#x27;re doing around us, even when we don&#x27;t see it with our eyes.</span> <span class="tl-s" data-s="27.78" data-e="33.12">Lord, we know that you&#x27;re working, and this morning I pray for the preaching of your word.</span> <span class="tl-s" data-s="33.48" data-e="36.68">Help us to see your spirit at work.</span> <span class="tl-s" data-s="37.50" data-e="41.98">Lord, convict us in ways that we need conviction brought into our lives.</span> <span class="tl-s" data-s="42.41" data-e="50.52">Would you comfort those who are leaning in and pressing in, and who feel like, maybe they feel like giving up this morning.</span> <span class="tl-s" data-s="51.20" data-e="56.92">Father, I pray that people would walk away not the same that they walked in.</span></p>
+        <p><span class="tl-s" data-s="57.54" data-e="60.14">Would you change us through the preaching of your word.</span> <span class="tl-s" data-s="60.38" data-e="66.04">We believe that faith comes through the preaching of the word of Christ.</span> <span class="tl-s" data-s="66.24" data-e="72.68">So, would your people listen, lean in, and leave changed this morning.</span> <span class="tl-s" data-s="73.02" data-e="74.44">We pray in Jesus&#x27; name, amen.</span> <span class="tl-s" data-s="75.74" data-e="82.26">This weekend marks the opening weekend of Christopher Nolan&#x27;s film adaptation of The Odyssey.</span> <span class="tl-s" data-s="82.28" data-e="84.80">It&#x27;s one of the greatest stories ever told.</span> <span class="tl-s" data-s="85.42" data-e="95.26">Nearly 3,000 years after this movie, or after this poem, this epic poem, was first composed, people are still captivated by it.</span> <span class="tl-s" data-s="95.56" data-e="103.26">And I believe it&#x27;s because it contains everything instinctively that we love in a story.</span> <span class="tl-s" data-s="103.94" data-e="107.68">There&#x27;s a hero, Odysseus, who&#x27;s sent on this dangerous journey.</span> <span class="tl-s" data-s="108.22" data-e="112.54">There are perilous storms, terrifying monsters and sorcerers.</span></p>
+        <p><span class="tl-s" data-s="113.16" data-e="115.82">There&#x27;s deception by way of the Trojan horse.</span> <span class="tl-s" data-s="117.12" data-e="122.22">Sacrifices for a greater cause, revenge, and a battle between good and evil.</span> <span class="tl-s" data-s="123.50" data-e="133.46">Every scene in The Odyssey leaves us wondering whether the hero will return home safely to his beloved Penelope.</span> <span class="tl-s" data-s="134.18" data-e="137.38">It&#x27;s the kind of story that grips our imagination.</span></p>
+        <p><span class="tl-s" data-s="139.26" data-e="144.52">It&#x27;s mythology that spans different genres, and that captures hearts and minds alike.</span> <span class="tl-s" data-s="145.38" data-e="146.52">Hollywood knows this.</span> <span class="tl-s" data-s="147.12" data-e="148.30">Guys, Hollywood knows.</span> <span class="tl-s" data-s="148.42" data-e="153.30">They know the secret sauce that Homer created, and they&#x27;re trying to replicate it all the time.</span> <span class="tl-s" data-s="153.78" data-e="159.16">And so the worlds of Star Wars, Lord of the Rings, Harry Potter, they all follow this similar storyline.</span> <span class="tl-s" data-s="159.76" data-e="169.32">We love stories where unseen powers collide, and ordinary people are caught up in something bigger than themselves.</span></p>
+        <p><span class="tl-s" data-s="171.48" data-e="175.70">But friends, we&#x27;re not here to think deeply about Hollywood and movies.</span> <span class="tl-s" data-s="176.98" data-e="180.94">When Luke wrote Acts, he wasn&#x27;t writing mythology.</span> <span class="tl-s" data-s="181.88" data-e="185.84">He wasn&#x27;t trying to make us feel good and give us some great story.</span> <span class="tl-s" data-s="186.46" data-e="189.02">He was writing theological history.</span> <span class="tl-s" data-s="189.76" data-e="195.18">And in so doing, he does indeed tell one of the greatest true stories ever told.</span> <span class="tl-s" data-s="196.44" data-e="199.84">Think about what we&#x27;ve already seen and witnessed in the book of Acts.</span> <span class="tl-s" data-s="200.18" data-e="205.02">In Acts chapter 1, the risen Christ triumphantly ascends into heaven.</span></p>
+        <p><span class="tl-s" data-s="206.52" data-e="212.14">Then in Acts chapter 2, the Holy Spirit descends with power at the day of Pentecost.</span> <span class="tl-s" data-s="213.12" data-e="216.38">In Acts 4, we learned of the healing of a lame beggar.</span> <span class="tl-s" data-s="217.08" data-e="225.42">And throughout Acts, what we continue to see is the gospel expanding out from Jerusalem into Judea, Samaria.</span> <span class="tl-s" data-s="226.80" data-e="233.18">Prisons, persecutions, nothing can stop the advancement of the gospel.</span> <span class="tl-s" data-s="234.46" data-e="237.82">And now, we find ourselves in Acts 13.</span> <span class="tl-s" data-s="237.84" data-e="244.94">And for the first time, the gospel is about to move with intentionality throughout the earth.</span></p>
+        <p><span class="tl-s" data-s="246.46" data-e="248.38">This is no fictional epic.</span></p>
+        <p><span class="tl-s" data-s="250.08" data-e="263.70">This, friends, is the story of King Jesus advancing his kingdom through very ordinary people, empowered by the extraordinary spirit of God, despite any opposition.</span></p>
+        <p><span class="tl-s" data-s="265.92" data-e="271.20">Yet there is a very subtle danger for us moderns.</span></p>
+        <p><span class="tl-s" data-s="273.02" data-e="279.04">We can admire Acts and read it the way that we admire a good movie or story.</span> <span class="tl-s" data-s="279.60" data-e="283.62">We admire the courage of the apostles from afar in the face of persecution.</span> <span class="tl-s" data-s="284.56" data-e="290.24">And we&#x27;re fascinated by the miraculous work that the Spirit continues to do through the church.</span></p>
+        <p><span class="tl-s" data-s="291.86" data-e="296.02">We may even be emotionally moved by it.</span></p>
+        <p><span class="tl-s" data-s="297.60" data-e="299.62">But as soon as we&#x27;re done reading, what happens?</span> <span class="tl-s" data-s="300.68" data-e="308.44">We close our Bibles and we can walk away from this greatest of stories ever written completely unchanged.</span></p>
+        <p><span class="tl-s" data-s="311.86" data-e="320.50">Charles Taylor, a philosopher and author, he argues that modern people, us, that we&#x27;ve become what he calls buffered selves.</span> <span class="tl-s" data-s="321.22" data-e="323.24">Not buff selves, buffered selves.</span></p>
+        <p><span class="tl-s" data-s="324.90" data-e="336.68">Unlike earlier generations of people who instinctively recognized the spiritual realm, the supernatural, we&#x27;ve learned to explain nearly everything in purely naturalistic terms.</span> <span class="tl-s" data-s="336.84" data-e="337.88">What do I mean by this?</span> <span class="tl-s" data-s="337.90" data-e="346.20">Well, things that were once understood spiritually have been given psychological, sociological, and biological meaning.</span></p>
+        <p><span class="tl-s" data-s="348.10" data-e="352.00">Spiritual warfare has become psychological dysfunction.</span></p>
+        <p><span class="tl-s" data-s="353.68" data-e="356.40">Or perhaps mere human conflict.</span> <span class="tl-s" data-s="357.24" data-e="361.00">The work of the Spirit we label as fanaticism.</span></p>
+        <p><span class="tl-s" data-s="363.06" data-e="366.42">Repentance becomes self-improvement.</span></p>
+        <p><span class="tl-s" data-s="368.29" data-e="375.92">There&#x27;s a reason why almost 80% of books on the bookshelves at Barnes &amp; Nobles are about the self.</span></p>
+        <p><span class="tl-s" data-s="378.32" data-e="380.74">We haven&#x27;t necessarily denied God.</span> <span class="tl-s" data-s="381.44" data-e="382.28">It&#x27;s not the problem.</span> <span class="tl-s" data-s="383.22" data-e="388.72">We&#x27;ve simply learned to live as though the unseen world rarely interrupts our lives.</span></p>
+        <p><span class="tl-s" data-s="391.18" data-e="397.98">And so instead of seeing ourselves inside of this story in the book of Acts, we begin treating it like ancient history.</span></p>
+        <p><span class="tl-s" data-s="399.48" data-e="401.14">Or maybe even mythology.</span></p>
+        <p><span class="tl-s" data-s="403.50" data-e="406.66">We become desensitized to the spiritual world.</span> <span class="tl-s" data-s="407.26" data-e="414.98">And we forget that there are powers and principalities at work that are trying to thwart the mission of the gospel.</span></p>
+        <p><span class="tl-s" data-s="417.14" data-e="420.38">But Luke is not going to let us forget.</span></p>
+        <p><span class="tl-s" data-s="422.00" data-e="436.82">And so today, Luke reminds us that behind every advance of the gospel, with every movement the gospel takes from a church, the Holy Spirit lies right behind it.</span> <span class="tl-s" data-s="437.26" data-e="439.28">And even in front of it.</span></p>
+        <p><span class="tl-s" data-s="442.39" data-e="450.52">But also, behind every act of faithful gospel ministry, there&#x27;s a spiritual battle being waged.</span></p>
+        <p><span class="tl-s" data-s="452.44" data-e="458.48">But the good news is, over all of these conflicts reigns the risen and ascended Christ.</span></p>
+        <p><span class="tl-s" data-s="460.70" data-e="465.32">But if we&#x27;re honest, most Christians believe the gospel&#x27;s powerful.</span> <span class="tl-s" data-s="465.76" data-e="472.38">I&#x27;m sure if we took a poll here, there would be a lot of you who would say the gospel is indeed powerful.</span></p>
+        <p><span class="tl-s" data-s="475.82" data-e="480.84">But do you function, do you live as though the gospel is unstoppable?</span></p>
+        <p><span class="tl-s" data-s="484.14" data-e="488.94">What Acts 13 does, our passage this morning, is it confronts unbelief.</span> <span class="tl-s" data-s="490.04" data-e="491.50">It confronts our unbelief.</span> <span class="tl-s" data-s="491.62" data-e="497.38">It reminds us that the success of Jesus&#x27; mission, it&#x27;s never depended on us.</span> <span class="tl-s" data-s="497.90" data-e="500.88">It&#x27;s never depended on his servants.</span> <span class="tl-s" data-s="501.82" data-e="504.58">It depends upon the power of the Holy Spirit.</span> <span class="tl-s" data-s="505.26" data-e="507.20">Our big idea this morning is this.</span> <span class="tl-s" data-s="507.90" data-e="515.54">God the Spirit sends forth ministers of the gospel and subdues every opposition to the gospel.</span></p>
+        <p><span class="tl-s" data-s="517.30" data-e="524.02">Let&#x27;s read Acts chapter 13, and we&#x27;ll spend some time unpacking exactly what I mean by that.</span></p>
+        <p><span class="tl-s" data-s="526.42" data-e="532.38">This is God&#x27;s written, revealed, holy word for us this morning.</span></p>
+        <p><span class="tl-s" data-s="534.36" data-e="537.34">Acts 13, beginning at verse 1.</span> <span class="tl-s" data-s="538.30" data-e="550.92">Now, there were in the church at Antioch prophets and teachers, Barnabas, Simeon, who was called Niger, Lucius of Cyrene, Menaean, a lifelong friend of Herod the Tetrarch, and Saul.</span> <span class="tl-s" data-s="552.26" data-e="560.82">While they were worshiping the Lord and fasting, the Holy Spirit said, Set apart for me Barnabas and Saul for the work to which I&#x27;ve called them.</span> <span class="tl-s" data-s="561.84" data-e="565.60">Then after fasting and praying, they laid their hands on them and sent them off.</span> <span class="tl-s" data-s="566.78" data-e="572.58">So, being sent out by the Holy Spirit, they went down to Seleucia, and from there they sailed to Cyprus.</span> <span class="tl-s" data-s="573.10" data-e="580.04">When they arrived at Salamis, they proclaimed the word of God in the synagogues of the Jews, and they had John to assist them.</span> <span class="tl-s" data-s="581.42" data-e="589.18">When they had gone through the whole island as far as Paphos, they came upon a certain magician, a Jewish false prophet named Bar-Jesus.</span> <span class="tl-s" data-s="590.20" data-e="600.48">He was with the pro-consul, Sergius Paulus, a man of intelligence, who summoned Barnabas and Saul and sought to hear the word of God.</span></p>
+        <p><span class="tl-s" data-s="601.22" data-e="609.90">But Alemus, the magician, for that is the meaning of his, Bar-Jesus&#x27; name, opposed them, seeking to turn the pro-consul away from the faith.</span> <span class="tl-s" data-s="611.02" data-e="629.92">But Saul, who was also called Paul, filled with the Holy Spirit, looked intently at him and said, You son of the devil, you enemy of all righteousness, full of all deceit and villainy, will you not stop making crooked the straight paths of the Lord?</span> <span class="tl-s" data-s="630.80" data-e="638.16">And now, behold, the hand of the Lord is upon you, and you will be blind and unable to see the sun for a time.</span></p>
+        <p><span class="tl-s" data-s="639.60" data-e="645.78">Immediately mist and darkness fell upon him, and he went about seeking people to lead him by the hand.</span></p>
+        <p><span class="tl-s" data-s="647.56" data-e="655.26">Then the pro-consul believed when he saw what had occurred, for he was astonished at the teaching of the Lord.</span> <span class="tl-s" data-s="656.44" data-e="659.92">Our first point this morning is the Spirit sends his servants.</span></p>
+        <p><span class="tl-s" data-s="662.96" data-e="671.84">What Luke does at the beginning of this chapter is he simply opens the doors to a local church, and he invites us to take a peek inside.</span></p>
+        <p><span class="tl-s" data-s="673.30" data-e="674.14">I mean, look at verse 1.</span> <span class="tl-s" data-s="674.36" data-e="676.94">He uses these very mundane details.</span> <span class="tl-s" data-s="677.18" data-e="684.58">Now, there were in the church, at Antioch, prophets and teachers, and so on and so forth.</span> <span class="tl-s" data-s="684.60" data-e="689.90">But first, what he does is he introduces us to five men from these remarkably different backgrounds.</span> <span class="tl-s" data-s="691.26" data-e="701.16">Barnabas, who came from Cyprus, Saul from Tarsus, Simeon from North Africa, Lucius from Cyrene, and Menaean, who had grown up in King Herod&#x27;s royal court.</span></p>
+        <p><span class="tl-s" data-s="703.82" data-e="720.14">And so what we see is the gospel had gathered people from very different upbringings, very different regions of the known world at the time, very different social classes, and even different ethnicities, into one local church.</span></p>
+        <p><span class="tl-s" data-s="721.70" data-e="729.72">You see, the gospel, the good news of Christ our King, it has the power to bring unity.</span> <span class="tl-s" data-s="730.76" data-e="736.52">It has the power to bring people together who have no other reason to be joined together.</span></p>
+        <p><span class="tl-s" data-s="738.38" data-e="745.22">The one thing that these men shared in common was the spirit of the risen and ascended Christ.</span> <span class="tl-s" data-s="746.60" data-e="753.64">But I don&#x27;t believe Luke just wants to emphasize the diversity of this local church.</span> <span class="tl-s" data-s="754.16" data-e="756.10">I think there&#x27;s more he wants us to see.</span> <span class="tl-s" data-s="756.66" data-e="760.34">One thing he wants us to see is the maturity of this church.</span> <span class="tl-s" data-s="761.12" data-e="766.36">This was a group of people, a gathering of believers who had multiple faithful teachers.</span> <span class="tl-s" data-s="766.92" data-e="769.14">I mean, we&#x27;re told that there were prophets and teachers.</span></p>
+        <p><span class="tl-s" data-s="773.88" data-e="777.26">These were men who were shepherding God&#x27;s people with God&#x27;s word.</span> <span class="tl-s" data-s="778.26" data-e="785.00">Now, it shouldn&#x27;t surprise us because throughout Acts, the spirit of God never works independently of the word.</span> <span class="tl-s" data-s="785.40" data-e="792.40">There&#x27;s always the spirit moving, so we see miracles, and then we see teaching accompanied by the spirit moving.</span></p>
+        <p><span class="tl-s" data-s="794.82" data-e="797.04">The spirit inspired the scriptures.</span> <span class="tl-s" data-s="797.76" data-e="803.44">And so this same spirit delights to use those same scriptures to mature his church.</span> <span class="tl-s" data-s="804.60" data-e="809.12">But what churches sometimes do is they create a false dichotomy.</span> <span class="tl-s" data-s="810.08" data-e="811.92">They place a wedge between the two.</span> <span class="tl-s" data-s="812.10" data-e="819.88">Some well-meaning churches emphasize the movement and gifts of the Holy Spirit at the expense of teaching sound doctrine.</span> <span class="tl-s" data-s="820.92" data-e="832.84">Then, on the other side, there are churches who emphasize teaching only sound doctrine while acting as though dependence upon the Holy Spirit is unnecessary.</span></p>
+        <p><span class="tl-s" data-s="836.18" data-e="839.42">Luke does not want to give in to this division.</span> <span class="tl-s" data-s="840.58" data-e="843.24">Where the spirit works, God&#x27;s word is treasured.</span> <span class="tl-s" data-s="843.72" data-e="848.52">Where God&#x27;s word is proclaimed, the spirit delights to move and work.</span></p>
+        <p><span class="tl-s" data-s="850.96" data-e="864.06">Healthy churches are categorized by both faithful teaching from the pulpit on a Sunday and the work of the spirit in their midst.</span></p>
+        <p><span class="tl-s" data-s="866.06" data-e="869.50">Then, Luke tells us something very shocking.</span> <span class="tl-s" data-s="870.90" data-e="877.48">This very healthy church in Antioch is willing to part with its two very best leaders.</span></p>
+        <p><span class="tl-s" data-s="879.10" data-e="891.20">The church here in Antioch, this church nearly 2,000 years old or 2,000 years ago understood something we forget.</span></p>
+        <p><span class="tl-s" data-s="894.42" data-e="897.64">The church doesn&#x27;t exist to keep its best.</span> <span class="tl-s" data-s="899.02" data-e="902.60">The church exists to send the best.</span></p>
+        <p><span class="tl-s" data-s="905.72" data-e="907.12">Why do they send their best?</span> <span class="tl-s" data-s="907.64" data-e="909.72">Is the next appropriate question for us to ask.</span> <span class="tl-s" data-s="909.84" data-e="911.26">Look at verses 2-4.</span> <span class="tl-s" data-s="911.56" data-e="919.92">It says, While they were worshiping the Lord and fasting, the Holy Spirit said, Set apart for me Barnabas and Saul for the work to which I&#x27;ve called them.</span> <span class="tl-s" data-s="921.04" data-e="924.20">And then, so being sent out by the Holy Spirit, they went.</span></p>
+        <p><span class="tl-s" data-s="926.24" data-e="930.32">We need to notice who dominates this passage here.</span> <span class="tl-s" data-s="931.72" data-e="933.40">Is it the leaders of the church?</span></p>
+        <p><span class="tl-s" data-s="936.22" data-e="939.66">I think the text, it gives us some very clear clues.</span> <span class="tl-s" data-s="939.79" data-e="944.16">It says, The Holy Spirit speaks, calls, sends.</span></p>
+        <p><span class="tl-s" data-s="946.44" data-e="955.18">Yes, sure, the church gathers to pray and it fasts and it lays its hands on Barnabas and Saul, but the church isn&#x27;t coming up with the mission.</span> <span class="tl-s" data-s="955.94" data-e="960.86">The church isn&#x27;t getting together, strategizing, thinking, okay, what do we do, guys?</span></p>
+        <p><span class="tl-s" data-s="963.60" data-e="969.46">What it&#x27;s doing is it&#x27;s pursuing the mission that Jesus has already set before them.</span></p>
+        <p><span class="tl-s" data-s="971.52" data-e="974.50">That&#x27;s exactly how ministry works today.</span></p>
+        <p><span class="tl-s" data-s="976.08" data-e="978.86">We don&#x27;t manufacture God&#x27;s call.</span> <span class="tl-s" data-s="980.04" data-e="982.10">We only recognize it.</span> <span class="tl-s" data-s="982.88" data-e="989.62">That&#x27;s why when we ordain pastors in sovereign grace, I love it because we&#x27;re not making someone a shepherd.</span> <span class="tl-s" data-s="989.74" data-e="998.02">We&#x27;re not pronouncing someone a shepherd on that Sunday when we ordain and install that man to the office of pastor.</span> <span class="tl-s" data-s="999.22" data-e="1004.32">What we&#x27;re doing is we&#x27;re acknowledging what the good shepherd has already done in that man.</span> <span class="tl-s" data-s="1005.46" data-e="1007.72">He&#x27;s already called and equipped the man.</span> <span class="tl-s" data-s="1007.88" data-e="1015.52">We&#x27;re affirming what the Spirit has already done in giving that man, that faithful shepherd, the heart of a shepherd.</span> <span class="tl-s" data-s="1016.04" data-e="1020.30">We&#x27;re not just bestowing upon a man a title.</span> <span class="tl-s" data-s="1021.30" data-e="1033.92">We&#x27;re recognizing the man is already shepherding people. the mission begins with God&#x27;s initiative.</span> <span class="tl-s" data-s="1035.02" data-e="1035.58">Always.</span></p>
+        <p><span class="tl-s" data-s="1036.58" data-e="1039.88">It&#x27;s because the mission belongs to God.</span></p>
+        <p><span class="tl-s" data-s="1041.32" data-e="1043.08">And friends, that should encourage us.</span> <span class="tl-s" data-s="1044.44" data-e="1047.48">That should be a deep encouragement to our souls.</span> <span class="tl-s" data-s="1047.98" data-e="1053.42">If the mission depended upon us, we&#x27;d have every reason to fear.</span> <span class="tl-s" data-s="1054.53" data-e="1061.54">For those of you from the northern parts of the states, we would be hosed if the mission depended upon us.</span></p>
+        <p><span class="tl-s" data-s="1064.02" data-e="1074.50">But if God is the one who initiates the mission, we can rest in knowing he will accomplish the work he intends to accomplish.</span> <span class="tl-s" data-s="1075.64" data-e="1085.00">The church can collectively move forward with confidence because Christ is the one who builds his church and he does so by his spirit.</span></p>
+        <p><span class="tl-s" data-s="1086.74" data-e="1090.16">Now in this passage, there&#x27;s another detail we don&#x27;t want to miss.</span> <span class="tl-s" data-s="1090.72" data-e="1095.24">Verse 2 says, all of this happened while they were worshiping the Lord and fasting.</span></p>
+        <p><span class="tl-s" data-s="1097.38" data-e="1103.60">This mission that was received by the church in the Antioch, it was born in worship.</span> <span class="tl-s" data-s="1104.88" data-e="1107.60">It was born as they gathered together.</span> <span class="tl-s" data-s="1108.94" data-e="1114.64">Friends, this is why being meaningfully connected to a local body of believers is so important.</span></p>
+        <p><span class="tl-s" data-s="1117.12" data-e="1120.04">God moves when his people gather together.</span> <span class="tl-s" data-s="1121.36" data-e="1126.74">That&#x27;s why the writer of the Hebrews says, do not forsake the assembly of believers.</span> <span class="tl-s" data-s="1127.32" data-e="1129.88">It&#x27;s because the Lord wants to do something.</span> <span class="tl-s" data-s="1130.74" data-e="1131.86">The Lord isn&#x27;t passive.</span> <span class="tl-s" data-s="1133.10" data-e="1135.16">The Lord isn&#x27;t just maintaining a mission.</span> <span class="tl-s" data-s="1135.52" data-e="1137.20">The Lord is always active.</span></p>
+        <p><span class="tl-s" data-s="1138.84" data-e="1140.46">The Lord is always moving.</span> <span class="tl-s" data-s="1141.12" data-e="1144.06">And so we as his people need to gather.</span> <span class="tl-s" data-s="1144.86" data-e="1145.70">It&#x27;s so important.</span></p>
+        <p><span class="tl-s" data-s="1149.00" data-e="1152.58">This was a church that was gathering.</span> <span class="tl-s" data-s="1152.74" data-e="1161.22">And when they gathered, they prayed, Lord, how can we make Christ and his glory more manifest in the world?</span> <span class="tl-s" data-s="1161.88" data-e="1169.20">How can we declare his goodness to the people around us? how can we participate in this mission?</span></p>
+        <p><span class="tl-s" data-s="1171.94" data-e="1177.04">John Piper once wrote, missions exist because worship doesn&#x27;t.</span></p>
+        <p><span class="tl-s" data-s="1179.84" data-e="1188.86">What he says there is that the church should send missionaries and plant churches because the supreme delight of Christians everywhere is worship.</span> <span class="tl-s" data-s="1189.70" data-e="1193.24">It should be the thing we get most pumped up about on a Sunday morning.</span> <span class="tl-s" data-s="1193.76" data-e="1197.26">I am going to the house of the Lord to worship with the saints.</span> <span class="tl-s" data-s="1198.24" data-e="1199.30">This is our heartbeat.</span> <span class="tl-s" data-s="1199.50" data-e="1200.48">This is our mission.</span></p>
+        <p><span class="tl-s" data-s="1202.02" data-e="1206.52">And if there are places where this doesn&#x27;t exist, Lord, send me there.</span> <span class="tl-s" data-s="1207.14" data-e="1208.28">That&#x27;s where I want to be.</span> <span class="tl-s" data-s="1208.40" data-e="1209.38">That&#x27;s where I want to go.</span> <span class="tl-s" data-s="1209.96" data-e="1213.84">I want to help other people worship the risen and ascended Christ.</span> <span class="tl-s" data-s="1215.06" data-e="1216.84">That changes how we pray, friends.</span> <span class="tl-s" data-s="1217.32" data-e="1221.90">It changes the nature of our prayers, the DNA of what we pray.</span> <span class="tl-s" data-s="1222.92" data-e="1228.04">Most of us, we naturally pray for comfort, for the health of our loved ones.</span> <span class="tl-s" data-s="1228.16" data-e="1233.64">Maybe you have an ailment and you pray for those things, and those are good gifts to ask the Lord for.</span></p>
+        <p><span class="tl-s" data-s="1235.72" data-e="1242.34">But here in Acts, this church, this church in Antioch, it shows us how to pray bigger prayers.</span></p>
+        <p><span class="tl-s" data-s="1244.28" data-e="1246.70">It was a church that was praying, Lord, use me.</span> <span class="tl-s" data-s="1247.38" data-e="1247.94">Send me.</span> <span class="tl-s" data-s="1248.98" data-e="1249.72">Send our best.</span> <span class="tl-s" data-s="1249.86" data-e="1251.80">Send out laborers into the harvest.</span></p>
+        <p><span class="tl-s" data-s="1253.32" data-e="1261.30">It did this because healthy churches know that nothing ultimately belongs to them.</span></p>
+        <p><span class="tl-s" data-s="1263.26" data-e="1270.82">Not people, not their leaders, not their ministries or their resources.</span> <span class="tl-s" data-s="1271.19" data-e="1273.70">Everything we have belongs to Jesus.</span> <span class="tl-s" data-s="1274.26" data-e="1283.14">So everything, friends, when I say everything, I mean everything, belongs to the risen and ascended Christ.</span> <span class="tl-s" data-s="1283.68" data-e="1284.84">It&#x27;s all His.</span> <span class="tl-s" data-s="1285.72" data-e="1288.06">We&#x27;re merely stewards of what He gives us.</span></p>
+        <p><span class="tl-s" data-s="1289.50" data-e="1297.76">And if this is how we live, then all of us, we&#x27;re going to be very willing, compelled even, to give our very best to this mission.</span></p>
+        <p><span class="tl-s" data-s="1299.16" data-e="1301.84">I mean, look who the Spirit sends.</span> <span class="tl-s" data-s="1302.86" data-e="1303.68">Look who He chooses.</span> <span class="tl-s" data-s="1304.18" data-e="1316.58">Barnabas, the encourager, the son of encouragement, the one who goes into this church when it was just a fledgling young church and started identifying evidences of God&#x27;s grace all over the place.</span> <span class="tl-s" data-s="1317.34" data-e="1322.92">These were new believers, and he was saying, friend, I see the Lord at work in your life.</span></p>
+        <p><span class="tl-s" data-s="1324.98" data-e="1326.98">Who wants to give up a guy like that?</span> <span class="tl-s" data-s="1327.64" data-e="1328.44">Not me.</span> <span class="tl-s" data-s="1329.24" data-e="1336.00">And then you had Saul, the Hebrew of Hebrews, trained under the school of Gamaliel.</span> <span class="tl-s" data-s="1336.38" data-e="1337.76">This guy knew his stuff.</span> <span class="tl-s" data-s="1337.86" data-e="1340.14">He was teaching Bible studies every day.</span> <span class="tl-s" data-s="1340.78" data-e="1342.02">We&#x27;re going to send him?</span></p>
+        <p><span class="tl-s" data-s="1344.68" data-e="1346.54">This is a terrible business model.</span> <span class="tl-s" data-s="1347.18" data-e="1349.28">If you have an MBA, you know this.</span> <span class="tl-s" data-s="1349.52" data-e="1350.94">You don&#x27;t want to give up your best.</span> <span class="tl-s" data-s="1351.54" data-e="1355.82">You want to deploy your best in your business to do their work.</span></p>
+        <p><span class="tl-s" data-s="1358.04" data-e="1361.00">But following Jesus is always costly.</span> <span class="tl-s" data-s="1361.62" data-e="1363.46">It always costs us something.</span> <span class="tl-s" data-s="1364.34" data-e="1368.26">God rarely asks his people to give away what they won&#x27;t miss.</span> <span class="tl-s" data-s="1369.26" data-e="1373.88">He&#x27;s not going to ask you to give up something that you won&#x27;t miss.</span></p>
+        <p><span class="tl-s" data-s="1375.30" data-e="1378.74">Faithfulness and obedience to the mission, it always costs us.</span> <span class="tl-s" data-s="1379.20" data-e="1380.34">It&#x27;s always costly.</span></p>
+        <p><span class="tl-s" data-s="1383.74" data-e="1391.14">Friends, our prayers should always be, where does Jesus want to send me?</span></p>
+        <p><span class="tl-s" data-s="1394.56" data-e="1399.66">It doesn&#x27;t necessarily mean another country or state or city in the valley.</span></p>
+        <p><span class="tl-s" data-s="1401.12" data-e="1413.54">For some of you, it means walking next door to your neighbor&#x27;s house, sitting down with them, sharing a meal with them.</span></p>
+        <p><span class="tl-s" data-s="1415.06" data-e="1424.98">For others of us, it might mean walking across the office and talking to a coworker who needs to hear the message of hope because they look like they need a little bit of hope.</span></p>
+        <p><span class="tl-s" data-s="1429.30" data-e="1433.44">Others here, it might mean talking to a family member.</span></p>
+        <p><span class="tl-s" data-s="1435.08" data-e="1440.80">The one that continues to reject you at every turn when you bring up the gospel message.</span></p>
+        <p><span class="tl-s" data-s="1445.50" data-e="1449.54">The safest place for us spiritually is never the place of our greatest comfort.</span></p>
+        <p><span class="tl-s" data-s="1451.26" data-e="1459.32">Never. it&#x27;s always the safest place for us is always the place of greatest obedience.</span> <span class="tl-s" data-s="1460.60" data-e="1463.18">Trusting in the Lord and where he will lead us.</span> <span class="tl-s" data-s="1463.70" data-e="1469.18">And often in the Christian life, he&#x27;s going to lead us directly into enemy territory.</span></p>
+        <p><span class="tl-s" data-s="1471.98" data-e="1484.46">Which then raises the question that Luke presents us with in the rest of the passage. if Christ sends his servants out into enemy territory, what happens when we meet with the enemy?</span></p>
+        <p><span class="tl-s" data-s="1486.68" data-e="1487.16">Second point.</span></p>
+        <p><span class="tl-s" data-s="1488.76" data-e="1490.46">I kind of spoil it for you.</span> <span class="tl-s" data-s="1490.56" data-e="1492.36">The Spirit subdues every opposition.</span> <span class="tl-s" data-s="1492.96" data-e="1493.86">It&#x27;s what he does.</span></p>
+        <p><span class="tl-s" data-s="1495.26" data-e="1504.58">One of the most unmistakable patterns throughout this book is wherever the gospel goes, opposition is there.</span></p>
+        <p><span class="tl-s" data-s="1506.20" data-e="1507.56">We&#x27;ve seen it already.</span> <span class="tl-s" data-s="1508.38" data-e="1510.64">Peter preached a sermon and he gets arrested.</span> <span class="tl-s" data-s="1511.06" data-e="1512.58">Stephen preaches and what happens to him?</span> <span class="tl-s" data-s="1512.64" data-e="1513.74">He loses his life.</span></p>
+        <p><span class="tl-s" data-s="1515.86" data-e="1521.84">The gospel goes to Samaria and it&#x27;s met by Simon Magus who wants to buy the Spirit.</span> <span class="tl-s" data-s="1523.02" data-e="1525.24">Peter eats with the Gentiles and what happens?</span> <span class="tl-s" data-s="1525.56" data-e="1526.70">Conflict in the church.</span></p>
+        <p><span class="tl-s" data-s="1528.70" data-e="1532.98">And now Barnabas and Saul begin the first missionary journey.</span></p>
+        <p><span class="tl-s" data-s="1534.84" data-e="1537.60">And immediately Luke presents us with another enemy.</span></p>
+        <p><span class="tl-s" data-s="1539.02" data-e="1541.32">He should recalibrate our expectations.</span> <span class="tl-s" data-s="1542.38" data-e="1545.96">Sometimes we assume opposition means something has gone wrong in life.</span></p>
+        <p><span class="tl-s" data-s="1547.80" data-e="1549.40">Luke tells us just the opposite.</span></p>
+        <p><span class="tl-s" data-s="1551.56" data-e="1557.06">Often opposition is just evidence that you&#x27;re doing the right thing.</span></p>
+        <p><span class="tl-s" data-s="1560.16" data-e="1566.28">Satan Satan doesn&#x27;t waste resources opposing churches that pose no threat to the kingdom of darkness.</span> <span class="tl-s" data-s="1567.30" data-e="1571.32">He opposes churches and Christians that want to advance the mission.</span> <span class="tl-s" data-s="1571.96" data-e="1573.08">It&#x27;s what he does.</span></p>
+        <p><span class="tl-s" data-s="1575.68" data-e="1576.42">I mean, think about it.</span> <span class="tl-s" data-s="1576.44" data-e="1586.02">If you&#x27;ve decided in this new year to start leading your family in family worship or you&#x27;re leading your wife spiritually, you want to pray every night before bedtime.</span> <span class="tl-s" data-s="1587.36" data-e="1602.28">Don&#x27;t be surprised if temptation despair seems to increase or if you&#x27;ve determined this year to share Christ more intentionally with a loved one or a friend.</span> <span class="tl-s" data-s="1602.82" data-e="1610.10">Don&#x27;t be surprised when that conversation becomes uncomfortable for you or they reject you altogether.</span></p>
+        <p><span class="tl-s" data-s="1612.08" data-e="1622.14">If our church continues planting churches, which is something we want to do, it&#x27;s our heartbeat, it&#x27;s our desire, we shouldn&#x27;t expect less opposition here.</span> <span class="tl-s" data-s="1623.34" data-e="1624.92">In fact, we should expect more.</span> <span class="tl-s" data-s="1626.20" data-e="1634.08">We should expect Satan at every turn seeking to oppose us and the territory we want to take in his kingdom.</span> <span class="tl-s" data-s="1635.06" data-e="1640.48">Not because Satan is going to win, but because the gospel is advancing.</span></p>
+        <p><span class="tl-s" data-s="1642.42" data-e="1651.82">Paul later writes to the Ephesian church, we don&#x27;t wrestle against flesh and blood, but against the rulers, the authorities, the powers over this present darkness.</span></p>
+        <p><span class="tl-s" data-s="1654.48" data-e="1658.70">And this passage gives us a window into that battle.</span> <span class="tl-s" data-s="1659.42" data-e="1662.04">It&#x27;s what happens here in this scene.</span> <span class="tl-s" data-s="1662.20" data-e="1663.12">Look at verse 6.</span></p>
+        <p><span class="tl-s" data-s="1665.34" data-e="1672.40">It says, When they had gone through the whole island, as far as Paphos, they came upon a certain magician, a Jewish false prophet named Bar-Jesus.</span></p>
+        <p><span class="tl-s" data-s="1675.02" data-e="1680.08">Luke introduces him with three descriptions that are kind of funny, Jewish, a magician, and a false prophet.</span> <span class="tl-s" data-s="1680.94" data-e="1685.86">Before we know anything else about him, Luke wants us to know exactly who this guy is.</span></p>
+        <p><span class="tl-s" data-s="1688.90" data-e="1690.70">And then he tells us his name, Bar-Jesus.</span> <span class="tl-s" data-s="1691.26" data-e="1694.20">That literally means the son of salvation.</span></p>
+        <p><span class="tl-s" data-s="1695.96" data-e="1696.76">It&#x27;s ironic.</span> <span class="tl-s" data-s="1697.10" data-e="1699.00">It&#x27;s dripping with irony here.</span> <span class="tl-s" data-s="1699.10" data-e="1702.98">The irony is that everything about this guy is fake.</span> <span class="tl-s" data-s="1703.62" data-e="1704.70">He&#x27;s false.</span> <span class="tl-s" data-s="1705.48" data-e="1707.62">He isn&#x27;t leading people to salvation.</span> <span class="tl-s" data-s="1708.86" data-e="1711.32">He&#x27;s actively opposing it.</span></p>
+        <p><span class="tl-s" data-s="1712.94" data-e="1716.06">He has the appearance of religion.</span></p>
+        <p><span class="tl-s" data-s="1718.04" data-e="1720.66">That&#x27;s why Luke tells us he was Jewish.</span> <span class="tl-s" data-s="1721.96" data-e="1725.84">He belonged to the covenant people of God on the outside.</span> <span class="tl-s" data-s="1727.02" data-e="1730.18">He knew the religious language to say.</span> <span class="tl-s" data-s="1731.04" data-e="1733.70">He possessed even religious credibility.</span> <span class="tl-s" data-s="1734.74" data-e="1737.70">Yet he opposed God and the gospel.</span></p>
+        <p><span class="tl-s" data-s="1741.18" data-e="1751.58">Bar-Jesus thinking, he was presenting himself as one that belonged to the covenant people of God outwardly, actually belonged to the devil inwardly.</span></p>
+        <p><span class="tl-s" data-s="1755.00" data-e="1756.02">This should sober us.</span> <span class="tl-s" data-s="1757.40" data-e="1759.66">This is a sobering reality.</span></p>
+        <p><span class="tl-s" data-s="1761.18" data-e="1768.06">What it does is it reminds us that proximity to religion is not the same thing as belonging to Jesus.</span> <span class="tl-s" data-s="1769.30" data-e="1782.52">Young person, I want to talk to you, those of you that went to youth camp, and maybe you didn&#x27;t, just because you grew up in a Christian home does not mean that you have faith, keeping with repentance.</span></p>
+        <p><span class="tl-s" data-s="1784.84" data-e="1790.30">Just because you spend time with other Christians, it does not mean you&#x27;re a Christian.</span></p>
+        <p><span class="tl-s" data-s="1793.90" data-e="1795.22">It should sober us.</span></p>
+        <p><span class="tl-s" data-s="1797.92" data-e="1804.22">I mean, who was it that most fiercely opposed Jesus during his earthly ministry?</span> <span class="tl-s" data-s="1805.18" data-e="1831.18">It wasn&#x27;t the prostitutes, it wasn&#x27;t the tax collectors, it was the religious people, the Pharisees, people who knew the scriptures, people who thought they were presenting something outwardly, but were something altogether different inwardly. people who appeared morally respectable and who were convinced that they were serving God, but they were rejecting him.</span></p>
+        <p><span class="tl-s" data-s="1835.12" data-e="1839.32">The greatest danger to the church, it&#x27;s never been unbelief for atheism.</span> <span class="tl-s" data-s="1839.76" data-e="1841.92">That&#x27;s not the greatest danger to the church.</span></p>
+        <p><span class="tl-s" data-s="1843.76" data-e="1848.56">The greatest danger is counterfeit belief, counterfeit faith.</span> <span class="tl-s" data-s="1849.80" data-e="1859.26">That&#x27;s what Bar Jesus represents to us. counterfeit money is dangerous because it looks like the real thing.</span> <span class="tl-s" data-s="1859.36" data-e="1861.08">If you get caught with it, guess what?</span> <span class="tl-s" data-s="1861.34" data-e="1861.94">You&#x27;re in trouble.</span></p>
+        <p><span class="tl-s" data-s="1863.92" data-e="1865.34">The same thing is true spiritually.</span> <span class="tl-s" data-s="1866.66" data-e="1870.54">False teaching never tells us to reject Jesus.</span></p>
+        <p><span class="tl-s" data-s="1873.90" data-e="1890.90">Instead, false teaching says Jesus is good, but you need something more. false teaching says to us grace is okay, it&#x27;s all right, but you need to earn God&#x27;s acceptance.</span></p>
+        <p><span class="tl-s" data-s="1893.92" data-e="1896.60">False teaching lies to us and says scripture is helpful.</span></p>
+        <p><span class="tl-s" data-s="1898.34" data-e="1903.08">Certainly there are some parts of it that are true, but your feelings are equally authoritative.</span></p>
+        <p><span class="tl-s" data-s="1906.50" data-e="1915.00">False teaching tempts us to believe that Christ surely he&#x27;s sufficient, but fulfillment must be found elsewhere.</span></p>
+        <p><span class="tl-s" data-s="1918.68" data-e="1925.58">Friends, anything added to the gospel will eventually replace Jesus and cause us to reject him.</span></p>
+        <p><span class="tl-s" data-s="1927.80" data-e="1935.78">But the true gospel, the glorious gospel of Jesus Christ declares to us always that Jesus is enough.</span> <span class="tl-s" data-s="1936.84" data-e="1937.54">He&#x27;s enough.</span></p>
+        <p><span class="tl-s" data-s="1940.48" data-e="1950.32">Luke then takes us from this scene with this enemy into the governor&#x27;s residence, the proconsul, Sergius Paulus.</span> <span class="tl-s" data-s="1950.87" data-e="1954.38">Enter Sergius Paulus, the highest ranking official on the island.</span> <span class="tl-s" data-s="1955.56" data-e="1956.78">This guy was the bee&#x27;s knees.</span></p>
+        <p><span class="tl-s" data-s="1959.94" data-e="1962.70">Imagine being in Paul&#x27;s sandals, his footwear.</span> <span class="tl-s" data-s="1963.98" data-e="1965.70">He wasn&#x27;t wearing shoes, he didn&#x27;t own Nikes.</span></p>
+        <p><span class="tl-s" data-s="1967.32" data-e="1973.86">But everything here that&#x27;s presented to us appears stacked against Paul and Barnabas.</span></p>
+        <p><span class="tl-s" data-s="1975.64" data-e="1991.86">We have the highest political authority in the land, there&#x27;s religious deception by way of Bar-Jesus, the spiritual opposition that they were receiving, but then Luke includes one phrase that should change our perspective about evangelism.</span></p>
+        <p><span class="tl-s" data-s="1994.52" data-e="2007.46">It says that the proconsul desired to hear the word of God. before Barnabas or Paul do anything on this island, God was already working.</span></p>
+        <p><span class="tl-s" data-s="2010.94" data-e="2014.70">Before Elimus opposes the missionary&#x27;s work, God is working.</span> <span class="tl-s" data-s="2016.06" data-e="2018.68">You see, the governor, he wants to hear.</span> <span class="tl-s" data-s="2019.78" data-e="2021.06">He wants to hear the good news.</span></p>
+        <p><span class="tl-s" data-s="2023.18" data-e="2030.70">How can this be? it&#x27;s because no one seeks God unless Jesus draws them.</span></p>
+        <p><span class="tl-s" data-s="2033.54" data-e="2039.10">Long before Barnabas arrived on Cyprus, the Holy Spirit was preparing his heart.</span> <span class="tl-s" data-s="2040.40" data-e="2041.48">That&#x27;s encouraging.</span> <span class="tl-s" data-s="2041.68" data-e="2048.64">I think that sometimes we feel, maybe without even realizing it, that evangelism depends entirely upon us.</span> <span class="tl-s" data-s="2049.40" data-e="2051.40">I&#x27;m here to remind you, it doesn&#x27;t.</span> <span class="tl-s" data-s="2051.96" data-e="2053.30">It doesn&#x27;t depend on you.</span> <span class="tl-s" data-s="2053.88" data-e="2056.00">The Spirit goes before his people.</span></p>
+        <p><span class="tl-s" data-s="2058.76" data-e="2063.32">Perhaps you&#x27;ve decided that someone in your life is beyond belief.</span></p>
+        <p><span class="tl-s" data-s="2065.46" data-e="2071.56">Maybe it&#x27;s a son, maybe a daughter, maybe a sibling, maybe a spouse.</span> <span class="tl-s" data-s="2072.00" data-e="2073.52">I don&#x27;t know who that is for you.</span></p>
+        <p><span class="tl-s" data-s="2075.46" data-e="2077.46">Maybe it&#x27;s a co-worker that you&#x27;ve given up hope for.</span> <span class="tl-s" data-s="2078.46" data-e="2081.68">Someone who&#x27;s rejected every conversation about Jesus Christ.</span> <span class="tl-s" data-s="2082.60" data-e="2084.12">We all have that one person.</span></p>
+        <p><span class="tl-s" data-s="2087.10" data-e="2089.62">This passage rebukes our unbelief.</span></p>
+        <p><span class="tl-s" data-s="2091.98" data-e="2094.38">It tells us, don&#x27;t believe that.</span> <span class="tl-s" data-s="2095.74" data-e="2105.12">Who would have predicted that the Roman governor, someone steeped in paganism, worshiping false deities, would become interested in hearing the gospel?</span> <span class="tl-s" data-s="2106.18" data-e="2118.44">Certainly not Barnabas, not Saul, or Paul, certainly not the church in Antioch, but the triune God of the universe was already drawing him before they even met him.</span></p>
+        <p><span class="tl-s" data-s="2120.02" data-e="2125.22">That means, friends, we never know what God is doing behind the scenes in someone&#x27;s heart.</span></p>
+        <p><span class="tl-s" data-s="2126.82" data-e="2129.06">We don&#x27;t know what&#x27;s taking place.</span></p>
+        <p><span class="tl-s" data-s="2130.86" data-e="2136.80">Our responsibility is not to conjure up and produce salvation in other people.</span> <span class="tl-s" data-s="2138.08" data-e="2145.14">Our responsibility is to proclaim Christ, him crucified, and see what the Spirit does.</span></p>
+        <p><span class="tl-s" data-s="2148.56" data-e="2152.46">Well, now, this passage reaches its fullest climax.</span> <span class="tl-s" data-s="2152.94" data-e="2159.32">Verse 8 says, But Elimus the magician opposed them, seeking to turn away the proconsul from the faith.</span></p>
+        <p><span class="tl-s" data-s="2161.85" data-e="2167.68">Then, Luke does this thing where he changes his name. he no longer calls him Bar-Jesus.</span> <span class="tl-s" data-s="2168.32" data-e="2169.82">He calls him Elimus.</span> <span class="tl-s" data-s="2170.70" data-e="2171.46">Elimus.</span></p>
+        <p><span class="tl-s" data-s="2174.24" data-e="2177.54">Luke is pulling down the mask for us.</span></p>
+        <p><span class="tl-s" data-s="2179.70" data-e="2182.50">He&#x27;s showing us who this guy really is.</span> <span class="tl-s" data-s="2183.88" data-e="2189.24">He&#x27;s an enemy of righteousness, an enemy of the gospel.</span> <span class="tl-s" data-s="2189.78" data-e="2192.88">He&#x27;s intentionally trying to keep another person from believing.</span> <span class="tl-s" data-s="2193.84" data-e="2197.08">And that&#x27;s been Satan&#x27;s strategy all along, hasn&#x27;t it?</span> <span class="tl-s" data-s="2197.90" data-e="2200.24">From the very beginning, since the Garden of Eden.</span></p>
+        <p><span class="tl-s" data-s="2202.16" data-e="2202.62">What did he do?</span> <span class="tl-s" data-s="2202.72" data-e="2205.68">He whispered to Eve, did God really say?</span></p>
+        <p><span class="tl-s" data-s="2208.72" data-e="2213.66">Then he tempts Jesus in the wilderness, and now he&#x27;s working through Elimus.</span></p>
+        <p><span class="tl-s" data-s="2215.90" data-e="2223.52">This has been the lie that every generation has heard, but it&#x27;s been packaged with different wording.</span></p>
+        <p><span class="tl-s" data-s="2225.54" data-e="2226.66">You can&#x27;t trust the Bible.</span> <span class="tl-s" data-s="2226.80" data-e="2228.24">There are too many errors in it.</span> <span class="tl-s" data-s="2229.14" data-e="2231.24">Surely Jesus isn&#x27;t the only way.</span> <span class="tl-s" data-s="2232.56" data-e="2235.20">The resurrection, that&#x27;s just ancient mythology.</span> <span class="tl-s" data-s="2235.54" data-e="2237.04">That doesn&#x27;t really happen.</span></p>
+        <p><span class="tl-s" data-s="2239.18" data-e="2241.10">Or one that&#x27;s prevalent today.</span> <span class="tl-s" data-s="2241.80" data-e="2243.62">Your truth is just your truth.</span></p>
+        <p><span class="tl-s" data-s="2246.62" data-e="2250.04">The language changes, but the strategy never does.</span></p>
+        <p><span class="tl-s" data-s="2252.38" data-e="2256.82">Luke, what he wants us to see is that this is a collision between two kingdoms.</span> <span class="tl-s" data-s="2256.96" data-e="2259.96">It&#x27;s not just Paul and Elimus.</span></p>
+        <p><span class="tl-s" data-s="2261.38" data-e="2270.00">This is the kingdom of darkness who is desperately trying to blind an image bearer with unbelief and the kingdom of God determined to open blind eyes.</span> <span class="tl-s" data-s="2270.42" data-e="2273.78">And so the question is, who&#x27;s going to win?</span></p>
+        <p><span class="tl-s" data-s="2276.48" data-e="2277.92">Will it be the word of Rome?</span> <span class="tl-s" data-s="2278.04" data-e="2278.84">Will it be the magician?</span> <span class="tl-s" data-s="2279.08" data-e="2281.54">Will it be Paul, Barnabas, the Holy Spirit?</span></p>
+        <p><span class="tl-s" data-s="2283.26" data-e="2284.48">Who will prevail?</span></p>
+        <p><span class="tl-s" data-s="2290.28" data-e="2300.84">Then we read, but Paul called, Saul, called Paul, filled with the Holy Spirit, and then this litany of rebukes against Elimus.</span></p>
+        <p><span class="tl-s" data-s="2303.62" data-e="2312.12">Luke is showing us that someone filled with the Holy Spirit is capable of calling out evil.</span> <span class="tl-s" data-s="2313.32" data-e="2316.78">It&#x27;s not a confrontation that&#x27;s driven by a charismatic personality.</span> <span class="tl-s" data-s="2317.06" data-e="2318.72">It&#x27;s driven by the Holy Spirit.</span></p>
+        <p><span class="tl-s" data-s="2320.18" data-e="2330.52">I mean, he fixes his eyes on Elimus and says, you son of the devil, you enemy of all righteousness, you full of deceit and villainy and stop making crooked the straight paths of the Lord.</span> <span class="tl-s" data-s="2330.82" data-e="2332.36">This is like Christian cursing.</span></p>
+        <p><span class="tl-s" data-s="2335.50" data-e="2336.76">Don&#x27;t walk around.</span> <span class="tl-s" data-s="2337.60" data-e="2341.82">It&#x27;s a terrible evangelism strategy to walk around and call someone the son of the devil.</span></p>
+        <p><span class="tl-s" data-s="2344.52" data-e="2346.42">But Elimus&#x27; actions warranted it.</span></p>
+        <p><span class="tl-s" data-s="2348.14" data-e="2354.06">He&#x27;s desperately trying to keep another man from believing in the truth.</span></p>
+        <p><span class="tl-s" data-s="2355.94" data-e="2365.14">There are moments in life when love dictates saying really hard things and exposing spiritual deception.</span></p>
+        <p><span class="tl-s" data-s="2367.52" data-e="2368.24">Jesus did it.</span> <span class="tl-s" data-s="2369.44" data-e="2374.84">When the religious leaders knowingly kept people from the kingdom, Jesus exposed them for who they were.</span></p>
+        <p><span class="tl-s" data-s="2376.64" data-e="2380.38">Paul is just following the pattern set forth by the master.</span> <span class="tl-s" data-s="2381.76" data-e="2382.24">It&#x27;s irony.</span></p>
+        <p><span class="tl-s" data-s="2383.84" data-e="2384.66">Lots of irony here.</span></p>
+        <p><span class="tl-s" data-s="2388.30" data-e="2390.14">And he says the hand of the Lord is upon you.</span> <span class="tl-s" data-s="2390.28" data-e="2391.52">You&#x27;ll be blind for a time.</span> <span class="tl-s" data-s="2391.96" data-e="2393.38">Darkness falls upon Elimus.</span> <span class="tl-s" data-s="2393.70" data-e="2398.22">And so the man who spent his whole life blinding others is now blind.</span></p>
+        <p><span class="tl-s" data-s="2400.42" data-e="2403.18">I honestly think Luke was a pretty funny guy.</span> <span class="tl-s" data-s="2404.02" data-e="2409.22">He includes these examples of things that happened that are like, yeah, that&#x27;s actually pretty ironic.</span> <span class="tl-s" data-s="2409.36" data-e="2409.70">That&#x27;s funny.</span></p>
+        <p><span class="tl-s" data-s="2411.41" data-e="2420.24">I believe that because now this deceiver bar Jesus, the one trying to make people spiritually blind, he becomes the one who cannot see.</span></p>
+        <p><span class="tl-s" data-s="2423.02" data-e="2426.18">And then Luke records those profound words from Paul.</span> <span class="tl-s" data-s="2426.30" data-e="2429.30">Will you not stop making crooked the straight paths of the Lord?</span></p>
+        <p><span class="tl-s" data-s="2430.84" data-e="2441.18">What&#x27;s interesting is that word that he uses to describe Elimus as seeking to turn away the proconsul away from the faith is the very same word to make crooked the straight paths.</span> <span class="tl-s" data-s="2441.35" data-e="2447.36">So the way you get people off the straight path is you get in the way of them coming to faith.</span> <span class="tl-s" data-s="2448.02" data-e="2452.24">But this is what&#x27;s funny about all this.</span></p>
+        <p><span class="tl-s" data-s="2454.10" data-e="2472.84">What God the Spirit did is he took Elimus and everything Elimus was trying to do to thwart the faith of Sergio Paulus and the Spirit didn&#x27;t subdue Elimus by blinding him but the Spirit used it to bring this Roman governor to faith.</span></p>
+        <p><span class="tl-s" data-s="2474.56" data-e="2481.34">It&#x27;s exactly what was like Joseph when he told his brothers what you intended for evil God meant for good.</span> <span class="tl-s" data-s="2481.76" data-e="2488.28">The Spirit used the blinding of evil Elimus for his good purposes.</span></p>
+        <p><span class="tl-s" data-s="2492.70" data-e="2504.88">Acts 13 this passage it&#x27;s just another chapter that shows us that Jesus is always keeping his promises because the result is the proconsul beliefs.</span></p>
+        <p><span class="tl-s" data-s="2507.48" data-e="2516.64">Saul Paul and Barnabas they were representative of the Spirit&#x27;s work that was promised in Acts 1 verse 8.</span> <span class="tl-s" data-s="2517.84" data-e="2520.98">The gospel advances exactly as Jesus promised.</span></p>
+        <p><span class="tl-s" data-s="2524.66" data-e="2529.36">It shows us this book is in a celebration of God&#x27;s heart for his mission.</span></p>
+        <p><span class="tl-s" data-s="2531.28" data-e="2545.30">The same Jesus who rules over Cyprus is the same Jesus who rules over Gilbert, Chandler, Tempe, Mesa, Phoenix, the West Valley, the United States, the world.</span> <span class="tl-s" data-s="2545.96" data-e="2550.02">The same spirit who empowered Paul dwells within his church today.</span> <span class="tl-s" data-s="2551.14" data-e="2556.78">The same gospel that saved Sergius Paulus is still the power of God to salvation for us.</span> <span class="tl-s" data-s="2557.48" data-e="2559.74">That means the mission it doesn&#x27;t depend on you.</span> <span class="tl-s" data-s="2560.16" data-e="2561.52">It doesn&#x27;t depend on me.</span> <span class="tl-s" data-s="2562.28" data-e="2565.90">It never depended upon Paul&#x27;s theological brilliance.</span> <span class="tl-s" data-s="2566.92" data-e="2568.94">It depends on Christ and him alone.</span> <span class="tl-s" data-s="2569.48" data-e="2570.46">And that frees us.</span> <span class="tl-s" data-s="2570.86" data-e="2575.22">It frees us from believing that we must be the ones to convert people.</span> <span class="tl-s" data-s="2576.08" data-e="2577.36">Only the spirit gives life.</span></p>
+        <p><span class="tl-s" data-s="2578.54" data-e="2590.62">It frees us from believing that we need to put a great show together on Sundays, have laser beams and smoke for you guys, and have this great show with great musicians, because only the spirit gives life.</span> <span class="tl-s" data-s="2591.74" data-e="2598.26">It frees me from thinking I need to preach this perfect sermon for you all, because only the spirit gives life.</span> <span class="tl-s" data-s="2599.06" data-e="2606.00">It frees us from believing that we need to have every answer to every objection, because only the spirit gives life.</span> <span class="tl-s" data-s="2606.58" data-e="2618.20">It frees us from believing that that sinner&#x27;s heart, that person that you know who continues to reject the free grace of the gospel, is too hard to be pierced by God&#x27;s grace.</span> <span class="tl-s" data-s="2618.69" data-e="2621.24">Only the spirit gives life.</span> <span class="tl-s" data-s="2622.18" data-e="2623.86">So how do we respond to all this?</span> <span class="tl-s" data-s="2624.00" data-e="2626.62">Two questions as the band comes up.</span></p>
+        <p><span class="tl-s" data-s="2628.72" data-e="2632.26">First one is this, what is the straight path of the Lord for you?</span></p>
+        <p><span class="tl-s" data-s="2633.96" data-e="2638.14">For Sergius Paulus, the straight path was saving faith in Jesus Christ.</span></p>
+        <p><span class="tl-s" data-s="2639.92" data-e="2644.84">The spirit subdued opposition to his faith and brought him to believe in the gospel.</span> <span class="tl-s" data-s="2645.00" data-e="2645.88">But what about you?</span> <span class="tl-s" data-s="2646.98" data-e="2648.26">What is the Lord calling you to do?</span></p>
+        <p><span class="tl-s" data-s="2650.18" data-e="2652.22">Is it being more disciplined in your prayer life?</span></p>
+        <p><span class="tl-s" data-s="2653.78" data-e="2657.12">Is it praying for the Lord to reveal the mission he&#x27;s placed before you?</span> <span class="tl-s" data-s="2657.18" data-e="2659.82">Because Christian, we are all on mission.</span> <span class="tl-s" data-s="2661.12" data-e="2665.46">You might be a young person and think to yourself, what can I do for the kingdom?</span></p>
+        <p><span class="tl-s" data-s="2667.10" data-e="2667.68">Be faithful.</span></p>
+        <p><span class="tl-s" data-s="2669.14" data-e="2669.58">Serve.</span></p>
+        <p><span class="tl-s" data-s="2671.30" data-e="2672.36">Love your local church.</span> <span class="tl-s" data-s="2672.74" data-e="2678.28">The Lord and his timing will reveal in greater degree the mission he has for you.</span> <span class="tl-s" data-s="2678.52" data-e="2681.24">Maybe you&#x27;re older and you think all this mission talk.</span> <span class="tl-s" data-s="2681.62" data-e="2682.82">That&#x27;s for the young people.</span></p>
+        <p><span class="tl-s" data-s="2686.14" data-e="2687.76">That&#x27;s a lie from the pit of hell.</span></p>
+        <p><span class="tl-s" data-s="2689.52" data-e="2694.94">Satan wants nothing more than a bunch of retirees gathering around to play canasta.</span> <span class="tl-s" data-s="2696.30" data-e="2697.82">Doing nothing for the kingdom.</span></p>
+        <p><span class="tl-s" data-s="2701.76" data-e="2702.80">The church needs your wisdom.</span></p>
+        <p><span class="tl-s" data-s="2704.48" data-e="2706.48">Some of you will say, well, I can tell you what not to do.</span> <span class="tl-s" data-s="2707.28" data-e="2708.40">Great, tell us.</span> <span class="tl-s" data-s="2708.70" data-e="2709.78">Tell us what not to do.</span> <span class="tl-s" data-s="2710.10" data-e="2710.72">That&#x27;s wisdom.</span> <span class="tl-s" data-s="2711.16" data-e="2715.26">But we also need to hear stories of how God has supernaturally met you.</span> <span class="tl-s" data-s="2715.80" data-e="2725.18">We need to hear testimonies of God&#x27;s grace at work in your life when you couldn&#x27;t make ends meet because there&#x27;s a generation of young people who need to hear that.</span></p>
+        <p><span class="tl-s" data-s="2728.28" data-e="2736.18">You sharing your story with a young person might be the very thing that helps that young person take up his cross and follow Jesus Christ.</span></p>
+        <p><span class="tl-s" data-s="2737.58" data-e="2740.68">Share it. what is your straight path?</span></p>
+        <p><span class="tl-s" data-s="2742.54" data-e="2744.54">And I believe for all of us it&#x27;s increased faith.</span> <span class="tl-s" data-s="2744.98" data-e="2746.18">Believing God&#x27;s promises.</span> <span class="tl-s" data-s="2746.34" data-e="2755.12">The Lord wants to increase our faith and so the second question I want to pose to you is so much more important and that&#x27;s who or what is your elemus?</span> <span class="tl-s" data-s="2755.90" data-e="2759.92">What is standing in the way of you believing God&#x27;s promises?</span> <span class="tl-s" data-s="2760.68" data-e="2767.84">What is standing in the way of you having an increased fervor, zeal, passion for the things of the Lord?</span> <span class="tl-s" data-s="2768.30" data-e="2770.20">Young person, that might be a relationship.</span> <span class="tl-s" data-s="2771.18" data-e="2773.98">Maybe you need to stop texting that boy or girl.</span> <span class="tl-s" data-s="2775.30" data-e="2777.66">Maybe you need to quit doom scrolling all the time.</span></p>
+        <p><span class="tl-s" data-s="2779.72" data-e="2784.54">If you&#x27;re older, it might be whatever that besetting sin that you keep running back to.</span></p>
+        <p><span class="tl-s" data-s="2787.00" data-e="2787.50">What is it?</span></p>
+        <p><span class="tl-s" data-s="2788.92" data-e="2790.34">What is it that you keep running back?</span> <span class="tl-s" data-s="2790.36" data-e="2792.64">Is it fulfillment, pleasure, status?</span> <span class="tl-s" data-s="2793.64" data-e="2797.70">Is it health and having the perfect body, chasing after the perfect body?</span> <span class="tl-s" data-s="2798.74" data-e="2803.20">What has become that thing that prevents you from the straight paths of the Lord?</span></p>
+        <p><span class="tl-s" data-s="2805.42" data-e="2807.32">At the beginning of the sermon, I mentioned the Odyssey.</span> <span class="tl-s" data-s="2807.68" data-e="2815.34">It&#x27;s a great story about a hero, Odysseus, who leaves his home and tries to find his way back to his beloved bride, Penelope.</span> <span class="tl-s" data-s="2816.08" data-e="2819.76">But Luke, throughout Acts, is telling a much greater story.</span></p>
+        <p><span class="tl-s" data-s="2821.60" data-e="2823.98">You see, Odysseus struggled to find his way home.</span></p>
+        <p><span class="tl-s" data-s="2826.32" data-e="2836.16">Jesus with joy, for the joy that was set before him willingly left his home in a place of splendor and glory to enter into enemy territory.</span> <span class="tl-s" data-s="2836.80" data-e="2847.98">Odysseus was confronted by mythical monsters like the Cyclops, but Jesus confronted a very real monster, and he defeated the devil in the most ignoble way imaginable.</span> <span class="tl-s" data-s="2848.90" data-e="2851.08">Imagine Homer hearing about this.</span> <span class="tl-s" data-s="2851.54" data-e="2856.20">He would have scoffed at the thought of a supposed hero doing this.</span> <span class="tl-s" data-s="2857.08" data-e="2861.76">But Jesus bore our sins upon a tree and died.</span> <span class="tl-s" data-s="2862.64" data-e="2866.86">He became the perfect substitute for a ruined humanity.</span></p>
+        <p><span class="tl-s" data-s="2870.56" data-e="2879.76">But unlike Odysseus, who died and remained dead, Jesus died and rose to life.</span> <span class="tl-s" data-s="2880.86" data-e="2882.44">Odysseus lost his throne.</span> <span class="tl-s" data-s="2883.01" data-e="2889.18">Jesus ascended to his rightful place at the right hand of God, sitting on his eternal throne.</span> <span class="tl-s" data-s="2889.58" data-e="2902.50">Odysseus lost his opportunity to live happily ever after with his bride, but Jesus is coming back one day for his bride, and he will find us in purity and in splendor.</span> <span class="tl-s" data-s="2903.18" data-e="2906.72">Friends, that&#x27;s the good news that we have to share with people.</span> <span class="tl-s" data-s="2907.44" data-e="2912.14">That&#x27;s the good news that we get to go out and declare to a lost world.</span> <span class="tl-s" data-s="2913.18" data-e="2917.86">So as you stand and as we&#x27;re about to respond in song, I want to charge you with this.</span> <span class="tl-s" data-s="2918.28" data-e="2920.92">You can all stand as we respond in song.</span> <span class="tl-s" data-s="2921.46" data-e="2922.98">I want to charge you with this.</span></p>
+        <p><span class="tl-s" data-s="2924.38" data-e="2925.26">Do not fear.</span> <span class="tl-s" data-s="2926.08" data-e="2927.30">Don&#x27;t fear rejection.</span> <span class="tl-s" data-s="2928.58" data-e="2933.72">The Spirit of God subdues every opposition to the gospel.</span> <span class="tl-s" data-s="2934.12" data-e="2949.54">Don&#x27;t underestimate what Christ might do in very ordinary people. the gospel advances not because we&#x27;re sufficient, but because the risen and ascended king is still building his church and not even the gates of hell will prevail against her.</span> <span class="tl-s" data-s="2950.14" data-e="2950.82">Let&#x27;s pray.</span></p>
+        <p><span class="tl-s" data-s="2953.62" data-e="2961.24">Father, we thank you just for everything that you&#x27;re doing in our young people, in this church, in all of us, Lord.</span> <span class="tl-s" data-s="2961.80" data-e="2970.86">And I pray today for those who don&#x27;t know you, who might not share the same enthusiasm about the gospel as I do, or as we do.</span> <span class="tl-s" data-s="2971.38" data-e="2989.08">Lord, I pray that you would minister to their hearts, that the good news of Jesus Christ would be presented to them in a way that compels them to believe, that captures their hearts and minds, and brings them into conformity and to submission to what you would have for them.</span> <span class="tl-s" data-s="2989.62" data-e="3000.82">And Lord, I pray for those who do know you, who do trust you, who do believe in you by faith, would you increase all of our faith to believe in your precious promises.</span> <span class="tl-s" data-s="3001.66" data-e="3009.88">We thank you for saving us, for giving us a story to tell, the story of your Son, our Savior.</span> <span class="tl-s" data-s="3010.48" data-e="3011.38">In his name we pray.</span> <span class="tl-s" data-s="3011.88" data-e="3012.18">Amen.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Live sermon feed: spotlight from /api/sermons, browsable archive from
+  // /api/sermons/search. Static fallback list stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function row(it) {
+      var meta = [it.speaker, fmtDate(it.date)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      var titleHtml = esc(it.title);
+      var tUrl = it.guid && transcriptMap[it.guid];
+      if (tUrl) titleHtml = '<a href="' + esc(tUrl) + '">' + titleHtml + "</a>";
+      return '<div class="sermon"><div><h3>' + titleHtml + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    fetch("/api/sermons?v=3")
+      .then(function (res) { if (!res.ok) throw new Error("feed " + res.status); return res.json(); })
+      .then(function (data) {
+        var spot = document.querySelector("[data-series-spotlight]");
+        if (data && data.series && spot) {
+          var s = data.series;
+          var art = spot.querySelector("[data-series-art]");
+          if (art && s.artwork) { art.src = s.artwork; } else if (art) { art.style.display = "none"; }
+          var nm = spot.querySelector("[data-series-name]");
+          if (nm) nm.textContent = s.name;
+          var bl = spot.querySelector("[data-series-blurb]");
+          if (bl) bl.textContent = s.blurb;
+          spot.hidden = false;
+        }
+      })
+      .catch(function () { /* spotlight stays hidden */ });
+
+    var PER = 10;
+    var state = { q: "", speaker: "", series: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var speakerSel = document.querySelector("[data-sermons-speaker]");
+    var seriesSel = document.querySelector("[data-sermons-series]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No messages found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(speakerSel, data.facets.speakers || [], function (e) { return e.name; }, function (e) { return e.name + " (" + e.count + ")"; });
+        fill(seriesSel, data.facets.series || [], function (e) { return e.name; }, function (e) { return e.name + " (" + e.count + ")"; });
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.speaker || data.series || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.speaker) parts.push("by " + data.speaker);
+          if (data.series) parts.push("in " + data.series);
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " result" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " messages";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/sermons/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.speaker ? "&speaker=" + encodeURIComponent(state.speaker) : "") +
+        (state.series ? "&series=" + encodeURIComponent(state.series) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () { /* keep current list on error */ });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.speaker = ""; state.series = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (speakerSel) speakerSel.value = "";
+      if (seriesSel) seriesSel.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    function bindSelect(sel, key) {
+      if (!sel) return;
+      sel.addEventListener("change", function () {
+        state[key] = sel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    bindSelect(speakerSel, "speaker");
+    bindSelect(seriesSel, "series");
+    bindSelect(monthSel, "month");
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: https://hub.centergilbert.com/media/acts-13-1-12-17 -->
+</body>
+</html>
