@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Origin of Evil part TWO — Podcast Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Fixed on Jesus: conversations beyond Sunday mornings from Center Church in Gilbert, AZ — listen on Spotify, Apple Podcasts, and YouTube." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=18" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a href="/sermons">Sermons</a></li>
+              <li><a class="active" href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/podcast">&larr; All podcast episodes</a>
+          <h1 class="display-lg">The Origin of Evil part TWO</h1>
+          <p class="transcript-meta">2024-01-20 · 18:17</p>
+          <p class="transcript-desc">Welcome to FIXED ON JESUS, a podcast brought to you by Center Church in Gilbert, Arizona. Speaking to you today are Rich Richardson &amp; Mark Johnson Jr. Production by Heather Corbitt **SHOW NOTES** Questions asked in this episode: Scripture References: Please feel free to send email inquiries to produ</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/e750e370/podcast/play/81077956/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-0-10%2F8522d858-54df-b166-9be2-7c3b021ed604.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="0.35" data-e="2.78">So that is part of what we are trying to do here.</span> <span class="tl-s" data-s="2.82" data-e="5.58">There are things that we are never going to understand because they are hidden.</span> <span class="tl-s" data-s="5.95" data-e="7.04">God is not like us.</span> <span class="tl-s" data-s="7.09" data-e="8.44">He does not do what we expect.</span> <span class="tl-s" data-s="8.92" data-e="13.96">He does not worry about us understanding every detail of things.</span> <span class="tl-s" data-s="14.30" data-e="15.62">He is not worried about that.</span> <span class="tl-s" data-s="15.68" data-e="17.98">But there are things that he reveals.</span> <span class="tl-s" data-s="18.09" data-e="18.92">And what does he reveal?</span> <span class="tl-s" data-s="19.36" data-e="20.35">He reveals his character.</span> <span class="tl-s" data-s="20.48" data-e="24.07">He says, I am a God merciful and patient and abounding in steadfast love.</span></p>
+        <p><span class="tl-s" data-s="24.73" data-e="25.60">That is who he is.</span> <span class="tl-s" data-s="25.95" data-e="28.89">And he reveals himself most preeminently in Jesus.</span></p>
+        <p><span class="tl-s" data-s="44.47" data-e="47.59">This is fixed on Jesus.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="63.96" data-e="68.77">Hello and welcome to the Fixed on Jesus podcast.</span> <span class="tl-s" data-s="68.83" data-e="75.31">My name is Heather Corbett, and I&#x27;m stepping out from behind the glass for just a brief moment to introduce this episode to you.</span> <span class="tl-s" data-s="75.97" data-e="83.63">Today we have part 2 of a discussion on the origin of evil, and just in case you missed part 1, you might want to go back and listen to episode 31.</span> <span class="tl-s" data-s="84.83" data-e="91.10">All right, now let&#x27;s join Rich Richardson and Mark Johnson Jr. as they pick it up where they left off last time.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="92.00" data-e="93.35">Like, why would God allow these things?</span> <span class="tl-s" data-s="93.86" data-e="94.42">We don&#x27;t know.</span> <span class="tl-s" data-s="94.90" data-e="95.45">We don&#x27;t know.</span> <span class="tl-s" data-s="96.43" data-e="101.28">I mean, but I can just— I mean, philosophically, I can think— I mean, he wants us to have free will.</span> <span class="tl-s" data-s="101.41" data-e="102.79">That doesn&#x27;t mean we&#x27;re autonomous.</span> <span class="tl-s" data-s="102.84" data-e="104.67">Yeah, it doesn&#x27;t mean we&#x27;re autonomous.</span> <span class="tl-s" data-s="105.25" data-e="109.68">He wants us to have free will, meaning, um, our choices matter.</span> <span class="tl-s" data-s="109.94" data-e="112.44">Like, his sovereignty doesn&#x27;t mean we&#x27;re robots.</span> <span class="tl-s" data-s="112.49" data-e="114.83">It doesn&#x27;t mean we&#x27;re what&#x27;s called determined.</span> <span class="tl-s" data-s="114.89" data-e="115.14">We&#x27;re not determinists.</span></p>
+        <p><span class="tl-s" data-s="115.14" data-e="115.57">Determinists.</span> <span class="tl-s" data-s="115.62" data-e="115.92">Yeah.</span> <span class="tl-s" data-s="116.00" data-e="119.36">And so he&#x27;s— what it— we have real genuine choices.</span> <span class="tl-s" data-s="119.45" data-e="130.50">So on Sunday morning when I preach the gospel to people who, who aren&#x27;t saved, I&#x27;m not going to say, listen, God&#x27;s sovereign, he&#x27;ll do whatever he wants to you, so you just need to like get in line.</span> <span class="tl-s" data-s="130.62" data-e="132.67">No, I&#x27;m going to say— I&#x27;m not even going to talk about that.</span> <span class="tl-s" data-s="132.70" data-e="134.24">I&#x27;m going to call people to repentance.</span> <span class="tl-s" data-s="134.29" data-e="135.32">And why is that?</span> <span class="tl-s" data-s="135.35" data-e="144.78">Because Because our choices matter, and, and because, because we have a Savior that we can put our faith and trust in.</span> <span class="tl-s" data-s="144.78" data-e="150.20">So there will be limitations to what we can understand about why God allowed evil.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="150.20" data-e="152.44">Yeah, [Speaker A] for sure.</span> <span class="tl-s" data-s="152.76" data-e="153.57">And there will always be there.</span> <span class="tl-s" data-s="153.80" data-e="154.53">They&#x27;re always going to be there.</span> <span class="tl-s" data-s="155.01" data-e="155.09">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="155.18" data-e="160.00">Um, and we can say evil is real, it&#x27;s not an illusion.</span> <span class="tl-s" data-s="160.37" data-e="165.20">We can say evil— God allowed evil, but he&#x27;s not responsible for evil.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="166.13" data-e="176.28">Yeah, [Speaker A] we can say God is utterly and completely sovereign, but yet at the same time, um, mankind is responsible for the evil that&#x27;s on the earth.</span> <span class="tl-s" data-s="176.28" data-e="176.36">Perfect.</span> <span class="tl-s" data-s="176.36" data-e="180.10">There&#x27;s a few things that I was writing down as you were going into all that.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="180.14" data-e="188.80">Yeah, [Speaker C] first one, you mentioned free will, and we, we have an episode similar to that, so I just wanted to plug that.</span> <span class="tl-s" data-s="188.80" data-e="192.31">Yeah, [Speaker C] episode 10, God&#x27;s Sovereignty and Human Responsibility.</span> <span class="tl-s" data-s="192.31" data-e="193.91">So we talked a little bit about that.</span> <span class="tl-s" data-s="193.93" data-e="197.45">So if you&#x27;re curious about that, please go back to there, to that episode.</span> <span class="tl-s" data-s="197.45" data-e="210.88">And it also made me think of if we didn&#x27;t have a way to choose, if we didn&#x27;t have that free will and we were just complete, like you said, robots that were forced to love him, that wouldn&#x27;t be genuine love.</span> <span class="tl-s" data-s="210.91" data-e="211.25">That&#x27;s not love.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="211.25" data-e="211.36">Exactly.</span> <span class="tl-s" data-s="211.38" data-e="216.86">So if we don&#x27;t have the opportunity to choose the bad thing— [Speaker A] It&#x27;s not a contract, you know?</span> <span class="tl-s" data-s="216.94" data-e="216.95">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="216.95" data-e="219.65">Like, yeah, when I bought my car, I signed on the Dotted line.</span> <span class="tl-s" data-s="219.65" data-e="226.06">I mean, it&#x27;s not like I have an affinity for you know the car dealership.</span> <span class="tl-s" data-s="226.07" data-e="226.65">That&#x27;s just a contract.</span> <span class="tl-s" data-s="226.65" data-e="229.59">That&#x27;s an agreement, and that would be what it would be like if we.</span> <span class="tl-s" data-s="229.61" data-e="231.71">But that&#x27;s not what it is.</span> <span class="tl-s" data-s="232.10" data-e="235.95">We have a Savior who loves us.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="236.02" data-e="236.32">Yeah, exactly.</span> <span class="tl-s" data-s="236.34" data-e="241.22">So there&#x27;s a reason that episode eight was our most viewed episode on on Spotify.</span> <span class="tl-s" data-s="241.25" data-e="242.06">Yeah, the problem of evil.</span> <span class="tl-s" data-s="242.52" data-e="243.49">So this one&#x27;s the origin of evil.</span> <span class="tl-s" data-s="244.43" data-e="245.90">So I do have a follow up.</span> <span class="tl-s" data-s="245.96" data-e="249.74">About what you were talking about, and you might have kind of already addressed it.</span> <span class="tl-s" data-s="249.74" data-e="251.09">But so he didn&#x27;t.</span> <span class="tl-s" data-s="251.09" data-e="253.17">Let&#x27;s let me just reiterate: He didn&#x27;t create it.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="253.36" data-e="253.78">Correct.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="254.55" data-e="255.90">But he did allow it.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="256.08" data-e="256.30">Correct.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="257.93" data-e="259.13">Was evil part of his plan?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="259.13" data-e="260.53">How you say plan?</span> <span class="tl-s" data-s="260.53" data-e="260.59">Yeah.</span> <span class="tl-s" data-s="260.59" data-e="262.57">I mean, yes, you have to say that.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="262.57" data-e="262.89">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="263.07" data-e="263.98">Without being responsible.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="263.98" data-e="264.67">He didn&#x27;t realize.</span> <span class="tl-s" data-s="264.87" data-e="264.95">Oh, it&#x27;s.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="264.95" data-e="265.64">It wasn&#x27;t a surprise.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="265.73" data-e="268.04">Let me fix this with Jesus.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="268.09" data-e="268.81">It wasn&#x27;t a surprise.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="268.91" data-e="269.15">Yeah.</span> <span class="tl-s" data-s="269.40" data-e="270.45">Didn&#x27;t catch him off guard.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="270.45" data-e="270.55">No.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="270.55" data-e="270.95">He wasn&#x27;t.</span> <span class="tl-s" data-s="270.95" data-e="275.10">He didn&#x27;t get— [Speaker A] it wasn&#x27;t a surprise.</span> <span class="tl-s" data-s="275.21" data-e="276.49">It wasn&#x27;t a surprise.</span> <span class="tl-s" data-s="276.51" data-e="276.56">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="276.67" data-e="281.51">And so how can God have it as a part of his plan and not be responsible?</span> <span class="tl-s" data-s="281.55" data-e="282.55">That&#x27;s an— that&#x27;s another mystery.</span> <span class="tl-s" data-s="282.69" data-e="283.26">That&#x27;s another mystery.</span> <span class="tl-s" data-s="283.26" data-e="284.24">We&#x27;re like, I&#x27;m not sure.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="284.37" data-e="285.99">That&#x27;s why this is the most popular topic.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="285.99" data-e="288.62">I am not— what&#x27;s the hardest question there is?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="288.70" data-e="288.88">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="289.27" data-e="290.89">Because what we&#x27;re talking about is philosophy.</span> <span class="tl-s" data-s="290.89" data-e="298.05">Like the things— like even dude, when I referenced it before, but Deuteronomy 29, there are the hidden things and then there are the revealed things, right?</span> <span class="tl-s" data-s="298.18" data-e="299.94">So that&#x27;s part of what we&#x27;re trying to, trying to do here.</span> <span class="tl-s" data-s="299.96" data-e="303.65">There are things that we&#x27;re never going to understand because they&#x27;re hidden.</span> <span class="tl-s" data-s="303.65" data-e="304.35">God is not like us.</span> <span class="tl-s" data-s="304.43" data-e="307.22">He does not do what we expect.</span> <span class="tl-s" data-s="307.57" data-e="313.94">He is not— he does not worry about us understanding every detail of things.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="314.37" data-e="314.47">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="314.47" data-e="316.42">He&#x27;s not worried about that.</span> <span class="tl-s" data-s="316.61" data-e="319.00">What— but there are things that, that he reveals.</span> <span class="tl-s" data-s="319.02" data-e="320.85">And what does he reveal?</span> <span class="tl-s" data-s="321.28" data-e="321.98">He reveals his character.</span> <span class="tl-s" data-s="322.02" data-e="327.50">He reveals his— you know, he says, I&#x27;m a God merciful, patient, and abounding in steadfast love.</span> <span class="tl-s" data-s="327.60" data-e="327.98">Right?</span> <span class="tl-s" data-s="328.11" data-e="329.66">That&#x27;s who he is.</span> <span class="tl-s" data-s="329.71" data-e="334.20">And he reveals himself most preeminently in Jesus.</span> <span class="tl-s" data-s="334.32" data-e="341.37">And so the revealed things are those things like that we do know, those things we do know, those are the things for us to, to focus on.</span> <span class="tl-s" data-s="341.43" data-e="344.36">And I&#x27;m not saying that it&#x27;s wrong to ask questions about evil.</span></p>
+        <p><span class="tl-s" data-s="344.46" data-e="345.02">We should.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="345.02" data-e="347.65">But I got another one, so I hope it&#x27;s not wrong.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="347.69" data-e="349.12">It&#x27;s not wrong.</span> <span class="tl-s" data-s="349.94" data-e="359.42">But at the same time, our focus and our, our focus is on those revealed things that, you know, Show us who God is and what we have because we&#x27;re in Christ.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="359.49" data-e="359.97">Right.</span> <span class="tl-s" data-s="359.97" data-e="363.22">And like you said, he also defeated it.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="363.27" data-e="363.38">Yeah.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="363.56" data-e="365.07">You know, he did.</span> <span class="tl-s" data-s="365.73" data-e="369.30">So this is most likely another mystery, but you referenced the garden.</span> <span class="tl-s" data-s="369.30" data-e="372.80">So [Speaker A] yeah, [Speaker C] he knew what was going to happen.</span> <span class="tl-s" data-s="372.80" data-e="373.68">He was prepared for it.</span> <span class="tl-s" data-s="373.68" data-e="376.97">It wasn&#x27;t— you didn&#x27;t catch— we didn&#x27;t catch the Lord off guard with our sin.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="377.05" data-e="382.07">It wasn&#x27;t like when the snake went, he&#x27;s like, whoa, whoa, whoa, what&#x27;s going on?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="382.07" data-e="382.71">Well, that&#x27;s— stop.</span> <span class="tl-s" data-s="382.71" data-e="383.95">That&#x27;s almost exactly my question.</span> <span class="tl-s" data-s="383.95" data-e="387.51">How did Where did the serpent come from, or how did he get in the garden?</span> <span class="tl-s" data-s="387.51" data-e="389.79">If it&#x27;s a he, I don&#x27;t know.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="389.79" data-e="390.41">It&#x27;s Lucifer.</span> <span class="tl-s" data-s="390.41" data-e="391.63">Yeah, it&#x27;s [Speaker C] Lucifer.</span> <span class="tl-s" data-s="391.63" data-e="393.43">So you&#x27;re saying the serpent is Lucifer?</span> <span class="tl-s" data-s="393.43" data-e="395.01">That&#x27;s the devil.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="395.01" data-e="396.49">Yeah.</span> <span class="tl-s" data-s="396.49" data-e="396.61">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="396.61" data-e="397.17">Yeah, yeah, yeah.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="397.17" data-e="398.39">So he just popped out of nowhere?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="398.39" data-e="400.61">Well, no, it&#x27;s not how you— now we&#x27;re talking about the devil.</span> <span class="tl-s" data-s="400.61" data-e="402.45">Okay, that&#x27;s great.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="402.45" data-e="405.77">Well, that was part of— that was part of the question.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="405.77" data-e="408.85">The legion of fans want to talk about the devil.</span> <span class="tl-s" data-s="408.85" data-e="413.10">Um, and the devil, like, that is, uh, he&#x27;s not the Christmas [Speaker C] tree devil.</span> <span class="tl-s" data-s="413.13" data-e="415.33">A [Speaker A] different one.</span> <span class="tl-s" data-s="416.41" data-e="420.02">Not— yeah, we&#x27;re not talking about the Christmas tree devil.</span> <span class="tl-s" data-s="420.02" data-e="428.29">And so essentially what happened was we don&#x27;t we don&#x27;t have much information about how the devil fell or what he did.</span> <span class="tl-s" data-s="428.29" data-e="431.34">We do know that his name was Lucifer, which means angel of light.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="431.34" data-e="438.37">So he was an angel that he was an [Speaker A] angel created by God [Speaker C] that wanted to be like God.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="439.34" data-e="445.29">Well, yeah, and we have we know of three angels that are in the Bible, like that are named Gabriel.</span> <span class="tl-s" data-s="445.29" data-e="447.63">And Gabriel&#x27;s associated with messages.</span> <span class="tl-s" data-s="447.63" data-e="450.54">So like, there&#x27;s all the messages that come from God.</span> <span class="tl-s" data-s="450.54" data-e="452.95">Gabriel brings those like to Mary and— [Speaker C] Yeah.</span> <span class="tl-s" data-s="452.95" data-e="453.01">Zechariah.</span> <span class="tl-s" data-s="453.01" data-e="453.89">That&#x27;s Gabriel.</span> <span class="tl-s" data-s="453.89" data-e="455.23">We have Michael, who&#x27;s a fighter.</span> <span class="tl-s" data-s="455.50" data-e="457.35">He&#x27;s not a lover.</span> <span class="tl-s" data-s="457.35" data-e="458.07">He&#x27;s a fighter.</span> <span class="tl-s" data-s="458.07" data-e="466.98">And so we read about that in Revelation chapter 12, where him and his boys kick Satan out with his— [Speaker C] Michael and his boys.</span></p>
+        <p><span class="tl-s" data-s="466.98" data-e="468.62">Michael and his boys fight Satan.</span> <span class="tl-s" data-s="468.62" data-e="470.66">And it&#x27;s the war in heaven.</span> <span class="tl-s" data-s="470.76" data-e="472.78">You can read— [Speaker C] Oh, Michael.</span> <span class="tl-s" data-s="472.78" data-e="474.45">Michael, though, he&#x27;s, he&#x27;s, he&#x27;s, he&#x27;s a fighter.</span> <span class="tl-s" data-s="474.45" data-e="477.19">Yeah, I wouldn&#x27;t want to scrap with Michael.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="477.67" data-e="480.53">No, [Speaker A] Michael&#x27;s, Michael&#x27;s the man.</span> <span class="tl-s" data-s="480.86" data-e="486.13">And Mike Tyson, you don&#x27;t say the man, you go, not Mike Tyson.</span> <span class="tl-s" data-s="486.17" data-e="487.64">Mike Tyson is nothing compared to Michael.</span> <span class="tl-s" data-s="487.64" data-e="492.49">So anyway, so Michael, um, Michael is— Michael&#x27;s a stud.</span></p>
+        <p><span class="tl-s" data-s="494.55" data-e="498.80">And so he, he led the forces of light against the forces of darkness and kicked them out of heaven.</span> <span class="tl-s" data-s="498.90" data-e="499.59">So then there&#x27;s Lucifer.</span> <span class="tl-s" data-s="499.59" data-e="500.48">Which we&#x27;ve got.</span> <span class="tl-s" data-s="501.06" data-e="504.95">So we have some like— People are going to love [Speaker C] this.</span> <span class="tl-s" data-s="505.19" data-e="507.54">They&#x27;re going to love that.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="507.54" data-e="513.59">They&#x27;re going to like— they [Speaker C] like talking [Speaker A] about the [Speaker C] devil and evil.</span> <span class="tl-s" data-s="513.59" data-e="517.47">And yeah, it&#x27;s just because it&#x27;s like you said, it&#x27;s mysteries.</span> <span class="tl-s" data-s="517.47" data-e="517.62">Yeah.</span> <span class="tl-s" data-s="517.62" data-e="523.80">I mean, so it&#x27;s not a Sunday morning [Speaker C] thing very often.</span> <span class="tl-s" data-s="523.85" data-e="524.01">Yeah, right.</span> <span class="tl-s" data-s="524.01" data-e="533.69">So there&#x27;s, there&#x27;s very— there&#x27;s not a ton of information about the devil, but one of the, one of the sections that is the most illuminating is Isaiah 14.</span> <span class="tl-s" data-s="533.87" data-e="539.24">We have this in the middle of a conversation, in the middle of a prophecy, we have Isaiah prophesying against Babylon.</span> <span class="tl-s" data-s="539.24" data-e="544.64">Then we can see actually in verse 12, he begins to talk about the devil, right?</span> <span class="tl-s" data-s="544.69" data-e="546.58">There&#x27;s— you can see this throughout the Bible.</span> <span class="tl-s" data-s="546.69" data-e="548.76">Babylon stands for the evil city of man, right?</span></p>
+        <p><span class="tl-s" data-s="548.78" data-e="555.76">And so there&#x27;s the Whore of Babylon in Revelation, which is— we all live in Babylon still, right?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="555.76" data-e="555.84">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="556.02" data-e="557.35">That&#x27;s the ungodly city, right?</span> <span class="tl-s" data-s="557.37" data-e="561.32">And one day there will be the new godly city, right?</span> <span class="tl-s" data-s="561.32" data-e="573.02">And so Babylon was a real city, obviously, Obviously, and Babylon was the civilization that destroyed the northern kingdom, or the sorry, the southern kingdom with Jerusalem.</span> <span class="tl-s" data-s="573.02" data-e="576.68">Babylon takes on a bigger symbolism in the Bible.</span> <span class="tl-s" data-s="576.73" data-e="578.88">It stands for the evil city of man.</span> <span class="tl-s" data-s="578.88" data-e="588.39">And so we have we have Isaiah prophesying against Babylon, and then in verse twelve we get this: How you have fallen from the heaven, O day star!</span> <span class="tl-s" data-s="588.45" data-e="589.51">Son of Dawn!</span> <span class="tl-s" data-s="589.51" data-e="594.27">How you are cut down to the ground, you who laid the nations low!</span> <span class="tl-s" data-s="594.32" data-e="596.96">You said in your heart— so here&#x27;s, here&#x27;s why Satan fell.</span> <span class="tl-s" data-s="596.96" data-e="600.10">I will ascend to heaven above the stars of God.</span></p>
+        <p><span class="tl-s" data-s="600.10" data-e="602.99">I will set my throne on high.</span> <span class="tl-s" data-s="602.99" data-e="606.38">I will sit in the mount of assembly in the far reaches of the north.</span> <span class="tl-s" data-s="606.38" data-e="609.47">I will ascend above the heights of the clouds.</span> <span class="tl-s" data-s="609.48" data-e="612.07">I will make myself like the Most High.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="612.07" data-e="612.46">Hmm.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="612.48" data-e="613.60">So that&#x27;s what he did.</span> <span class="tl-s" data-s="613.75" data-e="616.26">That&#x27;s what he was trying to do, right?</span> <span class="tl-s" data-s="616.33" data-e="618.12">But you are brought down to Sheol.</span> <span class="tl-s" data-s="618.12" data-e="620.31">That&#x27;s the place of the dead.</span> <span class="tl-s" data-s="620.31" data-e="624.51">Um, to the far reaches of the pit.</span> <span class="tl-s" data-s="624.51" data-e="628.91">Those who see you will stare at you and ponder over you.</span> <span class="tl-s" data-s="628.93" data-e="638.93">Is this the man who made the earth tremble, who shook kingdoms, who made the world like a desert and overthrew its cities, who did not let his prisoners go home?</span> <span class="tl-s" data-s="638.93" data-e="644.26">All the kings of the nations lie in glory, each in his own tomb.</span> <span class="tl-s" data-s="644.50" data-e="652.84">But you are cast away, cast out away from your grave, like a clothe, like a loathed branch clothed with the slain.</span> <span class="tl-s" data-s="652.84" data-e="654.20">And he goes on.</span></p>
+        <p><span class="tl-s" data-s="654.46" data-e="658.68">That goes down to verse nineteen in Isaiah.</span> <span class="tl-s" data-s="658.68" data-e="661.29">So that&#x27;s a real, like a real subtle clue about what went down.</span> <span class="tl-s" data-s="661.35" data-e="670.73">You know, we have we have what went down there was was he [Speaker C] reiterating the fight?</span> <span class="tl-s" data-s="670.92" data-e="671.89">With Michael and Lucifer?</span> <span class="tl-s" data-s="671.89" data-e="675.33">This is— but we don&#x27;t have that.</span> <span class="tl-s" data-s="675.41" data-e="677.75">That&#x27;s all the way in Revelation 12.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="678.12" data-e="678.78">Okay, so this is before?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="678.78" data-e="679.62">This is before that.</span> <span class="tl-s" data-s="679.65" data-e="684.37">And so it— so essentially, most, most scholars agree that Isaiah 14:12-17 describes the fall of Satan.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="684.79" data-e="684.87">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="684.87" data-e="684.95">Okay.</span> <span class="tl-s" data-s="684.95" data-e="693.19">And so what Satan did was, you can see, he goes, I want to take the place of God.</span> <span class="tl-s" data-s="693.23" data-e="697.14">I want my throne to be above his throne.</span> <span class="tl-s" data-s="697.49" data-e="697.68">Right?</span> <span class="tl-s" data-s="697.81" data-e="703.16">And so, or to [Speaker C] be better or [Speaker A] higher or the same or more.</span> <span class="tl-s" data-s="703.27" data-e="705.32">Yeah, even.</span> <span class="tl-s" data-s="705.74" data-e="706.37">Right.</span> <span class="tl-s" data-s="707.18" data-e="715.78">And so like, uh, and he&#x27;s, he&#x27;s called the Day Star, [Speaker C] the [Speaker A] Son of Dawn.</span> <span class="tl-s" data-s="715.90" data-e="717.77">I mean, so like, he was glorious, right?</span> <span class="tl-s" data-s="717.77" data-e="722.26">And so that&#x27;s one thing I think we, we don&#x27;t realize is the gloriousness of Satan was significant.</span></p>
+        <p><span class="tl-s" data-s="722.26" data-e="726.29">Um, Lucifer Was shiny and bright and reflected the glory of God.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="726.29" data-e="727.54">You&#x27;re using Lucifer and Satan interchangeably.</span> <span class="tl-s" data-s="727.74" data-e="728.51">I know, but is that?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="728.51" data-e="731.12">No, I mean you can.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="731.16" data-e="732.36">I wasn&#x27;t trying to nip.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="732.54" data-e="734.01">No, no, no.</span> <span class="tl-s" data-s="734.01" data-e="735.41">Yeah, like Satan means accuser.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="735.87" data-e="736.45">Yeah, yeah, yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="736.45" data-e="737.31">So that&#x27;s what he does.</span> <span class="tl-s" data-s="737.31" data-e="737.92">Devil means deceiver.</span> <span class="tl-s" data-s="737.99" data-e="738.49">That&#x27;s what he does.</span> <span class="tl-s" data-s="738.49" data-e="738.59">Yeah.</span> <span class="tl-s" data-s="738.59" data-e="739.99">Lucifer means angel of light.</span> <span class="tl-s" data-s="739.99" data-e="741.73">So he&#x27;s got he&#x27;s got all kinds of names.</span> <span class="tl-s" data-s="741.73" data-e="742.69">Old Scratch, Beelzebub.</span> <span class="tl-s" data-s="742.69" data-e="744.47">He even went down to Georgia one time.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="744.65" data-e="745.71">Um, what did you ever hear?</span> <span class="tl-s" data-s="745.71" data-e="747.65">What did you ever hear?</span> <span class="tl-s" data-s="747.65" data-e="751.17">Heather just spit out her coffee, so I want to know now.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="751.17" data-e="752.25">Heather knows what I&#x27;m talking about.</span> <span class="tl-s" data-s="752.25" data-e="753.87">Heather, do you know what I&#x27;m talking about?</span> <span class="tl-s" data-s="753.87" data-e="756.47">The Devil Went Down to Georgia.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="756.47" data-e="758.89">Is that a song?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="758.89" data-e="761.31">You&#x27;ve never heard that song?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="761.35" data-e="762.26">Oh man.</span> <span class="tl-s" data-s="762.26" data-e="762.45">Mark Johnson.</span> <span class="tl-s" data-s="762.53" data-e="762.84">Here we go.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="762.88" data-e="763.20">Here we go.</span> <span class="tl-s" data-s="763.25" data-e="763.77">More homework.</span> <span class="tl-s" data-s="763.83" data-e="765.51">The Devil Went Down to Georgia.</span> <span class="tl-s" data-s="765.51" data-e="766.83">You&#x27;ve never heard that song?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="766.88" data-e="768.96">But it sounds like a hook.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="768.96" data-e="772.28">It&#x27;s about a fiddle contest between Johnny and the devil.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="772.31" data-e="772.39">Wow.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="772.47" data-e="773.18">At Charlie— who&#x27;s it?</span> <span class="tl-s" data-s="773.19" data-e="773.26">Charlie?</span> <span class="tl-s" data-s="773.37" data-e="774.41">Davis, Charlie something.</span> <span class="tl-s" data-s="774.47" data-e="775.08">I don&#x27;t know.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="775.28" data-e="776.35">What&#x27;s the name of the song?</span> <span class="tl-s" data-s="776.35" data-e="777.79">I&#x27;ll, uh, the devil [Speaker A] went.</span> <span class="tl-s" data-s="777.79" data-e="778.74">It&#x27;s very easy to remember.</span> <span class="tl-s" data-s="779.06" data-e="780.98">The devil went down to Georgia.</span> <span class="tl-s" data-s="781.45" data-e="781.99">Charlie Daniels.</span> <span class="tl-s" data-s="781.99" data-e="782.12">That&#x27;s right.</span> <span class="tl-s" data-s="782.18" data-e="782.79">Charlie Daniels.</span> <span class="tl-s" data-s="782.91" data-e="786.95">And so now I&#x27;m going to ask my our legion of fans this question.</span> <span class="tl-s" data-s="786.98" data-e="789.46">When the devil goes down, I had this argument with my son in the car.</span> <span class="tl-s" data-s="789.46" data-e="791.40">Actually, we we were on a road trip this week.</span></p>
+        <p><span class="tl-s" data-s="791.40" data-e="791.93">Charles Daniels Band.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="791.97" data-e="793.33">Charlie Daniels Band.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="793.33" data-e="793.59">Charlie Daniels.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="793.59" data-e="793.79">Yeah.</span> <span class="tl-s" data-s="793.79" data-e="796.62">We were down.</span> <span class="tl-s" data-s="796.70" data-e="804.67">We were down driving this week, and a lot one of the things we do is I listen to music, and we have a lot of fun doing that.</span> <span class="tl-s" data-s="804.82" data-e="805.46">And so.</span> <span class="tl-s" data-s="805.46" data-e="807.93">My son played The Devil Went Down to Georgia.</span> <span class="tl-s" data-s="807.93" data-e="809.13">And we have this ongoing disagreement.</span> <span class="tl-s" data-s="809.13" data-e="810.38">Luke, this is my second son.</span> <span class="tl-s" data-s="810.40" data-e="817.26">And so I think when the devil played, now you have no context for this, so I&#x27;m gonna look at Heather.</span> <span class="tl-s" data-s="817.26" data-e="822.37">I think that, so there&#x27;s a contest between Johnny and the devil, and I think the devil played it better than Johnny.</span> <span class="tl-s" data-s="822.37" data-e="824.89">I think the devil won.</span></p>
+        <p><span class="tl-s" data-s="824.93" data-e="829.64">And so, but Johnny, like in this song, Johnny&#x27;s like, yeah, he wins, he gets a golden fiddle and all that stuff.</span> <span class="tl-s" data-s="829.69" data-e="832.26">But I think the devil did better.</span> <span class="tl-s" data-s="832.32" data-e="833.91">So I want everybody to email, Who won?</span> <span class="tl-s" data-s="833.91" data-e="836.08">Who won, Johnny or the devil?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="836.09" data-e="837.17">64 million views, [Speaker A] dude.</span> <span class="tl-s" data-s="837.62" data-e="841.59">It&#x27;s it&#x27;s like you&#x27;ve been living in a cave if you haven&#x27;t heard this song.</span> <span class="tl-s" data-s="841.62" data-e="845.33">I mean, this is like this is like not hearing of gravy or ketchup.</span> <span class="tl-s" data-s="845.81" data-e="846.10">What&#x27;s ketchup?</span></p>
+        <p><span class="tl-s" data-s="847.41" data-e="850.79">I mean, that&#x27;s kind of the same thing.</span> <span class="tl-s" data-s="850.79" data-e="856.45">So anyway, I don&#x27;t know what we were talking about, but the devil, the devil either.</span> <span class="tl-s" data-s="856.47" data-e="856.66">Yeah.</span> <span class="tl-s" data-s="857.17" data-e="859.50">So in that song, I think the devil won.</span> <span class="tl-s" data-s="859.50" data-e="862.38">But anyway, so the oh many names.</span> <span class="tl-s" data-s="862.48" data-e="864.55">The devil has many names, right?</span> <span class="tl-s" data-s="864.55" data-e="864.92">And so.</span> <span class="tl-s" data-s="864.95" data-e="872.48">Lucifer is—I mean, that&#x27;s what he was called—and so, so then when it comes to him, he took on the form of a serpent, right?</span> <span class="tl-s" data-s="872.50" data-e="879.89">And so he came to the garden, and in the garden, Adam&#x27;s job was to keep and protect the garden, to preserve the garden, to work the garden.</span> <span class="tl-s" data-s="880.18" data-e="892.84">And he knew that the—we talked about this on a prayer another podcast—but I&#x27;ll say it again: He knew that the devil was—that the serpent was sly.</span></p>
+        <p><span class="tl-s" data-s="892.93" data-e="898.85">He knew that there was something up with him, and he let him stay there.</span> <span class="tl-s" data-s="899.77" data-e="901.69">That was wrong.</span> <span class="tl-s" data-s="902.08" data-e="911.68">Yeah, [Speaker A] he needed to boot that thing out, crush its head, and like throw it out, and he didn&#x27;t.</span> <span class="tl-s" data-s="911.71" data-e="917.52">And so the devil— so surely he fell before Adam and Eve, right?</span> <span class="tl-s" data-s="917.52" data-e="926.04">So he fell, and but yet the world was not cursed at the fall of Satan, although the evil was in the world.</span> <span class="tl-s" data-s="926.15" data-e="937.57">The world became cursed When mankind fell, so when mankind fell, that&#x27;s when you know floods, natural disasters, miscarriages, cancer, Alzheimer&#x27;s, everything came in.</span> <span class="tl-s" data-s="937.57" data-e="937.80">Right?</span> <span class="tl-s" data-s="937.81" data-e="941.25">But when the devil fell, so the devil tempted mankind.</span> <span class="tl-s" data-s="941.25" data-e="947.14">Mankind chose to want to take the place of God, just like the devil tried, and it was unsuccessful.</span> <span class="tl-s" data-s="947.21" data-e="948.33">And so anyway, so.</span></p>
+        <p><span class="tl-s" data-s="948.80" data-e="960.36">That&#x27;s part of what, and actually, if you read Revelation 1 and, I&#x27;m sorry, Genesis 1 and 2, and then Revelation 21 and 22, you&#x27;ll notice that there&#x27;s a lot of Eden references.</span> <span class="tl-s" data-s="960.40" data-e="968.05">And so what we get when we, in the new heavens and the new earth, is a new, restored, and better Eden.</span> <span class="tl-s" data-s="968.05" data-e="970.26">And so there&#x27;s not gonna be any serpents.</span> <span class="tl-s" data-s="971.16" data-e="973.82">There&#x27;s not gonna be any darkness.</span> <span class="tl-s" data-s="973.82" data-e="980.14">The gates are gonna stay open all the time, which means that there&#x27;s no threat from the outside.</span> <span class="tl-s" data-s="980.21" data-e="987.47">And so we don&#x27;t have to watch to make sure nobody comes in that&#x27;s bad, like like we you know like Adam failed in Genesis chapter three.</span> <span class="tl-s" data-s="987.52" data-e="989.84">So [Speaker C] okay, yeah, well I love a good tangent.</span> <span class="tl-s" data-s="989.84" data-e="993.16">I definitely have a song to listen to after this episode apparently.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="993.23" data-e="996.26">Yeah, you you have a song for sure.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="996.26" data-e="998.88">So we hit a lot of different things.</span> <span class="tl-s" data-s="999.06" data-e="1001.79">I hope we answered all the questions that were sent in.</span> <span class="tl-s" data-s="1001.79" data-e="1004.92">Some people asked us questions in person, and we tried to remember as many as we could.</span> <span class="tl-s" data-s="1005.00" data-e="1022.45">If this is something that you&#x27;re still interested in, or you have specific questions about evil or the problem of evil, the origin of evil, any of these things that a lot of which were chalked up to mysteries— do you have something else, Rich?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1022.45" data-e="1024.13">No, my computer was just messing up.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1024.13" data-e="1024.93">Oh, okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1024.93" data-e="1025.09">Sorry.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1025.09" data-e="1026.15">So feel free to email us at production@centergilbert.com.</span> <span class="tl-s" data-s="1026.15" data-e="1027.77">Thank you so much for tuning in and for the questions.</span> <span class="tl-s" data-s="1027.77" data-e="1030.59">We love you.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1030.59" data-e="1030.67">Amen.</span> <span class="tl-s" data-s="1030.67" data-e="1031.13">That&#x27;s right.</span> <span class="tl-s" data-s="1031.13" data-e="1036.47">And you know, I don&#x27;t generally, just as you know, I don&#x27;t generally speak in favor of the devil, but I do think he won when it came to Johnny and the church.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1036.47" data-e="1037.15">Well, we&#x27;re gonna see.</span> <span class="tl-s" data-s="1037.15" data-e="1040.23">I wish we could play it on here, but we&#x27;d get cancelled.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1040.23" data-e="1041.27">Yeah.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1041.27" data-e="1043.75">Before we even— [Speaker A] I want to hear your thoughts though.</span> <span class="tl-s" data-s="1043.75" data-e="1046.61">I want to know what you guys think as well.</span> <span class="tl-s" data-s="1046.61" data-e="1046.99">All [Speaker C] right.</span> <span class="tl-s" data-s="1046.99" data-e="1049.76">I want you to sing it.</span> <span class="tl-s" data-s="1049.92" data-e="1052.46">Just sing it.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1053.03" data-e="1053.76">There&#x27;s no singing.</span> <span class="tl-s" data-s="1053.76" data-e="1056.58">It&#x27;s a— [Speaker C] No, that&#x27;s just for me.</span> <span class="tl-s" data-s="1056.58" data-e="1057.78">You can sing.</span> <span class="tl-s" data-s="1057.78" data-e="1058.79">You don&#x27;t sing.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1058.90" data-e="1059.61">Oh, it just sounds?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1059.61" data-e="1062.27">It&#x27;s a— The whole thing is it&#x27;s a fiddle contest.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1062.41" data-e="1063.76">It looks like a music video.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1063.95" data-e="1069.72">It&#x27;s a music video, but it&#x27;s like there&#x27;s words, but the whole deal is— The band&#x27;s playing.</span> <span class="tl-s" data-s="1069.79" data-e="1072.61">No, it&#x27;s okay, friends, friends, and our legion of fans.</span> <span class="tl-s" data-s="1073.57" data-e="1080.05">I mean, we&#x27;ve got, we&#x27;ve got some rank ignorance here that is gonna have to be remedied.</span> <span class="tl-s" data-s="1080.05" data-e="1080.05">I need to stop this podcast and I&#x27;m gonna ask him to go ahead and watch the video.</span> <span class="tl-s" data-s="1080.05" data-e="1080.05">I [Speaker C] will.</span> <span class="tl-s" data-s="1080.05" data-e="1080.05">And then on the next podcast, he&#x27;ll render a verdict.</span> <span class="tl-s" data-s="1080.05" data-e="1080.05">Did the devil win or did Joni?</span> <span class="tl-s" data-s="1080.05" data-e="1080.05">So until then, [Speaker C] all right, take it easy.</span> <span class="tl-s" data-s="1080.05" data-e="1080.05">See ya, everybody.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1080.05" data-e="1080.05">Thank you.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Fixed on Jesus episode archive, backed by /api/podcast/search.
+  // Static fallback list above stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function fmtDuration(raw) {
+      if (!raw) return "";
+      var str = String(raw).trim();
+      // Anchor feeds report seconds; render as H:MM:SS or M:SS.
+      if (/^\d+$/.test(str)) {
+        var total = parseInt(str, 10);
+        var h = Math.floor(total / 3600);
+        var m = Math.floor((total % 3600) / 60);
+        var sec = total % 60;
+        var mm = (h > 0 && m < 10 ? "0" + m : "" + m);
+        var ss = (sec < 10 ? "0" + sec : "" + sec);
+        return (h > 0 ? h + ":" + mm : m) + ":" + ss;
+      }
+      // Anchor also reports clock strings like "00:24:02" — drop the
+      // redundant leading hour so it reads "24:02".
+      return str.replace(/^00:/, "");
+    }
+    function row(it) {
+      it = it || {};
+      var title = esc(it.title) || "Untitled episode";
+      var tUrl = it.guid && transcriptMap[it.guid];
+      var heading = tUrl
+        ? '<a href="' + esc(tUrl) + '">' + title + "</a>"
+        : (it.link
+          ? '<a href="' + esc(it.link) + '" target="_blank" rel="noopener">' + title + "</a>"
+          : title);
+      var meta = [fmtDate(it.date), fmtDuration(it.duration)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      return '<div class="sermon"><div><h3>' + heading + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    var PER = 10;
+    var state = { q: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No episodes found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " episode" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " episodes";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/podcast/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () {
+          // Keep the static list, but tell the reader where else to listen —
+          // some privacy blockers stop the archive request itself.
+          var note = document.querySelector("[data-sermons-error]");
+          if (note) note.hidden = false;
+        });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    if (monthSel) {
+      monthSel.addEventListener("change", function () {
+        state.month = monthSel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: 5b76db56-32df-432f-aef8-cd86ea14d894 -->
+</body>
+</html>
