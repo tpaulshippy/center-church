@@ -422,7 +422,6 @@ main = """  <main>
             <audio controls preload="none" src="%s"></audio>
           </div>
         </div>
-        <h2 class="display-lg" style="margin-top:2rem">Transcript</h2>
         <div class="transcript" style="white-space:pre-line">
 %s%s
         </div>
