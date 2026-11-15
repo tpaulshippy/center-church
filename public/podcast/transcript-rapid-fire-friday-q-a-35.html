@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rapid Fire Friday - Q&amp;A #35 — Podcast Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Fixed on Jesus: conversations beyond Sunday mornings from Center Church in Gilbert, AZ — listen on Spotify, Apple Podcasts, and YouTube." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=18" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a href="/sermons">Sermons</a></li>
+              <li><a class="active" href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/podcast">&larr; All podcast episodes</a>
+          <h1 class="display-lg">Rapid Fire Friday - Q&amp;A #35</h1>
+          <p class="transcript-meta">2025-09-19 · 9:31</p>
+          <p class="transcript-desc">Rapid Fire Friday is a special episode of questions brought to us by our listeners. These are usually quick answers and not enough to create their own episode, but when we put a bunch together - we get Rapid Fire Friday! To ask a question send an email to production@centergilbert.com</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/e750e370/podcast/play/108531436/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-8-19%2F407778796-44100-2-78d3dc85b1af.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="0.19" data-e="0.84">What day is it, Mark?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1.40" data-e="2.03">Oh, good question.</span> <span class="tl-s" data-s="2.08" data-e="4.10">I was gonna go on the Google machine, but I think it&#x27;s Friday.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="4.57" data-e="5.07">It&#x27;s Friday.</span> <span class="tl-s" data-s="5.24" data-e="6.06">You know what that means, Mark?</span> <span class="tl-s" data-s="7.24" data-e="8.64">Rapid Fire Friday!</span></p>
+        <p><span class="tl-s" data-s="12.16" data-e="12.98">Boom, boom, boom!</span></p>
+        <p><span class="tl-s" data-s="16.68" data-e="18.36">Rapid Fire Friday!</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="25.20" data-e="27.04">3, 2, 1, go!</span> <span class="tl-s" data-s="27.46" data-e="29.17">Rapid Fire Friday!</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="32.51" data-e="33.41">All right, we have another email.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="33.73" data-e="34.31">Another email.</span> <span class="tl-s" data-s="35.08" data-e="35.51">That&#x27;s the bell.</span> <span class="tl-s" data-s="36.19" data-e="39.75">This is an anonymous question, so if that&#x27;s something you want to do, feel free to do that.</span> <span class="tl-s" data-s="40.36" data-e="46.13">This question says, what is the relationship between godly parenting and Reformed soteriology?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="46.62" data-e="47.49">Soteriology.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="47.70" data-e="48.58">Soteriology.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="48.63" data-e="57.04">I think what the person&#x27;s getting at is soteriology is the— means the The study of salvation, right?</span> <span class="tl-s" data-s="57.23" data-e="67.03">And so Reformed soteriology means we believe that salvation comes through— regeneration comes and then faith comes, right?</span> <span class="tl-s" data-s="67.09" data-e="67.33">Yeah.</span> <span class="tl-s" data-s="67.65" data-e="74.44">So the person is asking essentially, um, does, uh, does [Speaker B] parenting help one get saved?</span> <span class="tl-s" data-s="74.87" data-e="75.01">Yeah.</span> <span class="tl-s" data-s="75.11" data-e="75.96">Or is it decisive?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="76.47" data-e="76.69">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="76.94" data-e="77.16">Right.</span> <span class="tl-s" data-s="77.34" data-e="77.42">Yeah.</span> <span class="tl-s" data-s="77.99" data-e="80.06">And so can you parent someone into the kingdom?</span> <span class="tl-s" data-s="80.46" data-e="82.14">And so the short answer to that is no.</span></p>
+        <p><span class="tl-s" data-s="83.36" data-e="86.33">We can&#x27;t impact.</span> <span class="tl-s" data-s="86.49" data-e="87.82">We we can&#x27;t save our kids.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="88.16" data-e="93.56">Yeah, [Speaker A] but as parents, that doesn&#x27;t mean we we&#x27;re left without any tools, right?</span> <span class="tl-s" data-s="94.25" data-e="103.41">And so good parenting makes a difference for kids, but kids need to on their own choose to follow Jesus, right?</span> <span class="tl-s" data-s="104.53" data-e="110.71">And so good parenting doesn&#x27;t always make for good kids, and this is part of the mystery of God&#x27;s providence, right?</span> <span class="tl-s" data-s="110.79" data-e="112.04">It&#x27;s much better.</span> <span class="tl-s" data-s="112.31" data-e="121.00">To have kids in Christian homes, but just because a child is in a Christian home doesn&#x27;t mean that child will be saved.</span> <span class="tl-s" data-s="121.05" data-e="121.10">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="121.13" data-e="138.31">At the same time, our job as parents is to put before the the children the gospel of Jesus Christ, to teach them to follow Jesus, also to be an example to to yeah to be an example of what it means to be a Christian husband and.</span> <span class="tl-s" data-s="138.31" data-e="145.07">Mother and and parent, and so like that&#x27;s that it&#x27;s not decisive, but there is a connection there.</span> <span class="tl-s" data-s="145.07" data-e="146.15">So we&#x27;re called to be faithful.</span> <span class="tl-s" data-s="146.15" data-e="154.28">You think about just the call to not exasperate your children, and you think about the call to love your children and serve.</span> <span class="tl-s" data-s="154.30" data-e="156.57">I mean, and and they&#x27;re a blessing.</span> <span class="tl-s" data-s="156.71" data-e="157.34">Don&#x27;t don&#x27;t provoke them.</span> <span class="tl-s" data-s="157.39" data-e="168.02">And so like you know just there&#x27;s a there&#x27;s a consistency we&#x27;re called to exhibit to our kids, and and so we don&#x27;t want that to be something that is. spotty, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="168.10" data-e="168.35">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="168.59" data-e="180.47">And so, uh, but at the same time, every child born into our homes or adopted into our homes, uh, like my children, um, are— they are born with a sin nature.</span> <span class="tl-s" data-s="180.55" data-e="183.42">So we, we can&#x27;t parent that sin nature out of them.</span> <span class="tl-s" data-s="184.14" data-e="190.31">We have to help them recognize they need a Savior, and their mom&#x27;s faith and their dad&#x27;s faith is not going to be enough.</span> <span class="tl-s" data-s="190.54" data-e="193.71">Yeah, their mom and dad&#x27;s love of Jesus is not going to be enough for them.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="194.17" data-e="194.32">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="194.39" data-e="196.06">They have to make that same choice for themselves.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="197.12" data-e="197.82">Yeah, no, that&#x27;s great.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="198.16" data-e="199.14">We have another question here.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="199.92" data-e="200.71">That&#x27;s the email bell.</span> <span class="tl-s" data-s="201.45" data-e="203.44">This is also an anonymous question.</span> <span class="tl-s" data-s="203.78" data-e="210.28">Um, should I or should I not perform an infant baptism for my kid in the bathtub?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="210.85" data-e="213.55">I would say no, because for 2 reasons.</span> <span class="tl-s" data-s="213.73" data-e="222.54">One, well, there&#x27;s no— this is— this goes back to our, our conversation about When is the appropriate time to baptize?</span></p>
+        <p><span class="tl-s" data-s="223.85" data-e="236.28">Yeah, our position is that that we we baptize people who are able to make it, who confess and believe Jesus Christ, and so that it&#x27;s there&#x27;s two things I think that are in play here.</span> <span class="tl-s" data-s="236.44" data-e="240.01">One, I don&#x27;t believe infant baptism is real baptism.</span> <span class="tl-s" data-s="240.79" data-e="245.98">I don&#x27;t believe the scriptures show us that infant baptism is legit, and so.</span></p>
+        <p><span class="tl-s" data-s="247.29" data-e="256.46">That&#x27;s that&#x27;s a whole another element that we have a podcast episode about, so I won&#x27;t rehearse those things here.</span> <span class="tl-s" data-s="256.98" data-e="272.46">I also think that that like one of the reasons we do baptisms publicly is so that we can all recognize like what we&#x27;re saying here is we believe this person&#x27;s life has bears the test a testimony of faithfulness to Jesus.</span> <span class="tl-s" data-s="272.88" data-e="272.97">Right.</span> <span class="tl-s" data-s="273.17" data-e="275.39">And their testimony of Jesus Christ is good.</span> <span class="tl-s" data-s="275.51" data-e="284.75">And so to do it in isolation like that, I think, militates against that celebration that we all as believers should be able to enjoy.</span> <span class="tl-s" data-s="285.75" data-e="288.02">And so that&#x27;s why we do them publicly.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="288.55" data-e="289.89">Oh yeah, that&#x27;s great.</span> <span class="tl-s" data-s="290.57" data-e="291.90">So no, essentially.</span> <span class="tl-s" data-s="292.00" data-e="292.43">I would say no.</span> <span class="tl-s" data-s="292.49" data-e="292.73">Yeah.</span> <span class="tl-s" data-s="293.69" data-e="295.89">That&#x27;s the email bell.</span> <span class="tl-s" data-s="296.72" data-e="297.43">I have a question.</span> <span class="tl-s" data-s="297.86" data-e="298.95">This one&#x27;s from Amy Elder.</span> <span class="tl-s" data-s="299.56" data-e="301.04">I&#x27;m going to sum it up a little bit.</span> <span class="tl-s" data-s="302.17" data-e="308.10">She was reading through the book of Acts, and chapter 15 and 16 is about circumcision.</span> <span class="tl-s" data-s="308.93" data-e="313.42">And there&#x27;s a debate that can one be saved unless, you know, they&#x27;re circumcised?</span></p>
+        <p><span class="tl-s" data-s="313.82" data-e="315.64">Paul and Barnabas correct that thinking.</span> <span class="tl-s" data-s="315.75" data-e="321.12">Then in chapter 16, Paul takes Timothy with him to Derbe and Lystra.</span> <span class="tl-s" data-s="321.85" data-e="324.99">But Paul circumcised Timothy because his father was a Greek.</span> <span class="tl-s" data-s="325.12" data-e="326.27">I think we talked about this before.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="326.64" data-e="327.03">Yeah, sure.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="327.22" data-e="334.20">I know Paul does this so Timothy can fit in with the Jews and not Have that be a barrier to spreading the word to the Jews there.</span> <span class="tl-s" data-s="334.85" data-e="339.94">My question is, how would anyone know that Timothy was circumcised for this trip?</span></p>
+        <p><span class="tl-s" data-s="341.17" data-e="344.08">Was there some kind of check when entering the synagogue?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="344.64" data-e="344.88">No.</span> <span class="tl-s" data-s="345.54" data-e="352.43">That&#x27;s a good question though, because like the the idea is this: if you have a Jewish father, you were circumcised full stop.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="352.51" data-e="353.09">Hundred percent.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="353.21" data-e="353.63">Hundred percent.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="353.73" data-e="355.16">It&#x27;s the [Speaker A] hundred percent.</span> <span class="tl-s" data-s="355.29" data-e="355.40">Yeah.</span> <span class="tl-s" data-s="355.49" data-e="355.64">Yeah.</span> <span class="tl-s" data-s="355.65" data-e="356.35">So Timothy didn&#x27;t.</span> <span class="tl-s" data-s="356.51" data-e="358.41">He had a Jewish mother, not a Jewish father.</span> <span class="tl-s" data-s="358.83" data-e="359.04">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="359.17" data-e="362.95">And so he had a Greek father or a Gentile father, and so he was not circumcised.</span> <span class="tl-s" data-s="363.03" data-e="364.58">So [Speaker B] everyone knew that?</span> <span class="tl-s" data-s="364.60" data-e="364.68">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="364.69" data-e="368.03">So when they heard that he was circumcised, that was enough?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="368.14" data-e="369.24">That was— yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="369.58" data-e="372.14">They didn&#x27;t make him drop his drawers before he went?</span> <span class="tl-s" data-s="372.14" data-e="376.07">What if he went to a synagogue that he hadn&#x27;t been at before?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="376.07" data-e="378.54">Synagogues are different than the temple.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="378.54" data-e="378.63">Oh.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="378.70" data-e="381.50">And so the temple, like, that&#x27;s for Jews only, right?</span> <span class="tl-s" data-s="382.00" data-e="385.38">And so it was universal in the Jewish mindset.</span> <span class="tl-s" data-s="385.83" data-e="389.26">And so, uh, it would have been something then about Timothy.</span> <span class="tl-s" data-s="389.26" data-e="392.96">He would have said, hey, um, Timothy&#x27;s now circumcised.</span> <span class="tl-s" data-s="393.32" data-e="396.25">So, so just so that somebody vouched for him, he didn&#x27;t have a stumbling block.</span> <span class="tl-s" data-s="396.31" data-e="397.60">It wasn&#x27;t a stumbling block to the Jews, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="397.69" data-e="397.87">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="398.18" data-e="400.79">But he didn&#x27;t circumcise Titus, [Speaker B] right?</span> <span class="tl-s" data-s="400.90" data-e="404.85">And when we talked about that, [Speaker A] yeah, and Titus is interacting with Gentiles, right?</span> <span class="tl-s" data-s="404.85" data-e="407.48">And so like, he didn&#x27;t circumcise Titus.</span> <span class="tl-s" data-s="407.48" data-e="411.10">And so [Speaker B] like, this isn&#x27;t interacting with Jews.</span> <span class="tl-s" data-s="411.16" data-e="421.08">Well, he&#x27;s, he&#x27;s also like, there was To circumcise someone in that day meant that they were taking upon themselves all the responsibilities and prerogatives and direction of the law.</span> <span class="tl-s" data-s="421.08" data-e="423.77">And so it was saying, I&#x27;m Jewish.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="423.77" data-e="424.03">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="424.17" data-e="425.62">Like, at some level.</span> <span class="tl-s" data-s="425.62" data-e="428.95">And so Timothy&#x27;s not doing— Paul&#x27;s not doing that with Timothy.</span> <span class="tl-s" data-s="428.99" data-e="430.96">Um, but— [Speaker B] It was an evangelistic reason.</span> <span class="tl-s" data-s="431.01" data-e="435.08">It [Speaker A] was an evangelistic tool.</span> <span class="tl-s" data-s="435.08" data-e="435.16">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="435.24" data-e="435.44">Yeah.</span> <span class="tl-s" data-s="435.56" data-e="435.69">Okay.</span> <span class="tl-s" data-s="436.59" data-e="448.74">Uh, a follow-up on, on the email was the other question I have, was there a marking or anything physical to identify a Jewish woman similar to male circumcision?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="448.79" data-e="449.42">No, there wasn&#x27;t.</span> <span class="tl-s" data-s="449.57" data-e="463.14">And so, uh, one of the things that has turned the world upside down in a good way is, um, in the ancient Near East and in all of cultures, ancient cultures, women were property.</span> <span class="tl-s" data-s="463.17" data-e="471.50">And so Christianity is actually— is the, the first belief system where women are treated as equals with men.</span> <span class="tl-s" data-s="471.51" data-e="477.74">And so the way women in Jewish culture would have been identified is by with who their husband was.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="478.02" data-e="478.10">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="478.10" data-e="485.85">But what Christians have done is have, you know, the teaching of the Bible is that men and women are equal in value and dignity.</span> <span class="tl-s" data-s="486.35" data-e="490.58">They&#x27;re both made in the image of God, right?</span> <span class="tl-s" data-s="490.60" data-e="492.12">And so they&#x27;re both equal.</span> <span class="tl-s" data-s="492.12" data-e="501.01">And so Christianity has taken women from the idea of being property to a co-heir in Christ, of Christ.</span> <span class="tl-s" data-s="501.60" data-e="509.11">And so, that would have been the marking of the Jewish person, just that Jewish woman is married to a man, a Jewish man.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="509.13" data-e="513.23">And would a non-Jewish woman ever be married to a Jewish man?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="513.23" data-e="514.34">Not a faithful one.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="514.34" data-e="514.36">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="514.36" data-e="523.09">Like, a faithful Jewish man, like, that&#x27;s a whole— that&#x27;s one of the issues we see in Judges is Samson&#x27;s marrying people that he shouldn&#x27;t be marrying.</span> <span class="tl-s" data-s="523.51" data-e="525.57">Delilah, and then the, the Temnite woman.</span> <span class="tl-s" data-s="525.61" data-e="528.97">And like, there&#x27;s all kinds of issues going on there.</span> <span class="tl-s" data-s="529.03" data-e="530.30">So that&#x27;s a whole nother conversation.</span> <span class="tl-s" data-s="530.32" data-e="539.17">But it was one of the ways that you could tell that the Jewish people were unfaithful is they married, they married idolaters.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="539.17" data-e="540.91">Oh, that&#x27;s great.</span> <span class="tl-s" data-s="540.94" data-e="542.79">Well, thank you for the question.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="542.79" data-e="543.75">Yeah, thanks, Amy.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="543.75" data-e="545.51">And that&#x27;s all the questions I have.</span> <span class="tl-s" data-s="545.51" data-e="546.18">For now.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="546.18" data-e="546.63">For now.</span> <span class="tl-s" data-s="546.82" data-e="550.67">But there will be another Friday that comes because you know what, Mark?</span> <span class="tl-s" data-s="550.85" data-e="552.97">They come once every seven days.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="553.21" data-e="553.78">Every seven.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="553.78" data-e="554.77">Every seven.</span> <span class="tl-s" data-s="554.77" data-e="555.29">It&#x27;s a rapid-fire Friday.</span> <span class="tl-s" data-s="555.31" data-e="555.70">We&#x27;ll be back.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="555.72" data-e="556.20">All right.</span> <span class="tl-s" data-s="556.20" data-e="557.37">Well, I&#x27;m gonna hold you to that.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="557.37" data-e="557.37">All right.</span> <span class="tl-s" data-s="557.37" data-e="557.37">Sounds good.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="557.37" data-e="557.37">Take care, guys.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Fixed on Jesus episode archive, backed by /api/podcast/search.
+  // Static fallback list above stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function fmtDuration(raw) {
+      if (!raw) return "";
+      var str = String(raw).trim();
+      // Anchor feeds report seconds; render as H:MM:SS or M:SS.
+      if (/^\d+$/.test(str)) {
+        var total = parseInt(str, 10);
+        var h = Math.floor(total / 3600);
+        var m = Math.floor((total % 3600) / 60);
+        var sec = total % 60;
+        var mm = (h > 0 && m < 10 ? "0" + m : "" + m);
+        var ss = (sec < 10 ? "0" + sec : "" + sec);
+        return (h > 0 ? h + ":" + mm : m) + ":" + ss;
+      }
+      // Anchor also reports clock strings like "00:24:02" — drop the
+      // redundant leading hour so it reads "24:02".
+      return str.replace(/^00:/, "");
+    }
+    function row(it) {
+      it = it || {};
+      var title = esc(it.title) || "Untitled episode";
+      var tUrl = it.guid && transcriptMap[it.guid];
+      var heading = tUrl
+        ? '<a href="' + esc(tUrl) + '">' + title + "</a>"
+        : (it.link
+          ? '<a href="' + esc(it.link) + '" target="_blank" rel="noopener">' + title + "</a>"
+          : title);
+      var meta = [fmtDate(it.date), fmtDuration(it.duration)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      return '<div class="sermon"><div><h3>' + heading + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    var PER = 10;
+    var state = { q: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No episodes found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " episode" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " episodes";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/podcast/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () {
+          // Keep the static list, but tell the reader where else to listen —
+          // some privacy blockers stop the archive request itself.
+          var note = document.querySelector("[data-sermons-error]");
+          if (note) note.hidden = false;
+        });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    if (monthSel) {
+      monthSel.addEventListener("change", function () {
+        state.month = monthSel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: 580c7e6f-1fc6-4311-aa4e-f6a4fef42464 -->
+</body>
+</html>
