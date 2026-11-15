@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acts 11:1-18 — Sermon Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Listen to the latest sermons from Center Church, or follow along on Apple Podcasts and Spotify." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=17" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a class="active" href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/sermons">&larr; All sermons</a>
+          <h1 class="display-lg">Acts 11:1-18</h1>
+          <p class="transcript-meta">Rich Richardson · Acts · 2026-06-28 · 00:44:40</p>
+          <p class="transcript-desc">The church that lives for itself will die by itself; the church that follows Jesus rejoices whenever God moves.</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/119cbef70/podcast/play/128974169/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-7%2F436123829-44100-2-257c0ddbc3bead1e.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><span class="tl-s" data-s="0.02" data-e="9.56">responsibilities of those who open up God&#x27;s Word to preach involves preaching the Bible with a focus on exposing the fallen condition of our hearts.</span> <span class="tl-s" data-s="10.19" data-e="15.73">Because faithful preaching doesn&#x27;t tickle our ears, it doesn&#x27;t inflate our egos.</span> <span class="tl-s" data-s="15.73" data-e="21.49">What it does is it exposes us to the Word so we can be transformed by the Word.</span> <span class="tl-s" data-s="21.51" data-e="29.76">My task today is to help us all see how Acts 11 verses 1 through 18 exposes us.</span> <span class="tl-s" data-s="30.96" data-e="35.71">And with the Lord&#x27;s help, we will see how God wants to transform us as His people.</span> <span class="tl-s" data-s="35.78" data-e="49.46">What this passage does is it shows us our proclivity to criticize what God might be doing in other people rather than celebrate the grace of God at work in people&#x27;s lives.</span> <span class="tl-s" data-s="49.46" data-e="55.39">What we need, friends, is the real Jesus to turn us into real Christians.</span> <span class="tl-s" data-s="55.39" data-e="67.68">We saw last week that there&#x27;s no such thing as a composite Jesus, one that we fashion into the image of our own liking, one that resembles only what we stand for.</span></p>
+        <p><span class="tl-s" data-s="67.68" data-e="70.54">The real Jesus is Lord over all.</span> <span class="tl-s" data-s="70.91" data-e="78.56">Well, this week we&#x27;re going to learn that some astonishing news has reached Jerusalem.</span> <span class="tl-s" data-s="78.56" data-e="92.36">Despite opposition, despite persecution, despite geographic and ethnic barriers, the Gentiles have responded to Jesus Christ and have been welcomed into the people of God.</span></p>
+        <p><span class="tl-s" data-s="94.20" data-e="110.12">Now, you&#x27;d expect there to be widespread celebration hitting the streets, one that unifies people around one common cause and purpose, like when the United States scores the winning goal in the World Cup here in just a few weeks.</span> <span class="tl-s" data-s="110.12" data-e="117.33">But this is not what we find on the streets of Jerusalem.</span> <span class="tl-s" data-s="117.33" data-e="120.19">Instead, we encounter criticism.</span> <span class="tl-s" data-s="120.23" data-e="120.85">Why?</span> <span class="tl-s" data-s="120.92" data-e="127.32">Well, I believe it was because God was working outside of people&#x27;s comfort zones.</span> <span class="tl-s" data-s="128.68" data-e="135.34">What we find in the early church, represented in Acts 11, has reverberated throughout church history.</span> <span class="tl-s" data-s="136.68" data-e="143.18">There has been and continues to be resistance to genuine surprising works of God.</span></p>
+        <p><span class="tl-s" data-s="147.84" data-e="152.17">It&#x27;s a resistance that doesn&#x27;t come from outside of the church.</span> <span class="tl-s" data-s="152.19" data-e="153.98">It comes from within.</span></p>
+        <p><span class="tl-s" data-s="155.74" data-e="163.24">Now, if we serve a composite Jesus, this will inevitably lead us to become composite Christians.</span> <span class="tl-s" data-s="164.38" data-e="169.74">Not genuine, authentic believers in the risen and ascended Lord Jesus Christ.</span> <span class="tl-s" data-s="170.18" data-e="177.98">We will live only for what we think is most important and not for what God deems is important.</span> <span class="tl-s" data-s="179.32" data-e="181.64">And friends, this has devastating consequences.</span></p>
+        <p><span class="tl-s" data-s="183.34" data-e="186.06">Our big idea for today is this.</span> <span class="tl-s" data-s="187.06" data-e="192.08">The church that lives for itself will die by itself.</span> <span class="tl-s" data-s="193.10" data-e="197.90">The church that follows Jesus rejoices whenever God moves.</span> <span class="tl-s" data-s="199.04" data-e="205.86">I&#x27;m going to read Acts 11, verses 1-18, and then we&#x27;ll see how I got here.</span> <span class="tl-s" data-s="206.84" data-e="207.92">This is God&#x27;s Word.</span></p>
+        <p><span class="tl-s" data-s="211.20" data-e="213.96">May it expose us and transform us this morning.</span></p>
+        <p><span class="tl-s" data-s="215.42" data-e="222.84">Now, the apostles and the brothers and sisters who were throughout Judea heard that the Gentiles also had received the Word of God.</span> <span class="tl-s" data-s="223.10" data-e="232.96">So, when Peter went up to Jerusalem, the circumcision party criticized him, saying, He went to uncircumcised men and ate with them.</span> <span class="tl-s" data-s="233.90" data-e="237.04">But Peter began and explained it to them in order.</span> <span class="tl-s" data-s="237.90" data-e="249.46">I was in the city of Joppa praying, and in a trance I saw a vision, something like a great sheet descending, being let down from heaven by its four corners, and it came down to me.</span> <span class="tl-s" data-s="250.30" data-e="255.84">Looking at it closely, I observed animals and beasts of prey and reptiles and birds of the air.</span> <span class="tl-s" data-s="256.94" data-e="260.10">And I heard a voice saying to me, Rise, Peter.</span> <span class="tl-s" data-s="260.78" data-e="262.16">Kill and eat.</span> <span class="tl-s" data-s="263.12" data-e="268.64">But I said, By no means, Lord, for nothing common or unclean has ever entered my mouth.</span> <span class="tl-s" data-s="269.06" data-e="275.18">But the voice answered a second time from heaven, What God has made clean, do not call common.</span></p>
+        <p><span class="tl-s" data-s="275.92" data-e="279.36">This happened three times and all was drawn up again into heaven.</span> <span class="tl-s" data-s="279.50" data-e="286.20">And behold, at that very moment, three men arrived at the house in which we were, sent to me from Caesarea.</span> <span class="tl-s" data-s="287.46" data-e="291.40">And the Spirit told me to go with them, making no distinction.</span></p>
+        <p><span class="tl-s" data-s="292.90" data-e="296.50">These six brothers also accompanied me, and we entered the man&#x27;s house.</span> <span class="tl-s" data-s="296.74" data-e="303.92">And he told us how he had seen the angel stand in his house and say, Send to Joppa and bring Simon, who is called Peter.</span> <span class="tl-s" data-s="304.90" data-e="311.02">He will declare to you a message by which you will be saved, you and all your household.</span></p>
+        <p><span class="tl-s" data-s="312.60" data-e="317.64">As they began to speak, the Holy Spirit fell on them, just as on us at the beginning.</span> <span class="tl-s" data-s="318.82" data-e="326.04">And I remembered the word of the Lord, how he said, John baptized with water, but you will be baptized with the Holy Spirit.</span> <span class="tl-s" data-s="326.44" data-e="334.52">If then God gave the same gift to them as he gave to us when we believed in the Lord Jesus Christ, who was I that I could stand in God&#x27;s way?</span></p>
+        <p><span class="tl-s" data-s="336.64" data-e="339.56">When they heard these things, they fell silent.</span> <span class="tl-s" data-s="340.18" data-e="348.54">And they glorified God, saying, Then to the Gentiles also, God has granted repentance that leads to life.</span> <span class="tl-s" data-s="349.02" data-e="352.34">Father in heaven, would you minister to hearts this morning?</span> <span class="tl-s" data-s="352.50" data-e="355.04">Would you open up the glories of your word?</span> <span class="tl-s" data-s="355.42" data-e="357.70">Help us to behold wondrous things from it.</span> <span class="tl-s" data-s="358.76" data-e="362.86">Show us areas that need to be transformed for your glory.</span> <span class="tl-s" data-s="363.44" data-e="364.94">We pray in Jesus&#x27; name.</span> <span class="tl-s" data-s="365.18" data-e="365.38">Amen.</span> <span class="tl-s" data-s="366.54" data-e="372.06">First point for us today is, living for ourselves produces resistance.</span></p>
+        <p><span class="tl-s" data-s="374.10" data-e="383.72">Right away in this passage, the good news of Acts 10, which we learned about last week from Peter&#x27;s sermon, has reached these believers in Jerusalem.</span> <span class="tl-s" data-s="384.62" data-e="387.34">Was there a celebration held over this good news?</span> <span class="tl-s" data-s="388.02" data-e="388.28">No.</span> <span class="tl-s" data-s="388.80" data-e="390.16">There&#x27;s no celebration.</span> <span class="tl-s" data-s="390.74" data-e="396.60">Instead of celebration, verse 2 tells us we got criticism from a certain group of people.</span> <span class="tl-s" data-s="397.04" data-e="397.82">Who were they?</span> <span class="tl-s" data-s="398.60" data-e="400.16">Well, they were the circumcision party.</span> <span class="tl-s" data-s="400.98" data-e="402.82">Who exactly were the circumcision party?</span> <span class="tl-s" data-s="402.94" data-e="409.34">Well, they weren&#x27;t a bunch of people that went around from house to house celebrating when babies got circumcised.</span> <span class="tl-s" data-s="409.76" data-e="413.94">They weren&#x27;t going to the local Walmart to buy little Johnny a cake for his bris.</span></p>
+        <p><span class="tl-s" data-s="414.98" data-e="418.44">They weren&#x27;t going to Walmart to buy circumcision decorations.</span></p>
+        <p><span class="tl-s" data-s="419.90" data-e="424.60">These were Jewish Christians who did their best to adhere to Jewish laws.</span></p>
+        <p><span class="tl-s" data-s="426.08" data-e="430.26">Laws that told them what they could do and what they shouldn&#x27;t do.</span> <span class="tl-s" data-s="431.36" data-e="439.36">Now, of course, people who find themselves constantly worrying about laws are typically critical people.</span> <span class="tl-s" data-s="440.74" data-e="447.74">That word in verse 2, which we&#x27;ve rendered in English as criticized, is actually translated from the Greek word diakrino.</span> <span class="tl-s" data-s="447.94" data-e="450.76">That word has a very wide semantic range.</span> <span class="tl-s" data-s="451.22" data-e="454.56">On one end, it can mean to waver, doubt.</span> <span class="tl-s" data-s="455.20" data-e="456.70">It has a negative sense to it.</span> <span class="tl-s" data-s="456.96" data-e="458.92">That&#x27;s why we&#x27;ve translated it criticized.</span> <span class="tl-s" data-s="460.04" data-e="465.42">On the other end, it can mean evaluate discerningly.</span> <span class="tl-s" data-s="466.10" data-e="468.44">It can mean discernment, which is a good thing.</span></p>
+        <p><span class="tl-s" data-s="469.90" data-e="479.96">Well, Luke portrays the circumcision party as doubting and even opposing God&#x27;s work by using the sense of criticism.</span> <span class="tl-s" data-s="481.26" data-e="483.62">The danger here, friends, is very subtle.</span></p>
+        <p><span class="tl-s" data-s="485.32" data-e="491.56">Sometimes what we call discernment is really just resistance to the truth.</span></p>
+        <p><span class="tl-s" data-s="493.16" data-e="497.94">We might think we&#x27;re being discerning when in fact we&#x27;re being critical.</span> <span class="tl-s" data-s="499.12" data-e="507.26">Sometimes what we deem as being faithful is actually fear of something new.</span></p>
+        <p><span class="tl-s" data-s="509.58" data-e="513.26">Sometimes what we call conviction is actually self-preservation.</span> <span class="tl-s" data-s="514.30" data-e="518.34">Now notice the basis of their accusation of Peter in verse 3.</span> <span class="tl-s" data-s="518.92" data-e="523.36">You went to uncircumcised men and ate with them.</span></p>
+        <p><span class="tl-s" data-s="524.92" data-e="533.32">You see, the issue, as we were reminded a couple weeks ago, and we&#x27;re reminded here by Luke again, the issue wasn&#x27;t food.</span></p>
+        <p><span class="tl-s" data-s="534.92" data-e="537.78">The text doesn&#x27;t tell us that Peter ate unclean food.</span> <span class="tl-s" data-s="538.12" data-e="543.32">Now, it was possible he was offered unclean food by those in Cornelius&#x27; household.</span> <span class="tl-s" data-s="544.00" data-e="547.60">But we&#x27;re not told whether he partook in eating the food.</span></p>
+        <p><span class="tl-s" data-s="549.60" data-e="551.28">The issue was fellowship.</span></p>
+        <p><span class="tl-s" data-s="553.14" data-e="561.66">I mean, maybe Peter meal-prepped some of his kosher goodies and food and ate them with his newfound Gentile friends.</span></p>
+        <p><span class="tl-s" data-s="563.24" data-e="566.46">To the circumcision party, that doesn&#x27;t matter.</span> <span class="tl-s" data-s="566.70" data-e="568.06">They don&#x27;t give a lick.</span></p>
+        <p><span class="tl-s" data-s="569.52" data-e="572.98">Peter was implicated because of who he hung out with.</span> <span class="tl-s" data-s="574.32" data-e="577.36">The scandal was not that Peter ate unclean food.</span> <span class="tl-s" data-s="578.64" data-e="585.06">You see, the scandal was that Peter treated these Gentile brothers and sisters like family.</span></p>
+        <p><span class="tl-s" data-s="589.60" data-e="593.48">Imagine going to your family reunion, your annual family reunion.</span> <span class="tl-s" data-s="594.08" data-e="599.42">You&#x27;re in line for a plate of barbecue, and someone says, wait, who are you?</span> <span class="tl-s" data-s="600.66" data-e="605.02">That&#x27;s the tension that&#x27;s being experienced by the Gentiles here.</span> <span class="tl-s" data-s="605.88" data-e="614.84">Now, before we come down too hard on the circumcision party, we need to recognize that their concern probably began from something good.</span></p>
+        <p><span class="tl-s" data-s="616.26" data-e="621.08">I&#x27;m sure they wanted to protect what they believed to be the purity of this new movement.</span></p>
+        <p><span class="tl-s" data-s="622.88" data-e="626.06">I mean, let&#x27;s reckon with the facts.</span> <span class="tl-s" data-s="626.26" data-e="627.76">Jesus died for them.</span></p>
+        <p><span class="tl-s" data-s="629.46" data-e="633.88">There were witnesses to Jesus rising from the dead.</span></p>
+        <p><span class="tl-s" data-s="635.54" data-e="638.84">People rubbed elbows with Jesus for 40 days.</span> <span class="tl-s" data-s="639.66" data-e="641.58">This is certainly worth protecting.</span></p>
+        <p><span class="tl-s" data-s="643.00" data-e="649.40">I mean, they only received second or possibly even third-hand information about the visions and the outpouring of the Spirit.</span> <span class="tl-s" data-s="650.20" data-e="652.70">So they needed to get to the bottom of this.</span> <span class="tl-s" data-s="653.96" data-e="656.30">Peter, you have some explaining to do.</span></p>
+        <p><span class="tl-s" data-s="658.30" data-e="670.24">But the irony, the irony in all of their doubting is that God&#x27;s plan was always about saving a global people.</span></p>
+        <p><span class="tl-s" data-s="672.74" data-e="676.62">This is one of the most significant moments in redemptive history.</span></p>
+        <p><span class="tl-s" data-s="678.44" data-e="681.12">It&#x27;s hard for it to hit us in that way.</span> <span class="tl-s" data-s="682.26" data-e="687.74">We need to do a little work to transport ourselves into a first-century Jewish-Christians mindset.</span></p>
+        <p><span class="tl-s" data-s="689.52" data-e="694.98">We are 20 centuries removed from this significant moment in redemptive history.</span> <span class="tl-s" data-s="695.42" data-e="701.32">The nations have received what was promised to Abraham, which is the blessing of salvation.</span></p>
+        <p><span class="tl-s" data-s="703.86" data-e="706.20">Genesis 12 anticipated this.</span> <span class="tl-s" data-s="706.32" data-e="712.78">In that passage of Scripture, God calls Abram and tells him, in you, Abram, all the families of the earth shall be blessed.</span></p>
+        <p><span class="tl-s" data-s="715.16" data-e="720.82">Well, the even greater irony is that Abram was himself a Gentile.</span></p>
+        <p><span class="tl-s" data-s="722.52" data-e="726.26">You see, God&#x27;s plan was never about Israel.</span></p>
+        <p><span class="tl-s" data-s="728.78" data-e="732.44">It was never merely meant to be about Israel.</span> <span class="tl-s" data-s="732.76" data-e="739.00">Israel was always intended to be the vehicle through which blessing would come to the entire earth.</span> <span class="tl-s" data-s="739.82" data-e="748.10">We are witnessing, friends, in this moment in Acts 11, we are witnessing the fulfillment of God&#x27;s plan for humanity.</span></p>
+        <p><span class="tl-s" data-s="749.92" data-e="757.54">In our call to worship this morning, we read Psalm 67, which is a prayer for God&#x27;s saving power to be known throughout the whole earth.</span></p>
+        <p><span class="tl-s" data-s="759.28" data-e="766.08">Psalm 67 is an echo of Genesis 12 and a foreshadowing of what we now see in Acts 11.</span></p>
+        <p><span class="tl-s" data-s="768.12" data-e="776.04">The circumcision party, they might have been well-meaning, but they were just gatekeeping.</span></p>
+        <p><span class="tl-s" data-s="777.80" data-e="783.20">They were trying to determine who fits into God&#x27;s plan of salvation.</span></p>
+        <p><span class="tl-s" data-s="785.52" data-e="789.64">Circumcision, that very thing Luke identified them by.</span> <span class="tl-s" data-s="790.56" data-e="800.46">It was a God-given sign of the covenant God made with Abraham in Genesis, but what they did is they elevated this sign above God&#x27;s saving purposes.</span> <span class="tl-s" data-s="801.64" data-e="805.84">They turned a covenant marker into a gospel barrier.</span></p>
+        <p><span class="tl-s" data-s="809.84" data-e="815.66">Circumcision was never meant to be the basis of acceptance for God&#x27;s people.</span></p>
+        <p><span class="tl-s" data-s="817.14" data-e="825.32">It always pointed to something beyond itself, to the circumcision of our hearts by the Holy Spirit.</span> <span class="tl-s" data-s="826.32" data-e="832.44">At this point in redemptive history, in Acts 11, Christ has already shed his blood.</span> <span class="tl-s" data-s="833.58" data-e="836.82">The shadow has now given full way to the substance.</span> <span class="tl-s" data-s="838.22" data-e="847.42">For them to insist upon covenant boundary markers after Christ had risen totally misunderstands God&#x27;s work.</span></p>
+        <p><span class="tl-s" data-s="849.94" data-e="859.16">The circumcision party were too concerned with maintaining the status quo to realize what was going on right in front of them.</span></p>
+        <p><span class="tl-s" data-s="861.38" data-e="865.20">They wouldn&#x27;t allow their barrier to fellowship to be broken down.</span> <span class="tl-s" data-s="866.22" data-e="871.58">They were gatekeeping against the plan of God which was to save humanity.</span></p>
+        <p><span class="tl-s" data-s="874.42" data-e="878.12">Now, we might not be tempted to do the exact same thing.</span></p>
+        <p><span class="tl-s" data-s="880.30" data-e="890.92">I&#x27;m sure if you&#x27;re like me, you love to read about and see on TV about movements of God in places like Nigeria, Pakistan, Indonesia.</span></p>
+        <p><span class="tl-s" data-s="892.56" data-e="895.10">Our Christians are persecuted for sharing their faith.</span> <span class="tl-s" data-s="896.02" data-e="900.12">We are tempted to be gatekeepers in a way.</span></p>
+        <p><span class="tl-s" data-s="901.96" data-e="903.64">What does it look like for us?</span> <span class="tl-s" data-s="904.08" data-e="911.80">Well, it happens when a secondary issue or even a tertiary issue, a third level issue becomes a primary one.</span> <span class="tl-s" data-s="912.78" data-e="916.40">It happens when our educational choices become ultimate.</span></p>
+        <p><span class="tl-s" data-s="918.30" data-e="933.86">If you&#x27;re a homeschooler, you shouldn&#x27;t think because other parents send their kids to public school that their kids are automatically heathens and that this decision they&#x27;ve made reflects poorly on their parenting.</span> <span class="tl-s" data-s="935.12" data-e="936.86">This works the opposite way, too.</span> <span class="tl-s" data-s="937.82" data-e="955.52">If you&#x27;re a public, private, or charter school advocate, just because people homeschool, it does not mean they&#x27;re circumventing what God might want to do in their kids since they aren&#x27;t exposing them to different worldviews. the right school option does not save our children.</span></p>
+        <p><span class="tl-s" data-s="958.20" data-e="963.70">Only the Spirit of God brings regeneration to the hearts of our children.</span> <span class="tl-s" data-s="964.96" data-e="973.64">Well, this also happens when we believe that only Calvinists understand salvation rightly, or only Arminians get the gospel right.</span> <span class="tl-s" data-s="974.04" data-e="977.62">Look, some of you might not even know what those two words mean, and it&#x27;s okay.</span> <span class="tl-s" data-s="978.40" data-e="990.34">It is okay this morning, but for those of you that do, and you subscribe to a hardcore five-point Calvinism, don&#x27;t think that for a second your Calvinism saves you.</span></p>
+        <p><span class="tl-s" data-s="992.86" data-e="998.60">Just because you hold to a Reformed view of salvation doesn&#x27;t mean you&#x27;re better off than other Christians.</span></p>
+        <p><span class="tl-s" data-s="1000.82" data-e="1005.04">And if you&#x27;re an Arminian, don&#x27;t think you&#x27;re getting off the hook either.</span></p>
+        <p><span class="tl-s" data-s="1007.20" data-e="1010.94">Because you can be equally guilty of dying on the wrong theological hill.</span></p>
+        <p><span class="tl-s" data-s="1013.08" data-e="1016.30">Friends, I&#x27;m not advocating you jettison doctrine or theology.</span> <span class="tl-s" data-s="1016.78" data-e="1018.40">Doctrine and theology are good.</span> <span class="tl-s" data-s="1019.10" data-e="1020.52">They support our faith.</span> <span class="tl-s" data-s="1020.66" data-e="1025.92">They help us understand what it is we believe to be true about God and His saving purposes.</span></p>
+        <p><span class="tl-s" data-s="1027.72" data-e="1046.02">But, we must be very careful in how we engage others with doctrinal distinctives. we should never use doctrine or theology as weapons to tear down other Christians who hold to different secondary issues.</span></p>
+        <p><span class="tl-s" data-s="1048.56" data-e="1056.76">The only proper boundary marker we have for who is in or out is the gospel of Jesus Christ.</span></p>
+        <p><span class="tl-s" data-s="1059.46" data-e="1078.04">Paul&#x27;s outlined this for us in 1 Corinthians 15-3 in which he calls it a matter of first importance that Christ died for our sins in accordance with the scriptures, that He was buried, that He was raised on the third day in accordance with the scriptures, and that He appeared to Cephas, Peter, and the twelve.</span></p>
+        <p><span class="tl-s" data-s="1079.72" data-e="1088.24">The point is this, friends, the church begins to die when it becomes more concerned with preserving itself and resisting God&#x27;s mission.</span></p>
+        <p><span class="tl-s" data-s="1091.46" data-e="1098.00">You see, the controversy is not about Peter and the Gentiles.</span></p>
+        <p><span class="tl-s" data-s="1099.46" data-e="1106.96">Here, the controversy before us is about whether the church is going to recognize what Jesus is doing in their midst.</span></p>
+        <p><span class="tl-s" data-s="1110.20" data-e="1117.46">He promised that the gospel would move from Jerusalem throughout Samaria to the ends of the earth.</span></p>
+        <p><span class="tl-s" data-s="1119.42" data-e="1123.36">And here in Acts 11, He&#x27;s fulfilling that promise.</span></p>
+        <p><span class="tl-s" data-s="1125.30" data-e="1129.52">Second point, following Jesus changes the way we see others.</span></p>
+        <p><span class="tl-s" data-s="1132.14" data-e="1138.84">In verse 4, Peter starts to take on his defense against these critics.</span> <span class="tl-s" data-s="1139.00" data-e="1145.44">Something interesting about this retelling of chapter 10 is it&#x27;s told entirely from Peter&#x27;s perspective.</span> <span class="tl-s" data-s="1146.16" data-e="1149.50">He even refers to Cornelius as he.</span> <span class="tl-s" data-s="1150.22" data-e="1151.64">He doesn&#x27;t even name Cornelius.</span> <span class="tl-s" data-s="1152.94" data-e="1157.68">Luke&#x27;s already provided Cornelius&#x27; perspective in chapter 10, but now it&#x27;s Peter&#x27;s turn.</span> <span class="tl-s" data-s="1158.02" data-e="1172.76">It might seem like Luke is being sloppy here, that his literary intent, his form is overly repetitious, but he&#x27;s actually being quite intentional.</span> <span class="tl-s" data-s="1174.12" data-e="1177.80">He wants us to see the watershed moment for what this is.</span> <span class="tl-s" data-s="1178.38" data-e="1180.66">It&#x27;s the expansion of the gospel to the nations.</span></p>
+        <p><span class="tl-s" data-s="1183.00" data-e="1190.98">Another thing to pay attention to in this part of the passage in verses 4 through 17 is who is it that dominates the story?</span></p>
+        <p><span class="tl-s" data-s="1192.42" data-e="1193.24">It&#x27;s God.</span></p>
+        <p><span class="tl-s" data-s="1195.12" data-e="1197.18">God is the one giving visions.</span> <span class="tl-s" data-s="1198.20" data-e="1198.88">It&#x27;s in verse 5.</span> <span class="tl-s" data-s="1199.02" data-e="1201.40">God is the one who is sending messengers.</span> <span class="tl-s" data-s="1201.74" data-e="1204.78">Verse 11, God is the one directing Peter.</span> <span class="tl-s" data-s="1204.94" data-e="1207.82">Verse 12, God is the one pouring out his spirit.</span> <span class="tl-s" data-s="1208.52" data-e="1214.76">In verse 15, God is the primary actor on this stage.</span> <span class="tl-s" data-s="1216.14" data-e="1223.38">The advance of the gospel is always and only ever will be a sovereign work of God.</span></p>
+        <p><span class="tl-s" data-s="1225.80" data-e="1234.82">Yet, God&#x27;s sovereignty over his plan of salvation still involves our obedience.</span></p>
+        <p><span class="tl-s" data-s="1237.70" data-e="1241.52">These are not mutually exclusive in the plan of God.</span> <span class="tl-s" data-s="1241.78" data-e="1246.46">Peter still had to go when the spirit told him to in verse 12.</span> <span class="tl-s" data-s="1247.28" data-e="1252.32">Cornelius still had to send the men and commission them when he sent them to Peter.</span> <span class="tl-s" data-s="1252.42" data-e="1257.40">The gospel still had to be preached by Peter at the end of Acts 10.</span></p>
+        <p><span class="tl-s" data-s="1259.58" data-e="1266.18">God&#x27;s sovereignty never removes our responsibility to respond to God when he calls us to do something.</span></p>
+        <p><span class="tl-s" data-s="1268.58" data-e="1270.82">Peter had to respond to what God was doing.</span></p>
+        <p><span class="tl-s" data-s="1272.60" data-e="1275.08">Why else would he have received all these visions?</span></p>
+        <p><span class="tl-s" data-s="1276.76" data-e="1280.42">Why all of this repetition taking place in chapter 11?</span></p>
+        <p><span class="tl-s" data-s="1282.50" data-e="1289.14">Well, the reason is, just like the circumcision party, Peter struggled to believe too.</span></p>
+        <p><span class="tl-s" data-s="1292.54" data-e="1296.26">Peter Peter needed to have his perspective changed.</span> <span class="tl-s" data-s="1297.50" data-e="1302.74">Peter needed fresh eyes to see this surprising work of God in front of him.</span> <span class="tl-s" data-s="1304.08" data-e="1306.82">And how does God grant the new perspective?</span></p>
+        <p><span class="tl-s" data-s="1308.44" data-e="1318.52">Well, John Stott writes, it took four successive hammer blows of divine revelation before Peter&#x27;s racial and religious prejudice was overcome.</span></p>
+        <p><span class="tl-s" data-s="1322.86" data-e="1326.80">Peter had to learn what many Christians today still need to learn.</span></p>
+        <p><span class="tl-s" data-s="1329.70" data-e="1332.46">God&#x27;s grace takes us out of our comfort zones.</span></p>
+        <p><span class="tl-s" data-s="1335.34" data-e="1341.00">God&#x27;s grace extends to the most unlikely, the most undeserving.</span> <span class="tl-s" data-s="1341.84" data-e="1345.16">God&#x27;s grace extends to the prostitute and the pornographer.</span> <span class="tl-s" data-s="1346.10" data-e="1350.84">God&#x27;s grace extends to the promiscuous and the perverse.</span></p>
+        <p><span class="tl-s" data-s="1352.86" data-e="1360.12">The grace of God will sometimes radically reorient the way that we see people around us.</span></p>
+        <p><span class="tl-s" data-s="1361.84" data-e="1372.92">And we need successive hammer blows of divine revelation to knock us upside the head so the Lord has our attention and changes our perspective.</span></p>
+        <p><span class="tl-s" data-s="1375.42" data-e="1384.50">You see, Jesus was tearing down all these barriers, ethnic barriers. geopolitical barriers.</span> <span class="tl-s" data-s="1385.30" data-e="1387.54">The gospel was moving outward from Jerusalem.</span> <span class="tl-s" data-s="1388.10" data-e="1393.52">The seismic shift in the scope and reach of the gospel is finding its fulfillment.</span></p>
+        <p><span class="tl-s" data-s="1396.06" data-e="1403.06">But before the circumcision party understands the significance of what&#x27;s happening here, Peter had to understand it too.</span></p>
+        <p><span class="tl-s" data-s="1404.96" data-e="1409.74">And once Peter understood, he became a peacemaker.</span></p>
+        <p><span class="tl-s" data-s="1412.60" data-e="1414.14">I mean, what does Peter do here?</span> <span class="tl-s" data-s="1415.36" data-e="1417.94">He&#x27;s interceding for the Gentiles.</span></p>
+        <p><span class="tl-s" data-s="1420.36" data-e="1424.92">He sees this move of God for what it is and it has changed his perspective.</span> <span class="tl-s" data-s="1426.14" data-e="1428.64">This comes at very great risk to himself.</span> <span class="tl-s" data-s="1429.32" data-e="1435.70">It comes at great risk to his social standing, to his friendships, to his reputation as an apostle.</span> <span class="tl-s" data-s="1436.48" data-e="1440.54">Peter knew that the risen and ascended Christ was pouring out his spirit.</span> <span class="tl-s" data-s="1441.88" data-e="1443.88">And Peter could not get in the way.</span></p>
+        <p><span class="tl-s" data-s="1445.96" data-e="1451.48">And so Peter now takes on the call to be an ambassador for Christ.</span></p>
+        <p><span class="tl-s" data-s="1453.78" data-e="1460.82">Some years later, the apostle Paul would also elaborate on what&#x27;s taking place in his letter to the Ephesian church.</span> <span class="tl-s" data-s="1461.28" data-e="1465.32">In Ephesians 2, he says, Christ himself is our peace.</span></p>
+        <p><span class="tl-s" data-s="1467.62" data-e="1478.38">Through his blood, through the cross, Jesus broke down the dividing wall of hostility and created one new people, one new humanity.</span></p>
+        <p><span class="tl-s" data-s="1481.16" data-e="1483.92">Jesus didn&#x27;t just preach a message of peace.</span> <span class="tl-s" data-s="1484.36" data-e="1486.48">Jesus became peace for you and I.</span> <span class="tl-s" data-s="1487.84" data-e="1492.56">Through his blood, the dividing wall of hostility, friends, has been shattered.</span> <span class="tl-s" data-s="1493.12" data-e="1494.30">It&#x27;s been obliterated.</span></p>
+        <p><span class="tl-s" data-s="1495.80" data-e="1504.34">Jesus abolished the law of commandments expressed in ordinances so that no human work earns us a right standing with God.</span> <span class="tl-s" data-s="1504.84" data-e="1514.04">I have to ask the question, friend, if you feel like you&#x27;ve been striving to earn favor with God, stop.</span></p>
+        <p><span class="tl-s" data-s="1517.10" data-e="1517.70">Stop.</span></p>
+        <p><span class="tl-s" data-s="1519.84" data-e="1523.02">Rest in what Christ has done for you.</span></p>
+        <p><span class="tl-s" data-s="1525.94" data-e="1533.14">If you&#x27;re weary from feeling like you have to do all these things to please God, stop.</span></p>
+        <p><span class="tl-s" data-s="1536.04" data-e="1538.16">Jesus became our peace.</span> <span class="tl-s" data-s="1539.42" data-e="1541.88">His blood is sufficient for you and I.</span></p>
+        <p><span class="tl-s" data-s="1543.56" data-e="1549.14">Don&#x27;t look to yourself to see what you must do to earn favor with God.</span> <span class="tl-s" data-s="1549.70" data-e="1551.60">Look to Jesus Christ.</span> <span class="tl-s" data-s="1552.74" data-e="1554.42">He&#x27;s done it all for you already.</span></p>
+        <p><span class="tl-s" data-s="1556.64" data-e="1563.40">We can look to the cross because it&#x27;s at the cross where we receive help and hope from our Lord.</span> <span class="tl-s" data-s="1564.46" data-e="1567.46">He&#x27;s already dealt decisively with our sin.</span></p>
+        <p><span class="tl-s" data-s="1569.72" data-e="1575.04">He&#x27;s already put enmity with God to death through the death of his son.</span></p>
+        <p><span class="tl-s" data-s="1577.90" data-e="1581.84">We don&#x27;t need to look righteous in order to come to Jesus.</span></p>
+        <p><span class="tl-s" data-s="1583.34" data-e="1586.34">We simply need to look up and ask for help.</span></p>
+        <p><span class="tl-s" data-s="1588.58" data-e="1599.72">Well, in verse 17, Peter says, if then God gave the same gift to them, them being the Gentiles, as he gave to us when we believed in the Lord Jesus Christ, who was I that I could stand in God&#x27;s way?</span></p>
+        <p><span class="tl-s" data-s="1601.80" data-e="1604.66">We&#x27;re all faced with a choice here.</span> <span class="tl-s" data-s="1605.80" data-e="1607.50">Will we stand in God&#x27;s way?</span> <span class="tl-s" data-s="1608.72" data-e="1613.62">Will you stand in God&#x27;s way of what he wants to do in your life?</span> <span class="tl-s" data-s="1613.84" data-e="1617.80">Will you spend your energy protecting your preferences?</span></p>
+        <p><span class="tl-s" data-s="1619.40" data-e="1625.50">Or will you participate in Christ&#x27;s mission to save a people unto himself?</span></p>
+        <p><span class="tl-s" data-s="1627.50" data-e="1637.76">Look, God may be calling you this morning to be a peacemaker, to lay down your preferences to make peace with another person or people.</span></p>
+        <p><span class="tl-s" data-s="1639.70" data-e="1640.84">Will you respond?</span></p>
+        <p><span class="tl-s" data-s="1642.84" data-e="1644.84">Or will you protect your preferences?</span> <span class="tl-s" data-s="1645.40" data-e="1648.16">Is God moving you outside of your comfort zone?</span></p>
+        <p><span class="tl-s" data-s="1650.38" data-e="1654.08">Maybe ask yourself this, who in your neighborhood needs to hear the gospel?</span></p>
+        <p><span class="tl-s" data-s="1656.70" data-e="1658.98">Who is it that you can invite to church?</span></p>
+        <p><span class="tl-s" data-s="1660.52" data-e="1666.12">Who have you written off as someone who may never respond to the gospel or become a Christian?</span></p>
+        <p><span class="tl-s" data-s="1668.06" data-e="1671.74">Friends, let&#x27;s not stand in the way of what God wants to do.</span></p>
+        <p><span class="tl-s" data-s="1674.96" data-e="1679.76">Third and last point, seeing God move produces repentance and rejoicing.</span></p>
+        <p><span class="tl-s" data-s="1681.82" data-e="1684.00">What happens as a result of Peter&#x27;s defense?</span> <span class="tl-s" data-s="1685.38" data-e="1693.86">Well, we&#x27;re told in verse 18, when they heard these things, they fell silent. there is nothing more to criticize.</span></p>
+        <p><span class="tl-s" data-s="1696.00" data-e="1699.86">They were moved from having critical hearts to hearts of worship.</span> <span class="tl-s" data-s="1700.94" data-e="1707.60">I mean, the text tells us they glorified God, saying then to the Gentiles, God has granted repentance that leads to life.</span></p>
+        <p><span class="tl-s" data-s="1710.44" data-e="1720.42">Something that we need to pay very careful attention to here is that, yes, God granted repentance to the Gentiles that leads to life.</span></p>
+        <p><span class="tl-s" data-s="1723.26" data-e="1726.36">But he also granted repentance to the circumcision party.</span></p>
+        <p><span class="tl-s" data-s="1728.36" data-e="1732.46">They had a change of heart, a change in perspective.</span></p>
+        <p><span class="tl-s" data-s="1734.50" data-e="1743.26">And what we need to reckon with here is all repentance, be it for the non-believer or the believer, is a gift of grace that comes from our Lord.</span> <span class="tl-s" data-s="1744.52" data-e="1750.20">The repentance that&#x27;s given to those who turn from their sins and turn to Jesus by faith, that&#x27;s a gift.</span></p>
+        <p><span class="tl-s" data-s="1753.08" data-e="1755.26">But what about the hard-hearted?</span> <span class="tl-s" data-s="1756.58" data-e="1758.24">What about the critical?</span> <span class="tl-s" data-s="1759.54" data-e="1768.32">The believers who doubt genuine works of God in others and in the church, their repentance is also a gift of grace.</span> <span class="tl-s" data-s="1769.36" data-e="1771.00">It&#x27;s a gift from the Holy Spirit.</span></p>
+        <p><span class="tl-s" data-s="1774.04" data-e="1777.60">True repentance marks real Christians.</span> <span class="tl-s" data-s="1777.86" data-e="1780.76">How can you tell if someone is a real Christian?</span> <span class="tl-s" data-s="1781.84" data-e="1783.76">If they are repentant.</span></p>
+        <p><span class="tl-s" data-s="1785.80" data-e="1792.44">The Bible tells us that godly sorrow brings repentance that leads to salvation and leaves no regret.</span> <span class="tl-s" data-s="1792.92" data-e="1796.42">But worldly sorrow brings forth death.</span> <span class="tl-s" data-s="1797.34" data-e="1799.46">Where does godly sorrow come from?</span> <span class="tl-s" data-s="1800.68" data-e="1801.84">From God.</span> <span class="tl-s" data-s="1803.06" data-e="1805.86">It isn&#x27;t something we muster up from within ourselves.</span></p>
+        <p><span class="tl-s" data-s="1808.44" data-e="1818.08">The church finally, here in Acts 11, recognizes that God is doing something bigger than tradition, bigger than their assumptions.</span> <span class="tl-s" data-s="1818.40" data-e="1822.30">God was up to something that moved them beyond their comfort zones.</span></p>
+        <p><span class="tl-s" data-s="1824.90" data-e="1836.66">God is gathering people from every tribe, tongue, nation, and it&#x27;s all a product of the repentance wrought in the hearts of these people by the Holy Spirit.</span> <span class="tl-s" data-s="1837.34" data-e="1842.00">Maybe you&#x27;re here this morning and you don&#x27;t know what repentance even means.</span> <span class="tl-s" data-s="1843.30" data-e="1844.50">Well, you&#x27;re in a good place.</span> <span class="tl-s" data-s="1845.56" data-e="1846.94">It simply means this.</span> <span class="tl-s" data-s="1847.76" data-e="1857.22">Turning away from a pattern of sin, an old lifestyle, and turning to Christ for the forgiveness of your sins.</span> <span class="tl-s" data-s="1858.22" data-e="1860.00">It means change.</span></p>
+        <p><span class="tl-s" data-s="1861.44" data-e="1865.30">And the good news here is that you can change.</span> <span class="tl-s" data-s="1866.24" data-e="1867.80">You can truly change.</span> <span class="tl-s" data-s="1868.56" data-e="1879.40">If you hate those things that you keep finding yourself doing time and time again, you can turn to the one who was put to death so that you and I can be forgiven.</span></p>
+        <p><span class="tl-s" data-s="1881.20" data-e="1889.68">If you haven&#x27;t trusted in Jesus as your Savior, you can pray for God to give you the gift of faith and repentance.</span></p>
+        <p><span class="tl-s" data-s="1892.84" data-e="1903.10">If you are a Christian, we have to be diligent about remembering that repentance is an ongoing work of the Holy Spirit.</span> <span class="tl-s" data-s="1903.24" data-e="1915.78">It isn&#x27;t something that just happens when you are first saved. we have to continue to pray for the Spirit to move in our hearts and to make us humble, to increase our desires to repent.</span> <span class="tl-s" data-s="1916.52" data-e="1921.50">We need to repent of sins daily because friend, you and I, we sin daily.</span></p>
+        <p><span class="tl-s" data-s="1924.86" data-e="1929.52">Real repentance is evidence of fruit in a real Christian&#x27;s life.</span> <span class="tl-s" data-s="1930.78" data-e="1934.90">One of the works of Jesus as he&#x27;s seated at the right hand of the Father.</span> <span class="tl-s" data-s="1935.80" data-e="1940.66">Theologians call this his session, his active reign over all things.</span> <span class="tl-s" data-s="1941.46" data-e="1947.00">One of the works he&#x27;s doing is he&#x27;s sending the Spirit of God to grant people repentance.</span></p>
+        <p><span class="tl-s" data-s="1948.50" data-e="1972.58">The same Jesus who died for the forgiveness of our sins now lives to transform us, to turn us into a holy priesthood, a royal priesthood, believers who are actively pursuing holiness and trying to please the Lord.</span></p>
+        <p><span class="tl-s" data-s="1974.16" data-e="1981.66">It brings him great joy as we believers repent of sin and as unbelievers turn to him in faith.</span> <span class="tl-s" data-s="1982.20" data-e="1988.76">So why wouldn&#x27;t you and I be filled with joy when people repent of their sins and turn to Christ by faith?</span></p>
+        <p><span class="tl-s" data-s="1990.78" data-e="1999.00">Real Christians rejoice when unbelievers repent because the church doesn&#x27;t exist for itself.</span> <span class="tl-s" data-s="1999.92" data-e="2001.52">We don&#x27;t exist for ourselves.</span> <span class="tl-s" data-s="2001.66" data-e="2006.00">The church exists for the glory of Christ and the expansion of the gospel.</span></p>
+        <p><span class="tl-s" data-s="2008.38" data-e="2013.60">And real Christians rejoice when believers repent.</span></p>
+        <p><span class="tl-s" data-s="2015.54" data-e="2020.72">Look, all of us, all of us are a work in progress.</span></p>
+        <p><span class="tl-s" data-s="2022.32" data-e="2025.96">We need to celebrate when other people overcome sin.</span></p>
+        <p><span class="tl-s" data-s="2027.44" data-e="2030.78">We need to have eyes to see what God is doing among us.</span> <span class="tl-s" data-s="2031.48" data-e="2038.84">When&#x27;s the last time you encouraged another believer with the gospel, with the good news that Christ gives us freedom?</span></p>
+        <p><span class="tl-s" data-s="2040.54" data-e="2052.62">When&#x27;s the last time you came alongside a struggling believer and said, brother, sister, Jesus loves you. don&#x27;t give up the fight.</span></p>
+        <p><span class="tl-s" data-s="2055.98" data-e="2062.78">We need to be people who lavish gospel encouragement on others, not criticism.</span></p>
+        <p><span class="tl-s" data-s="2064.72" data-e="2069.14">The church in Acts 11, they weren&#x27;t struggling with a Gentile problem.</span> <span class="tl-s" data-s="2070.40" data-e="2071.80">Theirs was a heart problem.</span></p>
+        <p><span class="tl-s" data-s="2074.32" data-e="2082.78">The circumcision party, they thought they were protecting the purity of the gospel, but in reality, they were placing barriers around the grace of God.</span> <span class="tl-s" data-s="2083.32" data-e="2088.40">They were acting as gatekeepers to a table that Jesus Christ had prepared.</span></p>
+        <p><span class="tl-s" data-s="2091.62" data-e="2094.52">Two points of application as we close.</span></p>
+        <p><span class="tl-s" data-s="2096.06" data-e="2099.34">First one being beware of perfectionism.</span></p>
+        <p><span class="tl-s" data-s="2101.98" data-e="2111.30">One of the most subtle forms of pride is perfectionism. perfectionism is just pride disguised as righteousness.</span> <span class="tl-s" data-s="2112.58" data-e="2122.66">Like the circumcision party, we elevate good things into primary things or ultimate things whenever we confuse our preferences with scriptural commands.</span> <span class="tl-s" data-s="2123.98" data-e="2139.44">We create standards for what a real Christian should look like, how they should vote, how they should educate their children, how quickly they should mature, how they should worship, what theological tribe they belong to.</span> <span class="tl-s" data-s="2140.10" data-e="2142.98">The list goes on and on.</span></p>
+        <p><span class="tl-s" data-s="2145.90" data-e="2164.72">And for the perfectionist, when other people fail to meet those standards, criticism replaces charitable words. the question is not whether you notice people&#x27;s imperfections.</span> <span class="tl-s" data-s="2164.82" data-e="2165.34">We all do.</span> <span class="tl-s" data-s="2166.12" data-e="2166.96">It&#x27;s natural.</span> <span class="tl-s" data-s="2167.64" data-e="2168.92">We notice imperfections.</span> <span class="tl-s" data-s="2169.34" data-e="2176.88">The question here is whether your heart is more inclined toward criticism than encouragement.</span> <span class="tl-s" data-s="2177.90" data-e="2193.06">If your heart is more inclined toward criticism than compassion. friends, the gospel reminds us that God has accepted us imperfect sinners in Christ.</span> <span class="tl-s" data-s="2193.70" data-e="2195.38">He alone is the perfect one.</span></p>
+        <p><span class="tl-s" data-s="2197.14" data-e="2199.54">We are far less than perfect.</span> <span class="tl-s" data-s="2199.74" data-e="2205.22">Romans 15 7 says, welcome one another as Christ has welcomed you for the glory of God.</span></p>
+        <p><span class="tl-s" data-s="2207.74" data-e="2214.38">The antidote to our perfectionism, you want the antidote?</span> <span class="tl-s" data-s="2214.54" data-e="2215.16">Here it is.</span> <span class="tl-s" data-s="2216.22" data-e="2216.74">Humility.</span></p>
+        <p><span class="tl-s" data-s="2218.58" data-e="2219.38">Humility.</span> <span class="tl-s" data-s="2220.26" data-e="2225.14">Humility remembers that Christ alone is perfect.</span> <span class="tl-s" data-s="2226.34" data-e="2231.10">Humility remembers that we have been forgiven by grace.</span></p>
+        <p><span class="tl-s" data-s="2233.42" data-e="2241.04">And humility empowers us to welcome each other and to bear with one another&#x27;s weaknesses.</span></p>
+        <p><span class="tl-s" data-s="2243.20" data-e="2246.86">Second point of application, pursue unity.</span></p>
+        <p><span class="tl-s" data-s="2248.32" data-e="2252.32">I&#x27;d even amend this to say pursue unity at all costs.</span></p>
+        <p><span class="tl-s" data-s="2253.80" data-e="2258.02">Through Christ, God isn&#x27;t saving merely just isolated individuals.</span></p>
+        <p><span class="tl-s" data-s="2260.28" data-e="2262.70">He&#x27;s creating one new humanity.</span></p>
+        <p><span class="tl-s" data-s="2264.46" data-e="2267.34">The Christian life, it cannot be lived in isolation nation.</span> <span class="tl-s" data-s="2268.36" data-e="2272.72">Because the spirit is forming a people, not persons.</span> <span class="tl-s" data-s="2273.76" data-e="2275.14">He&#x27;s forming a people.</span> <span class="tl-s" data-s="2276.24" data-e="2279.30">And that&#x27;s exactly why gospel community matters.</span></p>
+        <p><span class="tl-s" data-s="2280.78" data-e="2300.12">Rather than protect preferences, we should all be most of all concerned and promoting gospel community. there are lots of ways we can be tempted to live in isolation, especially in this modern western world we inhabit.</span> <span class="tl-s" data-s="2301.14" data-e="2316.24">But I believe one that is always within our reach and in our fingertips is our digital culture, the online world that we inhabit.</span></p>
+        <p><span class="tl-s" data-s="2318.66" data-e="2323.52">Online spaces provide one of the easiest escapes for isolation.</span></p>
+        <p><span class="tl-s" data-s="2325.18" data-e="2328.14">And what does our modern online culture do?</span> <span class="tl-s" data-s="2328.48" data-e="2332.58">It trains us in the art of criticism like no other medium.</span></p>
+        <p><span class="tl-s" data-s="2335.12" data-e="2341.38">Now here are a couple diagnostic questions that might help you assess whether you spend too much time online.</span> <span class="tl-s" data-s="2342.62" data-e="2351.62">First, have your online habits made you more welcoming of others or more suspicious?</span></p>
+        <p><span class="tl-s" data-s="2354.72" data-e="2397.32">Have your online habits increased your love for God&#x27;s people? life lives when the church proclaims a gospel of peace and reconciliation while being at war within herself and divided, the world sees nothing but a contradiction. the great irony of Acts 11 is that those who thought that they were protecting God&#x27;s kingdom, they only found themselves opposing God&#x27;s kingdom.</span></p>
+        <p><span class="tl-s" data-s="2399.94" data-e="2405.70">The circumcision party, they wanted to exclude people from sitting at the table of fellowship.</span> <span class="tl-s" data-s="2406.92" data-e="2409.22">We can be tempted to exclude others as well.</span></p>
+        <p><span class="tl-s" data-s="2411.86" data-e="2422.94">But God, he&#x27;s always in the business of expanding this table and he has done so through the death and resurrection of Jesus Christ.</span></p>
+        <p><span class="tl-s" data-s="2424.92" data-e="2437.66">At the cross, Jesus experienced the ultimate exclusion. he was cast outside the city.</span></p>
+        <p><span class="tl-s" data-s="2440.36" data-e="2447.16">He carried upon himself the implement of his very own torture that was designed for the worst of criminals.</span></p>
+        <p><span class="tl-s" data-s="2449.00" data-e="2461.82">He was stricken, beaten, left for dead, left hanging on a cross, forsaken by God the Father and rejected by those he came to save.</span></p>
+        <p><span class="tl-s" data-s="2463.28" data-e="2465.10">Why would he do this?</span> <span class="tl-s" data-s="2465.58" data-e="2470.64">Why would our Savior willingly take upon himself that sort of punishment?</span></p>
+        <p><span class="tl-s" data-s="2473.60" data-e="2475.76">For the joy that was set before him.</span></p>
+        <p><span class="tl-s" data-s="2479.46" data-e="2503.78">So that outsiders, castaways like the Ethiopian eunuch, men of worldly prominence like Cornelius, slaves, debtors, perverts, those who are promiscuous like the Gentiles, like you, like me, outsiders like us.</span> <span class="tl-s" data-s="2504.54" data-e="2509.58">The reason he did this is to welcome us into his family forever.</span></p>
+        <p><span class="tl-s" data-s="2512.30" data-e="2518.24">Christians, we have no right to reject those that Christ himself has saved.</span></p>
+        <p><span class="tl-s" data-s="2521.38" data-e="2525.56">The real Jesus produces real Christians.</span></p>
+        <p><span class="tl-s" data-s="2528.56" data-e="2539.64">The church that lives for itself will die by itself, but the church that follows Jesus will always rejoice when God moves.</span> <span class="tl-s" data-s="2540.86" data-e="2542.74">Let&#x27;s be a people that rejoice.</span></p>
+        <p><span class="tl-s" data-s="2545.22" data-e="2549.74">People that encourage the grace of God at work in others.</span> <span class="tl-s" data-s="2550.28" data-e="2550.82">Let&#x27;s pray.</span></p>
+        <p><span class="tl-s" data-s="2557.20" data-e="2577.38">Father in heaven, we thank you for your word, your word that&#x27;s living and active, your word that exposes areas of our heart that need change, your word that encourages us in the gospel to continue pressing on.</span></p>
+        <p><span class="tl-s" data-s="2579.60" data-e="2589.30">Lord, I pray for my friends this morning, those here who have placed saving faith and trust in Jesus.</span> <span class="tl-s" data-s="2589.72" data-e="2606.54">I pray that if they&#x27;re not aware of the ways that their hearts are tempted, Lord, would you just continue to show them by your spirit. that&#x27;s a work of your grace when believers repent of sin.</span></p>
+        <p><span class="tl-s" data-s="2608.38" data-e="2616.20">And so I pray for my dear brothers and sisters that they would see you and see the work that you&#x27;re doing and respond to it.</span></p>
+        <p><span class="tl-s" data-s="2618.08" data-e="2635.20">And for those of my brothers and sisters here this morning that do see the ways that they fall short, Lord, I pray that the gospel would be a precious balm apply to their hearts and that they would receive the gift of repentance and change.</span></p>
+        <p><span class="tl-s" data-s="2638.26" data-e="2640.68">Father, I pray for those here who don&#x27;t know you.</span> <span class="tl-s" data-s="2641.08" data-e="2644.46">I pray for those who don&#x27;t know the gospel of grace.</span> <span class="tl-s" data-s="2644.84" data-e="2648.78">I pray that you would witness and power to them by your Holy Spirit.</span></p>
+        <p><span class="tl-s" data-s="2651.16" data-e="2656.82">Father, that the gospel would become the most magnificent, glorious reality in their lives.</span> <span class="tl-s" data-s="2657.88" data-e="2662.40">Father, would you help your church?</span></p>
+        <p><span class="tl-s" data-s="2664.24" data-e="2672.18">Would you help us to see Jesus reigning and sending his spirit down to give us repentant hearts?</span></p>
+        <p><span class="tl-s" data-s="2674.60" data-e="2675.98">Father, we thank you.</span> <span class="tl-s" data-s="2676.46" data-e="2678.42">We thank you for Jesus.</span> <span class="tl-s" data-s="2678.74" data-e="2679.54">In his name we pray.</span> <span class="tl-s" data-s="2679.86" data-e="2680.04">Amen.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Live sermon feed: spotlight from /api/sermons, browsable archive from
+  // /api/sermons/search. Static fallback list stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function row(it) {
+      var meta = [it.speaker, fmtDate(it.date)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      var titleHtml = esc(it.title);
+      var tUrl = it.guid && transcriptMap[it.guid];
+      if (tUrl) titleHtml = '<a href="' + esc(tUrl) + '">' + titleHtml + "</a>";
+      return '<div class="sermon"><div><h3>' + titleHtml + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    fetch("/api/sermons?v=3")
+      .then(function (res) { if (!res.ok) throw new Error("feed " + res.status); return res.json(); })
+      .then(function (data) {
+        var spot = document.querySelector("[data-series-spotlight]");
+        if (data && data.series && spot) {
+          var s = data.series;
+          var art = spot.querySelector("[data-series-art]");
+          if (art && s.artwork) { art.src = s.artwork; } else if (art) { art.style.display = "none"; }
+          var nm = spot.querySelector("[data-series-name]");
+          if (nm) nm.textContent = s.name;
+          var bl = spot.querySelector("[data-series-blurb]");
+          if (bl) bl.textContent = s.blurb;
+          spot.hidden = false;
+        }
+      })
+      .catch(function () { /* spotlight stays hidden */ });
+
+    var PER = 10;
+    var state = { q: "", speaker: "", series: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var speakerSel = document.querySelector("[data-sermons-speaker]");
+    var seriesSel = document.querySelector("[data-sermons-series]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No messages found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(speakerSel, data.facets.speakers || [], function (e) { return e.name; }, function (e) { return e.name + " (" + e.count + ")"; });
+        fill(seriesSel, data.facets.series || [], function (e) { return e.name; }, function (e) { return e.name + " (" + e.count + ")"; });
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.speaker || data.series || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.speaker) parts.push("by " + data.speaker);
+          if (data.series) parts.push("in " + data.series);
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " result" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " messages";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/sermons/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.speaker ? "&speaker=" + encodeURIComponent(state.speaker) : "") +
+        (state.series ? "&series=" + encodeURIComponent(state.series) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () { /* keep current list on error */ });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.speaker = ""; state.series = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (speakerSel) speakerSel.value = "";
+      if (seriesSel) seriesSel.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    function bindSelect(sel, key) {
+      if (!sel) return;
+      sel.addEventListener("change", function () {
+        state[key] = sel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    bindSelect(speakerSel, "speaker");
+    bindSelect(seriesSel, "series");
+    bindSelect(monthSel, "month");
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: https://hub.centergilbert.com/media/acts-11-1-18-3 -->
+</body>
+</html>
