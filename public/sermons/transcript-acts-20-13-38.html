@@ -601,7 +601,7 @@
     var followBtn = document.createElement("button");
     followBtn.type = "button";
     followBtn.className = "tl-follow";
-    followBtn.textContent = "Follow";
+    followBtn.textContent = "Following";
     followBtn.setAttribute("aria-pressed", "true");
     bar.appendChild(label);
     bar.appendChild(slot);
@@ -616,7 +616,14 @@
     }
     followBtn.addEventListener("click", function () {
       setFollow(!follow);
-      if (follow) scrollToActive();
+      if (follow) {
+        // Re-engaging must always be perceivable: jump to the sentence
+        // being spoken now, paused or playing. With no active sentence
+        // yet (before first play / after ended), anchor to the transcript.
+        try { update(audio.currentTime || 0); } catch (e) { /* not loaded */ }
+        if (cur >= 0 && spans[cur]) scrollToActive();
+        else scrollToTranscript();
+      }
     });
 
     function dockInBar() {
@@ -679,6 +686,14 @@
       } catch (e) { /* older browsers */ }
     }
 
+    function scrollToTranscript() {
+      var t = document.querySelector(".transcript");
+      if (!t) return;
+      try {
+        t.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" });
+      } catch (e) { /* older browsers */ }
+    }
+
     var scheduled = false;
     function update(t) {
       var i = findIndex(t);
@@ -711,15 +726,21 @@
     });
     audio.addEventListener("loadedmetadata", updateSoon);
 
-    // Manual scroll wins: pause following while the user scrolls.
-    function interrupt() {
+    // Manual scroll wins: pause following while the user scrolls. Gestures
+    // that start on the mini player itself (e.g. the tap toggling this
+    // very button) are player interaction, not reading, so ignore them —
+    // otherwise the tap's own touchmove reverts the toggle before click.
+    function interrupt(e) {
+      if (e && e.target && bar.contains(e.target)) return;
       if (follow && !audio.paused) setFollow(false);
     }
     window.addEventListener("wheel", interrupt, { passive: true });
     window.addEventListener("touchmove", interrupt, { passive: true });
     window.addEventListener("keydown", function (e) {
+      // Space on the pill activates it (click follows); not a scroll-away.
+      if (e.key === " " && e.target === followBtn) return;
       var keys = ["ArrowUp", "ArrowDown", "PageUp", "PageDown", "Home", "End", " "];
-      if (keys.indexOf(e.key) !== -1) interrupt();
+      if (keys.indexOf(e.key) !== -1) interrupt(e);
     });
 
     // Click a sentence to jump there.
