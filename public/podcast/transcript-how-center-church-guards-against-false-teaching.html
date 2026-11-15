@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How Center Church Guards Against False Teaching — Podcast Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Fixed on Jesus: conversations beyond Sunday mornings from Center Church in Gilbert, AZ — listen on Spotify, Apple Podcasts, and YouTube." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=18" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a href="/sermons">Sermons</a></li>
+              <li><a class="active" href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/podcast">&larr; All podcast episodes</a>
+          <h1 class="display-lg">How Center Church Guards Against False Teaching</h1>
+          <p class="transcript-meta">2025-12-10 · 21:25</p>
+          <p class="transcript-desc">In this episode of Fixed On Jesus, Rich and Mark talk specifically about how Center Church in Gilbert, AZ is structured, shepherded, and safeguarded to protect against false teaching. From biblical qualifications for leaders to accountability, discipleship, and our commitment to Scripture, we discus</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/e750e370/podcast/play/112326433/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-11-8%2F413993554-44100-2-6c9f3cdc67edc.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="15.24" data-e="15.65">This is...</span> <span class="tl-s" data-s="16.39" data-e="17.19">Fixed on Jesus.</span></p>
+        <p><span class="tl-s" data-s="39.67" data-e="42.13">Hey everybody, welcome to the Fixed on Jesus podcast.</span> <span class="tl-s" data-s="42.21" data-e="50.96">We&#x27;re like a one-horse open sleigh, wide open, going throughout, slaloming here and there and everywhere without jingle bells on, but we don&#x27;t really ever know where we&#x27;re going to end up.</span> <span class="tl-s" data-s="51.04" data-e="54.18">My name is Rich and I&#x27;m joined by Mark Johnson Jr.</span> <span class="tl-s" data-s="54.34" data-e="54.66">Hello, Mark.</span> <span class="tl-s" data-s="54.97" data-e="55.13">Hello.</span> <span class="tl-s" data-s="55.80" data-e="57.78">And over there to my left is Heather Corbett.</span> <span class="tl-s" data-s="58.37" data-e="61.30">Now she has a view of the world.</span> <span class="tl-s" data-s="61.35" data-e="62.62">I don&#x27;t need to do that.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="62.97" data-e="63.52">It&#x27;s been a while.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="63.74" data-e="65.25">It&#x27;s been not too long.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="65.75" data-e="66.55">Not long enough.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="66.60" data-e="67.14">Not long enough.</span> <span class="tl-s" data-s="67.21" data-e="67.98">We can edit that out.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="68.10" data-e="69.74">It&#x27;s a one-horse open sleigh sound.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="69.85" data-e="70.51">No, it&#x27;s not.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="70.58" data-e="73.75">I&#x27;m gonna put— I&#x27;m gonna put jingle bells or something over the top of him.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="73.80" data-e="77.36">You can, but that&#x27;s like— first of all, there&#x27;s no guns allowed.</span> <span class="tl-s" data-s="77.71" data-e="79.17">That&#x27;s a gun or a laser noise.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="80.60" data-e="80.91">I don&#x27;t know.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="81.08" data-e="82.61">This is a violence-free podcast, Mark.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="82.83" data-e="83.10">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="83.25" data-e="85.40">And so like, [Speaker B] violent.</span> <span class="tl-s" data-s="85.40" data-e="88.54">Well, if you make that noise, people might associate us with violence.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="88.54" data-e="90.97">I&#x27;ve always wondered, is he shooting me?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="90.97" data-e="91.00">No.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="91.00" data-e="91.66">I&#x27;ve always wondered.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="91.66" data-e="92.58">What is it?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="92.58" data-e="93.44">I don&#x27;t know.</span> <span class="tl-s" data-s="93.44" data-e="94.74">I&#x27;ll have to get back to you.</span> <span class="tl-s" data-s="94.74" data-e="96.92">I think it&#x27;s more like laser tag.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="96.92" data-e="99.58">Okay, if you don&#x27;t know, then it&#x27;s not something to do.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="99.58" data-e="101.48">Well, it&#x27;s a signature sound.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="101.57" data-e="102.54">It&#x27;s not.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="102.64" data-e="103.94">It is.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="104.04" data-e="105.34">It&#x27;s not.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="105.34" data-e="105.95">He&#x27;s probably not.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="105.95" data-e="110.32">If that&#x27;s your signature sound and you don&#x27;t know what it is, that&#x27;s a problem.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="110.54" data-e="110.67">Yeah.</span> <span class="tl-s" data-s="110.70" data-e="110.78">Maybe.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="110.78" data-e="113.19">Is it a blow dart?</span> <span class="tl-s" data-s="113.19" data-e="115.38">Is it a crossbow?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="115.77" data-e="120.84">No, it&#x27;s it&#x27;s like a like a squirt gun or a laser gun.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="121.05" data-e="121.99">Squirt gun, laser.</span> <span class="tl-s" data-s="122.41" data-e="124.33">Okay, anyway, what are we talking about today?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="124.33" data-e="126.67">Well, we got an email.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="126.80" data-e="126.90">An email.</span> <span class="tl-s" data-s="126.91" data-e="127.31">Boom boom boom!</span> <span class="tl-s" data-s="127.46" data-e="127.81">Email bell.</span> <span class="tl-s" data-s="128.56" data-e="129.70">Is this person anonymous?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="129.93" data-e="130.41">They are not.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="130.57" data-e="131.44">Okay, who is it?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="131.45" data-e="132.88">It is Bob Clutch Campbell.</span> <span class="tl-s" data-s="132.99" data-e="134.98">Bob, you want to know why I call him Clutch?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="135.00" data-e="135.96">Bob is clutch.</span> <span class="tl-s" data-s="136.02" data-e="136.73">He&#x27;s been clutch.</span> <span class="tl-s" data-s="136.76" data-e="137.45">He is clutch.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="137.56" data-e="139.68">He&#x27;s clutch because he&#x27;s a longtime listener.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="139.72" data-e="140.60">Yes, he is.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="140.60" data-e="148.94">And also because we were searching for a good topic, and sure, we have a Rolodex of topics available, but I really loved his email.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="149.00" data-e="151.64">Yeah, it&#x27;s a good question.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="151.64" data-e="153.66">Yeah, we decided to make a full episode about it.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="153.66" data-e="155.65">Bob and Kay, we love Bob and Kay Campbell.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="155.65" data-e="156.37">Bob and Kay Campbell.</span> <span class="tl-s" data-s="156.37" data-e="158.77">I&#x27;m going to go ahead and read it.</span> <span class="tl-s" data-s="158.77" data-e="161.16">This question is not out of— so he titled it Accountability.</span> <span class="tl-s" data-s="161.35" data-e="165.68">This question is not out of current concern in any way, shape, or form.</span> <span class="tl-s" data-s="165.68" data-e="167.19">Well, thank you for the disclosure, Bob.</span> <span class="tl-s" data-s="167.20" data-e="171.80">Rich is very transparent regarding protection of preaching the word.</span> <span class="tl-s" data-s="171.85" data-e="179.94">As faithful as the current team is to that conviction, I am wondering what the accountability is to ensure that it continues in future generations.</span> <span class="tl-s" data-s="179.94" data-e="184.19">What will keep Center Church from false teaching in the future?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="184.19" data-e="184.58">Boom!</span> <span class="tl-s" data-s="184.84" data-e="185.64">That&#x27;s a great question.</span> <span class="tl-s" data-s="185.64" data-e="187.38">That&#x27;s a great question.</span> <span class="tl-s" data-s="187.38" data-e="194.17">It is a clutch question, and it&#x27;s a question that people have been asking for a long time. throughout Christendom.</span> <span class="tl-s" data-s="194.28" data-e="194.75">Hmm.</span> <span class="tl-s" data-s="195.02" data-e="210.08">In fact, one of the most famous settings is in Acts, when in Acts chapter 20, when Paul is traveling to Rome, he goes to Miletus, and Miletus is close to Ephesus.</span> <span class="tl-s" data-s="210.22" data-e="215.21">And so while he&#x27;s staying there, he calls the elders from the church of Ephesus.</span> <span class="tl-s" data-s="215.21" data-e="221.55">And interestingly, Ephesus is the church that we know the most about because we know about it from Acts.</span> <span class="tl-s" data-s="221.55" data-e="230.07">We know about it from the book of Ephesians, and we also have Ephesus as the first church mentioned in Revelation chapter 2.</span> <span class="tl-s" data-s="230.07" data-e="236.66">And, and we also have Timothy being sent there too.</span></p>
+        <p><span class="tl-s" data-s="236.66" data-e="241.62">And so there&#x27;s all kinds of understanding about what was going on in that church.</span> <span class="tl-s" data-s="241.65" data-e="248.78">And so it&#x27;s germane to Bob&#x27;s point, because when Paul&#x27;s speaking to the elders, it was the last time he was ever going to see them.</span> <span class="tl-s" data-s="248.78" data-e="257.15">And he says this: I know that after I leave, savage wolves will come in among you and not spare the flock.</span> <span class="tl-s" data-s="257.19" data-e="265.72">Even from among— even from your own number, men will arise and distort the truth in order to draw away disciples after them.</span> <span class="tl-s" data-s="265.78" data-e="267.02">So be on your guard.</span> <span class="tl-s" data-s="267.08" data-e="271.69">Remember that for 3 years I never stopped warning you day and night through tears.</span> <span class="tl-s" data-s="271.74" data-e="287.01">And so Part of the answer to this question is if we think we&#x27;re somehow above the, you know, somehow beyond the idea that we could be teaching falsely or to have false teaching, we just don&#x27;t know reality.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="287.01" data-e="287.88">We&#x27;re naive.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="288.05" data-e="289.95">Completely naive, yeah.</span> <span class="tl-s" data-s="289.96" data-e="291.09">And so we don&#x27;t know reality.</span> <span class="tl-s" data-s="291.09" data-e="295.03">I mean, that is a threat for all time and forever, right?</span> <span class="tl-s" data-s="295.15" data-e="307.26">And so accountability-wise, I mean, That&#x27;s one of the reasons that— so that&#x27;s one of the blessings that we have to be associated with Sovereign Grace Churches, is that we have a structure.</span> <span class="tl-s" data-s="307.26" data-e="310.30">Our church fits into an ecclesiastical structure.</span> <span class="tl-s" data-s="310.30" data-e="327.97">And so sometimes denominational language can seem kind of stuffy and old and, and outdated, but the reality is, if you&#x27;re in an independent church and the pastor or the team goes sideways or teaches something that&#x27;s not In line with truth, there&#x27;s no recourse.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="328.06" data-e="330.44">Right, or it&#x27;s I mean if there is, it&#x27;s really difficult.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="330.47" data-e="332.80">Well, not in an independent church.</span> <span class="tl-s" data-s="332.80" data-e="333.34">There&#x27;s no recourse.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="333.34" data-e="333.97">I see.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="334.01" data-e="334.66">You just none.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="334.66" data-e="338.10">Well, I&#x27;ve heard of some where there&#x27;s like they&#x27;ll bring in an outside counsel.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="338.17" data-e="339.23">Yeah, but they don&#x27;t have authority.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="339.23" data-e="340.08">That&#x27;s true.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="340.08" data-e="341.23">Not it&#x27;s just a suggestion.</span> <span class="tl-s" data-s="341.28" data-e="342.31">It&#x27;s ad hoc.</span> <span class="tl-s" data-s="342.32" data-e="342.58">Yeah.</span> <span class="tl-s" data-s="342.82" data-e="343.00">Right.</span> <span class="tl-s" data-s="343.04" data-e="345.14">And so that&#x27;s one of the reasons that we&#x27;re not independent.</span> <span class="tl-s" data-s="345.14" data-e="349.06">Independent churches don&#x27;t have any protection for the members.</span> <span class="tl-s" data-s="349.06" data-e="352.94">Now, [Speaker B] so you use protection against like.</span> <span class="tl-s" data-s="353.15" data-e="354.28">Let&#x27;s say you went sideways.</span> <span class="tl-s" data-s="354.38" data-e="355.14">Let&#x27;s say I go sideways.</span> <span class="tl-s" data-s="355.20" data-e="358.46">Let&#x27;s say I start teaching— [Speaker B] Higher criticism.</span></p>
+        <p><span class="tl-s" data-s="358.46" data-e="361.25">Well, let&#x27;s say I start— or whatever, right?</span> <span class="tl-s" data-s="361.25" data-e="371.61">Higher criticism is one thing, but like, even let&#x27;s say I start to teach that Mary is, you know, we should pray to Mary or something like that, right?</span></p>
+        <p><span class="tl-s" data-s="372.96" data-e="378.05">And or— so what&#x27;s the protection for our church?</span> <span class="tl-s" data-s="378.05" data-e="389.80">In our form of In our ecclesiology, 2 people can bring charges against me and get a hearing outside our church.</span> <span class="tl-s" data-s="389.91" data-e="393.73">So it&#x27;s not as if, like, let&#x27;s say I start teaching something— [Speaker B] 2 members?</span> <span class="tl-s" data-s="393.78" data-e="394.12">I need 2 members?</span> <span class="tl-s" data-s="394.50" data-e="395.46">You need 2 members.</span> <span class="tl-s" data-s="395.46" data-e="402.21">Let&#x27;s say I start teaching something that is false, and so, like, obviously you want to have a conversation with the team.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="402.21" data-e="403.72">Yeah, we would try to bring it to you first.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="403.72" data-e="407.68">Yeah, let&#x27;s say you guys come and say, hey, listen, you&#x27;re teaching about Mary.</span> <span class="tl-s" data-s="407.68" data-e="408.16">This isn&#x27;t right.</span> <span class="tl-s" data-s="408.16" data-e="411.53">We that&#x27;s not what the Bible says, and I go listen.</span> <span class="tl-s" data-s="411.53" data-e="412.13">I love Mary.</span> <span class="tl-s" data-s="412.14" data-e="413.57">This is what&#x27;s going on.</span> <span class="tl-s" data-s="413.75" data-e="418.21">You [Speaker B] love Mary, [Speaker A] and this is this is the way it is, and this is what I&#x27;m going to teach.</span> <span class="tl-s" data-s="418.26" data-e="419.67">And it&#x27;s a long.</span> <span class="tl-s" data-s="420.01" data-e="421.13">It&#x27;s a process and everything.</span> <span class="tl-s" data-s="421.13" data-e="434.60">And so what they can do, what they have the freedom to do, is reach out to Sovereign Grace and bring a charge, an official charge that says we believe Rich is teaching falsely.</span> <span class="tl-s" data-s="434.63" data-e="438.96">He&#x27;s he&#x27;s a false teacher because of this and this.</span></p>
+        <p><span class="tl-s" data-s="438.96" data-e="445.12">And so. with those charges, or with that charge, then it gets adjudicated outside our church, right?</span> <span class="tl-s" data-s="445.12" data-e="449.19">Because the claim could be, well, they&#x27;ll just protect their own and, you know, all that kind of stuff.</span> <span class="tl-s" data-s="449.21" data-e="453.71">And so they&#x27;ll make sure that nothing happens with this.</span> <span class="tl-s" data-s="453.79" data-e="460.06">And the reality is there&#x27;s an impartial, independent— [Speaker B] Governing body.</span> <span class="tl-s" data-s="460.06" data-e="464.30">A governing body who would be able to sort of weigh in and adjudicate.</span> <span class="tl-s" data-s="464.35" data-e="464.98">And they have authority.</span> <span class="tl-s" data-s="465.01" data-e="469.80">And they have authority, and they can remove me if I teach falsely like that.</span> <span class="tl-s" data-s="469.88" data-e="471.39">And so there is that protection right there.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="472.47" data-e="473.86">Yeah, that is a big one.</span> <span class="tl-s" data-s="474.23" data-e="480.75">What about kind of what ties us together in an ecclesiological sense?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="480.81" data-e="492.92">Ecclesiologically, we are tied together because we believe the same thing about how to put the Bible together and we have just a common unity together, a common cause, both in the United States and around the world to band together.</span> <span class="tl-s" data-s="492.92" data-e="498.77">We believe that we can do more together as a group of churches than just one.</span> <span class="tl-s" data-s="498.79" data-e="501.91">Together we can plant churches throughout the world, right?</span> <span class="tl-s" data-s="501.91" data-e="505.03">This year alone, we&#x27;re planting 7 churches in the United States.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="505.03" data-e="505.19">Wow.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="505.27" data-e="507.13">Of which Star, Idaho is one of them.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="507.34" data-e="508.05">Shout out to Star.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="508.30" data-e="509.60">There it is, yeah.</span> <span class="tl-s" data-s="509.60" data-e="514.77">And so, and then outside in other parts of the world, there are multiple other church plants happening.</span> <span class="tl-s" data-s="514.97" data-e="521.63">And so as we give to Sovereign Grace and pool our resources, we can do that.</span> <span class="tl-s" data-s="521.63" data-e="538.85">Also, we can provide accountability for churches so that if there is any financial impropriety, If there&#x27;s any sort of disqualifying sins by the elders, if there&#x27;s any false teaching, there&#x27;s a mechanism for protection for the church to get rid of me.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="538.85" data-e="538.98">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="538.98" data-e="540.58">If I go off the rails.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="541.08" data-e="544.47">And you&#x27;re not, but— [Speaker A] Not now.</span> <span class="tl-s" data-s="544.60" data-e="545.77">I mean, who knows?</span> <span class="tl-s" data-s="545.80" data-e="556.30">And I think that&#x27;s part of what we— that&#x27;s why we want to make sure that every elder we have goes through the ordination process, which is rigorous, because you got to know the Bible.</span> <span class="tl-s" data-s="556.38" data-e="559.85">You got to know how the Bible&#x27;s put together.</span> <span class="tl-s" data-s="559.85" data-e="563.22">You got to believe just orthodox things about the scriptures, right?</span> <span class="tl-s" data-s="563.22" data-e="563.37">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="563.37" data-e="567.49">And, you know, and so that&#x27;s one of the protections we have, right?</span> <span class="tl-s" data-s="567.56" data-e="569.85">We can&#x27;t just go out and hire somebody, whoever.</span> <span class="tl-s" data-s="569.85" data-e="572.82">Like, if I die tomorrow, we can&#x27;t go out and just hire anybody.</span> <span class="tl-s" data-s="572.86" data-e="572.98">Yeah, right.</span> <span class="tl-s" data-s="573.00" data-e="579.07">We want to make sure they believe what we believe and they believe the right thing about the scriptures.</span> <span class="tl-s" data-s="579.12" data-e="594.78">And so there&#x27;s also that quality control aspect where we can say, um, uh, You know, we are not just going to hire somebody who is a good communicator or a popular communicator; we want to hire somebody who can preach rightly what the Bible says.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="594.78" data-e="594.96">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="595.00" data-e="595.26">Right?</span> <span class="tl-s" data-s="595.26" data-e="597.99">And so it gets down to that level as well.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="597.99" data-e="603.76">Sure, so a couple of questions about that I think would be helpful.</span> <span class="tl-s" data-s="603.76" data-e="618.83">Now, as far as elders, they can help steer the direction of the church and their charge is to steer it the direction of faithfulness as outlined by the Book of Church Order and our Sovereign Grace Statement of Faith.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="618.92" data-e="619.82">And the Bible.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="619.82" data-e="622.27">All based on the Bible.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="622.27" data-e="626.48">That&#x27;s what it is, yes, right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="626.77" data-e="637.49">As far as ordination, is that process rigorous enough to kind of get to the bottom of what an elder believes about the Scriptures?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="637.50" data-e="637.57">Yeah.</span> <span class="tl-s" data-s="637.74" data-e="638.13">Yes.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="638.18" data-e="639.73">Do they sign like some kind of agreement?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="639.78" data-e="641.02">They do sign something, yeah.</span> <span class="tl-s" data-s="641.08" data-e="646.11">The team putting someone up for ordination is not going to put somebody up that they question whether or not what they believe.</span> <span class="tl-s" data-s="646.11" data-e="650.17">And [Speaker B] that&#x27;s kind of the sidebar to my next one.</span> <span class="tl-s" data-s="650.22" data-e="657.44">Is that why you see the pattern here and some of our sister churches not hiring from the outside, more so locally grown?</span> <span class="tl-s" data-s="657.66" data-e="660.47">I&#x27;m not going to say that it can&#x27;t happen.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="660.47" data-e="660.63">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="660.70" data-e="661.13">You know.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="661.13" data-e="662.38">It&#x27;s not against the rules.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="662.38" data-e="672.34">No, I mean, but like if you think about what an elder is Like if you look in 1 Timothy 3 and Titus 1, we have much more language about what an elder is to be than what he is able to do.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="672.34" data-e="674.65">More character and more charge of teaching.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="674.97" data-e="676.11">Character, and that takes time.</span> <span class="tl-s" data-s="676.11" data-e="678.77">It takes time to know who somebody is.</span> <span class="tl-s" data-s="678.77" data-e="679.59">Does he have the character?</span> <span class="tl-s" data-s="679.62" data-e="681.24">Is he quarrelsome?</span> <span class="tl-s" data-s="681.30" data-e="684.20">Does he have a good reputation with outsiders?</span> <span class="tl-s" data-s="684.27" data-e="684.81">Is he kind?</span> <span class="tl-s" data-s="684.84" data-e="685.90">Is he above reproach?</span> <span class="tl-s" data-s="685.90" data-e="688.50">Is he the husband of one wife?</span> <span class="tl-s" data-s="688.93" data-e="692.67">All those kinds of things that are just real categories that it takes time to know.</span> <span class="tl-s" data-s="692.70" data-e="696.67">We don&#x27;t just hire people when we don&#x27;t know those things, right?</span></p>
+        <p><span class="tl-s" data-s="696.69" data-e="706.46">If we hire someone from the outside, those are things that we have to explore and know and connect with somebody who knows them so that we can say, okay, well, this makes sense.</span> <span class="tl-s" data-s="706.49" data-e="709.41">If they are homegrown, then we know the answers to those questions.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="709.46" data-e="711.35">Yeah, you have a better assessment of those.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="711.62" data-e="722.98">Right, so that is the character side because, I mean, we are told, Paul tells Timothy, watch your life and doctrine, and you have got to watch both as an elder because your life can go off the rails and disqualify you.</span> <span class="tl-s" data-s="723.01" data-e="730.08">Your doctrine, what you believe, can go off the rails and disqualify you, too.</span> <span class="tl-s" data-s="730.13" data-e="732.55">There are 2 guardrails there.</span> <span class="tl-s" data-s="732.63" data-e="737.80">But back when it comes to the standards for eldership, it is rigorous.</span> <span class="tl-s" data-s="737.91" data-e="750.84">I mean, the test— there&#x27;s a couple written, there&#x27;s a couple Bible knowledge tests, there&#x27;s a long essay test where you have, like, in 2 separate installments where you have to answer questions.</span> <span class="tl-s" data-s="750.84" data-e="756.32">Then there&#x27;s an oral test that you have 3 people asking you questions from all over the map about all kinds of stuff.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="756.63" data-e="757.82">To put you on the spot.</span> <span class="tl-s" data-s="758.30" data-e="758.76">You can&#x27;t Google it.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="758.78" data-e="760.12">No, you can&#x27;t Google it, yeah.</span> <span class="tl-s" data-s="760.61" data-e="766.09">And so you just got to know.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="766.09" data-e="766.21">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="766.22" data-e="768.29">And so it&#x27;s a process that is faithful.</span> <span class="tl-s" data-s="768.40" data-e="770.50">It&#x27;s not a foolproof system, I would say it that [Speaker B] way.</span> <span class="tl-s" data-s="770.55" data-e="772.80">One doesn&#x27;t exist, but we&#x27;re doing our best to make it so.</span> <span class="tl-s" data-s="772.81" data-e="775.27">We&#x27;re doing our best to do it, right?</span> <span class="tl-s" data-s="775.45" data-e="787.74">And part of what we want to do is hire men as elders who have a leadership gift and they&#x27;re not afraid to speak about— speak the biblical truth, whether it&#x27;s in season or out of season.</span> <span class="tl-s" data-s="787.74" data-e="787.93">Right?</span> <span class="tl-s" data-s="788.06" data-e="805.62">And that&#x27;s one of the things that, like, when I think about what could happen to our church so that we go sideways, I would, I would imagine that it&#x27;s not going to be a temptation to teach something radically different.</span> <span class="tl-s" data-s="805.72" data-e="814.80">What it&#x27;s going to be is, is going along in our culture and tickling ears and telling people the kinds of things they want to hear already.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="814.80" data-e="818.54">Prosperity gospel or a version of that.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="819.38" data-e="822.27">Or even just speaking about homosexuality being okay.</span> <span class="tl-s" data-s="822.27" data-e="823.63">That&#x27;s super popular, right?</span> <span class="tl-s" data-s="823.63" data-e="825.34">Or [Speaker B] in previously faithful churches.</span> <span class="tl-s" data-s="825.42" data-e="828.26">I mean, we see the mainline denominations splitting over that.</span> <span class="tl-s" data-s="828.49" data-e="841.52">Well, I mean, like, yeah, I mean, the mainline denominations, if you look at some of those, they are not faithful representations of what it means to be a godly church anymore, and they used to be.</span> <span class="tl-s" data-s="841.55" data-e="841.63">Right?</span> <span class="tl-s" data-s="841.63" data-e="842.75">They used to be.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="842.75" data-e="842.88">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="842.91" data-e="844.98">And it&#x27;s a— that&#x27;s a big deal.</span> <span class="tl-s" data-s="844.98" data-e="846.02">And it didn&#x27;t happen overnight.</span> <span class="tl-s" data-s="846.02" data-e="849.13">It was slow and it was incremental.</span> <span class="tl-s" data-s="849.24" data-e="857.15">And all of a sudden now we have all of these apostate pastors preaching to churches that have no— that are not really churches anymore.</span> <span class="tl-s" data-s="857.24" data-e="859.04">They&#x27;re not preaching the Word of God, right?</span> <span class="tl-s" data-s="859.04" data-e="861.86">And [Speaker B] pastors could be unconverted.</span> <span class="tl-s" data-s="861.91" data-e="862.13">Absolutely.</span> <span class="tl-s" data-s="862.13" data-e="862.21">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="862.23" data-e="862.31">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="862.31" data-e="864.92">Which is a— was a common occurrence in England.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="865.52" data-e="865.70">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="865.75" data-e="873.21">Before anybody came over here, the Anglican Church, the whole— they would gripe and moan before the time of Whitefield and Wesley of all the unconverted ministers, right?</span> <span class="tl-s" data-s="873.21" data-e="876.01">Which sounds crazy to us, but that was the reality and that was the norm in a lot of places.</span> <span class="tl-s" data-s="876.57" data-e="878.53">It was a good job?</span> <span class="tl-s" data-s="878.56" data-e="880.66">It was a job, yeah.</span> <span class="tl-s" data-s="880.90" data-e="882.31">They did it for a job.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="882.34" data-e="882.56">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="882.56" data-e="883.64">And that was what they did.</span> <span class="tl-s" data-s="883.64" data-e="887.05">So we can&#x27;t think of ourselves as special.</span> <span class="tl-s" data-s="887.08" data-e="888.75">We&#x27;ve got to guard ourselves.</span> <span class="tl-s" data-s="888.75" data-e="889.47">So we have ecclesiastical guards.</span> <span class="tl-s" data-s="889.54" data-e="890.32">We also have members.</span> <span class="tl-s" data-s="890.35" data-e="900.93">I mean, our members, like this is one of the things I want people to do as they hear things from the pulpit or things that we teach and they have questions, ask.</span> <span class="tl-s" data-s="900.93" data-e="903.21">Yeah, ask where did that come from?</span> <span class="tl-s" data-s="903.34" data-e="905.26">Why should we believe that?</span> <span class="tl-s" data-s="905.26" data-e="909.54">You know, don&#x27;t just take you know our word for for an answer.</span> <span class="tl-s" data-s="909.57" data-e="910.34">You know, study the scriptures.</span></p>
+        <p><span class="tl-s" data-s="910.39" data-e="914.93">I would recommend that people not do their studying on YouTube because there&#x27;s a lot of noise on YouTube.</span> <span class="tl-s" data-s="915.28" data-e="921.66">There&#x27;s a lot of noise on the internet and that Instagram and those kinds of things that is not true.</span> <span class="tl-s" data-s="921.77" data-e="927.88">And there&#x27;s a lot of influencers out there who have big platforms that don&#x27;t treat teach the truth even though they have big platforms.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="927.88" data-e="928.52">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="928.70" data-e="931.68">And so you got to watch out for that.</span> <span class="tl-s" data-s="931.95" data-e="938.95">But I trust our members. are discerning and they have the mind of the Lord and they know what&#x27;s true and what&#x27;s not.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="939.14" data-e="940.59">Based on the Scriptures.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="940.69" data-e="941.82">Yeah, based on the Scriptures.</span> <span class="tl-s" data-s="941.82" data-e="951.15">And so if I&#x27;m saying something that doesn&#x27;t ring true according to the Scriptures, people should have the complete freedom to ask.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="952.17" data-e="952.57">Sure.</span> <span class="tl-s" data-s="952.57" data-e="959.01">So you&#x27;ve been leading this church for over 20 years.</span> <span class="tl-s" data-s="959.01" data-e="964.13">Have you had instances where faithful men, that were elders came to different theological convictions once they were already ordained?</span> <span class="tl-s" data-s="964.13" data-e="974.45">And if so, how does it— what would happen in that scenario if it was a deal-breaker scenario?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="974.91" data-e="987.12">Yeah, none that were deal-breakers, but I know of other people who have developed convictions like— so ideally, if someone&#x27;s beginning to develop a conviction that&#x27;s different than what we believe, Well, I mean, there&#x27;s one thing if it&#x27;s heresy.</span> <span class="tl-s" data-s="987.12" data-e="988.59">That&#x27;s one thing, right?</span> <span class="tl-s" data-s="988.64" data-e="989.75">Yeah, I&#x27;m not.</span> <span class="tl-s" data-s="989.75" data-e="1001.71">But if it&#x27;s sort of a different emphasis or something different, like that person, it&#x27;s the onus lies on that person, that man, to tell the team, hey, I&#x27;m wondering about this topic.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1001.71" data-e="1003.27">Yeah, [Speaker A] I&#x27;m looking into this.</span> <span class="tl-s" data-s="1003.27" data-e="1003.70">Wrestling with this.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1004.12" data-e="1005.02">I&#x27;m wrestling with this.</span> <span class="tl-s" data-s="1005.16" data-e="1011.28">They can&#x27;t— they do not have the right because they&#x27;re elders of a church to just inform, hey, I&#x27;ve changed here.</span> <span class="tl-s" data-s="1011.28" data-e="1013.05">Now, you need to know that.</span> <span class="tl-s" data-s="1013.05" data-e="1015.57">No, that&#x27;s not how this works, right?</span> <span class="tl-s" data-s="1015.68" data-e="1028.91">An elder, a shepherd of a church, has to bring people along and help them understand his thinking, and the men need to have the opportunity to say, here&#x27;s why that&#x27;s wrong, or here&#x27;s how you should think about that, or whatever, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1029.01" data-e="1029.88">Yeah, no, that&#x27;s great.</span> <span class="tl-s" data-s="1029.91" data-e="1038.52">Is there anything else that goes into vetting future leaders, or is there any— maybe there&#x27;s a completely different way to think about this.</span> <span class="tl-s" data-s="1038.58" data-e="1043.45">Is there anything else that could change the doctrine Independently of the eldership?</span> <span class="tl-s" data-s="1043.48" data-e="1045.09">Can the members change the doctrine?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1045.09" data-e="1045.99">Like, what do you mean?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1045.99" data-e="1051.09">Can they bring forth— I guess if they did, they would probably just leave the church and plant a new church.</span> <span class="tl-s" data-s="1051.09" data-e="1054.18">But let&#x27;s say they came to a different theological conclusion.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1054.72" data-e="1057.13">That happens all the time.</span> <span class="tl-s" data-s="1057.13" data-e="1058.35">Yeah, they just— yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1058.35" data-e="1060.60">They just switch churches.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1060.60" data-e="1061.63">Yeah, or whatever.</span> <span class="tl-s" data-s="1061.93" data-e="1062.00">Yeah.</span> <span class="tl-s" data-s="1062.27" data-e="1066.17">Or they find someone that they agree with.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1066.28" data-e="1066.56">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1066.59" data-e="1068.26">You know.</span> <span class="tl-s" data-s="1069.01" data-e="1075.67">The chief shepherd is Jesus Christ, and he appoints men to serve as elders in local churches.</span> <span class="tl-s" data-s="1075.67" data-e="1077.87">And the phrase elder, pastor, and overseer is all synonymous, right?</span> <span class="tl-s" data-s="1077.87" data-e="1078.88">And so all pastors are called to shepherd.</span> <span class="tl-s" data-s="1078.88" data-e="1079.06">Yeah.</span> <span class="tl-s" data-s="1079.06" data-e="1080.54">So we are just men.</span> <span class="tl-s" data-s="1080.63" data-e="1082.62">We are not going to be perfect.</span> <span class="tl-s" data-s="1082.73" data-e="1083.87">We are not going to do it all ideal.</span> <span class="tl-s" data-s="1083.87" data-e="1093.19">It is not going to be the most amazing thing all the time, but we are going to seek to try to be faithful.</span> <span class="tl-s" data-s="1093.51" data-e="1094.72">Will we make mistakes?</span></p>
+        <p><span class="tl-s" data-s="1094.72" data-e="1095.03">Yes.</span> <span class="tl-s" data-s="1095.03" data-e="1095.61">Will we fail?</span> <span class="tl-s" data-s="1095.61" data-e="1095.69">Absolutely.</span> <span class="tl-s" data-s="1095.70" data-e="1104.27">You know, there may be times that you know we realize something we taught in the past is now wrong, and so we&#x27;re going to correct that or whatever, right?</span> <span class="tl-s" data-s="1104.29" data-e="1120.21">And so, but we want to make sure that what we are is faithful before the Lord, looking to understand what the scriptures say and present that to the people in a way that everybody can understand and.</span> <span class="tl-s" data-s="1120.38" data-e="1120.61">Sure.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1121.19" data-e="1124.94">And is there a difference between an elder making a mistake in articulating doctrine and preaching falsely?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1124.94" data-e="1125.04">Yes.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1125.04" data-e="1128.24">Like they can go up there and— [Speaker A] Absolutely.</span> <span class="tl-s" data-s="1128.25" data-e="1128.62">Make a mistake.</span> <span class="tl-s" data-s="1128.64" data-e="1129.38">Say something wrong.</span> <span class="tl-s" data-s="1129.38" data-e="1129.62">Yeah.</span> <span class="tl-s" data-s="1129.62" data-e="1133.95">They just don&#x27;t know or whatever or misspeak or whatever, absolutely.</span> <span class="tl-s" data-s="1133.95" data-e="1136.68">Yeah, and we should have patience and grace for that.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1136.76" data-e="1138.98">Absolutely, yeah, right, exactly, yeah, sure.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1139.61" data-e="1148.94">Anything else that goes into, and this is probably a big part of your role as the lead pastor, developing Younger elders bringing up the next generation.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1148.94" data-e="1150.15">That&#x27;s a whole other conversation.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1150.20" data-e="1150.62">Yeah, but it safeguards.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1150.69" data-e="1156.09">Yeah, I mean, we I mean we want to we want to serve as an eldership.</span> <span class="tl-s" data-s="1156.09" data-e="1157.51">We want to be a plurality.</span> <span class="tl-s" data-s="1157.54" data-e="1164.21">Like, you know, it&#x27;s easy to have the lead guy who just calls all the shots and everybody just does what he wants.</span> <span class="tl-s" data-s="1164.25" data-e="1165.44">That&#x27;s not a plurality.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1165.92" data-e="1168.72">Yeah, [Speaker A] a plurality is everybody carrying the load and everybody walking together.</span> <span class="tl-s" data-s="1168.72" data-e="1170.68">Now one guy is going to provide.</span> <span class="tl-s" data-s="1170.74" data-e="1176.38">Leadership, but that doesn&#x27;t mean he calls all the shots and just gets everybody to do— [Speaker B] leader among equals.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1176.38" data-e="1178.64">Yeah, and I think first among equals.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1178.69" data-e="1179.29">First among equals.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1179.34" data-e="1183.96">It&#x27;s— that&#x27;s part of one of the ways people can go wrong.</span> <span class="tl-s" data-s="1184.30" data-e="1189.34">They can abuse power if they— if all power sits with one person.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1189.39" data-e="1191.06">Yeah, [Speaker A] you know, [Speaker B] right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1191.06" data-e="1198.44">I&#x27;m actively trying to look for new leaders to give power to, to delegate, to have— give them opportunities, right?</span> <span class="tl-s" data-s="1198.44" data-e="1203.48">So I&#x27;m going to give opportunities to just see what it&#x27;s like.</span> <span class="tl-s" data-s="1203.49" data-e="1209.46">Ministry is hard, and You can a lot of young guys can have this idea that there&#x27;s this glamour associated with ministry.</span> <span class="tl-s" data-s="1209.51" data-e="1217.80">It&#x27;s not glamorous; it&#x27;s hard, and there&#x27;s it&#x27;s there&#x27;s a lot of things in the trenches that are much more difficult than people understand.</span> <span class="tl-s" data-s="1217.85" data-e="1221.42">And so not everybody&#x27;s suited to do it, [Speaker B] right?</span> <span class="tl-s" data-s="1221.42" data-e="1222.32">And so there&#x27;s that also.</span> <span class="tl-s" data-s="1222.64" data-e="1230.34">I&#x27;ve seen men get in the role of be a leader in in this church and other churches, and the pressure cracks them.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1230.36" data-e="1231.82">Yeah, [Speaker A] because it&#x27;s a lot of pressure.</span> <span class="tl-s" data-s="1231.82" data-e="1231.88">Sure.</span> <span class="tl-s" data-s="1232.11" data-e="1232.35">No, that&#x27;s good.</span> <span class="tl-s" data-s="1232.35" data-e="1237.18">Um, I think that&#x27;s most of— let me just double-check his email and see if we missed anything.</span> <span class="tl-s" data-s="1237.18" data-e="1238.33">I think we got it.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1239.25" data-e="1240.14">Yeah, I think we got it.</span> <span class="tl-s" data-s="1240.14" data-e="1241.65">That was a clutch email, Bob.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1241.65" data-e="1242.60">Yeah, thank you.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1242.69" data-e="1243.24">Keep them coming.</span> <span class="tl-s" data-s="1243.34" data-e="1246.08">Tell Kay hi.</span> <span class="tl-s" data-s="1246.08" data-e="1249.37">Yeah, Kay has cats, and her cats, tell them hi too.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1249.37" data-e="1256.55">Yeah, and if you have any questions or you have any topic suggestions, you can email us at production@centergilbert.com.</span> <span class="tl-s" data-s="1256.74" data-e="1257.34">We just love you.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1257.34" data-e="1259.17">Yeah, and we&#x27;ll see you next time.</span> <span class="tl-s" data-s="1259.17" data-e="1260.60">Let&#x27;s got a sleigh.</span> <span class="tl-s" data-s="1260.60" data-e="1262.23">Let&#x27;s keep it going.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1262.23" data-e="1266.41">Can I have a drink of your water?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1266.42" data-e="1266.73">Nope.</span> <span class="tl-s" data-s="1267.48" data-e="1267.58">Stop.</span> <span class="tl-s" data-s="1267.58" data-e="1267.95">You cannot.</span> <span class="tl-s" data-s="1268.05" data-e="1272.75">I do not want you touching my water.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1272.75" data-e="1273.27">Oh, you dropped.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1273.27" data-e="1275.47">I dropped my [Speaker B] lid.</span> <span class="tl-s" data-s="1275.47" data-e="1275.86">Get it.</span> <span class="tl-s" data-s="1276.15" data-e="1277.42">I&#x27;ve fallen and I can&#x27;t get up.</span> <span class="tl-s" data-s="1277.42" data-e="1278.90">It&#x27;s not me.</span> <span class="tl-s" data-s="1279.84" data-e="1281.94">That&#x27;s somebody [Speaker B] else in this room.</span> <span class="tl-s" data-s="1281.94" data-e="1283.15">Did you use your life alert?</span> <span class="tl-s" data-s="1283.15" data-e="1284.42">I&#x27;ve fallen and I can&#x27;t get up.</span> <span class="tl-s" data-s="1284.44" data-e="1285.02">Did you have one?</span> <span class="tl-s" data-s="1285.02" data-e="1285.02">I&#x27;m gonna get you a Life Alert necklace for Christmas.</span> <span class="tl-s" data-s="1285.02" data-e="1285.02">I did not go there.</span></p>
+        <p><span class="tl-s" data-s="1285.02" data-e="1285.02">I thought about it.</span> <span class="tl-s" data-s="1285.02" data-e="1285.02">Did I actually— [Speaker B] didn&#x27;t mean to go there, but I think about [Speaker A] going there.</span> <span class="tl-s" data-s="1285.02" data-e="1285.02">Yes.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Fixed on Jesus episode archive, backed by /api/podcast/search.
+  // Static fallback list above stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function fmtDuration(raw) {
+      if (!raw) return "";
+      var str = String(raw).trim();
+      // Anchor feeds report seconds; render as H:MM:SS or M:SS.
+      if (/^\d+$/.test(str)) {
+        var total = parseInt(str, 10);
+        var h = Math.floor(total / 3600);
+        var m = Math.floor((total % 3600) / 60);
+        var sec = total % 60;
+        var mm = (h > 0 && m < 10 ? "0" + m : "" + m);
+        var ss = (sec < 10 ? "0" + sec : "" + sec);
+        return (h > 0 ? h + ":" + mm : m) + ":" + ss;
+      }
+      // Anchor also reports clock strings like "00:24:02" — drop the
+      // redundant leading hour so it reads "24:02".
+      return str.replace(/^00:/, "");
+    }
+    function row(it) {
+      it = it || {};
+      var title = esc(it.title) || "Untitled episode";
+      var tUrl = it.guid && transcriptMap[it.guid];
+      var heading = tUrl
+        ? '<a href="' + esc(tUrl) + '">' + title + "</a>"
+        : (it.link
+          ? '<a href="' + esc(it.link) + '" target="_blank" rel="noopener">' + title + "</a>"
+          : title);
+      var meta = [fmtDate(it.date), fmtDuration(it.duration)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      return '<div class="sermon"><div><h3>' + heading + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    var PER = 10;
+    var state = { q: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No episodes found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " episode" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " episodes";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/podcast/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () {
+          // Keep the static list, but tell the reader where else to listen —
+          // some privacy blockers stop the archive request itself.
+          var note = document.querySelector("[data-sermons-error]");
+          if (note) note.hidden = false;
+        });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    if (monthSel) {
+      monthSel.addEventListener("change", function () {
+        state.month = monthSel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: 5b5920e7-0ae9-4289-8454-fdffcadbea3a -->
+</body>
+</html>
