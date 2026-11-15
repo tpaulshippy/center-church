@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rapid Fire Friday - Q&amp;A #22 — Podcast Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Fixed on Jesus: conversations beyond Sunday mornings from Center Church in Gilbert, AZ — listen on Spotify, Apple Podcasts, and YouTube." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=18" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a href="/sermons">Sermons</a></li>
+              <li><a class="active" href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/podcast">&larr; All podcast episodes</a>
+          <h1 class="display-lg">Rapid Fire Friday - Q&amp;A #22</h1>
+          <p class="transcript-meta">2024-12-20 · 13:10</p>
+          <p class="transcript-desc">Rapid Fire Friday is a special series from the Fixed On Jesus Podcast crew (Rich, Mark and Heather) Sometimes we get questions that have short enough answers to answer many of them in one episode that we like to call Rapid Fire Fridays. Look for these to be released on Fridays if and when we get eno</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/e750e370/podcast/play/96088345/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-11-20%2Fe14239fe-ac0b-66b5-c3d3-2d3954c14a4d.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="0.03" data-e="0.70">What day is it, Mark?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1.30" data-e="1.97">Oh, good question.</span> <span class="tl-s" data-s="2.02" data-e="4.02">I was gonna go on the Google machine, but I think it&#x27;s Friday.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="4.42" data-e="4.92">It&#x27;s Friday.</span> <span class="tl-s" data-s="5.14" data-e="5.96">You know what that means, Mark?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="6.52" data-e="8.53">Rapid Fire Friday.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="12.05" data-e="16.53">Boom boom boom.</span> <span class="tl-s" data-s="16.62" data-e="18.31">Rapid Fire Friday.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="21.51" data-e="26.69">Three two one.</span> <span class="tl-s" data-s="27.19" data-e="29.37">Rapid Fire Friday.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="33.04" data-e="35.17">This question comes from Amy Elder.</span></p>
+        <p><span class="tl-s" data-s="36.43" data-e="37.34">And you heard the bell.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="37.86" data-e="38.32">Here it is.</span> <span class="tl-s" data-s="38.43" data-e="38.74">Yes.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="39.24" data-e="40.28">Loud and clear.</span> <span class="tl-s" data-s="40.51" data-e="41.44">Hi, me again.</span> <span class="tl-s" data-s="42.21" data-e="45.26">I read the New Morning Mercies daily devotionals by Paul David Tripp.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="45.42" data-e="46.99">Which is a great devotional.</span> <span class="tl-s" data-s="47.04" data-e="50.19">So, if you are new and you like devotionals, it&#x27;s a great one.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="50.30" data-e="50.54">Yes.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="50.88" data-e="53.17">Paul Tripp served the church by writing this.</span> <span class="tl-s" data-s="53.37" data-e="60.72">And so, it&#x27;s a great little daily devotional if you&#x27;re looking for one at the beginning of 2025.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="60.98" data-e="61.30">That&#x27;s right.</span> <span class="tl-s" data-s="61.39" data-e="64.89">And just so you know, we&#x27;re not sponsored by Paul David Tripp or anything associated.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="65.55" data-e="66.11">Definitely not.</span> <span class="tl-s" data-s="66.46" data-e="73.81">That mustache, we do not condone, nor do we say— nor are we sponsored by it.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="74.23" data-e="76.69">But Golden Corral, on the other hand— [Speaker A] Never.</span> <span class="tl-s" data-s="76.88" data-e="77.63">Negative, negative, negative.</span> <span class="tl-s" data-s="77.68" data-e="78.90">Let&#x27;s get on with the work here.</span> <span class="tl-s" data-s="79.19" data-e="79.77">All right, here we go.</span> <span class="tl-s" data-s="79.83" data-e="80.25">The work.</span> <span class="tl-s" data-s="81.29" data-e="87.76">She&#x27;s referring to John 12:23-26, where the further study and encouragement verses for one of those days I was reading.</span> <span class="tl-s" data-s="88.87" data-e="93.18">The verses read, Then Jesus answered them, the hour has come for the Son of Man to be glorified.</span> <span class="tl-s" data-s="93.71" data-e="98.50">Truly, truly, I say to you, unless a grain of wheat falls into the earth and dies, it remains alone.</span> <span class="tl-s" data-s="99.24" data-e="101.02">But if it dies, it bears much fruit.</span> <span class="tl-s" data-s="101.83" data-e="107.31">Whoever loves his life loses it, and whoever hates his life in this world will keep it for eternal life.</span></p>
+        <p><span class="tl-s" data-s="108.00" data-e="112.81">If anyone serves me, he must follow me, and where I am, there my servant will be also.</span> <span class="tl-s" data-s="113.47" data-e="116.07">If anyone serves me, the Father will honor him.</span> <span class="tl-s" data-s="116.65" data-e="118.50">John 12:23-26.</span> <span class="tl-s" data-s="119.21" data-e="122.30">Verse 25 specifically is what I&#x27;d like to understand better.</span> <span class="tl-s" data-s="122.66" data-e="128.26">Whoever loves his life loses it, and whoever hates his life in this world will keep it for eternal life.</span> <span class="tl-s" data-s="129.32" data-e="133.05">Is Jesus saying that we must have miserable lives here on earth?</span> <span class="tl-s" data-s="134.11" data-e="136.88">Or how do I think about that verse and relate it to my life?</span> <span class="tl-s" data-s="137.56" data-e="140.34">It is wrong to live— is it wrong to live comfortably?</span> <span class="tl-s" data-s="141.18" data-e="146.80">Also, in verse 24, Jesus talks about the Grain of wheat dying and then bearing much fruit.</span> <span class="tl-s" data-s="147.25" data-e="149.83">What exactly does it mean to die for Jesus?</span></p>
+        <p><span class="tl-s" data-s="150.40" data-e="154.10">Thank you for always taking the time to read and answer my questions.</span> <span class="tl-s" data-s="154.48" data-e="157.87">And then in some follow-up, I followed up with her and she responded.</span> <span class="tl-s" data-s="157.93" data-e="162.56">And for her specifically, it was related to a job, a potential job change.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="162.64" data-e="162.96">Gotcha.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="163.20" data-e="164.44">So just for more context.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="164.50" data-e="165.00">Yeah, yeah, yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="165.13" data-e="165.90">Thanks for the question, Amy.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="165.94" data-e="167.03">Yeah, Amy, great question.</span> <span class="tl-s" data-s="167.21" data-e="173.30">And this is, you know, Jesus says a lot of things in the Gospels that are jarring, and this is one of those things, right?</span> <span class="tl-s" data-s="173.48" data-e="183.16">And so what he&#x27;s telling telling us here is that— so when he says in verse 23, the hour has come for the Son of Man to be glorified, that means he&#x27;s about to die, right?</span> <span class="tl-s" data-s="183.26" data-e="183.65">Yeah.</span> <span class="tl-s" data-s="183.71" data-e="185.39">And so, they don&#x27;t understand that in John.</span></p>
+        <p><span class="tl-s" data-s="186.95" data-e="191.63">At the time, they don&#x27;t understand that the way that he&#x27;s going to be glorified is through his death and resurrection.</span> <span class="tl-s" data-s="192.44" data-e="198.34">And so, then he presents a principle of truth for all that follow him.</span> <span class="tl-s" data-s="199.04" data-e="202.66">And he does it by using an analogy or a parable of sorts.</span> <span class="tl-s" data-s="202.71" data-e="206.37">Unless a grain of wheat Falls to the earth and dies, it remains alone.</span> <span class="tl-s" data-s="206.47" data-e="207.98">But if it dies, it bears much fruit.</span> <span class="tl-s" data-s="208.07" data-e="209.31">And so, like, that&#x27;s a seed, right?</span> <span class="tl-s" data-s="209.37" data-e="210.30">That&#x27;s what a seed does.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="210.48" data-e="210.75">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="210.88" data-e="213.91">There&#x27;s a sense in which when we plant the seed, it dies.</span> <span class="tl-s" data-s="214.57" data-e="215.35">The seed dies.</span> <span class="tl-s" data-s="215.70" data-e="217.84">It is— it&#x27;s dead.</span> <span class="tl-s" data-s="217.95" data-e="220.37">And what it was, it&#x27;s that no longer.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="220.45" data-e="221.25">It&#x27;s not a seed anymore.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="221.30" data-e="222.10">It&#x27;s not a seed anymore.</span> <span class="tl-s" data-s="222.18" data-e="225.05">And it begins to then actually grow into something else.</span> <span class="tl-s" data-s="225.72" data-e="228.34">And so, that&#x27;s what Jesus is saying, essentially.</span> <span class="tl-s" data-s="228.85" data-e="231.96">He&#x27;s saying, if you&#x27;re going to follow me, you need to die to yourself.</span> <span class="tl-s" data-s="232.36" data-e="233.87">You need to die to your preferences.</span> <span class="tl-s" data-s="234.22" data-e="236.80">You need to die to your old way to of old way of life.</span> <span class="tl-s" data-s="236.86" data-e="240.15">You need to die to all that you were and follow me.</span> <span class="tl-s" data-s="240.94" data-e="247.31">And so, he&#x27;s not saying anything like, hey, you need to have— you need to live a life— we&#x27;ve talked about asceticism before.</span> <span class="tl-s" data-s="247.44" data-e="255.41">That&#x27;s the denial of self for biblical purposes or godly purposes, like being monkish or taking a vow of poverty.</span> <span class="tl-s" data-s="255.46" data-e="255.52">Yeah.</span></p>
+        <p><span class="tl-s" data-s="255.60" data-e="256.84">That&#x27;s not what&#x27;s happening here.</span> <span class="tl-s" data-s="257.22" data-e="259.16">He&#x27;s not saying don&#x27;t enjoy life.</span> <span class="tl-s" data-s="259.23" data-e="263.15">He&#x27;s not saying don&#x27;t enjoy good food or drink or friends or anything like that.</span> <span class="tl-s" data-s="263.22" data-e="267.48">He&#x27;s saying that your life now needs to be dominated by me.</span> <span class="tl-s" data-s="268.03" data-e="271.70">So, Jesus is saying that he is the most important thing.</span> <span class="tl-s" data-s="272.38" data-e="277.85">And so, it&#x27;s not about being uncomfortable or living in a smaller house or any of those things.</span> <span class="tl-s" data-s="277.98" data-e="280.98">It&#x27;s about putting Jesus first in all things.</span> <span class="tl-s" data-s="281.12" data-e="291.71">And the death he&#x27;s talking about is really— most of us are not going to die as martyrs unless we go to another place, at least as it stands right now.</span> <span class="tl-s" data-s="291.88" data-e="292.03">Yeah.</span> <span class="tl-s" data-s="292.29" data-e="295.38">It&#x27;s not physical death, but it&#x27;s death to self.</span></p>
+        <p><span class="tl-s" data-s="296.37" data-e="298.31">It&#x27;s death to your selfishness.</span> <span class="tl-s" data-s="298.40" data-e="298.71">To the flesh.</span> <span class="tl-s" data-s="298.79" data-e="299.77">It&#x27;s death to the flesh.</span> <span class="tl-s" data-s="300.76" data-e="302.63">And so, it&#x27;s valuing Jesus.</span> <span class="tl-s" data-s="303.03" data-e="308.30">And to value Jesus and to put him at the center means to put yourself on the outside.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="308.87" data-e="309.08">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="309.36" data-e="313.16">And so, that is a life of self-denial, self-sacrifice.</span> <span class="tl-s" data-s="313.69" data-e="323.91">It&#x27;s the same idea when Jesus says in Matthew 16:24, if anyone would come after me, let him deny himself, take up his cross, and this is a daily thing, and follow me.</span> <span class="tl-s" data-s="324.47" data-e="333.79">Essentially, To obey, to prefer him, to put him at the center means that we are going to lose our life.</span> <span class="tl-s" data-s="333.83" data-e="338.87">We&#x27;re going to have our— the dreams and aspirations we once had are now gone.</span> <span class="tl-s" data-s="338.98" data-e="343.57">And now our dreams and aspirations are defined by Jesus and his Word.</span> <span class="tl-s" data-s="343.69" data-e="344.51">And that&#x27;s very different.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="344.74" data-e="345.09">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="345.94" data-e="350.29">And, you know, if we&#x27;re going to serve him, we must look to him and say, what do you want me to be?</span> <span class="tl-s" data-s="350.75" data-e="353.01">Not first and foremost, what do I want to do?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="353.49" data-e="353.59">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="353.73" data-e="356.01">And so, that&#x27;s Jesus talking principally about that.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="356.30" data-e="356.83">Okay, love it.</span> <span class="tl-s" data-s="356.92" data-e="360.68">Yeah, just to apply it a bit more to her situation.</span> <span class="tl-s" data-s="361.83" data-e="367.36">She mentioned she loves her current job, very comfortable in it, is considering a switch to a nonprofit.</span> <span class="tl-s" data-s="367.44" data-e="372.38">And toward the end of the email, she kind of says she&#x27;s concerned that she might enjoy her job too much.</span> <span class="tl-s" data-s="372.51" data-e="373.86">Now, you touched on it a little bit.</span> <span class="tl-s" data-s="374.18" data-e="379.12">It&#x27;s okay to love some things of this world as long as they&#x27;re not above your love for Jesus.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="379.51" data-e="380.82">Well, it&#x27;s just about what do you worship?</span> <span class="tl-s" data-s="380.90" data-e="382.46">Like, it&#x27;s not wrong to enjoy something.</span> <span class="tl-s" data-s="382.50" data-e="383.90">We want to be fulfilled in work.</span> <span class="tl-s" data-s="383.97" data-e="388.99">I mean, we were— mankind was directed to work before the fall.</span> <span class="tl-s" data-s="389.12" data-e="392.04">So, the work we do, it was before the curse, right?</span> <span class="tl-s" data-s="392.15" data-e="392.34">Right.</span> <span class="tl-s" data-s="392.63" data-e="395.83">There are things about our job, about every job, that&#x27;s difficult and hard.</span> <span class="tl-s" data-s="395.91" data-e="401.70">But what he&#x27;s saying here is not try to pick the hardest thing just so that it&#x27;s hard.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="401.70" data-e="402.07">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="402.34" data-e="404.99">And it&#x27;s okay to enjoy your job.</span> <span class="tl-s" data-s="404.99" data-e="407.69">The question becomes then, is your job an idol?</span> <span class="tl-s" data-s="407.94" data-e="410.32">Or are you worshiping your job?</span> <span class="tl-s" data-s="410.45" data-e="413.40">Are you worshiping what your job can do for you?</span> <span class="tl-s" data-s="413.40" data-e="414.69">You know, those are different questions.</span> <span class="tl-s" data-s="414.77" data-e="420.32">But the bare enjoyment of a job, I would hope everybody listening enjoys their job.</span> <span class="tl-s" data-s="420.32" data-e="425.88">And if they don&#x27;t, I would hope that the Lord would open a door for them to be able to go to a job that they can enjoy.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="425.94" data-e="426.12">Amen.</span> <span class="tl-s" data-s="426.51" data-e="438.15">Just to plug one of our old episodes, in episode 28, at the beginning of this year, on January 4th, we Recorded work for the glory of God, and I think that could be helpful if this is something you&#x27;re pondering.</span> <span class="tl-s" data-s="438.15" data-e="441.45">So thanks for the question, Amy, and I will be praying for your situation.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="441.45" data-e="442.27">Yeah, great question.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="442.32" data-e="444.31">Oh, you heard it.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="444.31" data-e="447.02">All right, that is the email bell.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="447.22" data-e="450.14">This question comes from Alexis Pai.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="450.59" data-e="450.69">Paietola.</span> <span class="tl-s" data-s="451.39" data-e="453.96">Yes, I swear I practiced that.</span> <span class="tl-s" data-s="453.96" data-e="455.23">He can&#x27;t say your name.</span> <span class="tl-s" data-s="455.23" data-e="455.79">That&#x27;s fine.</span> <span class="tl-s" data-s="455.79" data-e="456.48">It&#x27;s not that hard.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="456.51" data-e="458.86">But anyway, Alexis Pierce.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="458.86" data-e="460.06">But anyway, go ahead.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="460.06" data-e="461.96">This is a follow-up question on the episode.</span> <span class="tl-s" data-s="461.99" data-e="463.96">What about pastoral failure?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="464.00" data-e="464.43">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="464.70" data-e="478.65">Hi guys, a question that came to mind after listening to your episode about pastoral failings is what would you say to someone that no longer believes because of an incident like this with their pastor, or they have been hurt by a person who claims Christ?</span> <span class="tl-s" data-s="478.69" data-e="480.19">Appreciate you.</span> <span class="tl-s" data-s="480.19" data-e="482.36">Alexis [Speaker A] Pietila.</span> <span class="tl-s" data-s="482.54" data-e="483.10">Pietila.</span> <span class="tl-s" data-s="483.32" data-e="483.65">Is that good?</span> <span class="tl-s" data-s="483.90" data-e="484.21">That&#x27;s good.</span> <span class="tl-s" data-s="484.29" data-e="484.63">Yeah.</span> <span class="tl-s" data-s="484.95" data-e="486.89">All right, Alexis, let us know if we said that right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="487.27" data-e="488.64">Well, not we, me.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="488.86" data-e="489.19">Oh, you.</span> <span class="tl-s" data-s="489.47" data-e="492.37">You&#x27;re saying you got it 100%, but I&#x27;m a little shaky.</span> <span class="tl-s" data-s="492.43" data-e="493.27">Is that what you&#x27;re saying?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="493.34" data-e="493.41">Maybe.</span> <span class="tl-s" data-s="493.41" data-e="494.05">I&#x27;m not sure.</span> <span class="tl-s" data-s="494.05" data-e="496.85">I don&#x27;t want to be mean because there&#x27;s some people who think I&#x27;ve been mean to you.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="497.21" data-e="499.65">Just one or two, yeah, 3 or 4 maybe.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="499.75" data-e="502.91">Anyway, yeah, so great question, Alexis.</span> <span class="tl-s" data-s="502.91" data-e="517.05">I think that this is one of the sad realities of life in a fallen world where we have pastors, leaders who fail, who preach one thing and then whose life testifies to something else.</span> <span class="tl-s" data-s="517.05" data-e="522.26">Now, one thing we need to recognize is that everybody, no matter who we are, preaches better than we live.</span> <span class="tl-s" data-s="522.55" data-e="523.17">That&#x27;s just true.</span> <span class="tl-s" data-s="523.27" data-e="523.30">Ah.</span> <span class="tl-s" data-s="523.98" data-e="525.44">And so, that&#x27;s a reality.</span> <span class="tl-s" data-s="525.52" data-e="535.77">But then there&#x27;s also sort of the scandalous sins, those sins that are disqualifying when it comes to adultery, when it comes to, you know, embezzling money, when it comes to things like that.</span> <span class="tl-s" data-s="535.87" data-e="546.55">And so, there are a lot of people out there who&#x27;ve been hurt, or maybe somebody has been legalistic or heavy-handed, or, you know, taken Bible verses and just pounded it over their heads or whatever.</span> <span class="tl-s" data-s="546.73" data-e="547.29">I don&#x27;t know.</span></p>
+        <p><span class="tl-s" data-s="548.53" data-e="550.34">So what do I say to somebody like that?</span> <span class="tl-s" data-s="550.43" data-e="552.31">First of all, I want to listen to their story.</span> <span class="tl-s" data-s="552.82" data-e="554.20">I want to understand what happened.</span> <span class="tl-s" data-s="554.57" data-e="556.67">I don&#x27;t want to minimize how much that hurt.</span> <span class="tl-s" data-s="556.73" data-e="560.55">I don&#x27;t want to say that, you know, it&#x27;s not true.</span> <span class="tl-s" data-s="560.66" data-e="566.12">I want to hear it, hear it, hear it, listen, understand, make sure that person knows I understand.</span> <span class="tl-s" data-s="566.83" data-e="568.55">Also make sure that person knows I care.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="569.00" data-e="569.33">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="569.80" data-e="577.76">And at some point, I want to say, hey, listen, At the best, men are just men, right?</span> <span class="tl-s" data-s="577.83" data-e="578.84">We&#x27;re just dust.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="578.95" data-e="579.27">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="579.74" data-e="583.71">We are— we&#x27;re animated dirt from the Lord, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="584.01" data-e="584.77">Very animated.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="584.96" data-e="587.01">Yeah, but dirt nonetheless.</span> <span class="tl-s" data-s="587.21" data-e="588.62">And the Lord has given us life.</span> <span class="tl-s" data-s="588.87" data-e="594.79">And so, I want to say, men will fail you, women will fail you, but Jesus never will.</span> <span class="tl-s" data-s="595.94" data-e="598.38">And so, all that— I don&#x27;t want to jump to that quick.</span> <span class="tl-s" data-s="598.49" data-e="605.93">I don&#x27;t want to go to there like 2 minutes after we start our conversation, but I want people to recognize we follow Jesus.</span> <span class="tl-s" data-s="606.18" data-e="607.73">The men and the The men and the women come and go.</span> <span class="tl-s" data-s="608.36" data-e="611.94">And men and women in churches are not who they should be.</span> <span class="tl-s" data-s="612.02" data-e="612.91">They&#x27;re not perfect.</span> <span class="tl-s" data-s="612.97" data-e="613.68">They&#x27;re not ideal.</span> <span class="tl-s" data-s="614.12" data-e="614.89">But Jesus is.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="616.09" data-e="616.28">Yeah.</span> <span class="tl-s" data-s="616.35" data-e="619.60">And so, like, he&#x27;s perfect and we&#x27;re imperfect.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="619.73" data-e="620.17">For sure.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="620.29" data-e="620.55">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="620.94" data-e="621.27">Okay.</span> <span class="tl-s" data-s="621.61" data-e="630.26">Well, it also goes to like, if a ministry is man-centered, when that man falls, it&#x27;s crushing.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="630.52" data-e="630.97">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="631.18" data-e="635.47">But if that ministry is Christ-centered, Christ will never fall.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="635.75" data-e="636.23">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="636.31" data-e="636.57">Right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="636.79" data-e="636.98">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="637.29" data-e="642.11">And so, there&#x27;s a sense in which, who are we pointing to, right?</span> <span class="tl-s" data-s="642.43" data-e="656.02">So, like, it&#x27;s very easy to be a certain— have a certain personality as a leader to draw people to you because of your charisma, because of your eloquence, because of how you speak, because of how you dress, because of what you do, right?</span> <span class="tl-s" data-s="656.24" data-e="658.73">Instead of pointing to the Lord.</span> <span class="tl-s" data-s="658.81" data-e="664.56">And so, what we want to do is be people Leaders who point away from ourselves and to the Lord.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="664.75" data-e="664.99">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="665.13" data-e="667.25">That doesn&#x27;t mean that it doesn&#x27;t matter how we live.</span> <span class="tl-s" data-s="667.31" data-e="667.68">It does.</span> <span class="tl-s" data-s="667.87" data-e="672.28">But the focus is never on a man, but it&#x27;s always on the man Christ Jesus.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="673.16" data-e="673.45">Amen.</span> <span class="tl-s" data-s="673.55" data-e="680.75">Yeah, just to kind of touch on the second part of our conversation, let&#x27;s think about the non-leadership side of it.</span> <span class="tl-s" data-s="680.86" data-e="690.27">So you and I have both shared experiences with one another where someone we genuinely believe is saved, did something to us, hurt us in some way.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="690.54" data-e="690.65">Sure.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="690.88" data-e="693.46">And they&#x27;re Christians, as far as we can tell, they&#x27;re Christians.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="693.59" data-e="693.77">Yep.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="694.63" data-e="697.87">You see how that could impact someone&#x27;s walk in the faith?</span> <span class="tl-s" data-s="697.92" data-e="704.98">I mean, I&#x27;ve shared more deeply with you just about some of the people who led me to the Lord and some of the experiences that happened after that.</span> <span class="tl-s" data-s="705.07" data-e="708.76">And that, I mean, it could rock someone&#x27;s faith at the core.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="708.98" data-e="709.24">For sure.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="709.47" data-e="714.02">But my hope and faith and trust was not in that person.</span> <span class="tl-s" data-s="714.77" data-e="716.78">It was in the man Christ Jesus.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="717.08" data-e="719.05">Well, and that&#x27;s how hard— [Speaker B] So, is it the same principle?</span> <span class="tl-s" data-s="719.10" data-e="722.40">It&#x27;s the same principle, but it can be hard for people to recognize.</span> <span class="tl-s" data-s="722.40" data-e="731.22">Like, if someone&#x27;s like discipling them and it&#x27;s destabilizing for someone, especially the person that brings you to the Lord, to fall away from the Lord, right?</span> <span class="tl-s" data-s="731.58" data-e="732.42">That&#x27;s hard.</span> <span class="tl-s" data-s="732.72" data-e="736.52">Or like to preach one way and live another and you realize that, that&#x27;s hard, right?</span> <span class="tl-s" data-s="736.71" data-e="740.33">That&#x27;s not like— that&#x27;s why there&#x27;s qualifications for leadership.</span> <span class="tl-s" data-s="740.64" data-e="747.27">That&#x27;s why all the qualifications save one in 1 Timothy 3 and Titus 1 Is character.</span> <span class="tl-s" data-s="747.39" data-e="750.10">They&#x27;re all character qualifications except the ability to teach.</span> <span class="tl-s" data-s="750.10" data-e="753.35">And the reason is because of this question right here.</span> <span class="tl-s" data-s="753.62" data-e="756.30">Because when the leaders fall, it affects people.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="756.93" data-e="757.25">Gotcha.</span> <span class="tl-s" data-s="757.25" data-e="757.36">Okay.</span> <span class="tl-s" data-s="757.36" data-e="758.71">Thanks for the question, Alexis.</span> <span class="tl-s" data-s="758.71" data-e="759.57">We appreciate it.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="759.59" data-e="759.98">Yeah.</span> <span class="tl-s" data-s="760.46" data-e="760.84">Thanks, Alexis.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="760.84" data-e="763.20">And that&#x27;s all the questions I have for now.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="763.42" data-e="763.94">For now.</span> <span class="tl-s" data-s="763.98" data-e="766.77">But there will be another Friday that comes because you know what, Mark?</span> <span class="tl-s" data-s="766.79" data-e="769.40">They come once every 7 days.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="769.58" data-e="770.16">Every 7?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="770.22" data-e="770.40">Every 7.</span> <span class="tl-s" data-s="770.54" data-e="772.55">It&#x27;s a Rapid Fire Friday.</span> <span class="tl-s" data-s="772.56" data-e="773.64">We&#x27;ll be back.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="773.69" data-e="774.97">All right, well, I&#x27;m gonna hold you to that.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="774.99" data-e="775.84">All right, sounds good.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="775.86" data-e="776.03">Take care, guys.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Fixed on Jesus episode archive, backed by /api/podcast/search.
+  // Static fallback list above stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function fmtDuration(raw) {
+      if (!raw) return "";
+      var str = String(raw).trim();
+      // Anchor feeds report seconds; render as H:MM:SS or M:SS.
+      if (/^\d+$/.test(str)) {
+        var total = parseInt(str, 10);
+        var h = Math.floor(total / 3600);
+        var m = Math.floor((total % 3600) / 60);
+        var sec = total % 60;
+        var mm = (h > 0 && m < 10 ? "0" + m : "" + m);
+        var ss = (sec < 10 ? "0" + sec : "" + sec);
+        return (h > 0 ? h + ":" + mm : m) + ":" + ss;
+      }
+      // Anchor also reports clock strings like "00:24:02" — drop the
+      // redundant leading hour so it reads "24:02".
+      return str.replace(/^00:/, "");
+    }
+    function row(it) {
+      it = it || {};
+      var title = esc(it.title) || "Untitled episode";
+      var tUrl = it.guid && transcriptMap[it.guid];
+      var heading = tUrl
+        ? '<a href="' + esc(tUrl) + '">' + title + "</a>"
+        : (it.link
+          ? '<a href="' + esc(it.link) + '" target="_blank" rel="noopener">' + title + "</a>"
+          : title);
+      var meta = [fmtDate(it.date), fmtDuration(it.duration)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      return '<div class="sermon"><div><h3>' + heading + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    var PER = 10;
+    var state = { q: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No episodes found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " episode" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " episodes";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/podcast/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () {
+          // Keep the static list, but tell the reader where else to listen —
+          // some privacy blockers stop the archive request itself.
+          var note = document.querySelector("[data-sermons-error]");
+          if (note) note.hidden = false;
+        });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    if (monthSel) {
+      monthSel.addEventListener("change", function () {
+        state.month = monthSel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: 30deb2d1-c324-4175-9807-b1e1bcbfd8b5 -->
+</body>
+</html>
