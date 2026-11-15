@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Marks of a Faithful Church — Podcast Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Fixed on Jesus: conversations beyond Sunday mornings from Center Church in Gilbert, AZ — listen on Spotify, Apple Podcasts, and YouTube." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=18" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a href="/sermons">Sermons</a></li>
+              <li><a class="active" href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/podcast">&larr; All podcast episodes</a>
+          <h1 class="display-lg">The Marks of a Faithful Church</h1>
+          <p class="transcript-meta">2023-09-01 · 15:03</p>
+          <p class="transcript-desc">Welcome to FIXED ON JESUS, a podcast brought to you by Center Church in Gilbert, Arizona. Speaking to you today are Rich Richardson &amp; Mark Johnson Jr. Production by Heather Corbitt **SHOW NOTES** Questions asked in this episode: What is the definition of a faithful church? What does faith &#x27;preaching</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/e750e370/podcast/play/75275201/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-7-30%2Fb9d0991b-cb88-811f-6af1-d3b5a8d42027.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="0.31" data-e="3.23">It&#x27;s wildly unpopular, but it&#x27;s very necessary.</span> <span class="tl-s" data-s="3.49" data-e="7.84">It&#x27;s one of the things about the church that makes us distinctive.</span> <span class="tl-s" data-s="8.36" data-e="13.33">We shouldn&#x27;t be the kind of people that live in the same way the world lives.</span> <span class="tl-s" data-s="14.17" data-e="17.55">We sleep with our spouses, not other people.</span> <span class="tl-s" data-s="17.86" data-e="18.22">Right.</span> <span class="tl-s" data-s="18.59" data-e="20.50">We&#x27;re honest in our business dealings.</span> <span class="tl-s" data-s="20.62" data-e="22.15">We speak the truth.</span> <span class="tl-s" data-s="22.33" data-e="24.48">We protect those that are abused.</span> <span class="tl-s" data-s="25.64" data-e="26.92">You know, we aren&#x27;t greedy.</span> <span class="tl-s" data-s="27.11" data-e="29.14">We&#x27;re kind and gracious and merciful.</span></p>
+        <p><span class="tl-s" data-s="29.22" data-e="30.93">We are a counterculture.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="45.95" data-e="48.15">This is Fixed on Jesus.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="63.53" data-e="74.93">Welcome again to Fixed on Jesus, the podcast where we talk about stuff that we want to talk about and questions when you send in questions to production@centergilbert.com.</span> <span class="tl-s" data-s="75.01" data-e="78.84">My name is Rich, and as always, I&#x27;m joined by Mark Johnson Jr.</span> <span class="tl-s" data-s="78.92" data-e="79.28">Hello, Mark.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="79.56" data-e="79.88">Hello.</span> <span class="tl-s" data-s="79.99" data-e="81.51">I&#x27;m the best singer on the podcast.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="81.58" data-e="83.11">No, I&#x27;m glad you haven&#x27;t said anything yet.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="83.18" data-e="83.71">I&#x27;m a singer.</span> <span class="tl-s" data-s="83.76" data-e="85.70">Do [Speaker A] not sing.</span> <span class="tl-s" data-s="85.97" data-e="88.84">And then Heather Corbett is our production manager.</span> <span class="tl-s" data-s="88.87" data-e="93.60">She&#x27;s trying to ignore Mark, but she has headphones on, so she hears it in stereo.</span> <span class="tl-s" data-s="93.60" data-e="96.19">I&#x27;m so sorry, Heather, but I really just need to keep it going.</span> <span class="tl-s" data-s="96.31" data-e="100.81">You know, sometimes you got to— just got to push through, and that&#x27;s my motto.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="100.82" data-e="106.53">Yeah, well, let&#x27;s push through for many things, but not singing, because you do not have a future in that.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="106.53" data-e="108.28">Okay, thank you for being direct.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="108.28" data-e="109.63">Yes, that&#x27;s correct.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="109.63" data-e="114.86">So let&#x27;s just dive right into it before I start singing again.</span></p>
+        <p><span class="tl-s" data-s="116.16" data-e="116.35">Good.</span> <span class="tl-s" data-s="116.35" data-e="117.77">What is a faithful church?</span> <span class="tl-s" data-s="117.77" data-e="122.11">How— where would we even start with describing what is a faithful church?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="122.11" data-e="123.77">A faithful church?</span> <span class="tl-s" data-s="123.77" data-e="123.85">Yes.</span> <span class="tl-s" data-s="123.85" data-e="125.82">So a church is more than a building, right?</span> <span class="tl-s" data-s="125.87" data-e="125.89">Right.</span> <span class="tl-s" data-s="125.93" data-e="131.64">Um, a church— we— in the Bible, church is never just— church never describes the building.</span> <span class="tl-s" data-s="131.64" data-e="133.88">It always describes the people.</span> <span class="tl-s" data-s="133.94" data-e="147.48">And so historically, there have been people— have theologians and those who know about this sort of thing and, and, and historians have described, uh, 3 markers of a faithful church.</span> <span class="tl-s" data-s="147.60" data-e="151.59">So every faithful church— and they can look a lot of different ways, right?</span> <span class="tl-s" data-s="151.92" data-e="156.72">So there&#x27;s all kinds of different churches that have different takes on church government, and they can be faithful.</span> <span class="tl-s" data-s="156.73" data-e="159.85">They have different takes on the sacraments, and they can be faithful.</span></p>
+        <p><span class="tl-s" data-s="159.88" data-e="165.94">They have different takes on all kinds of different preferences, and yet can still be faithful.</span> <span class="tl-s" data-s="166.05" data-e="173.18">But there are 3 non-negotiable marks for what a faithful church looks like.</span> <span class="tl-s" data-s="173.29" data-e="179.20">One is the faithful preaching of God&#x27;s Word.</span> <span class="tl-s" data-s="179.31" data-e="183.26">2 is the faithful observance of the sacraments.</span> <span class="tl-s" data-s="183.33" data-e="186.59">3 is the practice of church discipline.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="187.04" data-e="187.31">Got it.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="187.42" data-e="189.14">So those are the 3.</span> <span class="tl-s" data-s="189.29" data-e="193.17">If someone— if a church is not— like, that&#x27;s how you can tell what a church is.</span> <span class="tl-s" data-s="193.22" data-e="199.41">If there&#x27;s not a practice of those 3 things, It could be many good things even, but it&#x27;s not a church.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="199.42" data-e="199.52">Right.</span> <span class="tl-s" data-s="199.55" data-e="201.83">Well, let&#x27;s tease out what those mean.</span> <span class="tl-s" data-s="201.86" data-e="210.69">Let&#x27;s start with what do you mean by saying the preaching of the— the faithful preaching of the Word, both in general but also how we do it here?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="210.70" data-e="211.30">Yeah, yeah, sure.</span> <span class="tl-s" data-s="211.44" data-e="220.70">So in general, what we&#x27;re saying is that the sermons preached on a Sunday morning are going to reflect and be about the truth of God&#x27;s Word.</span></p>
+        <p><span class="tl-s" data-s="221.92" data-e="225.62">So [Speaker B] the whole, the whole Bible, [Speaker A] the whole counsel of God.</span> <span class="tl-s" data-s="225.67" data-e="232.39">Now you can&#x27;t preach on the whole counsel of God at the same time, but you can preach on the counsel of God.</span> <span class="tl-s" data-s="232.39" data-e="240.86">So what we try to do here, we believe that the most effective way to preach faithfully is to preach what&#x27;s called expositionally.</span> <span class="tl-s" data-s="240.89" data-e="252.72">That means we&#x27;re going to go through books of the Bible, just straight through books of the Bible, and explain what&#x27;s happening What it means and how we can apply it, essentially.</span> <span class="tl-s" data-s="252.77" data-e="255.18">And so that&#x27;s why we&#x27;re not going to do very many messages.</span> <span class="tl-s" data-s="255.18" data-e="264.58">We&#x27;ll do them from time to time, but we don&#x27;t do many messages that are topical because the Bible is not arranged in topics; it&#x27;s arranged by books.</span> <span class="tl-s" data-s="264.58" data-e="269.72">And so if the Bible was a glossary where we could say, okay, well, let&#x27;s look up H for holiness.</span></p>
+        <p><span class="tl-s" data-s="269.72" data-e="270.78">Okay, here&#x27;s what holiness means.</span> <span class="tl-s" data-s="270.85" data-e="271.49">Let&#x27;s preach about that.</span> <span class="tl-s" data-s="271.55" data-e="273.11">Then we would preach that way.</span> <span class="tl-s" data-s="273.11" data-e="279.48">But what we have instead is a book. of 66 separate books.</span> <span class="tl-s" data-s="279.57" data-e="288.10">And what we&#x27;re— what we&#x27;ll— what we&#x27;ll want to do is make sure we preach through these books and help people understand what is being— what&#x27;s happening in these books.</span> <span class="tl-s" data-s="288.10" data-e="296.85">Now, right, there&#x27;s lots of different genres, there&#x27;s lots of different— there&#x27;s Old Testament, there&#x27;s New Testament, there&#x27;s all kinds of different things going on, but generally that&#x27;s what we try to do.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="297.12" data-e="298.42">Got it, got it.</span> <span class="tl-s" data-s="298.42" data-e="304.04">Just to clarify on part of that, what we&#x27;re doing here with this podcast would be considered Topically?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="304.11" data-e="305.82">Yeah, much more topical.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="305.89" data-e="309.58">Okay, so in opposition— not opposition, but different from the way we would do it on a Sunday morning?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="309.58" data-e="320.28">Yeah, on a Sunday morning, what, you know, like on a Sunday morning, pretty soon— like in the past, if you look back to the past, we&#x27;ve preached through all kinds of different books.</span> <span class="tl-s" data-s="320.39" data-e="322.54">Preached Romans, James, 1 John.</span> <span class="tl-s" data-s="322.70" data-e="324.34">We preached through Exodus.</span> <span class="tl-s" data-s="324.34" data-e="326.20">We preached through sections of the Psalms.</span> <span class="tl-s" data-s="326.25" data-e="328.09">We preached through sections of Isaiah.</span> <span class="tl-s" data-s="328.09" data-e="330.95">Each time what we do is we We stop and look.</span> <span class="tl-s" data-s="330.98" data-e="342.13">We consider a whole book of the Bible or sections of books of the Bible to let the well essentially just to let the agenda of our morning be set by what the scriptures say.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="342.13" data-e="342.45">Love that.</span> <span class="tl-s" data-s="342.45" data-e="349.31">So then the next one is sacraments, and then if I remember correctly, it&#x27;s baptism and the Lord&#x27;s Supper.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="349.44" data-e="349.63">That&#x27;s right.</span> <span class="tl-s" data-s="350.32" data-e="352.98">So contra like a the Roman Catholics would have seven sacraments.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="353.29" data-e="353.63">We have two.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="354.19" data-e="360.39">We have two, which are The Lord&#x27;s Supper and baptism.</span> <span class="tl-s" data-s="360.42" data-e="372.72">And so in baptism, what we&#x27;re doing— what someone who is baptized happens— what happens is, is that they give a testimony of their new life in Christ before the church.</span> <span class="tl-s" data-s="372.72" data-e="382.48">We immerse them in water, and by that, by that sign, by that figurative event, what we have is someone going under the water and coming up.</span> <span class="tl-s" data-s="382.48" data-e="387.10">So what it is is a public proclamation of their testimony.</span> <span class="tl-s" data-s="387.22" data-e="391.42">Also, they&#x27;re acting out, as it were, their resurrection to new life.</span> <span class="tl-s" data-s="391.42" data-e="401.13">And then when it comes to the sacrament of communion, now there&#x27;s freedom in the Bible when it comes to how many times or how often you have communion.</span> <span class="tl-s" data-s="401.13" data-e="402.80">There&#x27;s some debate and conversation about that these days.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="402.80" data-e="404.19">I&#x27;ve had people ask me that.</span> <span class="tl-s" data-s="404.66" data-e="406.28">How many times a month does your church?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="406.28" data-e="409.15">Yeah, we generally do it once a month.</span> <span class="tl-s" data-s="409.15" data-e="413.45">At times, some some traditions do it weekly.</span> <span class="tl-s" data-s="413.56" data-e="415.20">That&#x27;s sometimes quarterly, sometimes monthly.</span> <span class="tl-s" data-s="415.25" data-e="416.18">It all depends.</span> <span class="tl-s" data-s="416.59" data-e="419.83">We&#x27;re not directed in the scriptures a certain number of times.</span> <span class="tl-s" data-s="419.91" data-e="420.78">It&#x27;s [Speaker B] not prescriptive.</span> <span class="tl-s" data-s="420.78" data-e="421.75">It&#x27;s not prescriptive.</span> <span class="tl-s" data-s="421.82" data-e="425.95">So we decide, you know, for us, we&#x27;ve been doing it once a month.</span> <span class="tl-s" data-s="426.21" data-e="435.72">And so what it is is a reminder, the physical reminder of what Christ has done for us in the breaking of his body and the spilling of his blood.</span> <span class="tl-s" data-s="435.91" data-e="442.23">So we literally take that into our bodies and remind us that we.</span></p>
+        <p><span class="tl-s" data-s="442.41" data-e="450.05">Live, uh, our life and our death is dependent on his life and death and his life given for us.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="450.05" data-e="450.16">Gotcha.</span> <span class="tl-s" data-s="450.21" data-e="458.87">And this could be an entire subject on its own, but you can just answer one or the other and we&#x27;ll talk about it again.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="458.87" data-e="459.23">Sure.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="459.36" data-e="464.13">Um, in the Lord&#x27;s Supper— [Speaker A] yep— [Speaker B] real wine or grape juice?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="464.77" data-e="465.30">We use grape juice.</span> <span class="tl-s" data-s="465.30" data-e="468.82">It doesn&#x27;t have to be It doesn&#x27;t have to be real wine.</span> <span class="tl-s" data-s="468.82" data-e="477.38">I think that can stumble a lot of people who are maybe— who don&#x27;t— who are— who maybe have trouble or are stumbled by alcohol.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="478.07" data-e="479.45">Yeah, that makes sense.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="480.55" data-e="483.42">So we use grape juice for that.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="483.44" data-e="483.52">Gotcha.</span> <span class="tl-s" data-s="483.52" data-e="492.60">So then the last one is probably the most— could be considered the most controversial of the aspects of a faithful church, and that&#x27;s church discipline.</span> <span class="tl-s" data-s="492.60" data-e="494.37">Let&#x27;s start with What is it?</span> <span class="tl-s" data-s="494.37" data-e="498.83">And then we&#x27;ll get more into what does that mean here.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="498.94" data-e="499.39">Yeah, sure.</span> <span class="tl-s" data-s="499.92" data-e="505.16">Church discipline is the, the process by which— [Speaker B] Most people have never heard of this, I would say.</span> <span class="tl-s" data-s="505.19" data-e="508.90">Well, or they&#x27;ve seen bad examples.</span> <span class="tl-s" data-s="508.90" data-e="509.04">Yes.</span> <span class="tl-s" data-s="509.04" data-e="528.21">So like, church discipline is essentially the redemptive process or the restorative process, the process by which when someone is trapped in an unrepentant sin and they refuse to repent It is the process by which the church officially communicates that this person should have no confidence they&#x27;re a believer.</span> <span class="tl-s" data-s="528.21" data-e="532.48">Now, I just summarized it real quickly, and it&#x27;s not a quick process.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="532.85" data-e="532.98">No.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="533.03" data-e="540.31">Well, [Speaker B] it sounded very quick, like it could be, okay, they&#x27;re not repentant, they&#x27;re out.</span> <span class="tl-s" data-s="540.31" data-e="543.83">No, it&#x27;s— [Speaker B] It&#x27;s with a lot of grace.</span> <span class="tl-s" data-s="543.86" data-e="546.20">It&#x27;s with pursuit, it&#x27;s with grace, it&#x27;s with hundreds of conversations.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="546.20" data-e="547.93">The goal is to bring them back.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="547.93" data-e="548.00">Absolutely.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="548.04" data-e="549.60">Not to push them out.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="549.62" data-e="550.44">Shun them, right.</span> <span class="tl-s" data-s="550.44" data-e="555.41">So like when we communicate to the church, that someone should have no confidence they&#x27;re a Christian.</span> <span class="tl-s" data-s="555.47" data-e="561.75">We&#x27;re communicating a sad reality, and we don&#x27;t point the finger and say, look, that person, I mean, they&#x27;re— they shouldn&#x27;t be confident.</span> <span class="tl-s" data-s="561.75" data-e="562.49">Aren&#x27;t we better?</span> <span class="tl-s" data-s="562.53" data-e="568.73">What we&#x27;re— we&#x27;re sobered by that, knowing that they&#x27;re not made of anything different than us.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="568.79" data-e="568.90">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="568.90" data-e="571.98">And so— and also, we&#x27;re summoned to pursue them, right?</span> <span class="tl-s" data-s="572.88" data-e="597.70">And so, like, if someone is sleeping with someone that is not their spouse and they&#x27;re confronted and they refuse to repent and continually refuse to repent, and make excuses and say that, no, no, no, you don&#x27;t understand, or my ex-wife left me, or she cheated on me, and now I have the freedom to do this because my covenant is broken, and I can, I can sleep with someone who&#x27;s not my spouse.</span> <span class="tl-s" data-s="597.75" data-e="600.36">Um, it— [Speaker B] A deceiver.</span> <span class="tl-s" data-s="600.38" data-e="600.97">It&#x27;s— they&#x27;re wrong.</span> <span class="tl-s" data-s="601.82" data-e="613.91">And so if someone is living in that kind of blatant disobedience to God&#x27;s word, and they&#x27;re okay with that, and they&#x27;re not taking any steps to change that, they should have no confidence before God that they&#x27;re Christian.</span> <span class="tl-s" data-s="613.94" data-e="625.25">And so if If we as a church allow them to continue to walk down the path thinking they are okay before the Lord, we are not serving them.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="625.25" data-e="625.56">Right.</span> <span class="tl-s" data-s="625.58" data-e="626.78">It is not being faithful.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="626.78" data-e="628.30">Not being faithful.</span> <span class="tl-s" data-s="628.32" data-e="634.54">I mean, we do not want people to have false assurance of faith.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="634.62" data-e="634.78">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="634.88" data-e="651.23">So someone who lives in that kind of unrepentant sin, even after multiple people come to them to try to win them back and they refuse to respond, The most loving, the most kind, the most gracious thing we can do is say, hey, listen, you know, you should have no confidence that you&#x27;re a Christian.</span> <span class="tl-s" data-s="651.23" data-e="667.91">And so— and communicate that to our church so that they can go and share the Gospel and continue to pray for them and pray for one day for their restoration so that they can come back to the Lord and confess and turn away from their sin.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="667.91" data-e="668.28">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="668.39" data-e="673.12">And so that&#x27;s a wildly unpopular [Speaker B] Yeah.</span> <span class="tl-s" data-s="673.12" data-e="677.52">Thing to do, and it&#x27;s come— Matthew 18 and 1 Corinthians 5.</span> <span class="tl-s" data-s="677.52" data-e="681.18">And it&#x27;s wildly unpopular, but it&#x27;s very necessary.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="681.29" data-e="681.39">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="681.39" data-e="688.50">It&#x27;s very necessary because it&#x27;s one of the marks— it&#x27;s one of the things about, about the church that makes us distinctive.</span></p>
+        <p><span class="tl-s" data-s="689.73" data-e="696.04">We shouldn&#x27;t be the kind of people that live in the same way the world lives.</span> <span class="tl-s" data-s="696.14" data-e="699.20">We sleep with our spouses, not other people.</span> <span class="tl-s" data-s="699.20" data-e="702.32">We, we&#x27;re honest in our business dealings.</span> <span class="tl-s" data-s="702.40" data-e="703.78">We speak the truth.</span> <span class="tl-s" data-s="703.78" data-e="705.61">We protect those that are abused.</span> <span class="tl-s" data-s="705.69" data-e="708.87">We, we, you know, we aren&#x27;t greedy.</span> <span class="tl-s" data-s="708.98" data-e="711.08">We&#x27;re kind and gracious and merciful.</span> <span class="tl-s" data-s="711.08" data-e="712.77">We are a counterculture.</span> <span class="tl-s" data-s="712.77" data-e="717.04">And so where we&#x27;re not, we have to ask ourselves, you know, how do we, how do we fix that?</span> <span class="tl-s" data-s="717.04" data-e="717.17">Yeah.</span></p>
+        <p><span class="tl-s" data-s="717.27" data-e="730.69">And so, you know, where there&#x27;s someone who&#x27;s living in that kind of unrepentant entrenched sin, they need to be confronted, and it&#x27;s not loving to do otherwise.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="731.70" data-e="732.65">Right, right.</span> <span class="tl-s" data-s="732.66" data-e="747.31">So just to clarify, if someone was in sin and they were actively repenting and seeking the Lord and getting help with whatever issue they may be struggling with, would that constitute a situation where you would apply church discipline?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="747.31" data-e="747.66">No.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="747.71" data-e="748.64">Okay, because we&#x27;re all sinners.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="748.64" data-e="749.34">We&#x27;re all sinners.</span> <span class="tl-s" data-s="749.46" data-e="750.93">I mean, we all fail.</span> <span class="tl-s" data-s="750.98" data-e="753.07">It&#x27;s not about the sin you commit.</span> <span class="tl-s" data-s="753.07" data-e="757.01">I mean, obviously I&#x27;m not speaking about those kinds of sins that are civil matters now, right?</span> <span class="tl-s" data-s="757.01" data-e="759.26">Where there are civil matters, you call the police.</span> <span class="tl-s" data-s="759.26" data-e="761.49">You don&#x27;t do an investigation, you just call the police.</span> <span class="tl-s" data-s="761.49" data-e="767.75">Like if a child&#x27;s endangered, if a child&#x27;s been hurt, you just call the police.</span> <span class="tl-s" data-s="768.29" data-e="770.73">Um, that&#x27;s a separate matter from the ecclesiological matter.</span> <span class="tl-s" data-s="770.73" data-e="774.47">Or someone&#x27;s, um, vulnerable and you have a battered woman or whatever, you just call the police.</span> <span class="tl-s" data-s="774.47" data-e="774.90">Yeah, right.</span></p>
+        <p><span class="tl-s" data-s="774.90" data-e="775.69">So that&#x27;s separate.</span> <span class="tl-s" data-s="775.69" data-e="777.13">I am not talking about that.</span> <span class="tl-s" data-s="777.13" data-e="777.60">That is good.</span> <span class="tl-s" data-s="777.61" data-e="783.48">If we wonder about whether we should call the police, we should call the police.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="783.63" data-e="783.80">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="783.87" data-e="787.36">But when it comes to discipline, that is different.</span> <span class="tl-s" data-s="787.38" data-e="788.41">That can be different.</span> <span class="tl-s" data-s="788.44" data-e="794.50">Like, if you think about something like adultery, let us say someone commits adultery and they confess it.</span> <span class="tl-s" data-s="794.53" data-e="798.56">That is a totally different ballgame than if someone is caught in adultery.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="799.03" data-e="799.65">I see.</span> <span class="tl-s" data-s="799.65" data-e="800.31">Good to know.</span> <span class="tl-s" data-s="800.61" data-e="802.94">Yeah, that is important to distinguish the differences there.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="802.94" data-e="803.40">Yeah, exactly.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="803.44" data-e="808.42">Because it can be misinterpreted, and I can imagine someone hearing about church discipline Thinking they have to be perfect.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="808.42" data-e="810.56">Yeah, and that&#x27;s not the way it is.</span> <span class="tl-s" data-s="810.57" data-e="812.24">I mean, like, yeah, that&#x27;s not the way it is.</span> <span class="tl-s" data-s="812.24" data-e="817.79">But by the same token, I&#x27;ve heard of other churches that discipline people.</span> <span class="tl-s" data-s="817.87" data-e="828.51">Like they confess something to you know not a criminal offense to their pastor, and so just a normal kind of sin, and then they&#x27;re they&#x27;re disciplined the next Sunday.</span> <span class="tl-s" data-s="828.63" data-e="830.46">That&#x27;s not what we&#x27;re talking about.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="830.46" data-e="830.64">Gotcha.</span> <span class="tl-s" data-s="830.69" data-e="830.93">That&#x27;s great.</span> <span class="tl-s" data-s="830.93" data-e="832.76">So that pretty much wraps up that.</span> <span class="tl-s" data-s="832.76" data-e="834.42">I just have another question for you.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="834.42" data-e="834.58">Yes.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="834.58" data-e="835.64">Do you have a cross chain?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="835.64" data-e="836.48">Do I have what?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="836.48" data-e="838.02">Do you have a chain with a cross on it?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="838.02" data-e="839.28">No, I do not.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="839.28" data-e="839.80">So you are not a Christian.</span> <span class="tl-s" data-s="839.80" data-e="840.84">That is basically what you are saying.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="840.84" data-e="842.64">You are not letting everybody know that you are a Christian.</span> <span class="tl-s" data-s="842.64" data-e="843.56">One that goes around my neck?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="843.56" data-e="845.34">Yeah, you have to show everyone that you are a Christian.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="845.34" data-e="846.68">Is that how you do it?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="846.68" data-e="849.40">That is how the new generation shows that they are a Christian.</span> <span class="tl-s" data-s="849.40" data-e="850.52">They wear a chain.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="850.52" data-e="854.02">By wearing an implement of torture around their neck?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="854.02" data-e="854.24">Exactly.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="854.24" data-e="857.50">That was reserved for slaves and the lowest of the low in Roman society?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="857.50" data-e="857.78">Yeah, exactly that.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="857.78" data-e="857.90">Okay.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="857.90" data-e="860.89">But that is not— I do not think that is what they are thinking about when they wear it.</span> <span class="tl-s" data-s="860.89" data-e="863.20">But I was just curious if you were a Christian.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="863.20" data-e="865.12">Because I&#x27;m not wearing a necklace?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="865.12" data-e="868.05">Because you&#x27;re not wearing one.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="868.11" data-e="868.42">Okay.</span> <span class="tl-s" data-s="868.42" data-e="869.52">I&#x27;m not worried about that.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="869.62" data-e="870.09">Good, good.</span> <span class="tl-s" data-s="870.10" data-e="879.22">Well, thank you so much for tuning in, and that wraps up our talk about what the marks of a faithful church are.</span> <span class="tl-s" data-s="879.90" data-e="883.41">If you have any questions, reach out to [Speaker A] production@centergilbert.com.</span> <span class="tl-s" data-s="883.46" data-e="884.30">And we&#x27;ll see you again.</span> <span class="tl-s" data-s="884.33" data-e="884.71">And this is Fixed on Jesus.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="884.71" data-e="884.71">Stop it.</span> <span class="tl-s" data-s="884.71" data-e="884.71">See you later, everybody.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Fixed on Jesus episode archive, backed by /api/podcast/search.
+  // Static fallback list above stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function fmtDuration(raw) {
+      if (!raw) return "";
+      var str = String(raw).trim();
+      // Anchor feeds report seconds; render as H:MM:SS or M:SS.
+      if (/^\d+$/.test(str)) {
+        var total = parseInt(str, 10);
+        var h = Math.floor(total / 3600);
+        var m = Math.floor((total % 3600) / 60);
+        var sec = total % 60;
+        var mm = (h > 0 && m < 10 ? "0" + m : "" + m);
+        var ss = (sec < 10 ? "0" + sec : "" + sec);
+        return (h > 0 ? h + ":" + mm : m) + ":" + ss;
+      }
+      // Anchor also reports clock strings like "00:24:02" — drop the
+      // redundant leading hour so it reads "24:02".
+      return str.replace(/^00:/, "");
+    }
+    function row(it) {
+      it = it || {};
+      var title = esc(it.title) || "Untitled episode";
+      var tUrl = it.guid && transcriptMap[it.guid];
+      var heading = tUrl
+        ? '<a href="' + esc(tUrl) + '">' + title + "</a>"
+        : (it.link
+          ? '<a href="' + esc(it.link) + '" target="_blank" rel="noopener">' + title + "</a>"
+          : title);
+      var meta = [fmtDate(it.date), fmtDuration(it.duration)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      return '<div class="sermon"><div><h3>' + heading + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    var PER = 10;
+    var state = { q: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No episodes found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " episode" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " episodes";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/podcast/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () {
+          // Keep the static list, but tell the reader where else to listen —
+          // some privacy blockers stop the archive request itself.
+          var note = document.querySelector("[data-sermons-error]");
+          if (note) note.hidden = false;
+        });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    if (monthSel) {
+      monthSel.addEventListener("change", function () {
+        state.month = monthSel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: 142ca7a7-c416-4409-bcfa-bd7a069faa89 -->
+</body>
+</html>
