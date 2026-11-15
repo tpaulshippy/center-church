@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deep Dive Into Biblical Theology — Podcast Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Fixed on Jesus: conversations beyond Sunday mornings from Center Church in Gilbert, AZ — listen on Spotify, Apple Podcasts, and YouTube." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=18" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a href="/sermons">Sermons</a></li>
+              <li><a class="active" href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/podcast">&larr; All podcast episodes</a>
+          <h1 class="display-lg">Deep Dive Into Biblical Theology</h1>
+          <p class="transcript-meta">2025-02-26 · 29:10</p>
+          <p class="transcript-desc">Welcome to FIXED ON JESUS, a podcast brought to you by Center Church in Gilbert, Arizona. Speaking to you today are Rich Richardson &amp; Mark Johnson Jr. Production by Heather Corbitt **SHOW NOTES** Questions asked in this episode: What is Biblical Theology? Why does it matter? Was there death before t</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/e750e370/podcast/play/99066169/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-1-26%2F519c7706-a753-5871-52ec-725a3c7cc112.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="0.78" data-e="9.63">And then, ultimately, then, the last 2 chapters of Revelation is the restoration, which is the complete and total reversal of the curse.</span> <span class="tl-s" data-s="10.45" data-e="14.98">It&#x27;s gone forever, and it&#x27;s replaced by the new heavens and the new earth.</span> <span class="tl-s" data-s="15.03" data-e="16.90">So, creation is remade.</span> <span class="tl-s" data-s="17.33" data-e="26.27">We, as part of creation, are remade, and we have new bodies, and we live on the new heavens and the new earth, and we live in a place that&#x27;s better than Eden.</span></p>
+        <p><span class="tl-s" data-s="41.44" data-e="43.71">This is Fixed on Jesus.</span></p>
+        <p><span class="tl-s" data-s="54.44" data-e="62.78">Hey everybody.</span> <span class="tl-s" data-s="62.84" data-e="63.28">Hey, everybody.</span> <span class="tl-s" data-s="63.28" data-e="68.40">Welcome to our Fixed on Jesus podcast of Center Church in Gilbert, Arizona.</span> <span class="tl-s" data-s="68.40" data-e="72.50">My name is Rich and I am joined by Mark Johnson Jr.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="72.60" data-e="73.54">Hello, Rich.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="73.64" data-e="74.42">Hello, Mark.</span> <span class="tl-s" data-s="74.42" data-e="76.10">And Heather behind the glass.</span> <span class="tl-s" data-s="76.10" data-e="76.68">How you doing, Heather?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="76.75" data-e="78.46">I don&#x27;t know how to answer this question.</span> <span class="tl-s" data-s="78.46" data-e="79.79">I&#x27;m doing well.</span> <span class="tl-s" data-s="80.24" data-e="81.54">That&#x27;s all I&#x27;ll give you.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="81.56" data-e="82.71">That was like a phone voice.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="82.76" data-e="83.48">Not gonna say anymore.</span> <span class="tl-s" data-s="83.56" data-e="84.46">Not gonna say anymore.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="84.78" data-e="85.08">Wow.</span> <span class="tl-s" data-s="85.08" data-e="87.56">Well, that makes it mysterious and weird a little bit.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="87.57" data-e="90.24">If you have questions about Heather&#x27;s status, just email us.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="90.31" data-e="101.40">If you have questions about why Heather&#x27;s holding out on us, Or what she doesn&#x27;t want to— just if you want to speculate on why she&#x27;s not explaining how she&#x27;s really doing, please email us at production@centergilbert.com.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="101.55" data-e="102.08">That&#x27;s right.</span> <span class="tl-s" data-s="102.83" data-e="110.24">So, as far as what we&#x27;re talking about today, besides Heather&#x27;s status of happiness, we are going to talk about biblical theology.</span> <span class="tl-s" data-s="110.38" data-e="114.20">And it&#x27;s something we— you might have heard in one of our previous episodes.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="114.54" data-e="116.96">We did it on a Friday.</span> <span class="tl-s" data-s="117.12" data-e="117.74">What are those called?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="117.90" data-e="118.48">What are they called?</span> <span class="tl-s" data-s="118.69" data-e="120.43">Go ahead, [Speaker A] Heather.</span> <span class="tl-s" data-s="120.43" data-e="121.07">Rapid Fire Friday.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="121.07" data-e="123.47">Do you want me to play the theme music?</span> <span class="tl-s" data-s="123.47" data-e="125.13">No, I&#x27;m not going to play it.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="125.13" data-e="126.69">Rapid Fire Friday.</span> <span class="tl-s" data-s="126.69" data-e="128.49">Mark, what day is it?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="128.49" data-e="128.84">Rapid Fire Friday.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="128.84" data-e="129.14">Boom, boom, boom.</span> <span class="tl-s" data-s="129.37" data-e="130.49">You know what I gotta say?</span> <span class="tl-s" data-s="130.89" data-e="132.61">Shout out to Yoel.</span> <span class="tl-s" data-s="132.61" data-e="133.07">Yeah.</span> <span class="tl-s" data-s="133.07" data-e="136.71">His favorite part is when Rich says, boom, boom, boom.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="136.71" data-e="138.25">Do I say that?</span> <span class="tl-s" data-s="138.25" data-e="138.87">Okay.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="138.87" data-e="138.97">Yep.</span> <span class="tl-s" data-s="138.97" data-e="139.35">All right.</span> <span class="tl-s" data-s="139.35" data-e="140.91">So, we talked about it on Rapid Fire Friday.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="140.91" data-e="141.09">Biblical theology.</span> <span class="tl-s" data-s="141.09" data-e="141.75">That&#x27;s right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="141.75" data-e="144.43">What does biblical theology mean?</span> <span class="tl-s" data-s="144.43" data-e="146.40">And then once you Define that.</span> <span class="tl-s" data-s="146.45" data-e="147.83">Well, we&#x27;re going to walk through it.</span> <span class="tl-s" data-s="147.97" data-e="150.66">Like, you&#x27;re going to hear the whole story of the Bible on this episode.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="150.72" data-e="151.60">Yeah, we&#x27;re going to give it a shot.</span> <span class="tl-s" data-s="151.99" data-e="152.25">Right.</span> <span class="tl-s" data-s="152.66" data-e="162.88">So, yeah, it might sound weird, like biblical as in biblical theology, but it actually describes a discipline on how to understand the Bible.</span> <span class="tl-s" data-s="163.91" data-e="187.93">So, for example, if you pick up a book that&#x27;s called Systematic Theology, systematic theology breaks the Bible up into topics and asks the question, what does the whole Bible have to say about a given topic, which could be the Scriptures, could be angels, demons, the church, God, Jesus, you know, you break it all up into topics, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="188.44" data-e="188.55">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="188.60" data-e="190.88">But the Bible was not organized in topics.</span> <span class="tl-s" data-s="190.96" data-e="193.29">It was— the Bible is a book like any other book.</span> <span class="tl-s" data-s="194.38" data-e="205.89">And so, the Bible, biblical theology tracks the unfolding drama of redemption from Genesis 1 all the way to Revelation 22.</span> <span class="tl-s" data-s="206.58" data-e="220.33">And so, what you have is in biblical theology is a study of how the Bible tells the story and how that unfolding drama is portrayed both in the Old and New Testament.</span></p>
+        <p><span class="tl-s" data-s="221.66" data-e="235.25">So, if you think about just at the most basic level, you can break the Bible storyline up into 4 parts: creation, fall, Redemption and restoration.</span> <span class="tl-s" data-s="236.42" data-e="241.42">So, now, most of the ink in the Bible is given to redemption.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="241.84" data-e="242.98">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="243.20" data-e="247.09">So, you have at creation— do you want to just go through each one?</span> <span class="tl-s" data-s="247.39" data-e="247.47">Sure.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="247.52" data-e="247.57">Yeah.</span> <span class="tl-s" data-s="247.62" data-e="250.42">Creation is obviously in Genesis.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="250.60" data-e="252.19">Yeah, Genesis 1 and 2, right?</span> <span class="tl-s" data-s="252.23" data-e="253.08">So, the story of creation.</span> <span class="tl-s" data-s="253.24" data-e="259.31">It&#x27;s the story of creation, where we find, in the beginning, God creates all things, and there&#x27;s a refrain.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="259.48" data-e="259.66">Yes.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="260.60" data-e="265.16">Each time he does something in the end of each day and the parts of the day, he says, and it was?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="265.75" data-e="265.96">Good.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="266.31" data-e="266.68">Good.</span> <span class="tl-s" data-s="266.78" data-e="267.16">That&#x27;s right.</span> <span class="tl-s" data-s="267.21" data-e="269.02">So— [Speaker B] Except for one.</span> <span class="tl-s" data-s="269.02" data-e="269.47">Except for one.</span> <span class="tl-s" data-s="269.52" data-e="270.79">Which one was that?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="270.79" data-e="273.11">When he created male and female.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="273.11" data-e="273.46">And what was that?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="273.46" data-e="276.99">He said it was— [Speaker A] Very good.</span> <span class="tl-s" data-s="277.37" data-e="280.88">And so, what we— and you might think, okay, well, what, who cares about that?</span> <span class="tl-s" data-s="280.88" data-e="289.24">Well, what we need to recognize is that the original intent here of the created order was good.</span> <span class="tl-s" data-s="289.24" data-e="295.58">Now, you look around the world that we have, and we can&#x27;t say I&#x27;m not saying that without exception, that it&#x27;s good.</span> <span class="tl-s" data-s="295.58" data-e="300.06">There are aspects that are good, but it&#x27;s fallen and it&#x27;s dark, right?</span> <span class="tl-s" data-s="300.28" data-e="301.31">We have evil.</span> <span class="tl-s" data-s="301.50" data-e="302.22">We have wars.</span> <span class="tl-s" data-s="302.22" data-e="304.32">We have rumors of wars.</span> <span class="tl-s" data-s="304.37" data-e="308.28">We have places that experience famine and disease.</span> <span class="tl-s" data-s="308.39" data-e="311.57">That is not the original part of God&#x27;s creation.</span></p>
+        <p><span class="tl-s" data-s="311.66" data-e="314.24">God&#x27;s creation was created good.</span> <span class="tl-s" data-s="314.24" data-e="319.20">And then the pinnacle of creation was, is mankind.</span> <span class="tl-s" data-s="319.20" data-e="319.29">Marriage?</span> <span class="tl-s" data-s="319.29" data-e="319.36">Huh?</span> <span class="tl-s" data-s="319.36" data-e="321.38">I thought you were going to say marriage.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="321.38" data-e="321.83">No, mankind.</span> <span class="tl-s" data-s="321.86" data-e="324.42">The pinnacle of creation is mankind.</span> <span class="tl-s" data-s="324.42" data-e="330.23">Mankind is the pinnacle of creation because mankind is created in God&#x27;s image.</span> <span class="tl-s" data-s="330.52" data-e="333.97">And so, now, the problem happened in Genesis chapter 3.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="334.29" data-e="338.63">Before that, though, just look before the— you&#x27;re going to go to the next part, which is the fall.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="338.63" data-e="338.95">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="338.95" data-e="343.91">What are some of the things that were different the way God created them before the fall?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="343.99" data-e="348.72">Okay, so God institutes a couple things pre-fall.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="348.72" data-e="348.83">Yes.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="348.83" data-e="350.73">That we need to recognize.</span> <span class="tl-s" data-s="350.73" data-e="353.85">One, is that God institutes work.</span> <span class="tl-s" data-s="353.93" data-e="356.13">Work is a good thing.</span> <span class="tl-s" data-s="356.13" data-e="359.54">It&#x27;s not a result of the fall.</span> <span class="tl-s" data-s="359.56" data-e="360.10">Yeah.</span> <span class="tl-s" data-s="360.10" data-e="363.38">God also institutes marriage before the fall.</span> <span class="tl-s" data-s="363.38" data-e="367.33">And so, marriage is a good thing, and it&#x27;s not a result of the fall.</span> <span class="tl-s" data-s="367.63" data-e="384.20">Now, both work and marriage have elements now that are difficult because of the fall, but they were both instituted before the fall and the curse that mankind brought onto the world before that was pronounced by God.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="384.30" data-e="386.29">Okay, and then what about death?</span> <span class="tl-s" data-s="386.40" data-e="388.10">Was there death before the fall?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="388.10" data-e="390.78">There was no human death before the fall.</span> <span class="tl-s" data-s="390.95" data-e="392.99">No human death.</span> <span class="tl-s" data-s="393.13" data-e="394.75">Now, there&#x27;s debate amongst Christians.</span> <span class="tl-s" data-s="394.82" data-e="396.39">Was there like microbial death?</span> <span class="tl-s" data-s="396.50" data-e="398.57">Was there plant death?</span> <span class="tl-s" data-s="398.57" data-e="399.68">Was there animal death?</span> <span class="tl-s" data-s="399.77" data-e="401.54">All those things, that&#x27;s all debated.</span> <span class="tl-s" data-s="401.54" data-e="405.13">One thing we can say for sure is that there was no human death.</span> <span class="tl-s" data-s="405.14" data-e="408.17">So, people didn&#x27;t get sick, And they didn&#x27;t get sick.</span> <span class="tl-s" data-s="408.43" data-e="411.62">They didn&#x27;t get old and die.</span></p>
+        <p><span class="tl-s" data-s="411.72" data-e="413.58">They were meant to live forever.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="413.66" data-e="414.31">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="414.31" data-e="417.65">And so, mankind was created to live forever in paradise.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="417.65" data-e="417.82">Yeah.</span> <span class="tl-s" data-s="417.82" data-e="426.37">So, it only takes 2 chapters of the Bible for— [Speaker A] And then it all banged.</span> <span class="tl-s" data-s="426.46" data-e="431.42">Talking about God&#x27;s perfect created order in the Garden, East of Eden.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="431.51" data-e="432.41">Not yet.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="432.41" data-e="433.69">Oh, okay.</span> <span class="tl-s" data-s="433.76" data-e="433.86">Eden.</span> <span class="tl-s" data-s="433.86" data-e="434.26">Okay.</span> <span class="tl-s" data-s="434.26" data-e="436.28">And then, Immediately in chapter 3 is the part you already talked about.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="436.35" data-e="437.10">Satan shows up, right?</span> <span class="tl-s" data-s="437.13" data-e="443.33">Satan shows up in chapter 3, and we have him tempting our parents, Adam and Eve.</span> <span class="tl-s" data-s="443.33" data-e="446.53">So, they&#x27;re our first parents, right?</span> <span class="tl-s" data-s="446.53" data-e="456.64">He tempts— the dialogue is with Eve, where he tempts her to take fruit from the knowledge of the good and evil, the Tree of the Knowledge of Good and Evil.</span> <span class="tl-s" data-s="456.67" data-e="458.73">And Adam is standing there as well.</span> <span class="tl-s" data-s="459.12" data-e="460.43">And so, they— [Speaker B] Passive.</span> <span class="tl-s" data-s="460.43" data-e="460.70">Super passive.</span> <span class="tl-s" data-s="460.75" data-e="461.55">He needed to be leading.</span> <span class="tl-s" data-s="461.55" data-e="463.89">He needed to actually kick the snake out of the garden.</span> <span class="tl-s" data-s="464.45" data-e="466.18">He did not.</span></p>
+        <p><span class="tl-s" data-s="466.94" data-e="467.26">He failed.</span> <span class="tl-s" data-s="467.26" data-e="472.36">And so, then they eat the fruit, their eyes are open, they realize they sinned, right?</span> <span class="tl-s" data-s="472.37" data-e="474.68">And God comes and— [Speaker B] They hide.</span> <span class="tl-s" data-s="474.69" data-e="478.62">They hide, and God comes and finds them and pronounces a curse.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="478.62" data-e="480.15">So, was there shame in creation before this moment?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="480.15" data-e="480.93">No, there was no guilt.</span> <span class="tl-s" data-s="480.96" data-e="483.82">There was no reason for guilt or shame.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="484.17" data-e="486.27">But they feel shame and they hide.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="486.40" data-e="488.55">They [Speaker B] recognize their own nakedness.</span> <span class="tl-s" data-s="488.58" data-e="489.60">They do.</span> <span class="tl-s" data-s="489.60" data-e="493.90">They recognize, because they weren&#x27;t thinking about themselves necessarily before that.</span> <span class="tl-s" data-s="494.19" data-e="494.74">They weren&#x27;t Self-focused.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="494.75" data-e="494.91">Outward.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="494.91" data-e="495.89">Yeah, right.</span> <span class="tl-s" data-s="495.96" data-e="501.81">And so, now then it&#x27;s like, oh man, here they&#x27;re aware and they&#x27;ve— aware they&#x27;ve fallen short.</span> <span class="tl-s" data-s="501.81" data-e="505.79">And so, they&#x27;re aware God&#x27;s holy, they go and hide.</span> <span class="tl-s" data-s="506.13" data-e="512.07">And so, then God tracks them down and he pronounces a curse over Satan, the woman, and the man.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="512.47" data-e="516.32">Let&#x27;s tease each one of those out.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="516.32" data-e="516.38">Sure.</span> <span class="tl-s" data-s="516.48" data-e="518.90">Satan, he has a curse.</span> <span class="tl-s" data-s="518.90" data-e="520.41">This is Genesis chapter 3.</span> <span class="tl-s" data-s="520.41" data-e="524.42">And he pronounces a curse like he&#x27;s gonna, you know, the snake is gonna crawl on the ground.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="525.32" data-e="526.20">So is the snake Satan?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="526.20" data-e="526.74">Yes.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="526.74" data-e="527.13">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="527.32" data-e="531.94">He&#x27;s gonna crawl on the ground and there&#x27;s gonna be trouble, right?</span> <span class="tl-s" data-s="532.03" data-e="532.06">Exactly.</span> <span class="tl-s" data-s="532.06" data-e="544.84">But one of the cool, one of the interesting things in verse 15, chapter 3, God says, I will put enmity between you and the woman and between your offspring and her offspring.</span> <span class="tl-s" data-s="544.87" data-e="546.28">And then you get this promise.</span> <span class="tl-s" data-s="547.26" data-e="553.90">In the second half of verse 15, right there in the garden, he says, he shall bruise your head and you shall bruise his heel.</span> <span class="tl-s" data-s="554.02" data-e="563.96">We don&#x27;t know who that he is, but there&#x27;s a promise of someone who&#x27;s going to come and it says bruise.</span> <span class="tl-s" data-s="563.96" data-e="567.88">But, you know, we know this later to be Jesus.</span> <span class="tl-s" data-s="567.88" data-e="573.01">Jesus came and destroyed the works and power of Satan.</span> <span class="tl-s" data-s="573.01" data-e="576.40">But his heel was bruised.</span> <span class="tl-s" data-s="576.51" data-e="578.60">He died on the cross, right?</span></p>
+        <p><span class="tl-s" data-s="578.68" data-e="579.52">There&#x27;s this promise.</span> <span class="tl-s" data-s="580.30" data-e="590.27">It&#x27;s like the first glimmer of hope in a dark and foreboding time, like where God is announcing gloom, he announces a reason to hope.</span> <span class="tl-s" data-s="590.27" data-e="593.22">Somebody&#x27;s coming and he&#x27;s going to be the serpent crusher.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="593.51" data-e="594.57">Okay, so that&#x27;s the curse on Satan.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="594.70" data-e="597.11">That&#x27;s the curse on Satan.</span> <span class="tl-s" data-s="597.12" data-e="602.19">And then woman, her pain and childbearing, there&#x27;ll be pain in childbearing.</span> <span class="tl-s" data-s="602.19" data-e="615.58">And then there&#x27;s going to be, there&#x27;s going to be a— he says, your desire will be contrary to your husband, but he shall rule over you.</span> <span class="tl-s" data-s="615.58" data-e="623.55">And so, there&#x27;s animosity introduced between what&#x27;s designed to be harmonious between a husband and a wife.</span> <span class="tl-s" data-s="623.55" data-e="624.53">Now there&#x27;s animosity.</span> <span class="tl-s" data-s="624.53" data-e="624.65">Yeah.</span> <span class="tl-s" data-s="624.79" data-e="633.46">And so, the husband who&#x27;s called to lead, and leadership is kind and gracious and gentle and self-sacrificial, [Speaker B] Yep.</span> <span class="tl-s" data-s="633.46" data-e="633.60">Servant.</span> <span class="tl-s" data-s="633.60" data-e="633.83">Yeah.</span> <span class="tl-s" data-s="633.83" data-e="636.35">It&#x27;s a servant leader, right?</span></p>
+        <p><span class="tl-s" data-s="636.35" data-e="637.66">That&#x27;s what we&#x27;re called to be.</span> <span class="tl-s" data-s="637.70" data-e="641.48">The woman, part of what the curse is, is that she&#x27;s going to want to take authority.</span> <span class="tl-s" data-s="641.55" data-e="650.41">She&#x27;s going to want to step up and take control and at worst, like, just run over her husband.</span></p>
+        <p><span class="tl-s" data-s="651.73" data-e="657.32">And sometimes the husband&#x27;s passive, like Adam was, or he snaps back and— [Speaker B] Is domineering.</span> <span class="tl-s" data-s="657.99" data-e="659.08">Is domineering.</span> <span class="tl-s" data-s="659.13" data-e="659.64">Right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="660.18" data-e="660.27">Okay.</span> <span class="tl-s" data-s="660.72" data-e="663.59">So, is that the root of all marriage relational struggle?</span> <span class="tl-s" data-s="663.61" data-e="665.68">Now, in our fallen world?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="665.70" data-e="666.07">Most of it.</span> <span class="tl-s" data-s="666.20" data-e="666.45">Yeah.</span> <span class="tl-s" data-s="666.58" data-e="671.48">I mean, like, it&#x27;s a product of the curse.</span> <span class="tl-s" data-s="671.48" data-e="671.95">Yeah, exactly.</span> <span class="tl-s" data-s="672.54" data-e="672.68">Right.</span> <span class="tl-s" data-s="672.68" data-e="676.60">And so, then Adam is— he— [Speaker B] What&#x27;s Adam&#x27;s curse?</span> <span class="tl-s" data-s="676.64" data-e="680.73">That he has to work hard for food and to feed his family.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="680.81" data-e="681.53">Thorns and thistles.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="681.70" data-e="682.47">Yep, exactly.</span> <span class="tl-s" data-s="682.56" data-e="684.01">And so, it used to be easy.</span> <span class="tl-s" data-s="684.09" data-e="684.96">Now it&#x27;s hard.</span> <span class="tl-s" data-s="685.00" data-e="688.10">Not easy, but there was work, but it wasn&#x27;t as toilsome as it is now.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="688.10" data-e="689.46">Like the sweat of his brow.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="689.46" data-e="694.99">Yeah, he&#x27;s got to work hard and fight thorns and thistles and stuff.</span> <span class="tl-s" data-s="694.99" data-e="700.27">It used— the ground used to just naturally make food, and now he has to fight for it, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="700.46" data-e="702.13">And there&#x27;s relational struggle.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="702.13" data-e="704.92">There&#x27;s relational struggle, but God doesn&#x27;t reference that.</span> <span class="tl-s" data-s="705.11" data-e="705.32">Okay.</span> <span class="tl-s" data-s="706.07" data-e="708.52">He only referenced that to Eve.</span> <span class="tl-s" data-s="708.64" data-e="712.99">And so, then that introduces then a downward cycle that is profound, right?</span> <span class="tl-s" data-s="712.99" data-e="719.43">And so, from there, we see We see mankind go down and down and down and down.</span> <span class="tl-s" data-s="720.14" data-e="728.43">And in fact, Lamech, who just a few chapters later, he&#x27;s— Is [Speaker B] that Noah&#x27;s dad or Noah&#x27;s grandpa?</span> <span class="tl-s" data-s="728.45" data-e="734.25">No, it&#x27;s— it is— let&#x27;s see, he&#x27;s down the line from Adam.</span> <span class="tl-s" data-s="734.25" data-e="735.42">So, maybe— well, basically, I&#x27;m not sure.</span> <span class="tl-s" data-s="735.54" data-e="736.15">It&#x27;s a good question.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="736.42" data-e="738.50">I&#x27;m gonna pull it up.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="738.53" data-e="741.73">Yeah, you find out while I&#x27;m reading this.</span> <span class="tl-s" data-s="741.73" data-e="744.72">Lamech, Basically, so we have Cain and Abel.</span> <span class="tl-s" data-s="744.72" data-e="745.34">Cain kills Abel.</span> <span class="tl-s" data-s="745.34" data-e="759.90">Then we have Lamech saying to his wives, he makes up this little rap in Genesis chapter 4 where he kills somebody for basically hitting him.</span> <span class="tl-s" data-s="759.90" data-e="766.38">And so, he said, he brags, if Cain&#x27;s revenge is sevenfold, then Lamech&#x27;s is 77-fold.</span> <span class="tl-s" data-s="766.38" data-e="769.25">And so, Then we get then God.</span> <span class="tl-s" data-s="769.60" data-e="777.89">Then we have the story about how Adam and Eve brought forth Seth, and Seth is the line in which Jesus would come from.</span> <span class="tl-s" data-s="778.18" data-e="794.24">But things get worse and worse and worse, and God decides to send a flood upon creation and wipe out all living things and save humanity through an ark with Noah and his family and the animals.</span> <span class="tl-s" data-s="794.75" data-e="803.45">And Even once the waters abate and Noah and his family are on dry ground, still mankind&#x27;s intentions are evil.</span> <span class="tl-s" data-s="803.56" data-e="817.33">And everybody had— so it gets so bad that everybody having the same language comes together and tries to build a tower reaching to the heavens called the Tower of Babel in Genesis chapter 11.</span></p>
+        <p><span class="tl-s" data-s="817.61" data-e="824.87">And in Genesis 11, we have God coming down and confusing the languages of the people so they can&#x27;t communicate.</span> <span class="tl-s" data-s="824.98" data-e="825.09">Right.</span> <span class="tl-s" data-s="825.45" data-e="827.03">They spread to the 4 corners of the earth.</span> <span class="tl-s" data-s="827.87" data-e="839.68">Now, but even there, even though it&#x27;s as bad as it could get, God in mercy calls Abram, who was just an idol worshiper from Ur, calls Abram to follow him.</span> <span class="tl-s" data-s="839.81" data-e="843.99">And Abraham believed in God&#x27;s promises and it was counted as righteousness.</span> <span class="tl-s" data-s="844.15" data-e="848.75">And Abraham is the first of the new creation, as it were.</span> <span class="tl-s" data-s="848.93" data-e="851.35">So, he&#x27;s the beginning of the Jewish nation.</span> <span class="tl-s" data-s="851.35" data-e="856.13">And then through his family, we begin to track the progress of redemption.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="856.14" data-e="856.63">You&#x27;re You&#x27;re going way.</span> <span class="tl-s" data-s="856.63" data-e="857.28">You&#x27;re going real fast.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="857.28" data-e="857.59">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="857.60" data-e="863.10">Sorry, I was just going to pull you back.</span> <span class="tl-s" data-s="863.14" data-e="865.51">Oh, a couple things first before we move through redemption.</span> <span class="tl-s" data-s="865.94" data-e="868.35">Yes, Lamech was Noah&#x27;s dad.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="868.35" data-e="871.36">Okay, so Lamech was a bad dude.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="871.39" data-e="871.59">Right.</span> <span class="tl-s" data-s="871.63" data-e="874.35">So, so Noah and his family.</span> <span class="tl-s" data-s="874.36" data-e="880.74">Noah had Shem, and the line was continued down to Abraham, and then also to King David, and eventually to Jesus.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="880.94" data-e="881.14">Abraham.</span> <span class="tl-s" data-s="881.18" data-e="886.23">Abraham is the is the beginning of the line to Jesus, right through David.</span> <span class="tl-s" data-s="886.23" data-e="886.76">And so Abraham.</span> <span class="tl-s" data-s="886.79" data-e="888.80">And, but he&#x27;s got his own troubles.</span> <span class="tl-s" data-s="888.80" data-e="893.67">That&#x27;s, you can read those on your own in Genesis chapter 12 all the way through 25.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="893.70" data-e="894.99">But why were they building the Tower of Babel?</span> <span class="tl-s" data-s="894.99" data-e="899.25">They [Speaker A] were trying to make, they were trying to take heaven by storm.</span> <span class="tl-s" data-s="899.71" data-e="899.86">Self-glorification.</span> <span class="tl-s" data-s="900.53" data-e="901.62">Yeah, right, exactly.</span> <span class="tl-s" data-s="901.66" data-e="905.11">And God&#x27;s like, no, we&#x27;re not doing it that way.</span> <span class="tl-s" data-s="905.11" data-e="907.26">So, God, now you would think that God would destroy everything.</span> <span class="tl-s" data-s="907.26" data-e="909.24">But he promised not to after the flood.</span> <span class="tl-s" data-s="909.27" data-e="910.64">He promised not to do water again.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="910.64" data-e="911.37">Next time it&#x27;ll be fire.</span> <span class="tl-s" data-s="911.68" data-e="913.97">This time was water.</span> <span class="tl-s" data-s="914.02" data-e="914.34">Yeah.</span> <span class="tl-s" data-s="914.40" data-e="917.37">And so, he&#x27;s not gonna do that again.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="917.78" data-e="918.17">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="918.50" data-e="922.08">And so, God in mercy calls Abram, and Abram is the father of Israel.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="922.11" data-e="923.39">And where was Abram at?</span> <span class="tl-s" data-s="923.39" data-e="925.12">He was outside of Ur.</span> <span class="tl-s" data-s="925.22" data-e="925.33">Ur.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="925.38" data-e="926.21">He was in the Caldeans.</span> <span class="tl-s" data-s="926.28" data-e="927.78">He was like 40.</span> <span class="tl-s" data-s="927.83" data-e="927.94">Huh?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="928.50" data-e="929.34">He was 40.</span> <span class="tl-s" data-s="929.38" data-e="930.33">His family was rich.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="930.35" data-e="931.40">No, he was 80.</span> <span class="tl-s" data-s="931.48" data-e="933.98">And— [Speaker B] Oh, he was for 40 years.</span></p>
+        <p><span class="tl-s" data-s="935.25" data-e="935.65">Sorry.</span> <span class="tl-s" data-s="935.71" data-e="937.30">Yeah, right, exactly.</span> <span class="tl-s" data-s="937.89" data-e="938.88">He&#x27;s 80.</span> <span class="tl-s" data-s="939.12" data-e="942.52">And he was— yeah, there&#x27;s a whole thing there.</span> <span class="tl-s" data-s="942.52" data-e="944.17">But God used Abram was childless.</span> <span class="tl-s" data-s="944.24" data-e="947.67">Sarai, who was with him, his wife, she didn&#x27;t have any children.</span> <span class="tl-s" data-s="947.75" data-e="953.76">There was a promise that would— that the line of the Messiah would come through Abraham.</span> <span class="tl-s" data-s="953.93" data-e="953.98">Yeah.</span> <span class="tl-s" data-s="954.11" data-e="955.17">It&#x27;s a miracle that they had children.</span> <span class="tl-s" data-s="955.22" data-e="955.80">God did that, right?</span></p>
+        <p><span class="tl-s" data-s="955.80" data-e="959.01">And it leads all the way up to the nation of Israel.</span> <span class="tl-s" data-s="959.02" data-e="968.01">And so, you have the progress of redemption from Abram all the way to Israel, and through Israel, you have both the tabernacle and the temple.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="968.01" data-e="968.17">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="968.21" data-e="971.74">And both— those were the places that God dwelt, as it were.</span> <span class="tl-s" data-s="971.74" data-e="991.87">And that was the place, like, there was a whole sacrificial system set up by God where the sins of the people and the sins of the priests were atoned for by sacrifice of animals.</span> <span class="tl-s" data-s="991.87" data-e="996.69">And so, that Jewish sacrificial system went on for centuries, right?</span> <span class="tl-s" data-s="996.71" data-e="1001.33">So, ingrained in the Jewish mind, was the idea that sin is so bad, something has to die.</span> <span class="tl-s" data-s="1001.33" data-e="1003.10">Somebody has to shed their blood, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1003.10" data-e="1003.25">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1003.26" data-e="1006.03">And so, that&#x27;s the story of the Old Testament.</span> <span class="tl-s" data-s="1006.55" data-e="1007.13">That&#x27;s Leviticus.</span> <span class="tl-s" data-s="1007.45" data-e="1013.58">And so, you can read about the Day of Atonement is another place there, right?</span> <span class="tl-s" data-s="1013.58" data-e="1027.87">So, the Day of Atonement was the day that once a year that the high priest would go into the Holy of Holies, and they would They would make 2 sacrifices, right?</span> <span class="tl-s" data-s="1028.00" data-e="1032.30">And you can read about the Day of Atonement in Leviticus.</span> <span class="tl-s" data-s="1032.30" data-e="1036.08">And it is there, that&#x27;s where we get the phrase scapegoat.</span> <span class="tl-s" data-s="1036.13" data-e="1038.29">Have you ever heard that phrase, Mark?</span> <span class="tl-s" data-s="1038.39" data-e="1038.47">Yeah.</span> <span class="tl-s" data-s="1038.47" data-e="1042.73">So, [Speaker B] like, I&#x27;m gonna blame Heather if this episode doesn&#x27;t turn out well.</span> <span class="tl-s" data-s="1042.91" data-e="1046.46">As we should not blame Heather because— I&#x27;m kidding.</span></p>
+        <p><span class="tl-s" data-s="1046.46" data-e="1047.19">Yeah, right, exactly.</span> <span class="tl-s" data-s="1047.44" data-e="1049.71">Heather makes us sound better and be better than we really are.</span> <span class="tl-s" data-s="1049.71" data-e="1053.40">But Yom Kippur is what is the Day of Atonement.</span> <span class="tl-s" data-s="1053.44" data-e="1058.68">That&#x27;s— Oh, [Speaker B] yeah, I saw that on my Google Calendar.</span> <span class="tl-s" data-s="1058.82" data-e="1058.97">Exactly.</span> <span class="tl-s" data-s="1058.97" data-e="1059.11">Yeah.</span> <span class="tl-s" data-s="1059.21" data-e="1060.81">But it&#x27;s described in Leviticus 16, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1060.81" data-e="1061.52">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1061.65" data-e="1069.37">And so, the high priest would sacrifice a bull for his own sins and a goat for the people&#x27;s sins.</span> <span class="tl-s" data-s="1069.65" data-e="1082.95">Then he would take— he would, like, he would also take another goat outside the camp, and he would pronounce the sins of the goat, sins of the people on the goat&#x27;s head and send that goat out into the desert.</span> <span class="tl-s" data-s="1082.95" data-e="1092.77">And symbolically, what that does is it carries— the idea is it carries both— someone dies for the sins of the people and the sins are taken far away from the people, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1092.88" data-e="1093.35">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1094.09" data-e="1100.03">And so, you get this picture of God&#x27;s— of both the need for sacrifice and the hope for forgiveness.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1100.26" data-e="1100.32">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1100.32" data-e="1102.69">And so, the problem becomes then the nation of Israel is unfaithful, they don&#x27;t respond.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1102.69" data-e="1103.19">Over and over.</span> <span class="tl-s" data-s="1103.24" data-e="1104.25">Over and over.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1104.28" data-e="1105.37">That&#x27;s the cycle.</span> <span class="tl-s" data-s="1105.40" data-e="1107.79">They&#x27;re just like us, right?</span> <span class="tl-s" data-s="1107.79" data-e="1109.17">Over and over and over.</span> <span class="tl-s" data-s="1109.24" data-e="1109.89">That&#x27;s the cycle, right?</span> <span class="tl-s" data-s="1109.97" data-e="1116.05">And so, now Moses says in Deuteronomy, you should look for someone like me who&#x27;s going to come.</span> <span class="tl-s" data-s="1116.05" data-e="1116.34">Listen to him.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1116.45" data-e="1117.04">Deuteronomy 18:15.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1117.09" data-e="1117.46">That&#x27;s right.</span> <span class="tl-s" data-s="1117.51" data-e="1118.72">Do you have it?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1118.77" data-e="1126.32">The Lord your God will raise up for you a prophet like me from among you, from your brothers.</span> <span class="tl-s" data-s="1126.40" data-e="1127.67">It is to him you shall listen.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1127.67" data-e="1127.86">Yeah.</span> <span class="tl-s" data-s="1127.86" data-e="1129.83">And so, that&#x27;s Jesus.</span> <span class="tl-s" data-s="1129.91" data-e="1131.28">Jesus comes.</span> <span class="tl-s" data-s="1131.28" data-e="1132.26">He&#x27;s Jewish, obviously.</span> <span class="tl-s" data-s="1132.26" data-e="1136.21">He comes from the line of David, the line of Abraham.</span> <span class="tl-s" data-s="1136.26" data-e="1140.32">And he is the Messiah.</span> <span class="tl-s" data-s="1140.44" data-e="1148.85">He&#x27;s the promised Messiah from— he&#x27;s the serpent crusher in Genesis He&#x27;s the promised Messiah from Deuteronomy 16 with Moses.</span> <span class="tl-s" data-s="1148.85" data-e="1151.03">He&#x27;s also the servant from Isaiah 53, right?</span> <span class="tl-s" data-s="1151.09" data-e="1155.17">And so, all these images of the coming Messiah are found in Jesus, right?</span> <span class="tl-s" data-s="1155.35" data-e="1156.62">It all makes sense.</span></p>
+        <p><span class="tl-s" data-s="1156.71" data-e="1158.67">He&#x27;s everything and it all fits together, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1158.67" data-e="1158.81">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1158.81" data-e="1163.35">And so, he then is the one who crushes the serpent by dying.</span> <span class="tl-s" data-s="1163.63" data-e="1168.10">And you look back and go, oh, he crushes the serpent by Being crushed himself.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1168.11" data-e="1168.80">Bruising his heel.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1168.82" data-e="1170.41">But he rose from the dead.</span> <span class="tl-s" data-s="1170.42" data-e="1179.74">And so, it was a real— it was like bruising, like in the scheme of things, like bruising his heel is not as serious as crushing the head of Satan, right?</span> <span class="tl-s" data-s="1179.74" data-e="1179.83">Exactly.</span> <span class="tl-s" data-s="1179.88" data-e="1180.39">But he really died.</span> <span class="tl-s" data-s="1180.39" data-e="1182.16">And that&#x27;s how he defeated Satan.</span> <span class="tl-s" data-s="1182.30" data-e="1184.22">And, you know, now he&#x27;s King.</span> <span class="tl-s" data-s="1184.22" data-e="1187.09">He&#x27;s at the right hand of the Father in heaven, right?</span> <span class="tl-s" data-s="1187.11" data-e="1189.03">And so, that is the ultimate redemption now.</span> <span class="tl-s" data-s="1189.03" data-e="1201.78">And that&#x27;s why we don&#x27;t have temples and tabernacles, and we don&#x27;t bring animals to church to sacrifice, because we have the once and for all sacrifice of Jesus Christ satisfies for all sins.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1201.78" data-e="1201.87">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1201.87" data-e="1203.96">And so, then we have the Gospels.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1203.96" data-e="1204.80">And now it keeps going.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1205.33" data-e="1205.63">Yeah, it does.</span> <span class="tl-s" data-s="1205.63" data-e="1209.95">We have the Gospels that talk about, that show us the life of Jesus.</span> <span class="tl-s" data-s="1210.55" data-e="1220.74">And if you&#x27;ll read the Gospels, most of the Gospels, most of the ink is spilled on the last week of his life, showing us that that&#x27;s the most important time, right?</span> <span class="tl-s" data-s="1220.74" data-e="1224.16">Half of the Book of John focuses on the last week of Jesus&#x27;s life.</span></p>
+        <p><span class="tl-s" data-s="1225.47" data-e="1229.82">And so, the most important time, the most important thing Jesus did was die and rise again.</span> <span class="tl-s" data-s="1229.82" data-e="1234.67">Then we have Acts, which tells the history of the early church.</span> <span class="tl-s" data-s="1234.67" data-e="1243.81">And then all of the epistles after that, which speak of the significance and importance of Jesus&#x27;s death and resurrection and what it means for us as believers.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1243.81" data-e="1245.03">So, Christianity explodes.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1245.11" data-e="1245.30">It does.</span> <span class="tl-s" data-s="1245.35" data-e="1247.02">It explodes all over the world.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1247.02" data-e="1247.29">Yeah.</span> <span class="tl-s" data-s="1247.50" data-e="1249.65">Before that, it wasn&#x27;t even called Christianity.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1249.66" data-e="1250.37">Yeah, right.</span> <span class="tl-s" data-s="1250.46" data-e="1254.14">It was— [Speaker B] Through Paul&#x27;s epistles and other writings, it spreads like wildfire.</span> <span class="tl-s" data-s="1254.17" data-e="1254.25">Right.</span> <span class="tl-s" data-s="1254.25" data-e="1256.34">So, that redemption is found, this fulfillment in Jesus.</span> <span class="tl-s" data-s="1256.41" data-e="1262.58">And now we have the message of redemption that we&#x27;re called to preach the world over, right?</span> <span class="tl-s" data-s="1262.58" data-e="1264.16">And that has reached us.</span> <span class="tl-s" data-s="1264.69" data-e="1268.91">You know, we&#x27;re not Middle Eastern Jewish people, we&#x27;re Americans.</span> <span class="tl-s" data-s="1268.99" data-e="1276.78">So, the Gospel has spread in these 20 centuries to us here in the United States.</span> <span class="tl-s" data-s="1277.18" data-e="1277.99">And so, that&#x27;s amazing.</span> <span class="tl-s" data-s="1277.99" data-e="1283.67">And then, ultimately, then the last 2 chapters of Revelation is the restoration.</span></p>
+        <p><span class="tl-s" data-s="1283.69" data-e="1283.88">Yeah.</span> <span class="tl-s" data-s="1284.25" data-e="1286.95">Which is the complete and total reversal of the curse.</span> <span class="tl-s" data-s="1287.04" data-e="1292.10">It&#x27;s gone forever, and it&#x27;s replaced by the new heavens and the new earth.</span> <span class="tl-s" data-s="1292.10" data-e="1292.59">So, creation is remade.</span> <span class="tl-s" data-s="1292.59" data-e="1304.03">We, as part of creation, are remade, and we have new bodies, and we live on the new heavens and the new earth, and we live in a place that&#x27;s better than Eden.</span> <span class="tl-s" data-s="1304.05" data-e="1309.11">In Eden, snakes could come in and speak to us and lead us astray.</span> <span class="tl-s" data-s="1309.20" data-e="1313.33">In the new heavens and new earth, that can&#x27;t happen.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1313.36" data-e="1313.41">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1313.45" data-e="1329.40">And we&#x27;ll be with God and we&#x27;ll see Jesus and be like him and live for all eternity with him in his place, for his glory, learning every day, learning more and more and more and more about him without ever learning everything there is to know about him.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1329.43" data-e="1330.47">Okay, that sounds beautiful.</span> <span class="tl-s" data-s="1330.54" data-e="1338.75">Is there anything else about the new heavens and the new earth that we can discern from Scripture about what it&#x27;ll be like, or is a lot of it mystery?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1338.75" data-e="1339.28">It&#x27;s mysterious.</span> <span class="tl-s" data-s="1339.78" data-e="1344.79">If you read the last 2 chapters of Revelation, it speaks a lot about what&#x27;s not there.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1344.84" data-e="1345.14">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1345.40" data-e="1352.56">Like, there&#x27;ll be no crying, no tears, no pain anymore, because the former things have passed away, right?</span> <span class="tl-s" data-s="1353.17" data-e="1355.33">And we can&#x27;t understand how good it will be.</span> <span class="tl-s" data-s="1355.33" data-e="1357.36">So, it&#x27;s easier to say what&#x27;s not there.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1357.36" data-e="1357.57">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1358.24" data-e="1365.10">What&#x27;s not going to happen, because our world is so dominated by crying and tears and pain that we can&#x27;t Adequately understand.</span> <span class="tl-s" data-s="1365.37" data-e="1369.37">So, like, if he says, here&#x27;s what it&#x27;s going to be like, we don&#x27;t have the categories.</span> <span class="tl-s" data-s="1369.38" data-e="1370.31">It&#x27;d blow our minds.</span> <span class="tl-s" data-s="1370.33" data-e="1370.54">Yeah.</span> <span class="tl-s" data-s="1370.82" data-e="1372.71">It&#x27;ll be just like— [Speaker B] We don&#x27;t have language.</span></p>
+        <p><span class="tl-s" data-s="1373.93" data-e="1377.83">No, we don&#x27;t have language to understand it, right?</span> <span class="tl-s" data-s="1377.94" data-e="1382.54">And so, it&#x27;ll just be like, it&#x27;ll be so good and so amazing.</span> <span class="tl-s" data-s="1382.54" data-e="1390.43">And it will be that place we knew we were born for, but had never visited until then.</span> <span class="tl-s" data-s="1390.61" data-e="1401.27">It&#x27;ll be that place that we will find ultimate and total fulfillment, and ultimate and total happiness, and ultimate and total Love it.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1401.27" data-e="1403.53">I got a couple follow-ups.</span> <span class="tl-s" data-s="1403.53" data-e="1404.51">Thank you for sharing that.</span> <span class="tl-s" data-s="1404.51" data-e="1407.95">You just walked us through the entire Bible in 20 minutes.</span> <span class="tl-s" data-s="1407.95" data-e="1411.03">A book that we would want to recommend is by Vaughan Roberts.</span> <span class="tl-s" data-s="1411.03" data-e="1412.11">It&#x27;s called God&#x27;s Big Picture.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1412.11" data-e="1412.49">That&#x27;s right.</span> <span class="tl-s" data-s="1412.49" data-e="1413.93">That&#x27;s a great book.</span> <span class="tl-s" data-s="1413.93" data-e="1415.35">That&#x27;s a great introduction to this.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1415.35" data-e="1416.23">Yeah, exactly.</span> <span class="tl-s" data-s="1416.49" data-e="1416.57">Yeah.</span> <span class="tl-s" data-s="1416.57" data-e="1421.01">And it&#x27;ll walk you through a very similar, maybe even more expanded version of what we just did.</span> <span class="tl-s" data-s="1421.01" data-e="1427.95">And then the interesting part about this is we, you and I and Heather and everyone listening, has a fully completed Bible in their hand.</span> <span class="tl-s" data-s="1428.06" data-e="1431.44">And we can read it.</span> <span class="tl-s" data-s="1431.52" data-e="1434.01">Bible, where we can see the entire picture at once.</span> <span class="tl-s" data-s="1434.01" data-e="1438.36">How should we, taking this biblical theological storyline, how should we then read our Bible based on knowing this entire story?</span> <span class="tl-s" data-s="1438.43" data-e="1438.93">Why does this matter?</span> <span class="tl-s" data-s="1438.93" data-e="1441.23">Why don&#x27;t you just talk about this?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1441.27" data-e="1442.12">Yeah, yeah, yeah.</span></p>
+        <p><span class="tl-s" data-s="1443.52" data-e="1454.19">I mean, because if you look in the Old Testament, you read, you realize as you read the prophets, they&#x27;re calling Israel back to faithfulness.</span> <span class="tl-s" data-s="1454.21" data-e="1457.39">And you recognize, oh, the Messiah hasn&#x27;t come yet.</span> <span class="tl-s" data-s="1457.55" data-e="1460.25">They don&#x27;t have the Spirit of God within them.</span> <span class="tl-s" data-s="1460.37" data-e="1462.65">So, it&#x27;s going to be different than us, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1462.85" data-e="1463.06">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1463.17" data-e="1466.44">But we could— we need to respond and confess and repent from our sins as well.</span> <span class="tl-s" data-s="1466.62" data-e="1470.74">And it&#x27;s easier because we have the Spirit of God within us, right?</span> <span class="tl-s" data-s="1470.87" data-e="1481.33">And so, you need to always ask, and always, if you&#x27;ll notice, all of the Bible points to both Old and New Testament Jesus, his person and work, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1483.04" data-e="1483.09">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1483.20" data-e="1489.62">And so, you want to ask, okay, is this Predictive of or descriptive of Jesus and his work.</span> <span class="tl-s" data-s="1489.62" data-e="1497.90">In some way, every part of the Old Testament is predictive of and/or descriptive of Jesus and what he&#x27;s done for us.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1498.49" data-e="1498.69">Oh, so amazing.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1498.75" data-e="1502.42">And then in the New Testament, it&#x27;s usually descriptive of what he&#x27;s done for us, right?</span> <span class="tl-s" data-s="1503.18" data-e="1506.37">And so, and the Gospels are focusing on— [Speaker B] Naming him specifically.</span> <span class="tl-s" data-s="1506.45" data-e="1512.72">The Old Testament might not name him as Jesus, but they&#x27;re pointing to him.</span> <span class="tl-s" data-s="1513.56" data-e="1514.55">They don&#x27;t.</span> <span class="tl-s" data-s="1514.66" data-e="1515.40">It&#x27;s Messiah, though, right?</span> <span class="tl-s" data-s="1515.40" data-e="1516.06">Yeah, exactly.</span> <span class="tl-s" data-s="1516.35" data-e="1516.75">Exactly.</span> <span class="tl-s" data-s="1516.93" data-e="1522.33">And so, but you can see his person and work is anticipated on every page of the Old Testament.</span> <span class="tl-s" data-s="1522.38" data-e="1528.35">And when you recognize that he&#x27;s the point of the Old Testament, then you recognize, okay, now I know how to read the Old Testament.</span> <span class="tl-s" data-s="1528.47" data-e="1531.86">Now I know what I&#x27;m doing here.</span></p>
+        <p><span class="tl-s" data-s="1532.00" data-e="1533.43">If that makes sense.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1533.43" data-e="1533.80">Love it.</span> <span class="tl-s" data-s="1533.85" data-e="1534.09">Okay.</span> <span class="tl-s" data-s="1534.09" data-e="1539.84">And then last one, knowing that eternity is our destination as sojourners here on earth.</span> <span class="tl-s" data-s="1539.84" data-e="1541.56">And we&#x27;re just here for a short glimpse.</span> <span class="tl-s" data-s="1541.61" data-e="1542.79">Of time here on earth.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1542.91" data-e="1543.52">Yeah, right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1543.71" data-e="1546.96">How does that— how should that affect our walk with the Lord?</span> <span class="tl-s" data-s="1547.46" data-e="1552.86">Like, how do we view everything that&#x27;s happening in light of eternity or through the lens of heaven or eternity?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1552.99" data-e="1553.85">That&#x27;s a loaded question.</span> <span class="tl-s" data-s="1554.03" data-e="1554.27">It&#x27;s hard, right?</span> <span class="tl-s" data-s="1554.27" data-e="1559.21">I mean, [Speaker B] we&#x27;re so caught up in like, even right now, I&#x27;m like, I&#x27;m a little thirsty.</span> <span class="tl-s" data-s="1559.21" data-e="1560.71">I got to use the restroom.</span> <span class="tl-s" data-s="1560.71" data-e="1561.21">Yeah, right.</span> <span class="tl-s" data-s="1561.32" data-e="1563.58">My brother&#x27;s giving me that mean look again.</span> <span class="tl-s" data-s="1563.59" data-e="1563.74">Right.</span> <span class="tl-s" data-s="1563.77" data-e="1565.03">How do I like— that&#x27;s not an eternity perspective.</span> <span class="tl-s" data-s="1565.04" data-e="1566.63">That&#x27;s a very right now, right here perspective.</span> <span class="tl-s" data-s="1566.76" data-e="1572.74">Yeah, [Speaker A] I think we have to fight for it.</span></p>
+        <p><span class="tl-s" data-s="1572.79" data-e="1577.70">I mean, we have to fight to remember that we will live one day forever somewhere.</span> <span class="tl-s" data-s="1577.73" data-e="1577.81">Hmm.</span> <span class="tl-s" data-s="1577.88" data-e="1582.63">And it puts everything in perspective, right?</span> <span class="tl-s" data-s="1582.70" data-e="1588.63">Our suffering, as real as it is, Paul says it&#x27;s not worth comparing to the glory that will be revealed to us.</span> <span class="tl-s" data-s="1588.74" data-e="1595.64">When we go through hardships and trials and we think this is the worst ever and I can&#x27;t imagine what&#x27;s— I mean, it&#x27;s not worth it.</span></p>
+        <p><span class="tl-s" data-s="1597.06" data-e="1597.94">It is worth it.</span> <span class="tl-s" data-s="1597.94" data-e="1598.18">Right?</span> <span class="tl-s" data-s="1598.25" data-e="1609.65">When we see Jesus, when it&#x27;s hard to follow Jesus, and when it doesn&#x27;t seem like things make sense, we can know for sure and for certain, that&#x27;s just for a short time.</span> <span class="tl-s" data-s="1609.73" data-e="1611.27">One day, everything will make sense.</span> <span class="tl-s" data-s="1611.27" data-e="1611.32">Right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1611.41" data-e="1611.44">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1611.44" data-e="1627.89">You know, and so, like, I think, I mean, the way that the Second Coming and the end of all things functions in the New Testament is very much like, as you see the day approaching, Press in all the more, right?</span> <span class="tl-s" data-s="1627.89" data-e="1641.87">Because I think the danger is that we get lazy and we sluggish and sleepy, and we act like this world is all there is, and that we have just infinite number of days that that stretch out before us, and that we have plenty of time to make decisions.</span> <span class="tl-s" data-s="1641.87" data-e="1643.47">We have plenty of time to change our direction.</span> <span class="tl-s" data-s="1643.89" data-e="1646.27">We have plenty of time to get to know God.</span> <span class="tl-s" data-s="1646.27" data-e="1648.93">We have plenty of time to do all that other stuff.</span> <span class="tl-s" data-s="1648.93" data-e="1649.48">That&#x27;s a lie.</span> <span class="tl-s" data-s="1649.48" data-e="1649.85">We don&#x27;t.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1650.94" data-e="1651.08">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1651.08" data-e="1653.15">We don&#x27;t know when our lives are going to be over.</span> <span class="tl-s" data-s="1653.35" data-e="1655.60">We don&#x27;t know when our time is up.</span> <span class="tl-s" data-s="1655.60" data-e="1659.27">We don&#x27;t know where we will meet our Maker, but we will one day meet him.</span> <span class="tl-s" data-s="1659.35" data-e="1665.62">And so, the question is, in the short time we have, how do we want to live?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1665.62" data-e="1665.68">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1665.71" data-e="1667.48">Live to honor him, right?</span> <span class="tl-s" data-s="1667.48" data-e="1667.75">Yeah.</span> <span class="tl-s" data-s="1667.80" data-e="1671.09">And so, that&#x27;s kind of a short answer to how we do that.</span> <span class="tl-s" data-s="1671.09" data-e="1679.05">And I think we as Americans are uniquely bad at this because for one of the first times in history, We live in a place that&#x27;s pretty appealing.</span> <span class="tl-s" data-s="1679.18" data-e="1685.10">And, you know, we try to remake heaven on earth in ways that is just not— it&#x27;s not realistic.</span> <span class="tl-s" data-s="1685.20" data-e="1688.96">It&#x27;s not— or not really, it&#x27;s not like it distracts us.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1689.05" data-e="1689.09">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1689.09" data-e="1693.21">You know, and so, I think we just have to keep in mind that eternity is coming.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1693.32" data-e="1693.50">Yeah.</span> <span class="tl-s" data-s="1693.50" data-e="1698.25">Well, thank you for laying all that out and explaining it.</span> <span class="tl-s" data-s="1698.28" data-e="1706.42">If this is something you&#x27;re interested in, or you have additional questions, feel free to reach out to us at production@sunnargilbert.com.</span> <span class="tl-s" data-s="1706.55" data-e="1709.46">We just appreciate you listening, and yeah, check out the show notes for references.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1709.46" data-e="1711.03">All right, we&#x27;ll see you next time.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1711.14" data-e="1716.59">I&#x27;m trying to think of a joke to make fun of Rich.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1716.68" data-e="1717.05">Go ahead.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1717.73" data-e="1720.01">You can make fun of me if you want.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1720.04" data-e="1720.12">Seriously?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1720.12" data-e="1725.33">I get letters if I [Speaker B] cease and desist.</span> <span class="tl-s" data-s="1725.49" data-e="1726.81">Yeah, Billy Carson&#x27;s gonna jump in.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1727.26" data-e="1728.22">Oh my gosh.</span> <span class="tl-s" data-s="1728.22" data-e="1729.04">All right, let&#x27;s be ready.</span> <span class="tl-s" data-s="1729.04" data-e="1729.69">Are you ready?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1729.69" data-e="1729.92">Yes.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1729.92" data-e="1730.85">Okay, ready.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1730.85" data-e="1730.85">Oh gosh, are you recording this?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1730.85" data-e="1730.85">Oh, of course I am.</span> <span class="tl-s" data-s="1730.85" data-e="1730.85">I don&#x27;t know that I&#x27;ll use it, but it&#x27;ll be my— on my personal files.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Fixed on Jesus episode archive, backed by /api/podcast/search.
+  // Static fallback list above stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function fmtDuration(raw) {
+      if (!raw) return "";
+      var str = String(raw).trim();
+      // Anchor feeds report seconds; render as H:MM:SS or M:SS.
+      if (/^\d+$/.test(str)) {
+        var total = parseInt(str, 10);
+        var h = Math.floor(total / 3600);
+        var m = Math.floor((total % 3600) / 60);
+        var sec = total % 60;
+        var mm = (h > 0 && m < 10 ? "0" + m : "" + m);
+        var ss = (sec < 10 ? "0" + sec : "" + sec);
+        return (h > 0 ? h + ":" + mm : m) + ":" + ss;
+      }
+      // Anchor also reports clock strings like "00:24:02" — drop the
+      // redundant leading hour so it reads "24:02".
+      return str.replace(/^00:/, "");
+    }
+    function row(it) {
+      it = it || {};
+      var title = esc(it.title) || "Untitled episode";
+      var tUrl = it.guid && transcriptMap[it.guid];
+      var heading = tUrl
+        ? '<a href="' + esc(tUrl) + '">' + title + "</a>"
+        : (it.link
+          ? '<a href="' + esc(it.link) + '" target="_blank" rel="noopener">' + title + "</a>"
+          : title);
+      var meta = [fmtDate(it.date), fmtDuration(it.duration)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      return '<div class="sermon"><div><h3>' + heading + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    var PER = 10;
+    var state = { q: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No episodes found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " episode" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " episodes";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/podcast/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () {
+          // Keep the static list, but tell the reader where else to listen —
+          // some privacy blockers stop the archive request itself.
+          var note = document.querySelector("[data-sermons-error]");
+          if (note) note.hidden = false;
+        });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    if (monthSel) {
+      monthSel.addEventListener("change", function () {
+        state.month = monthSel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: f3114149-5c37-4169-9099-de1ccf514665 -->
+</body>
+</html>
