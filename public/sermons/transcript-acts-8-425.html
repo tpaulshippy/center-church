@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acts 8:425 — Sermon Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Listen to the latest sermons from Center Church, or follow along on Apple Podcasts and Spotify." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=17" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a class="active" href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/sermons">&larr; All sermons</a>
+          <h1 class="display-lg">Acts 8:425</h1>
+          <p class="transcript-meta">Rich Richardson · Acts · 2026-05-03 · 00:40:44</p>
+          <p class="transcript-desc">As God advances his gospel, it spreads, shakes and sifts.</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/119cbef70/podcast/play/128974098/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-7%2F436123773-44100-2-692553c8a3e059ac.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><span class="tl-s" data-s="0.80" data-e="9.18">If you have a Bible, you&#x27;re joining us in the middle or toward the beginning of a study we&#x27;re going through in the book of Acts.</span> <span class="tl-s" data-s="10.46" data-e="12.06">Acts is in the New Testament.</span></p>
+        <p><span class="tl-s" data-s="14.14" data-e="18.54">It goes Matthew, Mark, Luke, John, then Acts.</span> <span class="tl-s" data-s="18.98" data-e="23.20">We&#x27;re going to be in Acts chapter 8 today.</span> <span class="tl-s" data-s="24.04" data-e="28.12">Acts chapter 8, beginning in verse 4.</span></p>
+        <p><span class="tl-s" data-s="30.00" data-e="39.66">On May 18, 1980, the quiet morning sky over the Pacific Northwest exploded.</span></p>
+        <p><span class="tl-s" data-s="41.28" data-e="41.28">Mount St.</span> <span class="tl-s" data-s="41.28" data-e="48.20">Helens blew apart with the force equivalent to a thousand Hiroshima-sized atomic bombs.</span> <span class="tl-s" data-s="49.26" data-e="53.94">A massive landslide tore down the mountain at 155 miles an hour.</span> <span class="tl-s" data-s="54.36" data-e="57.88">150 square miles were scoured and buried.</span> <span class="tl-s" data-s="57.88" data-e="59.30">Forests vanished.</span> <span class="tl-s" data-s="59.30" data-e="60.96">Lakes were choked.</span> <span class="tl-s" data-s="61.38" data-e="64.08">All vegetation was incinerated for miles.</span> <span class="tl-s" data-s="64.66" data-e="66.40">200 homes were destroyed.</span> <span class="tl-s" data-s="67.58" data-e="71.02">And most tragically, 57 lives were lost.</span> <span class="tl-s" data-s="72.00" data-e="75.36">And in the days that followed, all the experts said the same thing.</span></p>
+        <p><span class="tl-s" data-s="75.44" data-e="76.70">They had the same refrain.</span> <span class="tl-s" data-s="76.82" data-e="79.06">They said, this place is dead.</span> <span class="tl-s" data-s="79.76" data-e="82.46">It will take a century or more for life to return.</span> <span class="tl-s" data-s="82.60" data-e="83.34">It may be longer.</span></p>
+        <p><span class="tl-s" data-s="84.86" data-e="88.56">And yet, life rushed back.</span> <span class="tl-s" data-s="89.86" data-e="94.40">Within a surprisingly short amount of time, green roots pushed up through the ash.</span> <span class="tl-s" data-s="95.40" data-e="97.90">Wildflowers painted gray slopes.</span> <span class="tl-s" data-s="98.34" data-e="99.24">Animals returned.</span> <span class="tl-s" data-s="99.70" data-e="102.18">Forests began to re-knit the scarred hillside.</span> <span class="tl-s" data-s="103.02" data-e="108.60">Scientists who had predicted a century of barrenness suddenly had to readjust their categories.</span> <span class="tl-s" data-s="109.54" data-e="116.18">Life, as it turns out, was far more resilient than they had imagined.</span> <span class="tl-s" data-s="117.34" data-e="121.14">And when life came back, it didn&#x27;t come back partially.</span> <span class="tl-s" data-s="122.04" data-e="124.10">It spread across the ash fields.</span> <span class="tl-s" data-s="124.38" data-e="125.80">It shook the old landscape.</span></p>
+        <p><span class="tl-s" data-s="126.24" data-e="128.84">And it sifted what could live and what could not.</span> <span class="tl-s" data-s="130.00" data-e="133.86">Last week, we watched a different kind of eruption.</span> <span class="tl-s" data-s="134.74" data-e="136.86">Look at Acts chapter 8, verse 1.</span> <span class="tl-s" data-s="138.06" data-e="143.60">And there arose on that day a great persecution against the church in Jerusalem.</span> <span class="tl-s" data-s="144.34" data-e="153.10">And they all were scattered throughout the regions of Judea and Samaria, except the apostles.</span> <span class="tl-s" data-s="153.74" data-e="159.50">In one terrible moment, the church in Jerusalem, this shining monument of grace and unity, was shattered.</span> <span class="tl-s" data-s="160.26" data-e="163.32">The Jerusalem church was scattered to the four winds.</span> <span class="tl-s" data-s="163.32" data-e="166.30">That shimmering monument of God&#x27;s power, gone.</span> <span class="tl-s" data-s="166.66" data-e="169.54">That wonderful, harmonious church, obliterated.</span> <span class="tl-s" data-s="169.84" data-e="173.26">That powerful testimony of grace, shredded.</span></p>
+        <p><span class="tl-s" data-s="173.58" data-e="176.46">That magnificent display of unity, gone.</span> <span class="tl-s" data-s="176.64" data-e="184.99">And if you stood there and watched Stephen die, if you had seen the believers dragged from their homes, you would have said what the scientists said about Mount St.</span> <span class="tl-s" data-s="184.99" data-e="185.52">Helens.</span> <span class="tl-s" data-s="185.70" data-e="186.38">This is over.</span></p>
+        <p><span class="tl-s" data-s="188.12" data-e="193.44">This will take a lifetime or more to recover from, if there&#x27;s ever any recovery at all.</span> <span class="tl-s" data-s="194.60" data-e="196.62">Devout men buried Stephen&#x27;s body.</span></p>
+        <p><span class="tl-s" data-s="198.28" data-e="200.62">But remember how we said life is resilient?</span> <span class="tl-s" data-s="201.20" data-e="203.12">Spiritual life is more resilient.</span> <span class="tl-s" data-s="204.12" data-e="206.94">And the mission of God was very much alive.</span> <span class="tl-s" data-s="207.94" data-e="215.58">When God sends life, and life that comes from the gospel into a place, that gospel does not sit still.</span> <span class="tl-s" data-s="215.90" data-e="219.50">That gospel is not content just to remain in one place.</span> <span class="tl-s" data-s="219.58" data-e="221.36">It spreads, it shakes, and it sifts.</span> <span class="tl-s" data-s="222.10" data-e="225.90">Because the life that God gives in Christ cannot be buried under persecution.</span> <span class="tl-s" data-s="226.24" data-e="227.86">It can&#x27;t be smothered by violence.</span> <span class="tl-s" data-s="228.04" data-e="230.22">It cannot be contained by human opposition.</span> <span class="tl-s" data-s="230.78" data-e="240.80">So as the church was scattered, they carried the seed of the gospel with them, and new life sprang up in the most unlikely soil sooner than anyone would have imagined.</span></p>
+        <p><span class="tl-s" data-s="241.66" data-e="247.06">In the wake of this eruption, life thrived.</span> <span class="tl-s" data-s="247.80" data-e="249.12">Here&#x27;s the heart of the passage.</span> <span class="tl-s" data-s="250.12" data-e="256.92">As God advances his kingdom through the gospel, it shakes, it spreads, it shakes, and it sifts.</span> <span class="tl-s" data-s="257.22" data-e="263.02">As God advances his kingdom through the gospel, it spreads, it shakes, it sifts.</span></p>
+        <p><span class="tl-s" data-s="265.82" data-e="268.24">We&#x27;re going to begin reading in verse 4.</span> <span class="tl-s" data-s="268.32" data-e="271.40">And as we walk through this text, I want you to see what it looked like.</span> <span class="tl-s" data-s="271.94" data-e="275.08">The death of the church of Jerusalem was actually a scattering of seed.</span> <span class="tl-s" data-s="275.86" data-e="285.64">And that same unstoppable gospel is at work today in your suffering, in our scattering, and in the places that often look the most barren.</span> <span class="tl-s" data-s="286.86" data-e="289.14">Verse 4, Acts chapter 8.</span> <span class="tl-s" data-s="290.06" data-e="292.34">I&#x27;m reading from the English Standard Version.</span></p>
+        <p><span class="tl-s" data-s="294.14" data-e="297.60">Now those who were scattered went about preaching the word.</span> <span class="tl-s" data-s="298.80" data-e="302.98">Philip went down to the city of Samaria and proclaimed to them the Christ.</span> <span class="tl-s" data-s="303.98" data-e="311.72">And the crowds, with one accord, pay attention to what was being said by Philip when they heard him and saw the signs he did.</span> <span class="tl-s" data-s="312.38" data-e="321.78">For unclean spirits, crying out with a loud voice, came out of many who had them, and many who were paralyzed or lame were healed.</span> <span class="tl-s" data-s="322.58" data-e="325.02">So there was much joy in that city.</span> <span class="tl-s" data-s="325.62" data-e="334.78">But there was a man named Simon, who had previously practiced magic in the city and amazed the people of Samaria, saying that he himself was somebody great.</span> <span class="tl-s" data-s="335.50" data-e="343.42">They all paid attention to him from the least to the greatest, saying, This man is the power of God that is called great.</span> <span class="tl-s" data-s="343.42" data-e="349.58">And they paid attention to him because for a long time he had amazed them with his magic.</span></p>
+        <p><span class="tl-s" data-s="350.24" data-e="359.62">But when they believed Philip as he preached the good news about the kingdom of God and the name of Jesus Christ, they were baptized, both men and women.</span> <span class="tl-s" data-s="360.68" data-e="362.42">Even Simon himself believed.</span> <span class="tl-s" data-s="363.06" data-e="365.46">And after being baptized, he continued with Philip.</span> <span class="tl-s" data-s="366.14" data-e="371.00">And seeing signs and great miracles performed, he was amazed.</span> <span class="tl-s" data-s="371.74" data-e="382.88">Now when the apostles at Jerusalem heard that Samaria had received the word of God, they sent to them Peter and John, who came down and prayed for them that they might receive the Holy Spirit.</span> <span class="tl-s" data-s="383.60" data-e="389.60">For he had not yet fallen on any of them, but they had only been baptized in the name of the Lord Jesus.</span> <span class="tl-s" data-s="390.32" data-e="393.54">Then they laid hands on them, and they received the Holy Spirit.</span> <span class="tl-s" data-s="394.22" data-e="399.28">Now Simon saw that the Spirit had been given through the laying on of the apostles&#x27; hands.</span> <span class="tl-s" data-s="399.96" data-e="407.50">He offered them money, saying, Give me this power also, so that anyone on whom I lay my hands may receive the Holy Spirit.</span></p>
+        <p><span class="tl-s" data-s="408.30" data-e="416.04">But Peter said to him, May your silver perish with you, because you thought you could obtain the gift of God with money.</span> <span class="tl-s" data-s="416.50" data-e="422.70">You have neither part nor lot in this matter, for your heart is not right before God.</span> <span class="tl-s" data-s="423.02" data-e="431.16">Repent, therefore, of this wickedness of yours, and pray to the Lord that, if possible, the intent of your heart may be forgiven you.</span> <span class="tl-s" data-s="431.36" data-e="437.38">For I see that you are in the gall of bitterness and in the bond of iniquity.</span> <span class="tl-s" data-s="438.68" data-e="445.56">And Simon answered, Pray for me to the Lord, that nothing of what you have said may come upon me.</span> <span class="tl-s" data-s="446.50" data-e="457.70">Now when they had testified and spoken the word of the Lord, they returned to Jerusalem, preaching the gospel to many villages of the Samaritans.</span> <span class="tl-s" data-s="458.22" data-e="458.76">Let&#x27;s pray.</span></p>
+        <p><span class="tl-s" data-s="464.02" data-e="472.08">Lord, there&#x27;s no one in this room, I would wager, that&#x27;s more aware of his or her great need than me.</span></p>
+        <p><span class="tl-s" data-s="473.50" data-e="478.08">And Lord, I pray that you would help me to preach.</span></p>
+        <p><span class="tl-s" data-s="479.88" data-e="485.28">But I pray that you would help me by your Spirit to change our hearts and lives.</span> <span class="tl-s" data-s="486.34" data-e="491.68">Because I lack the ability to marshal words, to penetrate hearts.</span> <span class="tl-s" data-s="492.46" data-e="496.64">But that lacking in me is not something that you lack.</span> <span class="tl-s" data-s="497.32" data-e="500.60">So Holy Spirit, I pray that you would be with us here today.</span> <span class="tl-s" data-s="501.34" data-e="503.30">We do not want to learn only.</span> <span class="tl-s" data-s="503.42" data-e="505.54">We don&#x27;t want information, we want transformation.</span> <span class="tl-s" data-s="506.94" data-e="510.30">And I pray that people, and I, would forget me.</span> <span class="tl-s" data-s="510.76" data-e="511.90">But we would see Jesus.</span> <span class="tl-s" data-s="512.78" data-e="514.30">And it&#x27;s in your name we pray.</span> <span class="tl-s" data-s="514.80" data-e="515.06">Amen.</span></p>
+        <p><span class="tl-s" data-s="517.22" data-e="518.46">Three points this morning.</span> <span class="tl-s" data-s="518.56" data-e="521.28">First, the gospel spreads despite hardship.</span> <span class="tl-s" data-s="522.42" data-e="525.78">We saw that the church was ejected from Jerusalem.</span> <span class="tl-s" data-s="525.96" data-e="532.16">And those who were propelled out from Jerusalem, they didn&#x27;t play the victim, they didn&#x27;t start podcasts of complaint, but what did they do?</span> <span class="tl-s" data-s="532.24" data-e="535.18">Verse four, they went about preaching the word.</span> <span class="tl-s" data-s="535.78" data-e="540.42">Now don&#x27;t think that these people were traveling about with pulpits, preaching sermons.</span> <span class="tl-s" data-s="540.64" data-e="542.58">Rather, they went about gospeling.</span> <span class="tl-s" data-s="542.90" data-e="546.56">I know that&#x27;s not an English word, but that&#x27;s a direct translation of what they did.</span> <span class="tl-s" data-s="546.92" data-e="550.28">The gospel, in other words, was ever and always on their lips.</span> <span class="tl-s" data-s="550.84" data-e="551.44">Consider that.</span></p>
+        <p><span class="tl-s" data-s="551.58" data-e="559.90">They&#x27;re thrust away from their beloved church, their newly saved family, the teaching of the apostles, the harmony of the body, all the signs and wonders.</span> <span class="tl-s" data-s="560.18" data-e="567.10">They were cast away from everything that they knew and loved, but the Lord was with them, and his saving power was on their lips.</span> <span class="tl-s" data-s="567.18" data-e="571.68">And so wherever they went, they went about proclaiming the good news of Jesus Christ.</span> <span class="tl-s" data-s="571.68" data-e="574.60">They proclaimed the good news that you and I know.</span> <span class="tl-s" data-s="574.90" data-e="580.02">If you&#x27;re a Christian, you know this good news, and this good news is something that needs to be on our lips.</span> <span class="tl-s" data-s="580.36" data-e="583.56">They proclaimed the good news about Jesus the Nazarene.</span> <span class="tl-s" data-s="583.84" data-e="594.80">They spoke of Jesus as he is, as God, the uncreated one, the son of God who had no beginning, but was willing to become a baby in a manger to rescue rebellious mankind.</span> <span class="tl-s" data-s="595.48" data-e="597.82">The creator became one of his creatures.</span> <span class="tl-s" data-s="597.82" data-e="604.04">The baby grew in obscurity, and yet all the while he lived without the stain of sin.</span></p>
+        <p><span class="tl-s" data-s="604.36" data-e="611.56">He was completely perfect, and his perfection was not something that sinful man could abide with, so they killed him.</span> <span class="tl-s" data-s="612.64" data-e="615.58">But his death was always part of the plan.</span> <span class="tl-s" data-s="616.60" data-e="625.60">It was a substitutionary death, because in his death, he absorbed the full weight of God&#x27;s wrath against sinners, any who would trust in him.</span> <span class="tl-s" data-s="625.74" data-e="629.40">And in his death by his blood, he purchased complete forgiveness.</span> <span class="tl-s" data-s="629.90" data-e="635.56">And in dying, he offered his life in payment for our many sins.</span> <span class="tl-s" data-s="636.30" data-e="638.90">But his death was not the end of the story.</span> <span class="tl-s" data-s="639.26" data-e="643.36">He rose to new life, thus writing death&#x27;s obituary.</span></p>
+        <p><span class="tl-s" data-s="644.78" data-e="648.08">Death is now dead, because Christ is risen.</span> <span class="tl-s" data-s="649.04" data-e="656.00">And those scattered from Jerusalem proclaim to all the people they ran into, run to Jesus.</span> <span class="tl-s" data-s="656.70" data-e="659.46">Run to Jesus, you who are weary and heavy laden.</span> <span class="tl-s" data-s="659.92" data-e="663.56">Run to Jesus, you who cannot carry the burden of your sin any longer.</span> <span class="tl-s" data-s="663.90" data-e="667.66">Run to him and find refuge, because there is refuge in no one else.</span> <span class="tl-s" data-s="667.88" data-e="671.54">In Jesus, and Jesus alone, there is forgiveness for every sin.</span> <span class="tl-s" data-s="671.60" data-e="675.26">And that&#x27;s what they preached as they traveled about the known world.</span> <span class="tl-s" data-s="676.12" data-e="678.98">They preached that forgiveness was not for the earnest.</span> <span class="tl-s" data-s="680.30" data-e="682.66">Forgiveness is not for the faithful or the hardworking.</span> <span class="tl-s" data-s="682.84" data-e="685.04">Forgiveness is not for the obedient or the religious.</span></p>
+        <p><span class="tl-s" data-s="685.50" data-e="688.14">Forgiveness is not by grace after everything you can do.</span> <span class="tl-s" data-s="688.44" data-e="693.62">Forgiveness is only for those who trust and commit themselves completely to Jesus Christ.</span></p>
+        <p><span class="tl-s" data-s="695.54" data-e="697.36">And they went about proclaiming that.</span></p>
+        <p><span class="tl-s" data-s="698.80" data-e="699.78">And guess what?</span> <span class="tl-s" data-s="700.64" data-e="702.46">You and I can do that as well.</span> <span class="tl-s" data-s="703.38" data-e="709.28">If you are a Christian, and you can articulate the gospel, you can go about gospeling too.</span> <span class="tl-s" data-s="710.44" data-e="717.38">Because remember, the power of God is not in how we speak, but in what we speak.</span> <span class="tl-s" data-s="718.26" data-e="722.90">The gospel is the power of God for salvation, and it does its own heavy lifting.</span></p>
+        <p><span class="tl-s" data-s="725.54" data-e="727.36">Have you ever heard of Elias Keech?</span></p>
+        <p><span class="tl-s" data-s="729.56" data-e="730.40">Probably not.</span> <span class="tl-s" data-s="730.58" data-e="731.90">I just learned about him this week.</span> <span class="tl-s" data-s="732.66" data-e="733.84">But he&#x27;s a new friend.</span> <span class="tl-s" data-s="735.04" data-e="739.74">His father was a famous 17th century preacher, Benjamin, in England.</span> <span class="tl-s" data-s="740.84" data-e="746.88">Elias came to the American colonies and hatched a scheme to make a living by posing as a preacher.</span> <span class="tl-s" data-s="747.60" data-e="748.94">So he dressed like a preacher.</span> <span class="tl-s" data-s="749.46" data-e="750.88">He spoke like a preacher.</span> <span class="tl-s" data-s="750.88" data-e="754.56">He carried himself like a preacher, but it was all a ruse.</span> <span class="tl-s" data-s="755.54" data-e="760.30">He stole his father&#x27;s sermons and preached them as his own.</span> <span class="tl-s" data-s="760.36" data-e="762.56">It was like ChatGPT before ChatGPT.</span></p>
+        <p><span class="tl-s" data-s="764.08" data-e="765.14">And his plan worked.</span> <span class="tl-s" data-s="765.28" data-e="766.30">People came to listen to him.</span> <span class="tl-s" data-s="766.90" data-e="767.62">He got a salary.</span> <span class="tl-s" data-s="768.34" data-e="769.16">He got paid.</span></p>
+        <p><span class="tl-s" data-s="770.82" data-e="771.94">Until one Sunday.</span></p>
+        <p><span class="tl-s" data-s="773.96" data-e="775.90">I&#x27;ll let an eyewitness tell us what happened.</span> <span class="tl-s" data-s="776.84" data-e="783.22">He, that&#x27;s Elias, performed well enough till he had advanced pretty far in the sermon.</span> <span class="tl-s" data-s="784.18" data-e="787.78">Then, stopping short, looked like a man astonished.</span> <span class="tl-s" data-s="788.72" data-e="802.96">The audience concluded that he had been seized with a sudden disorder, but on asking what the matter was, received from him a confession with tears in his eyes and much trembling.</span> <span class="tl-s" data-s="802.96" data-e="809.00">It was by the preaching, by his own preaching, that he was converted.</span></p>
+        <p><span class="tl-s" data-s="813.28" data-e="815.38">Behold the power of the gospel of God.</span> <span class="tl-s" data-s="816.18" data-e="818.90">A huckster can preach it and be forever changed.</span> <span class="tl-s" data-s="819.82" data-e="822.44">The power is in the gospel, not the deliverer.</span></p>
+        <p><span class="tl-s" data-s="825.44" data-e="828.86">When the scattered church went about preaching, what about us?</span> <span class="tl-s" data-s="828.90" data-e="836.10">When we face tragedy, when we&#x27;re scattered by illness, by loss, by moves we didn&#x27;t choose, we can gospelize.</span> <span class="tl-s" data-s="836.86" data-e="843.54">From our sickbeds, in hospitals, at funerals, in the shadow of the greatest trial of our life, we can speak Christ.</span> <span class="tl-s" data-s="843.66" data-e="843.94">Why?</span> <span class="tl-s" data-s="844.20" data-e="850.86">Because the very things that seem and seek to ruin God&#x27;s work are the very means often that he uses to advance it.</span></p>
+        <p><span class="tl-s" data-s="853.80" data-e="858.36">If you look around and you see barrenness and you say, there&#x27;s nothing that can grow here.</span> <span class="tl-s" data-s="858.76" data-e="864.56">Friends, life is resilient, spiritual life more so.</span></p>
+        <p><span class="tl-s" data-s="870.12" data-e="878.60">The very things that seem to ruin God&#x27;s work are the very means he uses to advance it, even in the most unlikely places.</span> <span class="tl-s" data-s="878.72" data-e="882.52">We&#x27;ve seen the gospel spread as God&#x27;s people are scattered.</span> <span class="tl-s" data-s="883.04" data-e="887.84">And what looked like the ruin of God&#x27;s work became the very means of its advance.</span> <span class="tl-s" data-s="888.46" data-e="891.98">But the gospel doesn&#x27;t just spread here in our passage, it also shakes.</span> <span class="tl-s" data-s="892.76" data-e="897.24">It shakes the powers that seemed to rule a place.</span> <span class="tl-s" data-s="897.78" data-e="900.76">The gospel spreads, but it also shakes evil powers.</span> <span class="tl-s" data-s="901.44" data-e="903.90">We see this in verses 9 through 13.</span> <span class="tl-s" data-s="904.42" data-e="908.38">Whenever God&#x27;s kingdom advances, it does so against the forces of the evil one.</span> <span class="tl-s" data-s="909.00" data-e="915.34">The devil and all his might cannot thwart support the purposes of God ever.</span> <span class="tl-s" data-s="916.34" data-e="917.84">We see this in the person of Simon.</span></p>
+        <p><span class="tl-s" data-s="918.58" data-e="921.46">History calls him Simon Magus, which means Simon the magician.</span> <span class="tl-s" data-s="922.42" data-e="930.50">Now, he&#x27;s not the kind of magician that you hire for a kid&#x27;s birthday party who makes balloon animals and pulls coins out of kids&#x27; ears.</span> <span class="tl-s" data-s="931.50" data-e="934.80">He&#x27;s a sorcerer and not like Gandalf.</span></p>
+        <p><span class="tl-s" data-s="937.36" data-e="938.42">He&#x27;s an evil guy.</span> <span class="tl-s" data-s="939.80" data-e="944.82">But as a sorcerer, he&#x27;s revered in Samaria for all of his magical feats.</span> <span class="tl-s" data-s="945.68" data-e="949.96">Now, we don&#x27;t talk much about magic, but magic is not fake.</span></p>
+        <p><span class="tl-s" data-s="951.64" data-e="954.00">Real magic is a tool of Satan.</span> <span class="tl-s" data-s="955.10" data-e="958.12">What it does is it seeks to tap into Satan&#x27;s power.</span> <span class="tl-s" data-s="959.18" data-e="966.58">Those who practice magic seek supernatural means to gain control over their situation, over their life.</span> <span class="tl-s" data-s="967.40" data-e="969.02">Sometimes they want knowledge of the future.</span> <span class="tl-s" data-s="969.46" data-e="971.02">Sometimes they want power over enemies.</span> <span class="tl-s" data-s="971.38" data-e="973.44">Sometimes they want healing on their terms.</span> <span class="tl-s" data-s="973.72" data-e="979.42">But always, always, always, it&#x27;s in the service of the evil one.</span></p>
+        <p><span class="tl-s" data-s="980.98" data-e="983.04">And they refuse to bow their knee to Jesus.</span> <span class="tl-s" data-s="983.26" data-e="987.98">Magic is what people reach for when they won&#x27;t submit to the Lord or serve him.</span> <span class="tl-s" data-s="988.04" data-e="989.36">And friends, this is not fake.</span> <span class="tl-s" data-s="990.06" data-e="993.48">There is a real power that the evil one wields even today.</span> <span class="tl-s" data-s="994.42" data-e="996.98">False miracles are not false because they&#x27;re artificial.</span> <span class="tl-s" data-s="997.36" data-e="1000.36">They&#x27;re false because they promote rebellion against God.</span> <span class="tl-s" data-s="1001.46" data-e="1005.48">There may come a day when we see miracles.</span></p>
+        <p><span class="tl-s" data-s="1007.12" data-e="1010.72">But not in the service of the Lord, but in the service of the evil one.</span> <span class="tl-s" data-s="1011.74" data-e="1014.02">And there may be signs that we can&#x27;t explain.</span> <span class="tl-s" data-s="1015.26" data-e="1016.76">We have to be discerning.</span> <span class="tl-s" data-s="1017.68" data-e="1018.98">We have to watch.</span></p>
+        <p><span class="tl-s" data-s="1020.98" data-e="1030.86">And even in our day, if we see signs and wonders, which I hope we do, the way we&#x27;ll know they&#x27;re real is if they magnify the Lord and His word.</span></p>
+        <p><span class="tl-s" data-s="1032.96" data-e="1034.10">Notice the effect.</span> <span class="tl-s" data-s="1035.00" data-e="1037.88">Notice the effect that the signs have.</span> <span class="tl-s" data-s="1037.96" data-e="1038.68">Look at verse 6.</span> <span class="tl-s" data-s="1039.18" data-e="1045.48">And the crowds with one accord paid attention to what was being said by Philip when they heard him and saw the signs that he did.</span> <span class="tl-s" data-s="1046.20" data-e="1048.12">Now notice the difference in verse 9.</span> <span class="tl-s" data-s="1048.90" data-e="1056.96">But there was a man named Simon who had previously practiced magic in the city and amazed the people of Samaria saying that he himself was somebody great.</span> <span class="tl-s" data-s="1057.44" data-e="1058.16">See the difference?</span> <span class="tl-s" data-s="1058.84" data-e="1062.52">When God&#x27;s at work, people pay attention to the word about Jesus.</span> <span class="tl-s" data-s="1063.54" data-e="1067.52">When Satan&#x27;s at work, people pay attention to the person delivering the message.</span></p>
+        <p><span class="tl-s" data-s="1069.12" data-e="1070.26">Watch and pray.</span></p>
+        <p><span class="tl-s" data-s="1071.80" data-e="1074.68">He who has an ear, let him hear.</span> <span class="tl-s" data-s="1076.02" data-e="1077.58">But, friends, we need not fear.</span> <span class="tl-s" data-s="1077.58" data-e="1082.64">Though evil is real, though magic is real, with Jesus, there is no cause for alarm.</span> <span class="tl-s" data-s="1083.74" data-e="1089.56">And it&#x27;s in the face oftentimes of this kind of enemy that we witness the shaking power of the gospel.</span> <span class="tl-s" data-s="1089.84" data-e="1093.90">When the power of God encounters the power of the evil one, there is no contest.</span></p>
+        <p><span class="tl-s" data-s="1096.26" data-e="1103.22">In Samaria, the people were taken with Simon, but then they met Jesus.</span></p>
+        <p><span class="tl-s" data-s="1106.76" data-e="1109.62">Look at the transition from in verse 11 to 12.</span> <span class="tl-s" data-s="1110.04" data-e="1114.62">And they paid attention to him, that&#x27;s Simon, because for a long time he had amazed them with his magic.</span> <span class="tl-s" data-s="1114.94" data-e="1123.96">But when they believed, Philip, as he preached the good news about the kingdom of God and the name of Jesus Christ, they were baptized, both men and women.</span> <span class="tl-s" data-s="1124.38" data-e="1129.36">The same people who hung on Simon&#x27;s every word now hang on the word of Christ.</span> <span class="tl-s" data-s="1129.36" data-e="1131.00">The gospel shakes.</span> <span class="tl-s" data-s="1131.80" data-e="1132.98">The gospel shakes.</span> <span class="tl-s" data-s="1133.28" data-e="1136.90">The gospel shook loose their reliance on evil magic.</span> <span class="tl-s" data-s="1137.04" data-e="1143.70">Their focus was no longer on Philip, was not on Philip the preacher, but on Philip&#x27;s savior.</span> <span class="tl-s" data-s="1145.02" data-e="1146.30">And that&#x27;s the way it is for us.</span> <span class="tl-s" data-s="1146.32" data-e="1158.88">When we share the good news, especially when we feel scattered and weak, we tend to focus on ourselves, what we&#x27;re saying, how afraid we are, whether or not we&#x27;re using the right words.</span></p>
+        <p><span class="tl-s" data-s="1158.94" data-e="1165.88">But friends, we must learn to forget ourselves and unleash the powerful gospel.</span> <span class="tl-s" data-s="1166.96" data-e="1176.66">The question is not, and it&#x27;s never, do I feel strong, but am I speaking the powerful word of Christ?</span></p>
+        <p><span class="tl-s" data-s="1179.56" data-e="1181.22">Do you see the difference?</span> <span class="tl-s" data-s="1181.94" data-e="1183.38">One focuses on ourselves.</span> <span class="tl-s" data-s="1183.90" data-e="1188.14">The other focuses on the message about Jesus, Christ.</span> <span class="tl-s" data-s="1189.18" data-e="1193.34">And this is one of the many reasons we preach through books of the Bible here at Center Church.</span> <span class="tl-s" data-s="1193.70" data-e="1200.70">We, as a team, we want all of us to be focused on the word of God, not the preacher of the word of God.</span> <span class="tl-s" data-s="1201.22" data-e="1204.30">You don&#x27;t need personality, you need God&#x27;s power.</span> <span class="tl-s" data-s="1205.20" data-e="1208.94">You don&#x27;t need the gifting of men, you need the man Christ Jesus.</span> <span class="tl-s" data-s="1209.28" data-e="1213.38">You don&#x27;t need witty stories, you need to hear the voice of God.</span></p>
+        <p><span class="tl-s" data-s="1215.38" data-e="1216.96">You don&#x27;t need tricks.</span></p>
+        <p><span class="tl-s" data-s="1218.88" data-e="1226.72">You need the power of God until we preach Christ, Him as Savior, as hero, as champion.</span> <span class="tl-s" data-s="1227.72" data-e="1236.20">And the preachers, they&#x27;re just the weakest of servants attempting to be faithful, saying, look at Jesus.</span> <span class="tl-s" data-s="1237.56" data-e="1239.10">See who He is.</span> <span class="tl-s" data-s="1240.46" data-e="1242.82">Be in awe of this one.</span></p>
+        <p><span class="tl-s" data-s="1247.54" data-e="1254.30">When God scattered His people, He did not surrender ground to the Simons of the world.</span> <span class="tl-s" data-s="1254.68" data-e="1257.02">He sends seeds into their territory.</span></p>
+        <p><span class="tl-s" data-s="1258.54" data-e="1272.44">In Samaria, the kingdom of God overwhelmed the power of the evil one, so much so that Simon himself, this magician, is amazed and baptized.</span></p>
+        <p><span class="tl-s" data-s="1275.36" data-e="1279.56">The first thing we see that something&#x27;s amiss is that he attaches himself to Philip.</span> <span class="tl-s" data-s="1280.06" data-e="1281.52">That turns out to be not great.</span> <span class="tl-s" data-s="1281.68" data-e="1290.16">Friends, it&#x27;s possible to be amazed by God and yet not follow and serve God.</span> <span class="tl-s" data-s="1290.34" data-e="1291.08">Do you realize that?</span></p>
+        <p><span class="tl-s" data-s="1292.86" data-e="1316.46">It&#x27;s possible to see the effects of the gospel, to see the power of God on display and be amazed and yet be like Simon, one who is willing to stand and watch and go, wow, but yet not willing to commit himself to Jesus.</span></p>
+        <p><span class="tl-s" data-s="1320.58" data-e="1327.36">The gospel shakes as it spreads and now it also sifts.</span></p>
+        <p><span class="tl-s" data-s="1328.84" data-e="1337.80">The gospel spreads, the gospel shakes and lastly, we see the gospel sifting false converts.</span> <span class="tl-s" data-s="1338.88" data-e="1342.26">The gospel sifting false converts.</span> <span class="tl-s" data-s="1342.88" data-e="1351.04">Now one thing I didn&#x27;t mention was that Jews of all kinds at this time hated the Samaritans.</span> <span class="tl-s" data-s="1352.32" data-e="1358.32">When Jesus told the parable of the good Samaritan, in every Jewish mind they would have thought there&#x27;s no such thing.</span> <span class="tl-s" data-s="1359.70" data-e="1362.88">The only Samaritan, the only good Samaritan is a dead Samaritan.</span> <span class="tl-s" data-s="1363.02" data-e="1382.74">That&#x27;s the way the Jewish people thought and this hatred, this animosity went back not a generation or two but 1,000 years and when word got out that the hated Samaritans were beginning to follow Jesus, the apostles sent Peter and John from Jerusalem to investigate.</span> <span class="tl-s" data-s="1383.78" data-e="1387.74">Now, you want to see the power of the gospel in action?</span> <span class="tl-s" data-s="1388.32" data-e="1413.66">This is the same John who along with his brother once asked this of Jesus about a Samaritan village because a Samaritan village Jesus goes through, they don&#x27;t listen to him and we read this in Luke chapter 9 verse 54 and when his disciples James and John saw it, the fact that the Samaritan village rejected Jesus, they said, Lord, do you want us to tell fire to come down from heaven and consume them?</span></p>
+        <p><span class="tl-s" data-s="1416.66" data-e="1417.72">Oh, how helpful.</span></p>
+        <p><span class="tl-s" data-s="1419.46" data-e="1422.20">Oh, guys, Jesus said no.</span></p>
+        <p><span class="tl-s" data-s="1424.50" data-e="1426.38">Don&#x27;t do that, guys, and you couldn&#x27;t do it anyway.</span></p>
+        <p><span class="tl-s" data-s="1429.60" data-e="1435.62">Now, in Acts chapter 8, John is eager to see the Samaritans rescued, not burned.</span> <span class="tl-s" data-s="1436.62" data-e="1437.78">Behold the power of the gospel.</span></p>
+        <p><span class="tl-s" data-s="1440.98" data-e="1445.54">And verses 15 tells us, through 17, tells us why, another reason they came.</span></p>
+        <p><span class="tl-s" data-s="1447.36" data-e="1458.86">Verse 15, they came down and prayed for them that they might receive the Holy Spirit for he, that&#x27;s the Spirit, had not yet fallen on any of them but they had only been baptized in the name of the Lord Jesus.</span> <span class="tl-s" data-s="1459.82" data-e="1463.00">Then they laid hands on them and they received the Holy Spirit.</span> <span class="tl-s" data-s="1463.66" data-e="1485.18">Now, each time in Acts, we&#x27;re going to see this again in Acts chapter 10, each time in Acts when the gospel breaks through a new racial barrier, there&#x27;s a moment that the Holy Spirit comes afterwards and places his public stamp of approval on these former outsiders because at this time, there are no non-Jewish converts.</span> <span class="tl-s" data-s="1485.54" data-e="1487.62">Here are the first ones in Samaria.</span> <span class="tl-s" data-s="1487.98" data-e="1499.82">And so, because this is different, because this is something that nobody anticipated, the apostles come up and they pray that the Holy Spirit would come upon the Samaritans as well and that&#x27;s what happens.</span> <span class="tl-s" data-s="1499.82" data-e="1504.18">This will happen again in Acts chapter 10 with the Gentiles.</span></p>
+        <p><span class="tl-s" data-s="1505.08" data-e="1510.52">But since those days, the Holy Spirit indwells all converts at salvation, at conversion.</span> <span class="tl-s" data-s="1510.78" data-e="1513.44">We can see this in many places, but I&#x27;ll just show you one.</span> <span class="tl-s" data-s="1514.08" data-e="1516.72">This is Ephesians chapter 1, verse 13 and 14.</span> <span class="tl-s" data-s="1517.14" data-e="1530.86">In him, that&#x27;s Jesus, you also, when you heard the word of truth, that&#x27;s the gospel, well, thanks Paul, you told me, the gospel of your salvation, and believed in him, you were sealed with the promised Holy Spirit.</span> <span class="tl-s" data-s="1531.12" data-e="1532.66">So that&#x27;s right at conversion.</span> <span class="tl-s" data-s="1533.42" data-e="1538.50">Who is the guarantee of our inheritance until we acquire possession of it to the praise of his glory.</span> <span class="tl-s" data-s="1539.14" data-e="1543.10">Now, the Holy Spirit comes upon all at conversion.</span> <span class="tl-s" data-s="1543.88" data-e="1547.72">Now, the person Luke wants us to pay attention to is Simon.</span> <span class="tl-s" data-s="1548.10" data-e="1549.50">He&#x27;s back to the front here.</span> <span class="tl-s" data-s="1549.84" data-e="1550.60">Here he is.</span></p>
+        <p><span class="tl-s" data-s="1550.92" data-e="1553.68">He&#x27;s following Philip around, the former magician.</span> <span class="tl-s" data-s="1554.14" data-e="1554.86">He&#x27;s baptized.</span> <span class="tl-s" data-s="1555.40" data-e="1559.36">He seems to be following Jesus, but we find out that he&#x27;s not truly saved.</span> <span class="tl-s" data-s="1560.28" data-e="1561.66">Now, this is a timely reminder.</span> <span class="tl-s" data-s="1562.78" data-e="1566.40">The waters of baptism never save anyone.</span></p>
+        <p><span class="tl-s" data-s="1568.12" data-e="1568.64">Never.</span></p>
+        <p><span class="tl-s" data-s="1571.52" data-e="1579.50">Salvation comes by grace through faith in Christ alone, and those who receive faith, who receive salvation from Jesus, they get baptized.</span> <span class="tl-s" data-s="1579.84" data-e="1584.06">That does not save anyone, contrary to the teaching of the Roman Catholic Church.</span></p>
+        <p><span class="tl-s" data-s="1585.66" data-e="1594.68">What we have here is a reminder that baptism does not save, but it marks those who are already saved.</span> <span class="tl-s" data-s="1595.30" data-e="1596.46">That&#x27;s what&#x27;s going on.</span> <span class="tl-s" data-s="1597.34" data-e="1603.22">Now, in Simon&#x27;s case, his own words make it clear that he doesn&#x27;t really know who Jesus is.</span> <span class="tl-s" data-s="1603.22" data-e="1605.40">He has no understanding of what grace is.</span> <span class="tl-s" data-s="1606.76" data-e="1612.60">If you want to know the difference between true and falsehood and a religion, watch how they define grace.</span> <span class="tl-s" data-s="1613.88" data-e="1617.88">Grace is simply favor from Jesus and how he acts on our behalf.</span> <span class="tl-s" data-s="1617.98" data-e="1623.76">It&#x27;s not some other kind of mist or vapor that we can access apart from Jesus.</span></p>
+        <p><span class="tl-s" data-s="1626.28" data-e="1627.54">Simon doesn&#x27;t have a clue.</span> <span class="tl-s" data-s="1627.64" data-e="1629.90">He doesn&#x27;t really even understand who the Holy Spirit is.</span> <span class="tl-s" data-s="1629.94" data-e="1630.78">Look at verse 18.</span> <span class="tl-s" data-s="1631.44" data-e="1637.98">Now, when Simon saw that the Spirit was given through the laying on of the apostles&#x27; hands, he offered them money.</span></p>
+        <p><span class="tl-s" data-s="1640.14" data-e="1642.42">Saying, hey, give me this power also.</span> <span class="tl-s" data-s="1642.46" data-e="1643.34">You can hear this.</span> <span class="tl-s" data-s="1643.50" data-e="1644.78">Whoa, guys, this is awesome.</span> <span class="tl-s" data-s="1645.16" data-e="1652.18">Give me this power also so that anyone on whom I lay my hands, notice that, I lay my hands, may receive the Holy Spirit.</span> <span class="tl-s" data-s="1653.58" data-e="1654.30">See what he&#x27;s doing?</span> <span class="tl-s" data-s="1655.40" data-e="1658.72">He is treating the gift of God like one more trick in his bag.</span> <span class="tl-s" data-s="1659.96" data-e="1677.86">He&#x27;s thinking about the Holy Spirit the same way he used to think about sorcery because with magic, the power was something that you owned, something you had, something you acquired, something that you used and you used it for profit, used it for reputation, used it for control.</span> <span class="tl-s" data-s="1678.08" data-e="1686.06">Now he looks at the Spirit of God the same way, something to buy, a commodity to have, something to wield, something that will put him at the center again.</span> <span class="tl-s" data-s="1687.00" data-e="1691.82">Simon&#x27;s problem was that he&#x27;s unchanged, though he&#x27;s been baptized.</span></p>
+        <p><span class="tl-s" data-s="1693.46" data-e="1699.18">His old heart, his old life has simply just put on Christian clothes.</span></p>
+        <p><span class="tl-s" data-s="1700.70" data-e="1703.40">The gospel had shaken the powers around him.</span> <span class="tl-s" data-s="1704.14" data-e="1711.00">Samaria&#x27;s spell had been broken, but now the gospel sifts his heart within him.</span> <span class="tl-s" data-s="1711.96" data-e="1718.80">Underneath the baptism, underneath the amazement, Simon still wants a God he can use, not a God he can worship.</span></p>
+        <p><span class="tl-s" data-s="1720.61" data-e="1731.70">Simon believes in power, he believes in miracles, he believes in the reality of the Spirit, but he does not bow to Jesus as Lord and the gospel sifts people like this.</span> <span class="tl-s" data-s="1732.40" data-e="1734.42">See, this is the problem with Simon.</span> <span class="tl-s" data-s="1734.54" data-e="1742.10">He wants a Christianity to be a way that he can be more impressive, to be a way that he can be in more control.</span> <span class="tl-s" data-s="1743.38" data-e="1754.04">Simon shows us that it&#x27;s possible to be amazed by the gospel, impressed by miracles, even baptized with water, and still have a heart that wants to use God rather than trust him.</span></p>
+        <p><span class="tl-s" data-s="1755.58" data-e="1761.68">And it&#x27;s in this way that the gospel often sifts false converts.</span></p>
+        <p><span class="tl-s" data-s="1763.78" data-e="1769.38">Friends, not everybody who says they are Christian are.</span> <span class="tl-s" data-s="1770.40" data-e="1774.04">We read in Matthew chapter 7, one of the most sobering passages in the whole Bible.</span> <span class="tl-s" data-s="1775.04" data-e="1783.74">On that day, when people stand before the Lord, there will be some that say, Lord, Lord, didn&#x27;t we do all these mighty things in your name?</span> <span class="tl-s" data-s="1783.78" data-e="1785.02">And you know what Jesus says to them?</span> <span class="tl-s" data-s="1786.20" data-e="1787.60">Depart from me, I never knew you.</span></p>
+        <p><span class="tl-s" data-s="1793.82" data-e="1796.84">And those are some of the most frightening words in all of Scripture.</span></p>
+        <p><span class="tl-s" data-s="1800.84" data-e="1806.36">And there may be some of us in this room today who would rather use Jesus.</span> <span class="tl-s" data-s="1806.46" data-e="1816.50">We might not practice magic or sorcery, but we want to use Jesus to get things from Jesus instead of submit to Jesus and serve Jesus.</span></p>
+        <p><span class="tl-s" data-s="1818.72" data-e="1819.62">Is that you?</span></p>
+        <p><span class="tl-s" data-s="1823.30" data-e="1825.54">What does Simon hear from Peter?</span></p>
+        <p><span class="tl-s" data-s="1827.62" data-e="1836.34">May your silver, verse 20, perish with you because you thought you could obtain the gift of God with money.</span> <span class="tl-s" data-s="1837.70" data-e="1844.12">You have neither part nor lot in this matter for your heart is not right before God.</span> <span class="tl-s" data-s="1844.56" data-e="1845.08">Repent.</span></p>
+        <p><span class="tl-s" data-s="1846.64" data-e="1847.26">Repent.</span> <span class="tl-s" data-s="1848.34" data-e="1853.90">We might not be tempted, as I said, to use magic, but we can have the same attitude toward Jesus.</span> <span class="tl-s" data-s="1854.62" data-e="1858.82">And we have this attitude when we try to use Jesus to get something.</span></p>
+        <p><span class="tl-s" data-s="1860.34" data-e="1862.42">We don&#x27;t want Jesus for who he is.</span> <span class="tl-s" data-s="1862.54" data-e="1864.96">We want to use Jesus to get something.</span> <span class="tl-s" data-s="1865.06" data-e="1871.10">It&#x27;s possible to want benefits from Jesus without wanting to really follow Jesus.</span></p>
+        <p><span class="tl-s" data-s="1872.62" data-e="1877.96">Maybe you think Jesus is a path to success and your faith is a way to get rich.</span> <span class="tl-s" data-s="1878.78" data-e="1883.96">If that&#x27;s your mindset, you have neither part nor lot with Jesus.</span> <span class="tl-s" data-s="1884.34" data-e="1884.66">Repent.</span></p>
+        <p><span class="tl-s" data-s="1886.24" data-e="1891.00">Maybe you use Jesus language to appear trustworthy, but inside you know that it&#x27;s a ruse.</span> <span class="tl-s" data-s="1891.54" data-e="1896.90">If that&#x27;s your mindset, you have neither part nor lot with Jesus.</span> <span class="tl-s" data-s="1897.80" data-e="1898.20">Repent.</span></p>
+        <p><span class="tl-s" data-s="1899.80" data-e="1913.00">Maybe you come to Jesus so that you might feel better about yourself because you want a clean conscience, but yet without real life change. if that&#x27;s your mindset, you have neither part nor lot with Jesus.</span></p>
+        <p><span class="tl-s" data-s="1914.52" data-e="1915.00">Repent.</span></p>
+        <p><span class="tl-s" data-s="1916.60" data-e="1920.68">Maybe you sin and sin and sin and you don&#x27;t feel bad about it at all.</span></p>
+        <p><span class="tl-s" data-s="1923.08" data-e="1927.76">And you&#x27;ve come to terms with it, but yet nobody knows.</span></p>
+        <p><span class="tl-s" data-s="1930.00" data-e="1934.52">If that&#x27;s your mindset, you have neither part nor lot with Jesus.</span> <span class="tl-s" data-s="1935.40" data-e="1935.88">Repent.</span> <span class="tl-s" data-s="1937.10" data-e="1943.02">Maybe you want comfort without submission and you are looking to Jesus for therapy and not for worship.</span> <span class="tl-s" data-s="1944.02" data-e="1948.22">If that&#x27;s your mindset, you have neither part nor lot with Jesus.</span> <span class="tl-s" data-s="1949.38" data-e="1949.80">Repent.</span> <span class="tl-s" data-s="1950.96" data-e="1954.76">Maybe you come to Jesus to fix your family and you haven&#x27;t really bowed the knee.</span> <span class="tl-s" data-s="1954.86" data-e="1958.84">If that&#x27;s your mindset, you have neither part nor lot with Jesus.</span> <span class="tl-s" data-s="1959.96" data-e="1960.44">Repent.</span> <span class="tl-s" data-s="1961.48" data-e="1965.10">Maybe you come to Jesus to try to use him as a backup plan.</span> <span class="tl-s" data-s="1965.50" data-e="1969.48">I&#x27;ll have a little Jesus here and there and sometimes, but I&#x27;ll do what I want.</span></p>
+        <p><span class="tl-s" data-s="1970.44" data-e="1974.60">If that&#x27;s your mindset, you have neither part nor lot with Jesus.</span> <span class="tl-s" data-s="1975.72" data-e="1976.20">Repent.</span> <span class="tl-s" data-s="1976.64" data-e="1979.40">Simon wanted the power of God without the presence of God.</span> <span class="tl-s" data-s="1979.40" data-e="1982.42">He wanted to use Jesus, not follow Jesus.</span> <span class="tl-s" data-s="1982.52" data-e="1987.90">So let me ask you, have you come to Jesus to get things from him or to get him?</span></p>
+        <p><span class="tl-s" data-s="1991.20" data-e="1998.94">If Jesus took away every benefit you associate with Christianity, your community, your reputation, your sense of comfort, would you stay with him?</span> <span class="tl-s" data-s="1999.90" data-e="2004.82">Would Jesus be enough for you if Jesus is all you had?</span> <span class="tl-s" data-s="2005.94" data-e="2006.54">Friends.</span></p>
+        <p><span class="tl-s" data-s="2008.50" data-e="2009.02">Friends.</span> <span class="tl-s" data-s="2009.40" data-e="2010.70">He is all we have.</span> <span class="tl-s" data-s="2011.40" data-e="2012.94">Everything else we have.</span> <span class="tl-s" data-s="2013.22" data-e="2014.38">All the things we own.</span> <span class="tl-s" data-s="2014.50" data-e="2015.52">All the things we are.</span> <span class="tl-s" data-s="2015.78" data-e="2017.82">All the things that we fancy ourselves to be.</span> <span class="tl-s" data-s="2018.08" data-e="2020.44">One day, those will all be taken from us.</span> <span class="tl-s" data-s="2020.56" data-e="2023.60">But there is one thing that cannot be taken from us.</span> <span class="tl-s" data-s="2023.74" data-e="2026.38">One thing that is ours if we&#x27;re in Christ Jesus.</span> <span class="tl-s" data-s="2026.58" data-e="2027.28">It&#x27;s this.</span></p>
+        <p><span class="tl-s" data-s="2027.54" data-e="2029.52">He will not abandon us.</span> <span class="tl-s" data-s="2029.70" data-e="2032.58">He is that friend that sticks closer than a brother.</span> <span class="tl-s" data-s="2032.82" data-e="2034.96">He is the one who is the champion.</span> <span class="tl-s" data-s="2035.28" data-e="2036.42">He&#x27;s the king of kings.</span> <span class="tl-s" data-s="2036.60" data-e="2037.72">He&#x27;s the lord of lords.</span> <span class="tl-s" data-s="2037.72" data-e="2050.50">He is the courageous one who&#x27;s gone before us and he killed death and if we have Jesus on that day, that day, in that day it will be plenty and it will be enough and we will want nothing else.</span></p>
+        <p><span class="tl-s" data-s="2057.50" data-e="2064.92">If you find that you&#x27;re using Jesus, it&#x27;s not too late.</span> <span class="tl-s" data-s="2066.20" data-e="2067.22">Someday it might be.</span> <span class="tl-s" data-s="2068.54" data-e="2070.60">Maybe for you tomorrow it might be.</span></p>
+        <p><span class="tl-s" data-s="2072.00" data-e="2074.12">What did Peter say to Simon?</span> <span class="tl-s" data-s="2075.32" data-e="2078.64">That counsel, if you&#x27;re using Jesus&#x27; counsel I&#x27;ll give to you.</span> <span class="tl-s" data-s="2080.02" data-e="2080.42">Repent.</span></p>
+        <p><span class="tl-s" data-s="2084.74" data-e="2085.78">You can repent.</span> <span class="tl-s" data-s="2085.88" data-e="2087.10">He told Simon to repent.</span></p>
+        <p><span class="tl-s" data-s="2088.78" data-e="2092.98">Jesus Christ is saying to you, repent.</span> <span class="tl-s" data-s="2093.46" data-e="2093.76">Turn.</span> <span class="tl-s" data-s="2093.98" data-e="2094.74">That&#x27;s what that means.</span> <span class="tl-s" data-s="2095.86" data-e="2098.54">It means to go the other direction, to change.</span> <span class="tl-s" data-s="2099.60" data-e="2100.80">Here&#x27;s what you know about Jesus.</span></p>
+        <p><span class="tl-s" data-s="2102.40" data-e="2104.70">To those who repent, it takes humility.</span> <span class="tl-s" data-s="2105.08" data-e="2106.18">He&#x27;s kind to the humble.</span> <span class="tl-s" data-s="2106.98" data-e="2109.16">He&#x27;s welcoming always to the contrite.</span> <span class="tl-s" data-s="2109.24" data-e="2110.44">He&#x27;s sympathetic to the broken.</span> <span class="tl-s" data-s="2111.54" data-e="2113.80">He&#x27;s gracious to the penitent.</span> <span class="tl-s" data-s="2114.42" data-e="2116.32">He&#x27;s merciful to the undeserving.</span> <span class="tl-s" data-s="2116.72" data-e="2118.02">To those who do what?</span> <span class="tl-s" data-s="2118.52" data-e="2119.02">Repent.</span> <span class="tl-s" data-s="2119.66" data-e="2125.00">Not clean themselves up, not turn over a new leaf, not try harder, but repent.</span> <span class="tl-s" data-s="2126.02" data-e="2129.40">Friends, if that&#x27;s you, repent.</span></p>
+        <p><span class="tl-s" data-s="2130.68" data-e="2142.22">And maybe you&#x27;re a Christian and you don&#x27;t always think about using Jesus, but you&#x27;ve come to terms with patterns of sin in your life that maybe no one knows about.</span></p>
+        <p><span class="tl-s" data-s="2144.34" data-e="2146.82">The voice of Jesus has a word for you as well.</span> <span class="tl-s" data-s="2148.16" data-e="2148.60">Repent.</span></p>
+        <p><span class="tl-s" data-s="2156.00" data-e="2157.06">Just as Mount St.</span> <span class="tl-s" data-s="2157.33" data-e="2163.84">Helens looked like the end of life, but it became the beginning of a new and surprising kind of life.</span> <span class="tl-s" data-s="2164.72" data-e="2173.58">In Acts 8, what looked like the end of the church in Jerusalem became the beginning of the gospel advanced from Judea to Samaria.</span> <span class="tl-s" data-s="2174.52" data-e="2178.08">And that same unstoppable gospel is at work today.</span> <span class="tl-s" data-s="2179.04" data-e="2179.60">Now.</span> <span class="tl-s" data-s="2180.28" data-e="2187.92">The same God who is at work in Acts chapter 8 is at work here now, today, in May of 2022.</span> <span class="tl-s" data-s="2188.96" data-e="2194.64">Some of you feel like your life has been erupted with and it&#x27;s destroyed with loss, sickness, disappointment, sin.</span> <span class="tl-s" data-s="2194.70" data-e="2199.40">It feels like everything green has been buried under ash and you&#x27;re tempted to say it&#x27;s over.</span> <span class="tl-s" data-s="2199.74" data-e="2201.08">Nothing good can come of this.</span> <span class="tl-s" data-s="2201.28" data-e="2205.74">This will take a lifetime to recover from if I ever overcome it at all.</span></p>
+        <p><span class="tl-s" data-s="2205.74" data-e="2210.84">But friends, the God of Acts chapter 8 is the God of your story.</span> <span class="tl-s" data-s="2211.88" data-e="2217.82">In Christ, the very things that might look like the ruin in you become the means of advance.</span> <span class="tl-s" data-s="2218.52" data-e="2238.58">It&#x27;s in those places his gospel can spread, shake, and sift and shake the powers that seem immovable and sift your heart so that you cling to Christ alone even as his gospel goes forth.</span></p>
+        <p><span class="tl-s" data-s="2242.01" data-e="2245.12">Life is resilient, spiritual life more so.</span></p>
+        <p><span class="tl-s" data-s="2247.82" data-e="2273.52">Friends, may we not use Jesus but may we love Jesus and serve Jesus and worship Jesus give our all for Jesus devote ourselves to Jesus because friends, Jesus is both now and forevermore enough. let&#x27;s pray.</span></p>
+        <p><span class="tl-s" data-s="2284.10" data-e="2443.54">Lord, it&#x27;s so easy for us to just go about our daily lives with our normal concerns and our preoccupations and forget that eternity stands just around the corner that the days that we have today and tomorrow and the next day are not guaranteed that one day one day it will be over and so Lord, I pray specifically for those in this room who have the spirit of God touching their hearts saying I use Jesus or I try to use Jesus I pray Lord that you would I pray that you would help them to want to repent I pray for Christians who maybe have a good faithful friend pointing out a pattern of sin a stubbornness a hard heartedness I pray Lord that you would help them to want to repent Jesus it&#x27;s so easy for us to be distracted by a great many things that are not you oh forgive us forgive us I pray I pray that you would help us to be a people who individually and collectively fix our eyes upon you our champion our king our friend our older brother our advocate our savior our rescuer the one who has stepped in and taken upon us taken upon himself our sin and destroyed the evil one and the power of death so that we might not be shackled to the chains of using Jesus but we can worship you Jesus both now and for all eternity Lord we pray for an awakening in our church I pray that you would revive our hearts I pray that we would not be not be content anymore with status quo and it&#x27;s in your mighty name we pray Amen</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Live sermon feed: spotlight from /api/sermons, browsable archive from
+  // /api/sermons/search. Static fallback list stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function row(it) {
+      var meta = [it.speaker, fmtDate(it.date)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      var titleHtml = esc(it.title);
+      var tUrl = it.guid && transcriptMap[it.guid];
+      if (tUrl) titleHtml = '<a href="' + esc(tUrl) + '">' + titleHtml + "</a>";
+      return '<div class="sermon"><div><h3>' + titleHtml + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    fetch("/api/sermons?v=3")
+      .then(function (res) { if (!res.ok) throw new Error("feed " + res.status); return res.json(); })
+      .then(function (data) {
+        var spot = document.querySelector("[data-series-spotlight]");
+        if (data && data.series && spot) {
+          var s = data.series;
+          var art = spot.querySelector("[data-series-art]");
+          if (art && s.artwork) { art.src = s.artwork; } else if (art) { art.style.display = "none"; }
+          var nm = spot.querySelector("[data-series-name]");
+          if (nm) nm.textContent = s.name;
+          var bl = spot.querySelector("[data-series-blurb]");
+          if (bl) bl.textContent = s.blurb;
+          spot.hidden = false;
+        }
+      })
+      .catch(function () { /* spotlight stays hidden */ });
+
+    var PER = 10;
+    var state = { q: "", speaker: "", series: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var speakerSel = document.querySelector("[data-sermons-speaker]");
+    var seriesSel = document.querySelector("[data-sermons-series]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No messages found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(speakerSel, data.facets.speakers || [], function (e) { return e.name; }, function (e) { return e.name + " (" + e.count + ")"; });
+        fill(seriesSel, data.facets.series || [], function (e) { return e.name; }, function (e) { return e.name + " (" + e.count + ")"; });
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.speaker || data.series || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.speaker) parts.push("by " + data.speaker);
+          if (data.series) parts.push("in " + data.series);
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " result" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " messages";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/sermons/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.speaker ? "&speaker=" + encodeURIComponent(state.speaker) : "") +
+        (state.series ? "&series=" + encodeURIComponent(state.series) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () { /* keep current list on error */ });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.speaker = ""; state.series = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (speakerSel) speakerSel.value = "";
+      if (seriesSel) seriesSel.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    function bindSelect(sel, key) {
+      if (!sel) return;
+      sel.addEventListener("change", function () {
+        state[key] = sel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    bindSelect(speakerSel, "speaker");
+    bindSelect(seriesSel, "series");
+    bindSelect(monthSel, "month");
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: https://hub.centergilbert.com/media/acts-8-425 -->
+</body>
+</html>
