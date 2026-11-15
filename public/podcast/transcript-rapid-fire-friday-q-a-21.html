@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rapid Fire Friday - Q&amp;A #21 — Podcast Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Fixed on Jesus: conversations beyond Sunday mornings from Center Church in Gilbert, AZ — listen on Spotify, Apple Podcasts, and YouTube." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=18" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a href="/sermons">Sermons</a></li>
+              <li><a class="active" href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/podcast">&larr; All podcast episodes</a>
+          <h1 class="display-lg">Rapid Fire Friday - Q&amp;A #21</h1>
+          <p class="transcript-meta">2024-12-06 · 13:11</p>
+          <p class="transcript-desc">Rapid Fire Friday is a special series from the Fixed On Jesus Podcast crew (Rich, Mark and Heather) Sometimes we get questions that have short enough answers to answer many of them in one episode that we like to call Rapid Fire Fridays. Look for these to be released on Fridays if and when we get eno</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/e750e370/podcast/play/95464018/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-11-6%2Fba823486-90b2-ff4c-3267-2576c2e0acb1.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="0.03" data-e="0.70">What day is it, Mark?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1.30" data-e="1.97">Oh, good question.</span> <span class="tl-s" data-s="2.02" data-e="4.02">I was gonna go on the Google machine, but I think it&#x27;s Friday.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="4.42" data-e="4.92">It&#x27;s Friday.</span> <span class="tl-s" data-s="5.14" data-e="5.96">You know what that means, Mark?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="6.52" data-e="8.53">Rapid Fire Friday!</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="12.05" data-e="16.53">Boom boom boom!</span> <span class="tl-s" data-s="16.62" data-e="18.31">Rapid Fire Friday!</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="21.51" data-e="26.69">Three, two, one!</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="27.19" data-e="29.37">Rapid Fire Friday!</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="33.41" data-e="35.71">What was that, Rich?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="35.85" data-e="37.16">That was the email bell, Mark.</span> <span class="tl-s" data-s="37.21" data-e="38.28">I know that sound anywhere.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="38.43" data-e="40.68">So, I&#x27;m going to go ahead and read this email question.</span> <span class="tl-s" data-s="41.86" data-e="42.63">Hello, production team.</span> <span class="tl-s" data-s="43.25" data-e="47.08">I do not consent to the use of my name, profile, or likeness on the podcast.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="47.20" data-e="48.14">Thank you for being clear.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="48.43" data-e="49.71">Yes, I appreciate it too.</span></p>
+        <p><span class="tl-s" data-s="50.98" data-e="53.44">Is baldness frowned upon in God&#x27;s kingdom?</span> <span class="tl-s" data-s="54.24" data-e="57.80">It seems Amos 10 paints baldness as something to lament.</span> <span class="tl-s" data-s="58.56" data-e="58.87">Thanks.</span> <span class="tl-s" data-s="59.10" data-e="61.20">And then they inserted their name, but I&#x27;m not going to read it.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="61.36" data-e="61.89">Well done.</span> <span class="tl-s" data-s="62.17" data-e="62.60">Well done.</span> <span class="tl-s" data-s="63.55" data-e="65.18">So, Amos 8:10 says this.</span> <span class="tl-s" data-s="65.36" data-e="69.41">This is Amos speaking for God to Israel.</span> <span class="tl-s" data-s="69.71" data-e="83.58">So, remember, most of the Minor Prophets, and that&#x27;s the smaller books of the Old Testament prophets, speak against either Israel or Judah for falling away from the Lord.</span> <span class="tl-s" data-s="83.58" data-e="83.78">Okay.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="84.36" data-e="84.47">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="85.11" data-e="86.81">And so, it&#x27;s a callback to the Lord.</span> <span class="tl-s" data-s="86.81" data-e="94.50">And so, this, by Amos 8, the people in Israel, this is the Northern Kingdom, they are not listening to the Lord.</span> <span class="tl-s" data-s="94.50" data-e="96.53">And we hear this in verse 10.</span> <span class="tl-s" data-s="96.66" data-e="102.12">I will turn your feasts into mourning, all your songs into lamentation.</span> <span class="tl-s" data-s="102.12" data-e="107.44">I will bring sackcloth on every waist and baldness on every head.</span> <span class="tl-s" data-s="107.54" data-e="113.73">I will make it like the mourning for an only son, And the end of it like a bitter day.</span> <span class="tl-s" data-s="113.73" data-e="119.05">And so, essentially here what we have is threatening [Speaker B] with baldness.</span> <span class="tl-s" data-s="119.36" data-e="119.60">No.</span> <span class="tl-s" data-s="120.45" data-e="129.74">Well, so baldness, like if you read Leviticus 13:40, normal male pattern baldness is not considered unclean.</span> <span class="tl-s" data-s="130.09" data-e="132.29">It&#x27;s not considered a curse or anything.</span></p>
+        <p><span class="tl-s" data-s="132.35" data-e="133.36">It&#x27;s just normal.</span> <span class="tl-s" data-s="134.00" data-e="141.53">So what happened was is that they the Mosaic Covenant. made it for— it was forbidden for priests to shave their heads.</span> <span class="tl-s" data-s="142.19" data-e="142.69">We don&#x27;t know why.</span> <span class="tl-s" data-s="143.32" data-e="148.56">It&#x27;s that the people think it&#x27;s probably because of some pagan ritual practice at the time.</span> <span class="tl-s" data-s="148.70" data-e="149.59">Hmm.</span> <span class="tl-s" data-s="149.75" data-e="158.83">And so, what we have here from this passage is that there&#x27;s a differentiation in the Old Testament between shaving and baldness.</span> <span class="tl-s" data-s="159.10" data-e="172.53">And so, the baldness appears to be different than the Then the baldness, the natural baldness appears to be different from this pagan ritualistic baldness.</span> <span class="tl-s" data-s="172.72" data-e="185.79">And so, in some sense, and this is something commentators are split on, the baldness is in some way some kind of judgment that&#x27;s brought on Israel for their refusal to follow the Lord.</span> <span class="tl-s" data-s="185.89" data-e="188.06">Now, so what can we say?</span> <span class="tl-s" data-s="188.14" data-e="191.45">Now, this is something that is not picked up in the New Testament.</span></p>
+        <p><span class="tl-s" data-s="191.62" data-e="197.65">We do not have any kind of, like, prohibition of shaving head or any of that kind of stuff.</span> <span class="tl-s" data-s="197.70" data-e="201.83">So, the ceremonial law and the curse associated with it is now gone.</span> <span class="tl-s" data-s="202.67" data-e="216.77">And so, we don&#x27;t know and we&#x27;re not— we don&#x27;t have any— there&#x27;s no evidence at all that baldness as it, you know, as what it is, is some kind of thing to lament.</span> <span class="tl-s" data-s="216.82" data-e="216.92">Right.</span></p>
+        <p><span class="tl-s" data-s="218.20" data-e="220.84">Pagan ritualism is always something to lament.</span> <span class="tl-s" data-s="220.89" data-e="224.09">And that was what it appears like Amos is calling out in Amos 8:10.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="225.80" data-e="242.78">So, just to kind of touch on that, you&#x27;re saying that part of the reason that one would not— they were commanded not to be bald is because it might represent some pagan thing where the pagans would shave their head in some ritualistic way?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="242.96" data-e="244.29">That&#x27;s what the— that&#x27;s the guess.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="244.64" data-e="244.81">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="244.98" data-e="246.86">So, that we don&#x27;t have— So, speculation.</span> <span class="tl-s" data-s="246.97" data-e="248.51">We don&#x27;t have It&#x27;s very opaque.</span> <span class="tl-s" data-s="248.57" data-e="250.53">Sometimes there&#x27;s things in the Bible that aren&#x27;t clear.</span> <span class="tl-s" data-s="250.82" data-e="251.72">This is one of them.</span> <span class="tl-s" data-s="252.34" data-e="260.69">But we do know from Leviticus 13 that normal baldness by, you know, however your genetics have that come out, that doesn&#x27;t mean— that&#x27;s not bad.</span> <span class="tl-s" data-s="261.37" data-e="261.92">It&#x27;s just normal.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="262.17" data-e="262.43">Yeah.</span> <span class="tl-s" data-s="262.72" data-e="266.05">And my mom said she loves my dad bald.</span> <span class="tl-s" data-s="266.27" data-e="267.84">Like, she just thinks he looks better.</span> <span class="tl-s" data-s="267.90" data-e="269.55">So, I don&#x27;t think it&#x27;s anything to lament.</span> <span class="tl-s" data-s="269.92" data-e="271.47">I think lots of people like it.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="271.70" data-e="272.27">Yeah, there we go.</span> <span class="tl-s" data-s="272.67" data-e="273.82">And it doesn&#x27;t matter what we like.</span> <span class="tl-s" data-s="273.87" data-e="275.11">It matters what the Bible says, right, Mike?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="275.17" data-e="275.42">That&#x27;s true.</span> <span class="tl-s" data-s="275.63" data-e="275.90">Yeah.</span></p>
+        <p><span class="tl-s" data-s="277.94" data-e="278.85">Here&#x27;s another question.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="278.91" data-e="279.44">Another one.</span> <span class="tl-s" data-s="279.55" data-e="280.08">All right, we&#x27;re ready.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="280.13" data-e="281.04">You heard the email bell.</span> <span class="tl-s" data-s="281.32" data-e="282.95">This one&#x27;s from Ken Stout.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="283.14" data-e="283.34">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="283.56" data-e="287.80">I just listened to you— listened to your discussion regarding science versus the Bible.</span> <span class="tl-s" data-s="288.28" data-e="294.15">I have a follow-up question for you regarding the 6 days of creation being literal or symbolic.</span> <span class="tl-s" data-s="294.25" data-e="300.18">Science speaks of billions of years, and literal biblical interpretation can speak of a much shorter time frame.</span> <span class="tl-s" data-s="300.33" data-e="307.03">Where do you stand on the young earth interpretation of the timelines found in biblical genealogy, And the 6 literal days of creation.</span> <span class="tl-s" data-s="307.71" data-e="310.99">Do you believe that the earth is plus or minus 6,000 years old?</span> <span class="tl-s" data-s="311.54" data-e="312.71">Thanks, Ken Stout.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="312.98" data-e="313.67">Great question.</span> <span class="tl-s" data-s="314.42" data-e="319.94">This can be a very contentious question and people dispute and fight about this all the time.</span> <span class="tl-s" data-s="320.21" data-e="328.11">And I&#x27;m going to say that it&#x27;s possible for a faithful Christian to disagree with another faithful Christian on this question.</span></p>
+        <p><span class="tl-s" data-s="329.36" data-e="335.73">6 24-hour literal days of creation is not a measurement for biblical fidelity.</span> <span class="tl-s" data-s="335.82" data-e="336.93">I can tell you that, in my opinion.</span></p>
+        <p><span class="tl-s" data-s="338.42" data-e="344.78">The one thing that&#x27;s not an option is creation without God&#x27;s help, that evolution, right?</span> <span class="tl-s" data-s="345.24" data-e="356.81">So, we do not believe— that&#x27;s the one thing that we have no evidence, biblically speaking, to believe, that creation happened on its own, or evolution is not an option, right?</span> <span class="tl-s" data-s="357.10" data-e="362.22">And so, the timeframe is going to be disputed until Jesus comes back.</span> <span class="tl-s" data-s="362.40" data-e="366.80">And you can, You can hear a lot of people who care a lot about this in very significant ways.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="367.00" data-e="367.32">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="367.88" data-e="383.22">I just want to say that it&#x27;s possible for— what we can&#x27;t believe is in evolution, but what we can believe in is the— there are people who say, hey, listen, every time the word day is used, it&#x27;s a 24-hour period.</span> <span class="tl-s" data-s="383.75" data-e="392.38">And I understand that, but yet, even if we look in chapter 2, verse 4, we see day used— Genesis chapter 2, verse 4, we see day used in a different way.</span> <span class="tl-s" data-s="392.90" data-e="395.42">Additionally, day 7 never ends.</span> <span class="tl-s" data-s="395.92" data-e="399.03">And so, there&#x27;s a sense in which that&#x27;s still going on.</span> <span class="tl-s" data-s="399.30" data-e="405.19">I think as I read it, what we have is Genesis chapters 1 and 2, it&#x27;s not a scientific textbook.</span> <span class="tl-s" data-s="405.94" data-e="406.06">Right.</span> <span class="tl-s" data-s="406.12" data-e="409.17">It&#x27;s a description of God.</span> <span class="tl-s" data-s="409.25" data-e="411.68">Like, the thing to take away is, in the beginning, God.</span> <span class="tl-s" data-s="411.75" data-e="413.55">God&#x27;s the one who created the heavens and the earth.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="414.05" data-e="414.29">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="414.63" data-e="418.13">And we don&#x27;t have a description of— a scientific description.</span> <span class="tl-s" data-s="418.46" data-e="422.28">So, Scientists look at the creation account and say, this is impossible.</span> <span class="tl-s" data-s="422.33" data-e="425.02">Christians look at it and say, let&#x27;s push out science.</span> <span class="tl-s" data-s="425.38" data-e="429.13">I think what we can do is recognize, number one, God created all things.</span> <span class="tl-s" data-s="429.85" data-e="436.74">He doesn&#x27;t— he&#x27;s not interested in telling us how long it took, primarily because if he did, we would have that being very clearly.</span> <span class="tl-s" data-s="437.15" data-e="440.91">We do have this day language, but we can see that day is used in other ways.</span> <span class="tl-s" data-s="441.24" data-e="449.49">But at the same time, I understand people who say it&#x27;s a 24-hour, 6-day period, or it&#x27;s 24 hours over 6 days, and I get that.</span></p>
+        <p><span class="tl-s" data-s="450.74" data-e="454.59">But Genesis 1 and 2 is not a textbook.</span> <span class="tl-s" data-s="454.67" data-e="455.95">It&#x27;s not a scientific textbook.</span> <span class="tl-s" data-s="456.01" data-e="458.37">In fact, light precedes the sun.</span> <span class="tl-s" data-s="458.56" data-e="460.29">Let there be light is before the sun.</span> <span class="tl-s" data-s="460.42" data-e="462.88">And so, like, we have to ask, okay, what does that mean?</span> <span class="tl-s" data-s="463.07" data-e="476.81">And so, I think all of that to say, I think it&#x27;s worthwhile for Christians to investigate what they believe about Genesis 1 and 2 and the timeline of creation.</span> <span class="tl-s" data-s="477.40" data-e="485.71">I do not believe in, like, I don&#x27;t believe the earth is 4.5 billion years old. years old with evidence of some kind of macroevolutionary scale.</span> <span class="tl-s" data-s="486.00" data-e="488.34">Now, there&#x27;s obviously microevolution, of course.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="488.41" data-e="489.29">We&#x27;ve talked about that before.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="489.34" data-e="490.40">Yeah, but not macro.</span> <span class="tl-s" data-s="490.56" data-e="501.19">And so, like, but at the same time, I think there are honest Christians who are going to disagree about the age of the earth, and this is not something that should divide honest Christians.</span> <span class="tl-s" data-s="501.24" data-e="505.51">They should not disfellowship from one another because of disagreement on that.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="505.59" data-e="505.89">Great.</span> <span class="tl-s" data-s="505.97" data-e="506.45">Yeah.</span> <span class="tl-s" data-s="507.60" data-e="520.43">Like you mentioned, there&#x27;s maybe some churches who hold to a more one position or the other, whereas our denomination— [Speaker A] Well, our statement of faith doesn&#x27;t specify.</span> <span class="tl-s" data-s="520.43" data-e="526.62">Right, which is great, because like you said, honest people can disagree or have different understandings of the text.</span> <span class="tl-s" data-s="526.62" data-e="530.76">And in a way, I don&#x27;t want to minimize it, but it doesn&#x27;t matter that much.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="530.79" data-e="532.18">Lots of people think it does.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="532.31" data-e="534.87">Yeah, what does it change in our day-to-day life?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="535.19" data-e="536.02">It doesn&#x27;t.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="536.02" data-e="536.20">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="536.48" data-e="544.59">I mean, unless, like what they&#x27;ll say is, you can&#x27;t take— if you can&#x27;t take the Bible literally, then you can&#x27;t, then you don&#x27;t know how to interpret it.</span> <span class="tl-s" data-s="544.59" data-e="550.66">And I&#x27;m going to say, well, we need to take the Bible, we need to understand the Bible the way it was meant to be understood, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="550.66" data-e="550.98">Exactly.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="552.41" data-e="556.50">And so, we&#x27;re not— Genesis 1, Genesis is not an epistle.</span> <span class="tl-s" data-s="556.50" data-e="557.67">It&#x27;s not a letter.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="558.02" data-e="558.05">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="558.05" data-e="559.40">It&#x27;s a narrative.</span> <span class="tl-s" data-s="559.46" data-e="563.81">And that&#x27;s that in chapter 1 and 2, that&#x27;s high prose.</span> <span class="tl-s" data-s="563.85" data-e="572.72">That&#x27;s Nearly poetry, like it&#x27;s like we we interpret poetry very differently than we interpret a letter we get from a friend.</span> <span class="tl-s" data-s="572.72" data-e="575.54">So we just need to bear that in mind.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="575.54" data-e="575.68">Gotcha.</span> <span class="tl-s" data-s="575.68" data-e="576.75">Thanks for the question, Ken.</span> <span class="tl-s" data-s="576.75" data-e="583.99">If you guys are listening to this and you&#x27;re curious about what episode he was talking about, it&#x27;s episode forty nine, Science versus the Bible.</span> <span class="tl-s" data-s="583.99" data-e="585.83">Thanks for your question.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="585.88" data-e="588.20">Yeah, thanks, Ken.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="588.20" data-e="591.12">And we got another question.</span> <span class="tl-s" data-s="591.19" data-e="593.85">From Bob Campbell, and you heard the email bell.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="593.85" data-e="594.65">Yes, we did.</span> <span class="tl-s" data-s="594.65" data-e="597.07">That&#x27;s a distinctive sound in any age.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="597.07" data-e="600.07">Yeah, and these new microphones make it sound even better.</span> <span class="tl-s" data-s="600.08" data-e="603.17">But the only thing it doesn&#x27;t make sound better is my singing ability.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="603.22" data-e="610.00">Well, that&#x27;s because they can&#x27;t fix what God didn&#x27;t put in, but go ahead.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="610.10" data-e="611.79">A question from Bob Campbell.</span> <span class="tl-s" data-s="611.79" data-e="614.97">Does Scripture support an age of accountability?</span> <span class="tl-s" data-s="615.22" data-e="620.63">Are babies, up to some point, Including the babies aborted, saved by God&#x27;s grace?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="620.63" data-e="621.95">So, it&#x27;s a good question.</span> <span class="tl-s" data-s="622.28" data-e="628.96">I mean, there is— we don&#x27;t have any evidence that there&#x27;s any— like, the Bible doesn&#x27;t talk about an age of accountability.</span> <span class="tl-s" data-s="628.96" data-e="636.65">A lot of times, it boils down to the question of like, what— who is responsible when for their sins, right?</span> <span class="tl-s" data-s="636.65" data-e="645.52">And we have to recognize, number one, all people are born into sin, and we&#x27;re all sinful from birth.</span> <span class="tl-s" data-s="646.59" data-e="650.42">And all are— any who are saved are saved by grace.</span> <span class="tl-s" data-s="650.52" data-e="651.62">Now, here&#x27;s the kicker.</span> <span class="tl-s" data-s="651.65" data-e="659.33">Scripture is silent on those who are born with some kind of mental limitation.</span> <span class="tl-s" data-s="659.49" data-e="664.50">It&#x27;s silent on the issue of where babies go when they die, except there&#x27;s a clue.</span> <span class="tl-s" data-s="664.62" data-e="668.77">There&#x27;s a clue when David mourns his lost son with Bathsheba.</span> <span class="tl-s" data-s="668.82" data-e="668.96">Hmm.</span></p>
+        <p><span class="tl-s" data-s="668.96" data-e="673.49">This is the most clear thing we have.</span> <span class="tl-s" data-s="673.59" data-e="680.62">He, in 2 Samuel, it&#x27;s a longer conversation, but I&#x27;ll read the part that he speaks about his son that died.</span> <span class="tl-s" data-s="680.88" data-e="688.99">He says in 2 Samuel 12:22, he says, this is David speaking, while the child was still alive, I fasted and wept.</span> <span class="tl-s" data-s="688.99" data-e="696.83">And I said, who knows whether the Lord will be gracious to me that the child may live, but now he is dead.</span> <span class="tl-s" data-s="696.83" data-e="697.88">Why should I fast?</span> <span class="tl-s" data-s="697.88" data-e="699.15">Can I bring him back again?</span> <span class="tl-s" data-s="699.18" data-e="704.51">And here&#x27;s the only clue we have: I shall go to him, but he will not return to me.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="704.51" data-e="704.73">Oh.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="704.73" data-e="710.10">So that&#x27;s the only clue we have in the Bible of where babies go.</span> <span class="tl-s" data-s="710.52" data-e="710.91">That&#x27;s it.</span> <span class="tl-s" data-s="710.93" data-e="712.14">There&#x27;s no other description of it.</span> <span class="tl-s" data-s="712.14" data-e="714.61">There&#x27;s no other conversation about it, any of that.</span> <span class="tl-s" data-s="714.72" data-e="720.15">Now, I can say that if it comes down to who should decide, me or God, I pick God.</span> <span class="tl-s" data-s="720.15" data-e="723.54">He&#x27;s merciful and gracious, patient and abounding in steadfast love.</span> <span class="tl-s" data-s="724.20" data-e="735.29">And so, I want to commend to a merciful God these children and these other people that are limited mentally and who don&#x27;t understand.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="735.72" data-e="736.11">Right.</span> <span class="tl-s" data-s="736.59" data-e="740.49">So, David, in a way, was implying that he will meet his sons again.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="740.49" data-e="742.34">Well, he specifically said it, yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="742.34" data-e="742.59">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="743.05" data-e="743.46">For sure.</span> <span class="tl-s" data-s="743.48" data-e="748.94">And so, like, that&#x27;s the only hint we have in the whole Bible.</span> <span class="tl-s" data-s="749.04" data-e="749.15">Right.</span> <span class="tl-s" data-s="749.20" data-e="752.89">So, I want to be careful building a theology around it.</span> <span class="tl-s" data-s="752.99" data-e="753.16">Right.</span> <span class="tl-s" data-s="753.16" data-e="756.55">Saying more than the scriptures say—that&#x27;s what we have right there.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="757.00" data-e="759.88">Yeah, [Speaker A] so [Speaker B] that&#x27;s great.</span> <span class="tl-s" data-s="759.91" data-e="762.10">Well, yeah, thanks for the question, Bob.</span> <span class="tl-s" data-s="762.10" data-e="762.80">Yeah, thanks, Bob.</span> <span class="tl-s" data-s="762.80" data-e="765.40">And that&#x27;s all the questions I have for now.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="765.45" data-e="769.60">For now, but there will be another Friday that comes because you know what, Mark?</span> <span class="tl-s" data-s="770.10" data-e="771.70">They come once every seven days.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="771.72" data-e="772.94">Every seven.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="773.16" data-e="773.80">Every seven.</span> <span class="tl-s" data-s="773.80" data-e="775.06">It&#x27;s a rapid-fire Friday.</span> <span class="tl-s" data-s="775.07" data-e="775.41">We&#x27;ll be back.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="775.41" data-e="775.65">All right.</span> <span class="tl-s" data-s="775.65" data-e="777.08">Well, I&#x27;m gonna hold you to that.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="777.10" data-e="777.31">All right.</span> <span class="tl-s" data-s="777.31" data-e="777.31">Sounds good.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="777.31" data-e="777.31">Take care, guys.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Fixed on Jesus episode archive, backed by /api/podcast/search.
+  // Static fallback list above stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function fmtDuration(raw) {
+      if (!raw) return "";
+      var str = String(raw).trim();
+      // Anchor feeds report seconds; render as H:MM:SS or M:SS.
+      if (/^\d+$/.test(str)) {
+        var total = parseInt(str, 10);
+        var h = Math.floor(total / 3600);
+        var m = Math.floor((total % 3600) / 60);
+        var sec = total % 60;
+        var mm = (h > 0 && m < 10 ? "0" + m : "" + m);
+        var ss = (sec < 10 ? "0" + sec : "" + sec);
+        return (h > 0 ? h + ":" + mm : m) + ":" + ss;
+      }
+      // Anchor also reports clock strings like "00:24:02" — drop the
+      // redundant leading hour so it reads "24:02".
+      return str.replace(/^00:/, "");
+    }
+    function row(it) {
+      it = it || {};
+      var title = esc(it.title) || "Untitled episode";
+      var tUrl = it.guid && transcriptMap[it.guid];
+      var heading = tUrl
+        ? '<a href="' + esc(tUrl) + '">' + title + "</a>"
+        : (it.link
+          ? '<a href="' + esc(it.link) + '" target="_blank" rel="noopener">' + title + "</a>"
+          : title);
+      var meta = [fmtDate(it.date), fmtDuration(it.duration)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      return '<div class="sermon"><div><h3>' + heading + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    var PER = 10;
+    var state = { q: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No episodes found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " episode" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " episodes";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/podcast/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () {
+          // Keep the static list, but tell the reader where else to listen —
+          // some privacy blockers stop the archive request itself.
+          var note = document.querySelector("[data-sermons-error]");
+          if (note) note.hidden = false;
+        });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    if (monthSel) {
+      monthSel.addEventListener("change", function () {
+        state.month = monthSel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: 1e0d38ee-5255-4727-a00e-384ebf9f4fc4 -->
+</body>
+</html>
