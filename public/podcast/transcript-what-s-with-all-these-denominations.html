@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What&#x27;s With All These Denominations? — Podcast Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Fixed on Jesus: conversations beyond Sunday mornings from Center Church in Gilbert, AZ — listen on Spotify, Apple Podcasts, and YouTube." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=18" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a href="/sermons">Sermons</a></li>
+              <li><a class="active" href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/podcast">&larr; All podcast episodes</a>
+          <h1 class="display-lg">What&#x27;s With All These Denominations?</h1>
+          <p class="transcript-meta">2024-08-14 · 23:41</p>
+          <p class="transcript-desc">Welcome to FIXED ON JESUS, a podcast brought to you by Center Church in Gilbert, Arizona. Speaking to you today are Rich Richardson &amp; Mark Johnson Jr. Production by Heather Corbitt **SHOW NOTES** Questions asked in this episode: Why so many? What are the different ones? What is the difference betwee</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/e750e370/podcast/play/90435950/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-7-14%2Fbf7a45e0-4e38-93e6-3a8b-e5292a8d4423.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="0.26" data-e="8.39">And so we, it&#x27;s not as if what we want to do is take our brand as Sovereign Grace and Center Church and spread it from shore to shore and beyond.</span> <span class="tl-s" data-s="8.45" data-e="11.16">We want the kingdom of God to advance, right?</span> <span class="tl-s" data-s="11.42" data-e="13.85">And so that&#x27;s one of the reasons we&#x27;re committed to planting churches.</span> <span class="tl-s" data-s="13.90" data-e="15.63">That&#x27;s one of the reasons we send missionaries.</span> <span class="tl-s" data-s="16.00" data-e="26.43">It&#x27;s also one of the reasons we partner with other denominations and other churches around the world who are in different places to try to just help them communicate and spread the gospel.</span> <span class="tl-s" data-s="27.04" data-e="28.75">Because we are about a kingdom.</span> <span class="tl-s" data-s="28.82" data-e="30.84">We&#x27;re not about sort of an empire.</span> <span class="tl-s" data-s="30.88" data-e="32.04">We&#x27;re not trying to build our empire.</span> <span class="tl-s" data-s="32.10" data-e="37.95">We&#x27;re trying to advance the kingdom of God.</span></p>
+        <p><span class="tl-s" data-s="48.85" data-e="51.96">This is Fixed on Jesus.</span></p>
+        <p><span class="tl-s" data-s="68.86" data-e="70.77">Hey everybody, welcome to Fixed on Jesus.</span> <span class="tl-s" data-s="71.17" data-e="77.31">My name is Rich and we are in the midst of— I was in the midst of mocking Mark, which is kind of a normal experience.</span> <span class="tl-s" data-s="77.84" data-e="84.78">Mark Johnson Jr.&#x27;s across the table from me because he was trying to throw a pen in the trash that ceased to work over his shoulder without looking.</span> <span class="tl-s" data-s="85.61" data-e="88.33">And it was 2 horrible attempts.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="88.41" data-e="88.59">Right.</span> <span class="tl-s" data-s="88.66" data-e="89.14">And then what?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="89.68" data-e="90.57">And then I don&#x27;t know.</span> <span class="tl-s" data-s="91.14" data-e="91.50">Then it went in.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="91.55" data-e="92.48">The 3rd one went in, my friend.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="92.53" data-e="96.11">It went in because I mocked you and then you&#x27;re like, okay, I&#x27;m going to make sure I get it right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="96.27" data-e="97.20">Exactly.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="97.25" data-e="100.63">Anyway, so here we are talking about Fixed on Jesus.</span> <span class="tl-s" data-s="100.70" data-e="103.16">We have behind the glass, we have Heather Corbett as always.</span> <span class="tl-s" data-s="103.73" data-e="110.72">And we are going to continue our conversations that we have on everything in life and connect to Jesus Christ.</span> <span class="tl-s" data-s="110.82" data-e="112.05">And so what are we going to talk about here?</span> <span class="tl-s" data-s="112.74" data-e="113.39">Today, Mark.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="113.69" data-e="114.67">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="115.38" data-e="116.32">Oh, that&#x27;s the email bell.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="116.74" data-e="117.09">That&#x27;s right.</span> <span class="tl-s" data-s="117.17" data-e="121.49">So we have an email from one of our fans, and it&#x27;s from Georgia Baird.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="121.80" data-e="122.33">Super fan.</span> <span class="tl-s" data-s="122.44" data-e="125.20">Yeah, really [Speaker B] super [Speaker A] fan.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="125.20" data-e="126.09">That&#x27;s right.</span> <span class="tl-s" data-s="126.15" data-e="128.04">And it&#x27;s about denominations.</span> <span class="tl-s" data-s="128.14" data-e="139.59">So [Speaker A] yes, [Speaker B] her question is, are the churches that are called Protestant or Presbyterian or Baptist teach the same things as Christian churches do, or is it just a name?</span> <span class="tl-s" data-s="139.62" data-e="143.00">If there is a difference, can you explain it?</span> <span class="tl-s" data-s="143.00" data-e="143.88">You&#x27;re the best, Georgia Baird.</span> <span class="tl-s" data-s="143.88" data-e="150.98">And I did respond and give her a quick, but I told her we would talk about it more.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="151.08" data-e="151.26">So, yeah.</span> <span class="tl-s" data-s="151.26" data-e="155.02">So, yeah, basically her question is, why are there so many denominations?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="155.02" data-e="155.31">Exactly.</span> <span class="tl-s" data-s="155.31" data-e="155.50">Yeah.</span> <span class="tl-s" data-s="155.75" data-e="161.16">But I just started off by telling her, like, Protestant is like an umbrella.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="161.18" data-e="161.28">Right.</span> <span class="tl-s" data-s="161.28" data-e="162.19">So there&#x27;s Catholic.</span> <span class="tl-s" data-s="162.22" data-e="162.37">Yeah.</span> <span class="tl-s" data-s="162.38" data-e="166.31">It&#x27;s a bummer that Roman Catholics stole that word because you know what Catholic means?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="166.31" data-e="166.34">Universal.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="166.34" data-e="166.63">Universal.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="166.71" data-e="168.26">I got the question right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="168.26" data-e="168.94">There you go.</span> <span class="tl-s" data-s="169.05" data-e="169.24">Well done.</span> <span class="tl-s" data-s="169.27" data-e="169.53">That&#x27;s good.</span> <span class="tl-s" data-s="169.53" data-e="169.88">Write this day down.</span> <span class="tl-s" data-s="169.88" data-e="172.69">Can you ring the bell for Am I getting the question right?</span> <span class="tl-s" data-s="173.61" data-e="174.97">Absolutely.</span> <span class="tl-s" data-s="174.97" data-e="175.84">There you go.</span> <span class="tl-s" data-s="176.02" data-e="176.55">That&#x27;s right.</span> <span class="tl-s" data-s="176.66" data-e="182.76">And so there&#x27;s the Protestant, which is a protest against the Roman Catholic Church.</span> <span class="tl-s" data-s="183.18" data-e="184.70">And so that&#x27;s the 2 big umbrellas.</span></p>
+        <p><span class="tl-s" data-s="184.70" data-e="190.10">Now, the question is, why are there so many denominations?</span> <span class="tl-s" data-s="190.31" data-e="191.22">And there are a ton of denominations.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="191.29" data-e="191.62">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="191.67" data-e="192.80">A ton.</span> <span class="tl-s" data-s="192.89" data-e="194.27">I&#x27;ll just name a few.</span> <span class="tl-s" data-s="194.32" data-e="197.88">There&#x27;s Baptist denominations, and under Baptist denominations, there&#x27;s a bunch of them.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="197.95" data-e="206.66">Yeah, [Speaker A] I mean, [Speaker B] Reformed Baptists, [Speaker A] dozens and dozens, Southern Baptists, American Baptists, National Baptists.</span> <span class="tl-s" data-s="206.69" data-e="208.25">Same thing with the Methodists.</span> <span class="tl-s" data-s="208.80" data-e="213.00">There&#x27;s United Methodists, African Methodists, Free Methodists, Lutheran, same thing.</span> <span class="tl-s" data-s="213.10" data-e="214.16">Presbyterian, same thing.</span> <span class="tl-s" data-s="214.16" data-e="217.09">Episcopalian and Anglican, same thing.</span> <span class="tl-s" data-s="217.20" data-e="218.34">Pentecostal, same thing.</span> <span class="tl-s" data-s="218.47" data-e="219.95">Reformed, same thing.</span> <span class="tl-s" data-s="220.17" data-e="222.64">Then there&#x27;s non-denominationals that function as essentially a denomination.</span> <span class="tl-s" data-s="222.82" data-e="223.38">Mostly, yeah.</span> <span class="tl-s" data-s="223.38" data-e="223.61">Covert.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="223.61" data-e="233.35">Then we&#x27;re not even talking about the Orthodox Church, which You&#x27;ve got Greek Orthodox, Eastern Orthodox, you&#x27;ve got the Orthodox Church of America, there&#x27;s the Coptic Church, and there&#x27;s all kinds of things.</span> <span class="tl-s" data-s="233.40" data-e="239.29">And so it&#x27;s a good question to say, wow, why are there so many denominations?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="239.34" data-e="239.52">Right?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="239.52" data-e="239.87">Yes.</span> <span class="tl-s" data-s="240.06" data-e="241.40">So I think that&#x27;s a fair question.</span> <span class="tl-s" data-s="241.54" data-e="251.55">And I think it&#x27;s something that we first need to pull back and ask, what are the differences between the denominations?</span> <span class="tl-s" data-s="251.58" data-e="251.65">Right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="251.76" data-e="251.97">Yeah.</span> <span class="tl-s" data-s="252.15" data-e="252.38">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="252.49" data-e="258.79">So a Christian denomination is one that preaches Jesus as the only way for salvation.</span> <span class="tl-s" data-s="258.79" data-e="259.08">Right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="259.19" data-e="259.45">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="260.00" data-e="273.45">So there&#x27;s a lot of other things that can go along with different Christian churches, but that&#x27;s what makes one Christian.</span> <span class="tl-s" data-s="273.56" data-e="278.85">So the reason Mormons, Jehovah&#x27;s Witnesses, Christian Scientists, they may call themselves Christians, they are not Christians.</span> <span class="tl-s" data-s="278.85" data-e="283.75">Because they do not teach that Christ is the only way to heaven.</span> <span class="tl-s" data-s="283.75" data-e="288.23">They teach Jesus plus good works in some form.</span> <span class="tl-s" data-s="288.23" data-e="291.47">Same thing with Hinduism and all that stuff, right?</span> <span class="tl-s" data-s="291.47" data-e="300.01">So that&#x27;s what makes a Christian denomination Christian, is that they have a right understanding of the Gospel of Jesus Christ.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="300.43" data-e="300.58">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="300.69" data-e="301.11">Okay?</span> <span class="tl-s" data-s="301.42" data-e="307.08">Now, we know that in the Bible, there&#x27;s all kinds of different elements that are talked about.</span> <span class="tl-s" data-s="307.10" data-e="313.26">And it&#x27;s not just the Gospel, it&#x27;s all kinds of other things that are connected to the Gospel.</span> <span class="tl-s" data-s="313.94" data-e="317.02">And that&#x27;s where honest Christians are going to disagree.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="317.17" data-e="317.28">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="317.31" data-e="320.44">And so that&#x27;s where the denominations come in.</span> <span class="tl-s" data-s="320.44" data-e="322.71">Now, are all of these disagreements legitimate?</span> <span class="tl-s" data-s="322.77" data-e="323.79">I would say no, not always.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="323.83" data-e="324.14">Or even minor.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="324.14" data-e="324.86">Or even minor.</span> <span class="tl-s" data-s="324.86" data-e="332.27">Some of them are minor, some of them are major, some of them are different, and some of— and everybody has different kind of sensibilities.</span> <span class="tl-s" data-s="332.31" data-e="335.10">Like, let&#x27;s just keep it real basic.</span></p>
+        <p><span class="tl-s" data-s="336.89" data-e="342.55">Like, what&#x27;s the difference between a Baptist church and a Presbyterian church?</span> <span class="tl-s" data-s="343.13" data-e="350.09">The difference is Baptists believe that you baptize people when they&#x27;re converted.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="350.28" data-e="350.39">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="350.51" data-e="351.45">At whatever, as adults.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="351.55" data-e="353.09">And Pentecostal faith believe?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="353.09" data-e="353.23">Presbyterian.</span> <span class="tl-s" data-s="353.23" data-e="355.83">Presbyterian believes that you baptize as babies.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="355.83" data-e="355.94">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="355.98" data-e="357.63">I mean, that&#x27;s the difference.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="357.66" data-e="358.76">Believer&#x27;s baptism versus pedobaptism.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="358.97" data-e="359.95">The mode of baptism, right?</span> <span class="tl-s" data-s="360.00" data-e="363.73">The mode of baptism is what The big difference is there.</span> <span class="tl-s" data-s="363.76" data-e="366.54">There&#x27;s some other things, but that&#x27;s the big difference, right?</span> <span class="tl-s" data-s="366.81" data-e="373.63">And then, so like, if you look at these names, right?</span> <span class="tl-s" data-s="373.63" data-e="377.39">Baptist, Methodist, Lutheran, Presbyterian, Episcopalian, Anglican, Presbyterian.</span> <span class="tl-s" data-s="377.39" data-e="380.22">Those are all horrible names for denominations, aren&#x27;t they?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="380.22" data-e="383.69">Yeah, because they&#x27;re words that are— [Speaker A] It&#x27;s horrible, right?</span> <span class="tl-s" data-s="383.69" data-e="389.49">Like, what are you getting at when you say Episcopalian versus Presbyterian?</span> <span class="tl-s" data-s="389.59" data-e="392.22">You know what you&#x27;re getting at?</span> <span class="tl-s" data-s="392.25" data-e="394.99">You&#x27;re getting at a disagreement of church government, right?</span> <span class="tl-s" data-s="395.07" data-e="400.63">The Episcopalian form of government is different than the Presbyterian form of government.</span> <span class="tl-s" data-s="400.73" data-e="408.65">A Presbyterian form of government looks to put authority in the— the authority is invested in the elders of a specific church.</span> <span class="tl-s" data-s="408.76" data-e="413.59">Episcopalians, the authority is invested in a bishop outside the local church.</span> <span class="tl-s" data-s="413.65" data-e="421.96">The Baptists, they&#x27;re congregational, so the authority is listed in Or is invested into the church via voting, et cetera.</span> <span class="tl-s" data-s="422.07" data-e="425.21">So all of those are different ways of understanding how to do church.</span> <span class="tl-s" data-s="425.36" data-e="425.58">Yeah.</span></p>
+        <p><span class="tl-s" data-s="425.58" data-e="440.07">And if you look at why are there so many denominations, a lot of denominations we agree with when it comes to the Bible, the Trinity, who Jesus is, what he&#x27;s done, evangelism, all these big things.</span> <span class="tl-s" data-s="440.33" data-e="444.01">But where we disagree is on what&#x27;s called polity.</span> <span class="tl-s" data-s="444.05" data-e="444.66">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="444.74" data-e="446.27">And polity is church government.</span> <span class="tl-s" data-s="446.27" data-e="454.11">And so, and to be clear, church government is one of the parts of the Scriptures that is, it&#x27;s not talked about exhaustively.</span> <span class="tl-s" data-s="454.29" data-e="456.98">There&#x27;s no book of the Bible called 1 Polity or 2 Polity, right?</span> <span class="tl-s" data-s="456.98" data-e="461.69">To tell you how to— [Speaker B] It&#x27;s not always prescriptive.</span> <span class="tl-s" data-s="462.22" data-e="462.75">No.</span> <span class="tl-s" data-s="463.34" data-e="466.69">And to tell you how to organize and lead your church, right?</span> <span class="tl-s" data-s="466.69" data-e="472.71">That&#x27;s why, generally, that&#x27;s why there&#x27;s that many number of, that number of denominations.</span> <span class="tl-s" data-s="472.71" data-e="476.75">You&#x27;ve got all these differences for how to govern.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="477.06" data-e="477.12">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="477.22" data-e="477.33">Right?</span> <span class="tl-s" data-s="477.52" data-e="489.01">So for example, in the old school way, the Anglican Church, the congregation and the elders of the church have no say over who the leader of that church should be.</span> <span class="tl-s" data-s="489.01" data-e="490.34">It&#x27;s brought in from outside.</span> <span class="tl-s" data-s="490.53" data-e="497.83">So the Anglican Church is like someone else chooses who that should be and is foisted upon the church.</span> <span class="tl-s" data-s="497.83" data-e="498.05">Right?</span> <span class="tl-s" data-s="498.05" data-e="499.18">So That&#x27;s not the way that functions.</span> <span class="tl-s" data-s="499.19" data-e="508.55">Like in a Baptist context, what you do is if you need a new leader, if you need a new senior pastor, you vote on a person who&#x27;s coming in to be the senior pastor, right?</span> <span class="tl-s" data-s="508.55" data-e="508.67">Yeah.</span> <span class="tl-s" data-s="508.67" data-e="519.13">In a Presbyterian form of church government, the way we would function is we would say, hey, if let&#x27;s say I die and we need to have somebody else, we&#x27;d talk about it as a church, who should come in, how should we function?</span> <span class="tl-s" data-s="519.13" data-e="526.83">And we&#x27;d talk about it, make a conversation as a church, but ultimately the decision would be in the hands of the elders.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="526.84" data-e="527.07">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="527.07" data-e="527.16">Elder-led.</span> <span class="tl-s" data-s="527.24" data-e="530.41">Yeah, because we&#x27;re elder— well, elder-governed.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="530.43" data-e="530.59">Elder-governed.</span> <span class="tl-s" data-s="530.59" data-e="530.75">Excuse me.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="531.09" data-e="532.91">Yeah.</span> <span class="tl-s" data-s="533.27" data-e="537.80">And so ultimately, that&#x27;s how we would function.</span> <span class="tl-s" data-s="537.80" data-e="539.63">Not everybody functions that way.</span> <span class="tl-s" data-s="539.72" data-e="539.76">Yeah.</span> <span class="tl-s" data-s="539.76" data-e="545.96">So church government, mode of baptism, those are 2 big reasons that there are multiple denominations.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="546.00" data-e="546.07">Yeah.</span> <span class="tl-s" data-s="546.07" data-e="551.80">Just a quick follow-up on that is, is the polity of a church a salvation issue?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="551.80" data-e="551.91">No.</span> <span class="tl-s" data-s="551.91" data-e="552.46">Absolutely not.</span> <span class="tl-s" data-s="552.46" data-e="554.92">You can believe the Gospel of Jesus Christ.</span> <span class="tl-s" data-s="555.03" data-e="565.51">You have a good understanding of the Gospel of Jesus Christ and yet have differing understandings of church polity.</span> <span class="tl-s" data-s="565.51" data-e="565.83">Right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="565.91" data-e="565.99">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="565.99" data-e="569.55">And so what&#x27;s important is to make sure that you understand the polity of your church.</span> <span class="tl-s" data-s="569.55" data-e="580.73">So like, we have a— our church is a part of Sovereign Grace and we have a book of church order which details our polity, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="580.78" data-e="580.88">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="580.88" data-e="589.82">And in our new members class, we&#x27;ve got a section of our class where we talk about church government and what that looks like here, right?</span> <span class="tl-s" data-s="589.87" data-e="594.56">And so that everybody knows what&#x27;s going on and what&#x27;s not going on.</span> <span class="tl-s" data-s="594.56" data-e="603.52">And one of the features of denominationalism from the past is the denomination would own the building and the property.</span> <span class="tl-s" data-s="603.62" data-e="607.89">So if that church left the denomination, the denomination would keep the building and the property.</span> <span class="tl-s" data-s="607.89" data-e="612.44">That was one of the big issues in the past.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="612.44" data-e="613.95">Is that the Methodists?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="614.06" data-e="614.32">It depends.</span> <span class="tl-s" data-s="614.32" data-e="614.85">They&#x27;re all different.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="614.85" data-e="617.65">I nerd out about this stuff sometimes.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="617.65" data-e="623.59">Well, there&#x27;s a lot to nerd out here, but that&#x27;s— not all Methodist churches are created equal.</span> <span class="tl-s" data-s="623.59" data-e="632.49">Methodist Church is an offshoot of the Anglican Church, and it was essentially founded by the people who followed John Wesley.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="632.49" data-e="632.67">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="632.67" data-e="635.72">And so John Wesley was— that&#x27;s another whole conversation.</span> <span class="tl-s" data-s="635.72" data-e="636.27">Yeah.</span> <span class="tl-s" data-s="636.36" data-e="642.71">So there were Presbyterian churches that broke off from the Presbyterian Church USA, and the Presbyterian Church USA would keep the building and all the money and everything.</span> <span class="tl-s" data-s="642.71" data-e="647.36">And the other church, the church would then have to go off and start something else.</span> <span class="tl-s" data-s="647.36" data-e="647.57">Right.</span> <span class="tl-s" data-s="647.67" data-e="656.57">And so one of the questions I get often when people come in is like, are local decisions made at a local level or are they foisted upon us from some kind of institution.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="656.57" data-e="659.70">I asked you that before I joined church.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="659.70" data-e="662.25">Yeah, no, we make local decisions, right?</span> <span class="tl-s" data-s="663.31" data-e="670.07">And so local people make local decisions for what we&#x27;re gonna preach, who we&#x27;re gonna hire, how we&#x27;re gonna do church.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="670.07" data-e="684.54">Yeah, my question, I remember specifically we sat at that table over there about 3 years ago, and I asked you what would happen if the denomination decided to change this, that, and the other belief?</span> <span class="tl-s" data-s="684.58" data-e="687.13">What would we do as a local church?</span> <span class="tl-s" data-s="687.23" data-e="693.86">And those were— I came from a congregationally led church before this, so it was much different.</span> <span class="tl-s" data-s="693.86" data-e="695.86">So I had some questions about that.</span> <span class="tl-s" data-s="695.88" data-e="699.77">But yeah, ultimately, so polity is not a salvation issue.</span> <span class="tl-s" data-s="700.03" data-e="701.98">That&#x27;s good to know.</span> <span class="tl-s" data-s="701.98" data-e="702.99">It&#x27;s [Speaker A] a wisdom issue.</span> <span class="tl-s" data-s="703.47" data-e="703.52">Yeah.</span> <span class="tl-s" data-s="703.55" data-e="710.68">So just to kind of draw a little bit more out of you, in the Bible, do we have distinctions between denominations?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="710.72" data-e="711.39">No, no, we don&#x27;t.</span> <span class="tl-s" data-s="712.29" data-e="713.43">We&#x27;ve got the early church.</span> <span class="tl-s" data-s="713.43" data-e="718.55">And the reason we don&#x27;t is because we have The apostles who are still alive, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="718.55" data-e="719.45">I see.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="719.45" data-e="721.67">So we&#x27;ve got the 12 who are still, plus Paul.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="721.69" data-e="726.13">Speak with authority on a polity issue.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="726.13" data-e="729.42">They speak with authority.</span> <span class="tl-s" data-s="729.45" data-e="732.25">And you actually have some polity discussions.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="732.28" data-e="732.41">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="732.46" data-e="735.95">And it&#x27;s more associated with theology, right?</span> <span class="tl-s" data-s="735.95" data-e="744.07">You have a discussion of theology, which is called in Acts 15 at the Jerusalem Council. where the question was, do Gentiles need to be Jews?</span> <span class="tl-s" data-s="744.29" data-e="748.48">Essentially, did they need to be Jews before they become Christians?</span> <span class="tl-s" data-s="748.60" data-e="749.32">To get circumcised?</span> <span class="tl-s" data-s="749.32" data-e="750.04">No, right, exactly.</span></p>
+        <p><span class="tl-s" data-s="751.49" data-e="754.70">And so— [Speaker B] Circumcision party.</span> <span class="tl-s" data-s="754.70" data-e="755.82">So the whole church came together to discuss this.</span> <span class="tl-s" data-s="755.82" data-e="757.61">And so it wasn&#x27;t put to a vote.</span> <span class="tl-s" data-s="757.61" data-e="760.61">This is one of the reasons we&#x27;re not congregational.</span> <span class="tl-s" data-s="760.72" data-e="765.72">It was not put to a vote amongst the local congregation.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="765.72" data-e="771.29">Oh, so you&#x27;re drawing that as an example in scripture [Speaker A] Well, it&#x27;s not telling us what to do, but [Speaker B] like— Elder government.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="771.29" data-e="777.53">It wasn&#x27;t as if Paul went back to Antioch and said, hey guys, this is what they say, let&#x27;s vote.</span> <span class="tl-s" data-s="777.53" data-e="778.74">That did not happen.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="778.78" data-e="778.86">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="778.86" data-e="789.86">And so the most you&#x27;ve got when it comes to some of that congregational stuff is in Acts, it seemed good to the church and the Holy Spirit, or the Holy Spirit and the church, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="790.99" data-e="791.36">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="791.84" data-e="794.74">And that doesn&#x27;t mean they took a vote.</span> <span class="tl-s" data-s="794.74" data-e="795.05">Yeah.</span> <span class="tl-s" data-s="795.14" data-e="796.86">But you do see different times in which elders governed.</span> <span class="tl-s" data-s="797.07" data-e="806.30">And, you know, and so anyway, those are— but again, I&#x27;m not going to sit here and say, let&#x27;s, let&#x27;s, um, let&#x27;s press that to the nth degree and, you know, make sure everybody agrees.</span> <span class="tl-s" data-s="806.30" data-e="807.52">I don&#x27;t care about that.</span> <span class="tl-s" data-s="807.57" data-e="813.99">Like, I don&#x27;t— it&#x27;s not like something I&#x27;m passionate about to make sure that everybody has the same form of church government as me.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="813.99" data-e="815.80">Yeah, [Speaker A] they&#x27;re preaching the gospel.</span> <span class="tl-s" data-s="816.40" data-e="817.85">It doesn&#x27;t matter.</span> <span class="tl-s" data-s="817.85" data-e="819.41">Yeah, for sure, for sure.</span> <span class="tl-s" data-s="819.60" data-e="822.06">And I have a few more questions.</span> <span class="tl-s" data-s="822.48" data-e="830.16">I mean, I guess one is those different versions of polity in different denominations, they typically have different strengths and weaknesses.</span> <span class="tl-s" data-s="830.61" data-e="841.03">Now I&#x27;m assuming they&#x27;re, for the sake of example, we&#x27;ll just assume that they&#x27;re all faithful gospel-preaching churches administrating the sacraments and just emphasizing the gospel on Sunday morning.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="841.03" data-e="841.17">Right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="841.27" data-e="844.40">Can the Lord be using their different strengths and weaknesses in different ways?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="844.40" data-e="844.53">Absolutely.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="844.66" data-e="849.37">Like, I know I can&#x27;t remember which one, but different denominations have different strengths.</span> <span class="tl-s" data-s="849.39" data-e="852.88">So some of them give a lot to the needy.</span> <span class="tl-s" data-s="852.90" data-e="855.14">Some are really good at church planting.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="855.14" data-e="858.04">Yeah, everybody, every— and that&#x27;s not just denominational.</span> <span class="tl-s" data-s="858.04" data-e="860.50">Different churches have different strengths, different personalities.</span> <span class="tl-s" data-s="860.53" data-e="860.69">Yeah.</span> <span class="tl-s" data-s="860.69" data-e="864.50">And the Lord sees fit to use in different places, different churches for the expansion of his gospel.</span> <span class="tl-s" data-s="864.54" data-e="866.86">So absolutely, it&#x27;s not one size fits all.</span> <span class="tl-s" data-s="866.86" data-e="876.22">And so we— it&#x27;s not as if what we want to do is take our brand as Sovereign Grace and Center Church and spread it from shore to shore and beyond.</span> <span class="tl-s" data-s="876.22" data-e="877.54">We want the kingdom of God to advance.</span> <span class="tl-s" data-s="877.60" data-e="881.76">And so that&#x27;s one of the reasons we&#x27;re committed to planting churches.</span> <span class="tl-s" data-s="881.92" data-e="884.09">That&#x27;s one of the reasons we send missionaries.</span> <span class="tl-s" data-s="884.09" data-e="884.37">Yeah.</span></p>
+        <p><span class="tl-s" data-s="884.43" data-e="895.40">It&#x27;s also one of the reasons we partner with other denominations and other churches around the world who are in different places to try to just help them communicate and spread the Gospel, because we are about a kingdom.</span> <span class="tl-s" data-s="895.43" data-e="897.60">We&#x27;re not about sort of an empire.</span> <span class="tl-s" data-s="897.60" data-e="901.29">We&#x27;re not trying to build our empire.</span> <span class="tl-s" data-s="901.29" data-e="902.98">We&#x27;re trying to advance the Kingdom of God.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="903.24" data-e="903.53">Right, right.</span> <span class="tl-s" data-s="903.53" data-e="912.76">So how do we protect ourselves as members of a denomination that I love, that I think is faithful, But I also know there&#x27;s other faithful denominations out there.</span> <span class="tl-s" data-s="912.76" data-e="915.02">How do we prevent ourselves and our hearts from tribalism?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="915.23" data-e="915.81">Uh, you know what?</span> <span class="tl-s" data-s="915.81" data-e="918.44">We— it&#x27;s always— [Speaker B] My church is better than yours.</span> <span class="tl-s" data-s="918.44" data-e="918.54">Yeah.</span> <span class="tl-s" data-s="918.54" data-e="919.74">We just can&#x27;t have that attitude.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="919.74" data-e="920.11">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="920.21" data-e="923.09">You know, we just know the Lord works in different ways.</span> <span class="tl-s" data-s="923.49" data-e="930.54">And so like, that&#x27;s one of the reasons we pray on Sundays for other churches every week.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="930.54" data-e="931.84">Not just Sovereign Grace churches.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="933.98" data-e="935.02">And not just our church.</span> <span class="tl-s" data-s="935.02" data-e="935.07">Right.</span> <span class="tl-s" data-s="935.07" data-e="939.42">We pray for other churches outside of our denomination.</span></p>
+        <p><span class="tl-s" data-s="940.62" data-e="946.59">We&#x27;re not going to speak with, in general, we&#x27;re not going to speak with derision about another church or tradition.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="946.60" data-e="946.76">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="946.76" data-e="950.00">And so we don&#x27;t want to have that kind of tribalistic mentality.</span> <span class="tl-s" data-s="950.00" data-e="954.87">At the same time, we want to stand for what we stand for without apology, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="955.26" data-e="955.32">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="955.75" data-e="960.29">So there&#x27;s a difference between being tribalistic and believing what you&#x27;re doing is what the Lord&#x27;s called you to do.</span> <span class="tl-s" data-s="961.22" data-e="961.29">Right.</span> <span class="tl-s" data-s="961.29" data-e="964.51">And here&#x27;s the reasons we feel like this is why we&#x27;re here.</span> <span class="tl-s" data-s="964.51" data-e="967.97">And that&#x27;s not casting aspersion on anyone else or any other tradition or anything like that.</span> <span class="tl-s" data-s="968.16" data-e="970.20">But that&#x27;s just the way it is.</span> <span class="tl-s" data-s="970.20" data-e="981.64">And so, and that&#x27;s one of the things, that&#x27;s one of the reasons that it&#x27;s important for me and for us as a leadership team to be connected to like-minded churches in the Valley, in Arizona, that aren&#x27;t Sovereign Grace.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="981.64" data-e="982.25">Like Gospel Coalition.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="982.28" data-e="986.56">Gospel Coalition guys who are, you know, they&#x27;re going to have a different polity.</span> <span class="tl-s" data-s="986.56" data-e="988.32">In fact, sometimes I preach at other Gospel Coalition churches.</span> <span class="tl-s" data-s="988.32" data-e="991.25">They all have different polity than us, right?</span> <span class="tl-s" data-s="991.25" data-e="993.45">I don&#x27;t make an issue of that.</span> <span class="tl-s" data-s="993.51" data-e="994.51">I don&#x27;t talk about that.</span> <span class="tl-s" data-s="994.55" data-e="996.16">I don&#x27;t mention that.</span> <span class="tl-s" data-s="996.16" data-e="997.33">I just— it&#x27;s not an issue.</span> <span class="tl-s" data-s="997.44" data-e="1007.29">It&#x27;s not something that I care about because I want to make sure that we keep the main thing the main thing, and that&#x27;s the gospel of Jesus Christ, right?</span> <span class="tl-s" data-s="1007.29" data-e="1007.42">Yeah.</span> <span class="tl-s" data-s="1007.46" data-e="1019.07">So, and we have so much more in common that I would rather celebrate those kinds of things than obsess on the 1 or 2%.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1019.54" data-e="1019.67">Sure.</span> <span class="tl-s" data-s="1019.85" data-e="1019.91">Yeah.</span> <span class="tl-s" data-s="1020.03" data-e="1024.25">So just to Take it in a slightly different direction.</span> <span class="tl-s" data-s="1024.30" data-e="1027.75">We&#x27;ve talked about how most denominational differences are polity-based.</span> <span class="tl-s" data-s="1027.75" data-e="1034.68">When is it a situation where it&#x27;s justified to split off a denomination or to create a new denomination?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1034.83" data-e="1038.46">I think that&#x27;s a good question.</span> <span class="tl-s" data-s="1038.50" data-e="1044.79">I think the way I would think about it is theological definition, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1045.10" data-e="1045.26">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1045.34" data-e="1051.81">So like, for example, the American Episcopalian Church How do you pronounce [Speaker B] that word?</span> <span class="tl-s" data-s="1052.26" data-e="1052.50">Episcopalian.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1053.05" data-e="1053.09">Episcopalian.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1053.14" data-e="1053.22">Episcopalian.</span> <span class="tl-s" data-s="1053.22" data-e="1057.12">Which is just, well, that was the American, that was Anglicanism.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1057.40" data-e="1057.54">Yeah.</span> <span class="tl-s" data-s="1057.54" data-e="1057.88">Like white.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1057.88" data-e="1060.02">In England was called Episcopalianism here.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1060.03" data-e="1060.21">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1060.21" data-e="1060.45">Right.</span> <span class="tl-s" data-s="1060.45" data-e="1068.20">There are bishops that would choose who would lead from different, choose, they made the choices for the churches.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1068.30" data-e="1069.06">Wow.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1069.12" data-e="1070.61">So that&#x27;s another conversation.</span> <span class="tl-s" data-s="1070.79" data-e="1074.33">But they lost the gospel years ago.</span> <span class="tl-s" data-s="1075.04" data-e="1079.52">They began to ordain women and then they began to ordain homosexuals, right?</span> <span class="tl-s" data-s="1079.52" data-e="1084.68">So that is a— both of those practices are, well, one is complete heresy, the other one&#x27;s heterodox.</span></p>
+        <p><span class="tl-s" data-s="1086.03" data-e="1091.83">And so I would say in those cases where the plain teaching of scripture is so very clear, that&#x27;s a time to move.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1091.89" data-e="1094.75">Whether in violation of church or denomination?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1094.83" data-e="1096.05">In violation of the Bible.</span> <span class="tl-s" data-s="1096.05" data-e="1096.16">Right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1096.16" data-e="1097.89">They&#x27;re [Speaker A] in violation of the Bible.</span> <span class="tl-s" data-s="1097.97" data-e="1098.21">Either way.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1098.21" data-e="1098.58">Yeah.</span> <span class="tl-s" data-s="1098.69" data-e="1103.98">Or some other kind of maybe major, if they change the definition of what the gospel is.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1103.98" data-e="1108.04">Stop baptizing people or they— [Speaker A] Or they change what the gospel is.</span> <span class="tl-s" data-s="1108.05" data-e="1108.12">Right.</span> <span class="tl-s" data-s="1108.13" data-e="1108.31">Yeah.</span> <span class="tl-s" data-s="1108.31" data-e="1115.14">And so, right, that&#x27;s the— those are times where I think it&#x27;s legit to find something else to be associated with, right?</span> <span class="tl-s" data-s="1115.20" data-e="1115.44">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1115.44" data-e="1125.43">I mean, and that&#x27;s one of the reasons I believe it&#x27;s helpful and it&#x27;s not just helpful, but fruitful for a church to be associated with other churches.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1125.54" data-e="1125.78">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1126.09" data-e="1127.43">You see this in the New Testament.</span> <span class="tl-s" data-s="1127.88" data-e="1133.31">You don&#x27;t see independent churches doing all siloed off doing their own thing.</span> <span class="tl-s" data-s="1133.31" data-e="1135.47">You see a partnership, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1135.47" data-e="1135.81">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1136.04" data-e="1138.23">You&#x27;ve got a partnership.</span> <span class="tl-s" data-s="1138.28" data-e="1143.95">You&#x27;ve got Paul speaking in 2 Corinthians 8 and 9 about the Macedonian churches because they&#x27;re in partnership.</span> <span class="tl-s" data-s="1143.95" data-e="1147.09">And so you&#x27;ve got him referencing multiple different churches.</span> <span class="tl-s" data-s="1147.09" data-e="1147.96">They&#x27;re in partnership.</span> <span class="tl-s" data-s="1148.13" data-e="1150.86">It&#x27;s not good for churches to be alone.</span> <span class="tl-s" data-s="1150.94" data-e="1160.32">And so that&#x27;s one of the reasons we look to make sure that we&#x27;re in partnership with other churches and other— the denomination we are.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1160.32" data-e="1160.48">Yeah.</span> <span class="tl-s" data-s="1160.48" data-e="1160.82">Yeah.</span> <span class="tl-s" data-s="1160.87" data-e="1162.95">And partners in church planning.</span> <span class="tl-s" data-s="1162.95" data-e="1163.76">But also partners in accountability.</span> <span class="tl-s" data-s="1163.76" data-e="1169.36">Like, our elder-governed church is beholden to the elders of the region and of the entire denomination.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1169.36" data-e="1169.63">And right.</span> <span class="tl-s" data-s="1169.63" data-e="1171.89">And that&#x27;s one of the things that&#x27;s helpful for us.</span> <span class="tl-s" data-s="1171.89" data-e="1178.10">Like, if let&#x27;s say I begin teaching something that&#x27;s heterodox or I take— [Speaker B] What does that mean?</span> <span class="tl-s" data-s="1178.15" data-e="1180.62">You gotta— you can&#x27;t use big words without giving a definition.</span> <span class="tl-s" data-s="1180.62" data-e="1182.50">I&#x27;ve heard that from you.</span> <span class="tl-s" data-s="1182.55" data-e="1185.89">I teach something that&#x27;s unbiblical and 2 church members can bring charges against me for that.</span> <span class="tl-s" data-s="1185.98" data-e="1199.59">And it gets a hearing outside of our church. with an organization, with a group of a committee of men who will say, let&#x27;s say I start teaching that Jesus was not born of a virgin, right?</span> <span class="tl-s" data-s="1199.59" data-e="1200.97">That undercuts the Gospel.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1201.24" data-e="1201.45">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1201.48" data-e="1211.37">And you and Heather could decide, no, I&#x27;m going to bring a charge against Rich and it will get a hearing outside of our church.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1211.37" data-e="1211.77">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1211.85" data-e="1222.82">Or let&#x27;s say if we practice church discipline and somebody is in the process of discipline and They then aren&#x27;t disciplined because they&#x27;re living, you know, a life of, you know, some some some unrepentant sin.</span> <span class="tl-s" data-s="1223.08" data-e="1229.14">They have the right to appeal that to a body outside of our church.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1229.14" data-e="1230.31">Okay, [Speaker A] right.</span> <span class="tl-s" data-s="1230.36" data-e="1234.59">And so there&#x27;s real authority and power in in that, right?</span> <span class="tl-s" data-s="1234.59" data-e="1234.70">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1234.70" data-e="1235.45">Accountability and accountability.</span> <span class="tl-s" data-s="1235.48" data-e="1235.60">Yeah.</span> <span class="tl-s" data-s="1235.72" data-e="1238.60">And so that&#x27;s just so it&#x27;s wise just to have those kinds of of guardrails and such.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1239.24" data-e="1239.82">So yeah, awesome.</span> <span class="tl-s" data-s="1239.82" data-e="1240.28">Well.</span> <span class="tl-s" data-s="1240.28" data-e="1247.48">I can&#x27;t think of any more questions right now, but do you have anything you want to add to that?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1247.48" data-e="1258.94">The only thing else to add is there&#x27;s a difference between— so just because someone&#x27;s a different denomination doesn&#x27;t mean that we should look on them with suspicion like we were talking about before.</span> <span class="tl-s" data-s="1259.22" data-e="1263.27">But at the same time, there are cults, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1263.37" data-e="1263.67">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1263.79" data-e="1265.86">And we need to make sure we understand the difference.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1265.93" data-e="1267.47">So non-faithful churches that aren&#x27;t preaching the Gospel.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1267.47" data-e="1267.51">Correct.</span> <span class="tl-s" data-s="1267.51" data-e="1268.68">Mormons, not faithful, not Christian.</span> <span class="tl-s" data-s="1268.74" data-e="1272.12">Jehovah&#x27;s Witnesses, not faithful, not Christian, even though they look like it.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1272.35" data-e="1272.52">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1272.60" data-e="1272.75">Right.</span> <span class="tl-s" data-s="1273.15" data-e="1277.51">And so— [Speaker B] They say some of the— [Speaker A] a lot of the same words.</span> <span class="tl-s" data-s="1277.51" data-e="1278.20">Right, exactly.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1278.20" data-e="1282.69">Jehovah is, I mean— [Speaker A] Yeah, but that&#x27;s a whole different thing.</span> <span class="tl-s" data-s="1282.69" data-e="1282.93">Hova?</span> <span class="tl-s" data-s="1282.94" data-e="1283.75">Yeah, no, no.</span> <span class="tl-s" data-s="1283.75" data-e="1284.29">Not Jay-Z.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1284.31" data-e="1285.54">I don&#x27;t know what that is.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1285.67" data-e="1286.12">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1286.93" data-e="1286.98">Whatever.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1287.11" data-e="1288.20">We&#x27;ll work on that.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1288.22" data-e="1288.75">Uh-uh, we&#x27;re not.</span> <span class="tl-s" data-s="1288.86" data-e="1292.86">And so, um, but so they&#x27;re not faithful and they&#x27;re not Christian.</span> <span class="tl-s" data-s="1292.89" data-e="1302.12">And so like, there&#x27;s a difference between like, if I say someone&#x27;s a false teacher, That means they get the gospel wrong and teach that wrongly.</span> <span class="tl-s" data-s="1302.12" data-e="1302.47">All right.</span> <span class="tl-s" data-s="1302.53" data-e="1309.84">If I say, if I believe someone&#x27;s teaching falsely, let&#x27;s say anyone who is, in my opinion, baptizing babies, I think that&#x27;s wrong.</span> <span class="tl-s" data-s="1309.84" data-e="1312.52">I think it&#x27;s un— I don&#x27;t think we don&#x27;t have that in the scriptures.</span> <span class="tl-s" data-s="1312.64" data-e="1316.42">And so I don&#x27;t believe that that&#x27;s the way we should conduct ourselves.</span> <span class="tl-s" data-s="1316.42" data-e="1320.52">I believe they&#x27;re teaching falsely, but I don&#x27;t believe they&#x27;re a false teacher.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1320.52" data-e="1320.53">Right.</span> <span class="tl-s" data-s="1320.53" data-e="1323.11">So it&#x27;s good to make that distinguish.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1323.40" data-e="1323.48">Yeah.</span> <span class="tl-s" data-s="1323.48" data-e="1326.61">A false teacher gets the gospel wrong.</span> <span class="tl-s" data-s="1326.92" data-e="1334.02">Somebody who teaches what&#x27;s called infant baptism or paedobaptism, I would say they&#x27;re teaching falsely, and there&#x27;s a difference.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1334.09" data-e="1334.68">Right, right.</span> <span class="tl-s" data-s="1334.78" data-e="1335.02">That makes sense.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1335.02" data-e="1336.54">Now, the Mormon Church, that&#x27;s a complete farce.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1336.56" data-e="1336.73">Yeah.</span> <span class="tl-s" data-s="1337.28" data-e="1339.48">Awesome.</span> <span class="tl-s" data-s="1339.60" data-e="1344.54">Well, thank you for your question, Georgia, and we appreciate you constantly giving us good things to talk about.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1344.59" data-e="1344.89">Absolutely.</span> <span class="tl-s" data-s="1344.89" data-e="1349.28">And if you have other questions, where should they email us, Mark? [Speaker B] production@sunnegilbert.com.</span> <span class="tl-s" data-s="1349.28" data-e="1353.45">We read and respond to all the emails and Don&#x27;t forget to check out the show notes.</span> <span class="tl-s" data-s="1353.45" data-e="1365.70">There&#x27;s some different references in there, and if you&#x27;re still listening at this point, chances are that there&#x27;s a funny blooper or something at the end.</span> <span class="tl-s" data-s="1365.88" data-e="1375.16">So make sure you catch the last thirty seconds of an episode, and and we just love you.</span> <span class="tl-s" data-s="1375.26" data-e="1376.17">Talk to you soon.</span> <span class="tl-s" data-s="1376.82" data-e="1378.43">In the bucket, or there.</span> <span class="tl-s" data-s="1378.45" data-e="1379.88">Look at to your left in the bucket.</span> <span class="tl-s" data-s="1380.16" data-e="1380.69">See the bucket?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1380.71" data-e="1381.27">The word is.</span> <span class="tl-s" data-s="1381.35" data-e="1381.79">Got [Speaker B] another.</span> <span class="tl-s" data-s="1382.09" data-e="1382.75">I can.</span> <span class="tl-s" data-s="1382.90" data-e="1383.30">All right.</span> <span class="tl-s" data-s="1383.62" data-e="1383.64">Okay.</span> <span class="tl-s" data-s="1383.70" data-e="1384.79">One very specific pen.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1384.83" data-e="1384.90">Okay.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1384.90" data-e="1385.51">I can hear it.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1388.10" data-e="1388.28">Okay.</span> <span class="tl-s" data-s="1388.28" data-e="1388.68">All right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1388.75" data-e="1391.50">Only thing that&#x27;s going in the bucket is this pen.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1391.50" data-e="1395.25">No, that goes in the trash.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1395.25" data-e="1396.84">That&#x27;s what I meant.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1396.84" data-e="1397.38">Yeah, that&#x27;s weird.</span> <span class="tl-s" data-s="1397.58" data-e="1398.36">See, I don&#x27;t.</span> <span class="tl-s" data-s="1398.36" data-e="1399.81">There&#x27;s no way you were gonna make that.</span> <span class="tl-s" data-s="1399.81" data-e="1399.81">That was like the worst shot ever.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1399.81" data-e="1399.81">Are you serious?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1399.81" data-e="1399.81">Yeah, it wasn&#x27;t even close.</span> <span class="tl-s" data-s="1399.81" data-e="1399.81">Ah, not even close again.</span> <span class="tl-s" data-s="1399.81" data-e="1399.81">All right, we&#x27;re gonna start this.</span> <span class="tl-s" data-s="1399.81" data-e="1399.81">All [Speaker B] right, without me?</span> <span class="tl-s" data-s="1399.81" data-e="1399.81">Yeah.</span> <span class="tl-s" data-s="1399.81" data-e="1399.81">Okay.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Fixed on Jesus episode archive, backed by /api/podcast/search.
+  // Static fallback list above stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function fmtDuration(raw) {
+      if (!raw) return "";
+      var str = String(raw).trim();
+      // Anchor feeds report seconds; render as H:MM:SS or M:SS.
+      if (/^\d+$/.test(str)) {
+        var total = parseInt(str, 10);
+        var h = Math.floor(total / 3600);
+        var m = Math.floor((total % 3600) / 60);
+        var sec = total % 60;
+        var mm = (h > 0 && m < 10 ? "0" + m : "" + m);
+        var ss = (sec < 10 ? "0" + sec : "" + sec);
+        return (h > 0 ? h + ":" + mm : m) + ":" + ss;
+      }
+      // Anchor also reports clock strings like "00:24:02" — drop the
+      // redundant leading hour so it reads "24:02".
+      return str.replace(/^00:/, "");
+    }
+    function row(it) {
+      it = it || {};
+      var title = esc(it.title) || "Untitled episode";
+      var tUrl = it.guid && transcriptMap[it.guid];
+      var heading = tUrl
+        ? '<a href="' + esc(tUrl) + '">' + title + "</a>"
+        : (it.link
+          ? '<a href="' + esc(it.link) + '" target="_blank" rel="noopener">' + title + "</a>"
+          : title);
+      var meta = [fmtDate(it.date), fmtDuration(it.duration)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      return '<div class="sermon"><div><h3>' + heading + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    var PER = 10;
+    var state = { q: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No episodes found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " episode" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " episodes";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/podcast/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () {
+          // Keep the static list, but tell the reader where else to listen —
+          // some privacy blockers stop the archive request itself.
+          var note = document.querySelector("[data-sermons-error]");
+          if (note) note.hidden = false;
+        });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    if (monthSel) {
+      monthSel.addEventListener("change", function () {
+        state.month = monthSel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: f433c3a1-f1e7-4198-9e21-dc484fdbb246 -->
+</body>
+</html>
