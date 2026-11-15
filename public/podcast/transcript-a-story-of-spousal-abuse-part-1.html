@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A Story of Spousal Abuse - Part 1 — Podcast Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Fixed on Jesus: conversations beyond Sunday mornings from Center Church in Gilbert, AZ — listen on Spotify, Apple Podcasts, and YouTube." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=18" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a href="/sermons">Sermons</a></li>
+              <li><a class="active" href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/podcast">&larr; All podcast episodes</a>
+          <h1 class="display-lg">A Story of Spousal Abuse - Part 1</h1>
+          <p class="transcript-meta">2025-10-01 · 36:47</p>
+          <p class="transcript-desc">In this powerful three-part series, Rich and Mark sit down with a member of Center Church as she courageously shares her story of spousal abuse. While the content may be difficult to hear, we believe you’ll discover a message of hope and healing woven throughout her journey. Stay with us through all</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/e750e370/podcast/play/109038664/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-8-30%2F408435800-44100-2-6fc081a133228.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1.32" data-e="13.57">This is where it starts now.</span> <span class="tl-s" data-s="13.87" data-e="14.76">Break on through.</span></p>
+        <p><span class="tl-s" data-s="17.96" data-e="20.12">Hey, here we go.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="26.04" data-e="27.91">Hey, let it show.</span></p>
+        <p><span class="tl-s" data-s="31.90" data-e="34.66">Hey everybody, welcome to the Fixed on Jesus podcast.</span> <span class="tl-s" data-s="35.14" data-e="35.74">My name is Rich.</span> <span class="tl-s" data-s="36.26" data-e="38.85">Joining me as always is Mark Johnson Jr.</span> <span class="tl-s" data-s="38.90" data-e="39.49">How you doing, Mark?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="39.72" data-e="40.81">I&#x27;m doing well, how about you?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="40.91" data-e="44.85">All right, behind the glass— actually behind the camera now— is Heather Corbett.</span> <span class="tl-s" data-s="44.90" data-e="47.17">We need to remedy the whole behind the camera thing.</span> <span class="tl-s" data-s="47.23" data-e="48.82">We need her in front of the camera.</span> <span class="tl-s" data-s="49.78" data-e="51.06">But Heather, do we though?</span> <span class="tl-s" data-s="51.72" data-e="53.15">I think we do, I think we do.</span> <span class="tl-s" data-s="53.79" data-e="55.57">And that&#x27;s really rude right there, Mark.</span> <span class="tl-s" data-s="56.11" data-e="63.24">Uh, typically we say our Our Fixed on Jesus podcast is kind of like a runaway train, but we know where we&#x27;re going today, do we not?</span> <span class="tl-s" data-s="63.53" data-e="64.56">We&#x27;re like a laser focus.</span> <span class="tl-s" data-s="65.46" data-e="67.35">We have a very special guest with us, Adela.</span> <span class="tl-s" data-s="67.42" data-e="68.16">How are you, Adela?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="68.32" data-e="69.10">I&#x27;m doing really good.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="69.45" data-e="69.86">Excellent.</span> <span class="tl-s" data-s="70.41" data-e="75.81">Adela is a longtime member of our church, and we asked Adela in for a very specific purpose.</span></p>
+        <p><span class="tl-s" data-s="77.19" data-e="94.11">Adela is going to share her story, and it&#x27;s a story that is, is marked by many challenges, but ends with the story of redemption and the Lord, the Lord really miraculously intervening and, and bringing you to a place of, of serious just health.</span> <span class="tl-s" data-s="94.19" data-e="94.59">Restoration.</span> <span class="tl-s" data-s="94.67" data-e="95.89">Restoration is the best word, right?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="95.95" data-e="96.19">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="97.14" data-e="101.56">Uh, just for, just for— I&#x27;ll set the table a little bit, then we&#x27;ll start talking about Adela.</span> <span class="tl-s" data-s="101.56" data-e="105.04">Adela was trapped in a, uh, 21-year marriage.</span> <span class="tl-s" data-s="105.81" data-e="106.23">24.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="106.37" data-e="107.03">24.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="107.36" data-e="109.40">Okay, I got, I got it wrong.</span> <span class="tl-s" data-s="109.40" data-e="110.23">I thought I knew all the stories.</span> <span class="tl-s" data-s="110.23" data-e="117.00">24 years marriage where she was Abused very seriously, and it was a.</span> <span class="tl-s" data-s="117.25" data-e="122.25">I mean, it was something that throughout that whole time she was members of church.</span> <span class="tl-s" data-s="122.30" data-e="139.39">She was a member of two different churches, and the part of the reason we&#x27;re we&#x27;re doing this we have a specific goal in talking to Adele is we want to hear her story, and as we hear her story, we want everyone to be able to understand how to identify abuse, spousal abuse, and it can go both ways.</span> <span class="tl-s" data-s="139.39" data-e="148.05">Um, men to women, women to men, um, so that people don&#x27;t think just because we&#x27;re in a church that this is impossible.</span> <span class="tl-s" data-s="148.05" data-e="159.97">Um, and we also want to tell the story, or Adela wants to tell the story, so that where there are women or men who are in a situation like this, they can look to try to get help.</span></p>
+        <p><span class="tl-s" data-s="160.15" data-e="168.02">Because one of the things I think is fair to say, that when you&#x27;re stuck in a situation like this, you feel trapped and lonely and you&#x27;ve got no way out.</span> <span class="tl-s" data-s="168.02" data-e="169.06">Is that fair to say?</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="169.06" data-e="172.02">That&#x27;s one of the hardest things, the hidden nature of it.</span> <span class="tl-s" data-s="172.02" data-e="175.25">So just the hidden abuse really made it really difficult.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="175.25" data-e="175.65">Yeah.</span> <span class="tl-s" data-s="176.21" data-e="182.90">So there&#x27;s lots of different things we&#x27;re going to unpack, um, but maybe why don&#x27;t we start with just, just the beginning?</span> <span class="tl-s" data-s="182.91" data-e="185.41">Um, when did you become a Christian?</span> <span class="tl-s" data-s="185.41" data-e="193.47">Uh, just your upbringing, and then maybe start just with how you met your ex-husband and, and what that was like.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="193.51" data-e="193.97">All right.</span> <span class="tl-s" data-s="193.97" data-e="197.57">Well, um, I became a Christian when I was 6 years old.</span> <span class="tl-s" data-s="197.67" data-e="205.94">I was raised by wonderful Christian parents who just— they had a great marriage, so that&#x27;s what I&#x27;d been modeled.</span> <span class="tl-s" data-s="205.94" data-e="216.28">And they were missionaries on the Navajo Indian Reservation, and so I had a great— [Speaker B] Did you live on the reservation as a kid?</span> <span class="tl-s" data-s="216.36" data-e="216.59">Yes.</span> <span class="tl-s" data-s="216.70" data-e="216.81">Where?</span> <span class="tl-s" data-s="216.88" data-e="217.49">6 years.</span> <span class="tl-s" data-s="218.39" data-e="222.51">Window Rock, Arizona, or actually Sabanito, but you could walk to Window Rock.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="222.59" data-e="223.03">Nice.</span> <span class="tl-s" data-s="223.33" data-e="227.93">Yeah, [Speaker D] so, um, you could walk from New Mexico to Arizona.</span> <span class="tl-s" data-s="227.93" data-e="230.58">Yeah, [Speaker B] it was Four Corners, right?</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="230.60" data-e="230.90">Uh, not exactly.</span> <span class="tl-s" data-s="230.95" data-e="233.87">All right, I guess it was nearby.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="233.91" data-e="233.99">Okay.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="233.99" data-e="236.24">Yeah, I&#x27;m thinking— I don&#x27;t know, I don&#x27;t know geography.</span> <span class="tl-s" data-s="236.24" data-e="238.95">I was just a little kid.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="239.91" data-e="242.07">Somewhere up there.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="242.16" data-e="258.76">Yeah, [Speaker D] so, um, so yeah, so we moved to Mesa when I was 12, and just my dad was an elder in a church all my life, and just that&#x27;s the people I knew.</span> <span class="tl-s" data-s="258.76" data-e="268.96">And so when I was in college, when I was 20, 19 or 20, maybe 19, I met my ex-husband.</span> <span class="tl-s" data-s="269.18" data-e="270.26">I met him at my church.</span> <span class="tl-s" data-s="270.31" data-e="271.04">He wasn&#x27;t going to that church.</span> <span class="tl-s" data-s="271.04" data-e="279.54">He was going to a different church, but he had relatives that went to that church, and he claimed Christianity.</span></p>
+        <p><span class="tl-s" data-s="281.52" data-e="283.26">He was really kind and nice.</span> <span class="tl-s" data-s="283.28" data-e="289.62">There was nothing that seemed that you thought in first meeting him, like, I don&#x27;t know if this guy is saved?</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="289.67" data-e="290.11">No, absolutely not.</span> <span class="tl-s" data-s="290.24" data-e="297.25">And also, I was a young Christian, been raised just around Christians, so I assumed if you said you were a Christian, you were.</span> <span class="tl-s" data-s="297.98" data-e="300.96">He knew a lot of theology.</span> <span class="tl-s" data-s="300.96" data-e="302.32">He attended church regularly.</span> <span class="tl-s" data-s="302.32" data-e="304.41">So there was no red flags that way.</span> <span class="tl-s" data-s="304.44" data-e="307.77">I knew his relatives, so he wasn&#x27;t just a stranger.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="307.82" data-e="308.03">Yeah.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="308.22" data-e="311.77">His relatives said he was great, and they weren&#x27;t trying to lie.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="311.82" data-e="312.35">Sure, sure.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="312.72" data-e="317.23">They thought he was great.</span> <span class="tl-s" data-s="317.39" data-e="321.53">So, and really, I had no one saying, I don&#x27;t think you should marry this guy.</span> <span class="tl-s" data-s="321.56" data-e="330.04">I mean, I did have one person— there was a 10-year age gap, so that was a concern to one person, but they got over it quickly.</span> <span class="tl-s" data-s="330.07" data-e="335.91">So, I wasn&#x27;t rebelling and marrying someone who— [Speaker B] You were in community talking to other people, what do you think?</span> <span class="tl-s" data-s="336.25" data-e="342.23">All this, like, just what you&#x27;re trying to walk, walk the road of wisdom here, and that&#x27;s what you tried to do.</span> <span class="tl-s" data-s="342.26" data-e="345.48">Yeah, I mean, obviously going back, there was a lot of unwisdom.</span> <span class="tl-s" data-s="345.95" data-e="350.89">Like, I don&#x27;t remember sitting down really and praying, should I marry this guy?</span> <span class="tl-s" data-s="350.92" data-e="359.97">It was just being young and not having that maturity in Christ that— yeah, sure, I have now and, um, would do things differently now.</span> <span class="tl-s" data-s="359.97" data-e="368.24">There were some red flags, but I I couldn&#x27;t really see them because I was a forgiving Christian.</span></p>
+        <p><span class="tl-s" data-s="368.24" data-e="375.59">So when certain things happened or information I was given from him, you know, I forgave him.</span> <span class="tl-s" data-s="375.59" data-e="378.75">And I assumed that as 2 Christians, we would be okay.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="378.80" data-e="381.14">Yeah, which is the normal course of things, right?</span> <span class="tl-s" data-s="381.14" data-e="389.06">So one of the things we want to help everybody understand is that you are not saying, hey, don&#x27;t forgive people.</span> <span class="tl-s" data-s="389.22" data-e="390.04">It is be wise, right?</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="390.04" data-e="390.24">Right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="390.26" data-e="395.70">And so, and, and some of the red flags were only clear in retrospect, right?</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="395.73" data-e="395.84">Right.</span> <span class="tl-s" data-s="395.87" data-e="396.23">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="396.27" data-e="397.22">And yeah, right.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="397.72" data-e="397.89">Absolutely.</span> <span class="tl-s" data-s="397.89" data-e="400.71">I mean, I wasn&#x27;t sitting around thinking, should I really marry this guy or not?</span> <span class="tl-s" data-s="400.76" data-e="402.18">I— it wasn&#x27;t like that.</span> <span class="tl-s" data-s="402.22" data-e="405.00">I was in love with him, and he was a Christian.</span> <span class="tl-s" data-s="405.01" data-e="405.56">Yeah, right.</span> <span class="tl-s" data-s="406.14" data-e="407.72">As far as I knew.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="408.08" data-e="408.43">Checked the boxes.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="408.48" data-e="409.86">He checked the boxes.</span> <span class="tl-s" data-s="409.86" data-e="413.03">Those, those are the 2 boxes, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="413.03" data-e="414.52">When you&#x27;re young and naive.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="414.80" data-e="414.91">Yeah.</span> <span class="tl-s" data-s="414.96" data-e="420.27">At that age, were you excited about Getting married, like, had you been dreaming about marriage leading up to that?</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="421.44" data-e="421.70">Oh, absolutely.</span> <span class="tl-s" data-s="421.70" data-e="422.48">I was very excited.</span> <span class="tl-s" data-s="422.49" data-e="429.26">It was, yeah, it was just all very exciting.</span> <span class="tl-s" data-s="429.30" data-e="433.30">I loved him and was excited about being an honorable wife, even.</span> <span class="tl-s" data-s="433.33" data-e="441.74">Like, I went in it with the intentions to be, and I think I fulfilled those of being an honorable wife.</span> <span class="tl-s" data-s="441.74" data-e="443.07">So [Speaker B] you get married.</span> <span class="tl-s" data-s="443.19" data-e="443.40">Uh-huh.</span> <span class="tl-s" data-s="443.45" data-e="448.37">What year was that, if we can ask?</span> <span class="tl-s" data-s="448.58" data-e="449.11">That was 1995.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="449.11" data-e="449.22">Okay.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="449.38" data-e="454.33">I turned 21 on our honeymoon, so I was young.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="454.39" data-e="455.60">So you&#x27;re young.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="455.63" data-e="455.85">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="456.08" data-e="465.16">So &#x27;95, you get married and, uh, you think, okay, here we are, let&#x27;s settle into life, let&#x27;s settle into husband and wife life and, and everything.</span> <span class="tl-s" data-s="465.61" data-e="466.99">How— what happened from there?</span> <span class="tl-s" data-s="466.99" data-e="485.78">Now, a lot of the— for folks listening, one of the things that is clear now for Adela that may not have been clear at the time is she&#x27;s looking back over time to see some of the patterns that began to emerge early that ended up becoming life-altering and life-dominating patterns.</span> <span class="tl-s" data-s="486.20" data-e="489.04">Life-dominating patterns for him and life-altering patterns for you, correct?</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="489.08" data-e="489.13">Absolutely.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="489.42" data-e="491.15">So what were some of the first signs?</span> <span class="tl-s" data-s="491.28" data-e="510.03">Because a lot of people throw the word abuse around, so we&#x27;ll talk about this later, but, uh, what were some of the signs that things you experienced in the beginning that became something more, or you, you&#x27;re like, wow, this is, this is not right?</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="510.03" data-e="524.09">Yeah, well, I, I think it was really— I think things were not right from the beginning, but it was more just confusing, um, because you&#x27;re not expecting to walk into abuse, um, with a Christian man.</span> <span class="tl-s" data-s="524.13" data-e="527.09">So like that category, I had been raised with amazing parents who had an amazing marriage.</span> <span class="tl-s" data-s="527.12" data-e="535.83">You know, they had fights and stuff, but it was just a regular marriage, God-honoring marriage.</span> <span class="tl-s" data-s="536.52" data-e="538.47">And so it was surprising.</span> <span class="tl-s" data-s="538.60" data-e="547.06">Um, but even, even on our honeymoon, driving away from the airport, um, when we arrived in Denver, like, things weren&#x27;t right already.</span> <span class="tl-s" data-s="547.09" data-e="548.22">So— You could tell?</span> <span class="tl-s" data-s="548.22" data-e="550.26">Well, I couldn&#x27;t tell I was being abused.</span> <span class="tl-s" data-s="550.26" data-e="550.85">Looking back now, I can tell.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="550.85" data-e="553.63">What were some of the things that were wrong?</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="553.63" data-e="561.85">He was just He was really frustrated because he didn&#x27;t know how to get to the hotel.</span> <span class="tl-s" data-s="561.85" data-e="569.15">So there just— it just wasn&#x27;t— it just wasn&#x27;t— he couldn&#x27;t deal with frustration in a normal way.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="569.81" data-e="569.88">Gotcha.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="569.89" data-e="574.81">So, but it&#x27;s the day you got married, likely you would be dealing with it as best as you could, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="574.97" data-e="575.36">Who cares?</span> <span class="tl-s" data-s="575.46" data-e="576.99">We&#x27;re gonna get to that.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="576.99" data-e="583.25">I know, like, who cares that we might be lost for a few minutes or whatever?</span> <span class="tl-s" data-s="583.26" data-e="590.20">So So that was disappointing already, you know, off the bat.</span> <span class="tl-s" data-s="590.23" data-e="597.92">And yeah, it was just, it was a disappointing honeymoon in many ways.</span> <span class="tl-s" data-s="597.94" data-e="612.17">Like, it&#x27;s almost as if he obtained the prize, he got married, and he then He wasn&#x27;t seeking that out.</span> <span class="tl-s" data-s="612.34" data-e="613.69">And I think he, he was maybe disillusioned.</span> <span class="tl-s" data-s="614.03" data-e="624.21">I mean, this is all going to come back, which I will talk about throughout this, is that it turns out he was highly addicted to pornography.</span> <span class="tl-s" data-s="624.39" data-e="626.54">So that affected— [Speaker B] You didn&#x27;t know?</span> <span class="tl-s" data-s="626.54" data-e="627.28">I didn&#x27;t know, no.</span></p>
+        <p><span class="tl-s" data-s="628.70" data-e="643.24">I knew that he had struggled with pornography in the past, which almost most men would have to say that, you know, or maybe not struggled, but they That&#x27;s not a reason not to get married.</span> <span class="tl-s" data-s="643.35" data-e="643.73">Correct.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="643.82" data-e="644.05">Yeah.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="644.87" data-e="652.70">So, I think that the honeymoon was disappointing to him because of his expectations of just marriage.</span> <span class="tl-s" data-s="652.70" data-e="659.28">And he thought, I believe, that it was going to solve all his problems as well.</span> <span class="tl-s" data-s="659.30" data-e="662.23">He thought that was going to solve his problems.</span> <span class="tl-s" data-s="662.69" data-e="673.94">So, but You know, we go on with life, get back, and just weird things started happening.</span> <span class="tl-s" data-s="675.12" data-e="677.75">Like he, he was not—he wasn&#x27;t connected to me very well.</span> <span class="tl-s" data-s="677.77" data-e="684.76">Like he would go to change clothes in the other room, which was really odd.</span> <span class="tl-s" data-s="684.76" data-e="688.47">Just some odd things like that.</span> <span class="tl-s" data-s="688.47" data-e="694.05">And so we did. at that point, um, have some marriage counseling with the person that had done pre-marriage counseling.</span> <span class="tl-s" data-s="694.05" data-e="697.29">And, you know, I say, uh, this is weird, why are you doing this?</span> <span class="tl-s" data-s="697.76" data-e="703.68">Or, or he wouldn&#x27;t let me vacuum when he was home, like starting some controlling things.</span></p>
+        <p><span class="tl-s" data-s="703.69" data-e="709.23">So I did bring it up with, um, our marriage counselor, and the guy basically said, you need to stop that.</span> <span class="tl-s" data-s="709.29" data-e="712.44">Like, you&#x27;re one now, that&#x27;s weird, and don&#x27;t do that.</span> <span class="tl-s" data-s="712.50" data-e="712.60">Mm-hmm.</span> <span class="tl-s" data-s="712.60" data-e="716.94">And Wendy, when did you vacuum before you got married?</span> <span class="tl-s" data-s="716.94" data-e="718.06">She can vacuum At different times.</span> <span class="tl-s" data-s="718.24" data-e="721.19">So, um, just little things like that.</span> <span class="tl-s" data-s="722.21" data-e="726.79">But those are little, but strange.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="728.27" data-e="728.46">Right.</span> <span class="tl-s" data-s="729.40" data-e="729.66">Just odd.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="729.66" data-e="730.50">Yeah, odd.</span> <span class="tl-s" data-s="730.63" data-e="738.89">Um, but his anger started getting— um, well, it just— I was not around an angry father.</span> <span class="tl-s" data-s="738.89" data-e="748.32">So, um, I was definitely taken aback by him getting— he could get angry at just Little things.</span> <span class="tl-s" data-s="748.88" data-e="753.32">And so, for instance, near the beginning of our marriage, he was very into sports.</span> <span class="tl-s" data-s="753.32" data-e="757.34">I hadn&#x27;t grown up with that either.</span> <span class="tl-s" data-s="757.34" data-e="759.27">So that was an adjustment as it was.</span> <span class="tl-s" data-s="759.37" data-e="761.99">And there was a Saturday he wanted to watch sports all day.</span> <span class="tl-s" data-s="762.11" data-e="767.37">He didn&#x27;t want to do anything but watch sports all day.</span> <span class="tl-s" data-s="767.51" data-e="773.75">And as a reasonable, hopefully, wife, but also Like a new wife that&#x27;s saying, hey, can we please not do this?</span> <span class="tl-s" data-s="773.76" data-e="776.86">Like, could you choose one of the games?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="776.95" data-e="777.06">Sure.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="777.67" data-e="782.42">You know, let&#x27;s— I thought there&#x27;s compromise in such things.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="782.72" data-e="783.14">Sure.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="783.44" data-e="786.07">Um, but there was no compromise.</span> <span class="tl-s" data-s="786.10" data-e="787.67">Um, he got so angry.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="787.77" data-e="788.54">Just at the suggestion?</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="788.60" data-e="790.83">That— well, I would— I probably was more than a suggestion.</span> <span class="tl-s" data-s="790.83" data-e="796.96">I&#x27;m sure I was upset at that point because you&#x27;re just trying to deal with A new marriage.</span> <span class="tl-s" data-s="797.38" data-e="798.45">I&#x27;m like, what?</span> <span class="tl-s" data-s="798.48" data-e="803.48">I&#x27;m asking you not to watch all day?</span> <span class="tl-s" data-s="803.59" data-e="805.57">Seemed really reasonable to me.</span> <span class="tl-s" data-s="805.66" data-e="814.00">Um, and he got so angry that like veins were popping out of his head and spit was coming out of his mouth.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="814.10" data-e="814.16">Yelling.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="814.21" data-e="820.33">Yeah, and told me to get out of his life, but more colorfully.</span> <span class="tl-s" data-s="820.56" data-e="823.70">And, um— [Speaker B] Like foul language?</span> <span class="tl-s" data-s="823.70" data-e="823.98">Yes.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="824.04" data-e="824.69">Directed at you?</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="825.15" data-e="825.41">Yeah.</span> <span class="tl-s" data-s="826.61" data-e="827.56">So I left that.</span></p>
+        <p><span class="tl-s" data-s="828.90" data-e="833.36">I left and drove off weeping, you know.</span> <span class="tl-s" data-s="833.41" data-e="840.23">And I ended up at a friend&#x27;s house and, you know, sharing that.</span> <span class="tl-s" data-s="840.35" data-e="842.09">And, well, a relative&#x27;s house of his, actually.</span> <span class="tl-s" data-s="842.20" data-e="848.50">And, you know, they&#x27;re saying, you know, sorry that this is happening.</span> <span class="tl-s" data-s="848.50" data-e="849.83">And they call him.</span> <span class="tl-s" data-s="849.91" data-e="852.68">He comes over and, you know, apologizes.</span> <span class="tl-s" data-s="852.68" data-e="857.42">But it&#x27;s just the start of that&#x27;s how my life is going to become.</span> <span class="tl-s" data-s="857.46" data-e="862.90">So, [Speaker B] but you didn&#x27;t know that then.</span> <span class="tl-s" data-s="862.90" data-e="863.55">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="864.89" data-e="873.32">Now, the, the pattern of anger— as we&#x27;ve talked, um, I think the pornography, the anger, it— those are the 2 things, right?</span> <span class="tl-s" data-s="873.48" data-e="880.22">The anger is like a huge— becomes a huge issue in the marriage, correct?</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="880.33" data-e="880.57">Yes.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="880.57" data-e="886.73">Can you count how many times he screamed at you, like getting that kind of angry?</span> <span class="tl-s" data-s="887.11" data-e="892.11">Or was it just so often that it is impossible to count?</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="892.11" data-e="898.82">Yeah, he became an angry person, or he was, but it became more and more through the years, I would say.</span> <span class="tl-s" data-s="899.01" data-e="906.30">So there is an element of being a frog in boiling water where it is not as bad at the beginning and it gets worse.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="906.30" data-e="911.06">But it was a regular occurrence for him to yell at you?</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="911.43" data-e="911.66">Yes.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="912.31" data-e="913.82">Use foul language at you?</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="915.04" data-e="915.06">Yes.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="915.30" data-e="917.47">And be just screaming at you?</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="917.47" data-e="918.16">Yes, yes.</span> <span class="tl-s" data-s="918.17" data-e="929.91">And I remember somebody, oh, I&#x27;m newly married, and in the church parking lot, and people say this to newlyweds all the time, um, so how&#x27;s, how&#x27;s, um, married life?</span> <span class="tl-s" data-s="929.99" data-e="934.90">And like, I don&#x27;t even know how to respond to that.</span> <span class="tl-s" data-s="934.90" data-e="937.16">Like, &#x27;cause I&#x27;m already— married life is horrific.</span> <span class="tl-s" data-s="937.16" data-e="937.32">Right.</span> <span class="tl-s" data-s="937.32" data-e="939.43">But I&#x27;m also not gonna gossip about my husband.</span> <span class="tl-s" data-s="939.43" data-e="939.66">Right.</span> <span class="tl-s" data-s="939.66" data-e="942.28">And I&#x27;m not gonna say that to them.</span> <span class="tl-s" data-s="942.40" data-e="945.57">So, but I&#x27;m also not a liar.</span> <span class="tl-s" data-s="945.61" data-e="948.69">So, I like stood there not knowing what to say.</span></p>
+        <p><span class="tl-s" data-s="948.69" data-e="957.09">A friend was with me who didn&#x27;t know about the abuse, but just saw the uncomfortable situation and said, oh, married life after a while is just life, you know?</span> <span class="tl-s" data-s="957.12" data-e="961.66">And, but she didn&#x27;t follow up later like, well, why did you freeze like that?</span></p>
+        <p><span class="tl-s" data-s="965.17" data-e="967.21">You know, like, There wasn&#x27;t that.</span> <span class="tl-s" data-s="967.26" data-e="971.48">You just go on with life.</span> <span class="tl-s" data-s="971.52" data-e="984.67">So, yeah, so not only yelling at you, but he would hit the walls, and there was many doors that were replaced because he punched through them.</span> <span class="tl-s" data-s="984.67" data-e="986.35">Because he punched through them.</span> <span class="tl-s" data-s="986.51" data-e="989.00">This is all before kids.</span> <span class="tl-s" data-s="989.10" data-e="999.01">So early on in our marriage, he took a gallon water bottle and threw it through the wall.</span> <span class="tl-s" data-s="999.49" data-e="1007.11">Um, and so just, he would just have, um, outrages, um, which were not only frightening but embarrassing.</span> <span class="tl-s" data-s="1007.21" data-e="1011.12">Like, [Speaker B] sure, [Speaker D] it&#x27;s just embarrassing to have someone treat you like that.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1011.87" data-e="1017.41">Yeah, because it, it makes— it could make you believe the lie that&#x27;s what you deserve.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="1017.41" data-e="1018.57">Yeah, [Speaker B] right.</span> <span class="tl-s" data-s="1018.60" data-e="1018.68">Yeah.</span> <span class="tl-s" data-s="1018.68" data-e="1021.02">And on [Speaker B] top of that, you&#x27;ve done something, [Speaker C] right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1021.02" data-e="1021.27">Yeah, yeah.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1021.34" data-e="1024.94">Like, did you play— like, in your mind, were you thinking you played a part?</span> <span class="tl-s" data-s="1024.94" data-e="1029.25">Like, oh, if I was just a better wife, maybe he wouldn&#x27;t get so angry.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="1029.25" data-e="1040.26">Yeah, I mean, I don&#x27;t know if I thought it through exactly like that, but I think internally— [Speaker C] I&#x27;m not saying that&#x27;s true.</span> <span class="tl-s" data-s="1040.26" data-e="1041.37">Yeah, certainly not.</span> <span class="tl-s" data-s="1041.43" data-e="1042.46">Yeah, yeah, it&#x27;s not true.</span> <span class="tl-s" data-s="1042.55" data-e="1044.65">I think it got into my psyche.</span> <span class="tl-s" data-s="1044.65" data-e="1049.04">Um, he definitely— he, at the time we were married, I know that he believed I was overweight.</span> <span class="tl-s" data-s="1049.06" data-e="1052.44">I look back at those And so I believed I was overweight.</span> <span class="tl-s" data-s="1052.44" data-e="1058.33">When I look back at those pictures now, I realize— [Speaker B] He said that to you?</span> <span class="tl-s" data-s="1058.33" data-e="1058.70">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1059.03" data-e="1059.64">Oh gosh.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="1059.76" data-e="1063.74">So when I look back at those pictures, I was not overweight at all.</span> <span class="tl-s" data-s="1063.85" data-e="1067.12">And so to— so it does get into your psyche.</span> <span class="tl-s" data-s="1067.16" data-e="1068.43">You believe what you&#x27;re being told.</span> <span class="tl-s" data-s="1068.51" data-e="1071.77">And I wasn&#x27;t adequate in his eyes because I was overweight.</span> <span class="tl-s" data-s="1071.79" data-e="1076.48">So, but I wasn&#x27;t, I really wasn&#x27;t.</span> <span class="tl-s" data-s="1077.49" data-e="1082.47">Like when I look back, I&#x27;m like, oh my word, like I wasn&#x27;t.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1082.47" data-e="1082.72">Yeah.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="1083.05" data-e="1085.17">Um, but it gets into your mind.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1085.69" data-e="1085.81">Yeah.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="1085.84" data-e="1085.94">Yeah.</span> <span class="tl-s" data-s="1086.00" data-e="1097.48">So, um, but I would say that I didn&#x27;t recognize a lot of that abuse, even though that&#x27;s— I feel stupid even saying that, but you&#x27;re just trying to live day to day and get through a hard marriage.</span></p>
+        <p><span class="tl-s" data-s="1098.68" data-e="1102.89">I just thought of it as a hard marriage, not as abuse.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1103.02" data-e="1107.13">How long into the marriage did you think, this is gonna be hard?</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="1107.13" data-e="1108.41">Um, I don&#x27;t— I&#x27;m not sure.</span> <span class="tl-s" data-s="1108.41" data-e="1116.68">I remember some time, but there was also an inner part of me that did recognize the abuse, but I would have never worded it that way.</span> <span class="tl-s" data-s="1116.68" data-e="1129.88">But I remember a TV show coming on, and it was about a woman being abused, and I was so fascinated by it because I think I related to it.</span> <span class="tl-s" data-s="1129.90" data-e="1130.06">Mm-hmm.</span> <span class="tl-s" data-s="1130.06" data-e="1138.31">So, but my ex-spouse wouldn&#x27;t let me watch it because I think he also recognized it.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1139.63" data-e="1139.69">Okay.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="1139.77" data-e="1141.77">And that made him uncomfortable.</span> <span class="tl-s" data-s="1141.94" data-e="1144.10">So he didn&#x27;t want me watching that.</span> <span class="tl-s" data-s="1144.20" data-e="1145.83">So those types of controls started coming up.</span> <span class="tl-s" data-s="1145.83" data-e="1157.38">But I would say, then we had some— we had kids, and there was a season that when we first had kids that things got a little better.</span> <span class="tl-s" data-s="1157.46" data-e="1164.51">I think, at least, I felt better.</span> <span class="tl-s" data-s="1164.58" data-e="1166.50">Maybe I had something different to focus on.</span> <span class="tl-s" data-s="1166.60" data-e="1167.27">Yeah.</span> <span class="tl-s" data-s="1167.40" data-e="1175.47">But the focus was more on the kids instead of trying to deal with the marriage relationship.</span> <span class="tl-s" data-s="1175.47" data-e="1179.18">And so, I mean, it wasn&#x27;t better in hindsight.</span> <span class="tl-s" data-s="1179.18" data-e="1181.86">Like, I thought, okay, we have a new baby.</span></p>
+        <p><span class="tl-s" data-s="1181.86" data-e="1183.43">My husband will help get up during the night.</span> <span class="tl-s" data-s="1183.43" data-e="1189.93">After the first night asking him to get up with the baby, I quickly decided I would never do that again.</span> <span class="tl-s" data-s="1189.93" data-e="1194.56">I was going to get up with the baby because it wasn&#x27;t worth the energy.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1194.56" data-e="1195.33">He would get mad?</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="1195.46" data-e="1198.95">It only happened once, but he— it just wasn&#x27;t worth the energy.</span> <span class="tl-s" data-s="1198.97" data-e="1209.22">He was so irritated about being up and made it such a big deal that I get better sleep if I just got up myself.</span> <span class="tl-s" data-s="1209.38" data-e="1215.87">So, I think he quickly was able to mold how I acted by getting angry at things.</span> <span class="tl-s" data-s="1215.88" data-e="1219.04">So— [Speaker B] So, like, tease that out a little bit.</span> <span class="tl-s" data-s="1219.04" data-e="1219.54">Mold how you acted.</span> <span class="tl-s" data-s="1219.54" data-e="1220.31">What do you mean?</span> <span class="tl-s" data-s="1220.31" data-e="1227.62">So, well, just like with that, like, if— I mean, I don&#x27;t know that he was intentionally thinking this.</span> <span class="tl-s" data-s="1227.62" data-e="1231.45">I don&#x27;t think he was smart enough to be intentionally thinking that.</span> <span class="tl-s" data-s="1231.50" data-e="1244.88">But, like, if I know that if I say this, he&#x27;s gonna get angry, I&#x27;m gonna pretty soon stop saying that because it&#x27;s not worth the anger.</span> <span class="tl-s" data-s="1244.88" data-e="1245.00">Anger.</span></p>
+        <p><span class="tl-s" data-s="1245.11" data-e="1250.09">So I started definitely becoming a different person.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1250.09" data-e="1250.17">Okay.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="1250.17" data-e="1266.84">My goal in life— I wouldn&#x27;t have said this, but my goal in life came to help him not get angry, which is impossible, but you try to do it anyway.</span> <span class="tl-s" data-s="1266.94" data-e="1272.49">And so I tried to tiptoe around his Triggers of getting angry.</span> <span class="tl-s" data-s="1272.61" data-e="1280.03">And, but I also, I mean, I think, Rich, you know me, like, I&#x27;m— I also do push back too.</span> <span class="tl-s" data-s="1280.03" data-e="1286.41">So like, there was that aspect of trying not to, but also pushing back, like, this isn&#x27;t the right thing.</span> <span class="tl-s" data-s="1286.43" data-e="1290.65">This isn&#x27;t marriage, you know, this isn&#x27;t a Christian marriage.</span> <span class="tl-s" data-s="1290.75" data-e="1295.56">And especially the Christian part, like— you shouldn&#x27;t be acting like this.</span> <span class="tl-s" data-s="1295.56" data-e="1310.06">Like, so trying to go back to the Word or encourage him with the Word that, like, let&#x27;s not do this, you know, this isn&#x27;t okay.</span> <span class="tl-s" data-s="1310.80" data-e="1321.32">So, kind of struggling with myself that way, where trying to fight for him to be a— to live up to his Christianity.</span></p>
+        <p><span class="tl-s" data-s="1321.32" data-e="1325.22">But also trying to avoid, um, anger.</span> <span class="tl-s" data-s="1325.25" data-e="1325.62">So, yeah.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1325.96" data-e="1331.09">Yeah, just, just kind of teasing out the patterns of anger that you expressed for your ex-spouse.</span> <span class="tl-s" data-s="1331.09" data-e="1338.31">Um, would you say his heart after those scenarios, was it repentant and apologetic, or was it just kind of pushed down under the rug, let&#x27;s just carry on?</span> <span class="tl-s" data-s="1338.31" data-e="1341.31">Or was it like a— or maybe it could have even been a fake repentance.</span> <span class="tl-s" data-s="1341.31" data-e="1343.07">Did he— was there an effort?</span> <span class="tl-s" data-s="1343.13" data-e="1354.82">Of like, did he acknowledge that he was doing something wrong or that he maybe had a problem with this, or was it just like the norm?</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="1354.82" data-e="1356.36">There was some anger before marriage.</span> <span class="tl-s" data-s="1356.36" data-e="1359.01">He definitely showed a lot of repentance, um, before marriage for sure.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1359.01" data-e="1359.45">Um, before?</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="1359.65" data-e="1360.91">Yeah, before marriage.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1360.91" data-e="1364.30">So you saw the anger before?</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="1364.32" data-e="1374.38">I did see the anger before, which I&#x27;m also embarrassed about because like I feel like I should have seen the red flags, but I was 20.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1374.47" data-e="1375.83">Yeah, right.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="1376.83" data-e="1377.78">What can you say?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1377.79" data-e="1378.00">Right.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="1378.03" data-e="1388.35">And, um, and I was forgiving, which is great because forgiveness is amazing, but I didn&#x27;t see the difference between being forgiving and realizing these might be red flags that you might not want.</span> <span class="tl-s" data-s="1388.40" data-e="1392.47">You might want to forgive this guy but not marry him.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1392.47" data-e="1393.44">Yeah, right.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="1394.50" data-e="1397.15">Which is a great category to know about.</span> <span class="tl-s" data-s="1397.15" data-e="1399.04">You can forgive and not marry.</span> <span class="tl-s" data-s="1399.59" data-e="1413.93">I think to answer your question, like, there were times that he was repentant, but not as— not to the extent that he was before we got married.</span> <span class="tl-s" data-s="1413.93" data-e="1414.13">Yeah.</span> <span class="tl-s" data-s="1414.13" data-e="1416.37">And it really was more of a show.</span> <span class="tl-s" data-s="1416.41" data-e="1422.12">In the later years, when our kids were older, it was definitely a show.</span> <span class="tl-s" data-s="1422.12" data-e="1433.86">It would always be in front of them. that he would apologize, or almost always, um, it was to be a show for them, um, or in front of others.</span> <span class="tl-s" data-s="1433.89" data-e="1439.08">Um, yeah, when we get to another part of the story, I can— [Speaker C] Sure.</span> <span class="tl-s" data-s="1439.08" data-e="1439.16">Yeah.</span> <span class="tl-s" data-s="1439.16" data-e="1440.09">Say something about that.</span></p>
+        <p><span class="tl-s" data-s="1440.12" data-e="1442.96">But like, so there never seemed to be really heartfelt repentance for the most part.</span> <span class="tl-s" data-s="1442.96" data-e="1446.98">It depended on the individual case, whether it looked that way or not.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1446.98" data-e="1452.36">Yeah, I was just wondering if it was all one or all the other.</span> <span class="tl-s" data-s="1452.37" data-e="1452.97">Yeah.</span> <span class="tl-s" data-s="1452.97" data-e="1454.46">So it sounds like a mix.</span> <span class="tl-s" data-s="1454.88" data-e="1454.99">Yeah.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="1455.04" data-e="1455.95">Lasts over time.</span> <span class="tl-s" data-s="1455.95" data-e="1459.52">A mix and changed over time, for sure.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1459.52" data-e="1474.40">Now, the— so one of the things that&#x27;s hard to describe in these kind of situations, in your life situation you lived versus normal marriages, like there are normal marriages where, where one of the two spouses struggle with anger.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="1474.40" data-e="1474.72">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1474.72" data-e="1476.07">Get angry.</span> <span class="tl-s" data-s="1477.14" data-e="1479.47">But then there&#x27;s a situation you lived through.</span> <span class="tl-s" data-s="1479.47" data-e="1484.34">What, what&#x27;s the difference between normal And what you lived through?</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="1484.45" data-e="1491.50">And I think this is such a key question, um, because it&#x27;s really complicated to answer that.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1491.58" data-e="1492.29">It is.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="1492.40" data-e="1509.93">Um, and that&#x27;s where it causes so much confusion, and that&#x27;s where it also makes it difficult to get help, because you tell one story, and almost any one of these stories can just be a normal thing that happened a time in a marriage.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1510.94" data-e="1511.28">Right.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="1511.51" data-e="1517.67">And so, you tell one story, and the feedback you get is, oh, yeah, I&#x27;m so sorry that happened.</span> <span class="tl-s" data-s="1517.67" data-e="1520.58">That happened to me, too.</span> <span class="tl-s" data-s="1520.58" data-e="1523.10">Or, yeah, let&#x27;s forgive.</span> <span class="tl-s" data-s="1523.13" data-e="1532.95">And nobody is, at that point, thinking you&#x27;re in an abusive marriage and that they need to ask more questions.</span> <span class="tl-s" data-s="1533.19" data-e="1545.94">And so, it starts on your— on Psychologically to affect you that, okay, all these things are normal because you&#x27;re not sharing how often they&#x27;re happening.</span> <span class="tl-s" data-s="1546.01" data-e="1556.04">And so a friend of mine said, that&#x27;s also an abusive marriage, she said to explain it, like, because if you tell that one incident, people say, oh yeah, you can get through that.</span> <span class="tl-s" data-s="1556.05" data-e="1558.57">Like, that&#x27;s not a big deal. big deal in a way, you know.</span> <span class="tl-s" data-s="1558.57" data-e="1564.11">But it&#x27;s like holding a glass of water, you know.</span> <span class="tl-s" data-s="1564.58" data-e="1569.53">You— that&#x27;s not hard to do, to hold a glass of water.</span> <span class="tl-s" data-s="1570.58" data-e="1582.95">But when you&#x27;re holding a glass of water for hours or years or months, you know, days and years, 24 years, this is exhausting.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1583.07" data-e="1583.51">Yeah.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="1583.95" data-e="1590.34">And so, like, I think that&#x27;s the difficulty of getting help is the individual stories.</span> <span class="tl-s" data-s="1590.45" data-e="1591.00">Aren&#x27;t necessarily dramatic.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1591.00" data-e="1595.90">Yeah, because the individual stories sound like normal marriage challenges.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="1596.22" data-e="1596.48">Yeah.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1596.56" data-e="1597.46">Normal anger, normal repentance.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1597.52" data-e="1607.59">But would you say that one of the primary differences, if not the primary difference, is how often it happens?</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="1607.70" data-e="1614.53">Yeah, it— yeah, I think that would be one of the primary things is just how often it happens.</span> <span class="tl-s" data-s="1614.53" data-e="1617.56">And that it changes because it&#x27;s happening all the time.</span> <span class="tl-s" data-s="1617.74" data-e="1619.50">It changes who you are even.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1619.91" data-e="1629.40">Um, because you&#x27;re, you&#x27;re trying to do whatever you can for him not to get angry.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="1629.40" data-e="1629.48">Exactly.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1629.48" data-e="1631.66">And so you&#x27;re not free just to be Adela.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="1631.68" data-e="1631.85">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1631.95" data-e="1632.93">You&#x27;re Adela who&#x27;s trying to assuage so-and-so.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="1633.16" data-e="1633.41">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1633.41" data-e="1633.62">Correct?</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="1633.72" data-e="1633.83">Right.</span> <span class="tl-s" data-s="1633.88" data-e="1645.41">And so like even the Even the story where his veins are popping out and he&#x27;s swearing at me, that can happen in a normal marriage.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1645.45" data-e="1646.60">Yeah, sure, absolutely.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="1646.89" data-e="1648.55">But— [Speaker B] It shouldn&#x27;t.</span> <span class="tl-s" data-s="1648.60" data-e="1650.70">We&#x27;re not condoning it.</span> <span class="tl-s" data-s="1651.18" data-e="1652.47">Yeah, but it can.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1652.52" data-e="1656.61">And that experience, by definition, is not abuse.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="1657.35" data-e="1658.11">Right, right.</span> <span class="tl-s" data-s="1658.58" data-e="1662.74">I mean, it&#x27;s abusive, but it&#x27;s not— you&#x27;re not in an abusive marriage.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1663.60" data-e="1663.89">Not necessarily.</span> <span class="tl-s" data-s="1663.89" data-e="1665.58">It&#x27;s not the litmus test.</span> <span class="tl-s" data-s="1665.61" data-e="1669.27">But if that happens, Thousands of times?</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="1669.38" data-e="1669.44">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1669.54" data-e="1673.10">Like hundreds of times with you?</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="1673.16" data-e="1673.31">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1673.31" data-e="1674.58">Then, then that&#x27;s different, isn&#x27;t it?</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="1674.64" data-e="1674.77">Yeah.</span> <span class="tl-s" data-s="1674.79" data-e="1685.96">And then the— there&#x27;s just so many different aspects to what was going on is like I wasn&#x27;t allowed— I mean, even that phrase, I wasn&#x27;t allowed to do a lot of things.</span> <span class="tl-s" data-s="1685.96" data-e="1699.39">So, um, I wasn&#x27;t eventually like There was a time I wanted to go to small group, but we had just had a fight, and he&#x27;s like, okay, we&#x27;ll go to small group, but if you cry, I cannot handle it.</span> <span class="tl-s" data-s="1699.41" data-e="1703.41">So, we&#x27;re not gonna go if you&#x27;re gonna cry.</span> <span class="tl-s" data-s="1703.48" data-e="1708.08">So, like, you&#x27;re not allowed to cry because that&#x27;s gonna come out bad on him.</span> <span class="tl-s" data-s="1708.08" data-e="1719.30">So, like, it gets into this weird, horrible dance where you&#x27;re told what to do and, you know— [Speaker B] What you can and can&#x27;t do.</span> <span class="tl-s" data-s="1719.32" data-e="1721.50">What you can and can&#x27;t do.</span> <span class="tl-s" data-s="1721.50" data-e="1721.74">Yeah.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1721.74" data-e="1723.76">So it&#x27;s like an element of control.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="1723.76" data-e="1723.92">Oh, absolutely.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1723.94" data-e="1734.54">Would you say that element of control was just to hide the anger that was happening behind closed doors, or at least wasn&#x27;t being told to the people around you?</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="1734.66" data-e="1739.29">Well, that was part of it for sure.</span> <span class="tl-s" data-s="1739.29" data-e="1745.77">Um, there was also elements of control in all sorts of different things, like, because, like, um, he would stay up late at night playing video games.</span> <span class="tl-s" data-s="1745.80" data-e="1752.26">And I wasn&#x27;t supposed to get upset that he would never come to bed with me, you know?</span> <span class="tl-s" data-s="1752.36" data-e="1757.84">Like, so there was just control of our whole life that it was just centering around him.</span> <span class="tl-s" data-s="1757.84" data-e="1759.92">He wanted life to center around him.</span></p>
+        <p><span class="tl-s" data-s="1761.51" data-e="1768.77">But I say there was a turning point that happened, and you&#x27;re not going to understand this because you&#x27;re too young, okay?</span> <span class="tl-s" data-s="1769.29" data-e="1775.01">But there was a turning point that happened where we hadn&#x27;t had the internet and he didn&#x27;t have internet access at work.</span> <span class="tl-s" data-s="1775.05" data-e="1777.12">That really was a thing, you know?</span> <span class="tl-s" data-s="1777.24" data-e="1777.38">Right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1777.38" data-e="1777.64">Exactly.</span> <span class="tl-s" data-s="1777.64" data-e="1778.04">We remember that.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1778.12" data-e="1779.29">I do.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1779.33" data-e="1780.60">I thought you were talking to me.</span> <span class="tl-s" data-s="1780.60" data-e="1787.42">For those of you listening on, you know, and not watching, when she said you&#x27;re too young, she wasn&#x27;t talking to me.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1787.66" data-e="1788.42">She&#x27;s talking to Mark.</span> <span class="tl-s" data-s="1788.42" data-e="1791.57">I thought you were just absorbing the compliment.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1791.92" data-e="1796.81">I was just like, okay.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1797.16" data-e="1803.90">I&#x27;m at the age where half my life was internet, half no internet.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="1804.21" data-e="1804.91">Okay.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1805.09" data-e="1805.33">Yeah, anyways.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="1805.33" data-e="1808.28">Well, you seem younger than that.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1808.32" data-e="1809.10">I&#x27;m 33.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="1809.18" data-e="1809.26">Okay.</span> <span class="tl-s" data-s="1809.28" data-e="1814.29">Well, um, around 1999, he got— instead of just intranet, he got internet at work.</span> <span class="tl-s" data-s="1814.42" data-e="1816.97">And that took the pornography to a different level.</span> <span class="tl-s" data-s="1816.97" data-e="1823.73">Before that, I only knew about him getting into pornography a few times, and it was devastating, but we made it through.</span> <span class="tl-s" data-s="1823.73" data-e="1838.35">But then around that time, and I&#x27;m not sure exactly when because he lied a lot, so I don&#x27;t know when he finally broke down and told me that he was struggling with— Pornography. looking at pornography at work.</span> <span class="tl-s" data-s="1838.35" data-e="1839.58">Well, that was so devastating to me.</span> <span class="tl-s" data-s="1840.71" data-e="1849.32">And he was laying on the ground, and he did seem repentant for— in this instance, you know.</span> <span class="tl-s" data-s="1849.35" data-e="1853.13">He was laying on the ground saying, I don&#x27;t think I can stop.</span> <span class="tl-s" data-s="1853.19" data-e="1854.91">And I&#x27;m a young wife.</span> <span class="tl-s" data-s="1854.91" data-e="1857.69">I have 2 kids at this point.</span></p>
+        <p><span class="tl-s" data-s="1857.69" data-e="1860.98">And I&#x27;m like, well, you have to.</span> <span class="tl-s" data-s="1861.30" data-e="1863.36">What do you mean you&#x27;re not?</span> <span class="tl-s" data-s="1863.45" data-e="1864.32">You can&#x27;t stop.</span> <span class="tl-s" data-s="1864.34" data-e="1866.36">You&#x27;ve got to.</span></p>
+        <p><span class="tl-s" data-s="1867.63" data-e="1870.74">Like, it was so devastating to me.</span> <span class="tl-s" data-s="1870.76" data-e="1875.24">And he agreed to go get help.</span> <span class="tl-s" data-s="1876.01" data-e="1877.76">And so we started some marriage counseling.</span> <span class="tl-s" data-s="1877.76" data-e="1890.15">But I&#x27;m sit— it&#x27;s just a big shift because then, because the pornography was so painful to me and so centered even on his His— I&#x27;m pretty sure a lot of his anger came from that.</span> <span class="tl-s" data-s="1890.26" data-e="1897.74">Um, I mean, he had an anger issue anyway, but like, he felt bad about himself, so it just— and lies came from that.</span> <span class="tl-s" data-s="1897.74" data-e="1905.54">It was so tied up with that that I thought our main marriage problem was a pornography problem.</span> <span class="tl-s" data-s="1905.60" data-e="1906.08">Yeah.</span> <span class="tl-s" data-s="1906.38" data-e="1913.50">And I didn&#x27;t even realize, like, you&#x27;ve got way more of a problem than a pornography problem, though his was extreme.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1913.60" data-e="1914.70">Yeah, so that&#x27;s right.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="1915.12" data-e="1915.22">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1915.22" data-e="1915.89">And that was a shift.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="1915.94" data-e="1917.20">That was a shift.</span> <span class="tl-s" data-s="1917.20" data-e="1917.38">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1918.01" data-e="1919.91">And so things that were bad before got worse.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="1920.17" data-e="1926.32">Got worse, but I saw them as a pornography problem because [Speaker B] that was the lens you saw everything.</span> <span class="tl-s" data-s="1926.36" data-e="1926.85">Yeah, right.</span> <span class="tl-s" data-s="1926.85" data-e="1930.83">And so I was trying to keep him from getting angry.</span> <span class="tl-s" data-s="1931.64" data-e="1938.26">I was trying to keep him from getting into pornography.</span> <span class="tl-s" data-s="1939.20" data-e="1946.44">As you can see, this is all me, and you can&#x27;t change other people.</span> <span class="tl-s" data-s="1946.49" data-e="1952.44">So like, it was not It was futile, but that became my life.</span> <span class="tl-s" data-s="1952.44" data-e="1963.40">And then trying to— he wasn&#x27;t— I was a stay-at-home mom, so there was that aspect of it too, in that I had no income of my own.</span> <span class="tl-s" data-s="1963.40" data-e="1967.76">So like, there&#x27;s an aspect where it&#x27;s hard to even get help.</span> <span class="tl-s" data-s="1967.81" data-e="1972.61">But But also, he wasn&#x27;t helping out at home in a regular way.</span> <span class="tl-s" data-s="1972.65" data-e="1975.12">So like, I was trying to raise my kids.</span></p>
+        <p><span class="tl-s" data-s="1975.17" data-e="1981.59">I&#x27;m trying to keep the house going and just the mental load going.</span> <span class="tl-s" data-s="1981.59" data-e="1991.08">Like, I had to keep track of everything that needed to get done, you know, kids&#x27; doctor&#x27;s appointments and stuff.</span> <span class="tl-s" data-s="1991.08" data-e="1995.22">There was no sharing of the mental load.</span> <span class="tl-s" data-s="1995.26" data-e="2007.46">And I also, like, if something came up, He didn&#x27;t give me the allowance to talk about, like, if I would— he couldn&#x27;t handle any criticism against him.</span> <span class="tl-s" data-s="2007.46" data-e="2014.11">And so almost all times when I would bring up something, it would end with him being angry.</span> <span class="tl-s" data-s="2015.11" data-e="2024.43">So I still, through the 24 years, brought things up, but I almost always regretted it. and look down on myself like, why are you so stupid that you tried again?</span> <span class="tl-s" data-s="2024.43" data-e="2031.64">Because now you are weeping and your husband has left during the middle of the night.</span> <span class="tl-s" data-s="2031.64" data-e="2041.45">He would just leave during the middle of the night when he would get angry, and here you are, and you basically, you are kind of stupid for bringing it up.</span></p>
+        <p><span class="tl-s" data-s="2041.49" data-e="2041.84">So...</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2042.19" data-e="2045.37">But you were trying to Act like a Christian acts.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="2045.48" data-e="2045.65">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2045.65" data-e="2045.97">Right?</span> <span class="tl-s" data-s="2045.97" data-e="2054.71">And just like, if you have something against your brother or sister, you go to them.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="2054.71" data-e="2055.19">Right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2055.19" data-e="2057.84">And so each time it doesn&#x27;t work, right?</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="2057.84" data-e="2058.14">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2058.14" data-e="2062.01">Do you remember, was there any time it worked?</span> <span class="tl-s" data-s="2062.01" data-e="2063.42">Like, with lasting fruit?</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="2064.01" data-e="2067.70">Um, not with lasting fruit, for sure.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2067.77" data-e="2070.96">So that&#x27;s a difference too, right?</span> <span class="tl-s" data-s="2071.38" data-e="2071.43">Yeah.</span> <span class="tl-s" data-s="2071.63" data-e="2081.23">So that&#x27;s one of the things that&#x27;s important here is To realize that when we talk about these sins, we&#x27;re talking about life-dominating sins.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="2082.08" data-e="2082.22">Yes.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2082.22" data-e="2092.22">Your ex-husband had a life-dominating sin of, of being addicted to pornography, of being an angry person, of being a controlling person, right?</span> <span class="tl-s" data-s="2092.40" data-e="2095.45">So it&#x27;s one thing to fight against those things.</span> <span class="tl-s" data-s="2095.45" data-e="2100.41">It&#x27;s another thing to be given over to those things completely and Over time, that&#x27;s what you saw, right?</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="2100.68" data-e="2100.94">Yeah, absolutely.</span> <span class="tl-s" data-s="2100.94" data-e="2104.68">But he also—one of things he loved was maintaining an appearance of righteousness.</span> <span class="tl-s" data-s="2104.76" data-e="2105.66">So other people weren&#x27;t.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2105.66" data-e="2106.03">Hold on.</span> <span class="tl-s" data-s="2106.29" data-e="2107.52">I want to hold on to that.</span> <span class="tl-s" data-s="2107.52" data-e="2117.84">I want to hold on to the next part for church because now, so the next part of the interview, which maybe we&#x27;ll go ahead and we&#x27;ll take a break here in just a second.</span> <span class="tl-s" data-s="2117.84" data-e="2134.43">I want to talk about what it was like at church. what he projected, what people thought, and then begin to unpack some of the help that— some of the things that happened that were— that unmasked everything, and then, you know, how you got help.</span> <span class="tl-s" data-s="2134.43" data-e="2134.53">Okay?</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="2134.53" data-e="2136.18">All right, sounds good.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2136.43" data-e="2146.51">All right, if you have questions or anything about this or any other episode we have on our podcast, where should they email, Mark? [Speaker C] production@sonnergilbert.com.</span> <span class="tl-s" data-s="2146.96" data-e="2148.67">And yeah, we look forward to your questions.</span> <span class="tl-s" data-s="2149.51" data-e="2151.34">Thank you.</span> <span class="tl-s" data-s="2151.43" data-e="2164.15">Now, and one thing One thing that everybody should know is Adela will, like, if you&#x27;re someone who&#x27;s come out of an abusive marriage or are interested in talking to her, that&#x27;s something Adela has done in the past.</span> <span class="tl-s" data-s="2164.15" data-e="2172.34">And it&#x27;s one of the things that as we&#x27;ve talked over the years that we feel like the Lord has really equipped her to be able to do.</span> <span class="tl-s" data-s="2172.34" data-e="2178.76">So that&#x27;s one thing that I&#x27;d encourage you to continue to listen to this series here and finish hearing these interview segments.</span> <span class="tl-s" data-s="2178.80" data-e="2181.70">But if you&#x27;re interested in reaching out and talking to her and you don&#x27;t maybe know her, you can email us at production@centergilbert.com and we&#x27;ll make sure to get, get her in contact [Speaker C] with you.</span> <span class="tl-s" data-s="2181.70" data-e="2181.70">For sure.</span> <span class="tl-s" data-s="2181.70" data-e="2181.70">All right, thank you, everybody.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Fixed on Jesus episode archive, backed by /api/podcast/search.
+  // Static fallback list above stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function fmtDuration(raw) {
+      if (!raw) return "";
+      var str = String(raw).trim();
+      // Anchor feeds report seconds; render as H:MM:SS or M:SS.
+      if (/^\d+$/.test(str)) {
+        var total = parseInt(str, 10);
+        var h = Math.floor(total / 3600);
+        var m = Math.floor((total % 3600) / 60);
+        var sec = total % 60;
+        var mm = (h > 0 && m < 10 ? "0" + m : "" + m);
+        var ss = (sec < 10 ? "0" + sec : "" + sec);
+        return (h > 0 ? h + ":" + mm : m) + ":" + ss;
+      }
+      // Anchor also reports clock strings like "00:24:02" — drop the
+      // redundant leading hour so it reads "24:02".
+      return str.replace(/^00:/, "");
+    }
+    function row(it) {
+      it = it || {};
+      var title = esc(it.title) || "Untitled episode";
+      var tUrl = it.guid && transcriptMap[it.guid];
+      var heading = tUrl
+        ? '<a href="' + esc(tUrl) + '">' + title + "</a>"
+        : (it.link
+          ? '<a href="' + esc(it.link) + '" target="_blank" rel="noopener">' + title + "</a>"
+          : title);
+      var meta = [fmtDate(it.date), fmtDuration(it.duration)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      return '<div class="sermon"><div><h3>' + heading + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    var PER = 10;
+    var state = { q: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No episodes found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " episode" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " episodes";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/podcast/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () {
+          // Keep the static list, but tell the reader where else to listen —
+          // some privacy blockers stop the archive request itself.
+          var note = document.querySelector("[data-sermons-error]");
+          if (note) note.hidden = false;
+        });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    if (monthSel) {
+      monthSel.addEventListener("change", function () {
+        state.month = monthSel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: 6fe2219f-9727-4591-a970-a007d8405dab -->
+</body>
+</html>
