@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Why Plant Churches? — Podcast Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Fixed on Jesus: conversations beyond Sunday mornings from Center Church in Gilbert, AZ — listen on Spotify, Apple Podcasts, and YouTube." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=18" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a href="/sermons">Sermons</a></li>
+              <li><a class="active" href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/podcast">&larr; All podcast episodes</a>
+          <h1 class="display-lg">Why Plant Churches?</h1>
+          <p class="transcript-meta">2024-03-13 · 23:04</p>
+          <p class="transcript-desc">Welcome to FIXED ON JESUS, a podcast brought to you by Center Church in Gilbert, Arizona. Speaking to you today are Rich Richardson &amp; Mark Johnson Jr. Production by Heather Corbitt **SHOW NOTES** Questions asked in this episode: How many churches have we planted? Where are they located? Have any of </p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/e750e370/podcast/play/83921999/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-2-12%2F082ef339-f243-a311-4397-14dfee288ae2.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="0.13" data-e="4.12">there&#x27;s a faithful community, because a church in any community is like an embassy.</span> <span class="tl-s" data-s="4.20" data-e="7.55">We&#x27;re like the embassy, an embassy to heaven, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="7.79" data-e="8.05">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="8.37" data-e="15.56">And so what the closest thing we have as a people when it comes to experiencing heaven is the local church.</span> <span class="tl-s" data-s="16.46" data-e="18.17">You don&#x27;t get this at the universities.</span> <span class="tl-s" data-s="18.48" data-e="19.62">You don&#x27;t get this in libraries.</span> <span class="tl-s" data-s="19.68" data-e="21.14">You don&#x27;t get this in corporations.</span> <span class="tl-s" data-s="21.44" data-e="22.94">You don&#x27;t get this in sports teams.</span> <span class="tl-s" data-s="23.19" data-e="25.13">You don&#x27;t get this at any of our other jobs.</span> <span class="tl-s" data-s="25.37" data-e="31.72">But we get this here because here we&#x27;re united around The person of Jesus Christ, just like we will be in heaven.</span></p>
+        <p><span class="tl-s" data-s="46.62" data-e="48.97">This is Fixed on Jesus.</span></p>
+        <p><span class="tl-s" data-s="67.51" data-e="71.97">Hey everybody, welcome back to the podcast known as Fixed on Jesus.</span> <span class="tl-s" data-s="72.10" data-e="82.46">Here we are, we gather together and we have conversations about things that people ask us questions about, things that we just want to talk about, and sometimes things that nobody&#x27;s talking about and we want people to start talking about.</span> <span class="tl-s" data-s="82.57" data-e="84.08">So that&#x27;s kind of how it goes.</span> <span class="tl-s" data-s="84.19" data-e="88.40">It&#x27;s a kind of a runaway train that Ends up going to all kinds of different directions.</span> <span class="tl-s" data-s="88.76" data-e="89.37">My name is Rich.</span> <span class="tl-s" data-s="90.50" data-e="94.45">Joining me as always is across the table, Mark Johnson Jr.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="94.59" data-e="95.03">Hello.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="95.31" data-e="98.52">Behind the glass, we have Heather Corbett, who&#x27;s our production coordinator.</span></p>
+        <p><span class="tl-s" data-s="99.90" data-e="101.10">And today, I don&#x27;t know.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="101.17" data-e="101.98">Sorry, I couldn&#x27;t help it.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="102.14" data-e="102.69">Okay.</span> <span class="tl-s" data-s="103.10" data-e="103.46">Yeah.</span> <span class="tl-s" data-s="104.07" data-e="104.18">Okay.</span> <span class="tl-s" data-s="104.31" data-e="105.12">We need to mute you.</span> <span class="tl-s" data-s="105.19" data-e="109.04">But anyway, what is— what are we talking about today, Mark?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="109.34" data-e="114.38">Well, besides me getting canceled, We&#x27;re talking about church planting.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="114.57" data-e="115.36">Yeah, yeah, yeah.</span> <span class="tl-s" data-s="115.46" data-e="120.74">Oh, [Speaker B] we&#x27;re preparing here to plant a church, correct?</span> <span class="tl-s" data-s="120.76" data-e="121.13">Idaho.</span> <span class="tl-s" data-s="121.22" data-e="121.96">Yeah, Boise, Idaho.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="122.27" data-e="122.61">Boise, Idaho.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="122.77" data-e="130.88">And yeah, we&#x27;re praying about moving toward— [Speaker B] yeah, [Speaker A] working on planting a church with— led by Jeff and Barb Palin.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="130.88" data-e="135.65">Yeah, [Speaker A] to Boise— well, to a suburb of Boise, Idaho.</span> <span class="tl-s" data-s="135.76" data-e="137.12">Yeah, [Speaker B] yeah.</span> <span class="tl-s" data-s="137.45" data-e="141.50">So my question is, um, why do we plant churches?</span> <span class="tl-s" data-s="141.56" data-e="143.05">Um, [Speaker A] yeah.</span> <span class="tl-s" data-s="143.23" data-e="146.40">Like, it seems almost like you&#x27;re sending good people out.</span> <span class="tl-s" data-s="146.43" data-e="146.67">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="146.75" data-e="147.30">Oh my gosh.</span> <span class="tl-s" data-s="147.31" data-e="147.44">Yes, exactly.</span> <span class="tl-s" data-s="147.49" data-e="148.50">That&#x27;s what happens.</span> <span class="tl-s" data-s="148.68" data-e="151.34">Well, I mean, that&#x27;s, that&#x27;s the whole thing.</span> <span class="tl-s" data-s="151.40" data-e="153.25">That&#x27;s the irony here when it comes to bittersweet.</span> <span class="tl-s" data-s="153.25" data-e="153.63">Yeah.</span> <span class="tl-s" data-s="153.91" data-e="165.72">Well, when it comes to planting churches, part of the mission, if we&#x27;re being a faithful church, we&#x27;re going to want to see other people in other places get saved.</span> <span class="tl-s" data-s="166.16" data-e="174.06">And the way that the, the God-ordained New Testament way of of evangelizing is through the local church, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="174.11" data-e="174.21">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="174.21" data-e="177.65">So the passage, the go-to passage, is known as what?</span> <span class="tl-s" data-s="177.72" data-e="178.57">You know this.</span> <span class="tl-s" data-s="178.68" data-e="179.79">What&#x27;s it called?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="179.79" data-e="180.57">The Great Commission.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="180.60" data-e="184.47">That&#x27;s right, the Great Commission.</span> <span class="tl-s" data-s="184.47" data-e="188.64">Now, the Great Commission is in Matthew 28, um, and we see verse 16.</span> <span class="tl-s" data-s="188.86" data-e="191.57">Do you want to read verses 16 through 20?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="191.57" data-e="192.06">Sure.</span> <span class="tl-s" data-s="192.39" data-e="193.71">Yeah, [Speaker A] go for it.</span> <span class="tl-s" data-s="193.76" data-e="200.88">Now the 11 disciples went to Galilee to the mountain to which Jesus had directed them.</span> <span class="tl-s" data-s="200.88" data-e="203.84">And when they saw him, they worshiped him, but some doubted.</span> <span class="tl-s" data-s="203.95" data-e="210.70">And Jesus came and said to them, all authority in heaven and on earth has been given to me.</span> <span class="tl-s" data-s="210.70" data-e="221.13">Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, teaching them to observe all that I have commanded you.</span> <span class="tl-s" data-s="221.52" data-e="226.90">And behold, I am with you always to the end of the age.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="226.90" data-e="234.31">Okay, so that&#x27;s that&#x27;s the big most important text in the whole Bible when it comes about when it comes to missions.</span> <span class="tl-s" data-s="234.81" data-e="240.22">And so what we have here is some clear direction.</span> <span class="tl-s" data-s="240.29" data-e="244.60">Here we have Jesus telling people to go and make disciples of all nations.</span> <span class="tl-s" data-s="244.60" data-e="246.27">This is not make converts.</span> <span class="tl-s" data-s="246.59" data-e="249.49">A convert is somebody maybe who makes a decision and turns away, right?</span> <span class="tl-s" data-s="249.49" data-e="252.78">We&#x27;re not looking to try to get people to pray prayers.</span> <span class="tl-s" data-s="252.78" data-e="261.15">We want people to be disc disciples, which means to be a disciple is to follow something or someone.</span> <span class="tl-s" data-s="261.20" data-e="268.46">So a disciple follows Jesus, and the way that disciples follow Jesus is by being in local churches, right?</span> <span class="tl-s" data-s="268.57" data-e="287.94">And so even if we send a missionary to another country, the goal of that missionary is not just to get people to pray prayers, it&#x27;s to start a church in that context where we can raise up another church so that faithful people can come and learn how to be Disciples or followers of Jesus Christ.</span></p>
+        <p><span class="tl-s" data-s="288.62" data-e="292.85">Okay, and so Jesus himself says, &quot;Go and make disciples of all nations.&quot; So that&#x27;s everywhere, right?</span> <span class="tl-s" data-s="292.88" data-e="301.65">Obviously, baptizing them in the name of the Father and the Son and the Holy Spirit, teaching them to observe all that I have commanded you.</span> <span class="tl-s" data-s="301.68" data-e="304.94">So that&#x27;s that&#x27;s the mission of the church.</span> <span class="tl-s" data-s="305.27" data-e="311.96">Our church is meant to, and every faithful church is meant to teach what the Lord has commanded.</span> <span class="tl-s" data-s="312.02" data-e="312.28">Right?</span> <span class="tl-s" data-s="312.41" data-e="312.57">Yeah.</span> <span class="tl-s" data-s="312.57" data-e="313.71">And also make disciples.</span> <span class="tl-s" data-s="313.71" data-e="314.81">So it&#x27;s to make and mature disciples.</span> <span class="tl-s" data-s="314.97" data-e="315.76">That&#x27;s our purpose, right?</span> <span class="tl-s" data-s="315.79" data-e="316.02">Yeah.</span></p>
+        <p><span class="tl-s" data-s="316.03" data-e="318.36">That&#x27;s why we say we&#x27;re fixed on Jesus.</span> <span class="tl-s" data-s="318.36" data-e="322.03">We&#x27;re fixed on Jesus because the mature disciples are fixed on Jesus.</span> <span class="tl-s" data-s="322.04" data-e="332.58">They&#x27;re not fixed on the next spiritual experience or some kind of spiritual hack that we need to sort of get to, but we&#x27;re fixed on Jesus because he is the key to our spiritual maturity.</span> <span class="tl-s" data-s="332.58" data-e="339.11">And so because of that, what we want to do is we want to replicate local churches.</span> <span class="tl-s" data-s="339.11" data-e="339.14">Right.</span> <span class="tl-s" data-s="339.21" data-e="340.43">And that is totally counterintuitive.</span> <span class="tl-s" data-s="340.81" data-e="343.30">That is not the way we want to do this.</span> <span class="tl-s" data-s="343.37" data-e="352.54">Now, if I&#x27;m— if you and I and Heather were leading a successful corporation, we&#x27;re not going to think, you know what, we want to make sure that there are other successful organizations and corporations out there.</span> <span class="tl-s" data-s="352.68" data-e="357.21">Let&#x27;s take some of our best people and send them away.</span> <span class="tl-s" data-s="357.42" data-e="359.19">Would we ever do that?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="359.35" data-e="359.67">No.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="359.67" data-e="360.22">No.</span> <span class="tl-s" data-s="360.63" data-e="361.05">Why?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="361.21" data-e="364.21">Because it will hurt us in our— and it will create competition.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="364.26" data-e="364.79">Exactly.</span> <span class="tl-s" data-s="364.84" data-e="367.13">But what we&#x27;re about is the kingdom of God.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="367.13" data-e="367.29">Yeah.</span> <span class="tl-s" data-s="367.29" data-e="368.74">Not the corporation.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="368.77" data-e="371.60">Not the corporation and not just the proliferation of our local church.</span> <span class="tl-s" data-s="371.65" data-e="376.37">And so it can be tempting to think, oh, here we are planting a church, we are going to send people away.</span> <span class="tl-s" data-s="376.75" data-e="380.50">Yes, but that is part of what we see in the New Testament.</span> <span class="tl-s" data-s="381.17" data-e="394.98">So what we are doing is sending— we don&#x27;t want to do this, but we believe that there is a purpose to go and plant a church, to encourage the believers that are in these areas and continue to reach out to those that are unbelievers.</span> <span class="tl-s" data-s="395.02" data-e="402.96">And so it is easy to think, are we going to continue to raise up people? and think, oh my gosh, how are we— here we are doing this again.</span> <span class="tl-s" data-s="402.96" data-e="406.09">Like, I understand it&#x27;s hard, but it&#x27;s part of the mission.</span> <span class="tl-s" data-s="406.76" data-e="408.56">We serve the kingdom of God.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="408.65" data-e="408.69">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="408.69" data-e="413.42">Not the kingdom of Center Church, not the kingdom of Gilbert, none of that, right?</span> <span class="tl-s" data-s="413.46" data-e="426.00">So we&#x27;re about something bigger than us, and part of the reason we&#x27;re faithful to the call of the Great Commission is by planting churches both in the United States and other countries.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="426.00" data-e="427.08">Yeah, [Speaker A] so like awesome.</span> <span class="tl-s" data-s="427.18" data-e="439.67">Yeah, so in the U.S., what we&#x27;re going to do is we&#x27;re going to raise up— we&#x27;re going to— our goal when we think about planting to Boise, Idaho is to encourage people to pray about going and participating on the church plant.</span> <span class="tl-s" data-s="439.70" data-e="444.56">But anybody who&#x27;s a part of our church, we&#x27;re all going to be active in this.</span> <span class="tl-s" data-s="444.65" data-e="456.72">We&#x27;re— whether you&#x27;re staying here, which I know most people will, or go, or going, we&#x27;re all going to be active because as we stay, we&#x27;re going to be praying, we&#x27;re going to be, we&#x27;re going to be maybe sending evangelism teams up there to help and serve them.</span> <span class="tl-s" data-s="456.77" data-e="470.96">Those that go are going to be active because they are going to be finding new jobs, buying new homes, relocating to a new area, changing their whole way of life for the purpose of the advancement of the kingdom.</span> <span class="tl-s" data-s="471.05" data-e="471.15">Hmm.</span></p>
+        <p><span class="tl-s" data-s="471.15" data-e="481.65">And so those are both very active things, and so we want to recognize that this is something, even though all of us aren&#x27;t going to go, this is something where We are all participating in because we&#x27;re sending this.</span> <span class="tl-s" data-s="481.65" data-e="483.99">Yeah, this is part of what we&#x27;re doing as a church.</span> <span class="tl-s" data-s="483.99" data-e="486.59">We&#x27;re sending, [Speaker B] we&#x27;re praying, [Speaker A] we&#x27;re praying and sending.</span> <span class="tl-s" data-s="486.59" data-e="492.23">This is like, hey, this is part of what we believe our church is called to do, is to plant churches.</span> <span class="tl-s" data-s="492.23" data-e="493.43">Yeah, no, great.</span> <span class="tl-s" data-s="493.43" data-e="499.75">Just to back up just a little, so this is one of the purposes and functions of the church, is to send?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="499.75" data-e="499.85">Absolutely.</span> <span class="tl-s" data-s="499.85" data-e="500.15">Plant?</span> <span class="tl-s" data-s="500.15" data-e="500.27">Absolutely.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="500.27" data-e="505.33">So when you say, like, you use the language like we don&#x27;t want to do it— we want to do it because it&#x27;s obedient.</span> <span class="tl-s" data-s="505.33" data-e="505.43">We want to be obedient.</span> <span class="tl-s" data-s="505.43" data-e="507.45">We aim to be, but it hurts.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="507.45" data-e="507.61">Absolutely.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="507.61" data-e="508.18">Yes, it hurts.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="508.18" data-e="514.40">We want to do it, but we know there&#x27;s— we don&#x27;t We don&#x27;t want to send people away that we love.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="514.40" data-e="514.48">Exactly.</span> <span class="tl-s" data-s="514.48" data-e="519.00">We want to, to fulfill the commandment, but we don&#x27;t want to lose that fellowship.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="519.00" data-e="520.82">Yeah, we don&#x27;t want to lose people.</span> <span class="tl-s" data-s="520.93" data-e="521.17">Relationships.</span> <span class="tl-s" data-s="521.71" data-e="522.55">I get it.</span> <span class="tl-s" data-s="522.58" data-e="523.46">That&#x27;s hard.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="523.49" data-e="523.62">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="523.65" data-e="530.37">But like, what— but at the same time, it&#x27;s a reminder as we work together to send people to plant a church.</span> <span class="tl-s" data-s="530.37" data-e="542.25">It&#x27;s a reminder to ourselves we&#x27;re not home, because there will be one day when the mission of the Gospel is over and there are no other people, there are no other nations to go to, and there&#x27;s nobody who&#x27;s not a believer.</span> <span class="tl-s" data-s="542.25" data-e="545.51">And so we&#x27;re not going to be sending any anywhere else.</span> <span class="tl-s" data-s="545.60" data-e="550.90">We&#x27;re all going to be together, but that day is not today.</span> <span class="tl-s" data-s="550.90" data-e="557.15">And so if we try to recreate heaven on earth, we&#x27;re always going to be disappointed.</span> <span class="tl-s" data-s="557.15" data-e="559.74">So a faithful church is always going to look to replicate in some way, shape, or form.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="559.74" data-e="559.82">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="559.83" data-e="562.30">And that&#x27;s what we want to do.</span> <span class="tl-s" data-s="562.30" data-e="564.90">We want to try to be faithful.</span> <span class="tl-s" data-s="564.95" data-e="567.47">We want to try to take risks for the advancement of the kingdom.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="567.47" data-e="567.52">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="567.52" data-e="575.20">And so that&#x27;s, that&#x27;s what we are trying to do here, you know, and that is why we are getting behind something that is counterintuitive because it doesn&#x27;t make sense.</span> <span class="tl-s" data-s="575.22" data-e="576.82">Why would we send away people?</span> <span class="tl-s" data-s="576.82" data-e="578.85">Why would we send away people to start something somewhere else?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="578.89" data-e="583.02">Yeah, yeah, there are like 2 ways I can really go with it, like 2 questions that I have.</span> <span class="tl-s" data-s="583.47" data-e="588.15">You can pick which one you want to go with first, but— [Speaker A] Let&#x27;s take them both.</span> <span class="tl-s" data-s="588.28" data-e="590.51">Yeah, sure, yeah.</span> <span class="tl-s" data-s="590.52" data-e="593.59">How many have we sent out?</span> <span class="tl-s" data-s="594.05" data-e="595.75">How [Speaker A] many churches have we planted?</span> <span class="tl-s" data-s="595.75" data-e="596.23">Yeah.</span> <span class="tl-s" data-s="596.23" data-e="600.05">So we have planted 3 churches that started [Speaker B] from here.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="600.16" data-e="606.42">Um, that have 3 churches, and by that we raised up 3 pastors and sent them.</span> <span class="tl-s" data-s="606.42" data-e="615.49">Um, the first one was before I started in Tucson, Arizona, and so that church was planted from here in Tucson, um, I think like in 1999.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="615.54" data-e="619.53">And they&#x27;re still— [Speaker A] They&#x27;re still going.</span> <span class="tl-s" data-s="619.56" data-e="619.85">Awesome.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="620.03" data-e="623.49">Doing well, um, teaching people about Jesus and reaching out for the Gospel.</span> <span class="tl-s" data-s="623.57" data-e="627.40">The second one we planted was in 2009 in Peoria, Arizona.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="627.40" data-e="628.22">That&#x27;s relatively local.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="628.22" data-e="628.65">Local, yeah.</span> <span class="tl-s" data-s="628.70" data-e="637.16">Grace Church out there, uh, they&#x27;re still going strong, preaching the gospel, uh, loving on Jesus, or showing people to love Jesus.</span> <span class="tl-s" data-s="637.19" data-e="642.64">Um, the third one we planted in 2013, uh, in Austin— well, Round Rock, Texas, uh, led by John Payne.</span> <span class="tl-s" data-s="642.64" data-e="643.95">And that church is still going strong.</span> <span class="tl-s" data-s="644.48" data-e="646.53">And so each one of those times it hurt.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="646.53" data-e="646.75">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="646.75" data-e="649.89">But each one of those times we can look back and go, okay, there&#x27;s fruit here.</span> <span class="tl-s" data-s="649.89" data-e="653.55">Yeah, so that&#x27;s what we anticipate doing with Boise, and I don&#x27;t think this will be the last time.</span> <span class="tl-s" data-s="653.55" data-e="658.21">You know, that doesn&#x27;t mean that every pastor who we raise up is always going to be sent out.</span> <span class="tl-s" data-s="658.21" data-e="659.69">That&#x27;s just not the way it&#x27;s going to be.</span> <span class="tl-s" data-s="659.69" data-e="665.21">But at the same time, we wouldn&#x27;t be faithful if we&#x27;re not asking, what&#x27;s the next plant that we&#x27;re supposed to do?</span> <span class="tl-s" data-s="665.21" data-e="667.97">Yeah, when are we supposed to do that?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="667.97" data-e="673.63">Uh, yeah, I guess to follow up with that is, um, have any of the churches that we sent out— have they sent out?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="673.63" data-e="674.21">Ah, that&#x27;s a good question.</span> <span class="tl-s" data-s="674.21" data-e="675.89">Uh, no, not to my knowledge.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="675.99" data-e="679.18">And at some point I&#x27;m sure they will.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="679.18" data-e="682.15">I&#x27;m sure they will, yeah, but not to my knowledge.</span> <span class="tl-s" data-s="682.15" data-e="682.72">Not yet.</span> <span class="tl-s" data-s="682.72" data-e="682.89">Okay.</span> <span class="tl-s" data-s="682.89" data-e="684.42">Not to my knowledge.</span> <span class="tl-s" data-s="684.42" data-e="684.60">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="684.60" data-e="689.80">And then you mentioned like this being a call of the church to basically replicate or to send out.</span> <span class="tl-s" data-s="689.86" data-e="691.39">Is there other models?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="691.39" data-e="692.88">Yeah, there&#x27;s other models for sure.</span> <span class="tl-s" data-s="693.33" data-e="695.16">Like one model is like the campus model.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="695.18" data-e="696.00">Like more than one campus?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="696.05" data-e="702.16">Yeah, people see that like, and I mean, there are, there are, um, there are campus models out there.</span> <span class="tl-s" data-s="702.16" data-e="710.18">Like what that is, is you have one place that does the preaching and then they sort of open satellite campuses around that area or other areas.</span> <span class="tl-s" data-s="710.18" data-e="712.55">And I mean, that&#x27;s a model, that&#x27;s a way to do it.</span> <span class="tl-s" data-s="712.57" data-e="719.30">And I suppose like maybe in some urban areas where it&#x27;s expensive and it&#x27;s hard to move there, I can, I can see that.</span> <span class="tl-s" data-s="719.30" data-e="722.31">But in the main, we lean toward planting churches.</span> <span class="tl-s" data-s="722.44" data-e="735.27">One, because at a campus model, what ends up happening from my perspective— and I could be totally wrong, but my perspective is it becomes about that preacher more than about the purpose of Jesus Christ in the world.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="735.27" data-e="738.08">So does the pastor go to more than one campus?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="738.08" data-e="739.33">He&#x27;s usually videoed into— Virtually?</span> <span class="tl-s" data-s="739.43" data-e="739.55">Yeah, virtually.</span> <span class="tl-s" data-s="740.07" data-e="748.09">And so like Like, or sometimes there&#x27;s multiple pastors in different campuses and they share resources and stuff.</span> <span class="tl-s" data-s="748.09" data-e="749.76">It just depends.</span> <span class="tl-s" data-s="749.87" data-e="751.78">There&#x27;s different models, right?</span> <span class="tl-s" data-s="751.78" data-e="764.01">And so, um, I, I personally feel like it&#x27;s better for us to take, to train and plant churches that exist both in partnership with us and independent of us, where they&#x27;re making their own decisions in their own context, right?</span> <span class="tl-s" data-s="764.01" data-e="766.54">So let&#x27;s say we have a satellite church in Payson, right?</span> <span class="tl-s" data-s="766.54" data-e="769.12">I don&#x27;t know the community in Payson.</span> <span class="tl-s" data-s="769.12" data-e="779.88">I don&#x27;t know those people, and so I could preach what we&#x27;re preaching, and it may not be where they need help or where they need encouragement.</span> <span class="tl-s" data-s="779.88" data-e="782.33">And so that&#x27;s one of the limitations.</span></p>
+        <p><span class="tl-s" data-s="782.33" data-e="790.60">It&#x27;s not just one size fits all, because if we have like that, I mean, why don&#x27;t we just have John Piper preach at all of our churches starting in 1999?</span> <span class="tl-s" data-s="790.67" data-e="791.69">He has videos.</span> <span class="tl-s" data-s="792.03" data-e="794.07">Let&#x27;s just play all that all the time.</span> <span class="tl-s" data-s="794.12" data-e="797.43">It&#x27;s not just you preach and we show up and okay, no.</span> <span class="tl-s" data-s="797.72" data-e="801.09">The preaching moment is for certain people at a certain time in a certain place.</span> <span class="tl-s" data-s="801.17" data-e="802.25">And so that&#x27;s my perspective.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="802.46" data-e="803.10">Yeah, plus the relationships.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="803.10" data-e="804.57">Yeah, and plus the relationships for sure.</span> <span class="tl-s" data-s="804.57" data-e="809.50">But the relationships can be— they can be in any model, in any, you know, in the campus model as well.</span> <span class="tl-s" data-s="809.59" data-e="811.60">That&#x27;s, that&#x27;s not something that&#x27;s, that&#x27;s not there.</span> <span class="tl-s" data-s="811.60" data-e="812.05">It just isn&#x27;t.</span> <span class="tl-s" data-s="812.10" data-e="814.07">That&#x27;s just not how, how we&#x27;re gonna build it.</span> <span class="tl-s" data-s="814.57" data-e="816.76">And I&#x27;m not throwing rocks at anything.</span> <span class="tl-s" data-s="816.99" data-e="820.76">Yeah, you know, but that&#x27;s just not how we&#x27;re gonna, how we&#x27;re gonna do it.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="820.76" data-e="827.20">So from your perspective as someone who participated in basically 2 out of the Last 3 sendouts here, right?</span> <span class="tl-s" data-s="827.25" data-e="829.09">Is that— did I get that right?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="829.09" data-e="829.41">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="829.41" data-e="837.07">Um, how do you as a leader here identify someone who would be good to fulfill that or be a good teacher— or I&#x27;m sorry, not teacher, a good pastor to be sent out?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="837.18" data-e="842.68">Well, so the primary gift for anyone who&#x27;s going to plant a church is preaching.</span> <span class="tl-s" data-s="842.86" data-e="845.44">So can they— do they have the gift of— can they preach, right?</span> <span class="tl-s" data-s="845.52" data-e="848.21">It&#x27;s one thing to preach once a month, once a quarter.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="848.23" data-e="854.34">Yeah, [Speaker A] that&#x27;s a lot easier than preaching every week, which is what a church planter has to do.</span> <span class="tl-s" data-s="854.34" data-e="862.49">So a church planter has to have a disposition to preach because the primary thing about any church is the ministry of the word from the pulpit.</span> <span class="tl-s" data-s="862.58" data-e="864.09">That&#x27;s first, that&#x27;s most important.</span> <span class="tl-s" data-s="864.20" data-e="868.29">And so there&#x27;s nothing more important than any church does every week.</span> <span class="tl-s" data-s="868.36" data-e="873.30">It&#x27;s the ministry of the word on Sunday morning from the pulpit, the preaching and teaching of the word, right?</span> <span class="tl-s" data-s="873.30" data-e="873.33">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="873.33" data-e="877.80">And so whoever leads must be able to do that.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="878.62" data-e="879.00">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="879.21" data-e="880.25">And so that&#x27;s primary.</span> <span class="tl-s" data-s="880.46" data-e="891.02">And so what you want to do is you want to find somebody who has the disposition to preach and teach and, you know, lead from— like, lead from, from behind a pulpit.</span> <span class="tl-s" data-s="891.05" data-e="896.97">And so, and there&#x27;s a measure of leadership gift as well where you inspire people, because a preacher— you don&#x27;t want a preacher who&#x27;s just informing everybody.</span> <span class="tl-s" data-s="897.45" data-e="898.57">You want inspiration, you know.</span> <span class="tl-s" data-s="898.67" data-e="901.12">And so that&#x27;s part of what we want to see.</span> <span class="tl-s" data-s="901.15" data-e="903.84">We want to see a guy who people want to follow.</span> <span class="tl-s" data-s="903.84" data-e="910.56">And, you know, it&#x27;s— and it takes a cost because you&#x27;re going to— anybody who can preach on a regular basis, folks are going to want to follow.</span> <span class="tl-s" data-s="910.56" data-e="913.71">And it&#x27;s going to hurt when you send that person to another church, to another location.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="913.83" data-e="914.15">Yeah, right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="914.15" data-e="915.99">So we think about Jeff Palin.</span> <span class="tl-s" data-s="915.99" data-e="917.95">It&#x27;s just— that&#x27;s the way he is, you know?</span> <span class="tl-s" data-s="918.07" data-e="918.71">Yeah, he&#x27;s a leader.</span> <span class="tl-s" data-s="918.71" data-e="920.07">Um, he can preach.</span> <span class="tl-s" data-s="920.55" data-e="921.28">People want to follow him.</span> <span class="tl-s" data-s="921.28" data-e="923.62">And, um, I want to give him more opportunities.</span> <span class="tl-s" data-s="923.69" data-e="925.66">There&#x27;s just not the same number of opportunities here.</span> <span class="tl-s" data-s="925.70" data-e="931.09">And so I believe that when he goes there, he&#x27;ll be able to serve those people.</span> <span class="tl-s" data-s="931.09" data-e="931.58">And grow.</span> <span class="tl-s" data-s="931.65" data-e="931.98">And grow.</span></p>
+        <p><span class="tl-s" data-s="931.98" data-e="937.25">Yeah, he&#x27;ll be able to serve those people that he is, you know, he&#x27;s reaching who are already Christians in the area.</span> <span class="tl-s" data-s="937.28" data-e="940.25">There&#x27;s lots of good churches in Boise.</span> <span class="tl-s" data-s="940.25" data-e="945.30">It&#x27;s not like we&#x27;re taking the gospel to Boise or anything like that, but It&#x27;s a very unchurched place.</span> <span class="tl-s" data-s="945.45" data-e="947.76">And so it&#x27;s, it&#x27;s not like they&#x27;re everywhere.</span> <span class="tl-s" data-s="948.03" data-e="951.47">And so maybe there&#x27;s Christians there that have relocated and they haven&#x27;t found a church home yet.</span> <span class="tl-s" data-s="951.81" data-e="952.93">And there&#x27;s definitely unbelievers there.</span> <span class="tl-s" data-s="952.93" data-e="953.38">Yeah.</span> <span class="tl-s" data-s="953.41" data-e="965.23">And so we want to send, send people there so that they can, they can hear the gospel and that there&#x27;s a faithful community because a church in any community is like an embassy.</span> <span class="tl-s" data-s="965.23" data-e="968.54">We&#x27;re like the embassy, an embassy to heaven, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="968.64" data-e="968.90">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="968.90" data-e="974.14">And so what the closest thing we have as a people when it comes to experiencing heaven is the local church.</span> <span class="tl-s" data-s="974.20" data-e="974.28">Hmm.</span> <span class="tl-s" data-s="974.28" data-e="976.19">You don&#x27;t get this at the universities.</span> <span class="tl-s" data-s="976.19" data-e="977.52">You don&#x27;t get this in libraries.</span> <span class="tl-s" data-s="977.62" data-e="978.95">You don&#x27;t get this in corporations.</span> <span class="tl-s" data-s="979.15" data-e="981.56">You don&#x27;t get this in sports teams.</span> <span class="tl-s" data-s="981.56" data-e="984.27">You don&#x27;t get this at any of our other jobs.</span> <span class="tl-s" data-s="984.35" data-e="990.78">But we get this here because here we&#x27;re united around the person of Jesus Christ, just like we will be in heaven.</span> <span class="tl-s" data-s="990.78" data-e="996.13">And so what we are is, as, as local church, the embassy, an embassy of heaven.</span> <span class="tl-s" data-s="996.13" data-e="1004.72">So when someone who doesn&#x27;t know Jesus comes in, it&#x27;s appealing because there&#x27;s a sense in which this is unlike anything that happens anywhere else.</span></p>
+        <p><span class="tl-s" data-s="1004.72" data-e="1009.68">And so that we want to have replicated both in this country and around the world.</span> <span class="tl-s" data-s="1009.74" data-e="1012.90">So there&#x27;s also, like, when we think about missions, it&#x27;s not just in this country.</span> <span class="tl-s" data-s="1012.90" data-e="1015.22">We want to go other places as well, right?</span> <span class="tl-s" data-s="1015.29" data-e="1015.45">Yeah.</span> <span class="tl-s" data-s="1015.45" data-e="1021.76">And so when we sent— like, I pray that one day we&#x27;ll be able to plant a church in another country.</span> <span class="tl-s" data-s="1021.78" data-e="1025.64">And so, for example, and it, it may look different, but it&#x27;s the same in this way.</span> <span class="tl-s" data-s="1026.11" data-e="1029.48">So when we raise up people to go to Boise, they don&#x27;t have to learn a new language.</span> <span class="tl-s" data-s="1029.50" data-e="1030.38">It&#x27;s all in English.</span> <span class="tl-s" data-s="1030.62" data-e="1030.88">English, right?</span> <span class="tl-s" data-s="1030.88" data-e="1041.22">And so, and we have a church plant, like we&#x27;re praying for a team of people to go with Jeff and Barb, and there will be a church plant group, and that will be right from the beginning a church.</span></p>
+        <p><span class="tl-s" data-s="1041.22" data-e="1041.45">Yeah.</span> <span class="tl-s" data-s="1041.45" data-e="1051.65">Right now, let&#x27;s say, and then there will be transfer growth from people who maybe live too far from their church or haven&#x27;t found a church, or there&#x27;ll be Christians that joined that church, right?</span> <span class="tl-s" data-s="1051.65" data-e="1057.85">Now, if we send people to an unreached place, let&#x27;s say we send 3 families to an unreached place, that&#x27;s a church.</span> <span class="tl-s" data-s="1057.85" data-e="1060.66">Now there&#x27;s no transfer growth because there&#x27;s no Christians there.</span> <span class="tl-s" data-s="1060.66" data-e="1064.75">And so you have all of your growth— [Speaker B] Language barrier, maybe.</span> <span class="tl-s" data-s="1064.75" data-e="1069.25">Yeah, well, that&#x27;s different, but all of your growth is going to be conversion growth, right?</span> <span class="tl-s" data-s="1069.25" data-e="1070.89">But it&#x27;s the same thing.</span> <span class="tl-s" data-s="1071.18" data-e="1073.96">We&#x27;re not just looking to gain converts; we&#x27;re looking to plant churches.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1074.05" data-e="1074.39">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1074.39" data-e="1076.20">No matter where we do this.</span> <span class="tl-s" data-s="1076.32" data-e="1087.22">Now, it may be that we go to places and it takes— the average, if you go to an unreached people group in an unreached place, the average length of time it takes to get your first convert is 7 years.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1087.22" data-e="1087.43">Wow!</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1087.48" data-e="1110.39">And so that&#x27;s one of the reasons we want to work with people, that we want to go to the unreached places that the Lord leads us to, but where we can work with people that are nationals, where they already know the language and they already know the culture, and we can send them back to their home language and home culture to plant a church, then we see that bears fruit as well.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1110.44" data-e="1111.17">Yeah, that&#x27;s great.</span> <span class="tl-s" data-s="1111.22" data-e="1120.12">Yeah, so as far as, you know, specifically to our denomination, like we&#x27;re sending out Is there churches from Sovereign— other churches in Sovereign Grace that will— might participate in that plant and be drawn to go to Boise?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1120.12" data-e="1120.17">Absolutely.</span> <span class="tl-s" data-s="1120.22" data-e="1120.50">Yeah.</span> <span class="tl-s" data-s="1120.52" data-e="1129.50">Once we&#x27;ll communicate, hey, listen, we&#x27;re going to plant a church in Boise, and there may be people there who are like, I want to join, or others that are thinking about going to Boise, or they got a job offer or something like that.</span> <span class="tl-s" data-s="1129.50" data-e="1129.71">Absolutely.</span> <span class="tl-s" data-s="1129.82" data-e="1129.88">Yeah.</span> <span class="tl-s" data-s="1130.32" data-e="1131.55">That&#x27;s part of the way it is.</span> <span class="tl-s" data-s="1131.60" data-e="1139.02">I mean, and in part of the benefit of being a part of our denomination in Sovereign Grace is that we plant churches all over the world.</span> <span class="tl-s" data-s="1139.68" data-e="1142.67">So like, we— right now there&#x27;s a church— I was talking to him this week.</span> <span class="tl-s" data-s="1142.67" data-e="1144.85">His name is Marcelo, and he&#x27;s planting a church in Reynosa.</span> <span class="tl-s" data-s="1144.90" data-e="1147.74">Which is on the other side of McAllen, Texas.</span></p>
+        <p><span class="tl-s" data-s="1147.94" data-e="1150.91">I [Speaker B] was going to ask you about— okay, keep going.</span> <span class="tl-s" data-s="1150.91" data-e="1153.44">He&#x27;s on the other side of McAllen, Texas.</span> <span class="tl-s" data-s="1153.46" data-e="1157.99">He&#x27;s a Mex— he&#x27;s— he speaks English, um, but he&#x27;s a Mexican going back home to plant a church in his hometown.</span> <span class="tl-s" data-s="1158.04" data-e="1166.10">See, he doesn&#x27;t have to learn the culture, nor does he have to learn the language, because that&#x27;s where he&#x27;s from.</span> <span class="tl-s" data-s="1166.12" data-e="1176.74">He&#x27;s going to plant a church, preach the gospel, and our hope and prayer is that we see many converts and many Christians strengthened and built up.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1176.77" data-e="1182.48">Yeah, I was going to ask you specifically about your work in the South American, Central American region.</span> <span class="tl-s" data-s="1182.56" data-e="1185.76">You&#x27;ve been active in helping with church planting there.</span> <span class="tl-s" data-s="1185.92" data-e="1190.57">How different is it in a foreign country than it is here?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1190.57" data-e="1191.00">It&#x27;s the same.</span> <span class="tl-s" data-s="1191.00" data-e="1192.73">It&#x27;s just a different language.</span> <span class="tl-s" data-s="1192.73" data-e="1197.45">It&#x27;s the same Jesus, same Bible, same— yeah, there&#x27;s not a Mexican Jesus.</span> <span class="tl-s" data-s="1197.55" data-e="1199.70">There&#x27;s not a Mexican Jesus or Argentinian Jesus.</span> <span class="tl-s" data-s="1199.70" data-e="1200.60">It&#x27;s the same one.</span> <span class="tl-s" data-s="1200.77" data-e="1205.41">Yeah, it&#x27;s— here&#x27;s a newsflash to Americans: Jesus doesn&#x27;t speak only English.</span> <span class="tl-s" data-s="1205.55" data-e="1207.91">I know that&#x27;s rough, but anyway, multiple tongues.</span> <span class="tl-s" data-s="1207.96" data-e="1208.55">Yeah, exactly.</span> <span class="tl-s" data-s="1208.63" data-e="1211.43">So it&#x27;s the same Jesus, same Bible, same gospel, same goal, right?</span> <span class="tl-s" data-s="1211.43" data-e="1215.08">And so we want to raise up church planters and send them to plant churches.</span></p>
+        <p><span class="tl-s" data-s="1216.00" data-e="1228.47">And so, um, I get the privilege to be able to help and equip pastors and give resources to pastors to be able to go do this in the places that You know, those churches, the sending churches, feel like, hey, this is a call for us.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1228.74" data-e="1228.90">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1228.93" data-e="1231.01">And so, um, anyway, that&#x27;s a longer conversation.</span> <span class="tl-s" data-s="1231.41" data-e="1234.22">Yeah, yeah, I just wanted to touch on that.</span> <span class="tl-s" data-s="1234.28" data-e="1239.83">Yeah, that&#x27;s— [Speaker B] and then I guess just last one, um, as far as the whole process.</span> <span class="tl-s" data-s="1239.83" data-e="1243.78">So like, you, you already explained how you might identify like someone who would be a good church plant leader.</span> <span class="tl-s" data-s="1243.78" data-e="1243.93">Yeah.</span> <span class="tl-s" data-s="1243.93" data-e="1252.47">And how long is that process from the point they identify the Lord has put it on their heart that they want to go to— [Speaker A] It&#x27;s very— I know it varies.</span> <span class="tl-s" data-s="1252.49" data-e="1252.98">It varies.</span> <span class="tl-s" data-s="1253.00" data-e="1256.59">I mean, So I&#x27;ve known people that it took 10 years.</span> <span class="tl-s" data-s="1256.59" data-e="1259.78">I&#x27;ve known people who&#x27;ve taken 5, 3, you know, it just depends.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1259.78" data-e="1259.97">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1259.97" data-e="1264.36">The other question that is worth thinking about is who should go with them.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1264.36" data-e="1265.79">Leadership-wise or— [Speaker A] No, just participation-wise.</span> <span class="tl-s" data-s="1265.79" data-e="1265.95">Yeah.</span> <span class="tl-s" data-s="1266.03" data-e="1270.86">Well, that&#x27;s what I was [Speaker B] gonna say, that [Speaker A] planting a church is really difficult because it takes everybody working hard.</span> <span class="tl-s" data-s="1270.86" data-e="1278.54">Now, that&#x27;s the way it is for every church, and you might think, oh, there&#x27;s all kinds of stuff that happens here and it&#x27;s super easy.</span> <span class="tl-s" data-s="1278.56" data-e="1279.01">It&#x27;s not.</span> <span class="tl-s" data-s="1279.02" data-e="1284.40">And you can have— you can serve around here in ways that we need, but anyway, that&#x27;s another conversation.</span> <span class="tl-s" data-s="1284.40" data-e="1285.59">But At a church plant, we need everybody on deck.</span> <span class="tl-s" data-s="1285.61" data-e="1293.28">And so that means if your marriage is troubled, if you&#x27;re having, if you&#x27;re having spiritual problems, you should not go.</span> <span class="tl-s" data-s="1293.31" data-e="1295.88">Yeah, because it&#x27;s going to be hard when you get there anyways.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1295.96" data-e="1297.04">It&#x27;s going to be hard.</span> <span class="tl-s" data-s="1297.16" data-e="1307.81">And any weakness is going to be amplified or any, any— we&#x27;re all weak, but any, like, say, patterns of sin that are not dealt with are going to be amplified and they&#x27;re going to be exacerbated and it&#x27;s trouble.</span> <span class="tl-s" data-s="1307.84" data-e="1316.60">And so like one of the ways we&#x27;ve said it is if you&#x27;re in sickbay, don&#x27;t think about going because it Trans going to another city does not make things better.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1316.60" data-e="1319.47">No, [Speaker A] because the trick is when you go, you&#x27;re still you.</span> <span class="tl-s" data-s="1319.47" data-e="1320.93">Yeah, [Speaker A] no matter where you live.</span> <span class="tl-s" data-s="1320.93" data-e="1323.08">And so your problems, they follow.</span> <span class="tl-s" data-s="1323.16" data-e="1324.78">In fact, your problems beat you there.</span> <span class="tl-s" data-s="1324.78" data-e="1327.24">They they they get there faster than you do.</span> <span class="tl-s" data-s="1327.41" data-e="1333.28">And so that&#x27;s like if if you&#x27;re thinking I want to have a fresh start and this will be fun, it&#x27;s not.</span> <span class="tl-s" data-s="1333.28" data-e="1338.32">It&#x27;s hard and it&#x27;s it&#x27;s difficult and you really need to be called to it.</span> <span class="tl-s" data-s="1338.32" data-e="1339.24">That&#x27;s awesome.</span> <span class="tl-s" data-s="1339.24" data-e="1358.56">Speaking of being called to it, if If that&#x27;s something that you are interested in, then you can reach out to Jeff or to Rich, and we just ask that you pray for the church plant in Boise, that you give strength to the people going, that you bless our plant there, and if the Lord puts that on your heart, that you go there and work faithfully as well.</span></p>
+        <p><span class="tl-s" data-s="1360.17" data-e="1363.17">I&#x27;m not saying that because we want you to leave, but we want to be obedient to fulfilling the Great Commission.</span> <span class="tl-s" data-s="1363.17" data-e="1363.17">So thank you for explaining all that.</span> <span class="tl-s" data-s="1363.17" data-e="1363.17">Absolutely.</span> <span class="tl-s" data-s="1363.17" data-e="1363.17">If you have any questions, feel free to reach out at production@centergilbert.com.</span> <span class="tl-s" data-s="1363.17" data-e="1363.17">Uh, thank you so much for tuning in.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1363.17" data-e="1363.17">Have a good one.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1363.17" data-e="1363.17">God bless.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Fixed on Jesus episode archive, backed by /api/podcast/search.
+  // Static fallback list above stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function fmtDuration(raw) {
+      if (!raw) return "";
+      var str = String(raw).trim();
+      // Anchor feeds report seconds; render as H:MM:SS or M:SS.
+      if (/^\d+$/.test(str)) {
+        var total = parseInt(str, 10);
+        var h = Math.floor(total / 3600);
+        var m = Math.floor((total % 3600) / 60);
+        var sec = total % 60;
+        var mm = (h > 0 && m < 10 ? "0" + m : "" + m);
+        var ss = (sec < 10 ? "0" + sec : "" + sec);
+        return (h > 0 ? h + ":" + mm : m) + ":" + ss;
+      }
+      // Anchor also reports clock strings like "00:24:02" — drop the
+      // redundant leading hour so it reads "24:02".
+      return str.replace(/^00:/, "");
+    }
+    function row(it) {
+      it = it || {};
+      var title = esc(it.title) || "Untitled episode";
+      var tUrl = it.guid && transcriptMap[it.guid];
+      var heading = tUrl
+        ? '<a href="' + esc(tUrl) + '">' + title + "</a>"
+        : (it.link
+          ? '<a href="' + esc(it.link) + '" target="_blank" rel="noopener">' + title + "</a>"
+          : title);
+      var meta = [fmtDate(it.date), fmtDuration(it.duration)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      return '<div class="sermon"><div><h3>' + heading + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    var PER = 10;
+    var state = { q: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No episodes found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " episode" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " episodes";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/podcast/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () {
+          // Keep the static list, but tell the reader where else to listen —
+          // some privacy blockers stop the archive request itself.
+          var note = document.querySelector("[data-sermons-error]");
+          if (note) note.hidden = false;
+        });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    if (monthSel) {
+      monthSel.addEventListener("change", function () {
+        state.month = monthSel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: e809145e-2417-4dff-bd54-1309c3fe21f2 -->
+</body>
+</html>
