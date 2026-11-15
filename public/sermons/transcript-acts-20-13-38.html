@@ -31,13 +31,23 @@
       .transcript-back { color: #e8a76f; }
       .transcript-meta { color: var(--muted-dark); }
       body { background: var(--ink); color: var(--cream); }
-      .site-header { background: rgba(23, 19, 16, 0.92); border-bottom-color: var(--line-light); }
-      .nav-links a:hover, .nav-links a.active { color: #e8a76f; }
-      .dropdown { background: var(--ink-2); border-color: var(--line-light); }
-      .dropdown a:hover, .dropdown a.active { background: rgba(255, 255, 255, 0.06); }
-      .hamburger { color: var(--cream); border-color: var(--line-light); }
-      .mobile-menu { background: var(--ink); }
-      .mobile-menu details { border-color: var(--line-light); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
       .sermon { background: var(--ink-2); border-color: var(--line-light); }
       .sermon .meta { color: var(--muted-dark); }
       .sermon audio { border-radius: 12px; background: #100d0a; }
