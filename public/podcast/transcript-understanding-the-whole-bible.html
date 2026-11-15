@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Understanding The Whole Bible — Podcast Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Fixed on Jesus: conversations beyond Sunday mornings from Center Church in Gilbert, AZ — listen on Spotify, Apple Podcasts, and YouTube." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=18" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a href="/sermons">Sermons</a></li>
+              <li><a class="active" href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/podcast">&larr; All podcast episodes</a>
+          <h1 class="display-lg">Understanding The Whole Bible</h1>
+          <p class="transcript-meta">2024-11-06 · 23:50</p>
+          <p class="transcript-desc">Welcome to FIXED ON JESUS, a podcast brought to you by Center Church in Gilbert, Arizona. Speaking to you today are Rich Richardson &amp; Mark Johnson Jr. Production by Heather Corbitt **SHOW NOTES** Questions asked in this episode: Is it realisitic the Peter referencing Joel in Acts chapter 2 would hav</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/e750e370/podcast/play/94051027/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-10-6%2F374f1002-6e0b-3cf7-77a4-968b8507c1fd.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="0.12" data-e="13.44">So to put the Bible together, you&#x27;ve got to be able to see over time, and it takes time and it takes study and it takes work, but over time what you want to see is this rich tapestry that&#x27;s woven together.</span> <span class="tl-s" data-s="13.90" data-e="17.37">The New Testament is not just separated from the Old Testament.</span> <span class="tl-s" data-s="17.77" data-e="35.55">Its background is the Old Testament, and it takes a lot of the themes and truths of the Old Testament, weaves them together, and Presents with greater, greater power, you know, a fulfillment of something or a greater glory than what was obvious in the Old Testament.</span></p>
+        <p><span class="tl-s" data-s="50.84" data-e="52.95">This is Fixed on Jesus.</span></p>
+        <p><span class="tl-s" data-s="70.30" data-e="72.87">Hey everybody, welcome back to Fixed on Jesus.</span> <span class="tl-s" data-s="73.03" data-e="81.18">This is the podcast of Center Church, sponsored by Center Church, recorded by— at— on Center Church property.</span> <span class="tl-s" data-s="81.44" data-e="81.56">Hmm.</span> <span class="tl-s" data-s="82.01" data-e="90.38">And, uh, this podcast is like a runaway Freight train, you know, it has a starting point, but sometimes the endpoint is ambiguous.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="90.72" data-e="90.88">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="90.99" data-e="92.41">Sometimes we even stay on the tracks.</span> <span class="tl-s" data-s="92.49" data-e="93.63">Sometimes we go off the tracks.</span> <span class="tl-s" data-s="93.69" data-e="94.34">You just never know.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="94.64" data-e="94.84">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="94.98" data-e="97.59">My name&#x27;s Rich and I&#x27;m joined by Mark Johnson Jr.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="98.06" data-e="98.47">Here I am.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="99.10" data-e="99.57">And there he is.</span> <span class="tl-s" data-s="100.48" data-e="105.64">And behind the glass is Heather Corbett, and she&#x27;s waving, not talking.</span> <span class="tl-s" data-s="105.81" data-e="106.94">She&#x27;s just waving right now.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="107.36" data-e="107.52">Yep.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="107.99" data-e="110.04">Uh, Mark, we are talking about what?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="110.99" data-e="121.11">Well, I&#x27;m starting to suspect that you are sending in emails to production@centergilbert.com because they all say, I do not consent to the use of my name, profile, or likeness.</span> <span class="tl-s" data-s="121.32" data-e="122.71">Is this you sending anonymous emails?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="122.76" data-e="123.06">That is not me.</span> <span class="tl-s" data-s="123.16" data-e="123.64">That is not me.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="123.72" data-e="124.89">Well, they&#x27;re going to remain anonymous.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="125.23" data-e="125.41">Okay.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="125.79" data-e="128.48">But I do have their question and they sent a bunch of them.</span> <span class="tl-s" data-s="128.60" data-e="130.39">We&#x27;re going to do one on this episode.</span> <span class="tl-s" data-s="130.44" data-e="132.11">You might hear the other ones on another.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="133.42" data-e="135.65">I appreciate the individual who does that.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="135.81" data-e="136.63">That&#x27;s because it was you.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="136.85" data-e="137.30">It was not me.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="137.37" data-e="138.52">The Bible says we love ourselves.</span> <span class="tl-s" data-s="138.70" data-e="139.84">You&#x27;re supposed to love your neighbor.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="139.93" data-e="140.40">It&#x27;s not me.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="140.82" data-e="141.02">Okay.</span> <span class="tl-s" data-s="141.46" data-e="150.87">So this question says, is it realistic that Peter referencing Joel 2 would have been easily recognizable to the crowd?</span> <span class="tl-s" data-s="151.38" data-e="153.08">So I want to go and read those really quickly.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="153.15" data-e="154.72">Well, first of all, let&#x27;s set the context right.</span> <span class="tl-s" data-s="155.05" data-e="155.18">Sure, sure.</span> <span class="tl-s" data-s="155.29" data-e="155.38">Okay.</span> <span class="tl-s" data-s="155.50" data-e="164.79">So in Acts chapter 2, we have, well, first of all, Jesus ascends to the Father in Acts chapter 1.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="165.37" data-e="165.43">Hmm.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="165.88" data-e="171.06">And he tells the disciples to pray and wait for the coming of the Holy Spirit.</span> <span class="tl-s" data-s="172.07" data-e="181.81">So at the beginning of Acts chapter 2, the Holy Spirit falls upon, comes and fills and falls upon everybody gathered in that upper room.</span></p>
+        <p><span class="tl-s" data-s="183.04" data-e="186.08">And they begin speaking in different languages.</span></p>
+        <p><span class="tl-s" data-s="187.46" data-e="187.63">Yeah.</span> <span class="tl-s" data-s="187.70" data-e="191.93">And the languages, they&#x27;re, they&#x27;re, real languages.</span> <span class="tl-s" data-s="192.75" data-e="197.91">And the different languages serve to gather people together, right?</span> <span class="tl-s" data-s="198.07" data-e="198.39">Yeah.</span> <span class="tl-s" data-s="198.56" data-e="200.54">Because it&#x27;s Pentecost.</span> <span class="tl-s" data-s="200.65" data-e="203.75">It&#x27;s one of the holidays that Jews would travel for.</span> <span class="tl-s" data-s="203.80" data-e="213.93">So Jews all over that area, they would speak Aramaic and then whatever language from the country or the region they lived in.</span> <span class="tl-s" data-s="213.98" data-e="216.87">So most of them spoke 2 languages at least, sometimes 3.</span> <span class="tl-s" data-s="217.61" data-e="227.74">And so, but their hometown language, they heard the glories of God extolled in their hometown language, right?</span> <span class="tl-s" data-s="227.93" data-e="228.03">Yeah.</span></p>
+        <p><span class="tl-s" data-s="228.09" data-e="234.51">And so this is the very first time that different languages serve to gather people instead of push them apart.</span> <span class="tl-s" data-s="234.71" data-e="245.40">Because remember in Genesis chapter 11, we have people, the people of the earth had one language and they come to oppose God and try to build the Tower of Babel.</span> <span class="tl-s" data-s="246.00" data-e="247.42">So God confused their language.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="247.69" data-e="247.85">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="248.33" data-e="250.87">Now we have this reversal of the curse.</span> <span class="tl-s" data-s="251.21" data-e="258.26">And so the language, people hear the glories of God extolled in their own language, and they gather together.</span> <span class="tl-s" data-s="258.31" data-e="264.61">It&#x27;s in the morning, and Peter takes the opportunity to stand up and explain what&#x27;s happening.</span> <span class="tl-s" data-s="264.96" data-e="265.09">Right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="265.19" data-e="265.33">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="265.61" data-e="271.47">So this is the very first, very first Christian sermon ever given.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="272.47" data-e="272.53">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="272.60" data-e="273.35">We have it right here.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="274.12" data-e="274.38">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="274.44" data-e="274.75">Peter.</span> <span class="tl-s" data-s="275.31" data-e="275.53">Yeah.</span> <span class="tl-s" data-s="275.89" data-e="287.03">Who just a couple weeks, a few weeks prior had denied Christ, had run away from Christ, had made a— I mean, had failed miserably.</span> <span class="tl-s" data-s="287.13" data-e="292.68">But yet here we have him standing up and addressing everybody who comes together and goes, what&#x27;s going on?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="293.07" data-e="293.31">Yeah.</span> <span class="tl-s" data-s="294.11" data-e="299.78">So in Acts 2:16, Peter says, But this is what was uttered through the prophet Joel.</span> <span class="tl-s" data-s="300.44" data-e="304.45">Remember, [Speaker A] now remember, everybody thinks they&#x27;re drunk, right?</span> <span class="tl-s" data-s="304.45" data-e="304.67">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="304.71" data-e="308.74">So everybody thinks they&#x27;ve been hitting— [Speaker B] It&#x27;s early in the day, so they&#x27;re not drunk.</span> <span class="tl-s" data-s="308.74" data-e="308.90">Yeah.</span> <span class="tl-s" data-s="308.96" data-e="311.42">They hit the new wine.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="311.45" data-e="311.83">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="311.85" data-e="316.75">Um, they, everybody thinks, man, you guys have been sucking down Crown Royal and like, I&#x27;m not sure what&#x27;s going on.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="316.75" data-e="319.30">Is that your drink of choice?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="319.38" data-e="322.11">Uh, no, it&#x27;s just, it&#x27;s a trope, Marcus.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="322.11" data-e="322.96">I don&#x27;t know what that meant.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="323.09" data-e="325.25">I&#x27;ll look it up afterwards.</span> <span class="tl-s" data-s="325.27" data-e="329.88">But anyway, So he says they&#x27;re not drunk, but this is the fulfillment of something.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="330.06" data-e="331.90">Exactly.</span> <span class="tl-s" data-s="331.92" data-e="336.78">So in Joel 2:28-32, it reads— [Speaker A] No, we&#x27;re reading Acts.</span> <span class="tl-s" data-s="337.04" data-e="337.12">Oh.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="337.28" data-e="337.55">He quotes Joel.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="337.55" data-e="337.71">Yeah, okay.</span> <span class="tl-s" data-s="337.76" data-e="340.39">But I was just going to read it from Joel.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="340.43" data-e="341.40">You read it in Acts.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="341.45" data-e="342.66">Is it the same wording?</span> <span class="tl-s" data-s="342.67" data-e="345.16">Because I have Joel pulled up, but I can pull up Acts.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="345.23" data-e="346.51">Yeah, pull up Acts.</span> <span class="tl-s" data-s="346.51" data-e="355.08">There&#x27;s a whole nother conversation about translating from Hebrew versus Septuagint, which I do not want to have right now.</span> <span class="tl-s" data-s="355.13" data-e="355.69">I&#x27;ll read it.</span> <span class="tl-s" data-s="355.82" data-e="360.41">In Acts 2:16, it says, but this is what was uttered through the prophet Joel.</span> <span class="tl-s" data-s="360.41" data-e="366.67">And in the last days it shall be, God declares, that I will pour out my Spirit on all flesh.</span> <span class="tl-s" data-s="366.67" data-e="374.82">And your sons and daughters shall prophesy, and your young men shall see visions, and your old men shall dream dreams.</span> <span class="tl-s" data-s="374.87" data-e="381.29">Even on my male servants and female servants in those days I will pour out my Spirit, And they shall prophesy.</span> <span class="tl-s" data-s="381.36" data-e="388.23">And I will show wonders in the heaven above and signs on the earth below, blood and fire and smoke and vapor of smoke.</span> <span class="tl-s" data-s="388.23" data-e="396.23">The sun shall be turned to darkness, the moon to blood before the day of the Lord comes, the great and magnificent day.</span></p>
+        <p><span class="tl-s" data-s="396.23" data-e="403.65">And it shall come to pass that everyone who calls upon the name of the Lord shall be saved.</span></p>
+        <p><span class="tl-s" data-s="405.26" data-e="411.80">Then he goes on to say, This Jesus that you crucified is the Son of God.</span> <span class="tl-s" data-s="411.90" data-e="419.19">So the question is— [Speaker B] The question is— [Speaker A] Would the crowd know that that&#x27;s Joel 2?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="419.21" data-e="419.77">Yeah, exactly.</span> <span class="tl-s" data-s="419.85" data-e="422.88">The crowd that Peter&#x27;s referencing, talking to, would they know?</span> <span class="tl-s" data-s="423.39" data-e="425.22">Would they be familiar with that being Joel 2?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="425.93" data-e="425.97">Yes.</span> <span class="tl-s" data-s="426.04" data-e="428.44">The short answer is yes, and I&#x27;ll explain why.</span> <span class="tl-s" data-s="428.83" data-e="431.86">All the people that are gathered there are Jewish first.</span> <span class="tl-s" data-s="431.86" data-e="449.37">They&#x27;re all Jewish because they&#x27;re coming to Jerusalem from the different parts of the Jewish— wherever the Jewish Empire— not Jewish Empire, they didn&#x27;t have an empire, but wherever Jewish people lived, they would travel, like I said, 3 times a year to come for a High Holy holiday, and Pentecost is one of those.</span> <span class="tl-s" data-s="449.85" data-e="453.43">And so they&#x27;re in town because they&#x27;re faithful Jewish people.</span> <span class="tl-s" data-s="454.04" data-e="457.03">Faithful Jewish people knew their Old Testament.</span> <span class="tl-s" data-s="457.31" data-e="466.64">And even more, faithful Jewish people knew, they knew and they were waiting and they were expecting God to send his Messiah.</span> <span class="tl-s" data-s="466.64" data-e="468.62">And they knew those prophecies, right?</span> <span class="tl-s" data-s="468.73" data-e="479.97">And so what we have here is Peter explaining what&#x27;s happening in Acts chapter 2 as a fulfillment of what was prophesied in Joel chapter 2.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="479.97" data-e="480.15">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="480.21" data-e="483.31">And so yes, they would, because they&#x27;re faithful Jews.</span> <span class="tl-s" data-s="483.33" data-e="495.19">The Jews, they would go to the synagogue, they would have the what we call the Old Testament, they&#x27;d have what we call the Old Testament expounded, and they&#x27;d have some of it memorized.</span> <span class="tl-s" data-s="495.22" data-e="503.11">They would have the parts of the Old Testament memorized that spoke of the coming Messiah, and they were definitely aware of this.</span> <span class="tl-s" data-s="503.16" data-e="504.94">They&#x27;d be aware of Isaiah 53.</span> <span class="tl-s" data-s="505.01" data-e="511.44">They&#x27;d be aware of all kinds of different Old Testament promises that pointed to a New Testament Messiah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="511.50" data-e="511.75">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="511.75" data-e="512.26">So for sure.</span> <span class="tl-s" data-s="512.61" data-e="516.16">And you know, this gets just kind of a reality with the New Testament.</span> <span class="tl-s" data-s="516.17" data-e="521.13">If you read the Old Testament, there&#x27;s parts of it that are obscure, and difficult to understand.</span> <span class="tl-s" data-s="521.13" data-e="527.38">Now, same with the New Testament, but the Old Testament seems like it&#x27;s very obscure, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="527.38" data-e="527.47">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="527.47" data-e="533.83">But when you recognize that the people of the New Testament, their Bibles were essentially the Old Testament, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="533.83" data-e="533.94">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="534.04" data-e="537.97">And so they were steeped in this kind of Old Testament tradition.</span> <span class="tl-s" data-s="537.97" data-e="544.61">They knew the prophets, they knew what the prophets had to say, they knew the narratives, they knew what they had to say.</span> <span class="tl-s" data-s="544.63" data-e="547.23">They were familiar with the specific wording.</span> <span class="tl-s" data-s="547.23" data-e="547.47">Yeah.</span> <span class="tl-s" data-s="547.61" data-e="556.34">And so in a very clear sense, the New Testament is a fulfillment of what the Old Testament promises.</span> <span class="tl-s" data-s="556.50" data-e="561.17">And so you&#x27;ve got a ton of different quotations from the Old Testament in the New Testament.</span> <span class="tl-s" data-s="561.17" data-e="571.23">And so you&#x27;ve got all kinds of times where the New Testament authors quote the Old Testament or allude to the Old Testament.</span> <span class="tl-s" data-s="571.26" data-e="577.50">And so to understand your Bible, You have to understand how the New Testament uses the Old Testament.</span> <span class="tl-s" data-s="577.51" data-e="583.76">The most common book quoted in the New Testament from the Old Testament is, Mark?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="584.50" data-e="584.59">Psalms.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="584.59" data-e="584.78">Boom.</span> <span class="tl-s" data-s="584.90" data-e="586.13">And the most commonly quoted Psalm is?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="586.26" data-e="590.29">At first I thought it was 23, but it&#x27;s 110.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="590.29" data-e="592.20">It&#x27;s 110.</span> <span class="tl-s" data-s="592.20" data-e="597.03">And one scholar said he counted 27 direct quotations or indirect allusions to Psalm 110 in the New Testament.</span> <span class="tl-s" data-s="597.28" data-e="600.24">And when you read Psalm 110, you understand why.</span> <span class="tl-s" data-s="600.32" data-e="605.02">It&#x27;s a Psalm about Jesus.</span> <span class="tl-s" data-s="605.12" data-e="605.15">Right.</span> <span class="tl-s" data-s="605.15" data-e="609.36">But the Bible also has multiple allusions.</span> <span class="tl-s" data-s="610.44" data-e="623.75">These are not necessarily direct quotations, but they are like allusions using similar language that would get people to think back about something from the Old Testament.</span> <span class="tl-s" data-s="623.75" data-e="639.95">There are around 900 different allusions in the New Testament. or so, depending on how you count, around 900 that the New Testament authors use in the Old Testament, or from the Old Testament.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="639.95" data-e="645.64">So does the New Testament point to the Old Testament, or does the Old Testament point to the New Testament?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="645.64" data-e="646.92">Well, it&#x27;s a good question.</span> <span class="tl-s" data-s="646.92" data-e="653.03">Maybe backing up a little bit, who has the authority to interpret the Old Testament?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="653.11" data-e="653.30">The apostles.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="653.35" data-e="653.46">Correct.</span> <span class="tl-s" data-s="653.51" data-e="656.62">So the New Testament sheds light on the Old Testament.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="656.62" data-e="656.80">Correct.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="656.80" data-e="661.45">Now, the Old Testament provides background on the New Testament, right?</span> <span class="tl-s" data-s="661.45" data-e="661.53">Correct.</span> <span class="tl-s" data-s="661.53" data-e="664.50">So imagine the way we think about putting the Bible together.</span> <span class="tl-s" data-s="664.56" data-e="671.93">So the way we want today to read the Bible is not front to back, but it&#x27;s New Testament.</span> <span class="tl-s" data-s="671.94" data-e="676.61">The New Testament gives us the authoritative interpretation on the Old, right?</span> <span class="tl-s" data-s="676.61" data-e="678.84">So it&#x27;s not necessarily chronological.</span> <span class="tl-s" data-s="678.92" data-e="679.42">It is— [Speaker B] Yeah.</span> <span class="tl-s" data-s="679.42" data-e="681.79">New Testament interprets the Old Testament.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="681.88" data-e="691.38">Some of what the New Testament was doing was clarifying the ways that the ancient Israelites got wrong, misinterpreted the Old Testament.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="691.50" data-e="694.44">I don&#x27;t know about misinterpreted, or, but like— [Speaker B] Added tradition.</span> <span class="tl-s" data-s="694.48" data-e="698.32">They didn&#x27;t have a full enough picture of it.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="698.32" data-e="698.56">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="698.56" data-e="699.01">Right?</span> <span class="tl-s" data-s="699.11" data-e="704.67">And so biblical prophecy is not as clear as like just predicting stuff that&#x27;s gonna happen.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="704.73" data-e="704.83">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="704.83" data-e="705.39">Right?</span> <span class="tl-s" data-s="705.96" data-e="711.52">The primary focus of biblical prophecy is calling people back to repentance. and the worship of God.</span> <span class="tl-s" data-s="711.55" data-e="722.06">Now, in fact, a lot of times biblical prophecy, like there will be a prophecy about a certain event that is fulfilled in the prophet&#x27;s lifetime, but then has a greater fulfillment later.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="722.32" data-e="724.05">So like a double fulfillment?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="724.05" data-e="725.11">A double fulfillment, right, exactly.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="725.11" data-e="725.51">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="725.59" data-e="728.80">So [Speaker B] a small fulfillment.</span> <span class="tl-s" data-s="728.80" data-e="730.23">Small fulfillment and then a bigger fulfillment.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="730.25" data-e="731.03">In Jesus.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="731.11" data-e="731.27">Yes.</span> <span class="tl-s" data-s="732.19" data-e="734.69">Or in the church or in the New Testament.</span> <span class="tl-s" data-s="734.74" data-e="735.33">Yeah, exactly.</span> <span class="tl-s" data-s="735.37" data-e="740.69">And so Jesus himself talks about him being the point of the Law and the Prophets.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="740.69" data-e="740.92">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="740.92" data-e="741.97">On the road to Emmaus, right?</span> <span class="tl-s" data-s="742.34" data-e="743.39">And so that&#x27;s the truth.</span> <span class="tl-s" data-s="743.40" data-e="761.70">The reason I&#x27;m bringing this up is because a lot of times we will miss some of the allusion the New Testament authors give, and there&#x27;s a lot of texture and broad excitement and color that could be brought to our understanding in the New Testament if we know what they&#x27;re alluding to in the Old.</span> <span class="tl-s" data-s="761.70" data-e="777.79">So here&#x27;s like, Of the 900 different allusions, there&#x27;s all kinds of different ones, but let me just give you a few allusions that can just sort of help us maybe have a greater— see the New Testament in a greater, with more awe and amazement, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="777.98" data-e="778.25">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="778.80" data-e="790.56">And some of these, if you&#x27;ve been around, you&#x27;ve heard these before, but in all 4 of the Gospels, Jesus, after his baptism, is Sent off by the Spirit to the wilderness.</span> <span class="tl-s" data-s="790.60" data-e="792.79">Now he&#x27;s in the wilderness.</span> <span class="tl-s" data-s="792.82" data-e="794.04">Do you know how long?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="794.04" data-e="795.00">40 days?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="795.00" data-e="795.68">40 days.</span> <span class="tl-s" data-s="795.73" data-e="801.80">And that word wilderness is the same word, at least in different languages, but the same word for what the Israelites wandered in.</span> <span class="tl-s" data-s="801.98" data-e="803.22">Do you know how long?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="803.22" data-e="803.74">40 years.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="803.77" data-e="804.69">40 years, right?</span> <span class="tl-s" data-s="804.71" data-e="806.16">So there&#x27;s a direct correlation there.</span> <span class="tl-s" data-s="806.29" data-e="808.72">That 40 was— [Speaker B] The Exodus.</span> <span class="tl-s" data-s="808.86" data-e="811.02">Yeah, that 40 was not on accident.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="811.04" data-e="811.33">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="811.34" data-e="811.54">Right?</span> <span class="tl-s" data-s="811.91" data-e="816.88">And so how did the Israelites do wandering in the wilderness for 40 years?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="816.88" data-e="817.12">Horrible.</span> <span class="tl-s" data-s="817.12" data-e="817.88">They fell away from the Lord.</span> <span class="tl-s" data-s="817.92" data-e="818.45">They didn&#x27;t follow his commands.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="818.57" data-e="819.45">They didn&#x27;t trust him.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="819.45" data-e="820.67">They didn&#x27;t trust him.</span> <span class="tl-s" data-s="820.67" data-e="824.17">They wanted to go back to Egypt.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="824.26" data-e="827.47">And what temptations did they give into?</span> <span class="tl-s" data-s="827.49" data-e="832.77">Food, like— [Speaker B] Food, gathering extra food, worshiping false idols.</span> <span class="tl-s" data-s="832.77" data-e="832.91">Right.</span> <span class="tl-s" data-s="832.95" data-e="834.38">Every possible temptation, right?</span> <span class="tl-s" data-s="834.38" data-e="838.66">So Jesus, and in Exodus chapter 4, God calls Israel his son.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="838.73" data-e="838.80">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="838.95" data-e="841.89">Were they a faithful or unfaithful son?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="841.94" data-e="842.10">Unfaithful.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="842.10" data-e="842.47">Unfaithful.</span> <span class="tl-s" data-s="842.66" data-e="843.62">But then we have Jesus.</span> <span class="tl-s" data-s="843.62" data-e="844.96">So remember, Jesus is baptized, like he&#x27;s baptized.</span> <span class="tl-s" data-s="845.02" data-e="846.74">He goes through the water just like they did.</span> <span class="tl-s" data-s="846.74" data-e="847.86">Remember, they went through the Red Sea.</span> <span class="tl-s" data-s="847.86" data-e="849.61">He goes through the water.</span> <span class="tl-s" data-s="849.72" data-e="851.60">They go— he goes through the Jordan.</span> <span class="tl-s" data-s="851.65" data-e="852.98">They go through Jordan eventually.</span> <span class="tl-s" data-s="853.18" data-e="860.23">But he goes through the water and he goes into the wilderness for 40 days and he has no manna.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="860.23" data-e="860.37">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="860.40" data-e="861.20">He fasts.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="861.20" data-e="861.38">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="861.38" data-e="862.94">And he&#x27;s personally tempted by the devil.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="863.54" data-e="863.85">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="864.01" data-e="865.52">And he overcomes that temptation.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="865.52" data-e="866.98">Doesn&#x27;t give into it.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="867.14" data-e="868.75">So who&#x27;s the better son?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="868.75" data-e="869.02">Jesus.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="869.13" data-e="870.14">Jesus is, right?</span> <span class="tl-s" data-s="870.43" data-e="872.33">Like, another allusion, this one&#x27;s obvious.</span> <span class="tl-s" data-s="872.74" data-e="874.46">Jesus is the new Passover lamb, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="874.51" data-e="874.69">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="874.78" data-e="879.13">All the events of the crucifixion happen after they have the Passover meal, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="879.34" data-e="879.39">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="880.21" data-e="886.98">So this is a tradition that Jewish people have had forever to celebrate Passover on this holiest of days.</span> <span class="tl-s" data-s="887.04" data-e="890.73">On this holiest of days in their calendar, they celebrate Passover, right?</span> <span class="tl-s" data-s="890.73" data-e="895.55">And there&#x27;s specific ways, you know, the lamb has to be without spot, wrinkle, or blemish.</span> <span class="tl-s" data-s="895.55" data-e="897.52">It has to be perfect, right?</span> <span class="tl-s" data-s="897.94" data-e="900.67">Then that lamb&#x27;s That lamb is a sacrifice that is offered— [Speaker B] Without blemish.</span> <span class="tl-s" data-s="900.67" data-e="902.44">Without blemish for the sins of the people, right?</span> <span class="tl-s" data-s="902.44" data-e="905.50">And they actually— [Speaker B] They have to do it over and over.</span> <span class="tl-s" data-s="905.50" data-e="907.42">Yeah, but they actually eat the lamb.</span> <span class="tl-s" data-s="907.42" data-e="908.65">It nourishes them, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="908.65" data-e="908.73">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="908.88" data-e="910.85">But they have to do it over and over.</span> <span class="tl-s" data-s="910.88" data-e="914.75">Jesus is the new Passover lamb, and his sacrifice is good.</span> <span class="tl-s" data-s="914.75" data-e="918.98">That&#x27;s why we don&#x27;t bring animals to church to kill anymore.</span> <span class="tl-s" data-s="918.99" data-e="923.30">We have the sacrifice of Jesus Christ who stepped in, and we are fed by his work.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="923.33" data-e="923.54">Yes.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="923.57" data-e="927.10">So there&#x27;s a sense in which we are nourished as well.</span> <span class="tl-s" data-s="927.10" data-e="932.42">And it&#x27;s super obvious in the Gospels, &#x27;cause here all this is happening on this weekend.</span> <span class="tl-s" data-s="932.42" data-e="938.00">And as the lambs are being slain the day before, Jesus then the next day gets slain.</span> <span class="tl-s" data-s="938.00" data-e="940.20">He&#x27;s the new Passover lamb.</span> <span class="tl-s" data-s="940.27" data-e="945.98">Some other ones that are maybe a little bit more obscure is the darkness at Calvary.</span> <span class="tl-s" data-s="945.98" data-e="952.72">When Jesus hung on the cross, Mark chapter 15 says that there were 3 hours of darkness.</span> <span class="tl-s" data-s="953.03" data-e="956.88">It was a darkness, that covered the land, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="957.18" data-e="957.28">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="957.28" data-e="963.91">In the Exodus, one of the plagues was darkness, and that was for 3 days.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="964.18" data-e="964.43">Wow.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="964.88" data-e="968.96">And so what we have is we have Mark comparing the godlessness of Jerusalem to that of Egypt.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="968.96" data-e="969.06">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="969.06" data-e="980.03">And so we&#x27;ve got this plague of sorts that was brought upon them, and they didn&#x27;t know what was happening.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="980.13" data-e="980.15">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="980.15" data-e="983.28">They didn&#x27;t understand it until Peter comes in.</span> <span class="tl-s" data-s="983.28" data-e="985.70">Acts chapter 2 and explains it.</span> <span class="tl-s" data-s="985.70" data-e="988.48">We see Jesus becomes a new Moses.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="988.48" data-e="988.80">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="988.80" data-e="992.79">So when Moses goes up on Mount Sinai, nobody could follow him.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="993.02" data-e="993.12">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="993.12" data-e="999.35">But when Jesus in Matthew chapter 5, he preaches his sermon, it&#x27;s called the Sermon on the what?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="999.40" data-e="1000.22">The Mount.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1000.48" data-e="1000.92">The Mount.</span> <span class="tl-s" data-s="1001.60" data-e="1004.51">But he invites everybody up to come listen.</span> <span class="tl-s" data-s="1004.62" data-e="1005.40">It&#x27;s different.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1005.45" data-e="1005.57">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1005.66" data-e="1007.75">So now there&#x27;s access, right?</span> <span class="tl-s" data-s="1007.75" data-e="1009.93">So it&#x27;s not scary.</span> <span class="tl-s" data-s="1009.93" data-e="1024.14">So what was scary about Mount Sinai was lightning and thunder and clouds, and it was loud, and everybody there was like, we&#x27;re too afraid to come and hear the voice of God.</span> <span class="tl-s" data-s="1024.14" data-e="1025.44">Moses, you go for us.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1025.44" data-e="1025.83">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1026.54" data-e="1029.28">And nobody, &#x27;cause you touch the mountain, you die.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1029.30" data-e="1029.55">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1029.67" data-e="1039.04">But Jesus, becomes a man, the Son of God, he doesn&#x27;t appear in lightning and thunder and clouds, and it&#x27;s not roaring with anger and earthquakes and things like that.</span> <span class="tl-s" data-s="1039.14" data-e="1043.59">He&#x27;s a normal person that&#x27;s not threatening, that is just like you and me.</span> <span class="tl-s" data-s="1043.63" data-e="1049.83">And so when he calls his disciples to him, others come and he teaches them.</span> <span class="tl-s" data-s="1049.83" data-e="1050.48">He is the new Moses.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1050.48" data-e="1050.70">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1050.70" data-e="1050.88">Right?</span> <span class="tl-s" data-s="1050.88" data-e="1056.74">And we don&#x27;t have to have fear in approaching him. where we did with God.</span> <span class="tl-s" data-s="1056.82" data-e="1058.90">So you can see this greater, fuller nuance.</span> <span class="tl-s" data-s="1059.13" data-e="1060.91">And even there, he delivers a new law.</span> <span class="tl-s" data-s="1060.91" data-e="1062.21">The new law.</span> <span class="tl-s" data-s="1062.98" data-e="1066.10">That&#x27;s what Sermon on the Mount is.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1066.13" data-e="1066.36">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1066.36" data-e="1068.07">From Matthew chapter 5 through 7.</span> <span class="tl-s" data-s="1068.14" data-e="1068.83">It&#x27;s a new law.</span> <span class="tl-s" data-s="1069.01" data-e="1069.76">And you&#x27;ve got these pictures.</span> <span class="tl-s" data-s="1069.76" data-e="1074.48">So Jesus does that on purpose to show people, I am the new Moses.</span> <span class="tl-s" data-s="1075.59" data-e="1079.65">And this kind of stuff is all over the place.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1079.70" data-e="1079.80">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1079.93" data-e="1086.45">And so it&#x27;s really important when you see an image, when you see specificity in the Gospels, right?</span> <span class="tl-s" data-s="1086.45" data-e="1093.34">Or you see a detail that could be thrown away, is to ask yourself, okay, is this an allusion to something in the Old Testament?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1093.34" data-e="1093.43">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1094.00" data-e="1094.24">Right?</span> <span class="tl-s" data-s="1094.24" data-e="1097.28">It&#x27;s kind of like an Easter egg.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1097.28" data-e="1097.61">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1097.61" data-e="1103.03">Is this pointing back to something so that I can read that and understand maybe something of what&#x27;s happening here in the New Testament?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1103.07" data-e="1103.25">Yeah, no.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1103.25" data-e="1121.30">So to put the Bible together, you&#x27;ve got to be able to have You got to be able to see over time, and it takes time and it takes study and it takes work, but over time what you want to see is this rich tapestry that&#x27;s woven together.</span> <span class="tl-s" data-s="1121.30" data-e="1124.85">The New Testament is not just separated from the Old Testament.</span> <span class="tl-s" data-s="1124.90" data-e="1143.46">Its background is the Old Testament, and it takes a lot of the themes and truths of the Old Testament, weaves them together, and presents with greater greater power, you know, a fulfillment of something or a greater glory than what was obvious in the Old Testament.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1143.46" data-e="1143.80">Gotcha.</span> <span class="tl-s" data-s="1143.80" data-e="1145.34">Yeah, so that&#x27;s a great explanation.</span> <span class="tl-s" data-s="1145.34" data-e="1147.72">It&#x27;s really cool to see those Old Testament prophecies fulfilled.</span> <span class="tl-s" data-s="1147.72" data-e="1160.52">We obviously know the obvious ones, but some of the more intricate ones that you don&#x27;t always see on a regular basis, it&#x27;s a great way to understand God&#x27;s faithfulness over time.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1161.35" data-e="1161.91">Certainly, yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1162.25" data-e="1166.66">And Just a quick— [Speaker A] Be amazed by what the Bible is.</span> <span class="tl-s" data-s="1166.66" data-e="1169.57">It&#x27;s not— it has more organization than people have any clue about.</span> <span class="tl-s" data-s="1169.57" data-e="1170.87">Like a supernatural organization.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1170.94" data-e="1171.05">Absolutely.</span> <span class="tl-s" data-s="1171.08" data-e="1175.48">But there&#x27;s a— but like, and that&#x27;s just the whole thing.</span> <span class="tl-s" data-s="1175.48" data-e="1181.88">When you see something you don&#x27;t understand, ask, why is that there?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1182.57" data-e="1183.38">Yeah, for sure.</span> <span class="tl-s" data-s="1183.38" data-e="1189.09">So is it possible for the New Testament to take the Old Testament out of context?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1189.09" data-e="1189.36">No.</span> <span class="tl-s" data-s="1189.64" data-e="1189.70">No.</span> <span class="tl-s" data-s="1189.72" data-e="1195.97">So if the New Testament uses an allusion or a quotation from the Old Testament, they know what they&#x27;re doing.</span> <span class="tl-s" data-s="1196.21" data-e="1198.82">The writer, whatever that writer is— They have that authority.</span> <span class="tl-s" data-s="1199.27" data-e="1199.40">Absolutely.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1199.56" data-e="1201.86">That&#x27;s what we were talking about earlier.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1201.86" data-e="1202.63">Yeah, absolutely.</span> <span class="tl-s" data-s="1203.36" data-e="1203.38">No.</span> <span class="tl-s" data-s="1203.38" data-e="1208.53">And so it&#x27;s on us to understand why or how that quotation is being used.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1208.67" data-e="1215.11">So is it possible for a faithful Christian to miss the beauty of how the Old and New Testament are connected.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1215.11" data-e="1215.58">Absolutely.</span> <span class="tl-s" data-s="1215.58" data-e="1215.96">Sure.</span> <span class="tl-s" data-s="1216.96" data-e="1218.29">Most of us do, for sure.</span> <span class="tl-s" data-s="1218.48" data-e="1219.27">We&#x27;re not Jewish.</span> <span class="tl-s" data-s="1219.27" data-e="1220.47">We don&#x27;t read Hebrew.</span> <span class="tl-s" data-s="1220.49" data-e="1222.49">We&#x27;re not steeped in the Old Testament tradition.</span> <span class="tl-s" data-s="1222.49" data-e="1224.82">And so, yeah, absolutely it does.</span> <span class="tl-s" data-s="1224.82" data-e="1225.95">It&#x27;s more than possible.</span> <span class="tl-s" data-s="1226.01" data-e="1226.30">It&#x27;s probable.</span> <span class="tl-s" data-s="1226.33" data-e="1231.88">And that&#x27;s why the Bible is a book that is, it&#x27;s not just a book to sort of come to for information.</span></p>
+        <p><span class="tl-s" data-s="1231.88" data-e="1236.13">It&#x27;s a book that we come to and recognize this is the word of God.</span> <span class="tl-s" data-s="1236.13" data-e="1240.01">And I can study this for my whole life and not plumb the depths of it.</span> <span class="tl-s" data-s="1240.04" data-e="1250.49">I can come to this book every day, and we should, and read it and take it in and recognize, man, there&#x27;s stuff here I didn&#x27;t see before.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1250.49" data-e="1251.01">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1251.18" data-e="1264.34">Just this week I was reading Psalm 105, and Psalm 105 talks about the whole— the psalmist is retelling the story of the nation of Israel, and he says, the Lord sent Joseph ahead to Egypt.</span> <span class="tl-s" data-s="1264.34" data-e="1267.92">Now, you read in Genesis— [Speaker B] That&#x27;s not Doesn&#x27;t sound like that way.</span> <span class="tl-s" data-s="1268.02" data-e="1270.76">No, he&#x27;s sold into slavery.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1271.32" data-e="1272.90">By his brothers.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1272.99" data-e="1293.08">The Lord&#x27;s hand doesn&#x27;t seem to be anywhere there, but you see the Lord using that evil and bringing about redemption, bringing about a rescue based on bad circumstances that end up working to a way where Joseph is then the one who rescues and who preserves his brothers who end up becoming the patriarchs of Israel.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1293.14" data-e="1293.29">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1293.29" data-e="1296.53">So none of that happens unless he gets sold into slavery, right?</span> <span class="tl-s" data-s="1296.53" data-e="1296.83">Right.</span> <span class="tl-s" data-s="1296.91" data-e="1313.12">And so, like, to take that kind of language in and to recognize, man, this is— there is more here than we know, and it&#x27;s worth studying your whole life because you&#x27;re never gonna come to the Bible and go— and I&#x27;ve already been there and I&#x27;ve done that.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1313.17" data-e="1313.40">Yeah.</span> <span class="tl-s" data-s="1313.43" data-e="1314.26">No, that&#x27;s amazing.</span> <span class="tl-s" data-s="1315.45" data-e="1325.94">Just the way it all works together and knowing that the Old Testament was written, you know, hundreds and hundreds of years before The divine— divinely inspired authors wrote the New Testament.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1326.01" data-e="1326.04">Yep.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1326.04" data-e="1329.39">It&#x27;s just amazing to see the Lord putting it all together.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1329.39" data-e="1329.57">Absolutely.</span> <span class="tl-s" data-s="1329.57" data-e="1329.83">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1329.83" data-e="1332.88">Just stare at it and wonder in amazement.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1332.94" data-e="1333.09">Absolutely.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1333.09" data-e="1336.38">How could that not strengthen your faith or your resolve that what we believe is true?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1336.38" data-e="1336.61">Absolutely.</span> <span class="tl-s" data-s="1336.64" data-e="1337.03">Yeah, absolutely.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1337.03" data-e="1339.40">So the more you ask questions, the better.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1339.52" data-e="1343.14">The more you ask questions, the better.</span> <span class="tl-s" data-s="1343.14" data-e="1344.67">The Bible holds up.</span> <span class="tl-s" data-s="1344.69" data-e="1347.52">The Bible holds up to scrutiny.</span> <span class="tl-s" data-s="1347.52" data-e="1354.31">People have been shooting at it for centuries.</span> <span class="tl-s" data-s="1354.31" data-e="1355.25">It&#x27;s still here.</span></p>
+        <p><span class="tl-s" data-s="1357.17" data-e="1360.73">The Gospel is still there and we&#x27;ve got, I mean, it&#x27;s not going anywhere.</span> <span class="tl-s" data-s="1360.73" data-e="1364.19">And so let&#x27;s study it, learn it, love it.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1364.43" data-e="1365.27">Love it.</span> <span class="tl-s" data-s="1365.42" data-e="1366.52">Well, thank you.</span> <span class="tl-s" data-s="1367.11" data-e="1368.02">Heather&#x27;s got a question.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1368.07" data-e="1368.53">Oh, Heather, yes.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1368.79" data-e="1371.14">Actually, I just had something to add.</span> <span class="tl-s" data-s="1371.19" data-e="1374.97">We did a 5-episode on how to read series.</span> <span class="tl-s" data-s="1375.02" data-e="1380.71">And I think this kind of goes right in line with that.</span> <span class="tl-s" data-s="1380.73" data-e="1382.60">So those are episodes 22, 23, and 24.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1383.10" data-e="1383.21">Okay.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1383.21" data-e="1384.96">29 and 30.</span> <span class="tl-s" data-s="1384.96" data-e="1387.18">And it&#x27;s how to read biblical narrative, Gospels, Prophets, Revelation, and Proverbs.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1387.20" data-e="1387.59">There you go.</span> <span class="tl-s" data-s="1388.00" data-e="1392.22">And this is how to understand how to maybe how to put the whole Bible together.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1392.25" data-e="1392.65">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1392.65" data-e="1393.52">Yeah, there we go.</span> <span class="tl-s" data-s="1393.52" data-e="1393.84">Thanks, Heather.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1393.84" data-e="1394.57">Yeah, thank you.</span> <span class="tl-s" data-s="1394.57" data-e="1400.81">And if there&#x27;s other books that you&#x27;re curious about how to read in the context of the whole Bible, feel free to send us an email.</span> <span class="tl-s" data-s="1400.81" data-e="1407.69">Or if you have any other questions about how the Old Testament and the the New Testament work together, reach out at production@centergilbert.com.</span> <span class="tl-s" data-s="1407.69" data-e="1407.69">We just really appreciate your support.</span> <span class="tl-s" data-s="1407.69" data-e="1407.69">Yeah, thank you for the questions.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1407.69" data-e="1407.69">Yeah, thanks everybody.</span> <span class="tl-s" data-s="1407.69" data-e="1407.69">See you next time.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Fixed on Jesus episode archive, backed by /api/podcast/search.
+  // Static fallback list above stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function fmtDuration(raw) {
+      if (!raw) return "";
+      var str = String(raw).trim();
+      // Anchor feeds report seconds; render as H:MM:SS or M:SS.
+      if (/^\d+$/.test(str)) {
+        var total = parseInt(str, 10);
+        var h = Math.floor(total / 3600);
+        var m = Math.floor((total % 3600) / 60);
+        var sec = total % 60;
+        var mm = (h > 0 && m < 10 ? "0" + m : "" + m);
+        var ss = (sec < 10 ? "0" + sec : "" + sec);
+        return (h > 0 ? h + ":" + mm : m) + ":" + ss;
+      }
+      // Anchor also reports clock strings like "00:24:02" — drop the
+      // redundant leading hour so it reads "24:02".
+      return str.replace(/^00:/, "");
+    }
+    function row(it) {
+      it = it || {};
+      var title = esc(it.title) || "Untitled episode";
+      var tUrl = it.guid && transcriptMap[it.guid];
+      var heading = tUrl
+        ? '<a href="' + esc(tUrl) + '">' + title + "</a>"
+        : (it.link
+          ? '<a href="' + esc(it.link) + '" target="_blank" rel="noopener">' + title + "</a>"
+          : title);
+      var meta = [fmtDate(it.date), fmtDuration(it.duration)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      return '<div class="sermon"><div><h3>' + heading + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    var PER = 10;
+    var state = { q: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No episodes found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " episode" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " episodes";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/podcast/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () {
+          // Keep the static list, but tell the reader where else to listen —
+          // some privacy blockers stop the archive request itself.
+          var note = document.querySelector("[data-sermons-error]");
+          if (note) note.hidden = false;
+        });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    if (monthSel) {
+      monthSel.addEventListener("change", function () {
+        state.month = monthSel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: 7a45a7e8-578c-4188-97b9-ddfaaf5a0ed8 -->
+</body>
+</html>
