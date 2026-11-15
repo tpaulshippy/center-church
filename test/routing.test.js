@@ -94,6 +94,7 @@ describe("routing", () => {
     const body = await res.json();
     assert.equal(body.total, 1);
     assert.equal(body.items[0].title, "Acts 19:1-20");
+    assert.equal(body.items[0].guid, "https://example.com/ep1");
   });
 
   it("GET /api/podcast returns 200", async () => {

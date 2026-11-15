@@ -504,19 +504,34 @@ with open(os.environ["OUTPUT"], "w") as f:
 print("Wrote %s" % os.environ["OUTPUT"])
 EOF
 
+# Maintain the transcript manifest consulted by /sermons (guid -> path).
+python3 - "$GUID" "/sermons/${SLUG}" <<'EOF'
+import json, sys
+p = "public/transcripts.json"
+try:
+    m = json.load(open(p))
+except (ValueError, OSError):
+    m = {}
+m[sys.argv[1]] = sys.argv[2]
+with open(p, "w") as f:
+    json.dump(m, f, indent=2, sort_keys=True)
+    f.write("\n")
+print("Manifest %s: %s -> %s" % (p, sys.argv[1], sys.argv[2]))
+EOF
+
 echo
 MSG="${MESSAGE:-Add sermon transcript: ${TITLE}}"
 if [ "$NO_PUSH" -eq 1 ]; then
   echo "Next steps (--no-push: commit+push skipped):"
   echo "  1. Review ${OUTPUT} in a browser (unlinked draft — not in nav or sitemap)."
-  echo "  2. git add ${OUTPUT} scripts/add-transcript.sh && git commit -m \"${MSG}\" && git push"
+  echo "  2. git add ${OUTPUT} scripts/add-transcript.sh public/transcripts.json && git commit -m \"${MSG}\" && git push"
   echo "     (push to main deploys via the existing GitHub Action)"
   echo "  3. Share the direct URL path: /sermons/${SLUG}"
 else
-  # Stage ONLY these two paths — never `git add -A`. Unrelated dirty files
+  # Stage ONLY these three paths — never `git add -A`. Unrelated dirty files
   # (staged or not) are left untouched.
-  git add -- "${OUTPUT}" scripts/add-transcript.sh
-  if git diff --cached --quiet -- "${OUTPUT}" scripts/add-transcript.sh; then
+  git add -- "${OUTPUT}" scripts/add-transcript.sh public/transcripts.json
+  if git diff --cached --quiet -- "${OUTPUT}" scripts/add-transcript.sh public/transcripts.json; then
     echo "Nothing new to commit (${OUTPUT} and script unchanged)."
   else
     git commit -m "${MSG}" -- "${OUTPUT}" scripts/add-transcript.sh

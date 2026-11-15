@@ -180,6 +180,7 @@ export async function handleFeedSearch(request, ctx, feedUrl, cachePath, label) 
     const items = filtered.slice((page - 1) * per, page * per).map((it) => ({
       title: it.title,
       speaker: it.speaker,
+      guid: it.guid,
       date: it.date,
       description: it.description,
       audio: it.audio,
