@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Is Tithing Biblical? — Podcast Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Fixed on Jesus: conversations beyond Sunday mornings from Center Church in Gilbert, AZ — listen on Spotify, Apple Podcasts, and YouTube." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=18" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a href="/sermons">Sermons</a></li>
+              <li><a class="active" href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/podcast">&larr; All podcast episodes</a>
+          <h1 class="display-lg">Is Tithing Biblical?</h1>
+          <p class="transcript-meta">2024-08-21 · 23:22</p>
+          <p class="transcript-desc">Welcome to FIXED ON JESUS, a podcast brought to you by Center Church in Gilbert, Arizona. Speaking to you today are Rich Richardson &amp; Mark Johnson Jr. Production by Heather Corbitt **SHOW NOTES** Questions asked in this episode: Why should I give money to my local church? Is the tithe still binding?</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/e750e370/podcast/play/90711435/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-7-21%2F42f7ed72-75b2-8120-2df2-02f07f0147c1.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="0.13" data-e="8.99">Giving and evangelism are 2 categories we need to be reminded of on a regular basis, because naturally we wouldn&#x27;t be generous and we wouldn&#x27;t evangelize.</span> <span class="tl-s" data-s="10.07" data-e="14.13">But we need to be reminded, number one, with the giving, it&#x27;s not ours.</span> <span class="tl-s" data-s="14.88" data-e="15.49">We&#x27;re stewards.</span> <span class="tl-s" data-s="15.72" data-e="18.78">Number two, with evangelism, they&#x27;re going to hell if we don&#x27;t tell them about Jesus.</span> <span class="tl-s" data-s="19.86" data-e="21.51">And so the stakes are high for both.</span></p>
+        <p><span class="tl-s" data-s="34.44" data-e="40.61">This is Fixed on Jesus.</span> <span class="tl-s" data-s="40.61" data-e="53.91">Welcome to Fixed on Jesus.</span> <span class="tl-s" data-s="53.91" data-e="53.99">My name is Jeff.</span></p>
+        <p><span class="tl-s" data-s="58.17" data-e="62.39">My name is Rich, and I am joined as always by Mark Johnson Jr.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="62.84" data-e="63.05">Hello.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="63.72" data-e="65.39">And behind the glass, we have Heather Corbett.</span> <span class="tl-s" data-s="66.28" data-e="80.83">This is our podcast called Fixed on Jesus, where we talk about all kinds of topics in this wide world that we live in and connect them all to Jesus Christ, because we believe that all of life makes sense when you start with all of Christ.</span> <span class="tl-s" data-s="81.39" data-e="84.36">So what are we talking about, uh, today, Mark?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="84.53" data-e="84.78">You know what?</span> <span class="tl-s" data-s="84.84" data-e="85.91">I actually forgot, dude.</span> <span class="tl-s" data-s="86.07" data-e="88.23">I was going to ask you, but oh wait, it just came to me.</span></p>
+        <p><span class="tl-s" data-s="89.92" data-e="92.43">Why should I give the church money?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="93.04" data-e="93.74">What was that all?</span> <span class="tl-s" data-s="93.85" data-e="94.35">I forgot.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="94.58" data-e="97.65">Oh, it just had like a little mind blank, you know?</span> <span class="tl-s" data-s="97.70" data-e="97.83">Just, yeah.</span> <span class="tl-s" data-s="98.23" data-e="98.32">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="99.29" data-e="101.05">We&#x27;ll let Heather edit this part out.</span> <span class="tl-s" data-s="101.05" data-e="101.31">Okay.</span> <span class="tl-s" data-s="101.55" data-e="102.54">So what&#x27;s the question?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="102.54" data-e="108.99">The question is, why should I give money to my local church?</span> <span class="tl-s" data-s="108.99" data-e="112.48">If at all, why should I tithe?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="112.48" data-e="113.38">Why should you tithe?</span> <span class="tl-s" data-s="113.38" data-e="115.98">Well, [Speaker B] do I am I commanded to tithe?</span> <span class="tl-s" data-s="115.98" data-e="116.94">I got a lot of questions.</span> <span class="tl-s" data-s="116.94" data-e="117.28">Yeah.</span> <span class="tl-s" data-s="117.28" data-e="117.54">Wow.</span> <span class="tl-s" data-s="117.54" data-e="118.86">So it&#x27;s all associated with money.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="119.28" data-e="119.56">Yeah.</span> <span class="tl-s" data-s="119.56" data-e="120.52">I don&#x27;t have any.</span> <span class="tl-s" data-s="120.52" data-e="121.32">I&#x27;m rich in spirit.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="121.32" data-e="121.98">There we go.</span> <span class="tl-s" data-s="121.98" data-e="122.18">Okay.</span> <span class="tl-s" data-s="122.18" data-e="122.94">Well, that&#x27;s all right.</span> <span class="tl-s" data-s="122.94" data-e="123.78">That&#x27;s all good.</span> <span class="tl-s" data-s="123.88" data-e="130.12">But like that&#x27;s one of the questions I&#x27;ve gotten over the years is is the tithe still binding on Christians today, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="130.12" data-e="130.98">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="131.43" data-e="137.72">And I want to say like if you read the Old Testament, you find that there were three tithes actually.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="137.72" data-e="138.28">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="138.28" data-e="140.14">You&#x27;ve got the Levitical tithe, which you can read about in Numbers eighteen.</span></p>
+        <p><span class="tl-s" data-s="142.95" data-e="147.84">And that was every year you gave 10% to support the Levites, the priests, right?</span> <span class="tl-s" data-s="148.29" data-e="152.99">Then the festival tithe, which was also given annually for the festivals.</span> <span class="tl-s" data-s="153.50" data-e="157.28">Then every 3rd year you gave a 10% to the poor tithe.</span> <span class="tl-s" data-s="157.36" data-e="160.94">So [Speaker B] you got 70% left.</span> <span class="tl-s" data-s="161.21" data-e="165.13">No, 23.3% because it was on, if you factored over a 1-year period.</span> <span class="tl-s" data-s="165.13" data-e="165.29">Wow.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="165.29" data-e="167.15">You got your math figured out today.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="167.15" data-e="167.47">Yeah.</span> <span class="tl-s" data-s="168.15" data-e="172.15">So like, When people talk about tithe, they&#x27;re not talking about 23.3%.</span> <span class="tl-s" data-s="172.18" data-e="174.86">They&#x27;re talking about straight up 10%.</span> <span class="tl-s" data-s="174.91" data-e="176.57">Right.</span> <span class="tl-s" data-s="176.57" data-e="178.98">And that&#x27;s one of the things people like, is it still binding?</span> <span class="tl-s" data-s="178.98" data-e="180.52">Do I have to tithe?</span> <span class="tl-s" data-s="180.52" data-e="185.19">I would say the standard for giving now has changed.</span> <span class="tl-s" data-s="185.19" data-e="185.41">Right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="185.41" data-e="186.32">You mean in the New Testament?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="186.32" data-e="187.40">In the New Testament.</span> <span class="tl-s" data-s="187.40" data-e="187.59">Yeah.</span> <span class="tl-s" data-s="188.13" data-e="192.69">So like the real, there&#x27;s a couple places, like you look at the love of money.</span> <span class="tl-s" data-s="192.69" data-e="194.23">That&#x27;s a question we have to ask ourselves.</span> <span class="tl-s" data-s="194.23" data-e="197.13">That&#x27;s in the Sermon on the Mount.</span> <span class="tl-s" data-s="197.45" data-e="197.65">Yeah.</span> <span class="tl-s" data-s="197.76" data-e="199.93">Jesus says, don&#x27;t store up for yourselves.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="199.93" data-e="200.15">Yeah.</span> <span class="tl-s" data-s="200.15" data-e="202.88">Don&#x27;t store up for yourself treasures here on earth where rust and moth destroy.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="202.88" data-e="203.86">Moth and rust destroy.</span> <span class="tl-s" data-s="203.86" data-e="204.10">Right.</span> <span class="tl-s" data-s="204.10" data-e="207.67">That&#x27;s just a wisdom, but store up treasures in heaven.</span> <span class="tl-s" data-s="207.86" data-e="207.98">Right.</span> <span class="tl-s" data-s="208.03" data-e="215.41">But when it speaks, 2 Corinthians chapter 8 and 9 speak most specifically about giving and generosity.</span> <span class="tl-s" data-s="215.91" data-e="221.76">And so the standard now, nowhere in here do you see Paul saying, hey, give 10%.</span> <span class="tl-s" data-s="221.76" data-e="223.09">He doesn&#x27;t say that anywhere.</span> <span class="tl-s" data-s="223.38" data-e="227.22">In fact, The standard is something very different.</span> <span class="tl-s" data-s="227.22" data-e="246.96">It&#x27;s if you read 2 Corinthians chapter 8, verse 9, he says, for you know the grace of our Lord Jesus Christ, that though he was rich, yet for your sake he became poor so that you by his poverty might become rich.</span> <span class="tl-s" data-s="247.06" data-e="255.92">So what Paul tells these, because the Corinthians, they had promised to give some money to the struggling Jerusalem church.</span></p>
+        <p><span class="tl-s" data-s="255.97" data-e="258.23">And Paul is telling them, what&#x27;s your motive?</span> <span class="tl-s" data-s="258.23" data-e="261.01">Well, your motive is not just give 10%.</span> <span class="tl-s" data-s="261.01" data-e="265.36">Your motive is look at what you have received from Jesus Christ.</span> <span class="tl-s" data-s="265.36" data-e="272.81">He emptied himself, made himself a man, and impoverished himself so that we might be made rich.</span> <span class="tl-s" data-s="272.82" data-e="274.69">Jesus didn&#x27;t tithe himself, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="274.69" data-e="274.91">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="274.91" data-e="275.38">He didn&#x27;t take off part.</span> <span class="tl-s" data-s="275.38" data-e="276.60">He didn&#x27;t give 10% or 20%.</span> <span class="tl-s" data-s="276.60" data-e="277.20">He didn&#x27;t give 10%.</span> <span class="tl-s" data-s="277.38" data-e="279.39">He gave all of himself.</span> <span class="tl-s" data-s="279.48" data-e="279.71">Right?</span> <span class="tl-s" data-s="279.95" data-e="289.63">And so the standard by which we now give is, I mean, our motive for giving is what Christ has done for us, right?</span> <span class="tl-s" data-s="289.68" data-e="291.43">That was not the motive in the Old Testament.</span> <span class="tl-s" data-s="291.43" data-e="291.75">No.</span> <span class="tl-s" data-s="291.75" data-e="297.46">The motive in the Old Testament was to help the Levites, to help the poor, to pay for the festivals.</span> <span class="tl-s" data-s="297.46" data-e="298.39">That&#x27;s not what we&#x27;re doing.</span></p>
+        <p><span class="tl-s" data-s="298.39" data-e="300.54">And they&#x27;re commanded to, and that&#x27;s not what we&#x27;re doing.</span> <span class="tl-s" data-s="300.56" data-e="307.07">What we&#x27;re doing here is taking the money that the Lord has given us, That&#x27;s one thing to remember.</span> <span class="tl-s" data-s="307.07" data-e="308.36">We&#x27;re just stewards, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="308.36" data-e="309.03">Whose money is it?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="309.06" data-e="310.35">It&#x27;s not our money, right?</span> <span class="tl-s" data-s="310.51" data-e="319.25">And so any ability that you and I or anyone else has, any ability is given to us by God.</span> <span class="tl-s" data-s="319.43" data-e="322.08">Any opportunity is given to us by God.</span> <span class="tl-s" data-s="322.08" data-e="324.28">So sometimes when we think about money, we forget that.</span> <span class="tl-s" data-s="324.34" data-e="333.88">And we think by the strength of my back and the sweat of my brow, there I have made myself able to make all this money alone.</span> <span class="tl-s" data-s="333.88" data-e="335.42">And that&#x27;s not true.</span> <span class="tl-s" data-s="335.52" data-e="337.87">And so— [Speaker B] That&#x27;s the temptation.</span> <span class="tl-s" data-s="337.89" data-e="344.40">We have to remember that it&#x27;s not our money, that we are stewards of his money that he has given us.</span> <span class="tl-s" data-s="344.41" data-e="350.94">And so when we start talking about generosity and giving, really, we need to put this in the right context.</span> <span class="tl-s" data-s="351.05" data-e="351.58">Whose money is it?</span></p>
+        <p><span class="tl-s" data-s="351.77" data-e="352.65">It&#x27;s not ours.</span> <span class="tl-s" data-s="353.29" data-e="354.16">It&#x27;s his.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="354.18" data-e="354.40">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="354.66" data-e="354.98">Right?</span> <span class="tl-s" data-s="354.98" data-e="358.08">And so what&#x27;s the standard when it comes to the New Testament?</span> <span class="tl-s" data-s="358.13" data-e="362.53">The standard when it comes to the New Testament is generosity.</span> <span class="tl-s" data-s="362.53" data-e="367.56">And we see this in 2 Corinthians 9:6.</span> <span class="tl-s" data-s="367.63" data-e="368.03">Paul&#x27;s real clear.</span> <span class="tl-s" data-s="368.03" data-e="375.75">He goes, the point is this: whoever sows sparingly will also reap sparingly.</span> <span class="tl-s" data-s="375.84" data-e="379.02">Whoever sows bountifully will also reap bountifully.</span> <span class="tl-s" data-s="379.02" data-e="381.69">Each one— Now notice he puts it on everybody, all of us.</span> <span class="tl-s" data-s="381.69" data-e="384.46">He&#x27;s about to tell us how to give.</span> <span class="tl-s" data-s="384.52" data-e="389.98">Each one must give as he has decided in his heart.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="390.32" data-e="390.37">Hmm.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="390.42" data-e="393.28">Not reluctantly or under compulsion.</span> <span class="tl-s" data-s="393.28" data-e="395.57">How do we know how to give?</span> <span class="tl-s" data-s="395.75" data-e="398.71">Well, God loves a cheerful giver.</span> <span class="tl-s" data-s="398.83" data-e="402.93">See, the thing is, is that we think, oh, well, if I give, I won&#x27;t be able to do the X, Y, and Z.</span> <span class="tl-s" data-s="402.93" data-e="406.28">I won&#x27;t be able to pay this, this, and that.</span> <span class="tl-s" data-s="406.40" data-e="406.74">Right?</span> <span class="tl-s" data-s="406.80" data-e="417.74">And Paul jumps right in in verse 8 and says, and God is able to make all grace abound to you So that having all sufficiency in all things at all time, you may abound in every good work.</span> <span class="tl-s" data-s="418.48" data-e="430.85">In other words, those who are generous for God&#x27;s purposes in God&#x27;s kingdom, God gives grace abounding to them so that they might be able to be fruitful.</span> <span class="tl-s" data-s="430.92" data-e="432.84">They might be able to bless, right?</span> <span class="tl-s" data-s="432.84" data-e="439.66">They might be able to take what they have been given and sow it into the kingdom.</span></p>
+        <p><span class="tl-s" data-s="439.66" data-e="442.43">And experience grace that comes from that kind of trust.</span> <span class="tl-s" data-s="443.04" data-e="451.87">Because when we give, what we&#x27;re doing is we&#x27;re really, really— it&#x27;s one of the most really basic, ground-level, practical things we can do, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="451.92" data-e="452.16">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="452.16" data-e="454.64">I can say I trust Jesus.</span> <span class="tl-s" data-s="454.64" data-e="455.86">I can say I trust Jesus.</span> <span class="tl-s" data-s="455.86" data-e="458.20">I can say I love Jesus.</span> <span class="tl-s" data-s="458.20" data-e="461.15">But does my money say I trust and love Jesus?</span> <span class="tl-s" data-s="461.15" data-e="463.07">That&#x27;s a question we all need to ask ourselves.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="463.07" data-e="463.25">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="463.25" data-e="470.35">And it&#x27;s not as if I need to get into your business and be like, I mean, I&#x27;m not saying that so that you invite me in to see your budget.</span> <span class="tl-s" data-s="470.35" data-e="471.38">I don&#x27;t, that&#x27;s not part of my job.</span> <span class="tl-s" data-s="471.38" data-e="471.87">You don&#x27;t want to know.</span> <span class="tl-s" data-s="471.97" data-e="472.50">I don&#x27;t want to know.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="472.50" data-e="473.32">I don&#x27;t need to know.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="473.36" data-e="476.04">I don&#x27;t know what anybody gives.</span> <span class="tl-s" data-s="476.04" data-e="482.13">But I want to ask, does my bank account and the way that I spend my money, does it say I trust Jesus?</span> <span class="tl-s" data-s="482.13" data-e="483.68">Does it say I love Jesus?</span> <span class="tl-s" data-s="483.68" data-e="485.78">Or does it say something else?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="485.83" data-e="486.06">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="486.09" data-e="489.93">And so those are the questions that we ask now in the New Testament.</span> <span class="tl-s" data-s="489.96" data-e="493.13">Instead of like, hey, is it just a blind 10%?</span> <span class="tl-s" data-s="493.74" data-e="497.84">I would say it&#x27;s not binding, but the standard is more.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="497.90" data-e="500.90">More than the Old Testament binding standard.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="501.06" data-e="502.54">The standard&#x27;s higher.</span> <span class="tl-s" data-s="502.93" data-e="503.84">It&#x27;s sacrifice.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="503.94" data-e="504.20">Wow.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="504.42" data-e="505.36">It&#x27;s generosity, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="505.65" data-e="506.02">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="506.07" data-e="515.88">And if Christians gave 10% to their local church, they were generous to other organizations that do kingdom work, there&#x27;d be plenty of money to go around to advance the kingdom.</span> <span class="tl-s" data-s="515.89" data-e="520.18">The reality is most of us, most people in the United States don&#x27;t think they can afford to give.</span> <span class="tl-s" data-s="520.18" data-e="530.71">And the reason they don&#x27;t think they can afford to give is because they think it&#x27;s their money and they haven&#x27;t put themselves in a place to trust the Lord and see how he provides.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="531.10" data-e="531.58">Yeah, I know.</span> <span class="tl-s" data-s="531.58" data-e="541.30">I just had a breakthrough when you said the reason people feel as if they can&#x27;t afford is because they&#x27;re thinking they have ownership over that money.</span> <span class="tl-s" data-s="541.47" data-e="542.67">But essentially, that&#x27;s the Lord&#x27;s money.</span> <span class="tl-s" data-s="542.67" data-e="544.86">He just gave you some time to hold it.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="545.31" data-e="546.49">Yeah, we&#x27;re stewards.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="546.54" data-e="546.75">Exactly.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="546.83" data-e="547.26">We&#x27;re stewards.</span> <span class="tl-s" data-s="547.26" data-e="550.36">Like, a steward is somebody who worked in the house of someone else, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="550.37" data-e="550.60">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="551.32" data-e="556.16">And so, like, we&#x27;re just functioning for a while with his money, right?</span> <span class="tl-s" data-s="556.16" data-e="559.66">And so it&#x27;s a grave mistake to think it&#x27;s ours.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="559.66" data-e="559.85">Right.</span> <span class="tl-s" data-s="559.90" data-e="561.88">So that&#x27;s kind of the New Testament pattern.</span> <span class="tl-s" data-s="561.93" data-e="565.20">It&#x27;s— you&#x27;re saying it&#x27;s more generous than the Old Testament.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="565.59" data-e="568.30">I would say generosity is now the standard.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="568.33" data-e="568.50">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="568.50" data-e="573.21">And as Paul says, each one should Give as he has decided in his heart.</span> <span class="tl-s" data-s="573.21" data-e="573.50">Right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="573.56" data-e="573.64">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="573.80" data-e="575.81">So it&#x27;s an interaction between you and God.</span> <span class="tl-s" data-s="575.86" data-e="576.59">Grumbling, not reluctantly.</span> <span class="tl-s" data-s="576.59" data-e="577.02">Yeah.</span> <span class="tl-s" data-s="577.02" data-e="579.04">It&#x27;s an interaction between you and God.</span> <span class="tl-s" data-s="579.49" data-e="584.25">Am I giving to such a degree that it could be defined as generous?</span> <span class="tl-s" data-s="584.25" data-e="587.37">When your accountant sees it, does your accountant go, whoa, what are you doing?</span> <span class="tl-s" data-s="587.37" data-e="591.81">Or does your accountant go, okay, well, whatever?</span> <span class="tl-s" data-s="591.86" data-e="603.97">If people from the outside saw what you gave to your local church, would they be surprised or would they think, oh, okay, Or would they look at it and go, wow, you really do trust the Lord because you&#x27;re putting your money where your mouth is.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="604.07" data-e="604.29">Yes.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="604.31" data-e="604.49">Right?</span> <span class="tl-s" data-s="604.55" data-e="610.90">And so like, that&#x27;s— That&#x27;s one of the big acid tests for Christianity is how we spend our money.</span> <span class="tl-s" data-s="611.10" data-e="613.11">How do we give generously?</span> <span class="tl-s" data-s="613.12" data-e="617.27">Are we people who give in such a way because of what we&#x27;ve received?</span> <span class="tl-s" data-s="617.29" data-e="626.09">Like even Jesus, when he talks to Zacchaeus, Zacchaeus is convicted that he stole all that money and he was, you know, skimming off the top, right?</span> <span class="tl-s" data-s="626.65" data-e="628.02">He paid back.</span> <span class="tl-s" data-s="628.43" data-e="629.02">Everybody plus some.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="629.63" data-e="630.21">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="630.51" data-e="634.89">And then Jesus says to Zacchaeus, salvation has come to this house.</span> <span class="tl-s" data-s="634.94" data-e="635.24">Why?</span> <span class="tl-s" data-s="635.24" data-e="637.76">Because his money&#x27;s where his mouth was, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="637.82" data-e="637.90">Yes.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="637.95" data-e="639.79">And Zacchaeus is like, oh, I get it now.</span> <span class="tl-s" data-s="639.83" data-e="640.56">You know?</span> <span class="tl-s" data-s="640.77" data-e="645.55">And so Jesus is like, yeah, I see you regard me as more important than your money.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="645.65" data-e="645.82">Right.</span> <span class="tl-s" data-s="645.82" data-e="648.28">So much so that you&#x27;re going to pay back.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="648.63" data-e="649.11">Exactly.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="649.29" data-e="649.82">With interest.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="649.82" data-e="650.01">Exactly.</span> <span class="tl-s" data-s="650.07" data-e="650.38">Exactly.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="651.10" data-e="651.29">That&#x27;s awesome.</span> <span class="tl-s" data-s="651.29" data-e="652.67">So I got a bunch of follow-ups.</span> <span class="tl-s" data-s="652.67" data-e="653.42">I&#x27;m just going to shoot.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="653.52" data-e="654.55">Roll through them.</span> <span class="tl-s" data-s="654.55" data-e="655.69">Let&#x27;s go.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="655.69" data-e="657.57">Should giving hurt sometimes?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="657.67" data-e="657.91">Sometimes, yes.</span> <span class="tl-s" data-s="657.91" data-e="658.05">Right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="658.05" data-e="667.19">Like when you look at your paycheck or your budget and you apportioned a certain amount for the Lord and send that transfer or write that check.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="667.19" data-e="667.51">I think so.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="667.51" data-e="670.07">And I mean, I think— It&#x27;s a form of worship though, right?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="670.07" data-e="670.73">Oh, absolutely.</span> <span class="tl-s" data-s="670.73" data-e="671.97">It&#x27;s a practical form of worship.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="671.97" data-e="674.75">Sometimes you&#x27;re like, Lord, I don&#x27;t know how this is going to work out, but I trust you.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="674.75" data-e="675.13">Yeah.</span> <span class="tl-s" data-s="675.13" data-e="683.93">I mean, and I&#x27;m not saying that you should take your whole— like sometimes there can be this all or nothing mentality when it comes to this, where you give every dime you earn.</span> <span class="tl-s" data-s="683.93" data-e="684.09">I&#x27;m not saying that.</span> <span class="tl-s" data-s="684.09" data-e="686.93">You need to be able to provide for your family.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="686.93" data-e="686.96">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="686.96" data-e="688.70">You need to be able to pay the bills.</span> <span class="tl-s" data-s="688.70" data-e="690.00">You need to be able to pay rent.</span> <span class="tl-s" data-s="690.00" data-e="693.11">You need to be able to have food, right?</span> <span class="tl-s" data-s="693.11" data-e="700.48">And well, maybe your house, maybe you&#x27;re in a house where your rent is too high or your mortgage is too high and you&#x27;re limited, right?</span> <span class="tl-s" data-s="700.58" data-e="703.37">Those are choices that we have to make, right?</span> <span class="tl-s" data-s="703.47" data-e="711.32">And so those choices we have to just put through the filter of like, am I honoring the Lord with this, right?</span> <span class="tl-s" data-s="711.35" data-e="715.37">And so sometimes it&#x27;s gonna hurt.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="715.37" data-e="715.49">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="715.58" data-e="720.23">Generosity, if it— generosity is an ambiguous standard, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="720.23" data-e="721.48">It is.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="721.53" data-e="724.73">It&#x27;s impoverishing yourself for the good of someone else.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="724.73" data-e="724.86">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="724.86" data-e="726.24">And that&#x27;s gonna hurt.</span> <span class="tl-s" data-s="726.24" data-e="730.32">It may mean you can&#x27;t do X, Y, or Z, but it depends.</span> <span class="tl-s" data-s="730.32" data-e="732.26">Like, is it gonna hurt at a fundamental level?</span> <span class="tl-s" data-s="732.41" data-e="736.56">Like, if I give, it&#x27;s gonna rob me, my children of their next meal?</span> <span class="tl-s" data-s="736.60" data-e="737.77">I&#x27;m not talking about that.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="737.77" data-e="737.84">Yeah.</span> <span class="tl-s" data-s="737.89" data-e="754.32">Well, that was kind of my next, Me being an extreme person by nature, as the sanctification process goes on, I moderate more, but I&#x27;m someone that would either be an all or fall into the all or nothing category pretty easily.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="754.32" data-e="754.53">Sure.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="754.62" data-e="763.62">And just knowing that about my own tendency and heart, I guess just like at what point is it foolish?</span> <span class="tl-s" data-s="763.62" data-e="766.75">Like to, I&#x27;m just gonna give everything I have to the kingdom.</span> <span class="tl-s" data-s="766.84" data-e="780.41">In one way, that&#x27;s a beautiful act of faith, but it also is could be categorized as foolish to to just take food away from your family or [Speaker A] yeah.</span> <span class="tl-s" data-s="780.41" data-e="787.26">I mean, giving is not meant to impoverish you so that you can&#x27;t have your basic needs met.</span> <span class="tl-s" data-s="787.38" data-e="787.70">Gotcha.</span> <span class="tl-s" data-s="787.78" data-e="793.43">But beyond that, [Speaker A] but like but at the same time, so like for example, if you&#x27;re married, right?</span> <span class="tl-s" data-s="793.43" data-e="800.84">I read a biography recently where a man, him and his wife, they weren&#x27;t. in harmony with how he gave.</span> <span class="tl-s" data-s="801.21" data-e="802.43">They had 6 children.</span> <span class="tl-s" data-s="802.48" data-e="808.00">He would give so much that it made it really hard on her to run the home.</span> <span class="tl-s" data-s="808.00" data-e="809.86">And she&#x27;s like, I don&#x27;t know that that&#x27;s wise.</span></p>
+        <p><span class="tl-s" data-s="809.99" data-e="812.81">I mean, we have to take care of our children, right?</span> <span class="tl-s" data-s="812.81" data-e="812.94">Yeah.</span> <span class="tl-s" data-s="812.96" data-e="816.49">Which is what you&#x27;re commanded to do that also.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="816.49" data-e="816.57">Absolutely.</span> <span class="tl-s" data-s="816.57" data-e="818.78">And so that&#x27;s wrong.</span> <span class="tl-s" data-s="818.89" data-e="823.12">But at the same time, that&#x27;s where as a married couple, you decide together what to give.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="823.31" data-e="825.53">That&#x27;s kind of what I was going to [Speaker A] ask.</span> <span class="tl-s" data-s="825.64" data-e="826.54">You decide together.</span> <span class="tl-s" data-s="826.54" data-e="829.52">This isn&#x27;t just like a one person trying to decide this.</span> <span class="tl-s" data-s="829.72" data-e="831.46">You decide together what to give.</span> <span class="tl-s" data-s="831.82" data-e="837.62">And let&#x27;s say you&#x27;re in a marriage where one party does not want to give and doesn&#x27;t think you can afford it.</span> <span class="tl-s" data-s="838.62" data-e="840.78">And I&#x27;ve talked to lots of people like that.</span> <span class="tl-s" data-s="840.80" data-e="844.57">That person can continue to bring up the conversation, but even more begin to pray.</span> <span class="tl-s" data-s="844.73" data-e="846.25">For that other one.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="846.41" data-e="847.02">Begin to pray.</span> <span class="tl-s" data-s="847.78" data-e="848.21">Yeah, absolutely.</span> <span class="tl-s" data-s="849.39" data-e="851.05">Begin to pray.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="851.15" data-e="851.37">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="851.39" data-e="857.34">I mean, because there are, Um, so, and the Lord, I&#x27;ve seen the Lord move on people&#x27;s hearts.</span> <span class="tl-s" data-s="857.38" data-e="861.87">I&#x27;ve seen the Lord, like, like I&#x27;ve seen situations where people go, okay, let&#x27;s not worry about tithing.</span> <span class="tl-s" data-s="861.89" data-e="863.83">Let&#x27;s just start by giving something.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="863.83" data-e="864.00">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="864.13" data-e="866.47">You know, let&#x27;s give $200 a month.</span> <span class="tl-s" data-s="866.47" data-e="867.82">Let&#x27;s give $400 a month.</span> <span class="tl-s" data-s="867.88" data-e="869.89">Let&#x27;s give $1,000 a month, whatever.</span> <span class="tl-s" data-s="869.89" data-e="871.44">And let&#x27;s see how God provides.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="871.44" data-e="871.67">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="872.05" data-e="875.18">Are we gonna go without or are we not?</span> <span class="tl-s" data-s="875.24" data-e="875.36">Right.</span> <span class="tl-s" data-s="875.36" data-e="876.94">And so like you do a generosity test.</span> <span class="tl-s" data-s="876.94" data-e="880.55">It&#x27;s like getting in a swimming pool, put your foot in, just walk in, start, [Speaker B] Yeah.</span> <span class="tl-s" data-s="880.55" data-e="884.88">You know, put your feet in on the side, maybe get in on the steps and slowly walk in.</span> <span class="tl-s" data-s="884.88" data-e="894.93">You don&#x27;t have to just jump in, but I&#x27;ll tell you what, nobody who&#x27;s genuinely motivated by the gospel of Jesus Christ toward generosity is ever disappointed.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="894.93" data-e="895.01">Yeah.</span> <span class="tl-s" data-s="895.08" data-e="898.35">The Lord knows your needs and he provides for your needs.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="898.45" data-e="898.64">Absolutely.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="899.18" data-e="903.41">And you&#x27;re honoring him with the money he&#x27;s given you to see over.</span> <span class="tl-s" data-s="903.52" data-e="912.38">I&#x27;ve heard this statement and it&#x27;s prescriptive to 90/10, but I&#x27;ve heard people say, I&#x27;ve been able to do way more with 90% than I would be able to do with 100%.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="912.65" data-e="912.94">Totally.</span> <span class="tl-s" data-s="912.97" data-e="913.74">Yeah, right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="913.86" data-e="915.42">I thought that was a beautiful illustration of God&#x27;s faithfulness.</span> <span class="tl-s" data-s="915.44" data-e="915.68">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="915.68" data-e="917.96">And those of us in the West, we&#x27;ve been given a lot.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="917.96" data-e="918.42">That&#x27;s right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="918.42" data-e="919.34">We&#x27;ve been given a lot.</span> <span class="tl-s" data-s="919.38" data-e="923.42">And we&#x27;re going to, we&#x27;re going to give an account for how we spend our money.</span> <span class="tl-s" data-s="923.49" data-e="927.88">Think about our money, how we, how we work, how we act with our money.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="928.68" data-e="929.03">Yeah.</span> <span class="tl-s" data-s="929.16" data-e="938.78">So just to circle back to the New Testament style of giving based on generosity, is generosity As a Christian, is it a gift that you receive from the Lord to be generous?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="939.00" data-e="942.12">All of us are called— [Speaker B] Is it a spiritual gift?</span> <span class="tl-s" data-s="942.15" data-e="945.09">All of us are called to be generous.</span> <span class="tl-s" data-s="945.66" data-e="949.03">Some people have the gift of giving where generosity comes more naturally.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="949.03" data-e="949.35">I see.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="949.35" data-e="950.86">It&#x27;s something that they excel in.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="950.91" data-e="950.93">Okay.</span> <span class="tl-s" data-s="950.96" data-e="955.97">So you don&#x27;t have to have the gift of generosity as a spiritual gift to follow.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="956.03" data-e="958.15">No, it&#x27;s a discipline, not a gift.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="958.20" data-e="959.00">I see.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="959.00" data-e="961.53">It&#x27;s like evangelism, same thing.</span> <span class="tl-s" data-s="961.55" data-e="963.69">There are people who are really gifted in evangelism, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="963.81" data-e="963.90">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="963.90" data-e="965.50">And then, but we&#x27;re all called to evangelize.</span> <span class="tl-s" data-s="965.50" data-e="966.23">Same with prayer.</span> <span class="tl-s" data-s="966.29" data-e="971.66">There are people really gifted when it comes to prayer and really oriented toward prayer, but we&#x27;re all called to pray.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="971.66" data-e="971.79">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="971.90" data-e="972.19">Right?</span> <span class="tl-s" data-s="972.36" data-e="973.13">Same with generosity.</span> <span class="tl-s" data-s="973.16" data-e="981.43">There are people who have the gift of giving and they&#x27;re generous and they think and they&#x27;re creative and they look to try to provide needs for people without others knowing.</span> <span class="tl-s" data-s="981.43" data-e="986.03">And they&#x27;re willing to sacrifice and give to their local church and all those kinds of things.</span> <span class="tl-s" data-s="986.38" data-e="991.15">But all of us are called to engage in the discipline of generosity.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="991.15" data-e="992.02">Okay, got it.</span> <span class="tl-s" data-s="992.18" data-e="1003.33">Just to touch on another common thing that I&#x27;ve heard and talked to other people about as far as giving, you know, being part of a local church and giving faithfully to your local church.</span> <span class="tl-s" data-s="1003.41" data-e="1011.91">Is that the first step, or can one not do that and just look at needs that they see amongst the body and fulfill those needs?</span> <span class="tl-s" data-s="1012.27" data-e="1017.28">Or should they be giving to their church first, and then if they want to give additionally? to find needs.</span> <span class="tl-s" data-s="1017.68" data-e="1023.85">So I guess I&#x27;m kind of addressing like the project mindset, where I want to pick and see and choose exactly how my money&#x27;s being used.</span> <span class="tl-s" data-s="1023.85" data-e="1027.20">Therefore, I&#x27;m not going to give to my local church.</span> <span class="tl-s" data-s="1027.20" data-e="1033.70">I&#x27;m just going to purchase things and do this, that, and the other, try to fulfill this need.</span> <span class="tl-s" data-s="1034.10" data-e="1036.33">You know, remodel someone&#x27;s kitchen.</span> <span class="tl-s" data-s="1036.44" data-e="1038.57">I&#x27;m going to provide moving trucks.</span> <span class="tl-s" data-s="1038.61" data-e="1041.97">Is that to— can somebody do that in exchange for giving to their local church?</span></p>
+        <p><span class="tl-s" data-s="1041.97" data-e="1044.28">Well, how would you think about that?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1044.70" data-e="1049.36">So I think That&#x27;s a very American question because— I know.</span> <span class="tl-s" data-s="1049.36" data-e="1055.02">Like Americans have all kinds of opinions about like how things are spent and, you know, that kind of stuff.</span> <span class="tl-s" data-s="1055.13" data-e="1067.98">And so my thought is, and again, I&#x27;m not, this is not a law I&#x27;m laying down, is because the local church is the one institution that the Lord promises to build and the gates of hell will not prevail against it.</span> <span class="tl-s" data-s="1067.98" data-e="1078.40">There is no other institution, no mission agency, no Christian No school, no Christian university, no Christian activist program.</span> <span class="tl-s" data-s="1078.40" data-e="1083.70">None of those things are going to endure until the end like the local church.</span> <span class="tl-s" data-s="1083.70" data-e="1088.87">So the local church is the fundamental place that Christians are called to identify with, right?</span> <span class="tl-s" data-s="1088.94" data-e="1091.10">With other believers, that we are an outpost of heaven.</span> <span class="tl-s" data-s="1091.10" data-e="1092.81">We are an embassy of heaven.</span> <span class="tl-s" data-s="1092.81" data-e="1096.02">We are a lighthouse in this dark world.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1096.05" data-e="1096.19">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1096.19" data-e="1107.09">So my perspective would be, That you give faithfully to the local church at whatever level generosity is, and there&#x27;s still plenty of other opportunities to give to other projects, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1107.21" data-e="1107.34">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1107.36" data-e="1113.54">And so part of the project mentality can be like, and it&#x27;s not like projects are wrong.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1113.64" data-e="1113.70">No.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1113.78" data-e="1118.51">But part of the project mentality can be like, hey, I&#x27;m gonna do this instead of giving.</span> <span class="tl-s" data-s="1118.54" data-e="1118.59">Right.</span> <span class="tl-s" data-s="1118.62" data-e="1123.77">And it&#x27;s a way of controlling instead of just giving it to the Lord, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1123.77" data-e="1124.51">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1124.51" data-e="1131.07">It&#x27;s one thing if you&#x27;re given to, I mean, we have controls and accountability at our church when it comes to spending money.</span> <span class="tl-s" data-s="1131.07" data-e="1133.05">I mean, we&#x27;re not just sort of freewheeling spending money any way we want.</span> <span class="tl-s" data-s="1133.05" data-e="1133.17">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1133.17" data-e="1133.95">Financial review committee.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1133.95" data-e="1135.59">We have a financial review committee.</span> <span class="tl-s" data-s="1135.59" data-e="1136.43">Plurality of elders.</span> <span class="tl-s" data-s="1136.43" data-e="1136.75">Yeah.</span> <span class="tl-s" data-s="1136.75" data-e="1138.81">We have a plurality of elders.</span> <span class="tl-s" data-s="1138.81" data-e="1140.27">Our elders don&#x27;t set the salaries.</span> <span class="tl-s" data-s="1140.27" data-e="1141.59">We don&#x27;t set our own salaries.</span> <span class="tl-s" data-s="1141.69" data-e="1143.91">We have a financial review committee that does that.</span> <span class="tl-s" data-s="1143.91" data-e="1144.09">Yeah.</span> <span class="tl-s" data-s="1144.09" data-e="1146.45">And so not every church does that kind of thing.</span> <span class="tl-s" data-s="1146.45" data-e="1152.43">And so if you have reason to question the fiduciary practices of a local church, go talk to them and ask about it.</span></p>
+        <p><span class="tl-s" data-s="1152.69" data-e="1158.32">But if you don&#x27;t, that I would say principally that you want to give faithfully there and then also look for other projects, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1158.32" data-e="1158.54">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1158.56" data-e="1161.19">To give, to be able to give faithfully to as well.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1161.43" data-e="1161.83">That&#x27;s great.</span> <span class="tl-s" data-s="1161.91" data-e="1166.73">I guess just with the last follow-up, assuming I don&#x27;t think of another one, do you have to have faith to give?</span> <span class="tl-s" data-s="1166.75" data-e="1173.05">Like, I guess just let&#x27;s speak more to the reluctant or the uncheerful giving as a discipline.</span> <span class="tl-s" data-s="1173.07" data-e="1181.13">Should you, if you&#x27;re feeling that way, should you give less, or if you&#x27;re feeling, obviously if you&#x27;re feeling generous, you should give more.</span> <span class="tl-s" data-s="1181.25" data-e="1185.63">And I don&#x27;t mean feeling, but I don&#x27;t know how to say it.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1185.68" data-e="1186.18">Yeah, sure.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1186.31" data-e="1190.47">How much of faith plays a part in giving, whether less or more?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1190.47" data-e="1190.80">So obedience?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1190.80" data-e="1191.11">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1191.11" data-e="1195.14">If you wait till you feel like obeying, you won&#x27;t obey.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1195.14" data-e="1196.52">Ah, that&#x27;s a great answer.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1196.90" data-e="1198.92">Because we never feel like obeying.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1199.13" data-e="1199.65">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1199.65" data-e="1206.77">I mean, sometimes, but so the discipline of generosity starts with doing something you don&#x27;t wanna do.</span> <span class="tl-s" data-s="1206.77" data-e="1210.12">And experience that and experience the blessing of the Lord.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1211.01" data-e="1211.34">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1211.74" data-e="1214.71">He makes all grace abound.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1214.71" data-e="1215.11">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1215.11" data-e="1220.57">He who gave himself impoverished himself so that we might be rich.</span> <span class="tl-s" data-s="1220.57" data-e="1223.41">He— so like, give generously, try it and see what happens.</span> <span class="tl-s" data-s="1223.52" data-e="1227.80">Like, seriously, this is the one thing where it&#x27;s like, you want to see what— you want to have your faith grown?</span> <span class="tl-s" data-s="1227.80" data-e="1232.10">You want to, want to have your faith expand?</span> <span class="tl-s" data-s="1232.10" data-e="1235.96">And go, man, I do believe God is active today.</span> <span class="tl-s" data-s="1235.96" data-e="1236.21">Give.</span> <span class="tl-s" data-s="1236.21" data-e="1239.49">Give extra, more than you think you can.</span> <span class="tl-s" data-s="1239.56" data-e="1243.68">Not by any irresponsible amount, but give more than you think you can.</span> <span class="tl-s" data-s="1243.68" data-e="1244.53">See what happens.</span> <span class="tl-s" data-s="1244.53" data-e="1246.66">See if you go without.</span></p>
+        <p><span class="tl-s" data-s="1246.71" data-e="1250.49">I&#x27;m not promising that your investments skyrocket or your home value explodes.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1250.49" data-e="1251.53">Not a prosperity gospel.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1251.53" data-e="1255.20">No, I&#x27;m not promising that, but I&#x27;m saying, see if you go without.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1255.20" data-e="1255.29">Yeah.</span> <span class="tl-s" data-s="1255.29" data-e="1259.02">So step out in faith and see how the Lord works through that and provides.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1259.12" data-e="1259.62">See what happens.</span> <span class="tl-s" data-s="1259.68" data-e="1259.71">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1259.71" data-e="1260.08">That&#x27;s amazing.</span> <span class="tl-s" data-s="1260.08" data-e="1260.52">Yeah, thank you.</span> <span class="tl-s" data-s="1260.52" data-e="1267.13">I know that I needed to hear that, and I gotta assume that there&#x27;s some others that wanted and needed to hear that as well.</span> <span class="tl-s" data-s="1267.15" data-e="1271.25">It&#x27;s a topic that— [Speaker A] That&#x27;s something we have to be reminded of on a regular basis.</span> <span class="tl-s" data-s="1271.33" data-e="1271.49">Sure.</span> <span class="tl-s" data-s="1271.50" data-e="1272.81">&#x27;Cause it&#x27;s not natural.</span> <span class="tl-s" data-s="1272.81" data-e="1273.50">Sure, yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1273.50" data-e="1280.39">There&#x27;s no organization out there, like there&#x27;s nobody on Fox News or MSNBC or CNN saying, hey, make sure you&#x27;re generous to your local church.</span> <span class="tl-s" data-s="1280.50" data-e="1281.38">They don&#x27;t care.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1281.61" data-e="1281.83">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1282.19" data-e="1282.35">Right?</span> <span class="tl-s" data-s="1282.35" data-e="1286.17">They have no cares about that.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1286.20" data-e="1286.57">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1286.70" data-e="1287.39">It&#x27;s so countercultural.</span> <span class="tl-s" data-s="1287.39" data-e="1289.13">It&#x27;s so counterintuitive.</span> <span class="tl-s" data-s="1289.39" data-e="1291.65">It so goes against the grain.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1291.65" data-e="1292.05">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1292.05" data-e="1298.62">That it is something we need to remind ourselves of on a regular basis.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1298.62" data-e="1299.23">Amen.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1299.28" data-e="1306.86">To me, giving and evangelism are 2 categories we need to be reminded of on a regular basis, because naturally we wouldn&#x27;t be generous and we wouldn&#x27;t evangelize.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1306.88" data-e="1307.17">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1307.92" data-e="1311.43">But we need to be reminded, number one, with the giving, it&#x27;s not ours.</span> <span class="tl-s" data-s="1311.45" data-e="1312.57">It&#x27;s not ours.</span> <span class="tl-s" data-s="1312.57" data-e="1313.05">Which is huge.</span> <span class="tl-s" data-s="1313.05" data-e="1316.13">Number 2, with evangelism, they&#x27;re going to hell if we don&#x27;t tell them about Jesus.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1316.24" data-e="1316.40">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1316.40" data-e="1321.61">And so like the stakes are high for both.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1321.64" data-e="1321.96">That&#x27;s right.</span> <span class="tl-s" data-s="1321.96" data-e="1322.17">Awesome.</span> <span class="tl-s" data-s="1322.20" data-e="1324.15">Well, thank you for answering that and clearing that up.</span> <span class="tl-s" data-s="1324.29" data-e="1334.98">And I just want to point out, like, thank you for being faithful in teaching about it, where I know that as a pastor, it&#x27;s difficult to talk about the finances of the church.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1334.98" data-e="1335.12">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1335.12" data-e="1335.28">Yeah.</span> <span class="tl-s" data-s="1335.28" data-e="1347.49">And I can see that written all over your face, but you still are using the Bible to inform what the scripture teaches us and You don&#x27;t shy away from the difficult passages or the difficult concepts.</span> <span class="tl-s" data-s="1347.49" data-e="1351.44">And as someone who&#x27;s submitted to the leadership here, I respect that.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1351.44" data-e="1351.92">Oh, thanks, man.</span> <span class="tl-s" data-s="1351.96" data-e="1354.07">Well, it&#x27;s easy to lead a church like this.</span> <span class="tl-s" data-s="1354.07" data-e="1355.97">I can tell you that.</span> <span class="tl-s" data-s="1355.97" data-e="1357.96">You know, people are very eager to respond to the word.</span> <span class="tl-s" data-s="1357.99" data-e="1365.19">And so as we present the word of God, then we, you know, that&#x27;s what the word says.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1365.19" data-e="1365.22">Amen.</span> <span class="tl-s" data-s="1365.22" data-e="1370.96">Well, if you have questions, feel free to reach out to us at production@centergilbert.com.</span> <span class="tl-s" data-s="1370.96" data-e="1372.95">And thank you for your generosity.</span> <span class="tl-s" data-s="1373.06" data-e="1377.15">And thank you for the comments and emails and all the ways that you&#x27;ve supported this podcast.</span> <span class="tl-s" data-s="1377.21" data-e="1380.76">It&#x27;s almost been a— it&#x27;s been about a year now, and we&#x27;re just really grateful.</span> <span class="tl-s" data-s="1380.76" data-e="1381.32">So thank you.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1381.32" data-e="1381.57">That&#x27;s right, everybody.</span> <span class="tl-s" data-s="1381.57" data-e="1381.57">Thank you so much.</span> <span class="tl-s" data-s="1381.57" data-e="1381.57">See ya.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Fixed on Jesus episode archive, backed by /api/podcast/search.
+  // Static fallback list above stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function fmtDuration(raw) {
+      if (!raw) return "";
+      var str = String(raw).trim();
+      // Anchor feeds report seconds; render as H:MM:SS or M:SS.
+      if (/^\d+$/.test(str)) {
+        var total = parseInt(str, 10);
+        var h = Math.floor(total / 3600);
+        var m = Math.floor((total % 3600) / 60);
+        var sec = total % 60;
+        var mm = (h > 0 && m < 10 ? "0" + m : "" + m);
+        var ss = (sec < 10 ? "0" + sec : "" + sec);
+        return (h > 0 ? h + ":" + mm : m) + ":" + ss;
+      }
+      // Anchor also reports clock strings like "00:24:02" — drop the
+      // redundant leading hour so it reads "24:02".
+      return str.replace(/^00:/, "");
+    }
+    function row(it) {
+      it = it || {};
+      var title = esc(it.title) || "Untitled episode";
+      var tUrl = it.guid && transcriptMap[it.guid];
+      var heading = tUrl
+        ? '<a href="' + esc(tUrl) + '">' + title + "</a>"
+        : (it.link
+          ? '<a href="' + esc(it.link) + '" target="_blank" rel="noopener">' + title + "</a>"
+          : title);
+      var meta = [fmtDate(it.date), fmtDuration(it.duration)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      return '<div class="sermon"><div><h3>' + heading + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    var PER = 10;
+    var state = { q: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No episodes found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " episode" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " episodes";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/podcast/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () {
+          // Keep the static list, but tell the reader where else to listen —
+          // some privacy blockers stop the archive request itself.
+          var note = document.querySelector("[data-sermons-error]");
+          if (note) note.hidden = false;
+        });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    if (monthSel) {
+      monthSel.addEventListener("change", function () {
+        state.month = monthSel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: 150cc50b-03c8-4599-8b14-b7a20b231d9c -->
+</body>
+</html>
