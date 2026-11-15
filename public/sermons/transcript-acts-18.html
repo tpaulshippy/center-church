@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acts 18 — Sermon Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Listen to the latest sermons from Center Church, or follow along on Apple Podcasts and Spotify." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=17" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a class="active" href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/sermons">&larr; All sermons</a>
+          <h1 class="display-lg">Acts 18</h1>
+          <p class="transcript-meta">Rich Richardson · Acts · 2026-10-04 · 00:41:06</p>
+          <p class="transcript-desc">1. Paul&#x27;s Journey 2. Aquila &amp; Priscilla&#x27;s journey</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/119cbef70/podcast/play/128973987/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-7%2F436123665-44100-2-9f6af8ac4866d4a1.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><span class="tl-s" data-s="0.02" data-e="6.94">you could be on a Sunday morning, and we&#x27;re grateful that you would take time out of your schedule to be here with us.</span> <span class="tl-s" data-s="6.94" data-e="10.39">Just so you know who we are, we&#x27;re people that want to be fixed on Jesus.</span> <span class="tl-s" data-s="10.39" data-e="11.66">We want to know God.</span> <span class="tl-s" data-s="11.67" data-e="13.31">We want to know one another.</span> <span class="tl-s" data-s="13.46" data-e="15.36">We want to make Jesus known.</span> <span class="tl-s" data-s="15.36" data-e="23.16">And so if you&#x27;re new outside in the lobby as you exit, on the right side, I&#x27;ll be at a table.</span> <span class="tl-s" data-s="23.58" data-e="28.30">There&#x27;s lots of different ways we can connect you to the life of the church and different on-ramps.</span> <span class="tl-s" data-s="28.58" data-e="32.68">We&#x27;d love to just answer any questions you might have, connect you with different ministries.</span> <span class="tl-s" data-s="33.30" data-e="34.30">Thank you so much for coming.</span> <span class="tl-s" data-s="34.30" data-e="36.18">But guess one thing we do not want?</span></p>
+        <p><span class="tl-s" data-s="36.18" data-e="37.72">We do not want your money.</span> <span class="tl-s" data-s="38.40" data-e="39.85">That is a privilege of members.</span> <span class="tl-s" data-s="39.85" data-e="43.97">That&#x27;s a privilege of those of us that call our church home.</span> <span class="tl-s" data-s="44.02" data-e="52.53">And so for those of you that are giving and that give sacrificially, let me just highlight one way that your funds are being used.</span> <span class="tl-s" data-s="52.65" data-e="59.87">This week, on Thursday, we had a team of people from our midst go to Rancho 3M in Guadalupe, Mexico.</span> <span class="tl-s" data-s="59.87" data-e="65.87">That&#x27;s an orphanage that we have cared for and served for going on 20 years.</span> <span class="tl-s" data-s="65.87" data-e="70.35">And we had a big team of about a dozen people go down to serve them.</span> <span class="tl-s" data-s="70.41" data-e="81.06">But also in tow, they took $6,000 to help support the ministry and the work that happens there from you because of your generous giving.</span> <span class="tl-s" data-s="81.16" data-e="83.63">When you give, it supports the ministry of our church.</span> <span class="tl-s" data-s="83.66" data-e="85.95">It supports all kinds of practical needs.</span></p>
+        <p><span class="tl-s" data-s="85.95" data-e="88.40">But it also supports orphans in Mexico.</span> <span class="tl-s" data-s="88.40" data-e="92.14">And we would not be able to do that without your generous giving.</span> <span class="tl-s" data-s="92.14" data-e="97.92">So for those of you that are giving generously, thank you so very much.</span></p>
+        <p><span class="tl-s" data-s="99.54" data-e="106.16">Also, just to mark your calendars, October 17th and 18th is our 40th anniversary celebration.</span> <span class="tl-s" data-s="107.38" data-e="134.48">In Israel of old, when something momentous would happen, the Lord would direct the people to set up monuments, to set up markers so that the children of those people who experience God move at the Red Sea or other places, the kids might be able to ask, &quot;What are these monuments and what do they mean?&quot; And that&#x27;s kind of what we&#x27;re going to be doing on October 17th and 18th.</span> <span class="tl-s" data-s="134.48" data-e="142.80">We&#x27;re going to, in a sense, erect a monument to the Lord and His faithfulness to our church for years.</span> <span class="tl-s" data-s="143.44" data-e="148.88">We know that the Lord Jesus promises to build His church and that&#x27;s a macro promise, but micro in our church.</span> <span class="tl-s" data-s="148.88" data-e="155.32">We have so much to celebrate because the Lord has been faithful to us for 40 years.</span> <span class="tl-s" data-s="155.91" data-e="160.16">And so we&#x27;re going to celebrate that faithfulness on Saturday night and Sunday morning.</span></p>
+        <p><span class="tl-s" data-s="160.16" data-e="161.36">Saturday night at 6 p.m.</span> <span class="tl-s" data-s="161.38" data-e="169.68">We&#x27;re going to, you&#x27;re going to want to come because we have a video that we&#x27;re going to show on Saturday that celebrates all that the Lord has done that we will not show in any other context.</span> <span class="tl-s" data-s="169.68" data-e="179.12">We&#x27;re going to have four different testimonies that we will not be able to show in any, or that that will be just for that night showing all the ways that the Lord has worked in our midst.</span> <span class="tl-s" data-s="179.12" data-e="185.04">And Sunday morning, we&#x27;ll have our friend John Payne preach and have a picnic afterwards.</span> <span class="tl-s" data-s="185.04" data-e="186.56">So please plan on coming.</span> <span class="tl-s" data-s="186.56" data-e="192.80">Again, that&#x27;s October 17th and 18th, six o&#x27;clock on Saturday, Sunday morning at our normal time.</span> <span class="tl-s" data-s="192.80" data-e="199.36">All right, if it&#x27;s your practice to dismiss your kids, to send your kids to children&#x27;s ministry, you can go now.</span> <span class="tl-s" data-s="199.36" data-e="200.88">They go through those doors.</span> <span class="tl-s" data-s="200.90" data-e="211.40">For the rest of us, let&#x27;s stand up, say hello to your neighbor where you are sitting, and I&#x27;ll call you back in about 15 seconds.</span></p>
+        <p><span class="tl-s" data-s="211.42" data-e="215.08">We&#x27;ll be back in about 15 seconds.</span> <span class="tl-s" data-s="215.10" data-e="216.08">We&#x27;ll be back in about 15 seconds.</span> <span class="tl-s" data-s="216.10" data-e="217.08">We&#x27;ll be back in about 15 seconds.</span> <span class="tl-s" data-s="217.10" data-e="219.16">We&#x27;ll be back in about 15 seconds.</span> <span class="tl-s" data-s="219.18" data-e="221.08">We&#x27;ll be back in about 15 seconds.</span> <span class="tl-s" data-s="221.10" data-e="223.00">We&#x27;ll be back in about 15 seconds.</span> <span class="tl-s" data-s="223.02" data-e="225.08">We&#x27;ll be back in about 15 seconds.</span> <span class="tl-s" data-s="225.10" data-e="227.00">We&#x27;ll be back in about 15 seconds.</span> <span class="tl-s" data-s="227.02" data-e="228.08">We&#x27;ll be back in about 15 seconds.</span> <span class="tl-s" data-s="228.10" data-e="230.08">We&#x27;ll be back in about 15 seconds.</span></p>
+        <p><span class="tl-s" data-s="230.10" data-e="232.08">We&#x27;ll be back in about 15 seconds.</span> <span class="tl-s" data-s="232.10" data-e="233.08">We&#x27;ll be back in about 15 seconds.</span> <span class="tl-s" data-s="233.10" data-e="235.20">We&#x27;ll be back in about 15 seconds.</span> <span class="tl-s" data-s="235.22" data-e="237.00">We&#x27;ll be back in about 15 seconds.</span> <span class="tl-s" data-s="237.02" data-e="238.08">We&#x27;ll be back in about 15 seconds.</span> <span class="tl-s" data-s="238.10" data-e="240.08">We&#x27;ll be back in about 15 seconds.</span> <span class="tl-s" data-s="240.10" data-e="245.44">All right, all right.</span> <span class="tl-s" data-s="245.46" data-e="246.44">Break it up.</span> <span class="tl-s" data-s="246.46" data-e="249.32">Break it up.</span> <span class="tl-s" data-s="249.34" data-e="266.40">I hate to interrupt the handshakes and fist bumps, but if you have a Bible, if you can open up to the book of Acts, we are continuing our series this morning in Acts 18, Acts 18.</span></p>
+        <p><span class="tl-s" data-s="266.42" data-e="269.76">And we&#x27;re going to consider the whole chapter.</span> <span class="tl-s" data-s="269.78" data-e="279.76">Before the Civil War, the steamboat pilots of the Mississippi River were the stuff of legend.</span> <span class="tl-s" data-s="279.78" data-e="284.70">These intrepid men ran the angry river that would never hold still.</span> <span class="tl-s" data-s="284.72" data-e="288.06">Around the river, sandbars migrated overnight.</span> <span class="tl-s" data-s="288.08" data-e="291.06">Whirlpools spun yesterday where the water was calm today.</span> <span class="tl-s" data-s="291.08" data-e="294.94">Fog settled in and swallowed the banks.</span> <span class="tl-s" data-s="294.96" data-e="299.06">The river seemed to rewrite itself night after night after night.</span> <span class="tl-s" data-s="299.08" data-e="304.06">Before he was a famous author, Mark Twain was one of these steamboat pilots.</span> <span class="tl-s" data-s="304.08" data-e="312.46">Years later, in life on the Mississippi, he recorded what the work of a pilot demanded.</span> <span class="tl-s" data-s="313.44" data-e="323.88">He said this, in order to be a pilot, a man had to learn more than any one man ought to be allowed to know.</span></p>
+        <p><span class="tl-s" data-s="324.38" data-e="328.82">He must learn it over and over again in a different way every 24 hours.</span> <span class="tl-s" data-s="329.58" data-e="334.46">And then he described what the river became to the eyes of an experienced pilot.</span> <span class="tl-s" data-s="334.48" data-e="337.26">These old salts, they could read the water.</span> <span class="tl-s" data-s="338.16" data-e="344.74">Twain said of their skills, the face of the water in time became to them a wonderful book.</span> <span class="tl-s" data-s="345.90" data-e="350.32">A book that was a dead language to the uninstructed passenger.</span> <span class="tl-s" data-s="351.30" data-e="355.08">But a book which told its mind to me without reserve.</span> <span class="tl-s" data-s="356.46" data-e="363.72">It was not a book to be read once and thrown aside, for it had a new story to tell every day.</span> <span class="tl-s" data-s="364.72" data-e="365.60">You hear what he&#x27;s saying?</span> <span class="tl-s" data-s="366.40" data-e="375.56">The surface of the water, the surfaces of the Mississippi River, was a dark, swirling mystery to the uninitiated.</span></p>
+        <p><span class="tl-s" data-s="377.16" data-e="379.34">But the pilot saw more than water.</span> <span class="tl-s" data-s="379.56" data-e="380.74">He read the water.</span> <span class="tl-s" data-s="380.76" data-e="388.56">He would guide his passengers through the fog, past the sandbars, dodging snags and whirlpools to safety.</span> <span class="tl-s" data-s="389.70" data-e="396.24">Friends, we as Christians ride a river more angry than the Mississippi.</span> <span class="tl-s" data-s="397.28" data-e="399.50">We ride the treacherous river of life.</span> <span class="tl-s" data-s="400.58" data-e="403.76">And it tells a story, a new story each day.</span> <span class="tl-s" data-s="404.04" data-e="408.44">Just when we think we have the hang of things, currents swirl and the river shifts.</span> <span class="tl-s" data-s="409.16" data-e="413.30">So who can pilot us safely to the celestial city?</span> <span class="tl-s" data-s="413.96" data-e="417.84">Who has the skill to maneuver past the sandbars of apostasy?</span> <span class="tl-s" data-s="418.10" data-e="425.54">Or who can read the water well enough to thread the needle between the shoals of legalism on one side and license on the other?</span></p>
+        <p><span class="tl-s" data-s="426.40" data-e="434.98">Who can be a steady hand seeing through the fog of despondency that settles so thick and low when we see nothing at all?</span></p>
+        <p><span class="tl-s" data-s="436.50" data-e="442.58">And when the whitewater rapids of hardship roar and howl, who can steer us clear?</span> <span class="tl-s" data-s="442.60" data-e="449.30">What pilot can navigate our switching, swirling, uncertain currents?</span> <span class="tl-s" data-s="450.32" data-e="452.70">One thing is certain, that is not us.</span></p>
+        <p><span class="tl-s" data-s="454.48" data-e="459.46">We cannot travel the river of life by our wits alone.</span></p>
+        <p><span class="tl-s" data-s="460.86" data-e="462.68">None of us in this room are pilots.</span> <span class="tl-s" data-s="463.36" data-e="464.86">We are all passengers.</span></p>
+        <p><span class="tl-s" data-s="466.34" data-e="470.06">And this river, the water on the river, is a dead language to us.</span> <span class="tl-s" data-s="471.14" data-e="476.88">Only Jesus, the pilot of our souls, can see us safely home.</span> <span class="tl-s" data-s="477.96" data-e="1162.04">Spurgeon helps us here when he says, There is a hand upon the helm which shall steer your vessel safely enough between the rocks and by the quicksands and away from the shoals and the headlands Through the mist and through the darkness safely to the desired haven Our pilot never sleeps and his hand never relaxes its grip Because if we steer ourselves, by ourselves, on this treacherous river we will run aground Now we might nod our heads at church But truth be told, we don&#x27;t like this very much Each of us, deep in our souls, wants to take the wheel William Henley wrote an anthem for that desire that says, I am the master of my fate I am the captain of my soul And we sing that song in a hundred quiet ways When we yearn for control When we give in to self-sufficiency When we refuse to be vulnerable with other people When we say, I&#x27;m okay When we isolate What we&#x27;re doing is we&#x27;re trying to take the wheel of life When we need to let the Lord drive us Because if we ever get our hands on the wheel We will crash None of us in this room Has the skill or ability To guide ourselves, by ourselves Safely home Friends, that is only Jesus He is our pilot who is steady Our pilot who is sure Our pilot that never sleeps But here&#x27;s the thing He never stops to explain the route He&#x27;s going to take There&#x27;s no maps that he gives us to consult He just gives us himself And we&#x27;re going to see that very clearly today in Acts chapter 18 We&#x27;re going to see how Jesus guides and directs his people in surprising ways It&#x27;s so much easier to see how Jesus guides and directs other people And have faith for their treacherous passages Through unsettling water Than it is for us to have faith for our journey But here what we see in Acts 18 Is a map A map Of these people Who went down the treacherous river of life In the dark Jesus directed them in ways they never would have chosen There&#x27;s nine characters in Acts 18 We&#x27;re going to focus on Paul And a couple named Priscilla and Aquila We&#x27;re going to see Paul Being steered by Jesus Straight toward the thing he feared And then protected by a bored Roman official We&#x27;re going to see Aquila and Priscilla Steered by an impersonal imperial edict That threatened to wreck their lives And as we watch their very different journeys By two very different routes We will realize for ourselves That Jesus He steers He steers us down routes We would never choose ourselves But he always Leads us in the right direction Jesus Steers us in ways We would never Choose So I&#x27;m going to read the whole chapter And as I read Watch for All the characters I want you to pay special attention To what happens with Paul And the couple Aquila And Priscilla I&#x27;m going to read Beginning in verse 1 Of Acts chapter 18 After this Paul left Athens And went to Corinth And he found a Jew Named Aquila A native of Pontus Recently come from Italy With his wife Priscilla Because Claudius Had commanded all the Jews To leave Rome And when he went to see him And because he was of the same trade He stayed with them And worked For they were tent makers by trade And he reasoned in the synagogue Every Sabbath And tried to persuade Jews And Greeks When Silas and Timothy Arrived from Macedonia Paul was occupied With the word Testifying to the Jews That the Christ Was Jesus And when they Opposed and reviled him He shook out his garments And said to them Your blood Be on your own heads I am innocent From now on I will go to the Gentiles And he left there And went to the house Of a man named Titus Justus A worshipper of God His house was next door To the synagogue Crispus The ruler of the synagogue Believed in the Lord Together with his entire household And many of the Corinthians Hearing Paul Believed and were baptized And the Lord said to Paul One night in a vision Do not be afraid But go on speaking And do not be silent For I am with you And no one Will attack you To harm you For I have many In this city Who are my people And he stayed A year and six months Teaching the word Of God Among them But when Galio Was the procouncil Of Achaia The Jews made A united attack On Paul And brought him Before the tribunal Saying this man Is persuading people To worship God Contrary to the law But when Paul Was about to open His mouth Galio said to the Jews If it were a matter Of wrongdoing Or vicious crime O Jews I would have reason To accept your complaint But since it is A matter of questions About words And names In your own law See to it yourselves I refuse to be a judge Of these things And he drove them From the tribunal And they all seized Sosthenes The ruler of the synagogue And beat him In front of the tribunal But Galio Paid no attention To any of this After this Paul stayed Many days longer Then took leave Of the brothers And set sail For Syria And with him Priscilla And Aquila At Sincre He cut his hair For he was under a vow And they came To Ephesus And he left them there But he himself Went into the synagogue And reasoned With the Jews When they asked him To stay for a longer period He declined But on taking leave Of them He said I will return to you If God wills And he set sail From Ephesus When he landed At Caesarea He went up And greeted the church And went down To Antioch After spending Some time there He departed And went from One place To the next Through the region Of Galatia And Phrygia Strengthening All the disciples Now A Jew Named Apollos A native Of Alexandria Came to Ephesus He was an eloquent man Competent in the scriptures He had been instructed In the way of the Lord And being fervent In spirit He spoke And taught Accurately The things Concerning Jesus But Although he Knew only The baptism Of John He began to speak Boldly In the synagogue But when Priscilla And Aquila Heard him They took him aside And explained to him The way of God More accurately And when he wished To cross to Achaia The brothers encouraged him And wrote to the disciples To welcome him When he arrived He greatly helped those Who through grace Had believed For he powerfully Refuted the Jews In public Showing by the scriptures That the Christ Was Jesus Now we&#x27;re going to watch Paul And we&#x27;re going to watch Aquila and Priscilla And we&#x27;re going to see That Jesus Steers them And us By routes We would Never choose First Let&#x27;s join Paul On his journey Now We&#x27;ve gotten to know Paul Rather well Over these last few months You&#x27;ll remember If you&#x27;ve been with us That the risen Jesus Appeared to him On the road to Damascus Permanently changing his course And as Jesus&#x27; man He goes on the road With the good news That reordered his world And he then begins To turn the world Upside down But not everyone Was eager to receive This news We&#x27;ve seen him face Many different troubles In this second missionary journey He stopped in Philippi Thessalonica Berea And Athens Today we join him After he walked 50 miles from Athens To the ancient Metropolis Of Corinth In Corinth He continues To practice The same practice He observed In every other city Preach to the Jews First Go to the synagogue Preach to the Jews Tell them that The Messiah has come His name is Jesus of Nazareth Now how do you think That&#x27;s going to go Now what have we seen So far It&#x27;s gone really bad It&#x27;s gone poorly And again We see that pattern What happened In Thessalonica What happened In Lystra What happened In Iconium Happens here too Look at verse 5 Paul and Silas Catch up When Paul and Silas Arrived from Macedonia That&#x27;s when they were In Berea Paul was occupied With the word Testifying to the Jews That the Christ Was Jesus And when they Opposed and reviled him He shook out his garments Now Silas and Timothy Join him from Berea And Paul&#x27;s doing The same thing He&#x27;s been doing He&#x27;s telling the Jews That the Christ Was Jesus Now you&#x27;ll remember That Christ Is not Jesus&#x27; Last name It&#x27;s not like His name It&#x27;s not like Joseph&#x27;s last name Was Christ Mary&#x27;s last name Was Christ All his brothers Last name was Christ No That&#x27;s Jesus&#x27; Title He is Jesus The Christ Christ Is the Greek word For Messiah Which is Hebrew In English Both Christ And Messiah Mean Anointed one So what He is Jesus Is the one Anointed by God To be anointed Means to be set apart For a specific task By God In the Old Testament We see the kings of old They were anointed by God To rule The prophets of old Were anointed by God To speak for God The priests of old Were anointed by God To be mediators Between God And the nation Jesus Jesus was personally Anointed by God To accomplish The salvation Of mankind Through his death Burial Resurrection And ascension And he is Christ The king of kings The final prophet The ultimate priest And he&#x27;s been anointed To bring many sons And daughters To glory And friends He still rules Over all things For the good Of his people He is anointed To rule And anointed To lead He still Speaks to his people Through the Holy Spirit In concert With the word He still Advocates for his people Before the father Above He still Prays and intercedes For his people On a daily basis On a moment By moment basis Why?</span></p>
+        <p><span class="tl-s" data-s="1162.88" data-e="1949.52">He is the Christ The anointed one This Christ Was always On Paul&#x27;s lips And he would prove To the Old Testament Or from the Old Testament That Jesus was that Christ But the Jews Did not have A stomach For the message Because they expected A different kind of Christ They wanted a political ruler Who would lead a revolution And lay siege to Rome Killing the emperor They wanted a Christ Who would sit On an earthly throne Who would lead An earthly army They weren&#x27;t looking For a savior They were looking For a general So Jesus Was the one They did not Expect Friends You see The Jews Rejected This route And they missed him They didn&#x27;t expect A Christ Who would die That was literally Crazy to them Instead of fighting Romans Jesus fought A pair of foes Much more Dangerous Sin and death And he defeated Sin and death By dying And rising again And the Jews Rejected them Because they were Keenly aware Of their political Oppression But they did not Think that their sin Was that significant So they did not Understand No one Really understands Jesus If they minimize Their own sin Do you understand Do you understand The need For Jesus To come And die Because in Jesus And his life And death And resurrection We see both Justice And love Side by side How serious Is our sin Deadly serious So serious That the son of God Had to die In our place How serious Though is his love Deadly serious So serious That by the love Of God Jesus died In our place Not everyone Can accept this It&#x27;s hard to consider Ourselves so broken That we can&#x27;t repair Ourselves By ourselves It&#x27;s hard to think That we need More than just Good advice Or tips for living We need much More than that We need to be Born again And only Jesus Can do that For you Jesus Steered Paul&#x27;s Life In ways He didn&#x27;t Expect And he Should And you should If you&#x27;re not Following him Let him Steer yours As well Now the Jews Of Corinth They reviled Paul and his Message And Paul quotes Ezekiel to them Now Here&#x27;s a tip You never want Ezekiel being Quoted to you If you read Ezekiel You don&#x27;t want Ezekiel to turn His blow torch On you Because if he Puts you on blast You&#x27;re in Trouble And here&#x27;s what Happened He quotes Ezekiel Your blood Be on your Own heads I&#x27;m innocent Zeke doesn&#x27;t Raise his voice For nothing He&#x27;s not playing And neither Here was Paul Those who Did not receive Ezekiel&#x27;s Message Were destroyed And those That did not Receive Paul&#x27;s Message Would be Destroyed as Well Those that Do not Receive the Message of Jesus Christ Preached by Paul The apostles The New Testament And many Today Face destruction As well What will it Be for you I know For me I don&#x27;t Want my Own blood On my Head I am Reliant On the Shed blood Of Jesus Christ And I Hope you Are too What does It look Like Well It looks Like turning From Trying to Run your Life by Yourself With your Own wits Trying to Trying to Just stop The hamster Wheel of Self-improvement To recognize You can&#x27;t Do it On your Own You must Turn to Jesus Ask for Forgiveness And give All of Yourself Over to Him The Jews Wouldn&#x27;t Do this So he Announces From Now on I will Go to The Gentiles Now We&#x27;ve Seen This In Acts So far Yep We&#x27;ve Seen This Little Course Correction We&#x27;ve Seen The hand Of The Lord This Isn&#x27;t A Surprise That The hand Of The Lord We take Paul This This This Way Down This River We&#x27;ve Seen This Movie Before But what Does His New Ministry Focus Look Like What Is Paul To The Gentiles Dot Com Look Like Well look At verse Seven And he Left There And went To the House Of a Man Named Titus Justice A Worshipper Of God So far So good His House Was Next Door To The Synagogue Next Door Okay Next Door What In The What Is Going On Corinth Is A Big Enough City For Paul To The Gentiles Dot Com Ministries To be Somewhere Else Besides Next Door To The Synagogue If I&#x27;m A Consultant For Paul In This Moment I Say Listen Bro You Have Already Hacked Off The Whole Jewish Community They Hate Your Guts They&#x27;ve Already Beaten You With They&#x27;ve Had You Beaten With Rods They Don&#x27;t Just Call You Mean Names They Throw Rocks Let&#x27;s Go Somewhere Else Titus Justice He&#x27;s Got A Nice House Looks Great Look At That Flat Screen TV He&#x27;s Got Indoor Running Water That&#x27;s Awesome But Let&#x27;s Move Somewhere Else Let&#x27;s Get Out Of The Shadow Of Our Great Enemies Do You Remember What Happened In Lystra And Thessalonica And Berea What Do You Think Is Going To Happen This Time And Paul Himself Was Afraid He Said So In First Corinthians The Letter He Wrote To The Church That He&#x27;s Establishing Here He Says And I Was With You In Weakness And In Fear And Much Trembling Why You Think Paul You&#x27;re Next Door To The Synagogue What Do You Think Let&#x27;s Move Let&#x27;s Go Somewhere Else Let&#x27;s Set Up Shop Somewhere Else No Wonder He Was Afraid And Then It Gets Worse Look At Verse Eight Crispus The Ruler Of The Synagogue Believed In The Lord Together With His Entire Household Now At That The Jews Would Have Been Madder Than A Tangle Of Wet Bobcats I&#x27;ll Tell You That Right Now What Do You Think What Do You Think Here&#x27;s This Upstart Paul Who&#x27;s Preaching About The Fact That The Messiah Has Come His Name Is Jesus Of Nazareth He&#x27;s Next Door And Our Leader Crispus Who We Put Hope In Who We Follow Now That Guy&#x27;s Following Paul As Well What In The World You Can Imagine They Were Doing More Than Just Gnashing Their Teeth At Paul They Were Angry And It Made Paul Afraid But In Paul&#x27;s Fear Jesus Moves Closer You See That So Often If You Have Eyes To See When You&#x27;re Most Afraid Watch Watch For The Lord Coming To You Verse Nine And The Lord Said To Paul One Night In A Vision Do Not Be Afraid The Lord This Is Jesus Do Not Be Afraid But Go On Speaking And Do Not Be Silent For I Am With You And No One Will Attack You To Harm You For I Have Many In This City Who Are My People You See Sometimes The Lord Plants Us Next Door To Our Great Fears So That We Might Have To Trust Him Daily There&#x27;s There&#x27;s Nothing Like Living Next Door To Your Arch Here Go Go Outside And Play But He Sent Them All Away From Rome So Aquila And Priscilla Are Already Christians Exiled From Their Home And They Go To Corinth Now It Wasn&#x27;t Like Claudius Gives A Wit About Them Settling Their Affairs Or Anybody Settling Their Affairs We All Know What It&#x27;s Like To Move They Likely Rushed Out Of Town Leaving Their Home And Many Of Their Belongings Behind And You Can Imagine On The 700 Mile Journey They&#x27;re Asking Lord What Are You Doing Why Are You Leading Us This Way Surely They Had A Community In Rome With People They Love People They Trusted People They Did Life With And Now They&#x27;re Thrust Out Into The Great Unknown And They End Up Business They Have No Vision From Jesus They Hear No Voice They Get No Explanation They Just Get An Eviction Notice They Thought They Were Losing Their Home But Guess What In This Eviction They Received A Commission They Land In Corinth And Find A Tent Making Facebook Group With Paul In It See These Are Those Random Unexpected Things That Spring Into Our Lives Those Things Are Not Random The Trouble That Comes To You It Always Has A Purpose This Couple Thrust Into Uncertain Waters We Can See The Lord Is Guiding Them Down Their River In Ways They Would Not Go You Don&#x27;t Have To Be A Political Refugee to Be Accosted By Trouble Have You Been Thrusted Into The Waters Of Uncertainty Are You Experiencing Something Now That Was Not A Part Of Your Plan Maybe A Ruptured Relationship Maybe You&#x27;re A Wayward Child Or A Frightful Diagnosis Maybe You Have An Uncertain Retirement Facing You Maybe You&#x27;re Experiencing Extended Caregiving Or Just Feeling Forgot Maybe You&#x27;re Wracked With Regret And You Look Around At All The Circumstances That Led You To Where You Are And You Struggle Friends Unexpected Events Always A Sure Sign That The Lord Is At Work My Favorite Historical Pastor John Newton Has Solid Counsel When He Says This When I Hear A Knock At My Study Door I Hear A Message From God It May Be A Lesson Of Instruction Perhaps A Lesson Of Patience But Since It&#x27;s His Message It Must Be Interesting Difficult Circumstances Are A Message From God To You So The Circumstances You Face Today The Lord Has Steered You Toward And Nothing Has Slipped Past The Lord So What Are You Facing A Ruptured Relationship Maybe You Want To Rehearse Your Case But Friends Make Every Effort For Peace And Trust That The Lord Has Steered You In This Direction Do You Have A Wayward Child You You Are The First One Road For Your Child To Come Home And The Lord Has Not Lost Their Address You Have A Frightful Diagnosis Instead Of Worrying We Can Remember That We Are Dust And And Our Days Whatever Days We Have Are His Are You Facing An Uncertain Retirement Listen Our Days Are In His Hands Nothing Is Uncertain To Him Are You Experiencing Just an Extended Season Of Caregiving Friends No Good Work Is Wasted And The Angels Of Heaven And The Multitudes There Will Celebrate What You Do Here In Secret Behind Closed Do Are You Feeling Forgotten The Lord He Will Never Leave You Or Forsake You Do You Have Regret Friends You Are Not Your Mistakes Your Life Is Hidden In Christ But Know This Wherever You Are He Has Steered You There And He Has Done It For Your Good Even If You Don&#x27;t See How It Works Out Because Jesus Steers Us By Roots We Would Never Choose That We Would Never Go Aquila Priscilla Went To Corinth To Find Work But They Found A Purpose All Because The Lord Jesus Steered Them In That Direction For Their Good And And That That&#x27;s Not All Paul Decides They&#x27;re Valuable Enough To Him And He Says Hey Let&#x27;s Go From Corinth After His 18 Months Of Preaching Let&#x27;s Go From Corinth To Ephesus We&#x27;ll See We&#x27;ll Go To Ephesus With Them Next Week And In Ephesus They Meet This Guy Apollos Verse 24 Now A Jew Named Apollos A Native Of Alexandria Came To Ephesus He Was He Had Been Instructed In The Way Of The Lord And Being Fervent In Spirit He Spoke And Taught Accurately The Things Concerning Jesus Though He Knew Only The Baptism Of John That&#x27;s Mr.</span></p>
+        <p><span class="tl-s" data-s="1949.62" data-e="2461.22">The Baptist To Us Right This Is John The Baptist He Is A Native Apollos Of Alexandria Which Is In North Africa He&#x27;s An Able Preacher And Knew That The Old Testament All Pointed To Jesus And Since He Only Knew The Baptism Of John He Would Have Said Something Like This Repent And Believe Just Like John Said Jesus Has Come The Messiah Has Come The Kingdom Has Come He Is Ushered In A Kingdom Of God And The Winnowing Fork Is In His Hands Repent Or You Will Be Blown Away Like Chaff He Was Right But He Didn&#x27;t Resurrection And Ascension Of Jesus He Only Understood That Jesus Had Come He Didn&#x27;t Understand All Of His Work So Who Does The Lord Steer Into This Eloquent Man&#x27;s Life Not An Apostle Not A Church Council He Doesn&#x27;t Get A Vision He Doesn&#x27;t Get A Preacher It&#x27;s Not A Pastor He Gets A Couple Of Political Refugees That Never Thought They Would Be In Ephesus But Boom Began To Speak Boldly In The Synagogue But When Priscilla And Aquila Heard Him They Took Him Aside And Explained To Him The Way Of God More Accurately The Couple Who Never Planned To Be In Ephesus Helped An Eloquent Preacher Understand The Death And Resurrection And All The Implications Of What That Means Of Jesus They Pulled Him Aside And They Explained Together All That Jesus He Bore The Sins Of His People On The Cross He Died And Was Buried But He Rose Again He Ascended To The Right Hand Of The Father The Spirit Has Now Come Down At Pentecost And Now The Spirit Of God Indwells The People Of God And Now We Have Jesus Reigning Over All Things And What Was The Effect What Was The Effect Goes To Achaia Verse Showing By The Scriptures That The Christ Was Jesus And The Whole Region Of Achaia Was Built Up And Encouraged Why Because Of This Unlikely Chain Of Events Because He Was Corrected Kindly Quietly Privately By Aquila And Priscilla Well How Did They Get There Because Paul Took Aquila And Priscilla To Ephesus From Corinth Well How Did They Meet Because Paul Met Aquila And Priscilla In Corinth Why Because They Were Thrown Out Of Rome Why Because A Roman Emperor Got Annoyed Claudius May Have Signed The Decree But Jesus Was Steering The Boat He Thought He Was Clearing A City Of Troublemakers But He Is Advancing The Gospel And I Want To Say Ha Ha And By The Way If You&#x27;re Tempted To Be Worried About Our Political Future In The United States Friends Read The Bible We Have A Sure And Certain King He&#x27;s Not Thrown Off By Poles Or Threats Friends We&#x27;re Gonna Be Okay Aquila Aquila And Pasilla They Didn&#x27;t Get A Map They Just Got An Eviction Notice Jesus Steered Their Boat By A Route They Never Would Have Chosen Friends Our Hope This Morning Is Not That We Will Learn To Read The River We Can&#x27;t Our Hope This Morning Is That We Trust The One Who Will Pilot us Home And Friends We Should Expect That Jesus Is Going To Steer Rising Waters He Is Going To Take Us Down Tributaries We Are Going To Say Not That Way Any Place But That Way But We Should Expect That Who Expected God To Become Man But He Did And He Was Perfect He Was Ideal He Was Kind He Was Generous He Was Gracious He Was Loving No Man Was Like Him But He Was Killed And No One Saw This Coming His Friends Ran His Enemies Swarmed But His Death Was The Redemptive Master Stroke Because Without The Cross There Is No Empty Tomb And With No Empty Tomb We Do Not Have A Jesus We Can Trust We Just Have A Good Teacher Who Said Good Things But Friends We Have One That Has Gone Before Us Who Has Defeated Sin And Death And Knows The Way Home And We Can Trust Him With All We Worth Knowing That He Will Not He Cannot Let Us Down Though He Never Ever Explains His Root Though We Don&#x27;t Get A Map We Can Trust Him Friends Despite What You Feel You Are Not Adrift You Are Not Lost He Has Not Taken A Wrong Turn He Has Not Left His Post The River Of Life May Be A Dead Language To You But Jesus Reads And Directs It Like A Book And He Has Never Lost A Passenger He Is The One Who Promises To Keep Us He Is The One Who Never Sleeps Nor Slumbers He Is The One Who Doesn&#x27;t Promise Calm Water But Promises To Be With Us Always To The End Of The Age He Is The One Whose Blood Is On His Own Head So That We Might Be Safe Though Jesus Steers Us In Ways We Would Never Go He Knows The Way He&#x27;s Traveled It And We Can Entrust Ourselves Completely To Him No Matter Where He Leads Let&#x27;s Pray Lord I&#x27;m Grateful For That Truth I&#x27;m Grateful For That Reality But Lord One Of The Things That&#x27;s True Is That There Are People In This Room Who Feel Lost And Feel Cast Adrift They Feel As If Your Promise To Never Leave Nor Forsake Is A Promise That You Forgotten And So Lord I Pray That You Would Help Them To Have Ears To Hear Your Promises From The Scriptures And Help Them To Hear That Those Promises Are Not Just Promises In General But They&#x27;re Promises For Them Lord I Pray That That Word That Vision That Paul Received From You Lord Jesus That Says Fear Not For I Am With You Lord I Pray That Would Comfort Us Lord So Often What We Want With Us Are Good Circumstances A Lot Of Money Just A Bunch Of Happy People And Good Health But Lord What We Get Often Is A Whole Bunch Of Trouble And So Lord I Pray That You Would Help Us To Be A People Who Do Not Put Our Hope In Changing Circumstances But Put Our Hope In A Risen Christ Knowing That You Will Lead And You Will Guide And You Will Direct And That Your Hand Is On Our Lives And You Are Steering Us Down The River Of Life Where You Will Have Us Go For Your Pur We May Not See And For Your Glory And One Day All Will Be Clear One Day We&#x27;ll See You Jesus And It Will Be Worth It But Lord In These Days I Pray Lord For Those In Rough Water Those In Rough Waters Those Seeing Through A Fog Those Who Feel Lost In The Darkness Lord If They&#x27;re Not Saved I Pray That They Would Trust You If They Are Lord Trust You Because Lord We Have Nothing And No One Aside From You And You Lord Are Our Pilot The Captain Of Our Souls Our Great Hope Our Forerunner The Author And The Perfecter Of Our Faith And You We Can Trust And So Please Help Us To Do So And It&#x27;s In Your Name We Pray Amen</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Live sermon feed: spotlight from /api/sermons, browsable archive from
+  // /api/sermons/search. Static fallback list stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function row(it) {
+      var meta = [it.speaker, fmtDate(it.date)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      var titleHtml = esc(it.title);
+      var tUrl = it.guid && transcriptMap[it.guid];
+      if (tUrl) titleHtml = '<a href="' + esc(tUrl) + '">' + titleHtml + "</a>";
+      return '<div class="sermon"><div><h3>' + titleHtml + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    fetch("/api/sermons?v=3")
+      .then(function (res) { if (!res.ok) throw new Error("feed " + res.status); return res.json(); })
+      .then(function (data) {
+        var spot = document.querySelector("[data-series-spotlight]");
+        if (data && data.series && spot) {
+          var s = data.series;
+          var art = spot.querySelector("[data-series-art]");
+          if (art && s.artwork) { art.src = s.artwork; } else if (art) { art.style.display = "none"; }
+          var nm = spot.querySelector("[data-series-name]");
+          if (nm) nm.textContent = s.name;
+          var bl = spot.querySelector("[data-series-blurb]");
+          if (bl) bl.textContent = s.blurb;
+          spot.hidden = false;
+        }
+      })
+      .catch(function () { /* spotlight stays hidden */ });
+
+    var PER = 10;
+    var state = { q: "", speaker: "", series: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var speakerSel = document.querySelector("[data-sermons-speaker]");
+    var seriesSel = document.querySelector("[data-sermons-series]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No messages found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(speakerSel, data.facets.speakers || [], function (e) { return e.name; }, function (e) { return e.name + " (" + e.count + ")"; });
+        fill(seriesSel, data.facets.series || [], function (e) { return e.name; }, function (e) { return e.name + " (" + e.count + ")"; });
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.speaker || data.series || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.speaker) parts.push("by " + data.speaker);
+          if (data.series) parts.push("in " + data.series);
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " result" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " messages";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/sermons/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.speaker ? "&speaker=" + encodeURIComponent(state.speaker) : "") +
+        (state.series ? "&series=" + encodeURIComponent(state.series) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () { /* keep current list on error */ });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.speaker = ""; state.series = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (speakerSel) speakerSel.value = "";
+      if (seriesSel) seriesSel.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    function bindSelect(sel, key) {
+      if (!sel) return;
+      sel.addEventListener("change", function () {
+        state[key] = sel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    bindSelect(speakerSel, "speaker");
+    bindSelect(seriesSel, "series");
+    bindSelect(monthSel, "month");
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: https://hub.centergilbert.com/media/acts-18 -->
+</body>
+</html>
