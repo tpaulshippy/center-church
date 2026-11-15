@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Devotions and Prayer Time — Podcast Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Fixed on Jesus: conversations beyond Sunday mornings from Center Church in Gilbert, AZ — listen on Spotify, Apple Podcasts, and YouTube." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=18" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a href="/sermons">Sermons</a></li>
+              <li><a class="active" href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/podcast">&larr; All podcast episodes</a>
+          <h1 class="display-lg">Daily Devotions and Prayer Time</h1>
+          <p class="transcript-meta">2023-11-08 · 19:07</p>
+          <p class="transcript-desc">Welcome to FIXED ON JESUS, a podcast brought to you by Center Church in Gilbert, Arizona. Speaking to you today are Rich Richardson &amp; Mark Johnson Jr. Production by Heather Corbitt **SHOW NOTES** Questions asked in this episode: Where do we begin? Scripture References: Matthew 6:9-13 Books Reference</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/e750e370/podcast/play/78301078/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-10-7%2F900eab6d-1fd3-0fee-4054-a6f443c682c4.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="0.11" data-e="2.66">I mean, I think Bible reading is always fruitful.</span> <span class="tl-s" data-s="2.90" data-e="5.79">And so like for the mature Christian, let&#x27;s just keep reading the Bible.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="6.03" data-e="6.22">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="6.37" data-e="8.37">Now if you want to study, that&#x27;s different.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="8.53" data-e="8.80">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="9.09" data-e="16.60">You know, studying a book of the Bible, you want to read it a bunch and then maybe pick up a book that describes that, you know, that examines it.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="16.77" data-e="17.05">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="17.26" data-e="21.78">Which could be a commentary, or there&#x27;s introductions to each book.</span> <span class="tl-s" data-s="21.91" data-e="25.34">In fact, in the ESV Study Bible, you have an outline for each book.</span> <span class="tl-s" data-s="25.39" data-e="27.94">At the beginning of the book, you have the main idea of the book.</span> <span class="tl-s" data-s="28.02" data-e="28.10">Yeah.</span> <span class="tl-s" data-s="28.16" data-e="29.72">You have some of the background of the book.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="29.91" data-e="30.31">Yeah, I love that.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="30.45" data-e="31.50">So those are all really good.</span> <span class="tl-s" data-s="31.55" data-e="38.65">So like, if there&#x27;s a book that sort of goes, man, I&#x27;m interested in that, just you can reach out to me and I can give you some other resources.</span></p>
+        <p><span class="tl-s" data-s="53.89" data-e="56.25">This is Fixed on Jesus.</span></p>
+        <p><span class="tl-s" data-s="75.74" data-e="79.61">Hey everybody, welcome back to the Fixed on Jesus podcast.</span> <span class="tl-s" data-s="79.71" data-e="80.26">My name is Rich.</span> <span class="tl-s" data-s="81.11" data-e="87.06">I am joined, as I am always joined, by Mark Johnson Jr. across the table.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="87.53" data-e="88.62">Hey guys, how&#x27;s it going?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="89.22" data-e="95.56">And the ever-capable Heather Corbett to my right, to my right, your left.</span></p>
+        <p><span class="tl-s" data-s="97.33" data-e="100.44">I&#x27;m not going to comment on that, hoping that maybe it will go away.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="100.65" data-e="101.15">It won&#x27;t.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="101.28" data-e="103.57">Okay, well, that&#x27;s awkward and strange.</span> <span class="tl-s" data-s="103.86" data-e="110.33">Um, and, uh, [Speaker B] as long as we get a laugh out of Heather, I&#x27;m laughing [Speaker A] right now.</span> <span class="tl-s" data-s="110.33" data-e="111.30">So, okay, that&#x27;s the glass.</span> <span class="tl-s" data-s="111.36" data-e="122.53">Well, I&#x27;ll tell you what, one, one thing that you need to know about Mark When it comes to— another thing I need to note, again, Mark got converted as an adult and didn&#x27;t have the benefit, which is a blessing mostly.</span> <span class="tl-s" data-s="122.53" data-e="126.30">I don&#x27;t want you to think that it&#x27;s not a blessing to grow up in a Christian household.</span> <span class="tl-s" data-s="126.30" data-e="127.83">There&#x27;s just— we need to make fun of ourselves.</span> <span class="tl-s" data-s="127.83" data-e="129.45">We need to laugh at ourselves, right?</span> <span class="tl-s" data-s="129.45" data-e="131.80">If we don&#x27;t laugh at ourselves, who are we, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="131.85" data-e="131.91">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="131.91" data-e="137.57">And so one of the things we can laugh at ourselves about from the &#x27;80s is Christmas time.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="137.61" data-e="137.69">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="137.69" data-e="144.66">So one of the things that was popular, at least in the circle that I was in, Was that Christmas trees were of remember?</span> <span class="tl-s" data-s="144.78" data-e="145.18">Of the devil.</span> <span class="tl-s" data-s="145.26" data-e="145.84">Of the devil.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="145.98" data-e="147.03">Of the devil.</span> <span class="tl-s" data-s="147.03" data-e="148.15">Christmas trees are of the devil.</span> <span class="tl-s" data-s="148.15" data-e="148.94">That&#x27;s what you&#x27;re saying.</span> <span class="tl-s" data-s="148.94" data-e="150.16">Oh, that&#x27;s what they were saying.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="150.16" data-e="151.04">That&#x27;s what they were saying.</span> <span class="tl-s" data-s="151.04" data-e="160.11">And so there was a whole big phase, at least in the early eighties where I was, that you know Christmas trees were demonic.</span> <span class="tl-s" data-s="160.18" data-e="162.73">And because there were there were because they&#x27;re pointed.</span> <span class="tl-s" data-s="162.76" data-e="163.05">What?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="163.40" data-e="164.46">Because they&#x27;re pointed.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="164.51" data-e="167.54">Nope, because there were druids.</span> <span class="tl-s" data-s="167.54" data-e="167.62">Huh?</span> <span class="tl-s" data-s="167.62" data-e="169.07">Do you know what druids are?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="169.10" data-e="169.18">No.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="169.18" data-e="170.55">You&#x27;ll have to do some homework then.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="170.55" data-e="171.11">Oh man.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="171.11" data-e="182.45">There were druids that worshiped trees, and, uh, what we&#x27;re doing is bringing an object of druid worship into our home, which is front of mind for me when I put my Christmas tree up.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="182.75" data-e="184.52">Scarred for life.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="184.52" data-e="184.65">Exactly.</span> <span class="tl-s" data-s="184.66" data-e="185.75">It&#x27;s front of mind.</span> <span class="tl-s" data-s="186.03" data-e="188.15">And so I, uh, so that was evil.</span> <span class="tl-s" data-s="188.21" data-e="200.98">And then also Santa was, you know, I would hear people go on a like a multiple-minute tirade about how Santa has taken the place of Jesus, and you rearrange his name and it&#x27;s Satan.</span> <span class="tl-s" data-s="201.03" data-e="201.09">Oh!</span> <span class="tl-s" data-s="201.09" data-e="202.62">I don&#x27;t know if you saw that.</span> <span class="tl-s" data-s="202.81" data-e="203.26">Oh, wow!</span> <span class="tl-s" data-s="203.32" data-e="205.29">But that&#x27;s possible.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="205.29" data-e="205.52">Satan.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="205.60" data-e="206.00">Yeah.</span> <span class="tl-s" data-s="206.90" data-e="209.50">And so anyway, we don&#x27;t talk about that kind of stuff.</span> <span class="tl-s" data-s="209.86" data-e="215.64">In fact, at Christmastime, we have Christmas trees in the lobby here, so we&#x27;re not thinking in that same way.</span> <span class="tl-s" data-s="215.64" data-e="224.48">But I wanted you to know and be aware Just so that you can understand where we have come from, a lot of people, but also you may run into it in the future.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="224.48" data-e="230.40">Yeah, and who knows, in 20 years we might— 20, 30 years, we might look back on something that we believe now and be able to laugh at it.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="230.40" data-e="231.34">I am sure we will.</span> <span class="tl-s" data-s="231.34" data-e="232.15">I am sure we will.</span> <span class="tl-s" data-s="232.40" data-e="233.11">We should be.</span> <span class="tl-s" data-s="233.11" data-e="236.56">We should always have the capacity to laugh at ourselves.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="236.56" data-e="236.69">Yeah, definitely.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="236.69" data-e="240.52">If we do not, we are proud.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="241.71" data-e="242.02">Yeah, exactly.</span> <span class="tl-s" data-s="242.02" data-e="244.36">So today we are going to get into something.</span> <span class="tl-s" data-s="244.36" data-e="249.82">Imagine I say something like, You know, I want to do a daily devotional, but I don&#x27;t know where to start.</span> <span class="tl-s" data-s="249.82" data-e="251.18">What do I do?</span> <span class="tl-s" data-s="251.18" data-e="253.00">And this is something new for me.</span> <span class="tl-s" data-s="253.01" data-e="256.50">I just started one of those pre-planned books you recommended.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="256.55" data-e="256.90">Yeah, yeah, yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="256.97" data-e="258.41">And it&#x27;s been awesome.</span> <span class="tl-s" data-s="258.41" data-e="273.24">I&#x27;ve told some other people it&#x27;s just kind of revitalized praying in different ways and a more systemized reading plan rather than— I found myself continuously reading the same New Testament books over and over.</span> <span class="tl-s" data-s="273.27" data-e="276.56">Yeah, this has kind of got me spread out more, and I&#x27;m loving it.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="276.56" data-e="284.60">Yeah, I think one of the, one of the reasons people don&#x27;t have daily devotions is they don&#x27;t know what they should do.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="285.08" data-e="286.65">Yeah, [Speaker A] right.</span> <span class="tl-s" data-s="286.69" data-e="291.01">And so, uh, I think the best thing to do is just have a plan.</span> <span class="tl-s" data-s="291.01" data-e="291.70">Just any plan?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="291.75" data-e="300.35">A plan, a plan to read something in the Bible in a systematic way, and then a plan to pray, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="300.35" data-e="300.50">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="300.50" data-e="310.32">And so it can be very, very, very simple, and it doesn&#x27;t have to be, uh, it doesn&#x27;t have to be an hour and a half.</span> <span class="tl-s" data-s="310.35" data-e="314.93">It can be 10 to 15 minutes.</span> <span class="tl-s" data-s="314.98" data-e="329.07">And so, um, for example, that&#x27;s one of the reasons what we do every year is we put out a reading plan for our church so that if people want to, if they don&#x27;t have a plan for themselves, they can read that plan Daily, right?</span> <span class="tl-s" data-s="329.10" data-e="331.86">There are multiple different Bible reading plans that you can get.</span> <span class="tl-s" data-s="331.91" data-e="339.95">One of the more popular ones is called the McCheyne Reading Plan.</span> <span class="tl-s" data-s="339.95" data-e="343.86">That was Robert Murray McCheyne did for the first time way back in the 1800s.</span> <span class="tl-s" data-s="343.86" data-e="350.20">And so people have been reading different places throughout the scriptures in a day, but you can do that.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="350.20" data-e="351.36">Yeah, so you bounce around.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="351.41" data-e="356.43">You bounce around Old Testament, New Testament.</span> <span class="tl-s" data-s="356.52" data-e="356.70">Yeah.</span> <span class="tl-s" data-s="356.78" data-e="366.35">And so I think if you are just starting out, what I would recommend that you do is make a plan and stick to it as much as you can.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="367.18" data-e="368.90">So find one online?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="368.96" data-e="369.49">Yeah, like really basic.</span> <span class="tl-s" data-s="369.52" data-e="371.05">You don&#x27;t even have to find one online.</span> <span class="tl-s" data-s="371.05" data-e="373.21">This is one of the things I tell my kids.</span> <span class="tl-s" data-s="373.21" data-e="389.18">So I have got teenagers who they don&#x27;t know what to read, and so what I will do is I will give them a book to read, and so like in the New Testament, one of them is reading Luke, and so I will say, listen, just read a paragraph of Luke, right?</span> <span class="tl-s" data-s="389.24" data-e="393.00">And when you read Luke, you can see it&#x27;s broken up into paragraphs.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="393.00" data-e="393.03">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="393.03" data-e="408.80">All you need to do is— I told him, read this, read, read this paragraph, write down what is the main idea about this, of this paragraph, um, how can I apply it to my life, and then what questions do I have?</span> <span class="tl-s" data-s="408.80" data-e="411.30">And so if you&#x27;re a new Christian, you can write that stuff down.</span> <span class="tl-s" data-s="411.30" data-e="417.47">You could ask whatever questions you have and go to somebody who&#x27;s more who is more mature and they can help you with that.</span> <span class="tl-s" data-s="417.47" data-e="421.34">Another really good plan is just to read a Psalm a day.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="421.34" data-e="421.58">Okay.</span> <span class="tl-s" data-s="421.62" data-e="424.32">There are how many?</span> <span class="tl-s" data-s="424.37" data-e="430.11">100 and— [Speaker A] How many, Mark?</span> <span class="tl-s" data-s="430.15" data-e="430.33">Google.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="430.33" data-e="431.58">No, do not Google.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="431.60" data-e="431.69">150.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="431.69" data-e="435.11">There are 150 Psalms and there are 31 Proverbs.</span> <span class="tl-s" data-s="435.11" data-e="444.18">So you could read a Psalm a day and get through all the Psalms at least twice and some of them 3 times in a year.</span> <span class="tl-s" data-s="444.18" data-e="447.98">You can do a Proverb a day where you can get through all of those in a month.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="448.01" data-e="448.71">Most months, yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="449.69" data-e="452.05">Yeah, most of them, not February.</span> <span class="tl-s" data-s="452.18" data-e="459.74">Uh, you can, you can read, you can just sort of make your way systematically through a book of the Bible or the Old Testament or the New Testament.</span> <span class="tl-s" data-s="459.74" data-e="461.79">The real thing is just have a plan.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="461.79" data-e="461.89">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="461.89" data-e="467.21">And then I also think it&#x27;s helpful to talk to somebody about what you&#x27;re reading.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="467.32" data-e="467.45">Yeah.</span> <span class="tl-s" data-s="467.58" data-e="468.91">Rather than just mindlessly reading it.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="469.00" data-e="470.41">Just reading it for yourself.</span> <span class="tl-s" data-s="471.24" data-e="474.87">At this moment, what I&#x27;m doing Is I&#x27;m reading a Psalm a day.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="474.95" data-e="476.06">You probably read Leviticus every day, don&#x27;t you?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="476.22" data-e="476.57">I do not.</span> <span class="tl-s" data-s="476.62" data-e="476.75">You do.</span> <span class="tl-s" data-s="476.80" data-e="477.35">I do not.</span> <span class="tl-s" data-s="477.43" data-e="477.60">Don&#x27;t lie.</span> <span class="tl-s" data-s="477.60" data-e="477.97">I do not.</span> <span class="tl-s" data-s="478.71" data-e="479.13">I am not lying.</span> <span class="tl-s" data-s="479.35" data-e="479.70">I do not.</span> <span class="tl-s" data-s="479.70" data-e="490.75">I read a Psalm a day, and then, um, uh, I have— then I also am reading this book called, um, Meeting God in the Old Testament.</span> <span class="tl-s" data-s="490.75" data-e="495.37">So I want to grow in my understanding of how to meet God in the Old Testament.</span> <span class="tl-s" data-s="496.04" data-e="499.24">And so, uh, it&#x27;s by Alec Motyer.</span></p>
+        <p><span class="tl-s" data-s="499.33" data-e="505.30">And it goes through different Old Testament genres and how— and he has some comments on them and prescribes some reading.</span> <span class="tl-s" data-s="505.35" data-e="508.07">And so I found it to be real helpful.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="508.11" data-e="509.08">Yeah, that&#x27;s great.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="509.08" data-e="515.79">Because naturally my mind— naturally it&#x27;s easy for me just to sort of migrate to the New Testament and not— [Speaker B] Same.</span> <span class="tl-s" data-s="515.79" data-e="516.09">Yeah, yeah.</span> <span class="tl-s" data-s="516.19" data-e="518.68">So I have to force myself a little bit to the Old Testament.</span> <span class="tl-s" data-s="518.68" data-e="532.09">It takes a lot more work, but [Speaker B] yeah, [Speaker A] there&#x27;s a lot of benefit there if we&#x27;ll slow down Read it and then have maybe, you know, get some, some aids to help you understand what&#x27;s being— what&#x27;s going on.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="532.09" data-e="532.12">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="532.12" data-e="537.31">You know, so like, because sometimes it&#x27;s hard to know all the names and all the places and stuff.</span> <span class="tl-s" data-s="537.31" data-e="540.82">A good ESV study— the ESV Study Bible is a great tool.</span> <span class="tl-s" data-s="540.82" data-e="542.26">You can read [Speaker B] commentary in there.</span> <span class="tl-s" data-s="542.26" data-e="544.60">Yeah, it&#x27;s just got notes in there.</span> <span class="tl-s" data-s="544.60" data-e="550.40">As long as you&#x27;re more concerned about the words on top of the notes, then you&#x27;re in good shape.</span> <span class="tl-s" data-s="550.42" data-e="553.31">So, uh, so that&#x27;s, that&#x27;s a really good tool.</span> <span class="tl-s" data-s="553.31" data-e="556.88">To to use, and so just have a plan.</span> <span class="tl-s" data-s="557.00" data-e="562.20">Now, if you&#x27;re interested in devotionals that will help you, one you mentioned.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="562.23" data-e="564.79">Yeah, Be Thou My Vision.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="564.79" data-e="566.64">Be Thou My Vision by Jonathan Gibson.</span> <span class="tl-s" data-s="566.64" data-e="566.88">Yeah, great.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="566.88" data-e="567.83">Yeah, [Speaker A] great book.</span> <span class="tl-s" data-s="568.33" data-e="575.79">It&#x27;s [Speaker A] tell us what that tell us what that is like each day.</span> <span class="tl-s" data-s="575.79" data-e="583.51">Yeah, it&#x27;s I would say it probably takes me between twenty and forty minutes, maybe a little bit less, somewhere in there.</span> <span class="tl-s" data-s="583.56" data-e="584.81">And it&#x27;s a series of prayers.</span> <span class="tl-s" data-s="585.65" data-e="589.93">It&#x27;s a reading of something from the law.</span> <span class="tl-s" data-s="589.98" data-e="591.58">It&#x27;s a reading from a gospel.</span> <span class="tl-s" data-s="591.58" data-e="597.22">It&#x27;s some creeds and confessionals that the historical church has believed over the last couple thousand years.</span> <span class="tl-s" data-s="597.35" data-e="605.32">And then there&#x27;s also a reading plan where you move through, like right now I&#x27;m doing Lamentations.</span> <span class="tl-s" data-s="605.36" data-e="609.71">I&#x27;m sorry, I&#x27;m doing 2 Samuel and then Lamentations and then a Psalm or 2.</span> <span class="tl-s" data-s="609.71" data-e="616.99">And then usually something from the New Testament, like a gospel or One of the— one of Paul&#x27;s letters.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="616.99" data-e="617.18">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="617.29" data-e="624.97">And [Speaker A] it&#x27;s, it&#x27;s really— so there&#x27;s old prayers by saints of old that are recorded in this, in this devotional.</span> <span class="tl-s" data-s="625.23" data-e="625.64">Real helpful.</span> <span class="tl-s" data-s="625.72" data-e="628.29">Sometimes it&#x27;s just good to hear other people pray to God.</span> <span class="tl-s" data-s="628.29" data-e="629.67">Yeah, they&#x27;re lively.</span> <span class="tl-s" data-s="629.67" data-e="632.75">They&#x27;re just, you know, it makes my— spiced up.</span> <span class="tl-s" data-s="632.76" data-e="637.27">Not that you need your prayer life spiced up, but it&#x27;s helpful.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="637.43" data-e="637.98">It is.</span> <span class="tl-s" data-s="637.98" data-e="639.40">It&#x27;s really helpful.</span> <span class="tl-s" data-s="639.42" data-e="641.49">And so really good.</span> <span class="tl-s" data-s="641.61" data-e="643.58">And so I really do appreciate that.</span> <span class="tl-s" data-s="643.61" data-e="645.88">That&#x27;s a good one.</span> <span class="tl-s" data-s="646.10" data-e="650.55">Another one is, um, written by, uh, Dane Ortlund, and it&#x27;s on the Psalms.</span> <span class="tl-s" data-s="650.60" data-e="655.57">And, um, this one is called— I always forget what it&#x27;s called— In the Lord I Take Refuge.</span> <span class="tl-s" data-s="655.57" data-e="663.77">And so what it is, is it&#x27;s a Psalm a day, and then he has 3 paragraphs on that Psalm.</span> <span class="tl-s" data-s="663.82" data-e="664.03">Really helpful.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="664.08" data-e="664.35">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="664.38" data-e="665.74">So that&#x27;s another good devotional.</span> <span class="tl-s" data-s="665.74" data-e="669.70">Tim Keller has another devotional on the Psalms, which I find to be great.</span> <span class="tl-s" data-s="669.70" data-e="678.79">It&#x27;s not even a Psalm a day, it&#x27;s just probably 4 or 5 lines from a Psalm, and then it&#x27;s really easy and brief, but it&#x27;s throughout the whole year.</span> <span class="tl-s" data-s="678.90" data-e="690.29">So you can read that, you can— it&#x27;s a small little book, but it&#x27;s a reading from the Psalms plus a thought and a prayer for the whole year.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="690.29" data-e="691.08">Yeah, that&#x27;s cool.</span> <span class="tl-s" data-s="691.08" data-e="697.68">Um, you mentioned it earlier, and in some of these devotional program, you know, plans, they have Prayer, but like, you know, what about prayer in that?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="697.68" data-e="697.79">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="697.89" data-e="705.59">In that plan, how do you— and then I am also going to ask, you can answer whichever question you want first, but let us say there is a more mature Christian.</span> <span class="tl-s" data-s="705.59" data-e="712.16">So we started with like, I don&#x27;t know where to go, what do I do?</span> <span class="tl-s" data-s="712.19" data-e="718.49">Then we did get into more like advanced styles of devotionals or more theologically dense things, but what would the more mature believer do in this?</span> <span class="tl-s" data-s="718.49" data-e="726.97">I mean, I know those can still be fruitful, and they will never not be fruitful because they are from the Word of God, but is there like a more advanced program?</span> <span class="tl-s" data-s="726.98" data-e="727.30">Or something?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="727.30" data-e="727.46">Maybe.</span> <span class="tl-s" data-s="727.50" data-e="730.98">I mean, like, I think— [Speaker B] or is it even necessary?</span> <span class="tl-s" data-s="730.98" data-e="732.17">I don&#x27;t know that.</span> <span class="tl-s" data-s="732.17" data-e="734.02">I mean, I think Bible reading is always fruitful.</span> <span class="tl-s" data-s="734.02" data-e="738.80">And so, like, for the mature Christian, let&#x27;s just keep reading the Bible.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="739.56" data-e="739.62">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="739.65" data-e="741.58">Now, if you want to study, that&#x27;s different.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="741.58" data-e="741.73">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="741.73" data-e="753.67">So say that you want to study, um, you know, studying a book of the Bible, you want to read it a bunch and then maybe pick up a book that describes that, you know, that examines it.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="753.70" data-e="753.85">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="753.85" data-e="757.75">Which it could be a commentary or You know, something else [Speaker B] like software, Logos.</span> <span class="tl-s" data-s="757.80" data-e="760.24">Yeah, I mean, I&#x27;d rather— like, there&#x27;s a lot of really good materials out there.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="760.24" data-e="760.28">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="760.35" data-e="768.84">So if you, for example, I have a lot of people who talk to me like, hey, I want to learn more about the book of whatever, right?</span> <span class="tl-s" data-s="769.27" data-e="772.55">And so ask me and I can give you some recommendations.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="772.55" data-e="774.47">Yeah, you gave me some for John.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="774.47" data-e="774.86">Yeah, John.</span> <span class="tl-s" data-s="774.96" data-e="778.52">Yeah, people ask about Ecclesiastes, so I give on those.</span> <span class="tl-s" data-s="778.72" data-e="785.57">You know, there&#x27;s all kinds of— there&#x27;s all kinds of really good resources out there that are not on YouTube Um, and so you— [Speaker B] good to know.</span> <span class="tl-s" data-s="785.57" data-e="788.49">Yeah, yeah, we [Speaker B] might have to get on YouTube.</span> <span class="tl-s" data-s="788.54" data-e="788.66">Huh?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="788.66" data-e="790.30">We might have to get on YouTube.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="790.30" data-e="791.98">I&#x27;m not wanting to do that right now.</span> <span class="tl-s" data-s="791.98" data-e="798.38">So yeah, anyway, um, and so like, just if you wanna— the next step I think is studying.</span> <span class="tl-s" data-s="798.38" data-e="807.60">If you want to study, you know, there&#x27;s great tools out there, uh, and, uh, you know, it&#x27;s, it&#x27;s worthwhile just to find a good tool, you know, a, you know, Bible.</span> <span class="tl-s" data-s="807.60" data-e="808.59">There&#x27;s introductions to each book.</span> <span class="tl-s" data-s="808.64" data-e="811.12">In fact, in the ESV Study Bible, you have an outline for each book.</span> <span class="tl-s" data-s="811.45" data-e="814.32">At the beginning of the book, you have the main idea of the book.</span> <span class="tl-s" data-s="814.32" data-e="816.71">Yeah, you have some of the background of the book.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="816.80" data-e="818.09">Yeah, I love that.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="818.09" data-e="818.91">So those are all really good.</span> <span class="tl-s" data-s="818.91" data-e="827.16">So like, if there&#x27;s a book that sort of goes, man, I&#x27;m interested in that, just— you can reach out to me and I can give you some other resources.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="827.16" data-e="827.41">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="827.41" data-e="828.20">That might get there.</span> <span class="tl-s" data-s="828.20" data-e="833.08">But prayer, I think some people are— some people are really given to Bible reading and not prayer.</span> <span class="tl-s" data-s="833.11" data-e="835.37">Other people are given to prayer and not Bible reading.</span> <span class="tl-s" data-s="835.37" data-e="836.80">And so sometimes that can be hard.</span> <span class="tl-s" data-s="836.80" data-e="843.64">Like, if you&#x27;re not— my natural tendency is to read more than it is to pray, so I have to really force myself to pray.</span> <span class="tl-s" data-s="844.41" data-e="847.41">Um, and so I do better praying when I&#x27;m walking around.</span> <span class="tl-s" data-s="847.41" data-e="855.48">You know, I sort of just go on a walk and pray, um, so that I don&#x27;t get distracted.</span> <span class="tl-s" data-s="855.48" data-e="857.26">Sometimes I have to say it out loud.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="857.26" data-e="857.64">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="857.64" data-e="862.68">And, and so, because it can just be— it can be difficult.</span> <span class="tl-s" data-s="862.87" data-e="865.06">But when I think about praying, I think about the Lord&#x27;s Prayer.</span> <span class="tl-s" data-s="865.06" data-e="870.49">The Lord&#x27;s Prayer, uh, which is really the disciples&#x27; prayer because they say, teach us to pray.</span> <span class="tl-s" data-s="870.49" data-e="870.58">Yeah.</span> <span class="tl-s" data-s="870.58" data-e="873.62">And he gives it to them.</span> <span class="tl-s" data-s="873.68" data-e="888.58">So anyway, um, but he— when he prays When he prays this, and you can see the Lord&#x27;s Prayer in Matthew chapter 6, verses 9 through 13, it&#x27;s not just saying the words, but these are categories that you can pray in your prayer life, right?</span> <span class="tl-s" data-s="889.07" data-e="893.29">So, you know, we can just go through it real quickly here.</span> <span class="tl-s" data-s="893.32" data-e="897.50">So he says, pray then like this: Our Father in heaven, hallowed be your name.</span> <span class="tl-s" data-s="897.50" data-e="906.76">So basically what he&#x27;s talking to— the first thing we do, the first thing he&#x27;s recommending, Jesus is recommending we do, is pray to our Lord who is where?</span></p>
+        <p><span class="tl-s" data-s="907.05" data-e="907.53">He&#x27;s in heaven.</span> <span class="tl-s" data-s="907.53" data-e="910.33">That means he&#x27;s ruling over all things.</span> <span class="tl-s" data-s="910.33" data-e="911.44">Hallowed be your name.</span> <span class="tl-s" data-s="911.44" data-e="916.16">That means may your name grow, like may your, may your name be holy, hallowed.</span> <span class="tl-s" data-s="916.17" data-e="930.53">Um, and so that means may I hallow your name, may this world hallow your name, may I live a consistent life where I live with the fear of the Lord and constantly hallow your name in the way that I think, in the way that I speak, in the way that I act.</span> <span class="tl-s" data-s="930.54" data-e="933.72">Um, help me to hallow your name.</span> <span class="tl-s" data-s="933.73" data-e="937.36">Then your kingdom come, your will be done on earth as it is in heaven.</span> <span class="tl-s" data-s="937.76" data-e="940.07">And so then, you know, we— not our kingdom.</span> <span class="tl-s" data-s="940.07" data-e="942.89">Like, notice we&#x27;re not going to what we need yet.</span> <span class="tl-s" data-s="943.19" data-e="947.83">We&#x27;re not going to those things that we, that we&#x27;re requesting of the Lord.</span></p>
+        <p><span class="tl-s" data-s="948.40" data-e="950.30">We&#x27;re saying, you know best, you know most.</span> <span class="tl-s" data-s="950.42" data-e="951.50">Let&#x27;s, let&#x27;s expand your kingdom.</span> <span class="tl-s" data-s="951.63" data-e="953.41">Let&#x27;s expand your kingdom and the reach of your will.</span> <span class="tl-s" data-s="953.41" data-e="955.80">And let&#x27;s start with me.</span> <span class="tl-s" data-s="955.80" data-e="957.34">May your will be done in my life.</span> <span class="tl-s" data-s="957.34" data-e="970.25">And so where there are things that we&#x27;re doing that are blatantly disobedient, or where there are things that we&#x27;re not bringing under the lordship of the Lord, Help me to obey where we know we&#x27;re weak.</span> <span class="tl-s" data-s="970.31" data-e="971.55">Help us to obey, right?</span> <span class="tl-s" data-s="971.55" data-e="976.64">And then may we see the kingdom of God spread by people becoming saved.</span> <span class="tl-s" data-s="976.90" data-e="984.24">And so you pray then for people who you know in your life that don&#x27;t know Jesus.</span> <span class="tl-s" data-s="984.24" data-e="989.35">You pray for presidents and governors and senators here so that his kingdom would come and and and impact our world.</span></p>
+        <p><span class="tl-s" data-s="989.35" data-e="989.76">Then he says.</span> <span class="tl-s" data-s="989.76" data-e="991.72">And give us this day our daily bread.</span> <span class="tl-s" data-s="991.74" data-e="995.21">Those are our daily needs, so it&#x27;s not as if we don&#x27;t pray for our needs.</span> <span class="tl-s" data-s="995.29" data-e="996.49">We pray for them.</span> <span class="tl-s" data-s="996.49" data-e="1000.52">It&#x27;s not just food, but those things that we need on a daily basis.</span> <span class="tl-s" data-s="1000.56" data-e="1001.86">Maybe we need a job.</span> <span class="tl-s" data-s="1002.79" data-e="1005.43">Maybe we need you know whatever it is.</span> <span class="tl-s" data-s="1005.91" data-e="1009.07">We pray that there, and forgive us our debts even as we forgive.</span> <span class="tl-s" data-s="1009.07" data-e="1010.91">We have as we also have forgiven our debtors.</span> <span class="tl-s" data-s="1010.96" data-e="1013.11">So forgive us as we forgive people.</span></p>
+        <p><span class="tl-s" data-s="1013.46" data-e="1018.75">So in that moment, you think of those things that you need to ask the Lord to forgive you of.</span> <span class="tl-s" data-s="1019.15" data-e="1023.81">You ask, and you— where there are things that you feel like maybe you&#x27;re holding against people, you forgive them.</span> <span class="tl-s" data-s="1023.81" data-e="1029.69">And, you know, I find that when— if someone really hurts me at a deep level, I&#x27;m not able to just forgive them and forget.</span> <span class="tl-s" data-s="1029.69" data-e="1040.75">I have to keep going back and forgiving them on a regular basis all the time so that they don&#x27;t sort of— so it doesn&#x27;t take hold in my heart.</span> <span class="tl-s" data-s="1040.78" data-e="1045.19">And so, and then, lead us not into temptation, but deliver us from the evil one.</span> <span class="tl-s" data-s="1045.19" data-e="1047.40">And so that I pray that all the time.</span> <span class="tl-s" data-s="1047.42" data-e="1051.70">Lord, in my day, lead me not into temptation, but deliver me from the evil one.</span> <span class="tl-s" data-s="1051.70" data-e="1073.63">Even before I go to bed, because like, a lot of times I will have a hard time falling asleep, and one of the prayers I pray before I fall asleep is, Lord, lead me not into temptation, because when I am laying on my bed trying to fall asleep, all kinds of temptations can come into my mind— fear and trouble and anxiety and all kinds of things— and deliver me from the evil one.</span></p>
+        <p><span class="tl-s" data-s="1073.65" data-e="1078.69">And so, uh, this— these kinds of prayers we can take through, uh, with us throughout the whole day.</span> <span class="tl-s" data-s="1078.69" data-e="1080.84">And, um, you know, that— those are categories.</span> <span class="tl-s" data-s="1080.86" data-e="1085.42">And so you can, as you walk around, you can keep revisiting these categories throughout the day.</span> <span class="tl-s" data-s="1085.44" data-e="1092.26">But that&#x27;s, that&#x27;s a quick pattern for how to pray, um, in a daily devotional.</span> <span class="tl-s" data-s="1092.28" data-e="1098.46">It&#x27;s very— it can be as short as 5 minutes, it can be as long as multiple, multiple hours.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1098.46" data-e="1098.54">Yeah.</span> <span class="tl-s" data-s="1098.54" data-e="1099.17">That&#x27;s awesome.</span> <span class="tl-s" data-s="1099.83" data-e="1103.81">Yeah, that&#x27;s— I&#x27;ve never heard someone explain it so, you know, in depth.</span> <span class="tl-s" data-s="1104.07" data-e="1109.38">I mean, I know you just scratched the surface, but there&#x27;s a reason Jesus taught the apostles to pray like that, the disciples.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1109.38" data-e="1111.81">Yeah, he gave us those categories, didn&#x27;t he?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1111.81" data-e="1111.88">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1111.88" data-e="1111.95">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1111.95" data-e="1112.77">Well, that&#x27;s awesome.</span> <span class="tl-s" data-s="1112.77" data-e="1115.29">Well, that&#x27;s all we got for this one.</span> <span class="tl-s" data-s="1115.47" data-e="1117.09">Thank you for tuning in.</span> <span class="tl-s" data-s="1117.09" data-e="1126.05">Feel free to reach out if you have any questions or if you&#x27;re looking for resources from Rich on different books or other study tools.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1126.05" data-e="1126.05">Um, [Speaker B] you can contact us at [Speaker A] production@centergilbert.com.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1126.05" data-e="1126.05">And thanks again.</span> <span class="tl-s" data-s="1126.05" data-e="1126.05">Until next time.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1126.05" data-e="1126.05">See you later.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Fixed on Jesus episode archive, backed by /api/podcast/search.
+  // Static fallback list above stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function fmtDuration(raw) {
+      if (!raw) return "";
+      var str = String(raw).trim();
+      // Anchor feeds report seconds; render as H:MM:SS or M:SS.
+      if (/^\d+$/.test(str)) {
+        var total = parseInt(str, 10);
+        var h = Math.floor(total / 3600);
+        var m = Math.floor((total % 3600) / 60);
+        var sec = total % 60;
+        var mm = (h > 0 && m < 10 ? "0" + m : "" + m);
+        var ss = (sec < 10 ? "0" + sec : "" + sec);
+        return (h > 0 ? h + ":" + mm : m) + ":" + ss;
+      }
+      // Anchor also reports clock strings like "00:24:02" — drop the
+      // redundant leading hour so it reads "24:02".
+      return str.replace(/^00:/, "");
+    }
+    function row(it) {
+      it = it || {};
+      var title = esc(it.title) || "Untitled episode";
+      var tUrl = it.guid && transcriptMap[it.guid];
+      var heading = tUrl
+        ? '<a href="' + esc(tUrl) + '">' + title + "</a>"
+        : (it.link
+          ? '<a href="' + esc(it.link) + '" target="_blank" rel="noopener">' + title + "</a>"
+          : title);
+      var meta = [fmtDate(it.date), fmtDuration(it.duration)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      return '<div class="sermon"><div><h3>' + heading + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    var PER = 10;
+    var state = { q: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No episodes found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " episode" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " episodes";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/podcast/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () {
+          // Keep the static list, but tell the reader where else to listen —
+          // some privacy blockers stop the archive request itself.
+          var note = document.querySelector("[data-sermons-error]");
+          if (note) note.hidden = false;
+        });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    if (monthSel) {
+      monthSel.addEventListener("change", function () {
+        state.month = monthSel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: 96069da1-be79-4da2-a651-167718b3a85e -->
+</body>
+</html>
