@@ -17,7 +17,18 @@
     /* Sermon transcript dark mode: follows the device preference only.
        Inline here so only transcript pages are affected; the rest of the
        site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Keeps the
+       title (page h1, read by the read-along mini-bar), the meta line,
+       and the audio card immediately below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
     @media (prefers-color-scheme: dark) {
+      .eyebrow { color: #e8a76f; }
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
       body { background: var(--ink); color: var(--cream); }
       .site-header { background: rgba(23, 19, 16, 0.92); border-bottom-color: var(--line-light); }
       .nav-links a:hover, .nav-links a.active { color: #e8a76f; }
@@ -114,17 +125,14 @@
   </header>
 
     <main>
-    <section class="page-hero">
-      <div class="hero-bg"><img class="focus-right" src="/photos/preaching-matt.jpg" alt="Pastor preaching verse-by-verse at Center Church" /></div>
-      <div class="container hero-inner">
-        <span class="eyebrow on-dark">Sermon transcript</span>
-        <h1 class="display-xl">Acts 20:1-12</h1>
-        <p class="sub">Rich Richardson · Acts · 2026-11-01 · 00:42:26</p>
-      </div>
-    </section>
-
     <section class="section">
       <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/sermons">&larr; All sermons</a>
+          <span class="eyebrow">Sermon transcript</span>
+          <h1 class="display-lg">Acts 20:1-12</h1>
+          <p class="transcript-meta">Rich Richardson · Acts · 2026-11-01 · 00:42:26</p>
+        </div>
         <div class="sermon">
           <div>
             <h3>Acts 20:1-12</h3>
