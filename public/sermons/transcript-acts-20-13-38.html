@@ -33,6 +33,101 @@
       .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
       .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
     }
+
+    /* Read-along: sentence highlight (light default = dark-on-cream). */
+    .tl-s {
+      border-radius: 5px;
+      scroll-margin-block: 38vh;
+      cursor: pointer;
+      transition: background-color 0.25s ease;
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone;
+    }
+    .tl-s:hover { background: rgba(194, 112, 61, 0.12); }
+    .tl-s.is-active { background: rgba(194, 112, 61, 0.22); }
+    @media (prefers-color-scheme: dark) {
+      .tl-s:hover { background: rgba(232, 167, 111, 0.14); }
+      .tl-s.is-active { background: rgba(232, 167, 111, 0.24); color: #fff8ee; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .tl-s { transition: none; }
+    }
+
+    /* Sticky mini player: fixed bar that appears after the sermon card
+       scrolls out of view. Overlays content (no layout shift). */
+    #tl-minibar {
+      position: fixed;
+      left: 50%;
+      bottom: calc(12px + env(safe-area-inset-bottom, 0px));
+      width: min(720px, calc(100% - 24px));
+      z-index: 80;
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      padding: 0.65rem 0.8rem;
+      background: rgba(255, 255, 255, 0.97);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      box-shadow: 0 18px 44px -16px rgba(23, 19, 16, 0.45);
+      transform: translate(-50%, 140%);
+      opacity: 0;
+      visibility: hidden;
+      transition: transform 0.28s ease, opacity 0.28s ease, visibility 0.28s;
+    }
+    #tl-minibar.is-visible {
+      transform: translate(-50%, 0);
+      opacity: 1;
+      visibility: visible;
+    }
+    #tl-minibar .tl-mini-label {
+      flex: none;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--clay-dark);
+      white-space: nowrap;
+    }
+    #tl-minibar .tl-mini-slot { flex: 1; min-width: 0; display: flex; }
+    #tl-minibar audio { width: 100%; margin: 0; }
+    #tl-minibar .tl-follow {
+      flex: none;
+      font: inherit;
+      font-size: 0.8rem;
+      font-weight: 700;
+      border-radius: 999px;
+      padding: 0.45rem 0.9rem;
+      cursor: pointer;
+      border: 1px solid var(--line);
+      background: transparent;
+      color: var(--muted);
+    }
+    #tl-minibar .tl-follow[aria-pressed="true"] {
+      background: var(--ink);
+      border-color: var(--ink);
+      color: var(--cream);
+    }
+    @media (prefers-color-scheme: dark) {
+      #tl-minibar {
+        background: rgba(36, 29, 23, 0.97);
+        border-color: var(--line-light);
+        box-shadow: 0 18px 44px -16px rgba(0, 0, 0, 0.7);
+      }
+      #tl-minibar .tl-mini-label { color: #e8a76f; }
+      #tl-minibar .tl-follow { border-color: var(--line-light); color: var(--muted-dark); }
+      #tl-minibar .tl-follow[aria-pressed="true"] {
+        background: var(--cream);
+        border-color: var(--cream);
+        color: var(--ink);
+      }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      #tl-minibar { transition: none; }
+    }
+    @media (max-width: 560px) {
+      #tl-minibar { gap: 0.5rem; padding: 0.55rem 0.6rem; }
+      #tl-minibar .tl-mini-label { display: none; }
+    }
   </style>
 </head>
 <body>
@@ -134,114 +229,114 @@
         </div>
         <h2 class="display-lg" style="margin-top:2rem">Transcript</h2>
         <div class="transcript" style="white-space:pre-line">
-        <p>Christians must not get bored with the basics, or even assume the basics, because if we assume the basics, we miss the whole point.</p>
-        <p>This morning, Acts 20 answers two basic questions. What is a pastor? And secondly, what does a pastor do? What is a pastor, and what does a pastor do?</p>
-        <p>Now we&#x27;re going to begin reading in Acts chapter 20, verse 17. So if you have a Bible, follow along as I read.</p>
-        <p>Now from Miletus, he sent to Ephesus and called the elders of the church to come to him. And when they came to him, he said to them, You yourselves know how I lived among you the whole time from the first day that I set foot in Asia, serving the Lord with all humility and with tears and with trials that happened to me through the plots of the Jews. How I did not shrink from declaring to you anything that was profitable and teaching you in public and from house to house, testifying both to Jews and to Greeks of repentance toward God and of faith in our Lord Jesus Christ. And now behold, I am going to Jerusalem, constrained by the Spirit, not knowing what will happen to me there, except that the Holy Spirit testifies to me in every city that imprisonment and afflictions await me, that I do not account my life of any value nor as precious to myself. If only I may finish my course and the ministry that I received from the Lord Jesus to testify to the gospel of the grace of God. And now behold, I know that none of you, among whom I have gone about proclaiming the kingdom, will see my face again.</p>
-        <p>Therefore, I testify to you this day that I am innocent. I am innocent of the blood of all, for I do not shrink from declaring to you the whole counsel of God. Pay careful attention to yourselves and to all the flock in which the Holy Spirit has made you overseers, to care for the church of God, which he obtained with his own blood. I know that after my departure, fierce wolves will come in among you, not sparing the flock. And from among your own selves will arise men speaking twisted things to draw away the disciples after them. Therefore, be alert, remembering that for three years I did not cease, night or day, to admonish everyone with tears. And now I commend you to God and to the word of his grace, which is able to build you up and to give you the inheritance among all those who are sanctified.</p>
-        <p>I coveted no one&#x27;s silver or gold or apparel. You yourselves know that these hands ministered to my necessities and to those who were with me. In all things I have shown you that by working hard in this way we must help the weak and remember the words of the Lord Jesus, how he himself said, it is more blessed to give than to receive. And when he had said these things, he knelt down and prayed with them all. And there was much weeping on the part of all. They embraced Paul and kissed him, being sorrowful most of all because of the word he had spoken that they would not see his face again. And they accompanied him to the ship. Thus ends the reading of God&#x27;s word. Let&#x27;s pray just briefly.</p>
-        <p>Lord, it is no academic exercise we&#x27;re about to undertake. We know that through your word you address your people. And I pray you would address us all this morning. I pray that your spirit would be present as your word is preached. And I pray that you would move on the hearts of preacher and hearer alike. And give us all the gift, Lord, of your presence. And it&#x27;s in your name we pray. Amen.</p>
-        <p>Basic question number one. What is a pastor? What is a pastor? Well, a pastor is a shepherd and a servant both at once. The address we read just a few moments ago is the only speech in all of Acts that is addressed solely to Christians. And these recipients are the elders of the church from Ephesus. As Paul sailed to Jerusalem, he summoned these elders to the port town of Miletus to bid farewell to them. Paul had been, as you know, if you&#x27;ve been with us, in the city of Ephesus for three years. Much longer than any other place in all of his missionary journeys. And the elders he summoned to Miletus knew Paul well.</p>
-        <p>Each was converted as Paul preached the gospel in Tyrannus Hall. They were personally discipled by Paul in the gospel of Jesus Christ. Paul was the one who saw their calling and gifting to be elders and would have been the one who personally ordained each of them. These men loved Paul and Paul loved these men. He was invested in the church. He loved the church. He loved these men who were arrayed before him. And Paul, by his example and by this speech, shows us what a pastor is. As he looked back, notice he did not point to the miraculous events like the healing that came from the handkerchiefs or the demons that fled or the healing that came with his passing shadow. What he points to them is the heart of a shepherd.</p>
-        <p>By showing this in verse 18.</p>
-        <p>You yourselves know how I lived among you the whole time from the first day that I set foot in Asia. Serving the Lord with all humility. With all tears. With trials that happened to me through the plights of the Jews. So how does, what is a pastor? What does he do? Who is he? A pastor serves the Lord by serving God&#x27;s people. How? First by living among them.</p>
-        <p>First by living among them. Paul was not removed from them. He was a shepherd who knew his sheep because he was among his sheep. He smelled like his sheep, as it were. A faithful shepherd is not a CEO or primarily an organizer or a rallier. He is a shepherd who tends to and cares for the needs of the sheep. A shepherd does not lead from a distance, pointing a direction to go. He goes on ahead, ensuring the way is safe and that it&#x27;s a good direction. He knows the sheep and he knows what&#x27;s best for them. How?</p>
-        <p>By living among them. Every real shepherd is really just a sheep too.</p>
-        <p>And so the shepherd doesn&#x27;t just call meetings. He lives among them and enters into the messy, unlooked moments where people actually live.</p>
-        <p>Shepherds take their place at the kitchen table in people&#x27;s homes when a family member is learning to live without a mother. Shepherds take their place in the psychiatric ward, sitting with someone who has sorrow that they cannot put into words. Shepherds are there on the sidewalk as police lights wash red and blue all over the neighborhood. Shepherds are there in the hospital room besides parents watching the wires that keep their daughter alive. Shepherds are there beside an old seasoned saint ready to go home.</p>
-        <p>Shepherds are there at the wedding where the bride and groom are beaming and the room is awash with joy. A shepherd may not have all the answers and I can tell you he doesn&#x27;t, but he lives among the people. That&#x27;s one thing a shepherd does. Another thing a shepherd does is he serves the Lord. He serves the Lord. Right? Look at verse 18 again. You yourselves know how I lived among you the whole time from the first day that I set foot in Asia. What does he do? Serving the Lord.</p>
-        <p>A pastor serves the Lord by serving his people. See, a pastor, every pastor who&#x27;s ever been a pastor, and Paul knows this, does not own the sheep. Because he answers to and serves the chief shepherd. He serves the Lord of the sheep as a sheep. And Paul knew that he served the people best when he served the Lord first. This means at times, the word of the Lord from the mouth of the shepherd will give people some things that are hard to hear.</p>
-        <p>Because his first allegiance is Godward. And it has to be that way. Shepherds must keep this straight. It&#x27;s very easy to try to draw a crowd by telling people things their itching ears want to hear. Very simple. Very easy. But shepherds must preach the whole counsel of God. And the whole counsel of God sometimes comforts, sometimes encourages, sometimes confronts.</p>
-        <p>But because a faithful shepherd serves the Lord, and his identity is not in his work or in his popularity, but in his Jesus, he preaches the whole counsel of God.</p>
-        <p>You see, it&#x27;s an occupational hazard for the shepherd to think that his identity is his work. That&#x27;s a temptation for leaders of all kinds to think that if things are going well, it&#x27;s because of him. It&#x27;s tempting to see the work of God and the people of God and somehow subtly take credit. But a good shepherd, a faithful shepherd, knows only Jesus builds his church.</p>
-        <p>And shepherds, pastors, are merely servants of the Lord, a tool in the hand of the Savior.</p>
-        <p>This is the exact right perspective that Paul expresses in verse 24. But I do not account my life of any value, nor precious to myself, if only I may finish my course and the ministry I received from the Lord Jesus.</p>
-        <p>The pastor&#x27;s life, the pastor&#x27;s calling, is not to please people, but to please the Lord. And even more fundamentally, to not please himself, but to please the Lord.</p>
-        <p>And following the Lord means, oftentimes, an invitation to suffering. So we see this. A pastor, a faithful pastor, is among the people, serves the Lord, and serves with humility, tears, and trials. We see that in verse 19. He serves with humility, tears, and trials. In other words, a faithful shepherd cares.</p>
-        <p>He cares. Shepherds don&#x27;t have the luxury of leaving work at work because they&#x27;re always on call.</p>
-        <p>And because eternal souls are their business, and there&#x27;s no more important commodity in the whole universe, he cannot be a mere professional who keeps bankers hours. He must be willing to wade into situations that break his heart and go back for more. He must be willing to care so much as to shed tears in his prayer closet that no one but the Lord sees. And then get up and lead with joy that only the Lord can provide.</p>
-        <p>To be a faithful pastor means to sign up to suffer. Hold your applause.</p>
-        <p>In a hundred tiny ways that no one but the Lord can understand.</p>
-        <p>You see, there&#x27;s a lot of heartache that a pastor sees firsthand.</p>
-        <p>So much so that you must be called to this work, to aspire this work, because there are way easier ways to feed your family.</p>
-        <p>It&#x27;s one thing to want to help, and it&#x27;s another thing to try to help people who don&#x27;t want help, and that&#x27;s the way it is sometimes.</p>
-        <p>It&#x27;s hard. It&#x27;s hard. It&#x27;s hard to care.</p>
-        <p>It&#x27;s hard to care.</p>
-        <p>It&#x27;s hard when you see people trapped in sin, and they don&#x27;t want help. It&#x27;s hard to see people hurt, because hurt people often hurt people, even the pastors. Because there&#x27;s a cost to caring.</p>
-        <p>To be a faithful pastor is to sign up to suffer like that.</p>
-        <p>There are times faithful shepherds see people they love and thought loved the Lord walk away.</p>
-        <p>And there will be people who walk away from the Lord that a faithful shepherd tries to chase down, and for the rest of his days will replay in his mind the conversations again and again and again, wondering, what could I have said differently?</p>
-        <p>But Jesus is the one the faithful shepherds serve. They serve the Lord at his good pleasure. It&#x27;s his call, and it&#x27;s his ministry.</p>
-        <p>The call to serve with humility is there because the power resides with the Lord and not with them. So much of the work is to serve with humility and tears in the midst of trials. What do we expect, though? Because we follow a suffering Savior. We follow Jesus who was rejected. We follow Jesus who was misunderstood. We follow Jesus who was mocked and scourged and crucified. We follow one who was a man of sorrows acquainted with grief. And his shepherds will be that way, too. Ferguson says, if our king was tested, tempted, opposed, rejected, and eventually crucified by this world, should it take us by surprise that belonging to this kingdom involves us in a heroic struggle?</p>
-        <p>And faithful shepherds should not be surprised that serving God&#x27;s people involves them in a heroic struggle. But it is so very worth it.</p>
-        <p>Because faithful pastors are not called to a title. They&#x27;re called to a life among the sheep to serve the Lord and do so, attempting to do so with humility, tears, and in the midst of trials. They know they do not carry the church. Jesus builds his church. Only Jesus.</p>
-        <p>What a privilege. What an honor. To serve the people whom Christ died for, and rose for, and ascended for, and prays for right now. There is nothing in the world like that.</p>
-        <p>So, what is a pastor?</p>
-        <p>A servant and a shepherd among the sheep. Serving the Lord with humility, with tears, amidst trials. That&#x27;s what a pastor is. That&#x27;s basic question number one. Basic question number two is this. What does a pastor do? What does a pastor do? A pastor serves the Lord by serving God&#x27;s people. But what does a pastor do? How does he serve the Lord?</p>
-        <p>Paul gives us at least three different ways. He declares. He guards. He entrusts. He declares. He guards. He entrusts. What does a pastor do? First, he declares. Look at verse 20.</p>
-        <p>He reminds them. He says, how I did not shrink from declaring to you anything that was profitable, and teaching you in public and from house to house. Paul did not merely point things out or draw their attention to things. He declared. What did he declare? Anything that was profitable. And in that little phrase, you can hear an echo of what Paul would write about 10 years later from a jail cell. When he said, all scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for training in righteousness, what did Paul do? He declared the word of God to the people of God. And that&#x27;s what a faithful shepherd is to do as well.</p>
-        <p>Declare the word of God to the people of God in season and out of season. Why? Because the word of God does the work of God like nothing else in the people of God. The word sometimes sings and sometimes it stings. The word sometimes builds up and other times it tears down. The word sometimes instructs and other times chastens. The word sometimes confronts and other times consoles. The word sometimes pushes us not to look within, but always without. The word always shows us the unsurpassing grandeur of Jesus Christ and turns us away from the shiny things in our world. And the faithful shepherd declares the word of God.</p>
-        <p>The faithful shepherd declares the word of God and not himself.</p>
-        <p>And so Paul could say, for I did not shrink from declaring to you the whole counsel of God. The whole counsel of God. And that whole counsel of God is in the word of God. And so a faithful shepherd has on his lips the word of God. Has in his heart the word of God. From the pulpit, from the teaching lectern, in the counseling office, in the conversations, in the lobby, the word of God tumbles forth from his lips. Because the whole counsel of God is what the whole people of God need for the maturing in God.</p>
-        <p>And so the pastor, he declares.</p>
-        <p>He declares Jesus is the one who died for you. He declares Jesus is the one who owns you. He declares Jesus is the one who sought you out. He declares Jesus is the one who will never leave you. He declares Jesus is the one who justified you before God. He declares Jesus is the one who will one day return and glorify them. Faithful pastors point toward Jesus and not themselves.</p>
-        <p>It is an insidious danger to think too highly of your pastor.</p>
-        <p>But it&#x27;s even more dangerous to not think highly enough of your Jesus. And a faithful pastor wants you to look not at him and what he does, but his Jesus and what he&#x27;s doing. See, faithful pastors point away from themselves. They declare not themselves. They declare the word of God to the people of God, whether they want to hear it or not.</p>
-        <p>And these words must burn into his bones and propel him to declare the word of God. Because there are times people don&#x27;t want to hear it. They can, well, you can look at Instagram and Facebook and all the other things that are out there to hear what you want to hear. But sometimes we need to hear what we need to hear.</p>
-        <p>And that&#x27;s part of the reason we belong to a church. If you&#x27;re not a part of a faithful church, you will not be a faithful Christian.</p>
-        <p>It doesn&#x27;t have to be this one, but it has to be one of them.</p>
-        <p>Shepherds must declare the word of God. Why? Because therein we find hope. Hope. The word declared gives us sturdy promises and reminds us that our present grief is a brief and passing thing and that these griefs are nothing compared to the glory that will be revealed to us on that day.</p>
-        <p>Faithful pastors declare the word because in the word we hear joy. The word declared reminds us that our joy is in the Lord and what he has done for us and what he will do for us and not in our present circumstances. Our circumstances will change, but our Lord never does. Therefore, the reason for our joy never changes and we can always rejoice in the Lord. Faithful pastors declare the Lord because there we hear the mercy of God. The word declared reminds us that we never get what we deserve as Christians. Never. He is merciful and gracious, never dealing with us according to our many sins, but according to his abundant grace. The word of God declares forgiveness. Forgiveness to all who are in Christ and only in Christ.</p>
-        <p>There we find complete forgiveness. Guilty sinners can run again and again and again to the throne of grace because there sits Christ, our substitute, our advocate, our champion, our savior, always forgiving the penitent. The word of God declares that forgiveness and the people of God need to hear that from their pastor. The word of God declared brings peace. Peace. That because Jesus lives, we do not have to be afraid. Do you realize that? Because your savior lives, if he is your savior, you do not have to be afraid. Are there evil foes arrayed against you? For sure.</p>
-        <p>Does your remaining sin speak frightful things to you? Absolutely. But Christ has overcome those things.</p>
-        <p>And now, through his death and life and resurrection, we have peace with God. And if God is for us, who can be against us?</p>
-        <p>The word of God declared shows us the love of God to the people of God.</p>
-        <p>That love that he has for us does not waver. It does not change. His love is beyond all reckoning. So that it&#x27;s infinitely wide and deep and long and high. So mind-blowingly big that we need the empowering of the spirit to rightly understand the love he has for his people.</p>
-        <p>And so the word of God must echo forth. He must be a man who declares the word of God. Because churches do not live on the bread of the opinions of the pastor alone, but from every word that comes forth from the word of God.</p>
-        <p>And those same shepherds are to preach and witness to the powerful gospel. You can see that in verse 21. Paul, we see, testified both to Jews and to Greeks. That&#x27;s to all kinds of people. Of what? Repentance toward God and of faith in our Lord Jesus Christ. And that is the only way to be saved. There&#x27;s only one way to be saved, and that&#x27;s through faith in Jesus Christ. The faithful pastor is the one who tells people and calls people to turn from their present lifestyle toward God and trust Jesus to forgive their sins. Run from sins and trust him and he welcomes all.</p>
-        <p>Those are the things a pastor must declare.</p>
-        <p>And the pastor tells people, come as you are and let Jesus change you completely because that&#x27;s what the gospel does. So what do faithful pastors do? They declare. And they guard. They guard. In one of the most sobering statements of Acts 20, we read this in verse 28. Pay careful attention to yourselves and to all the flock in which the Holy Spirit has made you overseers to care for the church of God which he obtained with his own blood. I know that after my departure, fierce wolves will come in among you not sparing the flock. and from and from among your own selves will arise men speaking twisted things to draw away the disciples after them.</p>
-        <p>A faithful pastor must guard because threats to a church never, people who are threats don&#x27;t come in and announce themselves. Hey listen, I&#x27;m a wolf. Here I am. Grr.</p>
-        <p>But they appear in every age and they&#x27;re hard to spot. Sometimes they twist words taking words that we understand and using different meaning. Sometimes they add to the gospel. Sometimes they subtract from the gospel. Sometimes they whisper accusations to foster disunity. Sometimes they peddle false teaching. Sometimes they speak words of works righteousness.</p>
-        <p>But every time they are a threat to the church. And so consequently every faithful pastor must speak with one of two voices. One to send away the wolves and another to console the sheep.</p>
-        <p>It&#x27;s no surprise to learn that we live in a world full of wolves. But what is surprising is when Paul says this, from among your own selves will arise men speaking twisted things. there&#x27;s a threat outside but the threat from within does so much more damage.</p>
-        <p>And I&#x27;m not talking about you. I&#x27;m talking about pastors.</p>
-        <p>A faithful pastor must be appropriately suspicious of himself. because he is not immune to the threat of apostasy. And it&#x27;s with fear and trembling he must pay careful attention to himself.</p>
-        <p>Later, Paul will say watch, pastors, watch your life and your doctrine. It&#x27;s much easier to watch doctrine than to watch life.</p>
-        <p>This is why it&#x27;s so much so critically important for your pastors to have real genuine accountability.</p>
-        <p>Because we all need help. We&#x27;re all sheep.</p>
-        <p>Pastors are called to a different, maybe called to a different role than you are but they&#x27;re not a different kind of person. They&#x27;re not superheroes. They don&#x27;t have super powers.</p>
-        <p>Except your lead pastor can drive better than any of you but besides that, besides that, besides that, we&#x27;re just normal people. And it&#x27;s with fear and trembling we must pay careful attention. Because if you know the story of the church in Ephesus, Paul was right.</p>
-        <p>Read 1 Timothy. Where does Paul send Timothy to put things, quote, in order? Ephesus.</p>
-        <p>And then when Jesus comes and has a vision to John in Revelation, what&#x27;s the first church that gets corrected? Ephesus.</p>
-        <p>At some level and in some measure, from amongst this eldership that Paul addresses, men arose speaking twisted things.</p>
-        <p>Now, one way we have accountability is implicit in the text. Paul calls the elders, notice that&#x27;s plural. A healthy eldership is always a plurality, always is aiming toward plurality. And we can see here through this passage, this isn&#x27;t the point, but elders and pastors and overseers are all the same thing. An elder is not a consultant where the pastor does the work of ministry. That idea is foreign to the Bible. And an overseer, oftentimes that&#x27;s translated bishop. A bishop doesn&#x27;t have more authority than a pastor or an elder. And notice there&#x27;s no priest in sight because Jesus is the great high priest. So we see that the leadership in the church is a pastor, an elder, an overseer, all the same thing.</p>
-        <p>But those pastors must tend to their own hearts because from among any of them can arise temptations to say many twisted things. And there&#x27;s nothing more frightening to me because I know no one&#x27;s exempt. Anyone can wander away. Anybody can be disillusioned and be beyond remedy and some can just say forget it.</p>
-        <p>Faithful pastors are more suspicious of their own hearts than other people.</p>
-        <p>So pray for your pastors that they want to keep killing sin, keep serving the Lord, keep obeying in every way, keep choosing faithfulness over flash, and keep guarding their own hearts.</p>
-        <p>Pastors guard the flock from wolves on the outside and from themselves becoming a wolf from within.</p>
-        <p>What does the pastor do? He declares, he guards, and lastly, he entrusts, he entrusts, you see this in verse 32. And now Paul says, I commend you to God and to the word of his grace which is able to build you up and to give you the inheritance among all those who are sanctified. Paul knew and every faithful pastor knows that a shepherd can only do so much.</p>
-        <p>But all the weakness and limitation that shackle pastors does not shackle Jesus. It is the Lord Jesus who saves. It is the Lord Jesus who is able to save us to the uttermost. It is he who is able to keep us through our dark valleys. It is he who is near when our heart is breaking. It is he who promises never to leave us or forsake us. It is he who can keep us from falling away. It is he who is committed to us. It is he who is praying for us by name right now. It is Jesus who is guarding us for our inheritance that we will have in the last day.</p>
-        <p>And it will be Jesus who will see his home. A faithful shepherd cannot keep the sheep by himself. He can love them, teach them, weep over them, but he cannot save them. He can commend them to Jesus however.</p>
-        <p>And with Jesus they are always in safe hands.</p>
-        <p>Always. And so a faithful pastor entrusts the people he loves and cares about in hands much bigger than his own. Because the Lord whether you realize it or not bought the sheep with his blood.</p>
-        <p>As a friend of mine says the most precious commodity in the whole universe has been spent on you.</p>
-        <p>Your pastor did not die for you. Your pastor will one day be here and another day be gone, but your Jesus is the same yesterday, today, and forever.</p>
-        <p>Your faith rests not on your pastor, but on your Jesus.</p>
-        <p>Pastors cannot keep the sheep the sheep but they can entrust the sheep to the Lord who brought them with his very blood. But we have the last recorded words of Charles Spurgeon, the wonderful, the prince of preachers who preached in the 19th century in London at the famous Metropolitan Tabernacle.</p>
-        <p>This was 1891.</p>
-        <p>And it seems a fitting way to end our time here looking at Acts chapter 20.</p>
-        <p>In his last sermon, his last moments before the church that he loved so much, he didn&#x27;t point back to his own ministry. he pointed people to Jesus, saying this, he, being Jesus, is the most magnanimous of captains. There never was his like among the choices of princes. He is always to be found in the thickest part of the battle.</p>
-        <p>When the wind blows cold, he always takes the bleak side of the hill. The heaviest end of the cross lies ever on his shoulders. If he bids us carry a burden, he carries it also. If there is anything that is gracious, generous, kind, and tender, yea, lavish, and super abundant in love, you always find it in him. These forty years and more I have served him, blessed be his name, and I have had nothing but love from him. And I would be glad to continue yet another forty years in the same dear service here below, if so, it pleased him. His service is life, peace, joy. Oh, that you would enter it at once. God help you to enlist under the banner of Jesus even this day.</p>
-        <p>Amen.</p>
-        <p>Amen and amen. Faithful pastors, faithful pastors, serve the Lord by serving his people. That&#x27;s what we see in Acts chapter 20. let&#x27;s pray.</p>
-        <p>Jesus, I thank you that you are the chief shepherd, that you are the king of kings, that you are the Lord of lords, Lord, that we have a gospel that&#x27;s rooted not in any human shepherd with his frailties and faults, but in Jesus Christ, in you, the God man, the son who came down to become a man, to win men and women to Christ.</p>
-        <p>And I pray that you would help our church to remain faithful, Lord.</p>
-        <p>Those who pastor her today may be gone tomorrow, but I pray that we would ever be a people fixed upon Jesus, fixed upon you and your word. I pray that for as long as Center Church exists, there would be a symphony of grace coming forth from the gospel of Jesus Christ. There would be a rhapsody of mercy that comes forth from the word. I pray that you would help us to be a people who never tire of leaning into Jesus and trusting him despite all the things that we see. I pray, Lord, that you would raise up men who would lead in generations to come.</p>
-        <p>I pray that you would empower them and strengthen them to look to you and call people to look to you. And I pray that there would be a legacy of faithful pastors pointing faithful church members to the ever faithful Savior.</p>
-        <p>And Jesus, one day, we&#x27;ll all be together in heaven with you. One day, we&#x27;ll see you face to face. One day, one day, this idea of a chief shepherd, that won&#x27;t be so strange. we&#x27;ll see you and we&#x27;ll be like you and there will be no need for human shepherds. Not anymore.</p>
-        <p>And so, Lord, until that day, though, Lord, keep us in your love.</p>
-        <p>Keep us, Lord, close to you. Keep us desiring an appetite for your word so that we might sing your word and preach your word and pray your word and fellowship around your word and look to hear your word ring forth Sunday after Sunday. And it&#x27;s in your mighty name we pray, Jesus. Amen. Let&#x27;s stand and respond in song.</p>
+        <p><span class="tl-s" data-s="0.13" data-e="7.82">Christians must not get bored with the basics, or even assume the basics, because if we assume the basics, we miss the whole point.</span></p>
+        <p><span class="tl-s" data-s="9.22" data-e="12.74">This morning, Acts 20 answers two basic questions.</span> <span class="tl-s" data-s="12.74" data-e="13.80">What is a pastor?</span> <span class="tl-s" data-s="15.12" data-e="18.18">And secondly, what does a pastor do?</span> <span class="tl-s" data-s="19.22" data-e="22.38">What is a pastor, and what does a pastor do?</span></p>
+        <p><span class="tl-s" data-s="24.22" data-e="28.10">Now we&#x27;re going to begin reading in Acts chapter 20, verse 17.</span> <span class="tl-s" data-s="29.23" data-e="31.74">So if you have a Bible, follow along as I read.</span></p>
+        <p><span class="tl-s" data-s="33.40" data-e="39.44">Now from Miletus, he sent to Ephesus and called the elders of the church to come to him.</span> <span class="tl-s" data-s="40.64" data-e="58.24">And when they came to him, he said to them, You yourselves know how I lived among you the whole time from the first day that I set foot in Asia, serving the Lord with all humility and with tears and with trials that happened to me through the plots of the Jews.</span> <span class="tl-s" data-s="58.89" data-e="74.48">How I did not shrink from declaring to you anything that was profitable and teaching you in public and from house to house, testifying both to Jews and to Greeks of repentance toward God and of faith in our Lord Jesus Christ.</span> <span class="tl-s" data-s="75.37" data-e="95.66">And now behold, I am going to Jerusalem, constrained by the Spirit, not knowing what will happen to me there, except that the Holy Spirit testifies to me in every city that imprisonment and afflictions await me, that I do not account my life of any value nor as precious to myself.</span> <span class="tl-s" data-s="96.45" data-e="105.64">If only I may finish my course and the ministry that I received from the Lord Jesus to testify to the gospel of the grace of God.</span> <span class="tl-s" data-s="106.23" data-e="114.34">And now behold, I know that none of you, among whom I have gone about proclaiming the kingdom, will see my face again.</span></p>
+        <p><span class="tl-s" data-s="115.16" data-e="118.66">Therefore, I testify to you this day that I am innocent.</span> <span class="tl-s" data-s="119.46" data-e="125.48">I am innocent of the blood of all, for I do not shrink from declaring to you the whole counsel of God.</span> <span class="tl-s" data-s="126.41" data-e="137.78">Pay careful attention to yourselves and to all the flock in which the Holy Spirit has made you overseers, to care for the church of God, which he obtained with his own blood.</span> <span class="tl-s" data-s="138.68" data-e="143.88">I know that after my departure, fierce wolves will come in among you, not sparing the flock.</span> <span class="tl-s" data-s="144.72" data-e="152.12">And from among your own selves will arise men speaking twisted things to draw away the disciples after them.</span> <span class="tl-s" data-s="153.16" data-e="160.82">Therefore, be alert, remembering that for three years I did not cease, night or day, to admonish everyone with tears.</span> <span class="tl-s" data-s="161.76" data-e="175.08">And now I commend you to God and to the word of his grace, which is able to build you up and to give you the inheritance among all those who are sanctified.</span></p>
+        <p><span class="tl-s" data-s="175.66" data-e="178.76">I coveted no one&#x27;s silver or gold or apparel.</span> <span class="tl-s" data-s="179.95" data-e="185.54">You yourselves know that these hands ministered to my necessities and to those who were with me.</span> <span class="tl-s" data-s="186.32" data-e="200.76">In all things I have shown you that by working hard in this way we must help the weak and remember the words of the Lord Jesus, how he himself said, it is more blessed to give than to receive.</span> <span class="tl-s" data-s="202.03" data-e="207.42">And when he had said these things, he knelt down and prayed with them all.</span> <span class="tl-s" data-s="208.56" data-e="211.08">And there was much weeping on the part of all.</span> <span class="tl-s" data-s="211.78" data-e="221.58">They embraced Paul and kissed him, being sorrowful most of all because of the word he had spoken that they would not see his face again.</span> <span class="tl-s" data-s="222.53" data-e="225.44">And they accompanied him to the ship.</span> <span class="tl-s" data-s="226.56" data-e="229.94">Thus ends the reading of God&#x27;s word.</span> <span class="tl-s" data-s="230.14" data-e="231.22">Let&#x27;s pray just briefly.</span></p>
+        <p><span class="tl-s" data-s="233.58" data-e="236.90">Lord, it is no academic exercise we&#x27;re about to undertake.</span> <span class="tl-s" data-s="237.68" data-e="240.34">We know that through your word you address your people.</span> <span class="tl-s" data-s="241.16" data-e="243.08">And I pray you would address us all this morning.</span> <span class="tl-s" data-s="244.26" data-e="247.76">I pray that your spirit would be present as your word is preached.</span> <span class="tl-s" data-s="248.34" data-e="254.04">And I pray that you would move on the hearts of preacher and hearer alike.</span> <span class="tl-s" data-s="255.42" data-e="259.28">And give us all the gift, Lord, of your presence.</span> <span class="tl-s" data-s="260.08" data-e="261.42">And it&#x27;s in your name we pray.</span> <span class="tl-s" data-s="261.96" data-e="262.26">Amen.</span></p>
+        <p><span class="tl-s" data-s="263.84" data-e="265.20">Basic question number one.</span> <span class="tl-s" data-s="265.33" data-e="267.48">What is a pastor?</span> <span class="tl-s" data-s="267.96" data-e="269.42">What is a pastor?</span> <span class="tl-s" data-s="270.19" data-e="273.96">Well, a pastor is a shepherd and a servant both at once.</span> <span class="tl-s" data-s="274.86" data-e="282.36">The address we read just a few moments ago is the only speech in all of Acts that is addressed solely to Christians.</span> <span class="tl-s" data-s="282.62" data-e="286.60">And these recipients are the elders of the church from Ephesus.</span> <span class="tl-s" data-s="287.36" data-e="294.40">As Paul sailed to Jerusalem, he summoned these elders to the port town of Miletus to bid farewell to them.</span> <span class="tl-s" data-s="294.83" data-e="300.58">Paul had been, as you know, if you&#x27;ve been with us, in the city of Ephesus for three years.</span> <span class="tl-s" data-s="301.24" data-e="305.14">Much longer than any other place in all of his missionary journeys.</span> <span class="tl-s" data-s="305.78" data-e="310.00">And the elders he summoned to Miletus knew Paul well.</span></p>
+        <p><span class="tl-s" data-s="311.12" data-e="315.18">Each was converted as Paul preached the gospel in Tyrannus Hall.</span> <span class="tl-s" data-s="315.74" data-e="319.56">They were personally discipled by Paul in the gospel of Jesus Christ.</span> <span class="tl-s" data-s="320.09" data-e="326.66">Paul was the one who saw their calling and gifting to be elders and would have been the one who personally ordained each of them.</span> <span class="tl-s" data-s="327.54" data-e="330.64">These men loved Paul and Paul loved these men.</span> <span class="tl-s" data-s="330.82" data-e="332.60">He was invested in the church.</span> <span class="tl-s" data-s="332.74" data-e="333.60">He loved the church.</span> <span class="tl-s" data-s="333.73" data-e="336.28">He loved these men who were arrayed before him.</span> <span class="tl-s" data-s="337.00" data-e="342.42">And Paul, by his example and by this speech, shows us what a pastor is.</span> <span class="tl-s" data-s="343.35" data-e="354.22">As he looked back, notice he did not point to the miraculous events like the healing that came from the handkerchiefs or the demons that fled or the healing that came with his passing shadow.</span> <span class="tl-s" data-s="354.48" data-e="357.02">What he points to them is the heart of a shepherd.</span></p>
+        <p><span class="tl-s" data-s="357.74" data-e="360.54">By showing this in verse 18.</span></p>
+        <p><span class="tl-s" data-s="361.99" data-e="367.76">You yourselves know how I lived among you the whole time from the first day that I set foot in Asia.</span> <span class="tl-s" data-s="368.18" data-e="369.78">Serving the Lord with all humility.</span> <span class="tl-s" data-s="370.28" data-e="371.20">With all tears.</span> <span class="tl-s" data-s="371.58" data-e="374.00">With trials that happened to me through the plights of the Jews.</span> <span class="tl-s" data-s="374.14" data-e="376.02">So how does, what is a pastor?</span> <span class="tl-s" data-s="376.28" data-e="377.02">What does he do?</span> <span class="tl-s" data-s="377.20" data-e="377.64">Who is he?</span> <span class="tl-s" data-s="378.12" data-e="381.08">A pastor serves the Lord by serving God&#x27;s people.</span> <span class="tl-s" data-s="381.72" data-e="382.06">How?</span> <span class="tl-s" data-s="382.54" data-e="383.90">First by living among them.</span></p>
+        <p><span class="tl-s" data-s="384.96" data-e="386.18">First by living among them.</span> <span class="tl-s" data-s="386.43" data-e="388.40">Paul was not removed from them.</span> <span class="tl-s" data-s="389.44" data-e="393.12">He was a shepherd who knew his sheep because he was among his sheep.</span> <span class="tl-s" data-s="393.44" data-e="395.14">He smelled like his sheep, as it were.</span> <span class="tl-s" data-s="396.12" data-e="402.24">A faithful shepherd is not a CEO or primarily an organizer or a rallier.</span> <span class="tl-s" data-s="402.37" data-e="407.92">He is a shepherd who tends to and cares for the needs of the sheep.</span> <span class="tl-s" data-s="408.74" data-e="412.74">A shepherd does not lead from a distance, pointing a direction to go.</span> <span class="tl-s" data-s="413.08" data-e="416.96">He goes on ahead, ensuring the way is safe and that it&#x27;s a good direction.</span> <span class="tl-s" data-s="417.10" data-e="420.02">He knows the sheep and he knows what&#x27;s best for them.</span> <span class="tl-s" data-s="420.29" data-e="420.56">How?</span></p>
+        <p><span class="tl-s" data-s="421.08" data-e="422.16">By living among them.</span> <span class="tl-s" data-s="423.48" data-e="427.34">Every real shepherd is really just a sheep too.</span></p>
+        <p><span class="tl-s" data-s="428.94" data-e="430.90">And so the shepherd doesn&#x27;t just call meetings.</span> <span class="tl-s" data-s="431.56" data-e="438.12">He lives among them and enters into the messy, unlooked moments where people actually live.</span></p>
+        <p><span class="tl-s" data-s="439.82" data-e="446.40">Shepherds take their place at the kitchen table in people&#x27;s homes when a family member is learning to live without a mother.</span> <span class="tl-s" data-s="447.50" data-e="454.94">Shepherds take their place in the psychiatric ward, sitting with someone who has sorrow that they cannot put into words.</span> <span class="tl-s" data-s="455.30" data-e="461.94">Shepherds are there on the sidewalk as police lights wash red and blue all over the neighborhood.</span> <span class="tl-s" data-s="463.15" data-e="468.40">Shepherds are there in the hospital room besides parents watching the wires that keep their daughter alive.</span> <span class="tl-s" data-s="469.60" data-e="473.50">Shepherds are there beside an old seasoned saint ready to go home.</span></p>
+        <p><span class="tl-s" data-s="475.06" data-e="483.32">Shepherds are there at the wedding where the bride and groom are beaming and the room is awash with joy.</span> <span class="tl-s" data-s="484.50" data-e="491.14">A shepherd may not have all the answers and I can tell you he doesn&#x27;t, but he lives among the people.</span> <span class="tl-s" data-s="492.50" data-e="494.32">That&#x27;s one thing a shepherd does.</span> <span class="tl-s" data-s="495.03" data-e="498.90">Another thing a shepherd does is he serves the Lord.</span> <span class="tl-s" data-s="499.24" data-e="501.08">He serves the Lord.</span> <span class="tl-s" data-s="501.29" data-e="501.42">Right?</span> <span class="tl-s" data-s="501.61" data-e="502.90">Look at verse 18 again.</span> <span class="tl-s" data-s="503.03" data-e="508.42">You yourselves know how I lived among you the whole time from the first day that I set foot in Asia.</span> <span class="tl-s" data-s="508.68" data-e="509.40">What does he do?</span> <span class="tl-s" data-s="509.84" data-e="511.40">Serving the Lord.</span></p>
+        <p><span class="tl-s" data-s="512.38" data-e="516.40">A pastor serves the Lord by serving his people.</span> <span class="tl-s" data-s="517.08" data-e="522.32">See, a pastor, every pastor who&#x27;s ever been a pastor, and Paul knows this, does not own the sheep.</span> <span class="tl-s" data-s="522.85" data-e="526.40">Because he answers to and serves the chief shepherd.</span> <span class="tl-s" data-s="527.00" data-e="530.62">He serves the Lord of the sheep as a sheep.</span> <span class="tl-s" data-s="531.96" data-e="536.90">And Paul knew that he served the people best when he served the Lord first.</span> <span class="tl-s" data-s="538.02" data-e="548.26">This means at times, the word of the Lord from the mouth of the shepherd will give people some things that are hard to hear.</span></p>
+        <p><span class="tl-s" data-s="549.74" data-e="551.78">Because his first allegiance is Godward.</span> <span class="tl-s" data-s="553.06" data-e="554.46">And it has to be that way.</span> <span class="tl-s" data-s="555.28" data-e="556.68">Shepherds must keep this straight.</span> <span class="tl-s" data-s="557.00" data-e="562.62">It&#x27;s very easy to try to draw a crowd by telling people things their itching ears want to hear.</span> <span class="tl-s" data-s="563.32" data-e="564.20">Very simple.</span> <span class="tl-s" data-s="564.43" data-e="564.90">Very easy.</span> <span class="tl-s" data-s="565.90" data-e="569.08">But shepherds must preach the whole counsel of God.</span> <span class="tl-s" data-s="569.47" data-e="574.70">And the whole counsel of God sometimes comforts, sometimes encourages, sometimes confronts.</span></p>
+        <p><span class="tl-s" data-s="576.40" data-e="588.84">But because a faithful shepherd serves the Lord, and his identity is not in his work or in his popularity, but in his Jesus, he preaches the whole counsel of God.</span></p>
+        <p><span class="tl-s" data-s="590.27" data-e="595.88">You see, it&#x27;s an occupational hazard for the shepherd to think that his identity is his work.</span> <span class="tl-s" data-s="597.08" data-e="602.84">That&#x27;s a temptation for leaders of all kinds to think that if things are going well, it&#x27;s because of him.</span> <span class="tl-s" data-s="603.72" data-e="609.60">It&#x27;s tempting to see the work of God and the people of God and somehow subtly take credit.</span> <span class="tl-s" data-s="610.67" data-e="614.98">But a good shepherd, a faithful shepherd, knows only Jesus builds his church.</span></p>
+        <p><span class="tl-s" data-s="616.70" data-e="626.12">And shepherds, pastors, are merely servants of the Lord, a tool in the hand of the Savior.</span></p>
+        <p><span class="tl-s" data-s="628.20" data-e="632.66">This is the exact right perspective that Paul expresses in verse 24.</span> <span class="tl-s" data-s="633.60" data-e="649.54">But I do not account my life of any value, nor precious to myself, if only I may finish my course and the ministry I received from the Lord Jesus.</span></p>
+        <p><span class="tl-s" data-s="651.54" data-e="660.74">The pastor&#x27;s life, the pastor&#x27;s calling, is not to please people, but to please the Lord.</span> <span class="tl-s" data-s="661.63" data-e="666.88">And even more fundamentally, to not please himself, but to please the Lord.</span></p>
+        <p><span class="tl-s" data-s="668.46" data-e="673.90">And following the Lord means, oftentimes, an invitation to suffering.</span> <span class="tl-s" data-s="674.14" data-e="674.78">So we see this.</span> <span class="tl-s" data-s="675.04" data-e="684.74">A pastor, a faithful pastor, is among the people, serves the Lord, and serves with humility, tears, and trials.</span> <span class="tl-s" data-s="684.96" data-e="686.18">We see that in verse 19.</span> <span class="tl-s" data-s="686.48" data-e="689.58">He serves with humility, tears, and trials.</span> <span class="tl-s" data-s="689.71" data-e="693.48">In other words, a faithful shepherd cares.</span></p>
+        <p><span class="tl-s" data-s="694.94" data-e="695.88">He cares.</span> <span class="tl-s" data-s="696.92" data-e="701.68">Shepherds don&#x27;t have the luxury of leaving work at work because they&#x27;re always on call.</span></p>
+        <p><span class="tl-s" data-s="703.56" data-e="715.32">And because eternal souls are their business, and there&#x27;s no more important commodity in the whole universe, he cannot be a mere professional who keeps bankers hours.</span> <span class="tl-s" data-s="716.65" data-e="722.12">He must be willing to wade into situations that break his heart and go back for more.</span> <span class="tl-s" data-s="723.08" data-e="730.14">He must be willing to care so much as to shed tears in his prayer closet that no one but the Lord sees.</span> <span class="tl-s" data-s="730.82" data-e="735.70">And then get up and lead with joy that only the Lord can provide.</span></p>
+        <p><span class="tl-s" data-s="737.79" data-e="741.36">To be a faithful pastor means to sign up to suffer.</span> <span class="tl-s" data-s="741.49" data-e="742.24">Hold your applause.</span></p>
+        <p><span class="tl-s" data-s="746.78" data-e="750.10">In a hundred tiny ways that no one but the Lord can understand.</span></p>
+        <p><span class="tl-s" data-s="751.68" data-e="755.12">You see, there&#x27;s a lot of heartache that a pastor sees firsthand.</span></p>
+        <p><span class="tl-s" data-s="757.93" data-e="767.72">So much so that you must be called to this work, to aspire this work, because there are way easier ways to feed your family.</span></p>
+        <p><span class="tl-s" data-s="769.34" data-e="776.88">It&#x27;s one thing to want to help, and it&#x27;s another thing to try to help people who don&#x27;t want help, and that&#x27;s the way it is sometimes.</span></p>
+        <p><span class="tl-s" data-s="781.01" data-e="781.62">It&#x27;s hard.</span> <span class="tl-s" data-s="781.63" data-e="781.68">It&#x27;s hard.</span> <span class="tl-s" data-s="782.74" data-e="784.44">It&#x27;s hard to care.</span></p>
+        <p><span class="tl-s" data-s="785.96" data-e="787.30">It&#x27;s hard to care.</span></p>
+        <p><span class="tl-s" data-s="790.16" data-e="796.78">It&#x27;s hard when you see people trapped in sin, and they don&#x27;t want help.</span> <span class="tl-s" data-s="797.66" data-e="805.10">It&#x27;s hard to see people hurt, because hurt people often hurt people, even the pastors.</span> <span class="tl-s" data-s="805.97" data-e="807.70">Because there&#x27;s a cost to caring.</span></p>
+        <p><span class="tl-s" data-s="809.22" data-e="812.62">To be a faithful pastor is to sign up to suffer like that.</span></p>
+        <p><span class="tl-s" data-s="814.82" data-e="822.20">There are times faithful shepherds see people they love and thought loved the Lord walk away.</span></p>
+        <p><span class="tl-s" data-s="824.90" data-e="841.56">And there will be people who walk away from the Lord that a faithful shepherd tries to chase down, and for the rest of his days will replay in his mind the conversations again and again and again, wondering, what could I have said differently?</span></p>
+        <p><span class="tl-s" data-s="846.38" data-e="849.22">But Jesus is the one the faithful shepherds serve.</span> <span class="tl-s" data-s="850.06" data-e="851.94">They serve the Lord at his good pleasure.</span> <span class="tl-s" data-s="852.88" data-e="856.26">It&#x27;s his call, and it&#x27;s his ministry.</span></p>
+        <p><span class="tl-s" data-s="857.73" data-e="863.38">The call to serve with humility is there because the power resides with the Lord and not with them.</span> <span class="tl-s" data-s="863.72" data-e="867.72">So much of the work is to serve with humility and tears in the midst of trials.</span> <span class="tl-s" data-s="868.08" data-e="869.38">What do we expect, though?</span> <span class="tl-s" data-s="869.73" data-e="871.64">Because we follow a suffering Savior.</span> <span class="tl-s" data-s="872.02" data-e="873.86">We follow Jesus who was rejected.</span> <span class="tl-s" data-s="874.22" data-e="875.88">We follow Jesus who was misunderstood.</span> <span class="tl-s" data-s="876.54" data-e="879.82">We follow Jesus who was mocked and scourged and crucified.</span> <span class="tl-s" data-s="880.30" data-e="883.44">We follow one who was a man of sorrows acquainted with grief.</span> <span class="tl-s" data-s="883.57" data-e="886.44">And his shepherds will be that way, too.</span> <span class="tl-s" data-s="887.27" data-e="900.70">Ferguson says, if our king was tested, tempted, opposed, rejected, and eventually crucified by this world, should it take us by surprise that belonging to this kingdom involves us in a heroic struggle?</span></p>
+        <p><span class="tl-s" data-s="902.53" data-e="909.52">And faithful shepherds should not be surprised that serving God&#x27;s people involves them in a heroic struggle.</span> <span class="tl-s" data-s="910.52" data-e="915.74">But it is so very worth it.</span></p>
+        <p><span class="tl-s" data-s="919.65" data-e="922.78">Because faithful pastors are not called to a title.</span> <span class="tl-s" data-s="924.00" data-e="936.36">They&#x27;re called to a life among the sheep to serve the Lord and do so, attempting to do so with humility, tears, and in the midst of trials.</span> <span class="tl-s" data-s="937.06" data-e="939.12">They know they do not carry the church.</span> <span class="tl-s" data-s="939.39" data-e="940.42">Jesus builds his church.</span> <span class="tl-s" data-s="941.69" data-e="942.70">Only Jesus.</span></p>
+        <p><span class="tl-s" data-s="945.46" data-e="946.58">What a privilege.</span> <span class="tl-s" data-s="946.94" data-e="947.58">What an honor.</span> <span class="tl-s" data-s="948.74" data-e="957.32">To serve the people whom Christ died for, and rose for, and ascended for, and prays for right now.</span> <span class="tl-s" data-s="957.53" data-e="958.96">There is nothing in the world like that.</span></p>
+        <p><span class="tl-s" data-s="960.54" data-e="963.14">So, what is a pastor?</span></p>
+        <p><span class="tl-s" data-s="965.00" data-e="968.32">A servant and a shepherd among the sheep.</span> <span class="tl-s" data-s="969.53" data-e="975.08">Serving the Lord with humility, with tears, amidst trials.</span> <span class="tl-s" data-s="975.92" data-e="977.24">That&#x27;s what a pastor is.</span> <span class="tl-s" data-s="977.51" data-e="980.44">That&#x27;s basic question number one.</span> <span class="tl-s" data-s="981.70" data-e="985.34">Basic question number two is this.</span> <span class="tl-s" data-s="986.20" data-e="988.70">What does a pastor do?</span> <span class="tl-s" data-s="989.10" data-e="990.66">What does a pastor do?</span> <span class="tl-s" data-s="990.92" data-e="993.96">A pastor serves the Lord by serving God&#x27;s people.</span> <span class="tl-s" data-s="994.14" data-e="995.34">But what does a pastor do?</span> <span class="tl-s" data-s="995.54" data-e="996.94">How does he serve the Lord?</span></p>
+        <p><span class="tl-s" data-s="998.07" data-e="1000.88">Paul gives us at least three different ways.</span> <span class="tl-s" data-s="1001.78" data-e="1002.36">He declares.</span> <span class="tl-s" data-s="1002.82" data-e="1003.72">He guards.</span> <span class="tl-s" data-s="1004.50" data-e="1005.54">He entrusts.</span> <span class="tl-s" data-s="1005.92" data-e="1006.74">He declares.</span> <span class="tl-s" data-s="1007.04" data-e="1007.66">He guards.</span> <span class="tl-s" data-s="1007.92" data-e="1008.62">He entrusts.</span> <span class="tl-s" data-s="1008.81" data-e="1009.70">What does a pastor do?</span> <span class="tl-s" data-s="1009.95" data-e="1011.02">First, he declares.</span> <span class="tl-s" data-s="1011.44" data-e="1012.22">Look at verse 20.</span></p>
+        <p><span class="tl-s" data-s="1013.38" data-e="1014.44">He reminds them.</span> <span class="tl-s" data-s="1014.88" data-e="1021.62">He says, how I did not shrink from declaring to you anything that was profitable, and teaching you in public and from house to house.</span> <span class="tl-s" data-s="1022.39" data-e="1027.68">Paul did not merely point things out or draw their attention to things.</span> <span class="tl-s" data-s="1027.94" data-e="1028.64">He declared.</span> <span class="tl-s" data-s="1028.80" data-e="1029.54">What did he declare?</span> <span class="tl-s" data-s="1030.11" data-e="1032.84">Anything that was profitable.</span> <span class="tl-s" data-s="1033.44" data-e="1038.40">And in that little phrase, you can hear an echo of what Paul would write about 10 years later from a jail cell.</span> <span class="tl-s" data-s="1038.82" data-e="1048.30">When he said, all scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for training in righteousness, what did Paul do?</span> <span class="tl-s" data-s="1048.43" data-e="1052.70">He declared the word of God to the people of God.</span> <span class="tl-s" data-s="1053.40" data-e="1056.34">And that&#x27;s what a faithful shepherd is to do as well.</span></p>
+        <p><span class="tl-s" data-s="1058.48" data-e="1064.44">Declare the word of God to the people of God in season and out of season.</span> <span class="tl-s" data-s="1065.61" data-e="1065.88">Why?</span> <span class="tl-s" data-s="1067.24" data-e="1074.32">Because the word of God does the work of God like nothing else in the people of God.</span> <span class="tl-s" data-s="1075.26" data-e="1078.12">The word sometimes sings and sometimes it stings.</span> <span class="tl-s" data-s="1079.46" data-e="1082.28">The word sometimes builds up and other times it tears down.</span> <span class="tl-s" data-s="1082.52" data-e="1085.26">The word sometimes instructs and other times chastens.</span> <span class="tl-s" data-s="1085.74" data-e="1088.76">The word sometimes confronts and other times consoles.</span> <span class="tl-s" data-s="1088.89" data-e="1093.68">The word sometimes pushes us not to look within, but always without.</span> <span class="tl-s" data-s="1094.15" data-e="1100.88">The word always shows us the unsurpassing grandeur of Jesus Christ and turns us away from the shiny things in our world.</span> <span class="tl-s" data-s="1101.80" data-e="1105.68">And the faithful shepherd declares the word of God.</span></p>
+        <p><span class="tl-s" data-s="1105.92" data-e="1109.14">The faithful shepherd declares the word of God and not himself.</span></p>
+        <p><span class="tl-s" data-s="1110.62" data-e="1118.48">And so Paul could say, for I did not shrink from declaring to you the whole counsel of God.</span> <span class="tl-s" data-s="1119.32" data-e="1122.08">The whole counsel of God.</span> <span class="tl-s" data-s="1122.21" data-e="1126.12">And that whole counsel of God is in the word of God.</span> <span class="tl-s" data-s="1126.98" data-e="1132.94">And so a faithful shepherd has on his lips the word of God.</span> <span class="tl-s" data-s="1133.32" data-e="1135.52">Has in his heart the word of God.</span> <span class="tl-s" data-s="1135.75" data-e="1146.38">From the pulpit, from the teaching lectern, in the counseling office, in the conversations, in the lobby, the word of God tumbles forth from his lips.</span> <span class="tl-s" data-s="1146.51" data-e="1154.10">Because the whole counsel of God is what the whole people of God need for the maturing in God.</span></p>
+        <p><span class="tl-s" data-s="1156.33" data-e="1158.64">And so the pastor, he declares.</span></p>
+        <p><span class="tl-s" data-s="1160.06" data-e="1164.00">He declares Jesus is the one who died for you.</span> <span class="tl-s" data-s="1164.46" data-e="1167.28">He declares Jesus is the one who owns you.</span> <span class="tl-s" data-s="1167.46" data-e="1169.90">He declares Jesus is the one who sought you out.</span> <span class="tl-s" data-s="1170.10" data-e="1173.00">He declares Jesus is the one who will never leave you.</span> <span class="tl-s" data-s="1173.20" data-e="1176.88">He declares Jesus is the one who justified you before God.</span> <span class="tl-s" data-s="1177.10" data-e="1182.66">He declares Jesus is the one who will one day return and glorify them.</span> <span class="tl-s" data-s="1183.85" data-e="1188.10">Faithful pastors point toward Jesus and not themselves.</span></p>
+        <p><span class="tl-s" data-s="1189.50" data-e="1195.60">It is an insidious danger to think too highly of your pastor.</span></p>
+        <p><span class="tl-s" data-s="1199.73" data-e="1205.20">But it&#x27;s even more dangerous to not think highly enough of your Jesus.</span> <span class="tl-s" data-s="1206.48" data-e="1215.10">And a faithful pastor wants you to look not at him and what he does, but his Jesus and what he&#x27;s doing.</span> <span class="tl-s" data-s="1216.28" data-e="1218.46">See, faithful pastors point away from themselves.</span> <span class="tl-s" data-s="1218.67" data-e="1219.90">They declare not themselves.</span> <span class="tl-s" data-s="1220.19" data-e="1224.18">They declare the word of God to the people of God, whether they want to hear it or not.</span></p>
+        <p><span class="tl-s" data-s="1226.19" data-e="1231.34">And these words must burn into his bones and propel him to declare the word of God.</span> <span class="tl-s" data-s="1231.80" data-e="1234.52">Because there are times people don&#x27;t want to hear it.</span> <span class="tl-s" data-s="1235.12" data-e="1242.20">They can, well, you can look at Instagram and Facebook and all the other things that are out there to hear what you want to hear.</span> <span class="tl-s" data-s="1243.57" data-e="1247.60">But sometimes we need to hear what we need to hear.</span></p>
+        <p><span class="tl-s" data-s="1249.50" data-e="1252.54">And that&#x27;s part of the reason we belong to a church.</span> <span class="tl-s" data-s="1253.88" data-e="1257.60">If you&#x27;re not a part of a faithful church, you will not be a faithful Christian.</span></p>
+        <p><span class="tl-s" data-s="1259.08" data-e="1261.44">It doesn&#x27;t have to be this one, but it has to be one of them.</span></p>
+        <p><span class="tl-s" data-s="1263.59" data-e="1265.22">Shepherds must declare the word of God.</span> <span class="tl-s" data-s="1265.37" data-e="1265.52">Why?</span> <span class="tl-s" data-s="1265.89" data-e="1267.54">Because therein we find hope.</span> <span class="tl-s" data-s="1268.82" data-e="1269.26">Hope.</span> <span class="tl-s" data-s="1269.54" data-e="1281.64">The word declared gives us sturdy promises and reminds us that our present grief is a brief and passing thing and that these griefs are nothing compared to the glory that will be revealed to us on that day.</span></p>
+        <p><span class="tl-s" data-s="1283.42" data-e="1287.36">Faithful pastors declare the word because in the word we hear joy.</span> <span class="tl-s" data-s="1287.95" data-e="1297.06">The word declared reminds us that our joy is in the Lord and what he has done for us and what he will do for us and not in our present circumstances.</span> <span class="tl-s" data-s="1297.42" data-e="1301.30">Our circumstances will change, but our Lord never does.</span> <span class="tl-s" data-s="1301.89" data-e="1306.56">Therefore, the reason for our joy never changes and we can always rejoice in the Lord.</span> <span class="tl-s" data-s="1307.56" data-e="1311.52">Faithful pastors declare the Lord because there we hear the mercy of God.</span> <span class="tl-s" data-s="1311.82" data-e="1316.14">The word declared reminds us that we never get what we deserve as Christians.</span> <span class="tl-s" data-s="1316.47" data-e="1316.74">Never.</span> <span class="tl-s" data-s="1317.15" data-e="1324.00">He is merciful and gracious, never dealing with us according to our many sins, but according to his abundant grace.</span> <span class="tl-s" data-s="1325.14" data-e="1327.68">The word of God declares forgiveness.</span> <span class="tl-s" data-s="1328.98" data-e="1332.64">Forgiveness to all who are in Christ and only in Christ.</span></p>
+        <p><span class="tl-s" data-s="1333.16" data-e="1334.82">There we find complete forgiveness.</span> <span class="tl-s" data-s="1335.24" data-e="1347.38">Guilty sinners can run again and again and again to the throne of grace because there sits Christ, our substitute, our advocate, our champion, our savior, always forgiving the penitent.</span> <span class="tl-s" data-s="1347.51" data-e="1352.12">The word of God declares that forgiveness and the people of God need to hear that from their pastor.</span> <span class="tl-s" data-s="1353.00" data-e="1355.62">The word of God declared brings peace.</span> <span class="tl-s" data-s="1356.84" data-e="1357.32">Peace.</span> <span class="tl-s" data-s="1357.86" data-e="1360.68">That because Jesus lives, we do not have to be afraid.</span> <span class="tl-s" data-s="1360.80" data-e="1361.54">Do you realize that?</span> <span class="tl-s" data-s="1361.93" data-e="1367.34">Because your savior lives, if he is your savior, you do not have to be afraid.</span> <span class="tl-s" data-s="1368.01" data-e="1370.22">Are there evil foes arrayed against you?</span> <span class="tl-s" data-s="1370.35" data-e="1371.18">For sure.</span></p>
+        <p><span class="tl-s" data-s="1372.74" data-e="1376.44">Does your remaining sin speak frightful things to you?</span> <span class="tl-s" data-s="1376.69" data-e="1377.06">Absolutely.</span> <span class="tl-s" data-s="1377.66" data-e="1380.50">But Christ has overcome those things.</span></p>
+        <p><span class="tl-s" data-s="1382.27" data-e="1387.22">And now, through his death and life and resurrection, we have peace with God.</span> <span class="tl-s" data-s="1387.64" data-e="1391.06">And if God is for us, who can be against us?</span></p>
+        <p><span class="tl-s" data-s="1392.60" data-e="1397.28">The word of God declared shows us the love of God to the people of God.</span></p>
+        <p><span class="tl-s" data-s="1398.87" data-e="1401.34">That love that he has for us does not waver.</span> <span class="tl-s" data-s="1401.50" data-e="1402.54">It does not change.</span> <span class="tl-s" data-s="1402.86" data-e="1404.60">His love is beyond all reckoning.</span> <span class="tl-s" data-s="1405.08" data-e="1408.60">So that it&#x27;s infinitely wide and deep and long and high.</span> <span class="tl-s" data-s="1409.76" data-e="1417.16">So mind-blowingly big that we need the empowering of the spirit to rightly understand the love he has for his people.</span></p>
+        <p><span class="tl-s" data-s="1418.86" data-e="1421.14">And so the word of God must echo forth.</span> <span class="tl-s" data-s="1421.35" data-e="1424.62">He must be a man who declares the word of God.</span> <span class="tl-s" data-s="1424.75" data-e="1433.86">Because churches do not live on the bread of the opinions of the pastor alone, but from every word that comes forth from the word of God.</span></p>
+        <p><span class="tl-s" data-s="1435.76" data-e="1442.50">And those same shepherds are to preach and witness to the powerful gospel.</span> <span class="tl-s" data-s="1442.66" data-e="1443.94">You can see that in verse 21.</span> <span class="tl-s" data-s="1444.25" data-e="1447.52">Paul, we see, testified both to Jews and to Greeks.</span> <span class="tl-s" data-s="1447.79" data-e="1449.38">That&#x27;s to all kinds of people.</span> <span class="tl-s" data-s="1449.98" data-e="1450.80">Of what?</span> <span class="tl-s" data-s="1451.22" data-e="1455.44">Repentance toward God and of faith in our Lord Jesus Christ.</span> <span class="tl-s" data-s="1455.66" data-e="1457.78">And that is the only way to be saved.</span> <span class="tl-s" data-s="1459.16" data-e="1462.60">There&#x27;s only one way to be saved, and that&#x27;s through faith in Jesus Christ.</span> <span class="tl-s" data-s="1463.52" data-e="1474.08">The faithful pastor is the one who tells people and calls people to turn from their present lifestyle toward God and trust Jesus to forgive their sins.</span> <span class="tl-s" data-s="1475.40" data-e="1479.64">Run from sins and trust him and he welcomes all.</span></p>
+        <p><span class="tl-s" data-s="1480.89" data-e="1483.06">Those are the things a pastor must declare.</span></p>
+        <p><span class="tl-s" data-s="1484.52" data-e="1492.22">And the pastor tells people, come as you are and let Jesus change you completely because that&#x27;s what the gospel does.</span> <span class="tl-s" data-s="1493.48" data-e="1495.44">So what do faithful pastors do?</span> <span class="tl-s" data-s="1496.76" data-e="1497.78">They declare.</span> <span class="tl-s" data-s="1499.14" data-e="1500.22">And they guard.</span> <span class="tl-s" data-s="1501.22" data-e="1502.00">They guard.</span> <span class="tl-s" data-s="1503.30" data-e="1507.70">In one of the most sobering statements of Acts 20, we read this in verse 28.</span> <span class="tl-s" data-s="1507.83" data-e="1522.64">Pay careful attention to yourselves and to all the flock in which the Holy Spirit has made you overseers to care for the church of God which he obtained with his own blood.</span> <span class="tl-s" data-s="1523.42" data-e="1543.08">I know that after my departure, fierce wolves will come in among you not sparing the flock. and from and from among your own selves will arise men speaking twisted things to draw away the disciples after them.</span></p>
+        <p><span class="tl-s" data-s="1546.08" data-e="1558.46">A faithful pastor must guard because threats to a church never, people who are threats don&#x27;t come in and announce themselves.</span> <span class="tl-s" data-s="1558.93" data-e="1560.16">Hey listen, I&#x27;m a wolf.</span> <span class="tl-s" data-s="1560.63" data-e="1561.34">Here I am.</span> <span class="tl-s" data-s="1561.80" data-e="1562.46">Grr.</span></p>
+        <p><span class="tl-s" data-s="1565.26" data-e="1568.00">But they appear in every age and they&#x27;re hard to spot.</span> <span class="tl-s" data-s="1568.29" data-e="1573.20">Sometimes they twist words taking words that we understand and using different meaning.</span> <span class="tl-s" data-s="1574.32" data-e="1575.78">Sometimes they add to the gospel.</span> <span class="tl-s" data-s="1576.07" data-e="1577.62">Sometimes they subtract from the gospel.</span> <span class="tl-s" data-s="1578.13" data-e="1581.38">Sometimes they whisper accusations to foster disunity.</span> <span class="tl-s" data-s="1581.97" data-e="1583.54">Sometimes they peddle false teaching.</span> <span class="tl-s" data-s="1584.07" data-e="1586.76">Sometimes they speak words of works righteousness.</span></p>
+        <p><span class="tl-s" data-s="1588.33" data-e="1591.56">But every time they are a threat to the church.</span> <span class="tl-s" data-s="1592.18" data-e="1596.20">And so consequently every faithful pastor must speak with one of two voices.</span> <span class="tl-s" data-s="1596.51" data-e="1600.42">One to send away the wolves and another to console the sheep.</span></p>
+        <p><span class="tl-s" data-s="1602.62" data-e="1606.34">It&#x27;s no surprise to learn that we live in a world full of wolves.</span> <span class="tl-s" data-s="1606.68" data-e="1623.88">But what is surprising is when Paul says this, from among your own selves will arise men speaking twisted things. there&#x27;s a threat outside but the threat from within does so much more damage.</span></p>
+        <p><span class="tl-s" data-s="1625.50" data-e="1627.12">And I&#x27;m not talking about you.</span> <span class="tl-s" data-s="1628.14" data-e="1630.12">I&#x27;m talking about pastors.</span></p>
+        <p><span class="tl-s" data-s="1633.12" data-e="1646.62">A faithful pastor must be appropriately suspicious of himself. because he is not immune to the threat of apostasy.</span> <span class="tl-s" data-s="1647.58" data-e="1652.00">And it&#x27;s with fear and trembling he must pay careful attention to himself.</span></p>
+        <p><span class="tl-s" data-s="1655.45" data-e="1659.12">Later, Paul will say watch, pastors, watch your life and your doctrine.</span> <span class="tl-s" data-s="1660.04" data-e="1664.62">It&#x27;s much easier to watch doctrine than to watch life.</span></p>
+        <p><span class="tl-s" data-s="1667.25" data-e="1675.58">This is why it&#x27;s so much so critically important for your pastors to have real genuine accountability.</span></p>
+        <p><span class="tl-s" data-s="1678.77" data-e="1680.14">Because we all need help.</span> <span class="tl-s" data-s="1681.06" data-e="1682.14">We&#x27;re all sheep.</span></p>
+        <p><span class="tl-s" data-s="1683.58" data-e="1689.34">Pastors are called to a different, maybe called to a different role than you are but they&#x27;re not a different kind of person.</span> <span class="tl-s" data-s="1690.14" data-e="1691.40">They&#x27;re not superheroes.</span> <span class="tl-s" data-s="1691.76" data-e="1693.26">They don&#x27;t have super powers.</span></p>
+        <p><span class="tl-s" data-s="1695.07" data-e="1706.64">Except your lead pastor can drive better than any of you but besides that, besides that, besides that, we&#x27;re just normal people.</span> <span class="tl-s" data-s="1707.92" data-e="1711.50">And it&#x27;s with fear and trembling we must pay careful attention.</span> <span class="tl-s" data-s="1712.45" data-e="1717.34">Because if you know the story of the church in Ephesus, Paul was right.</span></p>
+        <p><span class="tl-s" data-s="1718.83" data-e="1720.04">Read 1 Timothy.</span> <span class="tl-s" data-s="1721.19" data-e="1724.10">Where does Paul send Timothy to put things, quote, in order?</span> <span class="tl-s" data-s="1724.70" data-e="1724.98">Ephesus.</span></p>
+        <p><span class="tl-s" data-s="1726.62" data-e="1733.70">And then when Jesus comes and has a vision to John in Revelation, what&#x27;s the first church that gets corrected?</span> <span class="tl-s" data-s="1734.40" data-e="1734.80">Ephesus.</span></p>
+        <p><span class="tl-s" data-s="1736.57" data-e="1749.10">At some level and in some measure, from amongst this eldership that Paul addresses, men arose speaking twisted things.</span></p>
+        <p><span class="tl-s" data-s="1751.93" data-e="1756.40">Now, one way we have accountability is implicit in the text.</span> <span class="tl-s" data-s="1756.73" data-e="1760.74">Paul calls the elders, notice that&#x27;s plural.</span> <span class="tl-s" data-s="1761.68" data-e="1767.18">A healthy eldership is always a plurality, always is aiming toward plurality.</span> <span class="tl-s" data-s="1767.31" data-e="1775.14">And we can see here through this passage, this isn&#x27;t the point, but elders and pastors and overseers are all the same thing.</span> <span class="tl-s" data-s="1776.01" data-e="1779.58">An elder is not a consultant where the pastor does the work of ministry.</span> <span class="tl-s" data-s="1779.84" data-e="1781.96">That idea is foreign to the Bible.</span> <span class="tl-s" data-s="1782.66" data-e="1785.70">And an overseer, oftentimes that&#x27;s translated bishop.</span> <span class="tl-s" data-s="1786.31" data-e="1790.10">A bishop doesn&#x27;t have more authority than a pastor or an elder.</span> <span class="tl-s" data-s="1791.00" data-e="1795.30">And notice there&#x27;s no priest in sight because Jesus is the great high priest.</span> <span class="tl-s" data-s="1796.00" data-e="1804.70">So we see that the leadership in the church is a pastor, an elder, an overseer, all the same thing.</span></p>
+        <p><span class="tl-s" data-s="1805.01" data-e="1814.36">But those pastors must tend to their own hearts because from among any of them can arise temptations to say many twisted things.</span> <span class="tl-s" data-s="1814.94" data-e="1817.92">And there&#x27;s nothing more frightening to me because I know no one&#x27;s exempt.</span> <span class="tl-s" data-s="1818.69" data-e="1819.78">Anyone can wander away.</span> <span class="tl-s" data-s="1820.37" data-e="1824.86">Anybody can be disillusioned and be beyond remedy and some can just say forget it.</span></p>
+        <p><span class="tl-s" data-s="1826.46" data-e="1830.00">Faithful pastors are more suspicious of their own hearts than other people.</span></p>
+        <p><span class="tl-s" data-s="1831.46" data-e="1845.78">So pray for your pastors that they want to keep killing sin, keep serving the Lord, keep obeying in every way, keep choosing faithfulness over flash, and keep guarding their own hearts.</span></p>
+        <p><span class="tl-s" data-s="1848.54" data-e="1856.74">Pastors guard the flock from wolves on the outside and from themselves becoming a wolf from within.</span></p>
+        <p><span class="tl-s" data-s="1859.09" data-e="1860.20">What does the pastor do?</span> <span class="tl-s" data-s="1860.40" data-e="1867.48">He declares, he guards, and lastly, he entrusts, he entrusts, you see this in verse 32.</span> <span class="tl-s" data-s="1867.75" data-e="1878.84">And now Paul says, I commend you to God and to the word of his grace which is able to build you up and to give you the inheritance among all those who are sanctified.</span> <span class="tl-s" data-s="1879.67" data-e="1884.38">Paul knew and every faithful pastor knows that a shepherd can only do so much.</span></p>
+        <p><span class="tl-s" data-s="1887.33" data-e="1891.60">But all the weakness and limitation that shackle pastors does not shackle Jesus.</span> <span class="tl-s" data-s="1892.47" data-e="1894.16">It is the Lord Jesus who saves.</span> <span class="tl-s" data-s="1894.44" data-e="1897.22">It is the Lord Jesus who is able to save us to the uttermost.</span> <span class="tl-s" data-s="1897.56" data-e="1900.34">It is he who is able to keep us through our dark valleys.</span> <span class="tl-s" data-s="1900.72" data-e="1902.94">It is he who is near when our heart is breaking.</span> <span class="tl-s" data-s="1903.32" data-e="1906.02">It is he who promises never to leave us or forsake us.</span> <span class="tl-s" data-s="1906.28" data-e="1908.46">It is he who can keep us from falling away.</span> <span class="tl-s" data-s="1908.74" data-e="1910.34">It is he who is committed to us.</span> <span class="tl-s" data-s="1910.60" data-e="1912.92">It is he who is praying for us by name right now.</span> <span class="tl-s" data-s="1913.17" data-e="1917.32">It is Jesus who is guarding us for our inheritance that we will have in the last day.</span></p>
+        <p><span class="tl-s" data-s="1917.62" data-e="1919.22">And it will be Jesus who will see his home.</span> <span class="tl-s" data-s="1919.64" data-e="1923.26">A faithful shepherd cannot keep the sheep by himself.</span> <span class="tl-s" data-s="1923.52" data-e="1927.08">He can love them, teach them, weep over them, but he cannot save them.</span> <span class="tl-s" data-s="1927.39" data-e="1929.40">He can commend them to Jesus however.</span></p>
+        <p><span class="tl-s" data-s="1930.91" data-e="1934.02">And with Jesus they are always in safe hands.</span></p>
+        <p><span class="tl-s" data-s="1936.18" data-e="1936.74">Always.</span> <span class="tl-s" data-s="1938.02" data-e="1947.00">And so a faithful pastor entrusts the people he loves and cares about in hands much bigger than his own.</span> <span class="tl-s" data-s="1947.66" data-e="1960.10">Because the Lord whether you realize it or not bought the sheep with his blood.</span></p>
+        <p><span class="tl-s" data-s="1962.02" data-e="1971.28">As a friend of mine says the most precious commodity in the whole universe has been spent on you.</span></p>
+        <p><span class="tl-s" data-s="1974.29" data-e="1977.16">Your pastor did not die for you.</span> <span class="tl-s" data-s="1977.66" data-e="1988.80">Your pastor will one day be here and another day be gone, but your Jesus is the same yesterday, today, and forever.</span></p>
+        <p><span class="tl-s" data-s="1990.67" data-e="1995.38">Your faith rests not on your pastor, but on your Jesus.</span></p>
+        <p><span class="tl-s" data-s="1997.44" data-e="2009.08">Pastors cannot keep the sheep the sheep but they can entrust the sheep to the Lord who brought them with his very blood.</span> <span class="tl-s" data-s="2009.16" data-e="2026.86">But we have the last recorded words of Charles Spurgeon, the wonderful, the prince of preachers who preached in the 19th century in London at the famous Metropolitan Tabernacle.</span></p>
+        <p><span class="tl-s" data-s="2028.59" data-e="2030.04">This was 1891.</span></p>
+        <p><span class="tl-s" data-s="2031.45" data-e="2036.40">And it seems a fitting way to end our time here looking at Acts chapter 20.</span></p>
+        <p><span class="tl-s" data-s="2038.45" data-e="2059.42">In his last sermon, his last moments before the church that he loved so much, he didn&#x27;t point back to his own ministry. he pointed people to Jesus, saying this, he, being Jesus, is the most magnanimous of captains.</span> <span class="tl-s" data-s="2060.55" data-e="2063.60">There never was his like among the choices of princes.</span> <span class="tl-s" data-s="2064.70" data-e="2067.62">He is always to be found in the thickest part of the battle.</span></p>
+        <p><span class="tl-s" data-s="2069.19" data-e="2073.12">When the wind blows cold, he always takes the bleak side of the hill.</span> <span class="tl-s" data-s="2074.15" data-e="2077.32">The heaviest end of the cross lies ever on his shoulders.</span> <span class="tl-s" data-s="2078.49" data-e="2081.12">If he bids us carry a burden, he carries it also.</span> <span class="tl-s" data-s="2081.88" data-e="2091.70">If there is anything that is gracious, generous, kind, and tender, yea, lavish, and super abundant in love, you always find it in him.</span> <span class="tl-s" data-s="2092.94" data-e="2099.30">These forty years and more I have served him, blessed be his name, and I have had nothing but love from him.</span> <span class="tl-s" data-s="2100.55" data-e="2107.76">And I would be glad to continue yet another forty years in the same dear service here below, if so, it pleased him.</span> <span class="tl-s" data-s="2108.70" data-e="2114.52">His service is life, peace, joy.</span> <span class="tl-s" data-s="2115.77" data-e="2117.26">Oh, that you would enter it at once.</span> <span class="tl-s" data-s="2118.61" data-e="2124.88">God help you to enlist under the banner of Jesus even this day.</span></p>
+        <p><span class="tl-s" data-s="2126.40" data-e="2126.72">Amen.</span></p>
+        <p><span class="tl-s" data-s="2128.43" data-e="2129.16">Amen and amen.</span> <span class="tl-s" data-s="2129.53" data-e="2134.44">Faithful pastors, faithful pastors, serve the Lord by serving his people.</span> <span class="tl-s" data-s="2135.07" data-e="2139.46">That&#x27;s what we see in Acts chapter 20. let&#x27;s pray.</span></p>
+        <p><span class="tl-s" data-s="2145.98" data-e="2178.68">Jesus, I thank you that you are the chief shepherd, that you are the king of kings, that you are the Lord of lords, Lord, that we have a gospel that&#x27;s rooted not in any human shepherd with his frailties and faults, but in Jesus Christ, in you, the God man, the son who came down to become a man, to win men and women to Christ.</span></p>
+        <p><span class="tl-s" data-s="2180.18" data-e="2184.12">And I pray that you would help our church to remain faithful, Lord.</span></p>
+        <p><span class="tl-s" data-s="2186.18" data-e="2197.46">Those who pastor her today may be gone tomorrow, but I pray that we would ever be a people fixed upon Jesus, fixed upon you and your word.</span> <span class="tl-s" data-s="2198.79" data-e="2210.18">I pray that for as long as Center Church exists, there would be a symphony of grace coming forth from the gospel of Jesus Christ.</span> <span class="tl-s" data-s="2210.33" data-e="2214.50">There would be a rhapsody of mercy that comes forth from the word.</span> <span class="tl-s" data-s="2214.60" data-e="2224.44">I pray that you would help us to be a people who never tire of leaning into Jesus and trusting him despite all the things that we see.</span> <span class="tl-s" data-s="2225.76" data-e="2233.36">I pray, Lord, that you would raise up men who would lead in generations to come.</span></p>
+        <p><span class="tl-s" data-s="2236.80" data-e="2243.34">I pray that you would empower them and strengthen them to look to you and call people to look to you.</span> <span class="tl-s" data-s="2244.29" data-e="2256.62">And I pray that there would be a legacy of faithful pastors pointing faithful church members to the ever faithful Savior.</span></p>
+        <p><span class="tl-s" data-s="2258.71" data-e="2262.42">And Jesus, one day, we&#x27;ll all be together in heaven with you.</span> <span class="tl-s" data-s="2262.75" data-e="2264.84">One day, we&#x27;ll see you face to face.</span> <span class="tl-s" data-s="2265.29" data-e="2274.98">One day, one day, this idea of a chief shepherd, that won&#x27;t be so strange. we&#x27;ll see you and we&#x27;ll be like you and there will be no need for human shepherds.</span> <span class="tl-s" data-s="2275.67" data-e="2276.34">Not anymore.</span></p>
+        <p><span class="tl-s" data-s="2278.90" data-e="2283.24">And so, Lord, until that day, though, Lord, keep us in your love.</span></p>
+        <p><span class="tl-s" data-s="2284.87" data-e="2286.44">Keep us, Lord, close to you.</span> <span class="tl-s" data-s="2287.61" data-e="2301.88">Keep us desiring an appetite for your word so that we might sing your word and preach your word and pray your word and fellowship around your word and look to hear your word ring forth Sunday after Sunday.</span> <span class="tl-s" data-s="2302.88" data-e="2304.54">And it&#x27;s in your mighty name we pray, Jesus.</span> <span class="tl-s" data-s="2305.76" data-e="2306.18">Amen.</span> <span class="tl-s" data-s="2307.40" data-e="2309.90">Let&#x27;s stand and respond in song.</span></p>
         </div>
       </div>
     </section>
@@ -478,6 +573,165 @@
     });
 
     load(false);
+  })();
+  </script>
+  <script>
+  // Read-along: sticky mini player (moves the ONE audio element — no clone,
+  // no desync), sentence highlight + calm auto-follow.
+  (function () {
+    var audio = document.querySelector(".sermon audio");
+    var card = document.querySelector(".sermon");
+    if (!audio || !card) return;
+
+    var reduceMotion = window.matchMedia &&
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    // ---- Mini bar: teleport the single audio element in/out ----
+    var homeParent = audio.parentNode;
+    var homeNext = audio.nextSibling;
+    var bar = document.createElement("div");
+    bar.id = "tl-minibar";
+    bar.setAttribute("role", "region");
+    bar.setAttribute("aria-label", "Sermon audio");
+    var label = document.createElement("span");
+    label.className = "tl-mini-label";
+    label.textContent = "Acts 20:13–38";
+    var slot = document.createElement("div");
+    slot.className = "tl-mini-slot";
+    var followBtn = document.createElement("button");
+    followBtn.type = "button";
+    followBtn.className = "tl-follow";
+    followBtn.textContent = "Follow";
+    followBtn.setAttribute("aria-pressed", "true");
+    bar.appendChild(label);
+    bar.appendChild(slot);
+    bar.appendChild(followBtn);
+    document.body.appendChild(bar);
+
+    var follow = true;
+    function setFollow(v) {
+      follow = v;
+      followBtn.setAttribute("aria-pressed", v ? "true" : "false");
+      followBtn.textContent = v ? "Following" : "Follow";
+    }
+    followBtn.addEventListener("click", function () {
+      setFollow(!follow);
+      if (follow) scrollToActive();
+    });
+
+    function dockInBar() {
+      if (slot.contains(audio)) return;
+      slot.appendChild(audio);
+      bar.classList.add("is-visible");
+    }
+    function dockHome() {
+      if (!slot.contains(audio)) return;
+      homeParent.insertBefore(audio, homeNext);
+      bar.classList.remove("is-visible");
+    }
+    function syncBar() {
+      var r = card.getBoundingClientRect();
+      // Show once the card has scrolled past (above the viewport).
+      if (r.bottom < 0) dockInBar();
+      else dockHome();
+    }
+    if ("IntersectionObserver" in window) {
+      new IntersectionObserver(function () { syncBar(); }, { threshold: 0 }).observe(card);
+    }
+    window.addEventListener("scroll", function () {
+      if (!window.__tlTick) {
+        window.__tlTick = true;
+        requestAnimationFrame(function () { window.__tlTick = false; syncBar(); });
+      }
+    }, { passive: true });
+    window.addEventListener("resize", syncBar);
+    syncBar();
+
+    // ---- Sentence highlight (binary search over [data-s, data-e]) ----
+    var spans = Array.prototype.slice.call(document.querySelectorAll(".tl-s"));
+    var starts = spans.map(function (el) { return parseFloat(el.getAttribute("data-s")); });
+    var ends = spans.map(function (el) { return parseFloat(el.getAttribute("data-e")); });
+    var cur = -1;
+
+    function findIndex(t) {
+      if (isNaN(t)) return -1;
+      var lo = 0, hi = spans.length - 1, ans = -1;
+      while (lo <= hi) {
+        var mid = (lo + hi) >> 1;
+        if (starts[mid] <= t) { ans = mid; lo = mid + 1; }
+        else hi = mid - 1;
+      }
+      if (ans === -1) return -1;
+      if (t < ends[ans]) return ans;
+      // In a small gap between sentences: hold the nearest finished one
+      // briefly so the highlight doesn't flicker off.
+      if (ans + 1 < spans.length && t < starts[ans + 1]) return ans;
+      return -1;
+    }
+
+    function scrollToActive() {
+      if (cur < 0 || !spans[cur]) return;
+      try {
+        spans[cur].scrollIntoView({
+          behavior: reduceMotion ? "auto" : "smooth",
+          block: "center"
+        });
+      } catch (e) { /* older browsers */ }
+    }
+
+    var scheduled = false;
+    function update(t) {
+      var i = findIndex(t);
+      if (i === cur) return;
+      if (cur >= 0 && spans[cur]) spans[cur].classList.remove("is-active");
+      cur = i;
+      if (cur >= 0 && spans[cur]) {
+        spans[cur].classList.add("is-active");
+        if (follow && !audio.paused) scrollToActive();
+      }
+    }
+    function updateSoon() {
+      if (scheduled) return;
+      scheduled = true;
+      requestAnimationFrame(function () {
+        scheduled = false;
+        try { update(audio.currentTime); } catch (e) { /* not loaded */ }
+      });
+    }
+
+    audio.addEventListener("timeupdate", updateSoon);
+    audio.addEventListener("seeked", function () {
+      setFollow(true);
+      try { update(audio.currentTime); } catch (e) { /* not loaded */ }
+      if (!audio.paused) scrollToActive();
+    });
+    audio.addEventListener("play", function () {
+      setFollow(true);
+      updateSoon();
+    });
+    audio.addEventListener("loadedmetadata", updateSoon);
+
+    // Manual scroll wins: pause following while the user scrolls.
+    function interrupt() {
+      if (follow && !audio.paused) setFollow(false);
+    }
+    window.addEventListener("wheel", interrupt, { passive: true });
+    window.addEventListener("touchmove", interrupt, { passive: true });
+    window.addEventListener("keydown", function (e) {
+      var keys = ["ArrowUp", "ArrowDown", "PageUp", "PageDown", "Home", "End", " "];
+      if (keys.indexOf(e.key) !== -1) interrupt();
+    });
+
+    // Click a sentence to jump there.
+    document.querySelector(".transcript").addEventListener("click", function (e) {
+      var s = e.target && e.target.closest ? e.target.closest(".tl-s") : null;
+      if (!s) return;
+      var t = parseFloat(s.getAttribute("data-s"));
+      if (isNaN(t)) return;
+      try { audio.currentTime = t + 0.01; } catch (err) { /* not loaded */ }
+      setFollow(true);
+      update(t);
+    });
   })();
   </script>
 <!-- guid: 3f955c89-554b-49d8-ad2f-70bd95322810 -->
