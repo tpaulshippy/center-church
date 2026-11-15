@@ -25,6 +25,8 @@
 #   ./scripts/transcripts/add-transcript.sh --transcript-file sermon.txt \
 #       --transcript-words sermon.words.json --pause-gap 1.4 [other flags]
 # (whisper timings run wider than AssemblyAI's, so use --pause-gap 1.4.)
+#   ./scripts/transcripts/add-transcript.sh --kind podcast --transcript-id <id> \
+#       --speaker-map "A=Rich Richardson,B=Mark Johnson Jr."  # name diarized voices (SPEAKER_MAP env)
 #   ./scripts/transcripts/add-transcript.sh --no-push                            # write HTML only, print manual git commands
 #   ./scripts/transcripts/add-transcript.sh --message "Custom commit msg"        # override commit message
 #   ./scripts/transcripts/add-transcript.sh --pause-gap 1.5                  # pause threshold (s) for paragraph breaks, default 1.2
@@ -74,6 +76,7 @@ BACK_LABEL="${BACK_LABEL:-}"
 KEYTERMS="${KEYTERMS:-}"
 TRANSCRIPT_FILE="${TRANSCRIPT_FILE:-}"
 TRANSCRIPT_ID="${TRANSCRIPT_ID:-}"
+SPEAKER_MAP="${SPEAKER_MAP:-}"
 MESSAGE="${MESSAGE:-}"
 PAUSE_GAP="${PAUSE_GAP:-1.2}"
 NO_PUSH=0
@@ -103,6 +106,7 @@ while [ $# -gt 0 ]; do
     --transcript-file) TRANSCRIPT_FILE="$2"; shift 2 ;;
     --transcript-words) TRANSCRIPT_WORDS="$2"; TRANSCRIPT_WORDS_GIVEN=1; shift 2 ;;
     --transcript-id)   TRANSCRIPT_ID="$2"; shift 2 ;;
+    --speaker-map)     SPEAKER_MAP="$2"; shift 2 ;;
     --message)         MESSAGE="$2"; shift 2 ;;
     --no-push)         NO_PUSH=1; shift ;;
     --pause-gap)       PAUSE_GAP="$2"; shift 2 ;;
@@ -143,7 +147,7 @@ elif [ "$OUTPUT_GIVEN" -eq 0 ]; then
   OUTPUT="${KIND_DIR}/${SLUG}.html"
 fi
 SHARE_PATH="${SHARE_DIR}/${SLUG}"
-export KIND KEYTERMS KIND_TITLE NOUN BACK_LINK BACK_LABEL
+export KIND KEYTERMS KIND_TITLE NOUN BACK_LINK BACK_LABEL SPEAKER_MAP
 
 ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
 cd "$ROOT"
@@ -199,15 +203,27 @@ else
   # diarization actually switches speakers.
   render_json() {
     python3 - "$1" "$TRANSCRIPT_TXT" "$TRANSCRIPT_WORDS" <<'EOF'
-import json, sys
+import json, os, sys
 data = json.load(open(sys.argv[1]))
 out_path, words_path = sys.argv[2], sys.argv[3]
+# SPEAKER_MAP "A=Rich Richardson,B=Mark Johnson Jr." renames diarization
+# codes to real names; unmapped codes keep the "Speaker X" display.
+smap = {}
+for pair in os.environ.get("SPEAKER_MAP", "").split(","):
+    if "=" in pair:
+        k, v = pair.split("=", 1)
+        k, v = k.strip(), v.strip()
+        if k and v:
+            smap[k] = v
+def disp(s):
+    s = str(s or "")
+    return smap.get(s, "Speaker " + s if s else s)
 utterances = data.get("utterances") or []
 if utterances:
     multi = len({u.get("speaker") for u in utterances}) > 1
     turns, cur_spk, buf = [], None, []
     for u in utterances:
-        spk = u.get("speaker", "?")
+        spk = disp(u.get("speaker", "?"))
         txt = (u.get("text") or "").strip()
         if not txt:
             continue
@@ -219,7 +235,7 @@ if utterances:
     if buf:
         turns.append((cur_spk, " ".join(buf)))
     if multi:
-        text = "\n\n".join("[Speaker %s] %s" % (s, t) for s, t in turns)
+        text = "\n\n".join("[%s] %s" % (s, t) for s, t in turns)
     else:
         text = " ".join(t for _, t in turns)
 else:
@@ -227,12 +243,13 @@ else:
 with open(out_path, "w") as f:
     f.write(text.strip() + "\n" if text.strip() else "")
 # Preserve word-level timings (ms -> s) for pause-based chunking.
+# Speaker codes are renamed via SPEAKER_MAP for consistency with the text.
 words = data.get("words") or []
 if not words:
     for u in utterances:
         words.extend(u.get("words") or [])
 timed = [{"t": w.get("text", ""), "start": (w.get("start") or 0) / 1000.0,
-          "end": (w.get("end") or 0) / 1000.0, "speaker": w.get("speaker")}
+          "end": (w.get("end") or 0) / 1000.0, "speaker": disp(w.get("speaker"))}
          for w in words if w.get("text")]
 with open(words_path, "w") as f:
     json.dump(timed, f)
@@ -306,12 +323,12 @@ EOF
 fi
 
 mkdir -p "$(dirname "$OUTPUT")"
-export TITLE PUBDATE GUID AUDIO_URL DURATION DESCRIPTION SPEAKER SERIES TRANSCRIPT_TXT OUTPUT TEMPLATE TRANSCRIPT_WORDS PAUSE_GAP
+export TITLE PUBDATE GUID AUDIO_URL DURATION DESCRIPTION SPEAKER SERIES TRANSCRIPT_TXT OUTPUT TEMPLATE TRANSCRIPT_WORDS PAUSE_GAP SPEAKER_MAP
 python3 <<'EOF'
 import html, json, os, re
 
-SENT_SPLIT = re.compile(r"(?<=[.!?])\s+(?=(?:\[Speaker [^\]]+\]\s*)?[A-Z0-9\"'])")
-SPEAKER_RE = re.compile(r"^\[Speaker ([^\]]+)\]\s*")
+SENT_SPLIT = re.compile(r"(?<=[.!?])\s+(?=(?:\[[^\]]+\]\s*)?[A-Z0-9\"'])")
+SPEAKER_RE = re.compile(r"^\[([^\]]+)\]\s*")
 
 def normtok(s):
     return re.sub(r"[^\w']", "", s, flags=re.UNICODE).lower()
@@ -423,7 +440,7 @@ def chunk_paragraphs(text, timed, pause_gap):
         grouped.pop()
     paras, prev = [], None
     for spk, sents in grouped:
-        prefix = "[Speaker %s] " % spk if (multi and spk and spk != prev) else ""
+        prefix = "[%s] " % spk if (multi and spk and spk != prev) else ""
         paras.append(prefix + " ".join(sents))
         prev = spk
     return paras
@@ -461,24 +478,36 @@ if not placeholder:
     paras = chunk_paragraphs(text, timed, pause_gap)
 if timed:
     # Read-along: wrap each sentence in a timed span. Duplicate sentences
-    # consume their bounds in order, so alignment holds.
+    # consume their bounds in order, so alignment holds. Multi-speaker
+    # paragraphs get a bold name label (plain <strong>, no extra CSS).
     sent_list = split_sentences(text)
+    multi_spk = len({s for s, _ in sent_list if s}) > 1
     bnds = sentence_bounds(sent_list, timed)
     bmap = {}
     for (spk, sent), (s, e) in zip(sent_list, bnds):
         bmap.setdefault(sent, []).append((s, e))
     def spanify(para):
+        m = SPEAKER_RE.match(para)
+        pname = m.group(1) if m else None
         parts = []
         for spk, sent in split_sentences(para):
             lst = bmap.get(sent) or [(0.0, 0.0)]
             s, e = lst.pop(0)
             parts.append('<span class="tl-s" data-s="%.2f" data-e="%.2f">%s</span>'
                          % (s, e, html.escape(sent)))
-        return " ".join(parts)
+        label = '<strong>%s:</strong> ' % html.escape(pname) if (multi_spk and pname) else ''
+        return label + " ".join(parts)
     body_html = "\n".join("        <p>%s</p>" % spanify(p) for p in paras) or "        <p>(Empty transcript.)</p>"
 else:
     # No timings (plain-text input): plain paragraphs, read-along JS stays idle.
-    body_html = "\n".join("        <p>%s</p>" % html.escape(p) for p in paras) or "        <p>(Empty transcript.)</p>"
+    # Multi-speaker paragraphs get the same bold name label.
+    _multi_spk = len({s for s, _ in split_sentences(text) if s}) > 1
+    def labelize(p):
+        m = SPEAKER_RE.match(p)
+        if m and _multi_spk:
+            return '<strong>%s:</strong> %s' % (html.escape(m.group(1)), html.escape(p[m.end():].strip()))
+        return html.escape(p)
+    body_html = "\n".join("        <p>%s</p>" % labelize(p) for p in paras) or "        <p>(Empty transcript.)</p>"
 notice = ""
 if placeholder:
     notice = ('        <p class="transcript-notice"><strong>Note:</strong> this is a placeholder transcript. '
