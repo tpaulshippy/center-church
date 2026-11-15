@@ -515,9 +515,25 @@ const GROUP_SHORT_LINKS = {
   "welcome": "https://centergilbert.com/connect",
 };
 
+// Fire-and-forget Analytics Engine logging. Never throws (safe to call anywhere).
+function logApp(env, kind, path, detail, hostname) {
+  try {
+    if (!env || !env.APP_LOGS || typeof env.APP_LOGS.writeDataPoint !== "function") return;
+    env.APP_LOGS.writeDataPoint({
+      blobs: [kind, path, String(detail || "").slice(0, 200)],
+      doubles: [1],
+      indexes: [hostname || ""],
+    });
+  } catch (_) {
+    // Logging must never break a request.
+  }
+}
+
 export default {
   async fetch(request, env, ctx) {
-    const url = new URL(request.url);
+    let url;
+    try {
+      url = new URL(request.url);
     if (url.pathname === "/api/sermons/search") {
       return handleSermonSearch(request, ctx);
     }
@@ -540,6 +556,10 @@ export default {
         302
       );
     }
+    // Email signup has no standalone form; contact holds the email + App messaging flow.
+    if (url.pathname === "/email-signup" || url.pathname === "/email-signup/") {
+      return Response.redirect(new URL("/contact", request.url).toString(), 302);
+    }
     // Short links for small groups: centergilbert.com/go/<slug> -> Church Center group.
     if (url.pathname.startsWith("/go/")) {
       const slug = url.pathname.slice(4).replace(/\/$/, "").toLowerCase();
@@ -550,7 +570,7 @@ export default {
     }
     // Clean URL for the internal upload guide (serves public/add-sermon-guide.html).
     if (url.pathname === "/add-sermon-guide" || url.pathname === "/add-sermon-guide/") {
-      return env.ASSETS.fetch(
+      return await env.ASSETS.fetch(
         new Request(new URL("/add-sermon-guide.html", request.url), request)
       );
     }
@@ -558,6 +578,7 @@ export default {
 
     // Serve our custom 404 page for unknown paths (but leave real assets alone).
     if (res.status === 404 && !url.pathname.includes(".")) {
+      logApp(env, "404", url.pathname, "", url.hostname);
       const notFound = await env.ASSETS.fetch(
         new Request(new URL("/404", request.url), request)
       );
@@ -568,6 +589,22 @@ export default {
         });
       }
     }
+    if (res.status === 404 && url.pathname.includes(".")) {
+      logApp(env, "404", url.pathname, "", url.hostname);
+    }
     return res;
+    } catch (err) {
+      let path = "/";
+      try {
+        path = (url && url.pathname) || new URL(request.url).pathname;
+      } catch (_) {
+        // leave default
+      }
+      logApp(env, "error", path, String((err && err.message) || err), url ? url.hostname : "");
+      return new Response("Something went wrong", {
+        status: 500,
+        headers: { "content-type": "text/plain;charset=UTF-8", "cache-control": "no-store" },
+      });
+    }
   },
 };
