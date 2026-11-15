@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Are We Guilty of the Sins of Prior Generations? — Podcast Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Fixed on Jesus: conversations beyond Sunday mornings from Center Church in Gilbert, AZ — listen on Spotify, Apple Podcasts, and YouTube." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=18" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a href="/sermons">Sermons</a></li>
+              <li><a class="active" href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/podcast">&larr; All podcast episodes</a>
+          <h1 class="display-lg">Are We Guilty of the Sins of Prior Generations?</h1>
+          <p class="transcript-meta">2023-12-27 · 12:52</p>
+          <p class="transcript-desc">Welcome to FIXED ON JESUS, a podcast brought to you by Center Church in Gilbert, Arizona. Speaking to you today are Rich Richardson &amp; Mark Johnson Jr. Production by Heather Corbitt **SHOW NOTES** Questions asked in this episode: Are We Guilty of the Sins of Prior Generations? Scripture References: N</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/e750e370/podcast/play/80476781/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-11-26%2Ff8266987-56ad-1fae-c40d-77e4330434a9.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="0.15" data-e="12.98">As you think about what the principles are with collective responsibility, one is just recognizing that we are only guilty before God of the sins we commit.</span></p>
+        <p><span class="tl-s" data-s="28.19" data-e="30.54">This is Fixed on Jesus.</span></p>
+        <p><span class="tl-s" data-s="47.63" data-e="49.66">Welcome to Fixed on Jesus.</span> <span class="tl-s" data-s="49.96" data-e="53.45">My name is Rich and I&#x27;m your host here on our Fixed on Jesus podcast.</span> <span class="tl-s" data-s="53.51" data-e="55.42">Across the table from me is Mark Johnson Jr.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="55.99" data-e="56.39">Yo yo!</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="57.67" data-e="62.58">And behind the glass we have Heather Corbett, who controls all things in this arena.</span> <span class="tl-s" data-s="62.72" data-e="66.12">One of the— one of my self-appointed tasks in life, Mark— Self-appointed?</span> <span class="tl-s" data-s="66.19" data-e="66.80">Self-appointed.</span> <span class="tl-s" data-s="66.86" data-e="67.71">You guys make sure you use those terms.</span> <span class="tl-s" data-s="67.71" data-e="68.75">Which means it has all kinds of authority.</span> <span class="tl-s" data-s="68.75" data-e="78.76">Um, it&#x27;s one of my self-appointed tasks in life is to help you get a feel for some of the past Christian cultural things that we lived with.</span> <span class="tl-s" data-s="78.76" data-e="89.25">Uh, Heather and I being about the same age, growing up in the &#x27;80s and &#x27;90s, going to church back then, There are all kinds of things that you need to know about the Christian culture and environment.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="89.26" data-e="90.45">Enlighten me.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="90.48" data-e="97.13">One of those things is tambourines were a fixture, at least in my tradition.</span> <span class="tl-s" data-s="97.13" data-e="102.73">Tambourines were a fixture in my tradition on Sunday morning.</span> <span class="tl-s" data-s="102.73" data-e="104.60">And you might ask, well, why?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="104.67" data-e="104.84">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="105.21" data-e="114.50">Well, because what would happen was, and I don&#x27;t think my tradition was the only one, women would come with tambourines and play those tambourines during worship.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="114.59" data-e="115.89">Like people in the congregation?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="115.89" data-e="116.61">In the congregation.</span> <span class="tl-s" data-s="116.61" data-e="117.72">Oh, totally.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="117.73" data-e="123.11">Where do you— is there like a well-known tambourine distributor that everyone— like, is there a brand?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="123.11" data-e="126.78">No, no, you would go to the Christian— local Christian bookstore [Speaker B] and they sell them.</span> <span class="tl-s" data-s="126.94" data-e="127.39">They sell them.</span> <span class="tl-s" data-s="127.44" data-e="135.89">And then if you really wanted to like make your tambourine look cool, you tied ribbons off on it and like people would shake them.</span> <span class="tl-s" data-s="135.95" data-e="137.89">And I mean, seriously, it was like a thing.</span> <span class="tl-s" data-s="138.10" data-e="145.87">I mean, you&#x27;d walk in, there were some tambourines that were just round, there were some that had like a Like a, you know, half-moon kind of look.</span> <span class="tl-s" data-s="146.85" data-e="153.02">There were all kinds of tambourines, and sometimes— [Speaker B] Man, I wish we had a tambourine right now.</span> <span class="tl-s" data-s="153.02" data-e="154.93">No, there are no tambourines allowed on our Sundays.</span> <span class="tl-s" data-s="154.96" data-e="158.10">I [Speaker B] was gonna ask what would happen if someone popped in with one.</span> <span class="tl-s" data-s="158.10" data-e="166.44">If someone popped in with one, we have a ceremonial fire pit in the back that we go ahead and dump it into.</span> <span class="tl-s" data-s="166.45" data-e="173.67">So they would even write things on the tambourine like praise the Lord and stuff like Like that, so make [Speaker B] music for the Lord.</span></p>
+        <p><span class="tl-s" data-s="173.67" data-e="182.82">It yes, but that that was an era that has been closed, and it was a shadow of better things to come and things that we would like to forget.</span> <span class="tl-s" data-s="182.90" data-e="185.87">So, and I think it was pretty much everywhere, right, Heather?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="186.03" data-e="187.20">Not in the Lutheran Church.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="187.29" data-e="189.14">Not in the Lutheran Church.</span> <span class="tl-s" data-s="189.14" data-e="191.55">Okay, well, that&#x27;s a whole other topic.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="191.55" data-e="192.44">Yeah, the Lutheran Church.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="192.44" data-e="195.03">The Lutheran Church is another topic.</span> <span class="tl-s" data-s="195.32" data-e="195.57">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="195.57" data-e="197.11">Speaking of the past.</span> <span class="tl-s" data-s="197.18" data-e="201.75">Our topic today is, are we guilty of the sins of prior generations?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="201.75" data-e="202.94">Ah, come [Speaker B] on.</span> <span class="tl-s" data-s="202.96" data-e="212.53">So the reason this question kind of came up is there is a lot of instances in the Bible where God would say, your offspring will be blessed, or your offspring will be cursed.</span> <span class="tl-s" data-s="212.53" data-e="217.43">And it seems to say that there is some kind of carrying on or reduction.</span> <span class="tl-s" data-s="217.96" data-e="224.42">Or let me read you this from Nehemiah 1:5. where he is praying, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="224.47" data-e="224.72">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="224.72" data-e="248.17">O Lord God of heaven, the great and awesome God who keeps covenant and steadfast love with those who love him and keep his commandments, let your ear be attentive and your eyes open to hear the prayer of your servant that I now pray before you day and night for the people of Israel, your servants, confessing the sins of Israel which have sinned against you.</span> <span class="tl-s" data-s="248.19" data-e="250.72">I, even I and my father&#x27;s house, have sinned.</span> <span class="tl-s" data-s="250.72" data-e="259.60">We have acted corruptly against you and have not kept the commandments the statutes and the rules that you commanded your servant Moses.</span> <span class="tl-s" data-s="259.60" data-e="260.35">That is an example.</span> <span class="tl-s" data-s="260.47" data-e="269.10">Daniel has the same kind of thing in Daniel chapter 9, but what we want to recognize there is that— are we responsible?</span> <span class="tl-s" data-s="269.13" data-e="276.81">He is not communicating necessarily that he is responsible for those other people&#x27;s [Speaker B] sins, [Speaker A] that he has responsibility to repent.</span></p>
+        <p><span class="tl-s" data-s="277.48" data-e="279.39">He is just pointing them out.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="279.51" data-e="279.59">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="279.65" data-e="280.20">Right?</span> <span class="tl-s" data-s="280.29" data-e="293.61">And so the As you think about what the principles are with collective responsibility, one is just recognizing we are only guilty before God of the sins that we commit.</span> <span class="tl-s" data-s="294.04" data-e="295.36">That is just a reality.</span> <span class="tl-s" data-s="295.39" data-e="301.88">I can&#x27;t be guilty of the sins of my father or my grandfather or my great-grandfather.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="301.91" data-e="306.05">But we also sin because of the sins of Adam and Eve before us.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="306.25" data-e="308.30">Well, sure, that is original sin.</span> <span class="tl-s" data-s="308.32" data-e="314.32">So original sin is the teaching that says We are born with a corrupt nature that predisposes us to sin.</span> <span class="tl-s" data-s="314.35" data-e="318.41">We have a stain on our heart that is— we are compromised from the beginning.</span> <span class="tl-s" data-s="318.75" data-e="323.08">So like, you don&#x27;t have to train a child to be sinful.</span> <span class="tl-s" data-s="323.08" data-e="326.28">That child knows, [Speaker B] right?</span> <span class="tl-s" data-s="326.39" data-e="330.05">It is written on their little hearts.</span> <span class="tl-s" data-s="330.08" data-e="331.99">It is very [Speaker B] apparent.</span> <span class="tl-s" data-s="331.99" data-e="337.68">Yeah, so we are collectively— you could say we are both collectively and individually guilty.</span> <span class="tl-s" data-s="337.68" data-e="337.73">Absolutely.</span> <span class="tl-s" data-s="337.73" data-e="345.61">Yeah, so every person born— yeah, every person born is collectively guilty of sin because We are under the power of sin.</span></p>
+        <p><span class="tl-s" data-s="345.64" data-e="349.78">Every person is, but I&#x27;m not guilty for sins that other people have committed.</span> <span class="tl-s" data-s="350.03" data-e="350.26">Right?</span> <span class="tl-s" data-s="350.37" data-e="358.96">Anytime you see the call to repent, the call to repent is always to individuals, even if they&#x27;re in a group.</span> <span class="tl-s" data-s="358.96" data-e="367.36">And so Jeremiah even talks about, you know, you&#x27;re only going to—I think it&#x27;s like in Jeremiah 31—you&#x27;re responsible for your own sins.</span> <span class="tl-s" data-s="367.42" data-e="369.71">That&#x27;s true, and there&#x27;s personal accountability.</span></p>
+        <p><span class="tl-s" data-s="371.20" data-e="373.69">We have personal accountability before God.</span> <span class="tl-s" data-s="373.69" data-e="376.29">Now, what&#x27;s also true is, let&#x27;s say.</span> <span class="tl-s" data-s="376.42" data-e="382.11">Let&#x27;s say there&#x27;s— you&#x27;re associated with a people who have done things wrong in the past.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="382.11" data-e="384.66">That&#x27;s— yeah, that&#x27;s kind of the hot topic.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="384.69" data-e="388.14">We can&#x27;t repent for racist white people from the past, but we can clearly say that was wrong.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="388.16" data-e="388.27">Yeah.</span> <span class="tl-s" data-s="388.37" data-e="391.93">And so— I was gonna say, make sure we say that was wrong.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="391.98" data-e="393.46">We can say that was wrong.</span> <span class="tl-s" data-s="393.50" data-e="394.93">I mean, that was wrong.</span> <span class="tl-s" data-s="394.95" data-e="398.65">Absolutely, that was wrong to whatever degree that happened.</span> <span class="tl-s" data-s="398.69" data-e="402.49">We don&#x27;t know, but we&#x27;re not responsible It&#x27;s not as if— now there&#x27;s— Do we [Speaker B] need to repent or apologize?</span> <span class="tl-s" data-s="402.49" data-e="405.05">We don&#x27;t need to repent for what they did.</span> <span class="tl-s" data-s="405.07" data-e="406.68">We don&#x27;t need to repent for what they did.</span> <span class="tl-s" data-s="406.68" data-e="418.77">I do think that maybe we have to think through what some of the societal implications are, or how should we respond as a society, and that&#x27;s a conversation that Christians can have and disagree about.</span> <span class="tl-s" data-s="418.83" data-e="424.63">But one of my grandparents was very much racist, and to hear him speak was— he was not inclusive, let&#x27;s say it that way.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="424.63" data-e="427.94">And you knew him when you were a kid?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="427.98" data-e="431.81">As I was a little child.</span> <span class="tl-s" data-s="431.91" data-e="433.34">He&#x27;s gone, yeah.</span> <span class="tl-s" data-s="433.82" data-e="440.95">And so I am not responsible for those sins, but I do believe that I want to make sure that people understand I am not racist.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="440.99" data-e="441.13">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="441.27" data-e="445.62">You know, and so I am not responsible for what he did.</span> <span class="tl-s" data-s="445.62" data-e="457.98">And so again, when we are talking about areas like levels of responsibility or areas of responsibility, I am not trying to say that we don&#x27;t have societal implications that have trickled down throughout all of society.</span> <span class="tl-s" data-s="457.98" data-e="458.71">We do.</span> <span class="tl-s" data-s="458.76" data-e="463.58">But that is not the same question as far as like, am I responsible?</span> <span class="tl-s" data-s="463.63" data-e="466.63">Am I guilty before God for these things?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="466.63" data-e="469.74">Like, are you guilty for what your grandfather thought and did?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="469.74" data-e="470.20">No.</span> <span class="tl-s" data-s="470.22" data-e="470.75">We can&#x27;t say that.</span> <span class="tl-s" data-s="470.84" data-e="486.06">But we also need to recognize in the Old Testament, when you have this collective language, you need to remember also that the Old Testament Jewish people had an agreement called a covenant with God.</span> <span class="tl-s" data-s="486.06" data-e="487.02">And their nation.</span> <span class="tl-s" data-s="487.02" data-e="493.98">So the nation of Israel had an agreement, a covenant with God, and they were a collective people in a way we are not in the United States.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="493.98" data-e="496.94">Oh, so that is why Nehemiah was repenting for previous generations.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="496.94" data-e="498.26">He didn&#x27;t repent, he just identified.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="498.26" data-e="499.42">Okay, so pointing it out.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="499.42" data-e="500.56">He pointed it out, right.</span> <span class="tl-s" data-s="500.56" data-e="505.74">I mean, like, we couldn&#x27;t do it in the same way here in the United States.</span> <span class="tl-s" data-s="505.74" data-e="507.82">We are not under a covenant of— a covenant with God.</span> <span class="tl-s" data-s="507.82" data-e="508.34">We are not.</span> <span class="tl-s" data-s="508.34" data-e="509.52">We are just the United States.</span> <span class="tl-s" data-s="509.52" data-e="521.66">And so that is one of the mistakes I think people read is they read things about the country and the people and all that kind of thing in the United— in the Old Testament and apply it to the United States.</span> <span class="tl-s" data-s="521.66" data-e="523.65">And we must not do that.</span> <span class="tl-s" data-s="523.66" data-e="525.17">We must not do that.</span> <span class="tl-s" data-s="525.28" data-e="535.57">And so that&#x27;s the thing that, that is, is really important just to recognize, that we are not in the same boat as, as the Jewish people because we&#x27;re not in the theocracy.</span> <span class="tl-s" data-s="535.57" data-e="539.56">We— God did not make it a covenant with George Washington that we all must follow.</span></p>
+        <p><span class="tl-s" data-s="540.59" data-e="543.14">It&#x27;s not— we&#x27;re not in the same boat.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="543.24" data-e="543.40">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="543.74" data-e="545.36">Does that make sense?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="545.36" data-e="545.75">Yeah.</span> <span class="tl-s" data-s="545.83" data-e="556.15">Yeah, I mean, it&#x27;s definitely a popular thing even amongst Christians, and more so amongst non-Christians, to kind of take responsibility for sins of previous generations.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="556.92" data-e="559.22">Well, I mean, like, here&#x27;s an example.</span> <span class="tl-s" data-s="559.22" data-e="572.88">2 Corinthians— I&#x27;m sorry, 2 Chronicles 7:14 says, uh, if my people who are called by my name shall humble themselves and pray and seek my face and turn from their wicked ways, then I will hear from heaven and forgive their sin and heal their land.</span> <span class="tl-s" data-s="572.88" data-e="575.70">That is the United States National Day of Prayer verse.</span> <span class="tl-s" data-s="575.70" data-e="580.40">And so the problem with that is the land here is not the United States.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="580.40" data-e="582.08">You mean in that specific scripture?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="582.18" data-e="583.11">In 2 Chronicles 7.</span> <span class="tl-s" data-s="583.14" data-e="586.33">It is not the United States, it is Israel.</span> <span class="tl-s" data-s="586.33" data-e="587.68">And so we have to recognize that.</span> <span class="tl-s" data-s="587.77" data-e="592.21">And we also recognize that we have to ask then, who are the new people?</span> <span class="tl-s" data-s="592.21" data-e="593.21">Who are the people of God today?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="593.24" data-e="593.85">Not a nation.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="593.88" data-e="594.52">It is not a nation.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="594.52" data-e="597.15">That is kind of where some of the controversy is.</span> <span class="tl-s" data-s="597.15" data-e="598.19">It is not a nation anymore.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="598.19" data-e="599.25">Yeah, it is not a nation.</span> <span class="tl-s" data-s="599.25" data-e="609.69">The people of God are those that are in the kingdom of God, and those are the people, Jew or Gentile, that have accepted Jesus as their Savior.</span> <span class="tl-s" data-s="610.19" data-e="614.44">So the application today would not be pagan American, we want you to pray.</span> <span class="tl-s" data-s="614.49" data-e="615.52">No, that does nothing.</span> <span class="tl-s" data-s="615.53" data-e="619.12">Um, and then our land will be healed.</span> <span class="tl-s" data-s="619.31" data-e="621.40">No, that does nothing.</span> <span class="tl-s" data-s="621.40" data-e="638.56">But the application today is people of God, Christians, where you are compromised, where you are living with sin as kind of a plaything, and you are hypocritical in some way, shape, or form, repent and pray and ask forgiveness.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="638.56" data-e="641.32">That&#x27;s a continual process, but only for the individual.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="641.32" data-e="641.78">For the individual.</span> <span class="tl-s" data-s="641.78" data-e="645.00">But I mean, we, we can call out ourselves, each other, you know.</span> <span class="tl-s" data-s="645.00" data-e="648.20">It&#x27;s like for me to say, hey, you know, I don&#x27;t— I can only repent for myself.</span> <span class="tl-s" data-s="648.20" data-e="654.20">If I see you doing something wrong, I can point it out and say, hey Mark, you should keep this in mind, you know, whatever.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="654.20" data-e="656.68">And like, you know about tambourines and you should like dogs and you should— [Speaker A] you should like dogs.</span> <span class="tl-s" data-s="656.68" data-e="658.92">But that&#x27;s— those aren&#x27;t sinful things.</span> <span class="tl-s" data-s="658.93" data-e="667.25">But like, if you have a sinful thing, I want to point it out to you and say, hey, you should be aware of this, but I can&#x27;t repent for you.</span> <span class="tl-s" data-s="667.25" data-e="667.35">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="667.35" data-e="669.16">You know what I&#x27;m saying?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="669.25" data-e="674.14">And so I can point out clowns but not repent for you.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="674.14" data-e="676.51">There&#x27;s no repentance on that.</span> <span class="tl-s" data-s="676.80" data-e="689.54">So anyway, um, that&#x27;s— that some of that gets lost in the whole conversation is, um, we can be sorrowful for decisions that past generations have made, but we&#x27;re not responsible personally [Speaker B] Yeah.</span> <span class="tl-s" data-s="689.54" data-e="700.58">Now, there are institutions maybe that have been built or structures in our society that we need to reexamine, those kinds of things, but that is a very different thing than saying I am personally culpable and responsible.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="700.67" data-e="701.17">That makes sense.</span> <span class="tl-s" data-s="701.17" data-e="701.36">Yeah.</span> <span class="tl-s" data-s="701.41" data-e="703.65">I think that is it as far as questions go.</span> <span class="tl-s" data-s="703.65" data-e="717.66">Just a reminder, guys, we have some great show notes, so if there is ever like a question or a reference or a book or a Scripture that you are looking for, check the show notes below whatever platform you are listening to this on.</span> <span class="tl-s" data-s="717.70" data-e="725.90">Thank you so much for listening, and if you have any questions or topic suggestions, feel free to email us at production@sonnergilbert.com.</span> <span class="tl-s" data-s="725.90" data-e="728.83">And when we answer your question on air, you&#x27;ll hear this.</span> <span class="tl-s" data-s="729.34" data-e="732.28">And if you don&#x27;t want to be named, that&#x27;s fine too.</span> <span class="tl-s" data-s="732.30" data-e="733.12">Feel free to send in anonymous questions.</span> <span class="tl-s" data-s="733.20" data-e="738.69">Well, thank you again for listening, and we&#x27;ll hear— we&#x27;ll listen— we&#x27;ll hear you in the next one.</span> <span class="tl-s" data-s="738.69" data-e="739.17">You&#x27;ll hear us in the next one.</span></p>
+        <p><span class="tl-s" data-s="739.17" data-e="739.22">Wow.</span> <span class="tl-s" data-s="739.22" data-e="739.48">Yeah, right.</span> <span class="tl-s" data-s="739.94" data-e="741.49">Are you okay?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="741.49" data-e="742.82">I don&#x27;t know.</span> <span class="tl-s" data-s="742.82" data-e="745.10">I&#x27;m asking myself.</span> <span class="tl-s" data-s="745.10" data-e="746.62">I would just like to apologize for Mark.</span> <span class="tl-s" data-s="746.68" data-e="747.90">On behalf of that slip-up.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="748.03" data-e="751.23">So you can apologize for other people, but you can&#x27;t— [Speaker A] I would like to repent for Mark.</span> <span class="tl-s" data-s="751.23" data-e="751.23">Okay, thanks.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="751.23" data-e="751.23">Yeah.</span> <span class="tl-s" data-s="751.23" data-e="751.23">Thanks, everybody.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Fixed on Jesus episode archive, backed by /api/podcast/search.
+  // Static fallback list above stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function fmtDuration(raw) {
+      if (!raw) return "";
+      var str = String(raw).trim();
+      // Anchor feeds report seconds; render as H:MM:SS or M:SS.
+      if (/^\d+$/.test(str)) {
+        var total = parseInt(str, 10);
+        var h = Math.floor(total / 3600);
+        var m = Math.floor((total % 3600) / 60);
+        var sec = total % 60;
+        var mm = (h > 0 && m < 10 ? "0" + m : "" + m);
+        var ss = (sec < 10 ? "0" + sec : "" + sec);
+        return (h > 0 ? h + ":" + mm : m) + ":" + ss;
+      }
+      // Anchor also reports clock strings like "00:24:02" — drop the
+      // redundant leading hour so it reads "24:02".
+      return str.replace(/^00:/, "");
+    }
+    function row(it) {
+      it = it || {};
+      var title = esc(it.title) || "Untitled episode";
+      var tUrl = it.guid && transcriptMap[it.guid];
+      var heading = tUrl
+        ? '<a href="' + esc(tUrl) + '">' + title + "</a>"
+        : (it.link
+          ? '<a href="' + esc(it.link) + '" target="_blank" rel="noopener">' + title + "</a>"
+          : title);
+      var meta = [fmtDate(it.date), fmtDuration(it.duration)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      return '<div class="sermon"><div><h3>' + heading + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    var PER = 10;
+    var state = { q: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No episodes found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " episode" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " episodes";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/podcast/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () {
+          // Keep the static list, but tell the reader where else to listen —
+          // some privacy blockers stop the archive request itself.
+          var note = document.querySelector("[data-sermons-error]");
+          if (note) note.hidden = false;
+        });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    if (monthSel) {
+      monthSel.addEventListener("change", function () {
+        state.month = monthSel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: 22653bf7-4829-4dd0-b022-54295c73f809 -->
+</body>
+</html>
