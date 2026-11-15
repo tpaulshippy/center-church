@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acts 9:1-19 — Sermon Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Listen to the latest sermons from Center Church, or follow along on Apple Podcasts and Spotify." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=17" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a class="active" href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/sermons">&larr; All sermons</a>
+          <h1 class="display-lg">Acts 9:1-19</h1>
+          <p class="transcript-meta">Rich Richardson · Acts · 2026-05-17 · 00:42:04</p>
+          <p class="transcript-desc">The risen Jesus breaks us down only to bind us to Himself.</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/119cbef70/podcast/play/128973966/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-7%2F436123640-44100-2-fdde2fe068823a4f.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><span class="tl-s" data-s="0.20" data-e="3.26">If you&#x27;re new to the Bible, Acts is in the New Testament.</span></p>
+        <p><span class="tl-s" data-s="5.48" data-e="10.90">It goes Matthew, Mark, Luke, John, then Acts.</span> <span class="tl-s" data-s="11.00" data-e="16.22">Now we preach the Bible because God&#x27;s people need to hear God&#x27;s voice.</span> <span class="tl-s" data-s="17.24" data-e="25.06">And the best, most impactful way to hear His voice is to move line by line through the scriptures that He has given.</span> <span class="tl-s" data-s="25.40" data-e="39.52">Now we believe this kind of preaching anchors us in the Word of God and the counsel of God so that we&#x27;re guided not by trends or personalities or preferences, but the Word of God that sets the agenda for our lives.</span> <span class="tl-s" data-s="40.34" data-e="43.80">And so we&#x27;re going to be in Acts chapter 9.</span> <span class="tl-s" data-s="44.66" data-e="50.40">And we&#x27;re going to see in Acts chapter 9 that there is power in the right question.</span> <span class="tl-s" data-s="50.78" data-e="53.56">There is power in the right question.</span> <span class="tl-s" data-s="54.50" data-e="68.28">Albert Einstein is reputed to have said, if I had an hour to solve a problem and my life depended on the solution, I would spend the first 55 minutes determining the proper question to ask.</span></p>
+        <p><span class="tl-s" data-s="68.76" data-e="73.76">For once I know the proper question, I could solve the problem in less than five minutes.</span></p>
+        <p><span class="tl-s" data-s="75.44" data-e="79.48">If that&#x27;s true in the world of physics, and maybe he was a little bombastic, I don&#x27;t know.</span> <span class="tl-s" data-s="80.59" data-e="83.16">How much more in the world of the soul?</span> <span class="tl-s" data-s="83.44" data-e="96.86">You see, the right question shines light on that which is obscured, clears the fog on that which is hazy, brings into focus that which is chaotic, and sorts out that which is important.</span> <span class="tl-s" data-s="97.24" data-e="99.40">That&#x27;s the power of the right question.</span></p>
+        <p><span class="tl-s" data-s="101.08" data-e="107.06">But there is even more power in the right question from the risen Jesus.</span> <span class="tl-s" data-s="108.18" data-e="116.90">Jesus asks exactly the right question to a Jewish Pharisee named Saul, whom you probably know as Paul.</span> <span class="tl-s" data-s="117.92" data-e="127.18">At the end of a long journey, Jesus asks Saul, Saul, Saul, Saul, why are you persecuting me?</span> <span class="tl-s" data-s="127.70" data-e="136.66">Now, in the storyline of the Bible, that question stands alongside some of the Bible&#x27;s most consequential questions.</span> <span class="tl-s" data-s="137.15" data-e="139.32">Questions like, did God really say?</span></p>
+        <p><span class="tl-s" data-s="140.98" data-e="142.50">But who do you say that I am?</span> <span class="tl-s" data-s="143.62" data-e="147.58">My God, my God, why have you forsaken me?</span> <span class="tl-s" data-s="147.66" data-e="153.94">And here we hear Jesus saying, Saul, Saul, why are you persecuting me?</span> <span class="tl-s" data-s="154.34" data-e="157.20">Because in that, there&#x27;s a confrontation.</span></p>
+        <p><span class="tl-s" data-s="158.70" data-e="172.50">The risen Jesus confronts a man who has lived up to this point a misguided life and reveals Jesus&#x27; union with his people and does the miracle of turning an enemy into an apostle.</span></p>
+        <p><span class="tl-s" data-s="174.12" data-e="183.46">Because this question, this question changes Saul&#x27;s whole trajectory and with it, humanly speaking, all of Christendom.</span> <span class="tl-s" data-s="184.24" data-e="192.46">Without this question put to this man, on this day in Acts chapter 9, we might not be sitting here.</span> <span class="tl-s" data-s="193.56" data-e="198.50">One moment, this man is storming toward Damascus with letters of extradition.</span> <span class="tl-s" data-s="198.81" data-e="206.06">The next, he is face down in the dust, undone by the power of a question.</span></p>
+        <p><span class="tl-s" data-s="208.14" data-e="213.54">From that day on, nothing in Saul&#x27;s life would be the same.</span> <span class="tl-s" data-s="213.62" data-e="214.96">Not his loves, not his loyalties.</span> <span class="tl-s" data-s="215.10" data-e="216.12">They would all change.</span></p>
+        <p><span class="tl-s" data-s="218.20" data-e="223.02">Friends, that&#x27;s what happens when we meet Jesus, whether we&#x27;re an apostle or not.</span> <span class="tl-s" data-s="223.57" data-e="230.14">The story of Acts chapter 9 is about Saul, but it also has application to all of us.</span> <span class="tl-s" data-s="230.78" data-e="233.10">Because this is what happens when you meet Jesus.</span> <span class="tl-s" data-s="233.96" data-e="235.68">And we see it in Paul&#x27;s life.</span></p>
+        <p><span class="tl-s" data-s="237.18" data-e="241.50">First, you get broken down, and then you realize you&#x27;re bound to Jesus.</span> <span class="tl-s" data-s="242.04" data-e="245.26">That was Paul&#x27;s story, and that&#x27;s going to be ours as well.</span> <span class="tl-s" data-s="245.32" data-e="246.14">That is ours.</span> <span class="tl-s" data-s="247.03" data-e="248.50">Because this is the main idea we&#x27;re going to see.</span> <span class="tl-s" data-s="248.83" data-e="253.60">The risen Jesus breaks us down in all kinds of different surprising ways.</span> <span class="tl-s" data-s="254.88" data-e="268.80">He breaks us down from where we think we are to him, to bind us.</span> <span class="tl-s" data-s="269.09" data-e="270.80">That&#x27;s what happened to Paul.</span> <span class="tl-s" data-s="270.98" data-e="273.48">And that&#x27;s, if you&#x27;re a Christian, that&#x27;s what happened to you too.</span> <span class="tl-s" data-s="274.20" data-e="276.60">But let&#x27;s read, beginning in Acts chapter 9.</span> <span class="tl-s" data-s="276.64" data-e="280.60">I&#x27;m going to read, beginning in verse 1, and go all the way down to verse 19.</span></p>
+        <p><span class="tl-s" data-s="280.76" data-e="284.90">If you have a Bible, follow along as I read from the English Standard Version.</span> <span class="tl-s" data-s="285.80" data-e="303.40">But Saul, still breathing threats and murder against the disciples of the Lord, went to the high priest and asked him for letters to the synagogues at Damascus, so that if he found any belonging to the way, men or women, he might bring them bound to Jerusalem.</span> <span class="tl-s" data-s="303.80" data-e="312.24">Now, as he went on his way, he approached Damascus, and suddenly a light from heaven shone around him.</span> <span class="tl-s" data-s="313.12" data-e="323.28">And falling to the ground, he heard a voice saying to him, Saul, Saul, why are you persecuting me?</span> <span class="tl-s" data-s="324.28" data-e="327.22">And he said, who are you, Lord?</span> <span class="tl-s" data-s="328.48" data-e="333.74">And he said, I am Jesus, whom you are persecuting.</span> <span class="tl-s" data-s="334.48" data-e="340.80">But rise and enter the city, and you will be told what you are to do.</span> <span class="tl-s" data-s="341.70" data-e="347.32">The men who were traveling with him stood speechless, hearing the voice, but seeing no one.</span></p>
+        <p><span class="tl-s" data-s="348.82" data-e="353.02">Saul rose from the ground, and although his eyes were opened, he saw nothing.</span> <span class="tl-s" data-s="353.96" data-e="358.64">So they led him by the hand and brought him into Damascus.</span> <span class="tl-s" data-s="359.16" data-e="365.34">And for three days he was without sight, and neither ate nor drank.</span> <span class="tl-s" data-s="366.43" data-e="370.18">Now, there was a disciple at Damascus named Ananias.</span> <span class="tl-s" data-s="370.74" data-e="372.98">The Lord said to him in a vision, Ananias.</span> <span class="tl-s" data-s="373.44" data-e="375.10">And he said, here I am, Lord.</span> <span class="tl-s" data-s="375.88" data-e="379.94">And the Lord said to him, rise and go to the street called Straight.</span></p>
+        <p><span class="tl-s" data-s="381.36" data-e="387.02">And at the house of Judas, look for a man of Tarsus named Saul.</span> <span class="tl-s" data-s="387.60" data-e="389.38">For behold, he is praying.</span> <span class="tl-s" data-s="390.02" data-e="394.80">He has seen a vision, in a vision, a man named Ananias.</span> <span class="tl-s" data-s="395.04" data-e="398.06">Come in and lay hands on him so that he might regain his sight.</span> <span class="tl-s" data-s="398.80" data-e="402.94">But Ananias answered, Lord, I have heard from many about this man.</span> <span class="tl-s" data-s="403.62" data-e="406.82">How much evil he has done to your saints at Jerusalem.</span></p>
+        <p><span class="tl-s" data-s="408.27" data-e="414.46">And here he has authority from the chief priests to bind all who call on your name.</span> <span class="tl-s" data-s="414.74" data-e="416.96">But the Lord said to him, go.</span></p>
+        <p><span class="tl-s" data-s="418.58" data-e="426.86">For he is a chosen instrument of mine to carry my name before the Gentiles and kings and the children of Israel.</span> <span class="tl-s" data-s="427.54" data-e="433.22">For I will show him how much he must suffer for the sake of my name.</span> <span class="tl-s" data-s="433.78" data-e="437.46">So, Ananias departed and entered the house.</span> <span class="tl-s" data-s="437.68" data-e="450.50">And laying his hands on him, he said, Brother Saul, the Lord Jesus, who appeared to you on the road by which you came, has sent me so that you may regain your sight and be filled with the Holy Spirit.</span> <span class="tl-s" data-s="451.54" data-e="458.12">And immediately, something like scales fell from his eyes, and he regained his sight.</span> <span class="tl-s" data-s="459.18" data-e="461.60">Then he rose and was baptized.</span> <span class="tl-s" data-s="462.48" data-e="465.08">And taking food, he was strengthened.</span> <span class="tl-s" data-s="465.92" data-e="471.52">For some days, he was with the disciples at Damascus.</span> <span class="tl-s" data-s="472.10" data-e="474.60">We&#x27;re going to break this story up into four parts.</span> <span class="tl-s" data-s="475.30" data-e="477.78">First, we see the prosecutor.</span></p>
+        <p><span class="tl-s" data-s="478.58" data-e="481.48">The prosecutor, or the persecutor, whatever you want to say.</span> <span class="tl-s" data-s="481.96" data-e="487.62">Before the risen Lord asked Saul that question, Saul was still raging against this church.</span> <span class="tl-s" data-s="487.62" data-e="490.94">He was like a rabid animal bent on blind destruction.</span> <span class="tl-s" data-s="491.76" data-e="494.30">So, you see, Saul the Pharisee was extra.</span> <span class="tl-s" data-s="495.00" data-e="507.70">Acts 9 opens by telling us that Paul visited Caiaphas, the high priest, and received authority from the high priest to extradite Christians from distant regions from Jerusalem.</span> <span class="tl-s" data-s="508.14" data-e="515.26">His purpose was to hunt down and arrest Christians so that he could stop all this Jesus business.</span></p>
+        <p><span class="tl-s" data-s="517.57" data-e="519.80">And so, off he went to Damascus.</span></p>
+        <p><span class="tl-s" data-s="521.26" data-e="522.08">Now, interesting.</span> <span class="tl-s" data-s="523.08" data-e="523.46">Luke.</span> <span class="tl-s" data-s="524.00" data-e="531.76">Luke is such a good writer, and you can see he actually uses two different phrases or words or clauses to describe Christians.</span> <span class="tl-s" data-s="531.84" data-e="532.52">Look at verse 1.</span> <span class="tl-s" data-s="533.00" data-e="536.60">But Saul still breathing threats and murder against the disciples.</span> <span class="tl-s" data-s="536.60" data-e="538.72">Okay, so we&#x27;ve, that&#x27;s one he&#x27;s used before.</span> <span class="tl-s" data-s="538.72" data-e="541.22">The disciples are the followers of the Lord.</span> <span class="tl-s" data-s="541.74" data-e="542.24">And verse 2.</span> <span class="tl-s" data-s="542.68" data-e="548.42">And asked for letters to the synagogues at Damascus that if he found any belonging to the way.</span> <span class="tl-s" data-s="549.28" data-e="550.20">That&#x27;s another one.</span></p>
+        <p><span class="tl-s" data-s="550.28" data-e="550.80">Men or women.</span> <span class="tl-s" data-s="551.06" data-e="552.62">He might bring them bound to Jerusalem.</span> <span class="tl-s" data-s="553.46" data-e="557.44">So, we see Luke introducing to us different language.</span> <span class="tl-s" data-s="557.60" data-e="559.34">Notice he&#x27;s not using the words Christian.</span> <span class="tl-s" data-s="559.48" data-e="562.64">He&#x27;s saying disciples and those belonging to the way.</span> <span class="tl-s" data-s="562.80" data-e="565.00">Not, there&#x27;s not many ways to be saved.</span> <span class="tl-s" data-s="565.08" data-e="565.54">There&#x27;s one.</span> <span class="tl-s" data-s="565.74" data-e="567.24">And that&#x27;s only through Jesus Christ.</span> <span class="tl-s" data-s="567.32" data-e="570.14">And that&#x27;s reflected here in that phrase.</span> <span class="tl-s" data-s="570.84" data-e="576.22">Now, Luke is expanding our Christian vocabulary, even as he reports Saul&#x27;s murderous intentions.</span></p>
+        <p><span class="tl-s" data-s="577.70" data-e="583.88">Now, we know we&#x27;ve met Paul or Saul before, on the day Stephen died.</span> <span class="tl-s" data-s="584.16" data-e="584.68">Do you remember?</span> <span class="tl-s" data-s="585.54" data-e="587.88">At the end of Acts 7, we read this.</span> <span class="tl-s" data-s="588.26" data-e="593.20">And as they were stoning Stephen, he called out, Lord Jesus, receive my spirit.</span> <span class="tl-s" data-s="593.80" data-e="598.64">And falling to his knees, he cried out with a loud voice, Lord, do not hold this sin against them.</span> <span class="tl-s" data-s="599.36" data-e="602.02">And when he had said this, he fell asleep.</span> <span class="tl-s" data-s="602.66" data-e="608.90">And then, with a literary flourish, Luke introduces us to Saul.</span> <span class="tl-s" data-s="609.52" data-e="614.04">And Saul approved of his execution.</span> <span class="tl-s" data-s="615.18" data-e="617.32">He was happy that Stephen died.</span> <span class="tl-s" data-s="617.40" data-e="621.48">And that was the day a great persecution arose against the church in Jerusalem.</span></p>
+        <p><span class="tl-s" data-s="621.68" data-e="623.20">Paul hated Christianity.</span> <span class="tl-s" data-s="623.58" data-e="624.86">He hated Christians.</span> <span class="tl-s" data-s="625.22" data-e="634.52">He later says of himself, later toward the end of Acts, he says, I, myself, was convinced that I ought to do many things in opposing the name of Jesus of Nazareth.</span> <span class="tl-s" data-s="634.82" data-e="636.34">And I did so in Jerusalem.</span> <span class="tl-s" data-s="637.62" data-e="646.20">I not only locked up many of the saints in prison after receiving authority from the chief priests, but when they were put to death, I cast my vote against them.</span> <span class="tl-s" data-s="647.02" data-e="650.82">And I punished them often in all the synagogues.</span> <span class="tl-s" data-s="650.90" data-e="652.54">And tried to make them blaspheme.</span> <span class="tl-s" data-s="652.98" data-e="658.88">And in raging fury against them, I persecuted them even to foreign cities.</span> <span class="tl-s" data-s="659.21" data-e="661.68">That&#x27;s his testimony about himself.</span> <span class="tl-s" data-s="661.80" data-e="664.88">He lived to kill Christianity.</span></p>
+        <p><span class="tl-s" data-s="665.99" data-e="668.64">He lived to oppose Jesus.</span> <span class="tl-s" data-s="668.93" data-e="675.62">And that&#x27;s the man striding up to the city of Damascus, confident, ready.</span></p>
+        <p><span class="tl-s" data-s="677.12" data-e="681.48">The week&#x27;s journey from Jerusalem, he has papers in hand, and he has hatred in his heart.</span> <span class="tl-s" data-s="682.16" data-e="687.20">But even as he&#x27;s hunting these Christians, someone far greater is hunting him.</span> <span class="tl-s" data-s="688.36" data-e="695.40">The one who had set out to bind believers, to bring them back to Jerusalem, was about to be bound to Christ.</span> <span class="tl-s" data-s="696.54" data-e="701.38">The great opponent of Jesus is about to become his great ambassador.</span> <span class="tl-s" data-s="702.78" data-e="704.52">Isn&#x27;t that the way the Lord works?</span> <span class="tl-s" data-s="705.48" data-e="710.76">Jesus always seems to do the thing no one expects to advance his kingdom.</span> <span class="tl-s" data-s="712.10" data-e="720.26">It&#x27;s interesting because you would think that the greatest apostle would be one of the 12 that walked with Jesus during his life and ministry.</span> <span class="tl-s" data-s="720.90" data-e="721.68">But nope.</span> <span class="tl-s" data-s="722.22" data-e="729.72">Jesus decides, I&#x27;m going to use the chief prosecutor, the chief persecutor, to be my chief apostle.</span> <span class="tl-s" data-s="730.40" data-e="732.14">And that&#x27;s something only Jesus can do.</span></p>
+        <p><span class="tl-s" data-s="732.78" data-e="734.80">But first, he has to break him down.</span> <span class="tl-s" data-s="735.28" data-e="738.44">Because you have to be broken down in order to be bound to him.</span> <span class="tl-s" data-s="738.92" data-e="739.80">So that&#x27;s what happened.</span> <span class="tl-s" data-s="739.94" data-e="745.54">So the prosecutor, the persecutor, is about to have his whole life turned upside down.</span> <span class="tl-s" data-s="745.54" data-e="747.04">And we come to the intervention.</span></p>
+        <p><span class="tl-s" data-s="748.78" data-e="753.94">Now, the long trip to Damascus was both almost over and also only beginning.</span> <span class="tl-s" data-s="754.92" data-e="762.40">And as the sun drifted higher and higher into the sky, out of nowhere comes a light from heaven that shone around him.</span> <span class="tl-s" data-s="762.74" data-e="765.12">And Paul is pushed down to the ground.</span> <span class="tl-s" data-s="765.38" data-e="769.70">And he hears something that the people with him don&#x27;t hear.</span> <span class="tl-s" data-s="769.88" data-e="770.60">He hears this.</span> <span class="tl-s" data-s="771.25" data-e="776.68">Saul, Saul, why are you persecuting me?</span> <span class="tl-s" data-s="776.78" data-e="779.74">Now, the voice uses his Jewish name, Saul.</span> <span class="tl-s" data-s="779.84" data-e="780.78">We call him Paul.</span> <span class="tl-s" data-s="781.18" data-e="782.64">And you might wonder, what gives?</span> <span class="tl-s" data-s="782.74" data-e="785.54">Now, in that day, everybody had three names.</span></p>
+        <p><span class="tl-s" data-s="786.53" data-e="787.84">Paul was his Roman name.</span> <span class="tl-s" data-s="788.20" data-e="789.92">Saul was his Jewish name.</span> <span class="tl-s" data-s="790.26" data-e="793.84">And so he had the name of both Saul and Paul.</span> <span class="tl-s" data-s="794.30" data-e="798.36">And so if I say Paul throughout or Saul or whoever, it&#x27;s the same guy.</span> <span class="tl-s" data-s="799.14" data-e="802.10">And so this voice from heaven calls out to Paul.</span> <span class="tl-s" data-s="802.26" data-e="804.62">And he has no idea who it is.</span> <span class="tl-s" data-s="804.88" data-e="806.64">And Paul says to him, who are you, Lord?</span></p>
+        <p><span class="tl-s" data-s="809.64" data-e="825.10">And then the risen Son of God, the King of kings, the suffering servant, the author and perfecter of our faith and his soon-to-be, introduces himself and says, I am Jesus, whom you are persecuting.</span></p>
+        <p><span class="tl-s" data-s="826.56" data-e="828.02">Now, isn&#x27;t that fascinating?</span></p>
+        <p><span class="tl-s" data-s="829.92" data-e="834.20">There&#x27;s the power of the right question, but it&#x27;s only exceeded by the import of the answer.</span></p>
+        <p><span class="tl-s" data-s="835.88" data-e="840.34">Did you notice how Jesus answered him, what Jesus says to him?</span> <span class="tl-s" data-s="840.42" data-e="849.86">He says, Saul, Saul, why are you persecuting my people, the church, the saints in Damascus?</span> <span class="tl-s" data-s="850.60" data-e="855.14">No, he says, Saul, Saul, why are you persecuting me?</span> <span class="tl-s" data-s="856.32" data-e="858.10">And then when Saul asked, who are you?</span> <span class="tl-s" data-s="858.37" data-e="863.94">He says, I am Jesus, whom you are persecuting.</span></p>
+        <p><span class="tl-s" data-s="865.50" data-e="876.42">Notice this, we can see in this interchange between the risen Jesus and Paul, we can see how closely Jesus identifies with his people.</span> <span class="tl-s" data-s="876.84" data-e="880.08">His people are not just special to him.</span> <span class="tl-s" data-s="880.38" data-e="881.80">They&#x27;re not just dear to him.</span> <span class="tl-s" data-s="882.06" data-e="884.32">They&#x27;re not just objects of his affection.</span> <span class="tl-s" data-s="884.68" data-e="886.66">There&#x27;s a sense in which they are part of him.</span> <span class="tl-s" data-s="887.82" data-e="892.98">That&#x27;s why he says, Saul, Saul, why are you persecuting me?</span></p>
+        <p><span class="tl-s" data-s="894.66" data-e="895.62">Here&#x27;s the reality.</span> <span class="tl-s" data-s="896.74" data-e="903.98">Jesus is so united to his people that an attack on them is an attack on him.</span> <span class="tl-s" data-s="904.58" data-e="908.12">To persecute them is to persecute him.</span> <span class="tl-s" data-s="909.32" data-e="913.86">And this truth hits at the core of what it means to be a Christian.</span> <span class="tl-s" data-s="914.09" data-e="919.92">You see, in this answer, in this question, I remember the power of the right question.</span> <span class="tl-s" data-s="920.06" data-e="927.60">In this question, a lifetime of theology was dropped into Paul&#x27;s mind on that day when he was on the road to Damascus.</span> <span class="tl-s" data-s="927.82" data-e="934.26">And we hear him being asked by the risen Savior, Saul, Saul, why are you persecuting me?</span> <span class="tl-s" data-s="935.02" data-e="937.30">You can see this throughout all of his letters.</span> <span class="tl-s" data-s="937.92" data-e="939.10">He writes 13.</span> <span class="tl-s" data-s="939.16" data-e="939.88">He&#x27;s going to go on.</span></p>
+        <p><span class="tl-s" data-s="939.92" data-e="941.56">He doesn&#x27;t know it yet in Acts chapter 9.</span> <span class="tl-s" data-s="941.70" data-e="945.46">But he&#x27;s going to go on and write 13 different New Testament letters.</span> <span class="tl-s" data-s="946.21" data-e="954.16">And for Paul, the way that he describes Christians, he never uses the word Christian.</span> <span class="tl-s" data-s="954.52" data-e="959.76">He always says that if someone is a follower of Jesus, they are, quote, in Christ.</span></p>
+        <p><span class="tl-s" data-s="962.13" data-e="968.80">He says, if you&#x27;re a Christian, you are now in Christ.</span> <span class="tl-s" data-s="969.52" data-e="970.84">Where do you think he got that from?</span> <span class="tl-s" data-s="971.52" data-e="973.16">Obviously, he got that from the Holy Spirit.</span> <span class="tl-s" data-s="973.50" data-e="978.78">But he met Jesus on the road to Damascus here in Acts chapter 9.</span> <span class="tl-s" data-s="979.70" data-e="986.66">And he realizes, he realizes, he realizes the way that Christ binds himself to the believers.</span> <span class="tl-s" data-s="987.02" data-e="995.12">When he hears the question, Saul, Saul, why are you persecuting me?</span></p>
+        <p><span class="tl-s" data-s="998.44" data-e="1003.28">Friends, if you&#x27;re a Christian, you too are in Christ.</span> <span class="tl-s" data-s="1003.62" data-e="1004.68">That is who you are.</span> <span class="tl-s" data-s="1005.04" data-e="1006.06">That is who I am.</span></p>
+        <p><span class="tl-s" data-s="1007.96" data-e="1014.52">Jesus here is explaining with this question that he&#x27;s saying this.</span> <span class="tl-s" data-s="1014.52" data-e="1017.78">I am so associated with these people.</span> <span class="tl-s" data-s="1018.06" data-e="1020.70">So, if you go after them, you&#x27;re going after me.</span> <span class="tl-s" data-s="1020.90" data-e="1024.88">See, here we see in Acts chapter 9, Jesus defending his people.</span> <span class="tl-s" data-s="1025.22" data-e="1029.82">It&#x27;s as if he&#x27;s saying, you think you&#x27;re going to walk to Damascus and get those who are mine?</span> <span class="tl-s" data-s="1030.54" data-e="1031.14">No way.</span> <span class="tl-s" data-s="1032.54" data-e="1034.70">Over my resurrected body, you&#x27;re going to do that.</span></p>
+        <p><span class="tl-s" data-s="1037.44" data-e="1042.34">If they&#x27;re resurrected, if they&#x27;re mine, and if you mess with them, you&#x27;re messing with me.</span></p>
+        <p><span class="tl-s" data-s="1044.52" data-e="1048.74">And you know how many saints in Damascus were aware of how the Lord was defending them?</span></p>
+        <p><span class="tl-s" data-s="1051.74" data-e="1052.56">Only one.</span> <span class="tl-s" data-s="1052.66" data-e="1053.82">We&#x27;re going to meet Ananias.</span> <span class="tl-s" data-s="1054.30" data-e="1055.44">I&#x27;m sure the word got out.</span> <span class="tl-s" data-s="1055.74" data-e="1066.72">But in that moment, here&#x27;s Jesus defending the saints in Damascus, protecting them from a great enemy.</span> <span class="tl-s" data-s="1067.46" data-e="1069.00">And they&#x27;re not even aware.</span></p>
+        <p><span class="tl-s" data-s="1070.62" data-e="1075.74">You see, we don&#x27;t often see it, but Jesus protects us Christians the same way.</span> <span class="tl-s" data-s="1076.32" data-e="1086.10">We have no idea how many times the risen Lord has stepped in front of us, and all sorts of attacks aimed at us hit him.</span> <span class="tl-s" data-s="1087.32" data-e="1089.70">You see, there are countless attacks he thwarts.</span> <span class="tl-s" data-s="1090.20" data-e="1092.36">Countless temptations he deflects.</span> <span class="tl-s" data-s="1092.66" data-e="1094.70">Countless tragedies he diverts.</span> <span class="tl-s" data-s="1096.06" data-e="1098.88">Countless catastrophes he stops in their tracks.</span> <span class="tl-s" data-s="1099.66" data-e="1100.06">Why?</span> <span class="tl-s" data-s="1100.70" data-e="1103.68">Because he has bound himself to us.</span> <span class="tl-s" data-s="1104.50" data-e="1110.38">Now, you might be going through it right now, and you might not feel like he&#x27;s doing a great job of defending you.</span> <span class="tl-s" data-s="1111.68" data-e="1112.78">But he is.</span></p>
+        <p><span class="tl-s" data-s="1113.44" data-e="1114.54">And how can I say that?</span> <span class="tl-s" data-s="1115.20" data-e="1124.18">Because if you&#x27;re a Christian, when you&#x27;re bound to Christ, every blow aimed at you must pass through him first.</span> <span class="tl-s" data-s="1124.44" data-e="1135.10">And those blows that get past him are often, they&#x27;re allowed by him, and they&#x27;re often used to show how much you need to trust Jesus.</span></p>
+        <p><span class="tl-s" data-s="1137.35" data-e="1153.48">Because what he does for us Christians is, in the hardships of life and in the moments we didn&#x27;t anticipate, it&#x27;s to break us down so that we don&#x27;t trust ourselves as much as we used to.</span> <span class="tl-s" data-s="1154.43" data-e="1158.16">That we don&#x27;t consider ourselves as strong as we once thought.</span></p>
+        <p><span class="tl-s" data-s="1159.66" data-e="1162.22">But we turn and trust him.</span></p>
+        <p><span class="tl-s" data-s="1164.52" data-e="1171.26">See, that&#x27;s one of the reasons the Lord Jesus allows suffering into our lives.</span> <span class="tl-s" data-s="1171.32" data-e="1173.08">It&#x27;s not because he doesn&#x27;t love us.</span> <span class="tl-s" data-s="1174.04" data-e="1177.22">It&#x27;s because he loves us that he allows this suffering.</span></p>
+        <p><span class="tl-s" data-s="1178.86" data-e="1184.12">So that we can recognize how much we need him.</span></p>
+        <p><span class="tl-s" data-s="1187.38" data-e="1192.52">Because, you see, suffering is baked into the Christian life.</span></p>
+        <p><span class="tl-s" data-s="1194.38" data-e="1195.70">It&#x27;s part of the deal.</span></p>
+        <p><span class="tl-s" data-s="1199.22" data-e="1203.56">And sometimes you can see how the Lord uses it, but most times you can&#x27;t.</span> <span class="tl-s" data-s="1204.44" data-e="1213.14">There could have been people that went about their life in Damascus and never realized that the great Apostle Paul was converted on the road outside their town.</span> <span class="tl-s" data-s="1213.88" data-e="1218.52">And if the Lord hadn&#x27;t done this, they could have been arrested.</span> <span class="tl-s" data-s="1218.86" data-e="1219.98">They could have been imprisoned.</span> <span class="tl-s" data-s="1220.40" data-e="1222.40">They could have been sentenced to death.</span></p>
+        <p><span class="tl-s" data-s="1225.43" data-e="1236.32">See, my suspicion is that the fact that Jesus is bound to us and defending us is not as encouraging as it should be to us Christians.</span></p>
+        <p><span class="tl-s" data-s="1239.18" data-e="1241.42">I don&#x27;t think.</span> <span class="tl-s" data-s="1241.76" data-e="1245.32">See, I think most of us think of ourselves separate from Jesus.</span> <span class="tl-s" data-s="1246.08" data-e="1249.52">But if we do that, Christians, that&#x27;s wrong.</span> <span class="tl-s" data-s="1249.70" data-e="1250.66">That&#x27;s not who we are.</span> <span class="tl-s" data-s="1251.26" data-e="1253.34">Our identity is now found in him.</span></p>
+        <p><span class="tl-s" data-s="1255.04" data-e="1259.30">Becoming a Christian is much more than a week, I ask Jesus, into my heart.</span> <span class="tl-s" data-s="1259.62" data-e="1261.04">I mean, that&#x27;s not bad.</span> <span class="tl-s" data-s="1261.30" data-e="1273.32">But do you think, Paul, when he describes what happens to him in Acts chapter 9, do you think he&#x27;s going to go, well, I was on the road to Damascus, and then I just decided, Jesus, why don&#x27;t you come into my heart?</span></p>
+        <p><span class="tl-s" data-s="1275.72" data-e="1277.38">And then I prayed the sinner&#x27;s prayer.</span></p>
+        <p><span class="tl-s" data-s="1278.98" data-e="1279.34">No.</span> <span class="tl-s" data-s="1279.82" data-e="1281.46">Jesus knocked him on his face.</span></p>
+        <p><span class="tl-s" data-s="1283.26" data-e="1284.68">He knocked him on his face.</span> <span class="tl-s" data-s="1286.04" data-e="1288.78">And Saul had no idea who this was.</span> <span class="tl-s" data-s="1289.22" data-e="1289.88">And you know what?</span> <span class="tl-s" data-s="1290.24" data-e="1293.36">Sometimes, to get our attention, the Lord knocks us on our face.</span></p>
+        <p><span class="tl-s" data-s="1298.14" data-e="1302.98">Jesus pushed him to the ground, and he realized he had no choice but to accept reality.</span> <span class="tl-s" data-s="1303.64" data-e="1311.16">Now, we might not have seen a light from heaven, but all we who are genuinely saved must come to terms with this reality.</span> <span class="tl-s" data-s="1311.42" data-e="1313.58">He breaks us down before he builds us up.</span> <span class="tl-s" data-s="1313.72" data-e="1318.52">And in fact, he continues to allow us to be broken down so that we&#x27;re built up in him.</span> <span class="tl-s" data-s="1319.88" data-e="1323.66">You see, these are life-changing, identity-changing realities here.</span> <span class="tl-s" data-s="1323.66" data-e="1326.18">He has bound us, Christian, to himself.</span> <span class="tl-s" data-s="1327.24" data-e="1330.78">This means that we are far more secure than we would ever dare to hope.</span></p>
+        <p><span class="tl-s" data-s="1332.58" data-e="1336.82">So much so that we should never think of ourselves apart from Jesus again.</span> <span class="tl-s" data-s="1337.06" data-e="1340.98">If you belong to him, you are in Christ, and Christ is in you.</span> <span class="tl-s" data-s="1341.48" data-e="1342.94">His story is your story.</span> <span class="tl-s" data-s="1343.18" data-e="1344.44">His death is your death.</span> <span class="tl-s" data-s="1344.64" data-e="1346.40">His resurrection is your resurrection.</span> <span class="tl-s" data-s="1346.74" data-e="1348.16">His future is your future.</span> <span class="tl-s" data-s="1348.42" data-e="1349.86">His status is your status.</span> <span class="tl-s" data-s="1350.14" data-e="1351.32">His hope is your hope.</span> <span class="tl-s" data-s="1351.54" data-e="1353.88">His righteousness is your righteousness.</span></p>
+        <p><span class="tl-s" data-s="1355.44" data-e="1356.58">Do you wonder?</span></p>
+        <p><span class="tl-s" data-s="1358.58" data-e="1365.00">Do you wonder if that bond can be broken between you and Jesus?</span></p>
+        <p><span class="tl-s" data-s="1367.82" data-e="1374.48">It can be broken if some power could ascend to heaven and unseat Jesus.</span> <span class="tl-s" data-s="1375.78" data-e="1383.48">It might be broken if someone could stride into the throne room and scare the lion of the tribe of Judah.</span> <span class="tl-s" data-s="1384.50" data-e="1389.84">It could be broken if the power of the blood of Christ can be annulled.</span> <span class="tl-s" data-s="1390.74" data-e="1391.72">Can that happen?</span> <span class="tl-s" data-s="1392.34" data-e="1392.66">No.</span> <span class="tl-s" data-s="1393.74" data-e="1398.36">It&#x27;s as likely to happen as the grave is in reclaiming Jesus.</span> <span class="tl-s" data-s="1399.44" data-e="1403.32">So here&#x27;s how sure the bond is between you and Jesus.</span> <span class="tl-s" data-s="1404.48" data-e="1408.46">If the grave could ever reclaim him, then you have reason to be worried.</span></p>
+        <p><span class="tl-s" data-s="1410.48" data-e="1415.08">But Jesus rose to an indestructible life.</span> <span class="tl-s" data-s="1416.44" data-e="1420.88">And he has committed himself to you if you&#x27;re a Christian.</span></p>
+        <p><span class="tl-s" data-s="1422.74" data-e="1424.88">He has bound himself to you.</span> <span class="tl-s" data-s="1425.28" data-e="1430.40">He has bound himself to you never to let go.</span></p>
+        <p><span class="tl-s" data-s="1431.94" data-e="1433.62">And you might say, what about all my failures?</span> <span class="tl-s" data-s="1433.74" data-e="1434.32">What about them?</span> <span class="tl-s" data-s="1435.48" data-e="1438.94">We are saved on the basis of his obedience, not ours.</span> <span class="tl-s" data-s="1439.10" data-e="1442.24">We&#x27;re saved on the basis of his sinlessness, not ours.</span> <span class="tl-s" data-s="1442.36" data-e="1445.48">We&#x27;re saved on the basis of his faithfulness, not ours.</span> <span class="tl-s" data-s="1445.60" data-e="1448.62">We&#x27;re saved on the basis of his victory, not ours.</span> <span class="tl-s" data-s="1448.62" data-e="1452.48">We&#x27;re saved on the basis of his hold on us, not ours on him.</span> <span class="tl-s" data-s="1453.10" data-e="1455.30">Because that&#x27;s what it means to be in Christ.</span></p>
+        <p><span class="tl-s" data-s="1457.06" data-e="1458.80">What difference does this make?</span> <span class="tl-s" data-s="1458.88" data-e="1460.66">Well, it makes all the difference in the world.</span> <span class="tl-s" data-s="1460.92" data-e="1474.66">Because if Jesus is bound to you, and you were bound to Jesus, and that tie could not be broken, the things that we face tomorrow, the way we face our failures, the way we face our fears, all of those things are changed drastically.</span> <span class="tl-s" data-s="1474.82" data-e="1479.32">Too many of us walk around in fear, asking what&#x27;s next, and we&#x27;re afraid.</span></p>
+        <p><span class="tl-s" data-s="1481.61" data-e="1487.70">But friends, we can say, I know my redeemer lives, and he will be with me.</span> <span class="tl-s" data-s="1487.92" data-e="1490.94">He is bound to me, whatever comes around the corner.</span> <span class="tl-s" data-s="1491.92" data-e="1492.36">Bring it.</span></p>
+        <p><span class="tl-s" data-s="1494.12" data-e="1499.92">Too many of us walk in defeat, saying, how could I fail again like that?</span></p>
+        <p><span class="tl-s" data-s="1502.14" data-e="1504.28">Why don&#x27;t I care enough in my heart?</span></p>
+        <p><span class="tl-s" data-s="1505.86" data-e="1515.74">Friends, we fail every day, but because our redeemer lives, he will forgive us regardless of what we do, because his grace is stronger than our sin.</span> <span class="tl-s" data-s="1516.78" data-e="1519.78">And his forgiveness is for all that we&#x27;ve done.</span> <span class="tl-s" data-s="1520.66" data-e="1524.88">Too many of us walk around trying to grasp for control, wondering, what&#x27;s wrong?</span> <span class="tl-s" data-s="1525.34" data-e="1526.24">Everything feels chaotic.</span> <span class="tl-s" data-s="1526.56" data-e="1527.46">Here&#x27;s the reality.</span> <span class="tl-s" data-s="1527.80" data-e="1529.62">None of us were designed to be in control.</span> <span class="tl-s" data-s="1529.94" data-e="1531.40">He&#x27;s designed to be in control.</span> <span class="tl-s" data-s="1531.40" data-e="1532.90">He is the one who reigns.</span> <span class="tl-s" data-s="1533.14" data-e="1534.14">We do not reign.</span> <span class="tl-s" data-s="1534.38" data-e="1546.30">And if we have the expectation that we&#x27;re going to be able to control all the external stimuli in our life, we will be disappointed and anxious and fearful, but we can trust the one who is in control of all things.</span></p>
+        <p><span class="tl-s" data-s="1546.96" data-e="1547.48">And guess what?</span> <span class="tl-s" data-s="1547.54" data-e="1549.12">He&#x27;s bound to you, and you&#x27;re bound to him.</span></p>
+        <p><span class="tl-s" data-s="1551.04" data-e="1555.30">Friends, if you&#x27;re in Christ, all your todays and tomorrows are secure.</span> <span class="tl-s" data-s="1555.50" data-e="1557.56">As secure as Jesus is on his throne.</span> <span class="tl-s" data-s="1558.16" data-e="1564.88">That&#x27;s what it means to be bound to Christ Jesus, to be safe today, tomorrow, and always.</span> <span class="tl-s" data-s="1565.68" data-e="1566.60">Now, what about Saul?</span> <span class="tl-s" data-s="1567.34" data-e="1568.82">Well, he&#x27;s face down in the dust.</span> <span class="tl-s" data-s="1569.50" data-e="1570.30">He can&#x27;t see.</span> <span class="tl-s" data-s="1570.50" data-e="1576.38">The man who thought he would stride into town had to be led into town, that same town, like a little child.</span> <span class="tl-s" data-s="1577.21" data-e="1581.26">The man who thought he saw all things was blind.</span> <span class="tl-s" data-s="1582.46" data-e="1589.02">The one who thought and was so cocksure about everything is now unsure about everything.</span></p>
+        <p><span class="tl-s" data-s="1592.89" data-e="1599.24">The persecutor experienced an intervention with Jesus, and now we meet the intercessor.</span> <span class="tl-s" data-s="1600.16" data-e="1600.88">The intercessor.</span> <span class="tl-s" data-s="1602.26" data-e="1609.48">Now, meanwhile, back in Damascus, a normal average Christian, minding his own business, gets a vision from the same Jesus.</span> <span class="tl-s" data-s="1609.62" data-e="1613.38">It&#x27;s far less dramatic, but it&#x27;s a vision from Jesus nonetheless.</span> <span class="tl-s" data-s="1614.10" data-e="1618.16">Ananias sees, has a vision, and we hear this in verse 11.</span> <span class="tl-s" data-s="1618.49" data-e="1627.74">Rise and go to the street called Straight, and at the house of Judas, look for a man of Tarsus named Saul, for behold, he is praying.</span> <span class="tl-s" data-s="1628.52" data-e="1634.52">And he is seen in a vision a man named Ananias come in and lay hands on him so that he might regain his sight.</span></p>
+        <p><span class="tl-s" data-s="1636.16" data-e="1645.80">Now, I love this part, because here we have a normal average Christian named Ananias, who is going to disappear into the pages of history.</span> <span class="tl-s" data-s="1645.92" data-e="1647.08">We&#x27;re never going to hear from him again.</span></p>
+        <p><span class="tl-s" data-s="1648.72" data-e="1654.78">But the Lord, the Lord decides, you know what, the Lord decides to use Ananias.</span> <span class="tl-s" data-s="1655.62" data-e="1657.44">Does he need to use Ananias?</span> <span class="tl-s" data-s="1657.92" data-e="1658.36">No.</span> <span class="tl-s" data-s="1659.14" data-e="1663.46">The light that made him blind, he could, he could, he could have someone else.</span> <span class="tl-s" data-s="1663.52" data-e="1667.86">He could just, from a distance, the Lord could come himself and make sure that Paul could see.</span></p>
+        <p><span class="tl-s" data-s="1669.82" data-e="1675.72">But Ananias, Ananias, the Lord decides to use.</span></p>
+        <p><span class="tl-s" data-s="1677.90" data-e="1682.20">He didn&#x27;t have to, but he taps Ananias to go get help.</span> <span class="tl-s" data-s="1682.46" data-e="1688.92">Now, Ananias is aware of who this Saul guy is, and he&#x27;s, he&#x27;s concerned.</span> <span class="tl-s" data-s="1689.06" data-e="1690.96">He&#x27;s like, Lord, are you sure you got the right guy?</span></p>
+        <p><span class="tl-s" data-s="1692.50" data-e="1693.92">This guy, he&#x27;s a bad dude.</span> <span class="tl-s" data-s="1695.10" data-e="1699.70">He&#x27;s coming to try to arrest our people, and you&#x27;re asking me to go pray for him?</span></p>
+        <p><span class="tl-s" data-s="1701.90" data-e="1707.30">Think of the faith that, the trust that Ananias had to give to the Lord to go do this.</span> <span class="tl-s" data-s="1707.56" data-e="1708.20">Why is that?</span> <span class="tl-s" data-s="1708.80" data-e="1719.04">Well, because the process of breaking this down to build us up so that we can recognize that we&#x27;re always bound to Jesus this is an ongoing process for all of us, even Ananias, here.</span></p>
+        <p><span class="tl-s" data-s="1721.54" data-e="1733.62">Ananias chose to believe what the Lord said to him over what he felt, over what seemed wise, over what seemed safe.</span></p>
+        <p><span class="tl-s" data-s="1735.06" data-e="1738.18">Because the rebuilding process is always ongoing for the believers.</span></p>
+        <p><span class="tl-s" data-s="1741.06" data-e="1744.00">Ananias is going to disappear, like I said, into the pages of history.</span> <span class="tl-s" data-s="1744.08" data-e="1747.14">But you can bet your bottom, Daenerys, that he retold this story.</span></p>
+        <p><span class="tl-s" data-s="1748.82" data-e="1755.66">And the next time he was faced with a challenge that seemed too hard or too unreasonable, he could think back on this scene.</span></p>
+        <p><span class="tl-s" data-s="1758.60" data-e="1765.42">I&#x27;m sure he could say, from then on, Lord, I have no idea what you&#x27;re doing, but I&#x27;m going to obey, and I&#x27;m going to find out.</span> <span class="tl-s" data-s="1766.44" data-e="1773.02">Friends, there are countless calls for us as Christians to obey when we don&#x27;t understand, even when it&#x27;s hard.</span> <span class="tl-s" data-s="1773.44" data-e="1776.88">Because oftentimes, we&#x27;re called to obey when we don&#x27;t understand.</span> <span class="tl-s" data-s="1777.12" data-e="1779.96">We&#x27;re called by the Lord to take one step forward.</span> <span class="tl-s" data-s="1779.96" data-e="1786.26">We&#x27;re called by the Lord not to have all the answers given to us, even though Ananias gets some from the Lord here.</span> <span class="tl-s" data-s="1786.78" data-e="1791.78">We&#x27;re called to step forward in faith, believing he can see things we can&#x27;t.</span> <span class="tl-s" data-s="1792.50" data-e="1799.12">But friends, it&#x27;s always, as Christians, bound to Jesus, it always makes sense to obey and follow the Lord.</span> <span class="tl-s" data-s="1799.60" data-e="1811.94">And when we hear counsel from people and reject it, when we know we&#x27;re doing wrong and going the other way and deciding I&#x27;m going to pursue something else, those things are dangerous.</span></p>
+        <p><span class="tl-s" data-s="1812.10" data-e="1814.68">You&#x27;re walking along the side of a cliff ready to fall over.</span></p>
+        <p><span class="tl-s" data-s="1817.12" data-e="1821.76">Don&#x27;t ever think your obedience doesn&#x27;t matter.</span></p>
+        <p><span class="tl-s" data-s="1824.16" data-e="1837.54">It&#x27;s those times when you don&#x27;t understand and when it&#x27;s really difficult that you see the Lord&#x27;s hand move and uphold you and give you grace you didn&#x27;t know you needed.</span> <span class="tl-s" data-s="1838.79" data-e="1844.66">Now, the Lord is kind to Ananias and he gives him a preview of Paul&#x27;s life.</span> <span class="tl-s" data-s="1845.82" data-e="1846.52">Verse 15.</span> <span class="tl-s" data-s="1846.76" data-e="1853.92">Go, for he is a chosen instrument of mine to carry my name before the Gentiles and kings and the children of Israel.</span> <span class="tl-s" data-s="1854.26" data-e="1857.38">And for those of you scoring at home, that&#x27;s everybody on the planet, right?</span> <span class="tl-s" data-s="1857.76" data-e="1859.80">There are Jews and Gentiles and then there are kings.</span> <span class="tl-s" data-s="1859.88" data-e="1866.26">So, basically, he&#x27;s saying he&#x27;s going to go and he&#x27;s going to be a chosen instrument of mine to carry my name before Gentiles.</span> <span class="tl-s" data-s="1866.34" data-e="1867.42">That&#x27;s everybody who&#x27;s not Jew.</span> <span class="tl-s" data-s="1867.68" data-e="1869.16">Kings, that&#x27;s everybody who&#x27;s important.</span> <span class="tl-s" data-s="1869.30" data-e="1871.02">And the children of Israel, that&#x27;s all the Jews.</span></p>
+        <p><span class="tl-s" data-s="1871.26" data-e="1876.36">So, basically, this guy, he is going to be a chosen instrument of mine to do what?</span> <span class="tl-s" data-s="1876.44" data-e="1879.28">Carry my name, the Lord says, before the whole world.</span> <span class="tl-s" data-s="1880.04" data-e="1882.46">And that&#x27;s exactly what Paul does through the rest of Acts.</span> <span class="tl-s" data-s="1882.46" data-e="1886.74">And that&#x27;s what he continues to do in some way through his 13 letters in the New Testament.</span> <span class="tl-s" data-s="1887.16" data-e="1897.08">It would carry the name of the Lord before more people could be argued than anybody else, aside from Jesus, who ever lived.</span></p>
+        <p><span class="tl-s" data-s="1899.82" data-e="1900.96">Now, he&#x27;d carry the name.</span> <span class="tl-s" data-s="1901.04" data-e="1901.68">Some are going to listen.</span> <span class="tl-s" data-s="1901.96" data-e="1902.46">Some aren&#x27;t.</span> <span class="tl-s" data-s="1902.76" data-e="1903.78">He&#x27;s going to get beaten.</span> <span class="tl-s" data-s="1903.88" data-e="1904.60">He&#x27;s going to get whipped.</span> <span class="tl-s" data-s="1904.70" data-e="1905.94">He&#x27;s going to get stoned.</span> <span class="tl-s" data-s="1906.02" data-e="1907.30">He&#x27;s going to have all kinds of trouble.</span> <span class="tl-s" data-s="1907.62" data-e="1909.06">But he&#x27;s going to carry the name.</span> <span class="tl-s" data-s="1909.18" data-e="1910.94">And we&#x27;re going to see that through the rest of Acts.</span> <span class="tl-s" data-s="1911.12" data-e="1915.30">But also, Ananias, one more thing you should know about this guy, Paul.</span></p>
+        <p><span class="tl-s" data-s="1915.78" data-e="1916.56">Verse 16.</span> <span class="tl-s" data-s="1916.92" data-e="1921.94">For I will show him how much he must suffer for the sake of my name.</span> <span class="tl-s" data-s="1922.08" data-e="1926.58">That same name he will carry, he also is called to suffer for that name.</span> <span class="tl-s" data-s="1927.70" data-e="1928.84">That&#x27;s how it works.</span></p>
+        <p><span class="tl-s" data-s="1930.32" data-e="1933.90">We who follow a suffering Savior should expect to suffer ourselves.</span> <span class="tl-s" data-s="1934.32" data-e="1935.38">That&#x27;s how it works.</span> <span class="tl-s" data-s="1935.98" data-e="1939.56">Suffering is baked into your life if you were a Christian.</span> <span class="tl-s" data-s="1940.11" data-e="1946.84">There are false teachers aplenty out there who say that if you follow Jesus, you will receive every blessing you desire.</span> <span class="tl-s" data-s="1946.96" data-e="1949.86">All sorts of money, complete health, happiness.</span> <span class="tl-s" data-s="1950.30" data-e="1951.40">You&#x27;ll get what you want.</span> <span class="tl-s" data-s="1951.48" data-e="1955.60">And if somehow you don&#x27;t have what you want, you lack faith and the problem is with you.</span> <span class="tl-s" data-s="1955.84" data-e="1957.46">Those people are liars.</span></p>
+        <p><span class="tl-s" data-s="1960.78" data-e="1962.38">Those people are false teachers.</span></p>
+        <p><span class="tl-s" data-s="1964.78" data-e="1970.12">Those people, those people are people we should tune out.</span></p>
+        <p><span class="tl-s" data-s="1971.60" data-e="1973.16">Friends, Jesus suffered.</span> <span class="tl-s" data-s="1973.24" data-e="1974.42">Are we above our master?</span> <span class="tl-s" data-s="1974.68" data-e="1974.90">No.</span> <span class="tl-s" data-s="1976.06" data-e="1977.66">We follow in his footsteps.</span></p>
+        <p><span class="tl-s" data-s="1979.32" data-e="1980.58">We follow him.</span></p>
+        <p><span class="tl-s" data-s="1983.18" data-e="1986.00">I know it&#x27;s very unpopular and un-American.</span> <span class="tl-s" data-s="1986.18" data-e="1987.34">Nobody&#x27;s going to wave a flag.</span> <span class="tl-s" data-s="1987.44" data-e="1987.98">Let&#x27;s start.</span> <span class="tl-s" data-s="1988.48" data-e="1989.10">Let&#x27;s suffer.</span></p>
+        <p><span class="tl-s" data-s="1990.50" data-e="1996.04">But friends, as we carry his name, we should expect to suffer for his name.</span> <span class="tl-s" data-s="1996.88" data-e="1997.96">That&#x27;s how it works.</span></p>
+        <p><span class="tl-s" data-s="1999.38" data-e="2001.26">The world we live in is not fair.</span> <span class="tl-s" data-s="2002.48" data-e="2004.74">But friends, Jesus is our great reward.</span> <span class="tl-s" data-s="2005.86" data-e="2007.90">Let&#x27;s place everything on the balance.</span> <span class="tl-s" data-s="2008.16" data-e="2014.70">On this side, let&#x27;s place wealth and fame and beauty and reputation and power on one side and Christ on the other.</span> <span class="tl-s" data-s="2014.94" data-e="2015.74">Christ is better.</span> <span class="tl-s" data-s="2016.86" data-e="2017.90">He is worth it.</span> <span class="tl-s" data-s="2018.72" data-e="2021.54">He is the reward your soul cries out for.</span> <span class="tl-s" data-s="2021.84" data-e="2026.72">He is the only one who will satisfy no matter what suffering comes to you.</span> <span class="tl-s" data-s="2027.58" data-e="2028.38">He&#x27;s better.</span> <span class="tl-s" data-s="2028.72" data-e="2029.56">He&#x27;s worth it.</span></p>
+        <p><span class="tl-s" data-s="2030.34" data-e="2044.54">And one day you&#x27;ll see him face to face and all the suffering that you experience, all the troubles that you had to go through for his name, none of them are going to be ones that you say, you know, I have this one question, Jesus.</span> <span class="tl-s" data-s="2044.66" data-e="2047.74">No, you&#x27;re going to see Jesus and it&#x27;s all going to be worth it.</span></p>
+        <p><span class="tl-s" data-s="2049.37" data-e="2053.74">Because he satisfies.</span></p>
+        <p><span class="tl-s" data-s="2055.16" data-e="2056.78">He always satisfies.</span> <span class="tl-s" data-s="2057.84" data-e="2059.86">Friends, Jesus is worth it.</span> <span class="tl-s" data-s="2061.16" data-e="2061.94">Paul knew that.</span></p>
+        <p><span class="tl-s" data-s="2063.84" data-e="2065.14">Ananias learned that.</span></p>
+        <p><span class="tl-s" data-s="2068.42" data-e="2070.86">So Ananias, he didn&#x27;t need any further convincing.</span> <span class="tl-s" data-s="2071.04" data-e="2072.54">He went straight to Straight Street.</span> <span class="tl-s" data-s="2073.64" data-e="2080.16">And the intercessor goes to the prosecutor who&#x27;s laid low by the Lord&#x27;s intervention.</span> <span class="tl-s" data-s="2080.38" data-e="2082.36">And then we see, lastly, a metamorphosis.</span></p>
+        <p><span class="tl-s" data-s="2084.28" data-e="2086.06">What&#x27;s the first thing he says to Paul?</span></p>
+        <p><span class="tl-s" data-s="2087.72" data-e="2088.56">Brother Saul.</span></p>
+        <p><span class="tl-s" data-s="2091.64" data-e="2092.44">Brother Saul.</span> <span class="tl-s" data-s="2093.12" data-e="2098.80">Now, this is the man who pumped his fist at Stephen&#x27;s execution.</span> <span class="tl-s" data-s="2099.72" data-e="2102.54">Who treated Christians worse than street dogs.</span> <span class="tl-s" data-s="2103.34" data-e="2105.54">The man who lived to kill Christians.</span> <span class="tl-s" data-s="2106.26" data-e="2110.90">This man, Ananias says, Brother Saul.</span></p>
+        <p><span class="tl-s" data-s="2113.90" data-e="2116.64">Because he&#x27;s in Christ, he&#x27;s family now.</span></p>
+        <p><span class="tl-s" data-s="2118.08" data-e="2120.22">And that&#x27;s what Jesus does to his enemies.</span> <span class="tl-s" data-s="2120.36" data-e="2121.82">He makes them family.</span></p>
+        <p><span class="tl-s" data-s="2123.68" data-e="2128.76">Friends, any who have Christ as Savior can welcome any who are family.</span> <span class="tl-s" data-s="2129.44" data-e="2131.36">Any who accept Christ become family.</span> <span class="tl-s" data-s="2132.00" data-e="2135.50">We do not have the freedom to reject any whom Christ has welcomed.</span></p>
+        <p><span class="tl-s" data-s="2137.14" data-e="2139.36">That doesn&#x27;t mean we have to be best friends with everyone.</span> <span class="tl-s" data-s="2139.80" data-e="2146.90">But it does mean that we cannot, we have no right, to have anger or bitterness toward anyone.</span> <span class="tl-s" data-s="2148.16" data-e="2149.44">Especially at our own church.</span></p>
+        <p><span class="tl-s" data-s="2152.72" data-e="2156.44">It&#x27;s not to deny that there aren&#x27;t reasons to work through resolution.</span> <span class="tl-s" data-s="2156.58" data-e="2157.26">But look at Jesus.</span></p>
+        <p><span class="tl-s" data-s="2158.90" data-e="2162.70">Jesus has not regarded our many sins as a reason to reject us.</span> <span class="tl-s" data-s="2163.06" data-e="2164.26">To turn from us.</span> <span class="tl-s" data-s="2165.32" data-e="2166.56">To push us away.</span> <span class="tl-s" data-s="2167.36" data-e="2170.46">He freely identifies with you and me.</span> <span class="tl-s" data-s="2171.24" data-e="2173.90">If he can forgive me, I can forgive anyone.</span> <span class="tl-s" data-s="2174.72" data-e="2177.04">If Jesus can forgive you, you can forgive anyone.</span> <span class="tl-s" data-s="2177.84" data-e="2180.00">And this is part of that breaking down process.</span> <span class="tl-s" data-s="2180.44" data-e="2182.32">Because the risen Jesus, he breaks us down.</span> <span class="tl-s" data-s="2182.32" data-e="2186.00">So that we might be bound closer and closer to him.</span></p>
+        <p><span class="tl-s" data-s="2188.56" data-e="2192.64">Paul recognized here in this picture.</span> <span class="tl-s" data-s="2193.26" data-e="2194.94">That he was united not just to Jesus.</span> <span class="tl-s" data-s="2195.56" data-e="2197.26">But also to a people.</span> <span class="tl-s" data-s="2197.72" data-e="2201.50">Also to the people of Jesus.</span> <span class="tl-s" data-s="2201.94" data-e="2202.98">And that&#x27;s the way it works.</span> <span class="tl-s" data-s="2203.52" data-e="2206.40">You want to measure your love and affection for Jesus?</span></p>
+        <p><span class="tl-s" data-s="2207.92" data-e="2209.98">Measure your love and affection for other Christians.</span></p>
+        <p><span class="tl-s" data-s="2214.18" data-e="2215.02">Verse 18.</span> <span class="tl-s" data-s="2215.10" data-e="2219.82">And immediately, something like scales fell from his eyes.</span> <span class="tl-s" data-s="2220.46" data-e="2221.84">And he regained his sight.</span> <span class="tl-s" data-s="2223.02" data-e="2224.54">Then he rose and was baptized.</span> <span class="tl-s" data-s="2224.76" data-e="2229.36">The risen Lord broke him down only to build himself into Paul.</span> <span class="tl-s" data-s="2230.24" data-e="2231.90">And Christendom would never be the same.</span> <span class="tl-s" data-s="2232.68" data-e="2235.32">Friends, we&#x27;ve seen that there&#x27;s power in the right question.</span> <span class="tl-s" data-s="2235.96" data-e="2239.80">The risen Christ asked Paul the exact right question.</span> <span class="tl-s" data-s="2239.90" data-e="2240.82">What&#x27;s he asking you?</span> <span class="tl-s" data-s="2242.10" data-e="2246.90">If you&#x27;re not a Christian, here&#x27;s the question he might be asking you today.</span></p>
+        <p><span class="tl-s" data-s="2247.02" data-e="2248.54">Why aren&#x27;t you following me?</span> <span class="tl-s" data-s="2249.66" data-e="2251.98">Now, you might not see a bright light like Paul did.</span> <span class="tl-s" data-s="2252.32" data-e="2254.60">But Jesus is there just the same.</span> <span class="tl-s" data-s="2255.90" data-e="2259.64">When you sense your need, your sin, turn to Jesus.</span> <span class="tl-s" data-s="2260.43" data-e="2263.94">Even if your experience isn&#x27;t dramatic and the invitation remains.</span> <span class="tl-s" data-s="2264.36" data-e="2275.48">Jesus meets you in those ordinary moments with quiet conviction where you long for more and you realize your brokenness and you recognize I can&#x27;t do this by myself.</span> <span class="tl-s" data-s="2276.78" data-e="2277.44">Turn to him.</span> <span class="tl-s" data-s="2278.28" data-e="2278.94">Trust him.</span> <span class="tl-s" data-s="2279.74" data-e="2281.16">And accept his forgiveness.</span></p>
+        <p><span class="tl-s" data-s="2282.68" data-e="2285.62">And trust him more than you trust yourself.</span></p>
+        <p><span class="tl-s" data-s="2287.26" data-e="2292.04">If you&#x27;re not following him, ask yourself why.</span></p>
+        <p><span class="tl-s" data-s="2293.58" data-e="2296.44">And if you&#x27;re a Christian, perhaps the Lord is asking you this.</span> <span class="tl-s" data-s="2296.54" data-e="2298.60">Why are you cast down?</span></p>
+        <p><span class="tl-s" data-s="2307.16" data-e="2309.66">Friends, Christ has committed himself to us.</span> <span class="tl-s" data-s="2311.00" data-e="2314.72">We have great reason every morning for hope.</span></p>
+        <p><span class="tl-s" data-s="2316.52" data-e="2319.40">He who bound himself to us will uphold us.</span> <span class="tl-s" data-s="2319.72" data-e="2320.62">He will help us.</span> <span class="tl-s" data-s="2320.86" data-e="2321.92">He will lift us up.</span> <span class="tl-s" data-s="2322.68" data-e="2328.82">He will always be our shepherd even when we walk through the valley of the shadow of deathly hard things.</span> <span class="tl-s" data-s="2330.06" data-e="2331.58">Never to abandon us.</span> <span class="tl-s" data-s="2331.88" data-e="2342.84">And it could be the trouble you&#x27;re facing now is the process is part of what he&#x27;s doing to break you down so that you recognize your need for him because that&#x27;s how he does it.</span> <span class="tl-s" data-s="2343.04" data-e="2346.44">The risen Lord breaks us down only to bind us tighter to himself.</span></p>
+        <p><span class="tl-s" data-s="2349.48" data-e="2350.36">That&#x27;s what he does.</span> <span class="tl-s" data-s="2351.08" data-e="2351.96">That&#x27;s who he is.</span> <span class="tl-s" data-s="2352.64" data-e="2353.36">The Christian.</span> <span class="tl-s" data-s="2354.56" data-e="2355.80">He&#x27;s bound to you.</span> <span class="tl-s" data-s="2356.52" data-e="2357.78">You&#x27;re bound to him.</span> <span class="tl-s" data-s="2358.76" data-e="2359.60">Praise God.</span></p>
+        <p><span class="tl-s" data-s="2361.16" data-e="2361.78">Let&#x27;s pray.</span></p>
+        <p><span class="tl-s" data-s="2374.48" data-e="2376.80">Lord, I pray that you would...</span> <span class="tl-s" data-s="2376.80" data-e="2391.42">Lord, there&#x27;s so many different people in this room, so many different situations, a thousand different problems and ten thousand different concerns represented here.</span> <span class="tl-s" data-s="2391.94" data-e="2398.90">And, Lord, all I can do is say, help.</span></p>
+        <p><span class="tl-s" data-s="2402.81" data-e="2409.26">All I can do, Lord, is say, I pray you would help each of these people here in the ways that they need it.</span> <span class="tl-s" data-s="2410.46" data-e="2412.54">And, Lord, I pray that you would...</span> <span class="tl-s" data-s="2412.54" data-e="2417.14">I pray that you would just give us a sense of your nearness, Lord.</span> <span class="tl-s" data-s="2417.18" data-e="2423.18">I pray in particular for those who are... who are not following you, who don&#x27;t know you, Lord.</span> <span class="tl-s" data-s="2423.22" data-e="2424.42">I pray that you would...</span> <span class="tl-s" data-s="2424.42" data-e="2435.90">Lord, just as real as it was for Paul on that day on the road to Damascus, Lord, I pray that you would break into their lives and reveal yourself to be who... who you are, Lord.</span> <span class="tl-s" data-s="2435.98" data-e="2439.46">The God that&#x27;s... the God who has come to rescue us.</span> <span class="tl-s" data-s="2439.62" data-e="2449.66">And I pray that that rescue plan, Lord, would be one where even people today could recognize you are real, you are here, and, Lord, you&#x27;re here to save.</span> <span class="tl-s" data-s="2449.92" data-e="2452.62">And so, Lord, I pray for those here who are not following you.</span></p>
+        <p><span class="tl-s" data-s="2452.72" data-e="2455.30">I pray that they would throw themselves to you.</span> <span class="tl-s" data-s="2455.30" data-e="2459.08">And I pray that the question, why are you not following me, Lord?</span> <span class="tl-s" data-s="2459.10" data-e="2462.64">I pray that that would resound and echo into their hearts, Lord.</span> <span class="tl-s" data-s="2462.80" data-e="2467.50">And I ask that you would... you would just help them to turn and trust you, Lord.</span> <span class="tl-s" data-s="2468.30" data-e="2470.48">I pray for those of us that are Christians, Lord.</span> <span class="tl-s" data-s="2470.52" data-e="2477.82">I pray that, Lord, for those that are going through hard times that just feel like our soul is beginning to break apart, Lord, I ask that you would...</span> <span class="tl-s" data-s="2477.82" data-e="2484.80">I ask that you would uphold us and remind us and help us and give us just a perspective beyond what we can see.</span> <span class="tl-s" data-s="2485.60" data-e="2493.46">Lord, we are often... we&#x27;re often so confident in what we think we know, Lord, and we&#x27;re confident in what we think we need.</span> <span class="tl-s" data-s="2493.70" data-e="2495.14">But, Lord, we don&#x27;t know.</span> <span class="tl-s" data-s="2495.30" data-e="2495.82">You know.</span></p>
+        <p><span class="tl-s" data-s="2497.48" data-e="2498.76">We have no idea.</span> <span class="tl-s" data-s="2499.70" data-e="2500.44">You do, though.</span> <span class="tl-s" data-s="2501.42" data-e="2504.82">Jesus, you know what we need and you&#x27;re bound to us.</span> <span class="tl-s" data-s="2505.02" data-e="2509.24">And so, Lord, we might not be able to know where we&#x27;re going or how it&#x27;s all going to turn out.</span> <span class="tl-s" data-s="2510.00" data-e="2516.04">But, Lord, we know you&#x27;re with us and we know that bond of love can never be broken.</span> <span class="tl-s" data-s="2517.20" data-e="2519.86">And so, I pray you would build our confidence in that, Lord Jesus.</span> <span class="tl-s" data-s="2520.64" data-e="2522.22">And it&#x27;s in your mighty name we pray.</span> <span class="tl-s" data-s="2523.28" data-e="2523.54">Amen.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Live sermon feed: spotlight from /api/sermons, browsable archive from
+  // /api/sermons/search. Static fallback list stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function row(it) {
+      var meta = [it.speaker, fmtDate(it.date)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      var titleHtml = esc(it.title);
+      var tUrl = it.guid && transcriptMap[it.guid];
+      if (tUrl) titleHtml = '<a href="' + esc(tUrl) + '">' + titleHtml + "</a>";
+      return '<div class="sermon"><div><h3>' + titleHtml + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    fetch("/api/sermons?v=3")
+      .then(function (res) { if (!res.ok) throw new Error("feed " + res.status); return res.json(); })
+      .then(function (data) {
+        var spot = document.querySelector("[data-series-spotlight]");
+        if (data && data.series && spot) {
+          var s = data.series;
+          var art = spot.querySelector("[data-series-art]");
+          if (art && s.artwork) { art.src = s.artwork; } else if (art) { art.style.display = "none"; }
+          var nm = spot.querySelector("[data-series-name]");
+          if (nm) nm.textContent = s.name;
+          var bl = spot.querySelector("[data-series-blurb]");
+          if (bl) bl.textContent = s.blurb;
+          spot.hidden = false;
+        }
+      })
+      .catch(function () { /* spotlight stays hidden */ });
+
+    var PER = 10;
+    var state = { q: "", speaker: "", series: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var speakerSel = document.querySelector("[data-sermons-speaker]");
+    var seriesSel = document.querySelector("[data-sermons-series]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No messages found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(speakerSel, data.facets.speakers || [], function (e) { return e.name; }, function (e) { return e.name + " (" + e.count + ")"; });
+        fill(seriesSel, data.facets.series || [], function (e) { return e.name; }, function (e) { return e.name + " (" + e.count + ")"; });
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.speaker || data.series || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.speaker) parts.push("by " + data.speaker);
+          if (data.series) parts.push("in " + data.series);
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " result" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " messages";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/sermons/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.speaker ? "&speaker=" + encodeURIComponent(state.speaker) : "") +
+        (state.series ? "&series=" + encodeURIComponent(state.series) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () { /* keep current list on error */ });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.speaker = ""; state.series = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (speakerSel) speakerSel.value = "";
+      if (seriesSel) seriesSel.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    function bindSelect(sel, key) {
+      if (!sel) return;
+      sel.addEventListener("change", function () {
+        state[key] = sel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    bindSelect(speakerSel, "speaker");
+    bindSelect(seriesSel, "series");
+    bindSelect(monthSel, "month");
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: https://hub.centergilbert.com/media/acts-9-1-19-1 -->
+</body>
+</html>
