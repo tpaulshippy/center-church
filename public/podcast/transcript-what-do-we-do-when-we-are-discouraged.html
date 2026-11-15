@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What Do We Do When We Are Discouraged? — Podcast Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Fixed on Jesus: conversations beyond Sunday mornings from Center Church in Gilbert, AZ — listen on Spotify, Apple Podcasts, and YouTube." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=18" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a href="/sermons">Sermons</a></li>
+              <li><a class="active" href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/podcast">&larr; All podcast episodes</a>
+          <h1 class="display-lg">What Do We Do When We Are Discouraged?</h1>
+          <p class="transcript-meta">2024-10-09 · 25:53</p>
+          <p class="transcript-desc">Welcome to FIXED ON JESUS, a podcast brought to you by Center Church in Gilbert, Arizona. Speaking to you today are Rich Richardson &amp; Mark Johnson Jr. Production by Heather Corbitt **SHOW NOTES** Questions asked in this episode: Is discouragement normal? Is discouragement always an attack from the e</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/e750e370/podcast/play/92790926/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-9-9%2F6dbe9ec5-8058-5a3c-0e60-11861efd8f1b.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="0.61" data-e="3.43">It&#x27;s not some mysterious, the universe has a purpose kind of thing.</span></p>
+        <p><span class="tl-s" data-s="4.76" data-e="27.80">It&#x27;s this discouragement right here, as you fight against it and look to trust the Lord and stop believing your heart and stop trusting your feelings, as you do that and continue to press into the Lord and other people and refuse to isolate yourself, that is conforming you more and more into The image or the likeness of Jesus Christ.</span></p>
+        <p><span class="tl-s" data-s="42.93" data-e="45.34">This is fixed on Jesus.</span></p>
+        <p><span class="tl-s" data-s="65.35" data-e="67.68">Hey everybody, welcome to Fixed on Jesus.</span> <span class="tl-s" data-s="67.77" data-e="71.33">This is a podcast of Center Church in Gilbert, Arizona.</span> <span class="tl-s" data-s="71.72" data-e="72.35">My name is Rich.</span> <span class="tl-s" data-s="73.35" data-e="75.22">Joining me is Mark Johnson Jr.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="75.69" data-e="76.16">Hello, Rich.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="76.91" data-e="77.33">Hello, Mark.</span> <span class="tl-s" data-s="77.51" data-e="79.28">And behind the glass we have Heather Corbett.</span> <span class="tl-s" data-s="80.13" data-e="81.59">She waved this time, she didn&#x27;t say anything.</span> <span class="tl-s" data-s="82.11" data-e="84.93">We&#x27;re coming to you from Gilbert, Arizona, which is in the west.</span> <span class="tl-s" data-s="85.03" data-e="89.43">And you know, much like The wild stagecoaches from the past.</span> <span class="tl-s" data-s="89.52" data-e="92.25">Sometimes you hop on this and you never know where you&#x27;re going to end.</span> <span class="tl-s" data-s="92.65" data-e="93.76">You know, it&#x27;s going to be bumpy.</span> <span class="tl-s" data-s="93.86" data-e="97.12">You know, it&#x27;s going to, it&#x27;s going to be scenic, but you know, it&#x27;s going to be eventful.</span> <span class="tl-s" data-s="97.23" data-e="104.39">And so that&#x27;s kind of what we&#x27;re doing here is we are, uh, we&#x27;re on a stagecoach to who knows where, and the air conditioner&#x27;s broken in this room that we&#x27;re in right now.</span> <span class="tl-s" data-s="104.53" data-e="107.41">And so trust me, it&#x27;s harder for us than you.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="107.73" data-e="108.71">Oh, that&#x27;s right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="108.85" data-e="110.15">What are we talking about today, Mark?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="110.38" data-e="114.47">Well, there&#x27;s a lot of things we could talk about, but this one specifically.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="114.87" data-e="115.00">Yes.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="115.52" data-e="116.01">Hits home.</span> <span class="tl-s" data-s="116.40" data-e="117.59">Hopefully it hits home for others.</span> <span class="tl-s" data-s="118.65" data-e="120.68">What do we do when we&#x27;re discouraged?</span> <span class="tl-s" data-s="120.75" data-e="121.47">Is it normal?</span></p>
+        <p><span class="tl-s" data-s="122.67" data-e="124.41">You know, what do we do when we&#x27;re discouraged?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="125.16" data-e="134.84">Oh man, I mean, [Speaker B] I know big umbrella question, huge [Speaker A] question, but every Christian [Speaker B] and the air just kicked on too.</span> <span class="tl-s" data-s="135.01" data-e="137.26">So I didn&#x27;t hear less discouraged.</span> <span class="tl-s" data-s="137.26" data-e="141.11">Every Christian, every Christian goes through time and seasons of discouragement, right?</span> <span class="tl-s" data-s="141.13" data-e="155.95">So I think one of the big mistakes is that people can think that if I&#x27;m discouraged that. somehow I lack faith, or I am somehow not pleasing to the Lord.</span> <span class="tl-s" data-s="156.06" data-e="161.99">You know, life just sometimes goes sideways, right?</span> <span class="tl-s" data-s="161.99" data-e="163.51">Life goes sideways.</span> <span class="tl-s" data-s="163.51" data-e="165.15">Read Ecclesiastes, read Job.</span> <span class="tl-s" data-s="165.20" data-e="165.23">Hmm.</span> <span class="tl-s" data-s="165.23" data-e="168.66">You&#x27;ve got those 2 books, you got Lamentations.</span> <span class="tl-s" data-s="168.66" data-e="172.44">Life goes sideways and pops us in the mouth and wants to grind us into powder.</span></p>
+        <p><span class="tl-s" data-s="172.50" data-e="179.25">And we&#x27;re not— we wouldn&#x27;t be human if we weren&#x27;t discouraged by some of the things that life Brings our way, right?</span> <span class="tl-s" data-s="179.42" data-e="185.11">And so, it&#x27;s a normal part of existence, and it&#x27;s a normal part of Christian existence.</span> <span class="tl-s" data-s="185.38" data-e="193.12">And so, that, like, I think sometimes people can be discouraged because they&#x27;re discouraged.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="193.15" data-e="193.70">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="193.70" data-e="195.47">Which, I don&#x27;t— I mean, discouragement is part of life.</span> <span class="tl-s" data-s="195.48" data-e="200.44">I mean, I don&#x27;t want anybody to be there for any length of time, but it&#x27;s part of life.</span> <span class="tl-s" data-s="200.44" data-e="202.21">You know, it&#x27;s not like you failed.</span> <span class="tl-s" data-s="202.22" data-e="204.18">It&#x27;s Just like, okay, you&#x27;re human, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="204.23" data-e="204.47">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="204.69" data-e="205.43">It&#x27;s just like getting sick.</span> <span class="tl-s" data-s="205.99" data-e="206.76">All of us get sick.</span> <span class="tl-s" data-s="207.51" data-e="210.81">You know, we all have, we&#x27;re all, and we&#x27;re all, we all get sick.</span> <span class="tl-s" data-s="210.81" data-e="213.09">And so like, okay, how do we deal with that?</span> <span class="tl-s" data-s="213.12" data-e="215.03">And so discouragement is one of those things.</span> <span class="tl-s" data-s="215.03" data-e="223.38">And so I think there&#x27;s a lot of Christians who sort of want to deny that they&#x27;re discouraged because they feel like it&#x27;s unbiblical to be discouraged.</span> <span class="tl-s" data-s="223.38" data-e="226.26">And to them, I would say, that&#x27;s a lie.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="226.26" data-e="226.32">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="226.32" data-e="232.16">And I say that&#x27;s a lie, Because of the Psalms.</span> <span class="tl-s" data-s="233.23" data-e="233.44">I mean, gracious.</span> <span class="tl-s" data-s="233.46" data-e="234.56">150 Psalms.</span> <span class="tl-s" data-s="234.74" data-e="240.76">Of the 150 Psalms, more than one-third, 60 to 65, have an element of lament in them.</span> <span class="tl-s" data-s="240.76" data-e="244.07">Another way to say that is they complain.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="244.07" data-e="244.23">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="244.23" data-e="246.79">They complain to the Lord.</span> <span class="tl-s" data-s="246.79" data-e="250.43">And so, man, I mean, they complain to the Lord about the things that they&#x27;re going through.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="250.48" data-e="250.73">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="251.01" data-e="253.97">And so, it&#x27;s not godly to deny how you&#x27;re feeling.</span> <span class="tl-s" data-s="253.99" data-e="257.83">Now, we don&#x27;t want to invest our feelings with ultimate authority.</span> <span class="tl-s" data-s="258.39" data-e="262.96">If we do that, you know, it&#x27;s like following your heart, and that&#x27;s the worst thing you can do.</span> <span class="tl-s" data-s="262.96" data-e="269.02">But we don&#x27;t want to invest our feelings with ultimate authority, but at the same time, we don&#x27;t want to ignore our feelings.</span> <span class="tl-s" data-s="269.04" data-e="280.33">And so we want to make sure that the discouragement that we feel, we just want to acknowledge that, recognize that, tell people that, and just be aware, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="280.36" data-e="280.84">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="280.92" data-e="281.22">It&#x27;s normal.</span> <span class="tl-s" data-s="281.30" data-e="281.64">It&#x27;s normal.</span> <span class="tl-s" data-s="281.64" data-e="292.43">And so I see this a lot for within— I see discouragement a lot for people who are going through illnesses, or life situations they didn&#x27;t anticipate.</span> <span class="tl-s" data-s="292.52" data-e="292.83">Right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="293.00" data-e="293.81">So the surprise element.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="293.97" data-e="294.86">Yeah, there&#x27;s surprise.</span> <span class="tl-s" data-s="295.50" data-e="300.15">Like, I didn&#x27;t think my kids would walk away from the Lord like they did.</span> <span class="tl-s" data-s="300.15" data-e="300.34">I&#x27;m discouraged.</span> <span class="tl-s" data-s="300.47" data-e="304.49">Or what did I do wrong because my kids aren&#x27;t Christians?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="304.49" data-e="304.64">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="304.64" data-e="309.67">Or why am I being punished by God because I have fibromyalgia?</span> <span class="tl-s" data-s="309.67" data-e="312.35">Or why won&#x27;t the Lord save my parents?</span> <span class="tl-s" data-s="312.35" data-e="314.32">Why can&#x27;t I hold a job?</span> <span class="tl-s" data-s="314.32" data-e="316.55">That I like, like all kinds of stuff, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="316.58" data-e="316.66">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="316.73" data-e="317.18">We&#x27;re human.</span> <span class="tl-s" data-s="317.24" data-e="323.86">And so, to deny that those things aren&#x27;t hard or that they don&#x27;t affect us is just trying— is denying our humanity.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="323.89" data-e="326.86">Yeah, there&#x27;s no reason to cover it up or act like it doesn&#x27;t exist.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="327.00" data-e="327.20">No, right.</span> <span class="tl-s" data-s="327.20" data-e="332.14">In fact, one of the worst things you can do is to isolate when you&#x27;re discouraged.</span> <span class="tl-s" data-s="332.16" data-e="334.78">In fact, that may be the worst.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="334.81" data-e="334.95">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="334.95" data-e="341.20">You isolate when you&#x27;re discouraged, and what you&#x27;re doing is you&#x27;re setting yourself up for failure.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="341.39" data-e="346.19">Yeah, those thoughts and maybe even unhelpful thoughts grow in that isolation.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="346.19" data-e="346.53">Absolutely.</span> <span class="tl-s" data-s="346.53" data-e="348.30">When you isolate yourself from other people.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="348.30" data-e="350.95">Yeah, you need the perspective of others.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="350.95" data-e="354.14">You do, of Christians and mature Christians, not everybody.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="354.24" data-e="354.30">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="354.46" data-e="361.80">And so, but, and you know, you can be isolated from other people in a room full of people because there could be no— [Speaker B] New York City.</span> <span class="tl-s" data-s="361.85" data-e="367.57">Or here even, but you could be, people might not, none of them might not know what you&#x27;re going through, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="367.57" data-e="367.73">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="367.73" data-e="378.36">And so, like, you gotta be known, you gotta know and be known by people so that they can, like, they can understand why this is going on.</span> <span class="tl-s" data-s="378.63" data-e="378.66">Right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="378.73" data-e="379.34">Right.</span> <span class="tl-s" data-s="379.34" data-e="384.32">So is discouragement always an attack from the evil one or his minions?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="384.74" data-e="385.19">No, definitely not.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="385.20" data-e="385.73">Can it be?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="385.75" data-e="388.46">It could be, but most of the time, I don&#x27;t think it is.</span> <span class="tl-s" data-s="389.52" data-e="392.36">Most of the time discouragement is life situation stuff.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="392.36" data-e="392.50">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="392.50" data-e="392.73">Right?</span> <span class="tl-s" data-s="392.73" data-e="398.36">There are times where the evil one Affects us, right?</span> <span class="tl-s" data-s="398.38" data-e="400.52">And so absolutely, it&#x27;s a normal part of life.</span> <span class="tl-s" data-s="400.53" data-e="414.08">And it&#x27;s a— we need to be equipped because when we suffer, and all of us will suffer, if we aren&#x27;t equipped to expect suffering and to understand that that is going to discourage us, we will fall and falter.</span> <span class="tl-s" data-s="414.08" data-e="414.32">And that&#x27;s dangerous.</span> <span class="tl-s" data-s="414.39" data-e="416.31">And so we don&#x27;t want to isolate ourselves.</span> <span class="tl-s" data-s="416.40" data-e="418.76">We want to let other people know.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="418.82" data-e="419.00">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="419.00" data-e="419.21">Right?</span> <span class="tl-s" data-s="419.21" data-e="422.44">We just want to let other people know how we&#x27;re doing, right?</span> <span class="tl-s" data-s="422.44" data-e="422.94">Right.</span> <span class="tl-s" data-s="422.94" data-e="430.34">And so, when somebody you trust and somebody you know is wise asks you how you&#x27;re doing and you say great when you&#x27;re not doing great, that&#x27;s a lie.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="430.41" data-e="431.33">Not helpful either.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="431.42" data-e="432.44">And it&#x27;s not helpful, right?</span> <span class="tl-s" data-s="432.49" data-e="438.02">You need someone to come alongside and encourage you, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="438.07" data-e="438.10">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="438.10" data-e="444.01">Sometimes we&#x27;re like— one of the things we need to know is like, we need to know the kinds of situations that makes us discouraged, right?</span> <span class="tl-s" data-s="444.01" data-e="447.05">All of us have different things that make us discouraged.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="447.05" data-e="447.33">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="447.45" data-e="461.80">We need to be aware of that so that we know when we&#x27;re walking into a situation that&#x27;s tempting or when we are going to face something that&#x27;s going to be hard so that we can know what to expect.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="461.80" data-e="461.88">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="461.96" data-e="462.10">Right.</span> <span class="tl-s" data-s="462.22" data-e="470.56">And so that&#x27;s a real powerful thing, just to know yourself and know that like this situation, if it goes south, will discourage me.</span> <span class="tl-s" data-s="470.56" data-e="476.09">And I need to let someone else know that I&#x27;m walking into a situation like that.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="476.67" data-e="477.42">Yeah.</span> <span class="tl-s" data-s="477.60" data-e="490.71">Would you say that discouragement could be an indication of something needing to To be changed in your life or your habits or— [Speaker A] It could be, or it could just be that you&#x27;re human and you&#x27;re going through hard things, right?</span> <span class="tl-s" data-s="490.74" data-e="490.81">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="491.00" data-e="495.82">I mean, reasons for discouragement are as varied as people on the planet.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="495.82" data-e="495.95">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="495.95" data-e="504.96">And I think that&#x27;s one of the reasons it&#x27;s important to know other people and let other people know you, right?</span> <span class="tl-s" data-s="504.98" data-e="507.49">I remember years ago, a friend of— [Speaker B] Oh, I love a good story.</span> <span class="tl-s" data-s="507.51" data-e="512.91">This one&#x27;s not gonna be great &#x27;cause I can&#x27;t give names and— Oh, [Speaker B] that&#x27;s okay.</span> <span class="tl-s" data-s="512.91" data-e="513.70">Keeping the identities.</span> <span class="tl-s" data-s="513.70" data-e="521.89">Yeah, but years and years ago, there was someone who showed up to our church that had wronged me in a personal way years ago.</span> <span class="tl-s" data-s="522.03" data-e="523.82">And they showed back up for an event or whatever.</span> <span class="tl-s" data-s="523.82" data-e="529.15">And I had a friend call me just to check on me, just to see how I was doing.</span> <span class="tl-s" data-s="529.74" data-e="530.08">Hmm.</span> <span class="tl-s" data-s="530.14" data-e="541.87">Because he knew that a temptation of mine is, it&#x27;s a temptation when people who I&#x27;ve trusted in the past betray or, you know, go against their word or whatever, right?</span> <span class="tl-s" data-s="541.93" data-e="542.72">Or treat unfairly.</span></p>
+        <p><span class="tl-s" data-s="542.72" data-e="544.06">And so he knew that that was a temptation for me.</span> <span class="tl-s" data-s="544.16" data-e="548.03">And he called me and asked me how I was doing.</span> <span class="tl-s" data-s="548.16" data-e="549.86">I really appreciated that.</span> <span class="tl-s" data-s="549.86" data-e="550.82">And I&#x27;ll never forget it.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="550.82" data-e="551.00">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="551.14" data-e="552.79">And so everybody&#x27;s tempted in different ways.</span> <span class="tl-s" data-s="552.81" data-e="560.36">And so like, I think, you know, when it comes to discouragement, I think it&#x27;s helpful just to be living in the Psalms on a regular— I read a Psalm a day.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="560.36" data-e="560.97">All the Psalms.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="560.98" data-e="562.52">All the time.</span> <span class="tl-s" data-s="562.83" data-e="562.97">Yeah.</span> <span class="tl-s" data-s="563.39" data-e="568.34">I mean, because it speaks to the whole experience of of mankind, right?</span> <span class="tl-s" data-s="568.43" data-e="574.96">It&#x27;s not this, like, sometimes people can grow up in church settings where to acknowledge a problem gives it power.</span> <span class="tl-s" data-s="575.01" data-e="577.80">It seems like it gives it power.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="578.13" data-e="579.98">That&#x27;s the world would say that too.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="579.98" data-e="580.38">And that&#x27;s dumb.</span> <span class="tl-s" data-s="580.38" data-e="585.54">Or to assume that every problem is a lack of faith or sin.</span> <span class="tl-s" data-s="585.54" data-e="586.25">That&#x27;s dumb too.</span> <span class="tl-s" data-s="586.25" data-e="590.80">And so like, sometimes we have to remember we live in a fallen world.</span> <span class="tl-s" data-s="590.80" data-e="593.75">That we&#x27;re the closest to hell we&#x27;ll ever get right now.</span> <span class="tl-s" data-s="593.92" data-e="595.67">And so we should expect— Praise God for that.</span> <span class="tl-s" data-s="595.70" data-e="595.85">Amen.</span> <span class="tl-s" data-s="595.85" data-e="600.12">We should expect things to be hard here, and it&#x27;s going to be harder than we think.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="600.12" data-e="600.13">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="600.20" data-e="610.57">Like, for example, when you read the Psalms, there&#x27;s a ton of places that we see the psalmist saying things that are quite, quite frankly uncomfortable.</span> <span class="tl-s" data-s="610.62" data-e="614.07">Like Psalm 13, how long, O Lord, will you forget me forever?</span> <span class="tl-s" data-s="614.54" data-e="617.01">How long will you hide your face from me?</span> <span class="tl-s" data-s="617.10" data-e="625.42">How long must I take counsel in my soul, verse 2 says, and have sorrow in my heart all the day?</span> <span class="tl-s" data-s="625.81" data-e="626.60">How long?</span> <span class="tl-s" data-s="626.78" data-e="630.09">Shall my enemy be exalted over me?</span> <span class="tl-s" data-s="630.09" data-e="633.28">Consider and answer me, O Lord my God.</span> <span class="tl-s" data-s="633.28" data-e="638.97">Light up my eyes, lest I sleep the sleep of death.</span> <span class="tl-s" data-s="639.00" data-e="639.34">Right?</span> <span class="tl-s" data-s="639.34" data-e="642.28">So here&#x27;s David.</span></p>
+        <p><span class="tl-s" data-s="642.30" data-e="643.60">David&#x27;s not pretending that this doesn&#x27;t hurt.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="643.60" data-e="643.66">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="643.66" data-e="651.59">And he&#x27;s not saying, I&#x27;m going to be a good soldier and have faith and I&#x27;m going to be okay and this will be fine and God has a purpose and he&#x27;s sovereign and all that kind of stuff.</span> <span class="tl-s" data-s="651.78" data-e="652.49">He&#x27;s not doing that.</span> <span class="tl-s" data-s="652.52" data-e="659.39">He&#x27;s in a raw way, calling out on the Lord and saying, what the heck is going on?</span> <span class="tl-s" data-s="659.49" data-e="660.64">And why don&#x27;t you intervene?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="661.99" data-e="662.10">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="662.47" data-e="666.31">I call on you and you&#x27;re not answering.</span> <span class="tl-s" data-s="666.39" data-e="666.62">Right?</span> <span class="tl-s" data-s="667.11" data-e="669.57">That is, that&#x27;s the, that&#x27;s what this lament is.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="669.62" data-e="669.87">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="670.80" data-e="674.92">What the heck are you doing or not doing?</span> <span class="tl-s" data-s="674.92" data-e="675.08">Right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="675.08" data-e="675.21">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="675.25" data-e="677.15">David complains to the Lord.</span> <span class="tl-s" data-s="677.16" data-e="685.04">See, I think one of the ways we We don&#x27;t feel comfortable processing discouragement through lamentation like that.</span> <span class="tl-s" data-s="685.04" data-e="690.10">We need to be, just to be honest with the Lord about how we&#x27;re feeling, right?</span> <span class="tl-s" data-s="690.12" data-e="697.54">Because if we go to him with our complaints and our discouragement, we&#x27;re at least saying, I trust you enough to hear me and do something about this.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="697.62" data-e="697.72">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="697.72" data-e="701.61">Even if you&#x27;re not doing it the way I think or how it should go or any of that stuff.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="701.61" data-e="701.78">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="701.78" data-e="709.11">I mean, we need to just recognize, because our temptation is, to complain to other people and, you know, just pray vanilla prayers to God.</span> <span class="tl-s" data-s="709.11" data-e="713.06">We need to flip that around and say, I&#x27;m going to complain to the Lord.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="713.16" data-e="713.33">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="713.33" data-e="722.89">You know, obviously we can just speak to other people when we&#x27;re struggling, but, you know, it&#x27;s not wrong to complain to the Lord when you&#x27;re suffering.</span> <span class="tl-s" data-s="722.89" data-e="725.78">In fact, that&#x27;s the prescription.</span> <span class="tl-s" data-s="725.85" data-e="731.96">That&#x27;s one of the prescriptions, because to lament is the first step in trusting the Lord again when When you&#x27;re suffering.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="731.96" data-e="732.05">Yeah.</span> <span class="tl-s" data-s="732.09" data-e="732.65">Love it.</span> <span class="tl-s" data-s="733.24" data-e="734.52">Sorry, we got a question.</span> <span class="tl-s" data-s="734.52" data-e="734.86">What&#x27;s up, Heather?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="734.91" data-e="742.94">So I&#x27;m hearing you talk about this and I&#x27;m wondering about disappointment versus discouragement.</span> <span class="tl-s" data-s="742.94" data-e="749.53">Like, I hear discouragement being said, but some of it sounds more like it&#x27;s possible disappointment.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="749.53" data-e="750.52">It&#x27;s both, I think.</span> <span class="tl-s" data-s="750.55" data-e="754.35">I mean, because— [Speaker C] Because there&#x27;s a difference between those 2 things, yes?</span> <span class="tl-s" data-s="754.88" data-e="760.10">Or— Yeah, like the way I think about it is life is full of disappointment.</span> <span class="tl-s" data-s="760.32" data-e="769.12">And it&#x27;s full of ways that we thought it would go one way, it goes another way.</span> <span class="tl-s" data-s="769.48" data-e="770.99">That&#x27;s disappointing.</span> <span class="tl-s" data-s="771.08" data-e="772.72">But then disappointment ferments into discouragement and depression, right?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="772.72" data-e="772.93">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="772.95" data-e="775.64">Because then it&#x27;s like, that didn&#x27;t work.</span> <span class="tl-s" data-s="775.74" data-e="780.87">And that, I mean, like, and so we&#x27;re going— [Speaker C] You lose hope.</span> <span class="tl-s" data-s="780.98" data-e="780.99">Absolutely.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="781.06" data-e="781.88">You lose courage.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="782.84" data-e="783.10">Absolutely.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="783.14" data-e="783.75">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="784.01" data-e="785.63">We&#x27;re going to be bombarded with disappointments.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="785.63" data-e="788.26">I think that&#x27;s a Vital distinction.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="788.26" data-e="790.00">Yeah, we&#x27;re going to be bombarded with disappointments.</span> <span class="tl-s" data-s="790.03" data-e="797.30">And as we grow, we&#x27;ll be discouraged less and less by them, but we&#x27;re going to be bombarded with disappointments.</span> <span class="tl-s" data-s="797.33" data-e="805.55">Like, if we think that the Lord is going to do— is only going to do those things in our lives that make sense, we have no idea what we&#x27;re talking about.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="805.66" data-e="806.14">Love it.</span> <span class="tl-s" data-s="806.24" data-e="806.83">Yeah, great question.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="806.93" data-e="808.71">Yeah, it&#x27;s a great question.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="808.79" data-e="818.83">Just to follow up, you spoke of your friend who encouraged you, and that probably was a faithful model, but Let&#x27;s say you have a friend or a family member who&#x27;s discouraged.</span> <span class="tl-s" data-s="818.83" data-e="820.98">What should you do to help them?</span> <span class="tl-s" data-s="820.98" data-e="824.87">How can you be there for them?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="824.91" data-e="826.28">What could I do to help them?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="826.28" data-e="826.38">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="826.38" data-e="830.47">So I think that&#x27;s a great question.</span> <span class="tl-s" data-s="830.47" data-e="841.61">One of the things we can do is just recognize that sometimes discouragement can be so deep, the person, what the person needs is not answers, but just companionship.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="841.65" data-e="841.78">Yeah.</span> <span class="tl-s" data-s="841.78" data-e="842.12">Friendship, companionship.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="842.12" data-e="843.31">Yeah, right.</span> <span class="tl-s" data-s="843.31" data-e="846.94">Like, let&#x27;s say somebody experiences the tragic death of a loved one.</span> <span class="tl-s" data-s="846.94" data-e="848.67">There&#x27;s no answers then.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="848.70" data-e="849.02">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="849.26" data-e="852.67">You show up and you weep and you grieve and you&#x27;re just there, right?</span> <span class="tl-s" data-s="852.80" data-e="860.59">So many times when I&#x27;ve gone to the hospital with people who are dying and the family members around them, there&#x27;s nothing to say.</span> <span class="tl-s" data-s="860.59" data-e="866.22">You know, the moment— that&#x27;s not the moment for answers.</span> <span class="tl-s" data-s="866.45" data-e="867.99">That&#x27;s a moment for prayer and companionship.</span> <span class="tl-s" data-s="867.99" data-e="868.07">Right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="868.07" data-e="868.18">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="868.28" data-e="887.17">And so, I also like, and you don&#x27;t want to jump to this quickly, but if someone&#x27;s discouraged and I know, and they&#x27;re friends and, you know, I&#x27;ve grieved with them and I really understand where they&#x27;re coming from, what I&#x27;m going to want to do is subtly try to help them identify if there&#x27;s any lies they&#x27;re believing.</span> <span class="tl-s" data-s="887.17" data-e="887.38">Right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="887.41" data-e="891.15">The theological side of it, or what they&#x27;re telling themselves.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="891.25" data-e="893.45">What they&#x27;re telling themselves, right?</span> <span class="tl-s" data-s="893.51" data-e="899.79">Like, what are they telling themselves That is causing them to be discouraged, right?</span> <span class="tl-s" data-s="900.58" data-e="909.66">Because sometimes they&#x27;re believing this lie that, you know, they might believe, because I trust the Lord, I should have everything go well.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="909.66" data-e="909.82">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="909.88" data-e="910.43">Right?</span> <span class="tl-s" data-s="910.60" data-e="911.26">That&#x27;s a lie.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="911.34" data-e="911.63">Yeah.</span> <span class="tl-s" data-s="911.73" data-e="925.67">Speaking of lies, I think for me personally, one of the lies I find myself thinking about, or one of the things I think about, is when I find myself discouraged, it&#x27;s never I mean, it can be, but it&#x27;s never over something radically bad that happened.</span> <span class="tl-s" data-s="925.87" data-e="929.63">I feel like I almost don&#x27;t have a right to be discouraged.</span> <span class="tl-s" data-s="929.63" data-e="937.15">Like, I almost feel guilty that I&#x27;m discouraged over something that seems so small in comparison to some of the things other people have— Sure.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="937.21" data-e="938.26">To [Speaker B] be discouraged over.</span> <span class="tl-s" data-s="938.29" data-e="938.45">Right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="938.45" data-e="941.70">And that almost just makes it worse.</span> <span class="tl-s" data-s="942.78" data-e="944.14">I&#x27;m like, why am I discouraged about this?</span> <span class="tl-s" data-s="944.14" data-e="945.21">Like, wrong expectations or even disappointment.</span> <span class="tl-s" data-s="945.33" data-e="949.09">I don&#x27;t know what it is.</span> <span class="tl-s" data-s="949.09" data-e="952.29">I&#x27;m just like, why do I feel this way?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="952.70" data-e="955.24">Yeah, I mean, it&#x27;s a deadly trap to compare ourselves to others.</span> <span class="tl-s" data-s="955.29" data-e="962.97">Either what other people receive or don&#x27;t receive, what we receive or don&#x27;t receive.</span> <span class="tl-s" data-s="963.07" data-e="967.25">Like, if we compare ourselves to others, we will always, always fail.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="967.25" data-e="967.45">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="967.48" data-e="970.72">And so, when something is discouraging, we should just say it.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="970.83" data-e="971.07">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="971.25" data-e="975.28">You know, and not worry about like how the other person hears it, right?</span> <span class="tl-s" data-s="975.75" data-e="979.04">You know, like it, It&#x27;s— we can&#x27;t— in some ways we can&#x27;t help that.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="979.04" data-e="979.20">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="979.20" data-e="984.40">We just need to be honest with where we are and just be able to say, hey, this is where I am.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="984.40" data-e="984.66">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="984.66" data-e="992.14">Because if you&#x27;re not honest and you don&#x27;t tell anybody and they can&#x27;t help you, then there&#x27;s nothing to do except just sort of stuff it down and feel bad.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="992.14" data-e="994.03">Yeah, it&#x27;s almost hard to identify the source.</span> <span class="tl-s" data-s="994.05" data-e="996.33">I don&#x27;t even know if we need to.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="996.38" data-e="1003.73">No, we don&#x27;t always need to, but like a wise friend can help draw that out.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1003.75" data-e="1004.06">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1004.09" data-e="1008.17">You know, and honestly, sometimes the discouragement we face is because physically our bodies need attention.</span> <span class="tl-s" data-s="1008.17" data-e="1011.01">Maybe we&#x27;re not getting enough sleep.</span> <span class="tl-s" data-s="1011.01" data-e="1012.41">Maybe we&#x27;re not eating right.</span> <span class="tl-s" data-s="1012.44" data-e="1013.55">Maybe we&#x27;re not exercising.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1013.89" data-e="1013.95">Hydration.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1014.11" data-e="1018.71">Maybe, yeah, all kinds of things like that to where maybe we&#x27;re sick and we don&#x27;t even know it.</span> <span class="tl-s" data-s="1018.71" data-e="1021.95">And so like, we are connected body and soul.</span> <span class="tl-s" data-s="1022.32" data-e="1029.14">And so when our bodies are bad, oftentimes our souls are affected.</span> <span class="tl-s" data-s="1029.14" data-e="1031.13">And so that&#x27;s just the way it goes, right?</span> <span class="tl-s" data-s="1031.15" data-e="1038.42">It&#x27;s not always only, you know, some dis— I mean, it&#x27;s disappointment a lot, as Heather pointed out, but there are multiple factors.</span> <span class="tl-s" data-s="1038.51" data-e="1042.67">And so, a wise friend is going to try to seek to draw those out.</span> <span class="tl-s" data-s="1042.72" data-e="1047.47">I think what&#x27;s unhelpful is when a friend comes in and gives all kinds of just empty platitudes.</span> <span class="tl-s" data-s="1047.55" data-e="1048.25">Like when something bad happens.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1048.38" data-e="1049.06">You&#x27;ll be okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1049.36" data-e="1050.10">You&#x27;ll be fine.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1050.24" data-e="1051.40">Trust the Lord.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1051.45" data-e="1053.93">God will work this out for the best.</span> <span class="tl-s" data-s="1053.93" data-e="1054.75">Trust the Lord.</span> <span class="tl-s" data-s="1054.82" data-e="1054.98">God&#x27;s sovereign.</span> <span class="tl-s" data-s="1054.98" data-e="1059.39">That&#x27;s one— those, all those things are worthless when someone&#x27;s really struggling.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1059.39" data-e="1060.42">In the moment, yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1060.42" data-e="1066.31">Because it, It sounds like empty words, even though the person doesn&#x27;t mean it that way.</span> <span class="tl-s" data-s="1066.31" data-e="1067.00">It sounds like empty words.</span> <span class="tl-s" data-s="1067.00" data-e="1068.60">And that&#x27;s just not helpful.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1068.60" data-e="1069.12">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1069.17" data-e="1078.40">And so I think what we need to do is be slow to speak and quick to listen here, and quick to just draw out of the person.</span> <span class="tl-s" data-s="1078.40" data-e="1086.18">Say someone&#x27;s discouraged, like, tell me why, help me understand what&#x27;s going on, instead of just coming in with answers all the time or platitudes, right?</span> <span class="tl-s" data-s="1086.18" data-e="1086.28">Yeah.</span> <span class="tl-s" data-s="1086.28" data-e="1101.66">And so it&#x27;s far more important for us if we&#x27;re gonna come and try to help somebody, to try to come with a desire to understand, and in some ways sympathize or empathize and experience that disappointment with them.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1101.69" data-e="1101.77">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1101.77" data-e="1108.21">And then point them to ways in which they can lay hold of the promises of God.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1108.97" data-e="1109.18">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1109.68" data-e="1110.52">Right?</span> <span class="tl-s" data-s="1111.14" data-e="1118.77">Sometimes there are people who just need to be reminded that God is all-powerful.</span> <span class="tl-s" data-s="1118.96" data-e="1121.14">And that, like, this has been helpful for me.</span> <span class="tl-s" data-s="1121.14" data-e="1121.67">Romans 8:28-29.</span> <span class="tl-s" data-s="1121.67" data-e="1130.10">And we know that for those who love God, all things work together for good, for those who are called according to his purpose.</span> <span class="tl-s" data-s="1130.10" data-e="1140.45">Then he goes on, for those whom he foreknew, he also predestined to be conformed to the image of his Son, in order that he may be the firstborn among many brothers.</span> <span class="tl-s" data-s="1140.50" data-e="1149.38">So, when we read, and God, you know, we know that for those who love God, all things work together for good.</span> <span class="tl-s" data-s="1149.73" data-e="1158.17">The way they work together for good is by conforming us into his image, the image of the Son, not always where we can understand.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1158.17" data-e="1158.52">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1158.55" data-e="1160.92">Most of the time, probably not, right?</span> <span class="tl-s" data-s="1161.04" data-e="1166.87">All the hardship and troubles and trials and disappointments that we experience come to us as Christians.</span> <span class="tl-s" data-s="1166.89" data-e="1174.11">The Lord allows them to come to us as Christians so that we might grow in our Christlikeness.</span> <span class="tl-s" data-s="1174.11" data-e="1182.41">Now, the good that we experience, we might not even be able to perceive and oftentimes cannot perceive here on earth.</span> <span class="tl-s" data-s="1182.69" data-e="1190.84">But it&#x27;s a good that is incremental and it&#x27;s slow and it is working to conform us into the image of Christ Jesus.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1190.87" data-e="1190.95">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1190.95" data-e="1193.37">That&#x27;s the good it&#x27;s doing.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1193.84" data-e="1194.11">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1194.16" data-e="1199.86">It&#x27;s not some mysterious, the universe has a purpose kind of thing.</span> <span class="tl-s" data-s="1199.86" data-e="1201.83">It&#x27;s this discouragement right here.</span> <span class="tl-s" data-s="1201.86" data-e="1221.05">As you fight against it and look to trust the Lord and stop believing your heart and stop trusting your feelings, as you do that and continue to press into the Lord and other people and refuse to isolate yourself, that is conforming you more and more into the image or the likeness of Jesus Christ.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1221.61" data-e="1222.38">Love it.</span> <span class="tl-s" data-s="1222.49" data-e="1230.36">Can you say, or would you say that conforming of the image, that discouragement can help bear additional fruit in the form of joy?</span> <span class="tl-s" data-s="1230.36" data-e="1231.69">You&#x27;re able to see it more closely.</span> <span class="tl-s" data-s="1231.87" data-e="1236.44">You&#x27;re able to see that you have a lot to be grateful for.</span> <span class="tl-s" data-s="1236.44" data-e="1243.48">And [Speaker A] yeah, I mean, but at the same time, when we&#x27;re discouraged, we shouldn&#x27;t have the expectation of being joyful, right?</span> <span class="tl-s" data-s="1243.59" data-e="1243.82">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1243.86" data-e="1245.77">We just need to fight for that.</span> <span class="tl-s" data-s="1245.77" data-e="1246.38">Yeah.</span> <span class="tl-s" data-s="1246.48" data-e="1246.98">Fight through that, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1246.98" data-e="1251.73">So is there long season— can there be long seasons of discouragement?</span> <span class="tl-s" data-s="1251.78" data-e="1256.57">Is there ever a point where you should worry that your discouragement, it maybe Evolving into something deeper.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1256.62" data-e="1259.04">Yeah, there can be long seasons for sure.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1259.15" data-e="1259.40">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1259.48" data-e="1261.34">I mean, some of it&#x27;s personality.</span> <span class="tl-s" data-s="1261.34" data-e="1264.90">Some people are outgoing, sanguine, you know, they&#x27;re like Tigger, everything&#x27;s gonna be fine.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1264.93" data-e="1265.19">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1265.23" data-e="1271.04">You know, and some people are like Eeyore and everything&#x27;s gonna be, the sky is falling.</span> <span class="tl-s" data-s="1271.18" data-e="1273.17">You gotta know yourself, right?</span> <span class="tl-s" data-s="1273.26" data-e="1277.01">And so sometimes the discouragement is brought on by our disposition.</span> <span class="tl-s" data-s="1277.03" data-e="1278.02">Sometimes the discouragement&#x27;s real.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1278.05" data-e="1278.52">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1278.61" data-e="1278.71">Right?</span> <span class="tl-s" data-s="1278.71" data-e="1284.88">And so most of the time those Eeyore people are doing that to protect themselves from expectations.</span> <span class="tl-s" data-s="1284.88" data-e="1287.19">Not necessarily because that&#x27;s really the way it is.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1287.19" data-e="1287.36">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1287.36" data-e="1290.47">But that said, there can be a season of long disappointment.</span> <span class="tl-s" data-s="1290.47" data-e="1294.22">I mean, read the book of Job.</span> <span class="tl-s" data-s="1294.32" data-e="1294.85">That wasn&#x27;t quick.</span> <span class="tl-s" data-s="1295.20" data-e="1297.28">I mean, that was long.</span> <span class="tl-s" data-s="1297.30" data-e="1297.81">It wasn&#x27;t quick.</span> <span class="tl-s" data-s="1297.94" data-e="1299.75">And God had a purpose through it, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1299.86" data-e="1300.47">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1300.49" data-e="1301.29">And so, yeah.</span> <span class="tl-s" data-s="1301.29" data-e="1310.02">And so, like, I do think, I mean, this is where, again, community is so important to be known and known by someone else.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1310.02" data-e="1310.33">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1310.36" data-e="1310.74">Right?</span> <span class="tl-s" data-s="1310.98" data-e="1314.53">Because none of us are called to carry our burdens alone.</span> <span class="tl-s" data-s="1314.53" data-e="1316.34">We carry our burdens together, all of us.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1316.37" data-e="1316.50">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1316.61" data-e="1316.98">Right.</span> <span class="tl-s" data-s="1317.01" data-e="1319.96">And that means being vulnerable and helping people know where you&#x27;re weak.</span> <span class="tl-s" data-s="1319.96" data-e="1323.26">It means being vulnerable and helping people know where you&#x27;re discouraged.</span> <span class="tl-s" data-s="1323.33" data-e="1327.08">It means being vulnerable to help people know where you&#x27;re apt to be discouraged.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1327.11" data-e="1327.35">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1327.41" data-e="1328.71">So that they can help you.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1328.71" data-e="1328.95">Yeah.</span> <span class="tl-s" data-s="1328.95" data-e="1330.22">I love it.</span> <span class="tl-s" data-s="1330.22" data-e="1339.74">Um, one thing that helped me was, and we all know this type of person, the person that is just full of joy every time you interact with them, like the Lord&#x27;s really bearing fruit in their heart.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1339.75" data-e="1339.99">Yep.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1340.01" data-e="1342.22">And they&#x27;re just very upbeat and positive.</span> <span class="tl-s" data-s="1342.32" data-e="1345.37">Not like the fake positive where they&#x27;re— [Speaker A] No, like real positive.</span> <span class="tl-s" data-s="1345.37" data-e="1346.28">Like real positive.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1346.49" data-e="1346.59">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1346.59" data-e="1348.56">Because they&#x27;re filled with joy.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1348.67" data-e="1349.14">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1349.32" data-e="1352.51">And we all know those people in the body of Christ.</span> <span class="tl-s" data-s="1352.51" data-e="1356.82">And yeah, those seeking out those people to have them encourage you.</span> <span class="tl-s" data-s="1356.86" data-e="1359.82">And some people are gifted in encouraging others just by accident.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1359.82" data-e="1362.10">Just by the way God made them.</span> <span class="tl-s" data-s="1362.16" data-e="1362.80">Yeah, right, exactly.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1362.80" data-e="1364.70">And just seeking out those people was super helpful for me.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1364.70" data-e="1364.71">Totally.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1364.71" data-e="1365.04">In those seasons.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1365.04" data-e="1369.07">And stay away from the people that&#x27;ll suck you dry and leave you as a husk.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1369.07" data-e="1370.25">Yeah, the Sad Sallys.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1370.25" data-e="1377.39">Well, stay away from the people that&#x27;ll suck you dry and leave you like some smoking husk on the side of the road.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1377.42" data-e="1381.90">Yeah, [Speaker A] like those people, don&#x27;t be around those people.</span> <span class="tl-s" data-s="1381.90" data-e="1384.63">And so, like— [Speaker B] Misery loves company.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1384.63" data-e="1384.73">Wow.</span> <span class="tl-s" data-s="1384.73" data-e="1387.22">But sometimes misery, yeah, it does.</span> <span class="tl-s" data-s="1387.22" data-e="1390.44">But man, like when you&#x27;re discouraged, avoid the people who are negative.</span> <span class="tl-s" data-s="1390.44" data-e="1404.63">Avoid the people who are like, who, you know, will just suck you dry of everything you have and, you know, sort of leave you grasping hope, you know.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1405.21" data-e="1406.02">I think I got one more.</span> <span class="tl-s" data-s="1406.02" data-e="1413.41">How should one approach decision-making when they recognize that they&#x27;re in a season of discouragement?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1413.45" data-e="1416.73">I think they need to be very careful.</span> <span class="tl-s" data-s="1416.78" data-e="1417.16">Pray and pray.</span> <span class="tl-s" data-s="1417.25" data-e="1417.34">Yeah.</span> <span class="tl-s" data-s="1417.42" data-e="1420.17">I mean, there&#x27;s a lot of people who believe the mirage of fresh starts.</span> <span class="tl-s" data-s="1420.17" data-e="1424.34">And if I just do this— [Speaker B] Fresh screener on the other side.</span> <span class="tl-s" data-s="1424.34" data-e="1424.44">Yeah.</span> <span class="tl-s" data-s="1424.44" data-e="1430.24">If I just take this job, if I just go to this church, if I just moved to this city, Then everything&#x27;s going to be okay.</span> <span class="tl-s" data-s="1430.24" data-e="1432.08">It&#x27;ll be a fresh start.</span> <span class="tl-s" data-s="1432.08" data-e="1433.56">Actually, the problem is you&#x27;re going there too.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1433.56" data-e="1435.40">With your sin and your struggles.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1435.40" data-e="1436.30">With your sin and problems.</span> <span class="tl-s" data-s="1436.30" data-e="1440.14">And like, there&#x27;s no such thing as a fresh start until you get to heaven.</span> <span class="tl-s" data-s="1440.24" data-e="1444.58">So, you got to deal with the problem.</span> <span class="tl-s" data-s="1444.58" data-e="1448.00">And in fact, it can be amplified and worse in the other location.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1448.00" data-e="1448.44">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1448.44" data-e="1459.66">So, I think big decisions, every big decision should be just put on hold until you&#x27;re out of the season of discouragement, because you can&#x27;t think clearly in discouragement.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1459.70" data-e="1461.44">Yeah, you&#x27;re not thinking clearly.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1461.54" data-e="1462.37">You&#x27;re not yourself.</span> <span class="tl-s" data-s="1462.84" data-e="1463.08">Yeah.</span> <span class="tl-s" data-s="1464.04" data-e="1464.52">That&#x27;s just the truth.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1464.52" data-e="1464.68">Yep.</span> <span class="tl-s" data-s="1464.68" data-e="1464.91">Very helpful.</span> <span class="tl-s" data-s="1464.92" data-e="1465.16">Thank you.</span> <span class="tl-s" data-s="1465.16" data-e="1468.54">That&#x27;s wisdom too, I think.</span> <span class="tl-s" data-s="1468.54" data-e="1470.30">Thank you for answering all those questions.</span> <span class="tl-s" data-s="1470.45" data-e="1474.93">If you want to reach out to us, you can reach us at production@sunnargilbert.com.</span> <span class="tl-s" data-s="1474.94" data-e="1475.86">We just love your emails.</span> <span class="tl-s" data-s="1476.48" data-e="1477.46">We respond to all of them.</span> <span class="tl-s" data-s="1477.46" data-e="1486.38">Check the show notes for references and books and scriptures and all kinds of other things.</span> <span class="tl-s" data-s="1487.15" data-e="1488.19">We love you.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1488.19" data-e="1489.39">See you next time.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1489.41" data-e="1498.76">I can sing to get it started, and Heather can put this in the bloopers.</span> <span class="tl-s" data-s="1498.82" data-e="1504.50">One day we&#x27;re gonna have Rich lead worship, but definitely not me.</span> <span class="tl-s" data-s="1504.66" data-e="1507.07">Legions of fans, thank you.</span> <span class="tl-s" data-s="1507.07" data-e="1508.08">We can sing.</span> <span class="tl-s" data-s="1508.11" data-e="1511.45">All [Speaker A] right, are you ready?</span> <span class="tl-s" data-s="1511.48" data-e="1516.03">The sun will come out tomorrow.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1516.13" data-e="1517.54">There we go.</span> <span class="tl-s" data-s="1517.89" data-e="1518.10">Okay.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1518.63" data-e="1521.45">I&#x27;m hilariously tired.</span> <span class="tl-s" data-s="1521.50" data-e="1523.31">Let&#x27;s do it.</span> <span class="tl-s" data-s="1523.33" data-e="1524.84">Thinking about tomorrow.</span> <span class="tl-s" data-s="1525.19" data-e="1525.45">All right.</span> <span class="tl-s" data-s="1525.45" data-e="1530.08">At your bottom dollar that tomorrow.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1530.31" data-e="1530.43">Okay.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1530.96" data-e="1531.27">There&#x27;ll be some.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1531.27" data-e="1531.27">Okay, Annie.</span> <span class="tl-s" data-s="1531.27" data-e="1531.27">Let&#x27;s stop that.</span> <span class="tl-s" data-s="1531.27" data-e="1531.27">All right, [Speaker B] Annie.</span> <span class="tl-s" data-s="1531.27" data-e="1531.27">All right, you ready?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1531.27" data-e="1531.27">I am born ready.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1531.27" data-e="1531.27">All right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1531.27" data-e="1531.27">Ready, set.</span> <span class="tl-s" data-s="1531.27" data-e="1531.27">Go!</span> <span class="tl-s" data-s="1531.27" data-e="1531.27">Boom!</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Fixed on Jesus episode archive, backed by /api/podcast/search.
+  // Static fallback list above stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function fmtDuration(raw) {
+      if (!raw) return "";
+      var str = String(raw).trim();
+      // Anchor feeds report seconds; render as H:MM:SS or M:SS.
+      if (/^\d+$/.test(str)) {
+        var total = parseInt(str, 10);
+        var h = Math.floor(total / 3600);
+        var m = Math.floor((total % 3600) / 60);
+        var sec = total % 60;
+        var mm = (h > 0 && m < 10 ? "0" + m : "" + m);
+        var ss = (sec < 10 ? "0" + sec : "" + sec);
+        return (h > 0 ? h + ":" + mm : m) + ":" + ss;
+      }
+      // Anchor also reports clock strings like "00:24:02" — drop the
+      // redundant leading hour so it reads "24:02".
+      return str.replace(/^00:/, "");
+    }
+    function row(it) {
+      it = it || {};
+      var title = esc(it.title) || "Untitled episode";
+      var tUrl = it.guid && transcriptMap[it.guid];
+      var heading = tUrl
+        ? '<a href="' + esc(tUrl) + '">' + title + "</a>"
+        : (it.link
+          ? '<a href="' + esc(it.link) + '" target="_blank" rel="noopener">' + title + "</a>"
+          : title);
+      var meta = [fmtDate(it.date), fmtDuration(it.duration)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      return '<div class="sermon"><div><h3>' + heading + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    var PER = 10;
+    var state = { q: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No episodes found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " episode" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " episodes";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/podcast/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () {
+          // Keep the static list, but tell the reader where else to listen —
+          // some privacy blockers stop the archive request itself.
+          var note = document.querySelector("[data-sermons-error]");
+          if (note) note.hidden = false;
+        });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    if (monthSel) {
+      monthSel.addEventListener("change", function () {
+        state.month = monthSel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: b8651ee8-0b57-4a30-9bbd-2a1164dc77c9 -->
+</body>
+</html>
