@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rapid Fire Friday - Q&amp;A #31 — Podcast Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Fixed on Jesus: conversations beyond Sunday mornings from Center Church in Gilbert, AZ — listen on Spotify, Apple Podcasts, and YouTube." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=18" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a href="/sermons">Sermons</a></li>
+              <li><a class="active" href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/podcast">&larr; All podcast episodes</a>
+          <h1 class="display-lg">Rapid Fire Friday - Q&amp;A #31</h1>
+          <p class="transcript-meta">2025-07-11 · 12:08</p>
+          <p class="transcript-desc">Rapid Fire Friday is a special series from the Fixed On Jesus Podcast crew (Rich, Mark and Heather) Sometimes we get questions that have short enough answers to answer many of them in one episode that we like to call Rapid Fire Fridays. Look for these to be released on Fridays if and when we get eno</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/e750e370/podcast/play/105265426/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-6-9%2F387c5815-02c4-e15e-99e8-6c22448bbb1f.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="0.03" data-e="0.71">What day is it, Mark?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1.31" data-e="1.99">Oh, good question.</span> <span class="tl-s" data-s="2.04" data-e="4.08">I was gonna go on the Google machine, but I think it&#x27;s Friday.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="4.47" data-e="4.97">It&#x27;s Friday.</span> <span class="tl-s" data-s="5.19" data-e="5.95">You know what that means, Mark?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="7.24" data-e="8.62">Rapid Fire Friday.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="12.10" data-e="12.85">Boom boom boom.</span></p>
+        <p><span class="tl-s" data-s="16.61" data-e="18.48">Rapid Fire Friday.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="25.19" data-e="26.72">Three two one.</span> <span class="tl-s" data-s="27.16" data-e="29.04">Rapid Fire Friday.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="29.12" data-e="29.70">All right.</span></p>
+        <p><span class="tl-s" data-s="31.97" data-e="34.51">All right, there we have the email bell, and our first email is from who?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="34.98" data-e="35.51">Amy Elder.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="35.70" data-e="37.19">All right, what is Amy asking?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="37.71" data-e="39.47">Amy says, hi team, I hope you&#x27;re doing well.</span> <span class="tl-s" data-s="39.79" data-e="46.50">I have a follow-up question to the Who&#x27;s the Boss episode, and we&#x27;ll link that in the description as soon as we remember what number it is.</span> <span class="tl-s" data-s="47.25" data-e="59.19">In that episode, you were talking about governments and that every government has been established by God, but with that, we need to use discernment and not blindly follow the direction of government leaders if it&#x27;s unethical or against the Bible.</span> <span class="tl-s" data-s="59.70" data-e="64.03">Examples of one-day government says all pastors need to marry a homosexual couple.</span> <span class="tl-s" data-s="64.89" data-e="67.04">I&#x27;m reading Paul David Tripp&#x27;s Everyday Gospel.</span> <span class="tl-s" data-s="67.30" data-e="70.13">As I read— [Speaker A] which is a great book, I recommend it.</span> <span class="tl-s" data-s="70.18" data-e="75.82">As I read 1 Chronicles 21, I thought of this topic specifically in verses 1 through 4.</span> <span class="tl-s" data-s="75.86" data-e="78.80">I&#x27;m just going to paraphrase these verses.</span> <span class="tl-s" data-s="78.92" data-e="80.28">Satan stood against Israel.</span> <span class="tl-s" data-s="80.44" data-e="82.22">Let me— [Speaker A] can I paraphrase them?</span></p>
+        <p><span class="tl-s" data-s="82.28" data-e="82.36">Sure.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="82.36" data-e="82.54">All right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="82.54" data-e="86.02">Yeah, you know the verses better.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="86.03" data-e="88.98">Satan incites David to number Israel, take a census.</span> <span class="tl-s" data-s="89.09" data-e="96.71">And so David goes to his commander named Joab, and he says— Joab&#x27;s the commander of the army, and he&#x27;s like, all right, Joab, go count everybody.</span> <span class="tl-s" data-s="96.71" data-e="103.33">And Joab knows this is evil because what David&#x27;s doing is trying to count his strength instead of trusting the Lord.</span> <span class="tl-s" data-s="103.60" data-e="103.91">Mm-hmm.</span> <span class="tl-s" data-s="103.91" data-e="106.05">And Joab goes, don&#x27;t do it.</span> <span class="tl-s" data-s="106.58" data-e="108.15">And David says, listen, it&#x27;s my choice.</span> <span class="tl-s" data-s="108.15" data-e="108.60">I&#x27;m the king.</span> <span class="tl-s" data-s="108.88" data-e="109.74">You go do it.</span> <span class="tl-s" data-s="109.93" data-e="113.97">And so Joab did, and he went and counted all the people.</span> <span class="tl-s" data-s="114.69" data-e="124.21">And then she asks, [Speaker B] In these verses, David is urged to do a census of the people of Israel by Satan, and it seems like Joab is trying to talk David out of it because it&#x27;s not what the Lord wants.</span></p>
+        <p><span class="tl-s" data-s="124.21" data-e="131.80">It seems like Joab knows the census is against what God wants, but still goes through with David, the king of Israel, wishes.</span> <span class="tl-s" data-s="131.82" data-e="136.03">After Joab provides David with the census, it seems like God is only angry with David.</span> <span class="tl-s" data-s="136.03" data-e="138.75">Is that right, or did I miss something?</span> <span class="tl-s" data-s="138.80" data-e="139.36">That is correct.</span> <span class="tl-s" data-s="139.36" data-e="140.50">That, that&#x27;s correct.</span> <span class="tl-s" data-s="140.50" data-e="141.26">We&#x27;ll do first part.</span> <span class="tl-s" data-s="141.31" data-e="146.34">Yes, God is angry with David because he had ultimate responsibility.</span> <span class="tl-s" data-s="146.36" data-e="147.48">He&#x27;s king.</span> <span class="tl-s" data-s="147.48" data-e="148.00">Joab is not.</span> <span class="tl-s" data-s="148.19" data-e="152.10">And so David is the one who&#x27;s responsible here.</span></p>
+        <p><span class="tl-s" data-s="152.22" data-e="157.41">And so the other reality is that commanders did not cross kings, right?</span> <span class="tl-s" data-s="157.67" data-e="161.10">So whatever the king wanted, we don&#x27;t— the king was the ultimate.</span> <span class="tl-s" data-s="161.10" data-e="167.49">We&#x27;re used to living in a place in a time where no one is ostensibly above the law.</span> <span class="tl-s" data-s="167.62" data-e="171.37">In this place here at that time, the king was the law.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="171.55" data-e="171.74">Hmm.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="171.93" data-e="175.16">So whatever the king said, that went.</span> <span class="tl-s" data-s="175.16" data-e="184.56">And so Joab, for Joab to say, hey, you shouldn&#x27;t do that, David, was a very, that&#x27;s not, people didn&#x27;t do that, right?</span> <span class="tl-s" data-s="184.63" data-e="191.80">And so that was reckless of Joab, &#x27;cause David could have killed him right there or replaced him.</span> <span class="tl-s" data-s="192.00" data-e="198.83">And so his appeal, he appealed, and yet David still commanded him to go out and number everybody.</span> <span class="tl-s" data-s="199.17" data-e="208.20">And so God is primarily angry at David because David&#x27;s responsible and David used Joab to bring about his will.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="208.20" data-e="209.04">Oh, that&#x27;s good.</span> <span class="tl-s" data-s="209.07" data-e="210.60">So that pretty much answers it, right?</span> <span class="tl-s" data-s="210.60" data-e="215.59">I mean— [Speaker A] I mean, why wasn&#x27;t he angry with Joab as well?</span> <span class="tl-s" data-s="215.94" data-e="216.12">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="216.36" data-e="219.21">I mean, because David&#x27;s the focus here, right?</span> <span class="tl-s" data-s="219.21" data-e="226.82">And so— [Speaker B] Is it like Adam and Eve in the garden?</span> <span class="tl-s" data-s="226.87" data-e="226.95">No.</span> <span class="tl-s" data-s="226.95" data-e="227.41">Joab had authority.</span> <span class="tl-s" data-s="227.41" data-e="232.49">It would be like Adam and Eve in the garden if Joab comes and says, hey, let&#x27;s count everybody.</span> <span class="tl-s" data-s="232.57" data-e="232.97">And David goes, well, okay.</span> <span class="tl-s" data-s="232.97" data-e="234.25">But that&#x27;s not what happened.</span> <span class="tl-s" data-s="234.40" data-e="237.66">It was the other way around.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="237.71" data-e="238.46">I see.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="238.51" data-e="244.34">And so David has the idea, which is evil because it&#x27;s a way in which he&#x27;s not trusting the Lord.</span> <span class="tl-s" data-s="244.34" data-e="247.69">And Joab says, don&#x27;t do that.</span> <span class="tl-s" data-s="248.45" data-e="249.96">And he does it anyway.</span> <span class="tl-s" data-s="249.96" data-e="255.34">And so There we have David who&#x27;s responsible all the way throughout.</span> <span class="tl-s" data-s="255.34" data-e="260.64">The Lord surely wasn&#x27;t pleased with Joab, but that wasn&#x27;t the focus of the passage.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="260.69" data-e="260.78">Awesome.</span> <span class="tl-s" data-s="260.80" data-e="261.81">Yeah, thanks for the question, Amy.</span></p>
+        <p><span class="tl-s" data-s="265.21" data-e="265.88">We appreciate it.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="265.93" data-e="266.64">Yeah, thanks, Amy.</span> <span class="tl-s" data-s="266.64" data-e="268.31">That&#x27;s a great question.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="268.32" data-e="269.85">That&#x27;s the email bell.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="270.42" data-e="271.74">There it is.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="271.77" data-e="273.20">This one comes from Catherine Jordan.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="273.23" data-e="273.81">Yes.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="273.94" data-e="275.03">Hello, friends.</span> <span class="tl-s" data-s="275.07" data-e="280.81">Can you explain what it means to believe Unitarianism or not believe in the Trinity, I guess, and why it&#x27;s heretical?</span> <span class="tl-s" data-s="280.84" data-e="281.02">Thanks.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="281.02" data-e="297.44">Well, anybody who doesn&#x27;t believe in the Trinity is not a Christian, first of all, because it is— what that means then is they believe in the oneness of God and they do not hold that Jesus is God, right?</span> <span class="tl-s" data-s="298.43" data-e="301.52">So he&#x27;s an inspired teacher, but he&#x27;s not God.</span> <span class="tl-s" data-s="301.57" data-e="305.76">And the other problem— so the Unitarians do not believe Christ is God.</span> <span class="tl-s" data-s="305.82" data-e="313.65">They don&#x27;t believe that God the Father, God the Son, and God the Spirit are all one and 3.</span> <span class="tl-s" data-s="313.73" data-e="319.57">And so that&#x27;s just a classic example of heresy.</span> <span class="tl-s" data-s="319.60" data-e="331.20">The other element of Unitarianism that is heretical is that they&#x27;re also universalists, where they believe that there is no such thing, that everybody will be saved.</span> <span class="tl-s" data-s="331.78" data-e="345.26">And so they&#x27;ll embrace a wide range of spiritual perspectives, And they do not believe that there&#x27;s any spiritual standard, any biblical standard to salvation.</span> <span class="tl-s" data-s="345.34" data-e="354.48">So Unitarians, anybody who believes there is no Trinity, is automatically— that by definition, that demotes Jesus.</span></p>
+        <p><span class="tl-s" data-s="354.62" data-e="365.56">And anybody who demotes Jesus, like the Mormons or the Jehovah&#x27;s Witnesses, that is Then you&#x27;re worshiping someone who&#x27;s not God.</span> <span class="tl-s" data-s="366.30" data-e="367.73">Jesus is Lord.</span> <span class="tl-s" data-s="367.84" data-e="369.89">He is Lord Most High.</span> <span class="tl-s" data-s="369.93" data-e="376.86">And so it&#x27;s a heresy for at least those 2 reasons: no Trinity, and then misunderstanding of Jesus.</span> <span class="tl-s" data-s="376.86" data-e="378.34">And then also everybody gets saved.</span> <span class="tl-s" data-s="378.86" data-e="384.41">And so that&#x27;s just not in line with biblical truth.</span> <span class="tl-s" data-s="384.46" data-e="386.96">So thanks for the question, Catherine.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="386.96" data-e="387.83">Yeah, thank you.</span> <span class="tl-s" data-s="387.83" data-e="389.97">That&#x27;s the email bell again.</span> <span class="tl-s" data-s="390.08" data-e="397.03">Just a reminder, if you want to ask questions anonymously, you&#x27;re more than welcome to do so.</span> <span class="tl-s" data-s="397.38" data-e="400.27">This is one of those anonymous questions.</span> <span class="tl-s" data-s="400.27" data-e="402.26">Is contextual theology legitimately orthodox?</span> <span class="tl-s" data-s="402.26" data-e="406.21">And then there&#x27;s a second part.</span> <span class="tl-s" data-s="406.78" data-e="413.73">What is the difference between practical theology and legalism?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="413.90" data-e="414.18">Yeah.</span> <span class="tl-s" data-s="414.24" data-e="426.13">Okay, so Contextual theology is, so it&#x27;s an approach to theology that reads the Bible in light of cultural and social realities instead of vice versa.</span> <span class="tl-s" data-s="426.24" data-e="438.77">And so we&#x27;ve talked about this before in another setting where we&#x27;ve talked about liberation theology, where you&#x27;ve got people that redefine what the Bible means and they read it through a lens of oppression.</span> <span class="tl-s" data-s="438.77" data-e="443.58">This is what folks do who have, who are steeped in critical theory.</span> <span class="tl-s" data-s="443.58" data-e="451.80">They are going to see, like, they&#x27;re going to see the Bible to be a story of, in every place, liberation from oppression.</span> <span class="tl-s" data-s="452.54" data-e="457.21">That&#x27;s part of the story, but that&#x27;s not the story.</span> <span class="tl-s" data-s="457.91" data-e="470.64">And so contextual theology, it, what it does is it, is it reads the Bible through a lens of social experience and culture.</span> <span class="tl-s" data-s="470.68" data-e="476.86">And interprets the Bible through a cultural lens, which is always going to be wrong.</span> <span class="tl-s" data-s="476.86" data-e="490.01">And so there are different applications for each culture, but at the same time, the biblical truth that is in the Bible is something that is not bound by culture.</span></p>
+        <p><span class="tl-s" data-s="490.01" data-e="493.24">And so it takes certain understandings when you read the scriptures.</span> <span class="tl-s" data-s="493.32" data-e="497.97">And when Paul says, bring my Cloak with you when you come and visit me.</span> <span class="tl-s" data-s="498.07" data-e="500.49">You know, we can&#x27;t obey that, right?</span> <span class="tl-s" data-s="500.49" data-e="502.73">That&#x27;s that limited to time and space, right?</span> <span class="tl-s" data-s="502.73" data-e="515.47">When he says greet everyone with a holy kiss, I mean, that&#x27;s again that was the ancient Near Eastern practice of how to greet somebody where today we shake hands, right?</span> <span class="tl-s" data-s="515.47" data-e="521.43">And so those kinds of examples are examples that are really red herrings to people.</span> <span class="tl-s" data-s="521.48" data-e="525.97">But what they try to do is they.</span> <span class="tl-s" data-s="525.98" data-e="539.50">They, what they do is they look at the Bible through the lens of poverty and injustice and, you know, or feminist theology or indigenous theology.</span> <span class="tl-s" data-s="539.51" data-e="561.89">And what they do then is they read the Bible through that lens and it is, it&#x27;s dangerous and it is, It&#x27;s not to say we can&#x27;t learn from other cultures, but we can&#x27;t twist the Bible to say what it doesn&#x27;t say in service of the cultural narrative, if that makes sense.</span></p>
+        <p><span class="tl-s" data-s="561.89" data-e="564.34">Oh [Speaker B] yeah, that&#x27;s great.</span> <span class="tl-s" data-s="564.85" data-e="569.94">Um, the second part was, what is the difference between practical theology and legalism?</span> <span class="tl-s" data-s="570.95" data-e="573.72">Yeah, practical theology and legalism.</span> <span class="tl-s" data-s="574.33" data-e="576.66">That&#x27;s a, that&#x27;s a good question.</span> <span class="tl-s" data-s="576.66" data-e="580.75">Um, practical theology is The, uh, that it&#x27;s, it&#x27;s like ethics.</span> <span class="tl-s" data-s="580.75" data-e="589.52">It&#x27;s the, it&#x27;s the branch of Christian theology focused on applying theological beliefs to everyday life, right?</span> <span class="tl-s" data-s="589.57" data-e="591.74">It&#x27;s bridging the gap between experience and doctrine, Christian truth, right?</span> <span class="tl-s" data-s="591.74" data-e="600.71">You know, like one of, one example is when we think about the Ten Commandments and it says you shall not steal, we think about, okay, what is stealing?</span> <span class="tl-s" data-s="600.75" data-e="601.85">Stealing is stealing someone&#x27;s intellectual property.</span> <span class="tl-s" data-s="601.93" data-e="606.52">Stealing can be You know, copying too many pages out of a book that&#x27;s copyrighted.</span></p>
+        <p><span class="tl-s" data-s="606.52" data-e="610.26">Stealing can be all kinds of different things.</span> <span class="tl-s" data-s="610.30" data-e="615.35">So that&#x27;s informing someone&#x27;s conscience as to what stealing is, right?</span> <span class="tl-s" data-s="615.35" data-e="617.60">And so practical theology is essentially ethics applied.</span> <span class="tl-s" data-s="617.60" data-e="620.23">And so there&#x27;s lots of debate on what that looks like.</span> <span class="tl-s" data-s="620.31" data-e="624.79">But you know, it&#x27;s important to like think through as a Christian, what is a lie?</span> <span class="tl-s" data-s="625.38" data-e="627.76">What is speech that encourages?</span> <span class="tl-s" data-s="627.85" data-e="629.92">And those kinds of things.</span> <span class="tl-s" data-s="629.94" data-e="630.65">Now legalism.</span> <span class="tl-s" data-s="631.79" data-e="638.82">Legalism is when you set a standard that is extra-biblical for salvation, and that&#x27;s different.</span> <span class="tl-s" data-s="638.93" data-e="640.76">So practical theology applies the Bible.</span></p>
+        <p><span class="tl-s" data-s="641.01" data-e="649.76">Legalism means you have to adhere to a certain set of rules and moral codes to earn salvation or favor with God.</span> <span class="tl-s" data-s="649.78" data-e="659.60">So for example, it&#x27;s easy to shoot back at other cultures and times and places, but It would be legalistic to say that it&#x27;s always wrong to play cards or drink alcohol.</span> <span class="tl-s" data-s="659.62" data-e="666.17">That&#x27;s legalism, because the Bible doesn&#x27;t say that it&#x27;s wrong to do either of those things.</span> <span class="tl-s" data-s="666.43" data-e="671.22">Now, it&#x27;s wrong to do those two things in excess, especially alcohol.</span> <span class="tl-s" data-s="671.25" data-e="687.73">And so I don&#x27;t have the right to lay upon people things that are extra biblical, like something as silly as you have to date a year before you get married, or You know, you can&#x27;t take more than 2 vacations in a year, or, you know, all kinds of things like that.</span> <span class="tl-s" data-s="688.16" data-e="700.74">Those are legalistic, um, practices that I don&#x27;t have, or anyone else has the right to lay upon people, where practical theology is the responsible expression of what it looks like to live as a Christian in the world today.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="701.03" data-e="701.29">That&#x27;s great.</span> <span class="tl-s" data-s="701.51" data-e="701.80">Yeah.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="701.90" data-e="704.02">And that&#x27;s all the questions I have for now.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="704.02" data-e="704.23">For now.</span> <span class="tl-s" data-s="704.26" data-e="708.54">But there will be another Friday that comes because you know what, Mark?</span> <span class="tl-s" data-s="708.54" data-e="711.56">They come once every 7 days.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="711.56" data-e="711.84">Every seven.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="711.86" data-e="712.08">Every seven.</span> <span class="tl-s" data-s="712.10" data-e="712.70">It&#x27;s a rapid-fire Friday.</span> <span class="tl-s" data-s="712.94" data-e="713.38">We&#x27;ll be back.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="713.41" data-e="713.78">All right.</span> <span class="tl-s" data-s="713.80" data-e="718.54">Well, I&#x27;m gonna hold you to that.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="718.54" data-e="718.54">All right.</span> <span class="tl-s" data-s="718.54" data-e="718.54">Sounds good.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="718.54" data-e="718.54">Take care, guys.</span> <span class="tl-s" data-s="718.54" data-e="718.54">Yeah.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Fixed on Jesus episode archive, backed by /api/podcast/search.
+  // Static fallback list above stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function fmtDuration(raw) {
+      if (!raw) return "";
+      var str = String(raw).trim();
+      // Anchor feeds report seconds; render as H:MM:SS or M:SS.
+      if (/^\d+$/.test(str)) {
+        var total = parseInt(str, 10);
+        var h = Math.floor(total / 3600);
+        var m = Math.floor((total % 3600) / 60);
+        var sec = total % 60;
+        var mm = (h > 0 && m < 10 ? "0" + m : "" + m);
+        var ss = (sec < 10 ? "0" + sec : "" + sec);
+        return (h > 0 ? h + ":" + mm : m) + ":" + ss;
+      }
+      // Anchor also reports clock strings like "00:24:02" — drop the
+      // redundant leading hour so it reads "24:02".
+      return str.replace(/^00:/, "");
+    }
+    function row(it) {
+      it = it || {};
+      var title = esc(it.title) || "Untitled episode";
+      var tUrl = it.guid && transcriptMap[it.guid];
+      var heading = tUrl
+        ? '<a href="' + esc(tUrl) + '">' + title + "</a>"
+        : (it.link
+          ? '<a href="' + esc(it.link) + '" target="_blank" rel="noopener">' + title + "</a>"
+          : title);
+      var meta = [fmtDate(it.date), fmtDuration(it.duration)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      return '<div class="sermon"><div><h3>' + heading + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    var PER = 10;
+    var state = { q: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No episodes found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " episode" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " episodes";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/podcast/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () {
+          // Keep the static list, but tell the reader where else to listen —
+          // some privacy blockers stop the archive request itself.
+          var note = document.querySelector("[data-sermons-error]");
+          if (note) note.hidden = false;
+        });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    if (monthSel) {
+      monthSel.addEventListener("change", function () {
+        state.month = monthSel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: 22e0f13c-1a97-47e5-9387-2bffbf6c6c43 -->
+</body>
+</html>
