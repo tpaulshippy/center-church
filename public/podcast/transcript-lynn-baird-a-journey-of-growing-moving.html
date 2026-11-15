@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lynn Baird - A Journey of Growing &amp; Moving — Podcast Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Fixed on Jesus: conversations beyond Sunday mornings from Center Church in Gilbert, AZ — listen on Spotify, Apple Podcasts, and YouTube." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=18" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a href="/sermons">Sermons</a></li>
+              <li><a class="active" href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/podcast">&larr; All podcast episodes</a>
+          <h1 class="display-lg">Lynn Baird - A Journey of Growing &amp; Moving</h1>
+          <p class="transcript-meta">2024-11-27 · 46:35</p>
+          <p class="transcript-desc">Welcome to FIXED ON JESUS, a podcast brought to you by Center Church in Gilbert, Arizona. Speaking to you today are Rich Richardson &amp; Mark Johnson Jr. Production by Heather Corbitt This week we have part 3 of a 3 part interview where Rich and Mark sat down with the founder of our church, a very spec</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/e750e370/podcast/play/95054618/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-10-27%2F97d35baa-1016-a881-38a7-40ce7621a1bb.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="0.31" data-e="7.50">But you look back, you look back at the— to 1975 and when you stood up at the Derek Prince.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="7.81" data-e="8.06">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="8.45" data-e="10.87">And you were, you shepherded.</span> <span class="tl-s" data-s="11.20" data-e="12.96">You shepherded though 50 years, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="13.51" data-e="13.75">Yeah.</span> <span class="tl-s" data-s="14.07" data-e="14.26">Yeah.</span> <span class="tl-s" data-s="14.73" data-e="15.81">The Lord was very gracious.</span> <span class="tl-s" data-s="15.93" data-e="17.43">I mean, not that I knew what I was doing.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="17.86" data-e="20.90">But I think there&#x27;s a lot of people— [Speaker B] That whole time.</span> <span class="tl-s" data-s="20.90" data-e="24.69">I think there&#x27;s a lot of people we&#x27;ll meet in eternity who will beg to differ.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="24.69" data-e="27.26">Well, I&#x27;m trusting God for that, for sure.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="27.26" data-e="40.09">I think that&#x27;s right.</span> <span class="tl-s" data-s="40.15" data-e="42.71">Hey everybody, welcome back to Fixed on Jesus.</span> <span class="tl-s" data-s="42.72" data-e="45.25">You&#x27;re catching us in a wonderful interview with Lynn Baird.</span> <span class="tl-s" data-s="45.25" data-e="50.63">So the church gets started in 1986, Fiesta Inn.</span> <span class="tl-s" data-s="50.65" data-e="51.05">Mm-hmm.</span> <span class="tl-s" data-s="51.05" data-e="54.62">And Community Life Church, it&#x27;s its own thing starting in Tempe there.</span> <span class="tl-s" data-s="54.74" data-e="57.10">Walk us through, because you move.</span> <span class="tl-s" data-s="57.23" data-e="60.41">From here to Pasadena in what, 1990, &#x27;91?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="60.58" data-e="60.94">&#x27;91.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="61.09" data-e="61.26">&#x27;91.</span> <span class="tl-s" data-s="61.32" data-e="61.62">Okay.</span> <span class="tl-s" data-s="62.04" data-e="64.46">So what happened over the next 5 years after that?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="65.65" data-e="70.74">Well, for the next 5 years, we just threw ourselves into building the church.</span> <span class="tl-s" data-s="71.48" data-e="81.69">But it was obviously, if you&#x27;ve ever been a part of something like that, it&#x27;s pretty discouraging for people to go from something that was— [Speaker A] 600.</span> <span class="tl-s" data-s="81.75" data-e="83.44">To starting over again.</span> <span class="tl-s" data-s="83.44" data-e="101.00">And then another thing that had happened that was very significant back in the &#x27;70s and &#x27;80s was that one of the pastors, Dave Everett, started a— we started as a part of the church, the crisis pregnancy centers.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="101.18" data-e="103.00">Which is what is— it&#x27;s still going now.</span> <span class="tl-s" data-s="103.06" data-e="104.46">It&#x27;s called— [Speaker B] Still going.</span> <span class="tl-s" data-s="104.56" data-e="109.02">And it has had a profound impact all across the nation.</span> <span class="tl-s" data-s="109.15" data-e="110.78">It&#x27;s called Choices now, I think.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="110.78" data-e="111.53">I don&#x27;t know.</span> <span class="tl-s" data-s="111.75" data-e="126.02">But it was a big deal, and it was one of the few things going on in the nation that I recall where there was— they were developing alternatives to abortion, actually doing something.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="126.02" data-e="127.99">Right, like adoption work and all that kind of stuff.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="128.10" data-e="131.81">Adoption and just counseling and bringing girls in and saving babies.</span> <span class="tl-s" data-s="132.10" data-e="145.93">So, [Speaker A] right, [Speaker B] it was, it was a significant part of what we were doing as a church, but it&#x27;s— it also had its downside in that Dave was more and more doing that— [Speaker A] Than pastoring.</span> <span class="tl-s" data-s="146.05" data-e="146.65">And then pastoring.</span> <span class="tl-s" data-s="146.65" data-e="149.82">And we were trying to navigate that, figure out how does that work?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="149.83" data-e="149.93">Sure.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="150.09" data-e="154.42">Because it was obvious he needed to be doing that.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="154.42" data-e="154.54">Right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="154.65" data-e="155.97">This was his calling.</span> <span class="tl-s" data-s="156.08" data-e="161.82">So when we started the new church, Dave was a part of the pastoral team, but still doing that.</span> <span class="tl-s" data-s="161.82" data-e="169.57">And it was increasingly becoming more and more of a challenge to him and the church.</span> <span class="tl-s" data-s="169.67" data-e="175.22">He felt like the church should be taking the responsibility for it, which we agreed.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="175.30" data-e="175.75">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="176.25" data-e="180.06">But at the same time, he was developing a board outside the church.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="180.43" data-e="180.69">Yeah, right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="180.69" data-e="185.68">And so we were basically like saying, well, this has to go one way or the other.</span> <span class="tl-s" data-s="186.52" data-e="190.07">It just either be the board is the church or you do it.</span> <span class="tl-s" data-s="190.07" data-e="196.32">And we feel like, again, this is my recollection, I know I was feeling like, this is just significant.</span> <span class="tl-s" data-s="196.53" data-e="198.25">It needs to be something you do.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="198.69" data-e="200.27">Yeah, right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="201.39" data-e="204.68">Just go for it.</span> <span class="tl-s" data-s="204.68" data-e="206.11">It&#x27;s who you are.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="206.20" data-e="206.33">Right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="206.78" data-e="208.80">And it&#x27;s okay.</span> <span class="tl-s" data-s="208.88" data-e="223.67">But that came to the point where Dave ended up feeling like he should not only take the CPCs in that direction, But it became some issues with the church.</span> <span class="tl-s" data-s="223.67" data-e="227.35">And so Dave left the leadership team and eventually the church.</span> <span class="tl-s" data-s="227.35" data-e="238.85">Bob Hughes, who was one of the pastors at the time, we continued working together until &#x27;87 or &#x27;88.</span> <span class="tl-s" data-s="238.88" data-e="242.36">I forget when he actually left, but he went.</span> <span class="tl-s" data-s="242.36" data-e="247.00">Steve Shank had come out to kind of apostolically help for about 6 months.</span> <span class="tl-s" data-s="247.03" data-e="251.94">Part of his assignment, in fact, a major part of his assignment was to try to identify Dave Everett.</span> <span class="tl-s" data-s="251.94" data-e="255.76">Who is he and what is he supposed to be doing?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="255.79" data-e="255.91">Sure.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="255.94" data-e="265.28">So he came out to help with the church, to help with Dave, and then he was going to plant a church in Virginia Beach.</span> <span class="tl-s" data-s="265.75" data-e="272.89">So Bob Hughes, who was pastoring here with me, went with Steve to Virginia Beach to plant a church.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="272.89" data-e="273.30">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="273.30" data-e="277.45">So [Speaker A] by &#x27;88, you&#x27;re the only member of the leadership team.</span> <span class="tl-s" data-s="277.47" data-e="282.75">So I&#x27;m the only pastor on staff at the time, trying to think through what do we do now?</span> <span class="tl-s" data-s="282.83" data-e="289.02">And that&#x27;s where Trey comes into the scene because we felt like obviously we need, we believe in plurality, we need to have another man.</span> <span class="tl-s" data-s="289.02" data-e="297.57">And at that point in the life of the church, there had not been time to raise up another man.</span></p>
+        <p><span class="tl-s" data-s="298.83" data-e="305.78">And so Trey was just like, I had known your dad since early &#x27;80s, &#x27;80, &#x27;81, I forget.</span> <span class="tl-s" data-s="305.89" data-e="311.49">I can never quite— your dad said he never came to El Paso till &#x27;81.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="311.49" data-e="313.82">It was &#x27;81 when he got there, yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="313.82" data-e="314.73">Somewhere after &#x27;81.</span> <span class="tl-s" data-s="314.88" data-e="317.50">And that&#x27;s another whole long story in itself.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="317.59" data-e="318.63">We&#x27;ll interview him later.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="318.63" data-e="322.13">Yeah, we were coming to El Paso to help them.</span> <span class="tl-s" data-s="322.18" data-e="324.94">They were seeking to understand plurality and all these things.</span> <span class="tl-s" data-s="325.06" data-e="327.21">So we were flying into El Paso, met Trey.</span> <span class="tl-s" data-s="327.32" data-e="330.45">Trey and I hit it off.</span> <span class="tl-s" data-s="330.59" data-e="333.67">Trey and I and Charlotte and Terry really became close.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="334.12" data-e="334.30">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="334.33" data-e="335.34">Uh, from a distance, but close.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="335.34" data-e="335.41">Right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="335.41" data-e="341.07">Uh, you, you would remember— [Speaker A] I remember all that.</span> <span class="tl-s" data-s="341.18" data-e="341.34">Yeah.</span> <span class="tl-s" data-s="341.36" data-e="342.42">More of this.</span> <span class="tl-s" data-s="342.48" data-e="349.05">And, uh, so when &#x27;88 came around and we&#x27;re thinking out loud, like, so where do we go from here?</span> <span class="tl-s" data-s="349.05" data-e="353.16">And Trey comes up and we&#x27;re like, wow, is that possible?</span></p>
+        <p><span class="tl-s" data-s="355.78" data-e="357.43">I mean, The guy works for IBM.</span> <span class="tl-s" data-s="357.43" data-e="358.12">He&#x27;s a heavy hitter.</span> <span class="tl-s" data-s="358.12" data-e="363.05">He&#x27;s not some guy out there in a church hoping to get a pastoral call.</span> <span class="tl-s" data-s="363.10" data-e="367.09">He&#x27;s completely oblivious that— well, I shouldn&#x27;t say that.</span> <span class="tl-s" data-s="367.14" data-e="367.80">He was aware.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="368.24" data-e="370.26">He was on [Speaker B] a leadership team there.</span> <span class="tl-s" data-s="370.73" data-e="372.19">But he wasn&#x27;t thinking about anything.</span> <span class="tl-s" data-s="372.21" data-e="375.56">He wasn&#x27;t thinking about anything to Phoenix at all.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="375.56" data-e="375.98">Yeah.</span> <span class="tl-s" data-s="375.98" data-e="385.81">So bottom line is we approached Trey, would you consider Becoming a pastor and coming to Phoenix, and lo and behold, go figure!</span> <span class="tl-s" data-s="385.81" data-e="386.36">Trey said yes.</span> <span class="tl-s" data-s="386.54" data-e="387.69">Eventually said yes.</span> <span class="tl-s" data-s="387.69" data-e="391.19">He&#x27;s got his own story, but yeah, thank God he said yes.</span> <span class="tl-s" data-s="391.22" data-e="397.35">Thank God to the body of Christ that he said yes.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="397.40" data-e="397.58">Right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="398.45" data-e="408.62">Because he and Charlotte have had a wonderful, [Speaker A] wonderful ministry here.</span> <span class="tl-s" data-s="408.76" data-e="410.62">Yeah, that&#x27;s right.</span> <span class="tl-s" data-s="411.82" data-e="411.90">They.</span> <span class="tl-s" data-s="411.90" data-e="413.05">She almost died.</span> <span class="tl-s" data-s="413.11" data-e="413.66">Remember that?</span> <span class="tl-s" data-s="414.08" data-e="414.45">Yep.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="414.63" data-e="417.44">They were praying about the decision and they were in El Paso.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="417.48" data-e="417.90">Car accident.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="417.93" data-e="418.31">Yeah.</span> <span class="tl-s" data-s="418.51" data-e="418.85">Driving.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="418.86" data-e="419.01">Terrible.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="419.01" data-e="420.20">Driving to a church meeting.</span> <span class="tl-s" data-s="420.20" data-e="429.10">And my mom, there was a bad car accident and my mom almost died as a result of it.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="430.11" data-e="432.12">Right after they had agreed.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="432.13" data-e="432.29">Right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="433.80" data-e="434.05">As I recall.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="434.13" data-e="434.67">Yeah.</span> <span class="tl-s" data-s="435.12" data-e="436.05">It was February of &#x27;88.</span> <span class="tl-s" data-s="436.05" data-e="436.12">Wow.</span> <span class="tl-s" data-s="436.13" data-e="437.17">And they had agreed— no, wait.</span></p>
+        <p><span class="tl-s" data-s="438.40" data-e="439.95">No, it was &#x27;89.</span> <span class="tl-s" data-s="439.95" data-e="444.30">I can&#x27;t— well, we&#x27;ll have to get him in it.</span> <span class="tl-s" data-s="444.60" data-e="445.81">He&#x27;ll remember.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="445.81" data-e="453.68">Yeah, I don&#x27;t remember dates very well, but &#x27;88, &#x27;89, somewhere in there.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="453.68" data-e="453.79">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="453.84" data-e="454.16">Yep.</span> <span class="tl-s" data-s="454.64" data-e="464.90">The enemy tried his best to circumvent that, but God was gracious and So they came.</span> <span class="tl-s" data-s="464.90" data-e="464.95">Yeah.</span> <span class="tl-s" data-s="465.06" data-e="475.98">And I don&#x27;t remember now, somewhere in the midst of all of that, as far as my story goes, so Trey had come, we were working together.</span> <span class="tl-s" data-s="476.09" data-e="481.86">That was a wonderful blessing for the church, for us.</span> <span class="tl-s" data-s="481.86" data-e="485.21">We were close friends, so that was great.</span> <span class="tl-s" data-s="485.39" data-e="511.58">But then one of the guys, Larry Tomczak, who was the apostolic guy that was over our— was one of the guys that was kind of helping churches, came out and had some questions about my calling, whether I was really called to be a senior pastor.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="511.61" data-e="511.76">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="511.76" data-e="533.91">They were observing that we had a season in the life— they were observing that the church wasn&#x27;t growing particularly fast, was relatively small, 150 or so, and questioning my ability to lead, which is fine.</span> <span class="tl-s" data-s="533.94" data-e="534.14">Sure.</span> <span class="tl-s" data-s="534.18" data-e="536.59">But I never did quite agree with their reasons.</span> <span class="tl-s" data-s="536.59" data-e="546.38">The reasoning they were giving for that, I was like, I just don&#x27;t know.</span></p>
+        <p><span class="tl-s" data-s="548.38" data-e="551.69">I mean, I&#x27;m not sure about that.</span> <span class="tl-s" data-s="551.69" data-e="558.38">But in the end, ultimately, through some circumstances, I became convinced that I should let it go.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="558.94" data-e="576.20">So you weren&#x27;t necessarily in agreement, that you should step away, but you felt like, you know what, it&#x27;s the humble thing to do, or what was your thinking?</span> <span class="tl-s" data-s="576.23" data-e="578.35">Draw us into it.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="578.35" data-e="578.67">All right.</span> <span class="tl-s" data-s="578.67" data-e="581.93">Basically, I was questioning their line of thinking.</span> <span class="tl-s" data-s="581.93" data-e="585.38">I wasn&#x27;t sure I agreed with what they were saying, basically.</span> <span class="tl-s" data-s="586.37" data-e="590.88">Then one night we had a dinner with Trey and Charlotte in a restaurant.</span> <span class="tl-s" data-s="591.11" data-e="596.42">And Trey said, I don&#x27;t know that you&#x27;re called to be a senior pastor.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="596.42" data-e="596.68">Gotcha.</span> <span class="tl-s" data-s="596.68" data-e="596.77">Okay.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="596.79" data-e="599.42">That you should be leading.</span> <span class="tl-s" data-s="599.53" data-e="604.59">And at that moment, that was all I needed to hear.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="604.59" data-e="604.80">Okay.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="604.82" data-e="606.73">Somebody other than those guys, Trey&#x27;s saying the same thing.</span> <span class="tl-s" data-s="606.74" data-e="607.32">That&#x27;s it.</span> <span class="tl-s" data-s="607.32" data-e="612.25">I&#x27;m not going to do this or not going to grasp, not going to continue to do this.</span> <span class="tl-s" data-s="612.28" data-e="613.78">I&#x27;ll let it go.</span></p>
+        <p><span class="tl-s" data-s="615.17" data-e="621.07">I don&#x27;t know what that means for me.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="621.13" data-e="621.37">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="621.37" data-e="625.05">At that point, a man who was taking apostolic responsibility along with Larry was coming to the church.</span> <span class="tl-s" data-s="625.05" data-e="630.40">And the biggest issue that I had was, well, if it&#x27;s not going to be me, then who is it?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="630.51" data-e="630.58">Right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="631.08" data-e="633.18">We didn&#x27;t— [Speaker A] because it wasn&#x27;t my dad.</span> <span class="tl-s" data-s="633.18" data-e="636.46">It wasn&#x27;t your dad.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="636.54" data-e="636.68">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="636.80" data-e="637.47">Who is it?</span> <span class="tl-s" data-s="637.52" data-e="641.71">And so this guy who was a part of that, the leadership was being raised up by sovereign grace.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="641.76" data-e="641.81">Yeah.</span> <span class="tl-s" data-s="641.86" data-e="647.86">And he was the senior pastor in El Paso.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="647.86" data-e="650.60">He was one of the pastors in El Paso.</span> <span class="tl-s" data-s="650.60" data-e="651.87">He was kind of overseeing, helping to oversee that process.</span> <span class="tl-s" data-s="651.87" data-e="658.47">So my only question was, well, if it&#x27;s not going to be me, who&#x27;s it going to be?</span> <span class="tl-s" data-s="658.50" data-e="666.38">And then he stepped up and said, I will, or they, whoever made those decisions, said he will come. live in here and take over the church.</span> <span class="tl-s" data-s="666.38" data-e="667.46">At that point, I felt liberty.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="667.51" data-e="667.99">Yeah, sure.</span></p>
+        <p><span class="tl-s" data-s="669.89" data-e="673.12">It&#x27;s going to be cared for.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="673.15" data-e="675.87">It&#x27;s going to be cared for.</span> <span class="tl-s" data-s="676.62" data-e="678.15">It&#x27;s going to be okay.</span> <span class="tl-s" data-s="678.21" data-e="683.46">And then the question was, well, what do [Speaker A] I do?</span> <span class="tl-s" data-s="683.46" data-e="688.38">And honestly, I didn&#x27;t have faith to work with that particular guy.</span> <span class="tl-s" data-s="688.38" data-e="694.03">It just wasn&#x27;t— I just had real questions about his Leadership style.</span> <span class="tl-s" data-s="694.03" data-e="698.51">To me, it was leadership style at the time.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="698.87" data-e="708.57">Yeah, which is legitimate because you leave in &#x27;91, he takes over in &#x27;91, and it&#x27;s 10 years here of a heavy-handed legalistic style.</span> <span class="tl-s" data-s="708.57" data-e="715.39">And everybody here at the time, from &#x27;91 to 2001, knows that that was the way it was.</span> <span class="tl-s" data-s="715.39" data-e="716.26">It was my predecessor.</span> <span class="tl-s" data-s="716.26" data-e="725.25">So I mean, that was— I mean, that&#x27;s— that was— I said something like that at our— at my dad&#x27;s retirement.</span> <span class="tl-s" data-s="725.33" data-e="729.49">Um, [Speaker B] so [Speaker A] my dad worked with him for 10 years.</span> <span class="tl-s" data-s="729.49" data-e="736.07">Um, [Speaker B] and much to my chagrin, I mean, I didn&#x27;t— I didn&#x27;t understand that at the time.</span> <span class="tl-s" data-s="736.07" data-e="739.46">All I understood was, I don&#x27;t think I have faith to work with this guy.</span> <span class="tl-s" data-s="739.52" data-e="739.68">Sure.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="739.68" data-e="740.26">It wasn&#x27;t negative.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="740.26" data-e="741.61">Sure, sure, sure.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="741.61" data-e="743.34">It wasn&#x27;t sin issues at the time.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="743.55" data-e="746.33">At the time, it&#x27;s like a leadership style.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="746.52" data-e="747.26">Like the style.</span> <span class="tl-s" data-s="747.26" data-e="758.53">And I just didn&#x27;t think And then the Lord opened— was opening a door with another very close friend named Che Ahn, who had planted the church in— [Speaker A] Pasadena.</span> <span class="tl-s" data-s="758.62" data-e="758.75">Right.</span> <span class="tl-s" data-s="758.80" data-e="763.31">At the same time this church was planted.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="763.52" data-e="763.71">Right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="763.71" data-e="763.79">Here.</span> <span class="tl-s" data-s="763.84" data-e="767.93">And Che and Sue were real close friends of Terry and I.</span> <span class="tl-s" data-s="767.93" data-e="783.18">And so without going into details, a series of circumstances led to us going to work with Che and Sue in Pasadena, [Speaker A] California.</span> <span class="tl-s" data-s="783.25" data-e="785.93">And so we moved there in 1991.</span> <span class="tl-s" data-s="786.02" data-e="788.89">And that was, it was just a godsend.</span> <span class="tl-s" data-s="788.89" data-e="796.38">I could have never imagined living in California, never wanted to live in California, which is strange because I was a surfer.</span> <span class="tl-s" data-s="796.43" data-e="796.53">Right.</span> <span class="tl-s" data-s="796.53" data-e="801.43">I surfed all my life, almost all my life, all my teenage years.</span> <span class="tl-s" data-s="801.81" data-e="809.35">Loved going to California to surf and do all that, but never had any desire to live there.</span> <span class="tl-s" data-s="809.36" data-e="813.15">So to move there was kind of like, well, that&#x27;s crazy.</span></p>
+        <p><span class="tl-s" data-s="813.32" data-e="817.45">That&#x27;s just so [Speaker A] out [Speaker B] of the blue.</span> <span class="tl-s" data-s="817.45" data-e="823.48">So we&#x27;re in California, and so I&#x27;m not struggling with being in California.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="823.48" data-e="823.98">No.</span> <span class="tl-s" data-s="824.20" data-e="826.29">Yeah, you took to it.</span> <span class="tl-s" data-s="826.29" data-e="828.52">Yes, you took to it well.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="828.62" data-e="830.13">Yeah, I took to it well.</span> <span class="tl-s" data-s="830.72" data-e="850.42">And the church then, it was a great fit because ultimately what happened In my heart was, even though I didn&#x27;t agree with what I thought was happening and the way it happened, I eventually came to the point where I really believed and agreed, I&#x27;m not the best as a senior pastor.</span> <span class="tl-s" data-s="850.45" data-e="856.52">I am better as a number 2, as a support man, making someone else successful.</span> <span class="tl-s" data-s="856.57" data-e="857.74">And that was a big deal.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="857.84" data-e="857.99">Sure.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="858.18" data-e="870.17">And it came, but But ultimately, I came to that point where I really believed, as much as I didn&#x27;t like the way this— [Speaker A] It happened.</span> <span class="tl-s" data-s="870.62" data-e="871.03">It happened.</span> <span class="tl-s" data-s="871.03" data-e="872.01">The process, right?</span> <span class="tl-s" data-s="872.05" data-e="872.95">It was the Lord.</span> <span class="tl-s" data-s="873.02" data-e="873.97">It was good.</span> <span class="tl-s" data-s="874.00" data-e="875.20">It was good for me.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="875.52" data-e="877.83">A straight blow with a crooked stick.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="877.85" data-e="878.29">Yeah, whatever.</span> <span class="tl-s" data-s="878.39" data-e="883.05">It was a blow that was from God.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="883.13" data-e="883.26">Sure.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="883.47" data-e="883.62">Yeah.</span> <span class="tl-s" data-s="883.62" data-e="889.38">And it was, in other words, I eventually realized this was the Lord hitting me.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="889.38" data-e="889.72">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="889.72" data-e="890.06">Not people.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="890.57" data-e="893.23">And [Speaker B] of course, that&#x27;s the lesson in life.</span> <span class="tl-s" data-s="893.23" data-e="893.55">Yeah, right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="893.61" data-e="903.75">And if you don&#x27;t understand God, if you don&#x27;t understand the sovereignty of God, if you don&#x27;t trust that he&#x27;s in the midst of even what appear to be the worst circumstances, you&#x27;re lost.</span> <span class="tl-s" data-s="903.80" data-e="906.63">You don&#x27;t— [Speaker A] Yeah, what do you got?</span> <span class="tl-s" data-s="906.79" data-e="908.93">You have no hope in life.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="909.06" data-e="909.50">Right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="909.56" data-e="917.92">You got to believe that God&#x27;s bigger than any man, any woman, any situation in your life.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="917.92" data-e="918.08">That&#x27;s right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="918.15" data-e="918.97">God&#x27;s in charge of that.</span> <span class="tl-s" data-s="919.78" data-e="922.03">God&#x27;s bigger than all of that.</span> <span class="tl-s" data-s="922.21" data-e="923.89">And so eventually I came to see that.</span> <span class="tl-s" data-s="923.89" data-e="924.40">Eventually, pretty quickly.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="924.53" data-e="924.62">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="924.70" data-e="925.34">Came to see that.</span> <span class="tl-s" data-s="925.82" data-e="936.08">So much so that opportunities came up later to lead in the church.</span> <span class="tl-s" data-s="936.15" data-e="937.94">And I was like, not me.</span> <span class="tl-s" data-s="938.59" data-e="940.32">It&#x27;s not me.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="940.57" data-e="941.04">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="941.04" data-e="942.95">Now we&#x27;ll figure out what it is.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="942.95" data-e="945.19">But it&#x27;s not you.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="945.22" data-e="947.60">Yeah, but it&#x27;s not me.</span> <span class="tl-s" data-s="947.63" data-e="949.73">And And those situations did come up.</span> <span class="tl-s" data-s="949.73" data-e="955.85">But anyway, so we went to Pasadena serving with Che and Sue, and that was definitely a different experience.</span> <span class="tl-s" data-s="956.36" data-e="961.31">It was a good experience, but 2 years into that experience, Che started going down the road.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="961.97" data-e="962.14">Yeah.</span> <span class="tl-s" data-s="962.14" data-e="966.54">He went in a different direction, didn&#x27;t he?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="966.72" data-e="968.45">He went in a different direction.</span> <span class="tl-s" data-s="968.55" data-e="972.58">Now, he did it better than anybody that I&#x27;d ever watched do it.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="972.58" data-e="972.73">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="972.74" data-e="974.41">It was still bad.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="974.43" data-e="974.72">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="974.75" data-e="977.50">But he did it better.</span> <span class="tl-s" data-s="977.70" data-e="977.96">That&#x27;s good.</span> <span class="tl-s" data-s="977.96" data-e="979.20">His reasons were more theological.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="979.31" data-e="979.50">Uh-huh.</span> <span class="tl-s" data-s="979.50" data-e="979.93">Right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="979.97" data-e="990.02">I mean, there was obviously some pride and some things going on that— in all of us, but there were obviously character issues and things going on.</span> <span class="tl-s" data-s="990.05" data-e="991.84">But it was in the end more theological.</span> <span class="tl-s" data-s="992.47" data-e="995.45">He was not embracing Reformed theology.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="995.53" data-e="995.72">Yeah.</span> <span class="tl-s" data-s="995.77" data-e="996.30">Right.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="996.35" data-e="996.54">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="996.65" data-e="1010.16">So he was letting go of it and wanted to go a different direction, which would&#x27;ve been fine had that been all there was to it.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1010.23" data-e="1010.34">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1010.39" data-e="1017.78">But then Che, basically, we were meeting on a big campus called William Carey International University.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1017.81" data-e="1017.89">Right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1018.47" data-e="1023.60">Big campus in the middle of Pasadena.</span> <span class="tl-s" data-s="1023.68" data-e="1028.30">We, because the church then diminished in size, Back down to about 150.</span> <span class="tl-s" data-s="1028.53" data-e="1032.83">So that church was about 600.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1033.02" data-e="1035.17">When you got there?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1035.17" data-e="1040.45">No, at the end, when Che left, it was probably running around 600.</span> <span class="tl-s" data-s="1040.45" data-e="1042.26">I mean, Che&#x27;s very gifted, very charismatic.</span> <span class="tl-s" data-s="1042.87" data-e="1043.24">Good guy.</span> <span class="tl-s" data-s="1043.34" data-e="1046.47">Still a good guy to this day.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1046.57" data-e="1047.18">Love him.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1047.21" data-e="1052.51">It went from there down to A fellow named Mark Mullery took over.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1052.51" data-e="1054.13">Yeah, [Speaker B] right.</span> <span class="tl-s" data-s="1054.58" data-e="1058.80">And we, you know, back down to 150.</span> <span class="tl-s" data-s="1058.83" data-e="1069.95">Mark and I would always, back then, you remember the whole thing about breaking the 200 barrier, breaking the 500 barrier and breaking, you know, we were talking about breaking the 200 barrier in reverse.</span> <span class="tl-s" data-s="1070.88" data-e="1072.28">Now we&#x27;re facing the 200 barrier again.</span> <span class="tl-s" data-s="1072.31" data-e="1075.66">And, you know, whatever, you know.</span> <span class="tl-s" data-s="1075.78" data-e="1077.86">Back and forth across the 200.</span> <span class="tl-s" data-s="1077.86" data-e="1078.51">Yeah, right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1078.57" data-e="1081.20">Well, it was— we tried to make it funny.</span> <span class="tl-s" data-s="1081.71" data-e="1086.64">But, um, so anyway, that was a very difficult situation too, very traumatic.</span> <span class="tl-s" data-s="1086.75" data-e="1088.18">But we were on this campus.</span> <span class="tl-s" data-s="1088.44" data-e="1090.81">So then Che brings his church, plants a church.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1090.86" data-e="1093.91">On the same campus, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1094.30" data-e="1098.94">Well, he planted it a few miles away, which we were not thrilled about.</span> <span class="tl-s" data-s="1099.53" data-e="1101.94">But like, what can we say?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1101.94" data-e="1102.63">Right, sure.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1103.79" data-e="1106.68">Then he brings that church back onto the very same campus.</span> <span class="tl-s" data-s="1106.76" data-e="1107.74">So we&#x27;re meeting 200 yards apart.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1107.86" data-e="1108.18">Ouch.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1108.20" data-e="1118.08">But in the end, that was not a bad thing because in the end, ultimately, Che had gone so different in his direction that it was like people that would come to his church would not come to our church.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1118.38" data-e="1118.58">Yeah, right.</span> <span class="tl-s" data-s="1119.11" data-e="1126.86">It was a different— [Speaker B] People that were left in our church would not be going to his church.</span> <span class="tl-s" data-s="1126.86" data-e="1126.97">Sure.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1126.97" data-e="1133.34">It was just like Okay, that&#x27;s just the way it is.</span> <span class="tl-s" data-s="1133.34" data-e="1136.80">And [Speaker A] yeah, we&#x27;re the body of Christ.</span> <span class="tl-s" data-s="1136.80" data-e="1136.88">Yeah.</span> <span class="tl-s" data-s="1136.88" data-e="1137.24">Yep.</span> <span class="tl-s" data-s="1137.27" data-e="1138.63">So it was very difficult, but time.</span> <span class="tl-s" data-s="1138.65" data-e="1144.43">But in the end, it was like we realized we&#x27;ve just got 2 different types of churches here.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1144.43" data-e="1144.62">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1145.44" data-e="1146.55">So it was good.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1146.72" data-e="1151.65">So your portion stayed in— was the Pasadena church already a part of Sovereign Grace?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1151.70" data-e="1156.90">Yeah, it was planted as a Sovereign Grace [Speaker C] church.</span> <span class="tl-s" data-s="1157.41" data-e="1157.62">Okay.</span> <span class="tl-s" data-s="1157.65" data-e="1160.54">So the part that you guys stayed in— [Speaker B] Abundant Life.</span> <span class="tl-s" data-s="1161.57" data-e="1161.66">Church.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1161.66" data-e="1162.58">Abundant Life.</span> <span class="tl-s" data-s="1162.62" data-e="1163.91">You guys stayed in the denomination.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1163.91" data-e="1164.71">Oh yeah.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1164.71" data-e="1167.21">And the other guy took it.</span> <span class="tl-s" data-s="1167.28" data-e="1169.41">So here you are again.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1169.43" data-e="1169.82">Once again.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1170.00" data-e="1178.35">Time, uh, go from 600 to 150, and you&#x27;re there again trying to figure out what the Lord has for you to do.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1178.35" data-e="1178.37">Yep.</span> <span class="tl-s" data-s="1178.73" data-e="1182.60">And basically just again looking at the Bible and saying, has anything changed?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1182.60" data-e="1182.85">No.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1183.03" data-e="1188.16">Do we build differently or is this Is there something different that he&#x27;s doing that we should be doing?</span> <span class="tl-s" data-s="1188.72" data-e="1195.10">And no, we still believe all the same things.</span> <span class="tl-s" data-s="1195.12" data-e="1198.70">And it&#x27;s, you know, it just doesn&#x27;t make any sense to be going anywhere.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1198.83" data-e="1203.38">Was it just you left over on the leadership team or was there other guys?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1203.41" data-e="1209.61">No, a guy named Mark Mullery was, let&#x27;s see, and Craig Cabanis, 3 of us pastors.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1209.67" data-e="1209.96">Okay.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1209.98" data-e="1214.86">So the pastoral team basically kind of went in half.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1215.60" data-e="1216.02">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1216.02" data-e="1224.76">So Mark and I and Craig went this way, rest of the guys went that way, and in many ways had very productive ministry.</span> <span class="tl-s" data-s="1224.76" data-e="1230.34">So [Speaker A] yeah, everybody&#x27;s— [Speaker B] God did some pretty amazing things.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1230.45" data-e="1230.79">Yep.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1231.81" data-e="1234.38">Some good stuff through their lives.</span> <span class="tl-s" data-s="1234.38" data-e="1237.94">Um, we went, and that actually began a season of the most fun.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1238.07" data-e="1238.26">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1239.19" data-e="1243.50">Because then It was all about planting churches.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1243.52" data-e="1243.60">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1243.60" data-e="1248.09">And the one thing I&#x27;ve always wanted to do is be involved in planting churches.</span> <span class="tl-s" data-s="1248.71" data-e="1250.95">So planting this church, which was not, not a plan, right?</span> <span class="tl-s" data-s="1250.96" data-e="1254.08">But it was an exciting time.</span> <span class="tl-s" data-s="1254.26" data-e="1258.02">It was, it was good.</span> <span class="tl-s" data-s="1258.69" data-e="1260.30">It was planting a church.</span> <span class="tl-s" data-s="1260.30" data-e="1266.50">So planting the original church, planting this church, and then Che&#x27;s gone.</span> <span class="tl-s" data-s="1266.63" data-e="1270.08">And so now we&#x27;re like, Okay, what do we do now?</span> <span class="tl-s" data-s="1270.08" data-e="1274.02">Okay, we&#x27;re going to plant Craig out because we can&#x27;t afford to keep him.</span> <span class="tl-s" data-s="1274.13" data-e="1274.50">Yeah.</span> <span class="tl-s" data-s="1274.50" data-e="1276.77">So church planting on the must-happen level.</span></p>
+        <p><span class="tl-s" data-s="1276.83" data-e="1277.02">Yeah.</span> <span class="tl-s" data-s="1277.02" data-e="1284.22">Okay, so we plant, but it&#x27;s a wonderful thing because we&#x27;re researching where to plant Craig.</span> <span class="tl-s" data-s="1284.47" data-e="1288.98">We look at San Diego, we&#x27;re thinking it&#x27;s 2 hours away.</span> <span class="tl-s" data-s="1289.50" data-e="1292.30">We can be involved in this church plant.</span> <span class="tl-s" data-s="1292.58" data-e="1296.28">We can support him, help him.</span></p>
+        <p><span class="tl-s" data-s="1297.64" data-e="1298.80">We send him out.</span> <span class="tl-s" data-s="1298.90" data-e="1301.48">We have teams going in every Sunday to lead worship.</span> <span class="tl-s" data-s="1301.48" data-e="1305.04">We&#x27;re going in to preach.</span> <span class="tl-s" data-s="1305.19" data-e="1308.80">We&#x27;re going in to do evangelistic outreaches.</span> <span class="tl-s" data-s="1308.91" data-e="1309.51">It&#x27;s a blast.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1309.51" data-e="1309.59">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1309.59" data-e="1309.93">It&#x27;s an absolute gas.</span> <span class="tl-s" data-s="1310.03" data-e="1312.39">And we&#x27;re having the time of our lives planting church.</span> <span class="tl-s" data-s="1312.40" data-e="1313.32">And so that happened.</span> <span class="tl-s" data-s="1313.42" data-e="1313.89">It was great.</span> <span class="tl-s" data-s="1313.89" data-e="1318.45">So we start raising up a new guy to plant a church.</span> <span class="tl-s" data-s="1318.45" data-e="1321.52">So the church keeps growing.</span> <span class="tl-s" data-s="1321.52" data-e="1326.87">Well, actually, it never grew, but we&#x27;re still sending people out.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1326.90" data-e="1333.28">You&#x27;re still sending people out, and you&#x27;re sending people all over the place too.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1333.28" data-e="1340.23">Well, I think all churches end up doing that, but uniquely in Pasadena, that&#x27;s true.</span> <span class="tl-s" data-s="1340.24" data-e="1346.19">We had tons of people that just were moving.</span> <span class="tl-s" data-s="1346.30" data-e="1347.74">Pasadena is a very transient area.</span> <span class="tl-s" data-s="1347.74" data-e="1355.15">So you&#x27;ve got JPL, NASA, You&#x27;ve got Caltech, you&#x27;ve got Fuller Seminary, you&#x27;ve got all— and all of these people are coming to church.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1355.52" data-e="1355.84">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1355.89" data-e="1357.70">So we&#x27;ve got nuclear physicists in the church.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1357.73" data-e="1357.84">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1357.91" data-e="1364.46">We&#x27;ve got pastors and leaders coming from Fuller Seminary going through church, wanting to be a part of church.</span> <span class="tl-s" data-s="1364.46" data-e="1371.61">Got Caltech and all of these things, Institute for the Arts coming in. to the church, but they&#x27;re all leaving.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1371.67" data-e="1371.77">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1371.77" data-e="1373.13">Getting their degrees or whatever.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1373.19" data-e="1374.92">And go somewhere else.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1375.04" data-e="1376.82">And they&#x27;re going somewhere else.</span> <span class="tl-s" data-s="1376.82" data-e="1380.48">And so we&#x27;re definitely sending people all over the nation.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1380.48" data-e="1383.88">But you planted a church in San Diego with Craig.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1384.43" data-e="1386.03">Planted that church.</span> <span class="tl-s" data-s="1386.59" data-e="1388.87">That was a wonderful time.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1389.14" data-e="1389.30">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1390.36" data-e="1393.84">And then Mark was leading at that time.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1394.11" data-e="1396.92">Mark ends up taking a church in Virginia.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1396.92" data-e="1397.38">Well, yeah.</span> <span class="tl-s" data-s="1398.28" data-e="1403.10">And so then in 1998, CJ calls, and this is a hard one.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1403.10" data-e="1403.35">Yeah, right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1403.35" data-e="1407.40">We&#x27;re just getting to the place where things are stabilized.</span> <span class="tl-s" data-s="1407.67" data-e="1408.64">Church splits don&#x27;t stabilize overnight.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1408.64" data-e="1408.92">No.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1408.96" data-e="1416.47">Back when I went through that, the whole thing was small is bad.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1416.50" data-e="1417.10">Yeah, sure.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1417.14" data-e="1417.80">Big is good.</span> <span class="tl-s" data-s="1417.85" data-e="1423.18">And then shortly after that, we have this whole turnaround in Sovereign Grace where we&#x27;re teaching on small churches are good.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1423.18" data-e="1424.38">Yeah, right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1424.44" data-e="1428.30">And so at least we weren&#x27;t dealing with that one.</span> <span class="tl-s" data-s="1428.30" data-e="1429.31">But Mark took over.</span> <span class="tl-s" data-s="1429.40" data-e="1432.65">We never really grew, but we were planting a church.</span> <span class="tl-s" data-s="1433.21" data-e="1437.92">It was like, that was— [Speaker A] That&#x27;s awesome.</span> <span class="tl-s" data-s="1437.92" data-e="1438.65">That was awesome.</span> <span class="tl-s" data-s="1438.65" data-e="1441.37">I was like, that&#x27;s what I want to do.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1441.39" data-e="1442.43">Yeah, right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1442.43" data-e="1443.80">And so Mark was there.</span> <span class="tl-s" data-s="1443.80" data-e="1454.93">And then in 1998, CJ called and they had a large church back east that had lost their pastor due to some circumstances that were not so good, but they were working through, but they needed a pastor.</span> <span class="tl-s" data-s="1455.85" data-e="1457.29">They asked Mark to come back.</span> <span class="tl-s" data-s="1457.29" data-e="1458.03">We did pray.</span> <span class="tl-s" data-s="1458.03" data-e="1461.38">We did feel like that was the Lord for him to do that.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1461.38" data-e="1461.58">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1461.61" data-e="1464.96">But we had no person ready to take Mark&#x27;s place.</span> <span class="tl-s" data-s="1465.07" data-e="1470.20">And that was where I was like— [Speaker A] It&#x27;s not me.</span> <span class="tl-s" data-s="1470.20" data-e="1470.82">I don&#x27;t think it&#x27;s me.</span> <span class="tl-s" data-s="1470.85" data-e="1477.45">I mean, I feel comfortable doing what I&#x27;m doing, but we had this guy, Ron Boomsma, [Speaker A] Yeah.</span> <span class="tl-s" data-s="1477.50" data-e="1487.35">Who we had been raising up as a community group leader, small group leader, and was becoming more obviously a leader among leaders.</span> <span class="tl-s" data-s="1487.35" data-e="1492.47">And then, so we&#x27;re thinking he&#x27;s going to be a church planter.</span> <span class="tl-s" data-s="1492.50" data-e="1496.21">So he&#x27;s our next church planter.</span> <span class="tl-s" data-s="1496.77" data-e="1507.41">Well, now we&#x27;re saying, okay, maybe Ron should just take over the church and I&#x27;ll just— yeah, it might work if there&#x27;s somebody that&#x27;s experienced.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1507.49" data-e="1507.78">Has some experience.</span> <span class="tl-s" data-s="1507.81" data-e="1507.96">Yeah.</span> <span class="tl-s" data-s="1508.05" data-e="1508.28">Right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1508.31" data-e="1516.24">We&#x27;re not sure how comfortable Ron felt with [Speaker C] that, [Speaker B] but he agreed to do it.</span> <span class="tl-s" data-s="1516.26" data-e="1519.69">So Ron takes over, and interestingly enough, we start growing.</span> <span class="tl-s" data-s="1519.69" data-e="1528.84">And I mean, Ron&#x27;s never pastored before that I know of, had obviously never been a senior pastor before, never preached consistently.</span> <span class="tl-s" data-s="1528.92" data-e="1533.16">So I mean, he was coming in just as green as you can imagine.</span> <span class="tl-s" data-s="1533.26" data-e="1533.71">Yeah.</span> <span class="tl-s" data-s="1533.76" data-e="1539.78">We just start working together and lo and behold, we start seeing the church actually grow a little bit.</span> <span class="tl-s" data-s="1539.78" data-e="1543.96">Raised up a guy, send him to the PC, guy named— [Speaker A] Matthew?</span> <span class="tl-s" data-s="1544.28" data-e="1544.30">Matthew.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1544.35" data-e="1545.20">Matthew Hoffman.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1545.23" data-e="1545.96">Matthew Hoffman.</span> <span class="tl-s" data-s="1545.96" data-e="1547.28">Raised him up.</span> <span class="tl-s" data-s="1547.38" data-e="1549.14">2002, plant Matthew out.</span> <span class="tl-s" data-s="1549.88" data-e="1565.71">We want to plant in California, but there&#x27;s a group of people in Kansas City, people from different parts of the country who had congealed in Kansas City that came from Sovereign Grace churches, and they were just crying out, please, we need a pastor.</span> <span class="tl-s" data-s="1565.79" data-e="1566.83">We want a church.</span> <span class="tl-s" data-s="1567.36" data-e="1570.36">And Matthew had a unique connection with the Midwest.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1570.57" data-e="1570.68">Right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1571.21" data-e="1575.51">So we start looking into that and decide, okay, that&#x27;s the Lord.</span> <span class="tl-s" data-s="1575.54" data-e="1582.04">So we plant another church in Kansas City, and we are flying in regularly to lead worship, to help preach.</span> <span class="tl-s" data-s="1582.04" data-e="1590.28">I mean, it&#x27;s long distance this time, and we&#x27;re [Speaker A] You&#x27;re still [Speaker B] doing it.</span> <span class="tl-s" data-s="1590.28" data-e="1591.63">Constantly going in there.</span> <span class="tl-s" data-s="1591.73" data-e="1593.85">It is a blast.</span> <span class="tl-s" data-s="1593.85" data-e="1601.06">By this time, I have been in the process of whatever discipleship with my sons, and they&#x27;re starting to take responsibility for the worship leading.</span> <span class="tl-s" data-s="1601.21" data-e="1603.55">So they&#x27;re going in there.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1603.71" data-e="1604.16">That&#x27;s great.</span> <span class="tl-s" data-s="1604.19" data-e="1605.43">So it&#x27;s a family thing.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1605.48" data-e="1606.92">We&#x27;re just having a blast.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1606.92" data-e="1607.26">That&#x27;s great.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1607.63" data-e="1612.13">Just like, this is so much fun planting churches.</span> <span class="tl-s" data-s="1612.13" data-e="1614.25">So that was The next thing.</span> <span class="tl-s" data-s="1614.25" data-e="1616.93">And after that, you know what happens after that.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1617.93" data-e="1618.66">I do, yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1618.73" data-e="1621.91">So the Sovereign Grace debacle— [Speaker A] A lot of stuff happens.</span> <span class="tl-s" data-s="1622.89" data-e="1634.59">Takes place that, you know, I had— I do not understand how people can go these directions, but they do.</span> <span class="tl-s" data-s="1634.77" data-e="1637.34">And [Speaker A] yeah, [Speaker B] what can you say?</span></p>
+        <p><span class="tl-s" data-s="1638.56" data-e="1640.73">Um, so that was, that was, um, that was a challenge.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1640.87" data-e="1641.51">Yeah.</span></p>
+        <p><span class="tl-s" data-s="1642.92" data-e="1644.13">Oh, I, I know.</span> <span class="tl-s" data-s="1645.14" data-e="1647.86">We lived it too.</span> <span class="tl-s" data-s="1647.86" data-e="1659.52">It&#x27;s [Speaker B] probably the biggest Ultimately, the biggest challenge of my entire ministry was that whole 10-year period.</span> <span class="tl-s" data-s="1659.52" data-e="1676.12">It was just brutal because that led to people questioning the leadership team, questioning our character, questioning everything you can imagine, questioning things that they have believed all their lives.</span> <span class="tl-s" data-s="1676.37" data-e="1676.59">I know.</span> <span class="tl-s" data-s="1676.62" data-e="1679.83">And we see the effect on people to this day.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1679.91" data-e="1680.89">Oh, absolutely.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1681.18" data-e="1688.30">But maybe settling into your roles, so you settle in in &#x27;91, and describe the roles you carried at the church.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1688.35" data-e="1689.84">Primarily music, worship, pastoral.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1689.86" data-e="1693.74">So you&#x27;re counseling people, you&#x27;re leading ministries, you&#x27;re shepherding people.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1693.74" data-e="1698.62">Well, initially it was pastoral and General pastoral and worship.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1698.63" data-e="1699.05">Okay.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1699.13" data-e="1703.12">Because the shade didn&#x27;t have anybody on staff that was particular.</span> <span class="tl-s" data-s="1703.43" data-e="1710.10">He had some pastoral people, but that not a lot like their particular gifting.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1710.10" data-e="1710.66">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1711.29" data-e="1715.40">And so that was a part of what I was.</span> <span class="tl-s" data-s="1716.07" data-e="1721.07">And then the whole music area, I was and been involved in music and have a degree in music.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1721.07" data-e="1721.17">Right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1721.40" data-e="1723.82">And so had been involved in all of that.</span> <span class="tl-s" data-s="1725.01" data-e="1732.84">All along, so taking over worship for them and leading that was a significant part of it.</span> <span class="tl-s" data-s="1733.09" data-e="1734.92">Big part of it, pastoral ministry.</span> <span class="tl-s" data-s="1735.02" data-e="1738.65">And then, as time went on, after the split, it was whatever needed to be done.</span> <span class="tl-s" data-s="1738.65" data-e="1739.11">Every hat, right?</span> <span class="tl-s" data-s="1739.11" data-e="1741.06">Whatever hat has to be worn, you got to wear it.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1741.06" data-e="1746.58">But you look back, you look back at the to 1975 and the and when you stood up.</span> <span class="tl-s" data-s="1746.58" data-e="1749.15">At the Derek Prince?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1749.15" data-e="1749.24">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1749.24" data-e="1751.32">And you were, you shepherded.</span> <span class="tl-s" data-s="1751.36" data-e="1754.59">You shepherded though 50 years, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1754.59" data-e="1756.12">Yeah.</span> <span class="tl-s" data-s="1756.74" data-e="1757.41">Yeah.</span> <span class="tl-s" data-s="1757.58" data-e="1759.20">The Lord was very gracious.</span> <span class="tl-s" data-s="1759.24" data-e="1763.59">I mean, not that I knew what I was doing.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1763.67" data-e="1768.69">But I think there&#x27;s a lot of people— [Speaker B] That whole time.</span> <span class="tl-s" data-s="1768.74" data-e="1775.40">I think there&#x27;s a lot of people we&#x27;ll meet in eternity who will beg to differ.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1775.40" data-e="1778.39">Well, I&#x27;m trusting God for that, for sure.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1779.15" data-e="1779.72">I think that&#x27;s right.</span> <span class="tl-s" data-s="1779.72" data-e="1781.05">So you go on in Pasadena.</span> <span class="tl-s" data-s="1781.16" data-e="1782.88">And then when did you retire?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1784.03" data-e="1785.06">Well, retired in 2021.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1785.15" data-e="1785.25">2021.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1785.25" data-e="1787.19">So we did plant one more church.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1787.56" data-e="1787.64">Where?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1787.65" data-e="1790.03">We planted a church in Irvine.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1790.14" data-e="1790.38">Okay.</span> <span class="tl-s" data-s="1790.38" data-e="1790.96">Yeah, right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1791.10" data-e="1793.75">That was probably the most fun and the most difficult.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1793.75" data-e="1793.83">Right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1793.83" data-e="1796.04">Because we actually started a satellite church of the church in Pasadena.</span> <span class="tl-s" data-s="1796.62" data-e="1800.72">A guy named Mike Davis was significant in that.</span> <span class="tl-s" data-s="1800.72" data-e="1810.16">Moved down there, and so for the next two years I went down preaching almost every Saturday night.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1810.19" data-e="1810.40">Wow!</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1810.42" data-e="1812.65">We did the meetings on Saturday nights.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1812.76" data-e="1814.77">Was it still a blast?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1814.83" data-e="1816.02">Oh, it was a blast.</span> <span class="tl-s" data-s="1817.16" data-e="1818.62">I mean, just planting church.</span> <span class="tl-s" data-s="1818.77" data-e="1819.99">Yeah, it was very hard.</span> <span class="tl-s" data-s="1820.55" data-e="1830.73">After it was all said and done, one of the guys in the church calculated that I had driven over nine thousand miles.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1830.73" data-e="1831.10">Wow!</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1831.93" data-e="1833.02">Going back and forth.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1833.02" data-e="1834.03">Irvine, Pasadena, Irvine.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1834.03" data-e="1834.13">Yeah.</span> <span class="tl-s" data-s="1834.13" data-e="1838.46">So that was just, we had, we sent out 2 or 3 couples from the church in Pasadena.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1838.46" data-e="1838.64">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1838.85" data-e="1841.81">And then we gathered a few other couples.</span> <span class="tl-s" data-s="1842.36" data-e="1848.50">And by the time, then the challenge was we thought we had a senior guy in the making.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1849.11" data-e="1849.16">Right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1849.26" data-e="1850.17">From the beginning in Pasadena.</span> <span class="tl-s" data-s="1850.22" data-e="1852.50">And then that didn&#x27;t work out.</span> <span class="tl-s" data-s="1852.50" data-e="1853.62">So then we were stuck.</span> <span class="tl-s" data-s="1853.62" data-e="1854.10">But kept going.</span> <span class="tl-s" data-s="1854.10" data-e="1858.24">And then eventually Eric Drabetsky came on the scene.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1858.32" data-e="1858.70">Yes.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1858.80" data-e="1868.80">He was— at one point we thought maybe he was the guy, then he wasn&#x27;t the guy, then he was back as potentially the guy.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1868.83" data-e="1869.04">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1869.07" data-e="1876.46">So in the end, we turned that all over to Eric and the rest, as they say, is history.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1876.46" data-e="1879.33">I know there&#x27;s a thriving church in Orange, California.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1879.33" data-e="1881.98">Oh man, it&#x27;s just all such a joy to see all that God&#x27;s doing.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1882.22" data-e="1882.75">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1882.78" data-e="1893.62">So, you know, planting churches is just— and I&#x27;m sure that&#x27;s in some ways unique to me, but people need to understand that is the heart and soul in some ways of Sovereign Grace.</span> <span class="tl-s" data-s="1893.62" data-e="1896.67">Plant, get out there, make sure the churches are healthy.</span> <span class="tl-s" data-s="1896.73" data-e="1902.74">But let&#x27;s get out there and get the Gospel going.</span> <span class="tl-s" data-s="1903.09" data-e="1910.32">Anybody in ministry will tell you the best way to reach people with the Gospel is plant churches.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1910.32" data-e="1911.14">Absolutely, yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1911.14" data-e="1911.99">So you&#x27;re looking at Boise, Yeah.</span> <span class="tl-s" data-s="1911.99" data-e="1918.33">It may seem like for the average person in the church, like, yeah, Boise, whatever.</span> <span class="tl-s" data-s="1918.35" data-e="1925.12">No, man, this is like, [Speaker A] yeah, [Speaker B] this is where the rubber meets the road.</span> <span class="tl-s" data-s="1925.49" data-e="1926.87">This is where churches thrive.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1927.01" data-e="1927.09">Right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1927.09" data-e="1932.37">When they&#x27;re going out there planting churches, keeping that vision moving ahead.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1932.37" data-e="1932.44">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1932.55" data-e="1940.11">Getting involved in that somehow, whether it&#x27;s financially, prayer, all of the above.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1940.23" data-e="1940.51">Right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1940.56" data-e="1949.26">Going there for an E-Team or what we used to call E-Teams, evangelistic teams, whatever, you know, whether that looks like, just get involved, just do it.</span> <span class="tl-s" data-s="1949.26" data-e="1951.64">It&#x27;s a lot of fun.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1951.76" data-e="1952.32">Yeah, it is.</span> <span class="tl-s" data-s="1952.32" data-e="1953.93">It&#x27;s right out there on the frontier, isn&#x27;t it?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1953.93" data-e="1954.30">It is.</span> <span class="tl-s" data-s="1954.85" data-e="1955.21">It&#x27;s a blast.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1955.21" data-e="1955.77">It is, yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1955.77" data-e="1956.39">You gotta have fun.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1956.40" data-e="1956.66">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1956.74" data-e="1963.06">Well, yeah, and planting churches is fun for sure.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1963.12" data-e="1963.15">Yep.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1963.28" data-e="1963.59">Wow.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1963.59" data-e="1963.76">Yeah.</span> <span class="tl-s" data-s="1963.76" data-e="1967.98">So that, how did you end up back here in Arizona?</span> <span class="tl-s" data-s="1968.08" data-e="1984.16">So you retired in Pasadena, lots of faithfulness in planting churches, which, you know, we want to continue to be a church here that plants churches.</span> <span class="tl-s" data-s="1984.90" data-e="1993.04">You mentioned Boise and all the fun that was happening and all that the Lord was doing.</span> <span class="tl-s" data-s="1993.04" data-e="1995.43">How did you end up back here?</span> <span class="tl-s" data-s="1995.43" data-e="2001.40">And what does life look like for someone after ministry?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2002.01" data-e="2002.88">Great question.</span> <span class="tl-s" data-s="2002.96" data-e="2005.80">Well, I ended up here.</span> <span class="tl-s" data-s="2005.80" data-e="2014.21">I&#x27;m not sure exactly how the thought processes all took place, but what we realized was that it would be very difficult to retire in California.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2014.21" data-e="2014.87">Cost-wise?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2015.10" data-e="2015.34">Cost-wise.</span> <span class="tl-s" data-s="2015.40" data-e="2017.73">I had nothing but Social Security.</span> <span class="tl-s" data-s="2017.73" data-e="2019.14">So I had a small IRA-type thing.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2019.17" data-e="2019.27">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2019.27" data-e="2019.96">Relatively small, comparatively speaking.</span> <span class="tl-s" data-s="2021.03" data-e="2024.00">So it wasn&#x27;t like I had a lot.</span> <span class="tl-s" data-s="2024.00" data-e="2035.47">Uh, we eventually bought a house in 1995, &#x27;96, somewhere in there, and it was a disaster of a house, and we remodeled it till the day we sold it.</span> <span class="tl-s" data-s="2035.47" data-e="2039.73">But the only way we could live in California was to have people renting rooms from us.</span> <span class="tl-s" data-s="2039.73" data-e="2045.34">So the entire 30 years we were in California, we had to rent a room out to be able to survive.</span></p>
+        <p><span class="tl-s" data-s="2047.65" data-e="2053.57">So that was the question at the end was, how do we continue to survive?</span> <span class="tl-s" data-s="2053.57" data-e="2056.91">Well, we&#x27;d have to continue renting rooms out, which was great.</span> <span class="tl-s" data-s="2057.53" data-e="2058.82">It worked well for us.</span></p>
+        <p><span class="tl-s" data-s="2060.04" data-e="2063.59">It was the [Speaker C] gift we got at the time.</span> <span class="tl-s" data-s="2063.64" data-e="2063.86">Yeah.</span> <span class="tl-s" data-s="2063.86" data-e="2068.37">You do what you have [Speaker C] to do.</span> <span class="tl-s" data-s="2068.39" data-e="2078.20">But it was like, I didn&#x27;t want Terri, and she didn&#x27;t want to have to be thinking we&#x27;re going to rent rooms for the rest of our lives.</span> <span class="tl-s" data-s="2078.20" data-e="2087.38">So, and we&#x27;re sitting on a house that we bought for, we thought it was a huge amount of money back then.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2087.40" data-e="2089.20">Mountain of money, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2089.97" data-e="2093.70">And we&#x27;re selling it for— [Speaker A] Crazy amount, right?</span> <span class="tl-s" data-s="2093.70" data-e="2099.97">8 times more than, I mean, the possibilities are like, It&#x27;s like, okay, we got this house.</span> <span class="tl-s" data-s="2100.64" data-e="2102.22">We don&#x27;t want to rent anymore.</span> <span class="tl-s" data-s="2102.27" data-e="2104.13">So this is our retirement.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2104.13" data-e="2104.23">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2104.23" data-e="2104.77">Right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2105.55" data-e="2108.87">So we could sell this house.</span> <span class="tl-s" data-s="2108.87" data-e="2110.24">We could virtually live.</span> <span class="tl-s" data-s="2110.29" data-e="2114.98">We could go anywhere in the nation and buy a house outright.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2114.98" data-e="2115.14">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2115.85" data-e="2117.33">Just about.</span> <span class="tl-s" data-s="2118.09" data-e="2118.87">So that was one thing.</span> <span class="tl-s" data-s="2118.87" data-e="2121.86">We don&#x27;t think we can continue to live here without renting.</span> <span class="tl-s" data-s="2121.86" data-e="2125.04">And we didn&#x27;t feel that was Helpful.</span> <span class="tl-s" data-s="2125.07" data-e="2127.77">But the bigger reason was Terry&#x27;s mom.</span> <span class="tl-s" data-s="2127.78" data-e="2139.84">Her dad died in 2015, and her mom had been living with us for a couple of years in Pasadena, would go home for the summers to live with her brothers.</span> <span class="tl-s" data-s="2139.92" data-e="2147.23">And so while she was over here visiting, at one point she had a stroke and ended up immobile.</span> <span class="tl-s" data-s="2148.07" data-e="2159.65">And just by the grace of God, through circumstances, she ended up being in a care facility that was— her brother was just very gracious in working that through and making that happen.</span> <span class="tl-s" data-s="2159.92" data-e="2161.92">And it worked out excellent.</span> <span class="tl-s" data-s="2161.92" data-e="2165.88">And so she&#x27;s in that care facility still.</span></p>
+        <p><span class="tl-s" data-s="2165.88" data-e="2170.05">So we began— we realized Terry, we wanted Terry to be close to her mom.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2170.05" data-e="2170.11">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2170.87" data-e="2171.63">Till her mom was gone.</span> <span class="tl-s" data-s="2172.01" data-e="2176.61">So that was the That was probably one of the biggest factors.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2176.72" data-e="2176.82">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2176.82" data-e="2178.30">So that was all happening.</span> <span class="tl-s" data-s="2178.30" data-e="2185.45">And we told the kids, all of our kids had lived in Pasadena before moving away for different reasons.</span> <span class="tl-s" data-s="2185.47" data-e="2190.32">Well, none of them had moved away actually, except Aaron.</span> <span class="tl-s" data-s="2190.64" data-e="2194.97">Aaron was up in Boise at the time, or still is.</span> <span class="tl-s" data-s="2194.98" data-e="2203.20">The other kids were all in Pasadena, married, most of them, all of them married by this time.</span> <span class="tl-s" data-s="2203.24" data-e="2208.88">But we had told them years before, like 3 or 4 years before, we&#x27;d said, this is what it looks like.</span> <span class="tl-s" data-s="2209.12" data-e="2214.03">We&#x27;re going to be going back to care for Mom, blah, blah, blah.</span> <span class="tl-s" data-s="2214.89" data-e="2217.08">And they all said, ah, you go ahead and go.</span> <span class="tl-s" data-s="2217.08" data-e="2218.01">We love Pasadena.</span> <span class="tl-s" data-s="2218.20" data-e="2219.28">It&#x27;s just great here.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2219.41" data-e="2219.78">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2219.88" data-e="2220.08">It&#x27;s home.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2220.12" data-e="2220.82">Yeah, it&#x27;s home.</span> <span class="tl-s" data-s="2221.53" data-e="2226.75">And so we just anticipated moving here by ourselves.</span> <span class="tl-s" data-s="2227.79" data-e="2233.99">And so much to our surprise, Jonathan actually moved here ahead of us a few months.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2233.99" data-e="2234.49">He did.</span> <span class="tl-s" data-s="2234.52" data-e="2234.92">Yeah.</span> <span class="tl-s" data-s="2234.93" data-e="2236.27">He beat you here, didn&#x27;t he?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2236.28" data-e="2236.69">Beat us here.</span> <span class="tl-s" data-s="2237.18" data-e="2240.54">That was like, wow, where&#x27;d that come from?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2240.54" data-e="2250.35">And [Speaker B] then a year later, Ryan calls and said, we&#x27;re praying about moving.</span> <span class="tl-s" data-s="2250.35" data-e="2251.95">And so they end up moving.</span> <span class="tl-s" data-s="2252.52" data-e="2268.06">And so to be here now with those guys and their families and all the grandkids there, that&#x27;s just like, You couldn&#x27;t have written a script and had it work out any better than that, at least for us.</span> <span class="tl-s" data-s="2268.06" data-e="2274.34">Maybe not— wasn&#x27;t the ideal script for the church in Pasadena because those guys— [Speaker A] Yeah.</span> <span class="tl-s" data-s="2274.34" data-e="2275.36">They&#x27;ve got a lot of responsibility.</span> <span class="tl-s" data-s="2275.63" data-e="2275.70">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2275.71" data-e="2281.48">So anyway, that&#x27;s why we came in 2021 was the plan was to leave All the dates were set in advance, and then the pandemic hit.</span> <span class="tl-s" data-s="2281.48" data-e="2285.07">And that pandemic basically took California out of my heart.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2285.07" data-e="2286.68">Yeah, [Speaker A] I bet.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2286.69" data-e="2286.88">Yeah.</span> <span class="tl-s" data-s="2287.01" data-e="2291.45">You would&#x27;ve had to have lived there.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2291.96" data-e="2292.80">I would imagine.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2292.86" data-e="2295.73">To realize how— [Speaker A] How crazy it was.</span> <span class="tl-s" data-s="2295.73" data-e="2296.84">Unfortunate that situation was.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2296.93" data-e="2301.08">And so you&#x27;ve been here now almost, well, 3 years.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2301.42" data-e="2302.67">Been here 21 years.</span> <span class="tl-s" data-s="2302.72" data-e="2302.86">Yep.</span> <span class="tl-s" data-s="2302.88" data-e="2304.53">3 years, a little over 3 years.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2304.53" data-e="2312.01">And one of the things I&#x27;m grateful for is just the way you and Terri have connected to my parents.</span> <span class="tl-s" data-s="2312.01" data-e="2315.54">And you guys do all kinds of stuff together.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2315.54" data-e="2317.08">We have not suffered.</span> <span class="tl-s" data-s="2317.08" data-e="2320.37">They are— [Speaker C] They do their weekly dinners.</span> <span class="tl-s" data-s="2320.37" data-e="2322.84">They&#x27;re our best friends and we&#x27;re grateful.</span> <span class="tl-s" data-s="2322.85" data-e="2334.56">That relationship had changed a lot back in, I don&#x27;t remember the year, but Trey and Charlotte came to us at one point and basically said, We blew it.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2334.62" data-e="2334.72">Yeah.</span> <span class="tl-s" data-s="2334.72" data-e="2338.12">So that meal where he said, I don&#x27;t know that you&#x27;re senior pastor.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2338.12" data-e="2346.51">They came back and basically said they had been coached, put in a position and coached to do that and regretted it.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2346.51" data-e="2346.65">Yeah.</span> <span class="tl-s" data-s="2346.75" data-e="2347.42">They apologized later.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2347.47" data-e="2349.62">They asked for forgiveness.</span> <span class="tl-s" data-s="2349.72" data-e="2352.45">So that was a significant change in our relationship.</span> <span class="tl-s" data-s="2352.45" data-e="2355.26">I mean, I wouldn&#x27;t have offended.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2355.28" data-e="2356.45">No, no, no.</span> <span class="tl-s" data-s="2357.11" data-e="2357.21">Sure.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2357.21" data-e="2358.70">There&#x27;s nothing wrong between us.</span> <span class="tl-s" data-s="2359.04" data-e="2361.93">But at that point, we began seeing each other more often, planning events.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2362.33" data-e="2362.38">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2362.49" data-e="2366.16">So we&#x27;ve been doing stuff together for years.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2366.21" data-e="2371.32">You guys just got back from a vacation in California together with your family too.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2371.41" data-e="2373.28">Just basically over in California together.</span> <span class="tl-s" data-s="2373.76" data-e="2376.25">We train our fishing almost every week together.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2376.25" data-e="2376.41">Yeah.</span> <span class="tl-s" data-s="2376.41" data-e="2376.46">Right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2376.47" data-e="2376.94">We have meals.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2376.96" data-e="2377.04">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2377.04" data-e="2383.91">I mean, honestly, I think you, you coming as retired has helped him have a vision for what retirement would be.</span> <span class="tl-s" data-s="2384.44" data-e="2389.57">Because I don&#x27;t think, I mean, he just didn&#x27;t have that category.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2389.57" data-e="2390.28">Yeah, I&#x27;m sure.</span> <span class="tl-s" data-s="2390.36" data-e="2394.87">Well, it&#x27;s hard to have that category as a pastor.</span> <span class="tl-s" data-s="2394.87" data-e="2397.23">I used to think I&#x27;ll never retire, and then I grew old.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2397.76" data-e="2399.52">Yeah, I get it.</span> <span class="tl-s" data-s="2399.52" data-e="2400.29">I&#x27;m ready.</span> <span class="tl-s" data-s="2400.39" data-e="2401.67">I&#x27;m getting close to being ready.</span> <span class="tl-s" data-s="2401.70" data-e="2403.21">I get it.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2403.21" data-e="2405.83">I realized, no, something&#x27;s got to change.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2405.94" data-e="2411.72">Yeah, you can&#x27;t do what you used to do when you&#x27;re old.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2411.72" data-e="2421.05">You know, the last 10 years in Sovereign Grace, Between 2010 and 2020 were just— it was a— It [Speaker A] was hard.</span> <span class="tl-s" data-s="2422.12" data-e="2423.25">That was a very difficult season.</span> <span class="tl-s" data-s="2423.25" data-e="2427.89">And so by the time it came, I was pretty much ready to let go.</span> <span class="tl-s" data-s="2427.96" data-e="2442.46">And the story of how that happened with the guy that took over there, Tim Owens, was pretty amazing because we had tried to raise up a pastor for years and we had had pastors training sessions.</span> <span class="tl-s" data-s="2442.49" data-e="2446.57">Where they&#x27;re basically going through the ordination process.</span> <span class="tl-s" data-s="2446.57" data-e="2447.74">They&#x27;re preparing to be pastors.</span> <span class="tl-s" data-s="2447.79" data-e="2455.76">And all of them except for one guy who was Bill Fisher, who was— what do you call that?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2457.38" data-e="2457.40">Bivocational.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2457.40" data-e="2457.63">Bivocational.</span> <span class="tl-s" data-s="2457.63" data-e="2458.10">He stuck.</span> <span class="tl-s" data-s="2458.10" data-e="2459.83">The rest of the guys all left.</span> <span class="tl-s" data-s="2460.22" data-e="2460.89">I mean, left the state.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2460.89" data-e="2461.20">Right.</span> <span class="tl-s" data-s="2461.20" data-e="2461.26">Yeah.</span> <span class="tl-s" data-s="2461.28" data-e="2461.32">Moved.</span> <span class="tl-s" data-s="2461.36" data-e="2461.41">Yeah.</span> <span class="tl-s" data-s="2461.42" data-e="2461.58">Right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2461.66" data-e="2469.36">But the one guy that was the one guy that we felt like was The one, the most, the critical guy that we felt was the one called moved to Atlanta.</span> <span class="tl-s" data-s="2469.36" data-e="2473.09">So when my— I came to a point where I went on part-time retirement.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2473.20" data-e="2473.33">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2473.38" data-e="2482.95">And but 2 weeks before that happened, which was a year before we actually retired, 2 weeks before that happened, Tim calls and says, okay, I need to pursue pastoral call.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2482.95" data-e="2483.46">Yeah, right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2483.88" data-e="2484.25">I&#x27;m not happy.</span> <span class="tl-s" data-s="2484.28" data-e="2491.95">I don&#x27;t know how he said it, but— [Speaker A] Yeah, he&#x27;s not called to do finance [Speaker B] or [Speaker A] whatever.</span> <span class="tl-s" data-s="2491.95" data-e="2497.26">I&#x27;m not called to do finance and make a lot of money, which is what he was doing.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2497.26" data-e="2497.87">Yeah, right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2497.90" data-e="2501.33">He said, I need to be a pastor.</span> <span class="tl-s" data-s="2501.43" data-e="2506.60">Will you sponsor me to go to the PC, or how do I do that?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2506.62" data-e="2506.94">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2506.94" data-e="2515.28">So basically we went through a process of hiring him, hiring him to send him to the PC so that he could come back.</span> <span class="tl-s" data-s="2515.28" data-e="2516.07">All of that happened.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2517.06" data-e="2519.03">And now he&#x27;s the senior pastor there.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2519.15" data-e="2521.16">Now, This summer he just took over as senior pastor.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2521.16" data-e="2523.90">Because Ron is in Bozeman, Montana.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2524.27" data-e="2527.26">Another one of those— [Speaker A] Another one that Pasadena has impacted.</span> <span class="tl-s" data-s="2527.27" data-e="2529.39">Well, and it&#x27;s funny too, because you think about some of the connections, right?</span> <span class="tl-s" data-s="2529.42" data-e="2535.35">So one of the connections is, so Ron&#x27;s son, Ron&#x27;s only son is Zach.</span> <span class="tl-s" data-s="2535.35" data-e="2537.69">He&#x27;s on our leadership team and he&#x27;s our worship director.</span> <span class="tl-s" data-s="2537.69" data-e="2539.11">And there&#x27;s all kinds of connections there.</span> <span class="tl-s" data-s="2539.14" data-e="2540.37">So, oh man.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2540.37" data-e="2543.34">Well, and your kids are here.</span> <span class="tl-s" data-s="2543.34" data-e="2545.74">We have Jonathan and Nicole, and then Ryan and Shaleen.</span> <span class="tl-s" data-s="2545.74" data-e="2552.93">And so, and all their kids, and just the blessing that the Baird family is to our church is, you can&#x27;t overestimate [Speaker B] it.</span> <span class="tl-s" data-s="2552.93" data-e="2562.62">It&#x27;s not as much as the church is to them, but— [Speaker A] Yeah, I don&#x27;t know about that, but that&#x27;s okay.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2562.62" data-e="2563.32">I&#x27;m glad they&#x27;re here.</span> <span class="tl-s" data-s="2563.32" data-e="2564.50">I&#x27;m glad they&#x27;re plugged in.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2564.51" data-e="2564.55">Amen.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2564.61" data-e="2574.73">So that was amazing getting to know your story and the way the Lord&#x27;s been working and how he took you from place place to place and just talking through the charismatic awakening or revival.</span> <span class="tl-s" data-s="2575.32" data-e="2582.52">It was just, as someone who didn&#x27;t live it and isn&#x27;t even as astute in history, uh, it was great.</span> <span class="tl-s" data-s="2582.62" data-e="2585.17">Um, thank you for sharing.</span> <span class="tl-s" data-s="2585.20" data-e="2593.38">Is there any closing things that you&#x27;d want to say to our audience about anything we talked about?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2593.38" data-e="2600.96">Um, only that I believe a time is coming when the same things are going to happen.</span> <span class="tl-s" data-s="2600.98" data-e="2602.02">The Holy Spirit&#x27;s not done.</span> <span class="tl-s" data-s="2602.02" data-e="2605.96">He&#x27;s going to do I don&#x27;t know what he&#x27;s going to do.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2606.03" data-e="2608.74">I like season 3.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2608.85" data-e="2614.46">I believe there&#x27;s going to be an awakening taking place, that many people are going to be saved.</span> <span class="tl-s" data-s="2614.46" data-e="2617.86">And we need churches, healthy churches, to receive those people.</span></p>
+        <p><span class="tl-s" data-s="2620.62" data-e="2644.27">And that the only way we&#x27;re going to have healthy churches to receive people is if every person in the church takes responsibility and is committed to building locally so that we can plant extra locally so that we can see people that do get saved now brought into this church, but into churches that we&#x27;ve planted and that we&#x27;re ready for it.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2644.30" data-e="2644.77">Yeah, right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2645.51" data-e="2651.23">That God doesn&#x27;t have to come out here and raise up a whole new generation of pastors, which he needs to do anyway.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2651.23" data-e="2652.13">Yeah, right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2652.23" data-e="2663.89">But he doesn&#x27;t need to deal with the old and to— let&#x27;s not Bob Mumford said it this way, we want to build in such a way that the next generation doesn&#x27;t have to knock off 2 or 3 stories before we start building.</span> <span class="tl-s" data-s="2663.89" data-e="2667.53">Let&#x27;s build in such a way that our kids can continue building in the same way.</span> <span class="tl-s" data-s="2667.53" data-e="2668.77">And I believe we have done that.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2668.77" data-e="2669.03">Wow.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2669.03" data-e="2669.99">Love it.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2669.99" data-e="2671.35">May the Lord come in power, huh?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2671.35" data-e="2671.55">Yeah.</span> <span class="tl-s" data-s="2671.55" data-e="2676.84">Is there any, any other questions you have for either of us?</span> <span class="tl-s" data-s="2676.88" data-e="2679.25">Do you have any questions for either of us?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2679.37" data-e="2680.11">Questions for us?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2680.12" data-e="2680.41">Yeah.</span> <span class="tl-s" data-s="2680.41" data-e="2680.78">Nope.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2680.81" data-e="2681.53">All right, good.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2681.53" data-e="2683.93">Why are we still asking him questions?</span> <span class="tl-s" data-s="2683.93" data-e="2686.43">That&#x27;s one question I have for him.</span> <span class="tl-s" data-s="2686.43" data-e="2691.62">I mean, we put him through a lot here, but thank you so much for coming.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2691.67" data-e="2692.21">You&#x27;re welcome.</span> <span class="tl-s" data-s="2692.21" data-e="2692.74">It&#x27;s been fun.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2692.86" data-e="2693.02">Yeah.</span> <span class="tl-s" data-s="2693.02" data-e="2695.63">In fact, our superfans, we have legions of fans.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2695.67" data-e="2696.50">Some of them are your grandkids.</span> <span class="tl-s" data-s="2696.87" data-e="2697.10">Yes.</span> <span class="tl-s" data-s="2697.10" data-e="2697.90">They email us a lot.</span> <span class="tl-s" data-s="2697.90" data-e="2708.07">And if you&#x27;re wondering how you can email us, or if you have any questions for Lynn or for either of us, Reach out at production@sunnargilbert.com.</span> <span class="tl-s" data-s="2708.34" data-e="2714.71">We respond and answer to all the emails, and you&#x27;ll see these interviews as a more common thing.</span> <span class="tl-s" data-s="2714.74" data-e="2719.04">It&#x27;s another segment of the podcast, and we just really love doing this.</span> <span class="tl-s" data-s="2719.16" data-e="2726.52">We love hearing people&#x27;s stories and talking about topics that you&#x27;re interested in, helping you understand your Bible better.</span> <span class="tl-s" data-s="2726.52" data-e="2729.47">So thank you so much for tuning in.</span> <span class="tl-s" data-s="2729.49" data-e="2730.82">We just love you.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2731.17" data-e="2731.40">Amen.</span> <span class="tl-s" data-s="2732.05" data-e="2735.56">Yeah, and we&#x27;re gonna get my dad in next to do an interview.</span> <span class="tl-s" data-s="2735.77" data-e="2736.81">Do you have any questions for him?</span> <span class="tl-s" data-s="2736.81" data-e="2738.14">What would you ask him?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2738.16" data-e="2738.37">Why?</span> <span class="tl-s" data-s="2738.41" data-e="2739.49">Why did he do all that?</span> <span class="tl-s" data-s="2740.22" data-e="2741.57">Why would he leave such— no, I understand.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2741.92" data-e="2744.45">No, I know you understand.</span> <span class="tl-s" data-s="2744.49" data-e="2745.19">I know why.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2745.19" data-e="2745.29">Yeah.</span> <span class="tl-s" data-s="2745.29" data-e="2750.22">But that&#x27;s what— [Speaker A] People don&#x27;t know how he left IBM and stuff like that.</span> <span class="tl-s" data-s="2750.32" data-e="2755.43">Yeah, they don&#x27;t get the sacrifice that they did to be in the body of Christ.</span> <span class="tl-s" data-s="2755.53" data-e="2755.90">Yeah, that&#x27;s right.</span> <span class="tl-s" data-s="2755.93" data-e="2761.04">And the benefit that the body of Christ has received as a result of them doing that.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2761.87" data-e="2762.58">Yeah, right.</span> <span class="tl-s" data-s="2762.99" data-e="2765.77">It&#x27;s— and all of us, and me too.</span> <span class="tl-s" data-s="2766.54" data-e="2769.85">Yeah, I wouldn&#x27;t— yeah, anyway, all of [Speaker B] us, [Speaker A] all of us.</span> <span class="tl-s" data-s="2769.85" data-e="2771.73">Yeah, all of us impacted by them in ways.</span> <span class="tl-s" data-s="2772.07" data-e="2774.88">If you&#x27;re here at our church, you&#x27;re impacted even if you don&#x27;t know it.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2775.70" data-e="2776.61">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2777.30" data-e="2777.62">Yep, that&#x27;s right.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2777.62" data-e="2788.50">All right, [Speaker B] well, thank you guys for your leadership, for the way you guys lead here in, uh, Center Church.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2788.53" data-e="2789.74">Yeah, Center Church Gilbert, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2789.74" data-e="2790.67">This church can be very grateful for the The leadership team here and the way you guys build and the way you will continue building, and they can be very secure and very aware that God is doing something very good [Speaker A] here.</span> <span class="tl-s" data-s="2790.67" data-e="2790.67">Well, that&#x27;s kind to say, Lynn.</span> <span class="tl-s" data-s="2790.67" data-e="2790.67">Thank you so much for coming in.</span> <span class="tl-s" data-s="2790.67" data-e="2790.67">You&#x27;re welcome.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2790.67" data-e="2790.67">We&#x27;re grateful you&#x27;re a part of our church.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2790.67" data-e="2790.67">I&#x27;m grateful to be a part.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2790.67" data-e="2790.67">All right, everybody.</span> <span class="tl-s" data-s="2790.67" data-e="2790.67">See you later.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2790.67" data-e="2790.67">See ya.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2790.67" data-e="2790.67">For the way you guys lead here in Sovereign Grace, Center Church.</span> <span class="tl-s" data-s="2790.67" data-e="2790.67">Sorry.</span> <span class="tl-s" data-s="2790.67" data-e="2790.67">Pasadena.</span> <span class="tl-s" data-s="2790.67" data-e="2790.67">Pasadena.</span> <span class="tl-s" data-s="2790.67" data-e="2790.67">Gilbert.</span> <span class="tl-s" data-s="2790.67" data-e="2790.67">Okay.</span> <span class="tl-s" data-s="2790.67" data-e="2790.67">That&#x27;s— [Speaker A] Center Church, Gilbert.</span> <span class="tl-s" data-s="2790.67" data-e="2790.67">She can edit.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2790.67" data-e="2790.67">She can clean it up.</span> <span class="tl-s" data-s="2790.67" data-e="2790.67">There&#x27;s a wizard over there.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2790.67" data-e="2790.67">Right.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Fixed on Jesus episode archive, backed by /api/podcast/search.
+  // Static fallback list above stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function fmtDuration(raw) {
+      if (!raw) return "";
+      var str = String(raw).trim();
+      // Anchor feeds report seconds; render as H:MM:SS or M:SS.
+      if (/^\d+$/.test(str)) {
+        var total = parseInt(str, 10);
+        var h = Math.floor(total / 3600);
+        var m = Math.floor((total % 3600) / 60);
+        var sec = total % 60;
+        var mm = (h > 0 && m < 10 ? "0" + m : "" + m);
+        var ss = (sec < 10 ? "0" + sec : "" + sec);
+        return (h > 0 ? h + ":" + mm : m) + ":" + ss;
+      }
+      // Anchor also reports clock strings like "00:24:02" — drop the
+      // redundant leading hour so it reads "24:02".
+      return str.replace(/^00:/, "");
+    }
+    function row(it) {
+      it = it || {};
+      var title = esc(it.title) || "Untitled episode";
+      var tUrl = it.guid && transcriptMap[it.guid];
+      var heading = tUrl
+        ? '<a href="' + esc(tUrl) + '">' + title + "</a>"
+        : (it.link
+          ? '<a href="' + esc(it.link) + '" target="_blank" rel="noopener">' + title + "</a>"
+          : title);
+      var meta = [fmtDate(it.date), fmtDuration(it.duration)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      return '<div class="sermon"><div><h3>' + heading + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    var PER = 10;
+    var state = { q: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No episodes found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " episode" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " episodes";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/podcast/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () {
+          // Keep the static list, but tell the reader where else to listen —
+          // some privacy blockers stop the archive request itself.
+          var note = document.querySelector("[data-sermons-error]");
+          if (note) note.hidden = false;
+        });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    if (monthSel) {
+      monthSel.addEventListener("change", function () {
+        state.month = monthSel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: a25ecef2-72b1-403b-ae39-893cd7093961 -->
+</body>
+</html>
