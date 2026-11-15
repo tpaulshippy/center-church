@@ -16,9 +16,9 @@
 #   ./scripts/add-transcript.sh --transcript-file /tmp/sermon.txt --transcript-words /tmp/words.json  # local text + word timings
 #
 # Local whisper.cpp flow (free, no API key):
-#   whisper-cli -m ggml-large-v3-turbo.bin -l en --split-on-word --output-json-full --output-file sermon sermon.mp3
-#   scripts/whisper-words.py sermon.json words.json
-#   ./scripts/add-transcript.sh --transcript-file sermon.txt --transcript-words words.json --pause-gap 1.4
+#   ./scripts/transcribe-local.sh "https://.../sermon.mp3" sermon
+#   ./scripts/add-transcript.sh --transcript-file sermon.txt \
+#       --transcript-words sermon.words.json --pause-gap 1.4 [other flags]
 # (whisper timings run wider than AssemblyAI's, so use --pause-gap 1.4.)
 #   ./scripts/add-transcript.sh --no-push                            # write HTML only, print manual git commands
 #   ./scripts/add-transcript.sh --message "Custom commit msg"        # override commit message
@@ -418,12 +418,8 @@ main = """  <main>
           <span class="eyebrow">Sermon transcript</span>
           <h1 class="display-lg">%s</h1>
           <p class="transcript-meta">%s</p>
-        </div>
-        <div class="sermon">
-          <div>
-            <h3>%s</h3>
-            <div class="meta">%s</div>
-            <p>%s</p>
+          <p class="transcript-desc">%s</p>
+          <div class="sermon">
             <audio controls preload="none" src="%s"></audio>
           </div>
         </div>
@@ -434,7 +430,6 @@ main = """  <main>
       </div>
     </section>
   </main>""" % (html.escape(title), html.escape(meta_bits),
-               html.escape(title), html.escape(meta_bits),
                html.escape(desc), html.escape(audio, quote=True),
                notice, body_html)
 
@@ -448,18 +443,23 @@ dark_style = """  <style>
     /* Sermon transcript dark mode: follows the device preference only.
        Inline here so only transcript pages are affected; the rest of the
        site keeps its light theme. No toggle, no JS. */
-    /* Transcript header: calm type-led top (no photo hero). Keeps the
-       title (page h1, read by the read-along mini-bar), the meta line,
-       and the audio card immediately below. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       eyebrow, title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
     .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
     .transcript-head h1 { margin-bottom: 0.6rem; }
     .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
     .transcript-back:hover { text-decoration: underline; }
     .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
     @media (prefers-color-scheme: dark) {
       .eyebrow { color: #e8a76f; }
       .transcript-back { color: #e8a76f; }
       .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
       body { background: var(--ink); color: var(--cream); }
       /* Header stays light in dark mode: pin to the light-theme values
          from styles.css so the bar, nav, dropdowns, and mobile menu
