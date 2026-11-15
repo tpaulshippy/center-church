@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acts 12 — Sermon Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Listen to the latest sermons from Center Church, or follow along on Apple Podcasts and Spotify." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=17" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a class="active" href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/sermons">&larr; All sermons</a>
+          <h1 class="display-lg">Acts 12</h1>
+          <p class="transcript-meta">Rich Richardson · Acts · 2026-07-12 · 00:33:42</p>
+          <p class="transcript-desc">God&#x27;s church grows in the midst of persecution and chaos.</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/119cbef70/podcast/play/128973968/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-7%2F436123659-44100-2-e307a4c80abeb296.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><span class="tl-s" data-s="0.02" data-e="12.70">in line and my eight-year-old grandson Henry, it was his turn to take a look at the moon and he looked through the eyepiece but he couldn&#x27;t see the moon.</span> <span class="tl-s" data-s="12.70" data-e="14.90">I can&#x27;t see it, he said.</span> <span class="tl-s" data-s="14.90" data-e="15.82">I can&#x27;t see it.</span></p>
+        <p><span class="tl-s" data-s="18.04" data-e="26.62">Then as he adjusted his sight, he said, wow, he saw the moon.</span> <span class="tl-s" data-s="26.75" data-e="29.52">It was popping in his eye.</span> <span class="tl-s" data-s="30.02" data-e="33.13">Henry had a wow moment then.</span> <span class="tl-s" data-s="33.16" data-e="40.83">Now sometimes an author can put the main idea of a story in the last few lines.</span> <span class="tl-s" data-s="41.01" data-e="46.56">You need to read to the end of the chapter and then, wow, there&#x27;s the main point.</span> <span class="tl-s" data-s="47.92" data-e="56.68">Like Henry needed patience to see the moon and its beauty, sometimes we need to exercise patience to see what God is doing.</span> <span class="tl-s" data-s="56.68" data-e="60.50">Please turn with me to Acts chapter 12.</span></p>
+        <p><span class="tl-s" data-s="66.00" data-e="73.70">Now my big idea today is God&#x27;s church grows in the midst of persecution and chaos.</span></p>
+        <p><span class="tl-s" data-s="75.68" data-e="81.92">God&#x27;s church grows in the midst of persecution and chaos.</span> <span class="tl-s" data-s="83.30" data-e="87.44">Let&#x27;s walk through this chapter and see what God has for us this morning.</span> <span class="tl-s" data-s="88.42" data-e="93.60">And since Acts chapter 12 is lengthy, I&#x27;m going to break this down into three parts.</span> <span class="tl-s" data-s="94.58" data-e="97.94">Persecution, rescue, and judgment.</span> <span class="tl-s" data-s="98.62" data-e="101.56">And I&#x27;ll read the parts accordingly.</span></p>
+        <p><span class="tl-s" data-s="103.54" data-e="106.40">Acts chapter 12, verse 1.</span></p>
+        <p><span class="tl-s" data-s="108.80" data-e="117.60">About that time, Herod the king laid violent hands on some who belonged to the church.</span> <span class="tl-s" data-s="118.60" data-e="123.24">He killed James, the brother of John, with the sword.</span> <span class="tl-s" data-s="124.12" data-e="129.98">And when he saw that it pleased the Jews, he proceeded to arrest Peter also.</span></p>
+        <p><span class="tl-s" data-s="131.74" data-e="134.36">This was during the days of unleaded bread.</span> <span class="tl-s" data-s="135.30" data-e="147.82">And when he had seized him, he put him in prison, delivering him over to four squads of soldiers to guard him, intending after the Passover to bring him out to the people.</span> <span class="tl-s" data-s="148.46" data-e="158.74">So Peter was kept in prison, but earnest prayers for him was made to God by the church.</span> <span class="tl-s" data-s="159.30" data-e="162.76">Lord bless the preaching and the hearing of your word today.</span> <span class="tl-s" data-s="163.48" data-e="163.74">Amen.</span></p>
+        <p><span class="tl-s" data-s="165.64" data-e="168.86">Persecution once again reaches the church in Jerusalem.</span></p>
+        <p><span class="tl-s" data-s="170.34" data-e="173.08">This time, by the hands of Herod the king.</span> <span class="tl-s" data-s="173.78" data-e="178.66">Verse 1 talks about violent hands assailing the church.</span> <span class="tl-s" data-s="179.36" data-e="184.16">Verse 2, James, the brother of John, was killed by the sword.</span></p>
+        <p><span class="tl-s" data-s="185.82" data-e="188.64">This is the same James in Matthew 4.</span> <span class="tl-s" data-s="189.90" data-e="201.90">And going on from there, he, Jesus, saw two other brothers, James, the son of Zebedee, and John, his brother, in the boat with their father, mending nets.</span> <span class="tl-s" data-s="202.64" data-e="203.74">And he called them.</span> <span class="tl-s" data-s="205.14" data-e="209.34">Immediately, they left the boat and their father and followed him.</span> <span class="tl-s" data-s="210.44" data-e="215.78">This is James, the one who left his family business to follow Jesus.</span> <span class="tl-s" data-s="215.80" data-e="218.50">And he did so immediately.</span></p>
+        <p><span class="tl-s" data-s="220.18" data-e="223.92">James was the first of 12 apostles to be killed.</span> <span class="tl-s" data-s="225.06" data-e="228.36">And notice that the church did not replace him as they did Judas.</span> <span class="tl-s" data-s="229.38" data-e="236.96">The church was being built and would move forward without the office of apostle, but with the office of elder.</span> <span class="tl-s" data-s="238.08" data-e="240.90">Notice as well how James died.</span> <span class="tl-s" data-s="242.12" data-e="243.96">James was killed by the sword.</span></p>
+        <p><span class="tl-s" data-s="245.88" data-e="261.00">Commentator David Peterson said, The use of the sword, rather than any other means of execution, suggests that Herod may have seen the Christian movement as being a political threat to his regime.</span></p>
+        <p><span class="tl-s" data-s="262.66" data-e="272.86">Executing one of the 12 apostles was a deliberate attempt to destroy the church by systematically removing its leadership.</span> <span class="tl-s" data-s="274.02" data-e="282.28">Now, if you&#x27;re keeping track, James was the second martyr, the first being Stephen that we read about in Acts 7.</span></p>
+        <p><span class="tl-s" data-s="283.84" data-e="291.70">James was also killed by a king, a government official, while Stephen was stoned by the Jews.</span></p>
+        <p><span class="tl-s" data-s="293.12" data-e="297.94">James&#x27; death represented a new kind of persecution for the early church.</span> <span class="tl-s" data-s="298.96" data-e="304.00">The state was now becoming involved in making martyrs.</span> <span class="tl-s" data-s="305.02" data-e="308.76">A growing persecution of the early church from different groups.</span> <span class="tl-s" data-s="308.88" data-e="318.64">Yet, Psalm 116, 5 says, Precious in the sight of the Lord is the death of the saints.</span></p>
+        <p><span class="tl-s" data-s="320.78" data-e="324.00">James and Stephen were precious in the sight of the Lord.</span></p>
+        <p><span class="tl-s" data-s="325.42" data-e="327.88">And when they died, Jesus welcomed them to heaven.</span></p>
+        <p><span class="tl-s" data-s="329.32" data-e="333.32">Would Peter suffer the same fate as Stephen and James?</span> <span class="tl-s" data-s="334.68" data-e="342.72">Now, I want to pause here, and I want to apply Zach&#x27;s excellent message, very creative message last week, about encouragement.</span> <span class="tl-s" data-s="343.68" data-e="346.18">And I want to encourage you.</span> <span class="tl-s" data-s="346.32" data-e="347.98">I want to encourage this church.</span></p>
+        <p><span class="tl-s" data-s="349.52" data-e="352.56">Verse 5 speaks of earnest prayer.</span></p>
+        <p><span class="tl-s" data-s="354.10" data-e="358.20">I looked at this word, earnest, a Greek word, and it interested me.</span> <span class="tl-s" data-s="358.86" data-e="364.64">And when I looked it up, I found that James used the same word when Jesus prayed in the Garden of Gethsemane.</span> <span class="tl-s" data-s="365.60" data-e="372.36">Luke 22, 44 says, And being in agony, he prayed more earnestly, Jesus.</span> <span class="tl-s" data-s="372.74" data-e="377.10">And his sweat became like great drops of blood down to the ground.</span> <span class="tl-s" data-s="378.40" data-e="382.44">Jesus prayed earnest prayers to his Father in heaven.</span> <span class="tl-s" data-s="383.52" data-e="390.10">This was just before he went to the cross to die for the sins of his church, us.</span> <span class="tl-s" data-s="390.80" data-e="401.36">Jesus died and rose again on the third day, and he ascended into heaven, where the book of Hebrews says, Jesus lives to make intercession for us.</span> <span class="tl-s" data-s="401.78" data-e="403.02">He lives for this.</span> <span class="tl-s" data-s="404.30" data-e="408.68">Even when trials come and we don&#x27;t know how to pray, Jesus does.</span></p>
+        <p><span class="tl-s" data-s="410.42" data-e="412.82">Earnest prayer is a sign of a real church.</span> <span class="tl-s" data-s="413.62" data-e="417.80">Acts 2 says, And they devoted themselves to the prayers.</span> <span class="tl-s" data-s="418.90" data-e="422.18">Here at Center Church, we pray earnest prayers.</span> <span class="tl-s" data-s="423.14" data-e="426.00">We pray as individuals in our daily quiet time.</span> <span class="tl-s" data-s="427.40" data-e="435.86">Look around the church today when we&#x27;re done with this service, and you will see people praying for one another in this location.</span> <span class="tl-s" data-s="436.80" data-e="439.00">We pray for one another in our small groups.</span> <span class="tl-s" data-s="439.88" data-e="443.02">We recently had a worship and prayer night, more earnest prayers.</span> <span class="tl-s" data-s="444.20" data-e="452.98">Today at 9 o&#x27;clock, there was a group of people praying in the conference room for us today, for you and me, before this service even started.</span> <span class="tl-s" data-s="453.74" data-e="454.48">Our men pray.</span> <span class="tl-s" data-s="454.76" data-e="455.58">Our women pray.</span></p>
+        <p><span class="tl-s" data-s="455.76" data-e="456.74">Our seniors pray.</span> <span class="tl-s" data-s="457.00" data-e="458.14">Our staff prays.</span> <span class="tl-s" data-s="458.46" data-e="460.34">Our leadership team prays.</span> <span class="tl-s" data-s="460.66" data-e="464.54">This church prays earnest prayers to Jesus.</span></p>
+        <p><span class="tl-s" data-s="466.04" data-e="471.32">Earnest prayers made to an earnest Savior who intercedes to the Father for us.</span></p>
+        <p><span class="tl-s" data-s="472.78" data-e="473.42">Well done.</span> <span class="tl-s" data-s="474.42" data-e="475.72">Well done, Center Church.</span> <span class="tl-s" data-s="475.74" data-e="477.10">Keep praying to Jesus.</span> <span class="tl-s" data-s="478.14" data-e="479.34">Back to Acts 12.</span> <span class="tl-s" data-s="480.32" data-e="484.08">In the building of God&#x27;s church, some, like James and Stephen, will die.</span> <span class="tl-s" data-s="485.28" data-e="486.30">Some will be rescued.</span> <span class="tl-s" data-s="487.06" data-e="489.34">And this is my next point, the rescue.</span></p>
+        <p><span class="tl-s" data-s="490.90" data-e="495.86">This starts at verse 6, and I&#x27;m just going to warn you, it&#x27;s a little long, but we need to read the whole thing.</span> <span class="tl-s" data-s="495.96" data-e="496.74">This is God&#x27;s Word.</span> <span class="tl-s" data-s="496.84" data-e="499.22">It has something to say to us today.</span></p>
+        <p><span class="tl-s" data-s="501.28" data-e="502.64">Acts 12, verse 6.</span> <span class="tl-s" data-s="503.18" data-e="516.22">Now when Herod was about to bring him out on that very night, Peter was sleeping between two soldiers bound with two chains and sentries before the door were guarding the prison.</span> <span class="tl-s" data-s="517.18" data-e="522.22">And behold, an angel of the Lord stood next to him and a light shone in the cell.</span> <span class="tl-s" data-s="523.40" data-e="527.18">He struck Peter on the side and woke him saying, Get up quickly.</span> <span class="tl-s" data-s="528.20" data-e="529.88">And the chains fell off his hands.</span> <span class="tl-s" data-s="529.90" data-e="534.54">And the angel said to him, Dress yourself and put on your sandals.</span> <span class="tl-s" data-s="535.44" data-e="536.30">And he did so.</span> <span class="tl-s" data-s="537.36" data-e="540.24">And he said to him, Wrap your cloak around you and follow me.</span> <span class="tl-s" data-s="541.52" data-e="543.94">And he went out and followed him.</span> <span class="tl-s" data-s="544.70" data-e="550.42">He did not know what was being done by the angel was real, but thought he was seeing a vision.</span></p>
+        <p><span class="tl-s" data-s="551.86" data-e="557.64">When they passed the first and second guard, they came to the iron gate leading into the city.</span> <span class="tl-s" data-s="558.36" data-e="560.54">It opened for them of its own accord.</span> <span class="tl-s" data-s="560.86" data-e="566.34">And when they went out, went along one street and immediately the angel left him.</span> <span class="tl-s" data-s="567.42" data-e="568.00">Verse 11.</span> <span class="tl-s" data-s="568.40" data-e="580.52">When Peter came to himself, he said, Now I am sure that the Lord has sent his angel and rescued me from the hand of Herod and from all that the Jewish people were expecting.</span> <span class="tl-s" data-s="581.52" data-e="588.26">When he realized this, he went to the house of Mary, the mother of John, whose other name was Mark.</span></p>
+        <p><span class="tl-s" data-s="590.34" data-e="593.72">Where many were gathered together and were praying.</span> <span class="tl-s" data-s="594.78" data-e="599.50">And when he knocked at the door of the gateway, a servant girl named Rhoda came to answer.</span> <span class="tl-s" data-s="600.78" data-e="609.48">Recognizing Peter&#x27;s voice and her joy, she did not open the door, open the gate, but ran in and reported that Peter was standing at the gate.</span></p>
+        <p><span class="tl-s" data-s="611.68" data-e="614.92">They said to her, You are out of your mind.</span> <span class="tl-s" data-s="615.96" data-e="620.78">But she kept insisting that it was so and they kept saying, It is his angel.</span> <span class="tl-s" data-s="621.86" data-e="628.34">But Peter continued knocking and when they opened, they saw him and were amazed.</span> <span class="tl-s" data-s="629.38" data-e="636.24">But motioning to them with his hand to be silent, he described to them how the Lord had brought him out of the prison.</span> <span class="tl-s" data-s="636.26" data-e="640.58">And he said, Tell these things to James and to the brothers.</span> <span class="tl-s" data-s="641.54" data-e="643.96">Then he departed and went to another place.</span> <span class="tl-s" data-s="645.28" data-e="652.76">Now, when day came, there was no little disturbance among the soldiers over what had become of Peter.</span> <span class="tl-s" data-s="653.64" data-e="668.70">And after Herod searched for him and did not find him, he examined the sentries and ordered that they should be put to death. and he went down from Judea to Caesarea to spend time there.</span> <span class="tl-s" data-s="669.78" data-e="672.16">Now, this could be a comedy of errors.</span> <span class="tl-s" data-s="672.54" data-e="679.50">When we read this, it just doesn&#x27;t seem smooth and sleek and it just seems like kind of a mess.</span></p>
+        <p><span class="tl-s" data-s="680.52" data-e="684.96">Peter is in jail, chained to two guards.</span> <span class="tl-s" data-s="685.25" data-e="695.86">He&#x27;s likely going to be facing execution the next day. and this brother is so hard asleep that when the angel shows up, he don&#x27;t wake up.</span> <span class="tl-s" data-s="697.10" data-e="699.66">And I&#x27;m thinking the angel&#x27;s probably like, well, maybe a little light.</span> <span class="tl-s" data-s="700.06" data-e="703.82">Well, this isn&#x27;t like a light in the attic that you pull and it just turns on.</span> <span class="tl-s" data-s="703.90" data-e="708.08">This is like stadium lights in the World Cup that happen in the cell.</span> <span class="tl-s" data-s="708.24" data-e="710.08">But our brother Peter is still asleep.</span> <span class="tl-s" data-s="711.32" data-e="712.34">This brother can sleep.</span> <span class="tl-s" data-s="712.48" data-e="715.18">I am, I&#x27;m jealous of how this guy can sleep.</span> <span class="tl-s" data-s="715.54" data-e="718.56">So then the angel&#x27;s like, well, I guess I&#x27;ll just hit him in the side and wake him up.</span> <span class="tl-s" data-s="718.58" data-e="719.70">And he does.</span></p>
+        <p><span class="tl-s" data-s="720.68" data-e="724.08">Chapter, or verse 11 is the Captain Obvious statement.</span> <span class="tl-s" data-s="724.56" data-e="733.96">I&#x27;m sure the Lord has sent his angel to rescue me, says Peter, who was rescued just seven chapters back in Acts 5 from another angel.</span> <span class="tl-s" data-s="734.76" data-e="736.82">Many were gathered in there praying for who?</span> <span class="tl-s" data-s="736.96" data-e="737.46">For Peter.</span> <span class="tl-s" data-s="737.72" data-e="742.06">But when he comes to the door, Rhoda sees him.</span> <span class="tl-s" data-s="742.32" data-e="746.28">Yet another servant girl that Peter doesn&#x27;t do great with servant girls.</span> <span class="tl-s" data-s="746.37" data-e="747.34">We&#x27;ve seen that before.</span> <span class="tl-s" data-s="747.72" data-e="760.62">She runs over she&#x27;s captured for all time as not opening the door for Peter but running to the rest of the church who are praying for Peter and he&#x27;s outside but they&#x27;re saying, no, it&#x27;s an angel.</span> <span class="tl-s" data-s="760.94" data-e="761.76">You&#x27;re out of your mind.</span> <span class="tl-s" data-s="762.34" data-e="767.12">This could be a comedy show but it&#x27;s not.</span></p>
+        <p><span class="tl-s" data-s="769.38" data-e="774.02">Luke had something else in mind, I think, in sharing all these details.</span></p>
+        <p><span class="tl-s" data-s="775.56" data-e="779.46">Luke did not think of the early church as a punchline.</span></p>
+        <p><span class="tl-s" data-s="781.24" data-e="786.86">He wanted us to see in the Bible that the church was in chaos.</span></p>
+        <p><span class="tl-s" data-s="788.86" data-e="791.24">These people were scared, they were frightened.</span> <span class="tl-s" data-s="791.42" data-e="797.88">These leaders and members would be what the church is built on, the church that we&#x27;re a part of today.</span></p>
+        <p><span class="tl-s" data-s="799.50" data-e="804.72">So a question for you and for me, would we be any different?</span></p>
+        <p><span class="tl-s" data-s="806.30" data-e="818.38">What if one of the leaders of our church was executed and another one taken to prison awaiting execution? how would we respond?</span> <span class="tl-s" data-s="819.64" data-e="822.38">We&#x27;d probably respond in a similar way.</span> <span class="tl-s" data-s="823.26" data-e="829.64">The point isn&#x27;t how the church responded but that it was in chaos.</span> <span class="tl-s" data-s="830.48" data-e="835.96">But even in this chaos, this chaos was being governed by God.</span> <span class="tl-s" data-s="836.92" data-e="839.16">He was in the chaos with the church.</span> <span class="tl-s" data-s="839.62" data-e="845.90">Psalm 46.1 says, God is our refuge and strength, a very present help in trouble.</span> <span class="tl-s" data-s="846.66" data-e="850.08">In the trouble, God is very surely found.</span> <span class="tl-s" data-s="850.87" data-e="853.70">God is with this early church.</span> <span class="tl-s" data-s="854.72" data-e="857.28">He&#x27;s present with this church.</span> <span class="tl-s" data-s="857.62" data-e="863.06">He sends an angel to free Peter to continue to be one of the leaders of this new church.</span></p>
+        <p><span class="tl-s" data-s="863.92" data-e="874.04">Peter goes on to write two epistles but even Peter in time would experience martyrdom as would most of the apostles.</span> <span class="tl-s" data-s="874.88" data-e="880.34">The truth in this passage is that God&#x27;s providence rules over persecution.</span> <span class="tl-s" data-s="881.46" data-e="885.80">Now we are not currently being persecuted here.</span> <span class="tl-s" data-s="886.68" data-e="889.26">Nobody in Gilbert is trying to persecute Christians.</span> <span class="tl-s" data-s="890.24" data-e="894.86">There are no groups in Mesa traveling around trying to kill Christians.</span> <span class="tl-s" data-s="895.34" data-e="897.88">Folks in Queen Creek they are fine with what we are doing.</span></p>
+        <p><span class="tl-s" data-s="899.76" data-e="900.64">Not now.</span> <span class="tl-s" data-s="901.98" data-e="910.84">But even if that changes someday even if persecution comes it will be by the hand of God and for His divine purposes.</span> <span class="tl-s" data-s="912.14" data-e="913.86">He is with us today in our chaos.</span> <span class="tl-s" data-s="914.20" data-e="916.32">He&#x27;ll be with us in our future as well.</span> <span class="tl-s" data-s="917.36" data-e="921.14">God&#x27;s church grows in the midst of persecution and chaos.</span> <span class="tl-s" data-s="922.42" data-e="925.44">In the building of God&#x27;s church some will die.</span> <span class="tl-s" data-s="926.74" data-e="927.88">Some will be rescued.</span> <span class="tl-s" data-s="928.88" data-e="930.04">Some will be judged.</span> <span class="tl-s" data-s="930.44" data-e="931.48">And that&#x27;s my next point.</span> <span class="tl-s" data-s="932.40" data-e="933.14">Point number three.</span></p>
+        <p><span class="tl-s" data-s="933.82" data-e="934.14">Judgment.</span> <span class="tl-s" data-s="935.40" data-e="936.56">This starts at verse 20.</span> <span class="tl-s" data-s="937.56" data-e="940.86">Now Herod was angry with the people of Tyre and Sidon.</span> <span class="tl-s" data-s="941.68" data-e="954.62">And they came to him with one accord and having persuaded Blastus the king&#x27;s chamberlain they asked for peace because their country depended on the king&#x27;s country for food.</span> <span class="tl-s" data-s="955.80" data-e="966.58">On an appointed day Herod put on his royal robes took his seat upon the throne and delivered an oration to them.</span> <span class="tl-s" data-s="967.72" data-e="972.12">And the people were shouting the voice of a god and not a man.</span></p>
+        <p><span class="tl-s" data-s="973.84" data-e="986.34">Immediately an angel of the Lord struck him down because he did not give God the glory and he was eaten by worms and he breathed his last.</span></p>
+        <p><span class="tl-s" data-s="987.78" data-e="989.02">So who is Herod?</span> <span class="tl-s" data-s="989.96" data-e="993.24">His full name was Herod Agrippa I.</span></p>
+        <p><span class="tl-s" data-s="994.66" data-e="1000.22">He was the grandson of Herod the Great that we read about in Matthew 2.</span> <span class="tl-s" data-s="1000.88" data-e="1016.88">Then Herod the Great when he saw that he was tricked by the wise men became furious and he sent and killed all the male children in Bethlehem and in all the region who were two years and younger.</span> <span class="tl-s" data-s="1018.04" data-e="1026.30">This was Herod&#x27;s grandfather the killer of all male children in Bethlehem in his fury and in his jealousy.</span> <span class="tl-s" data-s="1026.32" data-e="1029.34">So what about Agrippa I?</span> <span class="tl-s" data-s="1030.48" data-e="1032.98">Well the apple didn&#x27;t fall too far from the tree did it?</span> <span class="tl-s" data-s="1033.88" data-e="1034.96">He murdered James.</span> <span class="tl-s" data-s="1035.66" data-e="1038.14">He jailed Peter with plans to execute him.</span> <span class="tl-s" data-s="1039.06" data-e="1040.66">He murdered 16 centuries.</span> <span class="tl-s" data-s="1041.90" data-e="1048.62">In verse 20 there&#x27;s a quarrel between Herod and the people of Tyre and Sidon.</span> <span class="tl-s" data-s="1049.16" data-e="1060.30">And while Luke doesn&#x27;t tell us what this was about we know that the people of Tyre and Sidon came to Herod asking for peace since they depended on Herod&#x27;s country for food.</span></p>
+        <p><span class="tl-s" data-s="1061.90" data-e="1073.62">The point is that Herod thought he was God small g who determined who lived and who died and who ate and who went hungry.</span> <span class="tl-s" data-s="1074.72" data-e="1082.88">In verse 21 Herod put on royal robes and took his seat on the throne and delivered an oration he delivered a speech.</span> <span class="tl-s" data-s="1083.82" data-e="1087.32">In verse 22 the people proclaimed Herod to be a god.</span> <span class="tl-s" data-s="1088.58" data-e="1093.56">In verse 23 Herod was struck by an angel eaten by worms and breathed his last.</span></p>
+        <p><span class="tl-s" data-s="1095.04" data-e="1097.74">God judged Herod.</span> <span class="tl-s" data-s="1099.10" data-e="1101.92">He didn&#x27;t judge him for murdering James.</span> <span class="tl-s" data-s="1102.90" data-e="1109.90">He didn&#x27;t judge him for imprisoning Peter or holding the food back for two cities.</span> <span class="tl-s" data-s="1110.50" data-e="1115.88">Herod was judged for refusing to give God the praise which was due him.</span> <span class="tl-s" data-s="1117.02" data-e="1121.46">Herod wrongly allowed praise to be ascribed to himself and not to God.</span> <span class="tl-s" data-s="1122.32" data-e="1126.58">So let&#x27;s compare this earthly king with the king of kings.</span></p>
+        <p><span class="tl-s" data-s="1128.02" data-e="1130.20">Herod brought death to his people.</span></p>
+        <p><span class="tl-s" data-s="1131.94" data-e="1134.04">Jesus brought life to his people.</span> <span class="tl-s" data-s="1135.08" data-e="1136.92">Herod put on royal robes.</span> <span class="tl-s" data-s="1138.04" data-e="1140.56">Jesus was stripped and scourged.</span> <span class="tl-s" data-s="1141.76" data-e="1143.78">Herod took his seat upon the throne.</span> <span class="tl-s" data-s="1145.04" data-e="1146.86">Jesus was nailed to a cross.</span> <span class="tl-s" data-s="1148.24" data-e="1150.00">Herod made a speech to the crowd.</span> <span class="tl-s" data-s="1151.22" data-e="1154.26">Jesus said, Father, please forgive them.</span> <span class="tl-s" data-s="1155.26" data-e="1159.74">The crowds were shouting to Herod the voice of a God.</span> <span class="tl-s" data-s="1160.70" data-e="1164.50">The crowds were shouting at Jesus, crucify him.</span></p>
+        <p><span class="tl-s" data-s="1166.26" data-e="1168.34">Herod was judged by God and died.</span> <span class="tl-s" data-s="1169.66" data-e="1172.64">Jesus took the wrath of God for our sins and died.</span> <span class="tl-s" data-s="1173.18" data-e="1178.34">He rose on the third day, ascended into heaven, and is reigning as the king of kings and the Lord of lords.</span> <span class="tl-s" data-s="1179.58" data-e="1186.90">In the building of God&#x27;s church, some will die, some will be rescued, and some will be judged.</span></p>
+        <p><span class="tl-s" data-s="1188.50" data-e="1193.36">So we come to the main point of this text, verse 24.</span></p>
+        <p><span class="tl-s" data-s="1195.06" data-e="1199.92">But the word of God increased and multiplied.</span> <span class="tl-s" data-s="1201.10" data-e="1203.90">The word of God increased and multiplied.</span></p>
+        <p><span class="tl-s" data-s="1205.50" data-e="1206.42">Eight words.</span></p>
+        <p><span class="tl-s" data-s="1207.92" data-e="1209.12">Luke buried the lead.</span> <span class="tl-s" data-s="1210.10" data-e="1212.94">This is the main point of the text, the wow moment.</span></p>
+        <p><span class="tl-s" data-s="1214.72" data-e="1218.46">Persecution came to the early church, and with it, martyrdom.</span></p>
+        <p><span class="tl-s" data-s="1220.10" data-e="1226.06">Tertullian and early church fathers said of Christians, the more you mow us down, the more we grow.</span> <span class="tl-s" data-s="1226.90" data-e="1229.42">The blood of the Christians is a seed of the church.</span> <span class="tl-s" data-s="1230.46" data-e="1232.20">Again, martyrdom came.</span> <span class="tl-s" data-s="1233.28" data-e="1234.80">Peter was jailed and released.</span> <span class="tl-s" data-s="1235.72" data-e="1237.20">The church was in chaos.</span> <span class="tl-s" data-s="1238.26" data-e="1244.20">God judged and permanently removed a high-ranking official that was persecuting the church.</span> <span class="tl-s" data-s="1244.92" data-e="1247.98">But the word of God increased and multiplied.</span> <span class="tl-s" data-s="1249.20" data-e="1254.12">God&#x27;s church grows in the midst of persecution and chaos.</span></p>
+        <p><span class="tl-s" data-s="1255.66" data-e="1258.68">Luke wanted us to see that God was growing his church.</span> <span class="tl-s" data-s="1259.68" data-e="1268.28">When you review Acts 1, Acts 1 to chapter 12, there are ten occasions that show growth in the church.</span> <span class="tl-s" data-s="1269.42" data-e="1276.52">Chapter 2, with the arrival of the Holy Spirit and Peter&#x27;s sermon at Pentecost, added that day were 3,000 souls.</span> <span class="tl-s" data-s="1277.90" data-e="1284.60">Chapter 2, fellowship of believers and the Lord added to their number day by day those who were being saved.</span> <span class="tl-s" data-s="1285.30" data-e="1292.12">Chapter 4, Peter and John preached and arrested, but many who heard the word believed, about 5,000 men.</span> <span class="tl-s" data-s="1293.34" data-e="1301.16">Chapter 5, many signs and wonders being done, and more than ever believers were added to the Lord, multitudes of men and women.</span> <span class="tl-s" data-s="1302.44" data-e="1310.62">Chapter 6, the widow&#x27;s distribution and the word of God continue to increase, and the number of the disciples multiplied greatly.</span> <span class="tl-s" data-s="1311.52" data-e="1323.22">Chapter 9, so the church throughout all Judea, Galilee, and Samaria had peace and was being built up. walking walking in the fear of the Lord and in the comfort of the Holy Spirit, it multiplied.</span></p>
+        <p><span class="tl-s" data-s="1324.34" data-e="1329.32">Chapter 9, the residents of Lydda and Sharon, two communities turned to the Lord.</span> <span class="tl-s" data-s="1330.24" data-e="1334.34">Chapter 9, Tabitha was raised from the dead and many believed in the Lord.</span> <span class="tl-s" data-s="1335.14" data-e="1354.42">Chapter 11, in Antioch, the hand of the Lord was with them, we heard this last week, and a great number who believed God&#x27;s church grows in the midst of persecution and chaos.</span></p>
+        <p><span class="tl-s" data-s="1356.84" data-e="1364.14">Now, I want to talk to those who are here who may not believe in Jesus today, as a lot of us do.</span></p>
+        <p><span class="tl-s" data-s="1365.58" data-e="1371.32">The Christians in this room, we have put our faith and our trust in Jesus.</span> <span class="tl-s" data-s="1372.10" data-e="1375.56">We have seen Jesus through preaching and through his word.</span> <span class="tl-s" data-s="1376.40" data-e="1381.86">We have seen that we are sinners in need of a Savior to take away our sins.</span> <span class="tl-s" data-s="1382.72" data-e="1386.16">We have turned from our sins and we&#x27;ve turned to Jesus.</span> <span class="tl-s" data-s="1387.08" data-e="1389.58">We are followers of Jesus.</span> <span class="tl-s" data-s="1390.86" data-e="1395.18">We have had our wow moment with him.</span></p>
+        <p><span class="tl-s" data-s="1396.70" data-e="1400.26">It&#x27;s our prayer that you too see Jesus and have your wow moment.</span> <span class="tl-s" data-s="1401.28" data-e="1404.20">Now, if you want to see the moon, look through a telescope.</span> <span class="tl-s" data-s="1405.06" data-e="1409.66">If you want to see Jesus, keep coming to church. keep reading your Bible, keep praying.</span> <span class="tl-s" data-s="1410.80" data-e="1418.18">Isaiah 55, 6 says, seek the Lord while he may be found and call on him while he is near.</span></p>
+        <p><span class="tl-s" data-s="1421.68" data-e="1423.56">So what about the rest of us today?</span> <span class="tl-s" data-s="1423.72" data-e="1424.74">What&#x27;s our application?</span></p>
+        <p><span class="tl-s" data-s="1426.86" data-e="1444.52">As I was praying through this and preparing the idea that God rules through chaos, which is what he did in the early church, but he also rules through our chaos.</span></p>
+        <p><span class="tl-s" data-s="1447.66" data-e="1449.32">What&#x27;s your chaos today?</span></p>
+        <p><span class="tl-s" data-s="1451.34" data-e="1455.46">The fact that God rules through that chaos is a wow moment in and of itself.</span> <span class="tl-s" data-s="1456.66" data-e="1459.20">Do you have the ache of loneliness?</span></p>
+        <p><span class="tl-s" data-s="1461.22" data-e="1464.30">Are you single and wondering if a spouse will ever come?</span> <span class="tl-s" data-s="1465.60" data-e="1467.40">Are you widowed and feeling forgotten?</span> <span class="tl-s" data-s="1468.76" data-e="1471.26">Alone in a marriage and feeling hopeless?</span></p>
+        <p><span class="tl-s" data-s="1472.70" data-e="1477.68">Maybe many good friends have moved on and you feel alone.</span></p>
+        <p><span class="tl-s" data-s="1479.22" data-e="1482.50">Isaiah 40 says, Have you not known?</span> <span class="tl-s" data-s="1483.72" data-e="1484.78">Have you not heard?</span> <span class="tl-s" data-s="1485.54" data-e="1490.86">The Lord is an everlasting God, the creator of the ends of the earth.</span> <span class="tl-s" data-s="1492.04" data-e="1493.66">He does not faint or grow weary.</span> <span class="tl-s" data-s="1494.52" data-e="1496.46">His understanding is unsearchable.</span> <span class="tl-s" data-s="1497.52" data-e="1503.36">He gives power to the faint and to him who has no might, he increases strength.</span> <span class="tl-s" data-s="1504.34" data-e="1510.00">Even youth shall fail and be weary, faint and be weary, and young men shall fall exhausted.</span> <span class="tl-s" data-s="1511.02" data-e="1514.16">But they who wait upon the Lord shall renew their strength.</span> <span class="tl-s" data-s="1515.22" data-e="1517.62">They shall mount up with wings like eagles.</span> <span class="tl-s" data-s="1517.94" data-e="1519.64">They shall run and not be weary.</span></p>
+        <p><span class="tl-s" data-s="1520.22" data-e="1521.66">They shall walk and not faint.</span></p>
+        <p><span class="tl-s" data-s="1523.50" data-e="1524.48">Keep walking.</span> <span class="tl-s" data-s="1525.74" data-e="1527.70">Keep running, even in your loneliness.</span> <span class="tl-s" data-s="1528.98" data-e="1532.58">And by God&#x27;s power, he will meet you each day in this loneliness.</span></p>
+        <p><span class="tl-s" data-s="1534.34" data-e="1541.08">What about the group of people who need healing and the caregivers that take care of those folks?</span> <span class="tl-s" data-s="1542.28" data-e="1544.06">Do you have health issues and need to be healed?</span></p>
+        <p><span class="tl-s" data-s="1545.62" data-e="1547.96">Do you wake up with pain as your daily companion?</span> <span class="tl-s" data-s="1549.26" data-e="1550.64">Are you battling cancer?</span> <span class="tl-s" data-s="1551.46" data-e="1553.14">Maybe a long-term leukemia?</span> <span class="tl-s" data-s="1554.52" data-e="1560.96">Matthew 14, 14 says, he, Jesus, saw a great crowd and he had compassion on them and he healed their sick.</span> <span class="tl-s" data-s="1561.30" data-e="1564.02">Jesus healed then and he heals now.</span> <span class="tl-s" data-s="1564.34" data-e="1565.26">Continue to pray.</span></p>
+        <p><span class="tl-s" data-s="1566.68" data-e="1569.04">Maybe you&#x27;re caring for one of these I just mentioned.</span> <span class="tl-s" data-s="1570.22" data-e="1576.04">There&#x27;s a daily reality that care is needed for loved ones who are in your life.</span> <span class="tl-s" data-s="1577.04" data-e="1581.32">And maybe the days of caring for one another have turned into months.</span></p>
+        <p><span class="tl-s" data-s="1582.92" data-e="1583.56">You are weary.</span> <span class="tl-s" data-s="1584.76" data-e="1587.88">In your weariness, turn to 2 Corinthians 12, 9.</span> <span class="tl-s" data-s="1588.18" data-e="1590.20">My grace is sufficient for you.</span> <span class="tl-s" data-s="1590.58" data-e="1593.12">My power is being made perfect in your weakness.</span></p>
+        <p><span class="tl-s" data-s="1594.54" data-e="1598.92">God&#x27;s daily grace, a grace sufficient for you.</span> <span class="tl-s" data-s="1600.00" data-e="1607.76">Have you considered that God&#x27;s daily grace for an extended illness or caregiving in an extended illness is a wow moment?</span></p>
+        <p><span class="tl-s" data-s="1609.88" data-e="1612.12">What about besetting sin?</span></p>
+        <p><span class="tl-s" data-s="1615.34" data-e="1620.14">You know, that sin that just dogs you, that one that just won&#x27;t go away.</span></p>
+        <p><span class="tl-s" data-s="1621.66" data-e="1623.96">Is it lust or drunkenness?</span> <span class="tl-s" data-s="1624.76" data-e="1626.68">Is it criticism or gossip?</span> <span class="tl-s" data-s="1628.04" data-e="1629.56">Is it gluttony or greed?</span></p>
+        <p><span class="tl-s" data-s="1630.98" data-e="1635.40">Is it allowing social media to influence you greater than the word of God?</span></p>
+        <p><span class="tl-s" data-s="1637.02" data-e="1639.44">Is it you fill in the blank?</span></p>
+        <p><span class="tl-s" data-s="1641.02" data-e="1642.20">Go to Hebrews 4.</span> <span class="tl-s" data-s="1643.46" data-e="1648.64">Since then we have a great high priest who has passed through the heavens, Jesus, the son of God.</span> <span class="tl-s" data-s="1649.38" data-e="1651.82">Let us hold fast to our confession.</span> <span class="tl-s" data-s="1652.64" data-e="1663.70">For we do not have a great high priest who is unable to sympathize with our weaknesses, but one who in every respect has been tempted as we are yet without sin.</span> <span class="tl-s" data-s="1664.46" data-e="1671.46">Let us draw near to the throne of grace that we may receive mercy and find grace to help in time of need.</span> <span class="tl-s" data-s="1672.62" data-e="1674.08">Jesus knows our weaknesses.</span> <span class="tl-s" data-s="1675.20" data-e="1676.48">He knows our sin.</span> <span class="tl-s" data-s="1677.44" data-e="1686.96">He lived in our world as a man being tempted as we are, but as God who perfectly obeyed yet without sin.</span> <span class="tl-s" data-s="1688.04" data-e="1693.14">Turn to Jesus to find mercy and grace in your battle with besetting sin.</span></p>
+        <p><span class="tl-s" data-s="1695.26" data-e="1699.02">Now I had one conclusion but I ended up with three so bear with me here.</span> <span class="tl-s" data-s="1699.27" data-e="1701.68">Conclusion number two, don&#x27;t forget the church.</span></p>
+        <p><span class="tl-s" data-s="1703.30" data-e="1704.76">Don&#x27;t forget this church family.</span> <span class="tl-s" data-s="1705.86" data-e="1707.44">We don&#x27;t have to walk through this alone.</span> <span class="tl-s" data-s="1708.18" data-e="1716.36">We don&#x27;t have to walk through loneliness or sickness or caregiving for other ones or besetting sin or you fill in the blank.</span> <span class="tl-s" data-s="1716.48" data-e="1718.58">We don&#x27;t do this alone.</span> <span class="tl-s" data-s="1719.14" data-e="1721.20">We do this with one another.</span> <span class="tl-s" data-s="1722.26" data-e="1724.86">The church is God&#x27;s gift to us.</span> <span class="tl-s" data-s="1725.40" data-e="1729.28">He said he will never leave us or forsake us and that is true.</span> <span class="tl-s" data-s="1729.72" data-e="1730.58">He never will.</span> <span class="tl-s" data-s="1731.86" data-e="1733.48">But he also gives us a body.</span></p>
+        <p><span class="tl-s" data-s="1735.00" data-e="1737.28">Come alongside and encourage us.</span> <span class="tl-s" data-s="1738.52" data-e="1739.88">Don&#x27;t forget the church.</span></p>
+        <p><span class="tl-s" data-s="1741.94" data-e="1750.20">And then finally when we were worshiping in the first song the Lord brought to mind eternity.</span></p>
+        <p><span class="tl-s" data-s="1751.94" data-e="1754.74">You know this chaos that&#x27;s out there right now in our lives?</span></p>
+        <p><span class="tl-s" data-s="1756.88" data-e="1757.92">It&#x27;s going to be gone.</span></p>
+        <p><span class="tl-s" data-s="1761.60" data-e="1771.08">There&#x27;ll be one day we&#x27;ll cross over and we&#x27;ll see him and there&#x27;ll be no more chaos.</span></p>
+        <p><span class="tl-s" data-s="1773.06" data-e="1779.04">I don&#x27;t know haven&#x27;t been there yet but I think the chaos will be forgotten.</span> <span class="tl-s" data-s="1780.14" data-e="1783.80">I don&#x27;t think we&#x27;ll have memories of the chaos of this world.</span></p>
+        <p><span class="tl-s" data-s="1787.14" data-e="1798.78">Don&#x27;t forget about eternity our life is but a breath here it&#x27;s a vapor and then we go and we get to be with him.</span></p>
+        <p><span class="tl-s" data-s="1800.48" data-e="1814.00">The first song we sang talked about saints casting down their golden crowns around the glassy sea. we know saints who are casting their crowns right now.</span></p>
+        <p><span class="tl-s" data-s="1816.12" data-e="1822.08">People that used to be in this church are now with him.</span></p>
+        <p><span class="tl-s" data-s="1823.80" data-e="1825.46">Christians will join them one day.</span></p>
+        <p><span class="tl-s" data-s="1827.64" data-e="1831.30">In Acts 12 the infant church experienced persecution.</span></p>
+        <p><span class="tl-s" data-s="1832.90" data-e="1835.26">It was assailed by violent hands.</span></p>
+        <p><span class="tl-s" data-s="1836.82" data-e="1847.82">This church saw James martyr they saw Peter jailed and with his impending execution they prayed earnest prayers to God for him.</span> <span class="tl-s" data-s="1849.10" data-e="1862.84">They saw these prayers answered as Peter was rescued by an angel sent by God and they saw God&#x27;s judgment of Herod and the persecution of the church was stopped in its tracks.</span> <span class="tl-s" data-s="1864.14" data-e="1875.62">In the midst of this they found then as we did today that God&#x27;s church grows in the midst of persecution and chaos.</span> <span class="tl-s" data-s="1875.92" data-e="1876.70">Let&#x27;s pray.</span></p>
+        <p><span class="tl-s" data-s="1883.86" data-e="1886.52">Father, I&#x27;m grateful for this word today.</span></p>
+        <p><span class="tl-s" data-s="1888.74" data-e="1909.80">Lord, how we can go from the encouragement and joy of Barnabas in Antioch in chapter 11 and then turn the corner to find the darkness of persecution and martyrdom.</span></p>
+        <p><span class="tl-s" data-s="1912.38" data-e="1915.60">All in your word, all for us.</span> <span class="tl-s" data-s="1916.52" data-e="1930.44">Lord, help us to encourage and remember what we learned last week about encouraging one another and help us to do this especially in times of trial when others are in chaos.</span> <span class="tl-s" data-s="1931.66" data-e="1933.86">Lord, may we pray for one another.</span></p>
+        <p><span class="tl-s" data-s="1935.52" data-e="1938.02">May we walk alongside one another.</span></p>
+        <p><span class="tl-s" data-s="1940.56" data-e="1946.54">May we do this together as we walk towards the celestial city.</span></p>
+        <p><span class="tl-s" data-s="1949.54" data-e="1958.24">Father, I do want to pray for the 36 youth and their 16 parents that are up in Prescott now.</span></p>
+        <p><span class="tl-s" data-s="1960.34" data-e="1965.46">Lord, that there would be kids saved as a result of that youth camp.</span> <span class="tl-s" data-s="1965.98" data-e="1969.00">Thank you for Frank and for leading this.</span> <span class="tl-s" data-s="1970.28" data-e="1975.36">May your word as it went out to us today go out to them as well.</span> <span class="tl-s" data-s="1975.72" data-e="1977.82">We know it won&#x27;t return void.</span> <span class="tl-s" data-s="1977.84" data-e="1980.16">That&#x27;s what Isaiah 55 says.</span> <span class="tl-s" data-s="1981.02" data-e="1983.02">Would you save these kids?</span></p>
+        <p><span class="tl-s" data-s="1984.74" data-e="2002.66">Lord, just as we experience the baptism of six young ladies two Easter&#x27;s ago, would there be youth saved, baptized, become members of this church, enjoy the gift of the family of this church as we walk towards you?</span></p>
+        <p><span class="tl-s" data-s="2007.52" data-e="2010.20">Father, we&#x27;re grateful to be able to gather today.</span> <span class="tl-s" data-s="2011.30" data-e="2012.30">Open your word.</span> <span class="tl-s" data-s="2013.58" data-e="2015.98">And now let&#x27;s worship the Lord one more time.</span> <span class="tl-s" data-s="2017.38" data-e="2022.00">God bless you.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Live sermon feed: spotlight from /api/sermons, browsable archive from
+  // /api/sermons/search. Static fallback list stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function row(it) {
+      var meta = [it.speaker, fmtDate(it.date)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      var titleHtml = esc(it.title);
+      var tUrl = it.guid && transcriptMap[it.guid];
+      if (tUrl) titleHtml = '<a href="' + esc(tUrl) + '">' + titleHtml + "</a>";
+      return '<div class="sermon"><div><h3>' + titleHtml + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    fetch("/api/sermons?v=3")
+      .then(function (res) { if (!res.ok) throw new Error("feed " + res.status); return res.json(); })
+      .then(function (data) {
+        var spot = document.querySelector("[data-series-spotlight]");
+        if (data && data.series && spot) {
+          var s = data.series;
+          var art = spot.querySelector("[data-series-art]");
+          if (art && s.artwork) { art.src = s.artwork; } else if (art) { art.style.display = "none"; }
+          var nm = spot.querySelector("[data-series-name]");
+          if (nm) nm.textContent = s.name;
+          var bl = spot.querySelector("[data-series-blurb]");
+          if (bl) bl.textContent = s.blurb;
+          spot.hidden = false;
+        }
+      })
+      .catch(function () { /* spotlight stays hidden */ });
+
+    var PER = 10;
+    var state = { q: "", speaker: "", series: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var speakerSel = document.querySelector("[data-sermons-speaker]");
+    var seriesSel = document.querySelector("[data-sermons-series]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No messages found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(speakerSel, data.facets.speakers || [], function (e) { return e.name; }, function (e) { return e.name + " (" + e.count + ")"; });
+        fill(seriesSel, data.facets.series || [], function (e) { return e.name; }, function (e) { return e.name + " (" + e.count + ")"; });
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.speaker || data.series || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.speaker) parts.push("by " + data.speaker);
+          if (data.series) parts.push("in " + data.series);
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " result" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " messages";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/sermons/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.speaker ? "&speaker=" + encodeURIComponent(state.speaker) : "") +
+        (state.series ? "&series=" + encodeURIComponent(state.series) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () { /* keep current list on error */ });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.speaker = ""; state.series = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (speakerSel) speakerSel.value = "";
+      if (seriesSel) seriesSel.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    function bindSelect(sel, key) {
+      if (!sel) return;
+      sel.addEventListener("change", function () {
+        state[key] = sel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    bindSelect(speakerSel, "speaker");
+    bindSelect(seriesSel, "series");
+    bindSelect(monthSel, "month");
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: https://hub.centergilbert.com/media/acts-12-21 -->
+</body>
+</html>
