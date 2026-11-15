@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Why Are There So Many Genealogies in the Bible? — Podcast Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Fixed on Jesus: conversations beyond Sunday mornings from Center Church in Gilbert, AZ — listen on Spotify, Apple Podcasts, and YouTube." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=18" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a href="/sermons">Sermons</a></li>
+              <li><a class="active" href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/podcast">&larr; All podcast episodes</a>
+          <h1 class="display-lg">Why Are There So Many Genealogies in the Bible?</h1>
+          <p class="transcript-meta">2026-06-17 · 18:18</p>
+          <p class="transcript-desc">For many people reading the Bible, genealogies can feel confusing, repetitive, and easy to skip. So why are they there? In this episode of Fixed On Jesus, Rich and Mark explore the purpose and significance of genealogies in Scripture. They discuss why God preserved these family records, how they con</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/e750e370/podcast/play/121614830/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-5-17%2F426323696-44100-2-4fd02de6c388f.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="0.15" data-e="5.14">Like, I would imagine most of our listeners have failed in ways that they regret.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="7.73" data-e="11.80">And you got a non-listener right here that failed in a way that he regrets.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="11.88" data-e="11.93">Yeah.</span> <span class="tl-s" data-s="11.98" data-e="12.91">And significantly.</span> <span class="tl-s" data-s="13.03" data-e="13.33">Right.</span> <span class="tl-s" data-s="13.49" data-e="15.44">There&#x27;s all kinds of regrets that we carry.</span> <span class="tl-s" data-s="15.91" data-e="18.94">And sometimes we can think of ourselves like, hey, we&#x27;re too far gone.</span></p>
+        <p><span class="tl-s" data-s="20.75" data-e="22.22">There&#x27;s no way I&#x27;m damaged goods.</span> <span class="tl-s" data-s="22.30" data-e="26.01">There&#x27;s no way that the Lord would use me because I did X, Y, or Z.</span> <span class="tl-s" data-s="26.93" data-e="51.47">And then you look at the scriptures and you see who he used and who&#x27;s in the line of Christ, and you go, oh, this is fixed on Jesus.</span></p>
+        <p><span class="tl-s" data-s="71.84" data-e="74.58">Hey everybody, welcome back to the Fixed on Jesus podcast.</span> <span class="tl-s" data-s="74.64" data-e="75.29">My name is Rich.</span> <span class="tl-s" data-s="75.33" data-e="76.08">I&#x27;m one of your hosts.</span> <span class="tl-s" data-s="76.64" data-e="78.67">I&#x27;m joined by Mark Johnson Jr.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="79.78" data-e="80.17">Hello, Rich.</span> <span class="tl-s" data-s="80.55" data-e="81.32">Glad to join you.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="81.89" data-e="86.15">Glad to be joined by With you and Heather Corbett.</span> <span class="tl-s" data-s="86.15" data-e="87.79">That&#x27;s weird over there.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="88.85" data-e="90.12">Happy to be joined.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="90.37" data-e="91.28">Happy to be joined.</span> <span class="tl-s" data-s="91.47" data-e="94.12">That&#x27;s passive and a poor sentence.</span> <span class="tl-s" data-s="94.69" data-e="97.09">So anyway, but here we are.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="97.11" data-e="98.61">You don&#x27;t want to even start that one over.</span> <span class="tl-s" data-s="98.61" data-e="99.35">I love that.</span> <span class="tl-s" data-s="99.35" data-e="100.09">That&#x27;s amazing.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="100.11" data-e="101.35">I mean, why do we want to start that?</span> <span class="tl-s" data-s="101.35" data-e="102.85">I mean, we don&#x27;t do that.</span> <span class="tl-s" data-s="102.85" data-e="104.81">How many times have I said, oh, let&#x27;s start that over?</span> <span class="tl-s" data-s="104.81" data-e="105.61">I don&#x27;t like that introduction.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="105.70" data-e="106.65">Actually, I don&#x27;t think ever.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="106.74" data-e="107.47">I&#x27;ve never done that.</span> <span class="tl-s" data-s="107.47" data-e="108.83">And I don&#x27;t think we&#x27;ll ever do that.</span> <span class="tl-s" data-s="108.83" data-e="111.10">We&#x27;re real, We&#x27;re authentic.</span> <span class="tl-s" data-s="111.10" data-e="114.20">We&#x27;re not here to try to put on a show, or we&#x27;re not performers.</span> <span class="tl-s" data-s="114.20" data-e="116.46">We&#x27;re just here to talk about.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="116.46" data-e="118.73">We did not get paid enough to be performers.</span> <span class="tl-s" data-s="118.92" data-e="120.50">I just want to state that right now.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="120.50" data-e="121.08">You&#x27;re getting paid for this?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="121.08" data-e="121.83">You&#x27;re getting paid?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="122.76" data-e="125.98">Yeah.</span> <span class="tl-s" data-s="125.98" data-e="133.20">So we&#x27;re we&#x27;re not we&#x27;re not in it for the glitz and the glamour, [Speaker B] or the [Speaker A] pay, or the pay.</span> <span class="tl-s" data-s="133.20" data-e="135.46">It&#x27;s it&#x27;s we&#x27;re not about the sizzle.</span> <span class="tl-s" data-s="135.46" data-e="137.06">We&#x27;re about the steak, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="137.06" data-e="137.50">Yeah, that&#x27;s right.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="137.50" data-e="138.36">Oh, I like that.</span> <span class="tl-s" data-s="138.36" data-e="139.82">It&#x27;s also close to dinner time, and I&#x27;m hungry.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="139.82" data-e="139.90">Yeah, yeah, me too.</span></p>
+        <p><span class="tl-s" data-s="141.76" data-e="143.04">Now the table set. [Speaker B] that.</span> <span class="tl-s" data-s="143.04" data-e="143.74">So we&#x27;ll get into it.</span> <span class="tl-s" data-s="143.74" data-e="148.03">All right, what are we talking about?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="148.03" data-e="148.82">We&#x27;re talking about genealogies.</span> <span class="tl-s" data-s="148.92" data-e="163.51">When I&#x27;m just reading the Bible, especially earlier on, I was fascinated, but also intrigued and confused by just the repetitive nature of listing whose father someone is, whose son someone is.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="163.52" data-e="164.17">Yeah, right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="164.17" data-e="165.44">And both in the Old Testament and the New.</span> <span class="tl-s" data-s="165.47" data-e="170.35">I mean, it was really cool to see in the New Testament how Adam connected to Jesus.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="170.35" data-e="171.36">Yeah, right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="171.55" data-e="172.82">Or even anything in between.</span> <span class="tl-s" data-s="173.06" data-e="181.00">But also the Old Testament would— people would address someone as son of so-and-so, son of Jesse.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="181.25" data-e="181.83">David, son of Jesse.</span> <span class="tl-s" data-s="181.83" data-e="182.01">Right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="182.04" data-e="182.15">Yeah.</span> <span class="tl-s" data-s="182.15" data-e="185.20">Well, no one&#x27;s— I mean, I&#x27;m a junior.</span> <span class="tl-s" data-s="185.41" data-e="186.22">You&#x27;re a Coleman.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="186.22" data-e="193.44">You [Speaker B] know, like we have some names given to us from our parents, but it&#x27;s not as prevalent in today&#x27;s society.</span> <span class="tl-s" data-s="193.44" data-e="199.43">So when you first look at the Bible for the first time, you&#x27;re like, I don&#x27;t care who&#x27;s all related.</span> <span class="tl-s" data-s="199.48" data-e="199.61">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="199.61" data-e="202.51">Why is it important, or what does it demonstrate?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="202.79" data-e="208.58">I think it demonstrates a few things that, you know, are important.</span> <span class="tl-s" data-s="209.00" data-e="214.75">One of them is that God works in real time and space and history, right?</span> <span class="tl-s" data-s="214.84" data-e="219.63">And so these places are not made up.</span> <span class="tl-s" data-s="219.85" data-e="221.73">They&#x27;re not fables.</span> <span class="tl-s" data-s="221.78" data-e="223.56">The geographical references are all real.</span> <span class="tl-s" data-s="223.67" data-e="228.99">And these are real people who live real lives just like us.</span> <span class="tl-s" data-s="229.04" data-e="234.00">And the other reality is that— so like, we&#x27;re not talking about Narnia, we&#x27;re not talking about Middle-earth.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="234.09" data-e="234.59">No Avatar.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="234.59" data-e="238.64">Yeah, we&#x27;re not talking about those places that are just made up.</span> <span class="tl-s" data-s="238.68" data-e="240.36">These are real.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="240.36" data-e="240.44">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="240.46" data-e="255.73">And these real people lived and, you know, they lived and married and had children and got old and died, and they passed on They passed on their heritage to their children and their children&#x27;s children, and it&#x27;s real history.</span> <span class="tl-s" data-s="255.81" data-e="257.66">I mean, that&#x27;s the way history is.</span> <span class="tl-s" data-s="257.66" data-e="271.38">And it&#x27;s also just like, you see that the Lord works through normal people, because most of the people that you read about in the genealogies, they&#x27;re just listed and they&#x27;re anonymous, and we have no idea anything about them.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="271.38" data-e="273.13">Yeah, like Ananias, for example.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="273.15" data-e="279.18">Yeah, like you get him in Acts 9, and then he disappears into the pages of history.</span> <span class="tl-s" data-s="279.18" data-e="296.80">There&#x27;s a ton of people who are anonymous except their name&#x27;s just listed right there in the Bible, and so, and you know, part of the reason we have these genealogies is that you see the progression to the promised seed of Christ, right?</span> <span class="tl-s" data-s="296.80" data-e="299.38">Jesus doesn&#x27;t just appear out of nowhere.</span> <span class="tl-s" data-s="299.38" data-e="305.06">He is not like a, you know, he&#x27;s not like Superman who comes from the planet Krypton.</span> <span class="tl-s" data-s="305.06" data-e="308.12">And comes in a ship and crash lands in Kansas.</span> <span class="tl-s" data-s="308.12" data-e="308.35">Right.</span> <span class="tl-s" data-s="308.44" data-e="310.43">And he&#x27;s like— [Speaker B] That&#x27;s where he would go, huh?</span> <span class="tl-s" data-s="310.59" data-e="312.12">Is that where Superman went?</span> <span class="tl-s" data-s="312.12" data-e="313.24">I don&#x27;t know.</span> <span class="tl-s" data-s="313.40" data-e="315.07">Yeah, [Speaker A] that&#x27;s where Superman went.</span></p>
+        <p><span class="tl-s" data-s="315.10" data-e="315.28">Yeah.</span> <span class="tl-s" data-s="315.32" data-e="316.99">And he crashed.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="317.09" data-e="321.52">You look like Superman with those glasses on today.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="321.52" data-e="322.16">Right, exactly.</span> <span class="tl-s" data-s="322.54" data-e="326.39">And he crash lands there from anybody.</span> <span class="tl-s" data-s="327.19" data-e="329.02">He&#x27;s from another planet, right?</span> <span class="tl-s" data-s="329.05" data-e="330.87">Jesus came from real people.</span> <span class="tl-s" data-s="330.90" data-e="333.09">And so you can trace his genealogy back.</span> <span class="tl-s" data-s="333.14" data-e="337.71">He&#x27;s fully Jewish on both his mother and his father&#x27;s side.</span> <span class="tl-s" data-s="337.71" data-e="338.85">Even though his father didn&#x27;t.</span> <span class="tl-s" data-s="339.56" data-e="364.66">It was the Holy Spirit that worked to conceive in Mary, but at the same time you&#x27;ve got that, and so like you&#x27;ve got a record generation after generation after generation after generation where real people are living and dying and going about their lives, and at one point it leads to Christ, right?</span> <span class="tl-s" data-s="364.66" data-e="379.29">The other thing is that it&#x27;s a constant reminder that things are not as they should be because there is a refrain that is like, and they died, and they died, and they died, and they died, and they died.</span> <span class="tl-s" data-s="379.32" data-e="390.36">And I think one of the things we need to remember as Christians is that death is an uninvited guest.</span></p>
+        <p><span class="tl-s" data-s="390.47" data-e="392.48">It&#x27;s an invader into our world.</span> <span class="tl-s" data-s="392.48" data-e="392.54">Yeah.</span> <span class="tl-s" data-s="392.56" data-e="400.47">And we make deals with death and say, well, they lived a long life or whatever.</span> <span class="tl-s" data-s="400.97" data-e="405.99">But death in all its forms is always evil and wrong.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="406.08" data-e="406.40">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="406.40" data-e="426.60">And so with these genealogies, over and over and over and over again, we see the curse of sin that has been put on mankind and the effect of sin in death ravaging mankind, not just this generation, not just the prior generation, but generation after generation after generation after generation.</span> <span class="tl-s" data-s="426.60" data-e="431.23">And so down through the centuries, over and over and over and over and over again.</span> <span class="tl-s" data-s="431.27" data-e="431.87">Everybody died.</span> <span class="tl-s" data-s="431.92" data-e="432.55">Everybody died.</span> <span class="tl-s" data-s="432.66" data-e="433.11">Everybody died.</span> <span class="tl-s" data-s="433.71" data-e="434.12">Everybody died.</span> <span class="tl-s" data-s="434.12" data-e="434.38">Everybody died.</span></p>
+        <p><span class="tl-s" data-s="437.98" data-e="439.03">Everybody died.</span> <span class="tl-s" data-s="439.77" data-e="440.15">Everybody died.</span> <span class="tl-s" data-s="440.15" data-e="442.41">But then there&#x27;s this one guy.</span> <span class="tl-s" data-s="442.49" data-e="443.76">He died but rose again.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="443.78" data-e="444.16">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="444.36" data-e="452.80">And so for the very first time in human history, somebody broke the pattern.</span> <span class="tl-s" data-s="452.83" data-e="454.31">Somebody said— somebody changed it.</span> <span class="tl-s" data-s="454.44" data-e="457.47">Where it&#x27;s like, whoa, there&#x27;s something different.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="457.47" data-e="459.98">Is that why we say he defeated death?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="460.38" data-e="460.78">Yes.</span> <span class="tl-s" data-s="460.78" data-e="463.12">He rose from the dead defeating death, but he defeated death.</span> <span class="tl-s" data-s="463.17" data-e="481.28">He became a champion for all those who trust in him, and so he defeated death on behalf of his people, and so all of a sudden now the pattern has been broken.</span> <span class="tl-s" data-s="481.29" data-e="487.01">And so he did not die, or he did die, but he will not die again.</span> <span class="tl-s" data-s="487.01" data-e="491.69">He has an imperishable, an indestructible life now, which is incredible.</span> <span class="tl-s" data-s="491.76" data-e="492.15">Yeah.</span> <span class="tl-s" data-s="493.32" data-e="510.45">The other thing that genealogies do is they communicate grace, because if you look at the line of Christ, the women referenced in the line of Christ are They have a sordid history, and some of the guys too, right?</span> <span class="tl-s" data-s="510.55" data-e="512.94">You read about the story of Judah.</span> <span class="tl-s" data-s="513.05" data-e="516.88">So Jesus is of the tribe of Judah.</span> <span class="tl-s" data-s="516.99" data-e="518.72">Judah was a bad guy.</span></p>
+        <p><span class="tl-s" data-s="518.82" data-e="525.02">He slept with his son&#x27;s wife who dressed up as a prostitute.</span> <span class="tl-s" data-s="525.34" data-e="525.99">And that&#x27;s okay.</span> <span class="tl-s" data-s="526.92" data-e="532.89">That&#x27;s how the line of Christ went.</span> <span class="tl-s" data-s="533.09" data-e="533.89">I mean, what?</span> <span class="tl-s" data-s="533.89" data-e="534.07">Hmm.</span> <span class="tl-s" data-s="534.68" data-e="535.38">You&#x27;ve got Bathsheba.</span> <span class="tl-s" data-s="535.43" data-e="540.43">David sees— I mean, it&#x27;s like, this is R-rated stuff, right?</span> <span class="tl-s" data-s="540.69" data-e="542.52">David sees Bathsheba bathing.</span> <span class="tl-s" data-s="542.56" data-e="545.53">He calls her to himself.</span> <span class="tl-s" data-s="545.71" data-e="546.70">She gets impregnated.</span></p>
+        <p><span class="tl-s" data-s="547.27" data-e="547.89">She&#x27;s married.</span> <span class="tl-s" data-s="548.33" data-e="550.54">Her husband is fighting in David&#x27;s war.</span> <span class="tl-s" data-s="550.93" data-e="551.96">David says, come back.</span> <span class="tl-s" data-s="552.08" data-e="559.30">And he&#x27;s thinking, okay, well, maybe we can arrange this so that He&#x27;ll think it&#x27;s his child.</span> <span class="tl-s" data-s="559.34" data-e="564.17">But the man has so much honor, he refuses because his men aren&#x27;t with him.</span> <span class="tl-s" data-s="564.17" data-e="570.61">He refuses to sleep in the same bed with his wife, and so he sleeps outside.</span> <span class="tl-s" data-s="571.29" data-e="579.42">And so then David sends and says, this guy, put him in the fiercest battle and then pull back, and he dies.</span> <span class="tl-s" data-s="579.42" data-e="582.16">It&#x27;s Bathsheba&#x27;s line that Jesus comes from.</span> <span class="tl-s" data-s="582.27" data-e="584.22">And you see this.</span> <span class="tl-s" data-s="584.22" data-e="585.42">You see Rahab.</span></p>
+        <p><span class="tl-s" data-s="585.88" data-e="591.44">Rahab is a prostitute in the city of Jericho, and yet Rahab is in the line of Christ.</span> <span class="tl-s" data-s="591.56" data-e="603.58">And so, like, it brings hope because, like, I mean, how many of us haven&#x27;t— like, I would imagine most of our listeners have failed in ways that they regret.</span> <span class="tl-s" data-s="603.58" data-e="607.76">And [Speaker B] you got a non-listener right here that failed in a way that he regrets.</span> <span class="tl-s" data-s="607.76" data-e="607.91">Yeah.</span> <span class="tl-s" data-s="607.91" data-e="608.71">And significantly.</span> <span class="tl-s" data-s="608.80" data-e="609.29">Right, right.</span> <span class="tl-s" data-s="609.29" data-e="615.54">There&#x27;s all kinds of regrets that we carry, and sometimes we can think of ourselves like, hey, we&#x27;re too far gone.</span> <span class="tl-s" data-s="615.54" data-e="617.57">You know, there&#x27;s no way I&#x27;m damaged goods.</span> <span class="tl-s" data-s="617.94" data-e="622.38">There&#x27;s no way that the Lord would use me because I did X, Y, or Z.</span> <span class="tl-s" data-s="622.49" data-e="633.39">And then you look at the scriptures and you see who he used and who&#x27;s in the line of Christ, and you go, oh, that&#x27;s unexpected.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="633.39" data-e="633.55">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="633.55" data-e="633.75">Right?</span> <span class="tl-s" data-s="634.13" data-e="643.98">Because you would expect that the ancestors of Christ would be, you know, perfect people that lived perfect lives, but that&#x27;s just not the way it is.</span> <span class="tl-s" data-s="644.04" data-e="655.81">And so genealogies show us that the Lord— the God is a God of grace, and He works through normal people.</span> <span class="tl-s" data-s="655.84" data-e="663.57">Like He&#x27;s faithful to work in people despite their many flaws and foibles and troubles and hardships and stuff.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="663.57" data-e="674.73">Yeah, so seeing the line of Christ being essentially tainted with human sin and error and mistake, God can work through— a takeaway could be God can work through our messy lives.</span> <span class="tl-s" data-s="674.79" data-e="679.06">Now that isn&#x27;t a reason to make your life messy.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="679.27" data-e="679.43">Exactly.</span> <span class="tl-s" data-s="679.43" data-e="679.54">No.</span> <span class="tl-s" data-s="680.17" data-e="680.31">Right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="680.31" data-e="682.14">It&#x27;s easy enough to sin without trying.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="682.24" data-e="682.32">100%.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="682.32" data-e="687.37">To where he can still redeem that for his purposes.</span> <span class="tl-s" data-s="687.87" data-e="696.44">He can accomplish his will through our failures [Speaker A] and [Speaker B] setbacks.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="696.44" data-e="696.54">Yep.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="696.54" data-e="702.92">Okay, so that&#x27;s really cool seeing From the Old Testament to Jesus.</span> <span class="tl-s" data-s="703.34" data-e="708.88">What about the foreshadowing that you see in the Old Testament about the genealogy that the Christ will come from?</span> <span class="tl-s" data-s="708.88" data-e="712.07">And it also included locations.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="712.17" data-e="712.41">Yeah, right.</span> <span class="tl-s" data-s="712.41" data-e="712.51">Sure.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="712.51" data-e="713.15">Super cool.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="713.15" data-e="713.60">Yeah.</span> <span class="tl-s" data-s="713.95" data-e="728.13">I mean, you&#x27;ve got all kinds of prophetic material in the Old Testament that shows and points directly to Jesus Christ, where he&#x27;d be born, what would happen to him, like, you know, all kinds of things, right?</span> <span class="tl-s" data-s="728.14" data-e="739.08">So like the genealogies really focus us, like point us to Jesus, and it shows that Jesus is a legitimate Jewish— he&#x27;s— you have to be— he had to be the Lamb of God.</span> <span class="tl-s" data-s="739.08" data-e="744.58">He had to come from, as Moses said, among his brothers.</span> <span class="tl-s" data-s="745.08" data-e="746.77">He had to be Jewish.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="746.85" data-e="746.90">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="746.95" data-e="754.37">Jesus was Jewish and came from a line of generation after generation of people who were Jewish.</span> <span class="tl-s" data-s="754.56" data-e="762.48">And so it just follows that that&#x27;s what happened, and he was a real man coming from real compromised people.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="762.83" data-e="769.19">And in Luke 3, it traces it all the way back from Jesus to Adam, which is cool.</span> <span class="tl-s" data-s="769.19" data-e="775.05">But why do some of the genealogies— why are some of them different?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="775.05" data-e="775.61">They have different scopes.</span> <span class="tl-s" data-s="775.61" data-e="777.89">They&#x27;re looking to prove different things, right?</span> <span class="tl-s" data-s="778.00" data-e="781.38">In Matthew, the focus is more for the Jew.</span> <span class="tl-s" data-s="781.47" data-e="788.44">In Luke, the focus is more for the, you know, pointing back all the way to the common ancestry of mankind.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="788.44" data-e="789.05">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="789.31" data-e="792.92">And that Jesus is the Savior of the world, right?</span> <span class="tl-s" data-s="792.92" data-e="799.83">Luke is writing to Gentiles and focusing and doesn&#x27;t assume that they have a Jewish background.</span> <span class="tl-s" data-s="799.83" data-e="805.45">And so, you know, he&#x27;s showing that you don&#x27;t have to be Jewish to be a Christian.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="805.45" data-e="805.51">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="805.51" data-e="807.82">Because in that day, most Christians were Jewish.</span> <span class="tl-s" data-s="808.16" data-e="812.62">Yeah, today, but that was the way it was back then.</span> <span class="tl-s" data-s="813.05" data-e="822.91">And so he finds— he roots Jesus&#x27;s identity even all the way back into our common ancestor, Adam.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="822.91" data-e="823.41">That&#x27;s really cool.</span> <span class="tl-s" data-s="823.41" data-e="823.52">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="823.63" data-e="852.75">I mean, it&#x27;s hard to— like, if you want to maybe think about how to walk through a genealogy, Maybe think about like picking the one in Matthew or the one in Luke that looks at Jesus and, you know, where you can just look at each name and maybe check a cross-reference or punch it into the internet and just see what biographical information you can get about those people and what&#x27;s written in the Bible.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="852.85" data-e="852.91">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="853.03" data-e="854.34">It&#x27;s kind of a cool exercise.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="854.36" data-e="854.53">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="854.53" data-e="862.29">You know, that way you can see, oh, okay, well, this person did this and this and they&#x27;re in the line of Christ.</span> <span class="tl-s" data-s="862.29" data-e="868.22">And oftentimes there&#x27;s a lot of things that they did wrong, but yet they&#x27;re still in the line of Christ.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="868.32" data-e="869.65">Yeah, that&#x27;s super cool.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="870.08" data-e="870.26">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="870.26" data-e="878.88">Even just— I also like the one from Genesis 5, just Adam to Noah, Adam being the first person to the flood and God&#x27;s different covenants with different— [Speaker A] Yeah, right.</span> <span class="tl-s" data-s="879.30" data-e="879.88">It shows.</span> <span class="tl-s" data-s="879.88" data-e="883.06">I mean, that&#x27;s the other thing.</span> <span class="tl-s" data-s="883.10" data-e="886.91">Like you ask, who are the people of God?</span> <span class="tl-s" data-s="887.83" data-e="892.02">And God&#x27;s promises continue through his people.</span> <span class="tl-s" data-s="892.02" data-e="893.44">Throughout the whole time, right?</span> <span class="tl-s" data-s="894.01" data-e="894.56">Super cool.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="894.74" data-e="895.04">Yeah, exactly.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="895.14" data-e="897.71">So, so is there a reason?</span> <span class="tl-s" data-s="897.71" data-e="903.20">Is it cultural that we don&#x27;t really focus on that as much today, or is it— it&#x27;s hard.</span> <span class="tl-s" data-s="903.23" data-e="909.70">I mean, I mean, like, personally, yeah, like, we know, uh, like, I don&#x27;t— from— I&#x27;ll give you an example.</span> <span class="tl-s" data-s="909.77" data-e="910.97">I know, like, my grandfather.</span> <span class="tl-s" data-s="911.21" data-e="918.68">I remember, obviously, I know my dad, my grandfather, And like my great-grandfather, but I don&#x27;t know much about anybody else before that.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="918.70" data-e="921.09">Yeah, [Speaker B] same with my mom&#x27;s side.</span> <span class="tl-s" data-s="921.09" data-e="925.65">Yeah, I don&#x27;t think we&#x27;re as wrapped up in heritage and things like that.</span> <span class="tl-s" data-s="925.68" data-e="929.08">Yeah, the way they were back then.</span> <span class="tl-s" data-s="929.13" data-e="931.88">I mean, [Speaker B] is that because we&#x27;re American?</span> <span class="tl-s" data-s="931.88" data-e="934.62">I— well, there were 12 tribes.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="934.92" data-e="940.19">Yeah, [Speaker A] 12 Jewish tribes, and they were proud of their Jewish heritage, and they traced it back.</span> <span class="tl-s" data-s="940.19" data-e="945.07">We— I mean, America Like, since the Industrial Revolution, people have moved around so much.</span> <span class="tl-s" data-s="945.10" data-e="953.09">I mean, there&#x27;s very few people who can trace their ancestry in the United States back to one place for more than 10, 15 years.</span> <span class="tl-s" data-s="953.46" data-e="959.36">You know, it&#x27;s not like we— it&#x27;s not like your people are in the same place, right?</span> <span class="tl-s" data-s="959.36" data-e="959.39">Yeah.</span></p>
+        <p><span class="tl-s" data-s="960.72" data-e="961.42">For all time.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="961.87" data-e="964.08">For 15 or for like 100 or 200 or 300 years, right?</span> <span class="tl-s" data-s="964.27" data-e="967.88">Like they used to be, right?</span> <span class="tl-s" data-s="968.28" data-e="968.80">Excuse me.</span> <span class="tl-s" data-s="968.99" data-e="972.28">So why— my— I do know this.</span> <span class="tl-s" data-s="972.88" data-e="976.12">My— [Speaker B] I know you know more about yours.</span> <span class="tl-s" data-s="976.15" data-e="981.54">Yeah, I&#x27;m the first generation to be raised outside of Texas on either side for 200 years.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="981.54" data-e="981.62">Dang.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="981.62" data-e="985.04">And so my grandmother was not happy with that.</span> <span class="tl-s" data-s="985.13" data-e="988.07">But that&#x27;s not normal, I would say.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="988.34" data-e="988.71">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="988.97" data-e="992.71">You know, that&#x27;s not something that most of us carry around.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="992.75" data-e="992.82">Yeah.</span> <span class="tl-s" data-s="992.83" data-e="994.40">Texas is like its own country.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="994.60" data-e="995.56">It is.</span> <span class="tl-s" data-s="995.56" data-e="996.07">Yeah, it is.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="996.07" data-e="1000.11">But anyways, anything else that we can be encouraged by when looking into the Bible for genealogies?</span> <span class="tl-s" data-s="1000.21" data-e="1007.74">And you&#x27;ve already mentioned just the grace that we receive knowing that God can draw a straight line with a crooked stick like us.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1007.74" data-e="1009.27">Yeah, right.</span> <span class="tl-s" data-s="1009.65" data-e="1018.63">I mean, I think like the— when you— whenever you read the Bible and you come across something that just seems like a waste, there&#x27;s always a reason it&#x27;s there.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1018.73" data-e="1018.86">Yeah.</span> <span class="tl-s" data-s="1018.86" data-e="1019.84">And so easy to skip over.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1019.84" data-e="1020.14">It&#x27;s easy.</span> <span class="tl-s" data-s="1020.22" data-e="1020.27">Yeah.</span> <span class="tl-s" data-s="1020.96" data-e="1021.39">But like, why?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1021.46" data-e="1024.15">Father of Lived for— his years were 120.</span> <span class="tl-s" data-s="1024.25" data-e="1024.95">I&#x27;m like, next chapter.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1025.05" data-e="1025.53">And he died.</span> <span class="tl-s" data-s="1025.53" data-e="1026.09">And he died.</span> <span class="tl-s" data-s="1026.09" data-e="1026.65">And he died.</span> <span class="tl-s" data-s="1026.65" data-e="1026.90">Yeah.</span> <span class="tl-s" data-s="1026.91" data-e="1028.90">And so like, what— why is this here?</span> <span class="tl-s" data-s="1028.90" data-e="1031.29">Just sit and maybe go, why is this here?</span> <span class="tl-s" data-s="1031.84" data-e="1035.78">There&#x27;s a reason it&#x27;s here, because God doesn&#x27;t waste any words.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1035.88" data-e="1035.96">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1036.22" data-e="1040.47">Why would he use all these words, right?</span> <span class="tl-s" data-s="1040.47" data-e="1043.30">Let&#x27;s think about that and maybe investigate some of the people there.</span> <span class="tl-s" data-s="1043.30" data-e="1046.99">And, um, and really— and also you realize there&#x27;s a frailty with our lives too.</span> <span class="tl-s" data-s="1048.15" data-e="1054.01">I mean, That we&#x27;re going to just— we&#x27;re going to be one of the ones that are gone.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1054.14" data-e="1054.48">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1054.62" data-e="1056.21">And there&#x27;ll be people after us.</span> <span class="tl-s" data-s="1056.21" data-e="1059.54">And so how then shall we live?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1059.54" data-e="1060.32">That&#x27;s great.</span> <span class="tl-s" data-s="1060.35" data-e="1064.36">I appreciate it.</span> <span class="tl-s" data-s="1064.36" data-e="1066.04">If you have any questions about this or about anything else, feel free to email us at production@sonnergilbert.com and trace back your genealogy.</span> <span class="tl-s" data-s="1066.04" data-e="1066.04">And we love you.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1066.04" data-e="1066.04">All right, we&#x27;ll see you next time.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Fixed on Jesus episode archive, backed by /api/podcast/search.
+  // Static fallback list above stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function fmtDuration(raw) {
+      if (!raw) return "";
+      var str = String(raw).trim();
+      // Anchor feeds report seconds; render as H:MM:SS or M:SS.
+      if (/^\d+$/.test(str)) {
+        var total = parseInt(str, 10);
+        var h = Math.floor(total / 3600);
+        var m = Math.floor((total % 3600) / 60);
+        var sec = total % 60;
+        var mm = (h > 0 && m < 10 ? "0" + m : "" + m);
+        var ss = (sec < 10 ? "0" + sec : "" + sec);
+        return (h > 0 ? h + ":" + mm : m) + ":" + ss;
+      }
+      // Anchor also reports clock strings like "00:24:02" — drop the
+      // redundant leading hour so it reads "24:02".
+      return str.replace(/^00:/, "");
+    }
+    function row(it) {
+      it = it || {};
+      var title = esc(it.title) || "Untitled episode";
+      var tUrl = it.guid && transcriptMap[it.guid];
+      var heading = tUrl
+        ? '<a href="' + esc(tUrl) + '">' + title + "</a>"
+        : (it.link
+          ? '<a href="' + esc(it.link) + '" target="_blank" rel="noopener">' + title + "</a>"
+          : title);
+      var meta = [fmtDate(it.date), fmtDuration(it.duration)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      return '<div class="sermon"><div><h3>' + heading + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    var PER = 10;
+    var state = { q: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No episodes found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " episode" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " episodes";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/podcast/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () {
+          // Keep the static list, but tell the reader where else to listen —
+          // some privacy blockers stop the archive request itself.
+          var note = document.querySelector("[data-sermons-error]");
+          if (note) note.hidden = false;
+        });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    if (monthSel) {
+      monthSel.addEventListener("change", function () {
+        state.month = monthSel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: 9e231cbd-8cf9-471c-a3a4-a61494efab7b -->
+</body>
+</html>
