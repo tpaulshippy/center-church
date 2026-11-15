@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A Podcast &quot;Fixed On Jesus&quot; — Podcast Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Fixed on Jesus: conversations beyond Sunday mornings from Center Church in Gilbert, AZ — listen on Spotify, Apple Podcasts, and YouTube." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=18" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a href="/sermons">Sermons</a></li>
+              <li><a class="active" href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/podcast">&larr; All podcast episodes</a>
+          <h1 class="display-lg">A Podcast &quot;Fixed On Jesus&quot;</h1>
+          <p class="transcript-meta">2023-08-14 · 11:54</p>
+          <p class="transcript-desc">Welcome to FIXED ON JESUS - a podcast brought to you by Center Church of Gilbert, Arizona. https://centergilbert.com/ Speaking to you today are Rich Richardson &amp; Mark Johnson Jr. Production by Heather Corbitt Please feel free to send email inquiries to production@centergilbert.com **SHOW NOTES** Que</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/e750e370/podcast/play/74611647/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-7-14%2F444b576c-2d3e-4069-8da0-5d6797e3f482.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="0.06" data-e="4.05">The point of the Bible is the person and work of Jesus Christ.</span> <span class="tl-s" data-s="4.14" data-e="15.76">So this is a book fundamentally about the revelation of God to mankind, and the center of that revelation is Jesus Christ, him crucified, risen, and returning.</span> <span class="tl-s" data-s="16.30" data-e="26.42">The point of the Bible is the person and work of Jesus Christ, him crucified, risen, and returning.</span></p>
+        <p><span class="tl-s" data-s="31.65" data-e="34.74">This is Fixed on Jesus.</span></p>
+        <p><span class="tl-s" data-s="51.58" data-e="53.07">Here we are, Fixed on Jesus.</span> <span class="tl-s" data-s="53.14" data-e="58.46">Fixed on Jesus is a podcast that we are beginning today, and you can liken it to a train.</span> <span class="tl-s" data-s="59.49" data-e="63.03">Get on a train and you just go wherever that train is going.</span> <span class="tl-s" data-s="63.14" data-e="79.95">We are not sure where this podcast is going, but we do know that the topic is going to be all surrounding and about Jesus Christ, because we want to be a people who think clearly about who Jesus is, what he has done, and how that connects to all of our lives.</span> <span class="tl-s" data-s="80.45" data-e="93.03">So we are not even sure all the different topics we will cover here, but we are going to be a— this is going to be a kind of place, a kind of space where we can be able to talk about all that kind of stuff. and make sure that, you know, we just talk about some of these hard issues.</span> <span class="tl-s" data-s="94.02" data-e="104.33">And so this train might take some detours, this train might take the scenic route, it might go the long way around a bunch of times, but nevertheless, here we are, we&#x27;re on this train.</span></p>
+        <p><span class="tl-s" data-s="104.39" data-e="105.87">It&#x27;s me, my name is Rich Richardson.</span> <span class="tl-s" data-s="105.97" data-e="112.78">I&#x27;m the lead pastor of Center Church here in Gilbert, Arizona, and alongside me we have Mark Johnson.</span> <span class="tl-s" data-s="113.35" data-e="113.59">Hi.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="114.24" data-e="115.18">Hey guys, how&#x27;s it going?</span> <span class="tl-s" data-s="115.62" data-e="116.55">Glad you&#x27;re tuned in.</span> <span class="tl-s" data-s="117.61" data-e="123.69">And we also have Heather Corbett, our lead production [Speaker A] coordinator.</span> <span class="tl-s" data-s="124.06" data-e="131.34">Yes, [Speaker B] um, [Speaker A] she has no microphone, but she controls the levers of power here at Fixed on Jesus.</span> <span class="tl-s" data-s="132.16" data-e="133.98">All of them.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="133.98" data-e="134.62">Yes, that&#x27;s right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="134.62" data-e="138.97">So the first question that comes to mind for you, Rich, is— and we&#x27;re just going to dive right into it.</span> <span class="tl-s" data-s="138.97" data-e="141.79">Yeah, let&#x27;s do it.</span> <span class="tl-s" data-s="141.92" data-e="142.60">Way to go.</span></p>
+        <p><span class="tl-s" data-s="143.84" data-e="145.14">So Why is that the title?</span> <span class="tl-s" data-s="145.14" data-e="148.02">Why is Fixed on Jesus the title?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="148.09" data-e="150.96">I think it&#x27;s a good question.</span> <span class="tl-s" data-s="151.33" data-e="165.83">I think as Christians we can forget that the purpose of our life is to, is to fix our eyes on Jesus, as it says, as the writer of the Hebrews says, who is the author and the perfecter of our faith.</span> <span class="tl-s" data-s="165.86" data-e="169.15">He&#x27;s the one who has given us our faith.</span> <span class="tl-s" data-s="169.15" data-e="174.33">He&#x27;s the one who has promised that he will perfect us.</span> <span class="tl-s" data-s="174.36" data-e="180.44">And so our life from beginning to end, once we become a Christian, is all about Jesus and who he is.</span> <span class="tl-s" data-s="180.44" data-e="189.42">And so it&#x27;s kind of a 3 little word shorthand that we use around here at church just to describe our mission.</span> <span class="tl-s" data-s="189.42" data-e="194.74">Our mission is not to spin off biblical principles that are separate from Jesus.</span> <span class="tl-s" data-s="195.03" data-e="201.58">We want to make sure that all we do connects back to Jesus and who he is.</span> <span class="tl-s" data-s="201.58" data-e="203.65">So that&#x27;s kind of just that label there.</span></p>
+        <p><span class="tl-s" data-s="203.68" data-e="213.92">And so we wanted, we wanted this podcast to be an extension of that, of what we do around here at church.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="213.92" data-e="214.22">Okay, that&#x27;s great.</span> <span class="tl-s" data-s="214.22" data-e="218.95">So let&#x27;s think a little bit bigger rather than just our church.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="219.61" data-e="219.78">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="219.78" data-e="223.40">Why would Christians in general need to be fixed on Jesus?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="223.62" data-e="227.46">Because Christians are experts, I think, at— [Speaker B] Oh, really?</span> <span class="tl-s" data-s="227.48" data-e="228.14">That&#x27;s news to me.</span> <span class="tl-s" data-s="228.14" data-e="228.19">Experts?</span> <span class="tl-s" data-s="228.19" data-e="231.48">You need to hear— let me finish that sentence.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="231.59" data-e="232.72">Oh, I&#x27;m sorry.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="232.96" data-e="235.59">Christians are experts at missing the big picture, I think.</span> <span class="tl-s" data-s="235.59" data-e="239.05">A lot of times we get— [Speaker B] I understood that in that sentence.</span> <span class="tl-s" data-s="239.05" data-e="240.64">You did, right?</span> <span class="tl-s" data-s="240.66" data-e="240.75">Exactly.</span> <span class="tl-s" data-s="240.75" data-e="257.67">A lot of us get wrapped up in thinking that Christianity is about giving you know, giving us the marriage of our dreams or the kids of our dreams or the life of our dreams, or that Jesus exists to give us everything that we want so that we might live a happy life.</span> <span class="tl-s" data-s="257.78" data-e="259.68">That&#x27;s not what— that&#x27;s not what Christianity is.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="259.71" data-e="262.04">Not happy life, happy wife, happy life.</span> <span class="tl-s" data-s="262.11" data-e="263.45">Not that.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="263.49" data-e="264.47">Well, that is true.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="264.53" data-e="265.72">Okay, [Speaker A] that is absolutely true.</span> <span class="tl-s" data-s="265.72" data-e="270.23">That&#x27;s— that is absolutely true, but this is not the purpose of that podcast.</span> <span class="tl-s" data-s="270.23" data-e="274.63">Um, I think a happy— a happy wife comes from someone who focuses on Jesus.</span> <span class="tl-s" data-s="274.63" data-e="276.59">And so like, yes, there we go.</span> <span class="tl-s" data-s="276.59" data-e="286.76">And so, but at the same time, I think Christians can get wrapped up in lots of different priorities that are not Jesus Christ.</span> <span class="tl-s" data-s="286.76" data-e="294.46">You know, we can get distracted by the hardships and trials that we face, uh, that we didn&#x27;t think we could ever— that we&#x27;d never thought we&#x27;d face.</span> <span class="tl-s" data-s="294.52" data-e="303.04">We can get distracted by the disappointments we have in life where we We, you know, we just didn&#x27;t imagine that we would have to go through something like this.</span> <span class="tl-s" data-s="303.04" data-e="308.29">Or we can just like latch on to different teaching out there that just focuses on principles.</span> <span class="tl-s" data-s="308.64" data-e="325.44">And by principles I mean you do this, God will do this, or you believe this, you will get this, or that kind of thing, instead of just recognizing that the whole purpose of our Christian life is to behold the glory and the grandeur of Jesus Christ and become more and more like him.</span></p>
+        <p><span class="tl-s" data-s="325.44" data-e="332.94">And so that doesn&#x27;t mean that all we will do is talk about Jesus, but everything connects to Jesus.</span> <span class="tl-s" data-s="333.02" data-e="335.62">And that is the way the Bible is.</span> <span class="tl-s" data-s="335.62" data-e="340.66">The Bible, the point of the Bible is the person and work of Jesus Christ.</span> <span class="tl-s" data-s="340.74" data-e="343.51">It is not a manual or a handbook on good government.</span> <span class="tl-s" data-s="343.56" data-e="349.90">It is not a manual or a handbook on all kinds of different ways that people try to use this.</span> <span class="tl-s" data-s="349.90" data-e="360.11">This is a book fundamentally about the revelation of God to mankind, and the center of that revelation is Jesus Christ.</span> <span class="tl-s" data-s="360.16" data-e="360.35">Amen.</span> <span class="tl-s" data-s="361.52" data-e="362.95">Him crucified, risen, and returning.</span> <span class="tl-s" data-s="362.95" data-e="368.24">So it stands to reason that, you know, that&#x27;s— I think Christians forget that.</span> <span class="tl-s" data-s="368.35" data-e="369.50">We forget that, right?</span></p>
+        <p><span class="tl-s" data-s="369.54" data-e="371.70">Paul says in Philippians, to live is Christ.</span> <span class="tl-s" data-s="371.70" data-e="386.30">And sometimes I think for us, we can think to live is that I have this job, or that I have this spouse, or that I have my health, or that I have My kids doing what I want my kids to do, or that I have this and this or that and this.</span> <span class="tl-s" data-s="386.32" data-e="393.17">We want to just boil it down and remind ourselves: No, no.</span> <span class="tl-s" data-s="393.17" data-e="395.46">To live is Christ.</span> <span class="tl-s" data-s="395.46" data-e="396.40">Amen to that.</span> <span class="tl-s" data-s="396.43" data-e="399.41">That was going deep on that one.</span> <span class="tl-s" data-s="399.44" data-e="406.99">You answered the question with a lot of extra amazing details too.</span></p>
+        <p><span class="tl-s" data-s="408.39" data-e="412.89">The last question is: Why is Jesus different?</span> <span class="tl-s" data-s="412.89" data-e="420.60">Than any other teacher or historical god, or why— what makes Jesus— what distinguishes him?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="420.70" data-e="430.19">Jesus is different because Jesus is the only one who defeated death, right?</span> <span class="tl-s" data-s="430.21" data-e="437.35">So every person that&#x27;s ever lived before us has died.</span> <span class="tl-s" data-s="437.49" data-e="444.23">Every person alive will one day die.</span></p>
+        <p><span class="tl-s" data-s="446.03" data-e="455.11">And Jesus was the only one who lived, died, rose again, and by rising defeated the power of death.</span> <span class="tl-s" data-s="455.14" data-e="461.44">So even just in a logical— just logically, that, that right there means that we should pay attention to him.</span> <span class="tl-s" data-s="461.44" data-e="468.64">I mean, right there, that means that we should be, we should be thinking about him as, as preeminent.</span> <span class="tl-s" data-s="468.65" data-e="469.46">I mean, Buddha is dead.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="469.46" data-e="472.70">Yeah, and everyone pays attention to him, even the people who don&#x27;t believe in him.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="472.76" data-e="473.38">Right, exactly.</span> <span class="tl-s" data-s="473.41" data-e="474.87">You can&#x27;t ignore him.</span> <span class="tl-s" data-s="474.87" data-e="485.94">I mean, he is also different because he, not only did the resurrection validate his ministry, but he also said things of himself that nobody else said of themselves.</span> <span class="tl-s" data-s="485.94" data-e="488.02">Jesus said, I am the resurrection and the life.</span> <span class="tl-s" data-s="488.02" data-e="491.72">No one comes to the Father but by me.</span> <span class="tl-s" data-s="491.83" data-e="505.78">And he is saying there in John 14:6 that there is no other way to be saved except through the ministry, the death and resurrection of Jesus Christ, of himself.</span> <span class="tl-s" data-s="506.71" data-e="509.05">I mean, Buddha didn&#x27;t say that.</span> <span class="tl-s" data-s="509.12" data-e="512.44">Joseph Smith kind of did, but that is another conversation.</span> <span class="tl-s" data-s="512.44" data-e="514.07">Muhammad didn&#x27;t say that.</span> <span class="tl-s" data-s="514.07" data-e="519.21">I mean, all these religious leaders didn&#x27;t say those things.</span></p>
+        <p><span class="tl-s" data-s="519.32" data-e="520.50">Jesus did.</span> <span class="tl-s" data-s="520.76" data-e="529.48">So he&#x27;s either— he&#x27;s someone who is either just completely deluded or he is who he says he is.</span> <span class="tl-s" data-s="529.53" data-e="530.93">As Lewis said, liar, lunatic, or Lord.</span></p>
+        <p><span class="tl-s" data-s="532.89" data-e="539.48">I mean, that&#x27;s what Lewis would have said from Mere Christianity.</span> <span class="tl-s" data-s="539.91" data-e="540.96">And so you can&#x27;t ignore him.</span> <span class="tl-s" data-s="540.96" data-e="553.38">And so I think unbelievers have to grapple with who he is, and believers continually need to grapple with who he is and, and what he says he&#x27;s doing.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="553.41" data-e="553.51">Amazing.</span> <span class="tl-s" data-s="553.51" data-e="556.03">Yeah, he&#x27;s, he&#x27;s changed my whole life.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="556.10" data-e="556.31">Amen.</span> <span class="tl-s" data-s="556.81" data-e="558.83">Yeah, all of us, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="558.83" data-e="560.15">Yeah, and continuously changing.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="560.21" data-e="561.06">That&#x27;s right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="561.20" data-e="568.31">Um, so that&#x27;s, that&#x27;s our first, uh, that&#x27;s our introduction to Fixed on Jesus.</span> <span class="tl-s" data-s="569.16" data-e="576.74">We want to make this a short but sweet episode of Some theology, some of Rich making fun of me, some different things like that.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="576.99" data-e="578.92">One of the things Mark doesn&#x27;t understand is like Christian culture.</span> <span class="tl-s" data-s="579.26" data-e="584.73">There&#x27;s a lot of Christian culture because he didn&#x27;t grow up— [Speaker B] I did not.</span> <span class="tl-s" data-s="584.73" data-e="586.29">In Christian culture.</span> <span class="tl-s" data-s="586.30" data-e="591.28">Last week we had a youth camp, and I told him there&#x27;s certain things that mark every Christian youth camp.</span> <span class="tl-s" data-s="591.28" data-e="593.48">There&#x27;s 3 things that mark every Christian youth camp.</span> <span class="tl-s" data-s="593.62" data-e="594.52">Do you remember what those are?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="594.52" data-e="596.03">I think I do.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="596.03" data-e="597.45">What are they?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="597.49" data-e="600.95">One of them is you have to experience the The most delicious food.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="601.09" data-e="601.49">No, bad food.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="601.49" data-e="601.65">Bad.</span> <span class="tl-s" data-s="601.65" data-e="602.29">Oh, bad food.</span> <span class="tl-s" data-s="602.29" data-e="603.16">I was being kind.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="603.37" data-e="603.55">Okay.</span> <span class="tl-s" data-s="603.56" data-e="603.63">Nope.</span> <span class="tl-s" data-s="603.66" data-e="604.30">Bad food.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="604.62" data-e="607.43">Who knows who&#x27;s listening to this?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="607.59" data-e="608.28">It&#x27;s bad food.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="608.38" data-e="610.68">So the bad food, the playing games in the dark.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="610.72" data-e="613.00">Not just games in the dark.</span> <span class="tl-s" data-s="613.12" data-e="613.18">Running.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="613.21" data-e="613.52">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="613.86" data-e="615.09">Running games in the dark.</span> <span class="tl-s" data-s="615.22" data-e="617.03">Running games that involve running in the dark.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="617.07" data-e="617.29">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="618.09" data-e="618.67">I don&#x27;t.</span> <span class="tl-s" data-s="618.67" data-e="619.15">It&#x27;s always.</span> <span class="tl-s" data-s="619.15" data-e="619.48">That&#x27;s always.</span> <span class="tl-s" data-s="619.48" data-e="621.69">That&#x27;s just normal for a youth camp.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="621.72" data-e="624.47">And I can&#x27;t remember the third one, but there was [Speaker A] bad beds.</span> <span class="tl-s" data-s="624.53" data-e="624.92">Bad beds.</span> <span class="tl-s" data-s="624.94" data-e="626.14">Yeah, that&#x27;s a tough one.</span> <span class="tl-s" data-s="626.16" data-e="628.66">That&#x27;d be the hardest one for me.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="629.51" data-e="633.47">Oh, there&#x27;s— and they&#x27;re always bunk beds too, so they&#x27;re bad rickety bunk beds.</span> <span class="tl-s" data-s="633.47" data-e="640.26">Well, yeah, so like people who, you know, run over 2 bills like you, I mean, they&#x27;re get— you&#x27;re gonna have— they&#x27;re gonna have trouble.</span> <span class="tl-s" data-s="640.26" data-e="641.73">Yeah, they&#x27;re— you&#x27;re gonna have trouble.</span> <span class="tl-s" data-s="641.73" data-e="644.75">So, you know, that&#x27;s, that&#x27;s, that&#x27;s sort of the rite of passage.</span> <span class="tl-s" data-s="644.78" data-e="654.26">So from time to time I&#x27;ll talk about some Christian culture stuff that Mark doesn&#x27;t know about, which is a lot, and just to try to inform him on on these things.</span> <span class="tl-s" data-s="654.33" data-e="656.30">But that&#x27;s, that&#x27;s what youth camp&#x27;s like.</span> <span class="tl-s" data-s="656.32" data-e="661.51">Now, I hear, in all fairness, I hear that the food actually was much better up there at this camp.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="661.77" data-e="663.87">That&#x27;s what I heard.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="663.87" data-e="664.01">Yeah.</span> <span class="tl-s" data-s="664.01" data-e="672.14">So, um, [Speaker B] all right, [Speaker A] sounds like that was a happy, happy, happy exception for the kids that were up there.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="672.19" data-e="672.50">Yeah.</span> <span class="tl-s" data-s="672.51" data-e="678.89">So including me learning about cheesy Christian culture from the past, uh, Rich is going to learn different slang words.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="678.89" data-e="679.36">That&#x27;s true.</span> <span class="tl-s" data-s="679.36" data-e="679.50">Yes.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="679.65" data-e="683.26">Whether he retains any of that information or not is still, you know, open.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="683.27" data-e="688.13">So if someone wants to email, what do they do?</span> <span class="tl-s" data-s="688.16" data-e="689.17">How do they contact?</span> <span class="tl-s" data-s="689.19" data-e="695.54">They have suggestions to like slang suggestions or church real questions or like cheesy Christian culture stuff.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="695.54" data-e="704.12">Yeah, we accept memes, we accept videos, we accept— [Speaker A] So how do they contact us?</span> <span class="tl-s" data-s="704.12" data-e="705.32">They contact us at production@centergilbert.com.</span> <span class="tl-s" data-s="705.38" data-e="709.34">We&#x27;re just so grateful that you tuned in and we look forward to our future episodes and getting some engagement and feedback from you, and thank you, and God bless.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="709.34" data-e="709.34">See you, everybody.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Fixed on Jesus episode archive, backed by /api/podcast/search.
+  // Static fallback list above stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function fmtDuration(raw) {
+      if (!raw) return "";
+      var str = String(raw).trim();
+      // Anchor feeds report seconds; render as H:MM:SS or M:SS.
+      if (/^\d+$/.test(str)) {
+        var total = parseInt(str, 10);
+        var h = Math.floor(total / 3600);
+        var m = Math.floor((total % 3600) / 60);
+        var sec = total % 60;
+        var mm = (h > 0 && m < 10 ? "0" + m : "" + m);
+        var ss = (sec < 10 ? "0" + sec : "" + sec);
+        return (h > 0 ? h + ":" + mm : m) + ":" + ss;
+      }
+      // Anchor also reports clock strings like "00:24:02" — drop the
+      // redundant leading hour so it reads "24:02".
+      return str.replace(/^00:/, "");
+    }
+    function row(it) {
+      it = it || {};
+      var title = esc(it.title) || "Untitled episode";
+      var tUrl = it.guid && transcriptMap[it.guid];
+      var heading = tUrl
+        ? '<a href="' + esc(tUrl) + '">' + title + "</a>"
+        : (it.link
+          ? '<a href="' + esc(it.link) + '" target="_blank" rel="noopener">' + title + "</a>"
+          : title);
+      var meta = [fmtDate(it.date), fmtDuration(it.duration)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      return '<div class="sermon"><div><h3>' + heading + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    var PER = 10;
+    var state = { q: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No episodes found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " episode" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " episodes";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/podcast/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () {
+          // Keep the static list, but tell the reader where else to listen —
+          // some privacy blockers stop the archive request itself.
+          var note = document.querySelector("[data-sermons-error]");
+          if (note) note.hidden = false;
+        });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    if (monthSel) {
+      monthSel.addEventListener("change", function () {
+        state.month = monthSel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: fb50ae75-550d-4fff-95ee-0d36f7539f38 -->
+</body>
+</html>
