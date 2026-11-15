@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prosperity Gospel — Podcast Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Fixed on Jesus: conversations beyond Sunday mornings from Center Church in Gilbert, AZ — listen on Spotify, Apple Podcasts, and YouTube." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=18" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a href="/sermons">Sermons</a></li>
+              <li><a class="active" href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/podcast">&larr; All podcast episodes</a>
+          <h1 class="display-lg">Prosperity Gospel</h1>
+          <p class="transcript-meta">2023-08-21 · 17:34</p>
+          <p class="transcript-desc">﻿Welcome to FIXED ON JESUS, a podcast brought to you by Center Church in Gilbert, Arizona. Speaking to you today are Rich Richardson &amp; Mark Johnson Jr. Production by Heather Corbitt **SHOW NOTES** Questions asked in this episode: What is your walk up song? Define the &quot;Prosperity Gospel&quot; Job - A lack</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/e750e370/podcast/play/74887350/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-7-21%2F311e06ca-14ff-f330-18fe-d1921a8e80a9.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="0.10" data-e="8.88">you travel throughout the world, you find a lot of different churches, especially in Latin America where I get to go on a regular basis, that are captive.</span> <span class="tl-s" data-s="8.95" data-e="35.99">They&#x27;re held captive by the health and wealth gospel, which is this idea that if you are obedient and if you love God, you will be healthy and you will be wealthy, and if you are sick or somehow lacking in any way, There&#x27;s some, some, maybe some hidden sin in your life or some kind of way that you&#x27;re displeasing God or some lack of faith in your life.</span> <span class="tl-s" data-s="36.17" data-e="39.35">And so it&#x27;s, it&#x27;s a really deadly kind of teaching.</span></p>
+        <p><span class="tl-s" data-s="54.67" data-e="57.07">This is Fixed on Jesus.</span></p>
+        <p><span class="tl-s" data-s="75.67" data-e="78.51">All right, welcome back to Fixed on Jesus podcast.</span> <span class="tl-s" data-s="78.73" data-e="79.09">Yep.</span> <span class="tl-s" data-s="79.15" data-e="80.14">So here we are together.</span> <span class="tl-s" data-s="80.19" data-e="87.59">We got Mark Johnson, who&#x27;s On the mic opposite me, and we have our production manager Heather Corbett who is with me as well.</span> <span class="tl-s" data-s="88.23" data-e="93.38">And our topic— well, I mean, we talk about everything and connect it to Jesus Christ.</span> <span class="tl-s" data-s="93.84" data-e="99.60">One of the things I am really curious about the folks in this room with me right now is, Mark, are you familiar with the term walk-up music?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="100.27" data-e="100.56">No.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="100.90" data-e="101.99">You don&#x27;t know what walk-up music is?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="102.26" data-e="108.42">No, like music that is made when you— [Speaker A] Do you watch baseball at all?</span> <span class="tl-s" data-s="108.42" data-e="110.15">Not a whole lot.</span> <span class="tl-s" data-s="110.17" data-e="110.36">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="110.36" data-e="112.87">Well, that&#x27;s an assignment for you until the next podcast.</span> <span class="tl-s" data-s="113.24" data-e="113.49">Watch baseball?</span> <span class="tl-s" data-s="113.49" data-e="114.28">Watch some baseball.</span> <span class="tl-s" data-s="114.54" data-e="116.59">But like, [Speaker B] where&#x27;s that in the Gospel?</span> <span class="tl-s" data-s="117.03" data-e="122.24">It&#x27;s— that is, it&#x27;s, it&#x27;s in Ecclesiastes where the Lord says he gives everything in its time.</span> <span class="tl-s" data-s="122.24" data-e="123.48">There&#x27;s a season for everything.</span> <span class="tl-s" data-s="123.70" data-e="125.57">And right now it&#x27;s baseball season.</span> <span class="tl-s" data-s="125.57" data-e="125.86">Right now.</span> <span class="tl-s" data-s="125.86" data-e="131.99">And so that&#x27;s like, that&#x27;s one of the things we&#x27;re going to be enthusiasts at on, on this Fixed on Jesus podcast is baseball.</span> <span class="tl-s" data-s="132.04" data-e="132.44">All right.</span></p>
+        <p><span class="tl-s" data-s="132.58" data-e="145.35">And in fact, um, What happens is when the when the batter comes up to the plate, every time they play a song, and so that song is called their walk-up music.</span> <span class="tl-s" data-s="145.35" data-e="145.64">Okay, right.</span> <span class="tl-s" data-s="145.72" data-e="150.61">So if you&#x27;re at the stadium, have you ever gone to a baseball game at the stadium?</span> <span class="tl-s" data-s="150.61" data-e="153.59">Okay, so you weren&#x27;t paying attention when they were walking to the plate.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="153.59" data-e="155.02">My hearing isn&#x27;t the greatest.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="155.02" data-e="158.35">Okay, well, I mean, it&#x27;s pretty loud, so must be pretty bad.</span> <span class="tl-s" data-s="158.35" data-e="159.68">Yeah, so we need to be praying.</span> <span class="tl-s" data-s="159.68" data-e="162.63">Pray for Mark and his hearing folks because it&#x27;s.</span> <span class="tl-s" data-s="162.71" data-e="163.15">Not good.</span> <span class="tl-s" data-s="163.21" data-e="170.36">Um, and so anyway, you walk up to the plate and, uh, you, you get to pick the song that is played, right?</span> <span class="tl-s" data-s="170.36" data-e="181.68">And so if you could pick any song to play, like pretend like you were walking up to the plate, what song would get you in the mood to hit a baseball a country mile?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="181.68" data-e="184.78">That&#x27;s a great question.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="185.09" data-e="191.71">So, uh, Heather, our Heather Corbett, our production manager, our ever capable production manager.</span> <span class="tl-s" data-s="192.79" data-e="196.71">She— her song is Def Leppard.</span> <span class="tl-s" data-s="196.75" data-e="204.72">I always get the title wrong because I was, as a kid, I was, I was not allowed to listen to the kind of music that Heather&#x27;s about to reference here.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="204.72" data-e="205.27">Me either.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="205.85" data-e="211.03">Whatever I reference— I was in the &#x27;80s and I only could like listen to Salty and stuff like that.</span> <span class="tl-s" data-s="211.03" data-e="213.89">And like, you know, do you even know who Salty is?</span> <span class="tl-s" data-s="213.89" data-e="215.49">No, Heather doesn&#x27;t know You don&#x27;t know who Salty is.</span> <span class="tl-s" data-s="215.52" data-e="220.94">And if you Google that, you can find out who Salty is, and there&#x27;s all kinds of lame songs that go along with that.</span> <span class="tl-s" data-s="221.13" data-e="224.60">Anyway, her song is Pour Some Sugar on It.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="225.07" data-e="225.24">Ooh.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="225.24" data-e="225.84">On me.</span> <span class="tl-s" data-s="225.85" data-e="226.67">Pour some sugar on me.</span> <span class="tl-s" data-s="226.67" data-e="228.20">I [Speaker B] think my mom likes that one.</span> <span class="tl-s" data-s="228.62" data-e="229.92">Shout out to my mom.</span> <span class="tl-s" data-s="229.95" data-e="230.41">Okay, I don&#x27;t.</span> <span class="tl-s" data-s="230.51" data-e="231.97">I have heard that song one time.</span> <span class="tl-s" data-s="231.97" data-e="233.24">Actually, I was in the car.</span> <span class="tl-s" data-s="233.24" data-e="234.86">I heard it on the radio.</span> <span class="tl-s" data-s="234.86" data-e="239.50">I took a picture of it, a little video, and sent it to Heather.</span> <span class="tl-s" data-s="239.51" data-e="243.85">So anyway, my song would be the immigrant song, the Let Led Zeppelin, the Immigrant Song.</span></p>
+        <p><span class="tl-s" data-s="243.85" data-e="245.95">So do you know that song?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="245.95" data-e="249.29">No, no, I pretty much only know hip-hop and worship music.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="249.29" data-e="250.81">Hip-hop and worship music?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="250.81" data-e="251.51">Yeah, not together, separate.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="251.51" data-e="254.59">Okay, good, because that would be wrong on lots of levels.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="254.59" data-e="256.13">Okay, I did come up with a walk-up song.</span> <span class="tl-s" data-s="256.13" data-e="256.29">You did?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="256.29" data-e="257.69">What was that walk-up song?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="257.69" data-e="258.55">Did you already express yours?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="258.55" data-e="259.43">Oh yeah, the Immigrant Song.</span> <span class="tl-s" data-s="259.43" data-e="259.73">You weren&#x27;t listening.</span> <span class="tl-s" data-s="259.73" data-e="260.39">The Immigrant Song.</span> <span class="tl-s" data-s="260.39" data-e="261.83">I was listening, I just don&#x27;t know the song.</span> <span class="tl-s" data-s="261.83" data-e="263.05">The Immigrant Song.</span> <span class="tl-s" data-s="263.05" data-e="264.43">I&#x27;m a natural-born American.</span> <span class="tl-s" data-s="264.43" data-e="265.55">It&#x27;s a classic song.</span> <span class="tl-s" data-s="265.55" data-e="265.95">You need— next time.</span> <span class="tl-s" data-s="265.95" data-e="266.39">So you have 2 songs.</span> <span class="tl-s" data-s="266.39" data-e="267.75">I got a lot of homework.</span></p>
+        <p><span class="tl-s" data-s="267.75" data-e="267.97">You do.</span> <span class="tl-s" data-s="267.97" data-e="270.70">You got to watch a baseball game and watch the walk-up stuff.</span> <span class="tl-s" data-s="270.70" data-e="278.68">The second thing you need to do is like look and see, Google immigrant song and realize, okay, man, this is— are you going to play it?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="278.68" data-e="279.40">I&#x27;ll play it.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="279.40" data-e="281.58">Don&#x27;t— well, [Speaker B] we&#x27;ll add it to the podcast.</span> <span class="tl-s" data-s="281.58" data-e="282.40">No, no, we&#x27;ll add it.</span> <span class="tl-s" data-s="282.40" data-e="282.62">We can&#x27;t.</span> <span class="tl-s" data-s="282.62" data-e="283.40">Oh, we can&#x27;t add that.</span> <span class="tl-s" data-s="283.40" data-e="283.98">We cannot add that.</span> <span class="tl-s" data-s="283.98" data-e="284.52">All right.</span> <span class="tl-s" data-s="284.52" data-e="285.68">We can&#x27;t add my song either.</span> <span class="tl-s" data-s="285.68" data-e="285.84">Yeah.</span> <span class="tl-s" data-s="285.84" data-e="286.08">Okay.</span> <span class="tl-s" data-s="286.08" data-e="288.20">Does your song have bad words in it?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="288.20" data-e="289.18">It probably does.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="289.18" data-e="289.32">Okay.</span> <span class="tl-s" data-s="289.32" data-e="291.42">Well, let&#x27;s, let&#x27;s, let&#x27;s aim for higher goals then.</span> <span class="tl-s" data-s="291.42" data-e="291.56">Okay.</span> <span class="tl-s" data-s="291.56" data-e="293.94">So why don&#x27;t you— [Speaker B] I got 3 assignments.</span> <span class="tl-s" data-s="293.94" data-e="294.68">You have 3 assignments.</span> <span class="tl-s" data-s="294.68" data-e="298.52">You need a song that does not have bad words in it.</span> <span class="tl-s" data-s="298.58" data-e="299.67">Number one, [Speaker B] worship music.</span> <span class="tl-s" data-s="299.72" data-e="300.81">Okay, well, [Speaker B] counterbalances.</span> <span class="tl-s" data-s="300.91" data-e="304.86">Okay, that— no, but that&#x27;s not how that works.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="304.86" data-e="305.10">You sure?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="305.10" data-e="305.86">I&#x27;m sure.</span> <span class="tl-s" data-s="305.91" data-e="306.47">Okay, Mark.</span> <span class="tl-s" data-s="306.53" data-e="307.90">Yeah, okay, never mind.</span> <span class="tl-s" data-s="307.90" data-e="319.40">Um, this is a bad topic anyway, but I, uh— so Mark is gonna watch baseball, he&#x27;s gonna learn what a walk-up song is, and he&#x27;s gonna come up with a walk-up song that doesn&#x27;t have any bad words in it for next time.</span> <span class="tl-s" data-s="319.40" data-e="319.56">Okay?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="319.62" data-e="319.83">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="320.27" data-e="324.38">So see, I told you this is a train that&#x27;s gonna go who knows where, right?</span> <span class="tl-s" data-s="324.38" data-e="326.31">We&#x27;re just— That&#x27;s right.</span> <span class="tl-s" data-s="326.37" data-e="335.79">Rocketing off into the distance with legions of fans And we know that you guys are just waiting on the edges of your seat to hear what we have to say, so here we are.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="335.85" data-e="339.14">Yep, so I&#x27;m not going to give my secular walk-up song this time.</span> <span class="tl-s" data-s="339.14" data-e="348.26">I&#x27;m going to find a more clean version, but our topic that we wanted to touch on today is in relation to what is known as the prosperity gospel.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="349.00" data-e="349.11">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="349.11" data-e="355.32">So a couple of the questions that I would have for— [Speaker A] First of all, prosperity gospel, what is that?</span> <span class="tl-s" data-s="355.37" data-e="356.70">How would you define that?</span> <span class="tl-s" data-s="356.88" data-e="361.01">It&#x27;s— first of all, I would define it as it&#x27;s not the true Gospel.</span> <span class="tl-s" data-s="361.67" data-e="367.74">That&#x27;s the first thing I would say, and it typically involves some kind of health and wealth related element.</span> <span class="tl-s" data-s="367.85" data-e="371.97">So I&#x27;ve seen a lot of different versions of it.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="371.97" data-e="371.99">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="372.02" data-e="376.62">There&#x27;s endless versions of it, but it typically talks about God almost like a vending machine.</span> <span class="tl-s" data-s="376.62" data-e="381.72">You put in something and you get something out, or you get out a multitude of what you put in.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="381.74" data-e="394.55">Right, and if you actually— if you travel throughout the world, you find a lot of different churches, especially in Latin America where I get to go on a regular basis, that are captive.</span> <span class="tl-s" data-s="394.71" data-e="423.83">They&#x27;re held captive by the health and wealth gospel, which is this idea that if you are obedient and if you love God, you will be healthy and you will be wealthy, and if you are sick or somehow lacking in any way, There&#x27;s some, some maybe some hidden sin in your life, or some kind of way that you&#x27;re displeasing God, or some lack of faith in your life.</span> <span class="tl-s" data-s="423.83" data-e="438.26">And so it&#x27;s it&#x27;s a really deadly kind of teaching that that that we have exported to the uttermost parts of the world, and as Americans I mean, and it just has it has wreaked havoc all over the place.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="438.26" data-e="439.18">It originated here.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="439.18" data-e="439.96">Yeah.</span> <span class="tl-s" data-s="439.96" data-e="440.60">Okay.</span> <span class="tl-s" data-s="440.60" data-e="440.70">Absolutely.</span> <span class="tl-s" data-s="440.70" data-e="442.74">I was wondering that.</span> <span class="tl-s" data-s="442.74" data-e="443.42">Yeah, there&#x27;s absolutely.</span> <span class="tl-s" data-s="443.42" data-e="444.78">It originated on Christian TV.</span> <span class="tl-s" data-s="444.78" data-e="446.04">I don&#x27;t recommend generally.</span> <span class="tl-s" data-s="446.04" data-e="447.52">I don&#x27;t recommend people watch Christian TV.</span> <span class="tl-s" data-s="447.52" data-e="447.90">I mean, that&#x27;s.</span> <span class="tl-s" data-s="447.90" data-e="450.44">Is there such a thing as Christian TV still?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="450.44" data-e="450.62">Yeah.</span> <span class="tl-s" data-s="450.62" data-e="453.04">What would be an example of that if there was?</span> <span class="tl-s" data-s="453.04" data-e="456.36">T B Is it TBN or [Speaker A] TBN?</span> <span class="tl-s" data-s="456.36" data-e="456.44">Yeah.</span> <span class="tl-s" data-s="456.44" data-e="457.84">I mean, I don&#x27;t.</span> <span class="tl-s" data-s="457.84" data-e="458.52">I haven&#x27;t.</span> <span class="tl-s" data-s="458.52" data-e="460.08">We don&#x27;t have TV service at our house.</span> <span class="tl-s" data-s="460.08" data-e="461.96">We just like have Netflix or Amazon Prime.</span> <span class="tl-s" data-s="461.96" data-e="462.44">So you are more modern than you your age.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="464.23" data-e="464.76">What do you mean?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="465.03" data-e="466.70">You don&#x27;t have cable like most young people.</span> <span class="tl-s" data-s="466.72" data-e="467.52">They just stream.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="467.52" data-e="468.24">They don&#x27;t have cable?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="468.24" data-e="469.01">They just stream stuff.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="469.10" data-e="470.48">Yeah, we haven&#x27;t had cable forever.</span> <span class="tl-s" data-s="470.48" data-e="472.75">I don&#x27;t— [Speaker B] You&#x27;re ahead of the curve.</span> <span class="tl-s" data-s="473.20" data-e="473.52">Am I?</span> <span class="tl-s" data-s="473.52" data-e="476.99">Well, that&#x27;s just because I don&#x27;t want to— there&#x27;s— I don&#x27;t want to watch TV.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="476.99" data-e="479.79">But if you— how does that relate to the prosperity gospel?</span> <span class="tl-s" data-s="479.79" data-e="485.42">If you— maybe if you were getting the prosperity gospel messages on the TV that you paid for, you&#x27;d receive a multitude of money back.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="486.37" data-e="491.73">I don&#x27;t want— I don&#x27;t have enough time to watch that kind of drivel.</span> <span class="tl-s" data-s="491.78" data-e="498.43">And so I, uh, so I think it&#x27;s really— it&#x27;s a deadly way of, of thinking about what how God is like.</span> <span class="tl-s" data-s="498.49" data-e="501.33">And like, I have talked to people.</span> <span class="tl-s" data-s="501.36" data-e="510.04">I remember talking to one lady who had a serious heart condition, and she had it— she developed it when she was younger.</span> <span class="tl-s" data-s="510.04" data-e="514.30">And the church she was going to basically said she had— she lacked faith because she wasn&#x27;t healed.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="514.30" data-e="515.40">And that is the answer to her healing?</span> <span class="tl-s" data-s="515.40" data-e="522.85">That is how she is able to— that is how they say she is able to get healing?</span> <span class="tl-s" data-s="522.85" data-e="524.31">By more faith?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="524.31" data-e="526.17">More faith, which is ridiculous.</span> <span class="tl-s" data-s="526.46" data-e="533.07">In fact, the book of the Bible that teaches directly against this is a book called Job.</span> <span class="tl-s" data-s="533.07" data-e="533.94">It is not job.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="533.94" data-e="536.65">Yeah, that is a famous line in Kanye West&#x27;s Christian song.</span> <span class="tl-s" data-s="536.65" data-e="542.73">He said something along the lines of, when I thought the book of Job was a job.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="543.09" data-e="543.15">Seriously?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="543.16" data-e="543.33">Yeah.</span> <span class="tl-s" data-s="543.33" data-e="543.90">He says that?</span> <span class="tl-s" data-s="543.90" data-e="545.19">Yeah, his album is called Jesus Is King.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="546.47" data-e="548.22">Jesus Is King.</span> <span class="tl-s" data-s="548.38" data-e="549.94">And he thought Job was a job?</span> <span class="tl-s" data-s="549.99" data-e="552.22">He [Speaker B] thought Job was a job.</span> <span class="tl-s" data-s="552.22" data-e="556.14">Okay, anyway, um, he&#x27;s the guy— never mind, I&#x27;m not going to talk about Kanye on this podcast right now.</span> <span class="tl-s" data-s="556.14" data-e="557.53">I don&#x27;t have enough expertise about that.</span> <span class="tl-s" data-s="557.68" data-e="558.90">But I do know about Job.</span> <span class="tl-s" data-s="559.06" data-e="561.31">So you have to do homework for this?</span> <span class="tl-s" data-s="561.77" data-e="563.39">No, I am not.</span> <span class="tl-s" data-s="563.39" data-e="564.84">I am not accepting that homework.</span> <span class="tl-s" data-s="564.84" data-e="566.77">Okay, I will not do Kanye homework.</span></p>
+        <p><span class="tl-s" data-s="566.77" data-e="597.33">Uh, Job though is an interesting book, and if you read it and read it from COVID to cover, which I recommend, um, what you find is him, Job, undergoing all kinds of horrible experiences, um, and his friends come along and say essentially, you must have sinned or God wouldn&#x27;t have allowed this to happen to you.</span> <span class="tl-s" data-s="597.36" data-e="610.83">And so that&#x27;s what most of the book is, uh, his friends— one of his friends, I think Bildad— Bildad basically says Hey, you getting off easy, man.</span> <span class="tl-s" data-s="610.93" data-e="612.90">Just just confess and repent.</span> <span class="tl-s" data-s="613.37" data-e="621.07">And so they assume because he lost his all his animals and his home and his family that somehow he had some kind of secret unconfessed sin.</span> <span class="tl-s" data-s="621.15" data-e="622.69">And so that doesn&#x27;t mean Job was perfect.</span> <span class="tl-s" data-s="622.88" data-e="627.11">Job was like, &quot;No, I don&#x27;t.&quot; But he wasn&#x27;t perfect.</span> <span class="tl-s" data-s="627.22" data-e="633.10">It didn&#x27;t mean that he would they would you know his heart was was totally and completely faultless.</span></p>
+        <p><span class="tl-s" data-s="633.10" data-e="643.65">He was blameless, meaning that he walked in integrity. that he was godly, that he was obedient, that in general he was following the Lord.</span> <span class="tl-s" data-s="643.84" data-e="652.44">These guys said, well, you are clearly not because you are getting punished.</span> <span class="tl-s" data-s="652.50" data-e="653.92">So that is called retributive theology.</span></p>
+        <p><span class="tl-s" data-s="656.14" data-e="656.39">Say that again.</span> <span class="tl-s" data-s="656.44" data-e="656.99">Retributive theology.</span> <span class="tl-s" data-s="657.10" data-e="659.64">What that means is that if you obey, you will be blessed automatically.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="659.65" data-e="666.97">That is a trap that I could see how someone would fall into that.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="667.03" data-e="668.61">Yeah, but it is not true.</span> <span class="tl-s" data-s="668.65" data-e="670.80">And so sometimes the obedient are not blessed.</span> <span class="tl-s" data-s="670.80" data-e="673.76">Sometimes the disobedient are blessed or seem to be blessed.</span> <span class="tl-s" data-s="673.76" data-e="677.38">They are not really ultimately blessed, but they seem to be blessed.</span> <span class="tl-s" data-s="677.46" data-e="680.72">And so we as Christians have to grapple with that, right?</span> <span class="tl-s" data-s="680.83" data-e="692.20">And we have to realize that we live in a world where we are not going to always get the answers to the questions that we have.</span> <span class="tl-s" data-s="692.61" data-e="699.07">We live in a world where we are going to see, we are going to experience unjust suffering.</span> <span class="tl-s" data-s="699.11" data-e="700.74">We are going to see unjust suffering.</span> <span class="tl-s" data-s="701.20" data-e="704.14">We are going to ask, why is there unjust suffering?</span> <span class="tl-s" data-s="704.75" data-e="714.14">In fact, in the whole book of Job, Job doesn&#x27;t know what happens in the prologue where Satan approaches the Lord and the Lord and him have this conversation and Job is the topic.</span></p>
+        <p><span class="tl-s" data-s="714.14" data-e="716.99">Job has no idea that any of that happened.</span> <span class="tl-s" data-s="716.99" data-e="728.61">And then even at the end when the Lord shows up and says, dress for action like a man and I am going to ask you all kinds of questions, Job still doesn&#x27;t know why it all happened.</span> <span class="tl-s" data-s="728.64" data-e="730.26">So Job doesn&#x27;t get answers.</span> <span class="tl-s" data-s="730.26" data-e="731.98">He gets a vision and a view of who God is.</span> <span class="tl-s" data-s="732.49" data-e="738.76">And so I think that that is one of the most important things for all of us.</span> <span class="tl-s" data-s="738.76" data-e="743.92">We go through hardships and troubles and trials that are very difficult.</span> <span class="tl-s" data-s="744.67" data-e="765.66">We&#x27;re not always going to get answers to why that happened, but I think we can have— like, the Bible is full of, of, of just pictures of who God is and, and that he is on our side and that we can serve him with a full and upright heart and know that he has our good, that he&#x27;s working as Christians.</span></p>
+        <p><span class="tl-s" data-s="766.08" data-e="774.35">If we&#x27;re Christians, he&#x27;s working for our good even though we can&#x27;t understand even though we can&#x27;t— we don&#x27;t have a category for it.</span> <span class="tl-s" data-s="774.35" data-e="777.80">So that is what is the health and wealth theology.</span> <span class="tl-s" data-s="777.80" data-e="786.11">I mean, in general, if you read the Proverbs, you also see that the Proverbs will describe a lot of basically, here is how to live a good life.</span> <span class="tl-s" data-s="786.11" data-e="792.00">It is be obedient and get along with your neighbor.</span> <span class="tl-s" data-s="792.00" data-e="793.51">It is very pragmatic.</span> <span class="tl-s" data-s="793.86" data-e="797.63">Yeah, it is like very practical, observational kind of wisdom.</span> <span class="tl-s" data-s="797.71" data-e="799.22">In general, work hard, you get rewarded.</span> <span class="tl-s" data-s="799.22" data-e="801.62">In general, um, you, you&#x27;re honest, you get rewarded.</span> <span class="tl-s" data-s="801.64" data-e="804.22">In general, that&#x27;s just the way it is.</span> <span class="tl-s" data-s="804.22" data-e="805.73">Um, but that&#x27;s not always the way it is.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="805.73" data-e="805.89">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="805.89" data-e="808.36">So I think that&#x27;s— those are some nuances.</span> <span class="tl-s" data-s="808.44" data-e="823.88">That&#x27;s one of the reasons that I think it&#x27;s helpful to read like Proverbs and, and see how that— how, how the pro— the proverbs are gathered up and described, and then, and contrast that with Job.</span> <span class="tl-s" data-s="823.88" data-e="826.24">Those are both wisdom literature.</span> <span class="tl-s" data-s="826.34" data-e="830.71">And then Ecclesiastes is a whole nother thing altogether, and Ecclesiastes is just— is, is completely different.</span> <span class="tl-s" data-s="830.71" data-e="849.13">And so those are all— those are all things that I— that we have all kinds of different genres in the Bible where we can get a different picture of why, um, of just how to live this life under the sun, to use a phrase of— [Speaker B] Yeah.</span> <span class="tl-s" data-s="849.13" data-e="857.66">So That&#x27;s an excellent way to describe the health and wealth gospel, which is also known as the prosperity gospel.</span> <span class="tl-s" data-s="857.76" data-e="861.15">What would you say the real gospel is?</span> <span class="tl-s" data-s="861.15" data-e="861.96">The real gospel?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="861.96" data-e="862.70">The real gospel.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="862.77" data-e="863.75">What does gospel mean, Mark?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="863.80" data-e="864.43">It means good news, I believe.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="864.45" data-e="865.11">You believe right.</span> <span class="tl-s" data-s="865.17" data-e="865.83">I believe right.</span> <span class="tl-s" data-s="865.83" data-e="866.53">You believe right.</span> <span class="tl-s" data-s="867.67" data-e="868.11">That&#x27;s good.</span> <span class="tl-s" data-s="868.15" data-e="868.72">It means good news.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="868.72" data-e="872.94">You don&#x27;t always believe right, but I rely on your correction and scripture.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="873.11" data-e="876.16">We need to rely on the Bible more than me, Mark.</span> <span class="tl-s" data-s="876.40" data-e="876.58">Okay.</span> <span class="tl-s" data-s="876.58" data-e="883.69">And so we— so gospel means good news, which, which means it&#x27;s something to be proclaimed.</span> <span class="tl-s" data-s="883.72" data-e="891.36">It&#x27;s not something that is— it&#x27;s something that has happened, something that has occurred in time that we just need to believe.</span> <span class="tl-s" data-s="891.50" data-e="896.24">And so the gospel, the good news of the gospel of Jesus Christ, is that Jesus Christ died.</span> <span class="tl-s" data-s="896.64" data-e="899.60">Very simply, Jesus died for my sins.</span> <span class="tl-s" data-s="899.60" data-e="901.86">I mean, that&#x27;s the very simple way to put it.</span> <span class="tl-s" data-s="903.05" data-e="904.27">1 Corinthians 15 says that.</span> <span class="tl-s" data-s="904.71" data-e="924.21">And we can— there&#x27;s all kinds of depth to that, but we— the gospel is that Jesus, who is God the Son, became a man and lived a perfect life, died a substitutionary death, rose from the dead on the 3rd day, ascended to the Father, and is seated at the right hand of the Father on high.</span> <span class="tl-s" data-s="924.34" data-e="942.31">He will one day come back and judge the living and the dead, and anybody who puts faith in Jesus Christ and confesses that They are a sinner, can have the assurance that they will be saved everlastingly.</span></p>
+        <p><span class="tl-s" data-s="942.31" data-e="951.89">Just like John 3:16, for God so loved the world that he gave his one and only Son, that whoever believes in him will not perish but have everlasting life.</span> <span class="tl-s" data-s="951.92" data-e="957.06">So that is the gospel in a nutshell, and that is what we need to believe.</span> <span class="tl-s" data-s="957.06" data-e="970.24">Anybody who The first thing— the first step in believing the gospel is believing you are a sinner, and that is probably the easiest thing to believe because all of us who are really honest with ourselves recognize we are sinners.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="970.24" data-e="970.67">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="970.95" data-e="986.82">And another hard thing to believe is that somebody is going to demand payment for our sins, and the reason that God has the right to demand payment for our sins is because he created us and he created all things.</span> <span class="tl-s" data-s="987.29" data-e="991.19">So any sin we commit is against him first and foremost.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="992.20" data-e="993.34">Yeah, no, that&#x27;s perfect.</span> <span class="tl-s" data-s="993.34" data-e="1003.84">And just continuously hearing the gospel is just so important as a believer, and especially when there&#x27;s so much antithetical teaching to what the actual good news is out there.</span> <span class="tl-s" data-s="1003.84" data-e="1007.44">And that&#x27;s what we were aiming to, to touch on in this episode.</span> <span class="tl-s" data-s="1007.44" data-e="1022.00">And one thing we just wanted to mention, if you&#x27;re out there and you Want to talk more about this or you want to email in questions, we have an email, production@centergilbert.com.</span> <span class="tl-s" data-s="1022.03" data-e="1023.39">One more time, that&#x27;s production@centergilbert.com.</span> <span class="tl-s" data-s="1023.58" data-e="1041.55">And if you are someone who is interested or you have a son or daughter who&#x27;s interested in media or in video or in production, Heather needs a very good sidekick and we would love to have you.</span> <span class="tl-s" data-s="1042.74" data-e="1044.36">So come talk to any of the 3 of us.</span> <span class="tl-s" data-s="1044.36" data-e="1044.36">And that&#x27;s it for this episode.</span> <span class="tl-s" data-s="1044.36" data-e="1044.36">Thank you.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Fixed on Jesus episode archive, backed by /api/podcast/search.
+  // Static fallback list above stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function fmtDuration(raw) {
+      if (!raw) return "";
+      var str = String(raw).trim();
+      // Anchor feeds report seconds; render as H:MM:SS or M:SS.
+      if (/^\d+$/.test(str)) {
+        var total = parseInt(str, 10);
+        var h = Math.floor(total / 3600);
+        var m = Math.floor((total % 3600) / 60);
+        var sec = total % 60;
+        var mm = (h > 0 && m < 10 ? "0" + m : "" + m);
+        var ss = (sec < 10 ? "0" + sec : "" + sec);
+        return (h > 0 ? h + ":" + mm : m) + ":" + ss;
+      }
+      // Anchor also reports clock strings like "00:24:02" — drop the
+      // redundant leading hour so it reads "24:02".
+      return str.replace(/^00:/, "");
+    }
+    function row(it) {
+      it = it || {};
+      var title = esc(it.title) || "Untitled episode";
+      var tUrl = it.guid && transcriptMap[it.guid];
+      var heading = tUrl
+        ? '<a href="' + esc(tUrl) + '">' + title + "</a>"
+        : (it.link
+          ? '<a href="' + esc(it.link) + '" target="_blank" rel="noopener">' + title + "</a>"
+          : title);
+      var meta = [fmtDate(it.date), fmtDuration(it.duration)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      return '<div class="sermon"><div><h3>' + heading + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    var PER = 10;
+    var state = { q: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No episodes found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " episode" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " episodes";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/podcast/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () {
+          // Keep the static list, but tell the reader where else to listen —
+          // some privacy blockers stop the archive request itself.
+          var note = document.querySelector("[data-sermons-error]");
+          if (note) note.hidden = false;
+        });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    if (monthSel) {
+      monthSel.addEventListener("change", function () {
+        state.month = monthSel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: 952703c2-4294-47d0-a185-fa4a46de9fd1 -->
+</body>
+</html>
