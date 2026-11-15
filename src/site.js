@@ -31,7 +31,9 @@ export async function handleSite(request, env) {
   // Short links for small groups: centergilbert.com/go/<slug> -> Church Center group.
   if (url.pathname.startsWith("/go/")) {
     const slug = url.pathname.slice(4).replace(/\/$/, "").toLowerCase();
-    const target = GROUP_SHORT_LINKS[slug];
+    const target = Object.prototype.hasOwnProperty.call(GROUP_SHORT_LINKS, slug)
+      ? GROUP_SHORT_LINKS[slug]
+      : undefined;
     if (target) {
       return Response.redirect(target, 302);
     }
@@ -57,7 +59,7 @@ export async function handleSite(request, env) {
       });
     }
   }
-  if (res.status === 404) {
+  if (res.status === 404 && url.pathname.includes(".")) {
     logApp(env, "404", url.pathname, "", url.hostname);
   }
   return res;

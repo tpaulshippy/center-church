@@ -23,7 +23,7 @@ export default {
       if (url.pathname === "/api/calendar") {
         return handleCalendar(request, env, ctx);
       }
-      return handleSite(request, env);
+      return await handleSite(request, env);
     } catch (err) {
       let path = "/";
       try {

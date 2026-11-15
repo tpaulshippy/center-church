@@ -5,22 +5,21 @@ export function decodeEntities(s) {
 }
 
 export function cleanText(s) {
-  return decodeEntities(s || "")
-    .replace(/<[^>]*>/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
+  const noCdata = String(s || "").replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, "$1");
+  return decodeHTML(noCdata.replace(/<[^>]*>/g, " ")).replace(/\s+/g, " ").trim();
 }
 
 // Like cleanText, but preserves paragraph/line breaks from block-level HTML
 // (<p>, <br>, list items, headings…) so episode descriptions keep their
 // structure. Render with `white-space: pre-line` to honor the newlines.
 export function cleanRichText(s) {
-  const withBreaks = decodeEntities(s || "")
+  const noCdata = String(s || "").replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, "$1");
+  const withBreaks = noCdata
     .replace(/<(br|hr)\s*\/?>/gi, "\n")
-    .replace(/<\/(p|div|h[1-6]|blockquote|li|ul|ol|tr)>/gi, "\n")
-    .replace(/<li[^>]*>/gi, "\n• ");
-  const lines = withBreaks
-    .replace(/<[^>]*>/g, "")
+    .replace(/<li[^>]*>/gi, "\n• ")
+    .replace(/\n?<(p|div|h[1-6]|blockquote|li|ul|ol|tr)[^>]*>/gi, "\n")
+    .replace(/<\/(p|div|h[1-6]|blockquote|li|ul|ol|tr)>\n?/gi, "\n");
+  const lines = decodeHTML(withBreaks.replace(/<[^>]*>/g, ""))
     .split("\n")
     .map((line) => line.replace(/[ \t\xa0]+/g, " ").trim());
   const out = [];

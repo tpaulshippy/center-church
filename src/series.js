@@ -44,9 +44,9 @@ export function seriesKeyOf(title) {
   const t = String(title || "").trim().replace(/^(Sunday Sermon|Sermon)\s*:\s*/i, "");
   const book = bookFromTitle(t);
   if (book) return { kind: "book", name: book };
-  const tail = t.match(/-\s*([^-<>]{2,60})$/);
-  if (tail) {
-    const b = bookFromTitle(tail[1].trim());
+  const dashIdx = t.lastIndexOf(" - ");
+  if (dashIdx !== -1) {
+    const b = bookFromTitle(t.slice(dashIdx + 3).trim());
     if (b) return { kind: "book", name: b };
   }
   const colon = t.match(/^([^:?«»()]{3,48}?):\s*\S/);

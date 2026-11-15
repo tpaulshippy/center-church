@@ -39,6 +39,12 @@ function makeEnv() {
       fetch: async (req) => {
         const u = new URL(req instanceof Request ? req.url : String(req));
         if (u.pathname === "/") return new Response("static", { status: 200 });
+        if (u.pathname === "/boom") throw new Error("asset fetch failed");
+        if (u.pathname === "/add-sermon-guide.html")
+          return new Response("<h1>guide</h1>", {
+            status: 200,
+            headers: { "content-type": "text/html;charset=UTF-8" },
+          });
         if (u.pathname === "/404")
           return new Response("<h1>custom 404 page</h1>", {
             status: 200,
@@ -152,5 +158,62 @@ describe("routing", () => {
     const res = await worker.fetch(new Request("https://centergilbert.com/some-page"), makeEnv(), {});
     assert.equal(res.status, 404);
     assert.ok((await res.text()).includes("custom 404 page"));
+  });
+
+  it("GET /go/constructor falls through to ASSETS (inherited key, no throw)", async () => {
+    const res = await worker.fetch(new Request("https://centergilbert.com/go/constructor"), makeEnv(), {});
+    assert.equal(res.status, 404);
+    assert.equal(res.headers.get("location"), null);
+  });
+
+  it("router 500 path: ASSETS.fetch throw becomes a 500 Response", async () => {
+    const res = await worker.fetch(new Request("https://centergilbert.com/boom"), makeEnv(), {});
+    assert.equal(res.status, 500);
+    assert.equal(await res.text(), "Something went wrong");
+  });
+
+  it("GET /api/podcast/search filters by q", async () => {
+    const res = await worker.fetch(
+      new Request("https://centergilbert.com/api/podcast/search?q=hello"),
+      makeEnv(),
+      {}
+    );
+    assert.equal(res.status, 200);
+    const body = await res.json();
+    assert.equal(body.total, 1);
+    assert.ok(body.items[0].title.includes("Hello World"));
+    const empty = await worker.fetch(
+      new Request("https://centergilbert.com/api/podcast/search?q=zzz-no-match"),
+      makeEnv(),
+      {}
+    );
+    assert.equal(empty.status, 200);
+    assert.equal((await empty.json()).total, 0);
+  });
+
+  it("GET /email-signup 302s to /contact", async () => {
+    const res = await worker.fetch(new Request("https://centergilbert.com/email-signup"), makeEnv(), {});
+    assert.equal(res.status, 302);
+    assert.ok(res.headers.get("location").endsWith("/contact"), res.headers.get("location"));
+  });
+
+  it("GET /add-sermon-guide serves the stubbed guide HTML", async () => {
+    const res = await worker.fetch(new Request("https://centergilbert.com/add-sermon-guide"), makeEnv(), {});
+    assert.equal(res.status, 200);
+    assert.ok((await res.text()).includes("guide"));
+  });
+
+  it("extensionless 404 with missing /404 page still 404s without throwing", async () => {
+    const env = {
+      ASSETS: {
+        fetch: async (req) => {
+          const u = new URL(req instanceof Request ? req.url : String(req));
+          if (u.pathname === "/") return new Response("static", { status: 200 });
+          return new Response("not found", { status: 404 });
+        },
+      },
+    };
+    const res = await worker.fetch(new Request("https://centergilbert.com/some-missing-page"), env, {});
+    assert.equal(res.status, 404);
   });
 });

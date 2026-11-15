@@ -29,6 +29,10 @@ describe("seriesKeyOf", () => {
     });
   });
 
+  it("groups a verse-range tail after a dash separator", () => {
+    assert.deepEqual(seriesKeyOf("Grace - Romans 8:1-11"), { kind: "book", name: "Romans" });
+  });
+
   it("strips the Sunday Sermon prefix", () => {
     assert.deepEqual(seriesKeyOf("Sunday Sermon: Acts 19:1-20"), { kind: "book", name: "Acts" });
   });
@@ -48,6 +52,34 @@ describe("detectSeries", () => {
     assert.ok(s.blurb && s.blurb.length > 0, "expected a blurb");
     assert.equal(s.artwork, "art.jpg");
     assert.equal(s.sermons.length, 3);
+  });
+
+  it("forms a series with exactly two matching titles", () => {
+    const items = [
+      { title: "Acts 19:1-20", image: "art.jpg" },
+      { title: "Acts 20:13-38", image: "art2.jpg" },
+      { title: "Easter Sunday", image: "other.jpg" },
+    ];
+    const s = detectSeries(items);
+    assert.equal(s.kind, "book");
+    assert.equal(s.name, "Acts");
+    assert.equal(s.sermons.length, 2);
+  });
+
+  it("caps sermons at five with six matching titles", () => {
+    const items = [
+      { title: "Acts 19:1-20", image: "art1.jpg" },
+      { title: "Acts 20:13-38", image: "art2.jpg" },
+      { title: "Acts 21:1-14", image: "art3.jpg" },
+      { title: "Acts 22:1-10", image: "art4.jpg" },
+      { title: "Acts 23:1-11", image: "art5.jpg" },
+      { title: "Acts 24:1-12", image: "art6.jpg" },
+      { title: "Easter Sunday", image: "other.jpg" },
+    ];
+    const s = detectSeries(items);
+    assert.equal(s.kind, "book");
+    assert.equal(s.name, "Acts");
+    assert.equal(s.sermons.length, 5);
   });
 
   it("falls back to latest when titles are all different", () => {
