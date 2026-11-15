@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What Is Cultural Christianity? — Podcast Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Fixed on Jesus: conversations beyond Sunday mornings from Center Church in Gilbert, AZ — listen on Spotify, Apple Podcasts, and YouTube." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=18" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a href="/sermons">Sermons</a></li>
+              <li><a class="active" href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/podcast">&larr; All podcast episodes</a>
+          <h1 class="display-lg">What Is Cultural Christianity?</h1>
+          <p class="transcript-meta">2025-02-12 · 24:36</p>
+          <p class="transcript-desc">Welcome to FIXED ON JESUS, a podcast brought to you by Center Church in Gilbert, Arizona. Speaking to you today are Rich Richardson &amp; Mark Johnson Jr. Production by Heather Corbitt **SHOW NOTES** Questions asked in this episode: Who are some cultural Christians we may know? What is Cultural Christia</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/e750e370/podcast/play/98394740/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-1-12%2F431b2135-bf36-d66a-4df0-6a011cded31a.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="0.17" data-e="6.67">As exciting as it is that cultural Christianity is in the conversation these days, it&#x27;s not enough.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="6.91" data-e="8.19">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="8.67" data-e="10.68">And it&#x27;s not, it&#x27;s not enough.</span> <span class="tl-s" data-s="10.77" data-e="19.93">We still, when someone talks about God, when someone talks about Jesus, or when someone talks about the benefits of Christianity to our culture, that&#x27;s not enough.</span> <span class="tl-s" data-s="19.99" data-e="21.64">In fact, it&#x27;s deceptive.</span></p>
+        <p><span class="tl-s" data-s="36.98" data-e="39.23">This is Fixed on Jesus.</span></p>
+        <p><span class="tl-s" data-s="47.63" data-e="56.28">Hey everybody, welcome back to Fixed on Jesus.</span></p>
+        <p><span class="tl-s" data-s="58.35" data-e="63.07">It&#x27;s the podcast of Center Church, at Center Church, by members of Center Church.</span> <span class="tl-s" data-s="63.07" data-e="64.04">My name is Rich.</span> <span class="tl-s" data-s="64.31" data-e="67.39">As always, I am joined by Mark Johnson Jr.</span> <span class="tl-s" data-s="67.39" data-e="68.51">How are you doing, Mark?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="68.61" data-e="69.21">I&#x27;m doing well.</span> <span class="tl-s" data-s="69.21" data-e="69.85">How about yourself?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="69.93" data-e="71.33">I am okay.</span> <span class="tl-s" data-s="71.33" data-e="74.70">Uh, that doesn&#x27;t sound very genuine when you say it that way and don&#x27;t look in my eyes.</span> <span class="tl-s" data-s="74.91" data-e="76.79">It just seems like that&#x27;s the thing to say.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="76.83" data-e="77.43">All right, I&#x27;ll look at you.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="77.53" data-e="77.73">Okay.</span> <span class="tl-s" data-s="77.73" data-e="79.05">It&#x27;s just like, I&#x27;m doing well.</span> <span class="tl-s" data-s="79.05" data-e="79.55">How are you?</span> <span class="tl-s" data-s="79.55" data-e="81.07">And it was just like the thing to say.</span> <span class="tl-s" data-s="81.07" data-e="82.29">So, how are you, Mark?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="82.39" data-e="83.65">I am well.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="83.75" data-e="84.29">That&#x27;s enough.</span> <span class="tl-s" data-s="84.29" data-e="85.11">That&#x27;s enough from you.</span> <span class="tl-s" data-s="85.11" data-e="85.53">Okay.</span> <span class="tl-s" data-s="85.53" data-e="86.83">So, Heather, how are you?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="86.83" data-e="88.05">You know, I&#x27;m, I&#x27;m doing okay.</span> <span class="tl-s" data-s="88.05" data-e="88.35">I slept pretty good last night.</span> <span class="tl-s" data-s="88.35" data-e="91.69">Okay, [Speaker A] we don&#x27;t need a whole explanation.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="92.07" data-e="93.51">We don&#x27;t need the whole spell.</span></p>
+        <p><span class="tl-s" data-s="94.77" data-e="96.34">What kind of mattress did you have?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="97.63" data-e="98.63">I am glad.</span> <span class="tl-s" data-s="98.63" data-e="101.31">I am glad you had a good night&#x27;s sleep because sleep is a gift from God.</span> <span class="tl-s" data-s="101.31" data-e="104.53">And when we don&#x27;t sleep well, everything goes south, right?</span> <span class="tl-s" data-s="104.53" data-e="105.79">So anyway, all right.</span> <span class="tl-s" data-s="105.79" data-e="106.47">Well, thank you.</span> <span class="tl-s" data-s="106.47" data-e="108.69">We have fun on Fixed on Jesus podcast.</span> <span class="tl-s" data-s="109.25" data-e="114.47">Uh, just because we&#x27;re fixed on Jesus doesn&#x27;t mean we can&#x27;t laugh, um, and have fun and kind of make fun of each other.</span> <span class="tl-s" data-s="114.47" data-e="116.83">We do that on the air and off air, correct, Heather?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="116.93" data-e="117.83">Oh my goodness.</span> <span class="tl-s" data-s="117.83" data-e="118.17">Yes.</span> <span class="tl-s" data-s="118.17" data-e="119.03">It&#x27;s so good.</span> <span class="tl-s" data-s="119.03" data-e="120.21">Stay tuned for bloopers at the end.</span> <span class="tl-s" data-s="120.21" data-e="120.23">Okay.</span> <span class="tl-s" data-s="120.23" data-e="120.29">All right, Mark.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="122.07" data-e="122.93">What are we talking about?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="123.27" data-e="124.67">Well, first I got a bone to pick with you.</span> <span class="tl-s" data-s="124.67" data-e="130.40">Oh wow, not a real bone, but okay, you said something recently in a sermon that I want to get some clarification on.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="130.51" data-e="131.43">Okay, what did I say?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="131.43" data-e="133.20">You said Jake Paul is not a real boxer.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="133.23" data-e="134.51">He is not a real boxer.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="134.51" data-e="135.53">I want to know about that.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="135.61" data-e="141.99">Jake Paul, the blogger, or whatever he is, like, I&#x27;m not fighting, I&#x27;m not arguing, I&#x27;m [Speaker B] just asking what are your thoughts?</span> <span class="tl-s" data-s="141.99" data-e="143.27">He&#x27;s not a real boxer.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="143.27" data-e="144.69">What makes a real boxer?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="144.69" data-e="145.13">Not Jake.</span> <span class="tl-s" data-s="145.13" data-e="146.01">Look at Jake Paul.</span> <span class="tl-s" data-s="146.01" data-e="146.63">That&#x27;s not a real boxer.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="146.63" data-e="148.15">He looks like a beast.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="148.15" data-e="149.57">Okay, but that&#x27;s— he&#x27;s not a boxer.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="149.57" data-e="150.69">Like, he beat Mike Tyson.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="150.69" data-e="151.45">He did not.</span> <span class="tl-s" data-s="151.45" data-e="152.19">That was like— I don&#x27;t think that was real.</span> <span class="tl-s" data-s="152.19" data-e="157.31">And Mike Tyson Mike Tyson was trotted out at like 60 or whatever.</span> <span class="tl-s" data-s="157.37" data-e="157.61">Poor guy.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="157.61" data-e="159.10">Yeah, and he couldn&#x27;t move.</span> <span class="tl-s" data-s="159.13" data-e="160.98">His [Speaker A] legs were hurting.</span> <span class="tl-s" data-s="160.98" data-e="164.03">Yeah, like, I remember Mike Tyson when he was in his prime.</span> <span class="tl-s" data-s="164.43" data-e="165.36">He was scary.</span> <span class="tl-s" data-s="165.39" data-e="166.70">Yeah, Iron Mike.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="166.98" data-e="171.16">Iron Mike was like, I mean, Mike Tyson&#x27;s Punch-Out!! was like a thing, you know?</span> <span class="tl-s" data-s="171.22" data-e="172.24">So, back in the day.</span> <span class="tl-s" data-s="172.35" data-e="179.44">And so, I feel bad for— I watched part of that and I thought, my life was stolen a little bit here because this is a joke.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="179.44" data-e="182.55">Because it was clearly set up.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="182.55" data-e="183.31">Oh, yeah.</span> <span class="tl-s" data-s="183.31" data-e="191.25">I like— when— if I won&#x27;t watch— I mean, there&#x27;s— if Jake Paul really fought a real heavyweight boxer— [Speaker B] I think he fought one and he lost.</span> <span class="tl-s" data-s="191.25" data-e="192.13">Yeah, he&#x27;d get whooped.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="192.13" data-e="192.33">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="192.33" data-e="195.83">So, is Jake Paul a real boxer?</span> <span class="tl-s" data-s="195.93" data-e="196.17">No.</span> <span class="tl-s" data-s="196.17" data-e="200.73">Is he a made-for-TV, perfect— Yeah, he&#x27;s a promoter.</span> <span class="tl-s" data-s="200.73" data-e="202.05">Instagram influencer boxer?</span> <span class="tl-s" data-s="202.05" data-e="202.35">Sure.</span> <span class="tl-s" data-s="202.35" data-e="203.09">Okay, that&#x27;s fine.</span> <span class="tl-s" data-s="203.09" data-e="203.37">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="203.37" data-e="204.27">Okay, that&#x27;s cute.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="204.27" data-e="206.43">Go ahead.</span> <span class="tl-s" data-s="206.43" data-e="206.79">That&#x27;s cute, Jake.</span> <span class="tl-s" data-s="206.79" data-e="207.09">All right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="207.09" data-e="208.85">So, you think you could take him?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="208.85" data-e="209.93">I didn&#x27;t say that.</span> <span class="tl-s" data-s="209.94" data-e="209.95">Okay.</span> <span class="tl-s" data-s="209.95" data-e="212.49">I&#x27;m 52 years old, Mark.</span> <span class="tl-s" data-s="212.51" data-e="213.26">Anyways, all right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="213.26" data-e="223.98">So, speaking of culture, part of my job is to pull Rich into the 21st century, but he actually, we got really excited talking about this off the air and we decided that we should probably talk about it on here.</span> <span class="tl-s" data-s="223.98" data-e="228.04">So, have you heard of the idea of a cultural Christian?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="228.17" data-e="228.79">I have.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="228.79" data-e="235.97">So, in my understanding, it&#x27;s kind of like someone who affirms the morals and the teachings of the Bible, but they don&#x27;t necessarily believe in Christ.</span> <span class="tl-s" data-s="236.17" data-e="239.29">And I&#x27;m just going to name a few names, big names.</span> <span class="tl-s" data-s="239.29" data-e="242.40">And I, again, this isn&#x27;t the full picture of these people.</span> <span class="tl-s" data-s="242.42" data-e="243.24">I don&#x27;t know them personally.</span> <span class="tl-s" data-s="243.24" data-e="247.71">I&#x27;m just knowing by some of the different things they&#x27;ve said on podcasts.</span> <span class="tl-s" data-s="247.79" data-e="251.03">So, Elon Musk, someone who we all know about.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="251.87" data-e="253.99">He owns X.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="253.99" data-e="257.66">He owns X, SpaceX, all kinds of things.</span> <span class="tl-s" data-s="257.74" data-e="257.82">Tesla.</span> <span class="tl-s" data-s="257.82" data-e="258.62">Starlink, Tesla.</span> <span class="tl-s" data-s="258.62" data-e="266.45">He would affirm the values or the virtues taught in Christianity, but he&#x27;s clearly not a Christian, nor would he claim to be.</span> <span class="tl-s" data-s="266.55" data-e="273.29">Jordan Peterson does some advanced mental gymnastics to kind of say— [Speaker A] Well, he calls himself a cultural Christian.</span> <span class="tl-s" data-s="273.78" data-e="276.05">Yeah, he actually gives himself that label.</span> <span class="tl-s" data-s="276.05" data-e="281.88">And almost thinks it&#x27;s all metaphorical, or how would you describe Jordan Peterson?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="281.88" data-e="282.41">Well, there&#x27;s others too.</span> <span class="tl-s" data-s="282.41" data-e="283.97">But like, Richard Dawkins is the one that surprised me.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="284.14" data-e="287.44">That&#x27;s the one that shocked me because I read a book by him.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="288.08" data-e="289.68">Yeah, The God Delusion.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="289.70" data-e="291.26">The God Delusion, The Selfish Gene.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="291.29" data-e="292.56">I don&#x27;t know.</span> <span class="tl-s" data-s="292.56" data-e="293.52">I didn&#x27;t read that.</span> <span class="tl-s" data-s="293.60" data-e="295.88">But like, he— that&#x27;s surprising to me.</span> <span class="tl-s" data-s="296.67" data-e="301.17">So, yeah, Jordan Peterson is interesting because he trots— he&#x27;s, you know, he&#x27;s not trained theologically.</span> <span class="tl-s" data-s="301.17" data-e="304.41">And when he talks about the Bible, you can tell.</span> <span class="tl-s" data-s="304.62" data-e="307.63">He doesn&#x27;t— understand how to interpret the Bible.</span> <span class="tl-s" data-s="307.73" data-e="313.14">He seems to want to inject different meaning and his own meaning into it.</span> <span class="tl-s" data-s="313.14" data-e="314.31">So, it&#x27;s interesting.</span> <span class="tl-s" data-s="314.40" data-e="319.04">And I think, like, there&#x27;s a podcast that was dropped, I think, in— was that January or December?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="319.06" data-e="322.11">It was a few weeks ago.</span> <span class="tl-s" data-s="322.19" data-e="324.56">Well, yeah, sorry, January 2025.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="325.30" data-e="325.70">January.</span> <span class="tl-s" data-s="325.71" data-e="329.57">So, a guy named Wesley Huff was invited onto the Joe Rogan podcast.</span> <span class="tl-s" data-s="329.63" data-e="332.96">And so, I&#x27;m not a proponent of Joe Rogan necessarily.</span> <span class="tl-s" data-s="332.96" data-e="337.70">I mean, He&#x27;s— I know he&#x27;s the most popular podcaster on the planet.</span> <span class="tl-s" data-s="337.70" data-e="338.18">I&#x27;ve watched Stephen Meyer.</span> <span class="tl-s" data-s="338.18" data-e="339.31">He interviewed one time.</span> <span class="tl-s" data-s="339.90" data-e="344.22">If you want to watch a great podcast, watch the Stephen Meyer podcast with him.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="344.22" data-e="346.52">We&#x27;ll do our best to link that.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="346.52" data-e="346.90">Yeah.</span> <span class="tl-s" data-s="346.90" data-e="348.62">And then also, Wesley Huff had a podcast.</span> <span class="tl-s" data-s="348.72" data-e="349.96">He was interviewed by Joe Rogan.</span> <span class="tl-s" data-s="349.96" data-e="350.32">3 hours.</span> <span class="tl-s" data-s="350.32" data-e="350.98">3 hours, right.</span> <span class="tl-s" data-s="350.98" data-e="353.74">So, if you don&#x27;t know Joe Rogan, I&#x27;m not endorsing Joe Rogan.</span> <span class="tl-s" data-s="353.74" data-e="355.86">I mean, he&#x27;s got kind of a foul mouth.</span> <span class="tl-s" data-s="355.86" data-e="358.08">I [Speaker B] think he needs your endorsement.</span> <span class="tl-s" data-s="358.08" data-e="358.90">I don&#x27;t think he does.</span> <span class="tl-s" data-s="358.90" data-e="361.32">He— if you link to it, don&#x27;t be surprised.</span></p>
+        <p><span class="tl-s" data-s="361.32" data-e="361.70">He drops F-bombs and things like that.</span> <span class="tl-s" data-s="361.70" data-e="367.79">And he talks about dark matter and all this kind of stuff.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="367.88" data-e="368.49">Aliens, UFOs.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="369.55" data-e="374.14">But he interviewed Wes Huff, and Wes is a PhD student in Canada.</span> <span class="tl-s" data-s="374.14" data-e="376.26">And they had a great conversation.</span> <span class="tl-s" data-s="376.29" data-e="384.70">And Wesley Huff said of Jordan Peterson that he sees Jesus as an example or an exemplar, not a Savior, which is great.</span> <span class="tl-s" data-s="384.81" data-e="395.72">And that&#x27;s the problem with what Jordan Peterson says, is that he would assume that if we know, if we are aware of the example of Jesus, then we can live that way.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="395.72" data-e="396.12">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="396.12" data-e="399.01">Which [Speaker B] is something to strive for.</span> <span class="tl-s" data-s="399.32" data-e="399.88">Yeah, right, exactly.</span> <span class="tl-s" data-s="399.88" data-e="401.26">Which is good, but not Christianity.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="401.26" data-e="404.98">Yeah, just a little more on the Wes Huff podcast.</span> <span class="tl-s" data-s="404.98" data-e="405.18">Yeah.</span> <span class="tl-s" data-s="405.18" data-e="411.54">Now that you&#x27;ve given the adequate disclaimers that we&#x27;re not endorsing Joe Rogan material.</span> <span class="tl-s" data-s="411.54" data-e="414.64">He&#x27;s an apologist, a public speaker, and like you said, a PhD student.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="414.73" data-e="415.44">He&#x27;s a textual critic.</span> <span class="tl-s" data-s="415.44" data-e="416.56">I mean, he&#x27;s a linguist.</span> <span class="tl-s" data-s="416.56" data-e="419.00">He&#x27;s a textual critic.</span> <span class="tl-s" data-s="419.00" data-e="421.18">He knows— [Speaker B] he has an amazing website, wesleyhuff.com.</span> <span class="tl-s" data-s="421.84" data-e="423.31">Yeah, it&#x27;s worth checking out.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="424.06" data-e="427.91">On there, he has a few books, or a few videos, Can I Trust the Bible?</span> <span class="tl-s" data-s="427.91" data-e="428.73">Things like that.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="428.73" data-e="429.48">Yeah, it&#x27;s very helpful.</span> <span class="tl-s" data-s="429.82" data-e="430.38">It&#x27;s really good.</span> <span class="tl-s" data-s="430.38" data-e="434.13">I mean, I had never heard of him.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="434.23" data-e="434.47">I know.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="434.47" data-e="446.47">And then he debated a guy named Billy Carson, and he curb stomped Billy Carson, made Billy Carson look— Billy Carson was trotting out all kinds of stuff about the Bible that just wasn&#x27;t true.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="446.52" data-e="446.64">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="446.64" data-e="447.22">That was easy and clear.</span> <span class="tl-s" data-s="447.22" data-e="447.91">I&#x27;d never heard of him.</span> <span class="tl-s" data-s="448.01" data-e="454.16">And then I saw some of the stuff he was saying, and it&#x27;s like, oh, that&#x27;s been debunked years ago.</span> <span class="tl-s" data-s="454.19" data-e="455.54">And that&#x27;s not even real.</span> <span class="tl-s" data-s="455.54" data-e="461.42">And so, Wesley Huff, He was invited to have a conversation with Carson, and Carson was embarrassed.</span> <span class="tl-s" data-s="461.42" data-e="462.97">Yeah, I felt bad for him.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="462.97" data-e="467.24">Yeah, [Speaker A] and so anyway, and then Rogan heard about it and said, &quot;Hey Carson, talk to talk.</span> <span class="tl-s" data-s="467.27" data-e="469.33">Come talk to me,&quot; and so that&#x27;s what happened.</span> <span class="tl-s" data-s="469.60" data-e="477.51">So anyway, [Speaker B] so I just thought he did an excellent job being so Joe Rogan would constantly try to pull him off into some side stuff.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="477.61" data-e="483.69">Yeah, [Speaker B] and he would just say, [Speaker A] &quot;Mm.&quot; Well, he he stuck to what was most important.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="483.72" data-e="487.23">He stuck to what was most important, and at the very end.</span> <span class="tl-s" data-s="487.24" data-e="490.31">He kind of asked Joe Rogan, like, where do you stand?</span> <span class="tl-s" data-s="490.35" data-e="495.56">And Joe Rogan is a cultural— Yeah, Joe Rogan says— [Speaker A] yeah, and he shared the Gospel.</span> <span class="tl-s" data-s="495.56" data-e="496.69">And I&#x27;m like, you know what?</span> <span class="tl-s" data-s="496.69" data-e="505.17">It&#x27;s not also the— it&#x27;s not just the content that Huff shared, but it&#x27;s also the way he talked.</span> <span class="tl-s" data-s="505.18" data-e="506.42">The way he did it.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="506.46" data-e="507.04">The tone was great.</span> <span class="tl-s" data-s="507.04" data-e="510.01">He wasn&#x27;t like some strident blowhard who&#x27;s just not listening to anybody else.</span> <span class="tl-s" data-s="510.01" data-e="514.40">And you know, when you see people interviewed on TV— [Speaker B] He acknowledged everything that Joe said.</span> <span class="tl-s" data-s="514.40" data-e="520.52">You know, when you see people on TV and they get asked a question, You know that they&#x27;re not going to answer the question they were asked.</span> <span class="tl-s" data-s="520.52" data-e="523.62">They&#x27;re just going to say what they want to say.</span> <span class="tl-s" data-s="523.62" data-e="523.78">Yeah.</span> <span class="tl-s" data-s="523.78" data-e="525.80">Huff didn&#x27;t do that, which is great.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="525.80" data-e="528.56">But he also didn&#x27;t let the conversation get completely sidetracked by the— [Speaker A] Right.</span> <span class="tl-s" data-s="528.56" data-e="529.34">It was great.</span> <span class="tl-s" data-s="529.34" data-e="532.80">He had a great tone and it was outstanding.</span> <span class="tl-s" data-s="532.80" data-e="534.78">I mean, it&#x27;s really worth checking out.</span> <span class="tl-s" data-s="535.14" data-e="536.38">We can all learn from that.</span> <span class="tl-s" data-s="536.38" data-e="536.50">Absolutely.</span> <span class="tl-s" data-s="536.50" data-e="537.00">Behavior with unbelievers.</span> <span class="tl-s" data-s="537.00" data-e="537.26">Absolutely.</span> <span class="tl-s" data-s="537.26" data-e="541.41">So, sort of, that was kind of how we got to this topic.</span> <span class="tl-s" data-s="541.41" data-e="546.45">So, we wanted to— we&#x27;ll also do our best to link the Wesley Huff interview from Joe Rogan.</span></p>
+        <p><span class="tl-s" data-s="546.48" data-e="550.72">And You maybe will find some value in the debate because it&#x27;s very apologetic.</span> <span class="tl-s" data-s="550.72" data-e="557.05">But I don&#x27;t know if there&#x27;s anything that you believe personally that Billy Carson believed.</span> <span class="tl-s" data-s="557.05" data-e="557.71">It&#x27;s very out there.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="557.71" data-e="559.81">Oh, Billy, don&#x27;t listen to him.</span> <span class="tl-s" data-s="559.88" data-e="562.25">He doesn&#x27;t always sound good.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="562.43" data-e="564.84">But anyway, there&#x27;s also some others.</span> <span class="tl-s" data-s="564.84" data-e="569.20">There&#x27;s also kind of like— [Speaker A] Back to cultural Christianity.</span> <span class="tl-s" data-s="569.59" data-e="570.60">Back to cultural Christianity.</span> <span class="tl-s" data-s="570.69" data-e="577.76">There&#x27;s kind of like anybody on the right-leaning politically has kind of adopted this cultural Christianity look, like Christianity is good.</span> <span class="tl-s" data-s="577.76" data-e="579.62">Our nation is clearly getting worse.</span> <span class="tl-s" data-s="579.67" data-e="581.03">Our world is getting worse.</span> <span class="tl-s" data-s="581.05" data-e="582.27">I should embrace the teachings of Christianity.</span> <span class="tl-s" data-s="582.57" data-e="584.10">So, like, what do you— [Speaker A] Not really.</span> <span class="tl-s" data-s="584.18" data-e="585.70">Not the teachings, the values.</span> <span class="tl-s" data-s="585.71" data-e="586.56">The values.</span></p>
+        <p><span class="tl-s" data-s="586.58" data-e="586.95">Sorry.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="586.97" data-e="590.32">So, that&#x27;s like, and that&#x27;s a big thing.</span> <span class="tl-s" data-s="590.33" data-e="590.73">Wrong word.</span> <span class="tl-s" data-s="590.81" data-e="599.84">No, not— I&#x27;m not trying to jump on you there, but like the values, like, so, what people who are cultural Christians say is that they want the values of Christianity, right?</span> <span class="tl-s" data-s="599.88" data-e="602.13">And so, and I get it, right?</span> <span class="tl-s" data-s="602.29" data-e="604.82">Because, and first of all, this isn&#x27;t new.</span> <span class="tl-s" data-s="604.92" data-e="609.39">This happened in the &#x27;20s and &#x27;30s in the United States, and now it&#x27;s back.</span> <span class="tl-s" data-s="609.49" data-e="609.55">Yeah.</span> <span class="tl-s" data-s="609.63" data-e="611.09">The 1920s and &#x27;30s, right?</span> <span class="tl-s" data-s="611.09" data-e="615.88">And so, There was a whole move to just try to adopt.</span> <span class="tl-s" data-s="615.90" data-e="617.20">100 years.</span></p>
+        <p><span class="tl-s" data-s="617.20" data-e="618.83">Well, and other times too, in the &#x27;50s as well.</span> <span class="tl-s" data-s="619.02" data-e="619.47">Eisenhower did it.</span> <span class="tl-s" data-s="619.84" data-e="622.58">He called America— anyway, that&#x27;s a whole nother conversation.</span> <span class="tl-s" data-s="622.65" data-e="626.74">But, and so, there was a time where people were like, you know what?</span> <span class="tl-s" data-s="626.88" data-e="635.81">I&#x27;m not in it for the Jesus dying on the cross for my sins, but I&#x27;m in it for the good of society, right?</span> <span class="tl-s" data-s="635.81" data-e="639.13">Because everybody sees, like, atheists were not putting up hospitals or orphanages.</span> <span class="tl-s" data-s="639.25" data-e="642.62">Atheists were not helping the elderly or the children.</span> <span class="tl-s" data-s="642.67" data-e="643.73">They weren&#x27;t adopting children.</span> <span class="tl-s" data-s="643.73" data-e="646.42">It was Christians who were doing that stuff.</span> <span class="tl-s" data-s="646.45" data-e="651.13">Christians who decided, hey, we should teach our society at large to read and be educated, right?</span></p>
+        <p><span class="tl-s" data-s="651.18" data-e="655.51">Those were Christians that were, who were forging ahead with that kind of stuff.</span> <span class="tl-s" data-s="655.57" data-e="657.66">And so— [Speaker B] Adoption.</span> <span class="tl-s" data-s="657.66" data-e="659.92">Yeah, all of it, right?</span> <span class="tl-s" data-s="659.98" data-e="665.82">And so, then it becomes something that we take for granted as a society, right?</span> <span class="tl-s" data-s="665.99" data-e="671.98">And so, there is a lot of good and a lot of compelling things that Christians have done in society, right?</span> <span class="tl-s" data-s="672.03" data-e="690.77">And so, what people like Musk and Peterson and Dawkins, I guess, And maybe even Rogan to some degree, what they say is, I want what good things come out of Christianity, and I want to uphold those values, which are, you know, personal responsibility, which are, you know, working for the betterment of society.</span> <span class="tl-s" data-s="691.20" data-e="691.84">Loving each other.</span> <span class="tl-s" data-s="691.92" data-e="698.63">Loving each other, thinking the best of each other, you know, that kind of thing, you know, helping one another.</span> <span class="tl-s" data-s="698.65" data-e="698.82">Yeah.</span> <span class="tl-s" data-s="698.82" data-e="699.03">Right?</span></p>
+        <p><span class="tl-s" data-s="699.14" data-e="714.52">And, you know, when you can be kind, when you can help, you know, when you can You know, be like the Good Samaritan who looks to help those that are in need and that kind of thing.</span> <span class="tl-s" data-s="714.55" data-e="715.82">And so, that&#x27;s good.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="715.84" data-e="716.48">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="716.48" data-e="718.08">But the problem is Christianity is not a philosophy.</span> <span class="tl-s" data-s="718.08" data-e="718.74">It&#x27;s not a principle.</span> <span class="tl-s" data-s="718.74" data-e="719.85">Christianity is a radical life change.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="719.93" data-e="720.06">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="720.07" data-e="725.86">So, a Christian is somebody not just who respects Jesus, because that&#x27;s what a lot of these folks do.</span> <span class="tl-s" data-s="725.86" data-e="729.31">They look at the life of Jesus and say, man, he&#x27;s compelling, and he is.</span> <span class="tl-s" data-s="729.79" data-e="731.71">But we can&#x27;t just respect Jesus.</span> <span class="tl-s" data-s="731.78" data-e="735.93">We can&#x27;t just pretend to follow Jesus or say, I want to be like him.</span> <span class="tl-s" data-s="735.96" data-e="739.69">We have to say, I need a Savior that is Jesus, right?</span> <span class="tl-s" data-s="739.73" data-e="739.81">Yeah.</span> <span class="tl-s" data-s="739.81" data-e="750.40">So, what Jesus did in coming to earth is not to try to be an example for us to follow primarily, although there are a couple sections in the Bible that talk about that.</span> <span class="tl-s" data-s="750.40" data-e="755.92">But what he did was to be a sacrifice for people in their place, right?</span> <span class="tl-s" data-s="755.98" data-e="763.37">So, without Jesus, there is no hope because Jesus came to earth to live a sinless life and die an unjust death.</span> <span class="tl-s" data-s="763.51" data-e="768.05">He died an unjust death at the hands of both the Jewish and Roman authorities.</span></p>
+        <p><span class="tl-s" data-s="768.12" data-e="778.25">And he died that death, as we see in the Scriptures, so that any who put their faith in him can know for sure and for certain that their sins and the penalty for their sins was put on Jesus.</span> <span class="tl-s" data-s="778.50" data-e="781.61">And they don&#x27;t have to pay that price.</span> <span class="tl-s" data-s="781.63" data-e="783.97">They don&#x27;t have to pay that price.</span> <span class="tl-s" data-s="783.97" data-e="784.85">That&#x27;s not for them.</span> <span class="tl-s" data-s="785.16" data-e="787.18">In fact, they receive eternal life.</span> <span class="tl-s" data-s="787.18" data-e="787.98">Right.</span> <span class="tl-s" data-s="788.13" data-e="795.64">And so, because Jesus was crushed on the cross, because on the cross, it wasn&#x27;t just the physical torture that he endured, that was momentous.</span> <span class="tl-s" data-s="796.15" data-e="805.88">It was the fact, as Paul says in 2 Corinthians chapter 5, he made him to be no sin who knew no sin.</span> <span class="tl-s" data-s="805.88" data-e="806.11">Hmm.</span> <span class="tl-s" data-s="806.11" data-e="817.12">So, Jesus became the sin bearer, meaning the sins I&#x27;ve committed, the many sins I&#x27;ve committed this week even, and in all my life, past, present, future, were put on him.</span></p>
+        <p><span class="tl-s" data-s="817.20" data-e="821.13">And not just me, but everybody who trusts in Jesus, they&#x27;re put on him.</span> <span class="tl-s" data-s="821.13" data-e="825.47">And he was treated as if personally culpable for our sins.</span> <span class="tl-s" data-s="825.53" data-e="829.21">And he was punished and crushed, and he died.</span> <span class="tl-s" data-s="829.38" data-e="830.94">But he didn&#x27;t stay dead.</span> <span class="tl-s" data-s="830.99" data-e="843.36">He rose from the dead, showing us that we are, like Paul says, that when he rose, he rose and it seals our justification or righteousness before God, right?</span> <span class="tl-s" data-s="843.36" data-e="843.82">Right.</span> <span class="tl-s" data-s="843.84" data-e="852.69">And so, what we need is a sacrifice for sins, not an example for how to live, primarily.</span> <span class="tl-s" data-s="852.74" data-e="859.87">And so, that&#x27;s where, as exciting as it is that cultural Christianity is in the conversation these days, It&#x27;s not enough.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="859.88" data-e="860.20">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="860.27" data-e="861.37">And it&#x27;s not enough.</span> <span class="tl-s" data-s="861.79" data-e="871.32">We still, when someone talks about God, when someone talks about Jesus, or when someone talks about the benefits of Christianity to our culture, that&#x27;s not enough.</span> <span class="tl-s" data-s="871.32" data-e="872.37">In fact, it&#x27;s deceptive.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="872.45" data-e="872.68">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="873.15" data-e="876.15">It&#x27;s deceptive because we could think, oh, that person understands.</span> <span class="tl-s" data-s="876.15" data-e="880.48">Chances are they don&#x27;t, especially— this is a danger for people who are on the right politically, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="880.48" data-e="880.62">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="880.64" data-e="892.56">They are apt to think that because they&#x27;re on the right and because this person&#x27;s on the right talking about Jesus and God and stuff like that, that they&#x27;re okay.</span> <span class="tl-s" data-s="892.56" data-e="894.15">Do not assume that.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="894.42" data-e="895.22">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="895.77" data-e="899.12">We can&#x27;t assume that, right?</span> <span class="tl-s" data-s="899.58" data-e="909.90">Because we have to think, okay, no, no, actually, let me make sure I talk about Jesus as— Jesus as Savior, Jesus as crushed, Jesus as sin bearer.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="910.93" data-e="911.09">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="911.40" data-e="914.14">Not just Jesus as— he&#x27;s not just a revolutionary.</span> <span class="tl-s" data-s="914.14" data-e="918.24">He&#x27;s not just a— he&#x27;s not a culture builder like that.</span> <span class="tl-s" data-s="918.29" data-e="919.55">He&#x27;s a sin substitute.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="919.67" data-e="920.36">Sure.</span> <span class="tl-s" data-s="921.01" data-e="921.08">Yeah.</span> <span class="tl-s" data-s="922.09" data-e="922.47">Well said.</span> <span class="tl-s" data-s="922.47" data-e="923.13">2 major follow-ups.</span> <span class="tl-s" data-s="923.18" data-e="931.06">But first, I mean, what you just described is the eternal truth written down in the Scriptures that never changes, that is everlasting.</span> <span class="tl-s" data-s="929.77" data-e="937.62">And the way people view the world that aren&#x27;t Christians is that the world&#x27;s always changing and adapting, which is not true.</span> <span class="tl-s" data-s="937.62" data-e="941.37">You&#x27;ve already expressed that it kind of Nothing new under the sun, like Ecclesiastes.</span> <span class="tl-s" data-s="941.38" data-e="953.98">So, we&#x27;re just seeing these same patterns of things playing out in different— but we know that we believe in the God of the Bible, and it&#x27;s unchanging, and it&#x27;s applicable.</span> <span class="tl-s" data-s="953.98" data-e="954.77">You know, it edifies you.</span> <span class="tl-s" data-s="954.77" data-e="956.31">It&#x27;s breathed out by God.</span></p>
+        <p><span class="tl-s" data-s="956.77" data-e="959.71">How do we walk through the current cultural situation knowing that?</span> <span class="tl-s" data-s="959.74" data-e="965.09">That&#x27;s kind of the theme of like, what we talk about on this podcast as a whole.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="965.12" data-e="965.36">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="965.44" data-e="968.80">Just like, how do we apply this everlasting truth to those things?</span> <span class="tl-s" data-s="968.80" data-e="984.89">So, my 2 Follow-ups are, you mentioned a little bit about what&#x27;s not good about that, like, and we talked about this before, like Spurgeon was worried about people having false conversions, like someone being baptized as a baby thinking that they&#x27;re a Christian just because of that, giving a poor witness to the body of Christ.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="984.89" data-e="990.20">Or even being at a church service and saying, I want to be baptized, and they&#x27;re not Christians.</span> <span class="tl-s" data-s="990.20" data-e="990.24">Right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="990.24" data-e="990.52">Exactly.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="990.52" data-e="992.18">That happens a good bit too.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="992.18" data-e="994.02">So, but what is good about this?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="994.02" data-e="995.32">About the cultural Christianity?</span> <span class="tl-s" data-s="995.32" data-e="998.56">About the [Speaker B] cultural movement towards [Speaker A] Well, it&#x27;s moral, right?</span> <span class="tl-s" data-s="998.56" data-e="999.82">I mean, that&#x27;s good.</span> <span class="tl-s" data-s="999.82" data-e="1001.72">It&#x27;s good for our society to be more moral, right?</span> <span class="tl-s" data-s="1001.72" data-e="1002.60">And so, like, I&#x27;ll take it.</span> <span class="tl-s" data-s="1002.60" data-e="1003.02">That&#x27;s great.</span> <span class="tl-s" data-s="1003.02" data-e="1008.61">You know what, like, I mean, one of the things that Christianity talks about is loving your neighbor.</span> <span class="tl-s" data-s="1008.62" data-e="1012.92">And so, it&#x27;s always better to love your neighbor than want to kill your neighbor.</span> <span class="tl-s" data-s="1012.92" data-e="1013.85">And so, like, that&#x27;s good.</span> <span class="tl-s" data-s="1013.86" data-e="1015.58">There&#x27;s a lot of good things there.</span></p>
+        <p><span class="tl-s" data-s="1015.58" data-e="1017.08">It just doesn&#x27;t go far enough.</span> <span class="tl-s" data-s="1017.08" data-e="1017.38">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1017.38" data-e="1018.52">Is it a step in the right direction?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1020.46" data-e="1021.11">It depends.</span> <span class="tl-s" data-s="1021.11" data-e="1032.01">It could be a step in the wrong direction, because then there are people who could say, well, I&#x27;m a— like, they believe that that&#x27;s what Christianity is.</span> <span class="tl-s" data-s="1032.01" data-e="1033.68">And they&#x27;re inoculated against genuine Christianity.</span> <span class="tl-s" data-s="1033.68" data-e="1037.78">Because essentially, the message of cultural Christianity is do more, try harder.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1037.78" data-e="1037.91">Yeah.</span> <span class="tl-s" data-s="1038.01" data-e="1038.89">Do gooder.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1038.91" data-e="1040.97">And the answer is, we can&#x27;t.</span> <span class="tl-s" data-s="1040.97" data-e="1041.13">Right?</span> <span class="tl-s" data-s="1041.13" data-e="1049.31">And so, like, this cultural Christian moment, this is the danger for us who are confessing Christians to say, oh, okay, everything, everybody&#x27;s doing fine.</span> <span class="tl-s" data-s="1049.31" data-e="1050.13">No, they&#x27;re not.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1050.45" data-e="1050.53">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1050.53" data-e="1055.72">Just because they call themselves cultural Christians, they could be farther away than when they weren&#x27;t.</span> <span class="tl-s" data-s="1055.74" data-e="1061.43">So, we need to make sure we stick close to what the Gospel says.</span> <span class="tl-s" data-s="1061.43" data-e="1065.99">Because like, if you look at the Bible, the cultural Cultural Christians, quote unquote, were the Pharisees.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1065.99" data-e="1066.27">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1066.86" data-e="1069.62">And they rejected Jesus because Jesus called them sinners.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1069.62" data-e="1069.68">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1069.68" data-e="1074.44">And so, like, some people who are cultural Christians may have no time for that.</span> <span class="tl-s" data-s="1074.49" data-e="1075.39">That&#x27;s a dangerous thing.</span> <span class="tl-s" data-s="1075.39" data-e="1080.02">So, I would say, like, both the extreme left and the extreme right are dangerous.</span> <span class="tl-s" data-s="1080.10" data-e="1086.19">But I would say, at least in our context, people could say, oh, they say the same kinds of things I do, therefore, they&#x27;re okay.</span> <span class="tl-s" data-s="1086.19" data-e="1087.61">No, no, no, no, no.</span> <span class="tl-s" data-s="1087.66" data-e="1089.07">Do not— no, don&#x27;t assume that.</span> <span class="tl-s" data-s="1089.07" data-e="1092.76">We need to— we need I mean, we have a common ground now.</span> <span class="tl-s" data-s="1092.76" data-e="1103.86">If someone believes in God and someone believes that there&#x27;s good and evil in the world, okay, there&#x27;s a common ground to start from, to start sharing the Gospel.</span> <span class="tl-s" data-s="1103.86" data-e="1110.17">But go ahead and keep sharing the Gospel and go ahead and say, hey, listen, this is the answer, right?</span> <span class="tl-s" data-s="1110.19" data-e="1110.24">Yeah.</span></p>
+        <p><span class="tl-s" data-s="1110.35" data-e="1111.76">Because humanity is broken and humanity is sinful.</span> <span class="tl-s" data-s="1111.87" data-e="1123.08">And so, sinful humans who call themselves cultural Christians are not going to change the world in a lasting way that goes on and on and on and on forever.</span> <span class="tl-s" data-s="1123.17" data-e="1131.09">In the same way, that Jesus promises to do through his people, and ultimately in the world.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1131.12" data-e="1132.37">Yeah, no, that makes sense.</span> <span class="tl-s" data-s="1132.47" data-e="1138.51">So, do you think that the Lord could be using some of these cultural winds that shift towards viewing cultural Christianity in a positive light?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1138.56" data-e="1138.82">Sure.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1138.82" data-e="1142.22">Making people dive into what the actual truth is, and maybe they&#x27;ll get saved.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1142.27" data-e="1142.89">Yeah, maybe.</span> <span class="tl-s" data-s="1142.91" data-e="1143.45">Absolutely.</span> <span class="tl-s" data-s="1143.54" data-e="1148.61">The Lord can use— [Speaker B] Millions of people saw Christian Apologist, maybe for the first time.</span> <span class="tl-s" data-s="1148.61" data-e="1150.35">Maybe for the first time.</span> <span class="tl-s" data-s="1150.36" data-e="1151.74">I heard 180 million.</span> <span class="tl-s" data-s="1151.74" data-e="1152.32">I don&#x27;t know.</span> <span class="tl-s" data-s="1153.09" data-e="1154.96">But like, I don&#x27;t— yeah, absolutely.</span> <span class="tl-s" data-s="1154.96" data-e="1155.53">That&#x27;s good.</span> <span class="tl-s" data-s="1155.60" data-e="1159.13">And I also heard that like Bible sales are skyrocketing.</span> <span class="tl-s" data-s="1159.52" data-e="1160.58">So, that&#x27;s only good.</span></p>
+        <p><span class="tl-s" data-s="1160.58" data-e="1160.91">That&#x27;s great.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1160.91" data-e="1161.04">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1161.04" data-e="1164.03">And so, like, let&#x27;s— we can celebrate that.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1164.03" data-e="1164.16">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1164.26" data-e="1167.24">But— [Speaker B] How do we put the Christ back in Christianity?</span> <span class="tl-s" data-s="1167.63" data-e="1169.33">Well, that&#x27;s what everybody wants to do.</span> <span class="tl-s" data-s="1169.33" data-e="1174.71">Like, you know, a lot of times they want to have the benefits of Christianity without being Christian.</span> <span class="tl-s" data-s="1174.78" data-e="1180.26">They want to have the benefits of Jesus without following him.</span> <span class="tl-s" data-s="1180.29" data-e="1192.72">They want to have the benefits of the what Christians can do for the culture without dying to self, without taking up your cross daily and dying.</span> <span class="tl-s" data-s="1192.81" data-e="1196.35">Like, the message of Christianity is very counterintuitive.</span> <span class="tl-s" data-s="1196.35" data-e="1204.46">And it&#x27;s also, it seems like it&#x27;s a recipe for personal, I don&#x27;t want to say disaster, but personal sort of— [Speaker B] Depravity.</span> <span class="tl-s" data-s="1204.58" data-e="1209.15">I mean— [Speaker A] Well, like, so, like, not happiness, a personal misery, right?</span> <span class="tl-s" data-s="1209.15" data-e="1211.12">But it&#x27;s not, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1211.38" data-e="1213.74">Joyful discontentment, I prefer.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1213.74" data-e="1220.31">Well, you can say that, but I&#x27;m talking about someone who&#x27;s not a Christian.</span> <span class="tl-s" data-s="1220.36" data-e="1223.34">They hear die daily and they think that&#x27;s misery.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1223.34" data-e="1223.58">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1223.58" data-e="1225.47">But it&#x27;s not, because we&#x27;re connected to Jesus.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1225.50" data-e="1232.12">So, from— I&#x27;m just generally very interested in apologetics-related content, because I think it&#x27;s a good mixture of understanding truth, but then understanding communication.</span> <span class="tl-s" data-s="1232.15" data-e="1232.46">Yeah.</span> <span class="tl-s" data-s="1232.46" data-e="1236.36">And Wes Huff did a great job on both of those fronts.</span> <span class="tl-s" data-s="1236.40" data-e="1237.53">He knows his Bible.</span> <span class="tl-s" data-s="1237.53" data-e="1245.35">He does. the background, but he also knows how to communicate with someone and figure out where they&#x27;re at.</span> <span class="tl-s" data-s="1245.38" data-e="1245.53">Yeah.</span> <span class="tl-s" data-s="1245.53" data-e="1247.05">Not get dragged down the loopholes.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1247.05" data-e="1247.12">Right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1247.15" data-e="1249.49">So, how can we learn from this, watching this?</span> <span class="tl-s" data-s="1249.62" data-e="1258.82">How do we evangelize or speak with someone who has a moralistic view of the cross, but they don&#x27;t think it&#x27;s necessary for them?</span></p>
+        <p><span class="tl-s" data-s="1260.67" data-e="1267.12">It&#x27;s almost like they see the fallenness around them and the evil in the world, but they don&#x27;t see the evilness in themselves.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1267.17" data-e="1267.64">Right.</span> <span class="tl-s" data-s="1267.64" data-e="1272.26">Well, I mean, I mean, you befriend people, whoever they are.</span> <span class="tl-s" data-s="1272.27" data-e="1274.27">And like, I think everybody thinks they&#x27;re okay.</span> <span class="tl-s" data-s="1274.37" data-e="1278.47">Because if they didn&#x27;t, they&#x27;d— [Speaker B] In the Bridge Course, it asks an interesting question.</span> <span class="tl-s" data-s="1278.52" data-e="1279.09">What does it ask?</span> <span class="tl-s" data-s="1279.09" data-e="1285.63">Jim Donohue asked, on a scale of Mother Teresa being the highest to Hitler being the lowest, where do you stand?</span> <span class="tl-s" data-s="1285.89" data-e="1289.37">Closer to Mother Teresa, I would think.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1289.37" data-e="1290.75">Everyone says closer to Mother Teresa.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1290.86" data-e="1291.87">Right, right, exactly.</span> <span class="tl-s" data-s="1292.16" data-e="1294.40">Of course, because on a sliding scale, that&#x27;s true.</span> <span class="tl-s" data-s="1294.40" data-e="1301.06">But like, But if you compare both Mother Teresa and Hitler to God, it&#x27;s— [Speaker B] Filthy rags.</span> <span class="tl-s" data-s="1301.06" data-e="1301.46">Exactly.</span> <span class="tl-s" data-s="1302.25" data-e="1309.37">So, I think one of the things we can do as Christians is not be more passionate about politics than we are about the Gospel.</span> <span class="tl-s" data-s="1309.55" data-e="1315.95">So, like, if politics are on your mouth, or in your mouth more than Jesus, there&#x27;s a problem.</span> <span class="tl-s" data-s="1315.95" data-e="1324.06">Or if you&#x27;re more, if you&#x27;re quicker to talk about political problems or solutions or things like that instead of Jesus, there&#x27;s a problem.</span> <span class="tl-s" data-s="1324.14" data-e="1327.39">So, like, when I&#x27;m talking to unbelievers, I don&#x27;t care what they think I think politically.</span> <span class="tl-s" data-s="1328.05" data-e="1328.93">I don&#x27;t care.</span> <span class="tl-s" data-s="1328.95" data-e="1329.19">Right?</span></p>
+        <p><span class="tl-s" data-s="1329.19" data-e="1330.84">That&#x27;s— I&#x27;m not going to argue that stuff.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1330.86" data-e="1331.19">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1331.67" data-e="1335.71">I&#x27;m not going to argue taxes, gun control.</span> <span class="tl-s" data-s="1335.71" data-e="1336.94">I&#x27;m not going to argue immigration.</span> <span class="tl-s" data-s="1337.03" data-e="1339.77">I&#x27;m not going to argue tariffs.</span> <span class="tl-s" data-s="1339.77" data-e="1345.29">I&#x27;m not going to argue any of those things because I don&#x27;t want them to think, oh, that&#x27;s what he&#x27;s passionate about.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1345.36" data-e="1345.52">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1345.60" data-e="1346.16">No way.</span> <span class="tl-s" data-s="1346.24" data-e="1347.18">That doesn&#x27;t matter ultimately.</span> <span class="tl-s" data-s="1347.28" data-e="1353.50">And so, I want them to think, okay, well, Well, okay, let&#x27;s connect this to Christ and him crucified, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1353.71" data-e="1354.83">No, nothing among us except for Christ crucified.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1354.83" data-e="1364.01">But that doesn&#x27;t mean we, you know, act like we&#x27;re disconnected and live in some kind of, you know, monastery or whatever.</span> <span class="tl-s" data-s="1364.01" data-e="1368.43">But I want people to think, what is he most passionate about?</span> <span class="tl-s" data-s="1368.45" data-e="1377.47">And it can go for anything, not just politics, sports, job, money, my new car, my new workout routine, my new diet, you know, the upcoming surgery I&#x27;m going to have or whatever, right?</span> <span class="tl-s" data-s="1377.57" data-e="1383.25">And so, like, we&#x27;re most passionate about Christ and not all that other stuff.</span> <span class="tl-s" data-s="1383.26" data-e="1383.49">Right.</span> <span class="tl-s" data-s="1383.60" data-e="1389.05">And so, that&#x27;s where I would say, let&#x27;s be obvious about that.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1389.46" data-e="1389.67">Love it.</span> <span class="tl-s" data-s="1389.67" data-e="1402.20">We know that if you&#x27;re listening to this, you probably know someone in this category where they&#x27;re affirming of the virtues of Christianity, but they&#x27;re not really willing to say they&#x27;re a Christian or really understand what Christianity is.</span> <span class="tl-s" data-s="1402.20" data-e="1406.45">So, if you want to share this with them, that&#x27;d be great.</span> <span class="tl-s" data-s="1406.47" data-e="1418.13">If you have any questions, feel free to email us at production@sunnahgilbert.com and check out those links attached to this episode.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1418.13" data-e="1427.28">Yeah, if you have questions about Anything Huff said or whatever, shoot us an email.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1427.57" data-e="1427.59">Yeah.</span> <span class="tl-s" data-s="1427.59" data-e="1428.07">All right.</span> <span class="tl-s" data-s="1428.07" data-e="1428.49">Thank you.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1428.49" data-e="1428.91">All right.</span> <span class="tl-s" data-s="1428.91" data-e="1429.74">See you guys.</span> <span class="tl-s" data-s="1429.85" data-e="1431.00">What is this one again?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1431.02" data-e="1432.75">Hang on one second.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1432.87" data-e="1433.35">Cultural Christianity.</span> <span class="tl-s" data-s="1433.43" data-e="1433.80">All right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1433.85" data-e="1434.48">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1434.55" data-e="1434.86">Okay.</span> <span class="tl-s" data-s="1435.75" data-e="1436.96">Here we go.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1437.38" data-e="1438.26">Sorry.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1438.42" data-e="1439.07">Wow.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1439.07" data-e="1439.63">And I recorded that.</span> <span class="tl-s" data-s="1439.63" data-e="1441.11">That one&#x27;s going in the box.</span> <span class="tl-s" data-s="1441.11" data-e="1441.19">100%.</span> <span class="tl-s" data-s="1441.19" data-e="1441.23">100%.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1441.23" data-e="1447.94">Oh my, just make sure you know it&#x27;s not me.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1447.94" data-e="1448.89">Yeah, for sure.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1470.49" data-e="1471.21">It was Mark.</span> <span class="tl-s" data-s="1471.21" data-e="1472.23">It was Rich, for sure.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1472.23" data-e="1473.79">It was Mark Grace.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1473.89" data-e="1473.97">Witness.</span> <span class="tl-s" data-s="1474.02" data-e="1474.21">Excuse me.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1474.26" data-e="1475.01">Gosh, that&#x27;s gonna make me look like a freaking idiot.</span> <span class="tl-s" data-s="1475.01" data-e="1475.01">No, you do that yourself.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1475.01" data-e="1475.01">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1475.01" data-e="1475.01">All right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1475.01" data-e="1475.01">Gosh, ruining my life.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1475.01" data-e="1475.01">You do that yourself anyway.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1475.01" data-e="1475.01">Everyone thinks that I&#x27;m an idiot at school because of you.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1475.01" data-e="1475.01">Nope, you do that yourself.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1475.01" data-e="1475.01">Okay.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Fixed on Jesus episode archive, backed by /api/podcast/search.
+  // Static fallback list above stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function fmtDuration(raw) {
+      if (!raw) return "";
+      var str = String(raw).trim();
+      // Anchor feeds report seconds; render as H:MM:SS or M:SS.
+      if (/^\d+$/.test(str)) {
+        var total = parseInt(str, 10);
+        var h = Math.floor(total / 3600);
+        var m = Math.floor((total % 3600) / 60);
+        var sec = total % 60;
+        var mm = (h > 0 && m < 10 ? "0" + m : "" + m);
+        var ss = (sec < 10 ? "0" + sec : "" + sec);
+        return (h > 0 ? h + ":" + mm : m) + ":" + ss;
+      }
+      // Anchor also reports clock strings like "00:24:02" — drop the
+      // redundant leading hour so it reads "24:02".
+      return str.replace(/^00:/, "");
+    }
+    function row(it) {
+      it = it || {};
+      var title = esc(it.title) || "Untitled episode";
+      var tUrl = it.guid && transcriptMap[it.guid];
+      var heading = tUrl
+        ? '<a href="' + esc(tUrl) + '">' + title + "</a>"
+        : (it.link
+          ? '<a href="' + esc(it.link) + '" target="_blank" rel="noopener">' + title + "</a>"
+          : title);
+      var meta = [fmtDate(it.date), fmtDuration(it.duration)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      return '<div class="sermon"><div><h3>' + heading + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    var PER = 10;
+    var state = { q: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No episodes found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " episode" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " episodes";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/podcast/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () {
+          // Keep the static list, but tell the reader where else to listen —
+          // some privacy blockers stop the archive request itself.
+          var note = document.querySelector("[data-sermons-error]");
+          if (note) note.hidden = false;
+        });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    if (monthSel) {
+      monthSel.addEventListener("change", function () {
+        state.month = monthSel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: fd30f9cc-7a11-4604-897f-3843217239df -->
+</body>
+</html>
