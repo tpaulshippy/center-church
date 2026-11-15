@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rapid Fire Friday - Q&amp;A #13 — Podcast Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Fixed on Jesus: conversations beyond Sunday mornings from Center Church in Gilbert, AZ — listen on Spotify, Apple Podcasts, and YouTube." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=18" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a href="/sermons">Sermons</a></li>
+              <li><a class="active" href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/podcast">&larr; All podcast episodes</a>
+          <h1 class="display-lg">Rapid Fire Friday - Q&amp;A #13</h1>
+          <p class="transcript-meta">2024-09-27 · 17:30</p>
+          <p class="transcript-desc">Rapid Fire Friday is a special series from the Fixed On Jesus Podcast crew (Rich, Mark and Heather) Sometimes we get questions that have short enough answers to answer many of them in one episode that we like to call Rapid Fire Fridays. Look for these to be released on Fridays if and when we get eno</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/e750e370/podcast/play/92277554/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-8-27%2F339f725d-4626-7381-4ed5-9c7031a17ff6.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="0.03" data-e="0.70">What day is it, Mark?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1.30" data-e="1.97">Oh, good question.</span> <span class="tl-s" data-s="2.02" data-e="4.02">I was gonna go on the Google machine, but I think it&#x27;s Friday.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="4.42" data-e="4.92">It&#x27;s Friday.</span> <span class="tl-s" data-s="5.14" data-e="5.96">You know what that means, Mark?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="6.52" data-e="8.53">Rapid Fire Friday.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="12.05" data-e="16.53">Boom boom boom.</span> <span class="tl-s" data-s="16.62" data-e="18.31">Rapid Fire Friday.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="21.51" data-e="26.69">Three two one.</span> <span class="tl-s" data-s="27.19" data-e="29.37">Rapid Fire Friday.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="35.65" data-e="37.52">Email question from Catherine Jordan.</span> <span class="tl-s" data-s="38.56" data-e="40.45">Thanks for considering these if you get to them.</span> <span class="tl-s" data-s="41.21" data-e="43.30">The first one is double predestination.</span> <span class="tl-s" data-s="44.26" data-e="49.85">How can we say God predestined people to be saved without saying God predestined people to go to hell?</span> <span class="tl-s" data-s="49.85" data-e="53.00">Do you want me to leave off there and then come back around the next one?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="53.26" data-e="54.42">Yeah, they&#x27;re different.</span></p>
+        <p><span class="tl-s" data-s="56.52" data-e="59.66">Now, people say many things when they say double predestination.</span></p>
+        <p><span class="tl-s" data-s="61.22" data-e="64.29">I don&#x27;t hold to double predestination the way most people talk about it.</span> <span class="tl-s" data-s="64.95" data-e="73.78">Double predestination, the way most people talk about it, is the teaching that God elects some to receive the gospel and be saved, and he elects others to go to hell.</span> <span class="tl-s" data-s="74.10" data-e="78.94">So we see, we clearly see a degree of election all over the Bible.</span> <span class="tl-s" data-s="79.09" data-e="79.46">We see it.</span> <span class="tl-s" data-s="79.81" data-e="82.77">The Lord chose Israel, not Egypt.</span> <span class="tl-s" data-s="83.41" data-e="86.09">The Lord chose Israel, not the Philistines.</span> <span class="tl-s" data-s="86.66" data-e="90.24">The Lord chose Israel, not the Mayas, the Incas, and the Aztecs.</span> <span class="tl-s" data-s="90.56" data-e="93.81">The Lord chose Israel and not other nations, right?</span> <span class="tl-s" data-s="93.86" data-e="94.13">Mm-hmm.</span> <span class="tl-s" data-s="94.47" data-e="99.16">And so we also see in Ephesians chapter 1 that the Lord elects before time began.</span></p>
+        <p><span class="tl-s" data-s="99.84" data-e="105.00">Now, in election, he actively works grace and favor into the lives of the people.</span> <span class="tl-s" data-s="105.20" data-e="114.73">Now, to believe that he would elect people to go to hell would mean that he would actively work rejection and hate toward him into their lives.</span> <span class="tl-s" data-s="115.14" data-e="118.26">He doesn&#x27;t have to actively work that sin into their lives.</span> <span class="tl-s" data-s="118.53" data-e="126.77">The people who are, who are not elect, they&#x27;re not going to be able to point to the Lord and say, it&#x27;s because you didn&#x27;t elect me that I&#x27;m not saved.</span> <span class="tl-s" data-s="127.20" data-e="129.62">What it&#x27;s going to be is their fault, right?</span> <span class="tl-s" data-s="129.75" data-e="132.62">Now, how this works is completely— it&#x27;s a mystery.</span> <span class="tl-s" data-s="132.90" data-e="134.45">It&#x27;s really difficult, right?</span> <span class="tl-s" data-s="135.30" data-e="141.45">It&#x27;s more of a philosophical argument to say, could If God elects some to heaven, he elects some to hell.</span> <span class="tl-s" data-s="141.56" data-e="145.60">Now, he elects the ones he elects to be with him for all time.</span> <span class="tl-s" data-s="145.77" data-e="147.19">You know, that does not mitigate.</span></p>
+        <p><span class="tl-s" data-s="147.23" data-e="149.54">It doesn&#x27;t destroy our responsibility.</span> <span class="tl-s" data-s="149.88" data-e="158.87">But in election, he doesn&#x27;t elect to reject in the sense that, okay, I&#x27;m going to make sure that this person turns their back on me.</span> <span class="tl-s" data-s="159.18" data-e="162.11">I&#x27;m going to make sure that this person has no time for me.</span> <span class="tl-s" data-s="162.40" data-e="165.04">I mean, to reject, to elect someone to go to hell, it would be that way.</span> <span class="tl-s" data-s="165.43" data-e="167.50">I&#x27;m going to make sure that this person is evil.</span> <span class="tl-s" data-s="167.87" data-e="171.91">I&#x27;m going to make sure that this person has all kinds of hatred for his fellow man.</span> <span class="tl-s" data-s="172.34" data-e="179.10">And so, that&#x27;s something that the Lord would never— because he&#x27;s not the author of evil, he would never do that.</span> <span class="tl-s" data-s="179.32" data-e="193.81">What we have, though, is God electing some by grace to be saved, and others who do not choose to bow the knee, they are the ones that end up being— and if they die in their sins, they&#x27;re apart from God for all eternity.</span></p>
+        <p><span class="tl-s" data-s="194.07" data-e="200.71">Because the reality is, Without God&#x27;s intervention, nobody would come to him because he&#x27;s not keeping people out of heaven.</span> <span class="tl-s" data-s="201.05" data-e="204.72">It&#x27;s not as if he&#x27;s getting people, oh no, you can&#x27;t come, you can&#x27;t come, you can&#x27;t come.</span> <span class="tl-s" data-s="204.90" data-e="212.74">Nobody would come if it wasn&#x27;t for his action in eternity past, according to Ephesians chapter 1, according to 1 Timothy chapter 1.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="213.07" data-e="216.98">Right, and what would you say to what we deserve based on our actions?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="217.24" data-e="219.82">What we deserve based on our actions is death and hell.</span> <span class="tl-s" data-s="219.90" data-e="224.85">I mean, we were dead in our trespasses and sins, Ephesians 2 says, but he has made us alive.</span> <span class="tl-s" data-s="225.26" data-e="226.55">He&#x27;s the one who&#x27;s done this work.</span> <span class="tl-s" data-s="226.65" data-e="230.63">See, a lot of times what people do is they take what&#x27;s called hyper-Calvinism.</span> <span class="tl-s" data-s="230.95" data-e="234.20">It almost presents the Lord as the author of sin.</span> <span class="tl-s" data-s="234.26" data-e="236.37">That&#x27;s a gross mischaracterization of God.</span> <span class="tl-s" data-s="236.49" data-e="239.96">They present hyper-Calvinism as like mainstream Calvinism.</span> <span class="tl-s" data-s="240.50" data-e="245.28">But what we can say is that God chooses some and we must exercise saving faith.</span> <span class="tl-s" data-s="245.37" data-e="245.89">That&#x27;s true.</span> <span class="tl-s" data-s="246.41" data-e="250.70">And even when we share the gospel here, we&#x27;re going to have a— we have a bridge course going on.</span></p>
+        <p><span class="tl-s" data-s="250.74" data-e="253.93">When we share the gospel here, we don&#x27;t say, if you are elect, you can believe.</span> <span class="tl-s" data-s="254.05" data-e="263.24">We preach the gospel and pray that the Lord allows the Spirit of God, the conviction of sin, to lay hold of some people so that they put saving faith in Jesus Christ.</span> <span class="tl-s" data-s="264.00" data-e="264.25">Right?</span> <span class="tl-s" data-s="264.40" data-e="266.71">And so we don&#x27;t ever bring up the topic of election.</span> <span class="tl-s" data-s="266.81" data-e="271.14">It&#x27;s just in the Bible and we can&#x27;t interpret ourself around it.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="271.22" data-e="271.77">That&#x27;s right.</span> <span class="tl-s" data-s="271.85" data-e="272.93">Well, thank you for answering that.</span> <span class="tl-s" data-s="273.15" data-e="274.32">And thank you for asking the question.</span> <span class="tl-s" data-s="275.00" data-e="277.56">To her next question, slightly different topic.</span> <span class="tl-s" data-s="277.73" data-e="290.26">With all the Bible has to say about witchcraft and sorcery and mediums, how can we justify watching movies Purchasing merchandise, reading books such as Harry Potter, Lord of the Rings, Narnia, and more.</span> <span class="tl-s" data-s="290.54" data-e="293.75">Where is the line of legalism and obedience to the Bible?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="294.25" data-e="296.91">Well, I think the this is a question of practice.</span> <span class="tl-s" data-s="296.97" data-e="298.07">This is a wisdom practice.</span> <span class="tl-s" data-s="298.14" data-e="298.33">Yeah.</span> <span class="tl-s" data-s="298.49" data-e="300.74">Different honest Christians are going to disagree about.</span> <span class="tl-s" data-s="300.83" data-e="305.06">So what the Bible is against is the practice of witchcraft, occult, and magic.</span> <span class="tl-s" data-s="305.30" data-e="308.86">And so the prohibition is against people using magic.</span> <span class="tl-s" data-s="309.64" data-e="311.12">So what magic is.</span> <span class="tl-s" data-s="311.57" data-e="313.11">Sorcery, witchcraft, all that stuff.</span> <span class="tl-s" data-s="314.04" data-e="317.96">It&#x27;s a desire to tap into the supernatural without God.</span> <span class="tl-s" data-s="318.22" data-e="325.59">Like, to go to see a fortune teller is to try to tap into the supernatural, to get help from the supernatural from someone who&#x27;s not God.</span></p>
+        <p><span class="tl-s" data-s="326.00" data-e="331.31">If you try to get help from the supernatural with someone who&#x27;s not God, they&#x27;re demonic, and that&#x27;s a big issue.</span> <span class="tl-s" data-s="332.34" data-e="337.69">And so, we don&#x27;t want to seek help, supernatural help, from Satan and his demons.</span> <span class="tl-s" data-s="337.74" data-e="344.23">That&#x27;s why Magic, sorcery, necromancy, which means communicating with the dead, is condemned in the Bible.</span> <span class="tl-s" data-s="345.34" data-e="348.67">Now, when you read those other— now let&#x27;s move that.</span> <span class="tl-s" data-s="348.79" data-e="351.94">That&#x27;s what the Bible says about witchcraft and sorcery, right?</span> <span class="tl-s" data-s="352.23" data-e="359.72">You move over to Harry Potter, Lord of the Rings, Narnia, and those are— and there&#x27;s a whole bunch of other fantasy, sci-fi, all of it, right?</span> <span class="tl-s" data-s="359.76" data-e="362.01">Like, I mean, Star Wars and the Force and all that stuff, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="362.12" data-e="363.40">I don&#x27;t know nothing about that, but go ahead.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="363.47" data-e="367.88">So, like, all of those things, at some level are, could be called magic.</span> <span class="tl-s" data-s="367.95" data-e="376.62">But like, if you think about it, I mean, if clearly, if you&#x27;re tempted to contact demons because you watched Harry Potter, don&#x27;t watch Harry Potter.</span> <span class="tl-s" data-s="376.93" data-e="387.18">But if you&#x27;re able to recognize this is a different world, this is fiction, it&#x27;s different than the world we live in and the world we inhabit, and you can watch it, okay, great.</span> <span class="tl-s" data-s="387.82" data-e="390.82">Same with Lord of the Rings, same with Star Wars, same with others, right?</span> <span class="tl-s" data-s="391.33" data-e="399.69">And so like, if you&#x27;re tempted to To try to dabble into witchcraft and communicate with demons, don&#x27;t watch that stuff.</span> <span class="tl-s" data-s="400.55" data-e="400.81">Right?</span> <span class="tl-s" data-s="401.05" data-e="401.45">Right.</span> <span class="tl-s" data-s="401.61" data-e="406.10">And this is where I can&#x27;t bind the consciences of people and say it&#x27;s wrong to watch that stuff.</span> <span class="tl-s" data-s="406.52" data-e="412.55">See, there&#x27;s a part of literature that&#x27;s called mythology, meaning it&#x27;s not real.</span> <span class="tl-s" data-s="412.76" data-e="413.69">It&#x27;s another world.</span></p>
+        <p><span class="tl-s" data-s="414.36" data-e="414.55">Right?</span> <span class="tl-s" data-s="415.00" data-e="418.66">That&#x27;s what fiction is.</span> <span class="tl-s" data-s="418.92" data-e="419.14">Right?</span> <span class="tl-s" data-s="419.64" data-e="422.83">And so, uh, that&#x27;s Lord of the Rings.</span> <span class="tl-s" data-s="422.95" data-e="426.96">Lord of the Rings, you read those, that trilogy, it&#x27;s some of the best writing ever, right?</span> <span class="tl-s" data-s="427.44" data-e="436.24">I read it and I don&#x27;t think, I want to go and like wield magic like, um, you know, like Gandalf does.</span> <span class="tl-s" data-s="437.30" data-e="439.99">You know, I&#x27;m thinking, man, this is a story of good versus evil.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="440.23" data-e="443.79">It&#x27;s ironic how we&#x27;re attracted to good versus evil stories.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="443.89" data-e="444.47">Ironic, right?</span> <span class="tl-s" data-s="444.61" data-e="445.50">Good versus evil.</span> <span class="tl-s" data-s="445.84" data-e="451.06">And good looks like it&#x27;s going to be crushed, and evil looks like it&#x27;s going to win the day.</span> <span class="tl-s" data-s="451.83" data-e="458.55">And through different kinds of heroic activities, even from the most unlikely characters, good wins.</span> <span class="tl-s" data-s="459.46" data-e="459.67">Right?</span> <span class="tl-s" data-s="460.18" data-e="463.28">And so, I&#x27;m not tempted to go out and become a wizard.</span> <span class="tl-s" data-s="463.70" data-e="466.95">You&#x27;re not enrolled in Hogwarts School?</span> <span class="tl-s" data-s="467.30" data-e="469.71">Yeah, no, I&#x27;m thinking, okay, this is good literature, you know?</span> <span class="tl-s" data-s="470.05" data-e="471.97">And the line there is going to be different for everybody.</span> <span class="tl-s" data-s="472.05" data-e="476.48">And so, I can&#x27;t bind someone&#x27;s conscience and say, you can&#x27;t watch or read these books.</span></p>
+        <p><span class="tl-s" data-s="476.54" data-e="483.94">Now, there are some books that clearly have the desire for you to practice witchcraft, use Ouija boards, or whatever.</span> <span class="tl-s" data-s="483.99" data-e="484.60">Don&#x27;t read those.</span> <span class="tl-s" data-s="485.69" data-e="491.43">So, I can&#x27;t say— I can&#x27;t bind the consciences of these people who want to watch this stuff.</span> <span class="tl-s" data-s="492.17" data-e="494.70">But I can say, don&#x27;t practice sorcery.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="495.20" data-e="495.45">Awesome.</span> <span class="tl-s" data-s="495.92" data-e="497.94">Well, that was a great question, and thank you for answering that.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="497.99" data-e="498.20">Yeah, definitely.</span> <span class="tl-s" data-s="498.26" data-e="498.76">Thanks, Katherine.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="499.06" data-e="499.74">Another question.</span> <span class="tl-s" data-s="499.79" data-e="500.59">This one&#x27;s from me.</span> <span class="tl-s" data-s="500.97" data-e="502.68">It&#x27;s from Psalm 82.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="503.22" data-e="503.57">Yes.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="504.51" data-e="507.30">Why does the Elohim need a council?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="507.83" data-e="508.23">Okay.</span> <span class="tl-s" data-s="508.30" data-e="511.19">Tell, since you&#x27;re asking this question, I&#x27;m going to put you on the spot.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="511.33" data-e="511.62">Sure.</span> <span class="tl-s" data-s="512.23" data-e="512.39">Sure.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="512.62" data-e="514.45">Where, what do you mean the Elohim?</span> <span class="tl-s" data-s="514.55" data-e="515.70">And what are you talking about council?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="515.93" data-e="522.67">Well, I would say I&#x27;d start off and say I&#x27;m reading a book called The Unseen Realm by Dr.</span> <span class="tl-s" data-s="522.77" data-e="523.27">Michael Heiser.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="523.54" data-e="523.93">Heiser.</span> <span class="tl-s" data-s="524.18" data-e="524.50">Yep.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="524.59" data-e="531.30">And if you pull up Psalm 82:1, it says, God has taken his place in the divine council.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="531.48" data-e="531.91">Correct.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="532.28" data-e="536.60">In the midst of gods, lowercase g, he holds judgment.</span> <span class="tl-s" data-s="536.63" data-e="540.85">How long will you judge unjustly and show partiality to the wicked?</span> <span class="tl-s" data-s="540.88" data-e="549.94">So you see the lowercase g gods, and you see our sovereign Lord who we believe is, you know, all-powerful, all-knowing.</span> <span class="tl-s" data-s="550.02" data-e="551.72">Sitting amongst counsel.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="551.85" data-e="552.23">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="552.73" data-e="556.68">And I know this translates back to Hebrew in different ways.</span> <span class="tl-s" data-s="556.68" data-e="558.57">So— [Speaker A] We&#x27;re not going to talk about Hebrew.</span> <span class="tl-s" data-s="558.62" data-e="559.15">No, no, no.</span> <span class="tl-s" data-s="559.31" data-e="562.84">Just [Speaker A] more so like his— [Speaker B] Are there other gods?</span> <span class="tl-s" data-s="562.84" data-e="564.94">Is this talking about the Trinity?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="564.96" data-e="565.08">No.</span> <span class="tl-s" data-s="565.08" data-e="571.32">So, they&#x27;re like, if you look at verse 1, it says, God has taken his place in the divine council in the midst of the gods.</span> <span class="tl-s" data-s="572.06" data-e="573.25">Those are divine beings.</span> <span class="tl-s" data-s="573.26" data-e="574.79">I&#x27;d say, actually, I&#x27;d say supernatural.</span> <span class="tl-s" data-s="574.79" data-e="576.20">I think Heiser&#x27;s is divine.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="576.20" data-e="578.54">Yeah, one of the two.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="579.29" data-e="579.50">Supernatural.</span> <span class="tl-s" data-s="579.62" data-e="586.35">And so, does God need a divine council to run the universe?</span> <span class="tl-s" data-s="586.35" data-e="586.55">No.</span> <span class="tl-s" data-s="586.60" data-e="595.96">But like Psalm 82 and other places gives us a picture of like, hold on a second, there&#x27;s more going on in the unseen realm than we typically think.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="595.96" data-e="596.25">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="596.92" data-e="597.14">Right?</span> <span class="tl-s" data-s="597.14" data-e="600.45">And so, there&#x27;s more action there than we recognize.</span> <span class="tl-s" data-s="600.45" data-e="605.94">Now, should we be consumed with that and try to explain every jot and tittle away?</span> <span class="tl-s" data-s="605.96" data-e="606.18">No.</span> <span class="tl-s" data-s="606.20" data-e="607.79">Why does God have a divine council?</span> <span class="tl-s" data-s="607.82" data-e="611.39">Does he— is he reliant on them?</span> <span class="tl-s" data-s="611.41" data-e="611.59">Yeah.</span> <span class="tl-s" data-s="611.59" data-e="611.95">No.</span> <span class="tl-s" data-s="612.47" data-e="613.46">But he does.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="614.38" data-e="614.52">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="614.53" data-e="621.96">And so, one thing we know for certain is like, we&#x27;re going to judge the angels.</span> <span class="tl-s" data-s="622.01" data-e="622.29">We.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="622.31" data-e="622.47">Right.</span> <span class="tl-s" data-s="622.50" data-e="623.30">Paul says that, right?</span> <span class="tl-s" data-s="623.30" data-e="623.37">Somewhere?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="623.43" data-e="625.34">We&#x27;re going to judge the angels.</span> <span class="tl-s" data-s="625.34" data-e="625.47">1 Corinthians.</span> <span class="tl-s" data-s="625.53" data-e="628.03">We&#x27;re going to judge the angels.</span> <span class="tl-s" data-s="628.03" data-e="631.38">And so, we&#x27;re going to have a role in this hierarchy.</span> <span class="tl-s" data-s="631.45" data-e="635.16">It&#x27;s not just that God created only humanity, he created angels.</span> <span class="tl-s" data-s="635.22" data-e="638.34">And if you read Revelation, there&#x27;s all kinds of different angels, right?</span> <span class="tl-s" data-s="638.37" data-e="643.97">And even in the beginning, you see this shadowy group of the 24 elders.</span> <span class="tl-s" data-s="643.97" data-e="646.15">We have most— those are probably not humans.</span> <span class="tl-s" data-s="646.15" data-e="648.96">Those are probably some kind of angelic beings.</span> <span class="tl-s" data-s="648.96" data-e="655.72">Probably, it could be that they&#x27;re part of these, of this divine council that the Lord has around him.</span></p>
+        <p><span class="tl-s" data-s="655.78" data-e="664.20">And so, it&#x27;s all— the other thing that&#x27;s interesting is there&#x27;s some shadowy references to Satan, Lucifer, being in the Divine Council at one point.</span> <span class="tl-s" data-s="664.22" data-e="668.92">He turned his back, led a rebellion, lost.</span> <span class="tl-s" data-s="668.97" data-e="670.37">Michael and his boys put him down.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="670.40" data-e="671.44">Michael and the boys.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="671.44" data-e="677.29">Michael and the boys put him down, but he led a third of the demons, a third of the angels, they became demons.</span> <span class="tl-s" data-s="677.37" data-e="682.22">And so, there&#x27;s a lot more going on in the supernatural realm than we know.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="682.22" data-e="682.43">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="682.43" data-e="684.55">Now, we&#x27;re not invited into it.</span> <span class="tl-s" data-s="684.55" data-e="684.71">Right?</span> <span class="tl-s" data-s="684.71" data-e="685.16">Yeah.</span> <span class="tl-s" data-s="685.16" data-e="686.44">We&#x27;re not invited to discover it.</span> <span class="tl-s" data-s="686.44" data-e="688.34">We&#x27;re not— [Speaker B] It just picks up in Genesis.</span> <span class="tl-s" data-s="688.53" data-e="690.38">You just go, yeah, hey, you know what?</span> <span class="tl-s" data-s="690.38" data-e="691.03">It&#x27;s going on.</span> <span class="tl-s" data-s="691.03" data-e="697.25">We&#x27;re not supposed to go out there and identify different strongholds or strongmen or— don&#x27;t mess with that.</span> <span class="tl-s" data-s="697.28" data-e="697.74">Mess with Jesus.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="697.79" data-e="697.97">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="697.97" data-e="699.78">Not mess with Jesus.</span> <span class="tl-s" data-s="699.78" data-e="700.86">That&#x27;s like, follow Jesus.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="700.86" data-e="701.72">Mess with Jesus, kids.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="702.17" data-e="705.05">Don&#x27;t mess with Jesus, kids.</span> <span class="tl-s" data-s="705.64" data-e="706.04">Follow Jesus.</span> <span class="tl-s" data-s="706.04" data-e="710.93">Follow Jesus and stick to what we&#x27;ve— what&#x27;s been revealed, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="711.57" data-e="711.77">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="711.89" data-e="716.54">And so, Like, we&#x27;re not given a book on the divine council in the Bible.</span> <span class="tl-s" data-s="716.54" data-e="719.18">So not something we need to know.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="719.18" data-e="719.39">Yeah.</span> <span class="tl-s" data-s="719.59" data-e="720.96">It&#x27;s interesting [Speaker A] though.</span> <span class="tl-s" data-s="720.96" data-e="721.25">It is.</span> <span class="tl-s" data-s="721.25" data-e="721.89">Yeah.</span> <span class="tl-s" data-s="721.89" data-e="726.96">And none of this is to supersede just taking the text at face value.</span> <span class="tl-s" data-s="726.96" data-e="738.22">It&#x27;s just more so his argument in the book is just like the people it was first written to had a more intrusion of a supernatural worldview than we do in modern times.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="738.33" data-e="740.38">We don&#x27;t think in supernatural terms.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="740.38" data-e="740.44">Right.</span> <span class="tl-s" data-s="740.44" data-e="740.98">So it&#x27;s cool.</span> <span class="tl-s" data-s="740.98" data-e="741.18">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="741.18" data-e="746.12">Um, and I also taught a class on— did we record that, that forum night?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="746.12" data-e="747.70">Mm, yes, we did.</span> <span class="tl-s" data-s="748.12" data-e="751.04">I had to get my divine counsel, Mrs.</span> <span class="tl-s" data-s="751.04" data-e="751.46">Heather Corbett.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="751.46" data-e="751.64">Uh-huh.</span> <span class="tl-s" data-s="751.64" data-e="757.76">So we have, we have a forum night on the unseen realm that I taught from last year sometime, correct?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="757.76" data-e="757.96">Yep.</span> <span class="tl-s" data-s="757.96" data-e="760.70">And we&#x27;ll do our best to link that if we can.</span> <span class="tl-s" data-s="760.70" data-e="761.30">Actually, it might be locked.</span> <span class="tl-s" data-s="761.30" data-e="765.74">So I&#x27;ll come and get back to you on that one.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="765.74" data-e="766.00">Okay.</span> <span class="tl-s" data-s="766.00" data-e="768.54">I&#x27;ve got a wicked long outline associated with [Speaker B] this.</span> <span class="tl-s" data-s="768.54" data-e="769.12">And that was a lie.</span> <span class="tl-s" data-s="769.12" data-e="769.26">Now Heather&#x27;s fogging up the glass again.</span> <span class="tl-s" data-s="769.26" data-e="769.30">All right.</span></p>
+        <p><span class="tl-s" data-s="771.03" data-e="772.20">All right.</span> <span class="tl-s" data-s="772.30" data-e="772.57">All right.</span> <span class="tl-s" data-s="772.64" data-e="775.89">Let&#x27;s [Speaker A] go on.</span> <span class="tl-s" data-s="775.99" data-e="776.70">That&#x27;s it.</span> <span class="tl-s" data-s="777.45" data-e="777.53">Right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="777.53" data-e="778.54">Actually, one more thing.</span> <span class="tl-s" data-s="778.57" data-e="781.99">What does the heavenly host mean?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="782.00" data-e="782.90">What does the heavenly host mean?</span> <span class="tl-s" data-s="782.90" data-e="785.76">It&#x27;s [Speaker B] yeah, [Speaker A] like what do you think it means?</span> <span class="tl-s" data-s="785.81" data-e="787.55">Are you asking this question or somebody else?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="787.55" data-e="788.50">No, this is me.</span> <span class="tl-s" data-s="788.74" data-e="790.04">I have one more after this too.</span> <span class="tl-s" data-s="790.04" data-e="791.34">The next one&#x27;s an easy one.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="791.66" data-e="794.31">So there&#x27;s I hope you don&#x27;t have any email bell that&#x27;s going on here.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="794.44" data-e="796.96">Oh no, the but it&#x27;s broken actually.</span> <span class="tl-s" data-s="796.96" data-e="800.37">We got to get a new one.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="800.39" data-e="800.93">Uh huh.</span> <span class="tl-s" data-s="800.93" data-e="801.99">I [Speaker B] didn&#x27;t email myself.</span> <span class="tl-s" data-s="801.99" data-e="802.48">I didn&#x27;t email.</span> <span class="tl-s" data-s="802.48" data-e="807.67">Well, [Speaker B] heavenly host, I just— there&#x27;s other places in the Bible that says that too.</span> <span class="tl-s" data-s="807.69" data-e="812.87">And I was just— is this heavenly host just meaning God, or how would you describe that?</span> <span class="tl-s" data-s="812.90" data-e="815.21">Yeah, no, it&#x27;s like, it&#x27;s, it&#x27;s God.</span> <span class="tl-s" data-s="815.21" data-e="821.20">The heavenly host is like all— it&#x27;s his, like his army angels in heaven, right?</span> <span class="tl-s" data-s="821.25" data-e="826.54">Um, it&#x27;s that there&#x27;s a vast company of spiritual beings, uh, um, among which angels are, that are in heaven.</span> <span class="tl-s" data-s="826.69" data-e="828.23">And so the heavenly hosts praised him.</span> <span class="tl-s" data-s="828.25" data-e="832.94">And so, it&#x27;s a host of people, a bunch of people.</span></p>
+        <p><span class="tl-s" data-s="833.36" data-e="833.61">Yeah.</span> <span class="tl-s" data-s="834.02" data-e="839.90">Like, you could— back in the day, they used to talk about a host, like, being an army.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="839.90" data-e="840.12">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="840.12" data-e="843.17">And so, you get this in Luke 2:13.</span> <span class="tl-s" data-s="843.17" data-e="861.02">And then there was a heavenly— then when they announced unto Jesus his birth, and suddenly there was with the angel a multitude of heaven— of the heavenly host praising God, saying, glory to God in the highest, and on earth peace And goodwill toward men.</span> <span class="tl-s" data-s="861.06" data-e="863.66">And so it&#x27;s— they&#x27;re essentially worshipers of God with God.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="863.72" data-e="864.08">Okay, perfect.</span> <span class="tl-s" data-s="864.19" data-e="866.55">Well, I won&#x27;t bug you anymore on that one.</span> <span class="tl-s" data-s="866.55" data-e="868.12">No, [Speaker A] it&#x27;s not a bug.</span> <span class="tl-s" data-s="868.17" data-e="872.71">It&#x27;s just to make clear you&#x27;re asking these questions and not someone else.</span> <span class="tl-s" data-s="872.71" data-e="874.07">And I have one more.</span> <span class="tl-s" data-s="874.15" data-e="874.27">Okay.</span> <span class="tl-s" data-s="874.78" data-e="876.27">Also from the book.</span> <span class="tl-s" data-s="876.32" data-e="878.97">This is an easier one, I think.</span> <span class="tl-s" data-s="879.55" data-e="887.68">This text doesn&#x27;t explicitly say one or the other, but why was Eve Why wasn&#x27;t Eve surprised that a talking snake, a serpent, was talking to her in the garden?</span> <span class="tl-s" data-s="887.72" data-e="888.58">Like, there&#x27;s no reaction.</span></p>
+        <p><span class="tl-s" data-s="888.58" data-e="890.98">It doesn&#x27;t say— Well, [Speaker A] we&#x27;re not given any.</span> <span class="tl-s" data-s="891.02" data-e="896.66">She&#x27;s not— he doesn&#x27;t say— yeah, the writer Moses doesn&#x27;t say she was either surprised or not surprised.</span> <span class="tl-s" data-s="896.95" data-e="897.19">Right.</span> <span class="tl-s" data-s="897.19" data-e="899.61">So maybe she was surprised.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="899.66" data-e="900.65">We don&#x27;t know.</span> <span class="tl-s" data-s="900.72" data-e="907.42">And so, uh, the only thing we know in Genesis 3, we get this, this fascinating little phrase.</span> <span class="tl-s" data-s="908.00" data-e="915.69">Now the serpent was more crafty than any other beast of the field that the Lord God had made.</span> <span class="tl-s" data-s="915.80" data-e="916.51">Now that&#x27;s interesting.</span> <span class="tl-s" data-s="916.51" data-e="921.10">Now, remember Adam named all the animals.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="921.10" data-e="921.19">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="921.24" data-e="924.43">So how do you identify one that&#x27;s more crafty?</span> <span class="tl-s" data-s="924.64" data-e="929.17">Adam knows that something&#x27;s more crafty.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="929.26" data-e="929.38">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="929.38" data-e="932.28">Adam knows that the snake is more crafty.</span> <span class="tl-s" data-s="932.87" data-e="936.23">Adam knows the snake is trouble.</span> <span class="tl-s" data-s="936.26" data-e="936.52">Right?</span> <span class="tl-s" data-s="936.52" data-e="936.60">Yeah.</span> <span class="tl-s" data-s="936.65" data-e="945.60">And then the snake saunters up to Eve and said, did God actually say you Shall not eat of any tree of the garden.</span> <span class="tl-s" data-s="945.66" data-e="947.88">Now, when he says you in verse 1, that&#x27;s plural.</span> <span class="tl-s" data-s="947.90" data-e="950.39">So, it&#x27;s not you, Eve, it&#x27;s you, plural.</span> <span class="tl-s" data-s="950.40" data-e="951.50">He&#x27;s speaking right there.</span> <span class="tl-s" data-s="952.32" data-e="956.01">It doesn&#x27;t come through well in English, but he&#x27;s speaking right there to Adam and Eve.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="956.01" data-e="956.06">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="956.11" data-e="971.20">So, the trouble here is Adam should have stepped right up and said, you crafty beast, I am kicking you out of the garden because I have been given the responsibility And the role to protect the garden.</span> <span class="tl-s" data-s="972.06" data-e="976.34">And you, I&#x27;m going to kill and throw out.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="976.38" data-e="976.60">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="976.70" data-e="978.68">But he doesn&#x27;t.</span> <span class="tl-s" data-s="978.78" data-e="987.32">So, the most surprising thing about Genesis chapter 3 is that Adam, as the viceroy of God, meant to extend God&#x27;s kingdom on earth, does nothing.</span> <span class="tl-s" data-s="987.32" data-e="992.52">And he lets his wife be taken advantage of by somebody he knew was more crafty.</span> <span class="tl-s" data-s="992.52" data-e="997.22">The real question is, Why did he allow it to slither up and talk at all?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="997.51" data-e="997.66">Hmm.</span> <span class="tl-s" data-s="997.84" data-e="999.49">Well, that&#x27;s a question for another time.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="999.61" data-e="1000.09">There you go.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1000.14" data-e="1003.07">And that&#x27;s all the questions I have for now.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1003.07" data-e="1003.80">For now.</span> <span class="tl-s" data-s="1003.80" data-e="1008.04">But there will be another Friday that comes because you know what, Mark?</span> <span class="tl-s" data-s="1008.04" data-e="1009.05">They come once every seven days.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1009.14" data-e="1009.52">Every seven.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1009.60" data-e="1009.91">Every seven.</span> <span class="tl-s" data-s="1009.92" data-e="1012.48">It&#x27;s a rapid-fire Friday.</span> <span class="tl-s" data-s="1012.51" data-e="1013.37">We&#x27;ll be back.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1013.55" data-e="1014.52">All right.</span> <span class="tl-s" data-s="1014.54" data-e="1016.30">Well, I&#x27;m gonna hold you to that.</span> <span class="tl-s" data-s="1016.30" data-e="1017.15">All [Speaker A] right.</span> <span class="tl-s" data-s="1017.16" data-e="1018.11">Sounds good.</span> <span class="tl-s" data-s="1018.11" data-e="1018.96">Take care, guys.</span> <span class="tl-s" data-s="1019.01" data-e="1021.69">Well, thank you for the questions, and remember you can send in anonymous.</span> <span class="tl-s" data-s="1021.74" data-e="1024.78">Questions at any time.</span> <span class="tl-s" data-s="1024.78" data-e="1025.21">We like those.</span> <span class="tl-s" data-s="1025.73" data-e="1026.13">No questions off limits.</span> <span class="tl-s" data-s="1026.13" data-e="1027.80">So thank you for your support.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1028.47" data-e="1036.86">And if you have questions, just email us at info@senatorgilbert.com.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1037.13" data-e="1041.75">That might be one.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1041.78" data-e="1044.89">What is it?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1044.97" data-e="1046.58">Don&#x27;t do that one.</span> <span class="tl-s" data-s="1046.58" data-e="1046.58">But— [Speaker A] Oh, production.</span> <span class="tl-s" data-s="1046.58" data-e="1046.58">Yes.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="1046.58" data-e="1046.58">None of this [Speaker A] will be on [Speaker B] because [Speaker E] we already have this covered in the outro.</span> <span class="tl-s" data-s="1046.58" data-e="1046.58">Okay, great.</span> <span class="tl-s" data-s="1046.58" data-e="1046.58">Thank you.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Fixed on Jesus episode archive, backed by /api/podcast/search.
+  // Static fallback list above stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function fmtDuration(raw) {
+      if (!raw) return "";
+      var str = String(raw).trim();
+      // Anchor feeds report seconds; render as H:MM:SS or M:SS.
+      if (/^\d+$/.test(str)) {
+        var total = parseInt(str, 10);
+        var h = Math.floor(total / 3600);
+        var m = Math.floor((total % 3600) / 60);
+        var sec = total % 60;
+        var mm = (h > 0 && m < 10 ? "0" + m : "" + m);
+        var ss = (sec < 10 ? "0" + sec : "" + sec);
+        return (h > 0 ? h + ":" + mm : m) + ":" + ss;
+      }
+      // Anchor also reports clock strings like "00:24:02" — drop the
+      // redundant leading hour so it reads "24:02".
+      return str.replace(/^00:/, "");
+    }
+    function row(it) {
+      it = it || {};
+      var title = esc(it.title) || "Untitled episode";
+      var tUrl = it.guid && transcriptMap[it.guid];
+      var heading = tUrl
+        ? '<a href="' + esc(tUrl) + '">' + title + "</a>"
+        : (it.link
+          ? '<a href="' + esc(it.link) + '" target="_blank" rel="noopener">' + title + "</a>"
+          : title);
+      var meta = [fmtDate(it.date), fmtDuration(it.duration)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      return '<div class="sermon"><div><h3>' + heading + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    var PER = 10;
+    var state = { q: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No episodes found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " episode" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " episodes";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/podcast/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () {
+          // Keep the static list, but tell the reader where else to listen —
+          // some privacy blockers stop the archive request itself.
+          var note = document.querySelector("[data-sermons-error]");
+          if (note) note.hidden = false;
+        });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    if (monthSel) {
+      monthSel.addEventListener("change", function () {
+        state.month = monthSel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: 8464ef95-3710-4898-b18b-ef8989d12e31 -->
+</body>
+</html>
