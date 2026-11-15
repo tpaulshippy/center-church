@@ -13,6 +13,27 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link rel="stylesheet" href="/styles.css?v=17" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    @media (prefers-color-scheme: dark) {
+      body { background: var(--ink); color: var(--cream); }
+      .site-header { background: rgba(23, 19, 16, 0.92); border-bottom-color: var(--line-light); }
+      .nav-links a:hover, .nav-links a.active { color: #e8a76f; }
+      .dropdown { background: var(--ink-2); border-color: var(--line-light); }
+      .dropdown a:hover, .dropdown a.active { background: rgba(255, 255, 255, 0.06); }
+      .hamburger { color: var(--cream); border-color: var(--line-light); }
+      .mobile-menu { background: var(--ink); }
+      .mobile-menu details { border-color: var(--line-light); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">

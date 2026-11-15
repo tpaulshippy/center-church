@@ -374,6 +374,31 @@ main = """  <main>
 new = re.sub(r"<main>.*?</main>", lambda _: main, tpl, count=1, flags=re.DOTALL)
 new = new.replace("<title>Sermons — Center Church Gilbert</title>",
                   "<title>%s — Sermon Transcript — Center Church Gilbert</title>" % html.escape(title))
+# Transcript dark mode: device preference only, no toggle. Inline in <head>
+# so only transcript pages are affected — the rest of the site keeps its
+# light theme and styles.css stays untouched.
+dark_style = """  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    @media (prefers-color-scheme: dark) {
+      body { background: var(--ink); color: var(--cream); }
+      .site-header { background: rgba(23, 19, 16, 0.92); border-bottom-color: var(--line-light); }
+      .nav-links a:hover, .nav-links a.active { color: #e8a76f; }
+      .dropdown { background: var(--ink-2); border-color: var(--line-light); }
+      .dropdown a:hover, .dropdown a.active { background: rgba(255, 255, 255, 0.06); }
+      .hamburger { color: var(--cream); border-color: var(--line-light); }
+      .mobile-menu { background: var(--ink); }
+      .mobile-menu details { border-color: var(--line-light); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>"""
+new = new.replace("</head>", dark_style + "\n</head>", 1)
 if "<!-- guid: " not in new:
     new = new.replace("</body>", "<!-- guid: %s -->\n</body>" % html.escape(guid))
 
