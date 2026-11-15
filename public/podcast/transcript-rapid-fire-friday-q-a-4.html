@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rapid Fire Friday - Q&amp;A #4 — Podcast Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Fixed on Jesus: conversations beyond Sunday mornings from Center Church in Gilbert, AZ — listen on Spotify, Apple Podcasts, and YouTube." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=18" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a href="/sermons">Sermons</a></li>
+              <li><a class="active" href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/podcast">&larr; All podcast episodes</a>
+          <h1 class="display-lg">Rapid Fire Friday - Q&amp;A #4</h1>
+          <p class="transcript-meta">2024-05-17 · 10:18</p>
+          <p class="transcript-desc">Rapid Fire Friday is a special series from the Fixed On Jesus Podcast crew (Rich, Mark and Heather) Sometimes we get questions that have short enough answers to answer many of them in one episode that we like to call Rapid Fire Fridays. Look for these to be released on Fridays if and when we get eno</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/e750e370/podcast/play/86738514/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-4-14%2Fd74d9b76-0b27-546b-499d-b128b830438c.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="0.03" data-e="0.71">What day is it, Mark?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1.31" data-e="2.00">Oh, good question.</span> <span class="tl-s" data-s="2.04" data-e="4.09">I was going to go on the Google machine, but I think it&#x27;s Friday.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="4.48" data-e="4.98">It&#x27;s Friday.</span> <span class="tl-s" data-s="5.21" data-e="5.97">You know what that means, Mark?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="7.24" data-e="8.57">Rapid Fire Friday!</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="12.13" data-e="12.88">Boom boom boom!</span></p>
+        <p><span class="tl-s" data-s="16.70" data-e="18.25">Rapid Fire Friday!</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="21.47" data-e="26.99">3, 2, 1, go!</span> <span class="tl-s" data-s="27.42" data-e="28.99">Rapid Fire Friday!</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="32.23" data-e="38.35">We had a question that&#x27;s quite outside my level of expertise, and I&#x27;m gonna need to lean on you for this, Mark.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="38.73" data-e="39.87">Uh-oh, you guys are in trouble.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="40.98" data-e="43.29">Not medical marijuana, but recreational marijuana.</span> <span class="tl-s" data-s="43.38" data-e="53.60">I have no— I have no experience with either medical marijuana or recreational marijuana, and I know that&#x27;s an area that you&#x27;ve done extensive research in, correct?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="54.21" data-e="55.24">Yeah, in-the-field research.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="55.33" data-e="57.05">In-the-field research, that&#x27;s right.</span> <span class="tl-s" data-s="57.26" data-e="58.72">Before you became a Christian, you were.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="58.77" data-e="59.54">Yes, absolutely.</span> <span class="tl-s" data-s="59.60" data-e="65.76">So [Speaker A] So like someone is asking, as a Christian, what do we think about recreational marijuana?</span> <span class="tl-s" data-s="65.77" data-e="69.14">Yeah, it is something I indulged in prior to being a Christian.</span> <span class="tl-s" data-s="69.14" data-e="75.68">I saw the legalization in 3 different states and experienced it in 3 different states.</span> <span class="tl-s" data-s="75.69" data-e="78.92">I would caution you to be very careful, first of all.</span> <span class="tl-s" data-s="78.92" data-e="79.78">It is a tough one.</span> <span class="tl-s" data-s="79.78" data-e="81.26">There is a lot you can say about it.</span> <span class="tl-s" data-s="81.26" data-e="86.74">I would say, first of all, it is almost very difficult to not be drunk on marijuana.</span> <span class="tl-s" data-s="86.74" data-e="88.04">So very similar to alcohol.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="88.04" data-e="90.14">Your mind is compromised no matter what, right?</span> <span class="tl-s" data-s="90.30" data-e="96.44">So like there is a difference between, say, the CBD that helps you sleep, or— Right, not psychoactive.</span> <span class="tl-s" data-s="96.55" data-e="98.69">Microdoses reduces inflammation.</span> <span class="tl-s" data-s="98.88" data-e="100.32">THC is completely different.</span> <span class="tl-s" data-s="100.32" data-e="102.39">It&#x27;s— that compromises your mind.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="102.49" data-e="102.71">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="102.87" data-e="105.83">Right, and so that would be akin to alcohol.</span> <span class="tl-s" data-s="105.94" data-e="117.20">And so we&#x27;re directed in the Bible, we can enjoy alcohol, but we can&#x27;t— we&#x27;re not called to use alcohol to dull our minds in such a way to lead to drunkenness, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="117.49" data-e="117.94">Correct.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="118.03" data-e="124.98">And so The problem with marijuana is there is no— it is either you are not using it or you are compromised, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="125.03" data-e="126.76">It seems very all or nothing.</span></p>
+        <p><span class="tl-s" data-s="129.56" data-e="140.22">Even if you could measure and get the exact amount of THC where you are still able to function and not be drunk, that would be extremely, extremely difficult, if at all possible.</span> <span class="tl-s" data-s="140.27" data-e="142.85">I think that [Speaker A] is not [Speaker B] possible.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="142.85" data-e="145.78">Those dispensaries that are popping up everywhere, they are not worried about that.</span> <span class="tl-s" data-s="145.82" data-e="150.08">There is no booth in there that is like, hey, Come and try this flavor and enjoy.</span> <span class="tl-s" data-s="150.13" data-e="151.64">It&#x27;s not like that.</span> <span class="tl-s" data-s="151.69" data-e="153.79">It&#x27;s, it&#x27;s, it&#x27;s to affect your mind, correct?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="153.85" data-e="153.90">Correct.</span> <span class="tl-s" data-s="153.90" data-e="158.72">And on top of that, they&#x27;re really bad at controlling and measuring the dosages.</span> <span class="tl-s" data-s="158.79" data-e="160.38">So it&#x27;s not like they&#x27;re accurate.</span> <span class="tl-s" data-s="160.39" data-e="169.45">So like, if you think of like calories, uh, if you think of the FDA and how they put calories on packaging, they have a 20% margin of error in either direction.</span> <span class="tl-s" data-s="169.53" data-e="172.64">So imagine the marijuana, then their THC levels having a huge margin of error.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="172.70" data-e="173.81">There&#x27;s a huge margin.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="173.94" data-e="178.71">So I would Just be very— I would say no recreational marijuana.</span> <span class="tl-s" data-s="178.71" data-e="181.76">And then if medical is something you&#x27;re interested in, that&#x27;s probably a conscious decision.</span> <span class="tl-s" data-s="181.76" data-e="185.96">And we can talk about that if you&#x27;re interested, feel free to email us.</span> <span class="tl-s" data-s="186.00" data-e="189.35">But yeah, recreational marijuana, it was not something I look back happily on.</span> <span class="tl-s" data-s="189.35" data-e="191.68">And I was a little bit too involved in that before I got saved.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="191.78" data-e="193.45">I&#x27;d recommend that.</span> <span class="tl-s" data-s="193.45" data-e="195.90">I&#x27;d connect that to drunkenness personally.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="195.95" data-e="196.00">Yeah.</span> <span class="tl-s" data-s="196.10" data-e="196.21">Amen.</span> <span class="tl-s" data-s="196.26" data-e="200.57">Now, as far as other people who aren&#x27;t Christians, I don&#x27;t know.</span> <span class="tl-s" data-s="200.75" data-e="201.87">That&#x27;s another conversation.</span> <span class="tl-s" data-s="201.89" data-e="203.38">But yeah, [Speaker A] yeah, completely.</span> <span class="tl-s" data-s="203.55" data-e="205.12">We&#x27;ve said enough and I&#x27;m gonna get us in trouble.</span> <span class="tl-s" data-s="205.24" data-e="207.56">So let me just stop right now.</span> <span class="tl-s" data-s="207.80" data-e="208.78">Uh, moving on.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="208.78" data-e="209.89">All [Speaker B] right.</span> <span class="tl-s" data-s="209.89" data-e="213.83">Uh, this one&#x27;s actually from me, but I&#x27;ve talked about it with others.</span> <span class="tl-s" data-s="213.83" data-e="214.28">Okay.</span> <span class="tl-s" data-s="214.85" data-e="220.00">Is praying in your head the same as praying verbally or audibly?</span> <span class="tl-s" data-s="220.10" data-e="220.13">Yes.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="220.16" data-e="221.14">Short answer, yes.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="221.14" data-e="224.75">The short answer is— [Speaker B] God receives it the same way?</span> <span class="tl-s" data-s="224.75" data-e="224.86">Yes.</span> <span class="tl-s" data-s="224.97" data-e="236.27">So he&#x27;s not limited by whether we speak it or think it or I mean, like, you can look at Romans 8, talks about the Spirit knows— the Spirit, he intercedes for us on our behalf.</span> <span class="tl-s" data-s="236.27" data-e="238.52">And like, there are times— [Speaker B] Groaning too deep for words.</span> <span class="tl-s" data-s="238.52" data-e="242.62">Yeah, there are times where we don&#x27;t even know what to say, right?</span> <span class="tl-s" data-s="243.81" data-e="248.04">And we have these groanings or these sighs inside that are beyond what we can even put into words.</span> <span class="tl-s" data-s="248.04" data-e="250.71">So he can translate that to prayer.</span> <span class="tl-s" data-s="250.71" data-e="256.85">So if he can do that, a thought, a prayer that&#x27;s in your mind is going to work Just the same.</span> <span class="tl-s" data-s="257.60" data-e="262.15">So personally, when I pray, I have to pray out loud, even by myself, just be so I don&#x27;t get distracted.</span> <span class="tl-s" data-s="262.17" data-e="266.39">Because if I just pray in my mind over and over, I&#x27;ll get lost sometimes.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="267.62" data-e="267.72">Yeah.</span> <span class="tl-s" data-s="267.72" data-e="269.93">And then I guess just a sidebar to that one.</span> <span class="tl-s" data-s="269.93" data-e="273.19">How do you overcome the fear of praying in front of others?</span> <span class="tl-s" data-s="273.23" data-e="277.63">Like, for example, it&#x27;s when I first got saved, it was a little bit uncomfortable.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="277.63" data-e="277.82">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="277.95" data-e="279.31">Not that I don&#x27;t know what to say.</span> <span class="tl-s" data-s="279.31" data-e="284.25">I&#x27;m just like, do I want to show this person my heart, the things that I&#x27;m pouring out to the Lord?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="284.60" data-e="286.42">You don&#x27;t have to pray in front of everybody.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="286.70" data-e="287.03">Yeah, yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="287.03" data-e="289.43">And so I think it just comes with practice.</span> <span class="tl-s" data-s="289.43" data-e="289.50">Okay.</span> <span class="tl-s" data-s="289.50" data-e="294.15">You know, that&#x27;s one of the things that— one of the things I love about the people in our church is they&#x27;re a praying church.</span> <span class="tl-s" data-s="294.25" data-e="296.33">And so we have a lot of different prayer meetings.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="296.33" data-e="296.60">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="296.65" data-e="304.53">And the best place to practice praying in front of others is by going to prayer meetings and listening to other people pray and learn how to do that there.</span> <span class="tl-s" data-s="304.53" data-e="305.46">And so that&#x27;s, that&#x27;s great.</span> <span class="tl-s" data-s="305.48" data-e="316.07">And so we&#x27;ve got multiple prayer meetings that meet through the week, and go to one of those and Pray with your friends and pray over a cup of coffee and, you know, just learn how to do that.</span> <span class="tl-s" data-s="316.12" data-e="324.92">And that way you don&#x27;t have to feel the pressure, because what we want to do when we pray is really just talk to the Lord and not worry about how other people are hearing us.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="325.10" data-e="325.40">Amen.</span> <span class="tl-s" data-s="325.43" data-e="325.53">Amen.</span> <span class="tl-s" data-s="325.53" data-e="325.96">Thank you.</span> <span class="tl-s" data-s="326.00" data-e="331.17">We were in our prep for this episode, we were talking with Heather.</span> <span class="tl-s" data-s="331.27" data-e="332.13">Shout out to Heather.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="332.15" data-e="332.79">Hi there.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="332.87" data-e="348.78">She brought up a news article that she was reading, and we&#x27;ll do our best to link that below. as well as all the other questions, but it was about someone willingly being euthanized, a Dutch woman in May.</span> <span class="tl-s" data-s="348.78" data-e="361.59">And yeah, so like she was struggling with depression and mental illness, and basically her psychiatrist told her that there&#x27;s nothing more that we can do, and she&#x27;s excitingly and willingly euthanizing herself, or having herself euthanized.</span> <span class="tl-s" data-s="362.02" data-e="363.12">Well, having the government euthanize her.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="363.15" data-e="363.93">Having the government.</span> <span class="tl-s" data-s="364.03" data-e="367.64">Which is like, that&#x27;s a sign of bad government right there.</span> <span class="tl-s" data-s="367.65" data-e="368.33">I mean, What country?</span> <span class="tl-s" data-s="368.36" data-e="369.15">The Netherlands.</span> <span class="tl-s" data-s="369.79" data-e="387.49">And so like, one of the things that is just— so whenever life is devalued, either within the womb or as we grow older, and death becomes an alternative to life, like our communities in our world wrongly think that death is a part of life.</span> <span class="tl-s" data-s="387.62" data-e="389.75">It&#x27;s evil and it&#x27;s wrong every time.</span> <span class="tl-s" data-s="389.83" data-e="396.31">For somebody like that, it&#x27;s a miscarriage of— and I don&#x27;t blame her, but it&#x27;s a miscarriage.</span> <span class="tl-s" data-s="396.42" data-e="397.11">It&#x27;s horrible.</span> <span class="tl-s" data-s="397.15" data-e="412.13">Mankind is made in God&#x27;s image, and the image bearers that we are, even though we are born into sin and we live in a fallen world, we as image bearers, we are not free to take our life, just like we are not— we didn&#x27;t choose when we were born, we don&#x27;t get to choose when we die.</span></p>
+        <p><span class="tl-s" data-s="412.13" data-e="412.44">Um-hmm.</span> <span class="tl-s" data-s="412.69" data-e="430.19">And so our lives, we are put here for a reason, and so the devaluation of human life is— you can see this all over the place where people are willingly euthanizing themselves thinking that it is going to be better that they die, which is ridiculous because it&#x27;s never better.</span> <span class="tl-s" data-s="430.20" data-e="444.30">And so this is one of the reasons we need to, as Christians, one of the worldview pieces that we should carry is that life, human life, is worth sacrificing for.</span> <span class="tl-s" data-s="444.71" data-e="455.15">Human life is worth preserving, because where human life is devalued, then this is a short step from where a government starts to dictate what life is worthwhile, what life is not worthwhile.</span> <span class="tl-s" data-s="455.17" data-e="456.90">We&#x27;ve [Speaker B] seen that in history.</span> <span class="tl-s" data-s="457.22" data-e="459.71">Yeah, and you can also— yeah, absolutely.</span> <span class="tl-s" data-s="459.71" data-e="469.36">I mean, and then you can, at some point, some of these governments are gonna say, you know what, when you hit a certain age and if you&#x27;re sick, we&#x27;re just not gonna treat you.</span></p>
+        <p><span class="tl-s" data-s="469.36" data-e="470.16">And that&#x27;s already happening.</span> <span class="tl-s" data-s="470.21" data-e="472.97">And so like, that&#x27;s just not okay.</span> <span class="tl-s" data-s="472.97" data-e="480.31">Now, one of the other questions is end-of-life care when it comes to staying on a respirator and stuff like that.</span> <span class="tl-s" data-s="480.47" data-e="483.18">That&#x27;s another conversation, probably for a podcast.</span> <span class="tl-s" data-s="483.28" data-e="496.97">Um, the— I&#x27;d like to say on this that human life is always worth preserving, and any government that would willingly allow their people to be euthanized because they&#x27;re depressed is ridiculous, and it&#x27;s actually demonic.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="496.99" data-e="497.07">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="497.40" data-e="498.04">It&#x27;s of the devil.</span> <span class="tl-s" data-s="498.04" data-e="501.01">That&#x27;s what the devil would want us to do.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="501.01" data-e="502.94">Well, thank you for addressing that.</span> <span class="tl-s" data-s="502.94" data-e="503.83">That is very sad.</span> <span class="tl-s" data-s="503.90" data-e="506.61">And we appreciate your questions.</span> <span class="tl-s" data-s="506.61" data-e="509.29">Um, feel free to reach out to us at production@centergilbert.org.</span> <span class="tl-s" data-s="509.37" data-e="513.26">We Check the questions, and we make our topic list out of that.</span> <span class="tl-s" data-s="513.26" data-e="516.80">And we just love that you&#x27;re engaging with us.</span> <span class="tl-s" data-s="516.80" data-e="519.65">And check the show notes for on all the episodes.</span> <span class="tl-s" data-s="519.65" data-e="521.64">There&#x27;s different bookmarks and things you can find, different resources.</span> <span class="tl-s" data-s="521.64" data-e="522.72">Thank you so much.</span> <span class="tl-s" data-s="522.72" data-e="527.25">And if you see Heather in person, say thank you because we sound ridiculous without her.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="527.55" data-e="527.72">That&#x27;s right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="527.80" data-e="529.26">So praise the Lord for Heather.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="529.26" data-e="536.17">That&#x27;s right.</span> <span class="tl-s" data-s="536.17" data-e="536.51">That&#x27;s right.</span> <span class="tl-s" data-s="536.51" data-e="536.93">All right.</span> <span class="tl-s" data-s="536.93" data-e="537.47">Thank you, everybody.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="537.47" data-e="539.01">Have a good one.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="539.01" data-e="542.03">You should have probably already been ready with that email.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="542.03" data-e="546.35">I should have, but we got an editing wizard on the track.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="546.35" data-e="547.65">Oh, I see.</span> <span class="tl-s" data-s="547.65" data-e="550.31">So you&#x27;re going to let Heather cover over all your mistakes.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="550.31" data-e="553.55">If she didn&#x27;t, this would never be listened to by anybody.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="553.55" data-e="554.05">Okay.</span> <span class="tl-s" data-s="554.05" data-e="556.25">So Heather is going to fix all this.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="556.25" data-e="560.21">We&#x27;re fixed on Jesus, but Heather&#x27;s the fixer of this.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="560.21" data-e="560.71">Okay, go ahead.</span> <span class="tl-s" data-s="560.71" data-e="564.99">So Adam was second, which is fascinating because if you look back and see, oh, I can&#x27;t hit the table.</span> <span class="tl-s" data-s="564.99" data-e="573.34">Friends, I was hitting the table and I was told I can&#x27;t hit the table, but I just go ahead and did it.</span> <span class="tl-s" data-s="573.42" data-e="574.72">Anyway, so so sorry about that.</span> <span class="tl-s" data-s="574.78" data-e="575.04">Mm-hmm.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="575.11" data-e="575.75">Should be.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="575.75" data-e="576.49">So [Speaker B] sorry, Tyler.</span> <span class="tl-s" data-s="576.55" data-e="576.93">I gotta.</span> <span class="tl-s" data-s="577.04" data-e="578.35">Mark needs to get Mark.</span> <span class="tl-s" data-s="578.35" data-e="583.61">Mark&#x27;s gonna go ahead and try to read this again.</span> <span class="tl-s" data-s="583.66" data-e="585.25">Let&#x27;s give him a second.</span> <span class="tl-s" data-s="585.27" data-e="585.67">All right, go.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="585.68" data-e="586.68">She sent so many.</span> <span class="tl-s" data-s="586.71" data-e="588.18">Do do do do do do.</span> <span class="tl-s" data-s="588.18" data-e="590.75">Can I just say the end?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="590.75" data-e="595.32">No, how about you say and that&#x27;s all the questions I have?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="595.32" data-e="595.75">Okay.</span> <span class="tl-s" data-s="595.80" data-e="597.50">Say that and then I&#x27;ll go.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="597.73" data-e="598.42">Say it again.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="598.45" data-e="600.50">And that&#x27;s all the questions I have for now.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="600.52" data-e="600.84">For now.</span> <span class="tl-s" data-s="600.84" data-e="605.38">But there will be another Friday that comes because you know what, Mark?</span> <span class="tl-s" data-s="605.51" data-e="608.05">They come once every 7 days.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="608.08" data-e="608.27">Every 7?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="608.27" data-e="608.56">Every 7.</span> <span class="tl-s" data-s="608.56" data-e="609.35">It&#x27;s a Rapid Fire Friday.</span> <span class="tl-s" data-s="609.38" data-e="610.07">We&#x27;ll be back.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="610.07" data-e="610.46">All right, well, I&#x27;m gonna hold you to that.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="610.46" data-e="610.46">All right, sounds good.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="610.46" data-e="610.46">Take care, guys.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Fixed on Jesus episode archive, backed by /api/podcast/search.
+  // Static fallback list above stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function fmtDuration(raw) {
+      if (!raw) return "";
+      var str = String(raw).trim();
+      // Anchor feeds report seconds; render as H:MM:SS or M:SS.
+      if (/^\d+$/.test(str)) {
+        var total = parseInt(str, 10);
+        var h = Math.floor(total / 3600);
+        var m = Math.floor((total % 3600) / 60);
+        var sec = total % 60;
+        var mm = (h > 0 && m < 10 ? "0" + m : "" + m);
+        var ss = (sec < 10 ? "0" + sec : "" + sec);
+        return (h > 0 ? h + ":" + mm : m) + ":" + ss;
+      }
+      // Anchor also reports clock strings like "00:24:02" — drop the
+      // redundant leading hour so it reads "24:02".
+      return str.replace(/^00:/, "");
+    }
+    function row(it) {
+      it = it || {};
+      var title = esc(it.title) || "Untitled episode";
+      var tUrl = it.guid && transcriptMap[it.guid];
+      var heading = tUrl
+        ? '<a href="' + esc(tUrl) + '">' + title + "</a>"
+        : (it.link
+          ? '<a href="' + esc(it.link) + '" target="_blank" rel="noopener">' + title + "</a>"
+          : title);
+      var meta = [fmtDate(it.date), fmtDuration(it.duration)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      return '<div class="sermon"><div><h3>' + heading + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    var PER = 10;
+    var state = { q: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No episodes found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " episode" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " episodes";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/podcast/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () {
+          // Keep the static list, but tell the reader where else to listen —
+          // some privacy blockers stop the archive request itself.
+          var note = document.querySelector("[data-sermons-error]");
+          if (note) note.hidden = false;
+        });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    if (monthSel) {
+      monthSel.addEventListener("change", function () {
+        state.month = monthSel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: 26a28504-2042-47e6-a160-b136c9f5f5f4 -->
+</body>
+</html>
