@@ -264,7 +264,7 @@ if not kt:
               "Troas", "Assos", "Mitylene", "Luke"]
 body = {
     "audio_url": audio_url,
-    "speech_model": "universal-3-5-pro",
+    "speech_models": ["universal-3-5-pro"],
     "speaker_labels": True,
     "keyterms_prompt": kt,
 }
