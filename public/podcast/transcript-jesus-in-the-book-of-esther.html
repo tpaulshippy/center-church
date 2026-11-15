@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jesus In The Book of Esther? — Podcast Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Fixed on Jesus: conversations beyond Sunday mornings from Center Church in Gilbert, AZ — listen on Spotify, Apple Podcasts, and YouTube." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=18" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a href="/sermons">Sermons</a></li>
+              <li><a class="active" href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/podcast">&larr; All podcast episodes</a>
+          <h1 class="display-lg">Jesus In The Book of Esther?</h1>
+          <p class="transcript-meta">2023-09-27 · 13:00</p>
+          <p class="transcript-desc">Welcome to FIXED ON JESUS, a podcast brought to you by Center Church in Gilbert, Arizona. Speaking to you today are Rich Richardson &amp; Mark Johnson Jr. Production by Heather Corbitt **SHOW NOTES** Questions asked in this episode: How do you make the connection of Jesus to Esther if &quot;God&quot; never mentio</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/e750e370/podcast/play/75566100/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-8-6%2Fc386ba21-c571-bce1-bfa0-b9a0103d0f4a.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="0.10" data-e="17.87">What we see in these passages is an anticipation for a greater deliverer, a deliverer who can deliver us not just from physical violence, but a deliverer who can give us eternal life, an eternal life that we, you know, can never lose.</span> <span class="tl-s" data-s="18.45" data-e="23.53">And so what we see throughout the whole Old Testament is that this is the way we want to read it.</span> <span class="tl-s" data-s="23.60" data-e="26.29">We want to read the whole Old Testament through the lens of Jesus Christ.</span></p>
+        <p><span class="tl-s" data-s="41.72" data-e="43.71">This is Fixed on Jesus.</span> <span class="tl-s" data-s="43.81" data-e="44.69">This is Fixed on Jesus.</span></p>
+        <p><span class="tl-s" data-s="58.37" data-e="62.20">All right, everybody, welcome back to our Fixed on Jesus podcast.</span> <span class="tl-s" data-s="62.96" data-e="74.69">We are here together in our highly classified, completely secure compound, enjoying the opportunity to record this podcast for you.</span> <span class="tl-s" data-s="74.76" data-e="77.57">And along with me, my name is Rich, I have Mark Johnson Jr. here with me.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="77.95" data-e="78.23">Hey, hey.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="79.00" data-e="81.89">And Heather Corbett, who&#x27;s our production coordinator.</span></p>
+        <p><span class="tl-s" data-s="83.92" data-e="86.46">Today we are— what are we gonna talk about today, Mark?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="87.04" data-e="90.52">Well, I think first we&#x27;re gonna talk about baseball because— Baseball!</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="91.43" data-e="95.45">I am a big baseball fan, but my team is really, really, really giving me a hard time right now.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="95.53" data-e="96.05">What team is that?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="96.32" data-e="97.03">Texas Rangers.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="97.44" data-e="98.66">Oh, and you were at a game recently.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="98.90" data-e="99.41">I was, yeah.</span> <span class="tl-s" data-s="99.48" data-e="100.84">They played the Diamondbacks last week.</span> <span class="tl-s" data-s="100.91" data-e="103.49">I was there and they lost, which was so hard to see.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="104.03" data-e="106.08">But I saw a photo of a baseball.</span> <span class="tl-s" data-s="106.19" data-e="106.84">Did you get hit?</span> <span class="tl-s" data-s="107.06" data-e="108.31">A fly ball or a foul ball?</span> <span class="tl-s" data-s="108.46" data-e="109.77">It [Speaker A] was a foul ball, yep.</span> <span class="tl-s" data-s="109.79" data-e="112.56">And you caught it.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="112.59" data-e="115.15">Um, in the technical sense, no, I did not catch it.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="115.16" data-e="116.75">You have to elaborate.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="116.78" data-e="118.53">Yeah, it was— how do you kind of catch it?</span> <span class="tl-s" data-s="118.53" data-e="123.12">Like, I&#x27;ve been to a lot of baseball games, but I&#x27;ve never gotten a foul ball.</span> <span class="tl-s" data-s="123.19" data-e="130.31">And so at this game, I was with my friend Jim Hubek, and [Speaker B] shout out to Jim Hubek.</span> <span class="tl-s" data-s="131.37" data-e="131.41">Yeah.</span> <span class="tl-s" data-s="131.41" data-e="133.07">And the ball— he was right-handed batter.</span> <span class="tl-s" data-s="133.31" data-e="139.67">He hit the ball, he fouled the ball back, and I was sitting where I was sitting.</span> <span class="tl-s" data-s="139.87" data-e="151.08">The ball hit like 30 or 40 feet to my right above me, and so instead of bouncing straight out, it hit a part of the wall that made it bounce directly toward me.</span> <span class="tl-s" data-s="151.45" data-e="154.21">Now the problem was, I&#x27;m thinking— so I wasn&#x27;t paying attention.</span> <span class="tl-s" data-s="154.24" data-e="157.41">I mean, I was paying attention, but I wasn&#x27;t thinking that ball was coming to me.</span> <span class="tl-s" data-s="157.44" data-e="161.28">And then it came to me, and it came right to my hands.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="161.28" data-e="161.34">Wow.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="161.50" data-e="163.10">And I dropped it.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="163.10" data-e="163.64">So it came.</span> <span class="tl-s" data-s="163.64" data-e="166.00">You&#x27;re telling me a ball landed right in your hands, Randy?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="166.00" data-e="167.54">Right in my hands, and I dropped it.</span> <span class="tl-s" data-s="167.54" data-e="168.10">I felt so horrible.</span> <span class="tl-s" data-s="168.10" data-e="168.48">I dropped it.</span> <span class="tl-s" data-s="168.48" data-e="173.26">I&#x27;m not trying to make it feel worse, but no, I mean, it was like, this is my chance.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="173.26" data-e="174.40">There&#x27;s no condemnation for those who are in Christ.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="174.40" data-e="174.78">This is my chance.</span> <span class="tl-s" data-s="174.78" data-e="181.14">This is my chance to catch it on the fly after it hits the wall, and I dropped it.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="181.14" data-e="181.18">That happens.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="181.18" data-e="181.68">It does.</span> <span class="tl-s" data-s="181.68" data-e="183.56">I was just—I just thought I was.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="183.56" data-e="183.80">Your geometry isn&#x27;t.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="183.80" data-e="186.36">Well, I mean, you&#x27;ve never seen me play baseball.</span> <span class="tl-s" data-s="186.36" data-e="187.84">If—if have you ever?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="187.84" data-e="188.20">Yeah, sure.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="188.20" data-e="191.50">If—if you had seen me play baseball, you&#x27;d be shocked that I dropped it because I don&#x27;t drop anything.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="191.50" data-e="194.10">So there&#x27;s some people out there that are shocked that yeah, they&#x27;re here.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="194.10" data-e="195.60">And they&#x27;re saying, I can&#x27;t believe it.</span> <span class="tl-s" data-s="195.60" data-e="196.90">There&#x27;s no way he dropped that ball.</span> <span class="tl-s" data-s="196.90" data-e="197.36">It&#x27;s true, folks.</span> <span class="tl-s" data-s="197.36" data-e="199.10">Did Jim make fun of you?</span> <span class="tl-s" data-s="199.10" data-e="199.64">Dropped the ball.</span> <span class="tl-s" data-s="199.64" data-e="199.78">Jim?</span> <span class="tl-s" data-s="199.78" data-e="199.92">Yeah.</span> <span class="tl-s" data-s="199.92" data-e="200.92">No, Jim didn&#x27;t make fun.</span> <span class="tl-s" data-s="201.72" data-e="202.48">He just smiled.</span> <span class="tl-s" data-s="202.48" data-e="203.84">Jim doesn&#x27;t really— Jim, we need to work.</span></p>
+        <p><span class="tl-s" data-s="203.84" data-e="205.38">Jim needs to make fun of more people.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="205.38" data-e="206.28">Jim made fun of me once.</span> <span class="tl-s" data-s="206.28" data-e="207.08">Did I tell you?</span> <span class="tl-s" data-s="207.08" data-e="209.04">Can I give— can I give a story?</span> <span class="tl-s" data-s="209.04" data-e="209.28">Sure.</span> <span class="tl-s" data-s="209.28" data-e="214.00">Jim, I help with production coordinator stuff on a Sunday morning, and Jim was preaching.</span> <span class="tl-s" data-s="214.00" data-e="214.20">Yeah.</span> <span class="tl-s" data-s="214.20" data-e="216.40">And he&#x27;s like, hey, are you going to be here next week when I&#x27;m preaching?</span> <span class="tl-s" data-s="216.40" data-e="218.60">And I was like, no, I&#x27;m actually going to be out of town.</span> <span class="tl-s" data-s="219.02" data-e="223.27">And he goes, Who&#x27;s gonna set my timer for my sermon?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="223.27" data-e="223.79">That&#x27;s good.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="223.79" data-e="226.35">Yeah, I didn&#x27;t even realize she was making fun of me until later.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="226.35" data-e="227.13">Yeah, well, that&#x27;s good.</span> <span class="tl-s" data-s="227.13" data-e="231.23">A lot of people don&#x27;t realize, but we do have a timer up on the podium for the sermon, don&#x27;t we?</span> <span class="tl-s" data-s="231.23" data-e="232.45">Yeah, just so that I don&#x27;t go too long.</span> <span class="tl-s" data-s="232.45" data-e="233.39">I&#x27;m the timer setter.</span> <span class="tl-s" data-s="233.39" data-e="234.17">And you set the timer.</span> <span class="tl-s" data-s="234.17" data-e="235.83">How long do you set it for?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="235.83" data-e="236.81">For you or for him?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="236.81" data-e="237.87">For all of us.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="237.87" data-e="239.21">Between 37 and 40.</span> <span class="tl-s" data-s="239.21" data-e="239.89">Yeah, depending on— exactly.</span> <span class="tl-s" data-s="239.89" data-e="240.85">I ask every time.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="240.85" data-e="241.69">Yeah, but it&#x27;s 40.</span> <span class="tl-s" data-s="241.69" data-e="243.85">If anybody says more than 40, no.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="243.85" data-e="244.47">Yeah, is the answer.</span> <span class="tl-s" data-s="244.47" data-e="245.35">They&#x27;re out of there.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="245.35" data-e="245.51">Yeah.</span> <span class="tl-s" data-s="245.89" data-e="246.44">Out of there.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="246.52" data-e="246.63">Okay.</span> <span class="tl-s" data-s="246.63" data-e="246.76">All right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="246.76" data-e="248.57">What are we talking about today, Mark?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="248.70" data-e="254.14">Other than baseball and Jim&#x27;s funny jokes, we&#x27;re talking about Jesus and Esther.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="254.22" data-e="254.95">Jesus and Esther.</span> <span class="tl-s" data-s="255.58" data-e="255.66">Yeah.</span> <span class="tl-s" data-s="255.66" data-e="256.12">Right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="256.70" data-e="258.85">So you recently preached a sermon on Esther.</span> <span class="tl-s" data-s="258.88" data-e="258.90">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="258.90" data-e="262.57">We&#x27;re doing a series at our church.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="262.57" data-e="262.86">Yeah.</span> <span class="tl-s" data-s="262.89" data-e="265.83">Um, you said God isn&#x27;t mentioned in Esther.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="266.00" data-e="266.18">Yeah.</span> <span class="tl-s" data-s="266.18" data-e="266.31">Nowhere.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="266.64" data-e="266.85">Right.</span> <span class="tl-s" data-s="266.89" data-e="268.47">Which is, first of all, that stands out.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="268.65" data-e="269.29">Yeah, it does.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="269.29" data-e="272.45">But second of all, [Speaker A] it&#x27;s bothered a lot of people over the years.</span> <span class="tl-s" data-s="272.51" data-e="272.77">Yeah.</span> <span class="tl-s" data-s="272.77" data-e="278.95">I think we even talked about on one of the previous episodes that the early Church wasn&#x27;t sure if they were to include it.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="278.95" data-e="279.80">Yeah, it was one of the questions.</span> <span class="tl-s" data-s="279.82" data-e="282.23">That was one of the reasons they had questions.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="282.47" data-e="284.76">But that score is settled.</span> <span class="tl-s" data-s="284.78" data-e="288.41">But as far as you brought up Jesus at the end of the sermon, I was just curious.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="288.65" data-e="289.55">I will every week.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="290.01" data-e="290.11">Okay.</span> <span class="tl-s" data-s="290.16" data-e="294.70">So well, I&#x27;m curious how you make that connection knowing that God isn&#x27;t mentioned at all in that book.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="294.75" data-e="294.77">Yeah.</span> <span class="tl-s" data-s="294.83" data-e="305.93">I mean, and that&#x27;s a great question because it&#x27;s something we need to think about because not just Jesus in Esther, but Jesus throughout all the Old Testament.</span> <span class="tl-s" data-s="305.93" data-e="306.73">Where is he?</span> <span class="tl-s" data-s="306.73" data-e="307.32">Is he there?</span> <span class="tl-s" data-s="307.32" data-e="308.70">How should we think about that?</span> <span class="tl-s" data-s="308.76" data-e="320.78">And part of the way I&#x27;m informed by that is when Jesus was on earth after he rose from the dead and he met the 2 disciples on the road to Emmaus.</span> <span class="tl-s" data-s="320.88" data-e="325.16">They were walking because this was after the crucifixion.</span> <span class="tl-s" data-s="325.16" data-e="329.78">These 2 were just down in the dumps because Jesus died.</span> <span class="tl-s" data-s="329.78" data-e="334.48">And they didn&#x27;t, they didn&#x27;t understand what was going on.</span> <span class="tl-s" data-s="334.50" data-e="338.91">And so they&#x27;re walking, Jesus joins them, they don&#x27;t recognize that it&#x27;s Jesus, right?</span></p>
+        <p><span class="tl-s" data-s="338.91" data-e="340.96">They don&#x27;t, they don&#x27;t see that it&#x27;s him.</span> <span class="tl-s" data-s="341.07" data-e="361.36">And so he has this, carries on this conversation, and, uh, they say, oh man, we&#x27;re just, we&#x27;re just, we&#x27;re having a hard time, uh, because this Jesus of Nazareth, we thought he was going to be the Messiah, and Redeem Israel, but they killed him, and now our hopes died with him.</span> <span class="tl-s" data-s="361.36" data-e="363.85">And and then he said Jesus.</span> <span class="tl-s" data-s="363.85" data-e="368.95">Then Jesus, although they don&#x27;t know it&#x27;s him, says this: Luke chapter twenty-four verse twenty-five.</span> <span class="tl-s" data-s="368.98" data-e="373.16">And he said to them, these are the two on the road to Emmaus.</span> <span class="tl-s" data-s="373.16" data-e="378.21">Oh foolish ones, and slow to believe that all the prophets have spoken!</span> <span class="tl-s" data-s="378.21" data-e="383.95">Was it not necessary that the Christ should suffer these things and enter into his glory?</span> <span class="tl-s" data-s="384.29" data-e="393.59">And beginning with Moses and all the prophets, he interpreted to them in all the scriptures the things concerning himself.</span> <span class="tl-s" data-s="394.00" data-e="401.10">Now, when he references all the scriptures, he&#x27;s not— there&#x27;s no New Testament at this point, so it&#x27;s all of the Old Testament.</span></p>
+        <p><span class="tl-s" data-s="401.15" data-e="403.68">He connects it to himself.</span> <span class="tl-s" data-s="403.71" data-e="412.08">And so in, in essence, what we see here is a picture of Jesus being the point of the whole Bible, even in the Old Testament.</span> <span class="tl-s" data-s="412.08" data-e="418.48">Now, sometimes there&#x27;s a direct prophetic prophetic word about him, how he will come, where he will come from.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="418.50" data-e="419.06">Like Isaiah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="419.06" data-e="422.93">Yeah, like Isaiah 53, how he&#x27;ll die.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="422.93" data-e="423.04">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="423.06" data-e="430.31">But most of the time it&#x27;s in allusions or shadows or an echo that&#x27;s going to be picked up later.</span> <span class="tl-s" data-s="430.36" data-e="436.05">And so what we see in Esther is no direct mention of God.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="436.30" data-e="436.46">None.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="436.46" data-e="452.24">But because it is a story in— it is a book in the Old Testament, we have to ask, how does this book anticipate the need for Jesus, or how does this book foreshadow the coming of Jesus?</span> <span class="tl-s" data-s="452.24" data-e="462.02">Now we can see in Esther that both Mordecai and Esther are the heroes of our book that end up working to deliver the Jews, right?</span> <span class="tl-s" data-s="462.02" data-e="479.07">The Jews in Persia are going to be delivered by Esther and Mordecai, by Esther&#x27;s heroism in chapter 4 when she goes before the king Um, but we see throughout the book of Esther that Esther is not the hero, the hero that we— that is ideal, right?</span> <span class="tl-s" data-s="479.07" data-e="482.43">She sleeps with the king before she&#x27;s married.</span> <span class="tl-s" data-s="482.43" data-e="483.11">He&#x27;s uncircumcised.</span> <span class="tl-s" data-s="483.24" data-e="486.22">She doesn&#x27;t adhere to the Jewish food laws.</span> <span class="tl-s" data-s="486.22" data-e="490.18">There&#x27;s all kinds of different ways that she compromises herself and assimilates into culture.</span> <span class="tl-s" data-s="490.24" data-e="491.02">Opposite of Daniel.</span> <span class="tl-s" data-s="491.03" data-e="492.87">Right, opposite of Daniel.</span></p>
+        <p><span class="tl-s" data-s="493.85" data-e="499.46">Um, and so, but Jesus So Esther is the deliverer of the Jews.</span> <span class="tl-s" data-s="499.74" data-e="502.80">Now Jesus is also the deliverer of his people.</span> <span class="tl-s" data-s="502.85" data-e="508.21">Instead of just the Jews, Jesus is the deliverer for everyone who puts faith in him.</span> <span class="tl-s" data-s="508.31" data-e="519.64">So as we look at Esther as a deliverer, or Mordecai as deliverer, what we see here is— what we see here is 2 human deliverers that had their flaws.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="519.64" data-e="519.80">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="519.87" data-e="529.49">When we see Jesus, we— so we read those stories and we go, It is great that they did that, but their deliverance is not as thorough.</span> <span class="tl-s" data-s="529.60" data-e="531.88">Their deliverance is not as complete.</span> <span class="tl-s" data-s="531.88" data-e="535.95">Their deliverance does not even come from a place of perfection like Jesus does.</span> <span class="tl-s" data-s="535.95" data-e="554.87">So what we see in these passages is an anticipation for a greater deliverer, a deliverer who can deliver us not just from physical violence, but a deliverer who can give us eternal life, an eternal life that we, you know, can never lose.</span> <span class="tl-s" data-s="554.89" data-e="559.29">And so what we see throughout the whole Old Testament is that this is the way we want to read it.</span> <span class="tl-s" data-s="559.30" data-e="563.17">We want to read the whole Old Testament through the lens of Jesus Christ.</span> <span class="tl-s" data-s="563.17" data-e="563.34">Hmm.</span> <span class="tl-s" data-s="563.34" data-e="565.99">Otherwise, it just becomes a tale of moral stories.</span> <span class="tl-s" data-s="566.00" data-e="575.93">And, you know, if we read Esther and say, well, ladies, don&#x27;t be like Esther, uh, don&#x27;t let a man treat you this way, um, that&#x27;s, that&#x27;s a moralistic story that doesn&#x27;t have any basis in Christianity.</span></p>
+        <p><span class="tl-s" data-s="575.93" data-e="579.97">What we want to do is we want to say, how does this point to Christ?</span> <span class="tl-s" data-s="580.03" data-e="584.96">And so what we have is a better deliverer than Esther and Mordecai.</span> <span class="tl-s" data-s="585.00" data-e="596.71">Mordecai, whose name means Marduk man, essentially, um, is much— he, he helped deliver his people, but he&#x27;s a, he&#x27;s a, he&#x27;s a poor copy of God the Son.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="596.71" data-e="596.82">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="597.01" data-e="607.57">Who delivered us from the domain of darkness, who has freed us from the grip of death, who Who has ensured that we will be with God forever in all eternity?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="607.57" data-e="608.37">Okay.</span> <span class="tl-s" data-s="608.55" data-e="609.45">Yeah, that&#x27;s amazing.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="609.45" data-e="611.63">So that&#x27;s we want to read the whole Old Testament like that.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="611.63" data-e="613.41">Yeah, that&#x27;s kind of what I was going to ask.</span> <span class="tl-s" data-s="613.41" data-e="616.09">So you did already kind of touch on it.</span> <span class="tl-s" data-s="616.09" data-e="617.47">So Isaiah 54, very clear.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="617.47" data-e="618.05">53.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="618.05" data-e="618.47">Yeah, 53.</span> <span class="tl-s" data-s="618.47" data-e="619.03">Excuse me.</span> <span class="tl-s" data-s="619.03" data-e="623.17">Very clear that that&#x27;s what they&#x27;re pointing to: the Messiah, the Christ.</span> <span class="tl-s" data-s="623.17" data-e="625.91">And then a little way less clear in Esther.</span> <span class="tl-s" data-s="625.91" data-e="627.59">What about the other Old Testament books?</span> <span class="tl-s" data-s="627.59" data-e="629.29">Is it are some of them more clear?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="629.29" data-e="630.95">Yeah, they all point in different ways.</span> <span class="tl-s" data-s="630.95" data-e="631.23">Yeah.</span> <span class="tl-s" data-s="631.23" data-e="646.39">The first time we see this is in Genesis chapter 3, [Speaker B] okay, [Speaker A] verse 15, where we have at the very beginning of the Bible, after the fall, uh, the Lord promises that there&#x27;s going to come one who will crush the serpent&#x27;s head.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="646.47" data-e="649.55">Yeah, can I read that verse?</span> <span class="tl-s" data-s="649.91" data-e="650.69">Genesis 3:15.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="650.73" data-e="650.84">Yep.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="650.95" data-e="658.85">I will put enmity between you and the woman, and between your offspring and her offspring, but he shall bruise your head and you shall bruise his heel.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="658.85" data-e="659.57">There it is.</span> <span class="tl-s" data-s="659.57" data-e="665.21">And so that is Jesus, that is a prophecy of Jesus coming to crush the head of Satan.</span> <span class="tl-s" data-s="665.23" data-e="674.21">And so we have, that is a picture that we can look back at and go, okay, I understand now in part what the cross was doing.</span> <span class="tl-s" data-s="674.29" data-e="674.90">It was Jesus is bruised.</span> <span class="tl-s" data-s="674.93" data-e="675.86">How is he bruised?</span> <span class="tl-s" data-s="675.88" data-e="678.35">He is bruised by dying on the cross.</span> <span class="tl-s" data-s="678.46" data-e="683.84">But it is only a bruise because he rises again and lives forever.</span> <span class="tl-s" data-s="683.84" data-e="687.01">And what version is that that says bruise?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="687.03" data-e="687.43">ESV.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="689.84" data-e="690.94">ESV, I thought it was crush.</span> <span class="tl-s" data-s="691.02" data-e="694.40">And so, like yeah, here we are live trying to figure this out.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="694.41" data-e="695.10">Hey, that&#x27;s that&#x27;s the life.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="695.20" data-e="697.53">This is the way it is.</span> <span class="tl-s" data-s="697.53" data-e="697.74">Yeah, right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="697.85" data-e="698.86">Which version are you looking up?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="699.23" data-e="701.59">I&#x27;m looking at the same one, ESV.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="701.62" data-e="702.87">Oh, you think my Bible&#x27;s broken over here?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="703.71" data-e="704.45">No, it&#x27;s not broken.</span> <span class="tl-s" data-s="704.45" data-e="704.98">It&#x27;s right.</span> <span class="tl-s" data-s="704.99" data-e="707.00">He shall bruise your head.</span> <span class="tl-s" data-s="707.00" data-e="707.98">You shall bruise his heel.</span> <span class="tl-s" data-s="707.98" data-e="711.79">But Jesus crushes the head of Satan, and that&#x27;s the essence.</span> <span class="tl-s" data-s="712.14" data-e="712.86">Yeah, that&#x27;s that&#x27;s it.</span> <span class="tl-s" data-s="712.86" data-e="717.05">He&#x27;s gonna throw him into the lake of fire and.</span> <span class="tl-s" data-s="717.07" data-e="717.68">Destroy him forever.</span> <span class="tl-s" data-s="717.68" data-e="721.81">But his victory— the reason he can do that is because he died and rose again.</span> <span class="tl-s" data-s="721.86" data-e="727.64">Yeah, he&#x27;s the champion, and Satan has nothing, has nothing on him anymore, or his people.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="727.88" data-e="728.95">Satan has nothing on us.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="729.40" data-e="729.95">Nope, that&#x27;s right.</span> <span class="tl-s" data-s="729.97" data-e="730.27">That&#x27;s right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="730.30" data-e="731.80">Okay, [Speaker A] that&#x27;s right.</span> <span class="tl-s" data-s="732.23" data-e="733.58">Well, I love that.</span> <span class="tl-s" data-s="733.58" data-e="736.41">It&#x27;d be a good point to, uh, to wrap up here.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="736.47" data-e="741.95">Well, until next time, if you have questions, please, uh, shoot us an email at production@gmail.com.</span> <span class="tl-s" data-s="742.04" data-e="743.07">If you have any Suggestions.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="743.07" data-e="743.42">That was close.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="743.47" data-e="744.07">It&#x27;s not Gmail.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="744.07" data-e="752.27">We might have to make a Gmail just because you said that, but— [Speaker A] oh, it&#x27;s, it&#x27;s, it&#x27;s centered. [Speaker B] production@centergilbert.com.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="752.37" data-e="755.11">I&#x27;m just used to saying Gmail.</span> <span class="tl-s" data-s="755.11" data-e="755.35">It&#x27;s okay.</span> <span class="tl-s" data-s="755.35" data-e="761.29">If you have suggestions, questions, comments, anything at all, email us at production@centergilbert.com.</span> <span class="tl-s" data-s="761.55" data-e="762.32">Mark.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="762.32" data-e="762.56">Boom.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="762.56" data-e="764.25">And we&#x27;ll be glad to talk about those on air.</span> <span class="tl-s" data-s="764.25" data-e="764.25">Until next time.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="764.25" data-e="764.25">Thank you, guys.</span> <span class="tl-s" data-s="764.25" data-e="764.25">God bless.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Fixed on Jesus episode archive, backed by /api/podcast/search.
+  // Static fallback list above stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function fmtDuration(raw) {
+      if (!raw) return "";
+      var str = String(raw).trim();
+      // Anchor feeds report seconds; render as H:MM:SS or M:SS.
+      if (/^\d+$/.test(str)) {
+        var total = parseInt(str, 10);
+        var h = Math.floor(total / 3600);
+        var m = Math.floor((total % 3600) / 60);
+        var sec = total % 60;
+        var mm = (h > 0 && m < 10 ? "0" + m : "" + m);
+        var ss = (sec < 10 ? "0" + sec : "" + sec);
+        return (h > 0 ? h + ":" + mm : m) + ":" + ss;
+      }
+      // Anchor also reports clock strings like "00:24:02" — drop the
+      // redundant leading hour so it reads "24:02".
+      return str.replace(/^00:/, "");
+    }
+    function row(it) {
+      it = it || {};
+      var title = esc(it.title) || "Untitled episode";
+      var tUrl = it.guid && transcriptMap[it.guid];
+      var heading = tUrl
+        ? '<a href="' + esc(tUrl) + '">' + title + "</a>"
+        : (it.link
+          ? '<a href="' + esc(it.link) + '" target="_blank" rel="noopener">' + title + "</a>"
+          : title);
+      var meta = [fmtDate(it.date), fmtDuration(it.duration)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      return '<div class="sermon"><div><h3>' + heading + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    var PER = 10;
+    var state = { q: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No episodes found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " episode" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " episodes";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/podcast/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () {
+          // Keep the static list, but tell the reader where else to listen —
+          // some privacy blockers stop the archive request itself.
+          var note = document.querySelector("[data-sermons-error]");
+          if (note) note.hidden = false;
+        });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    if (monthSel) {
+      monthSel.addEventListener("change", function () {
+        state.month = monthSel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: 460228ff-d5c0-4bb0-a670-ca982b55985d -->
+</body>
+</html>
