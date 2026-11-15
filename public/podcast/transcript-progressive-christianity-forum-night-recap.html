@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Progressive Christianity - Forum Night Recap — Podcast Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Fixed on Jesus: conversations beyond Sunday mornings from Center Church in Gilbert, AZ — listen on Spotify, Apple Podcasts, and YouTube." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=18" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a href="/sermons">Sermons</a></li>
+              <li><a class="active" href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/podcast">&larr; All podcast episodes</a>
+          <h1 class="display-lg">Progressive Christianity - Forum Night Recap</h1>
+          <p class="transcript-meta">2023-10-04 · 16:24</p>
+          <p class="transcript-desc">Welcome to FIXED ON JESUS, a podcast brought to you by Center Church in Gilbert, Arizona. Speaking to you today are Rich Richardson &amp; Mark Johnson Jr. Production by Heather Corbitt Please feel free to send email inquiries to production@centergilbert.com **SHOW NOTES** Today&#x27;s episode is a recap of a</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/e750e370/podcast/play/75565893/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-8-6%2F01df68d2-9568-23bb-60dd-8cabacf91740.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="0.04" data-e="7.92">So if I were to sort of say, here are some of the markers of progressive Christianity, one is Christianity is more about how you live, not what you believe.</span> <span class="tl-s" data-s="7.98" data-e="11.00">So they&#x27;re going to put a big wedge between belief and life.</span> <span class="tl-s" data-s="11.35" data-e="15.01">Now, what we would believe is how you believe informs how you live.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="15.45" data-e="15.75">Right.</span> <span class="tl-s" data-s="15.99" data-e="16.75">Scripture first.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="16.89" data-e="17.20">Yeah.</span> <span class="tl-s" data-s="17.36" data-e="19.06">And so like, that&#x27;s, that&#x27;s true.</span> <span class="tl-s" data-s="19.23" data-e="26.92">Now, there are a lot of people, a lot of Christians who say they believe one thing and live completely You know, counter to that.</span> <span class="tl-s" data-s="26.92" data-e="27.85">That is true.</span> <span class="tl-s" data-s="28.03" data-e="29.36">That is hypocritical, right?</span> <span class="tl-s" data-s="29.41" data-e="29.59">Yeah.</span> <span class="tl-s" data-s="29.65" data-e="30.71">Progressives are going to think hard.</span> <span class="tl-s" data-s="30.85" data-e="33.43">They are going to say, hey, don&#x27;t tell me what you believe.</span> <span class="tl-s" data-s="33.43" data-e="34.51">Show me how you live.</span> <span class="tl-s" data-s="34.54" data-e="41.32">And so there is a kernel of truth in that, but the reality is what we believe matters immensely.</span></p>
+        <p><span class="tl-s" data-s="41.35" data-e="44.69">If we don&#x27;t get the Bible right, we get everything wrong.</span> <span class="tl-s" data-s="44.86" data-e="62.20">This is Fixed on Jesus.</span> <span class="tl-s" data-s="62.23" data-e="80.90">Hey everybody, welcome to this runaway train we like to call the Fixed on Jesus podcast.</span> <span class="tl-s" data-s="80.90" data-e="85.26">As always, it&#x27;s me, your host Rich, along with Mark Johnson Jr.</span> <span class="tl-s" data-s="85.30" data-e="92.19">And Heather Corbett, who is our production coordinator, and she waves and is smiling.</span> <span class="tl-s" data-s="92.24" data-e="93.55">Actually, she&#x27;s dancing now.</span> <span class="tl-s" data-s="93.65" data-e="94.13">You can&#x27;t imagine.</span> <span class="tl-s" data-s="94.13" data-e="99.96">Um, but, uh, we, uh, are here and we&#x27;re excited today to join you.</span> <span class="tl-s" data-s="100.07" data-e="103.20">And, um, Mark, what&#x27;s our topic for today?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="103.20" data-e="107.21">How to read Heather&#x27;s facial expressions and signs of disapproval.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="107.21" data-e="108.17">Is that what it is?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="108.17" data-e="108.67">No, no, it&#x27;s not.</span> <span class="tl-s" data-s="108.67" data-e="111.56">I just know if I&#x27;m off track that she&#x27;ll give me that certain look.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="111.63" data-e="111.90">Okay.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="111.96" data-e="112.12">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="112.49" data-e="113.18">Her looks are powerful.</span> <span class="tl-s" data-s="113.25" data-e="113.97">That&#x27;s correct.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="113.97" data-e="114.06">Exactly.</span> <span class="tl-s" data-s="114.11" data-e="115.24">That&#x27;s right.</span> <span class="tl-s" data-s="115.24" data-e="123.52">So, well, before we get into today&#x27;s topic, I wanted to ask you the focal point of feedback that you got on the podcast.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="123.52" data-e="126.94">Yeah, the one and only Tiffany Richardson.</span> <span class="tl-s" data-s="126.97" data-e="129.38">Well, Heather&#x27;s made us sound better than we are.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="129.38" data-e="129.78">That&#x27;s true.</span> <span class="tl-s" data-s="129.78" data-e="130.29">Very true.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="130.29" data-e="133.05">Tiff said our voice sounded— my voice sounded good.</span> <span class="tl-s" data-s="133.05" data-e="134.56">She&#x27;s like, oh, that, that sounds good.</span> <span class="tl-s" data-s="134.59" data-e="140.16">And so my wife Tiffany, she came home, she had— she walked in, she goes, I listened to your podcast.</span> <span class="tl-s" data-s="140.27" data-e="141.33">I was like, okay.</span> <span class="tl-s" data-s="141.96" data-e="146.76">And she said, it is way better than I thought it would be.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="146.87" data-e="148.86">It is like a backhanded compliment.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="148.86" data-e="149.92">I was like, oh, okay.</span> <span class="tl-s" data-s="150.14" data-e="150.88">Well, thanks, sweetie.</span> <span class="tl-s" data-s="150.91" data-e="151.09">Yeah.</span> <span class="tl-s" data-s="151.43" data-e="157.19">So anyway, for those— our legion of fans, legions of fans are joining us.</span> <span class="tl-s" data-s="157.21" data-e="158.75">They know how good it is.</span> <span class="tl-s" data-s="158.75" data-e="162.00">They know this is some stuff that they do not want to miss.</span> <span class="tl-s" data-s="162.04" data-e="162.28">Exactly.</span> <span class="tl-s" data-s="162.36" data-e="162.89">Anyway.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="163.88" data-e="167.70">So today&#x27;s topic, we are going to recap On progressive Christianity.</span> <span class="tl-s" data-s="167.72" data-e="168.67">Yeah, yeah.</span> <span class="tl-s" data-s="168.68" data-e="171.75">Forum night that was on August 15th here at Center Church.</span> <span class="tl-s" data-s="171.75" data-e="179.75">And we plan to do another event just like that, open up— opening up to our church and to friends of our church on August 15th.</span> <span class="tl-s" data-s="179.78" data-e="180.68">Is that right?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="180.68" data-e="181.14">No, September.</span> <span class="tl-s" data-s="181.16" data-e="182.06">September 19th.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="182.06" data-e="183.39">Excuse me, September 19th.</span> <span class="tl-s" data-s="183.39" data-e="185.16">Wow, I just said the same date twice.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="185.16" data-e="185.85">You did, right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="185.96" data-e="187.72">September 19th, 6:30.</span> <span class="tl-s" data-s="187.74" data-e="197.25">We&#x27;re going to feed you, you know, physical food, but then also we&#x27;re going to feed you on the topic— Rich is going to feed you on the topic of Christian nationalism, otherwise known as theotomy.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="197.44" data-e="199.35">Well, did I say that right?</span> <span class="tl-s" data-s="199.35" data-e="199.46">Theonomy.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="199.53" data-e="200.18">Theonomy.</span> <span class="tl-s" data-s="200.26" data-e="201.93">See, I learn something every day.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="201.93" data-e="201.96">Theonomy.</span> <span class="tl-s" data-s="202.04" data-e="203.34">When we&#x27;re— [Speaker B] theonomy.</span> <span class="tl-s" data-s="203.54" data-e="213.21">But, uh, yeah, so what we do with Forum Nights is we try to talk about a topic that&#x27;s in the culture and might— is something that is good to have a conversation about.</span> <span class="tl-s" data-s="213.26" data-e="216.98">So on August 15th, we did, uh, Progressive Christianity.</span> <span class="tl-s" data-s="217.65" data-e="230.06">And Progressive Christianity, just to give a brief recap, is a— so it&#x27;s, it&#x27;s something that is, is sweeping through a lot of Christian homes these days.</span> <span class="tl-s" data-s="230.31" data-e="239.24">And it&#x27;s kind of a— it&#x27;s a little bit like the liberal Christianity, for those of you who are— who know history, um, that, uh, J.</span> <span class="tl-s" data-s="239.31" data-e="243.25">Gresham Machen, um, stood against 100 years ago.</span> <span class="tl-s" data-s="243.89" data-e="254.03">But progressive Christianity is really— it presents itself as a version of Christianity, or like sort of a a more enlightened version of Christianity.</span> <span class="tl-s" data-s="254.08" data-e="258.79">But really what it is, it is a different set of beliefs.</span> <span class="tl-s" data-s="259.94" data-e="268.95">And so if I were to sort of say, here are some of the markers of progressive Christianity, one is Christianity is more about how you live, not what you believe.</span></p>
+        <p><span class="tl-s" data-s="269.00" data-e="272.05">So they&#x27;re going to put a big wedge between belief and life.</span> <span class="tl-s" data-s="272.94" data-e="277.98">Um, and so now what we would believe is how you believe informs how you live.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="278.68" data-e="279.18">Right.</span> <span class="tl-s" data-s="279.18" data-e="279.96">Scripture first.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="280.06" data-e="280.32">Yeah.</span> <span class="tl-s" data-s="280.32" data-e="282.20">And so like, that&#x27;s, that&#x27;s true.</span> <span class="tl-s" data-s="282.20" data-e="290.46">Now there are a lot of people, a lot of Christians who say they believe one thing and live completely, you know, counter to that.</span> <span class="tl-s" data-s="290.46" data-e="291.08">That&#x27;s hypocritical.</span> <span class="tl-s" data-s="291.08" data-e="291.84">That is true.</span> <span class="tl-s" data-s="291.84" data-e="292.82">That&#x27;s hypocritical.</span> <span class="tl-s" data-s="292.82" data-e="293.20">Right.</span> <span class="tl-s" data-s="293.20" data-e="295.34">But at the same time— [Speaker B] I was trying to coin a phrase.</span> <span class="tl-s" data-s="295.34" data-e="296.82">What&#x27;d you say?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="296.92" data-e="297.46">Hippo-Christians.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="297.56" data-e="297.68">Hippo-Christians?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="297.68" data-e="298.66">Like hypocritical Christians.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="298.76" data-e="304.61">Hippo-Christians makes you sound like you&#x27;re like, it&#x27;s like, like you&#x27;re like your medical release, your HIPAA release.</span> <span class="tl-s" data-s="304.72" data-e="305.96">So I don&#x27;t know about that.</span> <span class="tl-s" data-s="305.96" data-e="306.64">Yeah.</span> <span class="tl-s" data-s="306.64" data-e="308.28">Anyway, uh, Christianity, that&#x27;s a swing and a miss right there.</span></p>
+        <p><span class="tl-s" data-s="310.53" data-e="312.74">Um, so the progressives are going to think hard.</span> <span class="tl-s" data-s="312.88" data-e="316.38">They&#x27;re going to like say, hey, don&#x27;t tell me what you believe, show me how you live.</span> <span class="tl-s" data-s="316.63" data-e="323.55">And so there&#x27;s a, there&#x27;s a kernel of truth in that, but, uh, the reality is what we believe matters immensely.</span> <span class="tl-s" data-s="323.73" data-e="326.57">If we don&#x27;t get the Bible right, we get everything wrong.</span> <span class="tl-s" data-s="326.98" data-e="327.21">Hmm.</span> <span class="tl-s" data-s="327.96" data-e="329.21">And so that&#x27;s huge.</span> <span class="tl-s" data-s="329.33" data-e="341.22">Another, another tenet of another pillar of progressive Christianity is that they&#x27;re going to prescribe and mandate social justice for every member of their church or their movement or whatever.</span> <span class="tl-s" data-s="341.83" data-e="357.35">Um, they&#x27;re usually politically progressive as well, and so they want to fight for economic, social, racial, ecological justice, and they do that as a working out of their religion because they believe that&#x27;s what God has commanded them to do.</span> <span class="tl-s" data-s="358.13" data-e="370.86">Um, they would also often say— now there&#x27;s all kinds of different flavors of this because, you know, there&#x27;s not one size fits all And so they&#x27;re also going to, going to say there&#x27;s no real orthodoxy or true faith.</span></p>
+        <p><span class="tl-s" data-s="370.92" data-e="378.28">There&#x27;s many ways to get to God, and we don&#x27;t have the right to say one religion is, is right while the others are wrong.</span> <span class="tl-s" data-s="379.19" data-e="389.00">Now, while we would disagree with a bunch of, of what I just said about progressive Christianity, there are a couple things that are helpful just to keep in mind with progressives.</span> <span class="tl-s" data-s="389.97" data-e="393.05">Number one, they&#x27;re aware of sinful oppression.</span> <span class="tl-s" data-s="394.03" data-e="398.08">Now, I think they overuse that category, and we&#x27;ve talked about critical theory before.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="398.63" data-e="398.80">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="398.93" data-e="405.74">Um, where that critical theory breaks every— breaks society into 2 parts.</span> <span class="tl-s" data-s="405.92" data-e="410.08">There&#x27;s either people who are oppressors or people who are oppressed, and there&#x27;s no, no in-between.</span> <span class="tl-s" data-s="410.59" data-e="422.85">Now, oftentimes progressive Christians are happy to use those categories, um, and they paint too broadly with those categories, but they are not wrong.</span> <span class="tl-s" data-s="423.02" data-e="427.74">There is such a thing as sinful oppression, and as Christians, we need to counteract that.</span> <span class="tl-s" data-s="428.15" data-e="431.18">Um, and so they have an eye for that.</span> <span class="tl-s" data-s="431.30" data-e="433.03">They&#x27;re sensitive to that, which, which is good.</span> <span class="tl-s" data-s="433.12" data-e="435.03">I mean, that&#x27;s, that&#x27;s something good about this.</span> <span class="tl-s" data-s="435.77" data-e="439.89">Um, another thing that&#x27;s good is they want to help and serve the marginalized.</span> <span class="tl-s" data-s="440.02" data-e="446.45">And so that is, that&#x27;s something that is, um, something that, you know, we could take a lesson from.</span> <span class="tl-s" data-s="446.53" data-e="447.59">We want to help those poor.</span></p>
+        <p><span class="tl-s" data-s="447.64" data-e="447.81">Yeah.</span> <span class="tl-s" data-s="447.97" data-e="448.95">We want to help the needy.</span> <span class="tl-s" data-s="449.00" data-e="450.28">We want to help people who need help.</span> <span class="tl-s" data-s="450.94" data-e="453.46">And so it You know, those kinds of things are true.</span> <span class="tl-s" data-s="453.58" data-e="456.98">We want to make sure that, that, that, that typifies who we are as well.</span> <span class="tl-s" data-s="457.11" data-e="462.88">But we don&#x27;t need to then downplay or de-emphasize orthodoxy.</span> <span class="tl-s" data-s="463.43" data-e="470.24">We don&#x27;t need to de-emphasize the Bible or reinterpret the Bible all kinds of different ways that many progressive Christians do.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="471.52" data-e="474.01">Yeah, that&#x27;s actually how I was going to ask you.</span> <span class="tl-s" data-s="474.41" data-e="476.28">I think, you know, I was at the forum night.</span> <span class="tl-s" data-s="476.41" data-e="477.45">I enjoyed it.</span> <span class="tl-s" data-s="477.53" data-e="478.70">There was plenty of people there.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="478.90" data-e="480.21">You cooked food for us.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="480.27" data-e="481.16">I did.</span> <span class="tl-s" data-s="481.46" data-e="482.42">Andrea and myself.</span> <span class="tl-s" data-s="482.52" data-e="484.49">Yeah, we cooked for [Speaker A] What&#x27;d you guys cook?</span> <span class="tl-s" data-s="484.60" data-e="486.68">You guys cooked tacos.</span> <span class="tl-s" data-s="486.77" data-e="487.29">Tacos, yeah.</span> <span class="tl-s" data-s="487.33" data-e="489.39">So beef and chicken and shredded chicken tacos.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="489.97" data-e="490.98">Super good.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="491.27" data-e="492.49">And teaser for the next food.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="492.49" data-e="493.83">Do we know the food at the next?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="493.83" data-e="495.62">Yeah, at the end I&#x27;ll tell— talk about the food at the end.</span> <span class="tl-s" data-s="495.67" data-e="496.34">I don&#x27;t want to distract.</span> <span class="tl-s" data-s="496.34" data-e="498.47">I [Speaker A] don&#x27;t know if I can wait.</span> <span class="tl-s" data-s="498.55" data-e="498.81">Oh, okay.</span> <span class="tl-s" data-s="498.83" data-e="501.35">So— [Speaker A] oh no, no, make me wait.</span> <span class="tl-s" data-s="501.93" data-e="504.40">I will make him wait.</span></p>
+        <p><span class="tl-s" data-s="505.63" data-e="518.47">So my, uh, question is, or even just to point out what you said on at forum night last time, was the way that Someone who falls into this camp, and some— most of these people, first of all, don&#x27;t identify as progressive Christians.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="518.53" data-e="518.88">Well, sometimes.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="518.88" data-e="523.19">Sometimes they do, but most of the time it&#x27;s more subtle and some of their beliefs.</span> <span class="tl-s" data-s="523.66" data-e="530.30">My question was more so, and I know I already kind of know the answer, but I think it&#x27;s essential for us to talk about how they get to that point.</span> <span class="tl-s" data-s="530.33" data-e="534.50">And I think it has to do with the authority of Scripture.</span> <span class="tl-s" data-s="534.83" data-e="541.21">They begin to take away or diminish how the authority that Scripture has and how it&#x27;s interpreted.</span> <span class="tl-s" data-s="541.21" data-e="543.78">Is that how you would explain it, or what would be a better way to— Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="543.78" data-e="546.06">I mean, they may or may not.</span> <span class="tl-s" data-s="546.06" data-e="552.20">Again, there&#x27;s— when we talk about progressive Christianity, it&#x27;s not like there&#x27;s just one brand.</span> <span class="tl-s" data-s="552.28" data-e="553.26">There&#x27;s many progressive Christianities.</span> <span class="tl-s" data-s="553.26" data-e="560.45">And so one of the things that typifies them though is that they are going to de-emphasize the Bible&#x27;s authority or downplay it.</span> <span class="tl-s" data-s="560.45" data-e="560.50">Mm-hmm.</span> <span class="tl-s" data-s="560.50" data-e="576.34">Um, and they&#x27;re going to see the writers of the Bible as trying to understand their times and places and not necessarily speaking for God or recording the very words of God, which is not You know, that&#x27;s not what we believe the Bible to be.</span> <span class="tl-s" data-s="576.37" data-e="581.39">We believe the Bible to be the breathed-out word of God.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="581.48" data-e="585.55">Yeah, [Speaker A] and [Speaker B] preserved through generations, through languages.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="585.89" data-e="585.97">Yep.</span> <span class="tl-s" data-s="585.99" data-e="591.23">And we believe that the Bible is authoritative, and so where the Bible speaks, we must obey.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="591.34" data-e="591.53">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="591.58" data-e="601.62">Now there&#x27;s different nuances that come to that because we&#x27;re not applying Old Testament ceremonial worship laws, we&#x27;re not applying Old Testament civil laws, we&#x27;re not applying Those kind of things.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="601.70" data-e="603.57">But we are applying the Old Testament moral law.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="603.62" data-e="605.80">Moral laws we are, and there is a reason.</span> <span class="tl-s" data-s="605.86" data-e="611.10">The reason is because we see in the New Testament that that is the way the New Testament uses the Old Testament.</span> <span class="tl-s" data-s="611.10" data-e="618.73">We do not just willy-nilly throw those things out because it is inconvenient and because people like going to Red Lobster and having popcorn shrimp.</span> <span class="tl-s" data-s="618.73" data-e="621.74">That is not why we have thrown out the cleanliness laws.</span> <span class="tl-s" data-s="621.93" data-e="624.97">We threw them out because Jesus has told us that now all food is clean.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="624.98" data-e="631.54">Yeah, so no, you do not have to avoid swine or [Speaker A] swine.</span> <span class="tl-s" data-s="631.59" data-e="631.67">Pork.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="631.67" data-e="642.04">Pepperoni is, is God&#x27;s— like, bacon and pepperoni are one of the wonderful things that we have now as Christians that I just enjoy and, and I&#x27;m thrilled at.</span> <span class="tl-s" data-s="642.30" data-e="650.76">Um, but, uh, progressive Christianity is also gonna, you know, redefine love, saying that people need to be authentic or true to themselves.</span> <span class="tl-s" data-s="650.81" data-e="660.98">And so this is— this comes up a lot in, in those that are open and affirming of the homosexual lifestyle.</span> <span class="tl-s" data-s="661.07" data-e="673.29">They&#x27;ll speak about how Loving someone is just loving them in the way they imagine themselves to be, in the way that they set up their identity.</span> <span class="tl-s" data-s="673.42" data-e="679.16">And we have no right to say that someone should not be a homosexual or that it&#x27;s wrong.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="679.22" data-e="680.28">Yeah, I&#x27;ve heard.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="680.28" data-e="686.36">And so they&#x27;ll redefine different books of the Bible or different sections of the Bible that speak that way.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="686.73" data-e="688.66">Yeah, they will say, Paul, that was just Paul talking.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="688.66" data-e="698.79">Yeah, or even just that Paul didn&#x27;t have any idea that there was such a thing as committed monogamous homosexual relationships, which is nonsense.</span> <span class="tl-s" data-s="698.79" data-e="703.67">If you have questions about this, because people ask questions about homosexuality all the time, it is becoming more and more mainstream.</span> <span class="tl-s" data-s="703.69" data-e="713.53">If you have questions about this, or even if you disagree, email us, and I won&#x27;t make a straw man out of you.</span> <span class="tl-s" data-s="713.63" data-e="714.96">I will answer the question.</span> <span class="tl-s" data-s="715.01" data-e="720.63">But the truth remains that the sexual ethic of the Bible is very clear.</span></p>
+        <p><span class="tl-s" data-s="722.22" data-e="723.46">It&#x27;s one man, one woman.</span> <span class="tl-s" data-s="723.75" data-e="733.32">There is no room for 2 men or 2 women to be in a committed relationship and it bear any marks of any biblical truth.</span> <span class="tl-s" data-s="733.32" data-e="749.26">But that&#x27;s one of the things that the progressive Christians get a bit squishy on, and it ends up becoming Dangerous, because, because like what, what they&#x27;ll talk about is truth claims.</span> <span class="tl-s" data-s="749.91" data-e="770.31">And, um, sometimes what people will say is lived experience is more important than truth claims, and, um, the truth claims can in fact become oppressive, and you can use these truth claims as oppressive and a tool of oppression Um, to hurt people who, you know, have these homosexual feelings or whatever.</span> <span class="tl-s" data-s="770.41" data-e="775.12">And, you know, obviously as Christians, we need to have all of our speech seasoned with salt.</span> <span class="tl-s" data-s="775.23" data-e="781.07">We have— [Speaker B] yeah, [Speaker A] we need with kindness and, and gentleness and love.</span> <span class="tl-s" data-s="781.07" data-e="788.99">Um, but it&#x27;s not loving and kind and, and gentle not to speak the truth about something when someone asks you or when you have a conversation about it.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="789.02" data-e="789.42">In love, right?</span> <span class="tl-s" data-s="789.43" data-e="792.07">Speaking the truth in love.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="792.07" data-e="792.21">Yeah.</span> <span class="tl-s" data-s="792.21" data-e="798.53">And, and I&#x27;m not trying to say, like, sometimes Christians will say Um, I&#x27;m gonna say something in love, and then they say it and it doesn&#x27;t seem very loving at all.</span> <span class="tl-s" data-s="798.53" data-e="801.25">Just because you say in love doesn&#x27;t mean you can say whatever you want to say.</span> <span class="tl-s" data-s="801.25" data-e="801.85">I just did that.</span> <span class="tl-s" data-s="801.85" data-e="802.49">Yeah, well, kind of.</span> <span class="tl-s" data-s="802.49" data-e="807.03">It doesn&#x27;t mean you can say whatever you want to say, like, Mark, I hate your guts in love, you know, or something like that.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="807.03" data-e="810.29">In love, I feel like you should iron your [Speaker A] shirt.</span> <span class="tl-s" data-s="810.29" data-e="811.13">In love, right?</span> <span class="tl-s" data-s="811.13" data-e="820.44">No, no, no, actually say it in a loving way, a kind way, an understanding way, a gracious way, a gentle way, and then people can go, oh, I can tell that&#x27;s in love.</span> <span class="tl-s" data-s="820.44" data-e="821.48">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="822.19" data-e="841.82">You know, you don&#x27;t have to say You know, and so we can speak about homosexuality and transgender movement and all the other movements that are popular now in— as people redefine their identities in genuine love, [Speaker B] right, [Speaker A] without compromising the truth.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="841.82" data-e="847.80">Yeah, our identity is in Christ, not in, you know, what we do or our sexual preferences.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="847.80" data-e="848.57">Or who we sleep in.</span> <span class="tl-s" data-s="848.59" data-e="849.82">Yeah, who we sleep with.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="849.87" data-e="850.33">Yeah.</span> <span class="tl-s" data-s="850.45" data-e="850.48">Exactly.</span> <span class="tl-s" data-s="850.53" data-e="853.96">So are you still thinking about food or did you kind of— [Speaker A] Oh yeah, I forgot.</span> <span class="tl-s" data-s="853.96" data-e="855.05">You forgot?</span> <span class="tl-s" data-s="855.24" data-e="857.63">I mean, maybe next time.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="857.65" data-e="862.96">So September 19th, we&#x27;re having a forum night and it&#x27;s going to be on Christian nationalism.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="863.03" data-e="863.28">That&#x27;s right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="863.28" data-e="866.87">And what&#x27;s the food going to be that night?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="867.04" data-e="867.35">Food.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="867.67" data-e="869.53">Okay, that&#x27;s the worst drum roll ever.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="869.69" data-e="874.15">But I got a disapproving look from Heather, so let it go.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="874.18" data-e="874.84">Yeah.</span> <span class="tl-s" data-s="875.14" data-e="878.41">Anyway, [Speaker B] no musician anyways.</span> <span class="tl-s" data-s="878.49" data-e="879.39">I can sing though.</span> <span class="tl-s" data-s="879.39" data-e="879.87">No, you can&#x27;t.</span> <span class="tl-s" data-s="879.87" data-e="880.87">Anyway, what&#x27;s the food, Mark?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="880.91" data-e="884.20">The food is shredded barbecue chicken sliders with potato chips.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="884.20" data-e="884.70">Sweet.</span> <span class="tl-s" data-s="885.15" data-e="887.21">What&#x27;s a slider?</span> <span class="tl-s" data-s="887.25" data-e="889.11">Is it a small hamburger?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="889.15" data-e="890.63">Yeah, like a small burger.</span> <span class="tl-s" data-s="890.76" data-e="892.44">We might get Hawaiian rolls.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="892.76" data-e="893.13">Oh, nice.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="893.16" data-e="895.71">Or just regular burger buns and crockpotting some barbecue chicken.</span> <span class="tl-s" data-s="895.97" data-e="895.98">Sweet.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="896.00" data-e="897.81">You need like 9 crockpots, [Speaker B] right?</span> <span class="tl-s" data-s="897.81" data-e="898.07">I know.</span> <span class="tl-s" data-s="898.07" data-e="899.58">Well, I learned from last time.</span> <span class="tl-s" data-s="899.59" data-e="901.77">I&#x27;m no cook, so I give you guys a lot of bravery.</span> <span class="tl-s" data-s="901.77" data-e="903.09">You guys were very brave to eat the food that I cooked.</span> <span class="tl-s" data-s="903.18" data-e="910.60">We got good you know, feedback on it, and it was all gone at the end.</span> <span class="tl-s" data-s="910.65" data-e="912.80">We&#x27;re trying to get people to come to this, Mark.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="912.83" data-e="913.09">Exactly.</span> <span class="tl-s" data-s="913.09" data-e="920.28">So last time we got 9 pounds of chicken, so we&#x27;re— and we had beef as well, so we&#x27;re probably gonna have about 20 pounds of chicken here.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="920.28" data-e="921.27">Oh man, okay.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="921.27" data-e="922.20">Depending on the amount of people.</span> <span class="tl-s" data-s="922.20" data-e="930.96">So if this is something you&#x27;re interested in coming to, please sign up on the Center Church Hub site so we can get an idea for food and for chairs.</span> <span class="tl-s" data-s="930.96" data-e="936.17">We used pretty much every chair in the building that we had [Speaker A] So RSVP.</span> <span class="tl-s" data-s="936.17" data-e="942.64">RSVP [Speaker A] at Center Church on the Hub at Center Church, and you can sign up right there.</span> <span class="tl-s" data-s="942.75" data-e="943.44">It&#x27;ll be September 19th.</span> <span class="tl-s" data-s="943.79" data-e="948.78">We&#x27;ll talk about Christian nationalism, and Mark said, I&#x27;m going to focus mostly on theonomy.</span> <span class="tl-s" data-s="948.92" data-e="949.15">Theonomy.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="949.15" data-e="949.34">Theonomy.</span> <span class="tl-s" data-s="949.34" data-e="956.86">So if you&#x27;re interested in what that is and what that&#x27;s about and why we do not hold to that here, you can come that night.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="956.86" data-e="957.00">Yep.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="957.11" data-e="960.62">Hear about it and ask your questions.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="960.62" data-e="970.30">So any questions about this podcast or memes or things you want to make fun of Rich and I for, You can reach out to us at production@centergilbert.com.</span> <span class="tl-s" data-s="970.37" data-e="970.98">Too nice.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="970.98" data-e="970.98">Please.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="970.98" data-e="970.98">I had to get one singing session in there. [Speaker A] production@centergilbert.com.</span> <span class="tl-s" data-s="970.98" data-e="970.98">And I am so sorry that he sung that.</span> <span class="tl-s" data-s="970.98" data-e="970.98">Thank you guys.</span> <span class="tl-s" data-s="970.98" data-e="970.98">Have a great day.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="970.98" data-e="970.98">Adios.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Fixed on Jesus episode archive, backed by /api/podcast/search.
+  // Static fallback list above stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function fmtDuration(raw) {
+      if (!raw) return "";
+      var str = String(raw).trim();
+      // Anchor feeds report seconds; render as H:MM:SS or M:SS.
+      if (/^\d+$/.test(str)) {
+        var total = parseInt(str, 10);
+        var h = Math.floor(total / 3600);
+        var m = Math.floor((total % 3600) / 60);
+        var sec = total % 60;
+        var mm = (h > 0 && m < 10 ? "0" + m : "" + m);
+        var ss = (sec < 10 ? "0" + sec : "" + sec);
+        return (h > 0 ? h + ":" + mm : m) + ":" + ss;
+      }
+      // Anchor also reports clock strings like "00:24:02" — drop the
+      // redundant leading hour so it reads "24:02".
+      return str.replace(/^00:/, "");
+    }
+    function row(it) {
+      it = it || {};
+      var title = esc(it.title) || "Untitled episode";
+      var tUrl = it.guid && transcriptMap[it.guid];
+      var heading = tUrl
+        ? '<a href="' + esc(tUrl) + '">' + title + "</a>"
+        : (it.link
+          ? '<a href="' + esc(it.link) + '" target="_blank" rel="noopener">' + title + "</a>"
+          : title);
+      var meta = [fmtDate(it.date), fmtDuration(it.duration)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      return '<div class="sermon"><div><h3>' + heading + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    var PER = 10;
+    var state = { q: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No episodes found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " episode" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " episodes";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/podcast/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () {
+          // Keep the static list, but tell the reader where else to listen —
+          // some privacy blockers stop the archive request itself.
+          var note = document.querySelector("[data-sermons-error]");
+          if (note) note.hidden = false;
+        });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    if (monthSel) {
+      monthSel.addEventListener("change", function () {
+        state.month = monthSel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: 0337caf0-886d-434a-8a15-6afad350912d -->
+</body>
+</html>
