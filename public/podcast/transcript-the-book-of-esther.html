@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Book of Esther — Podcast Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Fixed on Jesus: conversations beyond Sunday mornings from Center Church in Gilbert, AZ — listen on Spotify, Apple Podcasts, and YouTube." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=18" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a href="/sermons">Sermons</a></li>
+              <li><a class="active" href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/podcast">&larr; All podcast episodes</a>
+          <h1 class="display-lg">The Book of Esther</h1>
+          <p class="transcript-meta">2023-08-23 · 14:25</p>
+          <p class="transcript-desc">Welcome to FIXED ON JESUS, a podcast brought to you by Center Church in Gilbert, Arizona. Speaking to you today are Rich Richardson &amp; Mark Johnson Jr. Production by Heather Corbitt Please feel free to send email inquiries to production@centergilbert.com **SHOW NOTES** Questions asked in this episode</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/e750e370/podcast/play/74971613/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-7-23%2Fc121b97f-878a-af77-ff9f-17eccaa8d73a.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="0.18" data-e="17.59">The reality is that God, who was in control of the Persian Empire from Ethiopia to India, is also in control of the United States Empire from Maine to California, Washington to Florida, even though his name doesn&#x27;t appear much in, in our day.</span></p>
+        <p><span class="tl-s" data-s="33.55" data-e="36.56">This is Fixed on Jesus.</span></p>
+        <p><span class="tl-s" data-s="55.91" data-e="58.23">Welcome back to the Fixed on Jesus podcast.</span> <span class="tl-s" data-s="58.27" data-e="67.64">This is That Train where we Jump from the depot onto the train just to see where we&#x27;re going this morning, this afternoon, this evening, whenever you&#x27;re listening.</span> <span class="tl-s" data-s="68.62" data-e="73.01">What we&#x27;re going to be doing is we&#x27;re going to be talking about a series we&#x27;re in the midst of here at church.</span> <span class="tl-s" data-s="73.20" data-e="78.17">We are going to be talking about the book of what, Mark?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="78.88" data-e="79.28">Esther.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="80.00" data-e="81.15">Okay, don&#x27;t do that again.</span> <span class="tl-s" data-s="81.36" data-e="81.84">I won&#x27;t.</span> <span class="tl-s" data-s="82.52" data-e="88.42">I don&#x27;t have headphones on, but it makes my ears kind of bleed when you say we might have to [Speaker B] re-record [Speaker A] that.</span> <span class="tl-s" data-s="88.42" data-e="93.02">So this is not a This is not an American Idol thing.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="93.02" data-e="93.08">Good.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="93.08" data-e="97.41">Because you&#x27;re not a singer and your talents lie in other places.</span> <span class="tl-s" data-s="97.48" data-e="97.94">Maybe.</span> <span class="tl-s" data-s="98.28" data-e="107.02">So I am joined, as always, my name is Rich and I&#x27;m joined by our production coordinator, Heather Corbett.</span> <span class="tl-s" data-s="107.02" data-e="107.40">Woo-hoo!</span> <span class="tl-s" data-s="107.67" data-e="115.76">And also Mark Johnson Jr. is asking me questions and we&#x27;re having a conversation today about Esther.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="115.94" data-e="116.10">Esther, yeah.</span> <span class="tl-s" data-s="116.80" data-e="120.47">So [Speaker A] now let me— before you be— have you heard of the story of Esther before?</span> <span class="tl-s" data-s="120.52" data-e="121.90">You&#x27;ve been a Christian not that long.</span> <span class="tl-s" data-s="121.90" data-e="126.28">Have you— did you know about the story of Esther at all [Speaker B] prior to being a Christian?</span> <span class="tl-s" data-s="126.28" data-e="126.36">No.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="126.36" data-e="130.80">And then after being a Christian, have you heard much about it?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="130.80" data-e="134.27">Just read it a few times, um, watched the movie on Pureflix.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="134.72" data-e="134.88">What?</span> <span class="tl-s" data-s="134.88" data-e="135.78">There&#x27;s a movie?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="135.78" data-e="137.84">There is a movie.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="137.89" data-e="137.95">Come on.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="137.95" data-e="138.66">There&#x27;s a movie.</span> <span class="tl-s" data-s="138.66" data-e="139.88">There&#x27;s a movie.</span> <span class="tl-s" data-s="140.22" data-e="141.82">Do you know what Pureflix is?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="141.87" data-e="142.58">I don&#x27;t.</span> <span class="tl-s" data-s="142.62" data-e="143.31">Oh no.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="143.50" data-e="144.18">It&#x27;s like Christian Netflix.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="144.21" data-e="145.29">Heather says it&#x27;s good.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="145.34" data-e="146.29">It&#x27;s like $8 a month.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="146.32" data-e="150.41">Okay, so I&#x27;m not gonna watch the movie before I preach the book.</span> <span class="tl-s" data-s="150.43" data-e="150.99">Just heads up.</span> <span class="tl-s" data-s="150.99" data-e="157.00">Okay, so I did not know there was a movie, but there is a book of the Bible, Mark.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="157.00" data-e="157.19">Thanks.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="157.19" data-e="157.65">Called Esther.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="158.46" data-e="159.90">What is different about the book of Esther?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="159.92" data-e="167.23">Yeah, the book of Esther is a different ball game compared to, well, a lot of other books in the Bible.</span> <span class="tl-s" data-s="167.65" data-e="173.03">This is a narrative, and so a narrative is a story.</span> <span class="tl-s" data-s="173.24" data-e="180.56">And so one of the unique factors about this story is that it is not set in Jerusalem.</span> <span class="tl-s" data-s="180.59" data-e="185.80">It doesn&#x27;t mention any kind of worship of God.</span> <span class="tl-s" data-s="185.80" data-e="187.37">It doesn&#x27;t mention the word God.</span> <span class="tl-s" data-s="187.37" data-e="223.54">Uh, the people in this pa— in this book are Jewish, but there&#x27;s no sense of them Carrying any kind of care for godliness, so it&#x27;s a very interesting book because what we have are the people of God who were exiled now living in Persia under well at this point King Xerxes and we have this intriguing story that happens where the whole nation of Israel in Persia is saved.</span> <span class="tl-s" data-s="223.68" data-e="228.59">Through the actions of a young woman named Esther.</span> <span class="tl-s" data-s="228.59" data-e="233.46">So it&#x27;s different because a narrative is a narrative is different than say one of Paul&#x27;s letters.</span></p>
+        <p><span class="tl-s" data-s="233.46" data-e="242.67">One of Paul&#x27;s letters is easy to interpret because all you do is look to see what the word means when you read it, and you can say, okay, I know how to apply it, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="242.67" data-e="242.75">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="242.75" data-e="248.79">When he says flee sexual immorality, we know oh that means run the other way, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="248.79" data-e="249.31">Fast.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="249.50" data-e="251.63">Fast, flee, run hard.</span> <span class="tl-s" data-s="251.73" data-e="253.35">Now Esther, a story is very different.</span> <span class="tl-s" data-s="253.35" data-e="263.55">The way we interpret a story or a narrative in the Bible is different because in a narrative what we have is a narrator telling us what happened.</span> <span class="tl-s" data-s="264.32" data-e="267.59">He doesn&#x27;t tell us what should have happened.</span> <span class="tl-s" data-s="267.68" data-e="270.09">He doesn&#x27;t tell us why it happened.</span> <span class="tl-s" data-s="270.19" data-e="272.16">He just tells us what happened.</span> <span class="tl-s" data-s="272.35" data-e="281.70">And we, as those who are interpreting the Bible, I have to ask, are these good choices by the main characters?</span> <span class="tl-s" data-s="281.75" data-e="282.37">Are they bad choices?</span> <span class="tl-s" data-s="282.37" data-e="287.68">Uh, what does the rest of the Bible have to say about these choices?</span> <span class="tl-s" data-s="287.73" data-e="292.15">And, um, what are we to take away from it, if that makes sense?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="292.15" data-e="292.60">Yeah.</span> <span class="tl-s" data-s="293.19" data-e="294.19">So how would you interpret a narrative?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="294.24" data-e="297.30">Well, what I would do is I would read it.</span> <span class="tl-s" data-s="297.30" data-e="299.61">As I read the story— [Speaker B] Step by step.</span> <span class="tl-s" data-s="299.67" data-e="300.13">Step by step.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="300.23" data-e="302.41">So the first thing to do— The wiki leaks.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="302.48" data-e="302.74">The wiki leaks.</span> <span class="tl-s" data-s="302.74" data-e="307.04">The first thing to do I got to put my reading glasses on now.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="307.09" data-e="307.58">Oh, those are sharp.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="307.66" data-e="307.75">Thanks.</span> <span class="tl-s" data-s="307.75" data-e="316.36">Uh, the first thing I need to do— we need to do is ensure that we understand and read all the details of the story, right?</span> <span class="tl-s" data-s="316.46" data-e="319.90">So the story— the author gives us every detail.</span> <span class="tl-s" data-s="320.08" data-e="326.00">There is no piece of this story that is without meaning, right?</span> <span class="tl-s" data-s="326.11" data-e="326.71">Who&#x27;s the author?</span> <span class="tl-s" data-s="326.71" data-e="327.79">The author, we do not know.</span> <span class="tl-s" data-s="328.53" data-e="331.97">Okay, we do not know who the author is.</span> <span class="tl-s" data-s="332.05" data-e="335.79">Uh, we don&#x27;t have any, any, any You know, nothing inside the text tells us that.</span> <span class="tl-s" data-s="335.79" data-e="347.84">And so what you need to do is you need to realize that first of all, like I&#x27;ll just give you a quick overview of chapter one.</span> <span class="tl-s" data-s="347.85" data-e="363.15">King Ahasuerus has a he&#x27;s the king over the largest empire to date, and we have the author telling us from India to Ethiopia and over 127.</span></p>
+        <p><span class="tl-s" data-s="364.06" data-e="364.87">Different provinces.</span> <span class="tl-s" data-s="364.87" data-e="367.98">So this is a massive, massive, uh, landmass that he covers.</span> <span class="tl-s" data-s="368.01" data-e="376.32">He, he goes ahead and he throws a party for 180 days, and the wine flows.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="376.35" data-e="377.26">That&#x27;s a party.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="377.63" data-e="378.32">That&#x27;s a party.</span> <span class="tl-s" data-s="378.44" data-e="379.00">180 days.</span> <span class="tl-s" data-s="379.00" data-e="379.67">180 days.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="379.78" data-e="380.92">That&#x27;s a rave among all raves.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="380.92" data-e="384.10">I don&#x27;t understand that, but [Speaker B] okay, I don&#x27;t either [Speaker A] anymore.</span> <span class="tl-s" data-s="384.11" data-e="385.04">Yeah, okay, good.</span> <span class="tl-s" data-s="385.18" data-e="386.45">I&#x27;m not sure what that is.</span> <span class="tl-s" data-s="386.45" data-e="392.12">And so like, it gets— they get all kinds of wine.</span> <span class="tl-s" data-s="392.71" data-e="397.24">Drinks are served in golden vessels, and, uh, everybody is just drinking and making merry.</span> <span class="tl-s" data-s="397.28" data-e="399.27">Uh, and they have— [Speaker B] Making merit?</span> <span class="tl-s" data-s="399.29" data-e="400.09">Making merry.</span> <span class="tl-s" data-s="400.32" data-e="403.51">Have you heard of that phrase?</span> <span class="tl-s" data-s="403.52" data-e="403.76">No.</span> <span class="tl-s" data-s="403.85" data-e="404.95">Okay, well, look it up.</span></p>
+        <p><span class="tl-s" data-s="404.98" data-e="430.75">And so anyway, uh, so a few days into the, the, uh, a few days into the, to this party, uh, drunk men get together and decide that it would be a good idea to have the queen Vashti parade through where the men are having their party wearing her golden crown.</span> <span class="tl-s" data-s="430.80" data-e="433.70">So the, the king requests her presence and she won&#x27;t come.</span> <span class="tl-s" data-s="433.70" data-e="439.33">And some people say she wouldn&#x27;t come because she felt like it was beneath her station as queen to do that.</span> <span class="tl-s" data-s="439.33" data-e="439.56">Mm-hmm.</span> <span class="tl-s" data-s="439.56" data-e="446.96">Other people say— and we don&#x27;t know this from the text— but other people say that she was requested to come with her crown on and only her crown.</span> <span class="tl-s" data-s="447.06" data-e="448.50">That we don&#x27;t know.</span> <span class="tl-s" data-s="448.50" data-e="454.26">But what we have here is a request that she turns down.</span> <span class="tl-s" data-s="454.37" data-e="459.87">And so this king, who is ruling over the largest landmass, looks like a massive buffoon.</span> <span class="tl-s" data-s="459.96" data-e="465.58">He can&#x27;t get his wife to do what he wants her to do.</span></p>
+        <p><span class="tl-s" data-s="465.67" data-e="475.62">And so then his, his officials say, listen, if it gets out that your wife doesn&#x27;t do what you want to do, we&#x27;re going to have trouble in the land.</span> <span class="tl-s" data-s="475.62" data-e="476.57">So let&#x27;s write a letter.</span> <span class="tl-s" data-s="476.81" data-e="483.19">Let&#x27;s write a letter telling everybody, hey, listen, wives, you should listen to your husband, which makes it worse, right?</span> <span class="tl-s" data-s="483.30" data-e="502.09">So like, it could have been a story nobody heard, but instead the king, as a buffoon, writes this story, writes this letter so that the whole world from Ethiopia to India knows that Vashti said, you know what, I&#x27;m not going to parade in front of you and your drunk friends.</span> <span class="tl-s" data-s="502.14" data-e="502.29">Hmm.</span> <span class="tl-s" data-s="502.29" data-e="504.97">Go jump in a lake!</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="504.97" data-e="505.03">Rebels.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="505.03" data-e="506.82">Rebels, but also like a fool, right?</span> <span class="tl-s" data-s="506.82" data-e="515.97">So here is this king who has a lot of power but doesn&#x27;t have a lot of brains.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="517.59" data-e="518.70">Hmm.</span> <span class="tl-s" data-s="519.23" data-e="520.84">Do— does power and brains— are they separate?</span> <span class="tl-s" data-s="520.84" data-e="521.05">Sometimes?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="521.07" data-e="521.96">Mutually exclusive is the phrase.</span> <span class="tl-s" data-s="521.96" data-e="522.12">Sometimes.</span> <span class="tl-s" data-s="522.12" data-e="522.18">Okay.</span> <span class="tl-s" data-s="522.18" data-e="527.51">The brain— the people who are smart don&#x27;t always have power, and the people who have power aren&#x27;t always smart.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="527.51" data-e="529.10">Back to what you said.</span> <span class="tl-s" data-s="529.20" data-e="535.83">I just happened to have Google opened and I looked up making merry.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="535.87" data-e="536.28">Making merry.</span> <span class="tl-s" data-s="536.41" data-e="537.84">What does it say?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="537.95" data-e="540.24">This is the Merriam-Webster definition.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="540.34" data-e="540.67">Merriam-Webster&#x27;s.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="540.67" data-e="543.85">To have fun and enjoy oneself by eating, drinking, dancing, etc.</span> <span class="tl-s" data-s="544.18" data-e="545.77">They made merry throughout the night.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="546.03" data-e="546.27">Exactly.</span> <span class="tl-s" data-s="546.27" data-e="549.23">So they made merry for 180 [Speaker B] days.</span> <span class="tl-s" data-s="549.25" data-e="551.16">They made merry like a boss, like a whole bunch of bosses.</span> <span class="tl-s" data-s="551.16" data-e="558.16">So anyway, uh, so we— what we will do is we will ask as we read this text, okay, whoa, what is happening here?</span> <span class="tl-s" data-s="558.16" data-e="564.21">And this is— if you read chapter 1, It doesn&#x27;t seem like a very Jewish book at all, and it&#x27;s not.</span> <span class="tl-s" data-s="564.24" data-e="565.36">It&#x27;s Persian.</span> <span class="tl-s" data-s="565.36" data-e="568.55">So what in the world does the God of Israel have to do with this?</span> <span class="tl-s" data-s="568.60" data-e="576.60">That&#x27;s why we keep reading and we recognize that the God of Israel is not just the God of Israel.</span> <span class="tl-s" data-s="576.60" data-e="581.14">He&#x27;s the God of the whole world.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="581.15" data-e="581.41">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="581.48" data-e="584.78">And these people who are in exile are just like us.</span> <span class="tl-s" data-s="584.78" data-e="585.55">They&#x27;re in exile.</span> <span class="tl-s" data-s="585.65" data-e="586.79">We&#x27;re also in exile.</span> <span class="tl-s" data-s="586.79" data-e="591.98">Peter in 1 Peter chapter 1 says that we Christians are in exile.</span> <span class="tl-s" data-s="592.05" data-e="594.13">We&#x27;re not home yet.</span> <span class="tl-s" data-s="594.63" data-e="612.40">And so what we&#x27;re going to see as Christians living in the 21st century United States is as we&#x27;re going to have tips and not tricks, but tips to live in exile as faithful Christians who follow follow a God that is often unseen.</span> <span class="tl-s" data-s="612.56" data-e="616.03">Because like I said earlier, the word God is not in this book at all.</span> <span class="tl-s" data-s="616.81" data-e="617.02">Hmm.</span> <span class="tl-s" data-s="617.29" data-e="629.21">And in fact, if you look at our culture, you would think that our culture has— you know, there&#x27;s not— God&#x27;s not mentioned much at all as a primary mover, as someone that anyone&#x27;s looking to.</span> <span class="tl-s" data-s="629.21" data-e="638.01">But he&#x27;s— you know, the name Jesus is often taken in vain, or, you know, the name God is taken in vain.</span></p>
+        <p><span class="tl-s" data-s="638.20" data-e="643.34">Aside from that, people aren&#x27;t talking much about God at all.</span> <span class="tl-s" data-s="643.34" data-e="658.29">But the reality is that God, who is in control of the Persian Empire from Ethiopia to India, is also in control of the United States Empire from Maine to California, Washington to Florida, even though his name doesn&#x27;t appear much in, in our day.</span> <span class="tl-s" data-s="658.34" data-e="664.50">So it&#x27;s going to be a really timely book for us to go through.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="664.50" data-e="664.58">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="664.58" data-e="665.44">As a church.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="666.02" data-e="666.76">Yeah, definitely.</span> <span class="tl-s" data-s="667.88" data-e="673.29">As our culture ignores God and Jesus as the mover and shaker, as you already mentioned.</span> <span class="tl-s" data-s="673.38" data-e="683.40">I could see why one could conclude from that reading the book of Esther doesn&#x27;t mention God, doesn&#x27;t seem very much like any of the other books as you described.</span> <span class="tl-s" data-s="683.51" data-e="684.57">Is that the reason?</span> <span class="tl-s" data-s="684.57" data-e="690.09">So I was reading Systematic Theology and it was [Speaker A] by, [Speaker B] by Wayne Grudem.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="690.17" data-e="693.18">Because are there many systematic theologies?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="693.23" data-e="693.52">Very many.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="693.68" data-e="695.64">Okay, there&#x27;s not just one.</span> <span class="tl-s" data-s="695.69" data-e="696.15">That is a systematic.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="696.18" data-e="698.74">Anyway, yes, a systematic Theology by [Speaker A] Dr.</span> <span class="tl-s" data-s="698.91" data-e="699.14">Wayne Goodrum.</span> <span class="tl-s" data-s="699.14" data-e="699.23">Yes.</span> <span class="tl-s" data-s="699.23" data-e="700.82">Okay, I gotta say doctor.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="700.82" data-e="702.76">No, you don&#x27;t have to.</span> <span class="tl-s" data-s="702.76" data-e="704.01">It&#x27;s respectful.</span> <span class="tl-s" data-s="704.04" data-e="706.74">But anyway, what did he say?</span> <span class="tl-s" data-s="706.85" data-e="708.62">What did he say about Esther?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="708.62" data-e="716.20">He said a whole lot, but he said it was debatable if this was a book to be included in the canon.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="716.48" data-e="723.61">Debatable, not that he debated it, right, but that other people earlier debated [Speaker B] it, right, in the history of Christianity.</span> <span class="tl-s" data-s="723.67" data-e="723.87">Correct.</span> <span class="tl-s" data-s="723.92" data-e="731.93">Whether or not Jewish history— [Speaker B] Jewish history, [Speaker A] yeah. [Speaker B] if this should be included, and he ultimately— well, they ultimately concluded that it should be.</span> <span class="tl-s" data-s="731.93" data-e="735.56">Do you think that is why that debate— why do you think that was a debate?</span> <span class="tl-s" data-s="735.56" data-e="737.75">Well, [Speaker A] the debate was because these aren&#x27;t— a couple— 2 reasons.</span> <span class="tl-s" data-s="737.75" data-e="740.01">One, the name God is not in this book.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="740.05" data-e="740.19">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="740.19" data-e="741.75">That is the obvious one.</span> <span class="tl-s" data-s="741.75" data-e="743.32">That is not typical of the Old Testament.</span> <span class="tl-s" data-s="743.32" data-e="752.71">If you read the Old Testament— [Speaker B] Is that the only book that— [Speaker A] Yes.</span> <span class="tl-s" data-s="752.71" data-e="758.80">If you read the Old Testament, you are going to see God all over the place, right?</span> <span class="tl-s" data-s="758.87" data-e="761.56">But not in Esther.</span> <span class="tl-s" data-s="762.47" data-e="766.34">Secondly, Mordecai and Esther are not exactly wonderful heroes.</span> <span class="tl-s" data-s="766.34" data-e="773.89">Like, think about Dan— think about Daniel and his friends when they&#x27;re taken into the king&#x27;s charge.</span> <span class="tl-s" data-s="773.89" data-e="776.80">They ask not to eat meat that was unclean.</span> <span class="tl-s" data-s="776.98" data-e="778.97">Esther makes no requests of that, right?</span> <span class="tl-s" data-s="779.49" data-e="789.08">Um, not only that, the way that she auditioned to be the king&#x27;s wife— [Speaker B] seduction— [Speaker A] it was spending the night with him.</span></p>
+        <p><span class="tl-s" data-s="789.35" data-e="795.96">And so, like, again, not exactly how we would say, hey, listen, daughters, and do likewise.</span> <span class="tl-s" data-s="796.48" data-e="798.67">We wouldn&#x27;t— that&#x27;s not how we think about it.</span> <span class="tl-s" data-s="798.67" data-e="803.29">Mordecai&#x27;s name is derived from Marduk, the chief god of the day.</span> <span class="tl-s" data-s="803.38" data-e="806.23">So these, these are not— these are some compromised characters.</span> <span class="tl-s" data-s="806.30" data-e="807.11">Now, they have their moments.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="807.91" data-e="807.95">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="807.96" data-e="810.46">And, uh, they— I mean, they&#x27;re like us.</span> <span class="tl-s" data-s="810.46" data-e="811.71">We fail, they failed.</span> <span class="tl-s" data-s="811.81" data-e="816.62">We have our moments and we fall on our face.</span> <span class="tl-s" data-s="816.62" data-e="831.41">And so living as an exile is hard, and they prove it to us along the And we&#x27;ll see that as we, as we track along with Esther and Mordecai and Haman and the whole cast of characters from this book.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="831.85" data-e="832.18">Love that.</span> <span class="tl-s" data-s="832.25" data-e="832.65">Love that.</span> <span class="tl-s" data-s="832.65" data-e="836.51">So that&#x27;ll pretty much wrap up our talk about Esther.</span> <span class="tl-s" data-s="836.58" data-e="839.76">We look forward to you catching the next episode.</span> <span class="tl-s" data-s="840.02" data-e="846.99">If you have any questions about Esther, tune in to our sermons here at Centre Church, but also reach out to us at production@centregilbert.ca.</span> <span class="tl-s" data-s="846.99" data-e="846.99">Thank you for listening.</span> <span class="tl-s" data-s="846.99" data-e="846.99">Please share this with a friend, and we also are accepting topic recommendations or questions about any other topics that you heard from us.</span> <span class="tl-s" data-s="846.99" data-e="846.99">Thank you so much, and God bless.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="846.99" data-e="846.99">See you later.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Fixed on Jesus episode archive, backed by /api/podcast/search.
+  // Static fallback list above stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function fmtDuration(raw) {
+      if (!raw) return "";
+      var str = String(raw).trim();
+      // Anchor feeds report seconds; render as H:MM:SS or M:SS.
+      if (/^\d+$/.test(str)) {
+        var total = parseInt(str, 10);
+        var h = Math.floor(total / 3600);
+        var m = Math.floor((total % 3600) / 60);
+        var sec = total % 60;
+        var mm = (h > 0 && m < 10 ? "0" + m : "" + m);
+        var ss = (sec < 10 ? "0" + sec : "" + sec);
+        return (h > 0 ? h + ":" + mm : m) + ":" + ss;
+      }
+      // Anchor also reports clock strings like "00:24:02" — drop the
+      // redundant leading hour so it reads "24:02".
+      return str.replace(/^00:/, "");
+    }
+    function row(it) {
+      it = it || {};
+      var title = esc(it.title) || "Untitled episode";
+      var tUrl = it.guid && transcriptMap[it.guid];
+      var heading = tUrl
+        ? '<a href="' + esc(tUrl) + '">' + title + "</a>"
+        : (it.link
+          ? '<a href="' + esc(it.link) + '" target="_blank" rel="noopener">' + title + "</a>"
+          : title);
+      var meta = [fmtDate(it.date), fmtDuration(it.duration)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      return '<div class="sermon"><div><h3>' + heading + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    var PER = 10;
+    var state = { q: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No episodes found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " episode" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " episodes";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/podcast/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () {
+          // Keep the static list, but tell the reader where else to listen —
+          // some privacy blockers stop the archive request itself.
+          var note = document.querySelector("[data-sermons-error]");
+          if (note) note.hidden = false;
+        });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    if (monthSel) {
+      monthSel.addEventListener("change", function () {
+        state.month = monthSel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: e24d3233-437f-4d3f-bf20-f6f7904762d8 -->
+</body>
+</html>
