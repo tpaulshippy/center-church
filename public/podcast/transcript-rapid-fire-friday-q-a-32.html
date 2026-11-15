@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rapid Fire Friday - Q&amp;A #32 — Podcast Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Fixed on Jesus: conversations beyond Sunday mornings from Center Church in Gilbert, AZ — listen on Spotify, Apple Podcasts, and YouTube." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=18" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a href="/sermons">Sermons</a></li>
+              <li><a class="active" href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/podcast">&larr; All podcast episodes</a>
+          <h1 class="display-lg">Rapid Fire Friday - Q&amp;A #32</h1>
+          <p class="transcript-meta">2025-07-18 · 16:42</p>
+          <p class="transcript-desc">Rapid Fire Friday is a special series from the Fixed On Jesus Podcast crew (Rich, Mark and Heather) Sometimes we get questions that have short enough answers to answer many of them in one episode that we like to call Rapid Fire Fridays. Look for these to be released on Fridays if and when we get eno</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/e750e370/podcast/play/105581290/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-6-16%2F08265313-6c36-9bff-13fc-78672bc0e7b9.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="0.03" data-e="0.70">What day is it, Mark?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1.30" data-e="1.97">Oh, good question.</span> <span class="tl-s" data-s="2.02" data-e="4.02">I was gonna go on the Google machine, but I think it&#x27;s Friday.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="4.42" data-e="4.92">It&#x27;s Friday.</span> <span class="tl-s" data-s="5.14" data-e="5.96">You know what that means, Mark?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="6.52" data-e="8.53">Rapid Fire Friday.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="12.05" data-e="16.53">Boom boom boom.</span> <span class="tl-s" data-s="16.62" data-e="18.31">Rapid Fire Friday.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="21.51" data-e="26.69">Three two one.</span> <span class="tl-s" data-s="27.19" data-e="29.37">Rapid Fire Friday.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="34.54" data-e="38.89">Here&#x27;s another anonymous question via email, and it&#x27;s a series of questions.</span> <span class="tl-s" data-s="40.08" data-e="45.95">The first one is, I recently heard a pastor discussing hell, and his take was that hell isn&#x27;t really a place.</span> <span class="tl-s" data-s="46.80" data-e="48.21">It was not created by God.</span> <span class="tl-s" data-s="48.92" data-e="49.70">It&#x27;s what&#x27;s in us.</span> <span class="tl-s" data-s="50.27" data-e="54.49">Jesus came to get hell out of earth, and that&#x27;s what he did on the cross.</span> <span class="tl-s" data-s="55.52" data-e="60.34">I usually like the teaching I have seen from this person, but this particular point kind of had my head spinning.</span> <span class="tl-s" data-s="60.88" data-e="67.20">I&#x27;m happy to send in a video, but it&#x27;s about 28 minutes long, and I wasn&#x27;t trying to make it about the pastor, just the content.</span> <span class="tl-s" data-s="68.02" data-e="68.74">What do you say to that?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="70.01" data-e="72.31">I would say that that&#x27;s opposite of what the Bible says.</span> <span class="tl-s" data-s="72.91" data-e="80.44">Hell is definitely a place, and it&#x27;s a place that is very much something Jesus talks about, right?</span> <span class="tl-s" data-s="81.14" data-e="83.13">And like, think about Matthew chapter 5.</span> <span class="tl-s" data-s="83.18" data-e="91.91">He says, but I say to you, verse 22, that everyone who is angry with his brother will be liable to judgment, and whoever says, you fool, will be liable to the hell of fire.</span></p>
+        <p><span class="tl-s" data-s="94.32" data-e="99.72">Matthew 25:41, depart from me, you cursed, into the eternal fire prepared for the devil and his angels.</span> <span class="tl-s" data-s="99.90" data-e="108.13">So you&#x27;ve got these pictures of people who are literally going off into hell because they&#x27;ve rejected Jesus.</span> <span class="tl-s" data-s="108.58" data-e="112.31">And so again, Mark 9, if your hand causes you to sin, cut it off.</span> <span class="tl-s" data-s="112.36" data-e="118.31">It is better for you to enter life crippled with 2 hands than to go to hell, to the unquenchable fire.</span> <span class="tl-s" data-s="118.71" data-e="123.55">And so to say that it&#x27;s not a place is very misleading and wrong.</span> <span class="tl-s" data-s="124.05" data-e="134.55">And it is, I think, very dangerous because one of the things people want to do in this day and age is soft sell sin and hell because it&#x27;s very unpopular, but it&#x27;s real.</span> <span class="tl-s" data-s="134.88" data-e="138.98">And so we don&#x27;t do anybody any service by pulling our punches with hell.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="139.62" data-e="139.72">Hmm.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="139.97" data-e="142.44">So that&#x27;s just the reality of it.</span> <span class="tl-s" data-s="143.31" data-e="152.29">We cannot— if somebody says that, I don&#x27;t want to go ahead and say, Everything about what they say is wrong, but I would be very careful about what they say.</span> <span class="tl-s" data-s="152.47" data-e="157.98">Who this whoever this person is, and because this is a very big mistake.</span> <span class="tl-s" data-s="158.46" data-e="159.73">It&#x27;s a very it&#x27;s wrong.</span></p>
+        <p><span class="tl-s" data-s="161.03" data-e="172.87">But that said, like think I think about a guy like John Stott, who is what&#x27;s called an annihilationist, where he believed that people&#x27;s souls are destroyed at death, and and there&#x27;s not eternal unquenchable torment.</span> <span class="tl-s" data-s="173.37" data-e="176.57">Oh, [Speaker D] you mean for those who aren&#x27;t Christians?</span> <span class="tl-s" data-s="176.57" data-e="178.51">During the new heavens and new earth.</span> <span class="tl-s" data-s="178.57" data-e="180.05">They don&#x27;t go to hell.</span> <span class="tl-s" data-s="180.26" data-e="181.88">They&#x27;re destroyed.</span> <span class="tl-s" data-s="182.10" data-e="182.21">That&#x27;s annihilationism.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="182.21" data-e="183.62">Oh, I thought— okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="183.62" data-e="183.85">Yeah.</span> <span class="tl-s" data-s="184.18" data-e="189.07">And so— [Speaker D] I&#x27;ve only heard annihilationism in the context of everyone.</span> <span class="tl-s" data-s="189.07" data-e="192.66">Yeah, no, that&#x27;s for people who, like this person, John Stott, believe that.</span> <span class="tl-s" data-s="192.68" data-e="199.02">So, but I would really think that this person, like, that&#x27;s a very big miss.</span> <span class="tl-s" data-s="199.02" data-e="200.25">And it&#x27;s a dangerous teaching.</span> <span class="tl-s" data-s="200.29" data-e="201.68">Are they a false teacher?</span> <span class="tl-s" data-s="201.68" data-e="206.71">I don&#x27;t know enough about who they are to tell you that for sure, but they are teaching falsely about hell.</span> <span class="tl-s" data-s="206.79" data-e="209.25">I can tell you that for sure.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="209.28" data-e="211.71">Yeah, thanks for answering that one.</span> <span class="tl-s" data-s="211.74" data-e="215.61">This is some additional questions surrounding a different topic.</span> <span class="tl-s" data-s="216.01" data-e="222.03">In Acts chapter 8, we see some oddball stuff happening, and I&#x27;d like to have some things clarified for me.</span> <span class="tl-s" data-s="222.72" data-e="223.35">Can you explain Samaria?</span> <span class="tl-s" data-s="223.44" data-e="226.82">What&#x27;s the big deal with Philip giving the gospel there?</span> <span class="tl-s" data-s="226.82" data-e="233.93">It seems like a footnote in the chapter, but it&#x27;s bigger than that in the grand scheme of things, isn&#x27;t it?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="234.45" data-e="234.65">Yes.</span> <span class="tl-s" data-s="234.92" data-e="242.66">Because Samaria is— so when you think about the outline of Luke, it&#x27;s Jerusalem, Judea, and the uttermost parts of the world.</span> <span class="tl-s" data-s="242.76" data-e="248.69">And so that&#x27;s the outline of Luke when he teaches both in Luke and then in Acts.</span> <span class="tl-s" data-s="248.70" data-e="255.68">And so in Acts, what we do is we follow Jerusalem, Judea, and the uttermost parts of the world.</span> <span class="tl-s" data-s="255.75" data-e="260.23">And so Samaria was unique because the Samaritans were half-breeds.</span> <span class="tl-s" data-s="260.84" data-e="274.00">So when the Assyrians destroyed the northern tribes of Israel in 722 BC, those that stayed and intermarried with the Jewish people and the Jewish people intermarried with them were Samaritans.</span> <span class="tl-s" data-s="274.00" data-e="274.68">They became Samaritans.</span> <span class="tl-s" data-s="274.93" data-e="278.93">So they were hated as people who compromised.</span> <span class="tl-s" data-s="279.21" data-e="289.67">And so this is— so when you see these Um, these big movements in Acts— Acts 2, Acts 8, Acts 10— you see the gospel going to different racial groups.</span> <span class="tl-s" data-s="289.77" data-e="291.47">That&#x27;s what&#x27;s going on here, right?</span></p>
+        <p><span class="tl-s" data-s="291.47" data-e="300.94">So Acts 2, the gospel come— or the Spirit, not the gospel— the Spirit comes upon— I guess the Spirit and the gospel— the Spirit comes upon Jewish believers in Acts 2.</span> <span class="tl-s" data-s="300.94" data-e="302.97">They&#x27;re filled with the Spirit.</span> <span class="tl-s" data-s="303.07" data-e="308.70">Or the gospel comes to the Spirit in, in, uh, Acts 2 and fills Jewish believers.</span> <span class="tl-s" data-s="309.10" data-e="314.36">Then in Acts 8, we have Philip going to Samaria, which is not a Jewish people.</span> <span class="tl-s" data-s="314.54" data-e="318.78">They&#x27;re half-breeds, but yet they hear the gospel and believe and are filled with the Spirit.</span> <span class="tl-s" data-s="318.81" data-e="324.60">Then in Acts 10, we have Cornelius and that story where they hear the gospel and are filled with the Spirit as well.</span> <span class="tl-s" data-s="324.60" data-e="337.19">And so what Luke is showing us is that with each of these racial barriers that were once barriers to Jewish worship in the temple, they are now obliterated in the gospel of Jesus Christ.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="337.19" data-e="337.40">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="337.41" data-e="338.76">That&#x27;s what he&#x27;s doing with Samaria.</span> <span class="tl-s" data-s="338.80" data-e="351.13">And that&#x27;s what also we see with the guys, what, in Acts 18 or Acts 19, I forget which one, it&#x27;s off the top of my head, with the guys who were John the Baptist followers who left Jerusalem before Jesus rose from the dead.</span> <span class="tl-s" data-s="351.22" data-e="358.42">And so each one of those, they&#x27;re expressions of the paradigm shift where people couldn&#x27;t be Jewish and follow the Lord.</span> <span class="tl-s" data-s="358.42" data-e="362.00">And now Luke is showing us in Acts, oh yes, they can.</span> <span class="tl-s" data-s="362.00" data-e="365.63">We have Samaritans, then we have the Jews, then we have the Greeks and Gentiles.</span> <span class="tl-s" data-s="365.69" data-e="366.17">Oh yeah.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="366.49" data-e="367.30">That&#x27;s great.</span> <span class="tl-s" data-s="367.30" data-e="368.63">Yeah, thanks.</span> <span class="tl-s" data-s="368.96" data-e="372.31">The next portion is around Simon the Magician.</span> <span class="tl-s" data-s="372.31" data-e="381.07">I&#x27;m reading this and I&#x27;m thinking of my own life as a baby Christian trying to understand the grace and miraculous wonders of God, making mistakes and saying the wrong stuff.</span> <span class="tl-s" data-s="381.18" data-e="386.77">And I see him being cut down for his misunderstandings, his saying of the wrong thing.</span> <span class="tl-s" data-s="386.80" data-e="389.60">Am I not seeing what&#x27;s really going on in this portion?</span> <span class="tl-s" data-s="389.60" data-e="391.54">Is it bigger than I see it?</span> <span class="tl-s" data-s="391.54" data-e="392.95">Philip&#x27;s reaction seems over the top.</span> <span class="tl-s" data-s="393.21" data-e="398.12">So Simon the Magician offered money for the power of the Holy Spirit.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="398.12" data-e="399.81">Yeah, let me just go there.</span> <span class="tl-s" data-s="399.88" data-e="400.74">Yeah.</span> <span class="tl-s" data-s="401.02" data-e="401.56">We got Acts 8:9.</span> <span class="tl-s" data-s="401.56" data-e="406.28">This is in the context of the gospel being preached in Samaria.</span> <span class="tl-s" data-s="406.38" data-e="417.62">And then verse 9 says in chapter 8, but there was a man named Simon who had previously practiced magic in the city and amazed the people of Samaria, saying that he himself was somebody great.</span> <span class="tl-s" data-s="417.62" data-e="424.46">They all paid attention to him from the least to the greatest, saying, this man is the power of God that is called Great.</span> <span class="tl-s" data-s="424.53" data-e="426.90">So, I mean, this guy, Magus is great.</span> <span class="tl-s" data-s="426.93" data-e="429.34">So sometimes he&#x27;s called Simon Magus.</span> <span class="tl-s" data-s="429.34" data-e="433.79">They paid attention to him because for a long time he had amazed them with his magic.</span> <span class="tl-s" data-s="433.91" data-e="443.50">But when they believed Philip as he preached the good news about the kingdom of God and the name Jesus Christ, they were baptized, both men and women.</span></p>
+        <p><span class="tl-s" data-s="443.53" data-e="447.78">Even Simon himself believed, and after being baptized, he continued with Philip.</span> <span class="tl-s" data-s="447.78" data-e="450.66">And seeing signs and great miracles performed, he was amazed.</span> <span class="tl-s" data-s="450.66" data-e="459.67">Now, when the apostles at Jerusalem heard that Samaria had received the word of God, they sent Peter and John, who came down and prayed for them that they might receive the Holy Spirit.</span> <span class="tl-s" data-s="459.67" data-e="465.36">For he had not yet fallen on any of them, but they&#x27;d only been baptized in the name of the Lord Jesus.</span> <span class="tl-s" data-s="465.36" data-e="468.65">Then they laid their hands on them and they received the Holy Spirit.</span> <span class="tl-s" data-s="468.65" data-e="480.36">Now, when Simon saw the Spirit was given through the laying on of the apostles&#x27; hands, he offered them money, saying, give me this power also, so that anyone on whom I lay my hands may receive the Holy Spirit.</span> <span class="tl-s" data-s="480.44" data-e="489.24">But Peter said to him, may your silver perish with you, because you thought you could obtain the gift of God with money.</span></p>
+        <p><span class="tl-s" data-s="489.75" data-e="489.99">Hmm.</span> <span class="tl-s" data-s="489.99" data-e="494.82">You have neither part nor lot in this matter, for your heart is not right before God.</span> <span class="tl-s" data-s="494.87" data-e="500.92">Repent therefore of the wickedness of yours and pray to the Lord that if possible, The intent of your heart may be forgiven you.</span> <span class="tl-s" data-s="500.97" data-e="503.94">So Peter was able to see the intent of this man&#x27;s heart.</span> <span class="tl-s" data-s="504.26" data-e="506.22">It was not a will.</span> <span class="tl-s" data-s="506.22" data-e="511.82">He didn&#x27;t have a desire to lay hands on people to bless them so that they might be filled with the Spirit.</span> <span class="tl-s" data-s="511.82" data-e="517.95">He wanted a power he could wield by his own power, by laying on of hands.</span> <span class="tl-s" data-s="518.00" data-e="523.67">And the way he wanted to wield that power or gain that power is by buying it, which is contradictory to everything Jesus taught.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="523.68" data-e="527.09">So it was like an investment for him in his own selfish ambition.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="527.09" data-e="533.72">Well, he was like, &quot;This is a power I want, and so what I&#x27;m going to do is I&#x27;m going to pay for it.&quot; [Speaker D] Yeah.</span> <span class="tl-s" data-s="533.72" data-e="535.89">Instead of so it&#x27;s a misunderstanding, right?</span> <span class="tl-s" data-s="535.90" data-e="536.84">It&#x27;s a miss.</span> <span class="tl-s" data-s="537.35" data-e="538.52">It&#x27;s and then Peter sees.</span> <span class="tl-s" data-s="539.68" data-e="541.86">Peter sees, and he says, &quot;Your heart&#x27;s not right before God.</span> <span class="tl-s" data-s="541.86" data-e="545.54">You need to repent of this wickedness.&quot; What was wicked about it?</span> <span class="tl-s" data-s="545.84" data-e="546.92">He thought he could use.</span> <span class="tl-s" data-s="546.98" data-e="551.48">He could buy power from God and use it as he wills.</span> <span class="tl-s" data-s="551.78" data-e="551.86">That&#x27;s wicked.</span> <span class="tl-s" data-s="551.86" data-e="552.20">That&#x27;s evil.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="552.20" data-e="552.52">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="553.18" data-e="555.96">And that&#x27;s why Peter. reacted the way he did to Simon.</span></p>
+        <p><strong>Speaker E:</strong> <span class="tl-s" data-s="555.97" data-e="562.87">So listening to you read the scripture, I&#x27;m hearing there&#x27;s a portion before he asked about the money.</span> <span class="tl-s" data-s="562.93" data-e="568.29">He says, or the word says that he believed and was baptized.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="568.41" data-e="568.42">Yeah.</span></p>
+        <p><strong>Speaker E:</strong> <span class="tl-s" data-s="568.49" data-e="572.31">So he was a believer, but he still made that mistake?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="572.34" data-e="573.21">Well, it&#x27;s not making a mistake.</span> <span class="tl-s" data-s="573.21" data-e="574.71">I [Speaker E] mean, it&#x27;s a pretty bad one.</span> <span class="tl-s" data-s="574.81" data-e="579.45">It&#x27;s a pretty bad one, but he believed.</span> <span class="tl-s" data-s="579.54" data-e="584.54">Luke&#x27;s not making a statement on his eternal soul when he says he believed.</span></p>
+        <p><strong>Speaker E:</strong> <span class="tl-s" data-s="584.54" data-e="585.47">Oh, that&#x27;s a clarification.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="585.50" data-e="589.66">It&#x27;s not just like, I said something wrong.</span> <span class="tl-s" data-s="590.58" data-e="592.86">It&#x27;s, I want to use God.</span> <span class="tl-s" data-s="593.13" data-e="597.29">So therefore, he&#x27;s probably not saved.</span></p>
+        <p><strong>Speaker E:</strong> <span class="tl-s" data-s="597.31" data-e="597.52">Right.</span> <span class="tl-s" data-s="597.55" data-e="601.77">So it&#x27;s not saying he was saved, he had salvation.</span> <span class="tl-s" data-s="601.81" data-e="604.75">It&#x27;s saying that he believed what was being taught.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="604.78" data-e="607.54">He believed and was baptized.</span> <span class="tl-s" data-s="607.75" data-e="615.83">And so again, What Peter saw was like, here&#x27;s somebody who wants to use God, not somebody who wants to be used by God.</span></p>
+        <p><strong>Speaker E:</strong> <span class="tl-s" data-s="616.05" data-e="616.39">Right.</span> <span class="tl-s" data-s="616.74" data-e="616.97">Okay.</span> <span class="tl-s" data-s="617.53" data-e="617.56">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="617.56" data-e="618.83">That&#x27;s what&#x27;s happening.</span> <span class="tl-s" data-s="618.83" data-e="618.91">Solid.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="618.91" data-e="619.38">Awesome.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="619.38" data-e="621.22">All right.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="621.30" data-e="623.07">This is an additional question around Acts as well.</span> <span class="tl-s" data-s="623.07" data-e="626.27">We baptize in the name of the Lord.</span> <span class="tl-s" data-s="626.86" data-e="630.17">We don&#x27;t believe the Spirit enters the person at that point.</span> <span class="tl-s" data-s="630.17" data-e="633.98">We seem to understand that the Spirit of the Lord is already in the person.</span> <span class="tl-s" data-s="634.03" data-e="637.90">And that leads them to want to be baptized to show the world, right?</span> <span class="tl-s" data-s="638.55" data-e="641.73">So what&#x27;s the difference here?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="642.09" data-e="648.87">So Acts 2:8 and 10 are all different races that receive the gospel and the Holy Spirit.</span> <span class="tl-s" data-s="648.90" data-e="656.16">So we do not— there doesn&#x27;t need to be a second experience of the Spirit because Paul does not speak about a second experience of the Spirit.</span> <span class="tl-s" data-s="656.16" data-e="665.20">The reason there&#x27;s a second experience of the Spirit here is because Luke is showing us that the gospel&#x27;s going to different races.</span> <span class="tl-s" data-s="665.31" data-e="668.58">First Jews, then Samaritans, then Gentiles.</span> <span class="tl-s" data-s="668.60" data-e="682.26">And so if the gospel and the Spirit can fall upon Jews, Samaritans, and Gentiles, then that&#x27;s his way of showing now the gospel can go to anybody and the Spirit can fill anybody, right?</span> <span class="tl-s" data-s="683.12" data-e="689.31">And so baptism, so like there&#x27;s baptism in the Holy Spirit in Acts chapter In Acts, and then there&#x27;s baptism with water.</span> <span class="tl-s" data-s="689.31" data-e="693.91">And you gotta watch the context to determine which is which.</span> <span class="tl-s" data-s="693.94" data-e="698.04">When we baptize people, if they&#x27;re genuinely saved, they&#x27;ve already been indwelt by the Spirit.</span></p>
+        <p><span class="tl-s" data-s="699.00" data-e="700.34">Romans 8 tells us that.</span> <span class="tl-s" data-s="700.45" data-e="706.19">Everybody who is a genuine convert has the Spirit of God within them already, and the water doesn&#x27;t do anything there.</span> <span class="tl-s" data-s="706.28" data-e="708.48">You know, there&#x27;s different teaching and different belief systems.</span> <span class="tl-s" data-s="708.48" data-e="714.93">Some believe that you need a second experience of the Spirit to kind of kickstart your Christian life.</span> <span class="tl-s" data-s="715.04" data-e="724.33">Paul doesn&#x27;t speak about that anywhere, but he does speak in Acts or Ephesians chapter 5 of being continually filled with the Spirit.</span> <span class="tl-s" data-s="724.53" data-e="732.29">And so we&#x27;re not seeking a second experience as a fundamental piece of what we believe.</span> <span class="tl-s" data-s="732.41" data-e="737.86">So, but when we baptize people, really what we&#x27;re doing is we&#x27;re responding to the truth.</span> <span class="tl-s" data-s="737.99" data-e="746.77">This person now is a Christian, and so they&#x27;re communicating Their their identity with the Lord in front of all the other people.</span> <span class="tl-s" data-s="747.25" data-e="748.20">Love it.</span> <span class="tl-s" data-s="748.23" data-e="748.95">Ethiopian eunuch.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="748.95" data-e="754.86">Yeah, that his realization that the gospel is available available to him too is incredible.</span> <span class="tl-s" data-s="755.31" data-e="762.53">What I&#x27;d like to understand is the Lord whisking Philip away and Philip found himself at Azotus.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="762.76" data-e="762.95">Yeah.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="763.07" data-e="763.93">Um, say what?</span> <span class="tl-s" data-s="764.04" data-e="765.15">Also, what he got baptized?</span> <span class="tl-s" data-s="765.15" data-e="768.57">Did he receive the Spirit at his baptism?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="768.68" data-e="772.07">Yeah, so that&#x27;s a good question.</span> <span class="tl-s" data-s="772.07" data-e="781.96">Philip, I mean, it just goes to show that Philip&#x27;s about the work of God and he&#x27;s whisked away.</span> <span class="tl-s" data-s="782.17" data-e="786.89">And so, I mean, that&#x27;s crazy.</span> <span class="tl-s" data-s="786.99" data-e="790.83">And the eunuch went on his way rejoicing.</span> <span class="tl-s" data-s="790.92" data-e="796.24">And so he just shows up in Azotus and he just says, okay, I&#x27;m going to preach the gospel here.</span> <span class="tl-s" data-s="796.24" data-e="804.17">And that&#x27;s just one of the miracles we see in Acts where the Lord is meeting his people and he&#x27;s doing these kind of miracles, right?</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="804.17" data-e="804.30">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="804.57" data-e="817.81">Now, we don&#x27;t have any explanation of the eunuch receiving any kind of filling of the Spirit, but what we know is the Spirit takes residence in the life of a person.</span> <span class="tl-s" data-s="818.11" data-e="827.39">The paradigmatic moment where the Spirit is seen to be filling all of the believers that are Gentile It&#x27;s for Acts chapter 10.</span> <span class="tl-s" data-s="827.39" data-e="830.04">Now, the Ethiopian eunuch was unique in this sense.</span> <span class="tl-s" data-s="830.05" data-e="837.20">Because he was a eunuch, he was not allowed to go into the temple because he was a eunuch.</span> <span class="tl-s" data-s="837.27" data-e="840.36">And so he was excluded from the temple.</span> <span class="tl-s" data-s="840.47" data-e="842.80">He was unable to worship at the temple.</span> <span class="tl-s" data-s="842.94" data-e="845.73">So in some sense, God was off limits to him.</span> <span class="tl-s" data-s="845.94" data-e="851.75">And what Philip does is shows that, that, that he&#x27;s off limits no more.</span> <span class="tl-s" data-s="852.40" data-e="852.97">Because now you&#x27;re included.</span> <span class="tl-s" data-s="852.97" data-e="858.04">Even if you&#x27;re a eunuch, you can&#x27;t be kept out of the worship of God or the family of God.</span></p>
+        <p><span class="tl-s" data-s="858.04" data-e="863.08">And so that&#x27;s the focus there in Acts chapter 8 and not the Holy Spirit.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="863.08" data-e="863.26">Yeah.</span> <span class="tl-s" data-s="863.26" data-e="868.52">And it sounds like he was— he believed and then asked to get baptized.</span> <span class="tl-s" data-s="868.56" data-e="874.26">But those, they&#x27;re very close together, like his believing immediately after he was baptized.</span> <span class="tl-s" data-s="874.27" data-e="876.54">Is that— [Speaker A] No, he believes and then he gets baptized.</span> <span class="tl-s" data-s="876.73" data-e="878.27">That&#x27;s what I mean.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="879.42" data-e="887.67">Yeah, [Speaker D] where like the pattern is he believed and then he got baptized the same moment, the same— [Speaker A] you&#x27;re talking about water baptism?</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="887.91" data-e="888.75">Uh, I mean, he was baptized.</span> <span class="tl-s" data-s="889.51" data-e="891.39">Yeah, I don&#x27;t know.</span> <span class="tl-s" data-s="891.39" data-e="899.47">I know it was water, but, um, I think part of the question is we, we don&#x27;t always see that pattern now.</span> <span class="tl-s" data-s="899.86" data-e="904.34">We see someone believes and then some time goes by before they&#x27;re baptized.</span> <span class="tl-s" data-s="904.34" data-e="905.69">Whereas his might&#x27;ve been in the same day.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="905.79" data-e="909.43">Well, but yeah, the other thing you need to realize though is he made it all the way to Jerusalem.</span> <span class="tl-s" data-s="909.43" data-e="912.22">He went all the way to the temple.</span> <span class="tl-s" data-s="912.80" data-e="914.04">He got a scroll of Isaiah.</span> <span class="tl-s" data-s="914.37" data-e="915.10">So he&#x27;s reading Isaiah.</span> <span class="tl-s" data-s="915.10" data-e="922.65">So this is not a normal— this isn&#x27;t a guy who&#x27;s just sort of walking down the street and you got somebody who comes up to you and says, do you know the Lord Jesus?</span> <span class="tl-s" data-s="922.65" data-e="923.62">It&#x27;s not like that.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="923.62" data-e="923.92">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="923.94" data-e="925.38">This guy knows God.</span> <span class="tl-s" data-s="925.45" data-e="926.67">He&#x27;s a God-fearer, but he can&#x27;t worship.</span> <span class="tl-s" data-s="926.67" data-e="927.93">He&#x27;s excluded from the temple.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="927.95" data-e="928.82">I see.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="928.82" data-e="930.44">And so he&#x27;s in a completely different spot.</span> <span class="tl-s" data-s="930.44" data-e="942.75">So that, if you ever wonder why we don&#x27;t do immediate baptisms like this, because like if I ever run across somebody who knows the Bible like the Ethiopian eunuch and is reading Isaiah, okay, yeah, that&#x27;s different.</span> <span class="tl-s" data-s="942.85" data-e="949.58">But like to get, usually what happens like in those immediate baptisms is people do not know what they&#x27;re doing.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="949.58" data-e="949.63">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="949.68" data-e="956.58">They don&#x27;t know that they need to trust in Jesus and so, and recognize that they&#x27;re making a public proclamation.</span> <span class="tl-s" data-s="956.72" data-e="959.39">You don&#x27;t get baptized to make your life better.</span> <span class="tl-s" data-s="959.40" data-e="962.97">You don&#x27;t get baptized so that you can be a better person or be saved.</span> <span class="tl-s" data-s="963.00" data-e="963.72">None of that.</span> <span class="tl-s" data-s="963.72" data-e="969.02">What you get baptized for is to communicate to the church, now I belong to Jesus.</span> <span class="tl-s" data-s="969.02" data-e="970.62">I&#x27;m united to him.</span> <span class="tl-s" data-s="970.77" data-e="970.99">Right?</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="971.09" data-e="971.17">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="972.21" data-e="973.35">And so that&#x27;s what baptism&#x27;s for.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="973.35" data-e="974.22">Okay, great.</span> <span class="tl-s" data-s="974.25" data-e="974.42">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="974.70" data-e="976.87">And that&#x27;s all the questions I have for now.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="976.87" data-e="977.57">For now.</span> <span class="tl-s" data-s="977.60" data-e="981.47">But there will be another Friday that comes because you know what, Mark?</span> <span class="tl-s" data-s="981.47" data-e="983.43">They come once every 7 days.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="983.65" data-e="984.30">Every seven.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="984.30" data-e="985.26">Every seven.</span> <span class="tl-s" data-s="985.26" data-e="985.92">It&#x27;s a rapid fire Friday.</span> <span class="tl-s" data-s="985.92" data-e="986.41">We&#x27;ll be back.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="986.59" data-e="986.73">All right.</span> <span class="tl-s" data-s="986.82" data-e="987.84">Well, I&#x27;m gonna hold you to that.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="987.84" data-e="987.84">All right.</span> <span class="tl-s" data-s="987.84" data-e="987.84">Sounds good.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="987.84" data-e="987.84">Take care, guys.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Fixed on Jesus episode archive, backed by /api/podcast/search.
+  // Static fallback list above stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function fmtDuration(raw) {
+      if (!raw) return "";
+      var str = String(raw).trim();
+      // Anchor feeds report seconds; render as H:MM:SS or M:SS.
+      if (/^\d+$/.test(str)) {
+        var total = parseInt(str, 10);
+        var h = Math.floor(total / 3600);
+        var m = Math.floor((total % 3600) / 60);
+        var sec = total % 60;
+        var mm = (h > 0 && m < 10 ? "0" + m : "" + m);
+        var ss = (sec < 10 ? "0" + sec : "" + sec);
+        return (h > 0 ? h + ":" + mm : m) + ":" + ss;
+      }
+      // Anchor also reports clock strings like "00:24:02" — drop the
+      // redundant leading hour so it reads "24:02".
+      return str.replace(/^00:/, "");
+    }
+    function row(it) {
+      it = it || {};
+      var title = esc(it.title) || "Untitled episode";
+      var tUrl = it.guid && transcriptMap[it.guid];
+      var heading = tUrl
+        ? '<a href="' + esc(tUrl) + '">' + title + "</a>"
+        : (it.link
+          ? '<a href="' + esc(it.link) + '" target="_blank" rel="noopener">' + title + "</a>"
+          : title);
+      var meta = [fmtDate(it.date), fmtDuration(it.duration)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      return '<div class="sermon"><div><h3>' + heading + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    var PER = 10;
+    var state = { q: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No episodes found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " episode" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " episodes";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/podcast/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () {
+          // Keep the static list, but tell the reader where else to listen —
+          // some privacy blockers stop the archive request itself.
+          var note = document.querySelector("[data-sermons-error]");
+          if (note) note.hidden = false;
+        });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    if (monthSel) {
+      monthSel.addEventListener("change", function () {
+        state.month = monthSel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: b7c17e19-a8af-46aa-97fb-fd4bd5225f73 -->
+</body>
+</html>
