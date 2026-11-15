@@ -270,6 +270,38 @@ def pause_gaps(sentences, timed):
             prev_end = last_end
     return gaps
 
+def sentence_bounds(sentences, timed):
+    """Per-sentence (start,end) seconds from word timings; (0.0,0.0) where
+    unknown. Same alignment walk as pause_gaps."""
+    toks = [[t for t in (normtok(w) for w in s.split()) if t] for _, s in sentences]
+    p, prev_end, n = 0, None, len(timed)
+    bounds = []
+    for i, ts in enumerate(toks):
+        first_start, last_end, taken = None, None, 0
+        if not ts:
+            bounds.append((0.0, 0.0))
+            continue
+        nxt = next((toks[j][0] for j in range(i + 1, len(toks)) if toks[j]), None)
+        while p < n and taken < len(ts):
+            w = timed[p]
+            p += 1
+            if first_start is None and w.get("start") is not None:
+                first_start = w.get("start")
+            if w.get("end") is not None:
+                last_end = w.get("end")
+            if not normtok(w.get("t", "")):
+                continue
+            taken += 1
+            if (taken >= len(ts) - 1 and nxt and p < n
+                    and normtok(timed[p].get("t", "")) == nxt):
+                break
+        s = first_start if first_start is not None else (prev_end if prev_end is not None else 0.0)
+        e = last_end if last_end is not None else s
+        bounds.append((s, e))
+        if last_end is not None:
+            prev_end = last_end
+    return bounds
+
 def chunk_paragraphs(text, timed, pause_gap):
     """Pause-based chunking: a new paragraph starts wherever the inter-word
     gap exceeds pause_gap seconds. Backstops: ~6-10 sentences or ~150-200
@@ -315,6 +347,7 @@ raw = open(os.environ["TRANSCRIPT_TXT"]).read().strip()
 
 placeholder = "TRANSCRIPT PLACEHOLDER" in raw
 paras = [p.strip() for p in re.split(r"\n\s*\n", raw) if p.strip()]
+timed = []  # word timings when available; [] = plain paragraphs, read-along idle
 if not placeholder:
     # Pause-based chunking when word timings exist (falls back to pure
     # sentence-chunking for plain-text input).
@@ -336,7 +369,26 @@ if not placeholder:
     # would otherwise render each one as a forced line break.
     text = re.sub(r"\s+", " ", text).strip()
     paras = chunk_paragraphs(text, timed, pause_gap)
-body_html = "\n".join("        <p>%s</p>" % html.escape(p) for p in paras) or "        <p>(Empty transcript.)</p>"
+if timed:
+    # Read-along: wrap each sentence in a timed span. Duplicate sentences
+    # consume their bounds in order, so alignment holds.
+    sent_list = split_sentences(text)
+    bnds = sentence_bounds(sent_list, timed)
+    bmap = {}
+    for (spk, sent), (s, e) in zip(sent_list, bnds):
+        bmap.setdefault(sent, []).append((s, e))
+    def spanify(para):
+        parts = []
+        for spk, sent in split_sentences(para):
+            lst = bmap.get(sent) or [(0.0, 0.0)]
+            s, e = lst.pop(0)
+            parts.append('<span class="tl-s" data-s="%.2f" data-e="%.2f">%s</span>'
+                         % (s, e, html.escape(sent)))
+        return " ".join(parts)
+    body_html = "\n".join("        <p>%s</p>" % spanify(p) for p in paras) or "        <p>(Empty transcript.)</p>"
+else:
+    # No timings (plain-text input): plain paragraphs, read-along JS stays idle.
+    body_html = "\n".join("        <p>%s</p>" % html.escape(p) for p in paras) or "        <p>(Empty transcript.)</p>"
 notice = ""
 if placeholder:
     notice = ('        <p class="transcript-notice"><strong>Note:</strong> this is a placeholder transcript. '
@@ -404,6 +456,269 @@ dark_style = """  <style>
     }
   </style>"""
 new = new.replace("</head>", dark_style + "\n</head>", 1)
+
+# Read-along audio (sticky mini player, sentence highlight, auto-follow).
+# CSS/JS mirror the validated transcript-acts-20-13-38 page; the mini-bar
+# label is the page title. Without timings the JS finds no .tl-s nodes and
+# stays idle (the sticky player bar still works).
+readalong_style = """  <style>
+/* Read-along: sentence highlight (light default = dark-on-cream). */
+    .tl-s {
+      border-radius: 5px;
+      scroll-margin-block: 38vh;
+      cursor: pointer;
+      transition: background-color 0.25s ease;
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone;
+    }
+    .tl-s:hover { background: rgba(194, 112, 61, 0.12); }
+    .tl-s.is-active { background: rgba(194, 112, 61, 0.22); }
+    @media (prefers-color-scheme: dark) {
+      .tl-s:hover { background: rgba(232, 167, 111, 0.14); }
+      .tl-s.is-active { background: rgba(232, 167, 111, 0.24); color: #fff8ee; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .tl-s { transition: none; }
+    }
+
+    /* Sticky mini player: fixed bar that appears after the sermon card
+       scrolls out of view. Overlays content (no layout shift). */
+    #tl-minibar {
+      position: fixed;
+      left: 50%;
+      bottom: calc(12px + env(safe-area-inset-bottom, 0px));
+      width: min(720px, calc(100% - 24px));
+      z-index: 80;
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      padding: 0.65rem 0.8rem;
+      background: rgba(255, 255, 255, 0.97);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      box-shadow: 0 18px 44px -16px rgba(23, 19, 16, 0.45);
+      transform: translate(-50%, 140%);
+      opacity: 0;
+      visibility: hidden;
+      transition: transform 0.28s ease, opacity 0.28s ease, visibility 0.28s;
+    }
+    #tl-minibar.is-visible {
+      transform: translate(-50%, 0);
+      opacity: 1;
+      visibility: visible;
+    }
+    #tl-minibar .tl-mini-label {
+      flex: none;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--clay-dark);
+      white-space: nowrap;
+    }
+    #tl-minibar .tl-mini-slot { flex: 1; min-width: 0; display: flex; }
+    #tl-minibar audio { width: 100%; margin: 0; }
+    #tl-minibar .tl-follow {
+      flex: none;
+      font: inherit;
+      font-size: 0.8rem;
+      font-weight: 700;
+      border-radius: 999px;
+      padding: 0.45rem 0.9rem;
+      cursor: pointer;
+      border: 1px solid var(--line);
+      background: transparent;
+      color: var(--muted);
+    }
+    #tl-minibar .tl-follow[aria-pressed="true"] {
+      background: var(--ink);
+      border-color: var(--ink);
+      color: var(--cream);
+    }
+    @media (prefers-color-scheme: dark) {
+      #tl-minibar {
+        background: rgba(36, 29, 23, 0.97);
+        border-color: var(--line-light);
+        box-shadow: 0 18px 44px -16px rgba(0, 0, 0, 0.7);
+      }
+      #tl-minibar .tl-mini-label { color: #e8a76f; }
+      #tl-minibar .tl-follow { border-color: var(--line-light); color: var(--muted-dark); }
+      #tl-minibar .tl-follow[aria-pressed="true"] {
+        background: var(--cream);
+        border-color: var(--cream);
+        color: var(--ink);
+      }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      #tl-minibar { transition: none; }
+    }
+    @media (max-width: 560px) {
+      #tl-minibar { gap: 0.5rem; padding: 0.55rem 0.6rem; }
+      #tl-minibar .tl-mini-label { display: none; }
+    }
+  </style>"""
+new = new.replace("</head>", readalong_style + "\n</head>", 1)
+readalong_script = """  <script>
+  <script>
+  // Read-along: sticky mini player (moves the ONE audio element — no clone,
+  // no desync), sentence highlight + calm auto-follow.
+  (function () {
+    var audio = document.querySelector(".sermon audio");
+    var card = document.querySelector(".sermon");
+    if (!audio || !card) return;
+
+    var reduceMotion = window.matchMedia &&
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    // ---- Mini bar: teleport the single audio element in/out ----
+    var homeParent = audio.parentNode;
+    var homeNext = audio.nextSibling;
+    var bar = document.createElement("div");
+    bar.id = "tl-minibar";
+    bar.setAttribute("role", "region");
+    bar.setAttribute("aria-label", "Sermon audio");
+    var label = document.createElement("span");
+    label.className = "tl-mini-label";
+    label.textContent = __READALONG_TITLE__;
+    var slot = document.createElement("div");
+    slot.className = "tl-mini-slot";
+    var followBtn = document.createElement("button");
+    followBtn.type = "button";
+    followBtn.className = "tl-follow";
+    followBtn.textContent = "Follow";
+    followBtn.setAttribute("aria-pressed", "true");
+    bar.appendChild(label);
+    bar.appendChild(slot);
+    bar.appendChild(followBtn);
+    document.body.appendChild(bar);
+
+    var follow = true;
+    function setFollow(v) {
+      follow = v;
+      followBtn.setAttribute("aria-pressed", v ? "true" : "false");
+      followBtn.textContent = v ? "Following" : "Follow";
+    }
+    followBtn.addEventListener("click", function () {
+      setFollow(!follow);
+      if (follow) scrollToActive();
+    });
+
+    function dockInBar() {
+      if (slot.contains(audio)) return;
+      slot.appendChild(audio);
+      bar.classList.add("is-visible");
+    }
+    function dockHome() {
+      if (!slot.contains(audio)) return;
+      homeParent.insertBefore(audio, homeNext);
+      bar.classList.remove("is-visible");
+    }
+    function syncBar() {
+      var r = card.getBoundingClientRect();
+      // Show once the card has scrolled past (above the viewport).
+      if (r.bottom < 0) dockInBar();
+      else dockHome();
+    }
+    if ("IntersectionObserver" in window) {
+      new IntersectionObserver(function () { syncBar(); }, { threshold: 0 }).observe(card);
+    }
+    window.addEventListener("scroll", function () {
+      if (!window.__tlTick) {
+        window.__tlTick = true;
+        requestAnimationFrame(function () { window.__tlTick = false; syncBar(); });
+      }
+    }, { passive: true });
+    window.addEventListener("resize", syncBar);
+    syncBar();
+
+    // ---- Sentence highlight (binary search over [data-s, data-e]) ----
+    var spans = Array.prototype.slice.call(document.querySelectorAll(".tl-s"));
+    var starts = spans.map(function (el) { return parseFloat(el.getAttribute("data-s")); });
+    var ends = spans.map(function (el) { return parseFloat(el.getAttribute("data-e")); });
+    var cur = -1;
+
+    function findIndex(t) {
+      if (isNaN(t)) return -1;
+      var lo = 0, hi = spans.length - 1, ans = -1;
+      while (lo <= hi) {
+        var mid = (lo + hi) >> 1;
+        if (starts[mid] <= t) { ans = mid; lo = mid + 1; }
+        else hi = mid - 1;
+      }
+      if (ans === -1) return -1;
+      if (t < ends[ans]) return ans;
+      // In a small gap between sentences: hold the nearest finished one
+      // briefly so the highlight doesn't flicker off.
+      if (ans + 1 < spans.length && t < starts[ans + 1]) return ans;
+      return -1;
+    }
+
+    function scrollToActive() {
+      if (cur < 0 || !spans[cur]) return;
+      try {
+        spans[cur].scrollIntoView({
+          behavior: reduceMotion ? "auto" : "smooth",
+          block: "center"
+        });
+      } catch (e) { /* older browsers */ }
+    }
+
+    var scheduled = false;
+    function update(t) {
+      var i = findIndex(t);
+      if (i === cur) return;
+      if (cur >= 0 && spans[cur]) spans[cur].classList.remove("is-active");
+      cur = i;
+      if (cur >= 0 && spans[cur]) {
+        spans[cur].classList.add("is-active");
+        if (follow && !audio.paused) scrollToActive();
+      }
+    }
+    function updateSoon() {
+      if (scheduled) return;
+      scheduled = true;
+      requestAnimationFrame(function () {
+        scheduled = false;
+        try { update(audio.currentTime); } catch (e) { /* not loaded */ }
+      });
+    }
+
+    audio.addEventListener("timeupdate", updateSoon);
+    audio.addEventListener("seeked", function () {
+      setFollow(true);
+      try { update(audio.currentTime); } catch (e) { /* not loaded */ }
+      if (!audio.paused) scrollToActive();
+    });
+    audio.addEventListener("play", function () {
+      setFollow(true);
+      updateSoon();
+    });
+    audio.addEventListener("loadedmetadata", updateSoon);
+
+    // Manual scroll wins: pause following while the user scrolls.
+    function interrupt() {
+      if (follow && !audio.paused) setFollow(false);
+    }
+    window.addEventListener("wheel", interrupt, { passive: true });
+    window.addEventListener("touchmove", interrupt, { passive: true });
+    window.addEventListener("keydown", function (e) {
+      var keys = ["ArrowUp", "ArrowDown", "PageUp", "PageDown", "Home", "End", " "];
+      if (keys.indexOf(e.key) !== -1) interrupt();
+    });
+
+    // Click a sentence to jump there.
+    document.querySelector(".transcript").addEventListener("click", function (e) {
+      var s = e.target && e.target.closest ? e.target.closest(".tl-s") : null;
+      if (!s) return;
+      var t = parseFloat(s.getAttribute("data-s"));
+      if (isNaN(t)) return;
+      try { audio.currentTime = t + 0.01; } catch (err) { /* not loaded */ }
+      setFollow(true);
+      update(t);
+    });
+  })();
+  </script>""".replace("__READALONG_TITLE__", json.dumps(title))
+new = new.replace("</body>", readalong_script + "\n</body>", 1)
 if "<!-- guid: " not in new:
     new = new.replace("</body>", "<!-- guid: %s -->\n</body>" % html.escape(guid))
 
