@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What About The Sabbath? — Podcast Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Fixed on Jesus: conversations beyond Sunday mornings from Center Church in Gilbert, AZ — listen on Spotify, Apple Podcasts, and YouTube." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=18" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a href="/sermons">Sermons</a></li>
+              <li><a class="active" href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/podcast">&larr; All podcast episodes</a>
+          <h1 class="display-lg">What About The Sabbath?</h1>
+          <p class="transcript-meta">2023-12-21 · 13:31</p>
+          <p class="transcript-desc">Welcome to FIXED ON JESUS, a podcast brought to you by Center Church in Gilbert, Arizona. Speaking to you today are Rich Richardson &amp; Mark Johnson Jr. Production by Heather Corbitt **SHOW NOTES** Questions asked in this episode: A question from a listener! What about the Sabbath day? Are we commande</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/e750e370/podcast/play/80307182/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-11-21%2F7172932d-7c0a-20e0-50c7-302a83c20429.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="0.13" data-e="4.33">Jeremiah said that one of the features of the New Covenant is that it&#x27;s going to be internalized.</span> <span class="tl-s" data-s="4.38" data-e="5.47">It&#x27;s going to be written on our hearts.</span> <span class="tl-s" data-s="5.64" data-e="7.74">That was not the case with the Old Testament law.</span> <span class="tl-s" data-s="8.38" data-e="13.07">And so what we have to ask then is, okay, well, how do we think about the Sabbath today?</span></p>
+        <p><span class="tl-s" data-s="28.37" data-e="30.69">This is Fixed on Jesus.</span></p>
+        <p><span class="tl-s" data-s="46.31" data-e="47.85">Welcome to Fixed on Jesus.</span> <span class="tl-s" data-s="48.24" data-e="53.43">Here we are in our podcast where we are able to talk about all kinds of different things, really whatever hits our fancy.</span> <span class="tl-s" data-s="53.78" data-e="56.28">My name is Rich and I&#x27;m your host.</span> <span class="tl-s" data-s="56.90" data-e="60.68">I&#x27;m joined as always by Mark Johnson Jr. just across the table from me.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="61.00" data-e="61.38">Hello.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="61.96" data-e="65.33">We have behind the glass, we have our— [Speaker B] Bulletproof.</span> <span class="tl-s" data-s="65.33" data-e="66.20">Is it bulletproof?</span> <span class="tl-s" data-s="66.20" data-e="66.83">Well, that&#x27;s good to know.</span> <span class="tl-s" data-s="66.84" data-e="74.79">We have Heather Corbett behind the glass coordinating everything that happens here and mixing our sounds and voices and everything.</span> <span class="tl-s" data-s="75.13" data-e="80.89">And so anyway, we— whoa, do I hear, do I hear the email bell, Mark?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="80.99" data-e="81.45">You do.</span> <span class="tl-s" data-s="81.47" data-e="82.48">In fact, you do.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="83.08" data-e="84.81">That is that&#x27;s a distinctive sound.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="85.00" data-e="85.28">It is.</span> <span class="tl-s" data-s="85.32" data-e="89.32">Yeah, I&#x27;m glad you got me something else to make noise with besides just singing because now I just sing in the shower.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="89.32" data-e="90.70">You&#x27;re not allowed to sing.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="90.70" data-e="91.50">Yeah, no more singing.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="91.50" data-e="91.91">No more singing.</span> <span class="tl-s" data-s="91.91" data-e="92.39">No more singing.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="92.39" data-e="93.96">But you gave me a bell.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="94.01" data-e="94.30">Yeah.</span> <span class="tl-s" data-s="94.47" data-e="94.54">Okay.</span> <span class="tl-s" data-s="94.54" data-e="96.64">So I hope you&#x27;re not abusing the bell privileges.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="96.64" data-e="96.74">No.</span> <span class="tl-s" data-s="96.79" data-e="97.64">Why would I do that?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="97.64" data-e="100.16">I&#x27;m just saying no abusing the bell privileges.</span> <span class="tl-s" data-s="100.16" data-e="101.20">But do we really have a?</span> <span class="tl-s" data-s="101.20" data-e="102.58">Do we really have an email?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="102.58" data-e="103.50">We have an email.</span> <span class="tl-s" data-s="103.55" data-e="108.33">So this email is from Tanya David Saver, and she said.</span> <span class="tl-s" data-s="108.43" data-e="109.80">Hi, Rich, Mark, and Heather.</span> <span class="tl-s" data-s="109.80" data-e="110.94">Enjoying the podcast.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="110.94" data-e="111.15">Hi.</span> <span class="tl-s" data-s="111.17" data-e="112.35">Do we respond?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="112.59" data-e="112.83">Hi.</span> <span class="tl-s" data-s="112.83" data-e="112.98">Hello.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="113.07" data-e="114.23">Heather says hello too, Tanya.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="114.23" data-e="115.83">Through the glass.</span> <span class="tl-s" data-s="115.83" data-e="118.50">And this is the first podcast she&#x27;s ever listened to.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="118.60" data-e="118.68">Okay.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="118.71" data-e="125.99">And one of the topics she was interested in hearing us speak to was about the Sabbath today.</span> <span class="tl-s" data-s="125.99" data-e="130.19">So, you know, I&#x27;m just going to follow up and say, what about the Sabbath?</span> <span class="tl-s" data-s="130.19" data-e="132.24">And why don&#x27;t you walk us through that, Rich?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="132.24" data-e="134.06">Well, I&#x27;ll give it a shot.</span> <span class="tl-s" data-s="134.06" data-e="139.54">This is something that Honest Christians can disagree about, and so I&#x27;m going to give you my perspective.</span> <span class="tl-s" data-s="139.54" data-e="146.23">But just so you know where the Sabbath is, I mean, you have the the Lord resting on creation on the seventh day.</span> <span class="tl-s" data-s="146.72" data-e="157.11">You have then in the Ten Commandments, you have the fourth commandment called to keep that directs the nation of Israel to keep the Sabbath holy.</span> <span class="tl-s" data-s="157.24" data-e="160.04">The goal of the Sabbath was rest.</span> <span class="tl-s" data-s="160.04" data-e="161.53">That the direction was work.</span> <span class="tl-s" data-s="162.03" data-e="163.39">6 days and then rest one.</span> <span class="tl-s" data-s="163.81" data-e="167.60">And so that was what the nation of Israel was was called to do.</span> <span class="tl-s" data-s="167.65" data-e="182.15">Now there are people today who say, &quot;Well, what we&#x27;re going to do is we&#x27;re going to transfer our understanding, the Old Testament understanding of the Sabbath to Sunday or the Lord&#x27;s Day.&quot; And I don&#x27;t think we can do that because those are two very very different things.</span></p>
+        <p><span class="tl-s" data-s="182.15" data-e="186.61">What we need to do is maybe step back a little bit and recognize what the law is for.</span> <span class="tl-s" data-s="186.70" data-e="188.24">Now as I say law, I mean that.</span> <span class="tl-s" data-s="188.24" data-e="190.46">The Old Testament law, right?</span> <span class="tl-s" data-s="190.47" data-e="196.16">And so the Old Testament law was designed to point to Jesus Christ.</span> <span class="tl-s" data-s="196.27" data-e="200.48">Hebrews tells us that there&#x27;s a built-in expiration date for the law.</span> <span class="tl-s" data-s="200.61" data-e="206.90">The law is not meant to continually direct everything for believers.</span> <span class="tl-s" data-s="207.03" data-e="211.12">Jesus now is the one who continually directs things for believers.</span> <span class="tl-s" data-s="211.35" data-e="217.45">The law has a what&#x27;s called a built-in. obsolescence, meaning that it&#x27;s gonna go away.</span> <span class="tl-s" data-s="217.45" data-e="228.48">And we can see one of the things that makes the New Testament or the New Covenant new in Jeremiah 31 is that now the New Covenant has the law written on our hearts.</span> <span class="tl-s" data-s="228.53" data-e="235.40">Now that doesn&#x27;t— Jeremiah doesn&#x27;t mean that he&#x27;s writing on our hearts the— [Speaker B] Not physically.</span></p>
+        <p><span class="tl-s" data-s="235.55" data-e="236.69">Not physically, but it&#x27;s spiritually.</span> <span class="tl-s" data-s="236.69" data-e="236.77">Exactly.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="236.77" data-e="238.42">He&#x27;s not gonna search them.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="238.42" data-e="238.88">Right, exactly.</span> <span class="tl-s" data-s="238.98" data-e="242.56">And it&#x27;d be, you You know, you don&#x27;t want to write on somebody&#x27;s heart, right?</span> <span class="tl-s" data-s="242.56" data-e="245.65">So, um, we don&#x27;t want to be overly literalistic.</span> <span class="tl-s" data-s="245.65" data-e="249.43">And so, um, that&#x27;s a great example of, of not being overly literalistic.</span> <span class="tl-s" data-s="249.47" data-e="251.12">You can&#x27;t write on a physical beating heart.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="251.15" data-e="252.17">No tattoos on the heart.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="252.51" data-e="256.18">No, because that would— well, anyway, you&#x27;re distracting me now.</span> <span class="tl-s" data-s="256.29" data-e="261.01">So anyway, Jeremiah said, Jeremiah said that one of the, the features of the New Covenant is that it&#x27;s going to be internalized.</span> <span class="tl-s" data-s="261.01" data-e="263.96">It&#x27;s going to be written on our hearts.</span> <span class="tl-s" data-s="264.08" data-e="266.94">And so that was not the case with the Old Testament law.</span> <span class="tl-s" data-s="266.94" data-e="274.26">And so what we have to ask then is, okay, well, how do we think about the Sabbath today?</span> <span class="tl-s" data-s="274.81" data-e="288.25">Now, the Sabbath— we can&#x27;t— read the requirements of the Sabbath and you realize we can&#x27;t just take those requirements and apply those as Christians today.</span> <span class="tl-s" data-s="288.25" data-e="298.61">For example, one direction of the Sabbath is you&#x27;re not allowed to live more than a mile, 1.1 miles away from the place that you worship, and that&#x27;s just not the case.</span> <span class="tl-s" data-s="298.69" data-e="299.44">That&#x27;s Nobody does that.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="299.44" data-e="302.25">Yeah, I&#x27;m like a mile and a half, so I guess I&#x27;m out.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="302.25" data-e="302.70">You&#x27;re out.</span> <span class="tl-s" data-s="302.72" data-e="305.92">I&#x27;m 4 miles, and so, so we&#x27;re out.</span> <span class="tl-s" data-s="305.93" data-e="314.36">So, um, anyway, so we don&#x27;t want to— um, so in essence, now as Christians, what we want to do is we want to celebrate the Lord&#x27;s Day.</span> <span class="tl-s" data-s="314.36" data-e="320.77">Um, and we see— so people might say, well, let&#x27;s transfer our understanding of the Sabbath and rest and everything to the Lord&#x27;s Day.</span> <span class="tl-s" data-s="320.85" data-e="329.96">And I go, well, I understand that, that impulse, but we have no direction in the New Testament ever to think that way.</span> <span class="tl-s" data-s="330.71" data-e="345.91">Um, and so I would prefer to think of the Sabbath as fulfilled in Christ, um, and that instead now what we have is we have rest that we can experience in Christ, right?</span></p>
+        <p><span class="tl-s" data-s="347.55" data-e="356.79">And so, uh, the other thing to recognize is there&#x27;s a complete and total absence of Sabbath direction in the New Testament.</span> <span class="tl-s" data-s="356.82" data-e="357.06">None.</span> <span class="tl-s" data-s="357.06" data-e="366.95">The only place that we have something that would even sort of point to a an understanding in line with what I&#x27;m saying is Colossians 2:16.</span> <span class="tl-s" data-s="367.06" data-e="381.44">When when Paul is talking to the church at Colossae, he says, &quot;Let no one pass judgment on you in questions of food and drink, or with regard to a festival or a new moon.&quot; Or a Sabbath.</span> <span class="tl-s" data-s="381.44" data-e="388.76">These are a shadow of the things to come, but the substance belongs to Christ.</span> <span class="tl-s" data-s="388.81" data-e="396.77">And so, so essentially what Paul is saying there is, you know, when he was writing, there were Jewish Christians that would probably continue to celebrate the Sabbath.</span> <span class="tl-s" data-s="396.77" data-e="409.67">It wasn&#x27;t like that was unbiblical or wrong or sinful, but to require Gentiles to to observe the Sabbath in the same way, Paul&#x27;s saying you don&#x27;t have to do that.</span></p>
+        <p><span class="tl-s" data-s="409.67" data-e="410.20">Why?</span> <span class="tl-s" data-s="410.23" data-e="413.11">Because the Sabbath pointed forward to Jesus.</span> <span class="tl-s" data-s="413.11" data-e="424.68">The rest we have now in Christ for our souls is a holistic, complete rest that we will— that we have because now we don&#x27;t have to strive to earn anything from God.</span> <span class="tl-s" data-s="424.68" data-e="426.79">Christ has earned everything for us.</span> <span class="tl-s" data-s="427.64" data-e="432.53">And so now what we do is instead of having a day of rest, we have a day of worship.</span> <span class="tl-s" data-s="432.53" data-e="444.52">So the day of worship is the Lord&#x27;s Day, and the Lord&#x27;s Day commemorates and recognizes that everything changed that Sunday morning when Jesus emerged from the tomb.</span> <span class="tl-s" data-s="444.57" data-e="453.69">So every week when the church gathers together on Sunday, what we&#x27;re doing is we&#x27;re commemorating and celebrating the resurrection of Jesus Christ.</span> <span class="tl-s" data-s="453.71" data-e="457.64">We would have no reason to gather if Jesus was still in the tomb.</span> <span class="tl-s" data-s="457.64" data-e="458.13">He&#x27;s not.</span> <span class="tl-s" data-s="458.13" data-e="459.80">We have reason to gather, right?</span></p>
+        <p><span class="tl-s" data-s="459.80" data-e="468.72">And so then when you look back, I mean, you even see John when he&#x27;s writing in Revelation, he talks about how he was in the Spirit, quote, on the Lord&#x27;s Day.</span> <span class="tl-s" data-s="468.72" data-e="480.86">And so there&#x27;s an early, early tradition of Christians not following the Sabbath and all of its regulations, but transferring their, their day of worship to Sunday.</span> <span class="tl-s" data-s="481.23" data-e="486.06">And so that&#x27;s, that&#x27;s in brief, that&#x27;s my perspective.</span> <span class="tl-s" data-s="486.06" data-e="488.45">Jesus even talks about fulfilling the law.</span> <span class="tl-s" data-s="488.45" data-e="511.26">And so now that doesn&#x27;t mean— and we&#x27;ve talked about some of these differences before— that doesn&#x27;t mean that the moral law is not something that&#x27;s binding for the Christians, because we have direction of the moral law added to the New Testament, but we have no place in this— in the New Testament where the Sabbath is commanded of or expected to be adhered to by Christians.</span> <span class="tl-s" data-s="512.26" data-e="513.25">Not one place.</span> <span class="tl-s" data-s="513.44" data-e="519.00">And so as Christians, if it&#x27;s not in the New Testament, we have to think really hard about then how to apply it.</span></p>
+        <p><span class="tl-s" data-s="519.00" data-e="525.42">And so I know there are a lot of well-meaning people that say, hey, listen, um, we should observe the Sabbath and not go shopping and all that kind of stuff.</span> <span class="tl-s" data-s="525.43" data-e="528.00">And you know, that&#x27;s I think that&#x27;s a conscience issue.</span> <span class="tl-s" data-s="528.11" data-e="538.45">I think the priority on Sunday morning is that we should be with the people of God, because when we read the Scriptures, we find that people are filled with the Spirit.</span> <span class="tl-s" data-s="538.45" data-e="542.35">They have this impulse to gather together with other saints.</span> <span class="tl-s" data-s="542.38" data-e="557.69">And so when the Spirit falls, people gather together, and they gather together on the Lord&#x27;s Day to celebrate Jesus Christ and to celebrate the fact that Our whole future, our whole past, everything is bound up in him now.</span> <span class="tl-s" data-s="557.89" data-e="565.55">We don&#x27;t need to celebrate the Sabbath because it doesn&#x27;t it doesn&#x27;t apply for us today in Christ.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="565.60" data-e="565.78">Gotcha.</span> <span class="tl-s" data-s="565.78" data-e="566.07">That&#x27;s great.</span> <span class="tl-s" data-s="566.10" data-e="570.06">Thanks for going into that.</span> <span class="tl-s" data-s="570.06" data-e="570.30">Couple follow-ups.</span> <span class="tl-s" data-s="570.30" data-e="573.49">So are we commanded to work seven days?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="574.02" data-e="574.09">No.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="574.10" data-e="574.26">No.</span> <span class="tl-s" data-s="574.26" data-e="574.48">Okay.</span> <span class="tl-s" data-s="574.56" data-e="578.07">And [Speaker A] then well, I mean we he he says work six and then.</span> <span class="tl-s" data-s="578.10" data-e="578.74">6 in the morning.</span> <span class="tl-s" data-s="578.82" data-e="580.36">And then take a rest.</span> <span class="tl-s" data-s="580.36" data-e="580.49">Yeah.</span> <span class="tl-s" data-s="580.51" data-e="584.66">And so, no, I mean, we like— we&#x27;re not— we&#x27;re commanded to work.</span> <span class="tl-s" data-s="584.66" data-e="584.88">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="584.90" data-e="587.52">Because if you don&#x27;t work, you don&#x27;t eat.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="587.96" data-e="588.05">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="588.05" data-e="592.20">But that doesn&#x27;t mean, you know, we can&#x27;t— we have to work Saturday as well, you know.</span> <span class="tl-s" data-s="592.20" data-e="596.59">So, and I know most people, or many people, get the weekend or 2 days off.</span> <span class="tl-s" data-s="596.61" data-e="598.84">And [Speaker B] yeah, [Speaker A] I think that&#x27;s good physically.</span> <span class="tl-s" data-s="599.09" data-e="603.03">That&#x27;s just good for people to get a break.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="603.03" data-e="603.15">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="603.18" data-e="603.43">You know.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="603.43" data-e="605.84">And then another one, um, that one was kind of a joke.</span> <span class="tl-s" data-s="605.84" data-e="608.94">I don&#x27;t think anyone&#x27;s gonna feel like they&#x27;re commanded to work 7 days.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="608.94" data-e="613.21">I&#x27;ve known somebody who felt like they were commanded by God to work 6.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="613.21" data-e="613.40">Work 6?</span> <span class="tl-s" data-s="613.45" data-e="613.58">Yeah.</span> <span class="tl-s" data-s="613.58" data-e="614.80">Based on?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="615.01" data-e="619.08">Based on work 6 and then rest 1.</span> <span class="tl-s" data-s="619.56" data-e="619.65">Yeah.</span> <span class="tl-s" data-s="619.70" data-e="620.13">So anyway.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="620.13" data-e="620.28">Gotcha.</span> <span class="tl-s" data-s="621.00" data-e="631.47">So if we&#x27;re using Sunday as the Lord&#x27;s Day to worship and spend time with God&#x27;s people, how does that apply when a church, for example, does a Saturday service?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="631.47" data-e="634.38">Yeah, I mean, I think there&#x27;s freedom there for that kind of thing, I suppose.</span> <span class="tl-s" data-s="634.40" data-e="636.55">I&#x27;m not going to draw a hard line.</span> <span class="tl-s" data-s="636.56" data-e="642.38">I mean, they&#x27;re celebrating— if they&#x27;re a biblical church, they&#x27;re celebrating the resurrection, they&#x27;re focusing on Jesus.</span> <span class="tl-s" data-s="642.38" data-e="647.10">And so, I mean, if it&#x27;s an issue of space and they don&#x27;t have enough space— [Speaker B] Yeah, they might have multiple services.</span> <span class="tl-s" data-s="647.10" data-e="648.11">Yeah, I mean, I get that.</span> <span class="tl-s" data-s="648.12" data-e="653.38">I mean, I&#x27;m not going to draw a hard line on that.</span> <span class="tl-s" data-s="653.60" data-e="656.81">But I think the pattern is the Lord&#x27;s Day is Sunday.</span> <span class="tl-s" data-s="656.81" data-e="661.76">We worship and celebrate what Jesus has done on the Lord&#x27;s Day.</span> <span class="tl-s" data-s="661.86" data-e="664.76">And so the Sabbath regulations, which Read the Sabbath regulations.</span> <span class="tl-s" data-s="665.25" data-e="666.13">They are—they are.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="666.27" data-e="667.51">Where would one find those?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="667.51" data-e="668.09">In the old—I don&#x27;t know.</span> <span class="tl-s" data-s="668.14" data-e="668.33">Sorry, okay.</span> <span class="tl-s" data-s="668.36" data-e="676.54">I don&#x27;t know off the top of my head, but if you read the Sabbath regulations, you can Google that right there.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="676.57" data-e="676.82">Yep.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="676.82" data-e="677.09">They&#x27;re stringent.</span> <span class="tl-s" data-s="677.22" data-e="686.44">It&#x27;s and it&#x27;s we can&#x27;t take the same kind of thing and just sort of say, okay, that applies now for Sunday at all.</span> <span class="tl-s" data-s="686.53" data-e="688.38">So it&#x27;s just not.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="688.38" data-e="690.11">Deuteronomy or Exodus twenty.</span> <span class="tl-s" data-s="690.38" data-e="692.22">8 through 11 and Deuteronomy 5:12 through 15.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="692.22" data-e="692.88">Okay, read those.</span> <span class="tl-s" data-s="692.88" data-e="693.52">There you go.</span> <span class="tl-s" data-s="693.57" data-e="694.64">Thank you, Mark.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="694.71" data-e="696.39">Yeah, [Speaker A] Mark has access to the Google machine.</span> <span class="tl-s" data-s="696.39" data-e="699.44">Google and ChatGPT, just in case you want to get frisky.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="699.44" data-e="701.63">We don&#x27;t need to do ChatGPT.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="702.34" data-e="702.47">No.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="702.47" data-e="705.35">Yeah, I don&#x27;t want to know ChatGPT&#x27;s opinion on the Sabbath.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="705.37" data-e="709.01">I— it seems like they don&#x27;t really always take an opinion.</span> <span class="tl-s" data-s="709.06" data-e="712.00">So like, I did type it in just out of curiosity.</span> <span class="tl-s" data-s="712.00" data-e="717.70">Um, I just typed in requirements of the Sabbath and it said it varies depending on religious and cultural traditions.</span> <span class="tl-s" data-s="717.71" data-e="721.79">The Sabbath is typically observed as a day of rest and worship.</span> <span class="tl-s" data-s="721.81" data-e="725.75">And the specific requirements may differ among different religious groups.</span> <span class="tl-s" data-s="725.75" data-e="730.13">Here are some general requirements or practices associated with the Sabbath in various traditions.</span> <span class="tl-s" data-s="730.39" data-e="744.06">And it just says resting and ceasing work, worship, spending time with family, avoiding commerce, specific dietary practices, acts of charity and kindness, reflection and study, refraining from— [Speaker A] Is football on there?</span> <span class="tl-s" data-s="744.12" data-e="750.18">No, I think that&#x27;s more of a Texas thing that you&#x27;re familiar with, like God, country football.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="750.99" data-e="751.36">Yeah, well, anyway.</span> <span class="tl-s" data-s="751.36" data-e="752.82">So, Tanya, thank you for the question.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="753.58" data-e="754.08">Yeah, thank you.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="754.24" data-e="760.81">And, um, thank you for the question, and thank you for, uh, letting us give some time on that.</span> <span class="tl-s" data-s="760.89" data-e="776.85">If you have follow-up questions, anybody, about the Sabbath and why we don&#x27;t encourage the observation of the Sabbath as described in the Old Testament, uh, feel free to email us at [Speaker B] production@sunnegilbert.com.</span> <span class="tl-s" data-s="777.17" data-e="777.57">That&#x27;s right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="777.57" data-e="780.72">And I can guarantee you, you will get the email bell On air.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="780.72" data-e="782.63">Okay, that&#x27;s kind of a disincentive, it seems to me.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="782.63" data-e="783.18">I don&#x27;t know.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="783.21" data-e="786.49">Is that— [Speaker B] I gotta hold back.</span> <span class="tl-s" data-s="786.59" data-e="789.16">I would hit it more [Speaker A] because you&#x27;ve been abusing the email bell on this episode.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="789.16" data-e="789.16">Yes.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="789.16" data-e="789.16">All right, all right.</span> <span class="tl-s" data-s="789.16" data-e="789.16">Thank you, everybody.</span> <span class="tl-s" data-s="789.16" data-e="789.16">Thank you.</span> <span class="tl-s" data-s="789.16" data-e="789.16">See you next time.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Fixed on Jesus episode archive, backed by /api/podcast/search.
+  // Static fallback list above stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function fmtDuration(raw) {
+      if (!raw) return "";
+      var str = String(raw).trim();
+      // Anchor feeds report seconds; render as H:MM:SS or M:SS.
+      if (/^\d+$/.test(str)) {
+        var total = parseInt(str, 10);
+        var h = Math.floor(total / 3600);
+        var m = Math.floor((total % 3600) / 60);
+        var sec = total % 60;
+        var mm = (h > 0 && m < 10 ? "0" + m : "" + m);
+        var ss = (sec < 10 ? "0" + sec : "" + sec);
+        return (h > 0 ? h + ":" + mm : m) + ":" + ss;
+      }
+      // Anchor also reports clock strings like "00:24:02" — drop the
+      // redundant leading hour so it reads "24:02".
+      return str.replace(/^00:/, "");
+    }
+    function row(it) {
+      it = it || {};
+      var title = esc(it.title) || "Untitled episode";
+      var tUrl = it.guid && transcriptMap[it.guid];
+      var heading = tUrl
+        ? '<a href="' + esc(tUrl) + '">' + title + "</a>"
+        : (it.link
+          ? '<a href="' + esc(it.link) + '" target="_blank" rel="noopener">' + title + "</a>"
+          : title);
+      var meta = [fmtDate(it.date), fmtDuration(it.duration)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      return '<div class="sermon"><div><h3>' + heading + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    var PER = 10;
+    var state = { q: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No episodes found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " episode" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " episodes";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/podcast/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () {
+          // Keep the static list, but tell the reader where else to listen —
+          // some privacy blockers stop the archive request itself.
+          var note = document.querySelector("[data-sermons-error]");
+          if (note) note.hidden = false;
+        });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    if (monthSel) {
+      monthSel.addEventListener("change", function () {
+        state.month = monthSel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: 50ed0320-ecfa-48bd-9227-77a6f6049a1f -->
+</body>
+</html>
