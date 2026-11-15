@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Judge Not? — Podcast Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Fixed on Jesus: conversations beyond Sunday mornings from Center Church in Gilbert, AZ — listen on Spotify, Apple Podcasts, and YouTube." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=18" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a href="/sermons">Sermons</a></li>
+              <li><a class="active" href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/podcast">&larr; All podcast episodes</a>
+          <h1 class="display-lg">Judge Not?</h1>
+          <p class="transcript-meta">2025-05-07 · 23:57</p>
+          <p class="transcript-desc">Welcome to FIXED ON JESUS, a podcast brought to you by Center Church in Gilbert, Arizona. Speaking to you today are Rich Richardson &amp; Mark Johnson Jr. Production by Heather Corbitt **SHOW NOTES** Just about everyone has heard of the scripture that says &quot;judge not&quot; and they love to quote it, but do t</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/e750e370/podcast/play/102217219/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-4-5%2F03316797-096f-b781-48f6-95128d86eb3a.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="0.42" data-e="4.38">So a judgment— like somebody who&#x27;s judgmental is going to say, hey, here&#x27;s your problem.</span> <span class="tl-s" data-s="4.58" data-e="5.64">Here&#x27;s where you need to change.</span> <span class="tl-s" data-s="6.36" data-e="9.91">Someone who&#x27;s not judgmental is going to come and say, hey, listen, I&#x27;m coming alongside you.</span> <span class="tl-s" data-s="9.97" data-e="10.63">I want to help you.</span> <span class="tl-s" data-s="10.68" data-e="11.48">I want to serve you.</span> <span class="tl-s" data-s="12.10" data-e="15.69">I want to be just a friend here in this challenge, in this hard time.</span> <span class="tl-s" data-s="16.46" data-e="19.40">Can I ask you a couple of questions about how you&#x27;re thinking about things?</span></p>
+        <p><span class="tl-s" data-s="35.00" data-e="37.35">This is Fixed on Jesus.</span></p>
+        <p><span class="tl-s" data-s="52.51" data-e="54.98">Hey everybody, welcome back to Fixed on Jesus.</span> <span class="tl-s" data-s="55.11" data-e="62.93">This is the podcast that is Sometimes in one direction, sometimes in many directions, but always a blast.</span> <span class="tl-s" data-s="63.33" data-e="66.12">Tonight, or today, you don&#x27;t know what time it is.</span> <span class="tl-s" data-s="66.41" data-e="72.50">Today it might be a runaway train where we go all over the place, but we might not even know where we end up.</span> <span class="tl-s" data-s="72.56" data-e="74.10">But we do know who you&#x27;re with.</span> <span class="tl-s" data-s="74.25" data-e="74.85">My name is Rich.</span> <span class="tl-s" data-s="75.27" data-e="75.80">I&#x27;m always here.</span> <span class="tl-s" data-s="76.31" data-e="77.95">We also have Mark Johnson Jr.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="78.17" data-e="78.57">Hello, Rich.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="78.88" data-e="79.45">Hello, Mark.</span> <span class="tl-s" data-s="79.60" data-e="81.26">And then behind the glass, we have Heather Corbett.</span> <span class="tl-s" data-s="81.36" data-e="81.86">How are you, Heather?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="82.02" data-e="82.99">I&#x27;m, I&#x27;m doing well.</span> <span class="tl-s" data-s="83.06" data-e="84.18">I had to open up the window.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="85.71" data-e="86.04">You did.</span> <span class="tl-s" data-s="86.18" data-e="91.52">Well, actually, we have the technology to make sure that the microphone— there&#x27;s a wire that goes under the windows.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="92.18" data-e="94.13">Well, okay, that&#x27;s true.</span> <span class="tl-s" data-s="94.44" data-e="103.05">It&#x27;s a long cord, but I wanted to give you a visual since you can&#x27;t see anything right now because you&#x27;re— [Speaker A] Oh, you gave our secret away again.</span> <span class="tl-s" data-s="103.17" data-e="104.20">Far, far away from us.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="104.30" data-e="109.97">I am still far across the country in— [Speaker C] It&#x27;s been the longest week of our life.</span> <span class="tl-s" data-s="109.97" data-e="111.91">The longest week of our life, basically.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="111.91" data-e="113.94">We were there for 2 weeks.</span> <span class="tl-s" data-s="113.94" data-e="117.14">Everyone&#x27;s [Speaker A] gonna think you were there for 2 weeks.</span> <span class="tl-s" data-s="117.14" data-e="118.90">Yeah, I&#x27;ve not been there for 2 weeks.</span> <span class="tl-s" data-s="118.90" data-e="120.60">Let&#x27;s— here&#x27;s a hack, everybody.</span> <span class="tl-s" data-s="120.60" data-e="126.76">This is taking you behind the curtain in the life of what it means to be a podcaster.</span> <span class="tl-s" data-s="126.76" data-e="128.66">We record 2 in a row.</span> <span class="tl-s" data-s="128.66" data-e="132.40">So the one you heard last week— I know I&#x27;m giving secrets away.</span> <span class="tl-s" data-s="132.40" data-e="133.52">I know this is radical.</span> <span class="tl-s" data-s="133.52" data-e="137.32">But when you heard last week, that was 6 minutes ago for us.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="137.32" data-e="138.58">That&#x27;s right.</span> <span class="tl-s" data-s="138.58" data-e="139.02">That&#x27;s very true.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="139.02" data-e="141.12">He didn&#x27;t even get any food in between.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="141.12" data-e="142.84">No, he&#x27;s still very hungry.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="142.84" data-e="142.94">It&#x27;s not about me, Mark.</span> <span class="tl-s" data-s="142.94" data-e="144.88">It&#x27;s about Jesus.</span> <span class="tl-s" data-s="144.88" data-e="150.51">What are we We&#x27;re talking about Jesus tonight, today, whenever the people are listening.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="150.63" data-e="151.93">Yes, title is Judge Not.</span> <span class="tl-s" data-s="151.97" data-e="158.94">And I wanted to start by reading Matthew 7:1-5, if you&#x27;re ready.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="159.05" data-e="159.24">Yes.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="159.67" data-e="159.88">All right.</span> <span class="tl-s" data-s="159.95" data-e="167.79">Judge not that you not be judged, for with the judgment you pronounce, you will be judged, and with the measure you use, it will be measured to you.</span> <span class="tl-s" data-s="167.79" data-e="173.36">Why do you see the speck that is in your brother&#x27;s eye, but do not notice the log that is in your own eye?</span> <span class="tl-s" data-s="173.36" data-e="180.18">Or how can you say to your brother, let me take the speck out of your eye, when there is a log in your own eye?</span> <span class="tl-s" data-s="180.18" data-e="189.72">You hypocrite, first take the log out of your own eye, and then you will see clearly to take the speck out of your brother&#x27;s eye.</span> <span class="tl-s" data-s="189.72" data-e="192.69">And yeah, that&#x27;s one of the most popular passages on judging.</span> <span class="tl-s" data-s="192.72" data-e="200.11">And we were talking about before the episode, just even non-Christians have heard this.</span> <span class="tl-s" data-s="200.26" data-e="201.58">How would you say it?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="201.58" data-e="213.17">Like, I would say that I&#x27;ve heard this said before, not by me, but one of the verses that&#x27;s on the non-Christian memory verse program is judge not lest you be judged.</span> <span class="tl-s" data-s="213.17" data-e="220.24">And so a lot of folks who are not believers in Jesus, they&#x27;ve, they&#x27;ve heard that and they sort of trot that out.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="220.24" data-e="223.53">It&#x27;s right up there with John 3:16.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="223.53" data-e="225.97">Yeah, I think they just know that it says John 3:16.</span> <span class="tl-s" data-s="226.00" data-e="234.24">I don&#x27;t know that they know what it says, but I think this judge not lest you be judged is real popular in our culture today.</span> <span class="tl-s" data-s="234.24" data-e="240.46">You know, the kind of thing that says, you know, if it&#x27;s not bothering you, what do you care?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="240.46" data-e="241.38">Yeah.</span> <span class="tl-s" data-s="241.67" data-e="244.39">No, yeah, that&#x27;s great.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="244.39" data-e="245.18">And so yeah.</span> <span class="tl-s" data-s="245.29" data-e="248.64">But Matthew 7 is saying something different.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="248.68" data-e="250.71">Yeah, it is.</span> <span class="tl-s" data-s="250.71" data-e="251.17">It is.</span> <span class="tl-s" data-s="251.91" data-e="259.16">And let&#x27;s start with what is the meaning of judging as it relates to this passage, but also just in the Bible in general?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="259.16" data-e="260.44">Yeah, for sure.</span> <span class="tl-s" data-s="260.44" data-e="261.07">Good question.</span> <span class="tl-s" data-s="261.15" data-e="265.47">So Matthew chapter 7 is at the end, is coming to the end of the Sermon on the Mount.</span> <span class="tl-s" data-s="265.49" data-e="271.49">And Jesus at the end of chapter 6, that&#x27;s his famous section where he talks about not worrying or not being anxious.</span> <span class="tl-s" data-s="271.51" data-e="273.19">And so he&#x27;s talking about sin.</span> <span class="tl-s" data-s="273.21" data-e="278.11">He&#x27;s talking before, he&#x27;s talking about sin that we can harbor in our own hearts as worry and anxiety.</span> <span class="tl-s" data-s="278.11" data-e="283.81">And then he starts to transition in chapter 7 to talk about the sin that we can commit one to another.</span> <span class="tl-s" data-s="283.89" data-e="287.84">And he leads with, judge not that you not be judged.</span> <span class="tl-s" data-s="287.89" data-e="290.21">For the judgment you pronounce, you will be judged, right?</span> <span class="tl-s" data-s="290.69" data-e="290.81">Yeah.</span></p>
+        <p><span class="tl-s" data-s="290.81" data-e="298.45">And so, what some people take that to mean is like, hey, you&#x27;re not allowed to pass judgment in any way, shape, or form.</span> <span class="tl-s" data-s="298.49" data-e="312.64">But if you look down at verse 6 in chapter 7, it says, do not give dogs what is holy, and do not throw your pearls before pigs, lest they trample them underfoot and turn to attack you.</span> <span class="tl-s" data-s="312.68" data-e="315.95">So, somebody has to figure out who the dogs and the pigs are.</span> <span class="tl-s" data-s="315.96" data-e="316.24">Right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="316.24" data-e="316.35">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="316.35" data-e="318.21">That takes some judgment.</span> <span class="tl-s" data-s="318.21" data-e="335.09">And so what we need to recognize here is that what Jesus is saying when it comes to judgment is it forbids pronouncing or believing in your heart that someone else is guilty before you talk to them of something.</span> <span class="tl-s" data-s="335.09" data-e="335.28">Right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="335.38" data-e="335.46">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="335.46" data-e="338.86">And so I think that&#x27;s the, that&#x27;s the danger.</span> <span class="tl-s" data-s="339.05" data-e="345.31">Like what we do is we are tempted to pass judgment upon people and pronounce them pronounce them guilty.</span> <span class="tl-s" data-s="345.32" data-e="353.57">Because all of us in our own hearts and in our own minds, we carry around a judge and jury that is always in session.</span> <span class="tl-s" data-s="353.57" data-e="354.44">It&#x27;s always in session.</span> <span class="tl-s" data-s="354.44" data-e="358.52">We always have this judge and jury in session in our hearts.</span> <span class="tl-s" data-s="358.52" data-e="365.64">And so we have them in session and we see somebody, they do something unkind to us, or we have a thought about a person.</span> <span class="tl-s" data-s="365.89" data-e="375.06">And that judge jury is— a judge and jury is willing to hear evidence that&#x27;s only one-sided and then pronounce a guilt.</span> <span class="tl-s" data-s="375.06" data-e="378.29">Guilty verdict and then sentence all within just a few seconds.</span> <span class="tl-s" data-s="378.35" data-e="385.40">And what Jesus is saying is that we as Christians must not do that.</span> <span class="tl-s" data-s="385.40" data-e="388.26">We must not judge someone.</span></p>
+        <p><span class="tl-s" data-s="388.28" data-e="398.01">We must not, we must not pronounce them guilty at all without talking to them, without questioning them, without interacting with them.</span> <span class="tl-s" data-s="398.01" data-e="399.86">We must not judge.</span> <span class="tl-s" data-s="400.17" data-e="401.00">That makes sense.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="401.00" data-e="408.66">Yeah, no, just a quick verse that came to mind while I was— I heard this verse today in an audiobook, and I wrote it down.</span> <span class="tl-s" data-s="408.66" data-e="411.94">Very relevant to what you just said.</span> <span class="tl-s" data-s="411.94" data-e="417.41">Proverbs 18:17, the one who states his case first seems right until the other comes and examines him.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="417.41" data-e="420.05">Oh man, that is so true.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="420.11" data-e="420.27">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="420.27" data-e="420.37">Yeah.</span> <span class="tl-s" data-s="420.37" data-e="430.24">Like, that would be outstanding if all of us just reserved judgment until we heard both sides of the story.</span> <span class="tl-s" data-s="430.24" data-e="447.68">Like when you think about the challenges in our lives, when you think about the challenges that happen in a church, to be able to just have the wherewithal to apply Proverbs 18 and refuse to form a judgment until you hear both sides.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="447.68" data-e="447.94">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="447.95" data-e="451.77">And even then, sometimes you don&#x27;t have enough, you don&#x27;t have enough information.</span> <span class="tl-s" data-s="451.77" data-e="457.32">Because I think so often we want to be in the know and we want to have information about what&#x27;s going on.</span> <span class="tl-s" data-s="457.32" data-e="458.84">And we want to know something.</span> <span class="tl-s" data-s="458.92" data-e="461.47">We want to, we want to have that.</span> <span class="tl-s" data-s="461.47" data-e="463.73">Like everybody needs our opinion.</span></p>
+        <p><span class="tl-s" data-s="465.08" data-e="465.64">They don&#x27;t.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="465.64" data-e="465.91">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="466.30" data-e="471.12">And chances are the person that&#x27;s in trouble is not getting as much help as they need.</span> <span class="tl-s" data-s="471.12" data-e="473.70">And it&#x27;s not— it&#x27;s not easy.</span> <span class="tl-s" data-s="473.75" data-e="479.09">The people involved in the process, they shouldn&#x27;t go around talking about it either, right?</span> <span class="tl-s" data-s="479.19" data-e="492.69">Because, you know, when, like in the church, when there&#x27;s sin and when people sin against each other, which happens, those that are involved, a counselor or a pastor, He doesn&#x27;t have the license to go around and talk about that with other people that are not a part of the process.</span> <span class="tl-s" data-s="492.75" data-e="495.90">They&#x27;re not a part of the situation.</span> <span class="tl-s" data-s="496.04" data-e="501.75">And so, we need to be a people who are kind and gracious and reserve judgment.</span> <span class="tl-s" data-s="501.80" data-e="512.00">You know, you think about— well, you think about like what Paul talks about when Paul is addressing one of the most problematic churches in all of the New Testament.</span> <span class="tl-s" data-s="512.00" data-e="514.04">And he says— [Speaker B] The Corinthians?</span></p>
+        <p><span class="tl-s" data-s="514.09" data-e="514.76">Is that the Corinthians?</span> <span class="tl-s" data-s="514.81" data-e="515.42">Yeah, the Corinthians.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="515.47" data-e="517.79">They&#x27;re getting drunk on the— Communion wine?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="517.84" data-e="518.15">They were.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="518.16" data-e="521.62">And all kinds of other things?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="521.62" data-e="522.26">They were, absolutely.</span> <span class="tl-s" data-s="522.26" data-e="525.45">Verse 4 says, love is patient and kind.</span> <span class="tl-s" data-s="525.47" data-e="527.17">Love does not envy or boast.</span> <span class="tl-s" data-s="527.24" data-e="529.02">It is not arrogant or rude.</span> <span class="tl-s" data-s="529.02" data-e="531.41">It does not insist on its own way.</span> <span class="tl-s" data-s="531.51" data-e="533.78">It is not irritable or resentful.</span> <span class="tl-s" data-s="533.82" data-e="537.75">It does not rejoice at wrongdoing, but rejoices in the truth.</span> <span class="tl-s" data-s="537.75" data-e="546.18">Love— now here&#x27;s the piece that militates against that judgmental spirit that we can easily carry around.</span> <span class="tl-s" data-s="546.86" data-e="555.65">Love Bears all things, believes all things, hopes all things, endures all things.</span> <span class="tl-s" data-s="555.65" data-e="561.69">And I think that that&#x27;s just—it&#x27;s a good—it&#x27;s a good word for us because we are tempted.</span></p>
+        <p><span class="tl-s" data-s="561.70" data-e="563.04">All of us are the same.</span> <span class="tl-s" data-s="563.04" data-e="566.42">We&#x27;re tempted to rush to judgment.</span> <span class="tl-s" data-s="566.84" data-e="572.41">We&#x27;re tempted to to think that the world needs our judgment, and they don&#x27;t.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="572.52" data-e="574.05">Yeah, [Speaker A] they don&#x27;t.</span> <span class="tl-s" data-s="574.29" data-e="579.02">No, yeah, it&#x27;s— I mean, that&#x27;s kind of how this episode came together.</span> <span class="tl-s" data-s="579.02" data-e="584.76">Why is it so hard to not judge?</span> <span class="tl-s" data-s="584.79" data-e="591.77">You know, it just seems— it&#x27;s probably a besetting sin for me, but yeah, it seems hard.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="591.77" data-e="593.05">It is hard.</span> <span class="tl-s" data-s="593.05" data-e="595.00">I mean, think about Jesus.</span> <span class="tl-s" data-s="595.00" data-e="600.25">Jesus speaks in the Sermon on the Mount, right?</span> <span class="tl-s" data-s="600.25" data-e="603.85">He is, he&#x27;s walking through, you know, a sketch of what it means to be a disciple.</span> <span class="tl-s" data-s="603.85" data-e="606.42">That&#x27;s what the Sermon on the Mount is.</span></p>
+        <p><span class="tl-s" data-s="607.64" data-e="611.75">It&#x27;s a, it&#x27;s a sketch of, of what it means to be a disciple.</span> <span class="tl-s" data-s="611.75" data-e="619.10">And the first sin he talks about that is personal is judgmentalism.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="619.85" data-e="619.93">Hmm.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="619.93" data-e="621.70">You know what that means?</span> <span class="tl-s" data-s="621.70" data-e="627.50">It means that we all have a proclivity to judge other people.</span> <span class="tl-s" data-s="627.54" data-e="629.07">And it&#x27;s always wrong.</span> <span class="tl-s" data-s="629.09" data-e="635.08">I mean, he talks about judgmentalism before he talks about praying.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="635.19" data-e="635.73">Wow.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="636.15" data-e="637.18">And so, like, that&#x27;s— it&#x27;s serious.</span> <span class="tl-s" data-s="637.20" data-e="639.75">And I think it&#x27;s because we&#x27;re apt to sin with our tongues.</span> <span class="tl-s" data-s="639.75" data-e="645.19">We&#x27;re apt to sin with our hearts because we sin with our tongues after we sin with our hearts.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="645.85" data-e="645.95">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="645.95" data-e="654.55">I mean, it doesn&#x27;t mean that there isn&#x27;t a place to go to believers that you&#x27;re in relationship with and community with and ask questions.</span> <span class="tl-s" data-s="654.55" data-e="658.69">Like, if you think somebody is in trouble, we should ask questions.</span> <span class="tl-s" data-s="658.69" data-e="659.81">We should inquire.</span> <span class="tl-s" data-s="659.81" data-e="665.37">We should make sure that they&#x27;re on the right path and we should look to try to encourage them to follow Jesus.</span> <span class="tl-s" data-s="665.37" data-e="665.61">Right.</span> <span class="tl-s" data-s="665.61" data-e="668.17">We shouldn&#x27;t just sit back in judgment and go, what are they doing?</span> <span class="tl-s" data-s="668.17" data-e="669.73">I don&#x27;t understand what they&#x27;re doing.</span> <span class="tl-s" data-s="669.73" data-e="670.63">What&#x27;s going on?</span> <span class="tl-s" data-s="670.63" data-e="672.17">Why aren&#x27;t they doing X, Y, or Z?</span> <span class="tl-s" data-s="672.49" data-e="674.03">I mean, this is not helpful.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="674.03" data-e="674.21">Right.</span> <span class="tl-s" data-s="674.21" data-e="674.43">Yeah.</span> <span class="tl-s" data-s="674.43" data-e="678.35">You could alleviate that by going directly to them is what you&#x27;re saying.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="678.35" data-e="678.53">Yeah.</span> <span class="tl-s" data-s="678.53" data-e="680.45">And asking questions.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="680.55" data-e="680.58">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="680.58" data-e="681.17">Just ask questions.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="682.01" data-e="691.47">Yeah, and a lot of times the thoughts that you had seem right, and then the other person comes and essentially examines your own thoughts because they&#x27;re in the situation.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="691.77" data-e="696.86">Yeah, and and you realize, oh yeah, that&#x27;s not exactly what was going on.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="696.86" data-e="697.02">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="697.63" data-e="709.27">So yeah, [Speaker B] yeah, [Speaker A] I think it&#x27;s we just really have to guard against this temptation because that&#x27;s the way it is for all of us, even as believers with the Spirit of God inside us.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="709.27" data-e="709.63">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="709.67" data-e="709.81">Um.</span> <span class="tl-s" data-s="709.81" data-e="714.40">I&#x27;ve said this before, but there are 2 kinds of business in the world.</span> <span class="tl-s" data-s="714.40" data-e="716.26">There&#x27;s my business and there&#x27;s not my business.</span> <span class="tl-s" data-s="716.38" data-e="723.73">And I need to make sure what is my business and what&#x27;s not my business.</span> <span class="tl-s" data-s="723.76" data-e="724.17">Yeah.</span> <span class="tl-s" data-s="724.17" data-e="732.75">And oftentimes what I want to do is I want to be involved in stuff that&#x27;s not my business, but ignore stuff that is my business.</span> <span class="tl-s" data-s="733.61" data-e="735.67">And that&#x27;s when we get in trouble.</span> <span class="tl-s" data-s="736.35" data-e="744.44">That&#x27;s when judgmentalism Then judging other people&#x27;s kind of people goes astray and gets, gets out of control.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="744.55" data-e="747.13">Yeah, no, that&#x27;s good.</span> <span class="tl-s" data-s="747.50" data-e="750.62">Just to distinguish, is there differences between judging and discernment?</span> <span class="tl-s" data-s="750.71" data-e="752.00">Judgment and discernment?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="752.01" data-e="752.49">Yeah.</span> <span class="tl-s" data-s="752.49" data-e="757.65">I mean, somebody can be discerning about situations in life and have a lot of wisdom.</span> <span class="tl-s" data-s="757.65" data-e="762.00">And if someone&#x27;s truly discerning, they&#x27;re not going to go around giving their opinion to everybody.</span> <span class="tl-s" data-s="762.12" data-e="763.66">That&#x27;s how you can tell.</span> <span class="tl-s" data-s="763.66" data-e="767.73">That&#x27;s how you can tell people who are discerning.</span> <span class="tl-s" data-s="768.21" data-e="777.92">They may understand what&#x27;s going on, like the, like the nature and the character of the people around them, but they&#x27;re not going around sharing everything they think with people.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="777.97" data-e="778.13">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="778.13" data-e="783.58">They&#x27;re not going around just communicating everything that, like, with no filter over their mouth.</span> <span class="tl-s" data-s="783.60" data-e="793.41">A discerning person knows that they speak— if there&#x27;s, if there&#x27;s a problem in a church, if there&#x27;s a problem anywhere, they speak to the people who are involved and they don&#x27;t speak to others.</span> <span class="tl-s" data-s="794.17" data-e="795.51">That&#x27;s, that&#x27;s a mark of discernment.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="795.56" data-e="796.24">No, that&#x27;s good.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="796.27" data-e="804.30">So you can tell a discerning person not just by what they know or what they can see, but by who they talk to.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="804.49" data-e="804.72">Yeah, great.</span> <span class="tl-s" data-s="804.74" data-e="812.36">And we talked about speech, and the speech, like you said, comes out of the judgment first.</span> <span class="tl-s" data-s="812.50" data-e="818.70">How does one— judging for me is almost like an automatic response.</span> <span class="tl-s" data-s="818.73" data-e="820.85">Like I&#x27;m constantly sizing up situations or people.</span> <span class="tl-s" data-s="820.85" data-e="826.49">Or things, and I&#x27;m evaluating its pros and cons in my head before I even had a conscious thought.</span> <span class="tl-s" data-s="827.55" data-e="828.62">When does that turn into sin?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="828.67" data-e="828.77">Second nature.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="828.77" data-e="828.93">Yeah.</span> <span class="tl-s" data-s="828.99" data-e="831.21">When does that turn into sin?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="831.40" data-e="841.03">Well, I mean, we&#x27;re called not to think— essentially, judgment, being judgmental is thinking ill of people just in general, right?</span> <span class="tl-s" data-s="841.03" data-e="841.66">Without all the facts.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="842.14" data-e="842.38">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="842.54" data-e="842.55">Okay.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="842.55" data-e="844.77">So it&#x27;s a little bit different.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="844.77" data-e="844.83">Yeah.</span> <span class="tl-s" data-s="844.86" data-e="845.68">I mean, yeah.</span> <span class="tl-s" data-s="845.68" data-e="849.37">But even Even with all the facts, we should be gracious and merciful.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="849.50" data-e="849.63">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="849.76" data-e="852.58">So like, think about, think about like how the Lord treats us.</span> <span class="tl-s" data-s="852.66" data-e="861.88">This is always the way, like when you, when you think about like when we think about judgmentalism or whatever, we can&#x27;t just think on a horizontal level with other people.</span> <span class="tl-s" data-s="861.88" data-e="864.91">We have to think vertically first.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="864.91" data-e="865.08">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="865.15" data-e="870.06">And so think about, think about what the Lord knows about us.</span> <span class="tl-s" data-s="870.06" data-e="871.31">He knows everything.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="871.35" data-e="871.59">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="872.05" data-e="873.81">He knows our every thought.</span> <span class="tl-s" data-s="873.84" data-e="875.58">He knows our every intention.</span> <span class="tl-s" data-s="875.67" data-e="883.46">He knows those secret agendas that we have that we&#x27;ve never uttered to any person.</span> <span class="tl-s" data-s="883.46" data-e="892.55">He knows the thoughts and intentions of our hearts that we have never even honestly admitted to ourselves.</span> <span class="tl-s" data-s="892.55" data-e="893.82">He knows all of them.</span> <span class="tl-s" data-s="893.82" data-e="898.04">He knows the sins that we&#x27;ve committed in the light and the dark.</span></p>
+        <p><span class="tl-s" data-s="899.48" data-e="900.93">He knows all of them.</span></p>
+        <p><span class="tl-s" data-s="902.25" data-e="905.50">And yet, He treats us mercifully and kindly.</span> <span class="tl-s" data-s="905.54" data-e="911.21">And if there&#x27;s anyone who would be right to bring judgment, it&#x27;s the Lord.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="911.32" data-e="911.41">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="911.56" data-e="913.31">But what did the Lord do?</span> <span class="tl-s" data-s="913.31" data-e="917.97">He stepped in and took the judgment we deserved.</span> <span class="tl-s" data-s="917.97" data-e="934.71">And so if the Lord will treat us, and he does, if he treats us with this kind of kindness and mercy and grace, Man, we&#x27;ve got to be able to be willing to extend that same kindness and mercy and grace to other people.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="934.84" data-e="935.05">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="935.31" data-e="935.63">We&#x27;re all weak.</span> <span class="tl-s" data-s="935.72" data-e="940.52">We&#x27;re all weak and we&#x27;re all needy and we all need help.</span> <span class="tl-s" data-s="940.52" data-e="945.29">And the reality is that the Lord does not treat us as our sins deserve.</span> <span class="tl-s" data-s="945.29" data-e="950.32">He removes our sins from us as far as the east is from the west.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="950.34" data-e="950.47">Yes.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="950.58" data-e="955.98">And so imagine if he was judgmental toward us.</span> <span class="tl-s" data-s="956.09" data-e="959.78">Imagine if he was constantly writing us for all the things we did wrong.</span> <span class="tl-s" data-s="959.78" data-e="967.11">And in fact, he would be the only person who could do that with exact righteousness, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="967.24" data-e="967.32">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="967.33" data-e="974.61">He knows exactly who we are, what we&#x27;ve done, what we believe, what we love, even if we don&#x27;t ever communicate that with anybody else.</span> <span class="tl-s" data-s="974.62" data-e="975.46">He knows.</span> <span class="tl-s" data-s="975.89" data-e="980.13">But he&#x27;s kind and he&#x27;s gracious and he&#x27;s loving and he&#x27;s long-suffering.</span> <span class="tl-s" data-s="981.03" data-e="983.26">And he&#x27;s always willing to forgive.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="983.36" data-e="983.58">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="983.61" data-e="987.21">So if there&#x27;s anybody who could be judgmental, it&#x27;s him.</span> <span class="tl-s" data-s="987.21" data-e="987.88">But he&#x27;s not.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="987.88" data-e="988.35">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="988.35" data-e="993.97">I think that is our motive for laying aside judgment.</span> <span class="tl-s" data-s="994.05" data-e="1002.93">And so whenever I catch myself, because all of us do this, whenever I catch myself judging somebody unfairly or judging someone at all, I just thank God.</span> <span class="tl-s" data-s="1003.69" data-e="1008.02">I try to stop my brain.</span> <span class="tl-s" data-s="1008.02" data-e="1017.48">And interrupt that conversation and turn it to how the Lord has treated me in ways with graciousness and kindness that I don&#x27;t deserve.</span> <span class="tl-s" data-s="1017.50" data-e="1018.24">It helps me.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1019.25" data-e="1021.11">Yeah, no, that&#x27;s, that&#x27;s really good.</span> <span class="tl-s" data-s="1021.11" data-e="1031.62">The Lord knowing all the facts and all of our thoughts, we should— what you&#x27;re saying is that we should be looking at his response and trying to model that response.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1031.62" data-e="1031.84">Absolutely.</span> <span class="tl-s" data-s="1032.27" data-e="1032.31">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1032.35" data-e="1032.90">That&#x27;s great.</span> <span class="tl-s" data-s="1032.90" data-e="1033.01">Yeah.</span> <span class="tl-s" data-s="1033.08" data-e="1041.99">And then I can&#x27;t remember if I&#x27;ve asked this before, but it is relevant to this topic.</span> <span class="tl-s" data-s="1042.05" data-e="1048.80">Knowing that the response to when you have something you&#x27;re thinking about, you should go talk directly to the person.</span> <span class="tl-s" data-s="1048.80" data-e="1052.99">When do you know when and how to bring an observation to someone?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1053.15" data-e="1060.96">Well, I think we have to just, I mean, If we just bring every observation, we&#x27;re just going to be suspicious.</span> <span class="tl-s" data-s="1060.96" data-e="1066.98">We&#x27;re going to be suspicious, hard to get along with people, and we can&#x27;t do that.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1066.98" data-e="1067.16">Hmm.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1067.16" data-e="1072.80">And so I think we have to pray first about whether or not the observation is necessary to bring.</span> <span class="tl-s" data-s="1072.88" data-e="1078.00">Because sometimes, you know, if someone bothers us and we just want to tell them off, we shouldn&#x27;t bring an observation.</span> <span class="tl-s" data-s="1078.00" data-e="1082.12">Like if they&#x27;re doing something that just bothers us, that&#x27;s not, that&#x27;s not a good motive.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1082.21" data-e="1082.39">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1082.39" data-e="1089.86">What we wanna do is ask questions or bring observations to people who we really genuinely want the best for them.</span> <span class="tl-s" data-s="1089.86" data-e="1097.73">You know, we don&#x27;t wanna be like, hey, listen, I&#x27;m gonna tell you the truth in love and say the motive is love, but all the words are gonna sound hateful.</span> <span class="tl-s" data-s="1097.73" data-e="1099.55">You know, that&#x27;s ridiculous.</span> <span class="tl-s" data-s="1099.57" data-e="1101.03">We can&#x27;t do that, right?</span> <span class="tl-s" data-s="1101.03" data-e="1108.42">So I would think that most of the time, the observations and the questions we have are best kept to ourselves.</span> <span class="tl-s" data-s="1108.42" data-e="1125.89">Now, the difference is when we see people wandering or going off into directions that are dangerous for their souls, that are counter to Scripture, that are, you know, that are some kind of threat, then we need to say something.</span> <span class="tl-s" data-s="1125.89" data-e="1127.04">We need to ask questions.</span> <span class="tl-s" data-s="1127.04" data-e="1129.98">Somebody who&#x27;s judgmental is going to say, hey, here&#x27;s your problem.</span> <span class="tl-s" data-s="1130.64" data-e="1132.06">Here&#x27;s where you need to change.</span> <span class="tl-s" data-s="1132.06" data-e="1134.88">Someone who&#x27;s not judgmental is going to come and say, hey, listen, I&#x27;m coming alongside you.</span></p>
+        <p><span class="tl-s" data-s="1134.93" data-e="1135.61">I want to help you.</span> <span class="tl-s" data-s="1135.65" data-e="1136.59">I want to serve you.</span> <span class="tl-s" data-s="1136.60" data-e="1141.34">I want to You know, be, be just a friend here in this challenge, in this hard time.</span> <span class="tl-s" data-s="1141.34" data-e="1145.44">Can I ask you a couple of questions about how you&#x27;re thinking about things?</span> <span class="tl-s" data-s="1145.44" data-e="1151.05">And can I give you some scriptures to think about, maybe to adjust your thinking a little bit?</span> <span class="tl-s" data-s="1151.05" data-e="1153.86">Maybe after they answer the question, if they&#x27;re a little off.</span> <span class="tl-s" data-s="1153.86" data-e="1156.43">I mean, that&#x27;s how the Lord deals with us.</span> <span class="tl-s" data-s="1156.43" data-e="1162.28">Imagine if the Lord dumped everything, all of his observations upon us at the same time.</span> <span class="tl-s" data-s="1162.37" data-e="1165.92">If he— all the sins that we have, That are secret and we don&#x27;t know about all the sins.</span> <span class="tl-s" data-s="1165.92" data-e="1167.86">And like, what if he just back?</span></p>
+        <p><span class="tl-s" data-s="1167.86" data-e="1176.02">What if he just brought his big dump truck and backed it up and dumped it all over our heads?</span> <span class="tl-s" data-s="1176.57" data-e="1176.82">We&#x27;d be crushed.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1176.82" data-e="1176.84">Yeah.</span> <span class="tl-s" data-s="1176.84" data-e="1177.06">Yep.</span> <span class="tl-s" data-s="1177.06" data-e="1181.70">And that was a nice sound effect too, by the way.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1181.70" data-e="1181.76">Yeah.</span> <span class="tl-s" data-s="1181.79" data-e="1182.12">Well, exactly.</span> <span class="tl-s" data-s="1182.13" data-e="1184.66">I&#x27;m taking that from you, I suppose.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1184.66" data-e="1185.07">I&#x27;m not judging.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1185.07" data-e="1185.63">Uh, you are.</span> <span class="tl-s" data-s="1185.63" data-e="1189.15">If you say you&#x27;re not judging, you probably are.</span> <span class="tl-s" data-s="1189.95" data-e="1190.59">Oh, I just judged.</span> <span class="tl-s" data-s="1190.59" data-e="1190.78">Oops.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1190.78" data-e="1190.99">Wow.</span> <span class="tl-s" data-s="1190.99" data-e="1195.86">Well, we can make up after this.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1195.86" data-e="1197.90">That sounds creepy, but you&#x27;re [Speaker B] right.</span> <span class="tl-s" data-s="1198.06" data-e="1199.04">Maybe we should edit that out.</span> <span class="tl-s" data-s="1199.04" data-e="1199.25">Bullshit.</span> <span class="tl-s" data-s="1199.29" data-e="1200.08">Yeah, I don&#x27;t know.</span> <span class="tl-s" data-s="1200.08" data-e="1201.37">Let&#x27;s not edit that out.</span> <span class="tl-s" data-s="1201.37" data-e="1202.73">Let&#x27;s be real.</span> <span class="tl-s" data-s="1202.82" data-e="1203.32">We&#x27;re real.</span> <span class="tl-s" data-s="1203.32" data-e="1207.18">Aren&#x27;t we real, Heather?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1207.22" data-e="1208.07">I&#x27;m muted for a reason.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1208.10" data-e="1208.28">Okay.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1208.28" data-e="1209.22">I will say this though.</span> <span class="tl-s" data-s="1209.25" data-e="1212.51">I would— can I add something to what we&#x27;re talking about?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1212.54" data-e="1212.80">Of course.</span> <span class="tl-s" data-s="1212.87" data-e="1213.98">Of course.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1213.98" data-e="1238.91">Um, I, I used to work at Motorola and One of the things that one of the higher-ups came to visit us and told us this story about judging, and it was an interesting story because I&#x27;d never seen it this way, and it&#x27;s made me think every time I come into a situation which I, I don&#x27;t fully understand what all is going on, and it just came to mind when you guys were talking.</span> <span class="tl-s" data-s="1239.23" data-e="1244.51">But, um, basically a guy was sitting at a bus stop.</span> <span class="tl-s" data-s="1244.62" data-e="1245.42">And just sitting there.</span> <span class="tl-s" data-s="1245.42" data-e="1252.86">And he has like 4 or 5 small kids that are just sort of running around, running amok.</span> <span class="tl-s" data-s="1252.97" data-e="1259.11">And a woman is obviously annoyed because the kids are completely out of control, and he&#x27;s just sitting there letting it happen.</span> <span class="tl-s" data-s="1259.15" data-e="1272.07">And after a few minutes of this happening, and she&#x27;s waiting for the bus, and she&#x27;s just getting more and more upset, and the guy is just doing nothing, she finally turns to him and says, You know, the least you can do is get control of these kids.</span></p>
+        <p><span class="tl-s" data-s="1272.17" data-e="1284.89">And he just looked at her with really sad eyes and said, I&#x27;m sorry, I just found— left the hospital and found out that their mother has died, and, uh, I don&#x27;t have the heart to tell them.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1284.89" data-e="1285.12">Wow.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1285.22" data-e="1286.73">And I don&#x27;t know what to do.</span> <span class="tl-s" data-s="1286.73" data-e="1289.38">And so it was like, stopped her in her tracks.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1289.43" data-e="1289.70">Yeah.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1289.73" data-e="1299.18">And I&#x27;m not trying to bring anything down, it&#x27;s just it was kind of like one of those smack upside the head, make you realize You have no idea what the person is going through.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1299.18" data-e="1300.19">You don&#x27;t.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1300.40" data-e="1312.72">And so when you jump to conclusions or you make those kinds of judgments, you&#x27;re really, you, you, you could get smacked upside the head with the reality that there&#x27;s something terrible happening in their life.</span> <span class="tl-s" data-s="1312.72" data-e="1313.42">And [Speaker A] that&#x27;s right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1313.42" data-e="1313.66">Yeah.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1313.66" data-e="1318.71">And we need to, I love what you said about, um, love is patient.</span> <span class="tl-s" data-s="1318.95" data-e="1319.42">Love is kind.</span> <span class="tl-s" data-s="1319.59" data-e="1322.85">All the, this, I hear that all the time at weddings.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1322.98" data-e="1323.20">Yeah.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1323.20" data-e="1333.07">You know, it sounds really sweet and all, but really it&#x27;s much more about how we are to each other, not just our spouse.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1333.07" data-e="1333.14">Yeah.</span> <span class="tl-s" data-s="1334.05" data-e="1334.53">That&#x27;s right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1334.53" data-e="1335.01">That&#x27;s great.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1335.01" data-e="1335.12">Why?</span> <span class="tl-s" data-s="1335.12" data-e="1342.23">1 Corinthians 13 is about how to interact with people at church.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1342.23" data-e="1342.52">Yeah.</span> <span class="tl-s" data-s="1342.54" data-e="1343.26">No, it&#x27;s at church.</span> <span class="tl-s" data-s="1343.26" data-e="1349.39">It&#x27;s like in your mind, you&#x27;re like, oh, there won&#x27;t be any relational strife because we all have the Spirit of God inside of us.</span> <span class="tl-s" data-s="1349.44" data-e="1351.04">But that&#x27;s not true at all.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1351.08" data-e="1354.29">But it&#x27;s true once we get to heaven, just not yet.</span> <span class="tl-s" data-s="1354.50" data-e="1360.66">Well, the new heavens and the new earth, that&#x27;s, that&#x27;s a different episode.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1360.69" data-e="1369.48">If this is a topic or there&#x27;s any other topics you&#x27;d like to request, feel free to email us at production@sonnergilbert.com.</span> <span class="tl-s" data-s="1369.53" data-e="1373.70">Rich needs to get some food and some rest, so we&#x27;re gonna— we&#x27;ll see you next time.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1373.70" data-e="1382.11">All right, guys, thank you so much.</span> <span class="tl-s" data-s="1382.11" data-e="1382.89">Have a good one.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1382.89" data-e="1383.05">Okay.</span> <span class="tl-s" data-s="1383.05" data-e="1386.29">All right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1386.29" data-e="1389.09">Not going to be subject to the man.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1389.09" data-e="1389.63">I&#x27;m not under that authority.</span> <span class="tl-s" data-s="1389.63" data-e="1390.11">Who&#x27;s the boss?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1390.11" data-e="1390.93">They&#x27;re not my boss.</span> <span class="tl-s" data-s="1390.93" data-e="1392.33">That is not my boss.</span> <span class="tl-s" data-s="1392.33" data-e="1393.97">They&#x27;re not my boss.</span> <span class="tl-s" data-s="1393.97" data-e="1395.01">They&#x27;re not my boss.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1395.01" data-e="1395.39">All right.</span> <span class="tl-s" data-s="1395.39" data-e="1396.41">Judge not.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1396.41" data-e="1396.63">Okay.</span> <span class="tl-s" data-s="1396.63" data-e="1397.47">Tiffany is my boss.</span> <span class="tl-s" data-s="1397.47" data-e="1397.63">Yes.</span> <span class="tl-s" data-s="1397.63" data-e="1397.97">Judge not.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1397.97" data-e="1400.57">You didn&#x27;t even say that in the last one.</span> <span class="tl-s" data-s="1400.57" data-e="1402.55">You should have said that.</span> <span class="tl-s" data-s="1402.55" data-e="1403.29">Tiffany is actually my boss.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1403.29" data-e="1403.63">I know.</span> <span class="tl-s" data-s="1403.63" data-e="1403.98">Yeah.</span> <span class="tl-s" data-s="1403.98" data-e="1407.15">Well, I almost made a joke about complementarianism, but I was like, ah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1407.26" data-e="1409.69">Yeah, we don&#x27;t want to joke about that.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1409.69" data-e="1409.72">No.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1409.84" data-e="1416.88">I mean, you said it burdens me to think about what I&#x27;m going to eat.</span> <span class="tl-s" data-s="1416.88" data-e="1417.65">I&#x27;m like, bad wife life.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1417.65" data-e="1417.65">All right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1417.65" data-e="1417.65">All right, you ready, Rich?</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Fixed on Jesus episode archive, backed by /api/podcast/search.
+  // Static fallback list above stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function fmtDuration(raw) {
+      if (!raw) return "";
+      var str = String(raw).trim();
+      // Anchor feeds report seconds; render as H:MM:SS or M:SS.
+      if (/^\d+$/.test(str)) {
+        var total = parseInt(str, 10);
+        var h = Math.floor(total / 3600);
+        var m = Math.floor((total % 3600) / 60);
+        var sec = total % 60;
+        var mm = (h > 0 && m < 10 ? "0" + m : "" + m);
+        var ss = (sec < 10 ? "0" + sec : "" + sec);
+        return (h > 0 ? h + ":" + mm : m) + ":" + ss;
+      }
+      // Anchor also reports clock strings like "00:24:02" — drop the
+      // redundant leading hour so it reads "24:02".
+      return str.replace(/^00:/, "");
+    }
+    function row(it) {
+      it = it || {};
+      var title = esc(it.title) || "Untitled episode";
+      var tUrl = it.guid && transcriptMap[it.guid];
+      var heading = tUrl
+        ? '<a href="' + esc(tUrl) + '">' + title + "</a>"
+        : (it.link
+          ? '<a href="' + esc(it.link) + '" target="_blank" rel="noopener">' + title + "</a>"
+          : title);
+      var meta = [fmtDate(it.date), fmtDuration(it.duration)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      return '<div class="sermon"><div><h3>' + heading + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    var PER = 10;
+    var state = { q: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No episodes found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " episode" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " episodes";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/podcast/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () {
+          // Keep the static list, but tell the reader where else to listen —
+          // some privacy blockers stop the archive request itself.
+          var note = document.querySelector("[data-sermons-error]");
+          if (note) note.hidden = false;
+        });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    if (monthSel) {
+      monthSel.addEventListener("change", function () {
+        state.month = monthSel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: 27581463-c328-4b4e-a644-b56901ed192c -->
+</body>
+</html>
