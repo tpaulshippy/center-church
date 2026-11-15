@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trey Richardson Interview, the final installment - Part 4 — Podcast Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Fixed on Jesus: conversations beyond Sunday mornings from Center Church in Gilbert, AZ — listen on Spotify, Apple Podcasts, and YouTube." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=18" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a href="/sermons">Sermons</a></li>
+              <li><a class="active" href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/podcast">&larr; All podcast episodes</a>
+          <h1 class="display-lg">Trey Richardson Interview, the final installment - Part 4</h1>
+          <p class="transcript-meta">2025-01-22 · 43:17</p>
+          <p class="transcript-desc">Welcome to FIXED ON JESUS, a podcast brought to you by Center Church in Gilbert, Arizona. Speaking to you today are Rich Richardson &amp; Mark Johnson Jr. Production by Heather Corbitt This week we have the 4th part of a 4 part interview where Rich and Mark sat down with a wonderful servant of the Lord </p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/e750e370/podcast/play/97424821/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-0-22%2F32a63ce5-f431-f590-cd7e-7634393f45a0.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="0.15" data-e="4.73">To see the hope that we have in Christ, to be able to come because he has overcome sin.</span> <span class="tl-s" data-s="5.47" data-e="8.46">I can, in Christ, overcome whatever this issue is.</span> <span class="tl-s" data-s="8.91" data-e="11.43">There&#x27;s no sin that Christ hasn&#x27;t died for.</span> <span class="tl-s" data-s="11.81" data-e="17.33">There&#x27;s no addiction that is greater than the power of Christ at work in the heart of a believer.</span> <span class="tl-s" data-s="18.21" data-e="22.57">And helping people to see that is a joy.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="34.28" data-e="36.50">Hey everybody, welcome back to Fixed on Jesus.</span> <span class="tl-s" data-s="36.55" data-e="39.26">This is interview edition of Fixed on Jesus.</span> <span class="tl-s" data-s="39.37" data-e="41.42">We are now on part number four.</span> <span class="tl-s" data-s="42.11" data-e="43.10">That&#x27;s right, Trey Richardson.</span> <span class="tl-s" data-s="43.14" data-e="46.38">I&#x27;m joined by Mark Johnson Jr. just across the table.</span> <span class="tl-s" data-s="46.70" data-e="49.64">Hello, and Heather Corbett behind the glass.</span></p>
+        <p><span class="tl-s" data-s="51.58" data-e="54.03">And Trey, we can continue talking there.</span> <span class="tl-s" data-s="54.08" data-e="54.47">Yeah, right.</span> <span class="tl-s" data-s="54.52" data-e="55.41">My dad for sure.</span> <span class="tl-s" data-s="55.86" data-e="56.12">Okay.</span> <span class="tl-s" data-s="56.37" data-e="56.48">Yes.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="56.53" data-e="57.79">But but wait, hang on.</span> <span class="tl-s" data-s="57.98" data-e="59.81">There&#x27;s something we gotta get out in the open.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="59.94" data-e="60.72">All right, get it out.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="60.81" data-e="61.63">We&#x27;ve revealed.</span> <span class="tl-s" data-s="61.87" data-e="68.59">Your name, your real name, like your documented name, and you&#x27;re the 4th, so that makes Mr.</span> <span class="tl-s" data-s="68.59" data-e="69.43">Trey Richardson.</span> <span class="tl-s" data-s="69.43" data-e="72.43">What is your real name and why do you guys all got pseudo-names?</span> <span class="tl-s" data-s="72.93" data-e="74.33">What&#x27;s up with that?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="74.33" data-e="75.51">Well, you should ask him.</span> <span class="tl-s" data-s="75.51" data-e="77.51">I didn&#x27;t give myself a name.</span> <span class="tl-s" data-s="77.75" data-e="78.65">That&#x27;s how that works.</span> <span class="tl-s" data-s="78.65" data-e="79.41">I don&#x27;t know if you knew that.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="80.09" data-e="81.79">Yeah, Coleman A.</span> <span class="tl-s" data-s="81.79" data-e="85.43">Richardson III, and Trey comes from the 3rd.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="85.43" data-e="87.25">Oh, okay, so you&#x27;re quattro.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="87.25" data-e="89.34">Oh, I&#x27;ve never heard that before.</span> <span class="tl-s" data-s="89.83" data-e="91.75">Mark Johnson, did you write that down?</span> <span class="tl-s" data-s="91.79" data-e="91.89">That&#x27;s so funny.</span> <span class="tl-s" data-s="91.89" data-e="91.91">Hahaha.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="95.41" data-e="96.94">Heather, you&#x27;re gonna have to cut that part.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="97.80" data-e="101.02">All the ladies are gonna be mad with me again for giving you a hard time.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="101.18" data-e="104.60">So how— your great-grandfather was the first Coleman?</span> <span class="tl-s" data-s="105.11" data-e="106.01">Yeah, he was a Christian.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="106.42" data-e="107.38">My dad was Junior.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="107.80" data-e="108.10">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="108.57" data-e="109.16">I&#x27;m the third.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="109.45" data-e="109.72">All right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="110.19" data-e="111.07">Rich is the fourth.</span> <span class="tl-s" data-s="111.16" data-e="116.58">And I did have one aunt say you should name him Little IV for fourth.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="117.56" data-e="117.61">Ah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="118.22" data-e="118.77">But we didn&#x27;t.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="119.41" data-e="119.67">I see.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="120.07" data-e="123.52">We picked Rich because my dad, that was his nickname.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="123.74" data-e="123.87">Okay.</span> <span class="tl-s" data-s="124.32" data-e="126.26">So now we know everyone&#x27;s name.</span> <span class="tl-s" data-s="126.39" data-e="127.80">We know who we&#x27;re talking to now.</span> <span class="tl-s" data-s="128.02" data-e="128.97">So we can continue.</span> <span class="tl-s" data-s="129.03" data-e="131.10">I just wanted to make sure everybody was in the know.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="131.20" data-e="131.58">That&#x27;s fine.</span> <span class="tl-s" data-s="131.77" data-e="132.18">That&#x27;s fine.</span> <span class="tl-s" data-s="133.14" data-e="133.59">That&#x27;s fine.</span> <span class="tl-s" data-s="134.56" data-e="135.64">All right.</span> <span class="tl-s" data-s="135.70" data-e="138.40">So we were talking about counseling when we left off last time.</span> <span class="tl-s" data-s="138.51" data-e="149.06">And so you were talking about, like, biblical counseling is, if people don&#x27;t know the history of biblical counseling, it went, there&#x27;s been a lot of There&#x27;s been a lot of different versions of biblical counseling over the years.</span></p>
+        <p><span class="tl-s" data-s="150.45" data-e="155.84">There&#x27;s the whole biblical counseling movement that started with Jay Adams way back with his book, Competent to Counsel.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="156.14" data-e="156.38">Right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="157.09" data-e="161.43">And there&#x27;s been different seasons of times with biblical counseling.</span> <span class="tl-s" data-s="162.46" data-e="163.39">You&#x27;ve been in it.</span> <span class="tl-s" data-s="163.98" data-e="164.84">You&#x27;ve been on that journey.</span> <span class="tl-s" data-s="164.89" data-e="170.34">So what are some of the things that you&#x27;ve seen, learned, taken away from all those years?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="170.57" data-e="178.26">Well, like I was saying last time, you know, as a pastor, I think that we are called to not only teach people, but to care for people.</span> <span class="tl-s" data-s="178.65" data-e="185.60">And care comes in the midst of crisis typically, but it comes from directing people to the Word of God.</span> <span class="tl-s" data-s="186.04" data-e="189.43">And biblical counseling involves the Bible, should involve the Bible.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="189.49" data-e="191.08">That&#x27;s good, because that&#x27;s what that word means.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="191.13" data-e="192.67">That&#x27;s why you brought yours today, right?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="193.59" data-e="210.63">But that process is one that we&#x27;ve kind of evolved with, because initially it was sitting down with people and you&#x27;re speaking from your experience how to help them. your opinion what they should do or what you&#x27;ve read or what you&#x27;ve heard.</span> <span class="tl-s" data-s="210.84" data-e="213.07">And that&#x27;s just not lasting.</span> <span class="tl-s" data-s="213.25" data-e="222.64">And I&#x27;ve just been so grateful for Sovereign Grace, how they have kept the Bible as central in how we care for people, how we live our Christian lives.</span> <span class="tl-s" data-s="222.87" data-e="233.45">And I can remember when CJ had one of the pastors&#x27; conferences where they had David Pallasen and Paul Tripp from CCEF come and speak to us.</span> <span class="tl-s" data-s="233.93" data-e="260.99">And that was a real eye-opening opportunity because Because that brought an awareness of how we should view biblical counseling and how they talked about so many different needs, problems, situations that people had and could connect them to the Bible and to see how to use the Bible in every average ordinary pastor in caring for people.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="261.23" data-e="273.05">So one of the things they talk about is the heart, the human heart, which isn&#x27;t— we&#x27;re not talking about that organ that beats every A couple seconds, but the human heart, I guess, is more than that.</span> <span class="tl-s" data-s="273.42" data-e="281.10">If it&#x27;s every couple seconds, you&#x27;re— [Speaker C] Yeah, I was gonna say, you got— [Speaker B] You&#x27;re tired or you&#x27;re asleep or, you know, maybe you&#x27;re under anesthesia.</span> <span class="tl-s" data-s="281.10" data-e="282.58">But, uh, we&#x27;re not talking about that human organ.</span> <span class="tl-s" data-s="282.58" data-e="288.34">We&#x27;re talking about the seat of person— like the control center of a person&#x27;s soul, really.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="288.34" data-e="288.35">Exactly.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="288.35" data-e="293.15">Did you see a transition from giving advice to helping people understand where they need to change?</span> <span class="tl-s" data-s="293.15" data-e="296.10">And, and how did that— what did that look like?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="296.10" data-e="296.42">Yes.</span> <span class="tl-s" data-s="296.75" data-e="299.01">And it looked like this.</span> <span class="tl-s" data-s="299.01" data-e="303.52">To counsel biblically, you need to understand the Bible, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="303.55" data-e="303.63">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="303.64" data-e="307.62">And to understand the Bible, you have to understand the Gospel, right?</span> <span class="tl-s" data-s="307.73" data-e="321.32">The Gospel is the theme of the Bible, and the Gospel is the truth of how Christ came to save us from the challenge that we have of sin and how sin affects everything.</span> <span class="tl-s" data-s="321.37" data-e="324.38">I mean, because of the Gospel, we&#x27;re justified.</span> <span class="tl-s" data-s="324.38" data-e="327.77">Because of the Gospel, we are reconciled with God.</span> <span class="tl-s" data-s="327.77" data-e="332.17">Because of the Gospel, we are made righteous before God.</span> <span class="tl-s" data-s="332.17" data-e="334.47">The righteousness of Christ is given to us.</span> <span class="tl-s" data-s="334.52" data-e="349.90">So helping people to see that there is not just an awareness of where the Bible brings conviction for their sin, as you look at the heart and what has hijacked the heart, typically it&#x27;s going to be sin, a sin area that has been the culprit.</span> <span class="tl-s" data-s="349.94" data-e="350.29">Yeah.</span> <span class="tl-s" data-s="350.35" data-e="354.91">It&#x27;s helping people to see that, But to not just see that alone.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="354.97" data-e="355.05">Mm-hmm.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="355.05" data-e="360.64">To see the hope that we have in Christ, to be able to come because he has overcome sin.</span> <span class="tl-s" data-s="360.68" data-e="364.57">I can, in Christ, overcome whatever this issue is.</span> <span class="tl-s" data-s="364.75" data-e="368.01">There&#x27;s no sin that Christ hasn&#x27;t died for.</span> <span class="tl-s" data-s="368.11" data-e="373.80">There&#x27;s no addiction that is greater than the power of Christ at work in the heart of a believer.</span> <span class="tl-s" data-s="373.80" data-e="380.09">And helping people to see that is a joy.</span> <span class="tl-s" data-s="380.09" data-e="394.20">And along with seeing that the Gospel needs to be a component here in our counseling, we need to see how it brings forth this glorious connection between the indicative and the imperative.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="394.20" data-e="396.37">Yeah, you&#x27;re gonna need to explain that.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="396.37" data-e="400.84">Well, the indicative is a communication of who we are.</span> <span class="tl-s" data-s="401.51" data-e="406.97">The imperative is the communication of what command that we&#x27;re given to follow.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="407.12" data-e="407.17">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="407.54" data-e="415.92">Just like, I think it&#x27;s Colossians 3:1, if you&#x27;ve been risen with Christ, seek the things that are above where Christ is seated at the right hand of God.</span> <span class="tl-s" data-s="415.94" data-e="418.64">You see, before— [Speaker B] So what&#x27;s the indicative?</span> <span class="tl-s" data-s="418.68" data-e="427.20">The indicative is if you&#x27;re risen with Christ, it&#x27;s that truth about let&#x27;s look to the salvation that you have in Christ.</span> <span class="tl-s" data-s="427.20" data-e="431.78">With that in view, set your minds on things above, the command of what to do.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="431.78" data-e="443.01">What if we— what are some of the ramifications if we don&#x27;t? grasp the indicative and we&#x27;re not thinking it matters that we&#x27;re united to Christ and that because we&#x27;ve been risen with Christ, it doesn&#x27;t have any bearing.</span> <span class="tl-s" data-s="443.01" data-e="444.44">But, you know, let me just obey.</span> <span class="tl-s" data-s="444.44" data-e="446.72">Let me just obey and let me just seek the things that are above.</span> <span class="tl-s" data-s="447.18" data-e="448.90">What are some of the— what have you seen?</span> <span class="tl-s" data-s="448.96" data-e="450.41">What&#x27;s the dangers of that, I should say?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="450.41" data-e="454.63">Well, first of all, it&#x27;s not lasting because it&#x27;s self-dependent.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="454.63" data-e="454.79">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="454.79" data-e="457.51">And none of us have ever overcome sin.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="457.51" data-e="457.69">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="457.69" data-e="460.48">We&#x27;ve resisted temptation, but we&#x27;ve never overcome sin.</span> <span class="tl-s" data-s="460.64" data-e="461.22">Only Christ has.</span> <span class="tl-s" data-s="461.22" data-e="467.29">So for us to see sin in our life and just try to take it over and do better, It&#x27;s going to be short-lived.</span> <span class="tl-s" data-s="467.30" data-e="475.35">Only as we look to Christ and we confess our sin is he faithful and just to forgive us our sin and cleanse us from all unrighteousness.</span> <span class="tl-s" data-s="475.35" data-e="477.52">But that&#x27;s what we have in the gospel.</span> <span class="tl-s" data-s="477.56" data-e="485.60">And that&#x27;s what you help people to see, the hope that they have to overcome whatever their issue is that&#x27;s ruling their hearts.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="485.66" data-e="486.13">Hmm.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="486.71" data-e="495.07">And we find it biblically, but we&#x27;re empowered to apply what the Bible gives to us Through Christ.</span> <span class="tl-s" data-s="495.20" data-e="498.92">Without that peace, you&#x27;re just giving the people, like someone doesn&#x27;t trust the Lord.</span> <span class="tl-s" data-s="498.92" data-e="503.54">Well, you can say, you know, the Bible says trust in the Lord with all your heart and don&#x27;t lean on your own understanding.</span> <span class="tl-s" data-s="503.54" data-e="507.32">I want you to read that and pray through that each day.</span> <span class="tl-s" data-s="507.47" data-e="507.60">No.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="507.80" data-e="508.85">That doesn&#x27;t help.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="508.91" data-e="509.37">That, well, it&#x27;s true.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="509.73" data-e="511.02">But does it help?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="511.31" data-e="514.92">But it puts the onus on me.</span> <span class="tl-s" data-s="515.24" data-e="526.45">For example, Philippians chapter 4, verse 6 says, do not be anxious about anything, but in everything, through prayer and supplication, With thanksgiving, let your requests be made known to God.</span> <span class="tl-s" data-s="526.49" data-e="534.33">And the peace of God that guards— let&#x27;s see, the peace of God— [Speaker B] That guards your hearts.</span> <span class="tl-s" data-s="534.36" data-e="539.02">Yeah, it keeps going with good stuff from there on.</span> <span class="tl-s" data-s="539.02" data-e="541.67">But anyway, the command there, you see, is to not be anxious about anything.</span> <span class="tl-s" data-s="541.67" data-e="547.60">But if you look in the verse before that, it says, the Lord&#x27;s at hand.</span> <span class="tl-s" data-s="547.60" data-e="550.58">It&#x27;s the last half of verse 5.</span> <span class="tl-s" data-s="550.58" data-e="551.71">The Lord&#x27;s at hand.</span> <span class="tl-s" data-s="551.87" data-e="553.20">So that&#x27;s the indicative.</span> <span class="tl-s" data-s="553.29" data-e="557.92">That&#x27;s like, okay, listen, anxiety is ruling your heart.</span></p>
+        <p><span class="tl-s" data-s="558.18" data-e="564.37">Remember, Christ has overcome all sin, even that, and he is with you.</span> <span class="tl-s" data-s="564.38" data-e="565.83">He&#x27;s at hand.</span> <span class="tl-s" data-s="566.05" data-e="573.91">Don&#x27;t be anxious about anything, but with everything, in everything, through prayer, supplication, with thanksgiving, let your requests be known to God.</span> <span class="tl-s" data-s="573.91" data-e="581.04">And the God, the peace of God, the peace of God that guards your hearts and your minds in Christ Jesus [Speaker B] will give you the peace.</span> <span class="tl-s" data-s="581.04" data-e="581.20">Yeah, right.</span> <span class="tl-s" data-s="581.20" data-e="583.77">I don&#x27;t know why I lost that at the end.</span> <span class="tl-s" data-s="583.77" data-e="584.48">Into that.</span> <span class="tl-s" data-s="584.49" data-e="584.99">Look it up.</span> <span class="tl-s" data-s="584.99" data-e="585.59">It&#x27;s a good scripture.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="585.62" data-e="586.90">Well, we can look it up.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="587.05" data-e="587.58">We have the connection.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="587.63" data-e="588.67">I got it written.</span> <span class="tl-s" data-s="588.67" data-e="590.78">I got that one written down.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="590.83" data-e="592.66">We should have this committed to memory.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="592.69" data-e="593.38">But yeah, I should.</span> <span class="tl-s" data-s="593.38" data-e="594.46">That&#x27;s what I&#x27;m working on.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="594.68" data-e="597.01">I&#x27;m not talking to you about you, Mark.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="597.01" data-e="597.06">Okay.</span> <span class="tl-s" data-s="597.11" data-e="609.40">Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving, let your requests be made known to God, and the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="609.40" data-e="609.97">Right.</span> <span class="tl-s" data-s="610.12" data-e="617.00">Well, You get to be 70, almost 73, and some of the things go.</span> <span class="tl-s" data-s="617.01" data-e="621.85">But that&#x27;s where the biblical counseling cannot be biblical without the Gospel.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="621.85" data-e="621.98">Mm-hmm.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="621.98" data-e="631.65">Without the Gospel and the hope of the Gospel, you are giving good biblical advice and you&#x27;re not communicating the power to walk it out with.</span> <span class="tl-s" data-s="631.70" data-e="640.02">And that&#x27;s the joy that you have as a biblical counselor, as a pastor, helping people see that truth.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="640.02" data-e="645.63">So, people who count, like, there&#x27;s sometimes biblical counseling can get a bad name.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="645.63" data-e="645.77">Right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="645.79" data-e="652.53">And it&#x27;s sometimes it&#x27;s folks, well-meaning people who&#x27;ve said, hey, listen, here&#x27;s a verse, like you said, think about this, pray about this, and obey this.</span> <span class="tl-s" data-s="652.85" data-e="654.21">That&#x27;s good as far as it goes.</span> <span class="tl-s" data-s="654.21" data-e="656.52">But, and you talked about the negative side of it.</span> <span class="tl-s" data-s="656.53" data-e="661.46">So, like, what would you say to people who&#x27;ve experienced, that&#x27;s what they think biblical counseling is?</span> <span class="tl-s" data-s="661.46" data-e="662.69">What would you say to them?</span> <span class="tl-s" data-s="662.69" data-e="666.32">And they&#x27;re struggling with some stuff and they&#x27;re like, I tried biblical counseling, it doesn&#x27;t work.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="666.48" data-e="678.63">Well, I think what I&#x27;d say to them is that since Christ came and lived with us, he understands all of what we will ever experience in our lives.</span> <span class="tl-s" data-s="678.73" data-e="692.21">So biblical counseling, as I&#x27;ve said, without an understanding of how the Gospel empowers you to walk it out, that&#x27;s the experience that someone would be disillusioned with biblical counseling.</span> <span class="tl-s" data-s="692.27" data-e="706.65">That&#x27;s just been given a very clinical assessment of where a Scripture would connect with their need or where a challenge— here we can see Paul having a similar challenge in the Scripture.</span> <span class="tl-s" data-s="706.81" data-e="713.50">That truth, very, very good, but divorced from the power to walk it out, I think is what can disillusion people.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="713.71" data-e="713.87">Excellent.</span> <span class="tl-s" data-s="713.89" data-e="714.40">Well, that&#x27;s good.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="714.45" data-e="724.13">Yeah, so in a way what I&#x27;m hearing is it is not simply behavior modification or self-discipline, Right.</span> <span class="tl-s" data-s="724.14" data-e="730.30">It&#x27;s deploying the power of— the power of Christ is what transforms our heart.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="731.15" data-e="731.26">Right.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="731.92" data-e="739.51">And then, generally speaking, for people even in— the goal, I mean, this could be totally wrong, but please, please correct me.</span> <span class="tl-s" data-s="740.17" data-e="745.22">The goal, let&#x27;s say, in relationship biblical counseling is always aimed towards reconciliation.</span> <span class="tl-s" data-s="745.24" data-e="746.41">Is that fair to say?</span> <span class="tl-s" data-s="746.46" data-e="750.35">I mean, obviously, there&#x27;s situations where that is not the case.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="750.99" data-e="751.23">With who?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="751.23" data-e="752.23">With 2 people having an issue.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="752.23" data-e="754.59">Or what if it&#x27;s just one person?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="754.68" data-e="761.32">If it&#x27;s just one person, it&#x27;s reconciliation as well, I think, with the heart.</span> <span class="tl-s" data-s="761.35" data-e="768.68">Like, they&#x27;re reconciling their identity in Christ, and that identity in Christ gives them the power to not sin.</span> <span class="tl-s" data-s="769.03" data-e="771.55">I mean, to cleanse their heart of unrighteousness.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="771.55" data-e="774.04">Yeah, I wouldn&#x27;t use the word reconciliation.</span> <span class="tl-s" data-s="774.26" data-e="778.39">I&#x27;d use the word, it&#x27;s just becoming aware.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="778.68" data-e="781.93">Okay. [Speaker A] of that truth.</span> <span class="tl-s" data-s="781.95" data-e="782.13">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="782.13" data-e="783.49">That&#x27;s what can just illuminate the heart.</span> <span class="tl-s" data-s="783.49" data-e="789.14">Because the Word says, out of the abundance of the heart, the mouth speaks.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="789.51" data-e="789.67">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="789.67" data-e="794.73">So it&#x27;s all driven by the command center, like Rich was saying.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="795.21" data-e="795.36">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="795.36" data-e="805.36">And our heart, our heart&#x27;s biggest problem is not our feelings, is not our environment, it is not our physical bodies.</span> <span class="tl-s" data-s="805.89" data-e="811.89">Our biggest problem is Our heart&#x27;s response to all that, that&#x27;s what has to be discerned.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="812.14" data-e="813.29">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="813.61" data-e="822.00">And that&#x27;s where a biblical counselor can help someone understand David Powlison&#x27;s words, what&#x27;s hijacked my heart?</span> <span class="tl-s" data-s="822.04" data-e="853.13">Why the good fruit of the Spirit is not what&#x27;s being experienced by me or others in this situation, but how there is Unwanted behavior that&#x27;s being experienced and determining not just that you&#x27;ve identified the unwanted behavior, but what in your heart are you believing or trusting that&#x27;s not found in the Word of God, that is more self-focused, that&#x27;s bringing that behavior.</span> <span class="tl-s" data-s="853.56" data-e="853.64">Hmm.</span> <span class="tl-s" data-s="853.66" data-e="869.10">As that&#x27;s identified and seen as genuine sin, where the Bible says confessors If we confess our sin, 1 John 1:9, if we confess our sin, he is faithful and just to forgive us our sin and to cleanse us of all unrighteousness.</span> <span class="tl-s" data-s="869.10" data-e="881.99">That transaction happening frees us to where sin no longer is hijacking our heart and that we can respond to that same external stimuli in a different way.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="882.26" data-e="882.47">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="882.54" data-e="883.92">Now we might not.</span> <span class="tl-s" data-s="884.26" data-e="887.27">Well, then confess your sin and look to God.</span> <span class="tl-s" data-s="887.38" data-e="897.02">And trust God to help you, and that&#x27;s a process going forward, but because of Christ, it&#x27;s possible.</span> <span class="tl-s" data-s="897.02" data-e="916.48">Any issue a Christian is confronted with, he can look to God for perseverance, he can look to God for grace to walk it out, he can look to God for the ability, the stamina to work through even longstanding physical suffering.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="916.51" data-e="916.67">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="916.67" data-e="934.29">We have many wonderful examples of godly people in our church in their 70s and 80s that are living each day for Christ in the midst of genuine suffering, physical suffering.</span> <span class="tl-s" data-s="934.36" data-e="935.90">But by God&#x27;s grace, they&#x27;re joyful.</span> <span class="tl-s" data-s="935.90" data-e="937.98">They&#x27;re some leading candidates in our prayer ministry.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="938.22" data-e="939.12">Serving the church.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="939.12" data-e="939.55">That&#x27;s right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="939.74" data-e="941.17">And serving the church.</span> <span class="tl-s" data-s="941.17" data-e="955.08">Yeah, because they&#x27;ve got a vision through the understanding of the Bible and understanding the Gospel of where it connects to their life and where they&#x27;re putting the center of their life around God and not themselves.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="955.27" data-e="955.72">Love it.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="955.77" data-e="963.12">Now, there&#x27;s a lot of people who are maybe more aware with psychological help from professionals.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="963.14" data-e="964.21">Yeah, like secular counseling.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="964.26" data-e="965.12">Yeah, versus biblical counseling.</span> <span class="tl-s" data-s="965.12" data-e="970.24">How would you— how do the two intermingle in your mind?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="971.30" data-e="977.70">Well, secular counseling, I think, only has the resource of how are you feeling?</span> <span class="tl-s" data-s="977.79" data-e="981.38">How are you responding to these situations in life?</span> <span class="tl-s" data-s="981.48" data-e="984.37">And what can help you with that?</span> <span class="tl-s" data-s="984.37" data-e="994.91">What maybe medication can help the depressed person be less anxious or less challenged by difficulties of life that are bringing in a depressive response.</span> <span class="tl-s" data-s="994.91" data-e="999.49">Talking about medication, Medication can be helpful.</span> <span class="tl-s" data-s="999.66" data-e="1003.85">There can be things that the psychiatrist can help someone with.</span> <span class="tl-s" data-s="1003.95" data-e="1007.15">And again, I wouldn&#x27;t be a proponent that medication is wrong.</span> <span class="tl-s" data-s="1007.60" data-e="1010.77">If a doctor prescribes it, you should take it.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1010.77" data-e="1010.90">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1010.90" data-e="1020.48">Where we pick up is just the connection to the heart and what&#x27;s going on in the person&#x27;s life.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1020.58" data-e="1020.85">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1021.64" data-e="1031.09">So if someone&#x27;s diagnosed with a bipolar condition, We would, if they&#x27;re not already going to a doctor, we would encourage them to be under a doctor&#x27;s care.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1031.09" data-e="1032.88">And take their medication, yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1032.88" data-e="1034.27">To take their medication.</span> <span class="tl-s" data-s="1034.55" data-e="1039.64">We&#x27;re dealing with the heart&#x27;s response to all of life.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1039.64" data-e="1039.76">Right.</span> <span class="tl-s" data-s="1039.76" data-e="1056.25">So maybe to summarize, the psychiatrist is, or psychologist is able to find, is gifted and equipped to find the problem, can give coping and And maybe coping mechanisms to help— [Speaker A] Well said, yeah.</span> <span class="tl-s" data-s="1056.25" data-e="1056.30">Overcome.</span> <span class="tl-s" data-s="1056.30" data-e="1071.97">But where biblical counseling comes in, it&#x27;s identifying those things that are hijacking our hearts, which are not, you know, there may be some physical realities to some limitations that we have, but, you know, maybe some idol, some sin or something like that that&#x27;s sort of taken control, right?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1071.98" data-e="1072.17">Exactly.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1072.22" data-e="1079.91">Now, for some people hearing this, that might sound like we&#x27;re on just a sin hunt.</span> <span class="tl-s" data-s="1079.92" data-e="1080.68">Right?</span> <span class="tl-s" data-s="1080.74" data-e="1085.84">Like, you&#x27;re feeling bad, you&#x27;re sick, you&#x27;re tired, you&#x27;re depressed, you&#x27;re discouraged, you&#x27;re whatever.</span> <span class="tl-s" data-s="1086.02" data-e="1087.57">Let&#x27;s find the sin.</span> <span class="tl-s" data-s="1087.62" data-e="1088.84">Is that what you&#x27;re talking about?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1089.07" data-e="1089.31">That&#x27;s it.</span> <span class="tl-s" data-s="1089.31" data-e="1091.63">That&#x27;s the— that&#x27;s not what I&#x27;m talking about.</span> <span class="tl-s" data-s="1092.21" data-e="1093.08">But that is the exposure.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1093.08" data-e="1096.22">That&#x27;s what you can get used to.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1096.37" data-e="1099.67">That&#x27;s what people think of it.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1099.67" data-e="1100.23">That might be.</span> <span class="tl-s" data-s="1100.23" data-e="1100.47">Yeah.</span> <span class="tl-s" data-s="1100.47" data-e="1108.78">Because the emphasis on sin is going to come up at some point if you&#x27;re doing true biblical counseling.</span> <span class="tl-s" data-s="1108.88" data-e="1109.07">Sure.</span> <span class="tl-s" data-s="1109.07" data-e="1119.38">I don&#x27;t think a counselor should ever be with someone to where they leave more aware of their sin than more aware of their Savior.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1119.47" data-e="1119.57">Mm-hmm.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1119.57" data-e="1123.76">That their sin is just a part of this.</span> <span class="tl-s" data-s="1124.05" data-e="1131.61">I mean, we talk about someone&#x27;s feelings because feelings typically are like the warning light on the dashboard of my car.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1131.61" data-e="1132.09">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1132.09" data-e="1133.68">Feelings are, okay, where does that come from?</span> <span class="tl-s" data-s="1133.68" data-e="1137.11">So, Whether secular counseling can just focus on the feeling.</span> <span class="tl-s" data-s="1137.21" data-e="1140.44">How do we make the feeling go away?</span> <span class="tl-s" data-s="1140.74" data-e="1144.98">Where biblical counseling is, how do we understand what is generating that?</span> <span class="tl-s" data-s="1145.00" data-e="1148.06">Where that feeling&#x27;s coming from?</span> <span class="tl-s" data-s="1148.06" data-e="1150.66">What&#x27;s motivating that feeling?</span> <span class="tl-s" data-s="1150.71" data-e="1154.49">How are you responding with that feeling?</span> <span class="tl-s" data-s="1154.49" data-e="1161.53">And where is that review of your heart and what&#x27;s motivating whatever behavior or actions?</span> <span class="tl-s" data-s="1161.54" data-e="1162.36">Oh, [Speaker B] that&#x27;s good.</span> <span class="tl-s" data-s="1162.36" data-e="1170.25">Another thought, say someone comes to you with, like, one of the things people can think of when it comes to biblical counseling is, hey, I&#x27;m thinking about buying this car.</span></p>
+        <p><span class="tl-s" data-s="1170.27" data-e="1171.13">What do you think?</span> <span class="tl-s" data-s="1171.17" data-e="1173.49">I&#x27;m thinking about buying this house.</span> <span class="tl-s" data-s="1173.49" data-e="1175.10">I&#x27;m thinking about taking this job.</span> <span class="tl-s" data-s="1175.18" data-e="1176.07">I&#x27;m thinking about whatever.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1176.07" data-e="1177.74">Is that just regular counsel?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1177.74" data-e="1178.19">Well, what is that?</span> <span class="tl-s" data-s="1178.22" data-e="1183.84">Like, how, like, what would you say to that?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1183.90" data-e="1189.16">First of all, I would say that it&#x27;s not a pastor&#x27;s role.</span> <span class="tl-s" data-s="1189.39" data-e="1201.62">Privilege to give their opinion because people can put an overemphasis on a pastor&#x27;s opinion, and a life decision like that should come from the individual&#x27;s pursuit of God.</span> <span class="tl-s" data-s="1201.87" data-e="1212.72">And I would, would not tell them what I think they should do because I&#x27;m afraid that they would put my opinion in the place of really doing the hard work of seeking what God&#x27;s will is.</span> <span class="tl-s" data-s="1212.72" data-e="1217.64">As Paul prayed for the Colossians, I pray that you&#x27;d be filled with the knowledge of his will.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1217.70" data-e="1217.86">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1218.51" data-e="1223.95">In order that you might walk in a manner worthy of the Lord.</span> <span class="tl-s" data-s="1223.95" data-e="1225.57">So that&#x27;s the proper, I believe, the proper approach.</span> <span class="tl-s" data-s="1225.65" data-e="1232.21">Anyone can give their opinion on something, but I wouldn&#x27;t put it in the place of counsel, biblical counseling.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1232.24" data-e="1237.15">Someone comes and says, I have this elective surgery, I&#x27;m not sure what to do.</span> <span class="tl-s" data-s="1237.17" data-e="1238.53">What kind of category?</span></p>
+        <p><span class="tl-s" data-s="1240.38" data-e="1242.95">Like, let&#x27;s say a back surgery, it&#x27;s dangerous.</span> <span class="tl-s" data-s="1242.97" data-e="1245.96">You know, there could be There could be ramifications one way or another.</span> <span class="tl-s" data-s="1246.02" data-e="1247.76">And they say, what should I do?</span> <span class="tl-s" data-s="1247.94" data-e="1248.66">What do you say?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1248.74" data-e="1254.77">I said, I can&#x27;t tell you what to do because you need to do what you feel like God is directing you to do.</span> <span class="tl-s" data-s="1254.77" data-e="1259.33">Now, how are you seeking the Lord in that?</span> <span class="tl-s" data-s="1259.88" data-e="1268.51">Where are you talking to the professionals that really can give you the advice, the direction that you need?</span> <span class="tl-s" data-s="1268.56" data-e="1269.92">So I&#x27;ll walk through it with you.</span> <span class="tl-s" data-s="1269.92" data-e="1274.69">I&#x27;ll pray with you, but it&#x27;s not something that I can tell you what God&#x27;s will is for you in that.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1274.81" data-e="1280.27">Okay, say a single guy comes to you and says, I have this girl that I&#x27;m thinking about proposing to.</span> <span class="tl-s" data-s="1280.27" data-e="1281.41">What should I do?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1281.41" data-e="1286.93">Well, I would say you need to understand what God&#x27;s will is in that for you.</span> <span class="tl-s" data-s="1286.93" data-e="1288.91">My opinion is not something that&#x27;s going to be helpful.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1288.94" data-e="1294.63">So what kind of handles would you give a single guy who&#x27;s thinking that way?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1294.63" data-e="1301.53">Tell him, number one, how much of this time are you spending thinking about this and how much are you spending praying about this?</span> <span class="tl-s" data-s="1301.53" data-e="1307.88">People that know you well, as you just look around, what kind of input are you getting from them?</span> <span class="tl-s" data-s="1307.88" data-e="1317.94">How are you really spending time not only in praying but in the Word trying to understand what God is saying to you?</span> <span class="tl-s" data-s="1317.96" data-e="1323.27">It&#x27;s an important life decision and that&#x27;s something that you need to take with faith.</span> <span class="tl-s" data-s="1323.27" data-e="1328.98">You build your faith through spending time in God&#x27;s Word and time with God in prayer.</span> <span class="tl-s" data-s="1329.04" data-e="1332.57">So how are you getting there?</span> <span class="tl-s" data-s="1332.71" data-e="1343.00">Those would be more my questions of how they&#x27;re getting to the confidence to answer that question, how to do that versus giving them an opinion about that.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1343.08" data-e="1343.38">So, okay.</span> <span class="tl-s" data-s="1343.80" data-e="1344.81">So, and obviously, is she a Christian?</span> <span class="tl-s" data-s="1344.84" data-e="1346.67">Can you talk to her?</span> <span class="tl-s" data-s="1346.69" data-e="1349.66">You know, do you— [Speaker A] Right.</span> <span class="tl-s" data-s="1349.66" data-e="1350.85">You know, all those basics.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1350.87" data-e="1351.28">Equally yoked.</span> <span class="tl-s" data-s="1351.28" data-e="1351.36">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1351.36" data-e="1352.20">Yeah, right, exactly.</span> <span class="tl-s" data-s="1352.31" data-e="1353.18">That&#x27;s good.</span> <span class="tl-s" data-s="1353.18" data-e="1364.15">So one of the things that you&#x27;ve had a lot of experience in is counseling people in crisis in one way or another.</span> <span class="tl-s" data-s="1364.20" data-e="1367.46">You&#x27;ve spent many hours in hospital waiting rooms.</span> <span class="tl-s" data-s="1367.56" data-e="1367.68">Yes.</span> <span class="tl-s" data-s="1367.73" data-e="1373.16">You&#x27;ve spent many hours with people who are grieving the loss of a loved one.</span></p>
+        <p><span class="tl-s" data-s="1375.27" data-e="1382.50">You&#x27;ve been at people&#x27;s homes when they just received word that their loved one died.</span> <span class="tl-s" data-s="1382.51" data-e="1384.84">You&#x27;ve told people somebody died.</span> <span class="tl-s" data-s="1384.84" data-e="1389.98">You&#x27;ve walked along with people in the most difficult times of their lives.</span> <span class="tl-s" data-s="1390.17" data-e="1398.49">What are some things, some principles, just like to help counsel people in crisis that you&#x27;ve picked up over the years?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1398.53" data-e="1410.23">First of all, it always should be seen as a precious, precious gift that someone is drawing you in, in these times of crisis in their lives.</span> <span class="tl-s" data-s="1410.23" data-e="1411.64">It&#x27;s an intimate time.</span> <span class="tl-s" data-s="1411.70" data-e="1426.59">So as a pastor, to walk into that knowing that&#x27;s the right perspective, is this isn&#x27;t an objective, this isn&#x27;t a job, this isn&#x27;t something to take lightly, number one.</span> <span class="tl-s" data-s="1426.68" data-e="1431.41">Number two is you want to spend way more time listening than talking.</span> <span class="tl-s" data-s="1432.23" data-e="1434.72">Typically in crisis, That&#x27;s not the opportunity.</span> <span class="tl-s" data-s="1434.72" data-e="1438.07">That&#x27;s not the time to bring biblical counseling.</span> <span class="tl-s" data-s="1438.86" data-e="1439.61">It&#x27;s a time to listen.</span> <span class="tl-s" data-s="1439.61" data-e="1442.11">It&#x27;s a time to care.</span> <span class="tl-s" data-s="1442.11" data-e="1449.11">It&#x27;s a time to understand, and it&#x27;s a time to pray.</span> <span class="tl-s" data-s="1449.11" data-e="1453.93">It&#x27;s also a time to answer questions, but it&#x27;s not a time to counsel.</span></p>
+        <p><span class="tl-s" data-s="1454.04" data-e="1461.28">You&#x27;re wanting to help that person, primarily help them look to the Lord in this time.</span> <span class="tl-s" data-s="1461.97" data-e="1468.99">And often you&#x27;ve got to come alongside them and look to the Lord with them and show them how to look to the Lord.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1469.18" data-e="1477.12">And this works, I mean, like, let&#x27;s say someone&#x27;s listening and they&#x27;re gonna— they have— they&#x27;re coming alongside somebody who&#x27;s hurting, and so many people think, I don&#x27;t know what to say.</span> <span class="tl-s" data-s="1477.12" data-e="1480.25">What do you— would you tell them?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1480.26" data-e="1483.49">Well, I tell them, I don&#x27;t know what to say.</span> <span class="tl-s" data-s="1484.11" data-e="1487.10">The reality is, It&#x27;s not what you say.</span> <span class="tl-s" data-s="1487.10" data-e="1492.89">There&#x27;s not ever going to be just this right sentence that is going to make the day.</span> <span class="tl-s" data-s="1493.01" data-e="1511.71">It&#x27;s being there, and it&#x27;s allowing the Holy Spirit to lead you in your care for them and seeing that care is as much your presence being with them, your ability to listen and to love them, and your prayer with them and for them.</span> <span class="tl-s" data-s="1511.71" data-e="1526.51">And there can be Just these pregnant pauses and times of silence, and you can feel the family in the room needs you to do something, and you don&#x27;t know what to do, right?</span> <span class="tl-s" data-s="1526.57" data-e="1526.62">Yeah.</span> <span class="tl-s" data-s="1526.70" data-e="1537.06">You can&#x27;t right whatever has just happened, but what you can do is to direct them to the Lord, and the way to do that is just through his Word to where You just, you know what?</span></p>
+        <p><span class="tl-s" data-s="1537.06" data-e="1539.45">Let&#x27;s just let&#x27;s just take a moment.</span> <span class="tl-s" data-s="1539.45" data-e="1550.05">If I could, let let us direct our attention to the 23rd Psalm, where David says, &quot;The Lord is my shepherd.&quot; He&#x27;s our shepherd here.</span> <span class="tl-s" data-s="1550.05" data-e="1553.08">I shall not lack any good thing.</span> <span class="tl-s" data-s="1554.13" data-e="1554.70">He leads me.</span> <span class="tl-s" data-s="1554.70" data-e="1556.16">He leads me beside still waters.</span> <span class="tl-s" data-s="1556.16" data-e="1558.35">He restores my soul.</span> <span class="tl-s" data-s="1558.56" data-e="1560.55">He leads me to green pastures.</span> <span class="tl-s" data-s="1560.55" data-e="1562.52">He restores my soul.</span> <span class="tl-s" data-s="1563.35" data-e="1566.83">And just use God&#x27;s word as a context.</span> <span class="tl-s" data-s="1566.95" data-e="1570.37">To help them focus on the Good Shepherd.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1571.04" data-e="1571.36">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1571.36" data-e="1574.12">Often we don&#x27;t know how to pray.</span> <span class="tl-s" data-s="1574.16" data-e="1576.02">Well, that&#x27;s all right.</span> <span class="tl-s" data-s="1576.02" data-e="1576.54">Pray God&#x27;s Word.</span> <span class="tl-s" data-s="1576.59" data-e="1582.43">Just take a section of, Lord, your Word says that you work all things together for good.</span> <span class="tl-s" data-s="1582.43" data-e="1588.88">Lord, we don&#x27;t see how that&#x27;s at work, but we know you&#x27;re at work in doing this.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1589.41" data-e="1589.55">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1589.55" data-e="1593.21">Your Word says you&#x27;ll never leave us or forsake us, Lord.</span> <span class="tl-s" data-s="1593.34" data-e="1596.85">That&#x27;s the reality that we live in every day.</span> <span class="tl-s" data-s="1597.04" data-e="1598.07">Today, you don&#x27;t feel close.</span> <span class="tl-s" data-s="1598.07" data-e="1602.82">But we know you are because your Word says that to us, and we thank you for that.</span> <span class="tl-s" data-s="1602.82" data-e="1605.43">If God is for us, who can be against us?</span> <span class="tl-s" data-s="1605.47" data-e="1613.85">He who did not spare his own Son but freely gave him for us all, how will he not along with him graciously give us all things?</span> <span class="tl-s" data-s="1613.85" data-e="1621.04">Let&#x27;s pray now that God would just give us peace in the midst of it.</span> <span class="tl-s" data-s="1621.04" data-e="1623.83">You see, it&#x27;s always have your Bible with you.</span> <span class="tl-s" data-s="1623.83" data-e="1624.14">Always.</span> <span class="tl-s" data-s="1624.17" data-e="1632.82">Anytime you walk into a hospital, and I would encourage you a printed Bible, that opens doors to get into, you know, ICUs.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1632.82" data-e="1637.39">The other thing you can do is just act like you know where you&#x27;re going.</span> <span class="tl-s" data-s="1637.39" data-e="1638.06">That&#x27;s mine.</span> <span class="tl-s" data-s="1638.11" data-e="1639.47">Because my Bible is generally my phone.</span> <span class="tl-s" data-s="1639.47" data-e="1641.06">I know you think that&#x27;s anathema.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1641.08" data-e="1642.09">I know.</span> <span class="tl-s" data-s="1642.18" data-e="1645.55">No, I don&#x27;t think it&#x27;s anathema, but I just walk like— people recognize and see that.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1646.21" data-e="1648.13">Well, I just go, I don&#x27;t.</span> <span class="tl-s" data-s="1648.13" data-e="1649.62">Yeah, I don&#x27;t act, I just go.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1649.72" data-e="1650.05">That&#x27;s true.</span> <span class="tl-s" data-s="1650.05" data-e="1653.63">You can do it that way too.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1653.66" data-e="1656.10">Anyway, your way is probably more godly.</span> <span class="tl-s" data-s="1656.21" data-e="1666.21">Okay, so, as you sit with people and like when people you&#x27;ve sat with that have been in the depths of despair and look back years later, do they remember anything you say?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1666.21" data-e="1668.15">No, they just remember you&#x27;re there.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1668.15" data-e="1672.03">So, when people think, I don&#x27;t know what to say.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1672.08" data-e="1673.70">Yeah, don&#x27;t worry about that.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1674.02" data-e="1674.64">Yeah, good.</span> <span class="tl-s" data-s="1674.64" data-e="1675.22">That&#x27;s good.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1675.52" data-e="1675.70">Yep.</span> <span class="tl-s" data-s="1676.58" data-e="1677.54">Because you&#x27;re right.</span> <span class="tl-s" data-s="1677.54" data-e="1679.06">That&#x27;s a good, good point.</span> <span class="tl-s" data-s="1679.30" data-e="1680.67">Typically won&#x27;t be remembered.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1680.67" data-e="1680.68">No.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1680.75" data-e="1684.10">But that you were there is remembered.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1684.34" data-e="1685.09">Yep, exactly.</span> <span class="tl-s" data-s="1685.15" data-e="1688.57">And there&#x27;s just a blessing with presence.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1689.24" data-e="1689.40">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1689.40" data-e="1689.62">Yeah.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1689.62" data-e="1700.66">So just another quick follow-up on biblical counseling as a counselor, and you&#x27;ve suggested it, but when you&#x27;re counseling someone, what is the role of prayer in that privately?</span> <span class="tl-s" data-s="1700.68" data-e="1702.83">Are you praying for those people when you&#x27;re not counseling?</span> <span class="tl-s" data-s="1702.85" data-e="1715.47">Are you hoping that the Lord does a work on their heart as you point them to the Word of God and their need for Christ and his sanctifying grace in whatever stronghold or struggle they&#x27;re dealing with?</span> <span class="tl-s" data-s="1715.52" data-e="1719.72">Is that a big part of it as a counselor?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1719.72" data-e="1723.56">Well, I think prayer is a big part of your counsel.</span> <span class="tl-s" data-s="1723.56" data-e="1726.01">Everything you said, yes.</span> <span class="tl-s" data-s="1726.37" data-e="1729.79">I always pray to start a counseling session, a formal counseling session.</span> <span class="tl-s" data-s="1729.82" data-e="1737.36">Because I want them to see we&#x27;re both, them and me, we&#x27;re looking to the Lord.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1738.00" data-e="1739.27">Yeah, right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1739.93" data-e="1747.02">This is not something that separate from God&#x27;s direction and help, insight in seeing that through his Word that we&#x27;re going to be able to help them.</span> <span class="tl-s" data-s="1747.02" data-e="1747.84">So begin with prayer.</span> <span class="tl-s" data-s="1747.84" data-e="1756.11">If during a counseling session where I&#x27;m really not sure where to go next, I&#x27;ll just say, you know, let&#x27;s stop and pray.</span> <span class="tl-s" data-s="1756.12" data-e="1756.27">Yeah.</span> <span class="tl-s" data-s="1756.30" data-e="1759.17">I want to ask God where we go from here.</span> <span class="tl-s" data-s="1759.28" data-e="1765.04">And typically he&#x27;ll give a question to me or a scripture will become clear.</span> <span class="tl-s" data-s="1765.07" data-e="1775.89">We end in prayer, and I often ask the counselee to pray because I want to hear how they pray and what— What [Speaker C] they&#x27;re processing.</span> <span class="tl-s" data-s="1775.89" data-e="1777.00">Yeah, it&#x27;s meaningful.</span> <span class="tl-s" data-s="1777.75" data-e="1779.20">I include prayer in their assignment.</span> <span class="tl-s" data-s="1779.25" data-e="1782.39">I always give an assignment when I counsel someone.</span></p>
+        <p><span class="tl-s" data-s="1782.47" data-e="1786.88">And prayer is a part of that.</span> <span class="tl-s" data-s="1786.88" data-e="1788.30">The Word and prayer.</span> <span class="tl-s" data-s="1788.30" data-e="1799.71">Could be some other reading, something along their issues is, you know, often something assigned as well, but it will at a minimum include being in the Word and prayer.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1799.71" data-e="1800.24">Love it.</span> <span class="tl-s" data-s="1800.24" data-e="1801.23">So, I have some other questions.</span> <span class="tl-s" data-s="1801.44" data-e="1811.37">And one of them that I wrote down that I wanted to make sure I asked is, what would you tell yourself 30 years ago?</span> <span class="tl-s" data-s="1812.04" data-e="1819.08">What truth or thing do you now understand better that you wish you had known 30 years ago, 30 or 40 years ago?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1819.08" data-e="1827.59">The power of the Gospel and the place of the Gospel, the centrality of the Gospel in biblical counseling.</span> <span class="tl-s" data-s="1827.59" data-e="1848.18">That would have, I think, saved years of pressure I would feel to help people and giving help from God&#x27;s Word, but Not connected to the power made available through Christ, and that would be the primary thing that I would change.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1848.18" data-e="1849.19">Love it.</span> <span class="tl-s" data-s="1849.46" data-e="1860.51">So, switching gears again, we&#x27;ve talked about a funny story on the podcast before from Rich&#x27;s recollection, and it has to do with the famous or infamous Donut Man.</span> <span class="tl-s" data-s="1860.62" data-e="1861.88">What, you know, there&#x27;s a rumor flying around.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1861.88" data-e="1862.92">Now there&#x27;s the Donut Man song, too.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1863.28" data-e="1863.81">There&#x27;s a song?</span> <span class="tl-s" data-s="1863.81" data-e="1865.51">I don&#x27;t know the name.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1865.51" data-e="1867.26">Heather won&#x27;t let us play it.</span> <span class="tl-s" data-s="1867.42" data-e="1867.43">No.</span> <span class="tl-s" data-s="1867.43" data-e="1868.23">Because it&#x27;s copyrighted right now.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1868.23" data-e="1869.29">Yeah, we&#x27;re already in trouble.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1869.29" data-e="1869.55">Can we?</span> <span class="tl-s" data-s="1869.68" data-e="1873.03">Like, I don&#x27;t know, but there&#x27;s a song where he says there&#x27;s a hole in the middle of your heart.</span> <span class="tl-s" data-s="1873.03" data-e="1875.01">That&#x27;s kind of where he got his name, right?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1876.34" data-e="1876.43">Yeah.</span> <span class="tl-s" data-s="1876.48" data-e="1882.00">So what can you tell us about your— [Speaker B] You and the Donut Man.</span> <span class="tl-s" data-s="1882.10" data-e="1886.14">In one corner we have Coleman III.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1886.19" data-e="1892.05">What happened with the Donut Man?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1892.05" data-e="1896.89">Well, the Donut Man was hired to come to one of our celebration events.</span> <span class="tl-s" data-s="1897.28" data-e="1909.05">And take care, you know, when we dismiss the kids for their time, he would be the central— [Speaker C] Entertainment.</span> <span class="tl-s" data-s="1909.14" data-e="1909.24">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1909.24" data-e="1909.63">He&#x27;s responsible.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1909.63" data-e="1910.12">He&#x27;s responsible.</span> <span class="tl-s" data-s="1911.31" data-e="1919.05">So, the communication with the donut man was made by someone else in the church at the time.</span> <span class="tl-s" data-s="1920.07" data-e="1926.27">And I saw kind of a commotion between them and the donut man.</span> <span class="tl-s" data-s="1926.27" data-e="1933.64">So I went over there and I said, sorry, can I help with this?</span> <span class="tl-s" data-s="1933.65" data-e="1939.42">And I do think to the donut man&#x27;s defense, we didn&#x27;t communicate clearly what was expected.</span> <span class="tl-s" data-s="1939.76" data-e="1955.38">And so what he was thinking was expected, or what he was wanting to do, was just do kind of his short Donut Man thing, Donut [Speaker B] Man song [Speaker A] versus you know for two hours you know doing something.</span> <span class="tl-s" data-s="1955.47" data-e="1960.84">And so he was he was pretty upset about being asked to do that.</span> <span class="tl-s" data-s="1961.61" data-e="1965.08">So I just let him know.</span> <span class="tl-s" data-s="1965.11" data-e="1970.82">I said, &quot;Well, we hired you to do this, and we need to make it happen.&quot; So he graciously agreed.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1970.82" data-e="1971.42">He graciously agreed.</span> <span class="tl-s" data-s="1971.42" data-e="1973.52">You told me he thought you you thought he was gonna hit.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1973.52" data-e="1975.40">Well, we&#x27;re getting there.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1975.40" data-e="1983.70">So, like, after you thought he was going to hit you, he graciously agreed?</span> <span class="tl-s" data-s="1983.70" data-e="1984.76">Is that how this goes?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1984.76" data-e="1985.46">Well, he was pretty upset.</span> <span class="tl-s" data-s="1985.46" data-e="1989.64">Um, but we were able to tone him down and get him at least to walk.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1989.64" data-e="1990.64">Did you sing his song to him?</span> <span class="tl-s" data-s="1990.64" data-e="1991.04">Hey, the Donut Man song?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1991.04" data-e="1992.04">Didn&#x27;t sing his song to him.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1992.04" data-e="1993.32">He has a hole in the middle.</span> <span class="tl-s" data-s="1993.32" data-e="1997.86">Do you have a hole in the middle of your heart right now?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1997.86" data-e="1998.84">Is that how it goes?</span> <span class="tl-s" data-s="1998.84" data-e="2000.12">Do you, like, remember this song, either of you?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2000.12" data-e="2001.94">Ah, Let&#x27;s see, I forget how it goes.</span> <span class="tl-s" data-s="2001.94" data-e="2003.18">Yeah, we&#x27;ll have to do some searching.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2003.18" data-e="2005.60">So, he thought he was going to do 30 minutes.</span> <span class="tl-s" data-s="2005.60" data-e="2009.22">Turns out his gig was supposed to be 2 hours.</span> <span class="tl-s" data-s="2009.22" data-e="2012.30">So, did he do the full 2 hours?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2012.30" data-e="2018.08">We worked it out to where we helped him and we made it work.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2018.08" data-e="2018.34">Okay.</span> <span class="tl-s" data-s="2018.34" data-e="2021.96">And then after that, it was all water under the bridge, or?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2021.96" data-e="2024.14">Yeah, he was able to do the rest of the conference.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2024.14" data-e="2024.56">Okay.</span></p>
+        <p><span class="tl-s" data-s="2026.96" data-e="2028.26">All right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2028.26" data-e="2032.99">But you didn&#x27;t hang out and say, hey, Donut Man, come on over.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2032.99" data-e="2033.88">We didn&#x27;t have dinner together.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2033.88" data-e="2036.56">I mean, you know, Rich didn&#x27;t portray you as a violent man, but— No.</span> <span class="tl-s" data-s="2036.56" data-e="2043.54">I mean, we, you know, I&#x27;m no longer a betting man, but I feel like my money would have been on you, the wrestler, not Donut Man.</span> <span class="tl-s" data-s="2043.64" data-e="2044.16">Absolutely.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2044.16" data-e="2045.16">Oh, here it is.</span> <span class="tl-s" data-s="2045.70" data-e="2046.34">All right.</span> <span class="tl-s" data-s="2046.34" data-e="2049.66">Life without— [Speaker C] You gonna sing it?</span> <span class="tl-s" data-s="2049.86" data-e="2051.09">You gotta sing it, Rich.</span> <span class="tl-s" data-s="2051.09" data-e="2051.38">Come on.</span> <span class="tl-s" data-s="2051.48" data-e="2051.86">Let&#x27;s see.</span> <span class="tl-s" data-s="2051.86" data-e="2052.62">Here it is.</span> <span class="tl-s" data-s="2052.62" data-e="2054.02">Life without Jesus is like a donut.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2054.02" data-e="2054.48">Like a donut.</span> <span class="tl-s" data-s="2054.48" data-e="2054.94">Like a donut.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2054.94" data-e="2055.08">Yes.</span> <span class="tl-s" data-s="2055.08" data-e="2055.79">Like that, right?</span> <span class="tl-s" data-s="2055.84" data-e="2056.03">Yeah.</span> <span class="tl-s" data-s="2056.25" data-e="2059.12">Life without Jesus is like a donut.</span> <span class="tl-s" data-s="2059.12" data-e="2059.40">Like a donut.</span> <span class="tl-s" data-s="2059.40" data-e="2062.43">You have a hole in the middle of your heart.</span> <span class="tl-s" data-s="2062.43" data-e="2062.92">Like that.</span> <span class="tl-s" data-s="2062.92" data-e="2063.15">That&#x27;s it.</span> <span class="tl-s" data-s="2063.16" data-e="2064.43">That&#x27;s it.</span> <span class="tl-s" data-s="2064.43" data-e="2067.11">Life without Jesus is like a donut.</span></p>
+        <p><span class="tl-s" data-s="2067.16" data-e="2070.70">So you didn&#x27;t say, hey, Donut Man, life without Jesus is like a donut.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2070.77" data-e="2071.89">I did not.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2072.11" data-e="2072.77">Okay, good.</span> <span class="tl-s" data-s="2073.32" data-e="2073.57">That&#x27;s good.</span> <span class="tl-s" data-s="2073.65" data-e="2073.83">That&#x27;s good.</span> <span class="tl-s" data-s="2073.89" data-e="2074.15">All right.</span> <span class="tl-s" data-s="2074.20" data-e="2075.19">Well, [Speaker C] that&#x27;s good.</span> <span class="tl-s" data-s="2075.24" data-e="2081.22">I heard there was a time where you were leading worship and— [Speaker B] Oh, I gotta tell this.</span> <span class="tl-s" data-s="2081.27" data-e="2081.51">Go ahead.</span> <span class="tl-s" data-s="2081.51" data-e="2083.48">Yeah, this is, this was Christmas Eve.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2083.51" data-e="2084.30">I remember.</span> <span class="tl-s" data-s="2084.30" data-e="2086.07">It comes up every Christmas Eve.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2086.07" data-e="2086.69">This is Christmas Eve.</span> <span class="tl-s" data-s="2086.79" data-e="2088.09">This is Christmas Eve 2001.</span> <span class="tl-s" data-s="2088.09" data-e="2090.01">I can take you right back there.</span> <span class="tl-s" data-s="2090.01" data-e="2090.67">He&#x27;s leading worship.</span> <span class="tl-s" data-s="2090.67" data-e="2091.74">He&#x27;s preaching and leading worship.</span> <span class="tl-s" data-s="2092.18" data-e="2097.02">We&#x27;ve encouraged him never to sing from the front again.</span> <span class="tl-s" data-s="2097.05" data-e="2098.80">It&#x27;s one of our policies now.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2099.22" data-e="2100.98">So that&#x27;s the same policy I&#x27;m on.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2100.98" data-e="2101.64">Yeah, you too.</span> <span class="tl-s" data-s="2101.64" data-e="2103.61">So, and so, yeah, we don&#x27;t.</span> <span class="tl-s" data-s="2103.63" data-e="2103.93">Nope.</span> <span class="tl-s" data-s="2104.37" data-e="2106.86">And so we&#x27;re closing, or I&#x27;m not.</span> <span class="tl-s" data-s="2106.86" data-e="2107.98">I was just attending.</span> <span class="tl-s" data-s="2107.98" data-e="2112.68">I wasn&#x27;t here as a pastor, but we&#x27;re closing.</span> <span class="tl-s" data-s="2112.77" data-e="2120.75">You&#x27;re closing the Christmas Eve service and you sing O Holy Night, but to the tune of Silent Night.</span></p>
+        <p><span class="tl-s" data-s="2122.08" data-e="2131.45">And to watch the band behind him, they&#x27;re like, They&#x27;re looking at each other because they&#x27;re playing Silent Night and you&#x27;re singing, O holy night.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2131.47" data-e="2131.71">Yeah.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2131.79" data-e="2133.24">Eyes closed and everything.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2133.48" data-e="2133.65">Oh, totally.</span> <span class="tl-s" data-s="2133.65" data-e="2134.99">The Lord was coming.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2135.02" data-e="2138.32">I mean, it was a very sensitive moment.</span> <span class="tl-s" data-s="2138.56" data-e="2141.74">Yeah, that&#x27;s— I&#x27;m not living that one down.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2141.74" data-e="2141.76">Yeah.</span> <span class="tl-s" data-s="2141.82" data-e="2142.53">All right.</span> <span class="tl-s" data-s="2142.62" data-e="2143.06">Yeah.</span> <span class="tl-s" data-s="2143.06" data-e="2149.86">But there haven&#x27;t been that many things you&#x27;ve done publicly or otherwise that were super embarrassing.</span> <span class="tl-s" data-s="2149.86" data-e="2150.57">I mean, not really.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2150.57" data-e="2160.74">Well, once I was leading worship and, you know, eyes closed between songs, just felt the inspiration of the Holy Spirit until I stepped off the stage and fell.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2161.09" data-e="2161.47">You fell?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2161.56" data-e="2161.80">Oh, man!</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2161.80" data-e="2162.16">Oh, ouch.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2162.21" data-e="2163.11">Yeah, but I was younger.</span> <span class="tl-s" data-s="2163.72" data-e="2166.91">I was able to jump up and— [Speaker C] Okay, [Speaker B] you&#x27;re okay.</span> <span class="tl-s" data-s="2166.93" data-e="2168.37">That&#x27;s [Speaker C] why we got handrails.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2168.37" data-e="2170.36">But no, we don&#x27;t have handrails up there.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2170.38" data-e="2172.13">When I pray from then on, my eyes are open.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2172.16" data-e="2173.65">Oh, because you don&#x27;t fall off.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2173.68" data-e="2175.49">So I don&#x27;t fall off the stage.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2175.53" data-e="2175.83">That&#x27;s good.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2175.83" data-e="2177.50">What else you got, Rich?</span> <span class="tl-s" data-s="2178.09" data-e="2179.92">Pull something out of your deck.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2179.92" data-e="2181.97">There was— remember that time that guy showed up?</span> <span class="tl-s" data-s="2182.16" data-e="2185.64">He was angry at me for something, but he thought you were me.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2186.26" data-e="2186.72">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2186.91" data-e="2188.68">And he was yelling and screaming at you.</span> <span class="tl-s" data-s="2188.74" data-e="2189.33">Do you remember that?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2189.33" data-e="2189.45">Yep.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2189.45" data-e="2191.53">What was he upset about?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2191.63" data-e="2193.57">It was hard to understand.</span> <span class="tl-s" data-s="2193.57" data-e="2194.02">I don&#x27;t know.</span> <span class="tl-s" data-s="2194.03" data-e="2196.59">He was just upset about everything.</span> <span class="tl-s" data-s="2197.08" data-e="2205.39">So the only thing I knew to do, I took him to my office, another one Pastors came with me.</span> <span class="tl-s" data-s="2205.54" data-e="2212.39">So all I knew to do, since he wasn&#x27;t listening, is as he began to raise his voice, I raised mine.</span> <span class="tl-s" data-s="2212.42" data-e="2218.97">As he started pointing or getting closer to me, I started pointing and getting closer to him until he finally kind of backed down on his voice and decided it would be better for him to leave.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2218.98" data-e="2226.56">Is that the closest you thought you were going to get hit, or is there any other situations where you thought somebody was going to swing at you?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2226.61" data-e="2227.84">Yeah, that&#x27;s probably the closest.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2228.71" data-e="2228.87">Okay.</span> <span class="tl-s" data-s="2228.87" data-e="2229.19">All right.</span> <span class="tl-s" data-s="2229.19" data-e="2231.58">Well, there&#x27;s not a lot of other funny things.</span> <span class="tl-s" data-s="2231.59" data-e="2234.69">I mean, so— [Speaker C] There was one I was— oh, there is a story.</span></p>
+        <p><span class="tl-s" data-s="2235.99" data-e="2246.34">This one maybe isn&#x27;t funny, but you told a story that I believe Rich hasn&#x27;t heard yet, and we decided to save it for this so we can wrap up with that one.</span> <span class="tl-s" data-s="2246.51" data-e="2251.26">There was someone calling the church and they were a wife of someone in the Mormon faith.</span> <span class="tl-s" data-s="2251.26" data-e="2254.98">Do you know what story I&#x27;m referring to?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2255.88" data-e="2256.00">Yeah.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2256.12" data-e="2262.12">Can you walk us through that and just how you were trying to be faithful in sharing the Gospel in that moment?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2262.12" data-e="2265.91">Well, you know, calls just come into a church, and this one came in.</span> <span class="tl-s" data-s="2266.05" data-e="2272.46">I, you know, the secretary said someone on the line asking for a pastor, so I jumped on the line.</span> <span class="tl-s" data-s="2272.48" data-e="2286.35">Or it was, it was a woman who just said, you know, I just wonder what, what, what you guys say you have to do to be saved.</span> <span class="tl-s" data-s="2286.93" data-e="2287.01">Hmm.</span> <span class="tl-s" data-s="2287.01" data-e="2292.94">And I said, oh, I&#x27;d be glad to tell you that.</span> <span class="tl-s" data-s="2292.99" data-e="2300.94">I told her In John 3:16, you know, just talked about how we are saved by faith, God&#x27;s grace alone.</span> <span class="tl-s" data-s="2300.99" data-e="2301.98">And she said, that&#x27;s all?</span> <span class="tl-s" data-s="2302.06" data-e="2302.69">I said, yes, that&#x27;s all.</span> <span class="tl-s" data-s="2303.82" data-e="2306.40">You mean you don&#x27;t have to do anything?</span> <span class="tl-s" data-s="2306.82" data-e="2308.61">Don&#x27;t have to do anything.</span></p>
+        <p><span class="tl-s" data-s="2309.32" data-e="2310.55">Now you&#x27;re sure of this?</span> <span class="tl-s" data-s="2310.55" data-e="2313.36">I said, yeah, let&#x27;s go back to the Scripture.</span> <span class="tl-s" data-s="2313.36" data-e="2315.52">This is what it says.</span> <span class="tl-s" data-s="2315.52" data-e="2316.69">And she began to cry.</span> <span class="tl-s" data-s="2316.72" data-e="2317.85">And I said, can we meet together?</span> <span class="tl-s" data-s="2317.85" data-e="2327.47">No, no, I&#x27;m part of a prominent family that you would probably know and I don&#x27;t want to tell you who I am.</span></p>
+        <p><span class="tl-s" data-s="2329.30" data-e="2330.57">Well, how can I help?</span> <span class="tl-s" data-s="2330.57" data-e="2334.21">Can I send you a Bible?</span> <span class="tl-s" data-s="2334.21" data-e="2341.17">No, no, I think you have helped just telling me what you told me.</span> <span class="tl-s" data-s="2341.17" data-e="2345.11">I said, well, if we can meet, Talk.</span> <span class="tl-s" data-s="2345.11" data-e="2351.93">I can have another woman contact you, whatever would serve you there.</span> <span class="tl-s" data-s="2351.99" data-e="2352.20">No.</span> <span class="tl-s" data-s="2352.42" data-e="2363.03">And let me say again, you&#x27;re saying all I have to do to be saved is to express my faith in Jesus, that he died for my sins?</span> <span class="tl-s" data-s="2363.14" data-e="2363.30">Yes.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2363.37" data-e="2363.85">That&#x27;s awesome.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2363.85" data-e="2364.61">That&#x27;s all.</span> <span class="tl-s" data-s="2364.75" data-e="2364.99">Okay.</span> <span class="tl-s" data-s="2364.99" data-e="2367.45">And she&#x27;s in tears when she&#x27;s saying all this.</span> <span class="tl-s" data-s="2367.46" data-e="2367.51">Okay.</span> <span class="tl-s" data-s="2367.62" data-e="2369.37">All right.</span> <span class="tl-s" data-s="2369.65" data-e="2369.76">Bye-bye.</span> <span class="tl-s" data-s="2369.81" data-e="2372.71">So she wouldn&#x27;t give me her name.</span> <span class="tl-s" data-s="2372.92" data-e="2373.95">She wouldn&#x27;t.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2373.98" data-e="2374.19">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2374.21" data-e="2376.04">But she was from a prominent LDS family.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2376.37" data-e="2377.39">That&#x27;s what she said.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2377.51" data-e="2377.64">Wow.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2377.74" data-e="2380.37">May the Lord work on her still.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2380.64" data-e="2380.69">Mm-hmm.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2380.79" data-e="2383.01">Well, thank you for this 4-part interview.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2383.04" data-e="2383.18">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2383.28" data-e="2384.41">Well, [Speaker C] we really appreciate it.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2384.41" data-e="2384.83">Yeah.</span> <span class="tl-s" data-s="2384.83" data-e="2386.76">And so do our listeners.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2386.76" data-e="2387.01">Yeah.</span> <span class="tl-s" data-s="2387.53" data-e="2391.24">One last piece of what advice would you give anyone listening as far as their walk with Christ?</span> <span class="tl-s" data-s="2391.24" data-e="2397.02">What would— what was something you would tell them to focus on or to pray for?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2397.08" data-e="2398.59">Heather has her hand up.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2398.60" data-e="2399.61">Heather has her hand up.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2399.72" data-e="2400.29">Heather has her hand up.</span> <span class="tl-s" data-s="2400.29" data-e="2403.41">You know, women should be silent on this podcast.</span> <span class="tl-s" data-s="2403.41" data-e="2405.72">Anyway, sorry, go ahead.</span></p>
+        <p><strong>Speaker D:</strong> <span class="tl-s" data-s="2406.30" data-e="2407.16">Stop talking, more praying.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2407.18" data-e="2408.75">There we go.</span> <span class="tl-s" data-s="2408.77" data-e="2409.64">There you go, Heather.</span> <span class="tl-s" data-s="2409.68" data-e="2411.15">Stop talking, more praying.</span> <span class="tl-s" data-s="2411.15" data-e="2412.41">Is that what you would say?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2412.41" data-e="2415.01">I would say that.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2415.66" data-e="2420.44">He specifically said to me, Mark, are you praying more than you&#x27;re thinking?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2420.44" data-e="2420.73">Yeah.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2420.89" data-e="2422.36">And that&#x27;s a truth that never ends.</span> <span class="tl-s" data-s="2422.36" data-e="2425.32">Is there something else or is that the main prayer?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2425.49" data-e="2429.06">Yeah, the Puritans talk about prayer in a way that&#x27;s really helpful.</span></p>
+        <p><span class="tl-s" data-s="2430.52" data-e="2433.76">If you want to grow in your prayer life, read the Puritans.</span> <span class="tl-s" data-s="2433.76" data-e="2442.37">But one of the things that, I don&#x27;t know which one of them said it, they said, pray till you pray.</span> <span class="tl-s" data-s="2442.64" data-e="2450.57">Now think about that, because we can pray and we feel like our words don&#x27;t go even to the I mean, just, it seems so ineffective.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2451.09" data-e="2451.23">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2451.23" data-e="2453.58">But I always think about that.</span> <span class="tl-s" data-s="2453.58" data-e="2462.78">No, even though it feels that way, let me pray till I sense and feel I&#x27;m praying, that I&#x27;m before the throne of God, that God who has invited me.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2462.78" data-e="2462.94">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2462.94" data-e="2473.36">Let us with confidence draw near to the throne of grace that we might receive mercy and find grace to help in our time of need.</span> <span class="tl-s" data-s="2473.36" data-e="2474.42">That reality.</span></p>
+        <p><span class="tl-s" data-s="2475.63" data-e="2478.81">I just don&#x27;t think we can pray too much.</span> <span class="tl-s" data-s="2479.56" data-e="2484.75">And I think we pray too little, and we think too much or talk more.</span> <span class="tl-s" data-s="2484.80" data-e="2493.37">And that has to be like a continual pursuit because every day it&#x27;s kind of a fresh battle to pray.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2493.37" data-e="2493.78">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2494.02" data-e="2495.16">And to not lose heart.</span> <span class="tl-s" data-s="2495.16" data-e="2503.01">You know, as Paul says in his— I&#x27;m sorry, as Jesus says in his parable about the persistent widow.</span> <span class="tl-s" data-s="2503.64" data-e="2509.53">I&#x27;m giving you this parable that you might pray and not lose heart.</span> <span class="tl-s" data-s="2509.59" data-e="2516.94">That would be my encouragement, even to my own soul, is even in retirement, you have a less structured life.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2516.98" data-e="2517.10">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2517.12" data-e="2520.57">Is that place of prayer needs to be maintained.</span> <span class="tl-s" data-s="2520.57" data-e="2538.70">It needs work to ensure that it doesn&#x27;t become just something you need when you&#x27;re going to work every day and you&#x27;re faced with challenges every day, but it&#x27;s something that you need because you need to be with your Savior.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2539.07" data-e="2539.34">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2539.34" data-e="2540.21">You need that refuge with him.</span> <span class="tl-s" data-s="2540.21" data-e="2545.65">Like David in Psalm 27, one thing I&#x27;ve asked for that I seek is to be in your presence.</span> <span class="tl-s" data-s="2545.65" data-e="2552.24">That heart is what I want my heart to be more and more like, is [Speaker C] Yeah, [Speaker A] the years go on.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2552.24" data-e="2552.76">That&#x27;s good.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2552.80" data-e="2553.89">Thank you so much.</span> <span class="tl-s" data-s="2553.99" data-e="2562.75">Yeah, and if you&#x27;re listening to this, um, please express your gratitude to Trey for all the work him and his wife have done here to build up the local church that we&#x27;re now benefiting from.</span> <span class="tl-s" data-s="2562.80" data-e="2564.92">So thank you for joining us, Trey.</span> <span class="tl-s" data-s="2564.98" data-e="2566.34">We really appreciate it.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2566.34" data-e="2566.55">Yeah, absolutely.</span> <span class="tl-s" data-s="2566.66" data-e="2567.91">Thanks so much.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2568.03" data-e="2568.76">My privilege.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2568.76" data-e="2574.45">Yeah, don&#x27;t do it all at once because we have so many fans and a legion of fans.</span> <span class="tl-s" data-s="2574.50" data-e="2575.69">Yeah, it would be overwhelming.</span> <span class="tl-s" data-s="2575.74" data-e="2575.93">Security.</span> <span class="tl-s" data-s="2575.93" data-e="2576.90">Yeah, just be careful.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2577.01" data-e="2580.17">And we all know what Charlotte&#x27;s work, and it&#x27;s it&#x27;s her support.</span> <span class="tl-s" data-s="2580.17" data-e="2582.51">She&#x27;s the hero in all this.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2582.59" data-e="2582.76">Yeah.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2582.76" data-e="2583.01">Love it.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2583.22" data-e="2592.45">Well, everybody has a part to play.</span> <span class="tl-s" data-s="2593.03" data-e="2593.76">All right, everybody.</span> <span class="tl-s" data-s="2593.76" data-e="2594.59">Thanks for listening.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2595.14" data-e="2595.31">All right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2595.31" data-e="2595.31">If you have questions or anything, any input, any feedback, email us at production at centergilbert.com.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2595.31" data-e="2595.31">That&#x27;s right.</span> <span class="tl-s" data-s="2595.31" data-e="2595.31">Thank you, guys.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2595.31" data-e="2595.31">See you, everybody.</span> <span class="tl-s" data-s="2595.31" data-e="2595.31">Bye bye.</span> <span class="tl-s" data-s="2595.31" data-e="2595.31">Four parts.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="2595.31" data-e="2595.31">Four part.</span> <span class="tl-s" data-s="2595.31" data-e="2595.31">Four piece.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="2595.31" data-e="2595.31">Well done.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="2595.31" data-e="2595.31">Wow.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Fixed on Jesus episode archive, backed by /api/podcast/search.
+  // Static fallback list above stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function fmtDuration(raw) {
+      if (!raw) return "";
+      var str = String(raw).trim();
+      // Anchor feeds report seconds; render as H:MM:SS or M:SS.
+      if (/^\d+$/.test(str)) {
+        var total = parseInt(str, 10);
+        var h = Math.floor(total / 3600);
+        var m = Math.floor((total % 3600) / 60);
+        var sec = total % 60;
+        var mm = (h > 0 && m < 10 ? "0" + m : "" + m);
+        var ss = (sec < 10 ? "0" + sec : "" + sec);
+        return (h > 0 ? h + ":" + mm : m) + ":" + ss;
+      }
+      // Anchor also reports clock strings like "00:24:02" — drop the
+      // redundant leading hour so it reads "24:02".
+      return str.replace(/^00:/, "");
+    }
+    function row(it) {
+      it = it || {};
+      var title = esc(it.title) || "Untitled episode";
+      var tUrl = it.guid && transcriptMap[it.guid];
+      var heading = tUrl
+        ? '<a href="' + esc(tUrl) + '">' + title + "</a>"
+        : (it.link
+          ? '<a href="' + esc(it.link) + '" target="_blank" rel="noopener">' + title + "</a>"
+          : title);
+      var meta = [fmtDate(it.date), fmtDuration(it.duration)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      return '<div class="sermon"><div><h3>' + heading + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    var PER = 10;
+    var state = { q: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No episodes found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " episode" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " episodes";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/podcast/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () {
+          // Keep the static list, but tell the reader where else to listen —
+          // some privacy blockers stop the archive request itself.
+          var note = document.querySelector("[data-sermons-error]");
+          if (note) note.hidden = false;
+        });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    if (monthSel) {
+      monthSel.addEventListener("change", function () {
+        state.month = monthSel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: 54f82703-040f-4145-bc8e-8025438fc8e2 -->
+</body>
+</html>
