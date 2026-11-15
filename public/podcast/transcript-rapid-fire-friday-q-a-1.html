@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rapid Fire Friday - Q&amp;A #1 — Podcast Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Fixed on Jesus: conversations beyond Sunday mornings from Center Church in Gilbert, AZ — listen on Spotify, Apple Podcasts, and YouTube." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=18" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a href="/sermons">Sermons</a></li>
+              <li><a class="active" href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/podcast">&larr; All podcast episodes</a>
+          <h1 class="display-lg">Rapid Fire Friday - Q&amp;A #1</h1>
+          <p class="transcript-meta">2024-04-19 · 10:57</p>
+          <p class="transcript-desc">Rapid Fire Friday is a special series from the Fixed On Jesus Podcast crew (Rich, Mark and Heather) Sometimes we get questions that have short enough answers to answer many of them in one episode that we like to call Rapid Fire Fridays. Look for these to be released on Fridays if and when we get eno</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/e750e370/podcast/play/85503504/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-3-16%2F47cb1052-6f73-6c98-110d-d0b1a37ca69f.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="0.93" data-e="3.82">Hey everybody, welcome to Rapid Fire Friday.</span> <span class="tl-s" data-s="4.12" data-e="5.88">You thought I was gonna say Fixed on Jesus.</span> <span class="tl-s" data-s="6.12" data-e="6.18">I did.</span> <span class="tl-s" data-s="6.26" data-e="7.69">This is— did you think that, Mark Johnson Jr.?</span> <span class="tl-s" data-s="7.80" data-e="7.99">I did.</span> <span class="tl-s" data-s="8.44" data-e="12.68">Yes, you did think that, because that&#x27;s normally what I say when I start any podcast.</span> <span class="tl-s" data-s="12.79" data-e="14.40">But today is a special day.</span> <span class="tl-s" data-s="14.72" data-e="17.69">Today the calendar says it is Friday.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="18.08" data-e="18.45">That&#x27;s right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="18.81" data-e="21.56">And so we are starting a new feature on Friday.</span> <span class="tl-s" data-s="21.62" data-e="23.89">We&#x27;re gonna call it Rapid Fire Friday.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="32.01" data-e="32.34">3, 2, 1.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="33.02" data-e="33.46">Yes, we are.</span> <span class="tl-s" data-s="33.63" data-e="34.52">You know what that sound is.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="34.70" data-e="40.13">There are no discharge of firearms in this room, but there is a bell that is ringing off the hook.</span> <span class="tl-s" data-s="40.20" data-e="42.52">Do you know what that phrase off the hook means, Mark?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="42.62" data-e="43.81">It sounds like a rap lyric.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="44.30" data-e="45.46">No, it&#x27;s definitely not.</span> <span class="tl-s" data-s="45.71" data-e="53.00">Something that rings off the hook is when there is a receiver hanging on a wall and there&#x27;s enough ringing of that receiver that it falls off the wall.</span> <span class="tl-s" data-s="53.49" data-e="59.33">So you, having never answered a real telephone and only cell phones, would not understand that.</span> <span class="tl-s" data-s="59.41" data-e="60.61">So I thought they were the same.</span> <span class="tl-s" data-s="60.82" data-e="61.28">They&#x27;re not.</span> <span class="tl-s" data-s="61.40" data-e="61.84">They&#x27;re different.</span> <span class="tl-s" data-s="62.18" data-e="69.26">So we&#x27;ve got so many different questions that have come in that the email bell is ringing off the hook.</span> <span class="tl-s" data-s="69.36" data-e="73.74">So if you have a question, send it to production@sinnergilbert.com.</span> <span class="tl-s" data-s="74.31" data-e="75.15">So let&#x27;s jump right in.</span> <span class="tl-s" data-s="75.20" data-e="75.63">Go for it.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="75.76" data-e="76.14">Here we go.</span> <span class="tl-s" data-s="76.32" data-e="76.74">Here we go.</span> <span class="tl-s" data-s="76.80" data-e="77.17">You ready?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="77.43" data-e="79.67">I am buckled up and ready to go.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="80.66" data-e="80.86">Sin.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="81.47" data-e="81.78">Okay.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="81.94" data-e="84.10">Is it equal in the eyes of the Lord?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="84.75" data-e="86.19">Is it equal in the eyes of the Lord?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="86.50" data-e="86.87">All sin.</span> <span class="tl-s" data-s="86.91" data-e="92.73">So an example that comes to mind is, let&#x27;s compare for the sake of— 2 people asked a very similar question.</span> <span class="tl-s" data-s="92.84" data-e="94.99">Shout out to Georgia Baird and Michelle Tripoli.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="95.17" data-e="95.36">Okay.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="95.57" data-e="101.17">The example is going to be running a red light and murdering someone.</span> <span class="tl-s" data-s="102.07" data-e="110.75">Both illegal, both punishable in our Uh, civilization, are they equal in the eyes of the Lord?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="111.89" data-e="113.34">Uh, no.</span> <span class="tl-s" data-s="113.67" data-e="117.98">And I mean, I could also say, you know, there are times you should run a red light.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="118.26" data-e="118.50">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="118.81" data-e="119.66">There&#x27;s never a time you should murder.</span> <span class="tl-s" data-s="119.69" data-e="123.89">Murder is different than killing, because killing, that&#x27;s a whole different conversation.</span> <span class="tl-s" data-s="123.89" data-e="129.67">But killing in the— as, as a soldier is not something that&#x27;s prohibited in the Bible.</span> <span class="tl-s" data-s="129.67" data-e="134.79">Um, but That&#x27;s, that&#x27;s one of the problems with the King James translation of the 10 Commandments.</span> <span class="tl-s" data-s="134.79" data-e="136.16">Thou shalt not kill.</span> <span class="tl-s" data-s="136.72" data-e="139.44">No, murder is the way to translate that.</span> <span class="tl-s" data-s="139.44" data-e="143.52">And so that&#x27;s one of the many reasons I do not rely on the King James Version.</span> <span class="tl-s" data-s="143.87" data-e="150.46">Uh, are they, are they this, are the sins— so I think essentially what they&#x27;re asking is, are sins great and small all the same?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="150.46" data-e="151.79">Right, that&#x27;s exactly it.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="151.79" data-e="154.58">On the one hand, no, and on the other hand, yes.</span> <span class="tl-s" data-s="154.76" data-e="156.43">I&#x27;ll start with the yes part.</span> <span class="tl-s" data-s="156.54" data-e="162.04">Every sin be it thought, word, or deed, against God is an affront to a holy God.</span> <span class="tl-s" data-s="162.05" data-e="169.51">So in his eyes, we will, you know, that we&#x27;ve fallen short of the glory of God.</span> <span class="tl-s" data-s="169.51" data-e="174.56">So yes, that is true for every sin, whether it&#x27;s something we think or something we do.</span> <span class="tl-s" data-s="174.56" data-e="177.86">Now, is it the same in the sense of the consequences?</span> <span class="tl-s" data-s="177.86" data-e="178.63">No.</span> <span class="tl-s" data-s="178.80" data-e="187.24">So running the red light, the full weight of the law to being brought against somebody who runs a red light is very different from somebody who gets— from murdering somebody, right?</span> <span class="tl-s" data-s="187.30" data-e="187.44">Mm-hmm.</span> <span class="tl-s" data-s="187.49" data-e="190.35">And it should be, because one is much more serious than another.</span></p>
+        <p><span class="tl-s" data-s="190.35" data-e="201.88">And so, and you can actually see in the scriptures there are, there are, um, different ways in which, like, the Bible communicates the seriousness of sin.</span> <span class="tl-s" data-s="201.89" data-e="205.80">So not all sins are created equal.</span> <span class="tl-s" data-s="205.98" data-e="207.81">Some are much worse.</span> <span class="tl-s" data-s="208.32" data-e="210.05">In fact, you can see it in the 10 Commandments.</span> <span class="tl-s" data-s="210.09" data-e="213.76">The 10 Commandments have what are called the 2 tables of the law.</span> <span class="tl-s" data-s="213.76" data-e="217.22">If you want to look at the 10 Commandments, that&#x27;s in Exodus chapter 20.</span> <span class="tl-s" data-s="217.22" data-e="227.23">And we find that the first table of the law, it has the first, the first 2 commandments about God, which says you shall have no other gods before me.</span> <span class="tl-s" data-s="227.23" data-e="228.38">That&#x27;s the most serious one.</span> <span class="tl-s" data-s="228.38" data-e="231.93">Do not make any carved image, graven images.</span> <span class="tl-s" data-s="231.93" data-e="233.59">That&#x27;s second and more serious.</span></p>
+        <p><span class="tl-s" data-s="233.64" data-e="235.79">Then don&#x27;t take the Lord&#x27;s name in vain.</span> <span class="tl-s" data-s="235.82" data-e="238.45">And then remember the Sabbath day.</span> <span class="tl-s" data-s="238.57" data-e="242.94">Now, after, then we have the honor your father and mother.</span> <span class="tl-s" data-s="242.94" data-e="244.94">That&#x27;s what&#x27;s called the first table of the law.</span> <span class="tl-s" data-s="244.94" data-e="255.25">The second table of the law shows then what, uh, goes— speaks about what you must not do, and it goes from more serious to less serious.</span> <span class="tl-s" data-s="255.28" data-e="258.56">So you&#x27;ll see, you shall not murder— more serious.</span> <span class="tl-s" data-s="259.38" data-e="264.32">You shall not commit adultery— so the murder of a person, then the murder of a family.</span> <span class="tl-s" data-s="264.44" data-e="265.66">Then you shall not steal.</span> <span class="tl-s" data-s="265.66" data-e="267.08">Then you shall not lie.</span> <span class="tl-s" data-s="267.08" data-e="268.46">Then you shall not covet.</span></p>
+        <p><span class="tl-s" data-s="268.46" data-e="271.55">Those things are all wrong in the eyes of God.</span> <span class="tl-s" data-s="271.60" data-e="277.56">But they are the one— like, murder is more serious than coveting.</span> <span class="tl-s" data-s="277.70" data-e="277.78">Absolutely.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="277.78" data-e="279.48">Yeah, cool.</span> <span class="tl-s" data-s="279.81" data-e="283.09">Well, moving on, uh, we have another question from Maxine Rhodey.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="283.82" data-e="289.05">Okay, [Speaker B] it&#x27;s relevant to something we spoke about on a previous episode.</span> <span class="tl-s" data-s="289.94" data-e="291.54">Thank you, Maxine, for your encouragement.</span> <span class="tl-s" data-s="291.80" data-e="299.59">Um, it&#x27;s a 3-part question, uh, and I&#x27;m just gonna give you the first one first, and then she also Gave a good example.</span> <span class="tl-s" data-s="299.82" data-e="306.16">Um, [Speaker A] yes, [Speaker B] should the title of pastor be used for non-authoritative positions in a church?</span> <span class="tl-s" data-s="306.65" data-e="308.55">Why or why not?</span> <span class="tl-s" data-s="308.64" data-e="319.94">For example, some churches refer to their women&#x27;s ministry leader as the pastor of women&#x27;s ministry, or some call their worship leader, male or female, the worship pastor.</span> <span class="tl-s" data-s="320.05" data-e="321.56">Now, every church has different understandings.</span> <span class="tl-s" data-s="321.56" data-e="329.93">Like, if we think about the worship pastor, like, that&#x27;s— different churches have different understandings of what that role is.</span> <span class="tl-s" data-s="330.54" data-e="336.86">There&#x27;s two challenges with with the word pastor here, and the word and and then being associated with women.</span> <span class="tl-s" data-s="336.89" data-e="341.02">First of all, in the Bible there is no example of a woman pastor ever.</span></p>
+        <p><span class="tl-s" data-s="341.06" data-e="349.76">And also, when you read the qualifications for pastoral ministry in First Timothy three, it&#x27;s clearly men.</span> <span class="tl-s" data-s="350.02" data-e="357.09">So we&#x27;ve got men who are who are called by God and directed in the scriptures to be pastors.</span> <span class="tl-s" data-s="357.09" data-e="359.01">There&#x27;s no examples of a woman pastor.</span> <span class="tl-s" data-s="359.07" data-e="363.06">And so, and there&#x27;s also in any direction about pastoral ministry.</span> <span class="tl-s" data-s="363.24" data-e="374.32">There&#x27;s no— there&#x27;s, there&#x27;s no room to call a woman a pastor, um, because a pastor— if you look at, if you look at the New Testament, and if you have more questions on this, you can— [Speaker B] that&#x27;s actually the second question.</span> <span class="tl-s" data-s="374.32" data-e="375.89">So where do we get the title pastor from?</span> <span class="tl-s" data-s="375.90" data-e="378.45">It sounds like you were about to answer it.</span> <span class="tl-s" data-s="378.79" data-e="388.49">Well, pastor is like in, in Acts chapter 20, verse 28, you have Paul speaking to the Ephesian elders, and he talks about— he says, care for the flock of God.</span> <span class="tl-s" data-s="388.49" data-e="391.55">The way he says that is shepherd the flock of God.</span></p>
+        <p><span class="tl-s" data-s="391.63" data-e="396.33">The way— and the way we would say in English is pastor the flock of God.</span> <span class="tl-s" data-s="396.36" data-e="398.70">So we use the word pastor.</span> <span class="tl-s" data-s="398.70" data-e="406.60">If you look at the New Testament, elder, pastor, and overseer are all the same thing.</span> <span class="tl-s" data-s="407.11" data-e="412.16">So sometimes in some churches you&#x27;ve got elders that are one thing and pastors that are something else.</span> <span class="tl-s" data-s="412.23" data-e="413.16">It&#x27;s not true.</span> <span class="tl-s" data-s="413.43" data-e="418.47">In the Bible, we&#x27;ve got elders and pastors as the same thing, right?</span> <span class="tl-s" data-s="418.52" data-e="418.60">Hmm.</span> <span class="tl-s" data-s="418.60" data-e="419.37">And overseers as well.</span> <span class="tl-s" data-s="419.45" data-e="423.76">We don&#x27;t use the word overseer often, but that&#x27;s the same.</span> <span class="tl-s" data-s="424.11" data-e="427.90">So those 3— elder, pastor, and overseers are the same things.</span></p>
+        <p><span class="tl-s" data-s="427.95" data-e="431.86">So an elder— what does an elder do?</span> <span class="tl-s" data-s="431.89" data-e="432.84">An elder pastors.</span> <span class="tl-s" data-s="432.86" data-e="442.61">So really, that&#x27;s how the language should work, although over time here in English, we&#x27;ve, we&#x27;ve made pastoring an office to call someone a pastor, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="442.63" data-e="442.77">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="443.20" data-e="447.60">And so, uh, so then elder, pastor, overseer, all the same thing.</span> <span class="tl-s" data-s="447.60" data-e="463.38">Now, when applied to— applied to people, like she said, a non-authoritative position, I don&#x27;t think it&#x27;s helpful because I think that in the New Testament We don&#x27;t want to just give those titles away without recognizing that there are standards.</span> <span class="tl-s" data-s="463.73" data-e="466.30">1 Timothy 3 speaks of the character that a pastor must have.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="466.30" data-e="467.96">That&#x27;s the first message I ever heard when I came here.</span> <span class="tl-s" data-s="468.07" data-e="471.15">Yeah, [Speaker A] well, there you go.</span> <span class="tl-s" data-s="471.25" data-e="472.23">You were preaching it.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="472.23" data-e="479.18">So that standard, that&#x27;s the standard that we have to adhere to, and I don&#x27;t think you should just pass those around without qualification.</span> <span class="tl-s" data-s="479.18" data-e="484.89">Now, in regard to women, there are no examples of a woman pastor, and there&#x27;s no room in the New Testament for women to be pastors.</span> <span class="tl-s" data-s="484.89" data-e="501.44">Now, I do know that there are a lot of women out there who are— a lot of traditions that call these— call them pastors, which I understand that, um, but biblically speaking, it— there&#x27;s just— there&#x27;s zero room for that.</span> <span class="tl-s" data-s="501.48" data-e="510.87">Now, yeah, I believe a lot of those folks are well-meaning and wonderful people, and they— it— just because a woman&#x27;s a pastor doesn&#x27;t mean she&#x27;s a false teacher or anything like that.</span> <span class="tl-s" data-s="510.87" data-e="518.84">But I can say that I believe it&#x27;s an accommodation to culture It&#x27;s an accommodation to what seems natural here in our day and age.</span> <span class="tl-s" data-s="519.34" data-e="526.08">Now, if we take the Bible seriously, we&#x27;re not going to have women pastors, just flat out, straight up.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="526.16" data-e="526.82">That makes sense.</span> <span class="tl-s" data-s="526.82" data-e="526.91">Yeah.</span> <span class="tl-s" data-s="526.96" data-e="529.50">And you will treat that person with kindness.</span> <span class="tl-s" data-s="529.54" data-e="529.83">Oh, absolutely.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="530.25" data-e="530.91">Yeah, yeah, totally.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="530.91" data-e="542.48">And all the other— um, so the final part of that is, if it&#x27;s not okay to use it this way, should someone— it&#x27;s more like the application— should someone attend or be a member of a church that does things that way?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="542.48" data-e="551.24">Well, I think if there is a woman pastor at a church, that is an unfaithful church.</span> <span class="tl-s" data-s="551.27" data-e="566.83">So generally people— like, generally, like, the way it usually goes, the argument for women in pastoral ministry is the same for homosexual Christians, because essentially what they will say is the— [Speaker B] Hot topic.</span> <span class="tl-s" data-s="566.83" data-e="584.95">The context Paul is speaking to in this church in Ephesus as he writes to Timothy in 1 Timothy 3 and 1 Timothy 2, was that women were usurping authority, um, and it was a specific place for them not to be pastors in Ephesus, which is not true.</span> <span class="tl-s" data-s="585.07" data-e="597.38">That is, there&#x27;s been all kinds of archaeological evidence that has been, that has been unearthed, and it, it doesn&#x27;t communicate— there is no understanding that women were in general in the Ephesian society usurping authority.</span> <span class="tl-s" data-s="597.42" data-e="602.67">And that&#x27;s not what that means in 1 Timothy chapter 2 at all.</span> <span class="tl-s" data-s="602.77" data-e="610.79">And so, and then additionally, you&#x27;ve got no examples in the New Testament, none, of women pastors.</span></p>
+        <p><span class="tl-s" data-s="610.79" data-e="615.88">Um, and so I think if, if a church has a woman pastor, it&#x27;s unfaithful.</span> <span class="tl-s" data-s="616.01" data-e="624.67">Now, in terms of— there&#x27;s other traditions though that are going to have men who are elders, and maybe they give away the title of pastor Easily, I don&#x27;t agree with that.</span> <span class="tl-s" data-s="624.67" data-e="631.63">But that&#x27;s that&#x27;s going to boil down to your conscience, and every situation is going to be different.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="631.64" data-e="632.69">Makes sense.</span> <span class="tl-s" data-s="632.94" data-e="636.04">Okay, so that wraps up our rapid fire Friday.</span> <span class="tl-s" data-s="636.08" data-e="637.75">Feel free to reach out with questions.</span> <span class="tl-s" data-s="637.94" data-e="640.59">We often get duplicates, so we&#x27;ll we&#x27;ll try to sum them up.</span> <span class="tl-s" data-s="640.59" data-e="644.75">And the goal is to release you know one of these every week.</span> <span class="tl-s" data-s="644.75" data-e="648.81">So stay tuned for the regular release of and as well as the release of this.</span> <span class="tl-s" data-s="648.81" data-e="649.07">So.</span> <span class="tl-s" data-s="649.26" data-e="650.06">We love you.</span> <span class="tl-s" data-s="650.06" data-e="650.06">Keep the questions coming.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="650.06" data-e="650.06">All right.</span> <span class="tl-s" data-s="650.06" data-e="650.06">Yeah.</span> <span class="tl-s" data-s="650.06" data-e="650.06">Thanks, everybody.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Fixed on Jesus episode archive, backed by /api/podcast/search.
+  // Static fallback list above stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function fmtDuration(raw) {
+      if (!raw) return "";
+      var str = String(raw).trim();
+      // Anchor feeds report seconds; render as H:MM:SS or M:SS.
+      if (/^\d+$/.test(str)) {
+        var total = parseInt(str, 10);
+        var h = Math.floor(total / 3600);
+        var m = Math.floor((total % 3600) / 60);
+        var sec = total % 60;
+        var mm = (h > 0 && m < 10 ? "0" + m : "" + m);
+        var ss = (sec < 10 ? "0" + sec : "" + sec);
+        return (h > 0 ? h + ":" + mm : m) + ":" + ss;
+      }
+      // Anchor also reports clock strings like "00:24:02" — drop the
+      // redundant leading hour so it reads "24:02".
+      return str.replace(/^00:/, "");
+    }
+    function row(it) {
+      it = it || {};
+      var title = esc(it.title) || "Untitled episode";
+      var tUrl = it.guid && transcriptMap[it.guid];
+      var heading = tUrl
+        ? '<a href="' + esc(tUrl) + '">' + title + "</a>"
+        : (it.link
+          ? '<a href="' + esc(it.link) + '" target="_blank" rel="noopener">' + title + "</a>"
+          : title);
+      var meta = [fmtDate(it.date), fmtDuration(it.duration)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      return '<div class="sermon"><div><h3>' + heading + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    var PER = 10;
+    var state = { q: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No episodes found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " episode" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " episodes";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/podcast/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () {
+          // Keep the static list, but tell the reader where else to listen —
+          // some privacy blockers stop the archive request itself.
+          var note = document.querySelector("[data-sermons-error]");
+          if (note) note.hidden = false;
+        });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    if (monthSel) {
+      monthSel.addEventListener("change", function () {
+        state.month = monthSel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: 5e0fbee5-f09c-417e-b80e-b44a720f5991 -->
+</body>
+</html>
