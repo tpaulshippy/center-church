@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Spread Of The Gospel — Podcast Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Fixed on Jesus: conversations beyond Sunday mornings from Center Church in Gilbert, AZ — listen on Spotify, Apple Podcasts, and YouTube." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=18" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a href="/sermons">Sermons</a></li>
+              <li><a class="active" href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/podcast">&larr; All podcast episodes</a>
+          <h1 class="display-lg">The Spread Of The Gospel</h1>
+          <p class="transcript-meta">2024-08-07 · 31:21</p>
+          <p class="transcript-desc">Welcome to FIXED ON JESUS, a podcast brought to you by Center Church in Gilbert, Arizona. Speaking to you today are Rich Richardson &amp; Mark Johnson Jr. Production by Heather Corbitt **SHOW NOTES** Questions asked in this episode: Can you talk more about the spread of the Gospel? Latin American church</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/e750e370/podcast/play/90161211/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-7-7%2F71f3786c-e1b9-a436-dc4d-f78c73380c2a.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="0.13" data-e="0.88">Christianity moves.</span> <span class="tl-s" data-s="0.88" data-e="6.15">It was Jerusalem, then for a while it was Rome, then it was England.</span> <span class="tl-s" data-s="6.68" data-e="10.89">Now it&#x27;s in more Africa and the southern part of the world.</span> <span class="tl-s" data-s="11.29" data-e="16.25">So Christianity&#x27;s the only, only faith that does that.</span> <span class="tl-s" data-s="16.90" data-e="17.62">And why is that?</span> <span class="tl-s" data-s="17.86" data-e="20.06">That&#x27;s because the Gospel&#x27;s on the move.</span> <span class="tl-s" data-s="20.11" data-e="24.57">And the Gospel, the word of God, the word of God changes people&#x27;s lives.</span> <span class="tl-s" data-s="24.67" data-e="26.21">The Gospel changes people&#x27;s lives.</span> <span class="tl-s" data-s="26.48" data-e="30.67">And churches are planted that make a difference in people&#x27;s lives eternally.</span></p>
+        <p><span class="tl-s" data-s="45.92" data-e="48.31">This is Fixed on Jesus.</span></p>
+        <p><span class="tl-s" data-s="64.94" data-e="66.14">Welcome to Fixed on Jesus.</span> <span class="tl-s" data-s="66.20" data-e="78.40">My name is Rich, and we are having again our podcast where we talk about all kinds of things and things in the world and the life we live, all connected to Jesus Christ.</span> <span class="tl-s" data-s="79.02" data-e="81.75">This is a podcast of Center Church in Gilbert, Arizona.</span> <span class="tl-s" data-s="81.91" data-e="83.14">My name is Rich, as I said.</span> <span class="tl-s" data-s="83.67" data-e="85.05">I&#x27;m joined by Mark Johnson Jr.</span> <span class="tl-s" data-s="85.11" data-e="85.14">Hi.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="85.82" data-e="86.23">Here I am.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="86.70" data-e="88.55">And Heather Corbett&#x27;s behind the glass.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="88.86" data-e="89.94">I&#x27;m not behind the glass.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="89.99" data-e="91.61">You are behind the glass.</span> <span class="tl-s" data-s="91.77" data-e="94.27">It&#x27;s a metaphorical glass, Heather, and you are behind it.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="94.64" data-e="94.82">Yep.</span> <span class="tl-s" data-s="95.06" data-e="95.70">And it&#x27;s foggy.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="95.85" data-e="99.60">We were just joking about the Instagram and I said the kids call it the Gram.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="99.86" data-e="100.05">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="100.44" data-e="101.54">And I was corrected by Heather.</span> <span class="tl-s" data-s="101.62" data-e="102.19">What did you say?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="102.44" data-e="104.69">Kids don&#x27;t call it the Gram because kids don&#x27;t use the Gram.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="104.83" data-e="105.83">They don&#x27;t use Instagram.</span> <span class="tl-s" data-s="105.97" data-e="106.82">They&#x27;re not on Instagram.</span> <span class="tl-s" data-s="106.92" data-e="108.88">And then what do they use now, Mark?</span> <span class="tl-s" data-s="108.94" data-e="110.90">Because Heather and I are in our 50s.</span> <span class="tl-s" data-s="111.19" data-e="111.43">Yeah.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="111.57" data-e="112.47">Oh, wait, wait, wait, wait, wait.</span> <span class="tl-s" data-s="112.65" data-e="114.25">I don&#x27;t level up yet.</span> <span class="tl-s" data-s="114.86" data-e="115.52">End of the year.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="115.88" data-e="116.06">49?</span> <span class="tl-s" data-s="116.16" data-e="117.60">You&#x27;re 49?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="117.70" data-e="119.20">Guys, we don&#x27;t say stuff like that.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="119.29" data-e="119.60">Oh, sorry.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="119.68" data-e="121.53">But I will be leveling up in September.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="121.82" data-e="122.11">Oh, okay.</span> <span class="tl-s" data-s="122.11" data-e="123.10">So you&#x27;re gonna be 50 in September.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="123.18" data-e="124.98">Oh, why would you say something like that?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="125.08" data-e="125.36">Sorry.</span> <span class="tl-s" data-s="125.36" data-e="125.78">Well, okay.</span> <span class="tl-s" data-s="125.78" data-e="127.60">Basically, you&#x27;re 50, Heather.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="127.70" data-e="128.24">Ow.</span> <span class="tl-s" data-s="128.24" data-e="128.48">Ow.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="128.58" data-e="130.82">And so anyway, so we&#x27;re basically 50.</span> <span class="tl-s" data-s="130.82" data-e="131.64">We&#x27;re in our 50s.</span> <span class="tl-s" data-s="131.64" data-e="135.72">You represent the younger— are you a millennial?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="135.82" data-e="136.22">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="136.32" data-e="138.72">Okay, so what if they&#x27;re not using Instagram?</span> <span class="tl-s" data-s="138.72" data-e="142.52">I know they&#x27;re not using Facebook because my mom uses Facebook and stuff.</span> <span class="tl-s" data-s="143.48" data-e="146.31">And Instagram, that I thought that was what the kids use.</span> <span class="tl-s" data-s="146.38" data-e="149.26">No, [Speaker B] I think they still use it, but it&#x27;s it&#x27;s on its way out.</span> <span class="tl-s" data-s="149.26" data-e="150.39">I think it&#x27;s less used.</span> <span class="tl-s" data-s="150.39" data-e="154.96">I think they use TikTok and and BeReal and and Lapse.</span> <span class="tl-s" data-s="154.96" data-e="156.24">A [Speaker A] couple examples.</span> <span class="tl-s" data-s="156.24" data-e="156.31">Lapse.</span> <span class="tl-s" data-s="156.39" data-e="158.79">How do you say Lapse?</span> <span class="tl-s" data-s="158.87" data-e="159.42">Lapse.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="159.69" data-e="160.15">I&#x27;m relative.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="160.23" data-e="160.60">Yeah, Lapse.</span> <span class="tl-s" data-s="160.72" data-e="162.24">Like lapse, like time lapse.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="162.25" data-e="162.75">Yeah, time lapse.</span> <span class="tl-s" data-s="162.75" data-e="164.24">And that&#x27;s kind of the essence.</span> <span class="tl-s" data-s="164.32" data-e="165.22">I&#x27;m pretty new to it too.</span> <span class="tl-s" data-s="165.22" data-e="167.08">I just I just like to stay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="167.13" data-e="167.58">What is it?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="167.58" data-e="170.62">It&#x27;s it&#x27;s kind of mimicking like a Polaroid camera.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="170.62" data-e="171.38">Like an old-school Polaroid camera?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="171.38" data-e="173.24">Yeah, so it&#x27;s an app with you and your friends.</span> <span class="tl-s" data-s="173.24" data-e="176.76">You take a photo and it takes 1 hour to develop.</span> <span class="tl-s" data-s="176.76" data-e="179.40">And it&#x27;s kind of like it&#x27;s in a darkroom.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="179.40" data-e="179.72">1 hour?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="179.72" data-e="179.98">Yes.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="179.98" data-e="181.84">It takes an hour to develop a picture?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="181.84" data-e="181.98">Yes.</span> <span class="tl-s" data-s="181.98" data-e="184.62">You can&#x27;t look at it until an hour has passed.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="184.62" data-e="185.56">Wait, hold on.</span> <span class="tl-s" data-s="185.56" data-e="187.48">A Polaroid took like a minute and a half at most.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="187.48" data-e="190.13">Yeah, you had to like hold the bottom and like go back and forth.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="190.13" data-e="190.42">Yeah, you&#x27;re right.</span> <span class="tl-s" data-s="190.42" data-e="192.40">Shake it like a Polaroid picture, man.</span> <span class="tl-s" data-s="192.50" data-e="193.24">That&#x27;s a song lyric.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="193.24" data-e="193.56">It is.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="193.56" data-e="195.88">And if you shake your phone, it doesn&#x27;t do anything.</span> <span class="tl-s" data-s="195.88" data-e="196.40">I tried.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="196.87" data-e="197.90">So wait a minute.</span> <span class="tl-s" data-s="197.90" data-e="198.78">What&#x27;s the point of that?</span> <span class="tl-s" data-s="198.78" data-e="199.36">What&#x27;s the point of that?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="199.36" data-e="200.52">I couldn&#x27;t tell you.</span> <span class="tl-s" data-s="200.57" data-e="205.09">It&#x27;s just— It&#x27;s more just to have a collection of photos online to share with your friends.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="205.22" data-e="206.31">That take an hour.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="206.44" data-e="214.07">Without all the commenting and like, there&#x27;s not as much like social, it&#x27;s more just photos, which is what Instagram originally was supposed to be, just photos.</span> <span class="tl-s" data-s="214.14" data-e="221.63">But now it&#x27;s more like advertisements and comments and— [Speaker A] That is, I don&#x27;t understand that.</span> <span class="tl-s" data-s="221.64" data-e="222.11">Yeah, it&#x27;s different.</span> <span class="tl-s" data-s="222.30" data-e="228.20">Well, at the end of this recording session, the picture I took of you will have been through its 1-hour darkroom.</span> <span class="tl-s" data-s="228.20" data-e="228.93">And we&#x27;ll be able to see that.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="229.04" data-e="229.88">You have Lapse on your phone.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="229.88" data-e="234.26">I just took a picture of you on Lapse before this episode.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="234.26" data-e="236.12">Okay, can I just add one thing?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="236.12" data-e="236.28">Sure.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="236.28" data-e="243.94">I&#x27;m really glad we don&#x27;t do video because I&#x27;ve had my mouth draw open, my jaw drop on the floor wide open through this whole thing.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="243.94" data-e="247.00">This doesn&#x27;t make sense, does it, Heather?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="247.01" data-e="248.16">No, I&#x27;m going to mute now.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="248.16" data-e="248.46">All right.</span> <span class="tl-s" data-s="248.46" data-e="248.58">Bye, Heather.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="248.58" data-e="250.82">All right, Mark, what are we talking about?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="250.82" data-e="257.69">Well, besides social media, we&#x27;re actually talking about something much more interesting. the spread of the gospel, not the spread of the social media.</span> <span class="tl-s" data-s="257.69" data-e="262.23">We&#x27;re talking about the spread of the gospel through the history.</span> <span class="tl-s" data-s="262.73" data-e="269.70">So we&#x27;ve had specifically Josh Rhody suggested that we talk more about the spread of the gospel and its history of church planting.</span> <span class="tl-s" data-s="269.73" data-e="276.46">And it also is well-timed because we have a church plant out of our church here in Gilbert, Arizona.</span> <span class="tl-s" data-s="276.56" data-e="279.72">We&#x27;re planting in the Boise, Idaho area in the next couple of years.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="279.75" data-e="280.12">Yeah, right.</span> <span class="tl-s" data-s="280.17" data-e="282.33">Year, year and a half.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="282.48" data-e="282.98">Yeah.</span> <span class="tl-s" data-s="283.54" data-e="283.70">Yeah.</span> <span class="tl-s" data-s="283.70" data-e="286.52">So I would just ask, this is something you&#x27;re really interested in, Rich.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="286.60" data-e="287.19">I am interested.</span> <span class="tl-s" data-s="287.29" data-e="288.07">I like history.</span> <span class="tl-s" data-s="288.11" data-e="292.64">So this is kind of something I nerd out on a little bit.</span> <span class="tl-s" data-s="292.75" data-e="292.93">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="292.93" data-e="297.56">So do you want to kind of start us off pre-Reformation?</span> <span class="tl-s" data-s="297.56" data-e="298.67">Well, I&#x27;ll go all [Speaker A] the way back.</span> <span class="tl-s" data-s="298.67" data-e="299.33">Yeah, let&#x27;s go all the way back.</span> <span class="tl-s" data-s="299.33" data-e="302.60">You want to go all the way back to the first church?</span> <span class="tl-s" data-s="302.60" data-e="304.14">The first church was in Jerusalem.</span> <span class="tl-s" data-s="304.14" data-e="308.35">You get the account of that first church in Acts chapter 2.</span> <span class="tl-s" data-s="308.38" data-e="322.28">So when Peter preaches the first sermon, the first Christian sermon after Jesus rose from the dead and The Holy Spirit came to fill his disciples, Jesus&#x27;s disciples.</span> <span class="tl-s" data-s="322.34" data-e="334.62">We read that he gets up and he preaches this sermon, and all of a sudden people get converted to Christ and they establish a church in Jerusalem.</span> <span class="tl-s" data-s="334.69" data-e="343.66">And so in Jerusalem, the very first Christian church, and they would meet in Solomon&#x27;s Colonnade, which is like part of the temple complex.</span> <span class="tl-s" data-s="343.66" data-e="354.00">They met there and stayed there, and it appeared they had no idea or plan to do anything in terms of spreading the Gospel outside of Jerusalem.</span></p>
+        <p><span class="tl-s" data-s="354.79" data-e="356.73">And so they were just there in Jerusalem.</span> <span class="tl-s" data-s="356.73" data-e="365.90">And one of the most surprising things that happened was the way the Gospel spread from Jerusalem to other parts of the world the first time, the first thing that happened.</span> <span class="tl-s" data-s="366.17" data-e="366.33">Yeah.</span> <span class="tl-s" data-s="366.35" data-e="372.81">In Acts 7, you read about Stephen, who is he debates the Jewish leaders.</span> <span class="tl-s" data-s="372.86" data-e="379.14">And you read about Acts 7 is one of the longest, I think it is the longest speech in the book of Acts.</span> <span class="tl-s" data-s="380.12" data-e="381.63">And it&#x27;s Stephen rehearsing the history of Israel.</span> <span class="tl-s" data-s="381.66" data-e="384.38">Leading up to that point.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="384.38" data-e="385.59">Leading to that point.</span> <span class="tl-s" data-s="385.67" data-e="394.68">And showing them, the people of Israel, the Jewish leaders, that they&#x27;re like those in— they&#x27;re like the stiff-necked people who didn&#x27;t believe.</span> <span class="tl-s" data-s="394.95" data-e="398.14">And so they get so angry. that they kill Stephen.</span> <span class="tl-s" data-s="398.15" data-e="399.18">They stone him, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="399.21" data-e="399.37">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="399.37" data-e="403.06">A massive tragedy, because Stephen would&#x27;ve been one of the— a respected guy in the church.</span> <span class="tl-s" data-s="403.38" data-e="404.58">First martyr, right?</span> <span class="tl-s" data-s="404.58" data-e="405.94">Yeah, he&#x27;s the first martyr.</span> <span class="tl-s" data-s="405.94" data-e="410.00">And he would&#x27;ve been super respected in the church.</span> <span class="tl-s" data-s="410.03" data-e="430.04">And in fact, we read at the beginning of Acts 8, you read, and there arose on that day a great persecution against the church in Jerusalem, and they were all scattered throughout the regions of Judea and Samaria, except the apostles.</span> <span class="tl-s" data-s="430.08" data-e="441.42">So imagine the church going on week by week, Sunday in, Sunday out, week by week, week by week, and you&#x27;re building community and you&#x27;re connected to people and this is your life, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="441.72" data-e="442.20">Mm-hmm.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="442.99" data-e="451.96">And then one of your leaders gets killed and a persecution comes so that effectively the church in Jerusalem is scattered like a daffodil, right?</span> <span class="tl-s" data-s="452.88" data-e="454.58">And you go all over the place.</span> <span class="tl-s" data-s="454.58" data-e="458.47">And so on the one level, it&#x27;s a massive tragedy.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="458.74" data-e="459.37">To lose Stephen.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="459.37" data-e="459.46">Absolutely.</span> <span class="tl-s" data-s="459.46" data-e="464.22">But on an— but to— and to be— to have a church destroyed, essentially, right?</span> <span class="tl-s" data-s="464.22" data-e="468.82">But on another level, guess— look what happened.</span> <span class="tl-s" data-s="469.00" data-e="470.61">Acts chapter 8, verse 4.</span> <span class="tl-s" data-s="470.61" data-e="475.06">Now those who were scattered about went about preaching the word.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="475.06" data-e="475.57">Wow.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="475.68" data-e="491.87">And so the people, they went around and they took the gospel that they learned in Jerusalem from the apostles, and they began to preach the gospel and plant churches and start different fellowships all over the ancient Near East, right?</span> <span class="tl-s" data-s="492.30" data-e="507.88">So what these people did was, because they were in town in Jerusalem for Pentecost when the Holy Spirit fell, they stayed, and then they went back to where they were from with the gospel after being trained by the apostles, right?</span> <span class="tl-s" data-s="507.88" data-e="514.75">And so they go back and they begin to preach and they begin to tell people about Jesus.</span> <span class="tl-s" data-s="515.73" data-e="518.78">And wherever they went, that&#x27;s what happened.</span> <span class="tl-s" data-s="518.78" data-e="525.72">And so it wasn&#x27;t, it&#x27;s interesting just because it wasn&#x27;t a strategy that the church— They didn&#x27;t meet in the boardroom and they didn&#x27;t market it.</span> <span class="tl-s" data-s="525.77" data-e="533.42">No, they didn&#x27;t meet in the boardroom and get on a whiteboard and go, okay, now guys, let&#x27;s go to, Who wants to go to Judea, which was the area just north of Jerusalem?</span></p>
+        <p><span class="tl-s" data-s="533.42" data-e="535.34">Who wants to go to Samaria?</span> <span class="tl-s" data-s="535.41" data-e="537.36">I mean, those, they&#x27;re not really tasteful, but let&#x27;s go there.</span> <span class="tl-s" data-s="537.39" data-e="539.89">And then the rest of the world, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="539.89" data-e="540.55">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="541.02" data-e="543.23">And that&#x27;s, so it happened through persecution.</span> <span class="tl-s" data-s="543.74" data-e="555.03">So oftentimes I say this just to recognize or to communicate that, you know, there are lots of ways that the Lord uses to spread his gospel.</span> <span class="tl-s" data-s="555.11" data-e="556.58">And sometimes it&#x27;s the most unlikely way.</span> <span class="tl-s" data-s="556.79" data-e="566.60">&#x27;Cause like if you and I were members of that church in Jerusalem, we would be very, Very discouraged that the church was almost just yeah.</span> <span class="tl-s" data-s="567.45" data-e="578.67">But in the long run, the work that the the blessing of all these people being scattered and preaching the gospel is far more significant than could have happened in one church in one place, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="578.67" data-e="578.85">Absolutely.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="578.99" data-e="585.79">And in fact, we pick it up in Acts 11 when you have the church in Antioch, right?</span> <span class="tl-s" data-s="586.05" data-e="588.84">You&#x27;ve got this phrase in Acts 11.</span> <span class="tl-s" data-s="588.87" data-e="589.00">19.</span> <span class="tl-s" data-s="589.01" data-e="605.29">Now those who were scattered because of the persecution that arose over Stephen traveled as far as Phoenicia and Cyprus and Antioch, speaking the word to no one except Jews.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="605.30" data-e="606.30">Only Jews.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="606.30" data-e="606.85">Only Jews.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="606.85" data-e="607.09">Very clear.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="607.09" data-e="607.46">Yeah, exactly.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="607.49" data-e="608.03">For now.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="608.03" data-e="620.09">But there were some of them, and then we hear, men of Cyprus and Cyrene, which is like North Africa, On coming together to Antioch, spoke to the Hellenists, or the Greeks, also preaching the Lord Jesus.</span> <span class="tl-s" data-s="620.16" data-e="621.18">And the Lord was with them.</span> <span class="tl-s" data-s="621.18" data-e="624.04">And they start that church in Antioch, right?</span> <span class="tl-s" data-s="624.63" data-e="629.23">And so you have this cross-cultural transition that happens in Antioch.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="630.26" data-e="630.74">To the Greeks?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="630.74" data-e="634.26">To the Greeks, and then the Gentiles as well.</span> <span class="tl-s" data-s="634.42" data-e="643.54">And so you get this, and you have in the prior chapter, right after the persecution, of Stephen, Philip goes to the Samaritans, which were the half-breeds.</span> <span class="tl-s" data-s="643.56" data-e="646.59">They were the people who were— [Speaker B] Half Jewish, half Gentile.</span> <span class="tl-s" data-s="646.62" data-e="648.59">Half Jewish, half Gentile.</span> <span class="tl-s" data-s="648.59" data-e="648.83">Right, exactly.</span> <span class="tl-s" data-s="648.83" data-e="651.86">And so that&#x27;s what Acts is all about.</span> <span class="tl-s" data-s="651.88" data-e="667.41">And so when you look, I spend all that time there just to show that the strategy of the spread of the gospel is not one that we can always manufacture.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="667.44" data-e="668.07">No.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="668.15" data-e="670.93">In fact— [Speaker B] Seems very providential.</span> <span class="tl-s" data-s="671.20" data-e="672.16">Completely providential.</span> <span class="tl-s" data-s="672.16" data-e="686.70">And so then we see Paul gets converted in Acts 9, and then his whole mission is to travel about with his apostolic delegates, preach the gospel in different locations, first the Jews, then the Greeks, and looks to plant churches, right?</span> <span class="tl-s" data-s="686.78" data-e="686.86">Yeah.</span> <span class="tl-s" data-s="686.89" data-e="688.56">So that&#x27;s what he does.</span> <span class="tl-s" data-s="688.56" data-e="693.45">He goes to all these places and you read about it in Acts.</span> <span class="tl-s" data-s="693.45" data-e="695.00">He preaches the gospel.</span> <span class="tl-s" data-s="695.00" data-e="699.85">He plants churches, he appoints elders, and you have a church that pops up.</span> <span class="tl-s" data-s="699.88" data-e="707.14">And you can read about what happens in these churches as you read the letters that Paul writes.</span> <span class="tl-s" data-s="707.19" data-e="712.22">1 and 2 Thessalonians, he wrote because he went there and preached in Thessalonica.</span></p>
+        <p><span class="tl-s" data-s="713.13" data-e="718.63">And he wrote those letters back to them.</span> <span class="tl-s" data-s="718.67" data-e="722.37">Philippi, Ephesus, Colossae, You&#x27;ve got all these different places that he&#x27;s writing back to.</span> <span class="tl-s" data-s="722.42" data-e="736.75">Now he had— [Speaker B] You almost said Galatia, but— [Speaker A] Galatia, yeah, but that was a kind of a region, not a— but then Rome, he hadn&#x27;t gone to Rome yet when he wrote that, but Corinth is another one.</span> <span class="tl-s" data-s="737.04" data-e="755.23">So like, you&#x27;ve got all these cities that were Greek cities primarily with some Jewish influence, but he went to those places, planted churches, those churches began to flourish, then He writes letters back to them, and so like you&#x27;ve got you&#x27;ve got this pattern, this model, and so you&#x27;ve got the what are called the missionary journeys of Paul.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="755.23" data-e="762.04">Yeah, [Speaker A] where you you&#x27;ve got you can track it, and most of our Bibles have like the first third right.</span> <span class="tl-s" data-s="762.04" data-e="763.89">You can track where he went, right?</span> <span class="tl-s" data-s="763.89" data-e="765.01">Yeah, the map and right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="765.01" data-e="772.92">You can track where he went, track where he looked to preach the gospel, plant churches, and such.</span> <span class="tl-s" data-s="773.11" data-e="797.30">And so like he was the one that really. gave a model that, I mean, none of us are Paul, but you look back and you see, here&#x27;s Paul going to a new city, preaching the gospel, gathering converts, bringing them into a church family, looking to build godliness and teach everything that Jesus commanded and have them evangelize.</span> <span class="tl-s" data-s="797.60" data-e="799.85">And you&#x27;ve got these little outposts set up, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="799.85" data-e="800.08">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="800.08" data-e="806.73">And so there&#x27;s even reports that are— you look at the past and you see their reports of the 12 apostles.</span> <span class="tl-s" data-s="806.76" data-e="820.39">Some of them went in all kinds of different directions and places, and they&#x27;re finding evidence that there was gospel influence in both China and India way back, way back.</span> <span class="tl-s" data-s="820.64" data-e="826.21">And so you got all these people who traveled and went about preaching the gospel.</span> <span class="tl-s" data-s="826.27" data-e="826.45">Hmm.</span> <span class="tl-s" data-s="826.45" data-e="829.77">That&#x27;s been the pattern of history.</span> <span class="tl-s" data-s="829.80" data-e="841.15">Now, one of the things that gets a little bit troubling is after, say, 400s, 500s, the Roman Catholic Church sort of institutionalizes a lot of Christendom.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="841.18" data-e="844.28">This is like 400 or 500 years after Christ or before that?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="844.39" data-e="847.73">Yeah, it depends on how you look at it.</span> <span class="tl-s" data-s="848.00" data-e="857.39">But, you know, after the fall of Rome, after Augustine&#x27;s time, Rome falls, and then things are put into upheaval and There&#x27;s all kinds of different challenges.</span> <span class="tl-s" data-s="858.10" data-e="865.66">And Rome tried to solidify power and set up bishops and those kinds of things.</span> <span class="tl-s" data-s="865.66" data-e="874.79">And started to take tradition— they instituted traditions that were not handed down by the apostles that they say they are, and that&#x27;s a whole nother conversation.</span> <span class="tl-s" data-s="874.96" data-e="885.26">So they ended up sort of institutionalizing it and ended up stilting a lot of the a lot of gospel transformation and church planting and stuff, right?</span> <span class="tl-s" data-s="885.26" data-e="888.33">And so it became, ministry became sort of a professional.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="888.59" data-e="890.02">Now they are in the boardroom.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="890.05" data-e="892.77">Well, now they&#x27;re the monks, they&#x27;re in the monastery, right?</span> <span class="tl-s" data-s="892.85" data-e="899.38">So like a vow of poverty, the idea of not getting married if you&#x27;re a priest, none of those things are biblical.</span> <span class="tl-s" data-s="899.49" data-e="904.84">Those are just traditions that the Catholic Church handed down.</span> <span class="tl-s" data-s="904.84" data-e="920.44">And that doesn&#x27;t mean there weren&#x27;t faithful representatives of Christ in all these places, but it wasn&#x27;t, that wasn&#x27;t the heyday of gospel transformation and, and/or church planting.</span> <span class="tl-s" data-s="920.44" data-e="931.40">But then when the Reformation hits with Martin Luther in the 1500s, then you have beginning in earnest about, then you&#x27;ve got, man, now it&#x27;s time to get that gospel out.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="931.50" data-e="931.74">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="931.84" data-e="932.12">Right.</span> <span class="tl-s" data-s="932.12" data-e="932.46">And so— [Speaker B] That was Martin Luther?</span> <span class="tl-s" data-s="932.46" data-e="932.50">Martin Luther.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="934.26" data-e="935.45">That&#x27;s like 1400, 1500?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="935.65" data-e="935.83">1517.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="936.22" data-e="936.28">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="936.38" data-e="936.58">Right.</span> <span class="tl-s" data-s="937.72" data-e="940.47">And so he nailed the 95 Theses on the wall.</span> <span class="tl-s" data-s="940.47" data-e="942.28">Wall at Wittenberg, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="942.37" data-e="942.63">Yep.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="942.63" data-e="945.74">And so if you— [Speaker B] In more than one language.</span> <span class="tl-s" data-s="945.76" data-e="954.82">He wrote it in Latin and somebody pulled it off and put it in German and printed it and people were— [Speaker B] Amazing.</span> <span class="tl-s" data-s="954.82" data-e="955.14">Yeah.</span> <span class="tl-s" data-s="955.14" data-e="963.73">It would be like if somebody, like he wanted to have a debate in the academy with the leaders, the Catholic clerics over the issue of indulgences.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="963.86" data-e="964.34">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="964.34" data-e="967.74">But somebody— [Speaker B] What was that?</span> <span class="tl-s" data-s="967.74" data-e="968.32">Can I ask real quick?</span> <span class="tl-s" data-s="968.43" data-e="968.73">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="968.76" data-e="990.35">Was that like you could pay money To allow yourself to sin or allow yourself— [Speaker A] Well, the way that it ended up working out was, um, there&#x27;s a guy named Johann Tetzel, and he was— what he was doing was selling indulgences, which meant that he would go to these poor peasants and ask for money.</span> <span class="tl-s" data-s="990.35" data-e="990.55">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="990.57" data-e="993.73">Um, like if they&#x27;re to get their relative out of purgatory.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="993.93" data-e="995.81">Oh, wow.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="996.32" data-e="1002.43">You got these people, like you got these people who, you know, have no money.</span> <span class="tl-s" data-s="1002.75" data-e="1006.66">They get everything they can to give this huckster some cash.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1006.66" data-e="1007.16">Snake oil salesman.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1007.16" data-e="1009.32">Well, they&#x27;re building— they&#x27;re trying to build St.</span> <span class="tl-s" data-s="1009.32" data-e="1009.83">Peter&#x27;s Basilica.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1010.50" data-e="1010.65">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1010.68" data-e="1019.60">So they&#x27;re building— this is one of the things that keeps me fired up about all that stuff, is they&#x27;re on the top of just grinding poverty.</span> <span class="tl-s" data-s="1019.64" data-e="1024.80">The Roman Catholic Church is raising money from people who literally taking food from people&#x27;s mouth.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1024.80" data-e="1024.86">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1024.86" data-e="1026.13">Back then.</span> <span class="tl-s" data-s="1026.23" data-e="1030.24">And so Luther, as a pastor, he&#x27;s like, dude, this is not good.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1030.24" data-e="1030.43">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1031.20" data-e="1040.50">And so let&#x27;s debate this, he says, puts it up on the door, and then the Lord just blew it up, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1040.53" data-e="1040.81">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1040.86" data-e="1045.31">And so anyway, like from there, gospel transformation, gospel got— church planting started in earnest.</span> <span class="tl-s" data-s="1045.33" data-e="1051.47">And so you&#x27;ve got Luther raising up monks who became pastors and going off to plant and lead churches in different places.</span> <span class="tl-s" data-s="1051.52" data-e="1057.29">A lot of the times the churches were already established, but they weren&#x27;t preaching the Gospel.</span> <span class="tl-s" data-s="1057.29" data-e="1058.77">It was so focused on the sacraments.</span> <span class="tl-s" data-s="1058.82" data-e="1066.79">And in the Roman system, the people couldn&#x27;t take the sacraments and they couldn&#x27;t handle the Word and they shouldn&#x27;t have the Word in their own language.</span> <span class="tl-s" data-s="1066.91" data-e="1068.76">And Luther changed all that.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1068.76" data-e="1069.00">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1069.00" data-e="1070.52">Another example is with John Calvin.</span> <span class="tl-s" data-s="1070.52" data-e="1071.69">People don&#x27;t know about John Calvin.</span> <span class="tl-s" data-s="1072.12" data-e="1078.27">They think he was this stuffy guy who, you know, was against people having fun.</span> <span class="tl-s" data-s="1078.27" data-e="1081.17">That&#x27;s just not a good understanding of who he was.</span> <span class="tl-s" data-s="1081.25" data-e="1090.13">He actually raised up multiple people And train young men to go and plant churches in other places.</span> <span class="tl-s" data-s="1090.14" data-e="1093.82">Like, an example is he sent people to Brazil.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1094.01" data-e="1094.22">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1095.19" data-e="1096.64">To plant churches, right?</span> <span class="tl-s" data-s="1096.65" data-e="1107.28">And so this impulse with the Protestant Reformation and in Reformed theology to plant churches has been something that has been resonant ever since the beginning of the Protestant Reformation, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1107.63" data-e="1107.86">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1107.86" data-e="1122.90">And so you see that with the Puritans, there&#x27;s a parish system they have in the Anglican Church of England, And so they would look to try to put evangelical people into these places and situations to preach the gospel.</span> <span class="tl-s" data-s="1123.40" data-e="1124.14">That&#x27;s awesome.</span> <span class="tl-s" data-s="1124.20" data-e="1139.72">So really, one of the other things that shifted and changed was modern missions, the way we understand it now, sending a missionary to someplace that doesn&#x27;t have a gospel witness, was with William Carey in 1793.</span> <span class="tl-s" data-s="1139.72" data-e="1140.70">He went to India.</span> <span class="tl-s" data-s="1140.80" data-e="1145.43">So in India, they were aware of no faithful gospel presence, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1145.45" data-e="1145.67">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1145.77" data-e="1146.92">So he goes there.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1146.97" data-e="1149.38">That part of don&#x27;t preach the gospel in Asia?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1149.38" data-e="1149.44">Huh?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1149.56" data-e="1155.06">Like in Acts, look, wasn&#x27;t it something different?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1156.20" data-e="1158.23">No, Paul always wanted to go.</span> <span class="tl-s" data-s="1158.23" data-e="1161.18">The Holy Spirit blocked him.</span> <span class="tl-s" data-s="1161.18" data-e="1163.02">And so that&#x27;s a different thing.</span> <span class="tl-s" data-s="1163.02" data-e="1163.41">Okay.</span> <span class="tl-s" data-s="1163.44" data-e="1164.04">Yeah.</span> <span class="tl-s" data-s="1164.49" data-e="1182.36">But Carey goes to India and his stepping out sparked a bunch of activity with People, especially from England, and then later the United States, going from their world, like where they live, to other parts of the world to learn the language.</span> <span class="tl-s" data-s="1182.80" data-e="1188.83">Oftentimes in some parts of, in some places, like make an alphabet so that they can have a Bible in their own language.</span> <span class="tl-s" data-s="1189.03" data-e="1190.00">Oh, wow.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1190.01" data-e="1192.71">So an oral tradition, oral culture where they didn&#x27;t, might not have written language.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1192.74" data-e="1193.94">Didn&#x27;t have written language oftentimes.</span> <span class="tl-s" data-s="1193.96" data-e="1194.57">Some of them did.</span> <span class="tl-s" data-s="1194.65" data-e="1194.76">Wow.</span> <span class="tl-s" data-s="1194.87" data-e="1202.18">And then a lot of times the reason they have a written language now is because of missionaries that went in and did that, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1202.18" data-e="1202.90">Wow.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1202.90" data-e="1209.23">And so what they did was a lot of these missionaries, they go into the New World and start to plant churches.</span> <span class="tl-s" data-s="1209.23" data-e="1216.85">And so they would plant churches and there&#x27;s all kinds of different things we could talk about.</span> <span class="tl-s" data-s="1216.85" data-e="1219.61">There was mistakes they made for a lot of the people.</span> <span class="tl-s" data-s="1219.65" data-e="1228.19">They assumed that to convert to Christ also meant that they needed to sort of become an Englishman as well, which is not the case.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1228.19" data-e="1228.43">Oh, imperialist.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1228.43" data-e="1229.77">Kind of, yeah.</span> <span class="tl-s" data-s="1229.77" data-e="1239.55">But like one example of really, of a really good, one really good example is David Brainerd.</span> <span class="tl-s" data-s="1239.66" data-e="1242.13">Have you ever heard that name?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1242.13" data-e="1242.19">No.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1242.31" data-e="1248.60">He was a missionary to American Indians and he ended up dying at Jonathan Edwards&#x27; house.</span> <span class="tl-s" data-s="1248.65" data-e="1251.42">Jonathan Edwards took his diary and published it as a book.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1251.52" data-e="1252.26">Wow.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1252.50" data-e="1253.58">It&#x27;s worth reading.</span> <span class="tl-s" data-s="1254.17" data-e="1256.03">The Diary of David Brainerd.</span> <span class="tl-s" data-s="1256.03" data-e="1261.17">And, but David Brainerd would preach the gospel and he wasn&#x27;t assuming that they needed to adopt Western dress, right?</span> <span class="tl-s" data-s="1261.17" data-e="1265.15">Or mannerisms or any of that kind of [Speaker B] thing.</span> <span class="tl-s" data-s="1265.42" data-e="1265.87">They don&#x27;t.</span> <span class="tl-s" data-s="1266.46" data-e="1267.39">They didn&#x27;t.</span> <span class="tl-s" data-s="1267.43" data-e="1267.73">Yeah.</span> <span class="tl-s" data-s="1267.73" data-e="1267.78">Then.</span> <span class="tl-s" data-s="1267.81" data-e="1267.99">Yeah, exactly.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1267.99" data-e="1268.45">Even now.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1268.45" data-e="1271.42">A lot of them don&#x27;t, but some of them do.</span></p>
+        <p><span class="tl-s" data-s="1272.68" data-e="1281.13">And so they were still grappling with what is a non-negotiable piece of what a church should be in the gospel and what is cultural, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1281.14" data-e="1281.37">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1281.58" data-e="1287.23">They had to try to figure all that stuff out.</span> <span class="tl-s" data-s="1287.25" data-e="1295.75">And so it sparked all kinds of activity, missionary activity throughout the world that has been going essentially since the last part of the 18th century.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1295.86" data-e="1297.21">The end of the 1700s?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1297.21" data-e="1298.19">Yeah, right, with Carey.</span> <span class="tl-s" data-s="1298.90" data-e="1302.85">And then there&#x27;s all kinds of other names that people know, they&#x27;re familiar with.</span> <span class="tl-s" data-s="1302.85" data-e="1305.54">Jim Elliot, that&#x27;s much later in the 1950s.</span> <span class="tl-s" data-s="1305.88" data-e="1309.06">He was killed in Ecuador.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1309.12" data-e="1309.18">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1309.18" data-e="1311.40">There&#x27;s all— John Patton is another name.</span> <span class="tl-s" data-s="1311.58" data-e="1318.96">I mean, there&#x27;s all kinds of names and places, and missionary biographies get really, really popular.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1319.04" data-e="1319.30">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1319.30" data-e="1323.40">Now, one of the things that&#x27;s new now or different now is the church planting movement.</span> <span class="tl-s" data-s="1323.40" data-e="1327.14">The modern church planting movement, the way we understand it, didn&#x27;t start till like the 1970s.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1327.15" data-e="1327.30">Okay.</span> <span class="tl-s" data-s="1327.30" data-e="1332.36">So that&#x27;s— is that the same as like the missionary movement or is that something different?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1332.36" data-e="1332.59">It&#x27;s different.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1332.59" data-e="1334.22">Between the modern model for planting churches.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1334.83" data-e="1341.56">Yeah, the missionary movement was like, take a person or a family or a couple people, send them to a new place.</span> <span class="tl-s" data-s="1341.64" data-e="1343.64">They learn a new culture, they learn a new language.</span> <span class="tl-s" data-s="1343.67" data-e="1346.64">They&#x27;re gonna live and die there, right?</span> <span class="tl-s" data-s="1346.94" data-e="1351.01">And they&#x27;re gonna look to gain converts and hopefully plant churches, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1351.01" data-e="1352.66">That&#x27;s commitment right there.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1352.70" data-e="1353.26">It sure is.</span> <span class="tl-s" data-s="1353.26" data-e="1354.16">And it&#x27;s super, super commendable, right?</span> <span class="tl-s" data-s="1354.16" data-e="1362.17">And so, but— [Speaker B] So our modern church planting style now has only been around 50-something years.</span> <span class="tl-s" data-s="1362.19" data-e="1369.15">Well, I would look back and say, oh, look, you can see it in Acts.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1369.15" data-e="1369.66">Oh, I see.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1369.71" data-e="1374.80">But in the United States, let&#x27;s just talk about same culture, right?</span> <span class="tl-s" data-s="1375.08" data-e="1382.40">In the US, before the 1970s, the mainline churches that were all over the place that were started in the 1700s, 1800s, right?</span> <span class="tl-s" data-s="1382.69" data-e="1389.50">There were the Methodists, there were the Baptists, there were— you pick your denomination, you pick your flavor.</span> <span class="tl-s" data-s="1389.53" data-e="1394.83">People just stayed in those churches and they weren&#x27;t thinking about planting other churches to other places.</span> <span class="tl-s" data-s="1395.23" data-e="1395.31">Right.</span> <span class="tl-s" data-s="1395.31" data-e="1396.16">That started in the &#x27;70s.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1396.16" data-e="1396.67">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1396.74" data-e="1404.80">And in the &#x27;70s, what happened was a lot of the mainline churches, it was clear that they lost the Gospel.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1405.11" data-e="1405.20">Wow.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1405.20" data-e="1415.11">In a lot of cases, the Methodists, the Lutherans, the Episcopalians, they lost the Gospel and the mainline churches became more and more and more liberal.</span> <span class="tl-s" data-s="1415.22" data-e="1420.57">And so there was an impulse to start new churches to preach the gospel.</span> <span class="tl-s" data-s="1421.47" data-e="1423.27">And so that started in the 1970s.</span> <span class="tl-s" data-s="1423.31" data-e="1441.07">And so the idea of a church plant team, of taking from one church a group, a leader and a group of 5 to 10 people, 10 to 15 people, sending them with the blessing of the church to another area to plant a church, certainly wasn&#x27;t new.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1441.07" data-e="1441.30">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1441.30" data-e="1444.12">But it started in earnest in the United States in the 1970s.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1444.12" data-e="1445.06">Okay, that&#x27;s great.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1445.39" data-e="1447.38">So that&#x27;s kind of where we find ourselves historically.</span> <span class="tl-s" data-s="1447.41" data-e="1450.14">And so now that&#x27;s kind of what we want to do.</span> <span class="tl-s" data-s="1450.55" data-e="1461.11">I mean, we don&#x27;t assume when we plant churches in the United States, at least, that we&#x27;re sending the gospel to a place it&#x27;s not, because it&#x27;s there.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1461.13" data-e="1461.45">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1461.45" data-e="1467.32">But it&#x27;s surprising how many— like, there are a lot of areas in the US that lack a faithful Christian witness.</span> <span class="tl-s" data-s="1467.32" data-e="1476.11">I know of, for example, I&#x27;ve had friends that talk about the Eastern Seaboard, like the New England part of the United States.</span> <span class="tl-s" data-s="1476.15" data-e="1479.57">There&#x27;s multiple villages that don&#x27;t have a faithful gospel-preaching church.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1479.85" data-e="1479.96">Wow.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1480.01" data-e="1486.01">And so, and so what we want to do is we want to, in part, be a church that doesn&#x27;t just build our church, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1486.25" data-e="1486.43">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1487.97" data-e="1497.59">And, and not just focus on our needs and only look to our own community, but also to try to get outside of ourselves a little bit.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1497.59" data-e="1498.36">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1498.54" data-e="1505.64">And sacrifice by sending people we love to another location to plant another church, because that&#x27;s the way the gospel is advanced.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1505.64" data-e="1505.83">Yes.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1505.87" data-e="1509.37">It&#x27;s not advanced through conversions as much as through churches, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1510.19" data-e="1510.24">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1511.15" data-e="1513.42">People who are converted, yes, that&#x27;s wonderful.</span> <span class="tl-s" data-s="1513.42" data-e="1514.51">That&#x27;s great.</span> <span class="tl-s" data-s="1514.72" data-e="1515.88">There&#x27;s no substitute for that.</span> <span class="tl-s" data-s="1515.98" data-e="1517.36">But those converted people must be gathered together in churches.</span> <span class="tl-s" data-s="1517.36" data-e="1525.24">And those churches are what keeps people in the faith and keeps people Close to Jesus.</span> <span class="tl-s" data-s="1525.24" data-e="1527.24">And those are the things that we want to do.</span> <span class="tl-s" data-s="1527.42" data-e="1529.85">We want to replicate, replicate, replicate that, if that makes sense.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1529.85" data-e="1530.66">Yeah, absolutely.</span> <span class="tl-s" data-s="1530.66" data-e="1532.72">There&#x27;s a lot of different questions I have.</span> <span class="tl-s" data-s="1532.85" data-e="1537.80">I was actually trying to find our episode that we did on church planting.</span> <span class="tl-s" data-s="1538.01" data-e="1542.25">If this is something you&#x27;re interested in specifically, you can listen to it, and it is number 41.</span> <span class="tl-s" data-s="1542.25" data-e="1543.85">So episode 41 is called Why Plant Churches?</span> <span class="tl-s" data-s="1543.85" data-e="1546.51">So if you&#x27;re interested in that, we&#x27;ve talked about it.</span> <span class="tl-s" data-s="1546.55" data-e="1551.98">I have a couple follow-ups for Rich, though.</span> <span class="tl-s" data-s="1552.33" data-e="1554.67">This is going to be a long one.</span> <span class="tl-s" data-s="1554.67" data-e="1560.98">I know I&#x27;ve asked you this before, but you&#x27;re involved in the church planting of our Southern American churches and— [Speaker A] Latin American.</span> <span class="tl-s" data-s="1560.98" data-e="1561.35">Yeah.</span></p>
+        <p><span class="tl-s" data-s="1561.38" data-e="1561.56">Yeah.</span> <span class="tl-s" data-s="1561.56" data-e="1561.58">Yeah.</span> <span class="tl-s" data-s="1561.62" data-e="1562.63">And how is it different?</span> <span class="tl-s" data-s="1562.67" data-e="1564.25">Like, how is it different?</span> <span class="tl-s" data-s="1564.25" data-e="1565.84">Like here, you know, we&#x27;re planting in Boise, Idaho.</span> <span class="tl-s" data-s="1565.87" data-e="1566.38">That&#x27;s far.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1566.83" data-e="1566.90">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1566.90" data-e="1569.05">Like a lot of churches do a few different things.</span> <span class="tl-s" data-s="1569.06" data-e="1570.64">They plant like an hour away.</span> <span class="tl-s" data-s="1570.67" data-e="1574.06">So it&#x27;s not as big of a commitment for people being sent.</span> <span class="tl-s" data-s="1574.06" data-e="1575.26">It&#x27;s still a commitment.</span> <span class="tl-s" data-s="1575.33" data-e="1576.48">They&#x27;re still switching churches.</span> <span class="tl-s" data-s="1576.48" data-e="1581.94">They might have to move, but it&#x27;s— they&#x27;re in the same culture.</span> <span class="tl-s" data-s="1582.31" data-e="1585.28">They&#x27;re in the same state.</span> <span class="tl-s" data-s="1585.28" data-e="1588.81">Whereas Idaho is another step, a new state, new job, new place of work, new fellowship.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1588.81" data-e="1588.91">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1588.91" data-e="1592.68">And even further, like when you are helping in Latin America, it could be in the same country.</span> <span class="tl-s" data-s="1592.68" data-e="1596.18">It could be in a different country.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1596.27" data-e="1596.39">Yeah.</span> <span class="tl-s" data-s="1596.45" data-e="1599.85">So most of the time, like there, it looks a lot the same, honestly.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1600.54" data-e="1600.65">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1600.70" data-e="1604.35">I mean, That one of the differences is they speak Spanish.</span> <span class="tl-s" data-s="1604.45" data-e="1605.09">Shocker.</span> <span class="tl-s" data-s="1605.09" data-e="1607.35">And but there, it&#x27;s the same thing.</span> <span class="tl-s" data-s="1607.35" data-e="1619.18">You build a team of people to go from, like for example, we&#x27;ve got a church that was just planted in September last year in Reynosa, which is on the other side of McAllen, Texas.</span> <span class="tl-s" data-s="1619.62" data-e="1620.63">They left from Juárez.</span> <span class="tl-s" data-s="1621.70" data-e="1632.24">The man there named Marcelo was trained and him and his family, along with I think one or two others, And there were people waiting in the border city.</span> <span class="tl-s" data-s="1632.46" data-e="1636.14">They went there to start and plant a church.</span> <span class="tl-s" data-s="1636.16" data-e="1639.40">And so that&#x27;s where he&#x27;s from.</span> <span class="tl-s" data-s="1639.43" data-e="1643.83">And so what they&#x27;re gonna do is preach the gospel, look to gain converts, and slowly build that church.</span> <span class="tl-s" data-s="1643.83" data-e="1654.08">One of the differences between Mexico and here is if you plant a church in the United States, you can plan on a little bit of transfer growth from others.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1654.08" data-e="1657.42">Transfer growth rather than conversion growth.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1657.42" data-e="1658.02">Right.</span> <span class="tl-s" data-s="1658.04" data-e="1660.72">But most parts of the world, you can&#x27;t do that.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1660.72" data-e="1661.80">Mostly conversion growth they&#x27;re after.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1661.80" data-e="1662.04">Exactly.</span> <span class="tl-s" data-s="1662.04" data-e="1662.44">Harder.</span> <span class="tl-s" data-s="1662.44" data-e="1663.89">It&#x27;s harder, but it&#x27;s also better.</span> <span class="tl-s" data-s="1664.10" data-e="1674.67">I would rather have conversion growth, obviously, than transfer growth, [Speaker B] because [Speaker A] people who transfer in often transfer out.</span> <span class="tl-s" data-s="1674.88" data-e="1676.88">I mean, it&#x27;s like you&#x27;re hopping around.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1676.95" data-e="1677.97">And they&#x27;re already Christians.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1678.07" data-e="1678.60">Yeah, right, exactly.</span> <span class="tl-s" data-s="1678.89" data-e="1680.20">And so it&#x27;s just different in that sense.</span> <span class="tl-s" data-s="1680.25" data-e="1682.00">Culturally, it&#x27;s the same.</span> <span class="tl-s" data-s="1682.09" data-e="1684.54">Same culture, same language, all that stuff.</span> <span class="tl-s" data-s="1684.64" data-e="1688.25">Like methodologically, it looks going to look very similar to what we do here.</span> <span class="tl-s" data-s="1688.25" data-e="1691.08">It&#x27;s just going to be in a different different country.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1691.10" data-e="1691.69">That&#x27;s awesome.</span> <span class="tl-s" data-s="1691.69" data-e="1694.77">Well, that was a wonderful history lesson on the church.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1694.83" data-e="1696.10">Probably too long.</span> <span class="tl-s" data-s="1696.10" data-e="1696.42">Yeah.</span> <span class="tl-s" data-s="1696.43" data-e="1700.17">No, if you guys fast forwarded and used the 15 second jump ahead, I get it.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1700.18" data-e="1702.41">Yeah, somebody&#x27;s got you on chipmunk speed right now.</span> <span class="tl-s" data-s="1702.44" data-e="1703.08">They&#x27;re going.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1704.03" data-e="1704.46">That&#x27;s fine.</span> <span class="tl-s" data-s="1704.46" data-e="1705.17">Do it.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1705.17" data-e="1709.32">But yeah, if you have any more questions about this, please feel free to reach out.</span> <span class="tl-s" data-s="1709.32" data-e="1713.32">This is probably one we could have. spent a couple hours talking about.</span> <span class="tl-s" data-s="1713.32" data-e="1723.07">And it is fascinating just to see the spread of the gospel and the preservation of God, of the Lord&#x27;s church throughout the ages, despite how bad us humans can mess it up from time to time.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1723.34" data-e="1723.44">Totally.</span> <span class="tl-s" data-s="1723.60" data-e="1724.93">And you know what?</span> <span class="tl-s" data-s="1724.96" data-e="1729.17">You can also see, just like, think about the center of Christianity.</span> <span class="tl-s" data-s="1730.15" data-e="1730.41">It has moved.</span> <span class="tl-s" data-s="1730.41" data-e="1735.33">The center of Islam is still the same place it ever was, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1735.37" data-e="1735.43">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1735.53" data-e="1737.61">Center of Hinduism, same place.</span> <span class="tl-s" data-s="1737.61" data-e="1742.24">Hinduism, same place it ever was.</span> <span class="tl-s" data-s="1742.28" data-e="1742.76">Christianity moves.</span> <span class="tl-s" data-s="1742.76" data-e="1747.09">It was Jerusalem, then for a while it was Rome, then it was England.</span> <span class="tl-s" data-s="1747.09" data-e="1750.82">Now it&#x27;s in more Africa and the southern part of the world.</span> <span class="tl-s" data-s="1750.86" data-e="1754.06">So Christianity&#x27;s the only, only faith that does that.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1754.06" data-e="1754.14">Wow.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1754.14" data-e="1755.68">And why is that?</span> <span class="tl-s" data-s="1755.75" data-e="1764.71">That&#x27;s because the Gospel&#x27;s on the move and the Gospel, the word of God, the word of God changes people&#x27;s lives.</span> <span class="tl-s" data-s="1765.12" data-e="1766.57">The Gospel changes people&#x27;s lives.</span> <span class="tl-s" data-s="1766.57" data-e="1769.73">And churches are planted that make a difference in people&#x27;s lives eternally.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1769.73" data-e="1770.02">Amen.</span> <span class="tl-s" data-s="1770.20" data-e="1770.50">That&#x27;s right.</span> <span class="tl-s" data-s="1770.76" data-e="1771.69">That&#x27;s right.</span> <span class="tl-s" data-s="1771.80" data-e="1776.70">Well, just to reiterate, we have a church plant happening in Boise, Idaho.</span> <span class="tl-s" data-s="1776.70" data-e="1788.32">So we just ask if you&#x27;re a member of our church that you pray for that, that you consider going, that you consider contributing.</span> <span class="tl-s" data-s="1788.32" data-e="1793.66">We&#x27;re grateful to be a church that plants other churches and to help the gospel stay on the move.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1793.66" data-e="1793.96">That&#x27;s right.</span> <span class="tl-s" data-s="1793.96" data-e="1794.20">Thanks, everybody.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1794.20" data-e="1794.88">Thank you.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1795.42" data-e="1796.14">See ya.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1796.14" data-e="1797.98">You just took a video for Instagram?</span> <span class="tl-s" data-s="1797.98" data-e="1798.30">I did.</span> <span class="tl-s" data-s="1798.30" data-e="1800.48">Me and my best side.</span> <span class="tl-s" data-s="1800.48" data-e="1800.58">Awesome.</span> <span class="tl-s" data-s="1800.58" data-e="1800.68">Thanks.</span> <span class="tl-s" data-s="1800.68" data-e="1802.63">All sides are your best side.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1802.86" data-e="1803.60">The gram.</span> <span class="tl-s" data-s="1803.60" data-e="1805.12">We call it the gram around here.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1805.12" data-e="1806.06">I&#x27;m [Speaker A] not hip enough.</span> <span class="tl-s" data-s="1806.06" data-e="1806.58">Is that right?</span> <span class="tl-s" data-s="1806.58" data-e="1808.00">Is that what the kids call it?</span> <span class="tl-s" data-s="1808.00" data-e="1811.29">Kids don&#x27;t call it the gram.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1811.29" data-e="1812.64">Kids don&#x27;t call it.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1812.91" data-e="1813.98">They what?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1814.11" data-e="1818.18">Kids don&#x27;t call it.</span> <span class="tl-s" data-s="1818.18" data-e="1818.67">They aren&#x27;t on it.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1818.67" data-e="1819.52">It&#x27;s just for boomers now.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1819.55" data-e="1820.72">They&#x27;re not on it?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1820.83" data-e="1822.29">It&#x27;s for our age.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1822.29" data-e="1823.39">What are they on?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1823.39" data-e="1823.65">Snapchat.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1823.65" data-e="1824.07">Nope.</span> <span class="tl-s" data-s="1824.21" data-e="1824.65">They&#x27;ve moved on.</span> <span class="tl-s" data-s="1825.00" data-e="1826.60">They&#x27;re on BeReal and Lapse and TikTok.</span> <span class="tl-s" data-s="1826.60" data-e="1828.61">I got to stay up with that.</span> <span class="tl-s" data-s="1828.61" data-e="1831.12">I got to know what&#x27;s going on.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1831.35" data-e="1831.41">Lapse?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1831.43" data-e="1831.83">What&#x27;s Lapse?</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1831.89" data-e="1833.19">That&#x27;s new to me.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1833.75" data-e="1833.82">L-A-P-S.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1833.83" data-e="1834.47">It&#x27;s really funny.</span> <span class="tl-s" data-s="1834.47" data-e="1849.11">Think of how young— we&#x27;re older and you guys are older than me, but it mimics a Polaroid camera where you take a picture and it takes 1 hour to develop, and then you share it and it&#x27;s like a network of people sharing Polaroid photos amongst friends.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1849.53" data-e="1850.35">Bring that up on this.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1850.35" data-e="1851.09">Takes an hour?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1851.39" data-e="1854.58">Okay, you can&#x27;t credit for an hour.</span> <span class="tl-s" data-s="1855.32" data-e="1856.47">Stop talking.</span> <span class="tl-s" data-s="1856.51" data-e="1858.66">I want to save this.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1858.66" data-e="1858.66">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1858.66" data-e="1858.66">Okay.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1858.66" data-e="1858.66">Laps.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1858.66" data-e="1858.66">You want me to be on this?</span> <span class="tl-s" data-s="1858.66" data-e="1858.66">Because that&#x27;s shocking.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1858.66" data-e="1858.66">Yeah, I want you to— takes an hour?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1858.66" data-e="1858.66">Look.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1858.66" data-e="1858.66">No, don&#x27;t tell me to look.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1858.66" data-e="1858.66">Like, all right.</span> <span class="tl-s" data-s="1858.66" data-e="1858.66">Yeah.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="1858.66" data-e="1858.66">And</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Fixed on Jesus episode archive, backed by /api/podcast/search.
+  // Static fallback list above stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function fmtDuration(raw) {
+      if (!raw) return "";
+      var str = String(raw).trim();
+      // Anchor feeds report seconds; render as H:MM:SS or M:SS.
+      if (/^\d+$/.test(str)) {
+        var total = parseInt(str, 10);
+        var h = Math.floor(total / 3600);
+        var m = Math.floor((total % 3600) / 60);
+        var sec = total % 60;
+        var mm = (h > 0 && m < 10 ? "0" + m : "" + m);
+        var ss = (sec < 10 ? "0" + sec : "" + sec);
+        return (h > 0 ? h + ":" + mm : m) + ":" + ss;
+      }
+      // Anchor also reports clock strings like "00:24:02" — drop the
+      // redundant leading hour so it reads "24:02".
+      return str.replace(/^00:/, "");
+    }
+    function row(it) {
+      it = it || {};
+      var title = esc(it.title) || "Untitled episode";
+      var tUrl = it.guid && transcriptMap[it.guid];
+      var heading = tUrl
+        ? '<a href="' + esc(tUrl) + '">' + title + "</a>"
+        : (it.link
+          ? '<a href="' + esc(it.link) + '" target="_blank" rel="noopener">' + title + "</a>"
+          : title);
+      var meta = [fmtDate(it.date), fmtDuration(it.duration)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      return '<div class="sermon"><div><h3>' + heading + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    var PER = 10;
+    var state = { q: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No episodes found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " episode" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " episodes";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/podcast/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () {
+          // Keep the static list, but tell the reader where else to listen —
+          // some privacy blockers stop the archive request itself.
+          var note = document.querySelector("[data-sermons-error]");
+          if (note) note.hidden = false;
+        });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    if (monthSel) {
+      monthSel.addEventListener("change", function () {
+        state.month = monthSel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: 15c7a0a9-4a88-4f6e-8c75-21a9162ad826 -->
+</body>
+</html>
