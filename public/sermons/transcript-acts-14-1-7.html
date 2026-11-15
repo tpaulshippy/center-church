@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acts 14: 1-7 — Sermon Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Listen to the latest sermons from Center Church, or follow along on Apple Podcasts and Spotify." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=17" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a class="active" href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/sermons">&larr; All sermons</a>
+          <h1 class="display-lg">Acts 14: 1-7</h1>
+          <p class="transcript-meta">Rich Richardson · Acts · 2026-08-02 · 00:46:46</p>
+          <p class="transcript-desc">Sometimes Jesus divides. Sometimes Jesus unites. But we must always preach Jesus.</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/119cbef70/podcast/play/128974020/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-7%2F436123681-44100-2-9ce78e26811dc32a.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><span class="tl-s" data-s="0.02" data-e="6.78">Good morning.</span> <span class="tl-s" data-s="7.84" data-e="12.40">If I haven&#x27;t met you yet, my name is Rich and I am one of the pastors here at Center Church.</span> <span class="tl-s" data-s="13.00" data-e="14.96">Thank you so much for coming.</span> <span class="tl-s" data-s="15.10" data-e="19.94">There are so many places we know you could be on this day of extreme heat warning.</span> <span class="tl-s" data-s="20.98" data-e="25.52">I don&#x27;t know where we could be without the help from our apple paraphernalia.</span> <span class="tl-s" data-s="25.54" data-e="35.76">I wake up every day and I&#x27;m told extreme heat warning, where were you in 1997, 8, 9, you know, you get it.</span> <span class="tl-s" data-s="35.96" data-e="39.32">So anyway, I guess nobody thought that was funny.</span></p>
+        <p><span class="tl-s" data-s="42.50" data-e="43.56">You&#x27;re not awake yet.</span> <span class="tl-s" data-s="43.66" data-e="44.74">Anyway, anyway, anyway.</span> <span class="tl-s" data-s="45.70" data-e="47.38">My name is Rich, as I said.</span> <span class="tl-s" data-s="47.90" data-e="55.32">Just so you know who we are, we&#x27;re a church that seeks to make much of Jesus Christ and that&#x27;s what we want to do in our service, in everything we do.</span> <span class="tl-s" data-s="55.34" data-e="57.66">That&#x27;s what we also want to do with our children&#x27;s ministry.</span> <span class="tl-s" data-s="57.86" data-e="65.94">And so all that we do, Psalm 78 talks about telling the next generation about the good news, the gospel of Jesus Christ.</span> <span class="tl-s" data-s="66.34" data-e="69.92">And we do that with our children&#x27;s ministry and we&#x27;ll dismiss them in just a moment.</span> <span class="tl-s" data-s="70.16" data-e="83.00">We also do that week to week with an organization or a program we call AWANA, which is a Bible memory program that is every Monday here at the church building for children.</span> <span class="tl-s" data-s="83.02" data-e="92.48">So if you&#x27;re interested in signing up for this year, that starts next week, but the registration is open now on the app.</span></p>
+        <p><span class="tl-s" data-s="92.76" data-e="99.44">Also, starting tonight, we have our youth kickoff night at 6 p.m. here at the building.</span> <span class="tl-s" data-s="99.86" data-e="111.04">It&#x27;s all an effort to ensure that we transfer the truth of the gospel of Jesus Christ from this generation to the next generation.</span> <span class="tl-s" data-s="111.38" data-e="112.98">And we do that and many other things.</span> <span class="tl-s" data-s="113.12" data-e="121.34">So if it&#x27;s your practice to check your children into children&#x27;s ministry, you can go ahead and send your children back through those two doors over there.</span> <span class="tl-s" data-s="121.78" data-e="125.66">And we can make sure they make it safely to children&#x27;s ministry.</span> <span class="tl-s" data-s="126.02" data-e="138.96">For the rest of us, if you can take your Bible and we will continue our series in the book of Acts that displays God&#x27;s limitless power.</span> <span class="tl-s" data-s="139.78" data-e="143.10">We&#x27;re going to be in Acts chapter 14.</span></p>
+        <p><span class="tl-s" data-s="150.02" data-e="152.64">I&#x27;m going to just pray briefly before we open God&#x27;s word.</span></p>
+        <p><span class="tl-s" data-s="158.38" data-e="162.08">Lord, there are many things vying for our attention in our busy world.</span></p>
+        <p><span class="tl-s" data-s="164.32" data-e="172.06">And I pray that for just a few minutes, we would quiet our hearts and turn our attention to you.</span></p>
+        <p><span class="tl-s" data-s="173.66" data-e="185.92">For we know that mankind, none of us, live on bread alone, but everything that comes from your mouth.</span> <span class="tl-s" data-s="187.08" data-e="192.56">And Acts chapter 14 is directly from you to us.</span> <span class="tl-s" data-s="193.82" data-e="195.62">I pray that you would make us attentive.</span></p>
+        <p><span class="tl-s" data-s="197.08" data-e="199.72">I pray that you would give me the gift of self-forgetfulness.</span> <span class="tl-s" data-s="200.92" data-e="203.50">I pray your spirit would be with us in power.</span> <span class="tl-s" data-s="203.66" data-e="210.60">And for your glory and your purposes to be accomplished this morning.</span></p>
+        <p><span class="tl-s" data-s="214.02" data-e="216.18">Jesus, it&#x27;s in your name we pray.</span> <span class="tl-s" data-s="217.18" data-e="219.12">And hope and believe.</span> <span class="tl-s" data-s="220.06" data-e="220.32">Amen.</span></p>
+        <p><span class="tl-s" data-s="221.80" data-e="235.22">There is a line, a line that runs across North America from north to south that inextricably bisects our continent.</span> <span class="tl-s" data-s="235.24" data-e="237.12">It&#x27;s called the Continental Divide.</span> <span class="tl-s" data-s="238.14" data-e="241.48">In some places, the line rises in jagged peaks.</span> <span class="tl-s" data-s="242.30" data-e="244.50">In other places, it&#x27;s barely noticeable.</span> <span class="tl-s" data-s="245.20" data-e="248.36">Kind of a gentle slope across an open plateau.</span> <span class="tl-s" data-s="249.00" data-e="252.62">But over 3,100 miles, it&#x27;s decisive.</span> <span class="tl-s" data-s="253.30" data-e="260.32">A drop of water that lands inches to one side, the western side flows to the Pacific.</span> <span class="tl-s" data-s="260.34" data-e="263.44">Inches to the other, it ends up in the Atlantic.</span></p>
+        <p><span class="tl-s" data-s="264.88" data-e="266.48">Thousands of miles apart.</span></p>
+        <p><span class="tl-s" data-s="267.94" data-e="273.86">From sea to shining sea, there is a division in our continent.</span> <span class="tl-s" data-s="273.88" data-e="279.10">And this divide is absolute and irrevocable.</span></p>
+        <p><span class="tl-s" data-s="281.84" data-e="295.28">In part because Jesus is the most divisive person in all history.</span> <span class="tl-s" data-s="295.84" data-e="304.22">He said so himself in Luke&#x27;s prequel to Acts when he said, Jesus, do you think I have come to bring peace on earth?</span> <span class="tl-s" data-s="304.34" data-e="304.56">No.</span></p>
+        <p><span class="tl-s" data-s="306.18" data-e="307.30">But division.</span></p>
+        <p><span class="tl-s" data-s="308.96" data-e="311.82">Now you might not be used to thinking of him this way, but make no mistake.</span> <span class="tl-s" data-s="311.94" data-e="313.78">He divides fathers from sons.</span> <span class="tl-s" data-s="313.92" data-e="316.10">He divides daughters from mothers.</span> <span class="tl-s" data-s="316.24" data-e="317.72">He divides lifelong friends.</span> <span class="tl-s" data-s="317.98" data-e="320.28">He divides wives from husbands.</span> <span class="tl-s" data-s="320.92" data-e="323.28">And some of you know this by painful experience.</span> <span class="tl-s" data-s="323.80" data-e="330.64">And maybe you have faces in your mind right now that you are divided from because you follow Jesus and they don&#x27;t.</span></p>
+        <p><span class="tl-s" data-s="332.78" data-e="335.88">Jesus may divide, but he also unites.</span> <span class="tl-s" data-s="336.56" data-e="338.20">He unites strangers.</span> <span class="tl-s" data-s="338.52" data-e="339.76">He unites enemies.</span> <span class="tl-s" data-s="340.10" data-e="341.40">He unites rivals.</span> <span class="tl-s" data-s="341.42" data-e="345.86">He unites outsiders and makes them family.</span> <span class="tl-s" data-s="346.24" data-e="347.36">So this is what Jesus does.</span> <span class="tl-s" data-s="347.58" data-e="350.18">He both unites and divides.</span> <span class="tl-s" data-s="351.02" data-e="352.26">And that&#x27;s what we&#x27;re going to see in our passage.</span> <span class="tl-s" data-s="352.60" data-e="353.90">Sometimes Jesus divides.</span> <span class="tl-s" data-s="354.36" data-e="355.72">Sometimes Jesus unites.</span></p>
+        <p><span class="tl-s" data-s="355.92" data-e="358.70">But we all must preach Jesus.</span> <span class="tl-s" data-s="359.46" data-e="361.04">Sometimes Jesus divides.</span> <span class="tl-s" data-s="361.42" data-e="362.72">Sometimes Jesus unites.</span> <span class="tl-s" data-s="362.82" data-e="364.44">But we must preach Jesus.</span> <span class="tl-s" data-s="365.38" data-e="370.12">Some receive the message of grace with gladness and follow Jesus all of their days.</span> <span class="tl-s" data-s="370.14" data-e="376.12">Others hear the very same message of grace at the very same time and reject it.</span> <span class="tl-s" data-s="376.24" data-e="390.24">And two separate eternities away based on the answer to this one simple question.</span> <span class="tl-s" data-s="391.24" data-e="394.46">Will you follow Jesus?</span></p>
+        <p><span class="tl-s" data-s="397.48" data-e="400.46">That message is divisive.</span></p>
+        <p><span class="tl-s" data-s="402.26" data-e="403.48">Jesus knew this.</span> <span class="tl-s" data-s="404.24" data-e="405.92">He warned his disciples of it.</span> <span class="tl-s" data-s="406.72" data-e="408.42">But he calls us to preach it anyway.</span> <span class="tl-s" data-s="409.70" data-e="412.86">And this is not some theoretical mumbo-jumbo.</span> <span class="tl-s" data-s="412.96" data-e="415.70">It&#x27;s worked out in our passage in real time.</span> <span class="tl-s" data-s="416.28" data-e="420.56">In Acts 14, verses 1 through 7.</span> <span class="tl-s" data-s="421.28" data-e="422.92">If you have a Bible, go with me.</span> <span class="tl-s" data-s="423.88" data-e="427.08">And we&#x27;re going to consider the events at Iconium.</span></p>
+        <p><span class="tl-s" data-s="428.58" data-e="429.42">Verse 1.</span> <span class="tl-s" data-s="430.54" data-e="431.96">God&#x27;s word reads this.</span> <span class="tl-s" data-s="431.98" data-e="444.68">Now, at Iconium, they entered together into the Jewish synagogue and spoke in such a way that a great number of both Jews and Greeks believed.</span></p>
+        <p><span class="tl-s" data-s="446.10" data-e="454.00">But the unbelieving Jews stirred up the Gentiles and poisoned their minds against the brothers.</span> <span class="tl-s" data-s="455.10" data-e="456.36">Should be brothers and sisters.</span> <span class="tl-s" data-s="456.38" data-e="462.86">So they remained for a long time, speaking boldly for the Lord.</span> <span class="tl-s" data-s="463.72" data-e="470.26">Who bore witness to the word of his grace, granting signs and wonders to be done by their hands.</span> <span class="tl-s" data-s="471.12" data-e="476.34">But the people of the city were divided.</span> <span class="tl-s" data-s="477.50" data-e="481.30">Some sided with the Jews and some with the apostles.</span> <span class="tl-s" data-s="481.32" data-e="506.12">When an attempt was made by both Gentiles and Jews, with their rulers, to mistreat them and to stone them, they learned of it and fled to Lystra and Derbe, cities of Laconia, and to the surrounding country.</span></p>
+        <p><span class="tl-s" data-s="507.68" data-e="511.28">They, and there they continued to preach the gospel.</span></p>
+        <p><span class="tl-s" data-s="512.76" data-e="514.14">Two points this morning.</span> <span class="tl-s" data-s="514.52" data-e="518.26">Gospel division and gospel danger.</span> <span class="tl-s" data-s="518.84" data-e="521.82">And the danger here is that the first point is much longer.</span> <span class="tl-s" data-s="522.16" data-e="525.22">So fret not if you think, oh, we can&#x27;t get through the second one.</span> <span class="tl-s" data-s="525.29" data-e="525.70">Oh, we will.</span> <span class="tl-s" data-s="525.70" data-e="526.08">We will.</span> <span class="tl-s" data-s="526.24" data-e="527.54">First, gospel division.</span> <span class="tl-s" data-s="528.70" data-e="529.50">Gospel division.</span> <span class="tl-s" data-s="529.66" data-e="536.64">This is, as we see, Luke&#x27;s inspired travel journey with Paul in the first missionary journey.</span> <span class="tl-s" data-s="536.66" data-e="545.76">Now, you&#x27;ll remember last week, if you were here, he preached to a largely Jewish group twice in Pisidian Antioch, and then he got run out of town.</span></p>
+        <p><span class="tl-s" data-s="547.40" data-e="559.14">Undeterred, Paul and Barnabas soldier on, and they walk 90 miles south by southeast and arrive at the Roman province of Iconium on a verdant plain.</span> <span class="tl-s" data-s="560.06" data-e="566.72">Now, just like Antioch, they led to, they went to the local Jewish synagogue, and there again, they were invited to preach.</span> <span class="tl-s" data-s="566.74" data-e="573.02">You&#x27;ll notice through Acts, first they go to the synagogues, then if they&#x27;re kicked out, then they go and preach to the Gentiles.</span> <span class="tl-s" data-s="573.12" data-e="576.06">But every time, they&#x27;ll go to the synagogues again and again and again.</span> <span class="tl-s" data-s="576.40" data-e="578.44">First to the Jew, then to the Gentiles.</span> <span class="tl-s" data-s="578.94" data-e="582.74">Now, they go to the synagogue, and the early returns were wildly successful.</span> <span class="tl-s" data-s="582.90" data-e="583.52">Look at verse 1.</span> <span class="tl-s" data-s="584.30" data-e="593.88">Now, at Iconium, they entered together into the Jewish synagogue, just like I said, and spoke in such a way that a great number of both Jews and Greeks believed.</span> <span class="tl-s" data-s="594.60" data-e="600.18">Here, the gospel is working out its unique, uniting power.</span> <span class="tl-s" data-s="600.74" data-e="602.18">Enemies are becoming family.</span></p>
+        <p><span class="tl-s" data-s="603.26" data-e="607.48">Make no mistake, Jews and Greeks were enemies.</span> <span class="tl-s" data-s="608.12" data-e="612.62">Now, and what we see here is a great number of both Jews and Greeks are believing.</span> <span class="tl-s" data-s="613.12" data-e="617.96">These people, both Jews and Greeks in that culture, were polar opposites.</span> <span class="tl-s" data-s="618.38" data-e="621.74">They disagreed on nearly everything important.</span> <span class="tl-s" data-s="622.14" data-e="626.18">They did not agree politically, culturally, socially, or spiritually.</span> <span class="tl-s" data-s="626.48" data-e="627.90">They ate at different restaurants.</span> <span class="tl-s" data-s="628.18" data-e="629.62">They went to different coffee shops.</span> <span class="tl-s" data-s="629.82" data-e="631.28">They formed different soccer leagues.</span> <span class="tl-s" data-s="631.30" data-e="634.08">They went out of their way to avoid each other.</span> <span class="tl-s" data-s="634.26" data-e="637.48">This was longstanding generational animosity.</span></p>
+        <p><span class="tl-s" data-s="638.32" data-e="640.94">Consider what Greeks said about Jews at the time.</span> <span class="tl-s" data-s="641.30" data-e="646.26">Among all the Jews, they profane what we hold sacred.</span> <span class="tl-s" data-s="647.52" data-e="651.96">And the practices of the Jews are sinister and revolting.</span> <span class="tl-s" data-s="652.26" data-e="655.08">The Greeks looked at the Jews as a danger to society.</span> <span class="tl-s" data-s="655.62" data-e="659.36">Now, the Jews, for their part, had the same attitude when it came to the Greeks.</span> <span class="tl-s" data-s="659.94" data-e="672.36">They said the difference between Jews and Greeks created bitter animosity and the Jews regarded the Greeks as ritually unclean on the level of animals.</span></p>
+        <p><span class="tl-s" data-s="674.36" data-e="684.36">So Jews and Greeks, if we had a picture of them, if you have a picture of them in your mind, they&#x27;re staring at each other with animosity that&#x27;s greater than the Republican-Democrat divide today.</span> <span class="tl-s" data-s="685.60" data-e="686.58">And yet, what do we read?</span> <span class="tl-s" data-s="686.60" data-e="690.02">And yet, what do we read in verse 1?</span> <span class="tl-s" data-s="691.10" data-e="699.14">A great number of both Jews and Greeks believed.</span> <span class="tl-s" data-s="699.72" data-e="701.20">A great number.</span></p>
+        <p><span class="tl-s" data-s="703.24" data-e="708.14">Only Jesus can unite enemies like that.</span> <span class="tl-s" data-s="708.68" data-e="709.86">A great number.</span> <span class="tl-s" data-s="710.76" data-e="715.04">Jesus is divisive, but his message also has the power to unite.</span> <span class="tl-s" data-s="715.56" data-e="717.84">Here, we see adversaries united.</span> <span class="tl-s" data-s="718.72" data-e="722.92">We see long-standing, simmering animosity broken down.</span> <span class="tl-s" data-s="723.18" data-e="725.28">We see prejudices overcome.</span> <span class="tl-s" data-s="725.68" data-e="727.50">We see enemies reconciled.</span> <span class="tl-s" data-s="727.60" data-e="732.54">We see hatred dissolved all in the name of Jesus Christ.</span> <span class="tl-s" data-s="733.24" data-e="736.38">The gospel that divides also reconciles.</span> <span class="tl-s" data-s="736.48" data-e="739.72">The Jews and the Greeks of Iconium prove it.</span></p>
+        <p><span class="tl-s" data-s="739.84" data-e="747.14">These sworn enemies, separated by centuries of mutual contempt, come together and become family.</span> <span class="tl-s" data-s="748.12" data-e="763.00">Not despite their hatred, but through it, this, friends, is a testimony, a testimony to Christ&#x27;s power, and that no human barrier can withstand it.</span> <span class="tl-s" data-s="763.50" data-e="764.96">Sometimes Jesus divides.</span> <span class="tl-s" data-s="765.72" data-e="767.14">Sometimes Jesus unites.</span> <span class="tl-s" data-s="767.26" data-e="769.52">But we must preach Jesus.</span> <span class="tl-s" data-s="770.78" data-e="777.26">See, the Jesus we follow requires and does not merely suggest unity among all of us.</span> <span class="tl-s" data-s="777.88" data-e="789.10">If the Jews and the Greeks here in Acts chapter 14, verse 1, can be united on the same page, serving Jesus, we can be united together as well.</span> <span class="tl-s" data-s="789.12" data-e="792.90">And so we all must ask ourselves the question, are we obeying this directive?</span> <span class="tl-s" data-s="794.18" data-e="797.20">Maybe you think you have good reason to nurse a grudge against someone.</span> <span class="tl-s" data-s="797.48" data-e="798.88">Here&#x27;s a better reason not to.</span></p>
+        <p><span class="tl-s" data-s="799.26" data-e="803.32">Jesus secured your forgiveness by dying in your place.</span> <span class="tl-s" data-s="803.62" data-e="808.34">To forgive is to choose not to hold someone responsible for what they did to you.</span> <span class="tl-s" data-s="808.52" data-e="810.56">And that&#x27;s what Jesus has done for us.</span> <span class="tl-s" data-s="811.72" data-e="813.28">To forgive seems unjust.</span> <span class="tl-s" data-s="813.40" data-e="814.10">It seems wrong.</span> <span class="tl-s" data-s="814.42" data-e="817.42">But real forgiveness always feels like death.</span> <span class="tl-s" data-s="818.28" data-e="827.40">But friends, we have no choice but to forgive because we have been forgiven.</span> <span class="tl-s" data-s="828.40" data-e="844.44">As one man says, if Jesus died to forgive you of your infinite debt to him, how can you not forgive the wrongdoer his finite debt to you?</span></p>
+        <p><span class="tl-s" data-s="846.24" data-e="847.46">Don&#x27;t get me wrong.</span> <span class="tl-s" data-s="848.28" data-e="849.16">Forgiveness is not easy.</span> <span class="tl-s" data-s="849.18" data-e="850.00">Forgiveness is not easy.</span> <span class="tl-s" data-s="851.22" data-e="852.60">But it&#x27;s necessary.</span> <span class="tl-s" data-s="853.84" data-e="854.32">Why?</span> <span class="tl-s" data-s="855.72" data-e="857.14">Because we follow Jesus.</span></p>
+        <p><span class="tl-s" data-s="858.90" data-e="860.06">Because he&#x27;s our Lord.</span> <span class="tl-s" data-s="861.40" data-e="865.56">May we stand together always because we stand with Jesus.</span> <span class="tl-s" data-s="866.64" data-e="870.46">Here in verse 1, the gospel, Jesus unites.</span> <span class="tl-s" data-s="870.60" data-e="871.88">But the story takes a turn.</span></p>
+        <p><span class="tl-s" data-s="873.30" data-e="875.54">As it will often enact in verse 2.</span> <span class="tl-s" data-s="875.56" data-e="889.44">But, the unbelieving Jews, another category of Jewish people, stirred up the Gentiles, who were also unbelieving, and poisoned their minds against the brothers and sisters.</span> <span class="tl-s" data-s="890.60" data-e="897.26">So, unbelieving Jews reach out their hand of cooperation to their arch enemies, the Gentiles.</span> <span class="tl-s" data-s="897.28" data-e="899.98">A sinister coalition is forged.</span> <span class="tl-s" data-s="900.44" data-e="904.90">Sometimes the gospel unites natural opponents into temporary allies.</span> <span class="tl-s" data-s="905.92" data-e="909.18">This is like Thanos and Captain America joining forces against something.</span></p>
+        <p><span class="tl-s" data-s="911.50" data-e="913.52">And what do they join forces against?</span> <span class="tl-s" data-s="914.04" data-e="915.80">What do the Jews and Gentiles decide?</span> <span class="tl-s" data-s="915.82" data-e="918.36">We will put aside our natural animosity.</span> <span class="tl-s" data-s="918.76" data-e="922.32">We&#x27;ll put aside all the ways that we hate each other because we hate this more.</span> <span class="tl-s" data-s="922.46" data-e="923.06">And what is it?</span></p>
+        <p><span class="tl-s" data-s="924.84" data-e="926.20">The people of Jesus.</span></p>
+        <p><span class="tl-s" data-s="927.80" data-e="929.28">Those who follow Jesus.</span></p>
+        <p><span class="tl-s" data-s="932.02" data-e="934.88">Herod and Pilate became friends at Jesus&#x27; trial.</span> <span class="tl-s" data-s="935.50" data-e="938.04">Pharisees and Sadducees united against the apostles.</span> <span class="tl-s" data-s="938.60" data-e="943.50">In our day, secular and religious voices aligned to marginalize us who follow Jesus.</span> <span class="tl-s" data-s="944.34" data-e="945.44">It happens here.</span> <span class="tl-s" data-s="945.60" data-e="946.36">It happens now.</span> <span class="tl-s" data-s="946.44" data-e="947.46">And it will continue to happen.</span></p>
+        <p><span class="tl-s" data-s="949.22" data-e="957.82">Here in verse 2, on one side, Jew and Gentiles forge an alliance of vitriol and slander.</span> <span class="tl-s" data-s="958.60" data-e="961.00">On the other side, we have another group of people.</span> <span class="tl-s" data-s="961.88" data-e="967.28">In verse 1, Luke says there were Jews and Greeks who believed.</span> <span class="tl-s" data-s="967.62" data-e="969.52">What does he say here in verse 2?</span></p>
+        <p><span class="tl-s" data-s="971.88" data-e="972.88">There&#x27;s a shift.</span> <span class="tl-s" data-s="974.16" data-e="974.66">The brothers.</span> <span class="tl-s" data-s="975.54" data-e="977.24">That should read the brothers and the sisters.</span> <span class="tl-s" data-s="978.30" data-e="979.70">That&#x27;s the family of God.</span> <span class="tl-s" data-s="979.80" data-e="980.64">That&#x27;s the church.</span> <span class="tl-s" data-s="981.54" data-e="983.04">This is more than a label change.</span> <span class="tl-s" data-s="983.14" data-e="987.68">This is a description of a brand new identity that&#x27;s burst forth here in Iconium.</span> <span class="tl-s" data-s="987.70" data-e="989.16">In verse 2, family.</span></p>
+        <p><span class="tl-s" data-s="990.78" data-e="994.76">Where they were once Jews and Greeks, now they are one in Christ Jesus.</span></p>
+        <p><span class="tl-s" data-s="997.08" data-e="1001.92">Friends, when we meet Jesus, we are adopted into his family.</span> <span class="tl-s" data-s="1002.08" data-e="1005.72">God becomes our father, God becomes our father, and none of us are only children.</span></p>
+        <p><span class="tl-s" data-s="1007.42" data-e="1008.46">We&#x27;re a family.</span></p>
+        <p><span class="tl-s" data-s="1010.06" data-e="1011.24">And we need each other.</span> <span class="tl-s" data-s="1011.50" data-e="1015.92">To be linked to Jesus is to be linked to other Christians.</span> <span class="tl-s" data-s="1016.12" data-e="1019.64">And if you&#x27;re not, you should question whether you are a Christian at all.</span></p>
+        <p><span class="tl-s" data-s="1022.34" data-e="1025.20">When we&#x27;re united to Jesus, we&#x27;re united to one another.</span> <span class="tl-s" data-s="1025.30" data-e="1026.02">That&#x27;s the pattern.</span> <span class="tl-s" data-s="1027.08" data-e="1027.84">That&#x27;s the pattern.</span> <span class="tl-s" data-s="1027.98" data-e="1031.32">See, remember we said Jesus is divisive.</span> <span class="tl-s" data-s="1031.86" data-e="1038.84">Here, natural enemies forge alliances to slander the people of God.</span></p>
+        <p><span class="tl-s" data-s="1040.98" data-e="1041.86">See that word?</span> <span class="tl-s" data-s="1042.42" data-e="1047.32">They poison, in verse 2, they poison their minds against the brothers.</span> <span class="tl-s" data-s="1047.42" data-e="1047.88">What does that mean?</span> <span class="tl-s" data-s="1048.10" data-e="1048.92">They&#x27;re lying.</span> <span class="tl-s" data-s="1050.24" data-e="1051.82">They&#x27;re misrepresenting.</span> <span class="tl-s" data-s="1052.78" data-e="1059.04">They&#x27;re telling, they&#x27;re saying mean things about the Christian family of God there.</span> <span class="tl-s" data-s="1060.02" data-e="1062.20">This is what always happens.</span> <span class="tl-s" data-s="1063.06" data-e="1065.32">This is what always happens.</span></p>
+        <p><span class="tl-s" data-s="1066.84" data-e="1075.96">Friends, as Christians in a culture that is not Christian, we should expect to be opposed.</span></p>
+        <p><span class="tl-s" data-s="1077.98" data-e="1080.10">That&#x27;s baked into what we believe.</span> <span class="tl-s" data-s="1080.94" data-e="1093.78">But may we be opposed, not for our political perspectives, or what we think about medical care, or what we think about investments, or what we think about how to retire, but what we think about Jesus.</span></p>
+        <p><span class="tl-s" data-s="1098.20" data-e="1102.76">And may we stand together as brothers and sisters, no matter what comes.</span></p>
+        <p><span class="tl-s" data-s="1104.64" data-e="1116.48">So, as the rising tide of opposition, as the cultural norms start to shift in Iconium, as everybody stands together against the brothers and sisters, what are they going to do?</span> <span class="tl-s" data-s="1117.32" data-e="1122.10">Verse 3, so, they remain for a long time.</span> <span class="tl-s" data-s="1122.94" data-e="1123.82">I love that.</span></p>
+        <p><span class="tl-s" data-s="1125.56" data-e="1133.46">Commentators, people who get paid to write books about books of the Bible, which are sometimes helpful, most of the time not.</span> <span class="tl-s" data-s="1134.16" data-e="1137.36">Some of them look at verse 3 and say, that can&#x27;t be right.</span></p>
+        <p><span class="tl-s" data-s="1139.16" data-e="1141.66">There&#x27;s this rising tide, so they stay.</span> <span class="tl-s" data-s="1142.02" data-e="1142.46">Yeah, right.</span> <span class="tl-s" data-s="1143.52" data-e="1150.60">And to me, if I sat down and talked to one of those stuffed shirt guys who has a pipe in his mouth, I&#x27;d say, then you don&#x27;t understand what it means to be a Christian.</span> <span class="tl-s" data-s="1151.74" data-e="1155.40">We stay in the face of opposition.</span> <span class="tl-s" data-s="1155.62" data-e="1156.68">And what did they do?</span> <span class="tl-s" data-s="1157.96" data-e="1178.68">Friends, it&#x27;s very tempting to speak boldly about a great many things.</span></p>
+        <p><span class="tl-s" data-s="1180.48" data-e="1186.22">Political agendas, culture wars, personal grievances, ideological crusades, personal preferences.</span> <span class="tl-s" data-s="1186.60" data-e="1191.34">It&#x27;s easy to speak boldly about those things, but may we speak boldly about the Lord.</span></p>
+        <p><span class="tl-s" data-s="1194.16" data-e="1200.56">There&#x27;s a world of people who have bigger platforms than we will ever have who can speak about all those kinds of things.</span> <span class="tl-s" data-s="1200.66" data-e="1202.04">And there&#x27;s a place to talk about it.</span> <span class="tl-s" data-s="1202.60" data-e="1216.10">But we Christians are the only ones who can and must speak boldly for the Lord, even and especially in the face of opposition.</span></p>
+        <p><span class="tl-s" data-s="1218.94" data-e="1231.46">Even as wave after wave of slander and vilification and lies kept hitting them again and again and again and again, they were not silent.</span> <span class="tl-s" data-s="1231.48" data-e="1234.90">As popular opinion turned, they kept speaking.</span></p>
+        <p><span class="tl-s" data-s="1236.58" data-e="1249.56">As people looked at them with faces of displeasure, as popular, as the sentiment pushed against them, they fought back, not with asserting their rights, but speaking boldly for the Lord.</span></p>
+        <p><span class="tl-s" data-s="1251.00" data-e="1252.50">And what did the Lord do?</span> <span class="tl-s" data-s="1253.28" data-e="1254.70">What did the Lord do?</span> <span class="tl-s" data-s="1254.82" data-e="1256.34">Look at the second half of verse 3.</span> <span class="tl-s" data-s="1256.84" data-e="1257.66">Here&#x27;s what the Lord did.</span> <span class="tl-s" data-s="1257.76" data-e="1258.92">He bore witness.</span> <span class="tl-s" data-s="1259.88" data-e="1266.70">He bore witness to the word of his grace, granting signs and wonders to be done by their hands.</span> <span class="tl-s" data-s="1267.38" data-e="1271.70">He bore witness to the word of his grace, granting signs.</span> <span class="tl-s" data-s="1271.76" data-e="1273.82">So they&#x27;re boldly speaking the name of Jesus.</span> <span class="tl-s" data-s="1273.84" data-e="1280.56">And notice the three-word description of how they spoke and what they said.</span> <span class="tl-s" data-s="1280.82" data-e="1284.04">The word of his grace.</span></p>
+        <p><span class="tl-s" data-s="1284.56" data-e="1285.86">Do you hear?</span> <span class="tl-s" data-s="1286.32" data-e="1289.76">And do you know the word of his grace?</span> <span class="tl-s" data-s="1289.88" data-e="1293.28">That&#x27;s the sum and substance of the gospel right there.</span> <span class="tl-s" data-s="1293.38" data-e="1294.58">The word of his grace.</span> <span class="tl-s" data-s="1295.38" data-e="1296.52">Have you heard it?</span> <span class="tl-s" data-s="1296.82" data-e="1297.54">Do you know it?</span></p>
+        <p><span class="tl-s" data-s="1299.18" data-e="1302.20">Grace is that reality.</span> <span class="tl-s" data-s="1302.52" data-e="1306.38">It&#x27;s the way the Lord treats us.</span> <span class="tl-s" data-s="1307.32" data-e="1311.20">Grace is that the Lord loves us with an eternal love.</span> <span class="tl-s" data-s="1312.16" data-e="1315.60">That he sent his one and only son to earth to die.</span> <span class="tl-s" data-s="1315.78" data-e="1316.86">His beloved son.</span> <span class="tl-s" data-s="1317.12" data-e="1318.20">The delight of his eyes.</span> <span class="tl-s" data-s="1318.42" data-e="1319.56">The fairest of all.</span> <span class="tl-s" data-s="1320.78" data-e="1321.68">That&#x27;s the word of grace.</span> <span class="tl-s" data-s="1321.80" data-e="1323.10">But the word of grace says more.</span> <span class="tl-s" data-s="1323.38" data-e="1330.94">It says that Jesus departed his unbroken fellowship with the Father and the Spirit in the great beyond to come to earth.</span></p>
+        <p><span class="tl-s" data-s="1330.96" data-e="1334.80">He made a choice that none of us would have made if we were given the chance.</span> <span class="tl-s" data-s="1334.92" data-e="1335.98">That&#x27;s the word of grace.</span></p>
+        <p><span class="tl-s" data-s="1337.44" data-e="1339.14">And he came to live as a man.</span> <span class="tl-s" data-s="1339.42" data-e="1341.46">Heaven then bent low to touch earth.</span> <span class="tl-s" data-s="1341.68" data-e="1346.96">He condescended by becoming a man, a person, a human like us.</span> <span class="tl-s" data-s="1347.16" data-e="1349.44">The creator became one of his creatures.</span> <span class="tl-s" data-s="1349.76" data-e="1357.64">He did not arrive on earth to royal acclaim but was born into obscurity, into the house that was once great but by then anonymous.</span></p>
+        <p><span class="tl-s" data-s="1359.20" data-e="1366.08">Then he lived a perfect life but yet in his perfect life he was called a man of sorrows who was acquainted with grief.</span> <span class="tl-s" data-s="1366.26" data-e="1368.72">This is the word of grace but the word of grace says more.</span> <span class="tl-s" data-s="1368.98" data-e="1372.58">The word of grace says this perfect man was killed.</span> <span class="tl-s" data-s="1372.82" data-e="1373.64">He was murdered.</span> <span class="tl-s" data-s="1373.66" data-e="1386.26">He was hung on a cross and he remained silent when at a word he could have called every angel from heaven to bring him down and shut every mouth of all the scoffers arrayed around him.</span> <span class="tl-s" data-s="1386.54" data-e="1390.54">Instead he opened his mouth and said, my God, my God, why have you forsaken me?</span> <span class="tl-s" data-s="1390.70" data-e="1394.50">And the answer to that question, friends, is grace and it&#x27;s this.</span> <span class="tl-s" data-s="1394.78" data-e="1396.18">Why did he get forsaken?</span> <span class="tl-s" data-s="1396.20" data-e="1397.56">So that we might never be.</span></p>
+        <p><span class="tl-s" data-s="1401.62" data-e="1407.70">It&#x27;s the word of grace that we build our lives, our hopes, our eternities on.</span></p>
+        <p><span class="tl-s" data-s="1409.22" data-e="1423.32">It&#x27;s the word of grace that when we hear it and recognize what Jesus did for us, how the Father poured his wrath upon the Son, it makes us wonder, who does he love more?</span> <span class="tl-s" data-s="1424.10" data-e="1425.84">Me or Jesus?</span></p>
+        <p><span class="tl-s" data-s="1429.44" data-e="1437.54">The word of grace says the wrath of God that we so richly deserve was placed upon him.</span> <span class="tl-s" data-s="1438.28" data-e="1451.22">That wrath, that punishment was so thoroughly associated with Jesus that Paul could say, for our sake, he who knew no sin became sin so that we might know the righteousness of God.</span> <span class="tl-s" data-s="1451.30" data-e="1452.28">That&#x27;s the word of grace, that&#x27;s the word of grace.</span> <span class="tl-s" data-s="1452.30" data-e="1452.46">That&#x27;s the word of grace.</span> <span class="tl-s" data-s="1452.48" data-e="1454.42">But the word of grace says more.</span> <span class="tl-s" data-s="1454.72" data-e="1457.28">Jesus died, but he took up his life again.</span> <span class="tl-s" data-s="1458.04" data-e="1459.92">The grave could not shackle him.</span> <span class="tl-s" data-s="1460.50" data-e="1462.36">The grave could not hold him.</span> <span class="tl-s" data-s="1462.64" data-e="1464.44">The grave could not have him forever.</span> <span class="tl-s" data-s="1464.78" data-e="1466.50">He defeated the grave.</span></p>
+        <p><span class="tl-s" data-s="1466.70" data-e="1470.98">Not to show how powerful he was, though it shows that, but for us.</span> <span class="tl-s" data-s="1471.16" data-e="1475.76">So that we might not face eternal death.</span></p>
+        <p><span class="tl-s" data-s="1479.14" data-e="1483.42">So that all who receive the word will be saved.</span> <span class="tl-s" data-s="1483.44" data-e="1484.82">That&#x27;s the word of grace.</span></p>
+        <p><span class="tl-s" data-s="1486.30" data-e="1496.06">And friends, by grace, we have been given, as Ephesians 1 says, every spiritual blessings in the heavenly realms.</span> <span class="tl-s" data-s="1496.40" data-e="1499.16">Every spiritual blessing in the heavenly realms.</span> <span class="tl-s" data-s="1499.38" data-e="1508.92">And I don&#x27;t know that I can explain what that is, but I&#x27;m so glad it says every spiritual blessing in the heavenly realms and not every temporal blessing in the earthly realms.</span> <span class="tl-s" data-s="1509.22" data-e="1509.50">Why?</span> <span class="tl-s" data-s="1509.78" data-e="1512.16">Because temporal blessings can come and go.</span> <span class="tl-s" data-s="1512.18" data-e="1517.78">And it may sound great to have big houses and perfect health and families all being exactly the way you want it to be.</span> <span class="tl-s" data-s="1518.00" data-e="1520.44">But those are not the blessings that the Lord promises.</span> <span class="tl-s" data-s="1520.72" data-e="1524.14">He promises something bigger and grander and more significant.</span> <span class="tl-s" data-s="1524.48" data-e="1527.08">He promises something that cannot be taken away.</span> <span class="tl-s" data-s="1527.42" data-e="1535.80">He promises that we are his forever because we, as Christians, are sons and daughters of God Most High.</span></p>
+        <p><span class="tl-s" data-s="1535.82" data-e="1538.92">And friends, that is the word of grace.</span> <span class="tl-s" data-s="1539.26" data-e="1548.30">We are that before him, not because we obeyed, not because we&#x27;re better than other people, because Jesus is our substitute.</span> <span class="tl-s" data-s="1549.46" data-e="1550.36">That&#x27;s the word of grace.</span> <span class="tl-s" data-s="1550.38" data-e="1550.88">That&#x27;s the word of grace.</span></p>
+        <p><span class="tl-s" data-s="1555.22" data-e="1556.46">That&#x27;s the word of grace.</span> <span class="tl-s" data-s="1556.82" data-e="1558.86">That&#x27;s what we speak boldly.</span> <span class="tl-s" data-s="1559.24" data-e="1559.94">And you know what?</span> <span class="tl-s" data-s="1560.72" data-e="1565.50">Sometimes that message, the word of grace, it divides.</span> <span class="tl-s" data-s="1566.50" data-e="1567.50">Sometimes it unites.</span> <span class="tl-s" data-s="1568.00" data-e="1571.32">But it&#x27;s what wants, it&#x27;s got to be the message that&#x27;s on our lips.</span></p>
+        <p><span class="tl-s" data-s="1573.26" data-e="1574.24">That we have no choice.</span> <span class="tl-s" data-s="1574.90" data-e="1578.16">And here, oh goodness, here, did you see what the Lord does?</span> <span class="tl-s" data-s="1579.38" data-e="1580.96">They speak boldly for the Lord.</span> <span class="tl-s" data-s="1581.20" data-e="1582.38">They speak the word of grace.</span> <span class="tl-s" data-s="1582.54" data-e="1585.80">And the Lord himself verifies.</span> <span class="tl-s" data-s="1586.60" data-e="1587.74">He verifies.</span> <span class="tl-s" data-s="1588.06" data-e="1589.08">He validates.</span> <span class="tl-s" data-s="1590.16" data-e="1594.08">He shows himself to be the God who cannot be put in a box.</span></p>
+        <p><span class="tl-s" data-s="1595.66" data-e="1606.84">By allowing them to perform signs and wonders, wouldn&#x27;t it be great to see days like that here and now?</span></p>
+        <p><span class="tl-s" data-s="1608.44" data-e="1613.74">Oh, I, I, listen, I&#x27;d give my eye teeth and ten years of my life to be able to see that.</span></p>
+        <p><span class="tl-s" data-s="1617.00" data-e="1628.76">To see lame people walking, deaf people hearing, blind people seeing, the sick made whole, and most of all, the spiritually dead brought to life.</span></p>
+        <p><span class="tl-s" data-s="1630.44" data-e="1636.80">I hope one day, here at our church, we experience the hand of God like that.</span> <span class="tl-s" data-s="1637.98" data-e="1639.46">It would be wonderful.</span> <span class="tl-s" data-s="1639.74" data-e="1644.86">It would be a blessing from God that I have prayed for for years.</span> <span class="tl-s" data-s="1644.88" data-e="1653.14">That for just a little while, the presence of God would fill this place and all of us.</span> <span class="tl-s" data-s="1653.84" data-e="1659.92">So that we would be transformed into something like a suburb of heaven.</span> <span class="tl-s" data-s="1661.26" data-e="1665.62">Giving us a taste of eternal bliss.</span></p>
+        <p><span class="tl-s" data-s="1667.38" data-e="1670.78">Reminding us what we&#x27;re created for.</span></p>
+        <p><span class="tl-s" data-s="1672.94" data-e="1674.74">That&#x27;s what happens here in Iconium.</span> <span class="tl-s" data-s="1675.30" data-e="1676.66">And it can happen in Gilbert.</span></p>
+        <p><span class="tl-s" data-s="1679.66" data-e="1680.86">Those days aren&#x27;t over.</span> <span class="tl-s" data-s="1681.74" data-e="1685.50">Lord, send your spirit in power.</span></p>
+        <p><span class="tl-s" data-s="1687.90" data-e="1697.66">Now you would think, with miracles busting out all over the place, that everybody in Iconium&#x27;s beating a path to the apostles, saying, what must we do to be saved?</span> <span class="tl-s" data-s="1697.86" data-e="1700.58">We can&#x27;t deny that the Lord is with you.</span></p>
+        <p><span class="tl-s" data-s="1702.68" data-e="1703.12">Wrong.</span> <span class="tl-s" data-s="1703.84" data-e="1704.58">Verse 4.</span> <span class="tl-s" data-s="1705.58" data-e="1708.52">But, the people of the city were divided.</span></p>
+        <p><span class="tl-s" data-s="1709.96" data-e="1713.08">Some sided with the Jews, and some with the apostles.</span></p>
+        <p><span class="tl-s" data-s="1715.02" data-e="1722.24">The division grows and gets wider, even in the face of signs and wonders.</span> <span class="tl-s" data-s="1723.38" data-e="1726.72">Have you ever heard someone say, if I just saw a miracle, then I would believe.</span></p>
+        <p><span class="tl-s" data-s="1728.38" data-e="1733.58">I had a friend who used to say when I was a little kid, probably, probably not.</span> <span class="tl-s" data-s="1734.78" data-e="1736.68">If I just saw a miracle, I would believe.</span> <span class="tl-s" data-s="1736.94" data-e="1738.16">Probably, probably not.</span> <span class="tl-s" data-s="1738.26" data-e="1738.92">That&#x27;s how you would say it.</span> <span class="tl-s" data-s="1739.08" data-e="1739.38">Maybe.</span> <span class="tl-s" data-s="1740.34" data-e="1740.96">Probably not.</span></p>
+        <p><span class="tl-s" data-s="1742.42" data-e="1744.28">But, nonetheless, Jesus divides.</span> <span class="tl-s" data-s="1744.48" data-e="1745.64">Jesus sometimes unites.</span> <span class="tl-s" data-s="1745.76" data-e="1750.36">But, we must preach Jesus, whether it brings division or unity.</span></p>
+        <p><span class="tl-s" data-s="1753.82" data-e="1755.16">We&#x27;ve seen gospel division.</span> <span class="tl-s" data-s="1755.32" data-e="1756.96">Now, we see gospel danger.</span> <span class="tl-s" data-s="1757.94" data-e="1760.18">What happens next is an old predictable story.</span> <span class="tl-s" data-s="1760.32" data-e="1765.30">The coalition of former enemies enlists the aid of government officials.</span> <span class="tl-s" data-s="1766.00" data-e="1767.06">That&#x27;s how it goes.</span> <span class="tl-s" data-s="1767.08" data-e="1767.92">Verse 5.</span> <span class="tl-s" data-s="1768.25" data-e="1783.62">When an attempt was made by both Gentiles and Jews with their rulers to mistreat them and stone them, which has nothing to do with THC or cannabis, they, what do they do, right?</span> <span class="tl-s" data-s="1783.90" data-e="1786.22">The politicians are enlisted.</span> <span class="tl-s" data-s="1787.30" data-e="1788.38">Notice this, friends.</span> <span class="tl-s" data-s="1788.86" data-e="1795.80">Rulers and politicians of every age, even our own, are interested in getting re-elected.</span></p>
+        <p><span class="tl-s" data-s="1795.82" data-e="1797.78">They&#x27;re not interested in what is right.</span> <span class="tl-s" data-s="1797.98" data-e="1799.60">They&#x27;re interested in what is popular.</span></p>
+        <p><span class="tl-s" data-s="1801.58" data-e="1808.14">And here, the public opinion polls in Iconium shifted.</span></p>
+        <p><span class="tl-s" data-s="1809.82" data-e="1822.22">And one of the most enduring tools Satan has, as he rages against Christians, is the tool of state-sponsored persecution.</span></p>
+        <p><span class="tl-s" data-s="1824.00" data-e="1833.92">And this is a pattern that&#x27;s going to emerge again and again in Acts that has continued down from the beginning all the way until today.</span> <span class="tl-s" data-s="1834.36" data-e="1847.94">Have you ever wondered why Islam and Hinduism and New Ageism and Transcendentalism and Atheism and Jehovah&#x27;s Witnesses and Mormons get a free pass and Christianity, Christians are marginalized and persecuted and looked down on.</span> <span class="tl-s" data-s="1848.18" data-e="1850.08">We look around and we say, not fair.</span> <span class="tl-s" data-s="1850.98" data-e="1851.70">That&#x27;s not right.</span></p>
+        <p><span class="tl-s" data-s="1853.24" data-e="1854.12">Do you know why?</span> <span class="tl-s" data-s="1855.04" data-e="1857.40">We are opposed by the evil one.</span></p>
+        <p><span class="tl-s" data-s="1859.74" data-e="1864.94">This deceiver who does not sleep and does not rest.</span></p>
+        <p><span class="tl-s" data-s="1866.58" data-e="1874.66">He lives to steal, kill, destroy, deceive, and pull us down.</span></p>
+        <p><span class="tl-s" data-s="1878.42" data-e="1879.36">Don&#x27;t believe me?</span> <span class="tl-s" data-s="1880.40" data-e="1885.02">Revelation 12, 17 gives Satan&#x27;s whole disposition.</span> <span class="tl-s" data-s="1885.22" data-e="1886.86">All he&#x27;s doing right now is this.</span> <span class="tl-s" data-s="1887.66" data-e="1890.60">Then the dragon, that&#x27;s Satan, became furious.</span> <span class="tl-s" data-s="1891.20" data-e="1892.76">He went off to make war on who?</span> <span class="tl-s" data-s="1893.10" data-e="1898.18">On those who keep the commandments of God and hold the testimony of Jesus.</span> <span class="tl-s" data-s="1898.38" data-e="1898.94">That&#x27;s us.</span> <span class="tl-s" data-s="1899.62" data-e="1903.60">So all he cares about right now is trying to destroy us.</span> <span class="tl-s" data-s="1903.68" data-e="1904.28">He&#x27;s furious.</span> <span class="tl-s" data-s="1904.58" data-e="1905.34">He&#x27;s enraged.</span></p>
+        <p><span class="tl-s" data-s="1905.56" data-e="1907.66">And he does not play fair.</span> <span class="tl-s" data-s="1908.76" data-e="1914.80">He has used governments to attempt to stamp out Christianity in the past and he will do it again.</span> <span class="tl-s" data-s="1916.16" data-e="1917.34">He did it with the Nazis.</span> <span class="tl-s" data-s="1918.16" data-e="1919.42">He&#x27;s done it with the communists.</span> <span class="tl-s" data-s="1919.72" data-e="1920.94">He&#x27;s done it with monarchs.</span></p>
+        <p><span class="tl-s" data-s="1922.74" data-e="1924.42">He does it with democracies.</span></p>
+        <p><span class="tl-s" data-s="1929.08" data-e="1940.08">The evil one, until the end, will work in cooperation with government officials to push Christians down and marginalize the message of the gospel.</span></p>
+        <p><span class="tl-s" data-s="1942.06" data-e="1943.12">That&#x27;s the way it is.</span> <span class="tl-s" data-s="1944.04" data-e="1949.36">And some people are going to say, in the face of all this trouble and persecution, forget Jesus.</span> <span class="tl-s" data-s="1950.28" data-e="1951.42">I&#x27;m going to pick safety.</span> <span class="tl-s" data-s="1952.64" data-e="1955.36">I&#x27;m going to pick the ability to decide where I live.</span> <span class="tl-s" data-s="1955.42" data-e="1959.28">I&#x27;m going to pick the ability to have freedom.</span> <span class="tl-s" data-s="1959.96" data-e="1967.94">One of the ways in which the communists in Russia worked against families Christians would stand strong for a long time.</span> <span class="tl-s" data-s="1968.12" data-e="1972.62">But then when they said, if you&#x27;re a Christian, you can&#x27;t send your children to college, people fell away.</span></p>
+        <p><span class="tl-s" data-s="1974.06" data-e="1974.46">Why?</span> <span class="tl-s" data-s="1974.58" data-e="1976.32">Because they wanted a future for their children.</span></p>
+        <p><span class="tl-s" data-s="1979.28" data-e="1980.92">They fell away from the church.</span></p>
+        <p><span class="tl-s" data-s="1985.16" data-e="1988.86">Friends, the evil one is coming for us.</span></p>
+        <p><span class="tl-s" data-s="1991.18" data-e="1992.56">And he&#x27;s not going to stop.</span> <span class="tl-s" data-s="1993.36" data-e="2000.70">We can avoid unnecessary heartache if we remember that we will always be opposed.</span> <span class="tl-s" data-s="2001.60" data-e="2004.04">We shouldn&#x27;t expect fair treatment from the media.</span></p>
+        <p><span class="tl-s" data-s="2005.46" data-e="2008.60">We shouldn&#x27;t expect a reasonable hearing in the public square.</span> <span class="tl-s" data-s="2009.34" data-e="2012.92">We shouldn&#x27;t expect unsaved neighbors to champion our rights.</span> <span class="tl-s" data-s="2014.28" data-e="2019.24">We shouldn&#x27;t expect secular institutions to protect our consciences or our freedoms.</span> <span class="tl-s" data-s="2019.56" data-e="2020.70">We are opposed.</span> <span class="tl-s" data-s="2020.84" data-e="2026.00">When we have those things, praise the Lord, we are opposed.</span></p>
+        <p><span class="tl-s" data-s="2028.26" data-e="2033.94">But he that is with us is greater than he that is against us.</span></p>
+        <p><span class="tl-s" data-s="2037.96" data-e="2040.94">The media may not treat us fair, but they don&#x27;t have the final word.</span></p>
+        <p><span class="tl-s" data-s="2043.90" data-e="2047.34">This kingdom seems powerful, but it&#x27;s not the kingdom that will last.</span> <span class="tl-s" data-s="2048.46" data-e="2052.64">There&#x27;s not going to be a corner in heaven that celebrates the United States, friends.</span> <span class="tl-s" data-s="2053.72" data-e="2055.38">The Constitution is not up there.</span></p>
+        <p><span class="tl-s" data-s="2058.22" data-e="2060.18">There&#x27;s only one kingdom that endures.</span> <span class="tl-s" data-s="2060.20" data-e="2063.82">There&#x27;s only one king who&#x27;s king above all kings.</span> <span class="tl-s" data-s="2064.58" data-e="2067.76">And expect that king to trample on all his enemies.</span></p>
+        <p><span class="tl-s" data-s="2069.86" data-e="2071.20">And expect us.</span> <span class="tl-s" data-s="2071.32" data-e="2078.02">One day, one day, one day, all of us in here who are genuinely Christians, we&#x27;re going to have a front row seat to the time.</span> <span class="tl-s" data-s="2078.94" data-e="2085.14">Jesus takes the devil and the dragon, whatever you want to call it, old scratch, Beelzebub, he has a ton of names.</span> <span class="tl-s" data-s="2085.38" data-e="2089.58">He&#x27;s going to get him by the scruff of his neck and throw him in the lake of fire.</span> <span class="tl-s" data-s="2090.38" data-e="2096.02">And we&#x27;re going to watch him burn and we&#x27;re going to cheer and it&#x27;s going to be a great day.</span></p>
+        <p><span class="tl-s" data-s="2097.70" data-e="2098.76">That day&#x27;s coming.</span> <span class="tl-s" data-s="2100.02" data-e="2108.54">And one of the reasons, one of the reasons that we&#x27;re opposed so strongly by the evil one is because he knows it.</span> <span class="tl-s" data-s="2109.32" data-e="2113.20">His end is sure because our king is risen.</span></p>
+        <p><span class="tl-s" data-s="2114.72" data-e="2125.50">And there are times when the Lord stretches out his mighty arm even in this dark and foreboding time and he flashes it forth in power.</span> <span class="tl-s" data-s="2126.22" data-e="2138.56">There are times that the word of his grace is accompanied by miracles and we pray for that time so that the gospel of Jesus Christ might go forward both to our children and all those around us in our lives.</span> <span class="tl-s" data-s="2139.46" data-e="2150.50">May the spirit of God give us days where he comes in power and the testimony of his church echoes forth from their four walls to people who do not know.</span> <span class="tl-s" data-s="2151.44" data-e="2156.18">In the 17th century there was a quiet little English hamlet named Dedham.</span> <span class="tl-s" data-s="2156.86" data-e="2164.08">And in that sleepy little place there was a preacher, actually a lecturer because he couldn&#x27;t literally be called a preacher under English law.</span> <span class="tl-s" data-s="2164.32" data-e="2165.86">His name was John Rogers.</span> <span class="tl-s" data-s="2166.82" data-e="2170.26">When he preached, the spirit of God seemed to come with power.</span></p>
+        <p><span class="tl-s" data-s="2170.80" data-e="2173.56">And so a saying arose, Come.</span> <span class="tl-s" data-s="2174.68" data-e="2178.86">Let us go to Dedham to fetch a little fire.</span></p>
+        <p><span class="tl-s" data-s="2181.78" data-e="2183.20">That&#x27;s church for us.</span> <span class="tl-s" data-s="2183.42" data-e="2183.68">Come.</span> <span class="tl-s" data-s="2184.68" data-e="2188.20">Let us go to church to fetch a little fire.</span> <span class="tl-s" data-s="2189.26" data-e="2195.74">May we expect and hope and pray and preach and risk for days like that.</span></p>
+        <p><span class="tl-s" data-s="2198.48" data-e="2203.98">Well, the conspiracy against Paul and Barnabas comes to light.</span> <span class="tl-s" data-s="2204.76" data-e="2205.98">They were to be apprehended.</span> <span class="tl-s" data-s="2206.62" data-e="2207.84">They were to be killed.</span> <span class="tl-s" data-s="2209.14" data-e="2210.06">And so they fled.</span> <span class="tl-s" data-s="2211.32" data-e="2215.38">And they went 20 miles away to the town of Lystra.</span> <span class="tl-s" data-s="2215.94" data-e="2216.98">And what did they do?</span> <span class="tl-s" data-s="2218.20" data-e="2220.02">Did they get an Airbnb to recover?</span> <span class="tl-s" data-s="2220.20" data-e="2221.42">Did they hire a counselor?</span> <span class="tl-s" data-s="2222.54" data-e="2222.78">No.</span> <span class="tl-s" data-s="2222.90" data-e="2225.56">Did they get time for a time out or go to a spa?</span></p>
+        <p><span class="tl-s" data-s="2225.74" data-e="2225.90">No.</span> <span class="tl-s" data-s="2226.04" data-e="2226.48">Verse 7.</span> <span class="tl-s" data-s="2226.76" data-e="2231.14">And there, they continued to preach the gospel.</span></p>
+        <p><span class="tl-s" data-s="2233.26" data-e="2236.78">Retreat was the best course because they were threatened, as one man said.</span> <span class="tl-s" data-s="2237.20" data-e="2238.18">And they knew what to do.</span> <span class="tl-s" data-s="2238.30" data-e="2240.10">They were born again but not born yesterday.</span></p>
+        <p><span class="tl-s" data-s="2241.52" data-e="2244.80">And the best course of action was to beat a hasty retreat.</span> <span class="tl-s" data-s="2244.98" data-e="2246.60">But they did it all over again.</span> <span class="tl-s" data-s="2247.48" data-e="2250.74">They go to Lystra this time and I&#x27;ll give you just a preview.</span> <span class="tl-s" data-s="2251.30" data-e="2254.30">Things are going to go well and then really badly in Lystra.</span> <span class="tl-s" data-s="2255.08" data-e="2256.18">We&#x27;ll talk about that next week.</span> <span class="tl-s" data-s="2256.98" data-e="2258.36">But they did not retreat.</span> <span class="tl-s" data-s="2258.64" data-e="2259.26">They advanced.</span> <span class="tl-s" data-s="2259.50" data-e="2260.76">They did not fall silent.</span> <span class="tl-s" data-s="2260.90" data-e="2261.74">They spoke louder.</span> <span class="tl-s" data-s="2263.10" data-e="2266.30">Though the gospel of Jesus Christ divides.</span></p>
+        <p><span class="tl-s" data-s="2267.06" data-e="2270.64">Friends, we see this here in Acts chapter 14.</span> <span class="tl-s" data-s="2271.34" data-e="2272.42">Jesus divides.</span> <span class="tl-s" data-s="2273.00" data-e="2274.02">Jesus unites.</span> <span class="tl-s" data-s="2274.26" data-e="2278.40">But we must be people who preach Jesus.</span></p>
+        <p><span class="tl-s" data-s="2280.92" data-e="2283.94">Friends, as we close, a couple of thoughts.</span> <span class="tl-s" data-s="2284.06" data-e="2288.52">First, we must expect division by our message.</span> <span class="tl-s" data-s="2289.56" data-e="2291.86">It never feels good to be rejected and marginalized.</span> <span class="tl-s" data-s="2292.10" data-e="2300.02">But friends, in our world, we who carry the light of the gospel of Jesus Christ should expect marginalization and disenfranchisement.</span> <span class="tl-s" data-s="2300.56" data-e="2309.54">And in some measure and by some, by some, by just, if we&#x27;re being faithful, we&#x27;re going to be pushed to the side.</span> <span class="tl-s" data-s="2310.74" data-e="2315.30">Now when I say that we should expect division, I don&#x27;t mean to say that our manner should be divisive.</span> <span class="tl-s" data-s="2315.56" data-e="2319.60">We can contend for the gospel without being contentious jerks.</span> <span class="tl-s" data-s="2320.52" data-e="2323.02">We should be kind and loving and winsome.</span></p>
+        <p><span class="tl-s" data-s="2324.60" data-e="2326.52">We must do as Jesus says.</span> <span class="tl-s" data-s="2327.38" data-e="2331.96">But I say to you, he says this in Luke chapter 6, love your enemies.</span> <span class="tl-s" data-s="2332.82" data-e="2334.96">Do good to those who hate you.</span> <span class="tl-s" data-s="2336.14" data-e="2346.40">Expect division, but as we receive division, may our manner be loving and kind and gracious and merciful because we speak boldly, what?</span> <span class="tl-s" data-s="2346.60" data-e="2347.52">The word of grace.</span></p>
+        <p><span class="tl-s" data-s="2349.70" data-e="2356.22">Now if you&#x27;re here and you&#x27;re not following Jesus and you hear all this division talk and you say that sounds hard, it is.</span></p>
+        <p><span class="tl-s" data-s="2359.16" data-e="2360.00">It is.</span></p>
+        <p><span class="tl-s" data-s="2361.94" data-e="2366.34">But friends, there&#x27;s no one like Jesus and he&#x27;s worth everything.</span></p>
+        <p><span class="tl-s" data-s="2368.84" data-e="2369.92">He&#x27;s worth everything.</span> <span class="tl-s" data-s="2370.62" data-e="2373.30">He&#x27;s worth giving your life to.</span> <span class="tl-s" data-s="2374.36" data-e="2377.34">He&#x27;s worth giving your life for.</span></p>
+        <p><span class="tl-s" data-s="2379.20" data-e="2389.52">Now, you need to recognize that when you decide to follow Jesus, when you believe in him, that doesn&#x27;t mean you have the freedom to go out and live however you want and just say, hey, please forgive me.</span> <span class="tl-s" data-s="2389.60" data-e="2389.74">No.</span> <span class="tl-s" data-s="2390.00" data-e="2394.16">What we must do as believers is decide to follow him and obey.</span> <span class="tl-s" data-s="2395.10" data-e="2398.58">And if you&#x27;re living in unrepentant disobedience right now, beware.</span></p>
+        <p><span class="tl-s" data-s="2400.10" data-e="2401.40">The word of grace is active.</span> <span class="tl-s" data-s="2401.54" data-e="2417.20">You can ask for forgiveness but if you continue going back to say an unbiblical relationship or an unbiblical relationship with alcohol and drugs or an unbiblical relationship with whatever, you should have no confidence that you&#x27;re a follower of Jesus Christ.</span></p>
+        <p><span class="tl-s" data-s="2419.50" data-e="2424.04">But if you&#x27;re here and you want to believe in Jesus, you want to follow Jesus, what does verse 1 say?</span> <span class="tl-s" data-s="2424.22" data-e="2424.78">They believed.</span></p>
+        <p><span class="tl-s" data-s="2426.40" data-e="2427.42">What do you need to believe?</span></p>
+        <p><span class="tl-s" data-s="2429.38" data-e="2429.74">Believe.</span> <span class="tl-s" data-s="2430.54" data-e="2436.48">You believe that you&#x27;re a sinner and you need someone to forgive your sins and it&#x27;s Jesus, only Jesus, who can do that.</span></p>
+        <p><span class="tl-s" data-s="2438.58" data-e="2444.22">Friends, we should expect division but we should also strive for unity here.</span> <span class="tl-s" data-s="2445.22" data-e="2447.80">May the whole world come at us.</span> <span class="tl-s" data-s="2448.64" data-e="2451.20">May they all line up and take their best shot.</span></p>
+        <p><span class="tl-s" data-s="2453.40" data-e="2453.86">Come.</span></p>
+        <p><span class="tl-s" data-s="2455.54" data-e="2456.92">Like Neo in the matrix.</span></p>
+        <p><span class="tl-s" data-s="2458.68" data-e="2459.24">Come on.</span></p>
+        <p><span class="tl-s" data-s="2461.88" data-e="2468.22">If we stand together shoulder to shoulder as brothers and sisters, we can stand through anything.</span> <span class="tl-s" data-s="2469.24" data-e="2477.14">The most discouraging thing in the world to me and to people I&#x27;ve talked to is when brothers and sisters turn on each other.</span></p>
+        <p><span class="tl-s" data-s="2478.94" data-e="2480.90">May we strive in unity.</span> <span class="tl-s" data-s="2481.90" data-e="2483.72">Strive for unity.</span> <span class="tl-s" data-s="2484.32" data-e="2488.00">That doesn&#x27;t mean we&#x27;re not going to have problems to figure out and work through.</span></p>
+        <p><span class="tl-s" data-s="2489.40" data-e="2492.66">But may we stand together and refuse to be torn apart.</span></p>
+        <p><span class="tl-s" data-s="2494.48" data-e="2497.74">See, when you&#x27;re wronged, there&#x27;s three things you can do.</span> <span class="tl-s" data-s="2498.58" data-e="2501.08">You can forgive and say nothing, just overlook it.</span> <span class="tl-s" data-s="2502.10" data-e="2504.40">You can confront someone and forgive.</span> <span class="tl-s" data-s="2505.06" data-e="2507.80">Or you can get bitter and that last one will ruin your life.</span> <span class="tl-s" data-s="2508.48" data-e="2509.96">So really, you only have two choices.</span></p>
+        <p><span class="tl-s" data-s="2513.24" data-e="2518.50">Will you forgive and overlook? and walk with your brothers and sisters?</span></p>
+        <p><span class="tl-s" data-s="2519.90" data-e="2523.20">Will you confront and maybe even have a conversation that&#x27;s hard?</span></p>
+        <p><span class="tl-s" data-s="2524.60" data-e="2525.58">And maybe you won&#x27;t agree.</span></p>
+        <p><span class="tl-s" data-s="2528.60" data-e="2529.68">But then forgive.</span> <span class="tl-s" data-s="2530.70" data-e="2542.52">Friends, we must do the hard work of walking together as brothers and sisters united because Jesus has brought us together.</span> <span class="tl-s" data-s="2543.52" data-e="2551.08">And what Christ has brought together, let no man or woman or grudge or bitterness put asunder.</span></p>
+        <p><span class="tl-s" data-s="2555.10" data-e="2558.66">Out there, Jesus divides.</span> <span class="tl-s" data-s="2559.22" data-e="2568.06">In here, Jesus unites. wherever we are, we preach Jesus.</span> <span class="tl-s" data-s="2569.12" data-e="2569.96">Let&#x27;s pray.</span></p>
+        <p><span class="tl-s" data-s="2576.04" data-e="2593.82">Lord God almighty, I come to you as an unworthy sinner who has been the recipient of matchless grace, grace lavish, grace immeasurable.</span></p>
+        <p><span class="tl-s" data-s="2595.36" data-e="2602.06">I and all of us here who are Christians, we have received love that we did not deserve.</span></p>
+        <p><span class="tl-s" data-s="2606.22" data-e="2619.82">And I pray, Lord, that you would send your spirit in power so that you would give us boldness in the world we live in to preach the divisive message of the gospel.</span> <span class="tl-s" data-s="2621.06" data-e="2635.60">Lord, may we be kind, may we be gracious, may we contend for the faith without being contentious, but Lord, may we recognize that there are going to be some who receive the message of the gospel with joy and there will be others who turn away.</span></p>
+        <p><span class="tl-s" data-s="2638.80" data-e="2661.28">And Lord, I pray that we would live in a day where we can see your hand of power manifest in our midst so that we might see days of wonder so that we might witness signs and wonders that verify and validate your word of grace.</span> <span class="tl-s" data-s="2662.18" data-e="2667.12">May we be people who have our hearts bubbling over with the word of grace.</span></p>
+        <p><span class="tl-s" data-s="2669.80" data-e="2675.76">May we care most about you and your reputation and not us and ours.</span></p>
+        <p><span class="tl-s" data-s="2677.66" data-e="2694.00">May we remember that eternity is coming and these days are short and fleeting and that our lives are but a mist and we&#x27;re going to be forgotten.</span> <span class="tl-s" data-s="2694.02" data-e="2697.26">But Lord, you will not be forgotten.</span> <span class="tl-s" data-s="2698.38" data-e="2701.24">You, Lord, are high and lifted up.</span> <span class="tl-s" data-s="2701.80" data-e="2720.84">And so Lord, in the days that we have left, I pray that you would put a boldness in our hearts, a confidence in our step, a purpose to recognize we serve the risen Lord.</span> <span class="tl-s" data-s="2721.84" data-e="2722.96">We do his bidding.</span></p>
+        <p><span class="tl-s" data-s="2724.98" data-e="2732.34">And so Lord, I pray that you would help us to preach boldly the truth of Jesus Christ and put that word of grace out for everyone.</span></p>
+        <p><span class="tl-s" data-s="2733.82" data-e="2738.88">And I pray, Lord, that you would help us to be and remain united here.</span> <span class="tl-s" data-s="2739.98" data-e="2747.46">For we know that the evil one strategizes against us and would love nothing more than divide us.</span> <span class="tl-s" data-s="2748.50" data-e="2763.20">But Lord Jesus, we know that you both divide and unite and we believe that we&#x27;ve been united together under your banner for your purposes and we pray that we would do your will in these days you have given us.</span></p>
+        <p><span class="tl-s" data-s="2764.94" data-e="2785.74">And we pray your spirit would come upon us in power so that we might see days of fire, days where it seemed as if the very presence of God, the throne room, is transported to this room.</span></p>
+        <p><span class="tl-s" data-s="2788.98" data-e="2789.74">We pray.</span></p>
+        <p><span class="tl-s" data-s="2792.98" data-e="2794.74">Lord, we have the word of grace.</span></p>
+        <p><span class="tl-s" data-s="2797.22" data-e="2799.08">We pray for your presence with power.</span> <span class="tl-s" data-s="2801.14" data-e="2802.72">And it&#x27;s in your mighty name we pray.</span> <span class="tl-s" data-s="2804.04" data-e="2804.36">Amen.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Live sermon feed: spotlight from /api/sermons, browsable archive from
+  // /api/sermons/search. Static fallback list stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function row(it) {
+      var meta = [it.speaker, fmtDate(it.date)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      var titleHtml = esc(it.title);
+      var tUrl = it.guid && transcriptMap[it.guid];
+      if (tUrl) titleHtml = '<a href="' + esc(tUrl) + '">' + titleHtml + "</a>";
+      return '<div class="sermon"><div><h3>' + titleHtml + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    fetch("/api/sermons?v=3")
+      .then(function (res) { if (!res.ok) throw new Error("feed " + res.status); return res.json(); })
+      .then(function (data) {
+        var spot = document.querySelector("[data-series-spotlight]");
+        if (data && data.series && spot) {
+          var s = data.series;
+          var art = spot.querySelector("[data-series-art]");
+          if (art && s.artwork) { art.src = s.artwork; } else if (art) { art.style.display = "none"; }
+          var nm = spot.querySelector("[data-series-name]");
+          if (nm) nm.textContent = s.name;
+          var bl = spot.querySelector("[data-series-blurb]");
+          if (bl) bl.textContent = s.blurb;
+          spot.hidden = false;
+        }
+      })
+      .catch(function () { /* spotlight stays hidden */ });
+
+    var PER = 10;
+    var state = { q: "", speaker: "", series: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var speakerSel = document.querySelector("[data-sermons-speaker]");
+    var seriesSel = document.querySelector("[data-sermons-series]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No messages found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(speakerSel, data.facets.speakers || [], function (e) { return e.name; }, function (e) { return e.name + " (" + e.count + ")"; });
+        fill(seriesSel, data.facets.series || [], function (e) { return e.name; }, function (e) { return e.name + " (" + e.count + ")"; });
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.speaker || data.series || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.speaker) parts.push("by " + data.speaker);
+          if (data.series) parts.push("in " + data.series);
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " result" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " messages";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/sermons/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.speaker ? "&speaker=" + encodeURIComponent(state.speaker) : "") +
+        (state.series ? "&series=" + encodeURIComponent(state.series) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () { /* keep current list on error */ });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.speaker = ""; state.series = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (speakerSel) speakerSel.value = "";
+      if (seriesSel) seriesSel.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    function bindSelect(sel, key) {
+      if (!sel) return;
+      sel.addEventListener("change", function () {
+        state[key] = sel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    bindSelect(speakerSel, "speaker");
+    bindSelect(seriesSel, "series");
+    bindSelect(monthSel, "month");
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: https://hub.centergilbert.com/media/acts-14-1-7 -->
+</body>
+</html>
