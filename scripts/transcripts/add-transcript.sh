@@ -341,7 +341,10 @@ def split_sentences(text):
         if m:
             cur_spk = m.group(1)
             part = part[m.end():]
-        part = part.strip()
+        # Turn-boundary markers stranded mid-sentence (diarization often
+        # splits mid-thought) are artifacts, not speech: drop them. Only
+        # the leading marker (above) carries the speaker turn.
+        part = re.sub(r"\s*\[[^\]]+\]", "", part).strip()
         if part:
             out.append((cur_spk, part))
     return out
