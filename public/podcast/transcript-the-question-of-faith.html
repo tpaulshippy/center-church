@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Question of Faith — Podcast Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Fixed on Jesus: conversations beyond Sunday mornings from Center Church in Gilbert, AZ — listen on Spotify, Apple Podcasts, and YouTube." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=18" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a href="/sermons">Sermons</a></li>
+              <li><a class="active" href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/podcast">&larr; All podcast episodes</a>
+          <h1 class="display-lg">The Question of Faith</h1>
+          <p class="transcript-meta">2024-01-31 · 18:23</p>
+          <p class="transcript-desc">Welcome to FIXED ON JESUS, a podcast brought to you by Center Church in Gilbert, Arizona. Speaking to you today are Rich Richardson &amp; Mark Johnson Jr. Production by Heather Corbitt **SHOW NOTES** Questions asked in this episode: How do I know if my faith is genuine? What proceeds faith? What comes f</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/e750e370/podcast/play/82041254/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-0-31%2Fbfcb36f9-c2d6-2d0b-5ac8-bf6e42794eac.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="0.18" data-e="5.53">Unbelief is something we should fight because it&#x27;s something that is resident in a lot of us.</span> <span class="tl-s" data-s="5.64" data-e="14.66">But we also must recognize that it&#x27;s not so much how strong my faith is or how much faith I have; it&#x27;s who is my faith in.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="29.99" data-e="32.44">This is Fixed on Jesus.</span></p>
+        <p><span class="tl-s" data-s="49.13" data-e="51.03">Hey guys, welcome to Fixed on Jesus.</span> <span class="tl-s" data-s="51.72" data-e="57.67">Today I&#x27;m acting as Rich Richardson, and across the table from me, as always, Is Mark Johnson Jr.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="59.74" data-e="60.59">Hey, everybody.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="62.33" data-e="73.31">And behind the glass— And behind the glass, we have Heather Corbett.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="74.33" data-e="76.94">I have to say Star [Speaker B] Wars.</span> <span class="tl-s" data-s="76.98" data-e="83.55">And behind the glass, we have Heather Corbett, our production manager, and she just makes us sound so much better than we are.</span> <span class="tl-s" data-s="83.55" data-e="87.32">Hey, I have a question.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="87.37" data-e="88.93">Is that the email bell?</span> <span class="tl-s" data-s="88.93" data-e="90.58">Are you abusing your email bell?</span> <span class="tl-s" data-s="91.03" data-e="93.13">No singing, no singing, no.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="93.13" data-e="94.83">Are you— [Speaker B] now I&#x27;ve lost my train of thought.</span> <span class="tl-s" data-s="94.83" data-e="98.70">Yeah, is that the way it&#x27;s— is that the way I sound?</span> <span class="tl-s" data-s="98.70" data-e="100.37">That&#x27;s the way I sound.</span> <span class="tl-s" data-s="100.37" data-e="102.63">Okay, Heather&#x27;s losing it over here.</span> <span class="tl-s" data-s="102.63" data-e="103.37">That was our best intro.</span> <span class="tl-s" data-s="103.37" data-e="106.51">I&#x27;m gonna go back to being me.</span> <span class="tl-s" data-s="106.59" data-e="106.66">911 here.</span> <span class="tl-s" data-s="106.66" data-e="108.36">Okay, uh, you okay, Heather?</span> <span class="tl-s" data-s="108.37" data-e="110.04">She&#x27;s okay, she&#x27;s recovered now.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="110.07" data-e="112.24">So this is the real Rich Richardson now.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="112.26" data-e="114.50">Hello everybody, and my Mark Johnson is across the table.</span> <span class="tl-s" data-s="114.53" data-e="119.25">He is indeed, and so our places are now correct.</span> <span class="tl-s" data-s="119.59" data-e="121.06">So anyway, okay, whoo!</span> <span class="tl-s" data-s="121.11" data-e="122.03">That was strange.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="122.06" data-e="123.13">Yes, it was.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="123.22" data-e="123.44">Yeah, okay.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="123.44" data-e="125.88">I&#x27;m gonna work on your imagination.</span> <span class="tl-s" data-s="125.93" data-e="130.18">So today we&#x27;re talking about our topic is the question of faith.</span> <span class="tl-s" data-s="130.18" data-e="133.11">But before we get in that, I learned two new words.</span> <span class="tl-s" data-s="133.11" data-e="135.13">One of them was by complete accident.</span> <span class="tl-s" data-s="135.15" data-e="136.65">It was in a trivia game.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="136.75" data-e="137.01">Trivia game?</span> <span class="tl-s" data-s="137.01" data-e="138.82">You play those a lot?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="139.00" data-e="139.33">Trivia games?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="139.56" data-e="139.59">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="139.59" data-e="141.30">No, it was just a holiday thing.</span> <span class="tl-s" data-s="141.48" data-e="144.17">So I learned— [Speaker A] Like, which game is it?</span> <span class="tl-s" data-s="144.22" data-e="145.23">Because I like trivia games.</span> <span class="tl-s" data-s="145.28" data-e="149.81">Um, no, it was like an in-person, like a team 3-on-3.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="149.91" data-e="150.89">Did you win?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="150.89" data-e="151.34">No, probably not.</span> <span class="tl-s" data-s="151.34" data-e="151.66">I did not.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="151.67" data-e="155.65">Not if you haven&#x27;t watched Star Wars, you&#x27;d miss all those.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="155.68" data-e="165.19">Well, speaking of other games, we had a holiday party at Zach and Andrea Boomsma&#x27;s house, and it was Music Jeopardy, and I knew exactly zero of the answers for the entire game.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="165.76" data-e="166.06">Right.</span> <span class="tl-s" data-s="166.06" data-e="166.18">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="166.18" data-e="166.34">Yeah.</span> <span class="tl-s" data-s="166.34" data-e="168.46">So So I was dead weight.</span> <span class="tl-s" data-s="168.46" data-e="174.16">So the words I learned— cynophobia.</span> <span class="tl-s" data-s="174.16" data-e="174.26">C-Y-N.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="174.26" data-e="174.34">Cynophobia.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="174.34" data-e="174.42">Yeah.</span> <span class="tl-s" data-s="174.42" data-e="177.24">And do you know what it means?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="177.24" data-e="177.66">Cynophobia?</span> <span class="tl-s" data-s="177.66" data-e="178.08">No.</span> <span class="tl-s" data-s="178.08" data-e="178.34">What?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="178.34" data-e="180.74">I guessed fear of pessimism because I was like, cynic.</span> <span class="tl-s" data-s="180.74" data-e="182.74">I was just trying to reason through it.</span> <span class="tl-s" data-s="182.74" data-e="184.58">But it means fear of dogs.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="184.58" data-e="184.82">Fear of dogs.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="184.82" data-e="187.96">So that&#x27;s what you have.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="187.96" data-e="189.36">You&#x27;re our resident cynophobe.</span> <span class="tl-s" data-s="189.36" data-e="192.26">Okay, so you&#x27;re our resident cynophobe, and that&#x27;s kind of— okay.</span> <span class="tl-s" data-s="192.26" data-e="192.70">Yeah, right.</span> <span class="tl-s" data-s="192.70" data-e="194.90">I&#x27;m glad you&#x27;re admitting it now.</span> <span class="tl-s" data-s="194.90" data-e="195.20">Yeah.</span> <span class="tl-s" data-s="195.20" data-e="195.70">Admitting there&#x27;s an irrational fear.</span> <span class="tl-s" data-s="195.70" data-e="201.41">I&#x27;m going to bring one of my dogs for a for a recording and just let them walk around in this room and be with us here.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="201.42" data-e="210.43">Yeah, I am going to bring one of my clowns too and let him observe our podcast recording because I learned the second word I learned is actually coulrophobia, which means the fear of clowns.</span> <span class="tl-s" data-s="210.43" data-e="214.41">So, if we are going to do a dual diagnosis here, let us just make it even.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="214.52" data-e="217.88">Fear of clowns is just called common sense.</span> <span class="tl-s" data-s="217.88" data-e="219.95">That is the other way it works.</span> <span class="tl-s" data-s="219.98" data-e="221.51">So, like, xenophobia is like, what?</span> <span class="tl-s" data-s="221.97" data-e="222.42">Are you kidding me?</span> <span class="tl-s" data-s="222.42" data-e="229.33">Like, I have never— like, you are afraid of little dogs that are really kind and friendly and And like clowns, fear of clowns, or it&#x27;s not really fear.</span> <span class="tl-s" data-s="229.33" data-e="231.15">It&#x27;s just kind of a— [Speaker B] Yeah.</span> <span class="tl-s" data-s="231.15" data-e="231.27">Okay.</span> <span class="tl-s" data-s="231.27" data-e="238.29">I say the same thing, but [Speaker A] it&#x27;s just, uh, it&#x27;s common sense to just be uncomfortable around clowns.</span> <span class="tl-s" data-s="238.29" data-e="240.69">And that&#x27;s just what I&#x27;m— I&#x27;m just gonna call it common sense.</span> <span class="tl-s" data-s="240.69" data-e="240.89">Okay.</span></p>
+        <p><span class="tl-s" data-s="240.89" data-e="242.27">I appreciate it.</span> <span class="tl-s" data-s="242.27" data-e="243.83">What was that word again that I— [Speaker B] Cool.</span> <span class="tl-s" data-s="243.83" data-e="245.09">But you are— you&#x27;re admitting to it?</span> <span class="tl-s" data-s="245.09" data-e="245.73">No, I&#x27;m not admitting.</span> <span class="tl-s" data-s="245.73" data-e="246.33">Oh, okay.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="246.33" data-e="248.11">So then what do you want to know?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="248.11" data-e="251.99">Well, I mean, would it be fearful if one— like, like if I&#x27;m not afraid, they should be afraid of me.</span> <span class="tl-s" data-s="251.99" data-e="255.79">I mean, that&#x27;s— [Speaker B] I feel the same way for dogs.</span> <span class="tl-s" data-s="255.79" data-e="255.81">Okay.</span> <span class="tl-s" data-s="255.81" data-e="258.15">All right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="258.15" data-e="259.71">As long as we&#x27;re even, it&#x27;s coulrophobia.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="259.71" data-e="259.85">Coulrophobia.</span> <span class="tl-s" data-s="259.85" data-e="262.85">That&#x27;s just C-O-U-L-R-O-P-H-O-B-I-A.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="262.95" data-e="266.99">Is [Speaker A] there a word for like, I just don&#x27;t trust clowns?</span> <span class="tl-s" data-s="266.99" data-e="267.45">Distrust.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="267.45" data-e="267.71">Okay.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="267.71" data-e="268.23">All right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="268.23" data-e="269.25">I think we&#x27;re losing our way here.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="269.25" data-e="269.39">Yeah.</span> <span class="tl-s" data-s="269.39" data-e="271.93">So we&#x27;ve totally gotten off track.</span> <span class="tl-s" data-s="271.93" data-e="272.69">This is a train.</span> <span class="tl-s" data-s="272.69" data-e="274.01">We don&#x27;t know where it&#x27;s going.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="274.05" data-e="274.41">That&#x27;s exactly right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="274.41" data-e="274.57">Yeah.</span> <span class="tl-s" data-s="274.57" data-e="278.31">So the question of faith, we&#x27;ll get to the topic.</span> <span class="tl-s" data-s="278.31" data-e="280.23">We&#x27;ll get down to it.</span> <span class="tl-s" data-s="280.23" data-e="283.57">If you fast forwarded through that part, thank you.</span> <span class="tl-s" data-s="283.57" data-e="284.99">Um, how do I know if faith is enough?</span> <span class="tl-s" data-s="284.99" data-e="286.47">It would be one of the questions.</span> <span class="tl-s" data-s="286.47" data-e="287.25">I have a few.</span> <span class="tl-s" data-s="287.25" data-e="289.61">Do you want me to read them all first?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="289.72" data-e="294.32">No, I mean like, The question of faith, like, how do I know if my faith is enough?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="294.39" data-e="294.51">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="294.55" data-e="297.33">So that&#x27;s one of the questions, like, depending on where you grew up.</span> <span class="tl-s" data-s="297.33" data-e="301.89">Like, if you grew up in a Pentecostal or charismatic background, they&#x27;ll talk a lot about faith.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="302.00" data-e="303.72">Having more of it.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="304.65" data-e="310.16">Having more and getting more and that kind of thing, which is not illegitimate.</span> <span class="tl-s" data-s="310.16" data-e="319.66">Hebrews 11:6 says, and without faith it is impossible to please him, for whoever would draw near to him must believe that he exists and and he rewards those who seek him.</span> <span class="tl-s" data-s="319.71" data-e="324.33">And so Hebrews 11 is kind of the classic faith passage.</span> <span class="tl-s" data-s="324.44" data-e="330.40">And so one of the mistakes that a lot of folks make is assuming that we have to have a lot of faith.</span> <span class="tl-s" data-s="331.03" data-e="337.47">Now, it&#x27;s good to have faith, a growing amount of faith in Jesus, but if we focus on our faith, we&#x27;re missing the point, right?</span> <span class="tl-s" data-s="337.64" data-e="342.54">So faith, the issue with faith is we wanna have faith in the right object.</span> <span class="tl-s" data-s="342.54" data-e="342.66">Right?</span> <span class="tl-s" data-s="342.71" data-e="346.74">Faith in and of itself is nothing if it&#x27;s not put in the right place, right?</span> <span class="tl-s" data-s="346.74" data-e="354.71">Because it&#x27;s possible to have faith in your faith, to have faith in how much you believe or how much you can work yourself up emotionally, and that&#x27;s what we&#x27;re not— not what we&#x27;re looking for.</span></p>
+        <p><span class="tl-s" data-s="355.44" data-e="367.12">The faith of a mustard seed, which is a tiny little seed that is, is, you know, really small, um, if the faith— if you have a small amount of faith in Jesus, that&#x27;s enough faith.</span> <span class="tl-s" data-s="368.06" data-e="371.01">So It&#x27;s not how much faith you have, it&#x27;s who your faith is in.</span> <span class="tl-s" data-s="371.01" data-e="387.69">So, and one of the things that I get a lot, and I&#x27;ve heard this a lot sadly, is people talk about how, you know, bad things happen or they get sick and they don&#x27;t get healed, and the reason is, is because they don&#x27;t have enough faith.</span> <span class="tl-s" data-s="387.75" data-e="388.58">That&#x27;s unbiblical and wrong.</span> <span class="tl-s" data-s="388.58" data-e="390.81">And so that&#x27;s, that&#x27;s not a good teaching.</span> <span class="tl-s" data-s="390.89" data-e="397.62">And so what happens is, is a lot of people go introspective and think, man, I don&#x27;t have enough faith, this must be why it&#x27;s happening to me.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="397.62" data-e="398.55">Oh wow.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="398.82" data-e="402.43">So that&#x27;s not— that is not how we want to think about faith.</span> <span class="tl-s" data-s="402.43" data-e="408.97">Faith, though we must have faith to please God, and our faith should be growing over time, point is, who is your faith in?</span> <span class="tl-s" data-s="409.16" data-e="411.96">And our faith must be in Jesus.</span> <span class="tl-s" data-s="412.04" data-e="414.17">And if our faith is in Jesus, it&#x27;s enough.</span> <span class="tl-s" data-s="414.29" data-e="414.45">Always.</span> <span class="tl-s" data-s="414.45" data-e="414.78">It&#x27;s always enough.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="414.78" data-e="415.07">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="415.07" data-e="437.43">You know, like, I think about the, the father— what is that, in Mark chapter 9— when the, uh, the disciple— Jesus is up on the Mount of Transfiguration, and the disciples are coming down, or he comes down with, uh, Peter, James, and John, and they&#x27;re trying— the disciples, the other guys are trying to cast a demon out of somebody.</span> <span class="tl-s" data-s="437.53" data-e="442.17">And this boy— and this father brings his son, and he&#x27;s, he&#x27;s, um, just totally crushed.</span> <span class="tl-s" data-s="442.52" data-e="445.48">He can&#x27;t do anything, and they can&#x27;t cast the demon out.</span> <span class="tl-s" data-s="445.56" data-e="447.85">And Jesus says, you know, what&#x27;s the problem?</span> <span class="tl-s" data-s="447.90" data-e="448.72">He explains the problem.</span> <span class="tl-s" data-s="448.78" data-e="452.27">And, um, the man, he says, if you can do anything, please help.</span> <span class="tl-s" data-s="452.27" data-e="455.42">And Jesus is like, if I can do anything?</span> <span class="tl-s" data-s="455.84" data-e="456.70">He was offended.</span> <span class="tl-s" data-s="457.78" data-e="461.12">It was kind of, but the father said, I believe, help my unbelief.</span> <span class="tl-s" data-s="461.15" data-e="464.18">So I think that&#x27;s the way we all kind of are.</span></p>
+        <p><span class="tl-s" data-s="464.27" data-e="467.90">We believe, we have faith, help my unbelief, right?</span> <span class="tl-s" data-s="467.98" data-e="481.93">Unbelief is something we should fight because it&#x27;s something that is resident in a lot of us, but we also must recognize that it&#x27;s not so much how strong my faith is or how much faith I have, it&#x27;s Who is my faith in?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="482.11" data-e="482.43">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="482.52" data-e="482.99">Does that make sense?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="482.99" data-e="483.66">Yeah, totally.</span> <span class="tl-s" data-s="483.66" data-e="487.98">What if my faith is weak, or what if I have doubts about my faith?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="487.98" data-e="488.11">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="488.22" data-e="489.44">What would I do?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="489.51" data-e="489.57">Yeah.</span> <span class="tl-s" data-s="489.57" data-e="493.91">Well, I mean, that&#x27;s what you do is you don&#x27;t look at your faith and go, man, I don&#x27;t have enough faith.</span> <span class="tl-s" data-s="493.91" data-e="498.82">It&#x27;s and as you stare at your faith, as it were, it shrinks, right?</span> <span class="tl-s" data-s="498.82" data-e="501.60">Because what you do to grow your faith is to focus on Jesus.</span> <span class="tl-s" data-s="502.10" data-e="506.96">That&#x27;s one of the reasons we talk about being fixed on Jesus.</span> <span class="tl-s" data-s="507.33" data-e="508.74">Your faith grows as you.</span> <span class="tl-s" data-s="508.77" data-e="511.74">Get to know and follow Jesus, right?</span> <span class="tl-s" data-s="511.74" data-e="521.48">Your faith in Jesus grows as you realize from Scripture, from fellowship with the saints, from the preaching of the Word, from the singing of the Word, from the praying of the Word.</span> <span class="tl-s" data-s="521.67" data-e="522.04">But not you.</span> <span class="tl-s" data-s="522.14" data-e="525.91">You grow in your understanding of who Jesus is and that he&#x27;s trustworthy.</span></p>
+        <p><span class="tl-s" data-s="526.00" data-e="531.52">As we grow in our understanding of Jesus, we have more and more reason to put our our faith in him, right?</span> <span class="tl-s" data-s="531.55" data-e="539.39">Like that&#x27;s one of the reasons that I think it&#x27;s so helpful to talk to senior saints, people who have been Christians for decades, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="539.39" data-e="541.30">Shout out. to the senior saints.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="541.40" data-e="542.45">Yeah, they are great.</span> <span class="tl-s" data-s="542.45" data-e="558.77">You, you talk to senior saints and you ask them, like— and I&#x27;d recommend you to do this, um, if you&#x27;re a younger Christian— ask a senior saint, hey, what is something that the Lord brought you through that almost broke you or would have broken you without help?</span> <span class="tl-s" data-s="558.80" data-e="559.45">That&#x27;s a great question.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="559.60" data-e="560.65">Are you a senior saint?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="560.66" data-e="561.95">I think others will have to answer.</span> <span class="tl-s" data-s="561.95" data-e="566.99">I don&#x27;t have an AARP card, if that&#x27;s your— [Speaker B] okay, that&#x27;s what you&#x27;re wondering.</span> <span class="tl-s" data-s="566.99" data-e="569.47">You don&#x27;t have a reverse mortgage either?</span> <span class="tl-s" data-s="569.53" data-e="570.30">Uh, no, I don&#x27;t.</span> <span class="tl-s" data-s="570.74" data-e="573.60">I have— I&#x27;m 50, so whatever.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="573.70" data-e="573.88">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="573.88" data-e="575.17">Yeah, compared to you, I am.</span> <span class="tl-s" data-s="575.24" data-e="575.41">Okay.</span> <span class="tl-s" data-s="575.54" data-e="578.59">Anyway, um, so I think asking that kind of question, that builds faith.</span> <span class="tl-s" data-s="578.59" data-e="584.02">Like these— like, I talked to someone who&#x27;s been through something, and they see Jesus meet them in their weakness.</span> <span class="tl-s" data-s="584.12" data-e="588.35">They see Jesus meet them in their darkness.</span> <span class="tl-s" data-s="588.76" data-e="591.41">They see Jesus meet them in ways they didn&#x27;t anticipate.</span> <span class="tl-s" data-s="591.42" data-e="594.15">Their faith grows, and that&#x27;s a way my faith can grow.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="594.15" data-e="594.36">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="594.40" data-e="594.89">Right?</span> <span class="tl-s" data-s="595.27" data-e="612.71">And that is one of the reasons that the Bible talks so much about being in communion with each other, having fellowship with each other, because we need each other to keep each other accountable to stay on the path of following Jesus, right?</span> <span class="tl-s" data-s="612.73" data-e="614.44">We cannot go this alone.</span> <span class="tl-s" data-s="614.51" data-e="617.94">And it is inspiring to hear the testimony of someone.</span> <span class="tl-s" data-s="618.03" data-e="627.88">It is inspiring to hear how they went through something and the Lord didn&#x27;t maybe take them out and deliver them, but gave them the strength endure.</span> <span class="tl-s" data-s="628.56" data-e="629.04">Hmm, that stuff matters.</span> <span class="tl-s" data-s="629.04" data-e="631.15">If we have weak faith, get to know Jesus better.</span> <span class="tl-s" data-s="631.57" data-e="633.34">If you have little faith, get to know Jesus better.</span> <span class="tl-s" data-s="634.00" data-e="638.44">Because here&#x27;s the reality: all of us should have more faith than we do.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="638.57" data-e="638.70">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="639.05" data-e="640.37">All of us.</span> <span class="tl-s" data-s="640.37" data-e="640.67">All of us.</span> <span class="tl-s" data-s="640.73" data-e="642.64">Like, there is no reason to doubt him ever.</span> <span class="tl-s" data-s="642.64" data-e="643.64">But what do we do?</span> <span class="tl-s" data-s="643.64" data-e="643.94">We doubt him.</span> <span class="tl-s" data-s="643.94" data-e="647.81">We— and the way we doubt him isn&#x27;t like, I don&#x27;t know if he really died and rose again.</span> <span class="tl-s" data-s="647.81" data-e="652.93">The way we doubt him is like, well, is he really— does he really mean good for this?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="652.93" data-e="653.15">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="653.15" data-e="656.26">How could this be good in my life?</span> <span class="tl-s" data-s="656.44" data-e="657.59">Or does he really know what&#x27;s happening?</span> <span class="tl-s" data-s="657.59" data-e="658.86">Or where is he?</span> <span class="tl-s" data-s="658.87" data-e="660.22">Or what&#x27;s going on?</span> <span class="tl-s" data-s="660.22" data-e="662.13">Or you know that kind of stuff.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="662.16" data-e="670.58">And so like, so we question if he sees the full scope, or [Speaker A] yeah, or if he [Speaker B] why he&#x27;s putting or he [Speaker A] or if he cares.</span> <span class="tl-s" data-s="670.64" data-e="671.46">Yeah, [Speaker A] right.</span> <span class="tl-s" data-s="671.60" data-e="675.13">Those are those are what doubts look like, and that&#x27;s legit to be able to ask those questions.</span> <span class="tl-s" data-s="675.13" data-e="675.98">Just read the Psalms.</span> <span class="tl-s" data-s="676.09" data-e="679.68">But over time, as you grow as a Christian, you realize, oh yeah, he does.</span> <span class="tl-s" data-s="679.68" data-e="690.68">He meets me in these moments, and and that&#x27;s one of the reasons that every time we gather as a church, we&#x27;re taking our minds and putting them on Jesus, who he.</span> <span class="tl-s" data-s="690.68" data-e="697.17">Is and what he&#x27;s done, because that&#x27;s what grows faith, not an introspective journey into our own souls.</span> <span class="tl-s" data-s="697.17" data-e="698.59">That&#x27;s deadly if you do that.</span> <span class="tl-s" data-s="698.65" data-e="700.71">Yeah, that makes sense.</span> <span class="tl-s" data-s="700.74" data-e="701.35">Okay, last one.</span></p>
+        <p><span class="tl-s" data-s="702.98" data-e="708.13">It&#x27;s— and you may have touched on it a little bit— so how do I know if my faith is genuine?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="708.13" data-e="709.66">It&#x27;s all about who it&#x27;s in.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="709.67" data-e="710.21">Who it&#x27;s in.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="710.30" data-e="716.55">Yeah, [Speaker B] not how much, [Speaker A] not how much, not how strong.</span> <span class="tl-s" data-s="716.60" data-e="719.15">Yeah, your faith is genuine if your faith is in Jesus Christ.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="719.42" data-e="724.35">Okay, so entirely, it&#x27;s, it&#x27;s, it&#x27;s genuine faith if it&#x27;s in Jesus Christ.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="724.40" data-e="726.57">If it&#x27;s in Jesus Christ.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="726.57" data-e="727.93">Not the size, not the strength.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="727.93" data-e="728.06">Right.</span> <span class="tl-s" data-s="728.10" data-e="739.69">But at the same time, we&#x27;ve talked about this before, genuine faith in Jesus— you can know you have genuine faith in Jesus if you believe all that the Bible says about him.</span> <span class="tl-s" data-s="739.74" data-e="745.16">Right now, genuine faith in Jesus means that you are now a new creation.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="745.98" data-e="746.05">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="746.23" data-e="748.57">And as a new creation, You will grow.</span> <span class="tl-s" data-s="748.91" data-e="751.80">So genuine faith, someone who has genuine faith will continually grow in godliness over their life.</span> <span class="tl-s" data-s="751.84" data-e="754.01">They will not be perfect, but they will grow.</span> <span class="tl-s" data-s="754.01" data-e="764.75">So genuine faith, like because one of the things people do is they look at their life or they look at their experiences and they think I should be past this or this shouldn&#x27;t be a problem for me anymore.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="764.78" data-e="765.01">Guilty.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="765.11" data-e="767.98">And they feel they feel yeah they they heap guilt upon themselves.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="767.98" data-e="768.08">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="768.08" data-e="768.24">Right.</span> <span class="tl-s" data-s="768.25" data-e="771.24">And so [Speaker B] I just meant I was guilty of doing that.</span> <span class="tl-s" data-s="771.24" data-e="772.86">Yeah, we all do that, right?</span> <span class="tl-s" data-s="772.89" data-e="777.00">We heap guilt upon ourselves and think man, I shouldn&#x27;t struggle with this stuff anymore.</span> <span class="tl-s" data-s="777.00" data-e="781.16">On the one hand, you got to say, wait, I&#x27;m, I&#x27;m, I&#x27;m just a sinner, right?</span> <span class="tl-s" data-s="781.16" data-e="782.21">I&#x27;m a sinner saved by grace.</span> <span class="tl-s" data-s="782.21" data-e="784.68">This is another reason I need a Savior, right?</span> <span class="tl-s" data-s="784.68" data-e="790.60">I need a Savior to save me because even I— even though I know the right way, I don&#x27;t go that way.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="790.62" data-e="790.81">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="790.81" data-e="793.60">Even though I&#x27;ve struggled with this for 30 years, I still struggle.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="793.60" data-e="793.81">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="794.87" data-e="804.91">You know, and so like, if you look at your sins or you look at your failures, you will always feel like you don&#x27;t have enough faith.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="805.28" data-e="806.23">That makes sense.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="806.23" data-e="812.21">If you look at Jesus, if you look at Jesus and recognize, man, he&#x27;s the one I&#x27;m trusting.</span> <span class="tl-s" data-s="812.29" data-e="818.68">I&#x27;m not trusting in my performance, though I&#x27;m going to grow and be obedient over time.</span> <span class="tl-s" data-s="818.69" data-e="823.58">I&#x27;m trusting in his performance, and I&#x27;m trusting in who he is and who he says he is for me.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="823.90" data-e="824.77">Yeah, totally.</span> <span class="tl-s" data-s="824.80" data-e="827.03">Um, what precedes faith and then what comes out of faith?</span> <span class="tl-s" data-s="827.09" data-e="829.37">Are [Speaker A] you talking about saving faith?</span> <span class="tl-s" data-s="829.37" data-e="830.45">Yeah, like what?</span> <span class="tl-s" data-s="830.56" data-e="832.25">Like would you say like one?</span> <span class="tl-s" data-s="832.25" data-e="837.19">So okay, so first of all, if you think this is true, faith is a gift.</span> <span class="tl-s" data-s="837.37" data-e="838.63">Is it given?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="838.73" data-e="839.92">I mean, Ephesians 2.</span> <span class="tl-s" data-s="839.93" data-e="840.48">Yeah, yeah.</span> <span class="tl-s" data-s="840.53" data-e="843.88">By grace you&#x27;re saved through faith, [Speaker B] right?</span> <span class="tl-s" data-s="843.95" data-e="844.91">So that&#x27;s not from yourself.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="844.91" data-e="847.06">Yes, [Speaker A] but it is a gift of God.</span> <span class="tl-s" data-s="847.80" data-e="847.81">Absolutely.</span> <span class="tl-s" data-s="847.81" data-e="853.40">Okay, so what is there something that happens in someone&#x27;s heart or life that comes before they have faith?</span> <span class="tl-s" data-s="853.43" data-e="855.92">Or what would you say to someone who said I&#x27;d have no faith?</span> <span class="tl-s" data-s="856.00" data-e="856.61">I just don&#x27;t believe.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="856.71" data-e="860.25">Well, I mean, if someone says they don&#x27;t believe, they&#x27;re not a Christian.</span> <span class="tl-s" data-s="860.25" data-e="866.72">So I&#x27;d evangelize and try to help them understand why they should believe in Jesus, right?</span> <span class="tl-s" data-s="866.75" data-e="873.59">And I believe that regeneration, which is the sovereign act of the Holy Spirit to create a person new, precedes faith.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="873.59" data-e="875.23">That&#x27;s what I was— yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="875.26" data-e="882.21">Um, but faith— we have to exert genuine faith in a real risen Savior to be able to be saved.</span> <span class="tl-s" data-s="882.23" data-e="884.14">So that is, that is true.</span> <span class="tl-s" data-s="885.13" data-e="890.96">Yeah, you know, and so faith does not precede regeneration.</span> <span class="tl-s" data-s="891.38" data-e="892.86">Regeneration precedes faith.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="892.91" data-e="893.48">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="893.79" data-e="901.83">Because if we don&#x27;t have the Holy Spirit indwelling us, we&#x27;re not going to be inclined to trust Jesus at all.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="901.83" data-e="902.15">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="902.15" data-e="902.88">And so regeneration precedes faith.</span> <span class="tl-s" data-s="902.88" data-e="915.24">Genuine faith is a genuine trust in Jesus Christ, and that trust is that he would be your life, that he would save you and you have eternal life, and that you would be in him Uh, both now and forevermore.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="915.24" data-e="915.70">Love it.</span> <span class="tl-s" data-s="915.73" data-e="916.01">Perfect.</span> <span class="tl-s" data-s="916.18" data-e="917.68">Um, [Speaker A] and what comes from faith?</span> <span class="tl-s" data-s="918.37" data-e="918.56">Good works.</span> <span class="tl-s" data-s="918.59" data-e="919.31">Yeah, yeah, good.</span> <span class="tl-s" data-s="919.31" data-e="921.00">You tell a tree by its fruit.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="921.00" data-e="921.51">Yep, right.</span> <span class="tl-s" data-s="921.51" data-e="921.88">Good work.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="921.90" data-e="926.46">Yeah, you can tell a tree by its fruit.</span> <span class="tl-s" data-s="926.46" data-e="927.24">So [Speaker A] exactly.</span> <span class="tl-s" data-s="927.27" data-e="933.93">Then the last one is just, let&#x27;s say you&#x27;re in a situation where you have a family member or a friend or someone you love dearly.</span> <span class="tl-s" data-s="933.93" data-e="940.59">You would almost go directly to— and they don&#x27;t have faith, they don&#x27;t have interest— you would pray for regeneration.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="940.59" data-e="941.84">You prayed for them to get saved.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="941.94" data-e="942.56">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="942.58" data-e="950.46">And you evangelized and you talked to them about Jesus and helped them understand why it makes total sense to trust him.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="950.46" data-e="951.35">Love it.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="951.42" data-e="951.63">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="951.72" data-e="952.00">Okay, last one.</span> <span class="tl-s" data-s="952.06" data-e="955.62">I keep thinking of just— [Speaker A] I keep saying last one.</span> <span class="tl-s" data-s="955.73" data-e="969.33">So I&#x27;ve read I Don&#x27;t Have Enough Faith to Be an Atheist and some other books about faith, and one of the coolest ways I heard it put was whether you believe or you don&#x27;t believe, it is an act of faith.</span> <span class="tl-s" data-s="969.39" data-e="983.74">Yeah, and it just clearly before I was regenerated, it was a logical argument that I would rather bet on or have faith in eternal life and God&#x27;s existence and Christ dying on the cross for us in our place, [Speaker A] right?</span> <span class="tl-s" data-s="983.74" data-e="985.73">Rather than it&#x27;s all for nothing, right?</span> <span class="tl-s" data-s="985.74" data-e="985.89">Cynic.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="985.92" data-e="987.02">Well, an atheist would have.</span> <span class="tl-s" data-s="987.02" data-e="994.08">I mean, there&#x27;s lots of different flavors, but an atheist is going to say at least some of the common atheist arguments.</span> <span class="tl-s" data-s="994.16" data-e="998.17">You know, are we just a collection of atoms or molecules or whatever, and nothing we do matters?</span> <span class="tl-s" data-s="998.17" data-e="1000.92">We&#x27;re gonna die and it&#x27;ll be in darkness.</span> <span class="tl-s" data-s="1000.99" data-e="1002.48">And that&#x27;s not very hopeful.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1002.58" data-e="1004.44">No, you fall into cynicism.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1004.44" data-e="1007.74">Yeah, or stoicism, you know.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1007.80" data-e="1008.33">Yeah.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1008.43" data-e="1010.88">And so, [Speaker B] and there— [Speaker A] yeah.</span> <span class="tl-s" data-s="1010.93" data-e="1028.44">So when someone says they don&#x27;t have enough faith to be an atheist, what they mean is, is that there&#x27;s a whole universe around us that has the design, God&#x27;s design, very obvious, right?</span> <span class="tl-s" data-s="1028.56" data-e="1034.82">The tolerances for life on this planet are tiny, and yet we live here And it&#x27;s not by accident.</span> <span class="tl-s" data-s="1034.89" data-e="1038.05">Our DNA is intricately designed and could not form or happen via evolution.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1038.06" data-e="1038.09">Randomness.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1038.09" data-e="1039.30">There&#x27;s irreducible complexity.</span> <span class="tl-s" data-s="1039.30" data-e="1047.27">Like, you, you, you go down at the very molecular level of each of our parts of our bodies, and there are— there&#x27;s more complexity as you go.</span> <span class="tl-s" data-s="1047.33" data-e="1051.24">It doesn&#x27;t get more, it doesn&#x27;t get less.</span> <span class="tl-s" data-s="1051.98" data-e="1053.87">It is not like we are just a blob of cells.</span> <span class="tl-s" data-s="1053.87" data-e="1057.07">Each cell has parts, and those parts have parts, and it goes all the way down.</span> <span class="tl-s" data-s="1057.36" data-e="1061.73">I mean, this is just the whole evidence for a Creator is overwhelming.</span> <span class="tl-s" data-s="1061.80" data-e="1062.73">So, you have to believe.</span> <span class="tl-s" data-s="1062.73" data-e="1069.42">You have to have more faith to be an atheist than to be a Christian.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1069.42" data-e="1069.68">I agree.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="1069.68" data-e="1073.26">That is what they are getting at when they say [Speaker B] that.</span> <span class="tl-s" data-s="1074.00" data-e="1074.14">Love that.</span> <span class="tl-s" data-s="1074.16" data-e="1075.54">Okay, so if you have any questions about faith or anything like this, or you have a topic suggestions or recommendations, feel free to email us at production@centergilbert.com.</span> <span class="tl-s" data-s="1075.54" data-e="1075.54">Thank you so much for tuning in, and we, we look forward to hearing from you.</span> <span class="tl-s" data-s="1075.54" data-e="1075.54">See you until next time.</span> <span class="tl-s" data-s="1075.54" data-e="1075.54">Pew pew!</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Fixed on Jesus episode archive, backed by /api/podcast/search.
+  // Static fallback list above stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function fmtDuration(raw) {
+      if (!raw) return "";
+      var str = String(raw).trim();
+      // Anchor feeds report seconds; render as H:MM:SS or M:SS.
+      if (/^\d+$/.test(str)) {
+        var total = parseInt(str, 10);
+        var h = Math.floor(total / 3600);
+        var m = Math.floor((total % 3600) / 60);
+        var sec = total % 60;
+        var mm = (h > 0 && m < 10 ? "0" + m : "" + m);
+        var ss = (sec < 10 ? "0" + sec : "" + sec);
+        return (h > 0 ? h + ":" + mm : m) + ":" + ss;
+      }
+      // Anchor also reports clock strings like "00:24:02" — drop the
+      // redundant leading hour so it reads "24:02".
+      return str.replace(/^00:/, "");
+    }
+    function row(it) {
+      it = it || {};
+      var title = esc(it.title) || "Untitled episode";
+      var tUrl = it.guid && transcriptMap[it.guid];
+      var heading = tUrl
+        ? '<a href="' + esc(tUrl) + '">' + title + "</a>"
+        : (it.link
+          ? '<a href="' + esc(it.link) + '" target="_blank" rel="noopener">' + title + "</a>"
+          : title);
+      var meta = [fmtDate(it.date), fmtDuration(it.duration)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      return '<div class="sermon"><div><h3>' + heading + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    var PER = 10;
+    var state = { q: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No episodes found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " episode" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " episodes";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/podcast/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () {
+          // Keep the static list, but tell the reader where else to listen —
+          // some privacy blockers stop the archive request itself.
+          var note = document.querySelector("[data-sermons-error]");
+          if (note) note.hidden = false;
+        });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    if (monthSel) {
+      monthSel.addEventListener("change", function () {
+        state.month = monthSel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: 736fd5f9-118f-435a-98c4-8612465580eb -->
+</body>
+</html>
