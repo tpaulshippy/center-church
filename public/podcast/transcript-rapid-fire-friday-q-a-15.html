@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rapid Fire Friday - Q&amp;A #15 — Podcast Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Fixed on Jesus: conversations beyond Sunday mornings from Center Church in Gilbert, AZ — listen on Spotify, Apple Podcasts, and YouTube." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=18" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a href="/sermons">Sermons</a></li>
+              <li><a class="active" href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/podcast">&larr; All podcast episodes</a>
+          <h1 class="display-lg">Rapid Fire Friday - Q&amp;A #15</h1>
+          <p class="transcript-meta">2024-10-11 · 12:13</p>
+          <p class="transcript-desc">Rapid Fire Friday is a special series from the Fixed On Jesus Podcast crew (Rich, Mark and Heather) Sometimes we get questions that have short enough answers to answer many of them in one episode that we like to call Rapid Fire Fridays. Look for these to be released on Fridays if and when we get eno</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/e750e370/podcast/play/92897836/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-9-11%2Fe4312eeb-02d6-510d-53f5-3536544d73cf.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="0.03" data-e="0.70">What day is it, Mark?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="1.30" data-e="1.97">Oh, good question.</span> <span class="tl-s" data-s="2.02" data-e="4.02">I was gonna go on the Google machine, but I think it&#x27;s Friday.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="4.42" data-e="4.92">It&#x27;s Friday.</span> <span class="tl-s" data-s="5.14" data-e="5.96">You know what that means, Mark?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="6.52" data-e="8.53">Rapid Fire Friday.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="12.05" data-e="16.53">Boom boom boom.</span> <span class="tl-s" data-s="16.62" data-e="18.31">Rapid Fire Friday.</span></p>
+        <p><strong>Speaker C:</strong> <span class="tl-s" data-s="21.51" data-e="26.69">Three two one.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="27.19" data-e="29.37">Rapid Fire Friday.</span></p>
+        <p><span class="tl-s" data-s="32.48" data-e="33.46">All right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="33.62" data-e="34.29">We got a question.</span> <span class="tl-s" data-s="34.34" data-e="36.65">This person wishes to remain anonymous.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="37.09" data-e="38.72">Okay, and we will respect those wishes.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="38.90" data-e="39.56">We will, for now.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="40.12" data-e="40.44">Right.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="41.42" data-e="45.88">Is there anything of substance happening with church planting and/or missions in Europe?</span> <span class="tl-s" data-s="46.12" data-e="49.88">Seems like since World War II, Protestantism can&#x27;t regain its footing.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="49.99" data-e="50.57">Correct.</span> <span class="tl-s" data-s="50.88" data-e="52.27">It cannot, and it has not.</span> <span class="tl-s" data-s="53.03" data-e="54.05">Is there anything of substance?</span> <span class="tl-s" data-s="54.10" data-e="55.63">It really depends on how you define it.</span> <span class="tl-s" data-s="55.69" data-e="63.11">I mean, compared to What&#x27;s going on in the southern part of the global south, as they say?</span> <span class="tl-s" data-s="63.32" data-e="65.09">No, nothing in comparison to that.</span> <span class="tl-s" data-s="65.17" data-e="70.44">But there are all kinds of different faithful groups ministering and serving in these contexts.</span></p>
+        <p><span class="tl-s" data-s="71.91" data-e="76.30">In Sovereign Grace, an example is we&#x27;re working to plant a church in Torino, Italy.</span> <span class="tl-s" data-s="76.96" data-e="79.19">And it&#x27;s slow going.</span> <span class="tl-s" data-s="79.30" data-e="81.87">I mean, they can meet in somebody&#x27;s living room.</span></p>
+        <p><span class="tl-s" data-s="83.14" data-e="88.14">But it&#x27;s a genuine church that&#x27;s that&#x27;s pressing forward with the Gospel and people are getting saved.</span> <span class="tl-s" data-s="88.94" data-e="95.02">We have a church in Bristol, England, that is over 100 people, which for England is a megachurch.</span> <span class="tl-s" data-s="95.43" data-e="98.38">And so it&#x27;s slow going.</span> <span class="tl-s" data-s="98.49" data-e="106.47">I mean, and so are there widespread movements where people are coming back to Christian faith as biblically defined in Europe?</span> <span class="tl-s" data-s="106.89" data-e="107.12">No.</span></p>
+        <p><span class="tl-s" data-s="108.99" data-e="118.25">Are there faithful Under the radar Christians who are working to serve Jesus and love him and be a faithful church?</span> <span class="tl-s" data-s="118.43" data-e="118.65">Yes.</span> <span class="tl-s" data-s="119.03" data-e="120.99">It&#x27;s just not, it&#x27;s not all over the place.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="121.34" data-e="121.67">Gotcha.</span> <span class="tl-s" data-s="122.07" data-e="122.49">Thank you.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="124.18" data-e="124.47">Okay.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="124.73" data-e="128.64">This is also an email question from— [Speaker A] Oh, here we are.</span> <span class="tl-s" data-s="128.64" data-e="131.43">Our self-proclaimed number one Fixed on Jesus listener.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="131.43" data-e="131.72">Okay.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="131.83" data-e="133.42">Georgia Baird.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="133.45" data-e="133.56">Georgia.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="133.61" data-e="136.24">And I love her introduction, and I&#x27;m just going to read it verbatim.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="136.28" data-e="138.00">I&#x27;m not sure I like it.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="138.00" data-e="139.14">Dear Mark and Father Rich.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="139.14" data-e="142.51">Yeah, I don&#x27;t know what that&#x27;s about.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="142.57" data-e="143.86">Thanks for sending that.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="143.86" data-e="145.35">What are you doing, Georgia?</span> <span class="tl-s" data-s="145.54" data-e="147.07">Father [Speaker B] Rich.</span> <span class="tl-s" data-s="147.07" data-e="148.29">Father [Speaker A] Rich.</span> <span class="tl-s" data-s="148.29" data-e="150.06">And it&#x27;s capitalized, I see.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="150.06" data-e="152.88">It&#x27;s capital F, capital F, Father Rich.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="153.17" data-e="153.33">Okay.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="153.33" data-e="162.27">I was wondering, I was in conversation with my cousin and he mentioned a talk Father Rich had about the differences between hell and Sheol.</span> <span class="tl-s" data-s="162.34" data-e="162.59">Sheol?</span> <span class="tl-s" data-s="162.88" data-e="165.11">Did I say that wrong?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="165.63" data-e="165.67">Sheol.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="165.69" data-e="165.75">Sheol?</span> <span class="tl-s" data-s="165.85" data-e="171.56">In the Old Testament, I was wondering because I am fascinated by that stuff like spiritual warfare and demons and angels.</span> <span class="tl-s" data-s="171.56" data-e="172.65">I love your podcast.</span> <span class="tl-s" data-s="172.86" data-e="173.85">You are the best.</span> <span class="tl-s" data-s="173.95" data-e="176.59">Yours truly, Georgia Baird, number one fixed on Jesus listener.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="176.61" data-e="176.85">We are.</span> <span class="tl-s" data-s="176.85" data-e="177.81">We&#x27;re grateful.</span> <span class="tl-s" data-s="177.81" data-e="181.06">If we had t-shirts, Georgia Baird would get our first one.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="181.09" data-e="181.24">Yeah.</span> <span class="tl-s" data-s="181.24" data-e="186.10">All right, Father Rich, what you got?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="186.47" data-e="189.90">Okay, so I did a forum night last spring, right?</span> <span class="tl-s" data-s="189.90" data-e="190.60">Spiritual realm.</span> <span class="tl-s" data-s="190.71" data-e="191.51">On the spiritual realm.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="191.51" data-e="192.81">I did send that to her as well.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="192.81" data-e="193.74">You sent her the notes?</span> <span class="tl-s" data-s="193.74" data-e="194.01">Her email.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="194.01" data-e="195.09">Yeah, I sent her the notes.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="195.43" data-e="196.15">I made the notes.</span> <span class="tl-s" data-s="196.15" data-e="197.29">We have a YouTube on it?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="197.43" data-e="197.69">We do.</span> <span class="tl-s" data-s="197.69" data-e="198.31">We do.</span> <span class="tl-s" data-s="198.33" data-e="202.25">It might be private, but if you want it, you can reach out to me or Heather.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="202.33" data-e="208.86">Okay, so I can&#x27;t replicate that answer in this context, but I&#x27;ll just give some headlines.</span> <span class="tl-s" data-s="208.86" data-e="214.83">So, I also have extensive notes, which you can have as well.</span> <span class="tl-s" data-s="214.85" data-e="221.65">But essentially, hell, the way we talk about it, what it means is the eternal— it&#x27;s the place of— the permanent place of eternal death.</span> <span class="tl-s" data-s="221.78" data-e="222.49">That&#x27;s what hell is.</span> <span class="tl-s" data-s="222.49" data-e="224.08">It&#x27;s the place of fire.</span> <span class="tl-s" data-s="224.08" data-e="226.31">Oftentimes, it&#x27;s referred to as Hades.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="226.34" data-e="229.11">Gnashing of teeth, weeping and gnashing of teeth.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="229.24" data-e="230.04">Yeah, right.</span> <span class="tl-s" data-s="230.04" data-e="233.28">Sheol, Sheol technically just means the place of the dead.</span> <span class="tl-s" data-s="233.33" data-e="240.75">So, like, if someone talks in general terms about like someone dying, it&#x27;s going— they go to the place of the dead.</span> <span class="tl-s" data-s="240.82" data-e="246.34">Now, before Jesus came and rose from the dead, there were 2 sections of Sheol.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="246.34" data-e="246.86">Holding tanks.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="246.97" data-e="248.11">They were holding tanks.</span> <span class="tl-s" data-s="248.11" data-e="251.68">One was one for torment, For the unfaithful?</span> <span class="tl-s" data-s="251.86" data-e="261.54">And the other was for paradise, or they sometimes, this is really weird, but called Abraham&#x27;s bosom was, yeah, like they, yeah.</span> <span class="tl-s" data-s="261.65" data-e="262.40">For the faithful [Speaker B] dead?</span> <span class="tl-s" data-s="262.40" data-e="264.28">For the faithful saints?</span> <span class="tl-s" data-s="264.36" data-e="266.19">For the faithful dead, yeah.</span> <span class="tl-s" data-s="266.28" data-e="271.17">And so, then when Jesus rose from the dead, he led them out.</span> <span class="tl-s" data-s="271.17" data-e="276.80">And so, it was, if you want to read about that, what we get in terms of the separate There&#x27;s a chasm.</span> <span class="tl-s" data-s="276.80" data-e="293.89">We see this in Luke chapter 16, where Jesus gives a parable of the guy Lazarus, who, he&#x27;s sick and he&#x27;s poor and he&#x27;s outside this guy&#x27;s estate and he&#x27;s got sores on his body and dogs come and lick him and all kinds of stuff.</span> <span class="tl-s" data-s="293.89" data-e="294.82">And then he dies.</span></p>
+        <p><span class="tl-s" data-s="294.93" data-e="299.68">And he&#x27;s faithful and he goes to Abraham&#x27;s bosom on the paradise side.</span> <span class="tl-s" data-s="299.68" data-e="303.18">And the guy— [Speaker B] This is the guy that he wouldn&#x27;t give a drink to?</span> <span class="tl-s" data-s="303.18" data-e="306.62">Yeah, the guy who wouldn&#x27;t help him is on the other side.</span> <span class="tl-s" data-s="306.63" data-e="306.88">He dies.</span> <span class="tl-s" data-s="306.91" data-e="314.97">And he calls out, Abraham, go and tell my brothers so they can avoid this place.</span> <span class="tl-s" data-s="315.01" data-e="315.65">And that&#x27;s Sheol.</span> <span class="tl-s" data-s="315.65" data-e="326.88">And so, so now, so when people die now, I mean, we haven&#x27;t hit the final judgment yet, but when people die now, there is like Christians are immediately ushered into the presence of God or the presence of Christ.</span> <span class="tl-s" data-s="326.90" data-e="333.34">And we don&#x27;t have our new bodies yet, but we&#x27;ll be with him.</span> <span class="tl-s" data-s="333.40" data-e="340.48">Unbelievers, Sadly, go to the place of eternal torment and begin their punishment before the before the end.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="340.48" data-e="348.36">And we also see that something similar to that modeled by one of the thieves on the cross, who Jesus said he&#x27;d be with him [Speaker A] in [Speaker B] paradise that day.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="349.11" data-e="349.30">Yep.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="349.99" data-e="350.54">Yeah.</span> <span class="tl-s" data-s="350.65" data-e="352.96">So that&#x27;s exactly some of where we draw that conclusion.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="352.96" data-e="356.11">Or it&#x27;s but like that that&#x27;s why you need to watch the YouTube video.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="356.11" data-e="356.25">Okay.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="356.25" data-e="364.04">So a lot of what you get is you get that in Ephesians four when Jesus. leads the captives out and, you know, that kind of stuff.</span> <span class="tl-s" data-s="364.06" data-e="373.85">And so, and you also have Paul saying in Philippians, you know, it&#x27;s better to be here, but when I&#x27;m gone, I&#x27;ll be with Jesus.</span> <span class="tl-s" data-s="373.88" data-e="379.47">Then you have the martyrs crying out under the throne in Revelation 6.</span> <span class="tl-s" data-s="379.65" data-e="384.46">So yeah, there&#x27;s a— it&#x27;s like putting together pieces from all kinds of places of Scripture.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="384.46" data-e="384.96">That makes sense.</span> <span class="tl-s" data-s="384.96" data-e="385.77">Well, thank you.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="385.77" data-e="385.89">Yes.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="385.92" data-e="386.85">We got another one.</span> <span class="tl-s" data-s="386.87" data-e="392.01">This was actually a conversation I had in person, so I won&#x27;t hit the email bell.</span> <span class="tl-s" data-s="392.18" data-e="394.84">I&#x27;ll spare you the high-pitched noise.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="394.90" data-e="394.98">Okay.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="394.98" data-e="396.27">It was with Keith Fowler.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="396.27" data-e="396.88">Keith.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="397.08" data-e="402.22">And his suggestion was that we talk about the order of salvation.</span> <span class="tl-s" data-s="402.22" data-e="403.55">So someone is regenerate.</span> <span class="tl-s" data-s="403.71" data-e="410.72">You often hear terms like regenerated, the Holy Spirit enters them, and you got a fancy Greek or Latin or some other language word for it.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="410.72" data-e="411.65">It&#x27;s not fancy.</span> <span class="tl-s" data-s="411.65" data-e="412.01">It&#x27;s just Latin.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="412.07" data-e="412.33">Well, say it.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="412.38" data-e="412.67">Ordo salutis.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="412.71" data-e="413.07">Ordo salutis.</span> <span class="tl-s" data-s="413.12" data-e="414.88">So I want to hear, we want to hear about that.</span> <span class="tl-s" data-s="414.88" data-e="417.27">I thought it would be a good topic as well.</span> <span class="tl-s" data-s="417.36" data-e="419.11">But thank you for the question.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="419.14" data-e="419.67">Order of salvation.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="419.92" data-e="420.90">Order of salvation.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="420.90" data-e="421.74">Yeah, right, exactly.</span> <span class="tl-s" data-s="421.87" data-e="425.78">And so essentially what this is, it&#x27;s the ordo salutis.</span> <span class="tl-s" data-s="425.78" data-e="427.25">Now this is [Speaker B] ordo salutis.</span> <span class="tl-s" data-s="427.25" data-e="429.73">Ordo salutis, or order of salvation.</span> <span class="tl-s" data-s="429.73" data-e="435.66">If you want to impress your friends and relatives, just order, order salute, ordo salutis.</span> <span class="tl-s" data-s="435.66" data-e="437.65">Easy for me to say.</span> <span class="tl-s" data-s="437.68" data-e="445.85">Um, and so there is some debate on based on, you know, different understandings of how to put the Scriptures together.</span> <span class="tl-s" data-s="445.85" data-e="450.21">But the Reformed ordo salutis is this: first is election, right?</span> <span class="tl-s" data-s="450.27" data-e="453.40">So the Lord elects those that are his.</span> <span class="tl-s" data-s="453.40" data-e="455.05">Then we have the atonement, right?</span></p>
+        <p><span class="tl-s" data-s="455.73" data-e="460.73">So that&#x27;s the sacrifice of sin that Jesus does, and Jesus does that alone.</span> <span class="tl-s" data-s="461.20" data-e="463.22">Then we have the gospel call.</span> <span class="tl-s" data-s="463.37" data-e="466.64">So that&#x27;s where the sinner hears the gospel, Right?</span> <span class="tl-s" data-s="466.64" data-e="473.79">Then there&#x27;s an inward call, and usually that inward call is evidenced by conviction of sin.</span> <span class="tl-s" data-s="473.79" data-e="474.50">Then there&#x27;s regeneration.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="474.58" data-e="476.35">So all of that precedes regeneration?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="476.75" data-e="477.00">Right.</span> <span class="tl-s" data-s="477.49" data-e="478.80">Then there&#x27;s regeneration.</span> <span class="tl-s" data-s="479.00" data-e="485.56">That&#x27;s when the Spirit enters the person and makes them new.</span> <span class="tl-s" data-s="485.69" data-e="488.17">Then there&#x27;s conversion, which involves both faith and repentance.</span> <span class="tl-s" data-s="488.17" data-e="494.04">Then there&#x27;s justification, sanctification, which is growing in holiness, and glorification.</span> <span class="tl-s" data-s="494.04" data-e="500.90">Now, it must be said that Regeneration, faith, and justification are going to occur simultaneously.</span> <span class="tl-s" data-s="500.90" data-e="508.06">So, like, if you&#x27;re regenerated, you immediately put faith in Jesus, genuine faith that you have to put into Jesus, and you&#x27;re justified before God immediately, right?</span> <span class="tl-s" data-s="508.06" data-e="508.32">Right.</span> <span class="tl-s" data-s="508.38" data-e="510.19">So, that&#x27;s all right at the same time.</span> <span class="tl-s" data-s="510.19" data-e="521.91">And so, if you look at some of this order is dictated by Romans 8:29-30, which go from the predestination to glorification.</span></p>
+        <p><span class="tl-s" data-s="521.92" data-e="531.28">Now, If you are a person who has an Arminian understanding of the ordo salutis, you&#x27;re going to say that regeneration comes after faith.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="531.28" data-e="533.40">I was going to ask that.</span> <span class="tl-s" data-s="533.45" data-e="536.88">Does faith come before regeneration or does it come after regeneration?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="536.91" data-e="538.88">I believe someone who&#x27;s dead cannot put faith in anything.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="538.98" data-e="542.71">So that&#x27;s where the crux of the argument is between Reformed and Arminian.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="542.90" data-e="543.11">Yeah.</span> <span class="tl-s" data-s="543.12" data-e="550.21">So I believe someone who&#x27;s dead in their trespasses and sins is unable to exert Faith, saving faith.</span> <span class="tl-s" data-s="550.21" data-e="556.07">But people who are Arminians, which is, you know, a faithful— there&#x27;s a faithful presence.</span> <span class="tl-s" data-s="556.07" data-e="558.30">They believe that someone can put genuine faith and then they&#x27;re regenerated.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="558.30" data-e="565.60">So it&#x27;s almost like you have to do that first in order to be regenerated.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="565.70" data-e="565.78">Correct.</span> <span class="tl-s" data-s="565.78" data-e="569.32">Faith precedes regeneration for the Arminian believer.</span> <span class="tl-s" data-s="569.32" data-e="573.12">For me, regeneration— not just me, but the Reformed understanding— regeneration precedes faith.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="573.12" data-e="580.00">So for those friends and family that we have that aren&#x27;t walking with the Lord, should we be praying for their regeneration?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="580.00" data-e="582.30">We should be praying for them to be saved.</span> <span class="tl-s" data-s="582.30" data-e="582.58">Yes.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="582.58" data-e="582.62">Right.</span> <span class="tl-s" data-s="582.62" data-e="583.64">And that would include that.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="583.64" data-e="584.22">It would.</span> <span class="tl-s" data-s="584.22" data-e="589.32">But like, at the same time, I don&#x27;t worry about the ordo salutis for unbelievers, right?</span> <span class="tl-s" data-s="589.32" data-e="589.68">Like, I don&#x27;t care.</span> <span class="tl-s" data-s="589.68" data-e="594.16">Like, I just, I don&#x27;t like say, if you&#x27;re elect, I&#x27;m going to share the Gospel with you.</span> <span class="tl-s" data-s="594.16" data-e="594.51">We don&#x27;t know.</span> <span class="tl-s" data-s="594.51" data-e="595.86">We share the Gospel with everybody.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="595.86" data-e="596.22">We&#x27;re commanded to.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="596.22" data-e="596.24">Yeah.</span> <span class="tl-s" data-s="596.24" data-e="596.94">Well, Romans 10:14.</span> <span class="tl-s" data-s="597.02" data-e="598.77">It&#x27;s the content of their heart.</span> <span class="tl-s" data-s="598.77" data-e="605.82">How are they going to believe if How are they going to hear if they&#x27;re not told?</span> <span class="tl-s" data-s="605.92" data-e="608.50">Like, and so I have to, I just share the Gospel indiscriminately.</span> <span class="tl-s" data-s="608.50" data-e="613.48">And then in retrospect, we can look and say, okay, well, here&#x27;s the way the Scriptures describe that order.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="613.56" data-e="613.64">Right.</span> <span class="tl-s" data-s="613.64" data-e="620.44">And then in some of those people that you share the Gospel with, you might see them responding in that order or in another order even.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="620.44" data-e="620.54">Nope.</span> <span class="tl-s" data-s="620.54" data-e="621.90">Not in that order.</span> <span class="tl-s" data-s="621.94" data-e="622.56">Always in that order.</span> <span class="tl-s" data-s="622.56" data-e="624.18">Yeah, in my understanding, that&#x27;s the order.</span> <span class="tl-s" data-s="624.23" data-e="625.47">So, but we don&#x27;t see it.</span> <span class="tl-s" data-s="625.68" data-e="627.91">We don&#x27;t see, we don&#x27;t see the game plan.</span> <span class="tl-s" data-s="628.10" data-e="634.00">We don&#x27;t see the play right out in front of our eyes, right?</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="634.00" data-e="634.03">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="634.11" data-e="637.63">So much of theology and biblical understanding of theology is in retrospect.</span> <span class="tl-s" data-s="637.63" data-e="643.29">You know, nobody who gets regenerated sits there and says, okay, now I can exert saving faith.</span> <span class="tl-s" data-s="643.32" data-e="644.73">Oh, now I want to repent.</span> <span class="tl-s" data-s="644.73" data-e="646.05">Oh, now— No, I&#x27;m just fine.</span> <span class="tl-s" data-s="646.69" data-e="648.37">Yeah, no, no one knows that stuff.</span> <span class="tl-s" data-s="648.37" data-e="649.33">It&#x27;s just like, I love Jesus now.</span> <span class="tl-s" data-s="649.38" data-e="650.39">I feel like I&#x27;m a sinner.</span> <span class="tl-s" data-s="650.50" data-e="652.78">Jesus is my only way.</span> <span class="tl-s" data-s="653.37" data-e="654.97">I&#x27;m going to put my trust in him.</span> <span class="tl-s" data-s="654.99" data-e="655.82">I love him.</span></p>
+        <p><span class="tl-s" data-s="656.53" data-e="657.11">And I&#x27;m forgiven.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="657.31" data-e="657.65">Right.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="657.65" data-e="658.61">And that&#x27;s all they need.</span> <span class="tl-s" data-s="658.61" data-e="664.51">You know, I don&#x27;t like— I don&#x27;t think most of what we talk about theologically, we don&#x27;t need to bring up at all for evangelism.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="664.54" data-e="667.59">Well, that&#x27;s what I was going to ask.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="667.59" data-e="668.04">Muddy the water.</span> <span class="tl-s" data-s="668.13" data-e="668.26">Go.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="668.31" data-e="674.45">You already mentioned it, but just to simplify evangelism, you don&#x27;t have to think about if someone&#x27;s elect.</span> <span class="tl-s" data-s="674.56" data-e="679.69">You&#x27;re thinking about— [Speaker A] If you think about if someone&#x27;s elect, that&#x27;s unbiblical.</span> <span class="tl-s" data-s="679.69" data-e="680.08">Right, exactly.</span> <span class="tl-s" data-s="680.17" data-e="682.24">But you&#x27;re called to share the good news indiscriminately.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="682.24" data-e="682.47">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="682.58" data-e="684.66">And to sow and to plant seeds.</span> <span class="tl-s" data-s="684.73" data-e="687.37">But you&#x27;re not the one that controls the growth.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="687.37" data-e="687.80">Absolutely.</span> <span class="tl-s" data-s="687.87" data-e="688.04">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="688.09" data-e="691.62">If you have something that&#x27;s changed your entire life, sweeter than anything you&#x27;ve ever tasted.</span> <span class="tl-s" data-s="691.62" data-e="693.09">Why would you not share that?</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="693.09" data-e="693.19">Exactly.</span> <span class="tl-s" data-s="693.23" data-e="701.97">Now, when I say it&#x27;s unbiblical to think about election, it&#x27;s not, but it&#x27;s unbiblical to worry about that if— [Speaker B] before you evangelize.</span> <span class="tl-s" data-s="702.03" data-e="702.26">Yeah.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="703.23" data-e="704.74">Or as a stumbling block to evangelism.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="705.16" data-e="705.28">Exactly.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="705.28" data-e="705.45">Gotcha.</span> <span class="tl-s" data-s="705.72" data-e="706.71">Okay, great question, Keith.</span> <span class="tl-s" data-s="706.76" data-e="707.01">Thank you.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="707.01" data-e="707.88">Yeah, thanks, Keith.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="707.88" data-e="710.14">And that&#x27;s all the questions I have for now.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="710.22" data-e="716.25">For now, but there will be another Friday that comes because you know what, Mark?</span> <span class="tl-s" data-s="716.28" data-e="717.09">They come once every 7 days.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="717.09" data-e="717.42">Every seven.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="717.63" data-e="717.78">Every seven.</span> <span class="tl-s" data-s="717.83" data-e="718.63">It&#x27;s a rapid-fire Friday.</span> <span class="tl-s" data-s="718.70" data-e="718.91">We&#x27;ll be back.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="718.91" data-e="718.91">All right.</span> <span class="tl-s" data-s="718.91" data-e="718.91">Well, I&#x27;m gonna hold you to that.</span></p>
+        <p><strong>Speaker A:</strong> <span class="tl-s" data-s="718.91" data-e="718.91">All right.</span> <span class="tl-s" data-s="718.91" data-e="718.91">Sounds good.</span></p>
+        <p><strong>Speaker B:</strong> <span class="tl-s" data-s="718.91" data-e="718.91">Take care, guys.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Fixed on Jesus episode archive, backed by /api/podcast/search.
+  // Static fallback list above stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function fmtDuration(raw) {
+      if (!raw) return "";
+      var str = String(raw).trim();
+      // Anchor feeds report seconds; render as H:MM:SS or M:SS.
+      if (/^\d+$/.test(str)) {
+        var total = parseInt(str, 10);
+        var h = Math.floor(total / 3600);
+        var m = Math.floor((total % 3600) / 60);
+        var sec = total % 60;
+        var mm = (h > 0 && m < 10 ? "0" + m : "" + m);
+        var ss = (sec < 10 ? "0" + sec : "" + sec);
+        return (h > 0 ? h + ":" + mm : m) + ":" + ss;
+      }
+      // Anchor also reports clock strings like "00:24:02" — drop the
+      // redundant leading hour so it reads "24:02".
+      return str.replace(/^00:/, "");
+    }
+    function row(it) {
+      it = it || {};
+      var title = esc(it.title) || "Untitled episode";
+      var tUrl = it.guid && transcriptMap[it.guid];
+      var heading = tUrl
+        ? '<a href="' + esc(tUrl) + '">' + title + "</a>"
+        : (it.link
+          ? '<a href="' + esc(it.link) + '" target="_blank" rel="noopener">' + title + "</a>"
+          : title);
+      var meta = [fmtDate(it.date), fmtDuration(it.duration)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      return '<div class="sermon"><div><h3>' + heading + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    var PER = 10;
+    var state = { q: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No episodes found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " episode" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " episodes";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/podcast/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () {
+          // Keep the static list, but tell the reader where else to listen —
+          // some privacy blockers stop the archive request itself.
+          var note = document.querySelector("[data-sermons-error]");
+          if (note) note.hidden = false;
+        });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    if (monthSel) {
+      monthSel.addEventListener("change", function () {
+        state.month = monthSel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: 866b9239-2901-4d6f-a0d3-86aac880a727 -->
+</body>
+</html>
