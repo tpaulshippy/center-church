@@ -143,4 +143,17 @@ describe("calendar", () => {
     const body = await res.json();
     assert.ok(body.error.includes("Calendar"), JSON.stringify(body));
   });
+
+  it("ignores cross-origin links.next so credentials never leave PCO", async () => {
+    pages.set(PCO_BASE, {
+      data: [instance("1", "10", [], "2026-11-20T10:00:00Z")],
+      included: [eventRow("10", "Visible One", true)],
+      links: { next: "https://evil.example.com/pco?page=2" },
+    });
+    const res = await handleCalendar(new Request("https://centergilbert.com/api/calendar"), ENV, {});
+    assert.equal(res.status, 200);
+    const body = await res.json();
+    assert.equal(fetchCount, 1);
+    assert.equal(body.total_all, 1);
+  });
 });

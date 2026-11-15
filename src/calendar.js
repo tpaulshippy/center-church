@@ -42,7 +42,11 @@ export async function handleCalendar(request, env, ctx) {
         for (const inc of (payload && payload.included) || []) allIncluded.push(inc);
         const next = payload && payload.links && payload.links.next;
         if (!next) break;
-        currentUrl = new URL(next, currentUrl).toString();
+        // Never send our Basic credential to another host: only follow
+        // same-origin pagination links.
+        const resolved = new URL(next, currentUrl);
+        if (resolved.origin !== "https://api.planningcenteronline.com") break;
+        currentUrl = resolved.toString();
       }
       const byId = new Map();
       const tagById = new Map();
