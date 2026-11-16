@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Psalm 119 — Sermon Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Listen to the latest sermons from Center Church, or follow along on Apple Podcasts and Spotify." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=17" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a class="active" href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/sermons">&larr; All sermons</a>
+          <h1 class="display-lg">Psalm 119</h1>
+          <p class="transcript-meta">Rich Richardson · 2025-07-06 · 00:44:48</p>
+          <p class="transcript-desc">Nearness to the Lord</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/119cbef70/podcast/play/128974251/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-7%2F436123927-44100-2-96f09086eb27fef8.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><span class="tl-s" data-s="0.03" data-e="4.40">Well, happy 4th of July.</span> <span class="tl-s" data-s="5.20" data-e="9.44">It&#x27;s been 249 years since America won her freedom.</span> <span class="tl-s" data-s="10.12" data-e="25.96">It&#x27;s also, it was 111 years ago since the fateful day the Archduke of Austria, Franz Ferdinand, was assassinated, which caused the major countries of the world to become embroiled in its first world war.</span> <span class="tl-s" data-s="26.40" data-e="29.44">Now, much has changed since those days.</span> <span class="tl-s" data-s="30.44" data-e="34.68">Remote-controlled drones deliver blistering payloads of ordnance.</span></p>
+        <p><span class="tl-s" data-s="36.22" data-e="43.52">Talks of nuclear weapons, something undreamed about during World War I, fills our newsreels.</span> <span class="tl-s" data-s="44.16" data-e="49.86">And the devastating casualties associated with trench warfare are a thing of the past.</span> <span class="tl-s" data-s="50.92" data-e="53.46">Something else has also changed since then.</span> <span class="tl-s" data-s="53.91" data-e="62.04">While radios were beginning to be used during World War I, the technology hadn&#x27;t yet been refined for combat.</span> <span class="tl-s" data-s="63.00" data-e="69.40">The ideal way for armies to communicate with one another during the war was via telephone wire.</span> <span class="tl-s" data-s="70.16" data-e="73.64">So this wire, it had to be laid all over Europe.</span> <span class="tl-s" data-s="74.30" data-e="80.78">Now, as troops advanced across Europe, those lines were inevitably cut.</span> <span class="tl-s" data-s="80.80" data-e="87.42">And it became harder and harder for the Allies to maintain telephone communication with one another.</span> <span class="tl-s" data-s="87.59" data-e="99.22">So, the armies of France, Great Britain, and the United States all turned to one unlikely hero to help them communicate during combat.</span> <span class="tl-s" data-s="100.08" data-e="104.84">They turned to none other than man&#x27;s best friend, the canine.</span></p>
+        <p><span class="tl-s" data-s="105.93" data-e="112.40">There&#x27;s a picture of Stubby, a World War I hero for the Allied Forces.</span> <span class="tl-s" data-s="112.64" data-e="122.50">Dogs were outfitted with metal tubes on their collars, and they were able to deliver messages more efficiently than humans because they were a smaller target.</span> <span class="tl-s" data-s="123.22" data-e="124.98">It was harder to shoot a dog.</span></p>
+        <p><span class="tl-s" data-s="126.70" data-e="133.58">And so, here we have another dog, looks like one of my dogs, getting fitted with a metal tube.</span> <span class="tl-s" data-s="134.58" data-e="145.78">These brave dogs would deliver much-needed intel from generals and commanding officers, who were usually stationed in the rear, to the soldiers battling on the front lines in the trenches.</span> <span class="tl-s" data-s="147.00" data-e="154.14">Now, even American dogs were even used to deliver much-needed nicotine to their troops battling in the trenches.</span> <span class="tl-s" data-s="154.88" data-e="156.52">And there we have a little Frenchie.</span></p>
+        <p><span class="tl-s" data-s="159.28" data-e="163.64">Now, one story of a messenger dog is the stuff of legend.</span> <span class="tl-s" data-s="164.62" data-e="174.16">During the Battle of Verdun, a dog delivered what would be a crucial message to the soldiers that were holding the front lines of this French city.</span> <span class="tl-s" data-s="174.86" data-e="188.32">This brave canine gallantly zigzagged through a hail of German gunfire, and after being struck twice in his hindquarters, he crawled to deliver this message to the soldiers.</span> <span class="tl-s" data-s="189.60" data-e="191.22">For God&#x27;s sake, hold.</span> <span class="tl-s" data-s="191.98" data-e="193.76">We will relieve you tomorrow.</span> <span class="tl-s" data-s="194.98" data-e="210.26">This promise of reinforcement boosted morale, and it provided the French the courage that they needed to defend the city from the German onslaught, and thus secured for the Allies a key victory in the war.</span> <span class="tl-s" data-s="211.44" data-e="225.58">Now, it&#x27;s also likely that the mere sight of the messenger dog, fearlessly and courageously delivering this message, bloodied, dragging itself across enemy lines, was exactly what the French needed to muster on.</span> <span class="tl-s" data-s="226.80" data-e="234.44">Now, if you&#x27;re a dog lover, yes, the dog survived and lived for a few years after the World War I was over.</span></p>
+        <p><span class="tl-s" data-s="235.66" data-e="245.64">Had it not been for timely communication delivered on the collars of messenger dogs in World War I, the outcome of the war could have been drastically different.</span> <span class="tl-s" data-s="246.92" data-e="255.04">Now, as we turn our attention to Psalm 119 today, we see just how important communication is in the spiritual war we are fighting.</span> <span class="tl-s" data-s="255.76" data-e="262.80">Since man&#x27;s fall in the garden, mankind has been engaged in a spiritual world war, as it were.</span> <span class="tl-s" data-s="263.82" data-e="277.24">Now, in this war, Satan and his demons and our own sin seek to distract and discourage us from communicating with the only one who can provide us with relief.</span> <span class="tl-s" data-s="278.52" data-e="288.76">Like those soldiers who held fast to hope that reinforcements would arrive, we too are waiting for a message from our heavenly headquarters.</span> <span class="tl-s" data-s="289.78" data-e="291.76">But our message is not hold.</span> <span class="tl-s" data-s="291.78" data-e="294.06">Your help is on the way.</span> <span class="tl-s" data-s="295.14" data-e="297.56">The message we&#x27;ve been delivered is this.</span> <span class="tl-s" data-s="298.06" data-e="298.94">It is finished.</span> <span class="tl-s" data-s="299.47" data-e="300.78">Help is here.</span></p>
+        <p><span class="tl-s" data-s="302.26" data-e="310.90">But even in light of knowing the gospel and all of its power, we can fall prey to the lies that we believe.</span> <span class="tl-s" data-s="312.00" data-e="314.56">Lies that Satan might try to tempt us with.</span></p>
+        <p><span class="tl-s" data-s="316.59" data-e="332.64">Things that we believe because we think we need things other than the gospel to help us, be it our friend&#x27;s advice, a doctor&#x27;s opinion, maybe a portfolio that&#x27;s well-balanced enough to take care of posterity.</span></p>
+        <p><span class="tl-s" data-s="334.34" data-e="342.46">We tend to look within ourselves or to others for quick fixes to what we think are our greatest problems.</span></p>
+        <p><span class="tl-s" data-s="345.12" data-e="348.72">We do this rather than turn to the Lord and go to him in prayer.</span> <span class="tl-s" data-s="350.02" data-e="365.20">And so what the psalmist does for us is he shows us where to go, or rather whom to turn to, and he helps us to see how important spiritual communication is or prayer in the Christian life.</span></p>
+        <p><span class="tl-s" data-s="366.74" data-e="378.56">Because what we see in this passage today, in this stanza of ours, is that as the psalmist&#x27;s enemies drew near, he knew something important about God&#x27;s character.</span> <span class="tl-s" data-s="379.69" data-e="385.08">Something that was able to buoy him and to provide him with strength to carry him through.</span></p>
+        <p><span class="tl-s" data-s="386.84" data-e="394.08">Now what I believe our passage proposes to us all this morning, it&#x27;s a monumental truth in the Christian life.</span></p>
+        <p><span class="tl-s" data-s="395.66" data-e="397.60">It&#x27;s one the psalmist was privy to.</span> <span class="tl-s" data-s="397.94" data-e="403.70">It&#x27;s one that will buoy our own faith and will help to sustain us when our enemies draw near.</span></p>
+        <p><span class="tl-s" data-s="405.10" data-e="408.88">It&#x27;s a truth that dispels all the lies we can be tempted to believe.</span> <span class="tl-s" data-s="409.84" data-e="412.36">What we see in Psalm 119 today is this.</span> <span class="tl-s" data-s="413.44" data-e="419.06">We can draw near to God and pray because he is near to us.</span> <span class="tl-s" data-s="419.92" data-e="424.54">We can draw near to God and pray because he is near to us.</span> <span class="tl-s" data-s="425.54" data-e="428.80">Now to see this, let&#x27;s go to God&#x27;s word and read it together.</span></p>
+        <p><span class="tl-s" data-s="433.20" data-e="436.22">This is Psalm 119, verse 145.</span></p>
+        <p><span class="tl-s" data-s="438.46" data-e="444.92">The word of God reads, With my whole heart I cry, answer me, O Lord.</span> <span class="tl-s" data-s="445.60" data-e="447.50">I will keep your statues.</span></p>
+        <p><span class="tl-s" data-s="449.32" data-e="454.48">I call to you, save me, that I may observe your testimonies.</span> <span class="tl-s" data-s="455.22" data-e="457.90">I rise before dawn and I cry for help.</span> <span class="tl-s" data-s="457.98" data-e="459.86">I hope in your words.</span></p>
+        <p><span class="tl-s" data-s="461.32" data-e="464.64">My eyes are awake before the watches of the night.</span> <span class="tl-s" data-s="465.64" data-e="468.22">That I may meditate on your promise.</span></p>
+        <p><span class="tl-s" data-s="469.96" data-e="471.24">Hear my voice.</span> <span class="tl-s" data-s="471.80" data-e="474.54">According to your steadfast love, O Lord.</span> <span class="tl-s" data-s="474.69" data-e="477.50">According to your justice, give me life.</span> <span class="tl-s" data-s="478.64" data-e="481.70">They draw near who persecute me with evil purpose.</span></p>
+        <p><span class="tl-s" data-s="483.12" data-e="486.58">They are far from your law, but you.</span></p>
+        <p><span class="tl-s" data-s="488.38" data-e="490.02">You are near, O Lord.</span></p>
+        <p><span class="tl-s" data-s="491.46" data-e="493.60">And all your commandments are true.</span></p>
+        <p><span class="tl-s" data-s="495.04" data-e="499.26">Long have I known from your testimonies that you have founded them forever.</span> <span class="tl-s" data-s="500.06" data-e="500.72">Let&#x27;s pray.</span></p>
+        <p><span class="tl-s" data-s="504.08" data-e="510.30">Father, we&#x27;re grateful for this time that you set aside for us this week to sit under your preached word.</span></p>
+        <p><span class="tl-s" data-s="512.04" data-e="516.04">By your spirit, I pray, move me to the side and speak and minister to your people.</span> <span class="tl-s" data-s="517.18" data-e="518.66">In Jesus&#x27; name, amen.</span></p>
+        <p><span class="tl-s" data-s="520.44" data-e="523.46">Our first point is draw near to the Lord.</span> <span class="tl-s" data-s="524.64" data-e="537.24">Now, if you&#x27;ve been spending time with us while we&#x27;ve been journeying through Psalm 119, something we&#x27;ve seen repeatedly throughout all the stanzas leading up to now is the faithfulness or the righteousness of the psalmist.</span> <span class="tl-s" data-s="538.08" data-e="543.72">In the first stanza, in the first eight verses, he writes, I will praise you with an upright heart.</span> <span class="tl-s" data-s="544.60" data-e="552.16">And then in the second stanza, or the second set of eight verses, he writes, I will delight in your statutes.</span> <span class="tl-s" data-s="552.72" data-e="554.22">I will not forget your word.</span> <span class="tl-s" data-s="555.56" data-e="559.08">These are not things that unfaithful people promise and do.</span> <span class="tl-s" data-s="559.64" data-e="565.28">These are the attributes of people who deeply desire to know God and to walk with him.</span> <span class="tl-s" data-s="566.10" data-e="571.50">Even after this, in the third stanza, he says, put false ways far from me.</span> <span class="tl-s" data-s="572.20" data-e="576.68">And then he follows that up with, I have chosen the way of faithfulness.</span> <span class="tl-s" data-s="577.12" data-e="579.38">I set your rules before me.</span></p>
+        <p><span class="tl-s" data-s="580.30" data-e="583.00">This was a guy who was righteous and faithful.</span> <span class="tl-s" data-s="584.20" data-e="596.06">We see his faithfulness on display in our stanza, Koph, which he starts off in verse 145 by writing, With my whole heart I cry, answer me, O Lord.</span> <span class="tl-s" data-s="596.80" data-e="599.04">I will keep your statutes.</span> <span class="tl-s" data-s="600.28" data-e="603.64">People who devote their whole heart to something are committed.</span> <span class="tl-s" data-s="604.18" data-e="605.06">They&#x27;re committed people.</span> <span class="tl-s" data-s="605.60" data-e="608.04">They&#x27;re sold out for a particular cause or purpose.</span> <span class="tl-s" data-s="608.76" data-e="611.88">And the psalmist&#x27;s cause, his purpose, is the Lord.</span> <span class="tl-s" data-s="612.22" data-e="614.36">That much should be clear to us all by now.</span> <span class="tl-s" data-s="614.86" data-e="617.16">His purpose is the Lord.</span></p>
+        <p><span class="tl-s" data-s="618.58" data-e="623.84">What is it that motivates him now, though, to turn to the Lord and cry out to him with a whole heart?</span> <span class="tl-s" data-s="624.58" data-e="629.22">Well, a few verses down we read that his enemies had drawn near.</span></p>
+        <p><span class="tl-s" data-s="630.70" data-e="640.74">And so, he was faced with a very real occasion, a circumstance that led to his cry to the Lord for help.</span> <span class="tl-s" data-s="642.08" data-e="643.00">It was pressing.</span> <span class="tl-s" data-s="643.20" data-e="644.32">It was pressing in on him.</span> <span class="tl-s" data-s="644.39" data-e="645.04">It was urgent.</span> <span class="tl-s" data-s="645.06" data-e="648.56">It was a dire, desperate need.</span> <span class="tl-s" data-s="649.56" data-e="654.30">And it caused him to cry out the words, Save me, to the Lord.</span> <span class="tl-s" data-s="655.30" data-e="656.34">He needed help.</span> <span class="tl-s" data-s="656.86" data-e="659.40">And he cries out to God for that help.</span></p>
+        <p><span class="tl-s" data-s="661.78" data-e="666.44">Here, the psalmist has already given us some context for what drove him to prayer.</span> <span class="tl-s" data-s="667.20" data-e="667.72">His enemies.</span> <span class="tl-s" data-s="668.98" data-e="670.48">His enemies were closing in.</span> <span class="tl-s" data-s="670.61" data-e="673.60">He knew that the only one who could help him is the Lord.</span> <span class="tl-s" data-s="674.88" data-e="678.86">And then the psalmist tells us how often he went to the Lord in prayer.</span> <span class="tl-s" data-s="679.88" data-e="682.22">Look at verses 147 and 148.</span> <span class="tl-s" data-s="683.10" data-e="690.84">He writes in 147, I rise before dawn and cry for help.</span> <span class="tl-s" data-s="690.92" data-e="695.56">Then in 148, My eyes are awake before the watches of the night.</span></p>
+        <p><span class="tl-s" data-s="697.50" data-e="702.66">This simply means that his desperation, it got him up before the sun rose.</span> <span class="tl-s" data-s="703.76" data-e="705.70">And it kept him up all night.</span> <span class="tl-s" data-s="705.85" data-e="710.44">He could do nothing else but pray and meditate on God&#x27;s Word.</span></p>
+        <p><span class="tl-s" data-s="713.96" data-e="717.78">I love what Spurgeon says about those who rise early to pray.</span> <span class="tl-s" data-s="718.88" data-e="728.60">In a sermon, he said, As the early bird gets the worm, so the early prayer, or the person who rises early to pray, is soon refreshed with hope.</span></p>
+        <p><span class="tl-s" data-s="730.74" data-e="740.70">When we read a passage like this, we should ask ourselves, when was the last time we&#x27;ve cried out with this sort of urgency to the Lord?</span></p>
+        <p><span class="tl-s" data-s="742.64" data-e="747.68">When was it that you had to lean in to him and him alone for help?</span></p>
+        <p><span class="tl-s" data-s="749.86" data-e="767.94">When&#x27;s the last time a circumstance or a situation in your life caused you to run to him, depend on him like the psalmist, being awake before the sun rose, or kept awake into the wee hours of the night, pleading with the Lord for help?</span></p>
+        <p><span class="tl-s" data-s="770.66" data-e="777.62">Usually, we turn to the Lord in desperation because we might lose something we cherish.</span></p>
+        <p><span class="tl-s" data-s="779.54" data-e="784.84">Usually, we feel like we might lose someone we love.</span></p>
+        <p><span class="tl-s" data-s="786.54" data-e="790.70">And this drives us to deeper dependence on the Lord.</span> <span class="tl-s" data-s="790.73" data-e="807.80">So my question for us is, when&#x27;s the last time you experienced such heartache, such gut-wrenching pain deep in your soul that it caused you to cry out to the Lord for help?</span></p>
+        <p><span class="tl-s" data-s="810.02" data-e="820.16">It&#x27;s in these moments of desperation that the only words we can utter, the only words we can manage to even say with our lips are, save me.</span></p>
+        <p><span class="tl-s" data-s="822.74" data-e="823.74">Save her.</span> <span class="tl-s" data-s="824.56" data-e="825.26">Save him.</span></p>
+        <p><span class="tl-s" data-s="830.54" data-e="836.80">When faced with trials that seem to swallow us up, we don&#x27;t need lengthy prayers.</span> <span class="tl-s" data-s="837.88" data-e="842.10">Those two words, save me, they suffice.</span></p>
+        <p><span class="tl-s" data-s="843.56" data-e="847.66">Now, we don&#x27;t always need to pray with this sort of fervency.</span> <span class="tl-s" data-s="848.59" data-e="854.84">History&#x27;s filled with saints who&#x27;ve plodded along, quietly depending on the Lord in prayer.</span></p>
+        <p><span class="tl-s" data-s="856.46" data-e="858.76">This church is filled with them.</span></p>
+        <p><span class="tl-s" data-s="860.84" data-e="864.32">But when the psalmist prays to be saved, it&#x27;s urgent.</span> <span class="tl-s" data-s="865.20" data-e="866.12">It&#x27;s desperate.</span></p>
+        <p><span class="tl-s" data-s="868.70" data-e="876.24">Now, we should stop here and wonder and really consider what is it we need to be saved from?</span></p>
+        <p><span class="tl-s" data-s="877.66" data-e="880.08">What is it you need to be saved from?</span></p>
+        <p><span class="tl-s" data-s="882.64" data-e="886.58">You may be here this morning and you&#x27;re faced with a very difficult circumstance.</span> <span class="tl-s" data-s="887.60" data-e="891.76">Maybe you&#x27;re feeling like there&#x27;s nowhere to turn but to the Lord in prayer.</span></p>
+        <p><span class="tl-s" data-s="896.24" data-e="897.94">This is a very good place to be.</span></p>
+        <p><span class="tl-s" data-s="899.46" data-e="903.96">Psalm 34, 18 reads, the Lord is near to the brokenhearted.</span> <span class="tl-s" data-s="904.10" data-e="906.10">He saves the crushed in spirit.</span> <span class="tl-s" data-s="906.90" data-e="907.78">Lean into that.</span> <span class="tl-s" data-s="909.10" data-e="914.42">Lean into that place that you&#x27;re in right now where you feel this sort of desperation.</span></p>
+        <p><span class="tl-s" data-s="915.98" data-e="919.38">In your brokenness, trust that the Lord will save you.</span></p>
+        <p><span class="tl-s" data-s="921.20" data-e="928.56">However, I&#x27;d be willing to wager that for most of us, life is pretty good.</span></p>
+        <p><span class="tl-s" data-s="930.50" data-e="931.42">Life is good.</span> <span class="tl-s" data-s="932.46" data-e="939.22">I&#x27;m convinced that the news is a common grace gift to us Christians because it provides us with some perspective.</span> <span class="tl-s" data-s="940.34" data-e="946.88">It shows us what&#x27;s going on in the world and that people are going through much worse things than we are.</span></p>
+        <p><span class="tl-s" data-s="949.36" data-e="954.16">Now, I recognize that some of us have had brutal experiences in the past.</span> <span class="tl-s" data-s="954.84" data-e="956.08">I don&#x27;t want to minimize that.</span> <span class="tl-s" data-s="956.78" data-e="957.94">I&#x27;m talking about now.</span> <span class="tl-s" data-s="958.94" data-e="962.56">I&#x27;m talking about life right now in this season.</span> <span class="tl-s" data-s="963.26" data-e="970.48">Because when we take an honest inventory of our lives, I&#x27;m pretty sure everything&#x27;s copacetic.</span></p>
+        <p><span class="tl-s" data-s="972.77" data-e="974.08">Marriage might be going well.</span></p>
+        <p><span class="tl-s" data-s="975.55" data-e="977.84">Kids are healthy for the most part.</span> <span class="tl-s" data-s="978.62" data-e="980.72">The job keeps giving you a paycheck.</span> <span class="tl-s" data-s="981.08" data-e="982.56">That&#x27;s for showing up sometimes.</span></p>
+        <p><span class="tl-s" data-s="984.06" data-e="985.20">The bills are paid.</span></p>
+        <p><span class="tl-s" data-s="989.03" data-e="992.46">But, are you living the good life?</span> <span class="tl-s" data-s="993.46" data-e="998.64">And does living a good life drive you toward prayer or away from it?</span></p>
+        <p><span class="tl-s" data-s="1000.75" data-e="1010.24">Does living a good life drive you toward God in gratitude and gratefulness or does it lead you away from God in forgetfulness?</span></p>
+        <p><span class="tl-s" data-s="1012.86" data-e="1016.12">I think these are honest questions for us to ask ourselves.</span></p>
+        <p><span class="tl-s" data-s="1017.84" data-e="1024.00">Because as Christians living in the 21st century, we are alive during the most prosperous time in history.</span> <span class="tl-s" data-s="1025.00" data-e="1026.34">Things are not that bad.</span></p>
+        <p><span class="tl-s" data-s="1028.40" data-e="1031.96">So, what is it we need to be saved from?</span></p>
+        <p><span class="tl-s" data-s="1033.46" data-e="1035.90">If you&#x27;re a Christian, you may be thinking, nothing!</span> <span class="tl-s" data-s="1036.80" data-e="1037.84">I&#x27;m saved!</span> <span class="tl-s" data-s="1038.62" data-e="1043.36">There&#x27;s nothing anyone or anything can do to take that from me.</span></p>
+        <p><span class="tl-s" data-s="1045.76" data-e="1052.06">Now, you wouldn&#x27;t be wrong in saying this, but you wouldn&#x27;t also be completely right.</span></p>
+        <p><span class="tl-s" data-s="1053.60" data-e="1056.90">I know, that shocks the senses here, but let me explain.</span> <span class="tl-s" data-s="1058.28" data-e="1063.02">There&#x27;s an aspect of our salvation in which we are being saved.</span> <span class="tl-s" data-s="1064.30" data-e="1066.28">If you&#x27;re in Christ, you&#x27;ve been saved.</span> <span class="tl-s" data-s="1066.56" data-e="1069.98">You&#x27;ve been justified by the atoning work of Jesus Christ at the cross.</span> <span class="tl-s" data-s="1070.56" data-e="1071.82">It&#x27;s already been accomplished.</span> <span class="tl-s" data-s="1072.10" data-e="1072.84">It&#x27;s finished.</span></p>
+        <p><span class="tl-s" data-s="1075.40" data-e="1078.76">There&#x27;s nothing that can change that forensic reality.</span> <span class="tl-s" data-s="1079.26" data-e="1079.96">It&#x27;s declared.</span> <span class="tl-s" data-s="1080.44" data-e="1081.20">It is true.</span> <span class="tl-s" data-s="1082.34" data-e="1086.40">If your faith is in Christ, you&#x27;ve been saved.</span> <span class="tl-s" data-s="1087.62" data-e="1091.38">But there is another reality the Bible speaks about for the Christian.</span> <span class="tl-s" data-s="1092.38" data-e="1094.78">And that&#x27;s the fact we are being saved.</span></p>
+        <p><span class="tl-s" data-s="1096.48" data-e="1107.00">1 Corinthians 1.18 says, For the word of the cross is folly to those who are perishing, but to us who are being saved, it&#x27;s the power of God.</span></p>
+        <p><span class="tl-s" data-s="1108.72" data-e="1109.86">It&#x27;s present active.</span> <span class="tl-s" data-s="1110.52" data-e="1111.54">We&#x27;re being saved.</span> <span class="tl-s" data-s="1112.46" data-e="1119.40">2 Corinthians 2.15 says, For we are the aroma of Christ to God among those who are being saved.</span> <span class="tl-s" data-s="1120.26" data-e="1121.44">It&#x27;s present active.</span> <span class="tl-s" data-s="1121.84" data-e="1123.06">It&#x27;s happening right now.</span></p>
+        <p><span class="tl-s" data-s="1124.78" data-e="1129.54">Why would the Bible use the words being saved if we&#x27;re already saved?</span></p>
+        <p><span class="tl-s" data-s="1132.72" data-e="1135.30">I get this as a little word puzzle this morning.</span> <span class="tl-s" data-s="1135.50" data-e="1136.12">So bear with me.</span> <span class="tl-s" data-s="1136.19" data-e="1136.90">We&#x27;re going somewhere.</span> <span class="tl-s" data-s="1138.22" data-e="1141.72">It&#x27;s because God is saving us by sanctifying us.</span> <span class="tl-s" data-s="1142.80" data-e="1149.60">Sanctification, which means God is in the process of making us holy, is a part of our salvation.</span></p>
+        <p><span class="tl-s" data-s="1151.44" data-e="1157.82">Now, to be clear, sanctification, it&#x27;s a necessary fruit of justification, not its cause.</span> <span class="tl-s" data-s="1158.18" data-e="1160.66">You&#x27;re not sanctified, then justified.</span> <span class="tl-s" data-s="1161.36" data-e="1164.00">You are justified, then sanctified.</span></p>
+        <p><span class="tl-s" data-s="1167.42" data-e="1185.50">So all of us who are in Christ, we are justified once and for all and sanctified progressively until the day we either go to be with Jesus or he comes back for us. justification is a declaration.</span> <span class="tl-s" data-s="1186.76" data-e="1187.86">You&#x27;re saved.</span> <span class="tl-s" data-s="1188.32" data-e="1191.14">Sanctification is about transformation.</span> <span class="tl-s" data-s="1192.10" data-e="1195.90">We&#x27;re being transformed into the image of the Son.</span></p>
+        <p><span class="tl-s" data-s="1198.52" data-e="1202.46">Now, Reformed theologians, they like to use this illustration of a chain.</span> <span class="tl-s" data-s="1202.90" data-e="1204.90">It&#x27;s called the golden chain of salvation.</span></p>
+        <p><span class="tl-s" data-s="1206.68" data-e="1208.32">Salvation can be compared to it.</span> <span class="tl-s" data-s="1208.85" data-e="1215.32">Election, or God&#x27;s grace and electing those who would come to faith in Christ is one link in the chain.</span> <span class="tl-s" data-s="1216.28" data-e="1219.14">Connected to that chain then is justification.</span> <span class="tl-s" data-s="1219.66" data-e="1221.64">That&#x27;s another link in the chain.</span> <span class="tl-s" data-s="1222.38" data-e="1223.98">There are links to this chain.</span> <span class="tl-s" data-s="1225.30" data-e="1232.62">Regeneration, a link in the chain that represents the moment the Holy Spirit gave you a new heart. sanctification.</span> <span class="tl-s" data-s="1232.64" data-e="1240.70">And then sanctification is another link in the chain because it&#x27;s what happens as we live the Christian life.</span></p>
+        <p><span class="tl-s" data-s="1242.12" data-e="1248.70">It&#x27;s what happens as we pursue godliness, as we take one step of obedience day after day.</span></p>
+        <p><span class="tl-s" data-s="1250.22" data-e="1257.12">It&#x27;s what happens when we crack open our Bibles and pray God&#x27;s word and his promises back to him.</span></p>
+        <p><span class="tl-s" data-s="1258.78" data-e="1264.96">For those of us who are in Christ, we are being saved as we&#x27;re being sanctified.</span></p>
+        <p><span class="tl-s" data-s="1266.58" data-e="1271.34">Now this is a very terse treatment of a very dense, dense theological topic.</span> <span class="tl-s" data-s="1271.52" data-e="1283.00">But for the purpose of our text this morning, it&#x27;s very important for us to see that there are times when it&#x27;s okay for you Christian to cry out to the Lord, save me.</span> <span class="tl-s" data-s="1284.08" data-e="1284.88">Save me.</span></p>
+        <p><span class="tl-s" data-s="1286.36" data-e="1289.38">And not feel like you&#x27;re in theological error.</span> <span class="tl-s" data-s="1290.74" data-e="1295.60">Because all of us Christians are tempted to do things we shouldn&#x27;t do.</span> <span class="tl-s" data-s="1296.46" data-e="1300.58">All of us Christians give in to those things we know that we shouldn&#x27;t do.</span> <span class="tl-s" data-s="1300.97" data-e="1305.88">All of us Christians are tempted to trust in ourselves and not in the Lord.</span> <span class="tl-s" data-s="1307.28" data-e="1315.06">All of us Christians are tempted to give in to habitual sin patterns that can devastate and wreck relationships.</span> <span class="tl-s" data-s="1316.16" data-e="1321.92">All of us Christians are tempted to elevate our own interests above the interests of others.</span> <span class="tl-s" data-s="1322.68" data-e="1324.52">We&#x27;re all tempted in these ways.</span></p>
+        <p><span class="tl-s" data-s="1325.94" data-e="1327.60">So we need to be sanctified.</span> <span class="tl-s" data-s="1328.76" data-e="1331.18">We&#x27;re being saved.</span> <span class="tl-s" data-s="1332.12" data-e="1338.22">In this process of being made holy, it&#x27;s one that requires our sin to be put to death.</span></p>
+        <p><span class="tl-s" data-s="1340.02" data-e="1345.40">And the part that you and I play is we get to cry out to the Lord, save me.</span> <span class="tl-s" data-s="1346.56" data-e="1348.36">Save me from this sin.</span></p>
+        <p><span class="tl-s" data-s="1350.24" data-e="1354.44">It&#x27;s a cry like the Apostle Paul&#x27;s when he wrote, wretched man that I am.</span></p>
+        <p><span class="tl-s" data-s="1357.08" data-e="1359.58">Who will deliver me from this body of death?</span> <span class="tl-s" data-s="1360.89" data-e="1364.06">Thanks be to God through Jesus Christ our Lord.</span></p>
+        <p><span class="tl-s" data-s="1366.36" data-e="1372.30">The Christian life is a life of deep dependence on the Lord.</span></p>
+        <p><span class="tl-s" data-s="1374.03" data-e="1375.96">There are no nominal Christians.</span> <span class="tl-s" data-s="1377.34" data-e="1381.02">There are those who are committed to walking with Jesus.</span></p>
+        <p><span class="tl-s" data-s="1383.50" data-e="1386.54">You cannot be a Christian in name alone.</span> <span class="tl-s" data-s="1387.54" data-e="1390.02">You must walk with Jesus.</span></p>
+        <p><span class="tl-s" data-s="1392.68" data-e="1396.98">Have you ever met someone who is really good at a trade or a skill?</span> <span class="tl-s" data-s="1397.76" data-e="1405.14">Maybe a carpenter artist, a musician and they obsess over the tiniest of details.</span> <span class="tl-s" data-s="1406.00" data-e="1408.38">They need to get things just right.</span> <span class="tl-s" data-s="1409.70" data-e="1415.26">Usually people who know a trade or creative types like artists or musicians are this way.</span> <span class="tl-s" data-s="1415.66" data-e="1423.56">As they grow in their trade or their skill or their craft, they obsess over the tiniest of details.</span> <span class="tl-s" data-s="1423.70" data-e="1427.74">An artist obsesses over painting a tiny little corner of a wall.</span></p>
+        <p><span class="tl-s" data-s="1429.19" data-e="1432.60">Something no one will ever see but they say, I&#x27;ll see it.</span> <span class="tl-s" data-s="1433.86" data-e="1441.80">Or it&#x27;s like a musician who obsesses over a chord or a note while writing a melody just so they can get it just right.</span></p>
+        <p><span class="tl-s" data-s="1444.22" data-e="1447.18">Friends, this is how we need to be with the conditions of our hearts.</span> <span class="tl-s" data-s="1448.08" data-e="1451.40">We need to obsess over the tiniest of details.</span> <span class="tl-s" data-s="1452.80" data-e="1471.20">Just like a craftsman or an artisan or a musician grows in their trade and becomes obsessed over these details as the Lord matures us, as we grow in godliness and maturity, we become more and more obsessed over killing remaining sin in our lives.</span></p>
+        <p><span class="tl-s" data-s="1473.01" data-e="1476.76">Not sin in other people, sin in ourselves.</span></p>
+        <p><span class="tl-s" data-s="1478.48" data-e="1492.24">We should be stalking our sin like a skilled hunter stalks his prey, taking aim at it, pulling the trigger and killing it whenever we see it. this is Christian maturity.</span></p>
+        <p><span class="tl-s" data-s="1494.13" data-e="1503.50">One of the ways you can tell someone is a seasoned, mature believer is just how humbly they talk about their walk with the Lord.</span> <span class="tl-s" data-s="1504.80" data-e="1524.92">When you ask them how they&#x27;re doing, they respond with things like, better than I deserve because they recognize God&#x27;s grace on their life. small group, these are people that are quick to be vulnerable with their sin and invite others to pray for them because they need help.</span></p>
+        <p><span class="tl-s" data-s="1527.86" data-e="1540.36">It&#x27;s a sign of Christian maturity that we&#x27;d be so intimately familiar with the ways we&#x27;re tempted and the ways that we&#x27;re given to sin that we call out to the Lord for help.</span></p>
+        <p><span class="tl-s" data-s="1543.24" data-e="1549.66">And so as Christians, we can draw near to the Lord by crying out, like the psalmist, save me.</span> <span class="tl-s" data-s="1550.38" data-e="1551.74">We can do it with urgency.</span> <span class="tl-s" data-s="1552.66" data-e="1556.52">As we see our sin, we can do it with urgency and desperation.</span> <span class="tl-s" data-s="1557.52" data-e="1562.00">It doesn&#x27;t have to take some catastrophic thing happening in your life.</span></p>
+        <p><span class="tl-s" data-s="1563.60" data-e="1564.54">It can be tomorrow.</span> <span class="tl-s" data-s="1565.24" data-e="1569.82">It can be this afternoon as you realize the ways that you sin against other people.</span></p>
+        <p><span class="tl-s" data-s="1574.00" data-e="1579.58">Now I realize that this can create an atmosphere of guilt.</span> <span class="tl-s" data-s="1579.92" data-e="1582.08">I don&#x27;t want that to be the case.</span></p>
+        <p><span class="tl-s" data-s="1583.57" data-e="1585.36">Because we shouldn&#x27;t feel guilt.</span> <span class="tl-s" data-s="1586.36" data-e="1591.68">Because if guilt keeps you from praying, you&#x27;re believing the wrong gospel.</span> <span class="tl-s" data-s="1592.76" data-e="1594.22">That&#x27;s a gospel of works.</span> <span class="tl-s" data-s="1594.80" data-e="1601.12">In Christ, guilt is never a barrier to praying a God-glorifying, soul-satisfying prayer.</span> <span class="tl-s" data-s="1601.90" data-e="1602.10">No.</span> <span class="tl-s" data-s="1602.58" data-e="1605.16">Guilt is fuel for our prayers.</span></p>
+        <p><span class="tl-s" data-s="1608.07" data-e="1611.24">It should send us running to the Lord in repentance.</span> <span class="tl-s" data-s="1612.53" data-e="1614.26">Turning to Him for our help.</span> <span class="tl-s" data-s="1615.01" data-e="1617.64">Because we know that our sin grieves Him.</span></p>
+        <p><span class="tl-s" data-s="1620.67" data-e="1623.28">If you&#x27;re discouraged in your battle against sin.</span> <span class="tl-s" data-s="1624.26" data-e="1625.52">Friend, this is normal.</span></p>
+        <p><span class="tl-s" data-s="1627.79" data-e="1630.60">This is a normal experience in the Christian life.</span> <span class="tl-s" data-s="1631.16" data-e="1639.02">Because we live in a steady tension between what is already our justification, you&#x27;re justified, remember?</span></p>
+        <p><span class="tl-s" data-s="1641.75" data-e="1645.16">And the not yet, or our future glorification.</span></p>
+        <p><span class="tl-s" data-s="1647.54" data-e="1653.26">But in Christ, the good news is He provides us with everything we need to get there.</span> <span class="tl-s" data-s="1654.08" data-e="1658.16">Titus 2, verses 11 and 12 say, for the grace of God has appeared.</span></p>
+        <p><span class="tl-s" data-s="1659.64" data-e="1660.68">This is past tense.</span> <span class="tl-s" data-s="1661.48" data-e="1673.44">It&#x27;s bringing salvation for all people, training us to renounce worldliness and ungodly passions, to live self-controlled, upright, godly lives in this present age.</span></p>
+        <p><span class="tl-s" data-s="1675.14" data-e="1675.98">Grace does that.</span> <span class="tl-s" data-s="1677.01" data-e="1681.02">Grace empowers us to fight sin.</span> <span class="tl-s" data-s="1682.39" data-e="1690.48">We can personalize Romans 7 24 and say, wretched man or woman that I am, and we can know this isn&#x27;t a sign of weakness.</span> <span class="tl-s" data-s="1691.59" data-e="1696.48">When we recognize our wretchedness, it is not weakness, it is maturity.</span></p>
+        <p><span class="tl-s" data-s="1699.09" data-e="1706.16">When you&#x27;re more aware of your sin, it causes us to grow in our dependence on him.</span> <span class="tl-s" data-s="1707.44" data-e="1713.24">And so we can draw near to the Lord with confidence as we battle remaining sin.</span></p>
+        <p><span class="tl-s" data-s="1716.21" data-e="1718.74">Second point, the Lord draws near to us.</span></p>
+        <p><span class="tl-s" data-s="1720.62" data-e="1724.44">Now, the psalmist doesn&#x27;t just pray a bunch of random meaningless prayers.</span> <span class="tl-s" data-s="1725.74" data-e="1730.60">In verse 147, he tells us that when he cries for help, he hopes in God&#x27;s word.</span> <span class="tl-s" data-s="1731.58" data-e="1740.40">Then, in verse 148, when he prays during the watches of the night, it causes him to meditate on God&#x27;s promises.</span></p>
+        <p><span class="tl-s" data-s="1742.71" data-e="1746.28">These are not meaningless, aimless prayers.</span> <span class="tl-s" data-s="1747.56" data-e="1750.70">These were prayers informed by God&#x27;s promises.</span> <span class="tl-s" data-s="1752.02" data-e="1764.28">Christopher Ash writes on this, he, the psalmist, feeds his prayers not with his subjective desires, but with the objective promises.</span> <span class="tl-s" data-s="1765.40" data-e="1770.02">His hope is given shape and substance by the word of God.</span> <span class="tl-s" data-s="1771.40" data-e="1775.06">You see, when we pray, all too often our prayers are weak.</span> <span class="tl-s" data-s="1775.74" data-e="1782.08">They kind of fall flat because we pray for things we want, things we think we need.</span> <span class="tl-s" data-s="1782.20" data-e="1786.66">We end up approaching God like a genie in a bottle with our three wishes.</span></p>
+        <p><span class="tl-s" data-s="1788.68" data-e="1792.32">Now this isn&#x27;t to say we shouldn&#x27;t ask God for things we desire.</span> <span class="tl-s" data-s="1792.46" data-e="1794.82">We should if they align with God&#x27;s will.</span> <span class="tl-s" data-s="1795.96" data-e="1803.08">But when we open our Bibles and pray according to God&#x27;s word, we pray God&#x27;s promises back to him.</span> <span class="tl-s" data-s="1804.38" data-e="1807.42">That&#x27;s the idea behind what the psalmist is doing here.</span> <span class="tl-s" data-s="1808.12" data-e="1814.32">In verses 147 and 148, we should feed our prayers with God&#x27;s promises.</span></p>
+        <p><span class="tl-s" data-s="1816.28" data-e="1819.98">In the psalmist, he continues to pray the promises of God in verse 149.</span> <span class="tl-s" data-s="1821.04" data-e="1826.02">He appeals, notice what he appeals to in that first line of verse 149.</span> <span class="tl-s" data-s="1826.82" data-e="1830.58">He says, hear my voice according to your steadfast love.</span></p>
+        <p><span class="tl-s" data-s="1832.15" data-e="1834.50">According to your steadfast love.</span></p>
+        <p><span class="tl-s" data-s="1836.21" data-e="1842.34">He knows that God hears him because of God&#x27;s faithfulness to his promises.</span></p>
+        <p><span class="tl-s" data-s="1844.85" data-e="1849.80">He depends on God to hear because he knows God is committed to hearing him.</span></p>
+        <p><span class="tl-s" data-s="1852.21" data-e="1856.26">You see, our good friend the psalmist, he knows this.</span> <span class="tl-s" data-s="1856.72" data-e="1861.70">He knows this to be true without a shadow of doubt because he knows scripture.</span> <span class="tl-s" data-s="1862.80" data-e="1864.08">He knows his Old Testament.</span></p>
+        <p><span class="tl-s" data-s="1865.59" data-e="1899.10">When God described himself to Moses in Exodus 34 6, what God says of himself is this, the Lord, the Lord, a God merciful and gracious, slow to anger, and abounding in steadfast love and faithfulness, keeping steadfast love for thousands, forgiving iniquity and transgression and sin, but who will by no means clear the guilty, visiting the iniquity of the fathers on the children and the children&#x27;s children to the third and fourth generation.</span></p>
+        <p><span class="tl-s" data-s="1901.52" data-e="1904.04">This is what the steadfast love of God promises.</span></p>
+        <p><span class="tl-s" data-s="1907.57" data-e="1909.78">That God is merciful.</span></p>
+        <p><span class="tl-s" data-s="1911.25" data-e="1912.26">That he&#x27;s gracious.</span></p>
+        <p><span class="tl-s" data-s="1913.68" data-e="1916.76">That he abounds in his own love.</span></p>
+        <p><span class="tl-s" data-s="1918.76" data-e="1920.02">It&#x27;s steadfast.</span></p>
+        <p><span class="tl-s" data-s="1921.73" data-e="1924.12">It doesn&#x27;t waver like our love wavers.</span> <span class="tl-s" data-s="1925.12" data-e="1927.14">It&#x27;s faithful love.</span> <span class="tl-s" data-s="1927.94" data-e="1929.78">It&#x27;s loyal to himself.</span></p>
+        <p><span class="tl-s" data-s="1935.81" data-e="1945.60">Because God has proven himself time and time again to be faithful and steadfast in his love for his people, the psalmist banks on this.</span></p>
+        <p><span class="tl-s" data-s="1947.09" data-e="1952.56">He puts all of his chips on the table and says, this is what I&#x27;m betting on.</span> <span class="tl-s" data-s="1952.96" data-e="1954.80">On God&#x27;s steadfast love.</span></p>
+        <p><span class="tl-s" data-s="1956.71" data-e="1962.86">He tethers himself to this promise that his situation, it&#x27;s not too small for God.</span></p>
+        <p><span class="tl-s" data-s="1965.77" data-e="1976.62">And God is not too far off that he wouldn&#x27;t move on his behalf. because the situation, it was there, it was in front of him.</span> <span class="tl-s" data-s="1977.26" data-e="1982.04">The Lord needs to show up because my enemies, they are here now.</span></p>
+        <p><span class="tl-s" data-s="1984.63" data-e="1986.08">I mean, look at verse 150.</span> <span class="tl-s" data-s="1987.22" data-e="1990.08">It says, they draw near who persecute me with evil.</span></p>
+        <p><span class="tl-s" data-s="1992.25" data-e="1996.22">These were not friends, these were enemies who were meant to do him harm.</span></p>
+        <p><span class="tl-s" data-s="1998.56" data-e="2002.92">We can&#x27;t overlook here the fact that these enemies were real.</span> <span class="tl-s" data-s="2003.38" data-e="2004.18">They were coming.</span> <span class="tl-s" data-s="2005.32" data-e="2012.36">Whenever we find ourselves hemmed in by trouble, there&#x27;s usually tangible expressions of that trouble.</span> <span class="tl-s" data-s="2012.64" data-e="2014.40">Real circumstances that we&#x27;re in.</span> <span class="tl-s" data-s="2015.20" data-e="2017.94">Real situations that you and I feel threatened by.</span></p>
+        <p><span class="tl-s" data-s="2021.03" data-e="2025.18">These could be a check engine light that keeps coming on in your car.</span></p>
+        <p><span class="tl-s" data-s="2026.95" data-e="2031.94">Maybe those pesky hospital bills that come in like a flood after a visit to the ER.</span></p>
+        <p><span class="tl-s" data-s="2033.38" data-e="2039.06">Maybe it&#x27;s the bad news that&#x27;s coming with the blood work results.</span></p>
+        <p><span class="tl-s" data-s="2041.97" data-e="2045.98">Maybe it&#x27;s the call from the doctor that reveals that bad news.</span> <span class="tl-s" data-s="2046.12" data-e="2052.04">Maybe it&#x27;s your adult child calling in and you think to yourself, what have they done this time?</span></p>
+        <p><span class="tl-s" data-s="2054.74" data-e="2063.40">Friends, we face all sorts of trials. these things that we go through, they haunt us with their nearness.</span></p>
+        <p><span class="tl-s" data-s="2065.85" data-e="2069.02">But the psalmist recalls a greater reality.</span></p>
+        <p><span class="tl-s" data-s="2071.67" data-e="2074.08">A greater reality than the presence of his enemies.</span> <span class="tl-s" data-s="2074.90" data-e="2076.50">And that&#x27;s the presence of his God.</span> <span class="tl-s" data-s="2077.80" data-e="2082.98">In verse 151, he says, but you are near, O Lord.</span></p>
+        <p><span class="tl-s" data-s="2087.40" data-e="2104.70">Friends, we have to remember that when we are in the midst of trial, when we&#x27;re blinded, we can&#x27;t see the way out, we can&#x27;t see anything behind this thing that&#x27;s right in front of me, that there&#x27;s a near presence.</span> <span class="tl-s" data-s="2105.92" data-e="2107.32">And that&#x27;s the presence of God.</span></p>
+        <p><span class="tl-s" data-s="2110.54" data-e="2118.38">I think what makes it so difficult for us to pray when we&#x27;re faced with all sorts of trials is the fact that we can&#x27;t see God.</span> <span class="tl-s" data-s="2118.96" data-e="2122.88">We can see our trials, but you can&#x27;t see God.</span> <span class="tl-s" data-s="2123.60" data-e="2126.58">You can&#x27;t see him moving on your behalf.</span></p>
+        <p><span class="tl-s" data-s="2128.45" data-e="2129.98">Because we&#x27;re visual people.</span> <span class="tl-s" data-s="2130.80" data-e="2132.62">We love to see the results.</span> <span class="tl-s" data-s="2132.73" data-e="2133.98">We need to see them fast.</span></p>
+        <p><span class="tl-s" data-s="2135.41" data-e="2139.44">We can&#x27;t see God show up when we need him to show up.</span></p>
+        <p><span class="tl-s" data-s="2142.43" data-e="2152.98">But the truth is God wants us to depend on him. sometimes he wants us to experience the nearness of our enemies.</span> <span class="tl-s" data-s="2154.04" data-e="2155.88">The nearness of that trial.</span> <span class="tl-s" data-s="2156.68" data-e="2158.48">The nearness of that circumstance.</span></p>
+        <p><span class="tl-s" data-s="2161.63" data-e="2175.42">Because trials, circumstances, enemies, they all train us to see God&#x27;s nearness. they help us to have a deepened trust in his goodness and in his care for us.</span></p>
+        <p><span class="tl-s" data-s="2178.10" data-e="2188.78">It&#x27;s in those blinding moments, those gut wrenching painful moments, that God wants to remind us that he&#x27;s nearer than you think.</span></p>
+        <p><span class="tl-s" data-s="2192.30" data-e="2206.20">And sometimes when these trials invade our lives and things are stripped away from us, it teaches us a bittersweet lesson of God&#x27;s goodness and his providential care for us.</span></p>
+        <p><span class="tl-s" data-s="2208.88" data-e="2211.66">It&#x27;s not as if God is not near, he&#x27;s near.</span></p>
+        <p><span class="tl-s" data-s="2213.21" data-e="2233.06">But the losing of things, of your health, of control over our lives, of possessions, losing these things teaches us to pursue God for who he is, not for what he gives us.</span></p>
+        <p><span class="tl-s" data-s="2236.69" data-e="2240.80">We may not see the purpose for our suffering while in our trials.</span> <span class="tl-s" data-s="2242.03" data-e="2249.00">We may not see the purpose for our suffering years down the road, if at all, in this life.</span></p>
+        <p><span class="tl-s" data-s="2250.67" data-e="2256.84">But we can be sure of one thing, God is near to us while we walk through our trials.</span> <span class="tl-s" data-s="2257.97" data-e="2261.80">He sustains us, he cares for us, he shepherds us through.</span></p>
+        <p><span class="tl-s" data-s="2264.49" data-e="2271.16">When the psalmist says, you are near, O Lord, he&#x27;s clinging to a promise.</span></p>
+        <p><span class="tl-s" data-s="2273.46" data-e="2277.28">It&#x27;s a promise that hasn&#x27;t been fulfilled just yet.</span> <span class="tl-s" data-s="2278.52" data-e="2286.58">It&#x27;s a theological truth about God&#x27;s covenant faithfulness, and it has all of these wonderful practical implications for us.</span> <span class="tl-s" data-s="2287.93" data-e="2297.28">God promised through covenant that he would establish a people in a land ruled by an eternal king.</span></p>
+        <p><span class="tl-s" data-s="2299.59" data-e="2302.86">This is the promise the psalmist was holding on to.</span> <span class="tl-s" data-s="2303.22" data-e="2307.74">For dear life, he was holding on to this, gripping this with all that he had.</span> <span class="tl-s" data-s="2308.63" data-e="2312.14">He was waiting for this promised king to draw near.</span></p>
+        <p><span class="tl-s" data-s="2314.49" data-e="2319.82">But for us, that covenant promise is taken on flesh and blood.</span></p>
+        <p><span class="tl-s" data-s="2322.54" data-e="2328.46">Christ, our covenant Lord, our king, God doesn&#x27;t just promise to be near to us.</span></p>
+        <p><span class="tl-s" data-s="2330.29" data-e="2334.76">He became near by becoming flesh and dwelling among us.</span></p>
+        <p><span class="tl-s" data-s="2336.54" data-e="2339.56">You see, Jesus is the true and better psalmist.</span> <span class="tl-s" data-s="2340.48" data-e="2343.74">He&#x27;s the one who cried out with his whole heart, save me.</span> <span class="tl-s" data-s="2344.48" data-e="2347.12">Or rather, take this cup from me.</span> <span class="tl-s" data-s="2347.84" data-e="2351.32">Not because of his sin, but because of your sin.</span> <span class="tl-s" data-s="2352.24" data-e="2353.34">Because of my sin.</span></p>
+        <p><span class="tl-s" data-s="2355.63" data-e="2366.82">In the garden of Gethsemane, as his enemies drew near with clubs and swords and gnashing teeth, Jesus drew near to the Father in prayer.</span></p>
+        <p><span class="tl-s" data-s="2369.93" data-e="2374.96">On the cross, Jesus endured the nearness of evil.</span> <span class="tl-s" data-s="2375.79" data-e="2379.28">So that you and I would become sons and daughters of God.</span></p>
+        <p><span class="tl-s" data-s="2382.09" data-e="2393.08">Because Jesus rose from the dead, we have the ultimate assurance that when we cry out, save me, God doesn&#x27;t just hear us.</span></p>
+        <p><span class="tl-s" data-s="2395.67" data-e="2399.00">God doesn&#x27;t just hear us, he answers us.</span> <span class="tl-s" data-s="2400.05" data-e="2403.00">He saves us, he sanctifies us.</span> <span class="tl-s" data-s="2404.20" data-e="2405.96">He is near to us.</span></p>
+        <p><span class="tl-s" data-s="2408.63" data-e="2429.94">So Christian, when you feel the nearness of your trial, when sin clings so closely to you, you can&#x27;t seem to shake it, when enemies of discouragement, doubt, despair are circling, remember that Christ is nearer to you still.</span></p>
+        <p><span class="tl-s" data-s="2431.77" data-e="2438.88">Those nail-scarred hands that bled for you and I, they&#x27;re now clasped together.</span> <span class="tl-s" data-s="2439.90" data-e="2443.10">They intercede for us at the right hand of the Father.</span></p>
+        <p><span class="tl-s" data-s="2445.95" data-e="2451.88">When it feels too hard to pray, just remember Jesus is praying for you.</span></p>
+        <p><span class="tl-s" data-s="2453.44" data-e="2456.96">He&#x27;s interceding to God the Father on your behalf.</span></p>
+        <p><span class="tl-s" data-s="2461.15" data-e="2470.30">We shouldn&#x27;t let our prayers be shaped so much by our emotions, but they should be shaped by the gospel.</span></p>
+        <p><span class="tl-s" data-s="2471.75" data-e="2474.94">The promise that Jesus has drawn near.</span> <span class="tl-s" data-s="2476.11" data-e="2479.10">That he has conquered our greatest enemies.</span></p>
+        <p><span class="tl-s" data-s="2480.91" data-e="2484.74">And that he will one day wipe away all of your tears.</span> <span class="tl-s" data-s="2486.10" data-e="2490.06">Until then, we cry out.</span> <span class="tl-s" data-s="2490.77" data-e="2492.36">We cry out in desperation.</span> <span class="tl-s" data-s="2492.66" data-e="2494.38">We cry out by faith.</span> <span class="tl-s" data-s="2494.88" data-e="2497.02">And we know that the Lord is near to us.</span> <span class="tl-s" data-s="2498.01" data-e="2499.28">We know that he is.</span> <span class="tl-s" data-s="2499.96" data-e="2503.34">We know that the Lord is near to all who call on him.</span></p>
+        <p><span class="tl-s" data-s="2505.58" data-e="2513.86">And so if you&#x27;re experiencing a season of unknowns in life, you don&#x27;t know what tomorrow holds for you.</span></p>
+        <p><span class="tl-s" data-s="2515.43" data-e="2517.08">Just remember that God is near.</span></p>
+        <p><span class="tl-s" data-s="2518.97" data-e="2520.64">He knows what you&#x27;re experiencing.</span></p>
+        <p><span class="tl-s" data-s="2522.14" data-e="2525.26">He knows what the trial looks like.</span> <span class="tl-s" data-s="2526.47" data-e="2528.78">Because his son has gone through trials.</span></p>
+        <p><span class="tl-s" data-s="2531.33" data-e="2538.10">If you&#x27;re in a dry season and you feel no desperation from the Lord, remember the promises of God.</span> <span class="tl-s" data-s="2538.98" data-e="2539.90">That he&#x27;s near to you.</span></p>
+        <p><span class="tl-s" data-s="2541.47" data-e="2545.52">He promises to sustain our weak, weary faith.</span></p>
+        <p><span class="tl-s" data-s="2548.37" data-e="2550.32">Maybe you&#x27;re here and you don&#x27;t know Jesus.</span></p>
+        <p><span class="tl-s" data-s="2552.90" data-e="2558.48">You can pray this morning that God would open your eyes to your need for him.</span></p>
+        <p><span class="tl-s" data-s="2561.50" data-e="2575.50">Friends, when we pray, even with the weakest expression of faith, even with the tiniest little mustard seed of faith, the triune God of the universe moves on our behalf.</span> <span class="tl-s" data-s="2576.56" data-e="2581.32">We know this because the Spirit is always in the business of helping us.</span> <span class="tl-s" data-s="2582.43" data-e="2584.84">The Son is always interceding for us.</span> <span class="tl-s" data-s="2585.70" data-e="2589.12">And the Father delights in hearing us.</span></p>
+        <p><span class="tl-s" data-s="2591.07" data-e="2596.92">We can go boldly to God with our prayers because he promises his nearness.</span></p>
+        <p><span class="tl-s" data-s="2598.38" data-e="2602.30">And in Christ, that promise has already come to pass.</span> <span class="tl-s" data-s="2603.20" data-e="2603.90">Let&#x27;s pray.</span></p>
+        <p><span class="tl-s" data-s="2610.08" data-e="2614.72">Father, it&#x27;s a great wonder that you would speak to us through your word.</span> <span class="tl-s" data-s="2615.40" data-e="2620.06">That you would even give us your revealed word on pages.</span></p>
+        <p><span class="tl-s" data-s="2621.90" data-e="2626.88">And I pray that your people here this morning, the ones that know your voice.</span></p>
+        <p><span class="tl-s" data-s="2629.72" data-e="2634.06">That as they hear your word, that they would respond to it.</span> <span class="tl-s" data-s="2635.44" data-e="2636.02">Help us.</span> <span class="tl-s" data-s="2636.38" data-e="2640.72">Remind us by your Spirit that you are near to us when in trials.</span></p>
+        <p><span class="tl-s" data-s="2642.44" data-e="2644.24">When encircled by our enemies.</span> <span class="tl-s" data-s="2644.76" data-e="2655.00">Remind us that your presence is near to us. help us as we engage in this war against sin.</span> <span class="tl-s" data-s="2655.86" data-e="2657.28">This indwelling sin.</span> <span class="tl-s" data-s="2657.46" data-e="2671.62">Help us to become skilled hunters empowered by your grace that&#x27;s already appeared and has brought salvation to us in the person of Jesus Christ.</span> <span class="tl-s" data-s="2672.18" data-e="2684.06">Lord, I pray help your people to be encouraged knowing that what you&#x27;ve promised to the psalmist, your nearness, has been fulfilled in your Son.</span> <span class="tl-s" data-s="2685.28" data-e="2686.40">In His name we pray.</span> <span class="tl-s" data-s="2686.69" data-e="2686.94">Amen.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Live sermon feed: spotlight from /api/sermons, browsable archive from
+  // /api/sermons/search. Static fallback list stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function row(it) {
+      var meta = [it.speaker, fmtDate(it.date)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      var titleHtml = esc(it.title);
+      var tUrl = it.guid && transcriptMap[it.guid];
+      if (tUrl) titleHtml = '<a href="' + esc(tUrl) + '">' + titleHtml + "</a>";
+      return '<div class="sermon"><div><h3>' + titleHtml + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    fetch("/api/sermons?v=3")
+      .then(function (res) { if (!res.ok) throw new Error("feed " + res.status); return res.json(); })
+      .then(function (data) {
+        var spot = document.querySelector("[data-series-spotlight]");
+        if (data && data.series && spot) {
+          var s = data.series;
+          var art = spot.querySelector("[data-series-art]");
+          if (art && s.artwork) { art.src = s.artwork; } else if (art) { art.style.display = "none"; }
+          var nm = spot.querySelector("[data-series-name]");
+          if (nm) nm.textContent = s.name;
+          var bl = spot.querySelector("[data-series-blurb]");
+          if (bl) bl.textContent = s.blurb;
+          spot.hidden = false;
+        }
+      })
+      .catch(function () { /* spotlight stays hidden */ });
+
+    var PER = 10;
+    var state = { q: "", speaker: "", series: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var speakerSel = document.querySelector("[data-sermons-speaker]");
+    var seriesSel = document.querySelector("[data-sermons-series]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No messages found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(speakerSel, data.facets.speakers || [], function (e) { return e.name; }, function (e) { return e.name + " (" + e.count + ")"; });
+        fill(seriesSel, data.facets.series || [], function (e) { return e.name; }, function (e) { return e.name + " (" + e.count + ")"; });
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.speaker || data.series || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.speaker) parts.push("by " + data.speaker);
+          if (data.series) parts.push("in " + data.series);
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " result" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " messages";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/sermons/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.speaker ? "&speaker=" + encodeURIComponent(state.speaker) : "") +
+        (state.series ? "&series=" + encodeURIComponent(state.series) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () { /* keep current list on error */ });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.speaker = ""; state.series = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (speakerSel) speakerSel.value = "";
+      if (seriesSel) seriesSel.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    function bindSelect(sel, key) {
+      if (!sel) return;
+      sel.addEventListener("change", function () {
+        state[key] = sel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    bindSelect(speakerSel, "speaker");
+    bindSelect(seriesSel, "series");
+    bindSelect(monthSel, "month");
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: https://hub.centergilbert.com/media/psalm-119-138 -->
+</body>
+</html>
