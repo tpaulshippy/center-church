@@ -530,11 +530,20 @@ def fmt_pubdate(s):
             continue
     return s
 
-meta_bits = " · ".join(b for b in [speaker, series, fmt_pubdate(pubdate), duration] if b)
+meta_bits = " · ".join(b for b in [speaker, series, fmt_pubdate(pubdate)] if b)
 
 kind_title = os.environ.get("KIND_TITLE", "Sermon")
 back_link = os.environ.get("BACK_LINK", "/sermons")
 back_label = os.environ.get("BACK_LABEL", "All sermons")
+
+# Podcast episodes omit the description line: the feed show notes are long,
+# truncated, and carry raw markdown, so they render weird in the header.
+# Sermon pages keep theirs. (Skipped entirely, not just hidden, so no
+# dead markup ships.)
+if os.environ.get("KIND") == "podcast":
+    desc_html = ""
+else:
+    desc_html = '\n          <p class="transcript-desc">%s</p>' % html.escape(desc)
 
 main = """  <main>
     <section class="section">
@@ -542,8 +551,7 @@ main = """  <main>
         <div class="transcript-head">
           <a class="transcript-back" href="%s">&larr; %s</a>
           <h1 class="display-lg">%s</h1>
-          <p class="transcript-meta">%s</p>
-          <p class="transcript-desc">%s</p>
+          <p class="transcript-meta">%s</p>%s
           <div class="sermon">
             <audio controls preload="none" src="%s"></audio>
           </div>
@@ -554,8 +562,8 @@ main = """  <main>
       </div>
     </section>
   </main>""" % (html.escape(back_link, quote=True), html.escape(back_label),
-               html.escape(title), html.escape(meta_bits),
-               html.escape(desc), html.escape(audio, quote=True),
+               html.escape(title), html.escape(meta_bits), desc_html,
+               html.escape(audio, quote=True),
                notice, body_html)
 
 new = re.sub(r"<main>.*?</main>", lambda _: main, tpl, count=1, flags=re.DOTALL)
