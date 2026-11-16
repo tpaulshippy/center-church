@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Psalm 119 — Sermon Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Listen to the latest sermons from Center Church, or follow along on Apple Podcasts and Spotify." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=17" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a class="active" href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/sermons">&larr; All sermons</a>
+          <h1 class="display-lg">Psalm 119</h1>
+          <p class="transcript-meta">Rich Richardson · 2025-07-27 · 00:44:32</p>
+          <p class="transcript-desc">God&#x27;s Word reveals truth, how to live rightly, and what is best.</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/119cbef70/podcast/play/128974260/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-7%2F436123942-44100-2-27671d93d1d7222e.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><span class="tl-s" data-s="0.02" data-e="7.00">We&#x27;ve actually been in this psalm for three summers now, and this is our last sermon in Psalm 119.</span></p>
+        <p><span class="tl-s" data-s="10.24" data-e="12.76">Humanity is fascinated with reveals.</span> <span class="tl-s" data-s="13.84" data-e="19.42">By reveals, what I mean is that moment when everything in a story seems to make sense.</span> <span class="tl-s" data-s="20.10" data-e="28.80">When the author reveals the whodunit, or the director of a movie shows us where those twists and turns were taking us all along.</span> <span class="tl-s" data-s="30.02" data-e="52.36">One example of a real-life big reveal that shook the world is what happened on July 8, 2010, when the second greatest basketball player of all time, LeBron James, we can debate that afterwards, he revealed on national television that he would take his talents to South Beach and join the Miami Heat.</span> <span class="tl-s" data-s="52.92" data-e="61.90">13.1 million people watched what was called The Decision, and it was the most watched case in a cable show on TV that night.</span> <span class="tl-s" data-s="62.66" data-e="66.32">Another example of reveals that we all love are gender reveals.</span> <span class="tl-s" data-s="67.56" data-e="69.86">Now, these can get a little crazy.</span> <span class="tl-s" data-s="70.56" data-e="79.78">I read that a couple in Louisiana did their gender reveal by filling a watermelon with goo, and they&#x27;re in Louisiana, so what do you think they did next?</span></p>
+        <p><span class="tl-s" data-s="79.88" data-e="83.30">They placed that watermelon in an alligator&#x27;s jaws.</span> <span class="tl-s" data-s="84.46" data-e="89.46">And as soon as the alligator closed those jaws, blue goo started rushing out.</span> <span class="tl-s" data-s="89.92" data-e="90.80">There&#x27;s their reveal.</span> <span class="tl-s" data-s="92.10" data-e="98.62">And I&#x27;m sure we all love the classic plot twist or the big reveal in a book, in a TV show, or in a movie.</span> <span class="tl-s" data-s="99.66" data-e="108.42">Now, full transparency, I really did wrestle with whether or not I should share some big reveal, but I didn&#x27;t want to spoil a book for you all.</span></p>
+        <p><span class="tl-s" data-s="110.42" data-e="111.48">But we love them.</span> <span class="tl-s" data-s="111.76" data-e="114.48">Reveals have become a way of life for us.</span> <span class="tl-s" data-s="114.58" data-e="121.18">We love them because they entertain us by drawing us into the drama-filled lives of our favorite athletes.</span></p>
+        <p><span class="tl-s" data-s="123.30" data-e="131.46">Our favorite athletes, they add to the excitement of finding out the gender of a family member or friend&#x27;s baby.</span> <span class="tl-s" data-s="132.44" data-e="139.14">And the big reveal of a plot twist in a show or movie or book adds to the thrill of the narrative arc of a story.</span> <span class="tl-s" data-s="140.14" data-e="144.46">Now, these sorts of reveals, they all show us something about who we are.</span> <span class="tl-s" data-s="145.48" data-e="147.52">We&#x27;re hardwired for revelation.</span> <span class="tl-s" data-s="148.86" data-e="151.54">All of us want to know what&#x27;s behind the curtain.</span> <span class="tl-s" data-s="152.72" data-e="156.30">We crave to figure out who&#x27;s guilty in that murder mystery.</span> <span class="tl-s" data-s="157.42" data-e="163.32">And we desire and even demand closure when watching our favorite television series.</span> <span class="tl-s" data-s="164.56" data-e="166.66">We crave the big reveal.</span> <span class="tl-s" data-s="167.58" data-e="170.44">There&#x27;s an even bigger reveal that didn&#x27;t go viral on Instagram.</span> <span class="tl-s" data-s="171.16" data-e="173.90">It wasn&#x27;t the most watched show of all time.</span></p>
+        <p><span class="tl-s" data-s="174.74" data-e="182.42">And it wasn&#x27;t the longest-running book on the New York Times bestseller list or winner of a Pulitzer Prize or Booker Prize.</span> <span class="tl-s" data-s="182.72" data-e="188.30">This big reveal was written over the course of 1,500 years.</span> <span class="tl-s" data-s="188.32" data-e="201.02">This big reveal has been preserved by God&#x27;s providence, hand-copied by faithful scribes, and passed down from generation to generation until the invention of the printing press.</span></p>
+        <p><span class="tl-s" data-s="202.80" data-e="208.16">And has since been studied by people from nearly every tribe, nation, and tongue.</span> <span class="tl-s" data-s="208.38" data-e="210.08">You might have guessed by now.</span> <span class="tl-s" data-s="210.16" data-e="212.76">The big reveal that I&#x27;m talking about is the Bible.</span> <span class="tl-s" data-s="213.32" data-e="214.78">The written word of God.</span> <span class="tl-s" data-s="215.68" data-e="220.00">The Bible is the big reveal because it shows us who God is.</span> <span class="tl-s" data-s="220.38" data-e="226.04">It shows us what He&#x27;s like, how He&#x27;s acted in history, and what He will one day do.</span> <span class="tl-s" data-s="227.40" data-e="233.14">The reveals that we consume on different forms of media, they&#x27;re often dramatic.</span> <span class="tl-s" data-s="234.32" data-e="235.86">They&#x27;re often fleeting.</span> <span class="tl-s" data-s="236.08" data-e="238.24">But God&#x27;s big reveal is different.</span> <span class="tl-s" data-s="239.50" data-e="242.04">God doesn&#x27;t keep Himself hidden from us.</span></p>
+        <p><span class="tl-s" data-s="243.20" data-e="247.56">Because from the very beginning of His story, God spoke.</span> <span class="tl-s" data-s="248.78" data-e="249.66">God spoke.</span></p>
+        <p><span class="tl-s" data-s="251.28" data-e="257.96">And so from the very beginning of time, the primary way that God has chosen to reveal Himself to us has been through words.</span> <span class="tl-s" data-s="258.78" data-e="265.42">Words that have since been inscripturated and placed on the pages of your English Bible.</span> <span class="tl-s" data-s="266.50" data-e="270.46">Men and women have died for that book we hold in our hands.</span></p>
+        <p><span class="tl-s" data-s="273.16" data-e="289.52">This book, Psalm 119, shows us that God&#x27;s written word is the big reveal worth savoring and loving because God&#x27;s word is the clear, consistently true, and trustworthy, good, and life-giving word of God.</span></p>
+        <p><span class="tl-s" data-s="291.30" data-e="294.86">Like I said, we&#x27;ve been in this psalm for a few summers now.</span> <span class="tl-s" data-s="296.14" data-e="302.26">And what we&#x27;ve done is we&#x27;ve taken every stanza, or eight verses, one chunk at a time.</span> <span class="tl-s" data-s="303.02" data-e="316.68">But what I&#x27;ve chosen to do this morning is to summarize how this psalm helps to capture our affections for Christ and God&#x27;s gospel by aiming to prove to you three things from all of Psalm 119.</span> <span class="tl-s" data-s="317.30" data-e="319.84">We&#x27;re going to cover 176 verses, guys.</span></p>
+        <p><span class="tl-s" data-s="321.38" data-e="322.18">Just kidding.</span> <span class="tl-s" data-s="322.70" data-e="324.34">We&#x27;ll go through some of the verses.</span></p>
+        <p><span class="tl-s" data-s="325.74" data-e="328.10">These are the three things that we&#x27;re after this morning.</span> <span class="tl-s" data-s="328.30" data-e="330.78">First, God&#x27;s word reveals to us what is true.</span> <span class="tl-s" data-s="332.06" data-e="335.32">Secondly, God&#x27;s word reveals to us how to live rightly.</span></p>
+        <p><span class="tl-s" data-s="336.82" data-e="340.44">And third, God&#x27;s word reveals to us what is eternally good.</span></p>
+        <p><span class="tl-s" data-s="341.90" data-e="348.98">Now, by proving these things to you from the text of Psalm 119, we have one collective goal.</span> <span class="tl-s" data-s="349.64" data-e="353.98">This is one way that we&#x27;re all moving forward this morning.</span> <span class="tl-s" data-s="354.66" data-e="355.50">And here&#x27;s the end.</span> <span class="tl-s" data-s="355.52" data-e="363.84">I want us to see how we were made to trust in, follow after, and treasure Jesus forever from Psalm 119.</span> <span class="tl-s" data-s="365.12" data-e="370.24">We were made to trust in, follow after, and treasure Jesus forever.</span> <span class="tl-s" data-s="371.20" data-e="372.10">So let&#x27;s get into it.</span> <span class="tl-s" data-s="372.12" data-e="372.32">So let&#x27;s get into it.</span> <span class="tl-s" data-s="372.34" data-e="373.72">Our first point this morning.</span> <span class="tl-s" data-s="373.74" data-e="378.76">God&#x27;s word reveals the truth, ultimately, in Christ.</span></p>
+        <p><span class="tl-s" data-s="380.52" data-e="385.20">Every day, friends, lies are being hurled at us at lightning speed.</span> <span class="tl-s" data-s="386.12" data-e="387.54">All kinds of lies.</span> <span class="tl-s" data-s="388.42" data-e="393.98">We need truth from God&#x27;s word to help us combat the onslaught of lies we hear every day.</span> <span class="tl-s" data-s="394.74" data-e="406.70">Because in a world of competing stories of where we&#x27;ve come from, God&#x27;s word gives us a clear, truthful, personal, and purposeful origin story.</span> <span class="tl-s" data-s="407.44" data-e="408.62">Here&#x27;s what I mean by that.</span> <span class="tl-s" data-s="408.64" data-e="414.88">If you send or have your kids sent to public school, I&#x27;m sure they&#x27;ve been taught evolutionary theory.</span> <span class="tl-s" data-s="416.04" data-e="422.80">The word of God denies in very decisive terms, at the very minimum, the evolution of mankind.</span></p>
+        <p><span class="tl-s" data-s="424.32" data-e="429.14">One place we see this most clearly is in Genesis chapter 2, verse 7.</span> <span class="tl-s" data-s="430.04" data-e="434.54">That&#x27;s where we read that God breathed the breath of life into man.</span> <span class="tl-s" data-s="435.76" data-e="444.00">Another place we can find how the word of God denies the evolution of mankind is in Psalm 119, verse 73.</span> <span class="tl-s" data-s="445.32" data-e="451.46">There, the psalmist writes, Your hands have made and fashioned me.</span></p>
+        <p><span class="tl-s" data-s="453.16" data-e="463.18">This is reminiscent of another psalmist&#x27;s words, Psalm 139, verse 13, where it&#x27;s written, For you formed my inward parts.</span> <span class="tl-s" data-s="464.02" data-e="467.34">You knitted me together in my mother&#x27;s womb.</span></p>
+        <p><span class="tl-s" data-s="469.90" data-e="475.12">Friends, God&#x27;s artisanship is displayed in you all this morning.</span> <span class="tl-s" data-s="476.20" data-e="479.22">Each of us are his craftsmanship.</span></p>
+        <p><span class="tl-s" data-s="482.50" data-e="493.82">When we&#x27;re talking with people who have more faith to believe that mankind and the entire created order came about by random natural phenomena, we can look to the Bible for confidence.</span> <span class="tl-s" data-s="494.88" data-e="499.68">We can trust its words and see that God has made all things.</span> <span class="tl-s" data-s="501.02" data-e="505.60">This is exactly the sort of confidence that Psalm 119 provides us with.</span> <span class="tl-s" data-s="506.30" data-e="510.76">God&#x27;s word tells us what God has revealed is true.</span> <span class="tl-s" data-s="511.16" data-e="524.48">At the beginning of last year, an employee from this engineering firm based in the United Kingdom made a routine transfer of millions of dollars that belonged to the company.</span> <span class="tl-s" data-s="525.78" data-e="531.54">And mind you, this was routine, following what the employee believed to be a routine call with senior management.</span> <span class="tl-s" data-s="532.60" data-e="540.90">Well, it was discovered shortly after this that those senior managers were actually deepfakes created by AI.</span> <span class="tl-s" data-s="541.60" data-e="545.94">The employee was duped into sending $25 million to criminals.</span> <span class="tl-s" data-s="547.12" data-e="554.52">This isn&#x27;t the only story out there of AI deepfakes that are tricking people into doing things they otherwise would not do.</span></p>
+        <p><span class="tl-s" data-s="556.02" data-e="559.64">You see, we&#x27;re being lied to and tricked every day.</span></p>
+        <p><span class="tl-s" data-s="561.16" data-e="566.14">What we need is help to discern what is true and what is right.</span> <span class="tl-s" data-s="567.06" data-e="574.10">We need help to discern what is true about God, about who we are, and about the world around us.</span> <span class="tl-s" data-s="575.26" data-e="576.66">So what is true?</span></p>
+        <p><span class="tl-s" data-s="578.08" data-e="579.20">God&#x27;s word is true.</span> <span class="tl-s" data-s="580.60" data-e="585.04">We can look at verse 89 of Psalm 119.</span> <span class="tl-s" data-s="585.54" data-e="592.66">It reads there, Forever, O Lord, your word is firmly fixed in the heavens.</span></p>
+        <p><span class="tl-s" data-s="594.16" data-e="596.64">That&#x27;s the sort of truth that we need.</span> <span class="tl-s" data-s="597.48" data-e="599.96">Truth firmly fixed in the heavens.</span> <span class="tl-s" data-s="600.54" data-e="602.16">Truth that doesn&#x27;t change.</span> <span class="tl-s" data-s="603.26" data-e="606.18">Truth that is durable, dependable.</span> <span class="tl-s" data-s="607.48" data-e="612.32">When LeBron made that infamous decision to take his talents to South Beach, it was just that.</span> <span class="tl-s" data-s="612.88" data-e="616.56">One decision in a lifetime of many decisions.</span> <span class="tl-s" data-s="617.32" data-e="621.04">Every day, you and I, we make all sorts of decisions.</span></p>
+        <p><span class="tl-s" data-s="622.56" data-e="635.30">We make decisions on what to eat, what to wear, what to read, what to say, what to do, who to talk to, how to say what we&#x27;re going to say, when to sleep and when to wake up.</span> <span class="tl-s" data-s="635.84" data-e="639.48">All of us make decisions of all sorts every day.</span></p>
+        <p><span class="tl-s" data-s="641.98" data-e="646.06">We need to make decisions that are based on what is true.</span> <span class="tl-s" data-s="646.52" data-e="649.72">Because we make bigger, more important decisions than those, right?</span> <span class="tl-s" data-s="650.56" data-e="651.56">And what is true?</span> <span class="tl-s" data-s="652.68" data-e="653.06">Scripture.</span> <span class="tl-s" data-s="653.90" data-e="655.62">Scripture is truth.</span> <span class="tl-s" data-s="656.84" data-e="660.58">Scripture gives us a solid foundation that doesn&#x27;t shift.</span> <span class="tl-s" data-s="661.74" data-e="663.80">Every other worldview is shifty.</span> <span class="tl-s" data-s="664.48" data-e="668.56">Because truth, according to those worldviews, changes.</span> <span class="tl-s" data-s="668.58" data-e="675.60">But according to Scripture and the Christian worldview, God&#x27;s truth never changes.</span></p>
+        <p><span class="tl-s" data-s="677.48" data-e="678.98">Society might change.</span> <span class="tl-s" data-s="679.68" data-e="681.38">Culture is constantly changing.</span> <span class="tl-s" data-s="681.94" data-e="684.54">But God&#x27;s Word never changes.</span> <span class="tl-s" data-s="685.82" data-e="688.06">And how do we know God&#x27;s Word is true?</span> <span class="tl-s" data-s="688.74" data-e="690.64">Because God has said it to be true.</span> <span class="tl-s" data-s="691.28" data-e="695.94">In verse 160, the psalmist declares, the sum of your Word is truth.</span> <span class="tl-s" data-s="696.76" data-e="700.68">And every one of your righteous rules endures forever.</span></p>
+        <p><span class="tl-s" data-s="703.18" data-e="709.64">When we think of truth, I&#x27;m pretty sure that most of us kind of default to a concept.</span> <span class="tl-s" data-s="709.98" data-e="712.76">Or some set of absolute rules.</span> <span class="tl-s" data-s="713.34" data-e="714.76">Or impeccable logic.</span> <span class="tl-s" data-s="715.08" data-e="715.64">Let me explain.</span> <span class="tl-s" data-s="715.79" data-e="719.46">It&#x27;s something akin to 1 plus 1 equals 2.</span> <span class="tl-s" data-s="720.00" data-e="722.02">3 times 3 equals 9.</span> <span class="tl-s" data-s="722.70" data-e="725.00">I&#x27;m not going to show off my math skills because I have zero.</span> <span class="tl-s" data-s="725.62" data-e="727.96">So I won&#x27;t continue on in the multiplication table.</span> <span class="tl-s" data-s="728.54" data-e="730.06">Or the sky is blue.</span> <span class="tl-s" data-s="731.06" data-e="733.44">Or the earth revolves around the sun.</span></p>
+        <p><span class="tl-s" data-s="733.60" data-e="734.68">Not the other way around.</span> <span class="tl-s" data-s="735.46" data-e="742.88">These are truths based upon observable data that we&#x27;ve concluded are impeccably sound judgments.</span> <span class="tl-s" data-s="743.40" data-e="744.10">True statements.</span> <span class="tl-s" data-s="745.38" data-e="751.12">But according to Scripture, truth is more than just a concept.</span> <span class="tl-s" data-s="752.50" data-e="755.58">Truth is more than a set of rules.</span></p>
+        <p><span class="tl-s" data-s="757.44" data-e="758.60">Truth is a person.</span></p>
+        <p><span class="tl-s" data-s="760.28" data-e="762.08">That person is Jesus Christ.</span> <span class="tl-s" data-s="762.80" data-e="766.84">Jesus said, I am the way, the truth, and the life.</span> <span class="tl-s" data-s="767.46" data-e="770.56">No one comes to the Father except through me.</span></p>
+        <p><span class="tl-s" data-s="772.06" data-e="774.04">Jesus is the Word of God.</span> <span class="tl-s" data-s="774.14" data-e="780.50">And he&#x27;s the very revelation of God according to John 1.18 where it says no one has ever seen God.</span> <span class="tl-s" data-s="781.52" data-e="784.94">God the only Son who is at the Father&#x27;s side has made him known.</span></p>
+        <p><span class="tl-s" data-s="786.68" data-e="791.72">The Bible also tells us that Jesus is the sum of God&#x27;s truth.</span> <span class="tl-s" data-s="792.90" data-e="795.20">All the Scriptures point to Jesus.</span> <span class="tl-s" data-s="795.22" data-e="805.90">Because in Luke 24.44 when Jesus tells his disciples after the resurrection, These are my words that I spoke to you while I was still with you.</span> <span class="tl-s" data-s="806.70" data-e="819.98">That everything, not some things, not a few things, everything written about me in the law of Moses and the prophets and the Psalms must be fulfilled.</span> <span class="tl-s" data-s="820.00" data-e="830.38">What that means is the entire written record of Scripture at the time of Jesus all pointed to Jesus.</span> <span class="tl-s" data-s="830.86" data-e="833.20">It was all fulfilled in Jesus.</span> <span class="tl-s" data-s="833.22" data-e="839.04">The sum of all God&#x27;s Word finds its fulfillment in Jesus Christ.</span></p>
+        <p><span class="tl-s" data-s="841.26" data-e="853.56">So, in a world that tries to trick us, and that&#x27;s always lying to us, we don&#x27;t need to go to politicians to guide us.</span></p>
+        <p><span class="tl-s" data-s="855.80" data-e="863.04">In a world that&#x27;s always tricking us and always lying to us, we don&#x27;t need more social media awareness.</span> <span class="tl-s" data-s="863.80" data-e="868.48">We don&#x27;t need to know the latest viral video to help us.</span></p>
+        <p><span class="tl-s" data-s="870.44" data-e="878.74">When we&#x27;re tricked into thinking that there must be more ways to God outside of Jesus, we can look to Psalm 119 for help.</span></p>
+        <p><span class="tl-s" data-s="880.18" data-e="886.16">We can see Jesus as the one who is himself the sum of all truth.</span> <span class="tl-s" data-s="887.40" data-e="903.44">When we&#x27;re tricked into thinking our suffering is meaningless, friends, we can go to Psalm 119 and see Jesus as the one who&#x27;s also suffered and was severely afflicted in our place so we don&#x27;t have to experience the wrath of God.</span> <span class="tl-s" data-s="904.64" data-e="919.22">When we&#x27;re tricked into thinking that we can obey God in our own strength, we can see Jesus in Psalm 119 as the only one who&#x27;s ever prayed, your testimonies are wonderful.</span> <span class="tl-s" data-s="919.90" data-e="921.70">Therefore, my soul keeps them.</span> <span class="tl-s" data-s="923.00" data-e="924.40">And who actually keeps them?</span></p>
+        <p><span class="tl-s" data-s="927.00" data-e="940.40">My friends, we can go to Psalm 119 and we can find Jesus and we can follow his lead by praying this psalm to help us find truth in a world filled with lies.</span></p>
+        <p><span class="tl-s" data-s="942.44" data-e="947.68">Secondly, God&#x27;s word reveals to us the way empowered by Christ.</span></p>
+        <p><span class="tl-s" data-s="950.44" data-e="964.56">Because we live in this world that&#x27;s filled with lies, filled with falsehoods, we need help to know not just what is true, though we do, but we also need help in how to live rightly.</span> <span class="tl-s" data-s="965.50" data-e="974.32">Because it&#x27;s one thing for us to know all the right things to say, but to live out those truths is another thing altogether.</span> <span class="tl-s" data-s="975.26" data-e="978.54">Now, if you have kids in children&#x27;s ministry, you know what I&#x27;m talking about.</span> <span class="tl-s" data-s="978.86" data-e="981.00">They&#x27;re being trained to say the right things.</span> <span class="tl-s" data-s="981.70" data-e="984.78">They need help to live out those truths.</span></p>
+        <p><span class="tl-s" data-s="986.82" data-e="996.08">Because at the end of the day, we need vibrant, God-exalting orthopraxy along with sound orthodoxy.</span> <span class="tl-s" data-s="996.76" data-e="998.54">I&#x27;ll help tease that out for you.</span> <span class="tl-s" data-s="998.84" data-e="1001.40">In other words, we need to practice what we preach.</span></p>
+        <p><span class="tl-s" data-s="1004.48" data-e="1010.08">We need help to live like the gospel has actually affected us.</span></p>
+        <p><span class="tl-s" data-s="1012.26" data-e="1027.56">We see this most clearly, this need, in the very first, the first three verses of Psalm 119, when the psalmist writes, blessed are those whose way is blameless, who walk in the law of the Lord.</span> <span class="tl-s" data-s="1028.60" data-e="1036.40">Blessed are those who keep his testimonies, who seek him with their whole heart, who also do no wrong, but walk in his ways.</span></p>
+        <p><span class="tl-s" data-s="1038.18" data-e="1042.76">Psalm 119 celebrates the word of God as a guide for righteous living.</span></p>
+        <p><span class="tl-s" data-s="1044.36" data-e="1045.44">I mean, notice verse 10.</span> <span class="tl-s" data-s="1046.62" data-e="1048.46">With my whole heart I seek you.</span> <span class="tl-s" data-s="1048.96" data-e="1051.52">Let me not wander from your commandments.</span></p>
+        <p><span class="tl-s" data-s="1053.42" data-e="1059.26">We often associate seeking God with having this emotional experience with God.</span> <span class="tl-s" data-s="1060.24" data-e="1061.32">But here&#x27;s the thing.</span> <span class="tl-s" data-s="1062.24" data-e="1065.78">The psalmist is telling us to truly experience God.</span> <span class="tl-s" data-s="1066.62" data-e="1069.34">It means keeping the commandments of God.</span></p>
+        <p><span class="tl-s" data-s="1071.56" data-e="1075.56">This is a psalm that&#x27;s intensely concerned with right living.</span> <span class="tl-s" data-s="1076.28" data-e="1081.12">Not just a morally upright life, but walking in the ways of the Lord.</span> <span class="tl-s" data-s="1082.40" data-e="1083.54">I mean, going back to verse 1.</span> <span class="tl-s" data-s="1083.68" data-e="1087.94">Blessed are those whose way is blameless, who walk in the law of the Lord.</span> <span class="tl-s" data-s="1088.56" data-e="1095.02">Verse 37, turn my eyes from looking at worthless things and give me life in your ways.</span></p>
+        <p><span class="tl-s" data-s="1096.50" data-e="1101.86">And then verse 105, your word is a lamp to my feet and a light to my path.</span></p>
+        <p><span class="tl-s" data-s="1103.50" data-e="1108.72">We, along with the psalmist, we should long to live lives that please God.</span> <span class="tl-s" data-s="1109.50" data-e="1114.10">Where we&#x27;re walking rightly, loving him rightly, obeying him rightly.</span></p>
+        <p><span class="tl-s" data-s="1116.74" data-e="1118.30">But we&#x27;re faced with this dilemma.</span> <span class="tl-s" data-s="1118.56" data-e="1124.10">If we&#x27;re honest, take a moral inventory.</span></p>
+        <p><span class="tl-s" data-s="1126.22" data-e="1131.72">All of us in this room will walk away confronted with the fact that we can&#x27;t do this.</span></p>
+        <p><span class="tl-s" data-s="1133.76" data-e="1135.88">We can&#x27;t walk rightly.</span> <span class="tl-s" data-s="1136.38" data-e="1138.50">We can&#x27;t love him rightly.</span> <span class="tl-s" data-s="1138.66" data-e="1141.78">We can&#x27;t obey him as he ought to be obeyed.</span> <span class="tl-s" data-s="1143.14" data-e="1147.48">And again, this is where Psalm 119 helps us.</span></p>
+        <p><span class="tl-s" data-s="1149.70" data-e="1152.92">The psalm is not just the celebration of obedient living.</span> <span class="tl-s" data-s="1153.30" data-e="1156.10">It also reveals where we go for help.</span></p>
+        <p><span class="tl-s" data-s="1157.54" data-e="1176.08">Psalm 119 says, The psalmist, they&#x27;re on to something here.</span> <span class="tl-s" data-s="1176.10" data-e="1180.74">He knows we don&#x27;t just need information about how to live.</span> <span class="tl-s" data-s="1181.12" data-e="1183.08">We need more than information.</span> <span class="tl-s" data-s="1184.02" data-e="1185.30">We need transformation.</span> <span class="tl-s" data-s="1186.28" data-e="1189.80">We need to be acted upon by an outside force.</span></p>
+        <p><span class="tl-s" data-s="1191.32" data-e="1197.46">An alien righteousness needs to invade us in order to help us live this way.</span></p>
+        <p><span class="tl-s" data-s="1200.44" data-e="1202.66">And again, this is where we see Jesus.</span></p>
+        <p><span class="tl-s" data-s="1204.08" data-e="1207.14">The one who came to do what the psalmist couldn&#x27;t do.</span></p>
+        <p><span class="tl-s" data-s="1208.96" data-e="1217.58">Jesus is the blessed man of Psalm 119 verse 1 who walked in the law of the Lord perfectly.</span></p>
+        <p><span class="tl-s" data-s="1219.42" data-e="1231.10">Jesus is the only person who has never looked upon worthless things and instead of being given life was given death as a reward.</span></p>
+        <p><span class="tl-s" data-s="1233.58" data-e="1236.64">Jesus is the word and is the light of the world.</span></p>
+        <p><span class="tl-s" data-s="1240.02" data-e="1242.62">He didn&#x27;t just keep the law of the Lord.</span> <span class="tl-s" data-s="1243.74" data-e="1246.12">Jesus embodied it in every way.</span></p>
+        <p><span class="tl-s" data-s="1249.12" data-e="1258.42">When we read scriptures like Psalm 119, we&#x27;re not meant to merely look and reflect upon our own obedience.</span> <span class="tl-s" data-s="1259.80" data-e="1266.30">We&#x27;re not meant to just reflect upon I just don&#x27;t measure up.</span></p>
+        <p><span class="tl-s" data-s="1269.40" data-e="1273.16">We&#x27;re meant to look and see Christ&#x27;s obedience for us.</span></p>
+        <p><span class="tl-s" data-s="1275.66" data-e="1277.24">He obeyed for you.</span></p>
+        <p><span class="tl-s" data-s="1278.88" data-e="1281.68">He obeyed to the point of death for you.</span></p>
+        <p><span class="tl-s" data-s="1284.48" data-e="1287.24">And this is where the good news of the gospel lies.</span> <span class="tl-s" data-s="1287.92" data-e="1298.42">If you&#x27;re in Christ, if you&#x27;ve been given saving faith to believe in what Jesus has done for you, His obedience has become yours.</span> <span class="tl-s" data-s="1299.62" data-e="1300.86">That&#x27;s good news.</span> <span class="tl-s" data-s="1301.58" data-e="1302.46">And how so?</span> <span class="tl-s" data-s="1303.34" data-e="1305.16">Through our union with Him.</span></p>
+        <p><span class="tl-s" data-s="1307.04" data-e="1316.92">1 Corinthians 15-22 reads, For as in Adam all die, so also in Christ shall all be made alive.</span> <span class="tl-s" data-s="1318.16" data-e="1324.42">Galatians 2-20 reads, It&#x27;s no longer I who live, but Christ who lives in me.</span></p>
+        <p><span class="tl-s" data-s="1327.00" data-e="1331.92">Friend, if you belong to Jesus, you have been made alive.</span> <span class="tl-s" data-s="1332.80" data-e="1339.56">If you belong to Him, you no longer live for yourself, but for a new master, a good master.</span></p>
+        <p><span class="tl-s" data-s="1341.76" data-e="1350.62">And now that you live for Jesus and He lives in you, His Spirit dwells in you and empowers you to obey His Word.</span> <span class="tl-s" data-s="1350.84" data-e="1353.70">His Spirit empowers you to live for Him.</span> <span class="tl-s" data-s="1354.84" data-e="1356.30">We can&#x27;t do this on our own.</span> <span class="tl-s" data-s="1357.34" data-e="1361.34">We need the Spirit of God to produce fruit in us.</span></p>
+        <p><span class="tl-s" data-s="1363.24" data-e="1371.14">All the time we&#x27;re asking our kids, and I&#x27;m sure you guys have done this with your kids as well, okay, you can bear the fruit of the Spirit.</span> <span class="tl-s" data-s="1371.78" data-e="1372.68">No, they can&#x27;t.</span> <span class="tl-s" data-s="1373.34" data-e="1375.10">They can&#x27;t bear the fruit of the Spirit.</span> <span class="tl-s" data-s="1375.34" data-e="1376.54">They need the Spirit.</span></p>
+        <p><span class="tl-s" data-s="1379.32" data-e="1383.14">We need to pray that our children would receive the Holy Spirit.</span></p>
+        <p><span class="tl-s" data-s="1385.34" data-e="1393.06">All the ways that the psalmist of Psalm 119 longs to walk in God&#x27;s ways, they&#x27;ve been fulfilled in Jesus.</span></p>
+        <p><span class="tl-s" data-s="1395.66" data-e="1400.42">Maybe you&#x27;re here and you&#x27;re someone who struggles with people-pleasing.</span></p>
+        <p><span class="tl-s" data-s="1402.64" data-e="1409.88">Maybe your greatest sin struggle is you elevate rules over your relationship with Christ.</span></p>
+        <p><span class="tl-s" data-s="1412.34" data-e="1418.48">This is a dangerous sin because most of the time we&#x27;re totally unaware that we even do this.</span></p>
+        <p><span class="tl-s" data-s="1420.88" data-e="1423.76">Here&#x27;s the truth that you need to take home this morning.</span></p>
+        <p><span class="tl-s" data-s="1425.24" data-e="1428.30">We don&#x27;t obey to earn God&#x27;s love.</span></p>
+        <p><span class="tl-s" data-s="1430.20" data-e="1434.00">We&#x27;re already fully loved in Christ.</span></p>
+        <p><span class="tl-s" data-s="1435.46" data-e="1440.16">You can&#x27;t obey and receive more love from Jesus.</span> <span class="tl-s" data-s="1441.22" data-e="1443.02">He already loves you fully.</span> <span class="tl-s" data-s="1443.44" data-e="1448.66">He loves you just the same yesterday, today, and forever.</span> <span class="tl-s" data-s="1448.96" data-e="1451.94">It&#x27;s a love that transcends all other loves.</span></p>
+        <p><span class="tl-s" data-s="1454.84" data-e="1460.12">And because of this great love, we can joyfully obey God&#x27;s commands.</span> <span class="tl-s" data-s="1460.96" data-e="1462.64">We can treasure His Word.</span> <span class="tl-s" data-s="1463.46" data-e="1465.84">Maybe you&#x27;re someone who struggles with failure.</span></p>
+        <p><span class="tl-s" data-s="1467.38" data-e="1470.22">Maybe you&#x27;ve sinned and you&#x27;ve made a mess of things.</span> <span class="tl-s" data-s="1470.80" data-e="1474.08">And your failure, you feel, has led to despair.</span></p>
+        <p><span class="tl-s" data-s="1476.16" data-e="1477.88">Here&#x27;s the truth you need to take home.</span></p>
+        <p><span class="tl-s" data-s="1479.80" data-e="1480.80">We all fail.</span> <span class="tl-s" data-s="1482.06" data-e="1483.04">We all sin.</span> <span class="tl-s" data-s="1484.02" data-e="1485.50">We all make a mess of things.</span> <span class="tl-s" data-s="1486.68" data-e="1489.02">Your failure should not drive you to despair.</span></p>
+        <p><span class="tl-s" data-s="1490.90" data-e="1492.48">It should drive you to Christ.</span> <span class="tl-s" data-s="1493.46" data-e="1494.80">It should drive you to the cross.</span> <span class="tl-s" data-s="1494.98" data-e="1501.40">Psalm 119, 176 says, I have gone astray like a lost sheep.</span> <span class="tl-s" data-s="1502.16" data-e="1505.60">Seek your servant for I do not forget your commandments.</span></p>
+        <p><span class="tl-s" data-s="1507.62" data-e="1511.12">Friends, the Lord delights in seeking after the lost sheep.</span></p>
+        <p><span class="tl-s" data-s="1513.00" data-e="1515.78">I mean, what does Jesus say in the parable of the lost sheep?</span> <span class="tl-s" data-s="1516.52" data-e="1526.60">After finding that sheep, He says, there will be more joy in heaven over one sinner who repents than over 99 righteous persons who need no repentance.</span></p>
+        <p><span class="tl-s" data-s="1528.70" data-e="1530.40">So do you feel like you&#x27;ve failed?</span></p>
+        <p><span class="tl-s" data-s="1532.08" data-e="1540.04">You can turn from your despair and you can look to Jesus who&#x27;s gentle and lowly.</span> <span class="tl-s" data-s="1541.20" data-e="1543.46">His disposition towards you will not change.</span></p>
+        <p><span class="tl-s" data-s="1545.20" data-e="1547.58">He receives the lost sheep.</span> <span class="tl-s" data-s="1548.88" data-e="1553.56">He&#x27;s waiting for you to turn to Him and His arms are open wide.</span> <span class="tl-s" data-s="1554.80" data-e="1558.96">He&#x27;s calling you to receive His tender mercy.</span></p>
+        <p><span class="tl-s" data-s="1560.96" data-e="1566.98">Verse 132 reads, Turn to me and be gracious to me as is your way with those who love your name.</span></p>
+        <p><span class="tl-s" data-s="1568.74" data-e="1571.94">Friends, God&#x27;s way is the way of grace.</span> <span class="tl-s" data-s="1573.06" data-e="1574.14">Pure grace.</span> <span class="tl-s" data-s="1574.94" data-e="1575.84">It&#x27;s who God is.</span> <span class="tl-s" data-s="1575.94" data-e="1578.10">He&#x27;s a God merciful and gracious.</span></p>
+        <p><span class="tl-s" data-s="1579.72" data-e="1585.94">He&#x27;s slow to anger, abounding in steadfast love and faithfulness.</span></p>
+        <p><span class="tl-s" data-s="1587.46" data-e="1591.20">And again, we see this personified in Jesus.</span></p>
+        <p><span class="tl-s" data-s="1594.10" data-e="1598.08">He&#x27;s the one who spent time with the lowly, with the outcast.</span> <span class="tl-s" data-s="1599.34" data-e="1604.80">And who was and always will be a fount of mercy to those thirsty for mercy.</span></p>
+        <p><span class="tl-s" data-s="1607.02" data-e="1608.60">So let me ask you a question.</span> <span class="tl-s" data-s="1609.76" data-e="1611.98">Are you running to Christ when you fail?</span></p>
+        <p><span class="tl-s" data-s="1614.26" data-e="1619.48">Or do you turn and run away from Him in shame like Adam and Eve in the garden?</span></p>
+        <p><span class="tl-s" data-s="1621.98" data-e="1625.36">If you do, you can turn back to Him.</span> <span class="tl-s" data-s="1626.42" data-e="1628.18">You can run to Jesus.</span></p>
+        <p><span class="tl-s" data-s="1631.56" data-e="1632.60">Here&#x27;s another question.</span> <span class="tl-s" data-s="1632.72" data-e="1639.96">Are you trusting in your own grit, your own performance, your own perseverance to obey the Lord?</span></p>
+        <p><span class="tl-s" data-s="1642.76" data-e="1644.62">Do you depend on your own strength?</span></p>
+        <p><span class="tl-s" data-s="1646.66" data-e="1648.10">We&#x27;re not strong enough.</span> <span class="tl-s" data-s="1649.02" data-e="1650.72">None of us are strong enough.</span> <span class="tl-s" data-s="1651.98" data-e="1660.54">We need to be reminded that our identity is not anchored in ourselves, not in our own ability, but in Christ.</span> <span class="tl-s" data-s="1661.72" data-e="1665.66">We need to remind ourselves of our union with Jesus.</span></p>
+        <p><span class="tl-s" data-s="1667.38" data-e="1669.66">Friend, if you&#x27;re a Christian, this should excite you.</span> <span class="tl-s" data-s="1670.50" data-e="1675.92">This should be a balm to a weary soul that you are united to Christ.</span> <span class="tl-s" data-s="1677.04" data-e="1681.16">There is no better news than that to see us through the weariness of life.</span></p>
+        <p><span class="tl-s" data-s="1683.66" data-e="1690.98">Our identity is anchored in the very fact that we are united to Christ.</span></p>
+        <p><span class="tl-s" data-s="1692.82" data-e="1693.68">Last point.</span> <span class="tl-s" data-s="1693.80" data-e="1698.82">God&#x27;s Word reveals to us what&#x27;s best, fulfilled in Christ.</span></p>
+        <p><span class="tl-s" data-s="1701.06" data-e="1707.36">God&#x27;s Word, it does reveal to us the truth, and that&#x27;s all been summed up in the person and work of Jesus.</span></p>
+        <p><span class="tl-s" data-s="1709.46" data-e="1714.70">And it also reveals to us the way to live rightly with the Lord.</span></p>
+        <p><span class="tl-s" data-s="1716.58" data-e="1722.76">But another wonderful truth is God&#x27;s Word reveals to us what is best.</span></p>
+        <p><span class="tl-s" data-s="1724.78" data-e="1729.18">Because in God&#x27;s Word what we see is what is eternally good.</span></p>
+        <p><span class="tl-s" data-s="1733.22" data-e="1740.02">The American dream has lied to us and has told us that pursuing material wealth is where it&#x27;s at.</span></p>
+        <p><span class="tl-s" data-s="1742.10" data-e="1749.30">It&#x27;s lied to us and has told us that your comfort is more important than the mission of God.</span> <span class="tl-s" data-s="1750.58" data-e="1759.60">It&#x27;s lied to us and has told us that temporary pleasure is worth losing it all.</span></p>
+        <p><span class="tl-s" data-s="1762.66" data-e="1774.14">What&#x27;s eternally good is knowing and enjoying God through the Son of God who is Himself the greatest treasure and goal of every promise of Scripture.</span></p>
+        <p><span class="tl-s" data-s="1775.60" data-e="1777.06">He is the goal.</span> <span class="tl-s" data-s="1777.80" data-e="1780.52">Verse 16 reads, I will delight in your statutes.</span> <span class="tl-s" data-s="1781.06" data-e="1782.84">I will not forget your word.</span> <span class="tl-s" data-s="1783.64" data-e="1788.90">Verse 18, open my eyes that I may behold wondrous things from your law.</span> <span class="tl-s" data-s="1789.76" data-e="1793.70">Verse 24, your testimonies are my delight.</span> <span class="tl-s" data-s="1794.54" data-e="1796.00">They are my counselors.</span></p>
+        <p><span class="tl-s" data-s="1797.68" data-e="1803.98">Then in verse 36, lead me in the path of your commandments for I delight in it.</span> <span class="tl-s" data-s="1805.06" data-e="1811.68">Verse 72, the law of your mouth is better to me than thousands of gold and silver pieces.</span></p>
+        <p><span class="tl-s" data-s="1813.68" data-e="1815.26">I think we get the point here.</span></p>
+        <p><span class="tl-s" data-s="1816.82" data-e="1824.14">The psalmist loved the Scriptures because in them he encountered something far more precious than gold.</span> <span class="tl-s" data-s="1825.32" data-e="1832.10">It was because in the Scriptures, in this Bible that we read, we can encounter God Himself.</span></p>
+        <p><span class="tl-s" data-s="1833.82" data-e="1840.72">Christian preachers and theologians have written exhaustively on this treasure the psalmist tells about us here.</span></p>
+        <p><span class="tl-s" data-s="1842.24" data-e="1846.98">One theologian writes, when we encounter the word of God, we encounter God.</span> <span class="tl-s" data-s="1847.76" data-e="1850.48">When we encounter God, we encounter His word.</span> <span class="tl-s" data-s="1851.06" data-e="1855.82">We cannot encounter God without the word or the word without God.</span> <span class="tl-s" data-s="1856.86" data-e="1861.14">God&#x27;s word and His personal presence are inseparable.</span> <span class="tl-s" data-s="1862.40" data-e="1867.22">Whenever God&#x27;s word is spoken, read, or heard, God Himself is there.</span></p>
+        <p><span class="tl-s" data-s="1869.20" data-e="1870.40">Do you believe that?</span> <span class="tl-s" data-s="1871.72" data-e="1875.78">Do you believe that when we gather on a Sunday morning, God is here?</span></p>
+        <p><span class="tl-s" data-s="1878.42" data-e="1886.62">Jonathan Edwards, the great 18th century preacher, revivalist, and Christian philosopher wrote, the redeemed have all their objective good in God.</span> <span class="tl-s" data-s="1887.60" data-e="1893.32">God Himself is the great good which they are brought to the possession and enjoyment of.</span> <span class="tl-s" data-s="1894.16" data-e="1901.88">The glorious excellencies and beauty of God will be what will forever entertain the minds of the saints.</span></p>
+        <p><span class="tl-s" data-s="1906.32" data-e="1919.08">We&#x27;ve been programmed by this culture to think that the best gifts are the ones we can purchase on Black Friday or on Amazon Prime Day, those several days.</span></p>
+        <p><span class="tl-s" data-s="1921.78" data-e="1924.18">Friends, the best gift we can receive is God.</span></p>
+        <p><span class="tl-s" data-s="1925.68" data-e="1927.66">He doesn&#x27;t just give us the gospel.</span> <span class="tl-s" data-s="1928.58" data-e="1930.46">We talk about the gospel flippantly.</span> <span class="tl-s" data-s="1931.04" data-e="1933.34">God Himself is the gospel.</span></p>
+        <p><span class="tl-s" data-s="1934.86" data-e="1940.42">He&#x27;s the greatest reward that the redemption of Christ has secured for you and for me.</span></p>
+        <p><span class="tl-s" data-s="1942.90" data-e="1950.38">Look, we&#x27;re all tempted to chase after the good life, seeking after thrills and what will make us satisfied.</span> <span class="tl-s" data-s="1951.00" data-e="1952.26">Or so we think.</span> <span class="tl-s" data-s="1952.92" data-e="1956.88">But only in Christ can we see the ultimately good life.</span> <span class="tl-s" data-s="1957.82" data-e="1960.16">Can we find that ultimate good life?</span> <span class="tl-s" data-s="1960.26" data-e="1963.70">One that&#x27;s marked by spending time in communion with God.</span></p>
+        <p><span class="tl-s" data-s="1965.42" data-e="1971.34">Which for those of us who are united to Christ by faith, we&#x27;ll do that forever.</span> <span class="tl-s" data-s="1972.36" data-e="1973.26">This is rehearsal.</span> <span class="tl-s" data-s="1974.04" data-e="1977.92">We get to rehearse one time a week together until eternity.</span></p>
+        <p><span class="tl-s" data-s="1980.04" data-e="1989.84">And so like the psalmist, our study of Scripture, it&#x27;s not intended for us to simply gain more knowledge or facts about God.</span></p>
+        <p><span class="tl-s" data-s="1993.36" data-e="2002.62">Our study, when we go to the text of Scripture, we should be aiming at gaining more of Christ.</span> <span class="tl-s" data-s="2003.72" data-e="2004.82">More of Him.</span> <span class="tl-s" data-s="2005.90" data-e="2010.40">We should be aiming at knowing Him and the power of His resurrection.</span></p>
+        <p><span class="tl-s" data-s="2012.74" data-e="2014.18">Because it&#x27;s here.</span> <span class="tl-s" data-s="2015.20" data-e="2018.04">It&#x27;s here that we encounter God.</span></p>
+        <p><span class="tl-s" data-s="2020.54" data-e="2036.20">When we read Psalm 119 and we see the psalmist&#x27;s delight for the Word of God, it&#x27;s a foreshadowing, a little taste taste of what will be our forever delight in Jesus who is the Word of God incarnate.</span></p>
+        <p><span class="tl-s" data-s="2039.38" data-e="2041.44">Let&#x27;s try to land this plane a little bit.</span> <span class="tl-s" data-s="2041.54" data-e="2045.06">I understand that this can be at 30,000 feet sometimes.</span> <span class="tl-s" data-s="2045.74" data-e="2048.44">So let&#x27;s take our theology into practice here.</span></p>
+        <p><span class="tl-s" data-s="2050.08" data-e="2052.28">I want to ask a series of questions.</span></p>
+        <p><span class="tl-s" data-s="2053.86" data-e="2056.12">As you hear them, reflect upon them.</span></p>
+        <p><span class="tl-s" data-s="2057.72" data-e="2059.78">Think if you fall into one of these categories.</span></p>
+        <p><span class="tl-s" data-s="2062.30" data-e="2065.60">First question, do you read the Bible for quick tips?</span></p>
+        <p><span class="tl-s" data-s="2068.58" data-e="2074.02">Are you reading it just to check off things from your list you know you should be doing?</span></p>
+        <p><span class="tl-s" data-s="2076.28" data-e="2079.78">Or are you reading the Word to see Jesus more clearly?</span> <span class="tl-s" data-s="2080.42" data-e="2082.42">To know Jesus better?</span> <span class="tl-s" data-s="2083.36" data-e="2086.92">To love Him and to grow in your affections for Him?</span></p>
+        <p><span class="tl-s" data-s="2088.42" data-e="2094.52">If you&#x27;re a young person, are you reading the Bible to get mom and dad off your back?</span></p>
+        <p><span class="tl-s" data-s="2097.54" data-e="2100.80">Are you reading to gain more brownie points?</span></p>
+        <p><span class="tl-s" data-s="2103.76" data-e="2109.94">If you&#x27;re married, are you reading the Word to find ammo to use against your spouse?</span> <span class="tl-s" data-s="2110.08" data-e="2122.32">Are you weaponizing Scripture and using it to tear down your family, your kids, maybe your spouse?</span></p>
+        <p><span class="tl-s" data-s="2124.90" data-e="2128.64">Maybe those categories you didn&#x27;t find yourself in, so let me ask another question.</span> <span class="tl-s" data-s="2129.00" data-e="2132.08">Do you read Scripture only to support your political viewpoint?</span></p>
+        <p><span class="tl-s" data-s="2133.82" data-e="2145.70">To find support for whether we need to have open borders or have closed borders? here&#x27;s a truth we all need to take home with us.</span></p>
+        <p><span class="tl-s" data-s="2147.26" data-e="2152.78">Friends, we need to go to Scripture, all of Scripture, Genesis to Revelation to see Jesus.</span></p>
+        <p><span class="tl-s" data-s="2154.58" data-e="2159.80">And when we see Jesus in the Bible, what we see is his love for sinners like you and me.</span> <span class="tl-s" data-s="2160.60" data-e="2167.64">We see that love on display and it frees us to love others with that same sort of love.</span></p>
+        <p><span class="tl-s" data-s="2169.12" data-e="2195.12">So if you&#x27;re married, instead of using Scripture as ammo and loading up your AR-15, you&#x27;re now empowered to use Scripture to bless your spouse, to identify how God is working in their life and helping them, serving them by helping them connect what God is doing right now to what God has done for them in Christ.</span></p>
+        <p><span class="tl-s" data-s="2197.72" data-e="2200.50">We can also use Scripture to point our kids to Jesus.</span> <span class="tl-s" data-s="2201.76" data-e="2212.00">We can help them see that their biggest need isn&#x27;t just to obey because it makes us more comfortable when they&#x27;re obeying.</span></p>
+        <p><span class="tl-s" data-s="2214.64" data-e="2220.00">No, we point them to Scripture to see how Jesus obeyed for them.</span></p>
+        <p><span class="tl-s" data-s="2222.22" data-e="2231.00">We help them to see that the Christian life is one that&#x27;s built upon the foundation of what Christ has done for even them.</span></p>
+        <p><span class="tl-s" data-s="2233.76" data-e="2248.42">Instead of using Scripture to support a political viewpoint or to denigrate others, we can go to Scripture to find Jesus and be reminded that since He has radically altered our eternal trajectory, we can offer others the same hope.</span> <span class="tl-s" data-s="2249.70" data-e="2253.34">We can testify to what God has done for us in Christ.</span></p>
+        <p><span class="tl-s" data-s="2255.40" data-e="2261.08">Instead of warring over political opinions what could be divisive, share the Gospel.</span> <span class="tl-s" data-s="2262.38" data-e="2270.60">Share with the good news of what Christ has done for humanity in offering Himself up as the propitiation for all our sins.</span></p>
+        <p><span class="tl-s" data-s="2275.60" data-e="2277.86">Share with people that Jesus saves.</span></p>
+        <p><span class="tl-s" data-s="2281.86" data-e="2299.46">If you walked in here and you&#x27;ve been battling sin and you feel dead on the inside, we can cry out the psalmist&#x27;s words of verse 88 and we can say in your steadfast love give me life that I may keep your testimonies.</span></p>
+        <p><span class="tl-s" data-s="2301.00" data-e="2305.70">And because Jesus is the very steadfast love of God, He will give you life.</span></p>
+        <p><span class="tl-s" data-s="2310.14" data-e="2314.10">Friends, we need to go to Scripture to feast on what&#x27;s eternally good.</span> <span class="tl-s" data-s="2314.80" data-e="2318.32">There&#x27;s so much bad in this world around us.</span> <span class="tl-s" data-s="2319.10" data-e="2323.48">We can go to the text of Scripture and feast on what&#x27;s eternally good.</span> <span class="tl-s" data-s="2324.68" data-e="2332.26">We can starve our appetites for temporary pleasures by feasting on what God has done for us in Christ.</span> <span class="tl-s" data-s="2333.00" data-e="2334.90">We find it all over the pages of Scripture.</span></p>
+        <p><span class="tl-s" data-s="2336.30" data-e="2337.86">Because here&#x27;s the thing about sin.</span></p>
+        <p><span class="tl-s" data-s="2339.50" data-e="2343.36">Sin is so alluring because it&#x27;s pleasurable.</span> <span class="tl-s" data-s="2344.16" data-e="2345.82">I mean, that&#x27;s not a novel concept.</span> <span class="tl-s" data-s="2346.78" data-e="2348.92">It&#x27;s pretty easy.</span> <span class="tl-s" data-s="2349.10" data-e="2351.32">There&#x27;s feedback when we sin.</span> <span class="tl-s" data-s="2351.94" data-e="2354.10">There&#x27;s feedback that we receive when we sin.</span> <span class="tl-s" data-s="2354.16" data-e="2355.56">And that feedback is pleasure.</span></p>
+        <p><span class="tl-s" data-s="2357.26" data-e="2360.26">And the same isn&#x27;t true of reading our Bibles.</span> <span class="tl-s" data-s="2361.54" data-e="2362.80">Let&#x27;s be honest here.</span> <span class="tl-s" data-s="2363.02" data-e="2367.60">We don&#x27;t immediately see how the Word of God is shaping our hearts and our minds.</span></p>
+        <p><span class="tl-s" data-s="2370.06" data-e="2380.72">If we&#x27;re honest, we can find ourselves in a dry season much more often than in a monsoon season of grace from the Lord that&#x27;s pouring out into our lives.</span></p>
+        <p><span class="tl-s" data-s="2382.30" data-e="2387.32">And that makes it really hard for us to see the benefit of daily Bible reading.</span></p>
+        <p><span class="tl-s" data-s="2390.00" data-e="2391.58">But we need to stick to it.</span> <span class="tl-s" data-s="2392.56" data-e="2397.84">There&#x27;s a cumulative effect that happens when we read our Bibles daily.</span> <span class="tl-s" data-s="2399.14" data-e="2403.32">And then what makes sin so deceptive is that it lies to us.</span> <span class="tl-s" data-s="2404.32" data-e="2409.64">It promises fulfillment, but it always under delivers on that promise.</span></p>
+        <p><span class="tl-s" data-s="2411.50" data-e="2414.18">Sin never delivers on its promises.</span></p>
+        <p><span class="tl-s" data-s="2417.56" data-e="2421.56">But God always delivers on His promises.</span> <span class="tl-s" data-s="2422.64" data-e="2426.10">And all His promises find their yes in Jesus.</span></p>
+        <p><span class="tl-s" data-s="2428.14" data-e="2432.42">And so we should run to the Scriptures daily and look for Jesus.</span> <span class="tl-s" data-s="2433.32" data-e="2434.06">Look for Jesus.</span> <span class="tl-s" data-s="2434.60" data-e="2436.84">He wants to meet with us and spend time with us.</span> <span class="tl-s" data-s="2437.30" data-e="2441.56">And we know that when we open God&#x27;s Word, we will encounter Him.</span></p>
+        <p><span class="tl-s" data-s="2443.46" data-e="2448.04">You see, this song, it&#x27;s a love song for the Word of God.</span></p>
+        <p><span class="tl-s" data-s="2449.98" data-e="2454.18">But ultimately it leads us to the Word made flesh.</span> <span class="tl-s" data-s="2455.52" data-e="2458.08">Jesus is the truth that you and I should long for.</span> <span class="tl-s" data-s="2458.50" data-e="2460.52">Jesus is the righteous one we follow.</span> <span class="tl-s" data-s="2460.98" data-e="2464.20">Jesus is the eternal good our hearts were made for.</span> <span class="tl-s" data-s="2465.52" data-e="2468.10">Friends, let&#x27;s not settle for lesser reveals.</span> <span class="tl-s" data-s="2469.22" data-e="2472.54">On every page of Scripture, God is revealing Jesus.</span></p>
+        <p><span class="tl-s" data-s="2474.04" data-e="2478.04">And He invites us, He invites you to know Him more deeply.</span></p>
+        <p><span class="tl-s" data-s="2479.98" data-e="2481.50">And how do we know Him more deeply?</span> <span class="tl-s" data-s="2482.64" data-e="2483.84">By reading His Word.</span> <span class="tl-s" data-s="2484.68" data-e="2485.44">Reading it daily.</span> <span class="tl-s" data-s="2486.00" data-e="2487.56">Even when it doesn&#x27;t feel good.</span> <span class="tl-s" data-s="2488.48" data-e="2493.00">Even when it&#x27;s a chore and you have to stay up a little bit later or wake up a little bit earlier.</span> <span class="tl-s" data-s="2493.50" data-e="2494.66">Read your Bible daily.</span></p>
+        <p><span class="tl-s" data-s="2497.02" data-e="2502.86">Not out of duty, but out of delight for what God has done for us in Christ.</span> <span class="tl-s" data-s="2504.18" data-e="2509.36">Another way we know Him more deeply is by running to Jesus when we sin.</span></p>
+        <p><span class="tl-s" data-s="2510.96" data-e="2515.22">And by hiding His Word in our hearts so that we don&#x27;t sin against Him.</span></p>
+        <p><span class="tl-s" data-s="2516.70" data-e="2522.88">So you may be in your regular Bible reading plan in Psalm 119 or you may be somewhere else.</span> <span class="tl-s" data-s="2524.24" data-e="2525.22">Stick to it.</span> <span class="tl-s" data-s="2526.18" data-e="2531.62">Let that Word of God shape what you believe to be true about who Jesus is.</span> <span class="tl-s" data-s="2532.46" data-e="2534.62">Let it shape how you live for Jesus.</span> <span class="tl-s" data-s="2535.54" data-e="2546.46">Let it inform how you long for Jesus. because my friends, the Bible tells us one story and that&#x27;s the story of Jesus.</span></p>
+        <p><span class="tl-s" data-s="2548.30" data-e="2555.00">And He Himself invites us to know Him better when we read Psalms like Psalm 119.</span> <span class="tl-s" data-s="2555.70" data-e="2556.46">Let&#x27;s pray.</span> <span class="tl-s" data-s="2556.47" data-e="2556.52">Let&#x27;s pray.</span></p>
+        <p><span class="tl-s" data-s="2564.54" data-e="2568.88">Lord God, it&#x27;s a gift that You&#x27;ve revealed Yourself to us.</span></p>
+        <p><span class="tl-s" data-s="2570.46" data-e="2576.96">You&#x27;ve given us the written Word to show us about the Word incarnate, Your Son, Jesus Christ.</span> <span class="tl-s" data-s="2578.20" data-e="2586.12">And I pray for my friends here who are united to Him by faith, that You would strengthen them, that You would encourage them.</span> <span class="tl-s" data-s="2586.18" data-e="2593.48">I pray for those weary this morning to walk in newness of life, the life that Your Son has given us.</span> <span class="tl-s" data-s="2594.64" data-e="2597.02">I pray for those battling sin and sin struggles.</span> <span class="tl-s" data-s="2597.18" data-e="2602.60">I pray that they would cry out to You, that You would give them life, that they may keep Your testimonies.</span></p>
+        <p><span class="tl-s" data-s="2604.38" data-e="2614.04">I pray for my friends to help them observe in the pages of Scripture the wondrous things that You&#x27;ve done in Your Son.</span></p>
+        <p><span class="tl-s" data-s="2615.62" data-e="2617.30">I pray for those here who don&#x27;t know You.</span> <span class="tl-s" data-s="2617.39" data-e="2621.62">I pray that You would give them an appetite for eternal truth.</span> <span class="tl-s" data-s="2622.78" data-e="2630.90">There are many competing truths in this world, but I pray for the eternal truth, Jesus Christ, to invade their lives.</span> <span class="tl-s" data-s="2631.58" data-e="2638.14">I pray that Your Spirit would captivate hearts and minds for the glory of Christ.</span></p>
+        <p><span class="tl-s" data-s="2639.68" data-e="2640.84">And would You do that, Lord?</span></p>
+        <p><span class="tl-s" data-s="2642.76" data-e="2659.70">And Father, we pray that You would seal truths from Psalm 119, truths that we&#x27;ve accumulated over three summers into our hearts, and that Psalm 119 would become a good friend we revisit individually for years to come.</span> <span class="tl-s" data-s="2660.75" data-e="2668.24">Lord, would You help Your people treasure the Word of God, and would You help them delight in their Savior.</span> <span class="tl-s" data-s="2669.30" data-e="2670.64">In His name we pray, Amen.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Live sermon feed: spotlight from /api/sermons, browsable archive from
+  // /api/sermons/search. Static fallback list stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function row(it) {
+      var meta = [it.speaker, fmtDate(it.date)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      var titleHtml = esc(it.title);
+      var tUrl = it.guid && transcriptMap[it.guid];
+      if (tUrl) titleHtml = '<a href="' + esc(tUrl) + '">' + titleHtml + "</a>";
+      return '<div class="sermon"><div><h3>' + titleHtml + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    fetch("/api/sermons?v=3")
+      .then(function (res) { if (!res.ok) throw new Error("feed " + res.status); return res.json(); })
+      .then(function (data) {
+        var spot = document.querySelector("[data-series-spotlight]");
+        if (data && data.series && spot) {
+          var s = data.series;
+          var art = spot.querySelector("[data-series-art]");
+          if (art && s.artwork) { art.src = s.artwork; } else if (art) { art.style.display = "none"; }
+          var nm = spot.querySelector("[data-series-name]");
+          if (nm) nm.textContent = s.name;
+          var bl = spot.querySelector("[data-series-blurb]");
+          if (bl) bl.textContent = s.blurb;
+          spot.hidden = false;
+        }
+      })
+      .catch(function () { /* spotlight stays hidden */ });
+
+    var PER = 10;
+    var state = { q: "", speaker: "", series: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var speakerSel = document.querySelector("[data-sermons-speaker]");
+    var seriesSel = document.querySelector("[data-sermons-series]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No messages found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(speakerSel, data.facets.speakers || [], function (e) { return e.name; }, function (e) { return e.name + " (" + e.count + ")"; });
+        fill(seriesSel, data.facets.series || [], function (e) { return e.name; }, function (e) { return e.name + " (" + e.count + ")"; });
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.speaker || data.series || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.speaker) parts.push("by " + data.speaker);
+          if (data.series) parts.push("in " + data.series);
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " result" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " messages";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/sermons/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.speaker ? "&speaker=" + encodeURIComponent(state.speaker) : "") +
+        (state.series ? "&series=" + encodeURIComponent(state.series) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () { /* keep current list on error */ });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.speaker = ""; state.series = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (speakerSel) speakerSel.value = "";
+      if (seriesSel) seriesSel.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    function bindSelect(sel, key) {
+      if (!sel) return;
+      sel.addEventListener("change", function () {
+        state[key] = sel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    bindSelect(speakerSel, "speaker");
+    bindSelect(seriesSel, "series");
+    bindSelect(monthSel, "month");
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: https://hub.centergilbert.com/media/psalm-119-139 -->
+</body>
+</html>
