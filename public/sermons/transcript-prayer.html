@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prayer — Sermon Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Listen to the latest sermons from Center Church, or follow along on Apple Podcasts and Spotify." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=17" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a class="active" href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/sermons">&larr; All sermons</a>
+          <h1 class="display-lg">Prayer</h1>
+          <p class="transcript-meta">Rich Richardson · 2024-12-29 · 00:40:08</p>
+          <p class="transcript-desc">Always pray and don&#x27;t give up.</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/119cbef70/podcast/play/128974273/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-7%2F436123959-44100-2-ee91d8e63056680a.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><span class="tl-s" data-s="0.02" data-e="0.76">Go get them.</span> <span class="tl-s" data-s="0.98" data-e="1.42">Thank you.</span></p>
+        <p><span class="tl-s" data-s="3.22" data-e="4.06">Go get them.</span> <span class="tl-s" data-s="4.12" data-e="5.20">I&#x27;ve never heard that before.</span> <span class="tl-s" data-s="5.40" data-e="7.38">I&#x27;ve preached before.</span> <span class="tl-s" data-s="8.52" data-e="10.24">But it&#x27;s a pleasure to be here.</span></p>
+        <p><span class="tl-s" data-s="12.10" data-e="16.76">And it&#x27;s always a joy to address our church.</span></p>
+        <p><span class="tl-s" data-s="19.66" data-e="21.70">Church Christmas is now behind us.</span> <span class="tl-s" data-s="22.48" data-e="25.92">And I hope it was a fond memory for all of you.</span> <span class="tl-s" data-s="26.78" data-e="27.96">I love Christmas.</span> <span class="tl-s" data-s="28.76" data-e="30.34">It&#x27;s my favorite time of the year.</span> <span class="tl-s" data-s="30.88" data-e="36.68">The Christmas lights, all kinds of goodies, being with friends and family, watching Christmas movies.</span> <span class="tl-s" data-s="37.24" data-e="39.90">It&#x27;s a wonderful time, or it&#x27;s a wonderful life.</span> <span class="tl-s" data-s="40.90" data-e="46.72">But there&#x27;s one aspect of Christmas that I more endure than enjoy.</span> <span class="tl-s" data-s="47.64" data-e="49.40">And I don&#x27;t look forward to it.</span> <span class="tl-s" data-s="50.44" data-e="53.12">And what it is, is the wrapping of presents.</span></p>
+        <p><span class="tl-s" data-s="54.80" data-e="58.36">And before you say it, yes, I&#x27;m familiar with gift bags.</span> <span class="tl-s" data-s="58.50" data-e="64.02">But my sweet wife loves to open a present and unwrap it.</span> <span class="tl-s" data-s="64.56" data-e="67.36">So I only wrap her presents each year.</span> <span class="tl-s" data-s="68.00" data-e="69.84">And this year I had three gifts for her.</span> <span class="tl-s" data-s="71.16" data-e="76.04">So on Christmas Eve morning, I decided it was time to wrap them and put them under the tree.</span> <span class="tl-s" data-s="76.12" data-e="77.10">I&#x27;d put it off long enough.</span> <span class="tl-s" data-s="77.18" data-e="83.16">So I gathered the paper and the ribbon, the scissors, and went to my workbench in the garage to make this happen.</span> <span class="tl-s" data-s="83.72" data-e="87.94">Three gifts to do, and an hour and a half later, I was done.</span></p>
+        <p><span class="tl-s" data-s="89.94" data-e="92.02">And I only used one gift bag.</span></p>
+        <p><span class="tl-s" data-s="95.32" data-e="99.50">But Charlotte doesn&#x27;t have these troubles with wrapping presents.</span> <span class="tl-s" data-s="99.64" data-e="103.98">In fact, her gifts look professionally done.</span> <span class="tl-s" data-s="105.00" data-e="110.18">She gets presents for all four of our children and their spouses and our 14 grandchildren.</span> <span class="tl-s" data-s="110.20" data-e="117.86">And she actually has fun wrapping this 30 some odd gifts each year.</span> <span class="tl-s" data-s="118.12" data-e="119.60">And I struggle with three.</span></p>
+        <p><span class="tl-s" data-s="121.10" data-e="121.58">Why?</span> <span class="tl-s" data-s="122.66" data-e="124.18">Well, she&#x27;s good at it.</span> <span class="tl-s" data-s="124.46" data-e="125.60">She enjoys it.</span> <span class="tl-s" data-s="126.40" data-e="128.14">She had a lot of practice.</span> <span class="tl-s" data-s="129.04" data-e="130.76">Me, I do it once a year.</span> <span class="tl-s" data-s="131.36" data-e="132.94">And I don&#x27;t do it all that well.</span> <span class="tl-s" data-s="134.14" data-e="136.32">And mine don&#x27;t look as good as hers.</span> <span class="tl-s" data-s="137.62" data-e="138.66">But I get them done.</span> <span class="tl-s" data-s="138.78" data-e="139.70">Get them under the tree.</span> <span class="tl-s" data-s="141.00" data-e="142.80">But she is very gracious with me.</span></p>
+        <p><span class="tl-s" data-s="143.30" data-e="145.40">And my wrapping handicap.</span> <span class="tl-s" data-s="146.52" data-e="149.62">And as always, it&#x27;s now just torn paper and in the trash.</span> <span class="tl-s" data-s="150.68" data-e="153.28">So it just does seem a little strange.</span> <span class="tl-s" data-s="153.30" data-e="161.80">But this morning, I want to look together at an aspect of our Christian life that can be like wrapping presents.</span> <span class="tl-s" data-s="162.82" data-e="165.14">Where some people seem to be really good at it.</span> <span class="tl-s" data-s="165.78" data-e="166.52">Enjoy it.</span> <span class="tl-s" data-s="167.62" data-e="172.70">And some find it something more to endure than to enjoy.</span> <span class="tl-s" data-s="173.44" data-e="174.76">And that&#x27;s the topic of prayer.</span></p>
+        <p><span class="tl-s" data-s="176.26" data-e="182.28">My goal this morning is to help us to refocus on the gift of prayer to the believer.</span> <span class="tl-s" data-s="182.52" data-e="189.16">And see through God&#x27;s word how wonderful this gift actually is.</span></p>
+        <p><span class="tl-s" data-s="190.68" data-e="190.68">C.</span> <span class="tl-s" data-s="190.68" data-e="192.68">Samuel Storm puts it this way.</span> <span class="tl-s" data-s="193.12" data-e="196.92">He said, What God intended to be a glorious blessing.</span> <span class="tl-s" data-s="197.62" data-e="200.98">Prayer has for many become a grievous burden.</span> <span class="tl-s" data-s="202.16" data-e="205.54">Prayer has become more of a duty than a delight.</span> <span class="tl-s" data-s="206.70" data-e="208.42">A bit like mowing the lawn.</span> <span class="tl-s" data-s="209.40" data-e="211.00">Necessary but not gratifying.</span> <span class="tl-s" data-s="212.00" data-e="215.56">So this morning I&#x27;d like to see if we can take some steps.</span> <span class="tl-s" data-s="216.46" data-e="219.36">From seeing prayer as necessary.</span> <span class="tl-s" data-s="219.38" data-e="220.96">And I think every believer does.</span></p>
+        <p><span class="tl-s" data-s="222.22" data-e="225.44">But to be gratifying to us.</span></p>
+        <p><span class="tl-s" data-s="228.06" data-e="232.38">Wherever you find yourself this morning, maybe prayer comes easy for you.</span> <span class="tl-s" data-s="232.76" data-e="234.80">Like Charlotte and wrapping presents.</span> <span class="tl-s" data-s="235.22" data-e="236.22">Or difficult.</span> <span class="tl-s" data-s="237.42" data-e="238.08">Wherever you are in that spectrum.</span> <span class="tl-s" data-s="238.10" data-e="238.94">Wherever you are in that spectrum.</span> <span class="tl-s" data-s="239.36" data-e="246.36">Let&#x27;s let God&#x27;s word speak to us about the truth of how prayer is a privilege.</span> <span class="tl-s" data-s="247.36" data-e="251.80">And in doing this, I&#x27;d like to have us turn in the scripture to Luke chapter 18.</span></p>
+        <p><span class="tl-s" data-s="253.40" data-e="256.78">I&#x27;d like for us to look at a parable of Jesus.</span> <span class="tl-s" data-s="257.58" data-e="263.52">This is the only parable that, well, it&#x27;s just in the gospel of Luke.</span> <span class="tl-s" data-s="263.62" data-e="264.96">It&#x27;s not in the other gospels.</span> <span class="tl-s" data-s="265.44" data-e="267.54">It&#x27;s a parable of the persistent widow.</span></p>
+        <p><span class="tl-s" data-s="268.98" data-e="270.66">So I&#x27;ll read this just in a moment.</span> <span class="tl-s" data-s="270.79" data-e="272.10">Let&#x27;s pray, though, as we begin.</span></p>
+        <p><span class="tl-s" data-s="274.06" data-e="278.88">Father, it&#x27;s my privilege to be able to talk about a topic that is near your heart.</span> <span class="tl-s" data-s="280.22" data-e="281.58">From your word.</span> <span class="tl-s" data-s="282.94" data-e="285.96">Lord, we see it experienced in Jesus&#x27; life.</span> <span class="tl-s" data-s="285.98" data-e="290.36">We see Jesus teaching us how to pray.</span> <span class="tl-s" data-s="291.46" data-e="295.14">Father, I ask your grace to be able to preach on this topic.</span> <span class="tl-s" data-s="295.28" data-e="300.22">In a way that draws our attention to the glory and the wonder of prayer.</span></p>
+        <p><span class="tl-s" data-s="301.78" data-e="303.64">Father, help me to speak clearly.</span> <span class="tl-s" data-s="305.02" data-e="310.32">And help your word and the truth of Jesus and what he&#x27;s done for us.</span> <span class="tl-s" data-s="310.76" data-e="316.12">And who we are as believers to come clearly through your word as we study today.</span> <span class="tl-s" data-s="317.38" data-e="319.12">In your holy name we pray.</span> <span class="tl-s" data-s="320.10" data-e="320.54">Amen.</span></p>
+        <p><span class="tl-s" data-s="322.08" data-e="323.10">Let&#x27;s read together.</span> <span class="tl-s" data-s="323.24" data-e="325.10">Luke 18, those first eight verses.</span> <span class="tl-s" data-s="325.12" data-e="332.08">And he told them a parable to the effect that they are always to pray and not lose heart.</span></p>
+        <p><span class="tl-s" data-s="333.86" data-e="339.60">It&#x27;s very rare for Jesus to tell them, okay, I&#x27;m going to tell you a parable and this is what it means.</span> <span class="tl-s" data-s="339.98" data-e="341.38">But that&#x27;s what he&#x27;s doing right here.</span> <span class="tl-s" data-s="341.64" data-e="343.64">He says, and he told them a parable.</span> <span class="tl-s" data-s="343.84" data-e="344.14">Wow.</span> <span class="tl-s" data-s="344.90" data-e="345.30">How?</span> <span class="tl-s" data-s="345.50" data-e="351.28">To the effect that they are always to pray and not to lose heart or not to give up.</span></p>
+        <p><span class="tl-s" data-s="352.82" data-e="359.40">He goes on, verse 2, he said in a certain city there&#x27;s a judge who neither feared God nor respected man.</span> <span class="tl-s" data-s="359.42" data-e="366.28">And there was a widow in that city who kept coming to him and saying, give me justice against my adversary.</span></p>
+        <p><span class="tl-s" data-s="367.80" data-e="368.64">For a while he refused.</span> <span class="tl-s" data-s="368.66" data-e="369.58">For a while he refused.</span> <span class="tl-s" data-s="369.60" data-e="375.42">But afterwards he said to himself, though I neither fear God nor respect man yet.</span> <span class="tl-s" data-s="375.94" data-e="384.08">Because this widow keeps bothering me, I will give her justice so that she will not beat me down by her continual coming.</span> <span class="tl-s" data-s="385.06" data-e="388.88">And the Lord said, hear what the unrighteous judge says.</span> <span class="tl-s" data-s="390.26" data-e="395.56">And will not God give justice to his elect who cry to him day and night?</span> <span class="tl-s" data-s="396.10" data-e="398.10">Will he delay long over them?</span> <span class="tl-s" data-s="398.60" data-e="402.00">I tell you, he will give justice to them speedily.</span> <span class="tl-s" data-s="402.82" data-e="406.80">Nevertheless, when the Son of Man comes, will he find faith on earth?</span></p>
+        <p><span class="tl-s" data-s="408.46" data-e="413.56">You see, Jesus could have picked any story to encourage the disciples to pray.</span> <span class="tl-s" data-s="414.16" data-e="416.06">But he picked this one.</span> <span class="tl-s" data-s="417.12" data-e="417.46">Why?</span> <span class="tl-s" data-s="418.62" data-e="424.88">What is in this parable that helps the disciples see the genuine need to always pray and not lose heart?</span> <span class="tl-s" data-s="425.42" data-e="428.20">Or always pray and not give up?</span> <span class="tl-s" data-s="429.02" data-e="432.36">It&#x27;s a simple, short story that Jesus tells us.</span> <span class="tl-s" data-s="432.74" data-e="435.72">But it&#x27;s a story that encourages us to pray.</span> <span class="tl-s" data-s="436.78" data-e="442.44">I believe what we should listen for in this story is what Jesus has to say about God.</span> <span class="tl-s" data-s="443.10" data-e="445.58">And what Jesus has to say about us.</span> <span class="tl-s" data-s="446.62" data-e="450.28">This is a story about a judge and a widow.</span></p>
+        <p><span class="tl-s" data-s="451.42" data-e="456.84">But yet there is truth about God that&#x27;s being relayed in this passage.</span> <span class="tl-s" data-s="457.34" data-e="458.80">And there&#x27;s truth about us.</span> <span class="tl-s" data-s="460.10" data-e="462.48">And those are going to be my two points this morning.</span> <span class="tl-s" data-s="462.80" data-e="466.38">Number one, what does this parable, what does this say about God?</span> <span class="tl-s" data-s="466.78" data-e="469.86">And what does it say about us?</span></p>
+        <p><span class="tl-s" data-s="473.44" data-e="476.74">And he&#x27;s already told us what the main thrust of this is.</span> <span class="tl-s" data-s="477.36" data-e="480.44">Is to always pray and not lose heart.</span> <span class="tl-s" data-s="481.22" data-e="485.40">Or you could say it in this way, to always pray and don&#x27;t give up.</span></p>
+        <p><span class="tl-s" data-s="487.10" data-e="487.96">Always pray.</span> <span class="tl-s" data-s="487.98" data-e="489.86">Don&#x27;t give up.</span></p>
+        <p><span class="tl-s" data-s="491.80" data-e="493.94">So what does this say about God?</span> <span class="tl-s" data-s="495.12" data-e="497.10">See, Samuel Storm again says this.</span> <span class="tl-s" data-s="497.24" data-e="501.30">Nothing hinders our prayers more than our misconceptions about God.</span> <span class="tl-s" data-s="501.80" data-e="502.80">And I believe that&#x27;s true.</span> <span class="tl-s" data-s="503.48" data-e="509.84">Because when we don&#x27;t see God as he truly is, it can make barriers between us and him.</span> <span class="tl-s" data-s="510.32" data-e="513.74">It can make us reluctant to come to him.</span> <span class="tl-s" data-s="514.22" data-e="515.70">When we feel unworthy.</span> <span class="tl-s" data-s="515.92" data-e="516.98">When we feel distant.</span> <span class="tl-s" data-s="517.78" data-e="521.68">When we feel that maybe God&#x27;s disappointed with us.</span> <span class="tl-s" data-s="522.36" data-e="523.64">Misconceptions about God.</span></p>
+        <p><span class="tl-s" data-s="524.02" data-e="526.74">That draws us away.</span> <span class="tl-s" data-s="527.22" data-e="529.14">Versus drawing us to him.</span> <span class="tl-s" data-s="530.30" data-e="531.78">So I was looking at this parable.</span> <span class="tl-s" data-s="531.92" data-e="536.02">First of all, let me tell you what this parable is not saying about God.</span> <span class="tl-s" data-s="536.74" data-e="546.90">It&#x27;s not saying that the more persistent we are in our prayers, the greater our chance of turning the heart of God towards meeting our need or what we want.</span> <span class="tl-s" data-s="547.56" data-e="549.34">That&#x27;s not what this is saying.</span> <span class="tl-s" data-s="549.90" data-e="554.68">Or that God will only hear prayers if we&#x27;re as persistent as this poor widow.</span> <span class="tl-s" data-s="555.72" data-e="559.36">Leaving you with that condemning feeling like, I guess I just don&#x27;t pray enough.</span> <span class="tl-s" data-s="560.30" data-e="562.58">That&#x27;s not what this parable is saying.</span> <span class="tl-s" data-s="563.40" data-e="565.84">There&#x27;s much more in this parable for us to hear.</span></p>
+        <p><span class="tl-s" data-s="566.20" data-e="568.68">You see, the judge is not being compared to God here.</span> <span class="tl-s" data-s="569.46" data-e="576.58">But Jesus is showing a stark contrast between God the Father and this unjust judge.</span> <span class="tl-s" data-s="577.40" data-e="582.26">That is how Jesus is highlighting God to the disciples and to us.</span> <span class="tl-s" data-s="583.28" data-e="595.96">In the same way, Jesus uses the character of the widow to help us to see the vast differences between how the widow is dealt with by the judge and how God the Father interacts with his own children.</span></p>
+        <p><span class="tl-s" data-s="597.78" data-e="605.30">Jesus tells us the meaning of the parable as he begins, to always pray and not lose heart or don&#x27;t give up.</span></p>
+        <p><span class="tl-s" data-s="606.74" data-e="608.74">By the way, always pray.</span> <span class="tl-s" data-s="609.28" data-e="610.52">Don&#x27;t get hung up there.</span> <span class="tl-s" data-s="611.38" data-e="615.34">What that does not mean is a continuous, non-stop life of prayer.</span> <span class="tl-s" data-s="615.46" data-e="616.18">Who can do that?</span> <span class="tl-s" data-s="617.20" data-e="620.34">But what it&#x27;s referring to is continual prayer.</span> <span class="tl-s" data-s="620.36" data-e="624.12">In other words, do where prayer is on your mind.</span> <span class="tl-s" data-s="625.04" data-e="629.16">In other words, you&#x27;re talking to a friend and you pray with them before you get off the phone.</span> <span class="tl-s" data-s="630.40" data-e="637.72">Or you look at your day and you pray about the appointments you have and the tasks that you have before you.</span> <span class="tl-s" data-s="638.28" data-e="639.64">You have decisions to make.</span> <span class="tl-s" data-s="639.72" data-e="641.28">So you pray about those decisions.</span></p>
+        <p><span class="tl-s" data-s="642.82" data-e="647.88">You see, it&#x27;s almost like myself here with a little sore throat and cold.</span> <span class="tl-s" data-s="648.86" data-e="650.80">A little tickle in the back of my throat.</span> <span class="tl-s" data-s="651.64" data-e="652.64">It&#x27;s always there.</span> <span class="tl-s" data-s="653.72" data-e="655.18">At least right now, it&#x27;s always there.</span> <span class="tl-s" data-s="655.68" data-e="657.10">Let prayer be that way.</span> <span class="tl-s" data-s="657.30" data-e="658.46">That&#x27;s always praying.</span> <span class="tl-s" data-s="658.56" data-e="660.06">To where you&#x27;re aware of it.</span> <span class="tl-s" data-s="660.56" data-e="662.04">It&#x27;s a part of your life.</span> <span class="tl-s" data-s="662.88" data-e="664.68">That&#x27;s what&#x27;s being referred to here.</span></p>
+        <p><span class="tl-s" data-s="666.12" data-e="671.24">His parable is a story with the characters of an unjust judge and a poor widow.</span> <span class="tl-s" data-s="671.98" data-e="675.90">People that his disciples and all of us really can relate to.</span> <span class="tl-s" data-s="676.74" data-e="678.30">And the widow&#x27;s probably poor.</span> <span class="tl-s" data-s="678.94" data-e="683.20">It has been dealt with in some unjust way that&#x27;s not revealed to us.</span> <span class="tl-s" data-s="684.42" data-e="689.78">And since there was no social means of support, she was on her own to provide for herself.</span> <span class="tl-s" data-s="689.90" data-e="691.36">And if she had children or family.</span></p>
+        <p><span class="tl-s" data-s="693.42" data-e="698.00">And there&#x27;s no authority above this judge for these matters in her city.</span> <span class="tl-s" data-s="698.60" data-e="704.34">So the judge ruling for her in this case was her only hope.</span></p>
+        <p><span class="tl-s" data-s="706.84" data-e="708.90">How did Jesus describe this judge?</span></p>
+        <p><span class="tl-s" data-s="710.80" data-e="719.30">Well, we see in verse 2, he said, In a certain city there was a judge who neither feared God nor respected man.</span> <span class="tl-s" data-s="719.74" data-e="727.82">So as Jesus paints this picture for us of this unjust judge, it&#x27;s very different from what the disciples expected.</span> <span class="tl-s" data-s="728.28" data-e="737.54">Because if you look back in our Bibles in the Old Testament in 2 Chronicles chapter 19, verses 5, 6, and 7, it says something here about judges.</span></p>
+        <p><span class="tl-s" data-s="739.34" data-e="754.70">It says, He, Jehoshaphat, one of the kings of Israel, appointed judges in the land and all the fortified cities of Judah, city by city, and he said to the judge, consider what you do, for you judge not for man, but for the Lord.</span> <span class="tl-s" data-s="755.38" data-e="757.34">He is with you in giving judgment.</span> <span class="tl-s" data-s="758.74" data-e="762.92">Now then, let the fear of the Lord be upon you.</span> <span class="tl-s" data-s="763.30" data-e="771.10">Be careful what you do, for there is no injustice with the Lord our God, or partiality, or taking bribes.</span> <span class="tl-s" data-s="771.40" data-e="776.70">But yet this judge goes against all of what God had established.</span> <span class="tl-s" data-s="777.58" data-e="785.52">If this judge had no fear of God and bring in a verdict, he had no business being a judge over any city of God&#x27;s people.</span> <span class="tl-s" data-s="786.84" data-e="791.70">A judge who didn&#x27;t fear God was like an oxymoron to us today.</span> <span class="tl-s" data-s="792.84" data-e="794.46">The disciples would hear it that way.</span> <span class="tl-s" data-s="794.60" data-e="804.72">It&#x27;s like jumbo shrimp, or airplane food, or deafening silence, or clearly confusing.</span></p>
+        <p><span class="tl-s" data-s="805.74" data-e="806.64">It&#x27;s oxymoron.</span> <span class="tl-s" data-s="806.66" data-e="807.96">It doesn&#x27;t make sense.</span> <span class="tl-s" data-s="808.18" data-e="812.18">And I think that&#x27;s one of the points that Jesus is trying to highlight.</span> <span class="tl-s" data-s="812.74" data-e="815.84">Then he adds to that that he doesn&#x27;t respect or regard men.</span> <span class="tl-s" data-s="816.90" data-e="824.62">That means that he couldn&#x27;t be influenced by power or status or money as others could.</span> <span class="tl-s" data-s="825.40" data-e="839.62">It leaves a sense that there is no logical way to get him to rule in your favor, to respond to you and your need, regardless of how clear the injustice was, if he wasn&#x27;t so inclined.</span> <span class="tl-s" data-s="840.46" data-e="843.38">This judge just cared about himself.</span></p>
+        <p><span class="tl-s" data-s="845.52" data-e="852.44">And we see in verse 4 that he refused her, the widow, for a while, which seems completely consistent with his character.</span> <span class="tl-s" data-s="853.32" data-e="859.48">Even his non-response to the widow&#x27;s requests, he acts only thinking of himself.</span></p>
+        <p><span class="tl-s" data-s="861.32" data-e="872.52">He says in verse 4, though I neither fear God nor respect man, yet because this woman keeps bothering me, I will give her justice so that she will not beat me down with continual coming.</span> <span class="tl-s" data-s="873.52" data-e="886.66">This indicates that the judge will only do what he wants to do, what is in his best interest. compassion and justice are not ways that this judge is motivated to action.</span></p>
+        <p><span class="tl-s" data-s="888.32" data-e="895.94">So you can see the contrast that Luke is building because God is very different from this judge.</span> <span class="tl-s" data-s="896.94" data-e="900.66">And Jesus is contrasting the judge and God the Father.</span> <span class="tl-s" data-s="900.79" data-e="910.16">So let&#x27;s look at some of the ways that come out of the text that help us to see clearly the character of God and how he relates to us.</span></p>
+        <p><span class="tl-s" data-s="911.90" data-e="913.02">God is sovereign.</span> <span class="tl-s" data-s="913.94" data-e="916.12">The judge has jurisdiction over his city.</span> <span class="tl-s" data-s="916.95" data-e="917.46">Right?</span> <span class="tl-s" data-s="917.62" data-e="919.48">To hear and make rulings for his people.</span> <span class="tl-s" data-s="920.02" data-e="923.70">The judge&#x27;s authority is limited to the city that he&#x27;s serving as a judge.</span> <span class="tl-s" data-s="924.09" data-e="926.32">God has no limit to his authority.</span> <span class="tl-s" data-s="927.34" data-e="929.70">God has no limit to his rule.</span> <span class="tl-s" data-s="930.16" data-e="934.34">He rules completely over all of creation, over all things.</span> <span class="tl-s" data-s="935.30" data-e="940.84">Romans 11, 36 for from him and through him and to him are all things.</span> <span class="tl-s" data-s="941.34" data-e="942.56">To him be glory forever.</span></p>
+        <p><span class="tl-s" data-s="942.70" data-e="942.92">Amen.</span> <span class="tl-s" data-s="943.60" data-e="946.56">That is the power of our God that we pray to.</span></p>
+        <p><span class="tl-s" data-s="948.18" data-e="960.16">Or we see in Hebrews chapter 2 verses 8 and 9 it says putting everything in subjection under his feet as the Lord is sharing what power what authority his Son has.</span> <span class="tl-s" data-s="960.62" data-e="962.86">Putting everything in subjection under his feet.</span> <span class="tl-s" data-s="963.54" data-e="970.96">Now putting everything everything in subjection to him he left nothing outside his control.</span> <span class="tl-s" data-s="971.90" data-e="992.82">At present we don&#x27;t see everything in subjection to him but we see him referring to Jesus who for a little while was made lower than the angels namely Jesus crowned with glory and honor because of the suffering of death so that by the grace of God he might taste death for everyone.</span></p>
+        <p><span class="tl-s" data-s="994.98" data-e="1000.34">So what we can first see out of this passage is do we see God that way?</span> <span class="tl-s" data-s="1000.74" data-e="1005.72">Do we believe that God has authority that encompasses our own prayer needs?</span> <span class="tl-s" data-s="1007.04" data-e="1011.52">Our own areas in our lives to where we need God?</span> <span class="tl-s" data-s="1012.14" data-e="1014.38">Do we see that he touches those?</span> <span class="tl-s" data-s="1015.22" data-e="1022.26">That his power and authority is great enough to include any answer to any prayer that we have?</span></p>
+        <p><span class="tl-s" data-s="1023.80" data-e="1032.70">Have you stopped praying for something because you suddenly feel that maybe it&#x27;s not something God can do or wants to do or will do?</span> <span class="tl-s" data-s="1033.84" data-e="1058.48">Maybe a loved one has strayed and is still straying or you have a physical condition that just every day you live with or you have an ongoing financial need that seems to be a growing burden or anything else in the list do you stop praying about it because you question will God move on my behalf?</span> <span class="tl-s" data-s="1059.24" data-e="1061.94">Will God bring justice to me?</span></p>
+        <p><span class="tl-s" data-s="1064.06" data-e="1068.72">Well your God is sovereign and your God hears every prayer.</span></p>
+        <p><span class="tl-s" data-s="1070.20" data-e="1080.30">Our responsibility always pray and don&#x27;t give up. so God is sovereign we see in the passage also see that he&#x27;s just.</span> <span class="tl-s" data-s="1081.42" data-e="1094.08">See the widow requests the godless judge to do the right thing for her and there&#x27;s doubt that he will do it because he&#x27;s characterized as one who doesn&#x27;t fear God and does what he wants to do.</span></p>
+        <p><span class="tl-s" data-s="1095.54" data-e="1098.10">God is the only just judge.</span> <span class="tl-s" data-s="1098.52" data-e="1107.50">God acts in a way and at a time that is best for the people. unlike the judge who does what&#x27;s best for himself.</span></p>
+        <p><span class="tl-s" data-s="1109.78" data-e="1116.36">But God is just and we see justice used several times in this passage.</span> <span class="tl-s" data-s="1117.00" data-e="1129.76">It&#x27;s the same word in English but there&#x27;s a bit of a difference as the word justice is used in the original language that tells us even more about God.</span> <span class="tl-s" data-s="1130.34" data-e="1138.38">You see in verse 5 it says yet because this widow keeps bothering me the judge I will give her justice.</span></p>
+        <p><span class="tl-s" data-s="1140.02" data-e="1144.80">The godless judge promises to provide justice only because of the widow&#x27;s persistence.</span> <span class="tl-s" data-s="1146.14" data-e="1148.42">Her persistence was wearing him down.</span> <span class="tl-s" data-s="1149.66" data-e="1152.84">And verse 8 it&#x27;s a bit different.</span> <span class="tl-s" data-s="1153.30" data-e="1159.02">He says I tell you he referring to God will give justice to them speedily.</span> <span class="tl-s" data-s="1159.60" data-e="1167.60">So it&#x27;s both will give justice but in verse 8 when it&#x27;s referring to God there&#x27;s a different motive.</span> <span class="tl-s" data-s="1168.92" data-e="1174.36">The will give justice of this unjust judge is from the perseverance and persistence of the widow.</span> <span class="tl-s" data-s="1175.60" data-e="1183.96">But here in verse 8 God promises to provide justice as well but the Greek term here shows a different motive.</span> <span class="tl-s" data-s="1184.34" data-e="1187.50">It&#x27;s because it flows from his character.</span></p>
+        <p><span class="tl-s" data-s="1189.04" data-e="1192.86">God cannot not give justice.</span> <span class="tl-s" data-s="1194.06" data-e="1198.44">Every prayer that you pray God brings justice.</span> <span class="tl-s" data-s="1199.84" data-e="1200.88">Do we always see it?</span> <span class="tl-s" data-s="1200.96" data-e="1203.16">Is it always time the way that we want?</span> <span class="tl-s" data-s="1203.64" data-e="1204.34">Not always.</span> <span class="tl-s" data-s="1205.62" data-e="1207.88">But do we believe this sovereign God hears us?</span> <span class="tl-s" data-s="1208.02" data-e="1208.26">Yes.</span> <span class="tl-s" data-s="1209.04" data-e="1211.22">Do we believe he&#x27;ll justly respond?</span> <span class="tl-s" data-s="1211.94" data-e="1212.30">Yes.</span></p>
+        <p><span class="tl-s" data-s="1214.16" data-e="1223.68">You see in verse 7 it says and will not give and will not God give justice to his elect who cry to him day and night?</span> <span class="tl-s" data-s="1224.32" data-e="1226.20">Will he delay long over them?</span></p>
+        <p><span class="tl-s" data-s="1227.90" data-e="1239.48">Again looking at the original language in verse 7 essentially God is saying God cannot not provide justice for his elect.</span> <span class="tl-s" data-s="1240.30" data-e="1244.40">It&#x27;s a double negative. adding additional emphasis.</span></p>
+        <p><span class="tl-s" data-s="1246.70" data-e="1250.96">In other words it&#x27;s impossible for him not to give justice.</span> <span class="tl-s" data-s="1252.14" data-e="1253.20">That&#x27;s our God.</span></p>
+        <p><span class="tl-s" data-s="1254.62" data-e="1256.36">Therefore provision is certain.</span></p>
+        <p><span class="tl-s" data-s="1258.66" data-e="1266.96">Yet those who cry out day and night should do so in confidence faith that he will deliver justice in every situation.</span> <span class="tl-s" data-s="1268.28" data-e="1269.24">Our God is sovereign.</span> <span class="tl-s" data-s="1269.66" data-e="1270.50">He is just.</span> <span class="tl-s" data-s="1271.00" data-e="1272.82">And the third point God is trustworthy.</span> <span class="tl-s" data-s="1273.74" data-e="1274.96">God&#x27;s not like the judge.</span> <span class="tl-s" data-s="1275.94" data-e="1280.44">The judge was not to be trusted and had to be badgered to get a favorable response.</span> <span class="tl-s" data-s="1281.06" data-e="1285.32">God is completely trustworthy at all times and all ways.</span> <span class="tl-s" data-s="1286.18" data-e="1289.82">Is God completely trustworthy with your prayers?</span> <span class="tl-s" data-s="1291.14" data-e="1301.40">Do you find yourself not completely trusting that God will answer your prayers or wonder if he is really for you when you bring your need before him?</span></p>
+        <p><span class="tl-s" data-s="1303.02" data-e="1307.00">If so, there could be a way that you misunderstand the character of God.</span> <span class="tl-s" data-s="1308.38" data-e="1317.08">You see, Psalm 117 verse 111 Psalm 111 verse 7 says, the works of his hands are faithful and just.</span></p>
+        <p><span class="tl-s" data-s="1318.54" data-e="1321.02">All of his precepts are trustworthy.</span></p>
+        <p><span class="tl-s" data-s="1322.82" data-e="1328.52">We can trust in the God who is described by Jesus in Jesus in this parable.</span> <span class="tl-s" data-s="1329.72" data-e="1331.66">He&#x27;s not like this judge.</span> <span class="tl-s" data-s="1332.18" data-e="1340.60">When we see God the Father as he truly is and what he has done for us in Christ, then we can be drawn to pray always and not give up.</span></p>
+        <p><span class="tl-s" data-s="1343.20" data-e="1348.58">But is there a remnant of this unjust judge in your view of God?</span></p>
+        <p><span class="tl-s" data-s="1350.34" data-e="1351.94">Not knowing what he might do?</span> <span class="tl-s" data-s="1352.84" data-e="1360.64">Not trusting him in his judgment? are he able to hear and is he able to hear and answer your prayers?</span></p>
+        <p><span class="tl-s" data-s="1363.84" data-e="1369.88">John Rippon in 1787 penned the hymn, How Firm a Foundation.</span></p>
+        <p><span class="tl-s" data-s="1371.42" data-e="1378.24">And I love the way in his last verse he articulates this about a trustworthy God.</span> <span class="tl-s" data-s="1379.48" data-e="1387.84">It says, the soul that on Jesus has leaned for repose, I will not, I will not desert to its foes.</span> <span class="tl-s" data-s="1388.68" data-e="1397.32">That soul, though all hell should endeavor to shake, I&#x27;ll never, no, never, no, never forsake.</span> <span class="tl-s" data-s="1398.42" data-e="1399.80">That&#x27;s our God.</span> <span class="tl-s" data-s="1400.88" data-e="1407.90">That&#x27;s the God we pray to that&#x27;s sovereign, just, and completely trustworthy.</span> <span class="tl-s" data-s="1408.96" data-e="1409.70">It&#x27;s a church.</span> <span class="tl-s" data-s="1409.86" data-e="1413.58">Let it draw us to always pray and not give up.</span></p>
+        <p><span class="tl-s" data-s="1415.42" data-e="1417.96">So the second point, what does it say about us?</span></p>
+        <p><span class="tl-s" data-s="1419.38" data-e="1429.36">You see, we can contrast ourselves to the widow in the story, the one in need, the one persistently coming to the judge who is an authority in her city to gain justice.</span> <span class="tl-s" data-s="1429.78" data-e="1441.90">However we place ourselves in the story, the relationship is different, isn&#x27;t it? from a widow to a judge, it moves from a child to a father.</span></p>
+        <p><span class="tl-s" data-s="1443.70" data-e="1455.44">So what would be the difference in this parable if the widow was not going before this ungodly judge, but she as a daughter was coming to her compassionate father?</span></p>
+        <p><span class="tl-s" data-s="1459.08" data-e="1464.48">First of all, she would have access to her father.</span> <span class="tl-s" data-s="1465.42" data-e="1468.02">For this widow had no access to the judge.</span> <span class="tl-s" data-s="1469.00" data-e="1484.68">The poor widow had a strategy though, it was to go to the one who could enforce justice for her against her adversary and when the judge would not hear or respond to her case, her strategy was to not give up.</span> <span class="tl-s" data-s="1486.00" data-e="1492.04">She proposed to simply wear him down so that he would give her mercy and bring justice for her.</span> <span class="tl-s" data-s="1492.86" data-e="1498.34">Verse 3 kept coming to him and saying give me justice against my adversary.</span></p>
+        <p><span class="tl-s" data-s="1499.82" data-e="1508.36">So this picture that we have of the widow is a judge who&#x27;s being met by this widow constantly.</span></p>
+        <p><span class="tl-s" data-s="1510.82" data-e="1516.34">You can see her at the door in the morning on his docket day after day even though he casts her off.</span> <span class="tl-s" data-s="1517.16" data-e="1530.48">I can see her following him home, drawing attention from onlookers on the street as she calls out to the judge as he walks with others to dinner, as she cries for his attention, injustice.</span> <span class="tl-s" data-s="1531.00" data-e="1531.92">She is persistent.</span> <span class="tl-s" data-s="1533.22" data-e="1545.20">She knows that without his ruling she would have no protection from this injustice. she had nothing to offer him and he had no motive to help her.</span></p>
+        <p><span class="tl-s" data-s="1546.86" data-e="1551.62">So again, how different would that be if this was his daughter?</span></p>
+        <p><span class="tl-s" data-s="1553.82" data-e="1556.26">God is always entreated.</span></p>
+        <p><span class="tl-s" data-s="1557.68" data-e="1571.60">If we contrast the judge to our God and us, not a widow, but a child, God is always easily entreated, always available.</span> <span class="tl-s" data-s="1572.20" data-e="1574.26">God hears a response to us.</span> <span class="tl-s" data-s="1574.66" data-e="1575.58">He loves us.</span> <span class="tl-s" data-s="1575.88" data-e="1579.98">He grants unlimited access to him.</span></p>
+        <p><span class="tl-s" data-s="1581.68" data-e="1584.64">God responds to those who cry to him day and night.</span> <span class="tl-s" data-s="1584.96" data-e="1592.32">He hears them and immediately acts by doing what is best for them, giving justice to his elect, his children.</span> <span class="tl-s" data-s="1593.70" data-e="1603.10">Romans 5 2 says, through him we have obtained access by faith into this grace in which we stand. and we rejoice in the hope of the glory of God.</span> <span class="tl-s" data-s="1603.22" data-e="1606.56">See, God knows, it&#x27;s not just this nameless widow.</span></p>
+        <p><span class="tl-s" data-s="1609.08" data-e="1616.82">If this was her daughter, as you are his sons and daughters, he knows your name.</span></p>
+        <p><span class="tl-s" data-s="1618.28" data-e="1620.04">You&#x27;re not a nameless title.</span> <span class="tl-s" data-s="1620.34" data-e="1631.96">You are an individual child of God, who God knows your name, he knows the hairs on your head, he knows all about you and loves you.</span></p>
+        <p><span class="tl-s" data-s="1633.54" data-e="1642.34">You see, verse 7 says, will not God give justice to his elect who cry to him day and night?</span> <span class="tl-s" data-s="1643.66" data-e="1644.52">His elect.</span> <span class="tl-s" data-s="1645.10" data-e="1651.84">In essence, he&#x27;s saying that he will give justice to his children, his elect.</span> <span class="tl-s" data-s="1652.18" data-e="1653.72">He doesn&#x27;t say the elect.</span> <span class="tl-s" data-s="1654.24" data-e="1661.56">He says his elect, that possessive expression, that closeness that&#x27;s being communicated here.</span> <span class="tl-s" data-s="1662.10" data-e="1666.14">You see, we are chosen, selected as his.</span> <span class="tl-s" data-s="1667.04" data-e="1670.64">Out of mankind&#x27;s orphanage, he came to us.</span> <span class="tl-s" data-s="1671.34" data-e="1672.46">He chose us.</span> <span class="tl-s" data-s="1673.26" data-e="1674.32">He elected us.</span> <span class="tl-s" data-s="1674.74" data-e="1678.54">He gave us his name and called us to his family.</span></p>
+        <p><span class="tl-s" data-s="1680.02" data-e="1684.36">If you&#x27;re a Christian today, he knows your name because he chose you.</span> <span class="tl-s" data-s="1685.10" data-e="1693.04">He knows your voice when you cry out to him in prayer because he chose you.</span> <span class="tl-s" data-s="1694.10" data-e="1699.84">He knows your needs even before you ask because he&#x27;s your father.</span></p>
+        <p><span class="tl-s" data-s="1701.84" data-e="1712.52">The widow would have to be placed on the docket to be seen, but a daughter would simply come to him anytime anywhere knocking on the door.</span> <span class="tl-s" data-s="1712.71" data-e="1714.20">She would never be turned away.</span> <span class="tl-s" data-s="1715.10" data-e="1717.24">She would not be wearing a mat with her coming.</span> <span class="tl-s" data-s="1717.37" data-e="1720.58">She would be invited to come continually.</span> <span class="tl-s" data-s="1721.20" data-e="1722.84">It would never be too often.</span></p>
+        <p><span class="tl-s" data-s="1725.08" data-e="1728.76">She would receive from her father more than the judge could ever give her.</span> <span class="tl-s" data-s="1729.10" data-e="1742.00">The judge could only give her justice to her adversary where God gives her exactly what is the very best for her. even if it goes beyond her request.</span></p>
+        <p><span class="tl-s" data-s="1746.34" data-e="1762.64">So we see excuse me we see that the daughter has access to God and a daughter would have an advocate with the judge.</span> <span class="tl-s" data-s="1763.22" data-e="1764.92">This widow had no advocate.</span> <span class="tl-s" data-s="1765.12" data-e="1766.46">No one to take up her cause.</span> <span class="tl-s" data-s="1767.10" data-e="1768.70">She was all alone in her need.</span> <span class="tl-s" data-s="1769.74" data-e="1773.50">But as a daughter she&#x27;s never alone.</span> <span class="tl-s" data-s="1774.34" data-e="1777.80">Often we feel alone the difficulties we face don&#x27;t we?</span> <span class="tl-s" data-s="1778.94" data-e="1780.58">But we are never alone.</span> <span class="tl-s" data-s="1781.28" data-e="1786.98">Since salvation we&#x27;ve always had an advocate that takes up our cause before the Father.</span> <span class="tl-s" data-s="1787.82" data-e="1792.12">In these truths can you see how they can draw us to yes I should pray.</span> <span class="tl-s" data-s="1792.50" data-e="1793.90">Yes I want to pray.</span></p>
+        <p><span class="tl-s" data-s="1793.92" data-e="1800.70">I want to call out to a God like this with a relationship that he&#x27;s called us to.</span></p>
+        <p><span class="tl-s" data-s="1802.48" data-e="1806.90">Here are some passages that help to see that we are not alone.</span></p>
+        <p><span class="tl-s" data-s="1808.62" data-e="1816.56">In 1 John chapter 2 verse 1 it says my little children I am writing these things to you so that you may not sin.</span> <span class="tl-s" data-s="1817.08" data-e="1823.78">But if anyone does sin we have an advocate with the Father Jesus Christ the righteous.</span></p>
+        <p><span class="tl-s" data-s="1825.22" data-e="1831.52">Romans 8 26 Likewise the Spirit the Holy Spirit helps us in our weaknesses.</span> <span class="tl-s" data-s="1832.62" data-e="1839.92">We don&#x27;t know how to pray as we ought but the Spirit himself intercedes for us with groanings that cannot be uttered.</span> <span class="tl-s" data-s="1840.68" data-e="1841.60">What an advocate.</span> <span class="tl-s" data-s="1842.58" data-e="1844.84">Romans 8 34 Who is to condemn?</span> <span class="tl-s" data-s="1844.96" data-e="1847.26">Christ Jesus is the one who died.</span> <span class="tl-s" data-s="1847.46" data-e="1853.30">More than that who was raised who is at the right hand of God ever interceding for who?</span> <span class="tl-s" data-s="1854.50" data-e="1855.28">For you.</span></p>
+        <p><span class="tl-s" data-s="1857.10" data-e="1858.64">We are not alone.</span></p>
+        <p><span class="tl-s" data-s="1860.08" data-e="1869.90">We have the Holy Spirit interceding within and Christ at the throne at the right hand throne of God without both interceding for us.</span> <span class="tl-s" data-s="1871.04" data-e="1872.48">We have an advocate.</span> <span class="tl-s" data-s="1872.96" data-e="1873.68">We have access.</span> <span class="tl-s" data-s="1874.06" data-e="1878.54">We have an advocate and we can pray and not give up.</span> <span class="tl-s" data-s="1879.62" data-e="1883.58">You see the widow expresses persistence by our continually coming to the judge.</span> <span class="tl-s" data-s="1884.52" data-e="1890.04">We express persistence and there is something of this that Jesus is drawing out of this parable for us.</span> <span class="tl-s" data-s="1890.40" data-e="1891.92">But our persistence is different.</span> <span class="tl-s" data-s="1893.28" data-e="1895.40">It is that we are to always pray and not to give up.</span> <span class="tl-s" data-s="1896.48" data-e="1897.46">Don&#x27;t give up.</span> <span class="tl-s" data-s="1898.15" data-e="1902.96">Don&#x27;t give up on that prayer need or that person or that lost soul or that family member.</span></p>
+        <p><span class="tl-s" data-s="1903.04" data-e="1903.72">Don&#x27;t give up.</span></p>
+        <p><span class="tl-s" data-s="1905.52" data-e="1906.44">Always pray.</span> <span class="tl-s" data-s="1907.46" data-e="1921.44">Be persistent knowing that God hears everyone and you&#x27;re a child with that access that is coming before the Father invited.</span></p>
+        <p><span class="tl-s" data-s="1923.50" data-e="2407.62">Though times it seems like our prayers are not passing by the ceiling it can feel that way or when things are going well we slip away from praying when we don&#x27;t feel that desperate need or we have unanswered prayer that we don&#x27;t understand where injustice just seems clear and we can have a fading hope for change even though we pray but Jesus says that God will bring justice he says will he delay long over them I tell you he will give justice to them speedily in verse eight giving us justice you see where we get tripped up is we often define justice by our own expectations of what is just when and how God should answer us whether God is just whether he hears us and moves for us when we pray that should never be defined by how and when our expectations and prayer are met by always thinking about the reality and the truth of who God is he is a merciful father he is a loving shepherd he is a powerful creator his very words describe his relationship with us and it says he will give justice to us speedily and this speedily is as God defines speedily you know as a child when we get to the month of December Christmas doesn&#x27;t seem to come very speedily the 12 days of Christmas is like the 12 years of Christmas when you&#x27;re a kid however as a parent once that calendar turns to December right Christmas comes at light speed it&#x27;s almost like the 12 minutes of Christmas Christmas it&#x27;s a matter of perspective isn&#x27;t it you see we can trust in the father who described who is described by Jesus in this parable when we see God the father as he truly is and what he&#x27;s done for us in Christ then we can always pray and not give up Joseph Scriven in 1855 penned a hymn that I want to draw two verses from it&#x27;s entitled what a friend we have in Jesus it says what a friend we have in Jesus all our sins and griefs to bear what a privilege to carry everything to God in prayer oh what peace we often forfeit oh what needless pain we bear all because we do not carry everything to God in prayer have we trials and temptations is there trouble everywhere we should never be discouraged take it to the Lord in prayer can we find a friend so faithful who will all our sorrows share Jesus knows our every weakness take it to the Lord in prayer church always pray see your God as this wonderful sovereign just trustworthy God knowing that we are his children called by his name invited to come into his presence Hebrews 4 16 says let them then let us then with confidence draw near the throne of grace that we might receive mercy and find grace to help in our time of need that&#x27;s the word of God to us as I look at 2025 I don&#x27;t really plan to practice my gift wrapping in the new year so next year about this time or a week ago another hour and a half or three gifts is probably in my future but I do want to continue practicing my prayer in the new year with a goal for it to become more and more of a joy and less of a duty less like mowing the lawn and more like a joy I look forward to and that can be for all of us and I just challenges as we look at this next year what is your strategy for prayer as you look at prayer in your life how can you make it more consistent towards that goal of always praying and not giving up wherever you are just take a step and think over the years the steps that you&#x27;ll take and the joy that you&#x27;ll experience because the gift of prayer becomes precious to you what a friend we have in Jesus all our sins and griefs to bear and what a privilege to carry everything to God in prayer please let me pray as we conclude this message father we need your help father we see our need we have a desire we want we want to pray more father we need your help father we ask for your grace we come before the throne of grace with confidence asking for your mercy to help us become more and more men and women of prayer that we can be persistent and always praying and not giving up we would learn that from the widow and father be with us may this next year find us enjoying more and more the gift that you&#x27;ve given to us of prayer father it&#x27;s in your holy name we give thanks and pray and ask your help in this way Christ&#x27;s name amen let me share with you my favorite benediction it&#x27;s out of the book of Jude which is only one chapter long it&#x27;s verse 24 it&#x27;s the last verse in the book and it says now to him who is able to keep you so all that we&#x27;ve talked about he&#x27;s able to keep you now to him who is able to keep you from stumbling and to present you blameless before the presence of his glory with great joy to the only God our Savior through Jesus Christ our Lord be glory majesty dominion and authority before all time and now and forever amen that&#x27;s our goal so church let&#x27;s always pray and not give up you&#x27;re dismissed have a great week Thank you.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Live sermon feed: spotlight from /api/sermons, browsable archive from
+  // /api/sermons/search. Static fallback list stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function row(it) {
+      var meta = [it.speaker, fmtDate(it.date)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      var titleHtml = esc(it.title);
+      var tUrl = it.guid && transcriptMap[it.guid];
+      if (tUrl) titleHtml = '<a href="' + esc(tUrl) + '">' + titleHtml + "</a>";
+      return '<div class="sermon"><div><h3>' + titleHtml + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    fetch("/api/sermons?v=3")
+      .then(function (res) { if (!res.ok) throw new Error("feed " + res.status); return res.json(); })
+      .then(function (data) {
+        var spot = document.querySelector("[data-series-spotlight]");
+        if (data && data.series && spot) {
+          var s = data.series;
+          var art = spot.querySelector("[data-series-art]");
+          if (art && s.artwork) { art.src = s.artwork; } else if (art) { art.style.display = "none"; }
+          var nm = spot.querySelector("[data-series-name]");
+          if (nm) nm.textContent = s.name;
+          var bl = spot.querySelector("[data-series-blurb]");
+          if (bl) bl.textContent = s.blurb;
+          spot.hidden = false;
+        }
+      })
+      .catch(function () { /* spotlight stays hidden */ });
+
+    var PER = 10;
+    var state = { q: "", speaker: "", series: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var speakerSel = document.querySelector("[data-sermons-speaker]");
+    var seriesSel = document.querySelector("[data-sermons-series]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No messages found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(speakerSel, data.facets.speakers || [], function (e) { return e.name; }, function (e) { return e.name + " (" + e.count + ")"; });
+        fill(seriesSel, data.facets.series || [], function (e) { return e.name; }, function (e) { return e.name + " (" + e.count + ")"; });
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.speaker || data.series || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.speaker) parts.push("by " + data.speaker);
+          if (data.series) parts.push("in " + data.series);
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " result" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " messages";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/sermons/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.speaker ? "&speaker=" + encodeURIComponent(state.speaker) : "") +
+        (state.series ? "&series=" + encodeURIComponent(state.series) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () { /* keep current list on error */ });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.speaker = ""; state.series = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (speakerSel) speakerSel.value = "";
+      if (seriesSel) seriesSel.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    function bindSelect(sel, key) {
+      if (!sel) return;
+      sel.addEventListener("change", function () {
+        state[key] = sel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    bindSelect(speakerSel, "speaker");
+    bindSelect(seriesSel, "series");
+    bindSelect(monthSel, "month");
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: https://hub.centergilbert.com/media/prayer-140 -->
+</body>
+</html>
