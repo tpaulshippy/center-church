@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meeting Jesus (Again) — Sermon Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Listen to the latest sermons from Center Church, or follow along on Apple Podcasts and Spotify." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=17" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a class="active" href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/sermons">&larr; All sermons</a>
+          <h1 class="display-lg">Meeting Jesus (Again)</h1>
+          <p class="transcript-meta">Rich Richardson · 2024-11-03 · 00:36:06</p>
+          <p class="transcript-desc">Take Comfort in the Anger of Jesus</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/119cbef70/podcast/play/128973950/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-7%2F436123641-44100-2-d9738c983e0e31ad.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><span class="tl-s" data-s="0.02" data-e="7.58">All right, if you have a Bible, if you can open up to the book of Mark.</span> <span class="tl-s" data-s="8.58" data-e="10.74">Mark is the second book in the New Testament.</span> <span class="tl-s" data-s="10.92" data-e="13.18">It goes Matthew, then Mark.</span></p>
+        <p><span class="tl-s" data-s="21.38" data-e="29.74">You can tell nearly, nearly everything you need to know about someone by what makes them angry.</span> <span class="tl-s" data-s="30.02" data-e="36.22">Anger is like a big X that always marks the spot.</span> <span class="tl-s" data-s="36.34" data-e="39.46">And that spot says this, here is what I care most about.</span> <span class="tl-s" data-s="40.38" data-e="43.72">Anger is like an arrow that shows what you want.</span> <span class="tl-s" data-s="44.66" data-e="50.38">Anger is a window to the soul that reveals what we love, what we want, and what we care about.</span> <span class="tl-s" data-s="51.30" data-e="58.34">So in our desire to get to know Jesus again, we&#x27;re going to see this morning what he gets angry about.</span> <span class="tl-s" data-s="59.40" data-e="61.90">Now remember why we&#x27;re trying to get to know Jesus again.</span> <span class="tl-s" data-s="62.05" data-e="70.08">We, as Christians, can fall into the trap of thinking that getting to know Jesus is impossible because he&#x27;s far away.</span> <span class="tl-s" data-s="70.34" data-e="71.36">He&#x27;s too remote.</span> <span class="tl-s" data-s="71.72" data-e="73.32">He&#x27;s way up there in glory.</span></p>
+        <p><span class="tl-s" data-s="73.46" data-e="75.76">We&#x27;re down here in this dark, troubled world.</span> <span class="tl-s" data-s="76.60" data-e="77.36">He&#x27;s not here.</span> <span class="tl-s" data-s="77.46" data-e="78.56">We can&#x27;t see his face.</span> <span class="tl-s" data-s="78.76" data-e="79.90">We can&#x27;t hear his voice.</span> <span class="tl-s" data-s="79.92" data-e="82.72">We can&#x27;t look him in the eyes, so we don&#x27;t know what he wants.</span> <span class="tl-s" data-s="82.80" data-e="84.36">But that&#x27;s not true.</span> <span class="tl-s" data-s="84.94" data-e="87.16">Chester provides a helpful corrective.</span> <span class="tl-s" data-s="87.26" data-e="93.74">He says, what Jesus was like when on earth is what Jesus is like now in heaven.</span> <span class="tl-s" data-s="94.72" data-e="100.66">While Jesus in his body is in heaven, Jesus is also present on earth through the Holy Spirit.</span> <span class="tl-s" data-s="101.08" data-e="103.02">Last week we saw compassion.</span></p>
+        <p><span class="tl-s" data-s="103.94" data-e="109.38">The compassion he has for people is unchanged even though he is reigning above all things.</span> <span class="tl-s" data-s="109.72" data-e="113.56">Today we get to know Jesus in his anger.</span></p>
+        <p><span class="tl-s" data-s="115.14" data-e="121.00">And what angers Jesus, what angered Jesus on earth, angers him in heaven.</span> <span class="tl-s" data-s="122.08" data-e="127.88">Now I&#x27;m not sure the last time you read the Gospels through, but Jesus gets angry more times than you would recognize.</span> <span class="tl-s" data-s="128.62" data-e="131.24">He&#x27;s not always gentle Jesus, meek and mild.</span> <span class="tl-s" data-s="131.38" data-e="135.02">He&#x27;s sometimes angry Jesus, rough and tumble.</span> <span class="tl-s" data-s="135.50" data-e="138.16">And we&#x27;re going to jump into one of those experiences with him.</span> <span class="tl-s" data-s="138.18" data-e="142.40">We&#x27;re going to join Jesus in Mark chapter 3 at a Galilean synagogue.</span> <span class="tl-s" data-s="142.90" data-e="143.66">And we&#x27;re going to watch.</span> <span class="tl-s" data-s="144.50" data-e="145.30">He&#x27;s going to get angry.</span> <span class="tl-s" data-s="146.12" data-e="147.16">And here&#x27;s my goal.</span> <span class="tl-s" data-s="147.82" data-e="149.48">We&#x27;re not just going to watch him get angry.</span></p>
+        <p><span class="tl-s" data-s="149.66" data-e="150.96">We&#x27;re going to watch him get angry.</span> <span class="tl-s" data-s="151.12" data-e="154.86">And I want us to be comforted by his anger.</span> <span class="tl-s" data-s="155.92" data-e="156.60">You heard me right.</span> <span class="tl-s" data-s="156.76" data-e="158.54">I want us to be comforted.</span> <span class="tl-s" data-s="158.60" data-e="163.02">I want you, Christian, to be comforted by the anger of your Savior.</span></p>
+        <p><span class="tl-s" data-s="165.16" data-e="166.20">Let&#x27;s see why.</span> <span class="tl-s" data-s="166.78" data-e="169.36">Beginning in Mark chapter 3, verse 1.</span></p>
+        <p><span class="tl-s" data-s="170.80" data-e="175.60">Again, he, that&#x27;s Jesus, entered the synagogue.</span> <span class="tl-s" data-s="176.60" data-e="179.24">And a man was there with a withered hand.</span> <span class="tl-s" data-s="180.12" data-e="188.16">And they watched Jesus to see whether he would heal him on the Sabbath, so that they might accuse him.</span> <span class="tl-s" data-s="188.92" data-e="191.34">And he said to the man with the withered hand, Come here.</span> <span class="tl-s" data-s="192.70" data-e="200.90">And he said to them, is it lawful on the Sabbath to do good or to do harm, to save life or to kill?</span> <span class="tl-s" data-s="201.62" data-e="202.92">But they were silent.</span> <span class="tl-s" data-s="203.76" data-e="214.66">And he looked around at them with anger, grieved at their hardness of heart, and said to the man, Stretch out your hand.</span> <span class="tl-s" data-s="215.78" data-e="218.48">He stretched it out and his hand was restored.</span> <span class="tl-s" data-s="219.52" data-e="226.30">The Pharisees went out and immediately held counsel with the Herodians against him.</span> <span class="tl-s" data-s="227.40" data-e="228.84">How to destroy him.</span></p>
+        <p><span class="tl-s" data-s="230.04" data-e="233.26">And we&#x27;re going to walk through this passage with three different points.</span> <span class="tl-s" data-s="233.40" data-e="235.80">The setting, the question, and the response.</span> <span class="tl-s" data-s="236.24" data-e="237.60">First, the setting.</span> <span class="tl-s" data-s="238.80" data-e="246.52">We know that we&#x27;re jumping into a story mid, you know, kind of in the middle, because verse one starts with the word again.</span> <span class="tl-s" data-s="247.40" data-e="249.32">We&#x27;re jumping into an unfolding drama.</span> <span class="tl-s" data-s="249.86" data-e="250.76">Let me catch you up.</span> <span class="tl-s" data-s="250.88" data-e="257.14">The local authorities, the local religious authorities, known as the Pharisees, were gunning for Jesus.</span> <span class="tl-s" data-s="258.24" data-e="267.54">On prior Sabbaths, our Lord had the audacity of freeing a demonized man, and he healed scores of sick people.</span> <span class="tl-s" data-s="268.14" data-e="272.60">Now, as good as that sounded, it was against Pharisaical law, because it was on the Sabbath.</span> <span class="tl-s" data-s="273.38" data-e="290.98">And so, as we joined Jesus in the synagogue so long ago, the Pharisees are fixed on Jesus, not to listen to what he had to say, not so that they wouldn&#x27;t miss a thing, not so that they could be awed by healing or moving to worship, but, the text says, to accuse him.</span></p>
+        <p><span class="tl-s" data-s="292.14" data-e="297.20">The Pharisees were bothered because he did all of these activities on the Sabbath.</span> <span class="tl-s" data-s="298.12" data-e="305.26">Now, when you read the Gospels, the Pharisees are the ones who come off as the most virulent opponent of Jesus.</span> <span class="tl-s" data-s="305.66" data-e="309.76">Now, the Pharisees, the movement started out with good intentions.</span> <span class="tl-s" data-s="310.01" data-e="321.62">They were students of history, and they knew that the nation of Israel was thrust into two horrific exiles because they refused to obey the Word of God.</span> <span class="tl-s" data-s="322.04" data-e="333.90">So, the Pharisees, with good intentions, deputized themselves to protect the nation, and they became the, basically, Old Testament law police.</span> <span class="tl-s" data-s="335.24" data-e="344.50">But instead of fostering a devotion to the God of the Bible, they reduced devotion down to a list of rules, to a list of do&#x27;s and don&#x27;ts.</span> <span class="tl-s" data-s="344.72" data-e="351.58">And in so doing, they missed God and his purposes, and they even missed God the Son in their midst.</span> <span class="tl-s" data-s="352.78" data-e="356.12">And so that&#x27;s why they&#x27;re coming for Jesus.</span></p>
+        <p><span class="tl-s" data-s="356.60" data-e="357.32">Look at verse 1.</span> <span class="tl-s" data-s="358.08" data-e="364.96">Again, he, that&#x27;s Jesus, entered the synagogue, and a man was there with a withered hand.</span> <span class="tl-s" data-s="365.88" data-e="373.66">And they, that&#x27;s the Pharisees, watched Jesus to see whether he would heal on this, heal him on the Sabbath so that they might accuse him.</span> <span class="tl-s" data-s="373.77" data-e="375.52">Now, this is likely a setup.</span></p>
+        <p><span class="tl-s" data-s="377.08" data-e="383.94">What happened is the Pharisees brought someone into the synagogue gathering with a withered hand to see how Jesus would respond.</span> <span class="tl-s" data-s="384.40" data-e="394.56">Now, of all the rules that the Pharisees cared most about, Sabbath regulations were right up there at the top because the Sabbath was the most holy day of the week.</span> <span class="tl-s" data-s="394.94" data-e="400.92">And in Jesus&#x27; day, Sabbath observance was the most important thing about the Jewish identity.</span> <span class="tl-s" data-s="401.24" data-e="409.72">In fact, Sabbath observance was kind of a litmus test both for loyalty to God and national patriotism.</span> <span class="tl-s" data-s="410.36" data-e="414.88">So this is not just a, this isn&#x27;t just sort of a rule that they&#x27;re putting forward.</span> <span class="tl-s" data-s="415.08" data-e="419.84">They&#x27;re saying, if you want to be a good Jew, you need to observe the Sabbath.</span> <span class="tl-s" data-s="419.86" data-e="426.08">Now, I know that for most of us in this room, if you did not grow up Jewish, this is very hard to grasp.</span> <span class="tl-s" data-s="426.36" data-e="431.36">But if you&#x27;re the Pharisees, they&#x27;re looking for Jesus to heal on the Sabbath.</span></p>
+        <p><span class="tl-s" data-s="432.40" data-e="448.02">It would be, they were, it would be as if, you know, none of us, I would hope, would go to, go and go to, like, to understand what&#x27;s going on here would be the same as if you and I decided to go to the local VA hospital and burn an American flag.</span> <span class="tl-s" data-s="448.16" data-e="449.80">How do you think they would respond there?</span> <span class="tl-s" data-s="450.88" data-e="451.28">Poorly.</span> <span class="tl-s" data-s="452.24" data-e="452.62">Right?</span> <span class="tl-s" data-s="452.70" data-e="453.58">They would get upset.</span> <span class="tl-s" data-s="453.86" data-e="454.08">Correct?</span> <span class="tl-s" data-s="454.54" data-e="455.32">Don&#x27;t do that.</span></p>
+        <p><span class="tl-s" data-s="456.90" data-e="458.86">That&#x27;s what the Pharisees are thinking here.</span> <span class="tl-s" data-s="459.24" data-e="466.22">Jesus is doing the equivalent of burning an American flag, except this is Israel and you know what I mean, in, at the VA.</span> <span class="tl-s" data-s="467.24" data-e="468.30">And so how does it go?</span> <span class="tl-s" data-s="468.41" data-e="469.10">It goes poorly.</span> <span class="tl-s" data-s="470.30" data-e="476.06">Because to him, Jesus is being disloyal to the law and to their nation.</span> <span class="tl-s" data-s="477.40" data-e="486.44">Now everyone knew that there was no work allowed on the Sabbath and the Pharisees, trying to be helpful, took it upon themselves to define work.</span> <span class="tl-s" data-s="487.42" data-e="493.50">Now what might have started as good intentions devolved into just absurdities.</span> <span class="tl-s" data-s="494.32" data-e="495.76">Here&#x27;s how they defined work.</span> <span class="tl-s" data-s="496.70" data-e="499.48">You couldn&#x27;t carry anything heavier than a fig.</span> <span class="tl-s" data-s="499.96" data-e="501.72">If it&#x27;s heavier than a fig, that&#x27;s work.</span></p>
+        <p><span class="tl-s" data-s="502.98" data-e="507.22">It would be work if you threw something up in the air with one hand.</span></p>
+        <p><span class="tl-s" data-s="508.88" data-e="510.36">Oh, I dropped it.</span> <span class="tl-s" data-s="510.62" data-e="513.10">Threw something up in the air with one hand and caught it with another.</span> <span class="tl-s" data-s="513.24" data-e="513.82">That&#x27;s work.</span> <span class="tl-s" data-s="514.90" data-e="521.62">You couldn&#x27;t examine your clothing just in case you had lice or some other bug and had to do the work of killing it.</span> <span class="tl-s" data-s="522.22" data-e="522.86">That&#x27;s work.</span> <span class="tl-s" data-s="523.18" data-e="527.52">You couldn&#x27;t bathe because water might hit the floor and that would count as cleaning.</span> <span class="tl-s" data-s="528.64" data-e="533.26">You couldn&#x27;t put a radish in salt because it would pickle and that counts as work.</span> <span class="tl-s" data-s="534.06" data-e="536.06">You couldn&#x27;t write more than one letter.</span> <span class="tl-s" data-s="536.20" data-e="537.86">That&#x27;s one letter of the alphabet.</span> <span class="tl-s" data-s="538.12" data-e="539.86">Otherwise, it would be work.</span></p>
+        <p><span class="tl-s" data-s="540.20" data-e="546.04">You could pick up your child as long as you check your child&#x27;s hands to make sure they weren&#x27;t holding anything.</span> <span class="tl-s" data-s="547.06" data-e="547.68">So do you see?</span> <span class="tl-s" data-s="548.74" data-e="549.78">It was absurd.</span></p>
+        <p><span class="tl-s" data-s="551.26" data-e="554.04">And Jesus is not playing their reindeer games.</span> <span class="tl-s" data-s="554.40" data-e="559.96">He is ready to come in and he&#x27;s ready to take names and he&#x27;s ready to offend people.</span> <span class="tl-s" data-s="560.06" data-e="560.82">That&#x27;s the setting.</span> <span class="tl-s" data-s="561.18" data-e="564.94">Here comes Jesus and here he comes with a question.</span> <span class="tl-s" data-s="565.30" data-e="568.30">Verse 3 before that, he says to the man with the withered hand, come here.</span> <span class="tl-s" data-s="568.88" data-e="573.84">Now it must have been horrifying for this poor man to be thrust in the center of attention.</span> <span class="tl-s" data-s="574.38" data-e="577.86">The Pharisees drug him to the meeting and now all eyes are on him.</span> <span class="tl-s" data-s="578.02" data-e="579.00">He has a withered hand.</span> <span class="tl-s" data-s="579.30" data-e="580.68">He probably couldn&#x27;t work.</span> <span class="tl-s" data-s="580.80" data-e="581.70">He probably couldn&#x27;t.</span></p>
+        <p><span class="tl-s" data-s="581.78" data-e="584.08">He wasn&#x27;t at the center of society.</span> <span class="tl-s" data-s="584.24" data-e="589.30">He was used to hanging around the edges because everybody knew that, well, that he was different.</span></p>
+        <p><span class="tl-s" data-s="590.72" data-e="598.76">And so Jesus asks them, the Pharisees, is it lawful on the Sabbath to do good or to do harm, to save life or to kill?</span></p>
+        <p><span class="tl-s" data-s="601.20" data-e="602.38">Wasn&#x27;t a hard question.</span> <span class="tl-s" data-s="603.66" data-e="605.06">They should have said it&#x27;s always good.</span> <span class="tl-s" data-s="605.08" data-e="608.10">It&#x27;s always lawful to do good on the Sabbath.</span></p>
+        <p><span class="tl-s" data-s="610.50" data-e="613.64">Is it, should we be saving lives or killing?</span></p>
+        <p><span class="tl-s" data-s="616.64" data-e="621.58">You see, when Jesus says to save life or to kill, he gets to the nub of the issue.</span> <span class="tl-s" data-s="622.64" data-e="628.20">The Pharisees had turned that day, which had meant to be a day of rest for the people of God.</span> <span class="tl-s" data-s="628.36" data-e="630.76">They had turned that day into a day of bondage.</span> <span class="tl-s" data-s="631.00" data-e="642.46">They were worried about whether or not their children were holding dirt in their hands because could they pick their children up because they&#x27;re holding dirt in their hands and they may be accused of working and then in disobedience to God.</span> <span class="tl-s" data-s="642.72" data-e="646.14">Essentially, the Pharisees were saying, follow our rules or else.</span> <span class="tl-s" data-s="646.74" data-e="652.96">And Jesus is saying, your rules and regulation kill people with the burdens that they can&#x27;t carry.</span></p>
+        <p><span class="tl-s" data-s="655.40" data-e="661.10">The Old Testament could be summarized, love the Lord your God with all your heart, soul, mind, and strength and your neighbor as yourself.</span> <span class="tl-s" data-s="661.88" data-e="665.76">And the Pharisees were not leading in those way.</span> <span class="tl-s" data-s="666.68" data-e="670.58">More than that, they were using this poor man as a prop.</span> <span class="tl-s" data-s="671.46" data-e="674.56">It was show and tell at the synagogue with the man with the withered hand.</span></p>
+        <p><span class="tl-s" data-s="680.52" data-e="685.52">All of a sudden, all of a sudden, all eyes are on Jesus.</span></p>
+        <p><span class="tl-s" data-s="687.00" data-e="688.02">Do you see the problem?</span> <span class="tl-s" data-s="688.58" data-e="692.60">The Pharisees have this man-made religion where everything fits in the appropriate category.</span> <span class="tl-s" data-s="692.92" data-e="695.00">They&#x27;re not asking what honoring God looks like.</span> <span class="tl-s" data-s="695.08" data-e="696.96">They&#x27;re asking, what am I supposed to do?</span> <span class="tl-s" data-s="697.14" data-e="698.02">What can I do?</span> <span class="tl-s" data-s="698.18" data-e="699.42">What can I get away with?</span> <span class="tl-s" data-s="699.52" data-e="700.62">Just tell me what to do.</span> <span class="tl-s" data-s="701.94" data-e="706.30">Anybody who boils Christianity to rules and regulations proves they do not know Jesus.</span></p>
+        <p><span class="tl-s" data-s="711.60" data-e="714.80">So, we&#x27;ve seen the setting.</span> <span class="tl-s" data-s="716.08" data-e="717.20">We&#x27;ve heard the question.</span> <span class="tl-s" data-s="717.48" data-e="718.66">Now we see the response.</span> <span class="tl-s" data-s="719.82" data-e="721.82">Now they never responded to Jesus&#x27; question.</span> <span class="tl-s" data-s="722.40" data-e="726.78">They just looked at him and noticed Jesus&#x27; response in verse 5.</span> <span class="tl-s" data-s="728.12" data-e="733.58">And he, that&#x27;s Jesus, looked around at them with anger.</span> <span class="tl-s" data-s="734.96" data-e="737.84">Grieved at their hardness of heart.</span> <span class="tl-s" data-s="738.88" data-e="742.50">And he said to the man, stretch out your hand.</span> <span class="tl-s" data-s="743.36" data-e="746.64">And he stretched it out and his hand was restored.</span> <span class="tl-s" data-s="747.34" data-e="750.56">Notice, Jesus did not touch the man.</span></p>
+        <p><span class="tl-s" data-s="751.10" data-e="755.76">Sometimes in his healings, he touches somebody, they come back to life or they&#x27;re restored.</span> <span class="tl-s" data-s="756.19" data-e="760.62">This time, Jesus just says to the man, stretch out your hand.</span> <span class="tl-s" data-s="760.94" data-e="763.60">And he did and it was restored.</span> <span class="tl-s" data-s="764.32" data-e="766.60">He didn&#x27;t lift a finger in work.</span> <span class="tl-s" data-s="767.32" data-e="771.20">Just spoke and the man&#x27;s hand was restored.</span> <span class="tl-s" data-s="772.14" data-e="776.20">And the Pharisees, instead of rejoicing, instead of saying, this is amazing.</span> <span class="tl-s" data-s="777.28" data-e="782.34">Here&#x27;s somebody who can, who can help our friend be physically whole.</span> <span class="tl-s" data-s="782.44" data-e="792.06">Instead of doing that, verse 6 says, they went out and immediately held council with the Herodians against him how to destroy him.</span> <span class="tl-s" data-s="792.14" data-e="795.74">Now, on the political spectrum, the Herodians were all the way on the other side.</span> <span class="tl-s" data-s="795.92" data-e="798.12">Herodians are left, Pharisees are right.</span></p>
+        <p><span class="tl-s" data-s="798.64" data-e="803.90">This is like Democrats and Republicans coming together and saying, hey, we have a common enemy, let&#x27;s destroy that guy.</span> <span class="tl-s" data-s="804.12" data-e="805.24">That&#x27;s what&#x27;s happening here.</span></p>
+        <p><span class="tl-s" data-s="807.02" data-e="810.16">But I want you to feel and see the anger of Jesus.</span> <span class="tl-s" data-s="811.36" data-e="819.86">Jesus, Mark tells us explicitly that he looks around at them in anger and that he&#x27;s grieved at their hardness of heart.</span> <span class="tl-s" data-s="820.52" data-e="821.68">What made him angry?</span></p>
+        <p><span class="tl-s" data-s="823.66" data-e="825.28">Their hard hearts, yes.</span> <span class="tl-s" data-s="825.94" data-e="831.28">But, the effect of their hard hearts on this poor man.</span> <span class="tl-s" data-s="832.44" data-e="834.30">This man was just a prop to them.</span> <span class="tl-s" data-s="834.54" data-e="835.48">He was a tool.</span> <span class="tl-s" data-s="836.76" data-e="838.44">They were trying to trap Jesus.</span></p>
+        <p><span class="tl-s" data-s="840.38" data-e="842.14">Do you see why Jesus was angry?</span> <span class="tl-s" data-s="843.02" data-e="846.20">He&#x27;s angry because he loves this man.</span></p>
+        <p><span class="tl-s" data-s="847.98" data-e="855.86">He&#x27;s angered whenever people use or manipulate, whenever leaders use and manipulate people.</span> <span class="tl-s" data-s="856.30" data-e="862.88">He&#x27;s angry wherever following God is distilled down to a list of do&#x27;s and don&#x27;ts instead of devotion to him.</span> <span class="tl-s" data-s="863.96" data-e="868.88">See, the good news of Jesus was radically different than what the Pharisees were peddling.</span> <span class="tl-s" data-s="869.50" data-e="875.82">The Pharisees placed burdens on an already burdened people like this man with the withered hand.</span> <span class="tl-s" data-s="876.33" data-e="880.66">They told the man with the withered hand, here&#x27;s the only help we can give you.</span> <span class="tl-s" data-s="880.94" data-e="884.46">We can tell you what is work on Saturday and what is not.</span> <span class="tl-s" data-s="885.28" data-e="886.52">Now, how much help is that?</span> <span class="tl-s" data-s="887.42" data-e="888.68">Not much at all.</span></p>
+        <p><span class="tl-s" data-s="890.08" data-e="894.06">Jesus, he has something better to offer.</span></p>
+        <p><span class="tl-s" data-s="895.60" data-e="897.44">He says, stretch out your hand.</span></p>
+        <p><span class="tl-s" data-s="900.68" data-e="907.70">See, the one thing this man could not do when he woke up on that Saturday morning was stretch out his hand.</span> <span class="tl-s" data-s="908.66" data-e="915.24">His hand was useless but then he met Jesus and Jesus made him whole.</span> <span class="tl-s" data-s="916.40" data-e="928.24">This is Jesus, the great physician, the resurrection and the life, the good shepherd, the I am, the word, the one who speaks and all of creation listens.</span> <span class="tl-s" data-s="928.76" data-e="935.70">The one who has all authority, he says, stretch out your hand and this command became a blessing.</span> <span class="tl-s" data-s="937.08" data-e="944.54">See, that&#x27;s the reality with all commands from Jesus is they turn into blessings and his hand was restored.</span></p>
+        <p><span class="tl-s" data-s="946.66" data-e="952.98">See, this is a picture between the difference between Jesus and all man-made religion.</span> <span class="tl-s" data-s="953.56" data-e="956.26">Jesus heals and restores the broken.</span> <span class="tl-s" data-s="957.02" data-e="963.02">The Pharisees burden and further break people down.</span></p>
+        <p><span class="tl-s" data-s="964.84" data-e="971.66">The Pharisees could offer man-made religion that leads to death.</span> <span class="tl-s" data-s="971.84" data-e="974.22">Jesus could offer healing that would lead to life.</span></p>
+        <p><span class="tl-s" data-s="975.64" data-e="983.30">But Jesus, make no mistake, Jesus was angry at the effect this teaching had, not just on the man.</span> <span class="tl-s" data-s="983.48" data-e="989.90">So he&#x27;s angry at the reality that he sees these Pharisees and all that they heap upon the people.</span> <span class="tl-s" data-s="990.14" data-e="992.44">The people are being burdened with rules.</span> <span class="tl-s" data-s="992.59" data-e="995.72">The people are being burdened with reminders that they&#x27;re failures.</span> <span class="tl-s" data-s="996.04" data-e="1004.64">The people are being told that they&#x27;re disobedient. the people are being told that they don&#x27;t measure up and he is enraged.</span></p>
+        <p><span class="tl-s" data-s="1006.58" data-e="1012.82">He saw the folks being threatened and warned and buried by the Pharisees and Jesus was angered.</span> <span class="tl-s" data-s="1012.92" data-e="1016.86">He saw this poor man being used and it angered Jesus.</span> <span class="tl-s" data-s="1017.08" data-e="1020.24">He saw people being led astray and it angered Jesus.</span> <span class="tl-s" data-s="1020.52" data-e="1024.20">He saw leaders taking advantage of people and it angered him.</span> <span class="tl-s" data-s="1024.42" data-e="1031.62">He saw leaders who were tasked to point people to a loving God and instead buried them in rules and he was mad.</span> <span class="tl-s" data-s="1032.94" data-e="1035.18">So why did Jesus respond in anger?</span></p>
+        <p><span class="tl-s" data-s="1037.08" data-e="1038.68">Because he loved the people.</span></p>
+        <p><span class="tl-s" data-s="1041.24" data-e="1042.84">Because he loved that man.</span></p>
+        <p><span class="tl-s" data-s="1045.00" data-e="1056.70">That man for that culture water, he couldn&#x27;t produce, he couldn&#x27;t work, he was probably destitute and in rags.</span></p>
+        <p><span class="tl-s" data-s="1058.24" data-e="1059.78">They had no safety net.</span></p>
+        <p><span class="tl-s" data-s="1061.54" data-e="1066.78">But Jesus saw him and he refused to use this man.</span> <span class="tl-s" data-s="1068.12" data-e="1069.24">He loved this man.</span></p>
+        <p><span class="tl-s" data-s="1073.20" data-e="1087.78">Friends, anywhere, and this holds true still today, when hard hearted leaders push and press people into legalistic religious teaching, Jesus gets angry.</span></p>
+        <p><span class="tl-s" data-s="1089.46" data-e="1093.86">Anywhere his people are used, Jesus gets angry.</span> <span class="tl-s" data-s="1094.66" data-e="1100.90">Anywhere Christianity is twisted into a blind legalism, Jesus gets angry.</span> <span class="tl-s" data-s="1101.64" data-e="1105.86">Anywhere leaders lead his people astray, Jesus gets angry.</span> <span class="tl-s" data-s="1106.12" data-e="1111.06">Anywhere his people are threatened and buried in rules, Jesus is angry.</span> <span class="tl-s" data-s="1111.22" data-e="1116.46">Anywhere the vulnerable are not protected but exploited, Jesus gets angry.</span> <span class="tl-s" data-s="1116.78" data-e="1122.24">Anywhere leaders lord it over the sheep instead of loving the sheep, Jesus gets angry.</span> <span class="tl-s" data-s="1122.60" data-e="1127.78">Anywhere leaders heap guilt instead of ministering grace, Jesus gets angry.</span> <span class="tl-s" data-s="1128.10" data-e="1135.74">Anywhere leaders love themselves more than their people, Jesus gets angry. and I hope his anger brings you comfort.</span></p>
+        <p><span class="tl-s" data-s="1137.94" data-e="1138.70">Why?</span> <span class="tl-s" data-s="1139.98" data-e="1145.84">Because we said at the beginning, anger reveals what we love.</span> <span class="tl-s" data-s="1147.18" data-e="1150.80">What did Jesus&#x27; anger reveal about him?</span> <span class="tl-s" data-s="1151.72" data-e="1153.40">That he loves his people.</span></p>
+        <p><span class="tl-s" data-s="1155.26" data-e="1162.10">To put a finer point on it, Jesus gets angry because he loves you, Christian.</span></p>
+        <p><span class="tl-s" data-s="1164.08" data-e="1165.96">I want you to hear this.</span></p>
+        <p><span class="tl-s" data-s="1168.76" data-e="1185.90">Whenever leaders or any other people mistreat you, lord it over you, use you, refuse to protect you, abuse you, lead you astray, Jesus is angry.</span></p>
+        <p><span class="tl-s" data-s="1188.70" data-e="1194.64">He looks at you and your situation and he&#x27;s angry.</span></p>
+        <p><span class="tl-s" data-s="1197.28" data-e="1200.78">He gets angry because he loves you.</span></p>
+        <p><span class="tl-s" data-s="1206.20" data-e="1210.10">It&#x27;s remarkable that we compare this episode here.</span> <span class="tl-s" data-s="1210.22" data-e="1212.34">We see Jesus with the man with the withered hand.</span> <span class="tl-s" data-s="1212.68" data-e="1215.30">We see the Pharisees trying to set Jesus up.</span> <span class="tl-s" data-s="1215.64" data-e="1216.72">Jesus gets angry.</span> <span class="tl-s" data-s="1217.84" data-e="1222.58">But what happens when Jesus is arrested and delivered to Pontius Pilate?</span> <span class="tl-s" data-s="1222.74" data-e="1226.42">He&#x27;s already been treated roughly by the Jews and then we read this in Mark 15.</span> <span class="tl-s" data-s="1227.08" data-e="1232.96">As soon as it was morning, the chief priest held a consultation with the elders and scribes and the whole council.</span></p>
+        <p><span class="tl-s" data-s="1234.88" data-e="1238.86">They bound Jesus and led him away and delivered him over to Pilate.</span> <span class="tl-s" data-s="1239.62" data-e="1241.96">And Pilate asked him, are you the king of the Jews?</span> <span class="tl-s" data-s="1242.62" data-e="1244.44">And he answered him, you have said so.</span> <span class="tl-s" data-s="1244.96" data-e="1247.86">And the chief priest accused him of many things.</span> <span class="tl-s" data-s="1248.70" data-e="1251.14">And Pilate asked him, have you no answer to make?</span> <span class="tl-s" data-s="1251.90" data-e="1254.08">See how many charges they bring against you.</span> <span class="tl-s" data-s="1254.76" data-e="1260.36">But Jesus made no further answer so that Pilate was amazed.</span></p>
+        <p><span class="tl-s" data-s="1261.96" data-e="1263.36">No sign of anger.</span> <span class="tl-s" data-s="1264.04" data-e="1264.56">Do you see this?</span> <span class="tl-s" data-s="1264.82" data-e="1267.90">When he is accused, no anger.</span> <span class="tl-s" data-s="1269.30" data-e="1272.32">When we are falsely accused, anger.</span> <span class="tl-s" data-s="1273.40" data-e="1273.84">See that?</span></p>
+        <p><span class="tl-s" data-s="1276.56" data-e="1279.96">When people heap scorn upon him, no anger.</span> <span class="tl-s" data-s="1281.02" data-e="1283.98">When people heap scorn upon us, anger.</span> <span class="tl-s" data-s="1284.92" data-e="1288.06">When he is treated unjustly, no anger.</span> <span class="tl-s" data-s="1288.56" data-e="1291.04">When we are treated unjustly, anger.</span></p>
+        <p><span class="tl-s" data-s="1292.76" data-e="1295.54">That, friends, is remarkable.</span></p>
+        <p><span class="tl-s" data-s="1298.60" data-e="1300.02">Ash says it this way.</span></p>
+        <p><span class="tl-s" data-s="1301.68" data-e="1321.92">Jesus shows no anger at the one who betrays him, expresses no fury at those who arrest him, gives vent to no rage at those who accuse him, exhibits no wrath at those who bear false witness against him, and shows no indignation at those who crucify him.</span> <span class="tl-s" data-s="1322.68" data-e="1325.66">He was so angry at hard-heartedness.</span> <span class="tl-s" data-s="1325.82" data-e="1334.22">He who was so angry at hard-heartedness goes in silence to his death as a lamb to the slaughter with no hint of anger.</span> <span class="tl-s" data-s="1335.60" data-e="1341.48">He must be the only crucified man in history not to curse in anger.</span> <span class="tl-s" data-s="1341.64" data-e="1349.10">And bear in mind, he wasn&#x27;t just innocent of the charges that Jews were bringing against him before Pilate.</span> <span class="tl-s" data-s="1349.26" data-e="1351.44">He was innocent of any sin whatsoever.</span></p>
+        <p><span class="tl-s" data-s="1352.98" data-e="1357.72">And yet, he holds his tongue and there is no anger.</span> <span class="tl-s" data-s="1358.32" data-e="1366.52">But, when his people are threatened, when they&#x27;re weighed down, when they&#x27;re used, when they&#x27;re manipulated, his anger flares.</span></p>
+        <p><span class="tl-s" data-s="1369.44" data-e="1373.88">His love moves him to anger on your behalf.</span></p>
+        <p><span class="tl-s" data-s="1382.36" data-e="1387.18">His love moves him to anger on your behalf.</span> <span class="tl-s" data-s="1388.18" data-e="1388.84">It&#x27;s remarkable.</span></p>
+        <p><span class="tl-s" data-s="1390.56" data-e="1394.10">But he was silent in his own defense.</span> <span class="tl-s" data-s="1395.32" data-e="1397.32">And if he wasn&#x27;t, we would have no hope otherwise.</span> <span class="tl-s" data-s="1397.60" data-e="1407.70">Surely, he could have said in Mark chapter 15, listen, Pilate, I have all the answers, you have none of the answers, I have all power, you have no power.</span> <span class="tl-s" data-s="1408.50" data-e="1413.28">But if he did that, we would have no hope. we are all alike guilty before God.</span> <span class="tl-s" data-s="1413.92" data-e="1416.32">We should not just be recipients of his anger.</span></p>
+        <p><span class="tl-s" data-s="1418.66" data-e="1422.44">We should be recipients of God&#x27;s wrath for our sins.</span> <span class="tl-s" data-s="1422.58" data-e="1434.88">But because Jesus did not answer and willingly went to the cross, we Christians receive mercy, love, and grace.</span></p>
+        <p><span class="tl-s" data-s="1436.44" data-e="1443.54">We receive kindness and generosity only and always from God.</span></p>
+        <p><span class="tl-s" data-s="1445.76" data-e="1452.10">And we have Jesus angry on our behalf.</span></p>
+        <p><span class="tl-s" data-s="1454.28" data-e="1459.22">If you search the Gospels, you&#x27;ll see there&#x27;s all kinds of different ways that he gets angry.</span></p>
+        <p><span class="tl-s" data-s="1461.40" data-e="1463.26">But he loves us, that&#x27;s why.</span> <span class="tl-s" data-s="1463.92" data-e="1467.14">He still gets angry on your behalf.</span> <span class="tl-s" data-s="1467.84" data-e="1473.46">You see, last week, if you were here, we talked about how he has unwavering compassion for us.</span> <span class="tl-s" data-s="1473.62" data-e="1475.48">That he&#x27;s with us against our sin.</span> <span class="tl-s" data-s="1475.72" data-e="1478.96">And even when we sin, he looks at us with compassion.</span></p>
+        <p><span class="tl-s" data-s="1481.86" data-e="1488.30">Today, we&#x27;re seeing that when we are wronged, he responds in anger.</span> <span class="tl-s" data-s="1488.64" data-e="1492.04">Typically, I think we as Christians can get that exactly reversed.</span> <span class="tl-s" data-s="1492.38" data-e="1495.70">When we sin, we think, Jesus is angry at me.</span></p>
+        <p><span class="tl-s" data-s="1499.24" data-e="1502.50">Or when somebody does something against us, we think he doesn&#x27;t care.</span> <span class="tl-s" data-s="1502.72" data-e="1503.82">It&#x27;s exactly reversed.</span> <span class="tl-s" data-s="1504.90" data-e="1505.90">How do we know?</span> <span class="tl-s" data-s="1506.40" data-e="1511.68">Mark chapter 3, Matthew chapter 9, as we saw last week.</span> <span class="tl-s" data-s="1512.21" data-e="1513.68">Taken together, what does this mean?</span> <span class="tl-s" data-s="1513.76" data-e="1516.94">It means that he is on our side.</span></p>
+        <p><span class="tl-s" data-s="1518.96" data-e="1522.42">And he gets angry on your behalf because he loves you.</span></p>
+        <p><span class="tl-s" data-s="1524.00" data-e="1525.60">Two thoughts as we close.</span> <span class="tl-s" data-s="1526.88" data-e="1530.06">Take comfort in the anger of Jesus.</span></p>
+        <p><span class="tl-s" data-s="1531.96" data-e="1537.00">Maybe hearing that at church was not on your bingo card today or any other day.</span> <span class="tl-s" data-s="1537.98" data-e="1546.92">But I want you to understand when you are treated poorly Christian, you can know for sure that Jesus is not just sitting there going, hey, what are you going to do?</span> <span class="tl-s" data-s="1547.56" data-e="1548.78">It is what it is.</span> <span class="tl-s" data-s="1548.96" data-e="1552.48">Like, that would be lame.</span></p>
+        <p><span class="tl-s" data-s="1554.76" data-e="1563.82">You know what it&#x27;s like when, have you ever gone, have your head really wronged and you go to somebody and you say, man, this happened and I felt so bad and they&#x27;re like, huh, I&#x27;m sorry.</span> <span class="tl-s" data-s="1564.38" data-e="1566.28">Or, yeah, what can you expect?</span> <span class="tl-s" data-s="1567.50" data-e="1568.98">Or, it is what it is.</span> <span class="tl-s" data-s="1569.64" data-e="1572.06">Or, they come in with a story where they were treated worse.</span></p>
+        <p><span class="tl-s" data-s="1574.72" data-e="1575.72">That&#x27;s not helpful.</span> <span class="tl-s" data-s="1575.98" data-e="1576.82">I want you to be angry.</span></p>
+        <p><span class="tl-s" data-s="1578.34" data-e="1579.90">Jesus, is.</span></p>
+        <p><span class="tl-s" data-s="1582.28" data-e="1584.78">Jesus is angry on your behalf.</span> <span class="tl-s" data-s="1585.22" data-e="1590.08">Even if no one notices or gives a second thought to it, Jesus is angry.</span> <span class="tl-s" data-s="1590.16" data-e="1590.98">Now, why is this helpful?</span> <span class="tl-s" data-s="1592.14" data-e="1596.26">Because anger is the right response to evil and immorality.</span> <span class="tl-s" data-s="1597.34" data-e="1605.36">And when you experience evil at the hands of another person or someone does something wrong to you, he can&#x27;t just say, oh, whatever.</span> <span class="tl-s" data-s="1605.70" data-e="1609.96">No, he&#x27;s a loving God and he knows that is wrong.</span></p>
+        <p><span class="tl-s" data-s="1611.44" data-e="1613.12">And he cares about what you&#x27;re going through.</span> <span class="tl-s" data-s="1613.20" data-e="1614.00">He&#x27;s invested.</span> <span class="tl-s" data-s="1614.32" data-e="1615.42">He&#x27;s standing with you.</span> <span class="tl-s" data-s="1615.62" data-e="1616.74">He&#x27;s on your side.</span> <span class="tl-s" data-s="1616.99" data-e="1618.08">He&#x27;s cheering you on.</span> <span class="tl-s" data-s="1618.16" data-e="1622.00">And when you suffer injustice, he smolders with anger.</span> <span class="tl-s" data-s="1622.58" data-e="1624.74">Anything else by Jesus would be immoral.</span> <span class="tl-s" data-s="1625.00" data-e="1626.02">And he&#x27;s not immoral.</span></p>
+        <p><span class="tl-s" data-s="1628.04" data-e="1640.38">If you&#x27;ve been truly wronged or violated, and I mean at a fundamental level, and maybe no one&#x27;s been held to account, I want you to understand this, Christian.</span> <span class="tl-s" data-s="1641.58" data-e="1645.94">Jesus saw and he&#x27;s not over it yet.</span> <span class="tl-s" data-s="1647.28" data-e="1648.48">He&#x27;s still angry.</span></p>
+        <p><span class="tl-s" data-s="1650.96" data-e="1651.96">He&#x27;s angry.</span> <span class="tl-s" data-s="1652.16" data-e="1653.28">He was angry and guess what?</span> <span class="tl-s" data-s="1653.36" data-e="1653.82">He&#x27;s coming.</span> <span class="tl-s" data-s="1655.00" data-e="1667.54">And he&#x27;s going to make this right. even those things, even those things that bother you at a fundamental level where you&#x27;ve been wronged.</span> <span class="tl-s" data-s="1667.56" data-e="1667.92">Why?</span> <span class="tl-s" data-s="1668.56" data-e="1671.26">Because you matter to Jesus.</span> <span class="tl-s" data-s="1672.10" data-e="1674.24">Injustice matters to Jesus.</span></p>
+        <p><span class="tl-s" data-s="1675.68" data-e="1683.96">See, when you forgive someone else, you&#x27;re not saying, you&#x27;re not just saying, Jesus, just don&#x27;t worry about it.</span> <span class="tl-s" data-s="1684.98" data-e="1691.02">What you&#x27;re saying is, Jesus, I trust you to make this right in your way, not mine.</span></p>
+        <p><span class="tl-s" data-s="1696.36" data-e="1697.30">And you know what?</span> <span class="tl-s" data-s="1697.40" data-e="1701.48">One day, he will come and make it all right.</span></p>
+        <p><span class="tl-s" data-s="1704.50" data-e="1707.48">Take comfort in the anger of Jesus.</span> <span class="tl-s" data-s="1708.78" data-e="1712.30">Also, wait for the anger of Jesus.</span> <span class="tl-s" data-s="1712.46" data-e="1713.16">This is important.</span> <span class="tl-s" data-s="1714.06" data-e="1721.54">If we don&#x27;t take comfort in the anger of Jesus, we will not want to wait for the expression of his anger.</span> <span class="tl-s" data-s="1721.66" data-e="1723.94">We&#x27;ll want to take things into our own hands.</span> <span class="tl-s" data-s="1724.72" data-e="1727.90">Now, I&#x27;m not saying we shouldn&#x27;t seek justice from civil authorities.</span> <span class="tl-s" data-s="1728.16" data-e="1729.78">Where appropriate, we should.</span> <span class="tl-s" data-s="1730.08" data-e="1735.66">But I am saying we are simply not free to lash out in revenge or retribution.</span> <span class="tl-s" data-s="1736.74" data-e="1737.92">Peter puts it this way.</span> <span class="tl-s" data-s="1739.24" data-e="1746.26">For this is a gracious thing when, mindful of God, one endures sorrows while suffering unjustly.</span></p>
+        <p><span class="tl-s" data-s="1747.20" data-e="1752.42">For what credit is it if when you sin, you are beaten for it, you endure?</span> <span class="tl-s" data-s="1752.76" data-e="1759.14">But if when you do good and suffer for it, you endure, this is a gracious thing in the sight of God.</span> <span class="tl-s" data-s="1760.32" data-e="1770.76">For to this you have been called, because Christ also suffered for you, leaving you an example that you might follow in his steps.</span> <span class="tl-s" data-s="1771.38" data-e="1775.22">He committed no sin, neither was deceit found in his mouth.</span> <span class="tl-s" data-s="1775.54" data-e="1778.56">When he was reviled, he did not revile in return.</span> <span class="tl-s" data-s="1778.88" data-e="1786.44">When he suffered, he did not threaten, but continued entrusting himself to him who judges justly.</span> <span class="tl-s" data-s="1787.40" data-e="1790.50">You can trust in the anger of God.</span> <span class="tl-s" data-s="1790.60" data-e="1796.58">You can wait for the anger of God because he will judge. judge justly.</span></p>
+        <p><span class="tl-s" data-s="1800.48" data-e="1814.54">Those who took advantage of you, those who mistreated you, those who laid heavy burdens upon you, they didn&#x27;t get away with anything.</span></p>
+        <p><span class="tl-s" data-s="1818.32" data-e="1826.46">Our unjust suffering will be adjudicated by the risen Lord himself and it will be just.</span></p>
+        <p><span class="tl-s" data-s="1828.10" data-e="1836.06">So you can wait and you can take comfort and you can trust him.</span></p>
+        <p><span class="tl-s" data-s="1837.66" data-e="1844.58">But in the meantime, you can know that you are not alone in your unjust suffering.</span> <span class="tl-s" data-s="1845.68" data-e="1854.38">He not only understands what it&#x27;s like, but he looks upon those who victimize you and he&#x27;s grieved.</span></p>
+        <p><span class="tl-s" data-s="1857.78" data-e="1858.88">And he&#x27;s angry.</span> <span class="tl-s" data-s="1859.58" data-e="1860.14">Why?</span> <span class="tl-s" data-s="1861.04" data-e="1862.34">Because he loves you.</span></p>
+        <p><span class="tl-s" data-s="1864.02" data-e="1870.86">Now, justice may not come as quickly as we would like, but it will come.</span></p>
+        <p><span class="tl-s" data-s="1872.62" data-e="1880.14">And when justice does come, there will be no one to stop him and no one to say, that&#x27;s not fair.</span> <span class="tl-s" data-s="1881.30" data-e="1882.36">Oh, it&#x27;ll be fair.</span></p>
+        <p><span class="tl-s" data-s="1884.26" data-e="1893.90">If you&#x27;re here and you&#x27;re not following Jesus, what you need to recognize is that there is something called wrath being stored up for you.</span> <span class="tl-s" data-s="1895.22" data-e="1909.64">If you&#x27;re not trusting Jesus, if you haven&#x27;t put your faith in him, there is wrath being stored up for you, he&#x27;s not angry on your behalf, he&#x27;s angry at you.</span></p>
+        <p><span class="tl-s" data-s="1911.20" data-e="1916.08">And it is a fearful thing to fall in the hands of a holy God.</span></p>
+        <p><span class="tl-s" data-s="1919.64" data-e="1944.78">That can very easily change if you trust Jesus, if you are willing to recognize that you&#x27;re a sinner, who has wronged others, wronged all kinds of different people, and you&#x27;re willing to go to the Lord and ask forgiveness there and there alone, can you avoid the wrath that is to come?</span></p>
+        <p><span class="tl-s" data-s="1946.30" data-e="1955.06">And there you can experience the infinite, immeasurable love of God in Christ.</span></p>
+        <p><span class="tl-s" data-s="1956.72" data-e="1967.62">If you don&#x27;t know what it&#x27;s like to be a Christian, talk to someone that you know is a Christian, if you don&#x27;t know any Christians, there&#x27;s a lot of them in this room, they would love to help you and talk to you.</span></p>
+        <p><span class="tl-s" data-s="1969.82" data-e="1977.72">If you are a Christian, take comfort in the anger of your Lord.</span> <span class="tl-s" data-s="1978.86" data-e="1979.58">Let&#x27;s pray.</span></p>
+        <p><span class="tl-s" data-s="1987.64" data-e="1990.66">Lord, it&#x27;s a strange thing to take comfort in your anger.</span></p>
+        <p><span class="tl-s" data-s="1992.28" data-e="1996.78">But Lord, I&#x27;m grateful, we are grateful that you care.</span></p>
+        <p><span class="tl-s" data-s="1998.22" data-e="2001.38">You&#x27;re not just sitting up there indifferent and far away.</span> <span class="tl-s" data-s="2002.24" data-e="2008.18">You&#x27;re not just up there governing the universe, just letting us roll along.</span> <span class="tl-s" data-s="2009.42" data-e="2011.00">But you care.</span> <span class="tl-s" data-s="2011.16" data-e="2017.92">You are watching, you are working, and you care for us.</span> <span class="tl-s" data-s="2018.88" data-e="2031.58">I&#x27;m grateful, Lord, that every time you see us suffering and you see us experiencing unjust suffering, that you&#x27;re angered because you love us.</span></p>
+        <p><span class="tl-s" data-s="2033.66" data-e="2042.26">Lord, I pray that you would help any in this room who are in the midst of those kinds of sorrows right now.</span> <span class="tl-s" data-s="2043.30" data-e="2048.90">I pray especially for people who feel like they have no one that can understand and no one who is trying to help.</span> <span class="tl-s" data-s="2049.60" data-e="2071.98">I pray, Lord, that this picture of you in heaven seated on the throne, looking at their life, seeing those people who&#x27;ve taken advantage of them, abused them, oppressed them, lorded over them, mistreated them, I pray that that experience of seeing you angry at those people would draw them closer to you.</span></p>
+        <p><span class="tl-s" data-s="2073.42" data-e="2080.38">For we know, we know that you are good and you are just.</span></p>
+        <p><span class="tl-s" data-s="2081.82" data-e="2091.64">And in your goodness and your justice, Lord, we&#x27;re grateful for our part that we&#x27;ve received mercy.</span></p>
+        <p><span class="tl-s" data-s="2093.18" data-e="2097.54">And so, Lord, we even pray for those who persecute us or who are against us.</span> <span class="tl-s" data-s="2097.86" data-e="2121.64">We pray that you would pour out your spirit, help them to turn to you so that they can be counted among those who can say, I take comfort in the fact that my Lord is angry on my behalf when I suffer unjustly.</span></p>
+        <p><span class="tl-s" data-s="2124.48" data-e="2133.52">Jesus, it&#x27;s in your mighty name, your name that is above all names, that we give thanks and pray.</span> <span class="tl-s" data-s="2134.56" data-e="2134.90">Amen.</span> <span class="tl-s" data-s="2134.92" data-e="2135.04">Amen.</span></p>
+        <p><span class="tl-s" data-s="2139.28" data-e="2146.34">As we close, as you walk out, you&#x27;ll see that there&#x27;s what&#x27;s called the Feliz Tree.</span> <span class="tl-s" data-s="2146.55" data-e="2150.88">We have an orphanage that we work with every year and deliver Christmas presents to.</span> <span class="tl-s" data-s="2151.28" data-e="2154.22">You can go and inquire at that table out there.</span> <span class="tl-s" data-s="2154.72" data-e="2157.16">They would love to explain how everything works.</span></p>
+        <p><span class="tl-s" data-s="2158.70" data-e="2161.10">We have our women&#x27;s luncheon outside.</span> <span class="tl-s" data-s="2164.48" data-e="2166.02">Until next week, you&#x27;re dismissed.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Live sermon feed: spotlight from /api/sermons, browsable archive from
+  // /api/sermons/search. Static fallback list stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function row(it) {
+      var meta = [it.speaker, fmtDate(it.date)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      var titleHtml = esc(it.title);
+      var tUrl = it.guid && transcriptMap[it.guid];
+      if (tUrl) titleHtml = '<a href="' + esc(tUrl) + '">' + titleHtml + "</a>";
+      return '<div class="sermon"><div><h3>' + titleHtml + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    fetch("/api/sermons?v=3")
+      .then(function (res) { if (!res.ok) throw new Error("feed " + res.status); return res.json(); })
+      .then(function (data) {
+        var spot = document.querySelector("[data-series-spotlight]");
+        if (data && data.series && spot) {
+          var s = data.series;
+          var art = spot.querySelector("[data-series-art]");
+          if (art && s.artwork) { art.src = s.artwork; } else if (art) { art.style.display = "none"; }
+          var nm = spot.querySelector("[data-series-name]");
+          if (nm) nm.textContent = s.name;
+          var bl = spot.querySelector("[data-series-blurb]");
+          if (bl) bl.textContent = s.blurb;
+          spot.hidden = false;
+        }
+      })
+      .catch(function () { /* spotlight stays hidden */ });
+
+    var PER = 10;
+    var state = { q: "", speaker: "", series: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var speakerSel = document.querySelector("[data-sermons-speaker]");
+    var seriesSel = document.querySelector("[data-sermons-series]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No messages found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(speakerSel, data.facets.speakers || [], function (e) { return e.name; }, function (e) { return e.name + " (" + e.count + ")"; });
+        fill(seriesSel, data.facets.series || [], function (e) { return e.name; }, function (e) { return e.name + " (" + e.count + ")"; });
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.speaker || data.series || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.speaker) parts.push("by " + data.speaker);
+          if (data.series) parts.push("in " + data.series);
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " result" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " messages";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/sermons/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.speaker ? "&speaker=" + encodeURIComponent(state.speaker) : "") +
+        (state.series ? "&series=" + encodeURIComponent(state.series) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () { /* keep current list on error */ });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.speaker = ""; state.series = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (speakerSel) speakerSel.value = "";
+      if (seriesSel) seriesSel.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    function bindSelect(sel, key) {
+      if (!sel) return;
+      sel.addEventListener("change", function () {
+        state[key] = sel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    bindSelect(speakerSel, "speaker");
+    bindSelect(seriesSel, "series");
+    bindSelect(monthSel, "month");
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: https://hub.centergilbert.com/media/meeting-jesus-again -->
+</body>
+</html>
