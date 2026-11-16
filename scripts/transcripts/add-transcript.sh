@@ -559,6 +559,12 @@ main = """  <main>
                notice, body_html)
 
 new = re.sub(r"<main>.*?</main>", lambda _: main, tpl, count=1, flags=re.DOTALL)
+# Strip the dead inline archive <script> block cloned from the archive
+# template (sermons.html / podcast.html). It implements the live archive
+# feed and early-returns on transcript pages (no [data-sermons-list] node
+# in a transcript <main>). Keep /script.js (site nav) and /readalong.js.
+new = re.sub(r'  <script>\n  // (?:Live sermon feed:|Fixed on Jesus episode archive,).*?\n  </script>\n?',
+             "", new, count=1, flags=re.DOTALL)
 title_tag = ("<title>%s — %s Transcript — Center Church Gilbert</title>"
              % (html.escape(title), kind_title))
 if "<title>Sermons — Center Church Gilbert</title>" in new:
