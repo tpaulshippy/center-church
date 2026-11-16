@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The King We Praise — Sermon Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Listen to the latest sermons from Center Church, or follow along on Apple Podcasts and Spotify." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=17" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a class="active" href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/sermons">&larr; All sermons</a>
+          <h1 class="display-lg">The King We Praise</h1>
+          <p class="transcript-meta">Rich Richardson · 2025-07-20 · 00:44:18</p>
+          <p class="transcript-desc">Praise The Lord</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/119cbef70/podcast/play/128973934/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-7%2F436123606-44100-2-604c26e1c2314921.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><span class="tl-s" data-s="0.26" data-e="2.81">Souls were also saved at youth camp.</span> <span class="tl-s" data-s="2.96" data-e="18.14">I had the privilege of speaking with an eighth grader from Tucson, a young man, who told me that God had changed his life as a result of one of the sermons, and he no longer wants to disobey his parents.</span> <span class="tl-s" data-s="18.30" data-e="30.88">I prayed with a young lady from another church whose father battles addiction, and as a result, he has spiritually abandoned his family.</span> <span class="tl-s" data-s="31.34" data-e="41.14">He&#x27;s turned his back on them, essentially, and as the oldest sibling in her family, she&#x27;s been carrying a lot of weight.</span></p>
+        <p><span class="tl-s" data-s="45.02" data-e="51.98">She believed that the Lord used that time at camp to minister directly to her heart.</span> <span class="tl-s" data-s="51.98" data-e="60.94">She felt like the Lord removed the burden that she&#x27;s been carrying, and she felt that the Lord gave her peace.</span> <span class="tl-s" data-s="60.95" data-e="76.43">I prayed with another young lady who was wrestling with whether or not she is really a Christian, and I was able to encourage her and help her see that if she belongs to Christ, there is no one that can snatch her from the Father&#x27;s hand.</span> <span class="tl-s" data-s="76.72" data-e="87.64">By the end of the worship night, I saw her boldly approaching God&#x27;s throne, lifting her hands with a huge smile on her face.</span></p>
+        <p><span class="tl-s" data-s="89.90" data-e="103.78">I strongly believe the Lord allowed our students and leaders at camp to taste and see that the Lord is good, and as a result, our students, they walked away with an awe for God that might not have been there previously.</span> <span class="tl-s" data-s="103.78" data-e="125.83">Now, as the pastor who oversees our youth ministry, it was especially sweet to spend a lot of uninterrupted time with our students and leaders, and being up there in the pines, it stirred my soul and put wind in my sails to do this for another year, two years, three years, ten years, however long the Lord calls me to this task.</span> <span class="tl-s" data-s="125.88" data-e="136.88">But as I was reflecting upon our time up north, I started to think about many of you who have been serving the Lord for years, decades even.</span></p>
+        <p><span class="tl-s" data-s="139.06" data-e="142.66">Now, here at Center Church, we have a vibrant seniors ministry.</span> <span class="tl-s" data-s="142.82" data-e="153.40">Many of you have been pressing into the Lord, and it&#x27;s sweet to hear reports from Steve, who just raves about our seniors ministry.</span></p>
+        <p><span class="tl-s" data-s="155.42" data-e="159.55">A lot of you have wisdom to teach our young people that we need to tap into.</span> <span class="tl-s" data-s="159.55" data-e="170.32">But there are others, others of you here who&#x27;ve served the Lord for many years, and you may be feeling like you&#x27;ve lost your youthful passion.</span> <span class="tl-s" data-s="170.32" data-e="174.28">Maybe you feel like you&#x27;ve lost zeal for the Lord.</span> <span class="tl-s" data-s="174.28" data-e="180.89">Maybe over time, your awe for God has dissipated.</span> <span class="tl-s" data-s="180.89" data-e="189.90">Maybe as life has continued on, and you&#x27;ve fought the good fight, you&#x27;ve grown weary from battling doubts.</span> <span class="tl-s" data-s="189.91" data-e="197.58">Weary from battling and waging war against doubts that confront your soul daily.</span> <span class="tl-s" data-s="197.86" data-e="204.12">Maybe you&#x27;ve grown weary from anxiety you experience over the medical condition you&#x27;re battling.</span></p>
+        <p><span class="tl-s" data-s="207.25" data-e="210.48">Maybe you&#x27;ve grown weary over reports from doctors.</span> <span class="tl-s" data-s="210.48" data-e="224.13">Now, I believe just like the Lord stirred up the hearts and the faith of our young people up north and instilled within them an awe for God, I think the Lord wants to do that in you this morning.</span> <span class="tl-s" data-s="224.22" data-e="230.19">I think there are some of you who need your heart stirred up for the Lord, for his purposes.</span> <span class="tl-s" data-s="230.19" data-e="243.63">I believe he wants to minister to your heart and put wind in your heart sails for the next decade, two decades, three decades, however long the Lord has for you to walk with him.</span> <span class="tl-s" data-s="243.63" data-e="247.74">I pray that this message does that just for you.</span> <span class="tl-s" data-s="247.78" data-e="253.29">Maybe you&#x27;ve grown cold in your affections for God.</span> <span class="tl-s" data-s="253.29" data-e="254.96">It&#x27;s an easy thing to do.</span> <span class="tl-s" data-s="254.96" data-e="258.76">Maybe you&#x27;re struggling with spiritual complacency.</span></p>
+        <p><span class="tl-s" data-s="260.77" data-e="268.86">This passage from Psalm 145, it has the power to produce in us awe-inspiring praise.</span></p>
+        <p><span class="tl-s" data-s="270.80" data-e="281.12">I want to let Paul Tripp introduce this psalm to us, because he has some very helpful words about who we are and about how this psalm can serve us.</span> <span class="tl-s" data-s="281.17" data-e="287.26">Tripp writes, there&#x27;s something that you and I tend to do.</span> <span class="tl-s" data-s="287.26" data-e="289.90">We tend to make life all about us.</span> <span class="tl-s" data-s="289.90" data-e="297.78">We tend to shrink our lives down to the small confines of our wants, our needs, and our feelings.</span> <span class="tl-s" data-s="297.78" data-e="301.97">We tend to put ourselves in the center and make life all about us.</span> <span class="tl-s" data-s="302.12" data-e="304.01">It&#x27;s a me-istic way of living.</span> <span class="tl-s" data-s="304.03" data-e="305.65">No, that&#x27;s not a word.</span> <span class="tl-s" data-s="305.74" data-e="306.42">I made it up.</span></p>
+        <p><span class="tl-s" data-s="308.51" data-e="311.46">Somehow, everything becomes about how it affects us.</span> <span class="tl-s" data-s="311.46" data-e="318.32">Everything is about our wants, our goals, our plans, our emotions.</span> <span class="tl-s" data-s="318.32" data-e="328.20">And the fact of the matter is, self-focus, self-interest, me-ism, never produces a happy life.</span> <span class="tl-s" data-s="328.20" data-e="331.94">It never produces healthy relationships.</span> <span class="tl-s" data-s="332.04" data-e="334.62">It never makes you thankful.</span> <span class="tl-s" data-s="334.64" data-e="338.22">It never produces love for God and worship of God.</span> <span class="tl-s" data-s="338.38" data-e="351.98">And so, Psalm 145 sits in the psalms to confront our me-ism with the truth that we were created to live for something vastly bigger than ourselves.</span></p>
+        <p><span class="tl-s" data-s="354.28" data-e="357.74">Friends, our task this morning is to see just that.</span> <span class="tl-s" data-s="357.74" data-e="364.20">To see how we&#x27;ve been created to live for something vastly bigger than ourselves.</span> <span class="tl-s" data-s="364.25" data-e="374.48">Because as Tripp points out, what stands in our way of living for something bigger than ourselves is, in fact, our very selves.</span> <span class="tl-s" data-s="374.49" data-e="375.98">We get it in the way.</span> <span class="tl-s" data-s="376.08" data-e="378.49">Because we want things our way.</span> <span class="tl-s" data-s="378.49" data-e="382.28">That&#x27;s why the Burger King slogan resonates with so many of us.</span> <span class="tl-s" data-s="382.42" data-e="383.52">Have it your way.</span> <span class="tl-s" data-s="384.90" data-e="395.03">We esteem ourselves higher than we ought to, and we steal the glory that God deserves because we think we deserve that glory for ourselves.</span> <span class="tl-s" data-s="395.03" data-e="398.32">Or in Tripp&#x27;s words, we&#x27;re glory thieves.</span></p>
+        <p><span class="tl-s" data-s="400.46" data-e="407.84">What Psalm 145 shows us is that living the good life requires looking away from ourselves.</span></p>
+        <p><span class="tl-s" data-s="409.28" data-e="411.12">Looking away from our circumstances.</span> <span class="tl-s" data-s="411.12" data-e="416.24">Looking away from our suffering, from our situations, and looking upward to God.</span></p>
+        <p><span class="tl-s" data-s="418.66" data-e="422.71">This psalm is the last psalm of David&#x27;s in the psalter.</span> <span class="tl-s" data-s="422.87" data-e="425.44">It&#x27;s a call to worship.</span> <span class="tl-s" data-s="425.44" data-e="427.34">It&#x27;s a hymn of praise.</span> <span class="tl-s" data-s="427.34" data-e="433.76">And it was carefully crafted by King David to express wholehearted worship.</span></p>
+        <p><span class="tl-s" data-s="435.76" data-e="442.00">But this psalm is not relegated to just be an Old Testament anthem.</span></p>
+        <p><span class="tl-s" data-s="444.02" data-e="450.32">It finds its true voice in Christ, who alone is our great worship leader.</span></p>
+        <p><span class="tl-s" data-s="451.72" data-e="458.16">Jesus is our King, who reveals God&#x27;s greatness and his goodness to us.</span> <span class="tl-s" data-s="459.04" data-e="469.34">And it&#x27;s only in Jesus, friends, that we can join David in declaring along in the first verse with him, I will extol you, my God and my King.</span> <span class="tl-s" data-s="469.34" data-e="472.00">Here&#x27;s what I want to propose to us.</span> <span class="tl-s" data-s="472.00" data-e="474.39">Here&#x27;s our big idea for this morning.</span> <span class="tl-s" data-s="474.39" data-e="486.40">Jesus calls us to praise God daily, proclaim his greatness to others, and rest in his goodness forever.</span> <span class="tl-s" data-s="486.40" data-e="489.59">So I&#x27;m going to pray.</span> <span class="tl-s" data-s="489.59" data-e="492.96">Things are going to be a little different this morning.</span> <span class="tl-s" data-s="492.96" data-e="495.76">I&#x27;m going to read the psalm within each point.</span> <span class="tl-s" data-s="495.76" data-e="502.08">So we&#x27;ll make it through the first nine verses as we traverse the first three points.</span> <span class="tl-s" data-s="502.08" data-e="502.96">But let me pray.</span></p>
+        <p><span class="tl-s" data-s="506.00" data-e="507.84">Lord God, we come to you this morning grateful.</span> <span class="tl-s" data-s="507.84" data-e="515.02">Grateful that you are our God and that in Jesus we have our great King.</span> <span class="tl-s" data-s="515.09" data-e="519.10">Father, I pray that you would remove distractions.</span> <span class="tl-s" data-s="519.55" data-e="528.70">Help me as I open your word, as I read from it, as I preach this morning, to look away from myself and look to you.</span> <span class="tl-s" data-s="528.70" data-e="535.75">Lord, I pray that you&#x27;d minister to our hearts this morning the truth of the gospel.</span> <span class="tl-s" data-s="535.87" data-e="539.80">Plant it deep within us and increase our awe for God.</span> <span class="tl-s" data-s="539.80" data-e="542.03">In your son&#x27;s precious name we pray.</span> <span class="tl-s" data-s="542.03" data-e="542.53">Amen.</span> <span class="tl-s" data-s="542.53" data-e="547.76">Our first point is praise the greatness of God in Christ.</span> <span class="tl-s" data-s="547.92" data-e="559.52">The word reads, starting at verse one of Psalm 145, &quot;I will extol you my God and King and bless your name forever and ever.</span></p>
+        <p><span class="tl-s" data-s="559.59" data-e="562.61">Every day I will bless you and praise your name forever and ever.</span> <span class="tl-s" data-s="562.61" data-e="568.14">Great is the Lord and great to be praised.</span> <span class="tl-s" data-s="568.14" data-e="573.04">His greatness is unsearchable.&quot; David here opens with this personal vow of praise.</span> <span class="tl-s" data-s="573.11" data-e="574.71">&quot;I will extol you.</span> <span class="tl-s" data-s="574.71" data-e="583.91">Every day I will bless you.&quot; What he&#x27;s getting at is he&#x27;s not just wanting to praise God on the Sabbath day.</span> <span class="tl-s" data-s="584.18" data-e="586.58">Not just at church or in the temple.</span> <span class="tl-s" data-s="586.58" data-e="590.00">Not just when he feels like it.</span> <span class="tl-s" data-s="590.15" data-e="593.90">Praise didn&#x27;t depend on if things were going well for David.</span> <span class="tl-s" data-s="593.90" data-e="600.57">Praise for him didn&#x27;t depend on if everything was going according to plan.</span> <span class="tl-s" data-s="600.72" data-e="602.66">His praise of God was a lifestyle.</span></p>
+        <p><span class="tl-s" data-s="602.75" data-e="606.48">It was an everyday sort of habit.</span> <span class="tl-s" data-s="606.95" data-e="612.71">Regardless of his circumstances, David daily commits to extolling God.</span> <span class="tl-s" data-s="612.71" data-e="620.21">Extolling God, which simply means esteeming God or looking upon God with admiration.</span> <span class="tl-s" data-s="620.21" data-e="626.72">Why is David compelled to do this every day?</span> <span class="tl-s" data-s="626.72" data-e="629.54">Why has this become his daily habit?</span> <span class="tl-s" data-s="629.61" data-e="632.00">Well, notice the reason.</span> <span class="tl-s" data-s="632.00" data-e="637.62">It says, &quot;Because great is the Lord.&quot; His greatness is unsearchable.</span> <span class="tl-s" data-s="637.69" data-e="643.36">For David, this is the ground upon which he stands.</span> <span class="tl-s" data-s="643.36" data-e="646.48">This is his grounds for his daily praise habit.</span> <span class="tl-s" data-s="646.48" data-e="652.09">Now that word unsearchable means that you&#x27;ll never get to the bottom of it.</span></p>
+        <p><span class="tl-s" data-s="652.17" data-e="654.51">No matter how long you live.</span> <span class="tl-s" data-s="654.71" data-e="658.54">No matter how deeply you study God&#x27;s word.</span> <span class="tl-s" data-s="658.68" data-e="662.64">No matter how much you know the original languages.</span> <span class="tl-s" data-s="663.11" data-e="667.50">No matter how much you worship God, how many instruments you play.</span> <span class="tl-s" data-s="667.52" data-e="671.12">We can never exhaust God&#x27;s greatness.</span> <span class="tl-s" data-s="671.14" data-e="676.33">This was the sort of praise David committed himself to.</span> <span class="tl-s" data-s="676.33" data-e="681.33">And this is exactly the sort of praise we must be after as well.</span> <span class="tl-s" data-s="681.33" data-e="708.49">There is this report that came out recently released by a non-profit named the Ocean Discovery League that estimates that oceanographers and marine biologists have only directly observed somewhere between 0.0006% and 0.001% of the ocean&#x27;s deep sea floor.</span> <span class="tl-s" data-s="708.49" data-e="720.96">This means that since deep sea exploration really started to take off in the 50s, we&#x27;ve barely even dipped our toes into the waters of deep sea research.</span> <span class="tl-s" data-s="720.96" data-e="729.65">99.99% of the ocean floor has yet to be observed by human eyes.</span></p>
+        <p><span class="tl-s" data-s="729.67" data-e="739.90">Friends, when it comes to things that are literally unsearchable, think of the ocean floor.</span> <span class="tl-s" data-s="739.91" data-e="753.51">So when David talks about the greatness of God being unsearchable, it simply means that no matter how hard we try to study God and know him, we can only ever barely scratch the surface.</span> <span class="tl-s" data-s="753.51" data-e="759.86">This past year in youth ministry, we did a series on about God&#x27;s attributes.</span> <span class="tl-s" data-s="759.86" data-e="767.06">And one of the attributes we covered, this is a mouthful, was God&#x27;s incomprehensibility.</span> <span class="tl-s" data-s="767.06" data-e="769.84">It&#x27;s a lot of syllables.</span> <span class="tl-s" data-s="769.86" data-e="777.84">No matter how much we think we have God figured out, we can never truly figure God out.</span> <span class="tl-s" data-s="778.31" data-e="786.57">Now the goal here was to help the students see that because God created us, we&#x27;re creatures who are dependent on him.</span> <span class="tl-s" data-s="786.71" data-e="787.12">We&#x27;re limited.</span> <span class="tl-s" data-s="787.12" data-e="788.70">We&#x27;re finite.</span> <span class="tl-s" data-s="788.72" data-e="794.28">And this limits how much knowledge we can acquire of the almighty.</span></p>
+        <p><span class="tl-s" data-s="794.28" data-e="795.60">And this is good.</span> <span class="tl-s" data-s="795.64" data-e="797.62">This is actually good news.</span> <span class="tl-s" data-s="797.70" data-e="801.52">You see, we live in the information age.</span> <span class="tl-s" data-s="801.53" data-e="808.75">And we have access to things like ChatGPT and Google, and we think we can figure everything out.</span> <span class="tl-s" data-s="808.75" data-e="815.51">But ChatGPT and Google, they can&#x27;t perform open-heart surgery.</span> <span class="tl-s" data-s="815.51" data-e="826.04">We need to go to experts who&#x27;ve acquired a vast array of skills and knowledge to be able to do these sorts of surgical procedures.</span> <span class="tl-s" data-s="826.04" data-e="831.82">Someone who knows way more than you or I do about the human heart.</span> <span class="tl-s" data-s="831.84" data-e="849.84">Now, I don&#x27;t know about you, but there&#x27;s a certain peace I feel when I&#x27;m sitting in the dentist chair, and he&#x27;s about to put a big needle in my mouth, knowing that this guy, well, he better know what he&#x27;s doing.</span> <span class="tl-s" data-s="849.84" data-e="858.64">It should be freeing for us as Christians to know that some things are reserved for the Lord alone.</span> <span class="tl-s" data-s="858.64" data-e="865.39">Some things are reserved for the Lord alone.</span></p>
+        <p><span class="tl-s" data-s="865.39" data-e="871.30">Some things like, why did God take my baby?</span> <span class="tl-s" data-s="871.30" data-e="877.77">Some things like, why did God take grandma so soon?</span> <span class="tl-s" data-s="877.92" data-e="883.55">Some things are reserved for the Lord alone.</span> <span class="tl-s" data-s="883.55" data-e="889.84">He withholds certain things from us because he knows our frame.</span> <span class="tl-s" data-s="889.84" data-e="898.11">He knows that we&#x27;re weak and that we would not be able to bear up under the pressure of too much knowledge.</span> <span class="tl-s" data-s="898.27" data-e="906.49">But the good news is, he has revealed what&#x27;s essential for us to know.</span> <span class="tl-s" data-s="906.50" data-e="913.94">While his greatness is unsearchable, he has revealed his greatness to us.</span> <span class="tl-s" data-s="914.10" data-e="919.12">I know that sounds paradoxical, but let me explain.</span> <span class="tl-s" data-s="919.12" data-e="922.40">How has the Lord shown us his greatness?</span> <span class="tl-s" data-s="922.48" data-e="924.08">By showing us Jesus.</span></p>
+        <p><span class="tl-s" data-s="925.92" data-e="931.85">Christ himself is the ultimate revelation of God&#x27;s greatness.</span> <span class="tl-s" data-s="932.00" data-e="940.16">Hebrews 1:3 tells us that Jesus is the radiance of the glory of God and the exact imprint of his nature.</span> <span class="tl-s" data-s="940.16" data-e="944.04">Do you want to see the greatness of God?</span> <span class="tl-s" data-s="944.04" data-e="944.86">Look at Jesus.</span> <span class="tl-s" data-s="944.99" data-e="948.16">Go to the Gospels.</span> <span class="tl-s" data-s="949.12" data-e="950.24">Read about who Jesus is.</span> <span class="tl-s" data-s="950.26" data-e="952.59">Read about what he&#x27;s done for us.</span> <span class="tl-s" data-s="952.59" data-e="955.21">That&#x27;s how we see the greatness of God.</span> <span class="tl-s" data-s="955.23" data-e="960.63">We need to only look at his perfect life.</span> <span class="tl-s" data-s="960.63" data-e="966.56">His merciful heart displayed to us through his death and his victorious resurrection.</span></p>
+        <p><span class="tl-s" data-s="966.56" data-e="976.40">We don&#x27;t need to look any further than to Jesus to see the greatness of God.</span> <span class="tl-s" data-s="976.40" data-e="981.93">But all too often, we&#x27;re blinded by so many other things.</span> <span class="tl-s" data-s="982.07" data-e="983.50">So many things blind us.</span> <span class="tl-s" data-s="983.78" data-e="990.47">We can&#x27;t look to Jesus because a million other things obstruct our view of him.</span> <span class="tl-s" data-s="990.74" data-e="996.55">A million other things try to rob us of our awe of God.</span> <span class="tl-s" data-s="996.55" data-e="1004.57">So I want to ask the question, what is it that&#x27;s robbed your awe of God lately?</span> <span class="tl-s" data-s="1004.57" data-e="1005.71">Friends, this is important.</span> <span class="tl-s" data-s="1005.71" data-e="1012.54">Most of the time, sin robs us of our awe of God.</span> <span class="tl-s" data-s="1012.73" data-e="1018.32">We give ourselves over to sinful pleasures we know are dishonoring to God.</span> <span class="tl-s" data-s="1018.32" data-e="1028.08">We cave at the very first sight of temptation because we&#x27;re not beholding the glory of God in the face of Jesus Christ deeply enough.</span></p>
+        <p><span class="tl-s" data-s="1028.08" data-e="1036.99">Sin robs us of our awe of God because we don&#x27;t want to put to death what is earthly in us.</span> <span class="tl-s" data-s="1036.99" data-e="1039.95">Sexual immorality, impurity, passions, evil desires, and covetousness.</span> <span class="tl-s" data-s="1039.96" data-e="1051.06">Because we trick ourselves into thinking we deserve those creature comforts for ourselves because of all of the hard work we&#x27;ve done.</span> <span class="tl-s" data-s="1051.13" data-e="1056.48">And then there are other things that rob us of our awe of God.</span> <span class="tl-s" data-s="1056.48" data-e="1059.74">Discouragement robs us of our awe of God.</span> <span class="tl-s" data-s="1059.87" data-e="1064.18">Weariness robs us of our awe of God.</span> <span class="tl-s" data-s="1064.20" data-e="1073.29">Discontentment robs us of our awe of the Lord and the things that He&#x27;s done.</span> <span class="tl-s" data-s="1073.29" data-e="1078.17">But there is one more thing that robs us.</span> <span class="tl-s" data-s="1078.17" data-e="1080.85">And it&#x27;s one we&#x27;re all prone to give into.</span> <span class="tl-s" data-s="1080.85" data-e="1085.03">There&#x27;s not a one of us here that are excluded from this.</span></p>
+        <p><span class="tl-s" data-s="1085.03" data-e="1086.22">And that&#x27;s forgetfulness.</span> <span class="tl-s" data-s="1086.22" data-e="1093.46">Forgetfulness robs us of our awe of God.</span> <span class="tl-s" data-s="1093.46" data-e="1100.33">Simply stated, we forget what God has done for us in Christ.</span> <span class="tl-s" data-s="1100.33" data-e="1104.17">We forget the sinful lifestyle that we once indulged in.</span> <span class="tl-s" data-s="1104.59" data-e="1111.30">That lifestyle that Jesus delivered us from by His death and resurrection.</span> <span class="tl-s" data-s="1111.30" data-e="1115.92">We forget that we were at one time enemies of the cross.</span> <span class="tl-s" data-s="1115.92" data-e="1121.68">Rebels who deserved punishment, but who have instead received grace and mercy.</span> <span class="tl-s" data-s="1121.68" data-e="1123.36">That&#x27;s what we forget.</span> <span class="tl-s" data-s="1123.36" data-e="1131.73">We forget the sweetness of the gospel because we delight ourselves in the bitterness of sin.</span> <span class="tl-s" data-s="1131.73" data-e="1137.70">When we&#x27;re tempted to forget what God has done for us in Jesus.</span></p>
+        <p><span class="tl-s" data-s="1137.70" data-e="1142.52">We can go to places like Psalm 145.</span> <span class="tl-s" data-s="1142.52" data-e="1152.65">We can combat our sin with praise and say, Lord, I will extol You because You are my God and my King.</span> <span class="tl-s" data-s="1152.82" data-e="1154.86">That sin is not my God.</span> <span class="tl-s" data-s="1155.86" data-e="1156.74">Lord, You alone are God.</span> <span class="tl-s" data-s="1156.82" data-e="1169.19">We can obliterate our despair and discouragement with worship by blessing the name of the Lord and committing to do so daily.</span> <span class="tl-s" data-s="1169.20" data-e="1175.27">We can destroy our forgetfulness by proclaiming that God is great.</span> <span class="tl-s" data-s="1175.27" data-e="1177.02">His greatness is unsearchable.</span> <span class="tl-s" data-s="1177.08" data-e="1188.40">And the good news here is we don&#x27;t need to muster up the strength to do this on our own.</span> <span class="tl-s" data-s="1188.43" data-e="1191.38">We don&#x27;t need to try to figure this out for ourselves.</span> <span class="tl-s" data-s="1191.38" data-e="1197.49">Because we&#x27;re led in this praise by none other than our King, Jesus Christ.</span></p>
+        <p><span class="tl-s" data-s="1197.49" data-e="1206.70">In Hebrews 2.2, quoting Psalm 22, Jesus says, I will proclaim Your name to my brothers and sisters.</span> <span class="tl-s" data-s="1206.80" data-e="1211.81">In the midst of the congregation, I, Jesus says, will sing Your praise.</span> <span class="tl-s" data-s="1211.81" data-e="1216.48">Christ is not only the object of our worship.</span> <span class="tl-s" data-s="1216.74" data-e="1219.74">Friends, this is a monumental truth.</span></p>
+        <p><span class="tl-s" data-s="1221.36" data-e="1222.55">He is the perfect worshiper.</span> <span class="tl-s" data-s="1222.55" data-e="1226.02">And He is the perfect worship leader.</span> <span class="tl-s" data-s="1226.02" data-e="1230.90">Jesus always leads us in triumphal procession.</span> <span class="tl-s" data-s="1230.90" data-e="1237.96">And through us spreads the fragrance of the knowledge of Him everywhere, 2 Corinthians says.</span> <span class="tl-s" data-s="1237.96" data-e="1256.21">So if you&#x27;ve been battling discouragement, if despair has been heavy on your mind and soul, you only need to look to Jesus, your worship leader, who leads us in our praise of God.</span> <span class="tl-s" data-s="1256.25" data-e="1258.14">We can look to Him.</span> <span class="tl-s" data-s="1258.20" data-e="1262.06">And we can praise God&#x27;s greatness.</span> <span class="tl-s" data-s="1263.02" data-e="1266.02">Because in Him, there&#x27;s grace to be found.</span> <span class="tl-s" data-s="1266.02" data-e="1274.24">So we&#x27;re called to praise the greatness of God in Christ, and we&#x27;re called to proclaim His greatness to others.</span> <span class="tl-s" data-s="1274.31" data-e="1276.22">That&#x27;s our second point.</span></p>
+        <p><span class="tl-s" data-s="1276.22" data-e="1280.46">Proclaim the greatness of God to others.</span> <span class="tl-s" data-s="1280.52" data-e="1288.38">Verses 4-7 read, One generation shall commend your works to another, and shall declare your mighty acts.</span> <span class="tl-s" data-s="1289.04" data-e="1295.39">On the glorious splendor of your majesty, and on your wondrous works, I will meditate.</span> <span class="tl-s" data-s="1295.51" data-e="1301.24">They shall speak of the might of your awesome deeds, and I will declare your greatness.</span> <span class="tl-s" data-s="1301.48" data-e="1308.10">They shall pour forth the fame of your abundant goodness, and shall sing aloud of your righteousness.</span> <span class="tl-s" data-s="1308.12" data-e="1313.03">Praise doesn&#x27;t stop with us on a Sunday morning.</span> <span class="tl-s" data-s="1313.09" data-e="1316.66">Praise is meant to be passed on.</span> <span class="tl-s" data-s="1316.66" data-e="1319.31">It&#x27;s like a baton in a relay race.</span> <span class="tl-s" data-s="1319.31" data-e="1323.74">It&#x27;s intended to be passed along to the next generation.</span> <span class="tl-s" data-s="1323.74" data-e="1332.19">What David does here is he paints a picture of people who are constantly telling each other about the greatness of God.</span></p>
+        <p><span class="tl-s" data-s="1332.19" data-e="1347.40">Generation to generation, friend to friend, saint to saint, older person to younger person, mom of young children to single college students, young professional to high school student, empty nester to brand new parents.</span> <span class="tl-s" data-s="1347.96" data-e="1358.63">What&#x27;s happening is they&#x27;re declaring, they&#x27;re meditating upon, they&#x27;re speaking, they&#x27;re proclaiming, and they&#x27;re singing the works of God to one another.</span> <span class="tl-s" data-s="1358.63" data-e="1360.24">There&#x27;s a lateral movement that&#x27;s taking place.</span> <span class="tl-s" data-s="1361.18" data-e="1363.88">There&#x27;s a culture of worship being established.</span></p>
+        <p><span class="tl-s" data-s="1368.69" data-e="1374.14">There&#x27;s a culture of discipleship being created where everyone participates.</span> <span class="tl-s" data-s="1374.21" data-e="1376.26">Not just the pastors.</span> <span class="tl-s" data-s="1376.54" data-e="1379.42">Not just the worship leaders.</span> <span class="tl-s" data-s="1379.44" data-e="1388.32">Not just those serving in children&#x27;s ministry or at the coffee shop or at the front greeting you.</span> <span class="tl-s" data-s="1388.32" data-e="1388.80">All of us.</span> <span class="tl-s" data-s="1388.82" data-e="1395.42">All of God&#x27;s people participate in this culture of worship and discipleship.</span> <span class="tl-s" data-s="1395.44" data-e="1397.36">And how do we participate?</span> <span class="tl-s" data-s="1397.36" data-e="1403.39">We do so by commending God&#x27;s works to one another.</span> <span class="tl-s" data-s="1403.45" data-e="1406.08">By speaking of what the Lord has done.</span> <span class="tl-s" data-s="1406.82" data-e="1407.45">By talking about it.</span></p>
+        <p><span class="tl-s" data-s="1407.45" data-e="1422.98">My heart as the pastor who oversees our youth and children&#x27;s ministry is not, I repeat, is not that these ministries would be the place where kids hear the gospel for the first time.</span> <span class="tl-s" data-s="1423.21" data-e="1433.10">Now, there may be the unique and exceptional circumstance when a non-believing family checks a kid into our children&#x27;s ministry.</span> <span class="tl-s" data-s="1433.10" data-e="1435.54">Or they drop them off for VBS.</span> <span class="tl-s" data-s="1435.55" data-e="1438.02">We praise God for those opportunities.</span> <span class="tl-s" data-s="1438.02" data-e="1439.82">But those are not the norm.</span> <span class="tl-s" data-s="1439.82" data-e="1446.39">Instead, your kids should be hearing the gospel regularly in your home.</span> <span class="tl-s" data-s="1446.39" data-e="1455.18">The primary responsibility for discipleship of our youth and children rests not with me.</span> <span class="tl-s" data-s="1455.25" data-e="1457.49">Not with any of the other pastors.</span> <span class="tl-s" data-s="1457.49" data-e="1459.76">Not with the culture.</span> <span class="tl-s" data-s="1459.76" data-e="1460.10">Not on TV.</span></p>
+        <p><span class="tl-s" data-s="1460.23" data-e="1463.04">Not at school.</span> <span class="tl-s" data-s="1463.04" data-e="1465.37">It rests with you.</span> <span class="tl-s" data-s="1465.69" data-e="1470.16">The parents of our youth and children.</span> <span class="tl-s" data-s="1470.39" data-e="1477.24">You see, youth and children&#x27;s ministry, they exist to serve as auxiliary ministries.</span> <span class="tl-s" data-s="1477.24" data-e="1483.08">They&#x27;re meant to support what you&#x27;re called to do as a parent.</span> <span class="tl-s" data-s="1483.42" data-e="1495.04">Biblically, we base this on Deuteronomy 6, which reads, Hear, O Israel, the Lord our God, the Lord is one.</span> <span class="tl-s" data-s="1495.28" data-e="1499.82">You shall love the Lord your God with all your heart and with all your soul and with all your might.</span> <span class="tl-s" data-s="1499.83" data-e="1502.92">And these words that I command you today shall be on your heart.</span> <span class="tl-s" data-s="1502.92" data-e="1516.91">You, parent of center church child or youth, shall teach them diligently to your children and shall talk of them when you sit in your house and when you walk by the way and when you lie down and when you rise.</span> <span class="tl-s" data-s="1517.05" data-e="1522.29">What is it that we&#x27;re supposed to teach our kids diligently?</span></p>
+        <p><span class="tl-s" data-s="1522.37" data-e="1523.80">That the Lord is our God.</span> <span class="tl-s" data-s="1523.80" data-e="1526.92">That he is one.</span> <span class="tl-s" data-s="1526.92" data-e="1532.08">That we should love him with our entire hearts and our minds and souls.</span> <span class="tl-s" data-s="1532.14" data-e="1536.82">And how often should we as parents be doing this?</span> <span class="tl-s" data-s="1537.29" data-e="1538.38">All the time.</span> <span class="tl-s" data-s="1538.38" data-e="1541.52">Quite literally, we&#x27;re told to always do this.</span></p>
+        <p><span class="tl-s" data-s="1543.14" data-e="1550.06">Notice, he says, we should be doing this diligently when we&#x27;re sitting around the house, when we&#x27;re on the way to the store.</span> <span class="tl-s" data-s="1550.22" data-e="1551.34">At bedtime, in the morning.</span> <span class="tl-s" data-s="1551.34" data-e="1561.66">If you have a child, the reason the Lord has blessed you with that little one is to disciple him or her.</span> <span class="tl-s" data-s="1561.66" data-e="1568.85">Our goal as parents is to train our children up in the way they should go.</span> <span class="tl-s" data-s="1568.87" data-e="1572.34">In the way that leads to life and not death.</span> <span class="tl-s" data-s="1572.34" data-e="1578.48">It&#x27;s not to live vicariously through them and be more interested in their academic achievements or their athletic prowess.</span> <span class="tl-s" data-s="1578.50" data-e="1584.88">It isn&#x27;t to train them to be a better person.</span> <span class="tl-s" data-s="1584.88" data-e="1586.67">A moral, outstanding, morally upright citizen.</span> <span class="tl-s" data-s="1586.77" data-e="1598.02">Yes, we should instill solid morals and values in our kids, but this is not the end goal of parenting.</span> <span class="tl-s" data-s="1598.25" data-e="1608.54">The end goal of our parenting is to see our children grasped what King David grasped and that is the greatness of God to savor the sweetness of the gospel.</span></p>
+        <p><span class="tl-s" data-s="1608.54" data-e="1614.96">There will be bumps along the way because this is not formulaic.</span> <span class="tl-s" data-s="1615.03" data-e="1621.82">It&#x27;s not promised that only if we do these things, the Lord will save our kids.</span> <span class="tl-s" data-s="1621.82" data-e="1630.20">I know this because some of you have taken this mandate from the Lord very seriously and you&#x27;ve had kids stray.</span> <span class="tl-s" data-s="1630.27" data-e="1639.08">Some of you have diligently taught your children who Jesus is.</span> <span class="tl-s" data-s="1639.08" data-e="1640.33">You&#x27;ve prayed with them.</span> <span class="tl-s" data-s="1640.33" data-e="1645.02">You&#x27;ve pleaded with them to serve the Lord.</span> <span class="tl-s" data-s="1645.10" data-e="1645.94">You&#x27;ve been faithful.</span> <span class="tl-s" data-s="1645.94" data-e="1653.66">The Lord has to be the one to save our children.</span> <span class="tl-s" data-s="1653.68" data-e="1659.36">The Spirit of God needs to be the one to give them new life.</span> <span class="tl-s" data-s="1659.36" data-e="1665.37">All we can do is our part, which is to train them up in the way they should go.</span></p>
+        <p><span class="tl-s" data-s="1665.37" data-e="1672.01">This past weekend, we were able to see our young people experience God&#x27;s greatness at youth camp.</span> <span class="tl-s" data-s="1672.27" data-e="1676.46">But that fruit wasn&#x27;t fruit that just sprouted overnight.</span> <span class="tl-s" data-s="1676.48" data-e="1685.61">Listen, this was the culmination of gospel labor that you as parents have been working diligently at for years.</span> <span class="tl-s" data-s="1685.61" data-e="1699.72">As you&#x27;ve sowed into your children at their bedside by praying with them, as you&#x27;ve sowed into them by sharing your testimony with them, as you&#x27;ve commended God&#x27;s mighty works to them, they&#x27;re starting to respond.</span> <span class="tl-s" data-s="1699.74" data-e="1703.14">As youth leaders, it&#x27;s a beautiful thing.</span> <span class="tl-s" data-s="1703.16" data-e="1714.90">And we want to partner with you in this mission of seeing our young people taste and see that the Lord is indeed good.</span> <span class="tl-s" data-s="1715.37" data-e="1721.96">We want to walk alongside you parents as you disciple your kids with the truth of the gospel.</span> <span class="tl-s" data-s="1721.96" data-e="1724.72">This is why we exist as a youth ministry.</span> <span class="tl-s" data-s="1725.50" data-e="1730.70">We&#x27;re not here to just have a good time and play games.</span></p>
+        <p><span class="tl-s" data-s="1730.72" data-e="1734.48">We&#x27;re committed to partnering with you in the discipleship of your children.</span> <span class="tl-s" data-s="1734.85" data-e="1741.18">Here&#x27;s the thing, church, we all play a role in this.</span> <span class="tl-s" data-s="1741.20" data-e="1744.08">Don&#x27;t think that you&#x27;ve already done your time.</span> <span class="tl-s" data-s="1744.10" data-e="1746.86">I&#x27;ve heard that one before.</span> <span class="tl-s" data-s="1746.99" data-e="1757.10">As the church gathers on Sunday mornings to sing and pray and sit under the preaching of God&#x27;s Word, we&#x27;re commending God&#x27;s works to one another.</span> <span class="tl-s" data-s="1757.12" data-e="1770.31">When we sing gospel-rich lyrics despite having a bad week, we&#x27;re commending the greatest work of the Lord to the next generation.</span> <span class="tl-s" data-s="1770.51" data-e="1772.88">And what is the greatest work of the Lord?</span> <span class="tl-s" data-s="1773.42" data-e="1777.06">What is the mightiest act of God in all of human history?</span> <span class="tl-s" data-s="1777.06" data-e="1777.58">Jesus.</span> <span class="tl-s" data-s="1777.60" data-e="1779.98">Jesus is the supreme, mighty act of God.</span></p>
+        <p><span class="tl-s" data-s="1781.52" data-e="1790.41">Through His incarnation, His cross, and His resurrection, those things are the center of redemptive history.</span> <span class="tl-s" data-s="1790.71" data-e="1795.54">They&#x27;re the most important things that we can point people to.</span> <span class="tl-s" data-s="1795.77" data-e="1805.64">What could be more wondrous or awesome than the eternal Son of God dying and rising again to save sinners like you and like me?</span> <span class="tl-s" data-s="1805.92" data-e="1806.04">Nothing.</span> <span class="tl-s" data-s="1806.11" data-e="1808.07">That&#x27;s the answer to that one.</span> <span class="tl-s" data-s="1808.08" data-e="1811.93">Nothing is more glorious than that truth.</span> <span class="tl-s" data-s="1811.93" data-e="1818.50">And so when we share the gospel, we&#x27;re participating and the proclamation that David envisions for us.</span> <span class="tl-s" data-s="1819.04" data-e="1825.87">We&#x27;re telling the next generation about God&#x27;s mighty acts in Christ.</span> <span class="tl-s" data-s="1826.19" data-e="1833.60">Discipleship, evangelism, parenting, all these things are all about declaring God&#x27;s greatness.</span> <span class="tl-s" data-s="1833.76" data-e="1841.54">So I want to ask, who are you telling about the greatness of our God?</span></p>
+        <p><span class="tl-s" data-s="1841.66" data-e="1846.78">Parents, are you passing this good news on to your kids?</span> <span class="tl-s" data-s="1846.90" data-e="1848.80">Singles, are you encouraging one another in Christ?</span> <span class="tl-s" data-s="1849.03" data-e="1864.22">Church members, are you helping to build a culture of proclaiming the greatness of God and praising Him together?</span> <span class="tl-s" data-s="1864.24" data-e="1866.08">Are you getting in the way?</span> <span class="tl-s" data-s="1866.10" data-e="1867.62">Are you getting in the way?</span> <span class="tl-s" data-s="1867.93" data-e="1868.46">One way we can do this is by serving.</span> <span class="tl-s" data-s="1868.46" data-e="1874.34">Serving in children&#x27;s ministry, serving in Awana.</span> <span class="tl-s" data-s="1874.36" data-e="1882.58">There&#x27;s all sorts of open spots for us to serve to help speak God&#x27;s mighty works to the next generation.</span> <span class="tl-s" data-s="1882.60" data-e="1894.08">Another way we can do this is by taking uninterrupted time after church, after the service, to talk about the Lord and what He&#x27;s doing in our lives.</span> <span class="tl-s" data-s="1894.08" data-e="1895.74">Ask yourself this question.</span></p>
+        <p><span class="tl-s" data-s="1895.91" data-e="1901.36">After a church service, how quickly does your mind run to the next thing?</span> <span class="tl-s" data-s="1901.48" data-e="1902.54">Pretty quickly, right?</span> <span class="tl-s" data-s="1902.65" data-e="1909.80">I mean, most of us jumps pretty quickly to thinking about what we&#x27;re going to eat next.</span> <span class="tl-s" data-s="1909.87" data-e="1911.88">Some of you are guilty of that right now.</span> <span class="tl-s" data-s="1912.05" data-e="1919.78">Or to put it another way, let&#x27;s put a positive spin on it.</span> <span class="tl-s" data-s="1920.25" data-e="1922.70">How impacted are you by the Word of God?</span> <span class="tl-s" data-s="1922.81" data-e="1939.96">Are you impacted enough by this pulpit ministry, be it Rich, myself, Zach, Steve, Jim, whoever&#x27;s preaching from up front, are you impacted enough to talk about what the Lord is doing in your heart right after the service?</span> <span class="tl-s" data-s="1939.96" data-e="1942.60">This is the sort of culture we want to build.</span></p>
+        <p><span class="tl-s" data-s="1944.48" data-e="1950.78">A culture where the Word of God so deeply impacts us, we want to share what God is doing in us.</span> <span class="tl-s" data-s="1950.84" data-e="1961.04">A culture where we pray for one another after the service instead of talking about all the other things we have planned for this upcoming week.</span> <span class="tl-s" data-s="1961.17" data-e="1966.44">Let&#x27;s be a church that speaks often to one another of the mighty acts of God.</span> <span class="tl-s" data-s="1966.44" data-e="1974.80">Let&#x27;s commit to building a culture of discipleship that&#x27;s committed to lingering on the effects that the Gospel has on our soul.</span> <span class="tl-s" data-s="1974.82" data-e="1984.48">Let&#x27;s be a people who are dedicated to talking about how God has been so good to us in Christ because He has.</span> <span class="tl-s" data-s="1984.48" data-e="1986.30">Which leads to our last point.</span> <span class="tl-s" data-s="1986.53" data-e="1990.82">Cherish the goodness of God in Christ.</span> <span class="tl-s" data-s="1990.84" data-e="1999.36">Verses 8 and 9 read, The Lord is gracious and merciful, slow to anger and abounding in steadfast love.</span> <span class="tl-s" data-s="1999.51" data-e="2006.02">The Lord is good to all and His mercy is over all that He has made.</span></p>
+        <p><span class="tl-s" data-s="2006.49" data-e="2008.88">These verses echo God&#x27;s self-revelation to Moses from Exodus 34-6.</span></p>
+        <p><span class="tl-s" data-s="2010.81" data-e="2014.46">That passage tells us who God is.</span> <span class="tl-s" data-s="2014.93" data-e="2015.56">He&#x27;s gracious.</span> <span class="tl-s" data-s="2015.90" data-e="2020.52">He&#x27;s merciful.</span> <span class="tl-s" data-s="2020.52" data-e="2021.54">He&#x27;s patient.</span> <span class="tl-s" data-s="2021.54" data-e="2022.50">He&#x27;s overflowing with love.</span> <span class="tl-s" data-s="2022.98" data-e="2027.68">But David, he doesn&#x27;t just list these truths.</span> <span class="tl-s" data-s="2027.70" data-e="2030.90">He&#x27;s rejoicing in them.</span> <span class="tl-s" data-s="2031.02" data-e="2032.66">He&#x27;s cherishing this truth about God.</span></p>
+        <p><span class="tl-s" data-s="2034.78" data-e="2037.56">This is not abstract theology.</span> <span class="tl-s" data-s="2037.69" data-e="2039.68">This is personal to him.</span> <span class="tl-s" data-s="2039.78" data-e="2041.88">It&#x27;s precious to his soul.</span> <span class="tl-s" data-s="2042.94" data-e="2043.28">It&#x27;s comforting.</span> <span class="tl-s" data-s="2043.28" data-e="2046.85">David cherishes the personhood and the character of God.</span> <span class="tl-s" data-s="2047.09" data-e="2050.96">And he cherishes God&#x27;s Word.</span> <span class="tl-s" data-s="2050.98" data-e="2057.44">Now how can I say that just by reading those two verses?</span> <span class="tl-s" data-s="2057.51" data-e="2061.06">Well, because he&#x27;s just reciting back to the Lord what&#x27;s already in his Word.</span> <span class="tl-s" data-s="2061.15" data-e="2064.84">He&#x27;s praising God with what God has already said about himself.</span> <span class="tl-s" data-s="2065.62" data-e="2067.66">He&#x27;s not making up new things.</span></p>
+        <p><span class="tl-s" data-s="2067.68" data-e="2075.10">We don&#x27;t need to get fancy with our praise and worship of the Lord.</span> <span class="tl-s" data-s="2075.12" data-e="2080.12">We can speak back to God what God has already revealed to us in the pages of Scripture.</span> <span class="tl-s" data-s="2080.21" data-e="2081.66">And that&#x27;s a freeing truth.</span> <span class="tl-s" data-s="2081.66" data-e="2083.70">You don&#x27;t need to get that creative.</span> <span class="tl-s" data-s="2083.72" data-e="2086.92">Just open up to the Psalms.</span> <span class="tl-s" data-s="2086.92" data-e="2090.01">Read a Psalm and pray it back to God.</span> <span class="tl-s" data-s="2090.01" data-e="2117.60">When you&#x27;re searching for words to pray you can actually go to this Psalm, Psalm 145 and you can read David&#x27;s words and pray God you&#x27;re gracious and you&#x27;re merciful even when I&#x27;m quick to get angry with my kids even when I get so angry with my wife Lord you are slow to anger with me and you abound in steadfast love.</span> <span class="tl-s" data-s="2118.07" data-e="2125.90">God I don&#x27;t love you nearly as much as I should but your love for me is steadfast.</span> <span class="tl-s" data-s="2125.92" data-e="2127.79">These are tailor made prayers for us.</span> <span class="tl-s" data-s="2127.95" data-e="2129.34">They&#x27;re made for us.</span></p>
+        <p><span class="tl-s" data-s="2131.88" data-e="2137.88">When we&#x27;re in the throes of temptation and sin we can pray these things back to the Lord.</span> <span class="tl-s" data-s="2137.90" data-e="2145.82">For those of you with young kids I just want to share what we do with Piper our oldest who&#x27;s three.</span> <span class="tl-s" data-s="2145.84" data-e="2653.84">What we&#x27;ve done is we&#x27;ve had her memorize one verse of every book of the Bible beginning with Genesis and I think we&#x27;re at Ruth now but before you go on thinking that oh that&#x27;s so great that&#x27;s wonderful let me tell you it&#x27;s hard work it&#x27;s like pulling teeth at time to get her to recite her verses it takes some prodding but selfishly we love it because it&#x27;s super cute to hear her recite some of these verses my favorite is in fact Exodus 34 6 the Lord the Lord a God merciful and gracious slow to anger and abounding in steadfast love and faithfulness it just melts my heart when I hear her say that verse it&#x27;s been a helpful exercise because when I&#x27;m tempted to get angry with disciplining my kids I just remember that verse the Lord the Lord a God merciful and gracious who&#x27;s slow to anger and boom conviction hits God is slow to anger God is slow to anger we&#x27;re quick to get angry but God is slow to anger praise God that he&#x27;s slow to anger praise God that he&#x27;s gracious with me when I lack grace and mercy toward my kids maybe you&#x27;ve been struggling with anger I challenge you to commit this verse to memory commit the words from Psalm 145 to your memory and see how it might change the way that you treat others like your spouse or your kids it might even change the way you approach God because some of you here might be reluctant to approach God because you feel like he might be displeased with you over some sort of sin struggle that you have you might think that your relationship with the Lord is dependent on not making him angry friends that&#x27;s a lie from the enemy this verse corrects that sort of thinking we can approach the Lord in every season of life no matter what we&#x27;re going through no matter the sins we&#x27;ve committed because the Lord is merciful and gracious he&#x27;s slow to anger and he abounds in steadfast love and he&#x27;s shown us this completely how because Jesus embodies these words in in Jesus we see the grace of God on full display in Jesus we see the mercy of God in him we see the forbearance and patience of God in Jesus we see the steadfast love of God towards sinners like you and me we know this because Jesus said come to me all who are weary and heavy laden and I will give you rest we know this because Jesus said father forgive them for they know not what they do which reveals his merciful heart for sinners like us we were the ones who put him on the cross with our sin and we know God is good because of Jesus words for God so loved the world that he gave his only son that whosoever believes in him should not perish but have eternal life he&#x27;s good to all of us because he invites us to come to him for those of us in Christ we know this goodness not just in a general sense but we&#x27;ve experienced it for ourselves we are those who&#x27;ve tasted and have seen that the Lord is good but some of us are not resting in the provision that our Lord has made for us are are you resting in God&#x27;s goodness are you resting in his goodness or do you feel weighed down by burdens that are not yours to carry what Jesus does is he bids us to come to him with those burdens and he wants to take those from us maybe it is the salvation of a child maybe it&#x27;s the salvation of a sibling who&#x27;s gone astray what our Lord says is take my yoke upon you and learn from me for I am gentle and lowly in heart and you will find rest for your souls for my yoke is easy and my burden is light this is how we rest in God&#x27;s goodness we remind ourselves that Jesus yoke is easy his burden is light and that frees us from feeling like we have to carry everything upon our own shoulders we remind ourselves who our Lord is he&#x27;s gentle he&#x27;s lowly in heart he is good and he loves us some of you here may have trouble approaching God and asking him for mercy do you trust in God&#x27;s mercy even when life is hard in Christ God&#x27;s heart is always turned toward you in compassion so it frees us to approach him and ask him for mercy psalm 145 it calls us to worship not as a temporary experience not at the mountaintop in Prescott but as a way of life praising God as a way of life do you praise God daily or is praise reserved for Sundays only David calls us and the Lord calls us to a lifestyle of praise not because life is easy but because God is always great and in Christ we always have a reason to praise three quick keys to this sort of daily praise is we praise God daily because Jesus reveals God&#x27;s greatness to us we can proclaim God in his works boldly because Jesus accomplished the works of God and we can cherish God deeply because Jesus embodies the steadfast love and goodness of God so friends we can cherish Jesus we can rest in his goodness not just today but from here on out you can do that every day you can rest in God&#x27;s goodness every day so let&#x27;s do that because God is great and he&#x27;s greatly to be praised let&#x27;s pray Lord we&#x27;re very grateful that you&#x27;ve chosen to reveal yourself to us in ways that astound us you&#x27;ve told us that you&#x27;re a God who&#x27;s merciful and gracious slow to anger and abounding in steadfast love and I pray my friends would remember that I pray that they would remember when life is hard that you&#x27;re abounding in steadfast love I pray when they&#x27;re tempted to despair or discouragement that they would remember that you&#x27;re merciful and gracious and that we can approach you for mercy I pray for those who are united to Christ by faith would you continue to increase faith faith to believe that God is good that he&#x27;s great and his ways are unsearchable I pray for those who aren&#x27;t in Christ to one day soon taste and see that the Lord is good Father</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Live sermon feed: spotlight from /api/sermons, browsable archive from
+  // /api/sermons/search. Static fallback list stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function row(it) {
+      var meta = [it.speaker, fmtDate(it.date)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      var titleHtml = esc(it.title);
+      var tUrl = it.guid && transcriptMap[it.guid];
+      if (tUrl) titleHtml = '<a href="' + esc(tUrl) + '">' + titleHtml + "</a>";
+      return '<div class="sermon"><div><h3>' + titleHtml + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    fetch("/api/sermons?v=3")
+      .then(function (res) { if (!res.ok) throw new Error("feed " + res.status); return res.json(); })
+      .then(function (data) {
+        var spot = document.querySelector("[data-series-spotlight]");
+        if (data && data.series && spot) {
+          var s = data.series;
+          var art = spot.querySelector("[data-series-art]");
+          if (art && s.artwork) { art.src = s.artwork; } else if (art) { art.style.display = "none"; }
+          var nm = spot.querySelector("[data-series-name]");
+          if (nm) nm.textContent = s.name;
+          var bl = spot.querySelector("[data-series-blurb]");
+          if (bl) bl.textContent = s.blurb;
+          spot.hidden = false;
+        }
+      })
+      .catch(function () { /* spotlight stays hidden */ });
+
+    var PER = 10;
+    var state = { q: "", speaker: "", series: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var speakerSel = document.querySelector("[data-sermons-speaker]");
+    var seriesSel = document.querySelector("[data-sermons-series]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No messages found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(speakerSel, data.facets.speakers || [], function (e) { return e.name; }, function (e) { return e.name + " (" + e.count + ")"; });
+        fill(seriesSel, data.facets.series || [], function (e) { return e.name; }, function (e) { return e.name + " (" + e.count + ")"; });
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.speaker || data.series || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.speaker) parts.push("by " + data.speaker);
+          if (data.series) parts.push("in " + data.series);
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " result" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " messages";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/sermons/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.speaker ? "&speaker=" + encodeURIComponent(state.speaker) : "") +
+        (state.series ? "&series=" + encodeURIComponent(state.series) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () { /* keep current list on error */ });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.speaker = ""; state.series = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (speakerSel) speakerSel.value = "";
+      if (seriesSel) seriesSel.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    function bindSelect(sel, key) {
+      if (!sel) return;
+      sel.addEventListener("change", function () {
+        state[key] = sel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    bindSelect(speakerSel, "speaker");
+    bindSelect(seriesSel, "series");
+    bindSelect(monthSel, "month");
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: https://hub.centergilbert.com/media/the-king-we-praise -->
+</body>
+</html>
