@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Only Dichotomy That Matters — Sermon Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Listen to the latest sermons from Center Church, or follow along on Apple Podcasts and Spotify." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=17" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a class="active" href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/sermons">&larr; All sermons</a>
+          <h1 class="display-lg">The Only Dichotomy That Matters</h1>
+          <p class="transcript-meta">Rich Richardson · 2025-06-08 · 00:47:50</p>
+          <p class="transcript-desc">Psalm 119:113-120</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/119cbef70/podcast/play/128973908/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-7%2F436123590-44100-2-e2d982d904789ba6.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><span class="tl-s" data-s="0.02" data-e="2.58">Aging with Him in His Word.</span> <span class="tl-s" data-s="3.46" data-e="8.04">Over the last couple of summers, we&#x27;ve been in a book of the Bible that&#x27;s written for that very purpose.</span> <span class="tl-s" data-s="8.68" data-e="16.34">It&#x27;s written to increase our love for God and to develop in us a deeper love for His Word.</span> <span class="tl-s" data-s="17.18" data-e="27.72">Now the great reformer Martin Luther once commented that Psalm 119 invites and exhorts us to hear and diligently treasure up the Word of God.</span> <span class="tl-s" data-s="28.74" data-e="40.28">Charles Bridges, an Anglican preacher and theologian who ministered in the 1800s, once said, Psalm 119 contains the anatomy of experimental religion.</span> <span class="tl-s" data-s="41.34" data-e="44.90">The distinguishing characteristic of the family of God.</span> <span class="tl-s" data-s="45.84" data-e="53.80">Now Bridges and others who use this term experimental religion, it&#x27;s used in reference to how we live out what we believe.</span> <span class="tl-s" data-s="54.68" data-e="56.76">That&#x27;s what he means by experimental religion.</span> <span class="tl-s" data-s="57.46" data-e="60.96">And so our task this morning, it&#x27;s really rather simple.</span> <span class="tl-s" data-s="61.54" data-e="71.74">I want us to see how this psalm, Psalm 119, verses 113 through 120, contain the anatomy of experimental religion.</span></p>
+        <p><span class="tl-s" data-s="72.74" data-e="78.88">Or in other words, I want us to see how Psalm 119 can show us how to live.</span></p>
+        <p><span class="tl-s" data-s="81.14" data-e="85.44">Now the reason we need help in this is because everywhere we go, choices abound.</span> <span class="tl-s" data-s="86.50" data-e="90.86">You go to the grocery store and you are faced with a plethora of choices.</span></p>
+        <p><span class="tl-s" data-s="92.30" data-e="94.06">Clothing stores are the same.</span> <span class="tl-s" data-s="94.34" data-e="102.90">Recently I was at a store trying to buy some pants and I was paralyzed with fear over making a decision because there are so many different options.</span> <span class="tl-s" data-s="104.26" data-e="113.78">You have boot cut, athletic taper, skinny, relaxed straight, relaxed taper, slim straight, slim tapered, wide leg, and I&#x27;m sure there are many, many more.</span> <span class="tl-s" data-s="114.92" data-e="117.02">Ladies, you probably feel that too.</span></p>
+        <p><span class="tl-s" data-s="118.64" data-e="125.10">Another thing is you can&#x27;t even talk on your phone or around your phone or else it&#x27;s going to hear you.</span> <span class="tl-s" data-s="125.62" data-e="132.32">And then it&#x27;s going to inundate you with marketing and ads for products you didn&#x27;t even know that you needed.</span></p>
+        <p><span class="tl-s" data-s="134.56" data-e="138.76">Have you thought about where you&#x27;re going to eat lunch after the service?</span> <span class="tl-s" data-s="139.22" data-e="142.82">There are many places to eat around this vicinity.</span> <span class="tl-s" data-s="143.98" data-e="145.56">So you better start thinking about it.</span> <span class="tl-s" data-s="145.68" data-e="146.54">Actually, don&#x27;t do that.</span> <span class="tl-s" data-s="146.80" data-e="149.46">Pay attention because we&#x27;re going somewhere.</span> <span class="tl-s" data-s="150.08" data-e="158.48">Look, my point is, as people who live in a world that is full of choices, we all need help with the most important choice.</span> <span class="tl-s" data-s="159.78" data-e="161.76">There&#x27;s only one choice that matters.</span> <span class="tl-s" data-s="162.94" data-e="167.06">It&#x27;s living for God or you can choose to live for yourself.</span> <span class="tl-s" data-s="168.26" data-e="171.38">Living for God or living for the world.</span></p>
+        <p><span class="tl-s" data-s="173.00" data-e="180.68">Now, what our passage does is it shows us that in God&#x27;s economy, there are only two choices for how one can live.</span> <span class="tl-s" data-s="181.76" data-e="188.20">You either take the path of the righteous or you&#x27;re on the path of the wicked.</span> <span class="tl-s" data-s="189.56" data-e="196.48">Now, for us to see this, we&#x27;re going to look at the text to answer three important questions for us.</span></p>
+        <p><span class="tl-s" data-s="198.78" data-e="201.48">First, who are the wicked?</span> <span class="tl-s" data-s="202.52" data-e="203.98">Second, who are the righteous?</span> <span class="tl-s" data-s="204.84" data-e="206.86">And third, who are we?</span> <span class="tl-s" data-s="207.68" data-e="209.64">It&#x27;s an existential question, isn&#x27;t it?</span> <span class="tl-s" data-s="210.66" data-e="216.42">So what we&#x27;re going to do now is we&#x27;re going to read Psalm 119 beginning in verse 113.</span> <span class="tl-s" data-s="217.62" data-e="226.64">And our goal together is to see how God is a refuge for the righteous and how he offers hope even to the wicked.</span></p>
+        <p><span class="tl-s" data-s="228.22" data-e="232.50">This is God&#x27;s word addressed to us from Psalm 119.</span></p>
+        <p><span class="tl-s" data-s="235.12" data-e="236.02">I hate the double-minded.</span> <span class="tl-s" data-s="236.04" data-e="239.92">I hate the double-minded, but I love your law.</span> <span class="tl-s" data-s="241.22" data-e="244.04">You are my hiding place and my shield.</span> <span class="tl-s" data-s="244.40" data-e="245.46">I hope in your word.</span></p>
+        <p><span class="tl-s" data-s="246.94" data-e="252.28">Depart from me, you evildoers, that I may keep the commandments of my God.</span> <span class="tl-s" data-s="253.58" data-e="256.48">Uphold me according to your promise that I may live.</span> <span class="tl-s" data-s="257.48" data-e="260.18">And let me not be put to shame in my hope.</span> <span class="tl-s" data-s="261.26" data-e="265.08">Hold me up that I may be safe and have regard for your statutes continually.</span></p>
+        <p><span class="tl-s" data-s="266.72" data-e="272.54">You spurn all who go astray from your statutes, for their cunning is in vain.</span> <span class="tl-s" data-s="273.88" data-e="276.46">All the wicked of the earth you discard like dross.</span> <span class="tl-s" data-s="277.36" data-e="280.20">Therefore, I love your testimonies.</span> <span class="tl-s" data-s="281.24" data-e="286.14">My flesh trembles for fear of you, and I am afraid of your judgments.</span></p>
+        <p><span class="tl-s" data-s="287.86" data-e="288.62">Let&#x27;s pray.</span></p>
+        <p><span class="tl-s" data-s="291.50" data-e="296.16">Father, these are heavy words, but they are your words.</span> <span class="tl-s" data-s="296.72" data-e="306.66">I pray this morning that they would be communicated clearly, and that your spirit would seal them in the hearts of those who know you.</span> <span class="tl-s" data-s="306.76" data-e="315.66">For those who don&#x27;t know you, Lord, I pray that your spirit would open hearts to receive the gospel of the good news of your Son.</span> <span class="tl-s" data-s="316.80" data-e="318.84">Lord, would you do that work this morning?</span> <span class="tl-s" data-s="318.94" data-e="320.02">In Jesus&#x27; name, amen.</span> <span class="tl-s" data-s="321.24" data-e="323.10">First point, who are the wicked?</span> <span class="tl-s" data-s="324.12" data-e="327.34">We live in a fascinating time in history.</span> <span class="tl-s" data-s="327.50" data-e="337.46">Just last week, Google released VO3, which allows users to create deepfake videos that are nearly indistinguishable from reality.</span> <span class="tl-s" data-s="337.56" data-e="341.58">I don&#x27;t know if you&#x27;ve watched one yet, but you probably didn&#x27;t know that you were.</span></p>
+        <p><span class="tl-s" data-s="343.34" data-e="347.14">At worst, what this technology can do is it can lead to civil unrest.</span> <span class="tl-s" data-s="347.86" data-e="349.56">It can lead to political chaos.</span> <span class="tl-s" data-s="350.56" data-e="356.92">At best, it&#x27;s just another form of entertainment added to the things that already distract us.</span> <span class="tl-s" data-s="357.98" data-e="361.62">It&#x27;s a fascinating time to be alive, and it&#x27;s pretty scary.</span> <span class="tl-s" data-s="362.90" data-e="370.08">Another fascinating phenomenon in our cultural moment has been the popularity of villain origin stories.</span></p>
+        <p><span class="tl-s" data-s="371.54" data-e="380.48">Now, these backstories of characters who were once considered bad guys have continued to captivate the hearts and minds of a generation.</span></p>
+        <p><span class="tl-s" data-s="382.14" data-e="384.86">One such movie is Maleficent.</span> <span class="tl-s" data-s="385.40" data-e="394.32">It&#x27;s a Disney movie that draws audiences in with a story of love, betrayal, and then she loses her fairy wings.</span> <span class="tl-s" data-s="395.62" data-e="404.94">What the movie does is it reveals that things are more nuanced than they seem, and that Maleficent wasn&#x27;t always, well, Maleficent.</span> <span class="tl-s" data-s="405.66" data-e="407.16">She wasn&#x27;t always evil.</span></p>
+        <p><span class="tl-s" data-s="409.38" data-e="414.00">And how could we miss the most recent iteration of a villain&#x27;s backstory?</span> <span class="tl-s" data-s="414.54" data-e="420.22">One that&#x27;s taken the world by storm, and one that will have a sequel coming out real soon, Wicked.</span> <span class="tl-s" data-s="421.48" data-e="430.84">A screen adaptation from the musical Wicked tells the story of Elphaba before she became the Wicked Witch of the West.</span> <span class="tl-s" data-s="431.86" data-e="438.98">Born to a broken home with different colored skin than others, she&#x27;s looked down upon and ostracized.</span> <span class="tl-s" data-s="440.32" data-e="446.78">Elphaba&#x27;s story is the story of the downtrodden, the marginalized, the unaccepted.</span></p>
+        <p><span class="tl-s" data-s="448.48" data-e="453.68">One forgets who she would become because we&#x27;re more enamored with who she once was.</span></p>
+        <p><span class="tl-s" data-s="456.14" data-e="461.92">What was once considered wicked and vile has been recast in new light.</span> <span class="tl-s" data-s="463.20" data-e="481.78">Moral norms that were once clearly delineated and even appropriated broadly by society, such as the identification of what is wicked, are now seen as obstacles to social progress and one&#x27;s own personal happiness.</span></p>
+        <p><span class="tl-s" data-s="483.52" data-e="488.96">What was once wicked and despised is now celebrated and revered?</span></p>
+        <p><span class="tl-s" data-s="491.68" data-e="504.00">We cannot look to culture or society for help to determine what is right and wrong because culture and society don&#x27;t even know the difference between what is right and what is wrong.</span></p>
+        <p><span class="tl-s" data-s="506.20" data-e="514.42">So what the psalmist does is he introduces to us a group of people that he calls double-minded in verse 113.</span> <span class="tl-s" data-s="515.42" data-e="517.00">What does it mean to be double-minded?</span> <span class="tl-s" data-s="518.14" data-e="522.42">It means someone who goes back and forth between two opinions.</span> <span class="tl-s" data-s="523.46" data-e="532.24">It refers to someone who claims loyalty to God yet who lives a life that is completely disloyal to God.</span></p>
+        <p><span class="tl-s" data-s="534.40" data-e="544.36">Matthew 6.24 helps us to tease out this idea of double-mindedness when Jesus says, No one can serve two masters.</span></p>
+        <p><span class="tl-s" data-s="546.02" data-e="554.08">For either he will hate the one and love the other or he will be devoted to the one and despise the other.</span> <span class="tl-s" data-s="554.74" data-e="556.64">You cannot serve God and money.</span> <span class="tl-s" data-s="557.20" data-e="562.40">You cannot claim to live for God when you don&#x27;t live for God.</span> <span class="tl-s" data-s="563.32" data-e="564.08">Seems simple.</span> <span class="tl-s" data-s="565.12" data-e="566.18">Really is.</span> <span class="tl-s" data-s="566.30" data-e="568.04">But that&#x27;s who the psalmist is calling out.</span> <span class="tl-s" data-s="568.40" data-e="571.92">He has an intense hatred for those who are double-minded.</span> <span class="tl-s" data-s="572.62" data-e="578.54">People who claim loyalty to God but deep down they know they aren&#x27;t.</span> <span class="tl-s" data-s="579.82" data-e="587.94">They disguise themselves as one of us looking the part to receive the benefits of being one of us.</span> <span class="tl-s" data-s="589.34" data-e="591.72">Kind of like a mimic octopus.</span></p>
+        <p><span class="tl-s" data-s="593.56" data-e="613.80">A mimic octopus can disguise itself as coral or as shrimp as a crab or even a sea snake and it does this to evade its predators. a mimic octopus uses its ability to disguise itself to its own advantage.</span></p>
+        <p><span class="tl-s" data-s="616.80" data-e="620.54">Then in verse 115 the psalmist refers to evildoers.</span> <span class="tl-s" data-s="621.54" data-e="625.94">These are people who deviously plan to tempt believers into sin.</span></p>
+        <p><span class="tl-s" data-s="628.18" data-e="631.78">That&#x27;s why the psalmist prays depart from me you evildoers.</span></p>
+        <p><span class="tl-s" data-s="633.30" data-e="639.96">A godly man or woman wants no part in the wickedness and evil that&#x27;s done by non-believers.</span> <span class="tl-s" data-s="640.18" data-e="641.06">That&#x27;s the point here.</span> <span class="tl-s" data-s="641.96" data-e="650.16">The wicked are characterized by a desire to see Christians caving into temptation and wandering away from the Lord.</span></p>
+        <p><span class="tl-s" data-s="652.56" data-e="656.42">Yes, we&#x27;re called to evangelize and pursue the lost.</span> <span class="tl-s" data-s="657.76" data-e="664.82">Yes, we are called to welcome people into our homes and live lives that are open and share the gospel with them.</span></p>
+        <p><span class="tl-s" data-s="668.02" data-e="675.22">But when this comes at the expense of our own holiness and pursuit of the Lord there&#x27;s a problem.</span></p>
+        <p><span class="tl-s" data-s="677.02" data-e="681.02">If you&#x27;re single there&#x27;s no such thing as flirt to convert.</span></p>
+        <p><span class="tl-s" data-s="682.56" data-e="686.16">The Bible says what fellowship does darkness have with the light?</span> <span class="tl-s" data-s="687.26" data-e="687.76">None.</span></p>
+        <p><span class="tl-s" data-s="689.64" data-e="695.88">So it&#x27;s a good idea if you&#x27;re a Christian to refrain from dating people who aren&#x27;t Christians.</span> <span class="tl-s" data-s="697.16" data-e="703.88">And if a Christian struggles with alcoholism it probably wouldn&#x27;t be wise to have a Bible study in a pub.</span></p>
+        <p><span class="tl-s" data-s="706.14" data-e="707.06">Seems fair.</span> <span class="tl-s" data-s="707.70" data-e="714.58">Likewise if a Christian used to smoke marijuana it&#x27;s probably not the best idea to evangelize at the weed store.</span></p>
+        <p><span class="tl-s" data-s="718.12" data-e="723.80">We should all be wise and walk circumspectly with the way that we approach non-believers.</span> <span class="tl-s" data-s="724.50" data-e="730.08">But the problem is is when non-believers begin to evangelize you.</span></p>
+        <p><span class="tl-s" data-s="731.84" data-e="736.68">They begin to tempt you by questioning your faith.</span> <span class="tl-s" data-s="737.86" data-e="745.56">They begin to tempt you by putting obstacles to your personal growth and holiness in your path.</span></p>
+        <p><span class="tl-s" data-s="748.00" data-e="753.84">That&#x27;s what&#x27;s inside the heart of those who the psalmist refers to as the evildoer.</span></p>
+        <p><span class="tl-s" data-s="755.30" data-e="761.22">Then in verse 118 the writer refers to how the Lord spurns those who go astray.</span> <span class="tl-s" data-s="762.46" data-e="768.08">He refers to their cunning nature. this verse could actually be rendered.</span> <span class="tl-s" data-s="768.28" data-e="778.46">You reject with no exceptions those who without repentance stray from your statutes and lie and deceive.</span></p>
+        <p><span class="tl-s" data-s="781.08" data-e="786.94">Then in verse 119 the psalmist prays that all the wicked of the earth will be discarded like dross.</span> <span class="tl-s" data-s="787.98" data-e="791.06">Notice how many times he&#x27;s addressing these groups of people.</span> <span class="tl-s" data-s="792.08" data-e="803.10">It seems like over and over again there&#x27;s a new way to describe those who are wicked double-minded evildoers those who stray those who are unrepentant the wicked.</span></p>
+        <p><span class="tl-s" data-s="805.42" data-e="815.24">The psalmist what he&#x27;s done is he&#x27;s categorized in these terms those who&#x27;ve rejected God and refused to walk in his ways.</span></p>
+        <p><span class="tl-s" data-s="816.80" data-e="822.06">Now it&#x27;s important for us to remember that Psalm 119 is a prayer.</span></p>
+        <p><span class="tl-s" data-s="824.28" data-e="825.24">It&#x27;s a prayer.</span> <span class="tl-s" data-s="826.30" data-e="2869.70">Whoever this psalmist is and there&#x27;s debate across the biblical commentators on who it is it could be King David it could be a king in the lineage of David it could have been a priest in post-exilic Babylon writing this lots of opinions there but what we do see is a sneak peek into the psalmist vibrant relationship with their God what this psalmist shows us in these verses is that he&#x27;s desperate for God to judge the wicked now I get it if you&#x27;re feeling tension here that&#x27;s okay we should feel tension because in Matthew&#x27;s gospel we find Jesus saying but I tell you love your enemies pray for those who persecute you and then in Luke 6 28 through 29 we read things like bless those who curse you pray for those who abuse you to one who strikes you on the cheek offer the other also and from one who takes away your cloak do not withhold your tunic either so what should we make of passages like Psalm 119 verses 113 through 120 when we come across them in our Bible reading do we take them seriously or did the moment get the best of the psalmist was he just a guy having a bad day journaling some of his darker thoughts was he emo can feel like that or was the psalmist recalling things he&#x27;s read about things he&#x27;s heard read aloud in the temple Deuteronomy 28 verse 20 says the Lord will send on you curses confusion and frustration and all that you undertake to do until you are destroyed and perish quickly on account of the evil of your deeds because you have forsaken me in his own way the psalmist was simply praying God&#x27;s words God had already pronounced these curses long ago and then the message of the New Testament is really no different Paul writes in 1 Corinthians 16 22 if anyone has no love for the Lord let him be anathema that&#x27;s just a strong word for cursed but this doesn&#x27;t resolve all the tension you should still feel a little bit of tension here you might be thinking well what are we supposed to do do we love our enemies and pray for them or do we hate our enemies and curse them I think it&#x27;s important for us to remember who our enemies really are remember the psalmist hates the double minded these are people who have heard the truth about who God is and they refuse to accept it and live for him these are people who have heard the promises of God yet reject all of them they have heard these things about God but they go in one ear and out the other it has no effect on their soul these people they know how to offer the right sacrifices they know the right prayers to pray they know how to look the part but they only appeared to live for God when it was convenient for them to these people are also evil doers they didn&#x27;t just do evil things but they wanted everyone to join them in their evil they were also wicked people people who were appointed a day of final judgment people who only know how to give in to their evil thoughts people who live in radical rebellion to their creator people who trust in themselves and not in God these are the enemies of God they violated his covenant and they deserve the full wrath of God so the psalmist enemies are God&#x27;s enemies but here&#x27;s the rub how do we determine who our enemies are how do we determine if our enemies are God&#x27;s enemies because it&#x27;s dangerous to assume that we can know people&#x27;s motives and the intentions of their heart this is not an exhaustive list but you may be tempted to make enemies out of all sorts of people maybe you&#x27;re tempted to make enemies out of people who disagree with you politically maybe you&#x27;re tempted to make enemies out of people who have a different take on matters of preference like whether to homeschool your kids or public school them maybe you&#x27;re tempted to make enemies out of those who have a different doctrinal stance than you maybe you&#x27;re tempted to make enemies out of people who listen to hip hop or rap or people who listen to death metal maybe you&#x27;re tempted to make enemies out of people who look different than you who speak a different language than you maybe you&#x27;re tempted to make enemies out of people who crossed the border or people who make a big deal out of people crossing the border but listen the enemies the psalmist was dealing with were those who rejected God as their covenant Lord none of those things I just mentioned qualify as rejecting God as covenant Lord we cannot vilify others on matters of preference we just celebrated communion we did it as one cannot look at others and decide in our heart of hearts whether they&#x27;re our enemy or not based on a list like that because there&#x27;s only one dichotomy that matters the wicked are those who think they know God but they really don&#x27;t the psalmist prays that God would pour out his judgment on the wicked but listen before we find ourselves praying prayers of judgment we need to ask ourselves a very important question have you shared the gospel the message of hope with that person who might be God&#x27;s enemy have you pleaded with them to accept it because God could radically change the heart of one of his enemies he&#x27;s done it in my life and he&#x27;s done it in some of yours rather than pray curses upon people we should pray for their conversion passages like this one the imprecatory prayers of the Bible they should move us to pray for God&#x27;s enemies because appointed for them is a day of judgment secondly who are the righteous while the writer of Psalm 119 doesn&#x27;t explicitly refer to himself as righteous here he does in other stanzas so we can infer here that&#x27;s what he means anytime he mentions the wicked let&#x27;s look at verse 113 again he writes I hate the double minded but I love your law clearly there&#x27;s a dichotomy between those who are double minded and those who aren&#x27;t the psalmist is not double minded precisely because he loves the law of God now the opposite of being double minded is someone who has one singular aim and focus one of whom it can be said lives completely for one purpose and that&#x27;s where verse 114 comes to play it&#x27;s made clear when the psalmist identifies what his purpose in life is it&#x27;s in making the Lord his hiding place and his shield and putting all of his hope in God&#x27;s word then a couple of times in the stanza we read of the author appealing to God to uphold him to hold him because he needs to be held so what characterizes the righteous is a singular purpose to make the Lord his or her everything and the righteous there&#x27;s a love for the word of God and there&#x27;s a desire to grow in his or her affections for the Lord verse 119 things get a little wonky because in response to the psalmist declaration that the wicked would be discarded like dross is his love for the testimonies of the Lord what is the Lord&#x27;s testimony of the wicked judgment is coming the righteousness of the psalmist is here seen and how he prays for that judgment to one day be poured out on those who oppose God and his purposes again tension it sounds almost anti-Christian but those who long for God to make all things new will also yearn for God to purify the earth of the wicked in Revelation 18 we get this picture of Babylon Babylon represents the entire anti-God system of the world and what happens is Babylon goes down in flames then the righteous break out in song Revelation 19 1 says after this I heard what seemed to be the loud voice of a great multitude in heaven crying out hallelujah salvation and glory and power belong to our God in response to a city being burnt up in flames now we shouldn&#x27;t break out in song when non-believers die we shouldn&#x27;t write the next CCM number one hit as a response to some natural disaster occurring in a nation that persecutes Christians but the righteous embrace every aspect of the gospel this is one of those aspects this is a facet of the gospel the judgment of the unrighteous on the last day we embrace this because without this judgment the new heavens and new earth will not be a glorious place of rest because there will still be enemies harassing us rather than joyfully anticipate that happening we should prayerfully consider it we should be moved to compassion to pray for the lost with expectancy that God might rescue the wicked before it&#x27;s too late for them what he&#x27;s done for you pray for him to do that for others in almost every verse where there&#x27;s mention of the wicked there&#x27;s this affirmation of the law or the commandments of God because those whom the Lord loves and accepts are those who demonstrate a love for the word before your theological alarm bells go sounding off I have to qualify that by saying something this doesn&#x27;t mean that loving God&#x27;s word makes you righteous it doesn&#x27;t bring you into a saving relationship with God but those who&#x27;ve been made right they will have a deep and abiding love for the word of God the righteous want to grow in knowledge of their savior the only way this happens is by engaging with God in his word so what we have in this psalm is a very clear depiction of the word of God linked to the person of God loving the word is like loving God himself because the word reveals to us who God is what he&#x27;s like the righteous man or woman is someone whose every desire is tethered to the Lord their existence is dependent on God being the center of everything every longing of their heart every desire is driven to know God they&#x27;re like the psalmist and they cry out you are my hiding place and my shield I hope in your word but friends I have to ask the question what is your hiding place what is it you shield yourself with are you hiding in God by desiring him and him alone or are you hiding from God by pursuing happiness here in this life what I mean by this is do you desire to know God more than what does what retirement might look like for you do you desire to experience God&#x27;s power more than to experience earthly pleasures do you spend more time studying the word of God than studying Airbnb and where your next great trip will be do you spend more time talking to God in prayer than you do scrolling through your Insta or your Facebook feed do you find your identity in work do you hide in your job do you hide in what you perceive are your ultimate responsibilities friends we can give ourselves to all sorts of things some of them good but are the things you&#x27;re giving yourself to getting in the way of you spending unhurried time with the Lord do the things you desire and crave help you to grow in your relationship with God or are they do they pose a conflict to your growth in God the righteous person finds all their delight in knowing God this leads to our last question who are we do you identify with the righteous or if you&#x27;re being completely honest with yourself do you identify with the wicked who are you for lack of a better phrase what team do you play for team righteous or team wicked are there times you find yourself being double minded do you pursue God for God himself or do you pretend to pursue him for the gifts that he gives like maybe a healthy marriage kids that behave money in the bank account security safety no conflict before you identify yourself too quickly and identify yourself with the righteous I want to revisit something about the wicked you can recall I commented that the wicked were God&#x27;s enemies if you&#x27;ve been serving the Lord for a day a week months a year decades you&#x27;re aware that at one time you were an enemy of God so when we ask the question who are we we are forced to reckon with the reality that all of us apart from Christ we&#x27;re on team wicked we&#x27;re not born righteous I know that&#x27;s not a popular truth but it&#x27;s a truth nonetheless Romans 3 10 through 12 remind us none is righteous no not one no one understands no one seeks for God all have turned aside together they have become worthless no one does good not even one my friends without Christ we are all double minded we&#x27;re divided in our loyalties but what our double mindedness does is it shows us that we should be in desperate need of a savior and thanks be to God that Jesus has made a way for us to be righteous even though none of us can achieve a righteous standing on our own through his death on the cross Jesus took the punishment for our sins freely offering us forgiveness and reconciliation with God his life his perfect obedience to God&#x27;s law is now credited to those who believe in him by faith we can be made righteous not because of things we do but what Christ but by what Christ has already done when we ask that question who are we we&#x27;re faced with a dual reality right apart from Christ we&#x27;re wicked deserving judgment in in Christ we&#x27;re made righteous this is a humbling truth should humble you this is a truth that prevents us from walking with our heads lifted too high and our chest puffed out we should be humble to know that God would make one righteous because we&#x27;re no better than the wicked except for the grace that we&#x27;ve received in Christ this is why the psalmist throughout psalm 119 speaks with such passion about God&#x27;s word because through Christ the law of God which was at one time a condemnation to us is now the means by which we can see our sin clearly the law is now our delight it&#x27;s not a burden because it points us to the person of Jesus we should also remember that Christ is not only the perfect embodiment of righteousness which he is but he&#x27;s our perfect example of obedience the righteous man or woman is someone whose every desire is tied to God Christ exemplified this for us perfectly he lived to do the will of his father even to the point of death so that in Christ we have the power to have that same sort of obedience so let me ask again who are you if you&#x27;re on team righteous you&#x27;ve been made righteous through Christ we&#x27;re no longer double minded because we&#x27;re united with Christ by faith but we will be tempted with distractions sometimes we&#x27;ll find ourselves going back and forth between being double minded and single minded but the good news of the gospel brings us back to that one singular aim to glorify God and to enjoy him to glorify God and to enjoy him our chief aim will be to enjoy him not the things God gives not children not vacations not spouses but God himself the chief aim of the righteous is to enjoy God forever we are those who&#x27;ve had hearts transformed and we can say with the psalmist I love your law because it points us to the heart of God and we&#x27;re empowered by his Holy Spirit to live by it here are just some final thoughts for us as we live out our new identity in Christ all of us should confidently be able to say you are my hiding place and my shield I hope in your word you can trust in the word why because Jesus is the word made flesh so when we think about a question like who are we the answer is clear if you&#x27;re one of the righteous you&#x27;re a beloved child of God you&#x27;re made righteous through Christ called to live out your identity in him yes there will be times when the enemy shoots fiery darts at you and you will be tempted to despair but the Lord is our hiding place he&#x27;s a shield yes there will be times where we find ourselves struggling to get out of bed because we want to please this person or this person and this person but it&#x27;s impossible Christ is our hiding place and our shield you may feel like you failed your children miserably Christ is your hiding place and your shield you may have children who are wanderously aimlessly Christ is your shield and your hiding place Christ is our shield and our hiding place as the righteous we&#x27;re called to live godly lives in a very ungodly world I just want to propose three ways that we can do this practically first we can do it by reading the word you can take some time out of your busy schedule to read one psalm a day yes psalm 119 might take you a little bit longer so when you get there maybe build some more time into your schedule but each psalm helps us to know God in more intimate ways because every psalmist experienced life the same way we do in a fallen world tempted to despair we can grow even by reading one psalm a day secondly we can live out our calling through prayer we can take tiny moments in our days to just ask God for help to know him better to grow in our relationship with God we have prayer groups at the church that can help you that can help teach you how to pray and depend on God and lastly we live out this calling and fellowship with other righteous men and women so join a small group tether yourself to other people who are trying to pursue God and his purposes come to church regularly doesn&#x27;t have to be this church just a church that opens up the Bible and preaches from it become a member of a local church where you can be known as we get to know the people of God we can grow and it causes us to grow in our relationship with God why because he&#x27;s created us for community this one&#x27;s extra parents you can help your kids to know God better by spending intentional time in the word with them by sharing the message of hope that&#x27;s in the gospel by bringing them to things like vacation Bible school which starts tomorrow shameless plug starts at 9am so be here bring your kids preschool age through sixth grade and God will do some incredible things in their hearts church let&#x27;s make it a goal this summer to know God in deeper ways and it all starts with how we engage with God&#x27;s word I think it&#x27;s safe to say that there are probably some of you who don&#x27;t believe in any of what I&#x27;m saying I want to address you for a moment those of you who may not know Jesus you&#x27;re here for a reason I believe that you might not but I want to thank you for coming here whoever that is maybe this whole God thing is new to you or maybe you&#x27;re still wrestling with doubts that are keeping you from taking that next step that&#x27;s okay it&#x27;s okay we all started somewhere but here&#x27;s the truth the Bible teaches us that apart from Christ we are all lost we are enemies of God not because God wants it that way but because we&#x27;ve rejected his love and we&#x27;ve lived in rebellion to his ways Psalm 119 shows us two paths there are only two there&#x27;s the one that leads to life and the one that leads to destruction there&#x27;s no middle ground and while the reality of sin and judgment can be hard to hear I want to leave you with this word there&#x27;s hope there is hope there&#x27;s great hope to be found for you the same God who will one day judge the wicked judged his son on a cross and he offers reconciling hope for you he promises to be a refuge and a shield from the coming judgment if only you believe in him Jesus the perfect son of God took the punishment upon himself that we deserved maybe you&#x27;re still on the fence about this whole thing it&#x27;s fine but hear me Jesus isn&#x27;t a historical figure some distant deity he&#x27;s a living savior who calls you to relationship with him so believe him trust in him place your faith in him he offers forgiveness not because of anything you can do to deserve it but because of what he has done to secure it on your behalf you don&#x27;t have to clean up your life you don&#x27;t have to power wash yourself just come as you are with your doubts with your brokenness with your questions and Jesus will receive you with open arms if today in this very moment you feel God&#x27;s love being poured out on your heart don&#x27;t reject it turn from a life of double mindedness stop running from God place your faith in Jesus God will always be a refuge for those who place their faith and hope in him for those who reject him friend there&#x27;s still a way out there&#x27;s hope for you the world is filled with all sorts of choices but the choice of being on team righteous versus team wicked is the only one that matters let&#x27;s pray father i thank you for your word that&#x27;s truth it&#x27;s truth that we stand upon it&#x27;s truth it&#x27;s been revealed to us and it&#x27;s most clearly revealed to us in the person of your son we thank you that he&#x27;s gentle and lowly of heart we thank you for the price that he&#x27;s paid for us sinners we thank you for those you&#x27;ve made righteous here today for those who&#x27;ve yet to experience nearness with you for those who continually reject the gospel call i pray for them we pray that you would pierce through by the power of your spirit and you would claim a son or daughter as your own this morning lord for those of us we&#x27;re connected to in our lives who reject the free author of the gospel i pray that you would reinvigorate us to pray unceasingly for their souls i pray a passage like psalm 119 verses 113 through 120 would help us to do that it would show us that there are wicked people who reject you that we need to pray for that we need to share the gospel with so I pray for members here of center church who are connected to neighbors co-workers loved ones who don&#x27;t know Jesus I pray that we take one step toward them with the gospel I pray that our big prayer would be to see lives transformed renewed I pray that enemies would be turned into your friends Lord I pray that your people would experience the sweetness of assurance and knowing that you have made us righteous and that he who has begun a good work in us is faithful to complete it to the day of Jesus Christ remind your people of that truth this morning in Jesus name Amen</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Live sermon feed: spotlight from /api/sermons, browsable archive from
+  // /api/sermons/search. Static fallback list stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function row(it) {
+      var meta = [it.speaker, fmtDate(it.date)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      var titleHtml = esc(it.title);
+      var tUrl = it.guid && transcriptMap[it.guid];
+      if (tUrl) titleHtml = '<a href="' + esc(tUrl) + '">' + titleHtml + "</a>";
+      return '<div class="sermon"><div><h3>' + titleHtml + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    fetch("/api/sermons?v=3")
+      .then(function (res) { if (!res.ok) throw new Error("feed " + res.status); return res.json(); })
+      .then(function (data) {
+        var spot = document.querySelector("[data-series-spotlight]");
+        if (data && data.series && spot) {
+          var s = data.series;
+          var art = spot.querySelector("[data-series-art]");
+          if (art && s.artwork) { art.src = s.artwork; } else if (art) { art.style.display = "none"; }
+          var nm = spot.querySelector("[data-series-name]");
+          if (nm) nm.textContent = s.name;
+          var bl = spot.querySelector("[data-series-blurb]");
+          if (bl) bl.textContent = s.blurb;
+          spot.hidden = false;
+        }
+      })
+      .catch(function () { /* spotlight stays hidden */ });
+
+    var PER = 10;
+    var state = { q: "", speaker: "", series: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var speakerSel = document.querySelector("[data-sermons-speaker]");
+    var seriesSel = document.querySelector("[data-sermons-series]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No messages found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(speakerSel, data.facets.speakers || [], function (e) { return e.name; }, function (e) { return e.name + " (" + e.count + ")"; });
+        fill(seriesSel, data.facets.series || [], function (e) { return e.name; }, function (e) { return e.name + " (" + e.count + ")"; });
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.speaker || data.series || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.speaker) parts.push("by " + data.speaker);
+          if (data.series) parts.push("in " + data.series);
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " result" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " messages";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/sermons/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.speaker ? "&speaker=" + encodeURIComponent(state.speaker) : "") +
+        (state.series ? "&series=" + encodeURIComponent(state.series) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () { /* keep current list on error */ });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.speaker = ""; state.series = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (speakerSel) speakerSel.value = "";
+      if (seriesSel) seriesSel.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    function bindSelect(sel, key) {
+      if (!sel) return;
+      sel.addEventListener("change", function () {
+        state[key] = sel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    bindSelect(speakerSel, "speaker");
+    bindSelect(seriesSel, "series");
+    bindSelect(monthSel, "month");
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: https://hub.centergilbert.com/media/the-only-dichotomy-that-matters -->
+</body>
+</html>
