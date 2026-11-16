@@ -567,64 +567,18 @@ elif "<title>Fixed on Jesus Podcast — Center Church Gilbert</title>" in new:
     new = new.replace("<title>Fixed on Jesus Podcast — Center Church Gilbert</title>", title_tag)
 else:
     new = re.sub(r"<title>.*?</title>", lambda _: title_tag, new, count=1)
-# Transcript dark mode: device preference only, no toggle. Inline in <head>
-# so only transcript pages are affected — the rest of the site keeps its
-# light theme and styles.css stays untouched.
-dark_style = """  <style>
-    /* Sermon transcript dark mode: follows the device preference only.
-       Inline here so only transcript pages are affected; the rest of the
-       site keeps its light theme. No toggle, no JS. */
-    /* Transcript header: calm type-led top (no photo hero). Single
-       title (page h1, read by the read-along mini-bar) and meta
-       line, then the description and the audio player grouped as the
-       .sermon unit below. */
-    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
-    .transcript-head h1 { margin-bottom: 0.6rem; }
-    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
-    .transcript-back:hover { text-decoration: underline; }
-    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
-    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
-    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
-    .transcript-head .sermon audio { margin-top: 0; }
-    @media (prefers-color-scheme: dark) {
-      .transcript-back { color: #e8a76f; }
-      .transcript-meta { color: var(--muted-dark); }
-      .transcript-desc { color: var(--muted-dark); }
-      body { background: var(--ink); color: var(--cream); }
-      /* Header stays light in dark mode: pin to the light-theme values
-         from styles.css so the bar, nav, dropdowns, and mobile menu
-         never go dark. */
-      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
-      .brand-logo-dark { filter: invert(1); }
-      .nav-links a { color: var(--ink); }
-      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
-      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
-      .dropdown a { color: var(--ink); }
-      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
-      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
-      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
-      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
-      .mobile-menu details { border-color: var(--line); }
-      .mobile-menu summary { color: var(--ink); }
-      .mobile-menu summary::after { color: var(--clay-dark); }
-      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
-      .sermon { background: var(--ink-2); border-color: var(--line-light); }
-      .sermon .meta { color: var(--muted-dark); }
-      .sermon audio { border-radius: 12px; background: #100d0a; }
-      .transcript p { color: #ece1d1; }
-      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
-      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
-    }
-  </style>"""
-new = new.replace("</head>", dark_style + "\n</head>", 1)
+# Transcript styles + read-along behavior live in shared public/transcript.css
+# (header + dark mode: device preference only, no toggle; sentence
+# highlight + sticky mini player) so all transcript pages stay in sync —
+# styles.css stays untouched and the rest of the site keeps its light theme.
+new = new.replace("</head>", '  <link rel="stylesheet" href="/transcript.css?v=2" />\n</head>', 1)
 
 # Read-along audio (sticky mini player, sentence highlight, auto-follow).
-# Shared files — bump ?v= in public/readalong.css, public/readalong.js,
-# here, AND every generated transcript page together so browsers pick up
-# changes. Page-specific copy (transcript-acts-20-13-38) links the same
+# Shared CSS above + public/readalong.js — bump ?v= in public/transcript.css,
+# public/readalong.js, here, AND every generated transcript page together
+# so browsers pick up changes. Page-specific copy (transcript-acts-20-13-38) links the same
 # files. Without word timings the JS finds no .tl-s nodes and stays idle
 # (the sticky player bar still works).
-new = new.replace("</head>", '  <link rel="stylesheet" href="/readalong.css?v=2" />\n</head>', 1)
 new = new.replace("</body>", '  <script src="/readalong.js?v=2"></script>\n</body>', 1)
 if "<!-- guid: " not in new:
     new = new.replace("</body>", "<!-- guid: %s -->\n</body>" % html.escape(guid))

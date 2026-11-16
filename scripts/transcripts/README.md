@@ -68,10 +68,11 @@ useful flags: `--transcript-id` (reuse a completed transcript),
 - `public/transcripts.json` — episode-guid → transcript-path manifest;
   `/sermons` and `/podcast` both link titles from this same manifest. Updated automatically by
   `add-transcript.sh`.
-- `public/readalong.{css,js}` — shared read-along layer (sticky
-  mini-player, sentence highlight, auto-follow). Bump `?v=` in these
-  files, the transcript pages, and the `add-transcript.sh` template
-  together when changing them.
+- `public/transcript.css` + `public/readalong.js` — shared
+  transcript layer (header + dark mode; sticky mini-player, sentence
+  highlight, auto-follow). Bump `?v=` in these files, the transcript
+  pages, and the `add-transcript.sh` template together when changing
+  them.
 
 ## What differs per kind (`--kind podcast`)
 
