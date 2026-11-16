@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Good Friday — Sermon Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Listen to the latest sermons from Center Church, or follow along on Apple Podcasts and Spotify." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=17" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a class="active" href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/sermons">&larr; All sermons</a>
+          <h1 class="display-lg">Good Friday</h1>
+          <p class="transcript-meta">Rich Richardson · Mar 30, 2024 · 00:29:46</p>
+          <p class="transcript-desc">The good King is there for his people.</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/119cbef70/podcast/play/128974099/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-7%2F436123797-44100-2-438be67db258006f.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><span class="tl-s" data-s="0.00" data-e="29.98">Let&#x27;s pray.</span> <span class="tl-s" data-s="29.98" data-e="36.58">Good Friday, our hearts are drawn to a pivotal moment in history.</span></p>
+        <p><span class="tl-s" data-s="38.08" data-e="42.58">A moment of profound sacrifice and ultimate love.</span></p>
+        <p><span class="tl-s" data-s="44.20" data-e="52.62">But nearly 600 years before the events chronicled in John 19, another scene unfolded.</span> <span class="tl-s" data-s="53.90" data-e="60.72">A scene that echoes with the weight of decision and the depths of human brokenness.</span></p>
+        <p><span class="tl-s" data-s="62.30" data-e="65.88">Imagine with me, if you will, a king.</span> <span class="tl-s" data-s="66.26" data-e="75.20">A king faced with an agonizing choice between his own safety and the welfare of his people.</span></p>
+        <p><span class="tl-s" data-s="77.10" data-e="87.00">This king, King Zedekiah, stood at the precipice of destruction as the Babylonian forces relentlessly besieged the city of Jerusalem.</span> <span class="tl-s" data-s="88.32" data-e="96.12">And the prophet Jeremiah, a voice of divine guidance in tumultuous times, presented a stark option.</span></p>
+        <p><span class="tl-s" data-s="97.78" data-e="104.62">Surrender yourself to the Babylonians and spare your people from their suffering.</span></p>
+        <p><span class="tl-s" data-s="106.16" data-e="107.38">What would he do?</span></p>
+        <p><span class="tl-s" data-s="108.98" data-e="114.30">Would he selflessly march out the gates, not knowing what would come?</span> <span class="tl-s" data-s="115.38" data-e="123.96">Would he hand himself over to be humiliated and made a mockery of while his foes and his countrymen stood by watching him?</span> <span class="tl-s" data-s="125.06" data-e="127.24">The thought of this is hard to imagine.</span></p>
+        <p><span class="tl-s" data-s="128.98" data-e="142.10">But when the alternative is certain destruction for the many, how could a great man resist the opportunity to save his people?</span> <span class="tl-s" data-s="143.44" data-e="154.56">Yet, when the shadows of doom loomed large and the breath of destruction grew even closer, Zedekiah made his choice.</span> <span class="tl-s" data-s="155.22" data-e="158.80">A choice that would forever define his legacy.</span> <span class="tl-s" data-s="160.00" data-e="166.46">In a moment of staggering consequence, he chose self-preservation.</span> <span class="tl-s" data-s="167.52" data-e="170.60">He chose it over sacrificial love.</span> <span class="tl-s" data-s="171.48" data-e="175.62">He chose a few more breaths over the many lives in the walls.</span> <span class="tl-s" data-s="176.84" data-e="181.74">He chose to abandon his people and give them into the hands of destruction.</span> <span class="tl-s" data-s="183.04" data-e="186.48">He chose himself over his people.</span> <span class="tl-s" data-s="187.70" data-e="195.64">And honestly, let&#x27;s be honest with ourselves now, that&#x27;s exactly what most, if not all kings, would always choose.</span> <span class="tl-s" data-s="197.00" data-e="208.46">But tonight, tonight we remember a king, the good king, the best king, that made another choice.</span></p>
+        <p><span class="tl-s" data-s="209.74" data-e="215.48">Jesus is the king who gives himself for his people.</span> <span class="tl-s" data-s="216.44" data-e="218.82">Let&#x27;s turn to the gospel.</span></p>
+        <p><span class="tl-s" data-s="220.88" data-e="225.40">John 19, starting at the end of verse 16.</span></p>
+        <p><span class="tl-s" data-s="228.02" data-e="242.24">So they took Jesus and he went out bearing his own cross to the place called the place of a skull, which in Aramaic is called Golgotha.</span></p>
+        <p><span class="tl-s" data-s="243.68" data-e="246.60">And there they crucified him.</span></p>
+        <p><span class="tl-s" data-s="248.14" data-e="253.58">And with him two others, one on either side and Jesus between them.</span> <span class="tl-s" data-s="254.52" data-e="260.86">Pilate also wrote an inscription and put it on the cross.</span> <span class="tl-s" data-s="261.30" data-e="265.66">It read Jesus of Nazareth, king of the Jews.</span> <span class="tl-s" data-s="266.94" data-e="280.14">Many of the Jews read this inscription for the place where Jesus was crucified was near the city and it was written in Aramaic, in Latin, and in Greek.</span></p>
+        <p><span class="tl-s" data-s="281.72" data-e="291.24">So the chief priest of the Jews said to Pilate, do not write to the king of the Jews, but rather this man said, I am king of the Jews.</span> <span class="tl-s" data-s="292.14" data-e="295.66">Pilate answered, what I have written, I have written.</span> <span class="tl-s" data-s="296.76" data-e="303.66">And when the soldiers had crucified Jesus, they took his garments and divided them into four parts.</span> <span class="tl-s" data-s="303.94" data-e="307.92">One part for each soldier, also his tunic.</span> <span class="tl-s" data-s="308.90" data-e="314.60">But the tunic was seamless, woven in one piece from top to bottom.</span> <span class="tl-s" data-s="315.90" data-e="322.90">So they said to one another, let us not tear it, but cast lots for it to see whose it shall be.</span> <span class="tl-s" data-s="323.80" data-e="331.20">This was to fulfill the scripture which says, they divided my garments among them and for my clothing they cast lots.</span></p>
+        <p><span class="tl-s" data-s="332.90" data-e="334.66">And so the soldiers did these things.</span> <span class="tl-s" data-s="335.08" data-e="343.36">But standing by the cross of Jesus were his mother and his mother&#x27;s sister, Mary, the wife of Clopas, and Mary Magdalene.</span></p>
+        <p><span class="tl-s" data-s="344.90" data-e="354.54">And when Jesus saw his mother and the disciple whom he loved standing nearby, he said to his mother, woman, behold, your son.</span></p>
+        <p><span class="tl-s" data-s="356.60" data-e="359.28">Then he said to his disciple, behold, your mother.</span></p>
+        <p><span class="tl-s" data-s="360.72" data-e="364.60">And from that hour the disciple took her to his own home.</span></p>
+        <p><span class="tl-s" data-s="366.68" data-e="383.04">There is no question that these short ten verses give us very little explanation of what happened that somber day. to give you an idea of this, I want to point us to the simplicity of what&#x27;s said in verse 18.</span> <span class="tl-s" data-s="384.18" data-e="386.64">He was crucified there.</span> <span class="tl-s" data-s="387.84" data-e="388.56">That&#x27;s it.</span></p>
+        <p><span class="tl-s" data-s="390.06" data-e="393.54">That&#x27;s the crucifixion according to John.</span></p>
+        <p><span class="tl-s" data-s="395.44" data-e="398.64">That&#x27;s all that&#x27;s given for us to consider by the author.</span> <span class="tl-s" data-s="399.20" data-e="405.42">And he spends, if you look, he actually spends more time talking about the place where it happened than the act itself.</span> <span class="tl-s" data-s="406.30" data-e="407.86">It&#x27;s strikingly simple.</span></p>
+        <p><span class="tl-s" data-s="409.46" data-e="417.82">Yet, if you are in the company of those who heard these words for the first time, it would absolutely paralyze you with horror.</span></p>
+        <p><span class="tl-s" data-s="419.30" data-e="425.78">That is, the crucifixion was so terrible that merely speaking of it ushered the presence of fear.</span> <span class="tl-s" data-s="426.42" data-e="429.66">The mention of it was designed to bring paralysis.</span> <span class="tl-s" data-s="430.56" data-e="434.26">This is the idea behind something like crucifixion after all.</span> <span class="tl-s" data-s="434.60" data-e="439.08">Its greatest effect is not actually carrying it out.</span> <span class="tl-s" data-s="439.30" data-e="443.04">It is the fear of it that sits in the minds of those who know it.</span> <span class="tl-s" data-s="444.10" data-e="459.94">It&#x27;s the shame that people want to avoid. the consideration of agony was mechanized to suppress any thought or consideration of rebellion and stomp out all seeds of disloyalty.</span> <span class="tl-s" data-s="460.74" data-e="470.98">Pound for pound, these words would knock out the most vicious opposition and usher terror into the minds of anyone in the first century.</span></p>
+        <p><span class="tl-s" data-s="472.48" data-e="485.76">So how do we tonight come to a passage like this with something so horrific and leave strengthened and reminded that today is truly good?</span> <span class="tl-s" data-s="486.48" data-e="488.36">I believe there is a way.</span></p>
+        <p><span class="tl-s" data-s="489.96" data-e="503.90">It is for us to simply look at the good king and see how Jesus does not run from danger, but instead he gives himself for his people.</span> <span class="tl-s" data-s="504.92" data-e="514.98">He embodies total sacrifice by owning his duty, caring for the most vulnerable, and securing ultimate victory.</span></p>
+        <p><span class="tl-s" data-s="516.58" data-e="523.70">The good king gives himself for his people and he does so like I said by owning his duty.</span> <span class="tl-s" data-s="523.82" data-e="529.80">By the time we enter the scene of this passage, Jesus has been through it.</span> <span class="tl-s" data-s="530.62" data-e="541.48">From everything I could tell in studying and looking at this in these accounts, Jesus has estimated to have been without sleep for nearly two days.</span> <span class="tl-s" data-s="542.70" data-e="544.36">Two days and no rest.</span></p>
+        <p><span class="tl-s" data-s="546.38" data-e="555.78">The events of his passion start in the late evening and we know it was late at the time if you recall, Jesus is telling his disciples to do what?</span> <span class="tl-s" data-s="556.42" data-e="557.26">Stay awake.</span> <span class="tl-s" data-s="558.04" data-e="558.76">And they struggle.</span> <span class="tl-s" data-s="559.96" data-e="571.20">So by the time the interrogations come and the beatings start flying and the whips are cracking, Jesus is toast.</span> <span class="tl-s" data-s="572.16" data-e="573.40">He is beaten up.</span></p>
+        <p><span class="tl-s" data-s="575.16" data-e="583.18">His treatment was unjust and the violence he suffered was absolutely gruesome, but he was exhausted.</span> <span class="tl-s" data-s="584.48" data-e="594.58">And after all the beatings, all the scourging, Jesus then is lined up and paraded before the crowds and mocked.</span> <span class="tl-s" data-s="594.96" data-e="595.76">Think about this.</span> <span class="tl-s" data-s="596.00" data-e="601.22">He is mocked by the very people he spent his life trying to serve.</span></p>
+        <p><span class="tl-s" data-s="604.64" data-e="605.66">Imagine that.</span></p>
+        <p><span class="tl-s" data-s="607.58" data-e="608.86">Just think about that.</span> <span class="tl-s" data-s="610.26" data-e="644.78">Giving yourself to people day in and day out doing everything you know how to help them, teaching them, encouraging them when the world would just cheat them, feeding them when many would send them on their way hungry, walking miles and miles to tend to their dying children, giving patience in exchange for ignorance, returning kindness for those who have no honor, attentively fielding questions at every turn, knowing they are often set as traps.</span></p>
+        <p><span class="tl-s" data-s="646.34" data-e="659.40">Imagine all of this being done day after day after day for years just to find that the very crowds that once would pack in to hear him teach were now chanting for his death.</span></p>
+        <p><span class="tl-s" data-s="661.42" data-e="662.44">What would you do?</span> <span class="tl-s" data-s="662.62" data-e="665.94">What would you do?</span></p>
+        <p><span class="tl-s" data-s="667.46" data-e="668.64">I know what I would do.</span></p>
+        <p><span class="tl-s" data-s="671.58" data-e="672.72">It wouldn&#x27;t take much.</span> <span class="tl-s" data-s="672.80" data-e="673.56">I know what I would do.</span> <span class="tl-s" data-s="674.24" data-e="677.82">I would do anything I could think of to get out of it.</span> <span class="tl-s" data-s="679.04" data-e="679.78">I would.</span> <span class="tl-s" data-s="680.08" data-e="684.02">And like Zedekiah, I would be thinking about one thing and one thing only.</span> <span class="tl-s" data-s="684.30" data-e="686.22">How to make it stop.</span> <span class="tl-s" data-s="686.58" data-e="687.98">Make no mistake, friends.</span> <span class="tl-s" data-s="688.78" data-e="695.50">If we&#x27;re faced with this, there would not be this like little somber moment of hesitation.</span> <span class="tl-s" data-s="695.88" data-e="697.34">No moment of pause.</span> <span class="tl-s" data-s="697.56" data-e="704.96">When we get to that crossroads, we take the quickest line to safety and we do it over and over again.</span></p>
+        <p><span class="tl-s" data-s="705.32" data-e="708.40">We would lie, we would argue, we would beg, and we would plead.</span> <span class="tl-s" data-s="708.66" data-e="714.32">We would sell each other out and we would look for any ray of hope to escape what we knew was coming.</span> <span class="tl-s" data-s="715.24" data-e="719.70">That&#x27;s because I would not be a good king and neither would you.</span></p>
+        <p><span class="tl-s" data-s="722.22" data-e="724.84">But we are not talking about us.</span> <span class="tl-s" data-s="725.14" data-e="726.40">We&#x27;re talking about Jesus.</span> <span class="tl-s" data-s="726.96" data-e="731.14">He is a good king and the good king owns his duty.</span></p>
+        <p><span class="tl-s" data-s="732.58" data-e="736.28">We find this king who does not turn from his mission.</span> <span class="tl-s" data-s="736.88" data-e="739.50">Who does not flinch at every strike.</span> <span class="tl-s" data-s="739.60" data-e="742.24">He does not sell out his people when they mock him.</span> <span class="tl-s" data-s="742.52" data-e="748.22">He picks up his cross and as the text says, he picks up his own cross and he carries it.</span> <span class="tl-s" data-s="748.78" data-e="752.42">He calls it his own and he marches towards destruction.</span> <span class="tl-s" data-s="753.06" data-e="756.86">In the face of terror, he refuses to forsake his duty.</span></p>
+        <p><span class="tl-s" data-s="758.48" data-e="760.56">He gives himself to his people.</span></p>
+        <p><span class="tl-s" data-s="762.10" data-e="771.28">The good king gives himself for his people also by caring for the most vulnerable.</span> <span class="tl-s" data-s="772.16" data-e="786.00">If you look at verse 25, it gives us a picture of what I think is the most incredible picture of love and care that I personally have ever seen.</span> <span class="tl-s" data-s="787.32" data-e="797.60">It says that next to where Jesus was being crucified was his mother, two other women, and his disciple, his friend.</span> <span class="tl-s" data-s="798.70" data-e="806.98">Now if you&#x27;re not aware, the process of crucifixion is designed to get in your head.</span></p>
+        <p><span class="tl-s" data-s="808.50" data-e="816.16">It&#x27;s designed to be an awful experience not just for the one who is suffering it, but for those who see it with their own eyes.</span></p>
+        <p><span class="tl-s" data-s="819.46" data-e="834.38">And so when we enter the scene, it is beyond words to express the kind of sadness and suffering and torment being experienced by Jesus, but certainly and absolutely for those who are with him.</span> <span class="tl-s" data-s="835.40" data-e="842.12">There is no greater fear for a parent than to see their children in pain.</span></p>
+        <p><span class="tl-s" data-s="845.92" data-e="850.86">Many of you have come into this room tonight with new children.</span> <span class="tl-s" data-s="852.02" data-e="853.14">And you know this already.</span> <span class="tl-s" data-s="853.84" data-e="859.04">There is no greater torment than to think about your children being in pain.</span> <span class="tl-s" data-s="860.32" data-e="869.26">There is nothing that will rob your sleep more quickly than the fear of trouble for those we spend our lives raising and caring for.</span> <span class="tl-s" data-s="870.16" data-e="878.12">Nothing is more torturous than a parent wanting to do something and not being able to help.</span></p>
+        <p><span class="tl-s" data-s="879.86" data-e="900.40">Yet in this moment, this moment of deepest sadness out of the fatigue, out of the pain, out of the noise, the good king sees his mother in anguish and he cares for her.</span></p>
+        <p><span class="tl-s" data-s="903.16" data-e="907.74">The good king does not neglect the fears of his people.</span> <span class="tl-s" data-s="909.08" data-e="910.46">He doesn&#x27;t push them off.</span> <span class="tl-s" data-s="911.42" data-e="914.64">He gives himself and he cares for the most vulnerable.</span> <span class="tl-s" data-s="915.68" data-e="920.58">Mary, his mother, was the most vulnerable kind of person in this society.</span> <span class="tl-s" data-s="921.52" data-e="934.12">For her son to die awful enough as it is, she would not only bear the loss but she would bear the loss and it would continue day after day in shame.</span></p>
+        <p><span class="tl-s" data-s="935.62" data-e="936.72">Your son was who?</span></p>
+        <p><span class="tl-s" data-s="938.52" data-e="940.10">That guy they just killed?</span></p>
+        <p><span class="tl-s" data-s="947.46" data-e="950.46">We know that she had other children.</span> <span class="tl-s" data-s="950.58" data-e="951.26">We certainly do.</span> <span class="tl-s" data-s="951.36" data-e="954.26">But guess who is not mentioned at the cross with her?</span> <span class="tl-s" data-s="955.40" data-e="956.24">Those other children.</span></p>
+        <p><span class="tl-s" data-s="957.98" data-e="969.22">So in a moment of great care, Jesus, the good king, barely able to hold himself up, does not dismiss her pain.</span> <span class="tl-s" data-s="969.98" data-e="972.24">But he sympathetically cares for her.</span> <span class="tl-s" data-s="973.50" data-e="978.20">And looking at his friend, he tells her, take her as his own mother.</span> <span class="tl-s" data-s="978.40" data-e="982.18">Take care for her as Jesus would himself.</span> <span class="tl-s" data-s="982.28" data-e="983.48">He cares for her, yes.</span> <span class="tl-s" data-s="983.84" data-e="997.74">And if you think about all of the ruckus and all of the chaos and the screaming and the pleading and the mockery, everything that&#x27;s going on, what happens for Mary and those who care about Jesus?</span> <span class="tl-s" data-s="998.60" data-e="999.76">It&#x27;s something amazing.</span></p>
+        <p><span class="tl-s" data-s="1001.50" data-e="1006.82">This kind love that he extends to her quiets all of the noise.</span></p>
+        <p><span class="tl-s" data-s="1008.90" data-e="1017.72">And in the chilling horror of this awful day, it provides a kind of warmth for those who would otherwise just simply be forgotten.</span> <span class="tl-s" data-s="1018.72" data-e="1022.80">The good king gives himself for his people.</span> <span class="tl-s" data-s="1023.82" data-e="1030.64">As we take a moment to pause and think, I want us to consider the love of God and Christ.</span> <span class="tl-s" data-s="1031.62" data-e="1034.68">The kind of compassion we are dealing with here in these words.</span> <span class="tl-s" data-s="1035.72" data-e="1051.34">Even as parents, we are so quick, you may not be like me, but I&#x27;ll be focused and in something, and my kids will come running in, and they&#x27;re fighting or something, and some kind of chaos is breaking loose, and I ask to shush them, I ask them to pause.</span> <span class="tl-s" data-s="1051.62" data-e="1060.44">Certainly nobody else in here has ever experienced that, I&#x27;m sure, but this is the kind of thing that we do when we&#x27;re focused or dedicated to a cause, right?</span> <span class="tl-s" data-s="1061.32" data-e="1073.44">Or maybe if you haven&#x27;t had that experience, you&#x27;ve been in the middle of something and somebody&#x27;s calling you, you just put mute for a second, you finish what you&#x27;re doing, and then you get to them, right?</span></p>
+        <p><span class="tl-s" data-s="1075.14" data-e="1076.26">Think about this.</span></p>
+        <p><span class="tl-s" data-s="1078.32" data-e="1084.62">Here, though, we see the kind of love and compassion that transcends all models.</span> <span class="tl-s" data-s="1085.84" data-e="1086.90">All examples.</span> <span class="tl-s" data-s="1087.14" data-e="1097.24">It is the kind of love that does not put people on hold, but bears their burdens as if there&#x27;s nothing else going on in the world at that moment.</span> <span class="tl-s" data-s="1098.36" data-e="1099.58">Never too busy.</span></p>
+        <p><span class="tl-s" data-s="1101.00" data-e="1102.04">Never too tired.</span></p>
+        <p><span class="tl-s" data-s="1103.76" data-e="1113.70">Never impatient, just constantly giving himself all the time, even when he is beaten to a pulp.</span></p>
+        <p><span class="tl-s" data-s="1115.70" data-e="1117.72">What else would we expect, though?</span></p>
+        <p><span class="tl-s" data-s="1119.46" data-e="1124.32">After all, the good king gives himself for his people.</span></p>
+        <p><span class="tl-s" data-s="1126.66" data-e="1136.84">And in this, you may be wondering, what about all that bit between verses 17 and 25, which we&#x27;ve talked about?</span> <span class="tl-s" data-s="1137.62" data-e="1141.14">How does this show us the good king?</span> <span class="tl-s" data-s="1141.66" data-e="1145.84">We have seen that he bears his own cross, not neglecting his duty.</span> <span class="tl-s" data-s="1146.16" data-e="1151.94">We have seen how he cares for the most vulnerable, neglecting his own anguish to ease the pain of those he loves.</span> <span class="tl-s" data-s="1152.62" data-e="1155.84">But what do we do about all of this other stuff?</span> <span class="tl-s" data-s="1156.78" data-e="1163.22">How do we look at this and walk away recognizing that this in fact is a good Friday?</span></p>
+        <p><span class="tl-s" data-s="1165.06" data-e="1174.70">In verse 19 we see that he is executed among two others, likely convicted of their own crimes, deservingly so.</span> <span class="tl-s" data-s="1175.50" data-e="1182.72">And then we go on and we see Pilate put the title on the cross, Jesus of Nazareth, King of the Jews.</span> <span class="tl-s" data-s="1184.10" data-e="1189.46">And we know how embarrassing that is because of the request of the leaders.</span> <span class="tl-s" data-s="1189.78" data-e="1190.58">Don&#x27;t say that.</span> <span class="tl-s" data-s="1191.30" data-e="1193.26">You&#x27;re pulling us into this mess.</span></p>
+        <p><span class="tl-s" data-s="1195.76" data-e="1207.38">And finally, in consistent fashion, we see Jesus is stripped and fully humiliated as the soldiers play games to see who keeps his clothes.</span></p>
+        <p><span class="tl-s" data-s="1209.50" data-e="1213.98">Jesus is being utterly humiliated.</span> <span class="tl-s" data-s="1214.96" data-e="1223.66">He is counted among the guilty, though he has no guilt, he has given a title that is intended to communicate failure and shame.</span> <span class="tl-s" data-s="1224.30" data-e="1228.02">After all, what kind of king ends up dead on a tree?</span> <span class="tl-s" data-s="1229.06" data-e="1231.00">Not the strong type, right?</span> <span class="tl-s" data-s="1232.34" data-e="1233.34">What of all this?</span></p>
+        <p><span class="tl-s" data-s="1235.22" data-e="1236.08">What of all this?</span> <span class="tl-s" data-s="1237.16" data-e="1240.74">Jesus was clearly not deserving this punishment.</span></p>
+        <p><span class="tl-s" data-s="1242.20" data-e="1250.34">He absolutely was convicted unjustly. everything about this screams that something is radically wrong.</span></p>
+        <p><span class="tl-s" data-s="1253.06" data-e="1256.90">This isn&#x27;t the stuff that we get excited and celebrate about.</span></p>
+        <p><span class="tl-s" data-s="1259.10" data-e="1261.10">How can this be good?</span></p>
+        <p><span class="tl-s" data-s="1266.52" data-e="1280.80">All we have is sadness when we look at this scene. we&#x27;re left with the brutality of the cross, the abandonment of his people, and the humiliation of injustice.</span> <span class="tl-s" data-s="1281.28" data-e="1283.08">How could this possibly be good?</span> <span class="tl-s" data-s="1284.44" data-e="1296.50">Nowhere, anywhere, under any code, under any ethic, does it make any sense, let alone is it celebrated when someone is convicted and punished for a crime they did not commit?</span> <span class="tl-s" data-s="1297.50" data-e="1303.42">These are the very things that cause us to cry out in fury, wondering why something like this can happen.</span> <span class="tl-s" data-s="1304.46" data-e="1308.80">So how could it possibly be good for Jesus to bear his own cross?</span> <span class="tl-s" data-s="1309.78" data-e="1315.86">How could we cheer for such a selfless man to suffer before his grieving mother?</span> <span class="tl-s" data-s="1316.12" data-e="1327.92">How could we stand still and watch and stand and be okay with the world where the good suffer and the bad have all the strength?</span></p>
+        <p><span class="tl-s" data-s="1330.02" data-e="1331.92">Let me tell you something right now.</span> <span class="tl-s" data-s="1332.82" data-e="1338.30">We are right to when that happens to say that this is not good.</span></p>
+        <p><span class="tl-s" data-s="1340.62" data-e="1343.50">All of those things are not good.</span></p>
+        <p><span class="tl-s" data-s="1346.96" data-e="1359.46">They&#x27;re not good unless there&#x27;s something more glorious happening in this scene. the good king owns his duty.</span> <span class="tl-s" data-s="1360.86" data-e="1370.70">He cares for the vulnerable and the good king gives himself for his people in order to secure ultimate victory.</span> <span class="tl-s" data-s="1371.66" data-e="1385.44">And all of the drama of this account, the motion of the religious leaders, the mob and Pilate is one that believes Jesus is being subdued, that he is being beaten down, that he is being put in his place.</span> <span class="tl-s" data-s="1385.62" data-e="1390.98">All the while in their plotting and scheming, there is something more glorious going on.</span> <span class="tl-s" data-s="1392.14" data-e="1400.28">In the backdrop of this great humiliation is the eternal work of the triune God set in motion.</span> <span class="tl-s" data-s="1401.02" data-e="1409.14">The focus of Christ&#x27;s hand through all of the beatings and the scourging and the humiliation is set on one thing and one thing alone.</span> <span class="tl-s" data-s="1409.54" data-e="1412.28">The salvation of his people.</span> <span class="tl-s" data-s="1413.14" data-e="1426.38">The mob the Roman soldiers, spineless pilots, the religious mafia, with all of their plans, are nothing more than cardboard backdrops and fading lights compared to what&#x27;s really going on here.</span></p>
+        <p><span class="tl-s" data-s="1427.08" data-e="1430.50">The good king is at work.</span> <span class="tl-s" data-s="1431.22" data-e="1440.56">He is giving himself for his people as the perfect spotless sacrifice for sin.</span></p>
+        <p><span class="tl-s" data-s="1442.54" data-e="1450.58">And without wavering Jesus gives himself because he and only he can do what is about to take place.</span> <span class="tl-s" data-s="1451.58" data-e="1453.58">His whole life was for this moment.</span> <span class="tl-s" data-s="1454.72" data-e="1458.84">He has stood in the shadow of temptation and never given an inch to sin.</span> <span class="tl-s" data-s="1460.12" data-e="1462.70">He has kept his cool when unfairly provoked.</span> <span class="tl-s" data-s="1463.10" data-e="1464.84">He never is given into jealousy.</span> <span class="tl-s" data-s="1465.02" data-e="1467.04">He has never made room for anxiety.</span> <span class="tl-s" data-s="1467.48" data-e="1469.98">He stood firmly never giving an inch to lust.</span> <span class="tl-s" data-s="1470.22" data-e="1471.06">His whole life.</span> <span class="tl-s" data-s="1471.16" data-e="1471.86">All of it.</span> <span class="tl-s" data-s="1472.08" data-e="1473.40">Every single piece of it.</span></p>
+        <p><span class="tl-s" data-s="1473.54" data-e="1476.68">Not like we talk about but really all of it.</span> <span class="tl-s" data-s="1477.78" data-e="1479.26">Perfectly obedient.</span> <span class="tl-s" data-s="1480.34" data-e="1483.06">And all of that obedience for this moment.</span></p>
+        <p><span class="tl-s" data-s="1485.14" data-e="1486.56">He had no shortcuts.</span> <span class="tl-s" data-s="1487.44" data-e="1488.80">No cheat codes.</span> <span class="tl-s" data-s="1489.90" data-e="1490.60">He had faith.</span></p>
+        <p><span class="tl-s" data-s="1492.08" data-e="1493.52">He believed the scripture.</span></p>
+        <p><span class="tl-s" data-s="1494.96" data-e="1496.90">He trusted what God had said.</span> <span class="tl-s" data-s="1497.66" data-e="1505.48">And in his unwavering faithfulness he secured for his people a perfect sacrifice to pay for our many sins.</span> <span class="tl-s" data-s="1506.44" data-e="1510.20">The good king gives himself for his people.</span> <span class="tl-s" data-s="1511.10" data-e="1513.34">He gives himself as a spotless lamb.</span> <span class="tl-s" data-s="1513.34" data-e="1515.58">As a perfect atoning sacrifice.</span> <span class="tl-s" data-s="1516.18" data-e="1522.72">He carries his own cross up the hill because he and only he can fully pay for the sins of the world.</span> <span class="tl-s" data-s="1523.52" data-e="1524.30">For his people.</span> <span class="tl-s" data-s="1525.20" data-e="1525.92">For you and I.</span> <span class="tl-s" data-s="1526.68" data-e="1529.18">He does this in the most magnificent way.</span> <span class="tl-s" data-s="1530.40" data-e="1533.70">He takes all the wickedness meant for him.</span></p>
+        <p><span class="tl-s" data-s="1534.14" data-e="1540.84">All the resistance compiled and put together and placed against him by the devil and his agents.</span> <span class="tl-s" data-s="1541.22" data-e="1559.92">All the might of Rome held in the hand of Pilate all the lies and all the manipulation all that the religious elite can come together and put in front of him and he takes it all and he whips it into into into one perfect and glorious altar for sacrifice.</span></p>
+        <p><span class="tl-s" data-s="1561.62" data-e="1564.46">But this is the way it always had to be.</span> <span class="tl-s" data-s="1565.74" data-e="1576.46">At the cross of the good king history finally sees the payment for sin.</span> <span class="tl-s" data-s="1577.46" data-e="1587.32">It is at this moment when justice finally rolls down and corruption&#x27;s foundations are uprooted forever.</span></p>
+        <p><span class="tl-s" data-s="1589.58" data-e="1610.96">What is meant for evil by Pilate and all the thugs and all the people that turn on him what all of that is meant for evil Jesus the good king dismantles perfectly and uses for good.</span> <span class="tl-s" data-s="1612.18" data-e="1615.86">Jesus gives himself to secure ultimate victory.</span> <span class="tl-s" data-s="1616.82" data-e="1620.38">He reverses the brokenness in our world.</span> <span class="tl-s" data-s="1621.20" data-e="1625.72">He transforms the brutality of the cross into the beauty of compassion.</span> <span class="tl-s" data-s="1626.22" data-e="1630.58">He ordains the abandonment of his people to bring the assurance of his care.</span> <span class="tl-s" data-s="1630.92" data-e="1635.92">He tears down the humiliation of injustice and he builds the house of justification.</span> <span class="tl-s" data-s="1636.74" data-e="1646.20">He gives people he gives himself for his people and in doing so he pays the debt that all of us would take an eternity to try to attempt.</span></p>
+        <p><span class="tl-s" data-s="1647.82" data-e="1660.22">The victory he secures is the defeat of our the undoing of our brokenness the reversal of our fall.</span></p>
+        <p><span class="tl-s" data-s="1661.78" data-e="1665.10">What makes this Friday good is more than what happened.</span></p>
+        <p><span class="tl-s" data-s="1666.56" data-e="1670.72">The goodness comes because of who it happened to.</span> <span class="tl-s" data-s="1671.84" data-e="1688.18">They didn&#x27;t happen to a criminal they happened to our good king and he did not receive good we receive good because the good king gives himself for his people.</span> <span class="tl-s" data-s="1689.18" data-e="1700.50">He provides the innocent in exchange for the guilty, the righteous for the rebellious, the pure and the spotless for the putrid and stained.</span> <span class="tl-s" data-s="1700.50" data-e="1707.88">He gives himself for countless Zedekiahs like you and me who only know how to think of ourselves.</span> <span class="tl-s" data-s="1708.36" data-e="1712.02">He gives himself for his people who he loves.</span></p>
+        <p><span class="tl-s" data-s="1713.50" data-e="1715.34">Do you know he loves you?</span></p>
+        <p><span class="tl-s" data-s="1718.94" data-e="1720.44">It&#x27;s in these pages.</span></p>
+        <p><span class="tl-s" data-s="1722.32" data-e="1725.30">And all the glory and might of what he does.</span></p>
+        <p><span class="tl-s" data-s="1726.80" data-e="1731.42">Its significance is found in his love for you and me.</span></p>
+        <p><span class="tl-s" data-s="1732.84" data-e="1738.72">His passion for us who are all still his enemies at the time he lays down his life.</span> <span class="tl-s" data-s="1739.88" data-e="1740.98">He loves us.</span></p>
+        <p><span class="tl-s" data-s="1742.40" data-e="1747.32">Will this Friday be just another Friday for you?</span> <span class="tl-s" data-s="1748.22" data-e="1756.20">Or like the many before will you see how the good king has loved you and has not abandoned you?</span></p>
+        <p><span class="tl-s" data-s="1757.76" data-e="1766.50">He has not left you to destruction and seeing how the good king has paid for your sin will you trust and follow him?</span></p>
+        <p><span class="tl-s" data-s="1767.94" data-e="1772.06">Jesus is the good king but is he your king?</span> <span class="tl-s" data-s="1774.08" data-e="1784.02">Make this the first of many good Fridays and follow Jesus the good king who gives himself for us.</span> <span class="tl-s" data-s="1784.76" data-e="1785.28">Let&#x27;s pray.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=8"></script>
+  <script>
+  // Live sermon feed: spotlight from /api/sermons, browsable archive from
+  // /api/sermons/search. Static fallback list stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function row(it) {
+      var meta = [it.speaker, fmtDate(it.date)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      var titleHtml = esc(it.title);
+      var tUrl = it.guid && transcriptMap[it.guid];
+      if (tUrl) titleHtml = '<a href="' + esc(tUrl) + '">' + titleHtml + "</a>";
+      return '<div class="sermon"><div><h3>' + titleHtml + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    fetch("/api/sermons?v=3")
+      .then(function (res) { if (!res.ok) throw new Error("feed " + res.status); return res.json(); })
+      .then(function (data) {
+        var spot = document.querySelector("[data-series-spotlight]");
+        if (data && data.series && spot) {
+          var s = data.series;
+          var art = spot.querySelector("[data-series-art]");
+          if (art && s.artwork) { art.src = s.artwork; } else if (art) { art.style.display = "none"; }
+          var nm = spot.querySelector("[data-series-name]");
+          if (nm) nm.textContent = s.name;
+          var bl = spot.querySelector("[data-series-blurb]");
+          if (bl) bl.textContent = s.blurb;
+          spot.hidden = false;
+        }
+      })
+      .catch(function () { /* spotlight stays hidden */ });
+
+    var PER = 10;
+    var state = { q: "", speaker: "", series: "", month: "", page: 1 };
+    // List state <-> query string (?q=&speaker=&series=&month=&page=), so
+    // browser-back and episode-page-back restore the exact list.
+    function readURL() {
+      var p = new URLSearchParams(window.location.search);
+      state.q = p.get("q") || "";
+      state.speaker = p.get("speaker") || "";
+      state.series = p.get("series") || "";
+      state.month = p.get("month") || "";
+      var pg = parseInt(p.get("page") || "1", 10);
+      state.page = pg >= 1 ? pg : 1;
+    }
+    function writeURL(mode) {
+      var p = new URLSearchParams();
+      if (state.q) p.set("q", state.q);
+      if (state.speaker) p.set("speaker", state.speaker);
+      if (state.series) p.set("series", state.series);
+      if (state.month) p.set("month", state.month);
+      if (state.page > 1) p.set("page", String(state.page));
+      var qs = p.toString();
+      var next = window.location.pathname + (qs ? "?" + qs : "");
+      if (next === window.location.pathname + window.location.search) return;
+      try {
+        if (mode === "push") window.history.pushState(null, "", next);
+        else window.history.replaceState(null, "", next);
+      } catch (e) { /* history may throw in some private modes */ }
+    }
+    readURL();
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var speakerSel = document.querySelector("[data-sermons-speaker]");
+    var seriesSel = document.querySelector("[data-sermons-series]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+    if (input) input.value = state.q;
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No messages found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(speakerSel, data.facets.speakers || [], function (e) { return e.name; }, function (e) { return e.name + " (" + e.count + ")"; });
+        fill(seriesSel, data.facets.series || [], function (e) { return e.name; }, function (e) { return e.name + " (" + e.count + ")"; });
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+        // Facet options are built once; re-apply URL-restored values.
+        if (speakerSel) speakerSel.value = state.speaker;
+        if (seriesSel) seriesSel.value = state.series;
+        if (monthSel) monthSel.value = state.month;
+      }
+      var active = Boolean(data.q || data.speaker || data.series || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.speaker) parts.push("by " + data.speaker);
+          if (data.series) parts.push("in " + data.series);
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " result" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " messages";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/sermons/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.speaker ? "&speaker=" + encodeURIComponent(state.speaker) : "") +
+        (state.series ? "&series=" + encodeURIComponent(state.series) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () { /* keep current list on error */ });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.speaker = ""; state.series = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (speakerSel) speakerSel.value = "";
+      if (seriesSel) seriesSel.value = "";
+      if (monthSel) monthSel.value = "";
+      writeURL("push");
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          writeURL("replace");
+          load(false);
+        }, 250);
+      });
+    }
+    function bindSelect(sel, key) {
+      if (!sel) return;
+      sel.addEventListener("change", function () {
+        state[key] = sel.value;
+        state.page = 1;
+        writeURL("push");
+        load(false);
+      });
+    }
+    bindSelect(speakerSel, "speaker");
+    bindSelect(seriesSel, "series");
+    bindSelect(monthSel, "month");
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; writeURL("push"); load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; writeURL("push"); load(true);
+    });
+    // In-list back/forward restores the list without a full reload.
+    window.addEventListener("popstate", function () {
+      readURL();
+      if (input) input.value = state.q;
+      if (speakerSel) speakerSel.value = state.speaker;
+      if (seriesSel) seriesSel.value = state.series;
+      if (monthSel) monthSel.value = state.month;
+      load(false);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: https://hub.centergilbert.com/media/good-friday-2107 -->
+</body>
+</html>
