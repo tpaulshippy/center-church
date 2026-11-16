@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Judges 16 — Sermon Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Listen to the latest sermons from Center Church, or follow along on Apple Podcasts and Spotify." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=17" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a class="active" href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/sermons">&larr; All sermons</a>
+          <h1 class="display-lg">Judges 16</h1>
+          <p class="transcript-meta">Rich Richardson · 2025-10-19 · 00:45:59</p>
+          <p class="transcript-desc">With Christ, even your epic failures are not final.</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/119cbef70/podcast/play/128974085/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-7%2F436123763-44100-2-549090a4be72cac3.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><span class="tl-s" data-s="0.00" data-e="8.84">If I haven&#x27;t met you yet, my name is Rich, and I am one of the pastors here at Center Church.</span> <span class="tl-s" data-s="8.98" data-e="11.48">Just a couple of things I want to draw to your attention.</span> <span class="tl-s" data-s="12.22" data-e="17.74">I just never tire on behalf of the team to express how grateful we are for your generous giving.</span> <span class="tl-s" data-s="18.60" data-e="28.10">Just a couple of weeks ago, we sent a team of people to Mexico to an orphanage we&#x27;ve worked with for years, decades even, called Rancho 3M.</span> <span class="tl-s" data-s="29.32" data-e="37.94">And when they went, one of the things we could send with that team was $5,000 because of your generous giving.</span> <span class="tl-s" data-s="38.06" data-e="49.26">So when you give to our church, you&#x27;re not just giving to the ministry that&#x27;s happening within these four walls, which is important, but we also look to try to be generous as well.</span> <span class="tl-s" data-s="49.38" data-e="56.38">And that&#x27;s one of the ways that we&#x27;ve been able to, well, one of the ways we&#x27;ve been able to sow the money you&#x27;ve given generously over the years.</span></p>
+        <p><span class="tl-s" data-s="56.38" data-e="60.32">And that&#x27;s the reason we are grateful that you give.</span> <span class="tl-s" data-s="60.44" data-e="61.78">So thank you so much.</span> <span class="tl-s" data-s="61.86" data-e="64.06">Thank you, those of you who give generously.</span> <span class="tl-s" data-s="64.48" data-e="66.88">Thank you for those who are beginning to give generously.</span> <span class="tl-s" data-s="67.18" data-e="70.02">Thank you for those who are praying about what you can give.</span> <span class="tl-s" data-s="70.34" data-e="71.32">Thank you so much.</span> <span class="tl-s" data-s="72.16" data-e="78.98">Also, coming up next week, we have received reports that there will be no apocalyptic rain next week.</span> <span class="tl-s" data-s="80.16" data-e="81.52">So we&#x27;re going to have a church picnic.</span> <span class="tl-s" data-s="82.08" data-e="86.66">It&#x27;s going to be a great time to be able to enjoy our weather and remember why we live here, right?</span> <span class="tl-s" data-s="86.76" data-e="87.16">Exactly.</span></p>
+        <p><span class="tl-s" data-s="87.60" data-e="91.22">But more fundamentally, we&#x27;re going to be able to get to know other people in our church.</span> <span class="tl-s" data-s="91.84" data-e="92.82">All are welcome.</span> <span class="tl-s" data-s="93.42" data-e="96.86">We&#x27;re going to have hot dogs, hamburgers, other accoutrements.</span> <span class="tl-s" data-s="97.46" data-e="98.92">It&#x27;ll just be $5 a person.</span> <span class="tl-s" data-s="99.02" data-e="103.68">We&#x27;ll also have a bounce house so the kids can run amok in padded rooms.</span> <span class="tl-s" data-s="104.96" data-e="106.28">It&#x27;s going to be a blast.</span> <span class="tl-s" data-s="106.52" data-e="106.86">Sign up.</span> <span class="tl-s" data-s="106.90" data-e="108.34">You don&#x27;t have to sign up to show up.</span> <span class="tl-s" data-s="108.98" data-e="112.18">And that will, again, be next week right after church.</span> <span class="tl-s" data-s="112.74" data-e="115.18">And we will look forward to that.</span></p>
+        <p><span class="tl-s" data-s="116.12" data-e="119.60">If you have a Bible, I&#x27;d like to draw your attention to the book of Judges again.</span></p>
+        <p><span class="tl-s" data-s="122.44" data-e="124.68">We&#x27;re going to be in Judges chapter 16.</span> <span class="tl-s" data-s="125.28" data-e="129.56">If you&#x27;re new to our church, well, first, if you&#x27;re new to the Bible, the Judges is right in the beginning.</span> <span class="tl-s" data-s="130.46" data-e="135.40">It goes Genesis, Exodus, Leviticus, Numbers, Deuteronomy, Joshua, then Judges.</span> <span class="tl-s" data-s="136.32" data-e="137.68">We&#x27;ve been in the book of Judges.</span> <span class="tl-s" data-s="137.76" data-e="145.18">Our pattern as a church is to preach through books of the Bible so that we might get to know the God of the Bible.</span> <span class="tl-s" data-s="146.32" data-e="150.42">We speak about what the scriptures say, not merely principles about the scriptures.</span> <span class="tl-s" data-s="150.42" data-e="157.52">We want to know what God has said to God&#x27;s people so that we as a people might learn and grow and know him.</span> <span class="tl-s" data-s="158.66" data-e="161.12">And today, we will be in Judges chapter 16.</span></p>
+        <p><span class="tl-s" data-s="163.14" data-e="168.88">Well, there are failures and there are epic failures.</span> <span class="tl-s" data-s="170.12" data-e="178.78">In 2000, Reed Hastings and Mark Randolph traveled to Dallas, Texas to pitch an idea.</span></p>
+        <p><span class="tl-s" data-s="180.42" data-e="185.72">They had a meeting with a guy named John Antico, the CEO of Blockbuster Video.</span> <span class="tl-s" data-s="187.04" data-e="196.20">Hastings and Randolph offered Blockbuster Video the opportunity to purchase their floundering startup for $50 million.</span> <span class="tl-s" data-s="196.70" data-e="199.78">Now, for them, for Blockbuster, that&#x27;s just pocket change.</span> <span class="tl-s" data-s="199.88" data-e="207.12">Because in 2000, Blockbuster raked in $800 million in late fees.</span></p>
+        <p><span class="tl-s" data-s="209.22" data-e="209.62">Alone.</span> <span class="tl-s" data-s="209.74" data-e="212.82">Now, if you are a kid, you don&#x27;t even know what a late fee is.</span> <span class="tl-s" data-s="213.54" data-e="217.82">We used to go into Blockbuster and look around and go, what should we rent?</span> <span class="tl-s" data-s="217.88" data-e="218.68">And there were pictures.</span> <span class="tl-s" data-s="219.10" data-e="220.78">Here&#x27;s the new releases over to the side.</span> <span class="tl-s" data-s="220.98" data-e="222.20">We&#x27;d go grab a new release.</span> <span class="tl-s" data-s="222.28" data-e="224.60">We&#x27;d take it to the lady at the counter and we&#x27;d check out.</span> <span class="tl-s" data-s="224.72" data-e="227.52">And then we would promptly forget that it was due on Monday.</span> <span class="tl-s" data-s="228.44" data-e="234.68">Or if you&#x27;re like me, we knew it closed at 10 o&#x27;clock and usually I only got there at like 10.04 or something like that.</span> <span class="tl-s" data-s="234.74" data-e="237.70">But anyway, Blockbuster had the money.</span></p>
+        <p><span class="tl-s" data-s="238.56" data-e="242.06">And Blockbuster laughed those two out of the meeting.</span> <span class="tl-s" data-s="243.34" data-e="245.26">But that little startup was called Netflix.</span></p>
+        <p><span class="tl-s" data-s="246.78" data-e="249.52">And today, Netflix is worth $500 billion.</span> <span class="tl-s" data-s="250.84" data-e="253.32">And Blockbuster, bankrupt.</span> <span class="tl-s" data-s="254.54" data-e="255.64">That&#x27;s an epic fail.</span> <span class="tl-s" data-s="256.74" data-e="258.44">There are epic fails we can laugh about.</span> <span class="tl-s" data-s="259.50" data-e="262.16">But there are some epic fails that hit closer to home.</span> <span class="tl-s" data-s="262.24" data-e="263.48">I&#x27;ll tell you one from my family.</span> <span class="tl-s" data-s="264.32" data-e="269.30">My grandfather, in the 50s and 60s, worked for IBM.</span></p>
+        <p><span class="tl-s" data-s="271.08" data-e="275.02">His best friend and co-worker pitched an idea to him.</span> <span class="tl-s" data-s="275.28" data-e="277.46">Hey, let&#x27;s start a business together.</span> <span class="tl-s" data-s="278.40" data-e="280.26">Let&#x27;s be partners together.</span> <span class="tl-s" data-s="280.88" data-e="284.76">Let&#x27;s step out from IBM and start our own thing.</span> <span class="tl-s" data-s="285.32" data-e="288.30">My grandfather, he said, no, that&#x27;s too risky.</span></p>
+        <p><span class="tl-s" data-s="289.88" data-e="292.98">Well, his best friend, Ross Perot.</span></p>
+        <p><span class="tl-s" data-s="294.76" data-e="295.92">That&#x27;s an epic fail.</span> <span class="tl-s" data-s="297.30" data-e="299.84">The business idea, EDS.</span> <span class="tl-s" data-s="301.08" data-e="303.32">By 1980, Ross Perot was a billionaire.</span> <span class="tl-s" data-s="304.18" data-e="306.58">My grandfather was retired from IBM.</span></p>
+        <p><span class="tl-s" data-s="309.78" data-e="312.26">Now, that&#x27;s an epic fail.</span> <span class="tl-s" data-s="312.34" data-e="313.34">But those are just financial.</span> <span class="tl-s" data-s="314.28" data-e="316.64">And they don&#x27;t really matter in the big scheme of things.</span> <span class="tl-s" data-s="317.40" data-e="319.18">But there are epic failures.</span></p>
+        <p><span class="tl-s" data-s="320.78" data-e="325.10">And the ones that keep us up at night are the ones that have nothing to do with money.</span> <span class="tl-s" data-s="325.92" data-e="332.94">Those kind of serious epic failures that we all, from time to time, experience.</span> <span class="tl-s" data-s="334.22" data-e="342.24">Maybe you&#x27;re here and you look back as you fall asleep each night on one of your failures, one of your epic failures.</span> <span class="tl-s" data-s="342.42" data-e="349.50">Maybe you feel a cloud following you around because of, well, as you look at your life, you consider yourself a failure.</span></p>
+        <p><span class="tl-s" data-s="351.50" data-e="364.56">Maybe you wonder, as you come to church, that you wonder out loud maybe sometimes, can the Lord do anything with me because I&#x27;m such, I&#x27;ve made such a mess of things.</span> <span class="tl-s" data-s="364.62" data-e="365.22">I&#x27;m a failure.</span></p>
+        <p><span class="tl-s" data-s="367.96" data-e="373.36">Maybe you feel so damaged, so compromised, that you&#x27;re living his second best.</span> <span class="tl-s" data-s="373.98" data-e="374.98">Because you failed.</span> <span class="tl-s" data-s="375.36" data-e="379.76">You failed not just once or twice, but you failed again and again and again and again.</span> <span class="tl-s" data-s="379.96" data-e="386.78">And maybe right now, you&#x27;re in the midst of a slow motion train wreck that threatens to be yet another epic failure.</span></p>
+        <p><span class="tl-s" data-s="389.62" data-e="394.64">The thing about epic failures is that they always feel permanent.</span></p>
+        <p><span class="tl-s" data-s="396.50" data-e="399.42">Epic failures seem to play for keeps.</span> <span class="tl-s" data-s="400.64" data-e="401.56">Now, is that true?</span> <span class="tl-s" data-s="402.76" data-e="409.92">Can God work in and through us despite our failures, even if they&#x27;re epic failures?</span></p>
+        <p><span class="tl-s" data-s="411.54" data-e="416.56">Well, when we bring up the topic of failure, we&#x27;ve got to start talking about Samson.</span> <span class="tl-s" data-s="417.56" data-e="424.96">Of all the characters we&#x27;ve become acquainted with in the book of Judges, no one squandered more than Samson.</span> <span class="tl-s" data-s="425.12" data-e="426.62">It all started so well.</span> <span class="tl-s" data-s="426.86" data-e="434.90">The pre-incarnate Christ visited Samson&#x27;s parents and said, your boy is going to be born and he is set apart for special things.</span> <span class="tl-s" data-s="435.18" data-e="440.12">He was born and commissioned to be a rescuer of his people, of the people of God.</span> <span class="tl-s" data-s="440.12" data-e="443.02">He would be blessed with supernatural strength.</span> <span class="tl-s" data-s="444.10" data-e="449.12">But Samson had very little thought of God and no thought of his people.</span> <span class="tl-s" data-s="449.76" data-e="452.62">He was impetuous and led by his emotions.</span> <span class="tl-s" data-s="453.72" data-e="459.64">We&#x27;ve seen him consistently, regularly, and habitually think of himself and only himself.</span></p>
+        <p><span class="tl-s" data-s="461.42" data-e="461.98">Failure.</span> <span class="tl-s" data-s="463.32" data-e="467.70">That&#x27;s what we&#x27;ve seen in Judges 13, 14, and 15.</span> <span class="tl-s" data-s="467.92" data-e="470.44">Maybe it gets better in Judges 16.</span> <span class="tl-s" data-s="471.02" data-e="471.52">Let&#x27;s see.</span> <span class="tl-s" data-s="471.70" data-e="472.66">Well, let me spoil.</span> <span class="tl-s" data-s="472.86" data-e="474.40">The short answer is no.</span> <span class="tl-s" data-s="474.78" data-e="475.58">Prepare yourself.</span> <span class="tl-s" data-s="475.82" data-e="477.74">Epic failure incoming.</span> <span class="tl-s" data-s="477.96" data-e="484.42">Let&#x27;s join Samson in his failure in Gaza in Judges 16, verses 1 through 3.</span> <span class="tl-s" data-s="485.66" data-e="491.52">Samson went to Gaza, and there he saw a prostitute, and he went in to her.</span></p>
+        <p><span class="tl-s" data-s="492.22" data-e="500.74">And the Gazites were told, Samson has come here, and they surrounded the place and set an ambush for him all night at the gate of the city.</span> <span class="tl-s" data-s="501.22" data-e="508.10">They kept quiet all night, saying, let us wait till the light of the morning, then we will kill him.</span> <span class="tl-s" data-s="508.10" data-e="524.82">But Samson lay till midnight, and at midnight he arose and took hold of the doors of the gate of the city and the two posts and pulled them up, bar and all, and put them on his shoulders and carried them to the top of the hill that is in front of Hebron.</span> <span class="tl-s" data-s="525.64" data-e="526.08">All right.</span> <span class="tl-s" data-s="526.26" data-e="529.58">Samson continues his reckless way of life.</span> <span class="tl-s" data-s="529.68" data-e="532.48">This time he ventures deep into Philistine territory.</span> <span class="tl-s" data-s="532.48" data-e="539.44">He goes to their capital, Gaza, and even worse, he takes up with a prostitute for a one-night stand.</span> <span class="tl-s" data-s="540.08" data-e="548.04">Now, while he&#x27;s with this unnamed woman, the men of Gaza get word that Samson, the great troubler of the Philistines, is in town.</span></p>
+        <p><span class="tl-s" data-s="548.24" data-e="551.40">And under the cover of darkness, they plan to ambush him.</span> <span class="tl-s" data-s="551.46" data-e="557.72">They wait at the city gate, and they say, when we see first light, that will be when we kill Samson.</span> <span class="tl-s" data-s="558.44" data-e="561.60">But Samson, Samson does Samson things.</span> <span class="tl-s" data-s="561.60" data-e="565.70">So he sniffs out the ambush somehow and flips the script.</span> <span class="tl-s" data-s="565.70" data-e="574.52">He goes to that same city gate and pulls it up, weighing well, way more than 500 pounds, maybe up to 1,000.</span> <span class="tl-s" data-s="574.74" data-e="584.56">And he takes the gates of the city and hikes 40 miles and deposits that gate in the hills of Hebron.</span> <span class="tl-s" data-s="585.94" data-e="589.50">And you go, wow, that&#x27;s crazy.</span> <span class="tl-s" data-s="590.34" data-e="593.48">Why is this story here in Judges 16?</span></p>
+        <p><span class="tl-s" data-s="595.54" data-e="599.40">We see that Samson has a serious problem, a weakness with women.</span> <span class="tl-s" data-s="600.28" data-e="602.32">The lust of his eyes rules his heart.</span></p>
+        <p><span class="tl-s" data-s="603.74" data-e="611.50">He might have been able to avoid the ambush and do his feats of strength, but he gets continually ambushed by lust.</span> <span class="tl-s" data-s="612.70" data-e="618.26">At this point in the story, in verses 1 through 3, Samson appears invulnerable.</span> <span class="tl-s" data-s="618.38" data-e="624.40">He seems to believe that he can do whatever he wants, whenever he wants, however he wants.</span> <span class="tl-s" data-s="624.40" data-e="632.32">He waltzes right into their capital, sleeps with the prostitutes, breaks down their gate, and laughs all the way to Hebron.</span> <span class="tl-s" data-s="633.22" data-e="636.02">He is living independent of God.</span> <span class="tl-s" data-s="636.82" data-e="652.06">His supernatural strength, he seems to believe, is a gift that is his, to use when he wants, how he wants, where he wants, with no thought of God or His plans.</span> <span class="tl-s" data-s="652.90" data-e="654.80">That&#x27;s what it appears to be.</span></p>
+        <p><span class="tl-s" data-s="658.38" data-e="665.50">Often, the seeds of epic failure are found in our greatest gifts.</span> <span class="tl-s" data-s="666.64" data-e="670.76">Or said another way, epic failures often begin with epic blessings.</span></p>
+        <p><span class="tl-s" data-s="672.22" data-e="673.50">That&#x27;s Samson&#x27;s story.</span> <span class="tl-s" data-s="674.16" data-e="682.90">It was just too easy for Samson to consider that his great strength was his to do with what he wanted.</span></p>
+        <p><span class="tl-s" data-s="684.38" data-e="686.10">He didn&#x27;t look to the Lord.</span> <span class="tl-s" data-s="686.22" data-e="688.54">He knew the wonderful plans he had for his life.</span> <span class="tl-s" data-s="689.62" data-e="693.40">He decided to do what he wanted, how he wanted, when he wanted, where he wanted.</span></p>
+        <p><span class="tl-s" data-s="695.16" data-e="697.64">He owned this blessing in his mind.</span> <span class="tl-s" data-s="697.88" data-e="700.80">And he owned it, and he was completely unaccountable.</span> <span class="tl-s" data-s="701.44" data-e="707.70">But this epic blessing, that epic blessing of supernatural strength, would lead to epic failure.</span></p>
+        <p><span class="tl-s" data-s="710.10" data-e="715.20">Sometimes, our greatest blessings can lead to our greatest failures.</span> <span class="tl-s" data-s="716.10" data-e="718.70">What was true for Samson is true for us as well.</span> <span class="tl-s" data-s="720.04" data-e="726.88">You see, it&#x27;s easy to believe that the blessings we&#x27;ve received from the hand of the Lord are somehow ours by right.</span></p>
+        <p><span class="tl-s" data-s="729.20" data-e="737.40">That what we&#x27;ve received, well, we&#x27;ve received them because somehow God owes them to us.</span></p>
+        <p><span class="tl-s" data-s="738.86" data-e="752.98">And we can believe that the blessings we&#x27;ve received are ours to be used how we want, when we want, where we want.</span> <span class="tl-s" data-s="753.80" data-e="756.18">Often, with no thought of God.</span></p>
+        <p><span class="tl-s" data-s="758.22" data-e="759.60">Friends, that&#x27;s dangerous.</span> <span class="tl-s" data-s="760.74" data-e="761.84">And that attitude.</span> <span class="tl-s" data-s="763.22" data-e="765.94">See, the blessings we&#x27;ve received, we&#x27;ve received from the hand of the Lord.</span> <span class="tl-s" data-s="766.06" data-e="768.32">Be it family, be it money, be it health.</span></p>
+        <p><span class="tl-s" data-s="770.10" data-e="772.80">Be it having a sound mind.</span> <span class="tl-s" data-s="774.10" data-e="775.86">Those things are gifts from the Lord.</span> <span class="tl-s" data-s="776.86" data-e="788.48">And if we think those things are ours because we&#x27;ve earned them, friends, that is sowing the seed of a possible epic failure.</span> <span class="tl-s" data-s="789.86" data-e="799.08">The Lord owes us nothing but is kind and gracious and generous and often gives us way more than we could ever ask.</span> <span class="tl-s" data-s="799.58" data-e="801.88">It is we who owe Him everything.</span> <span class="tl-s" data-s="802.84" data-e="809.18">We are here to do His purposes in His time, in His way, for His glory.</span></p>
+        <p><span class="tl-s" data-s="811.06" data-e="813.76">And sometimes, we forget.</span></p>
+        <p><span class="tl-s" data-s="817.00" data-e="823.66">Samson had the seeds of epic failure in his great blessings.</span> <span class="tl-s" data-s="824.56" data-e="825.86">Are you in the same boat?</span></p>
+        <p><span class="tl-s" data-s="828.70" data-e="830.02">Samson failed in Gaza?</span> <span class="tl-s" data-s="831.02" data-e="833.22">Well, there&#x27;s also failure with the night.</span> <span class="tl-s" data-s="833.88" data-e="835.38">In verses 4 through 22.</span> <span class="tl-s" data-s="835.52" data-e="835.98">What night?</span> <span class="tl-s" data-s="836.16" data-e="837.28">Well, that sounds odd.</span> <span class="tl-s" data-s="837.84" data-e="842.92">But the reason we say with the night is because Delilah&#x27;s name in the original sounds like night.</span> <span class="tl-s" data-s="843.84" data-e="854.36">Samson had no idea, but as he cavorted with Delilah, the darkness was closing in, and it was poised to take him down and take him down completely.</span> <span class="tl-s" data-s="855.14" data-e="855.76">Verse 4.</span> <span class="tl-s" data-s="856.32" data-e="861.00">After this, he loved a woman in the valley of Sorok, whose name was Delilah.</span> <span class="tl-s" data-s="861.58" data-e="889.24">And the lords of the Philistines came to her and said to her, Samson still thinks he&#x27;s Superman at this point, not realizing Delilah would be his kryptonite.</span></p>
+        <p><span class="tl-s" data-s="889.82" data-e="890.46">And why not?</span> <span class="tl-s" data-s="891.38" data-e="895.94">He had been living and judging the people of God for 20 years, just like this.</span> <span class="tl-s" data-s="896.86" data-e="898.82">And he was like this the whole time.</span> <span class="tl-s" data-s="899.18" data-e="902.44">He had no thought of pleasing the Lord, no thought of rescuing Israel.</span> <span class="tl-s" data-s="902.96" data-e="904.68">And he had gotten away with it.</span></p>
+        <p><span class="tl-s" data-s="907.82" data-e="911.50">But friends, the Lord is slow to judge.</span> <span class="tl-s" data-s="911.90" data-e="913.22">He&#x27;s patient and kind.</span> <span class="tl-s" data-s="914.16" data-e="917.44">And that patience and kindness is not for indulgence.</span> <span class="tl-s" data-s="917.72" data-e="918.88">It&#x27;s because he&#x27;s merciful.</span> <span class="tl-s" data-s="919.70" data-e="925.42">The Lord often allows a long time for the bitter fruit of our epic failures to ripen.</span> <span class="tl-s" data-s="925.54" data-e="926.96">And that&#x27;s what happened with Samson.</span> <span class="tl-s" data-s="927.96" data-e="934.86">Samson doesn&#x27;t realize it, but this time with this woman in this situation, it would be entirely different.</span> <span class="tl-s" data-s="935.90" data-e="940.34">We find that Delilah is an agent of the Philistines.</span> <span class="tl-s" data-s="940.46" data-e="942.74">She&#x27;s part of the Philistine CIA.</span> <span class="tl-s" data-s="943.74" data-e="948.32">And she&#x27;s commissioned to find the secret of Samson&#x27;s great strength.</span></p>
+        <p><span class="tl-s" data-s="948.32" data-e="953.28">More than that, if she delivered, she would be rewarded with life-changing money.</span></p>
+        <p><span class="tl-s" data-s="954.74" data-e="958.76">Now, recognize, they offered her 1,100 shekels.</span> <span class="tl-s" data-s="959.90" data-e="963.82">At that time, the annual wage was 10 shekels.</span></p>
+        <p><span class="tl-s" data-s="965.30" data-e="971.02">So she&#x27;s offered 110 years&#x27; worth of wages for the average worker.</span> <span class="tl-s" data-s="971.70" data-e="973.80">In other words, she would never have to work again.</span> <span class="tl-s" data-s="974.38" data-e="985.54">And she would have the honor and respect of her community, because those offering the deal were not just some guys on the side, that they were the lords or the leaders or the rulers of the Philistines.</span> <span class="tl-s" data-s="985.98" data-e="990.96">The Philistine power brokers and authorities came to her, and they said, we&#x27;re counting on you.</span></p>
+        <p><span class="tl-s" data-s="992.84" data-e="996.76">Give us the secret of Samson&#x27;s great strength.</span> <span class="tl-s" data-s="997.90" data-e="1000.72">Then we have three quick hitting scenes.</span> <span class="tl-s" data-s="1001.54" data-e="1009.90">Verse 6, So Delilah said to Samson, Please tell me where your great strength lies, and how you may be bound, that one could subdue you.</span> <span class="tl-s" data-s="1010.46" data-e="1015.20">Now, right there, like, let me just step aside and talk to people here who are dating, okay?</span></p>
+        <p><span class="tl-s" data-s="1016.92" data-e="1019.52">Right there, that&#x27;s a problemo, right?</span> <span class="tl-s" data-s="1020.00" data-e="1021.24">Samson should have said, You know what?</span> <span class="tl-s" data-s="1021.30" data-e="1029.44">I should be with a person that is maybe, that we have more in common, and they&#x27;re not, why does she want to know how someone can subdue me?</span> <span class="tl-s" data-s="1030.16" data-e="1033.98">Of course, but Samson, he&#x27;s not very discerning here.</span> <span class="tl-s" data-s="1033.98" data-e="1036.94">He is just about being with Delilah.</span> <span class="tl-s" data-s="1037.14" data-e="1046.88">So Samson says, verse 7, If they bind me with seven fresh bowstrings that have not been dried, then I shall become weak and be like any other man.</span> <span class="tl-s" data-s="1047.60" data-e="1052.72">Then the lords of the Philistines brought up to her seven fresh bowstrings that had not been dried.</span> <span class="tl-s" data-s="1053.06" data-e="1054.94">She bound him with them.</span> <span class="tl-s" data-s="1055.32" data-e="1062.94">Now she had men lying in ambush in an inner chamber, and she said to him, The Philistines are upon you, Samson.</span> <span class="tl-s" data-s="1063.06" data-e="1067.72">But he snapped the bowstrings, as a thread of flax snaps when it touches the fire.</span></p>
+        <p><span class="tl-s" data-s="1068.20" data-e="1070.60">So the secret of his strength was not known.</span> <span class="tl-s" data-s="1071.94" data-e="1073.98">You know what fresh bowstrings are made of?</span></p>
+        <p><span class="tl-s" data-s="1075.76" data-e="1077.02">Animal sinews.</span> <span class="tl-s" data-s="1077.28" data-e="1079.32">You know where we get fresh animal sinews?</span> <span class="tl-s" data-s="1079.44" data-e="1080.46">Dead animals.</span> <span class="tl-s" data-s="1081.24" data-e="1082.70">You know what&#x27;s wrong here?</span> <span class="tl-s" data-s="1082.92" data-e="1085.94">Remember, Samson&#x27;s supposed to be a Nazarite from birth.</span> <span class="tl-s" data-s="1086.44" data-e="1087.68">You can&#x27;t touch dead things.</span> <span class="tl-s" data-s="1087.78" data-e="1088.84">You can&#x27;t drink alcohol.</span> <span class="tl-s" data-s="1089.04" data-e="1090.12">And you can&#x27;t cut your hair.</span> <span class="tl-s" data-s="1090.62" data-e="1093.54">And Samson&#x27;s saying, Hey, I know something that&#x27;s funny.</span> <span class="tl-s" data-s="1093.80" data-e="1100.26">If you go to a dead animal and make bowstrings and tie me up with them, then I&#x27;m not going to be very strong.</span></p>
+        <p><span class="tl-s" data-s="1101.72" data-e="1104.26">You see, he&#x27;s treating his Nazarite vow like it&#x27;s nothing.</span></p>
+        <p><span class="tl-s" data-s="1106.08" data-e="1111.60">He escaped easily, but his hubris grows, and failure gets a step closer.</span> <span class="tl-s" data-s="1111.72" data-e="1112.16">Verse 10.</span> <span class="tl-s" data-s="1112.64" data-e="1116.18">Then Delilah said to Samson, Behold, you have mocked me and told me lies.</span> <span class="tl-s" data-s="1117.20" data-e="1118.78">Please tell me how you might be bound.</span> <span class="tl-s" data-s="1118.92" data-e="1126.68">And he said to her, If they bind me with new ropes that have not been used, then I shall become weak and be like any other man.</span> <span class="tl-s" data-s="1126.68" data-e="1133.60">So Delilah took new ropes and bound him with them and said to him, The Philistines are upon you, Samson.</span> <span class="tl-s" data-s="1134.50" data-e="1141.88">And the men lying in ambush were in an inner chamber, but he snapped the ropes off his arms like a threat.</span> <span class="tl-s" data-s="1142.10" data-e="1143.50">Again, it doesn&#x27;t work.</span> <span class="tl-s" data-s="1143.70" data-e="1145.14">New ropes, same result.</span> <span class="tl-s" data-s="1145.74" data-e="1152.68">Notice we have no indication in verse 12 that Samson is asleep.</span></p>
+        <p><span class="tl-s" data-s="1153.14" data-e="1153.64">Do you see that?</span></p>
+        <p><span class="tl-s" data-s="1155.08" data-e="1160.02">So Delilah took new ropes and bound him with them and said to him, The Philistines are upon you, Samson.</span></p>
+        <p><span class="tl-s" data-s="1161.72" data-e="1163.06">Like, they&#x27;re playing a game.</span> <span class="tl-s" data-s="1164.24" data-e="1167.68">Samson, see, he thinks he&#x27;s Superman.</span> <span class="tl-s" data-s="1167.86" data-e="1169.22">He thinks he can do what he wants.</span> <span class="tl-s" data-s="1169.44" data-e="1171.78">He thinks this supernatural strength will be his.</span></p>
+        <p><span class="tl-s" data-s="1175.72" data-e="1176.82">This is trouble.</span></p>
+        <p><span class="tl-s" data-s="1178.50" data-e="1184.32">He thinks he&#x27;s intoxicated with epic levels of self-confidence, which will lead to epic failure.</span> <span class="tl-s" data-s="1185.10" data-e="1187.28">And he plunges ahead again and toys with her.</span> <span class="tl-s" data-s="1188.16" data-e="1193.80">Verse 13, Then Delilah said to Samson, Until now, you have mocked me and told me lies.</span> <span class="tl-s" data-s="1194.08" data-e="1195.90">Tell me how you might be bound.</span> <span class="tl-s" data-s="1196.04" data-e="1206.02">And he said to her, If you weave the seven locks of my head with a web and fasten it tight with the pin, then I shall become weak and be like any other man.</span> <span class="tl-s" data-s="1206.02" data-e="1207.82">You wonder how he thought of this stuff, right?</span> <span class="tl-s" data-s="1208.96" data-e="1214.24">So, while he slept, Delilah took the seven locks of his head and wove them into a web.</span> <span class="tl-s" data-s="1214.50" data-e="1218.82">Then she made them tight with the pin and said to him, The Philistines are upon you, Samson.</span> <span class="tl-s" data-s="1219.96" data-e="1225.06">But he awoke from his sleep and pulled away the pin, the loom, and the web.</span> <span class="tl-s" data-s="1225.98" data-e="1226.84">Another lie.</span></p>
+        <p><span class="tl-s" data-s="1227.56" data-e="1229.38">Another failed ambush.</span></p>
+        <p><span class="tl-s" data-s="1231.14" data-e="1235.98">See, at this point, way before this point, Samson should be like, You know what?</span> <span class="tl-s" data-s="1236.14" data-e="1238.08">This is kind of a toxic relationship.</span></p>
+        <p><span class="tl-s" data-s="1240.18" data-e="1241.62">I need to set a boundary.</span> <span class="tl-s" data-s="1241.88" data-e="1244.46">Let&#x27;s not ask me how my supernatural strength.</span> <span class="tl-s" data-s="1244.78" data-e="1248.36">Let&#x27;s just, let&#x27;s get some, I&#x27;m going to have some me time away from you.</span></p>
+        <p><span class="tl-s" data-s="1250.22" data-e="1251.58">But he doesn&#x27;t do that.</span> <span class="tl-s" data-s="1252.04" data-e="1253.10">Because what does he think?</span> <span class="tl-s" data-s="1253.24" data-e="1254.92">He thinks this blessing is mine.</span> <span class="tl-s" data-s="1255.16" data-e="1256.84">This supernatural strength is mine.</span> <span class="tl-s" data-s="1256.98" data-e="1262.80">And I can get out of any problem, no matter how severe, because that&#x27;s just how strong I am.</span></p>
+        <p><span class="tl-s" data-s="1264.72" data-e="1266.60">Epic failure incoming.</span> <span class="tl-s" data-s="1267.74" data-e="1270.94">And Delilah lays on the manipulation, thick and heavy.</span> <span class="tl-s" data-s="1271.02" data-e="1271.60">Verse 15.</span> <span class="tl-s" data-s="1271.72" data-e="1278.44">And he said to her, How can you say I love you when your heart is not with me?</span></p>
+        <p><span class="tl-s" data-s="1280.40" data-e="1282.98">You have mocked me these three times.</span> <span class="tl-s" data-s="1283.96" data-e="1287.54">And you have not told me where your great strength lies.</span></p>
+        <p><span class="tl-s" data-s="1289.40" data-e="1292.84">And Samson said, Well, of course, because you would give me over to the Philistines.</span> <span class="tl-s" data-s="1293.42" data-e="1293.98">No.</span></p>
+        <p><span class="tl-s" data-s="1295.56" data-e="1305.90">And when she pressed him hard with her words day after day, and she urged him, his soul was vexed to death.</span> <span class="tl-s" data-s="1306.86" data-e="1309.48">And he told her all his heart.</span> <span class="tl-s" data-s="1310.10" data-e="1314.40">And he said to her, A razor has never come upon my head.</span> <span class="tl-s" data-s="1315.12" data-e="1318.48">For I have been a Nazarite to God from my mother&#x27;s womb.</span> <span class="tl-s" data-s="1319.00" data-e="1326.18">If my head is shaved, then my strength will leave me, and I shall become weak and be like any other man.</span> <span class="tl-s" data-s="1326.88" data-e="1329.22">Okay, finally he mentions the vow, right?</span> <span class="tl-s" data-s="1330.18" data-e="1335.98">We only heard about the vow in Judges chapter 13 when the angel of the Lord comes and tells his parents.</span> <span class="tl-s" data-s="1336.28" data-e="1338.68">But now he speaks about the vow.</span> <span class="tl-s" data-s="1338.96" data-e="1340.58">Now his secret is out.</span> <span class="tl-s" data-s="1341.04" data-e="1341.56">Samson.</span></p>
+        <p><span class="tl-s" data-s="1342.74" data-e="1350.50">Samson, who could subdue 1,000 opponents with the jawbone of a donkey, succumbs to the wiles of Delilah.</span></p>
+        <p><span class="tl-s" data-s="1352.06" data-e="1361.50">The man who had used so many women now gets played by one for the epic failure of his life.</span> <span class="tl-s" data-s="1362.44" data-e="1362.94">Verse 18.</span> <span class="tl-s" data-s="1364.06" data-e="1375.12">When Delilah saw that he had told her all his heart, she sent and called the lords of the Philistines, saying, Come up again, for he has told me all his heart.</span></p>
+        <p><span class="tl-s" data-s="1376.54" data-e="1381.58">Then the lords of the Philistines came up to her and brought the money in their hands.</span> <span class="tl-s" data-s="1382.68" data-e="1389.42">She made him sleep on her knees, and she called a man and had him shave off the seven locks of his head.</span> <span class="tl-s" data-s="1390.76" data-e="1395.88">Then she began to torment him, and his strength left him.</span> <span class="tl-s" data-s="1396.66" data-e="1400.14">And she said, The Philistines are upon you, Samson.</span> <span class="tl-s" data-s="1400.64" data-e="1407.62">And he awoke from sleep and said, I will go out as at other times and shake myself free.</span> <span class="tl-s" data-s="1408.48" data-e="1412.74">And here comes the saddest verse in a sad life.</span> <span class="tl-s" data-s="1413.74" data-e="1419.50">But he did not know that the Lord had left him.</span> <span class="tl-s" data-s="1420.74" data-e="1425.34">But he did not know that the Lord had left him.</span> <span class="tl-s" data-s="1426.36" data-e="1431.56">The supernatural strength he assumed was his by right was gone.</span></p>
+        <p><span class="tl-s" data-s="1434.56" data-e="1438.54">He thrust aside his Nazarite vow so many times, right?</span> <span class="tl-s" data-s="1438.66" data-e="1440.54">He touched dead animals all the time.</span> <span class="tl-s" data-s="1441.30" data-e="1442.84">He threw a drinking party.</span> <span class="tl-s" data-s="1443.74" data-e="1448.14">Surely, he thought, if my hair gets cut, what&#x27;s the big deal?</span> <span class="tl-s" data-s="1448.44" data-e="1449.40">This strength is mine.</span> <span class="tl-s" data-s="1449.48" data-e="1450.26">I&#x27;ve had it so long.</span> <span class="tl-s" data-s="1450.50" data-e="1452.12">It&#x27;s what I have.</span> <span class="tl-s" data-s="1452.18" data-e="1453.16">It&#x27;s part of who I am.</span> <span class="tl-s" data-s="1453.22" data-e="1454.24">It&#x27;s part of my identity.</span></p>
+        <p><span class="tl-s" data-s="1456.04" data-e="1457.18">But not this time.</span></p>
+        <p><span class="tl-s" data-s="1458.66" data-e="1459.92">Not in this situation.</span> <span class="tl-s" data-s="1460.60" data-e="1461.56">Not with Delilah.</span> <span class="tl-s" data-s="1462.74" data-e="1466.88">This failure, this failure would stick and this failure would sting.</span> <span class="tl-s" data-s="1467.84" data-e="1471.66">And it was in that moment he realized how dependent he was on God.</span> <span class="tl-s" data-s="1472.70" data-e="1473.10">Maybe.</span> <span class="tl-s" data-s="1473.46" data-e="1474.66">But he didn&#x27;t say anything.</span></p>
+        <p><span class="tl-s" data-s="1477.72" data-e="1479.78">Immediately, his enemies act against him.</span> <span class="tl-s" data-s="1479.82" data-e="1480.32">Verse 21.</span> <span class="tl-s" data-s="1480.66" data-e="1492.34">And the Philistine seized him and gouged out his eyes and brought him down to Gaza and bound him with bronze shackles and he ground at the mill in the prison.</span> <span class="tl-s" data-s="1493.50" data-e="1508.20">The one who burned all of their harvest, all their wheat harvest, is now, was now consigned to grind that wheat for his enemies the eyes that had led him astray so often were now gouged out.</span></p>
+        <p><span class="tl-s" data-s="1510.20" data-e="1511.48">Epic failure.</span></p>
+        <p><span class="tl-s" data-s="1515.92" data-e="1519.78">Would this epic failure be permanent?</span></p>
+        <p><span class="tl-s" data-s="1521.72" data-e="1533.82">Would God&#x27;s plan to use Samson, remember what we read about in Judges chapter 13, verse 5, that the Lord that the Lord was raising up Samson to begin to save his people from the Philistines.</span> <span class="tl-s" data-s="1534.20" data-e="1538.10">Is now God&#x27;s purposes for Samson, are they thwarted?</span></p>
+        <p><span class="tl-s" data-s="1541.48" data-e="1542.12">No.</span> <span class="tl-s" data-s="1543.12" data-e="1544.36">And we begin to get a hint.</span> <span class="tl-s" data-s="1544.50" data-e="1545.16">Verse 22.</span> <span class="tl-s" data-s="1545.58" data-e="1550.96">But the hair of his head began to grow after it had been shaved.</span> <span class="tl-s" data-s="1552.06" data-e="1553.26">That&#x27;s what hair does.</span></p>
+        <p><span class="tl-s" data-s="1554.78" data-e="1557.60">But his story of failure is not over yet.</span></p>
+        <p><span class="tl-s" data-s="1559.16" data-e="1561.14">We&#x27;ve seen Samson fail in Gaza.</span> <span class="tl-s" data-s="1561.28" data-e="1562.50">We&#x27;ve seen him fail with the night.</span> <span class="tl-s" data-s="1563.24" data-e="1566.86">But now we shift the scene to the Philistine failure.</span></p>
+        <p><span class="tl-s" data-s="1569.08" data-e="1570.68">And it happens at a party.</span> <span class="tl-s" data-s="1571.68" data-e="1573.88">The Philistines were thrilled.</span> <span class="tl-s" data-s="1574.86" data-e="1577.46">The Philistines just won their Super Bowl.</span> <span class="tl-s" data-s="1577.76" data-e="1578.84">They had a parade.</span> <span class="tl-s" data-s="1579.26" data-e="1580.16">There&#x27;s ticker tape.</span> <span class="tl-s" data-s="1580.44" data-e="1587.68">Everybody&#x27;s thrilled because they captured Samson, their great, the great menace to their people.</span> <span class="tl-s" data-s="1588.12" data-e="1591.24">And they all gather up to a temple to celebrate.</span> <span class="tl-s" data-s="1591.24" data-e="1592.06">Verse 23.</span> <span class="tl-s" data-s="1592.58" data-e="1599.16">Now the lords of the Philistine gathered to offer a great sacrifice to Dagon, their God, and to rejoice.</span> <span class="tl-s" data-s="1599.64" data-e="1604.70">And they said, Our God has given Samson our enemy into our hand.</span></p>
+        <p><span class="tl-s" data-s="1605.60" data-e="1609.82">And when the people saw him, that&#x27;s Samson, they praised their God.</span> <span class="tl-s" data-s="1609.94" data-e="1619.18">For they said, Our God has given our enemy into our hand, the ravager of our country, who has killed many of us.</span> <span class="tl-s" data-s="1619.88" data-e="1625.96">When their hearts were merry, they said, Call Samson that he may entertain us.</span> <span class="tl-s" data-s="1626.82" data-e="1630.44">So they called Samson out of the prison and he entertained them.</span> <span class="tl-s" data-s="1631.42" data-e="1633.32">They made him stand between the pillars.</span> <span class="tl-s" data-s="1634.26" data-e="1635.48">So their hearts are merry.</span> <span class="tl-s" data-s="1635.56" data-e="1636.16">You know what that means?</span> <span class="tl-s" data-s="1636.40" data-e="1638.46">They were drunk.</span> <span class="tl-s" data-s="1639.80" data-e="1644.90">They&#x27;re consuming Jack and Coke, perhaps Blue Ribbon, maybe some Philistine box wine.</span> <span class="tl-s" data-s="1645.02" data-e="1645.78">I don&#x27;t know.</span></p>
+        <p><span class="tl-s" data-s="1646.78" data-e="1649.40">But they are lit.</span> <span class="tl-s" data-s="1650.44" data-e="1654.42">And in their drunken revelry, they collectively get an idea.</span> <span class="tl-s" data-s="1654.58" data-e="1655.68">Now, here&#x27;s a tip.</span> <span class="tl-s" data-s="1656.56" data-e="1659.04">No good ideas come from drunken revelries.</span> <span class="tl-s" data-s="1659.50" data-e="1661.06">So don&#x27;t get drunk in the first place.</span> <span class="tl-s" data-s="1661.36" data-e="1665.72">But in history, there are bad ideas that came from drunken revelries.</span> <span class="tl-s" data-s="1666.12" data-e="1670.12">This is an epically bad idea and it would lead to an epic failure.</span> <span class="tl-s" data-s="1670.32" data-e="1672.48">This bad plan was fueled by alcohol.</span> <span class="tl-s" data-s="1673.22" data-e="1674.32">And what&#x27;s their idea?</span> <span class="tl-s" data-s="1674.44" data-e="1677.76">To get Samson and have him come entertain us.</span></p>
+        <p><span class="tl-s" data-s="1677.76" data-e="1687.36">Even worse was the idea that they repeated twice in our text that Dagon was the one who won this victory for them.</span> <span class="tl-s" data-s="1687.48" data-e="1689.04">Dagon is their false god.</span></p>
+        <p><span class="tl-s" data-s="1691.20" data-e="1696.06">Dagon had about as much to do with this victory as a rooster does with the sunrise.</span> <span class="tl-s" data-s="1696.68" data-e="1701.12">And you can almost hear the Lord mock and say, okay, you think Dagon did this?</span> <span class="tl-s" data-s="1701.24" data-e="1701.48">Alright.</span> <span class="tl-s" data-s="1701.84" data-e="1704.30">Let&#x27;s see if Dagon can protect you now.</span></p>
+        <p><span class="tl-s" data-s="1707.62" data-e="1708.80">The answer is no.</span></p>
+        <p><span class="tl-s" data-s="1711.54" data-e="1713.64">And then Samson takes center stage.</span> <span class="tl-s" data-s="1715.02" data-e="1716.16">Verse 26.</span> <span class="tl-s" data-s="1716.26" data-e="1724.88">And Samson said to the young man who held him by the hand, let me feel the pillars on which the house rests that I may lean against them.</span> <span class="tl-s" data-s="1725.88" data-e="1727.94">Now the house was full of men and women.</span> <span class="tl-s" data-s="1728.60" data-e="1730.40">All the lords of the Philistines were there.</span> <span class="tl-s" data-s="1730.88" data-e="1737.48">And on the roof there were about 3,000 men and women who looked on while Samson entertained.</span></p>
+        <p><span class="tl-s" data-s="1739.30" data-e="1755.16">Then Samson called to the Lord and said, O Lord God, please remember me and please strengthen me only this once, O God, that I may be avenged on the Philistines for my two eyes.</span> <span class="tl-s" data-s="1755.88" data-e="1756.08">Guys.</span></p>
+        <p><span class="tl-s" data-s="1757.98" data-e="1760.86">Okay, as prayers go, that one&#x27;s bad.</span></p>
+        <p><span class="tl-s" data-s="1762.88" data-e="1766.12">Paul Miller has written a wonderful book called The Praying Life.</span> <span class="tl-s" data-s="1766.26" data-e="1767.82">That prayer is not in there.</span> <span class="tl-s" data-s="1768.90" data-e="1769.38">Why?</span> <span class="tl-s" data-s="1770.34" data-e="1771.32">Well, it&#x27;s a poor prayer.</span> <span class="tl-s" data-s="1771.60" data-e="1772.92">Why does he ask for strength?</span> <span class="tl-s" data-s="1772.98" data-e="1778.60">Does he ask for strength because he was offended at the praise that the Philistine people were giving to Dagon.</span> <span class="tl-s" data-s="1778.78" data-e="1780.60">He&#x27;s like, hey, this isn&#x27;t true.</span> <span class="tl-s" data-s="1780.86" data-e="1782.66">Dagon didn&#x27;t have anything to do with this.</span> <span class="tl-s" data-s="1782.76" data-e="1783.80">I was just an idiot.</span> <span class="tl-s" data-s="1784.66" data-e="1785.02">No.</span></p>
+        <p><span class="tl-s" data-s="1786.10" data-e="1790.44">Did he realize the error of his ways and say, Lord, I have made a mess of everything.</span> <span class="tl-s" data-s="1790.84" data-e="1793.26">Please forgive me and give me strength this one more time.</span> <span class="tl-s" data-s="1793.56" data-e="1793.96">No.</span> <span class="tl-s" data-s="1794.86" data-e="1796.48">Did he finally say, you know what?</span> <span class="tl-s" data-s="1796.54" data-e="1797.10">I forgot.</span> <span class="tl-s" data-s="1797.34" data-e="1802.60">I was set apart by the Lord Jesus, pre-incarnate Lord Jesus, to rescue my people.</span> <span class="tl-s" data-s="1802.86" data-e="1805.42">Now let me rescue them so I can kill a bunch of the Philistines.</span> <span class="tl-s" data-s="1805.50" data-e="1806.06">Is that what happened?</span> <span class="tl-s" data-s="1806.46" data-e="1806.90">No.</span> <span class="tl-s" data-s="1807.86" data-e="1816.30">Did he say, well, finally, Lord, even though it&#x27;s almost too late, even though I don&#x27;t have any more eyes, I want to be used for your glory and for your purposes.</span></p>
+        <p><span class="tl-s" data-s="1816.48" data-e="1817.08">Is that what he did?</span> <span class="tl-s" data-s="1817.44" data-e="1817.88">No.</span> <span class="tl-s" data-s="1818.88" data-e="1819.76">What did he do?</span> <span class="tl-s" data-s="1820.92" data-e="1832.98">Oh, Lord God, please remember me and strengthen me only this, only this one time, oh God, that I may be avenged on the Philistines for my two eyes.</span> <span class="tl-s" data-s="1833.88" data-e="1837.80">If the Lord could push pause there, I would imagine he could say something like this.</span> <span class="tl-s" data-s="1837.86" data-e="1840.96">Listen, Samson, your eyes have gotten you into a lot of trouble.</span> <span class="tl-s" data-s="1841.74" data-e="1844.46">It&#x27;s better that they&#x27;re on the dirt somewhere than in your head.</span> <span class="tl-s" data-s="1845.52" data-e="1846.78">But that&#x27;s not what he says.</span> <span class="tl-s" data-s="1846.86" data-e="1847.42">God&#x27;s gracious.</span> <span class="tl-s" data-s="1847.56" data-e="1848.38">He&#x27;s kind, right?</span></p>
+        <p><span class="tl-s" data-s="1848.98" data-e="1853.10">But your two eyes, your two eyes, that&#x27;s not the point.</span> <span class="tl-s" data-s="1853.18" data-e="1855.22">Your two eyes have gotten you into enough trouble.</span> <span class="tl-s" data-s="1855.88" data-e="1858.70">He didn&#x27;t even learn his lesson here at the end.</span></p>
+        <p><span class="tl-s" data-s="1862.62" data-e="1869.08">But the Lord and his mercy answers this hopelessly bad prayer anyway.</span> <span class="tl-s" data-s="1870.00" data-e="1882.22">Verse 29, And Samson grasped the two middle pillars on which the house rested and he leaned his weight against them, his right hand on the one and his left hand on the other.</span> <span class="tl-s" data-s="1882.34" data-e="1884.62">And Samson said, let me die with the Philistines.</span> <span class="tl-s" data-s="1885.48" data-e="1894.10">Then he bowed, then he bowed with all his strength and the house fell upon the Lord&#x27;s and upon all the people who were in it.</span> <span class="tl-s" data-s="1894.68" data-e="1901.46">So the dead whom he killed at his death were more than those whom he killed during his life.</span> <span class="tl-s" data-s="1902.62" data-e="1913.96">Then his brothers and all his family came down and took him and brought him up and buried him between Zorah and Eshto in the tomb of Manoah, his father.</span></p>
+        <p><span class="tl-s" data-s="1915.80" data-e="1919.12">He had judged Israel 20 years.</span> <span class="tl-s" data-s="1920.28" data-e="1924.76">In the middle of his enemies, Samson cries out to the Lord and the Lord answers.</span> <span class="tl-s" data-s="1925.42" data-e="1926.90">The Lord heard Samson.</span> <span class="tl-s" data-s="1927.26" data-e="1933.54">The foolish, flawed, fickle, failure of a man prayed and the Lord answered him.</span> <span class="tl-s" data-s="1933.64" data-e="1934.78">That&#x27;s relentless mercy.</span> <span class="tl-s" data-s="1936.12" data-e="1942.30">You may say that Samson did not deserve to be heard by the Lord and you would be exactly correct.</span> <span class="tl-s" data-s="1943.00" data-e="1944.00">He did not.</span></p>
+        <p><span class="tl-s" data-s="1945.50" data-e="1950.86">This, the Lord&#x27;s response says a whole lot more about who he is than who Samson is.</span> <span class="tl-s" data-s="1951.22" data-e="1955.06">But if we&#x27;re honest, who deserves to be heard by the Lord?</span> <span class="tl-s" data-s="1955.84" data-e="1962.88">If our Lord only had ears for people who had no failure, no prayer ever would get answered.</span> <span class="tl-s" data-s="1963.58" data-e="1969.78">But our Lord is a God of relentless mercy and he hears the cries of his unworthy people.</span> <span class="tl-s" data-s="1970.42" data-e="1971.62">Or let&#x27;s put it a different way.</span> <span class="tl-s" data-s="1971.90" data-e="1977.38">Samson, who was an epic failure, there&#x27;s no getting around it, the Lord heard even him.</span> <span class="tl-s" data-s="1977.68" data-e="1981.78">The Lord is attentive to our prayer even when we fail.</span></p>
+        <p><span class="tl-s" data-s="1983.26" data-e="1984.96">Which of us hasn&#x27;t played the fool?</span> <span class="tl-s" data-s="1985.22" data-e="1987.16">Which of us hasn&#x27;t made a mess of things?</span> <span class="tl-s" data-s="1987.38" data-e="1988.98">Which of us hasn&#x27;t fallen short?</span> <span class="tl-s" data-s="1989.24" data-e="1990.58">Which of us hasn&#x27;t failed?</span> <span class="tl-s" data-s="1990.86" data-e="1993.74">Which of us at times hasn&#x27;t epically failed?</span> <span class="tl-s" data-s="1993.74" data-e="1995.04">All of us have.</span> <span class="tl-s" data-s="1995.60" data-e="1997.08">Every single one of us.</span> <span class="tl-s" data-s="1998.20" data-e="1999.38">Is there hope?</span> <span class="tl-s" data-s="2000.40" data-e="2003.06">Is there hope for us who fail?</span> <span class="tl-s" data-s="2003.28" data-e="2005.26">We might not fail like Samson.</span></p>
+        <p><span class="tl-s" data-s="2005.70" data-e="2008.62">We might not know the churchy thing to say.</span> <span class="tl-s" data-s="2009.72" data-e="2012.28">We might not fail like him, but we fail.</span> <span class="tl-s" data-s="2012.42" data-e="2013.42">We all fail.</span></p>
+        <p><span class="tl-s" data-s="2015.20" data-e="2021.70">Is there hope for us marked by failure and sometimes epic failure?</span> <span class="tl-s" data-s="2021.70" data-e="2024.10">There is.</span> <span class="tl-s" data-s="2024.68" data-e="2029.96">But let me tell you the kind of hope that Judges 16 is not peddling.</span></p>
+        <p><span class="tl-s" data-s="2032.52" data-e="2037.24">The message of this chapter is not primarily do not be like Samson.</span></p>
+        <p><span class="tl-s" data-s="2039.74" data-e="2049.88">If you walk out thinking the message of this chapter or the message of Judges is don&#x27;t be like Gideon, Jephthah, Barak, or Samson.</span> <span class="tl-s" data-s="2050.66" data-e="2056.70">If you walk out thinking the message is don&#x27;t be like Samson, that is an epic fail.</span></p>
+        <p><span class="tl-s" data-s="2059.20" data-e="2061.52">We need a better message than that.</span></p>
+        <p><span class="tl-s" data-s="2063.22" data-e="2070.76">The Bible is not ultimately about following good moral examples or staying away from bad moral examples.</span></p>
+        <p><span class="tl-s" data-s="2072.20" data-e="2078.70">The Bible doesn&#x27;t merely call us just to be better people and don&#x27;t be like this guy or that guy or this lady or that lady.</span> <span class="tl-s" data-s="2079.70" data-e="2084.26">You see, our problem is not that we need better role models, it&#x27;s that we need a savior.</span></p>
+        <p><span class="tl-s" data-s="2086.32" data-e="2089.40">Moral examples give us no power.</span></p>
+        <p><span class="tl-s" data-s="2092.86" data-e="2101.50">When we say things like don&#x27;t be like Samson, we&#x27;re assuming that our problems are mostly behavioral, as if sometimes we do the wrong things.</span> <span class="tl-s" data-s="2102.50" data-e="2106.26">No, our problems are much more than just bad choices.</span> <span class="tl-s" data-s="2107.14" data-e="2111.20">You see, moral examples may instruct but they cannot transform.</span></p>
+        <p><span class="tl-s" data-s="2113.56" data-e="2119.44">All the moral example can do, even the best of the moral examples is to generate guilt.</span> <span class="tl-s" data-s="2120.50" data-e="2123.94">I don&#x27;t measure up or pride.</span> <span class="tl-s" data-s="2124.54" data-e="2125.78">I&#x27;m doing pretty well.</span></p>
+        <p><span class="tl-s" data-s="2127.24" data-e="2131.60">But, there is no lasting change.</span> <span class="tl-s" data-s="2132.56" data-e="2137.12">We need not an example to follow but a savior to trust.</span></p>
+        <p><span class="tl-s" data-s="2138.90" data-e="2140.00">And see, we have one.</span> <span class="tl-s" data-s="2140.52" data-e="2145.10">See, when we read the story of Samson, this story is not good news.</span> <span class="tl-s" data-s="2145.36" data-e="2150.42">But in this story, there is a shadow of another story that brings better news.</span> <span class="tl-s" data-s="2150.60" data-e="2153.08">Like Samson, Jesus was betrayed.</span> <span class="tl-s" data-s="2153.30" data-e="2157.18">Unlike Samson, Jesus did not seek revenge.</span> <span class="tl-s" data-s="2158.42" data-e="2161.94">Like Samson, Jesus was handed over to the Gentiles.</span> <span class="tl-s" data-s="2162.10" data-e="2165.96">Unlike Samson, Jesus willingly gave himself.</span> <span class="tl-s" data-s="2167.24" data-e="2173.08">Like Samson, Jesus was put on public display. unlike Samson, Jesus did not entertain.</span> <span class="tl-s" data-s="2173.86" data-e="2177.26">Like Samson, Jesus died with his arms outstretched.</span> <span class="tl-s" data-s="2177.92" data-e="2182.28">Unlike Samson, Jesus did not bring death to his enemies but life.</span></p>
+        <p><span class="tl-s" data-s="2183.44" data-e="2185.72">Like Samson, Jesus called out to the Lord.</span> <span class="tl-s" data-s="2185.92" data-e="2191.62">Unlike Samson, he did not cry out in vengeance but cried out and said, Father, forgive them.</span> <span class="tl-s" data-s="2191.86" data-e="2193.68">They do not know what they do.</span></p>
+        <p><span class="tl-s" data-s="2196.56" data-e="2203.32">Our Savior won a victory not in crushing his enemies but being crushed by them.</span> <span class="tl-s" data-s="2204.32" data-e="2208.22">Samson died in the middle of his enemies and his enemies died as well.</span> <span class="tl-s" data-s="2208.48" data-e="2217.30">Our Savior died in the middle of his enemies and his enemies, all who trust in him, every single one will have life and have life eternal.</span> <span class="tl-s" data-s="2218.44" data-e="2222.54">See, Samson is meant to point us to a better judge.</span> <span class="tl-s" data-s="2223.64" data-e="2230.42">And if you&#x27;re uncomfortable thinking about Jesus as judge, read Revelation chapter 19 and you will be set right.</span> <span class="tl-s" data-s="2230.78" data-e="2232.18">Jesus is judge.</span> <span class="tl-s" data-s="2232.38" data-e="2233.80">He is the true and living one.</span> <span class="tl-s" data-s="2234.04" data-e="2242.20">He is the one who will judge the living and the dead and he will do it without, with total impartiality, no bias.</span> <span class="tl-s" data-s="2243.56" data-e="2247.40">And it&#x27;s only with Jesus that we have a way forward when we fail.</span> <span class="tl-s" data-s="2247.58" data-e="2248.86">Because we all fail.</span></p>
+        <p><span class="tl-s" data-s="2250.30" data-e="2255.94">You see, with Jesus, even your epic failures do not thwart God&#x27;s will for your life.</span> <span class="tl-s" data-s="2256.88" data-e="2258.64">Here&#x27;s what we&#x27;ve been pushing toward the whole time.</span> <span class="tl-s" data-s="2258.90" data-e="2264.22">With Christ, even your epic failures are not final.</span></p>
+        <p><span class="tl-s" data-s="2266.52" data-e="2268.00">Christian, listen to this.</span> <span class="tl-s" data-s="2268.28" data-e="2273.54">With Christ, even your epic failures are not final.</span> <span class="tl-s" data-s="2274.78" data-e="2278.48">Jesus is the one who works through us despite our many failures.</span> <span class="tl-s" data-s="2278.78" data-e="2285.82">When you fail and you will fail, you have a Savior who has already pursued you with relentless mercy.</span> <span class="tl-s" data-s="2286.14" data-e="2288.94">Your failure is no obstacle to his mercy.</span> <span class="tl-s" data-s="2289.38" data-e="2297.16">If you are a Christian and you are more aware of your personal failures than your personal Savior, you need a radical reorientation.</span></p>
+        <p><span class="tl-s" data-s="2299.66" data-e="2305.48">I&#x27;ll put it another way, if you&#x27;re haunted by your past failures, you&#x27;ve forgotten who Jesus is.</span></p>
+        <p><span class="tl-s" data-s="2308.34" data-e="2311.12">How do I know your epic failures are not final?</span> <span class="tl-s" data-s="2311.94" data-e="2318.00">Remember in verse 20 when we read, Samson did not know the Lord left him.</span></p>
+        <p><span class="tl-s" data-s="2319.44" data-e="2328.74">We all know that the only reason the Lord hadn&#x27;t left him a long time before this was because of his relentless mercy.</span> <span class="tl-s" data-s="2329.74" data-e="2341.44">But when our Savior, our King, our Judge, hung on the cross at Calvary, he knew when the Lord forsook him.</span> <span class="tl-s" data-s="2341.64" data-e="2349.66">He knew when the Lord left him and he cried out, My God, my God, why have you forsaken me?</span> <span class="tl-s" data-s="2350.66" data-e="2357.20">And unlike Samson, there was no good reason for him to be forsaken, but he was forsaken.</span> <span class="tl-s" data-s="2357.52" data-e="2358.96">Why was he forsaken?</span> <span class="tl-s" data-s="2359.18" data-e="2379.06">He was forsaken so that when we fail, even epically, we can come to his throne of grace and ask for help and forgiveness in our time of need, knowing that because he rejected his son, he will always receive us.</span></p>
+        <p><span class="tl-s" data-s="2381.60" data-e="2385.82">Our failures, serious as they may be, are not final.</span></p>
+        <p><span class="tl-s" data-s="2387.40" data-e="2389.38">Are you haunted by failure?</span> <span class="tl-s" data-s="2390.18" data-e="2391.26">Run to Jesus.</span> <span class="tl-s" data-s="2392.36" data-e="2394.48">Don&#x27;t just say, I won&#x27;t be like Samson.</span> <span class="tl-s" data-s="2394.98" data-e="2395.42">You know what?</span> <span class="tl-s" data-s="2395.50" data-e="2396.48">We all kind of will be.</span></p>
+        <p><span class="tl-s" data-s="2398.16" data-e="2400.12">Are you dogged by an epic failure?</span> <span class="tl-s" data-s="2400.52" data-e="2401.36">Run to Jesus.</span> <span class="tl-s" data-s="2401.74" data-e="2402.72">Do you feel unworthy?</span> <span class="tl-s" data-s="2403.14" data-e="2403.82">Run to Jesus.</span> <span class="tl-s" data-s="2404.90" data-e="2407.16">Have you failed even though you know better?</span> <span class="tl-s" data-s="2407.84" data-e="2410.56">For the thousandth time, run to Jesus.</span> <span class="tl-s" data-s="2411.46" data-e="2422.08">You see, if there&#x27;s anything we as Christians can do that&#x27;s an epic failure, it&#x27;s not running to Jesus and trying to deal with it on our own.</span></p>
+        <p><span class="tl-s" data-s="2423.56" data-e="2426.94">Because with Jesus, even your epic failures are not final.</span> <span class="tl-s" data-s="2427.04" data-e="2435.14">Because friends, your guilt, if you&#x27;re a Christian, your guilt and your shame, they do not have the final say.</span></p>
+        <p><span class="tl-s" data-s="2437.76" data-e="2442.36">Your guilt and your shame do not have the final say.</span> <span class="tl-s" data-s="2442.60" data-e="2443.06">You know what?</span> <span class="tl-s" data-s="2443.24" data-e="2448.82">Often, the guilt we carry, the shame we carry, it&#x27;s legitimate.</span> <span class="tl-s" data-s="2449.58" data-e="2451.78">Because we&#x27;ve done things wrongly.</span> <span class="tl-s" data-s="2452.46" data-e="2453.40">We&#x27;ve failed.</span> <span class="tl-s" data-s="2454.10" data-e="2455.76">And sometimes very seriously.</span></p>
+        <p><span class="tl-s" data-s="2460.84" data-e="2468.02">And you know we can carry that around and decide, you know, I&#x27;m going to hold on to this.</span> <span class="tl-s" data-s="2468.30" data-e="2472.76">Somehow thinking that&#x27;s godly, thinking that&#x27;s good, thinking that&#x27;s right.</span> <span class="tl-s" data-s="2473.12" data-e="2474.42">Friends, that&#x27;s a lie.</span></p>
+        <p><span class="tl-s" data-s="2476.88" data-e="2490.36">The godly, good, right thing is to run to your Savior and ask for forgiveness again and again and again and again.</span> <span class="tl-s" data-s="2491.66" data-e="2498.02">Because with Jesus, epic failure is never final.</span></p>
+        <p><span class="tl-s" data-s="2499.56" data-e="2501.62">And it&#x27;s the same for here if you&#x27;re not a Christian.</span> <span class="tl-s" data-s="2502.18" data-e="2514.66">If you&#x27;re not following Jesus and you carry this guilt, the weight of guilt and shame, you&#x27;re aware of the sin you&#x27;ve committed and you feel sorrow.</span> <span class="tl-s" data-s="2515.38" data-e="2518.06">That&#x27;s the gift of conviction that you&#x27;re being given.</span></p>
+        <p><span class="tl-s" data-s="2521.94" data-e="2525.36">And there&#x27;s no hope in just trying to walk out and not be Samson.</span> <span class="tl-s" data-s="2526.24" data-e="2529.78">You don&#x27;t need an example to follow. you need a saver you can trust.</span> <span class="tl-s" data-s="2530.74" data-e="2538.74">Jesus says that any who trust in him that he has died for them and he has forgiven their sin.</span></p>
+        <p><span class="tl-s" data-s="2542.62" data-e="2556.80">And you can ask forgiveness and experience the reality that your failure is not final either. praise the name of Jesus.</span></p>
+        <p><span class="tl-s" data-s="2558.70" data-e="2566.06">Praise the name of Jesus because there will never be a day, Christians, that we read something like verse 20 over our lives.</span></p>
+        <p><span class="tl-s" data-s="2567.52" data-e="2574.54">We will never hear and we and he or she or you or me did not know that the Lord had left them.</span> <span class="tl-s" data-s="2575.16" data-e="2576.20">He cannot leave us.</span> <span class="tl-s" data-s="2576.62" data-e="2577.84">He will not leave us.</span> <span class="tl-s" data-s="2578.46" data-e="2579.90">He will never forsake us.</span> <span class="tl-s" data-s="2580.42" data-e="2581.14">He is ours.</span> <span class="tl-s" data-s="2581.28" data-e="2596.04">We are his to the end of the age. though we fail, though we fall, we have a Savior and with him those epic failures are never final.</span></p>
+        <p><span class="tl-s" data-s="2598.52" data-e="2599.52">Let&#x27;s pray.</span></p>
+        <p><span class="tl-s" data-s="2605.52" data-e="2625.00">Lord, I pray that you would help us in this moment, at this time, Lord, I pray that for those who have you got their attention, Lord, I pray that they would respond in their hearts toward you.</span></p>
+        <p><span class="tl-s" data-s="2627.12" data-e="2638.00">Lord, I know there are people here who feel like they&#x27;re second class or damaged goods or somehow forever compromised because of what they&#x27;ve done. love.</span> <span class="tl-s" data-s="2638.00" data-e="2643.66">And they can&#x27;t shake that sense of guilt and shame.</span></p>
+        <p><span class="tl-s" data-s="2646.46" data-e="2654.66">Lord, I pray that you would just minister to them the hope of the gospel, the scouring pad of grace that wipes away those things.</span> <span class="tl-s" data-s="2654.88" data-e="2665.12">Not because they&#x27;re not real, but because the penalty for our sin, the guilt and shame that we should carry, you, Jesus, carried, and you carried to be our substitute.</span> <span class="tl-s" data-s="2665.12" data-e="2668.26">The punishment that was due to us was given to you.</span></p>
+        <p><span class="tl-s" data-s="2673.30" data-e="2678.22">Lord, you answered Samson&#x27;s prayer, but in the garden you didn&#x27;t answer your son&#x27;s prayer.</span></p>
+        <p><span class="tl-s" data-s="2679.96" data-e="2695.22">And for that we&#x27;re grateful so that we can know for sure and for certain that though we fail, we will never be sent away, we will never be sent out, we will never ever have a moment where you are not with us.</span></p>
+        <p><span class="tl-s" data-s="2697.60" data-e="2699.48">It&#x27;s that hope that we have, Lord.</span> <span class="tl-s" data-s="2699.76" data-e="2704.34">We&#x27;re grateful that that failure, our failure, as serious as it may be, is never final.</span> <span class="tl-s" data-s="2705.50" data-e="2712.58">I pray that you would help us, Lord, to be people that look to our Savior more than we look to our past guilt and shame.</span> <span class="tl-s" data-s="2713.90" data-e="2730.12">Lord, as we carry those things around, Lord, I pray that that would just be, help it to be a tutor, a schoolmaster, to help us to remind ourselves what Christ has done for us, even if a thousand times a day we have to say, I feel guilty, but I know my guilt has been dealt with on the cross.</span> <span class="tl-s" data-s="2731.32" data-e="2738.08">I feel ashamed, but I know that shame has been dealt with on the cross, because my Savior died in my place.</span></p>
+        <p><span class="tl-s" data-s="2742.14" data-e="2753.38">And Lord, I pray that you would comfort us and be with us and minister to us, both Christian and non-Christian alike.</span> <span class="tl-s" data-s="2756.60" data-e="2758.28">And it&#x27;s in your mighty name we pray.</span> <span class="tl-s" data-s="2758.98" data-e="2759.26">Amen.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Live sermon feed: spotlight from /api/sermons, browsable archive from
+  // /api/sermons/search. Static fallback list stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function row(it) {
+      var meta = [it.speaker, fmtDate(it.date)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      var titleHtml = esc(it.title);
+      var tUrl = it.guid && transcriptMap[it.guid];
+      if (tUrl) titleHtml = '<a href="' + esc(tUrl) + '">' + titleHtml + "</a>";
+      return '<div class="sermon"><div><h3>' + titleHtml + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    fetch("/api/sermons?v=3")
+      .then(function (res) { if (!res.ok) throw new Error("feed " + res.status); return res.json(); })
+      .then(function (data) {
+        var spot = document.querySelector("[data-series-spotlight]");
+        if (data && data.series && spot) {
+          var s = data.series;
+          var art = spot.querySelector("[data-series-art]");
+          if (art && s.artwork) { art.src = s.artwork; } else if (art) { art.style.display = "none"; }
+          var nm = spot.querySelector("[data-series-name]");
+          if (nm) nm.textContent = s.name;
+          var bl = spot.querySelector("[data-series-blurb]");
+          if (bl) bl.textContent = s.blurb;
+          spot.hidden = false;
+        }
+      })
+      .catch(function () { /* spotlight stays hidden */ });
+
+    var PER = 10;
+    var state = { q: "", speaker: "", series: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var speakerSel = document.querySelector("[data-sermons-speaker]");
+    var seriesSel = document.querySelector("[data-sermons-series]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No messages found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(speakerSel, data.facets.speakers || [], function (e) { return e.name; }, function (e) { return e.name + " (" + e.count + ")"; });
+        fill(seriesSel, data.facets.series || [], function (e) { return e.name; }, function (e) { return e.name + " (" + e.count + ")"; });
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.speaker || data.series || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.speaker) parts.push("by " + data.speaker);
+          if (data.series) parts.push("in " + data.series);
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " result" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " messages";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/sermons/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.speaker ? "&speaker=" + encodeURIComponent(state.speaker) : "") +
+        (state.series ? "&series=" + encodeURIComponent(state.series) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () { /* keep current list on error */ });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.speaker = ""; state.series = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (speakerSel) speakerSel.value = "";
+      if (seriesSel) seriesSel.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    function bindSelect(sel, key) {
+      if (!sel) return;
+      sel.addEventListener("change", function () {
+        state[key] = sel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    bindSelect(speakerSel, "speaker");
+    bindSelect(seriesSel, "series");
+    bindSelect(monthSel, "month");
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: https://hub.centergilbert.com/media/with-christ-even-your-epic-failures-are-not-final -->
+</body>
+</html>
