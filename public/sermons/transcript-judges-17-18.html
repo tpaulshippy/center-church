@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Judges 17-18 — Sermon Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Listen to the latest sermons from Center Church, or follow along on Apple Podcasts and Spotify." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=17" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a class="active" href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/sermons">&larr; All sermons</a>
+          <h1 class="display-lg">Judges 17-18</h1>
+          <p class="transcript-meta">Rich Richardson · 2025-11-02 · 00:39:51</p>
+          <p class="transcript-desc">When we reduce God in an attempt to manage God, we forget who God is.</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/119cbef70/podcast/play/128974278/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-7%2F436123967-44100-2-444c8ebf5206d9de.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><span class="tl-s" data-s="0.02" data-e="0.40">much.</span> <span class="tl-s" data-s="0.40" data-e="3.75">If you have a Bible, if you can open up to the book of Judges.</span> <span class="tl-s" data-s="3.75" data-e="7.47">We&#x27;re coming to the end, to the home stretch.</span> <span class="tl-s" data-s="7.47" data-e="8.64">Hold your applause.</span> <span class="tl-s" data-s="8.85" data-e="12.15">We&#x27;re going to be in Judges chapter 17 and 18 today.</span> <span class="tl-s" data-s="12.77" data-e="29.08">George Santenna wrote a massive five-volume work at the beginning of the last century that most of us have never heard of called The Life of Reason.</span> <span class="tl-s" data-s="29.09" data-e="36.73">Few non-philosophers reference that work much anymore except for one quotation.</span> <span class="tl-s" data-s="36.85" data-e="43.67">He said this famously, those who cannot remember the past are condemned to repeat it.</span> <span class="tl-s" data-s="43.67" data-e="49.11">We usually change that and say those who don&#x27;t remember the past were doomed to repeat it.</span> <span class="tl-s" data-s="49.28" data-e="52.68">You see, there&#x27;s a forgetting and then there&#x27;s a forgetting.</span></p>
+        <p><span class="tl-s" data-s="52.94" data-e="54.35">Some things are trivial.</span> <span class="tl-s" data-s="54.36" data-e="56.04">Some things are weighty.</span> <span class="tl-s" data-s="56.04" data-e="65.12">It&#x27;s trivial to forget where you put your keys or that you need an oil change or the name of your distant aunt on your mother&#x27;s side twice removed.</span> <span class="tl-s" data-s="65.12" data-e="69.04">It&#x27;s another thing to forget about the things that really matter.</span> <span class="tl-s" data-s="69.04" data-e="77.38">Our great danger today, tomorrow, for the rest of the days that we have is that we forget God.</span> <span class="tl-s" data-s="77.38" data-e="80.59">Now, I&#x27;m not saying that we become atheists overnight.</span> <span class="tl-s" data-s="80.68" data-e="82.92">I&#x27;m speaking of another kind of forgetting.</span> <span class="tl-s" data-s="82.92" data-e="93.41">A kind of forgetting where we push God to the periphery of our lives and act as if he&#x27;s not the most pressing reality of our lives.</span> <span class="tl-s" data-s="93.41" data-e="99.22">That kind of forgetfulness is a forgetfulness that&#x27;s a matter not of the head but the heart.</span> <span class="tl-s" data-s="100.50" data-e="109.80">We forget God and our hearts go cold and we reduce God down to someone who doesn&#x27;t really matter.</span></p>
+        <p><span class="tl-s" data-s="111.18" data-e="119.24">He becomes someone who sometimes does things for us but we don&#x27;t expect to encounter him too much if we&#x27;re honest.</span> <span class="tl-s" data-s="119.24" data-e="128.22">Judges is an extended account of people who forgot God and we are no different than they are.</span> <span class="tl-s" data-s="128.38" data-e="130.64">We too can forget.</span></p>
+        <p><span class="tl-s" data-s="134.82" data-e="144.08">You will forget about God if you don&#x27;t look to catch glimpses of his glory and grandeur of might and might.</span> <span class="tl-s" data-s="144.34" data-e="150.34">You will forget about God if you always only think thoughts and pray prayers about what you need.</span> <span class="tl-s" data-s="151.34" data-e="157.64">You will forget about God if you see him as someone who just does some things for you sometimes.</span> <span class="tl-s" data-s="158.00" data-e="165.16">You see our God is much grander than that and we must awaken to the glory of God most high.</span> <span class="tl-s" data-s="165.44" data-e="167.74">The king of ages, immortal, invisible.</span> <span class="tl-s" data-s="167.74" data-e="171.63">Him, the only God who is worthy forever and ever.</span> <span class="tl-s" data-s="171.73" data-e="185.56">He is the most important reality of our lives and we can be in the middle of the slow train wreck that&#x27;s called forgetting God.</span> <span class="tl-s" data-s="185.71" data-e="187.07">The process of forgetting God.</span> <span class="tl-s" data-s="187.07" data-e="190.46">My hope is that Judges 17 and 18 serves as a jump start for us.</span> <span class="tl-s" data-s="190.46" data-e="199.30">Tragically, we&#x27;ve seen in Israel that people that once bristled with so much promise, they completely forgot God.</span></p>
+        <p><span class="tl-s" data-s="199.30" data-e="201.57">They thoroughly turned from him.</span> <span class="tl-s" data-s="201.57" data-e="205.62">Though they turned from him, he kept his eyes on them.</span> <span class="tl-s" data-s="205.64" data-e="210.80">And today&#x27;s another sad episode in their national forgetfulness.</span> <span class="tl-s" data-s="210.91" data-e="213.25">They forgot God.</span> <span class="tl-s" data-s="213.25" data-e="215.53">And when you forget God, you try to use God.</span> <span class="tl-s" data-s="215.72" data-e="217.00">And that&#x27;s what happens.</span> <span class="tl-s" data-s="217.00" data-e="221.46">Judges chapter 17 begins the epilogue of the book.</span></p>
+        <p><span class="tl-s" data-s="223.36" data-e="228.16">There are three main characters in this account and we&#x27;ll meet them one at a time.</span> <span class="tl-s" data-s="228.16" data-e="231.52">First, we meet Micah the forgetful.</span> <span class="tl-s" data-s="231.57" data-e="234.10">Verse 1, chapter 17.</span> <span class="tl-s" data-s="235.26" data-e="238.88">There was a man of the hill country of Ephraim whose name was Micah.</span> <span class="tl-s" data-s="238.88" data-e="249.29">And he said to his mother, the 1,100 pieces of silver that were taken from you about which you uttered a curse and also spoke it in my ears.</span> <span class="tl-s" data-s="249.42" data-e="251.77">Behold, the silver is with me.</span> <span class="tl-s" data-s="251.77" data-e="252.77">I took it.</span> <span class="tl-s" data-s="252.77" data-e="256.95">And his mother said, blessed be my son by the Lord.</span> <span class="tl-s" data-s="256.95" data-e="258.69">Now that&#x27;s a weird story.</span> <span class="tl-s" data-s="258.69" data-e="262.40">Micah steals a massive amount of silver from his mother.</span></p>
+        <p><span class="tl-s" data-s="262.41" data-e="268.10">That would be the equivalent of taking his mother&#x27;s 401k account, emptying it entirely.</span> <span class="tl-s" data-s="268.11" data-e="271.88">His mother responds by saying, whoever did this, I cursed them.</span> <span class="tl-s" data-s="272.09" data-e="276.70">Now, because 1,100 shekels is a whopping 25 pounds of silver.</span> <span class="tl-s" data-s="277.16" data-e="281.88">Micah makes off with this silver on the sly and appears to get away from it.</span> <span class="tl-s" data-s="281.88" data-e="291.31">Yet, he hears his mom apparently uttering curses about the grand larceny and she proclaims a curse on the thief.</span> <span class="tl-s" data-s="291.40" data-e="296.06">Now, we don&#x27;t know exactly what she said, but a typical curse would go something like this.</span> <span class="tl-s" data-s="296.52" data-e="298.84">Curse be the one who stole my silver.</span> <span class="tl-s" data-s="298.84" data-e="301.52">May the Lord bring disaster upon his head.</span> <span class="tl-s" data-s="302.52" data-e="305.06">Micah knew that was his head she was talking about.</span> <span class="tl-s" data-s="305.17" data-e="307.60">And so he heard the curse.</span></p>
+        <p><span class="tl-s" data-s="307.61" data-e="310.99">And at this point, he makes a business decision.</span> <span class="tl-s" data-s="311.18" data-e="315.02">He says, I&#x27;m going to return all the silver to my mom.</span> <span class="tl-s" data-s="315.66" data-e="323.95">He gives her the silver without a word of sorrow, without an expression of conviction, no word of contrition.</span> <span class="tl-s" data-s="323.95" data-e="326.76">He just doesn&#x27;t want to be cursed anymore.</span> <span class="tl-s" data-s="326.76" data-e="330.17">And his mom doesn&#x27;t want him to be cursed either.</span> <span class="tl-s" data-s="330.48" data-e="338.80">And then she lets forth this pious sounding curse reversal saying, blessed be my son by the Lord.</span> <span class="tl-s" data-s="339.46" data-e="340.78">It&#x27;s a little too late, lady.</span> <span class="tl-s" data-s="340.78" data-e="350.64">That&#x27;s the only time right here that anybody&#x27;s talking to the Lord in Judges 17 or 18.</span> <span class="tl-s" data-s="351.94" data-e="361.68">This family appears to fear and worship the Lord because they&#x27;re not calling on Dagon or Baal or Ashtorea or are the other false gods that we&#x27;ve met in this book.</span></p>
+        <p><span class="tl-s" data-s="363.86" data-e="370.64">But, though they use language that seems religious, they&#x27;re not really serving the Lord.</span> <span class="tl-s" data-s="371.90" data-e="374.08">They&#x27;re not really following the Lord.</span> <span class="tl-s" data-s="374.08" data-e="378.38">And most ironically, neither is Micah.</span> <span class="tl-s" data-s="378.38" data-e="379.80">And you know what Micah&#x27;s name means?</span> <span class="tl-s" data-s="380.64" data-e="381.42">Who is like Yahweh?</span> <span class="tl-s" data-s="381.42" data-e="382.56">Who indeed?</span> <span class="tl-s" data-s="382.56" data-e="384.34">Who indeed?</span> <span class="tl-s" data-s="384.84" data-e="388.94">They&#x27;re broadcasting that they serve the Lord, but they are not.</span> <span class="tl-s" data-s="389.90" data-e="390.62">Let&#x27;s watch.</span> <span class="tl-s" data-s="391.64" data-e="392.34">Verse 3.</span></p>
+        <p><span class="tl-s" data-s="393.38" data-e="397.78">And he, that&#x27;s Micah, restored the 1100 pieces of silver to his mother.</span> <span class="tl-s" data-s="398.58" data-e="406.36">And his mother said, I dedicate the silver to the Lord from the hand of my son to make a carved image, a metal image.</span> <span class="tl-s" data-s="406.90" data-e="409.14">Now, therefore, I will restore it to you.</span> <span class="tl-s" data-s="409.38" data-e="423.06">When he restored the money to his mother, his mother took 200 pieces of silver and gave it to the silversmith who made it into a carved image and a metal image.</span> <span class="tl-s" data-s="423.90" data-e="425.74">And it was in the house of Micah.</span> <span class="tl-s" data-s="426.80" data-e="435.90">And the man Micah had a shrine and he made an ephod and household gods and ordained one of his sons who became his priest.</span> <span class="tl-s" data-s="435.92" data-e="444.56">Okay, so if you&#x27;re a Christian and if you know anything about the Old Testament, we should just have a sea of red flags waving, waving, waving, waving, right?</span> <span class="tl-s" data-s="445.40" data-e="446.66">This is what&#x27;s going on here.</span> <span class="tl-s" data-s="446.68" data-e="449.88">We&#x27;ve got all kinds of promises or problems.</span></p>
+        <p><span class="tl-s" data-s="450.22" data-e="454.86">Micah returns the silver to his mom and she says, I dedicate the silver to the Lord.</span> <span class="tl-s" data-s="456.20" data-e="457.02">But she doesn&#x27;t.</span> <span class="tl-s" data-s="457.04" data-e="476.04">So what she should have done if she dedicated the silver to the Lord was take that 1100 shekels, those 25 pounds of silver, and ship them down to Shiloh, where the priests were serving at the tabernacle, where the Lord was, where the Ark of the Covenant was, where proper worship was to happen.</span> <span class="tl-s" data-s="476.16" data-e="477.50">But instead, what does she do?</span> <span class="tl-s" data-s="477.52" data-e="483.66">She commissions a silversmith to make a carved image and a metal image.</span></p>
+        <p><span class="tl-s" data-s="485.52" data-e="487.54">A carved image and a metal image.</span> <span class="tl-s" data-s="487.62" data-e="489.00">She&#x27;s making an image of God.</span></p>
+        <p><span class="tl-s" data-s="491.74" data-e="493.78">Now that is bad.</span> <span class="tl-s" data-s="494.06" data-e="497.40">This goes against so much.</span> <span class="tl-s" data-s="498.44" data-e="499.82">We can just pick one thing.</span> <span class="tl-s" data-s="500.06" data-e="505.24">This goes against the very second thing the Lord said in the Ten Commandments.</span> <span class="tl-s" data-s="505.96" data-e="522.70">You shall not make for yourself a carved image or any likeness of anything that is in heaven above or that is in the earth beneath or that is in the water under the earth.</span> <span class="tl-s" data-s="524.02" data-e="525.48">And that&#x27;s what she does.</span> <span class="tl-s" data-s="526.00" data-e="529.94">She makes a carved image of the Lord.</span> <span class="tl-s" data-s="530.06" data-e="535.42">So that they might be able to have a place where they could worship the Lord, who is now in the form of a carved image.</span> <span class="tl-s" data-s="536.44" data-e="541.98">We also hear that the mom dedicates the whole amount, but she keeps back 900 shekels, right?</span></p>
+        <p><span class="tl-s" data-s="543.40" data-e="546.50">And she only sends 200 shekels to the silversmith.</span> <span class="tl-s" data-s="546.62" data-e="547.36">Where&#x27;s the rest of it?</span> <span class="tl-s" data-s="548.36" data-e="553.30">It&#x27;s like somebody who gets a brand new truck, but they can&#x27;t afford it, and they say, it&#x27;s the Lord&#x27;s, it&#x27;s the Lord&#x27;s, it&#x27;s the Lord&#x27;s, right?</span> <span class="tl-s" data-s="553.74" data-e="555.72">But they&#x27;re going four-wheel driving all the time.</span> <span class="tl-s" data-s="556.56" data-e="558.96">They&#x27;re not doing the Lord&#x27;s work with it, necessarily.</span> <span class="tl-s" data-s="559.98" data-e="561.74">She&#x27;s just saying words.</span> <span class="tl-s" data-s="562.38" data-e="567.72">She dedicated to the Lord the money, but she kept most of it, and that&#x27;s not how dedication works.</span> <span class="tl-s" data-s="568.50" data-e="578.34">So she takes 200 shekels, five pounds of silver to the silversmith, and she has a god made.</span> <span class="tl-s" data-s="578.56" data-e="586.34">Now, the good thing here is that with five pounds of silver, you can only make a really little god.</span></p>
+        <p><span class="tl-s" data-s="588.42" data-e="596.56">So we&#x27;ve got a really little god that is set up in Micah&#x27;s place that&#x27;s supposed to be a representation of God Most High.</span> <span class="tl-s" data-s="597.76" data-e="601.88">Micah gets his little god, and he constructs a shrine in his home.</span> <span class="tl-s" data-s="602.22" data-e="604.18">Again, alarm bells going off, right?</span> <span class="tl-s" data-s="604.52" data-e="605.46">Makes an ephod.</span> <span class="tl-s" data-s="605.58" data-e="607.10">We remember that that&#x27;s bad.</span> <span class="tl-s" data-s="607.33" data-e="611.68">You&#x27;re not just free to go make ephods, which is what priests wear.</span> <span class="tl-s" data-s="612.20" data-e="616.58">The Levitical priests are the ones should be wearing this.</span> <span class="tl-s" data-s="617.00" data-e="624.40">And so what he does is he takes all of these things, and he begins to make really what is a fake temple in his house.</span> <span class="tl-s" data-s="625.08" data-e="626.40">He&#x27;s not free to do that.</span> <span class="tl-s" data-s="626.62" data-e="641.02">If you read the Old Testament, nobody is given clearance to add to the household gods a little image of God so that they can worship God in their own home for the convenience of their own time frame.</span></p>
+        <p><span class="tl-s" data-s="642.44" data-e="643.92">But that&#x27;s what Micah&#x27;s doing.</span> <span class="tl-s" data-s="644.80" data-e="648.22">See, he&#x27;s attempting to shrink God down to a manageable size.</span></p>
+        <p><span class="tl-s" data-s="650.94" data-e="654.96">His great sin here is idolatry, but not just idolatry.</span></p>
+        <p><span class="tl-s" data-s="656.62" data-e="668.44">He&#x27;s taking this image and attempting to have it represent God Most High in a five-pound silver idol.</span></p>
+        <p><span class="tl-s" data-s="671.10" data-e="674.60">He&#x27;s shrinking God down to a manageable size.</span> <span class="tl-s" data-s="675.52" data-e="676.96">See, his God now is portable.</span> <span class="tl-s" data-s="677.42" data-e="678.24">He&#x27;s only five pounds.</span></p>
+        <p><span class="tl-s" data-s="679.78" data-e="681.52">He can take it where he wants.</span> <span class="tl-s" data-s="682.22" data-e="684.76">He can approach it when he wants.</span> <span class="tl-s" data-s="685.26" data-e="687.54">He can move it wherever he wants.</span> <span class="tl-s" data-s="688.48" data-e="690.32">And he knows it&#x27;s not going to move.</span> <span class="tl-s" data-s="691.16" data-e="697.42">When he needs something from this little God, he can go knowing that he will demand its full attention.</span> <span class="tl-s" data-s="698.26" data-e="701.90">It has eyes, but cannot see, and ears, but cannot hear.</span> <span class="tl-s" data-s="702.50" data-e="705.64">This little God won&#x27;t speak to contradict him.</span> <span class="tl-s" data-s="706.38" data-e="708.64">It won&#x27;t move and confound him.</span> <span class="tl-s" data-s="708.66" data-e="713.06">It will be just a little God sitting on a little shelf in his little shrine.</span> <span class="tl-s" data-s="713.76" data-e="716.26">Micah had reduced God.</span></p>
+        <p><span class="tl-s" data-s="718.42" data-e="723.08">When you reduce God, all kinds of problems emerge.</span> <span class="tl-s" data-s="723.84" data-e="727.12">Verse 6 tells us one of the fundamental problems.</span> <span class="tl-s" data-s="727.25" data-e="729.66">In those days, there was no king in Israel.</span> <span class="tl-s" data-s="730.86" data-e="733.34">Everyone did what was right in his own eyes.</span> <span class="tl-s" data-s="733.82" data-e="736.24">And Micah&#x27;s eyes led him astray.</span> <span class="tl-s" data-s="736.78" data-e="737.92">There was no king.</span> <span class="tl-s" data-s="737.94" data-e="739.24">There was no leadership.</span> <span class="tl-s" data-s="739.26" data-e="742.68">There was no prophet calling people back to God.</span> <span class="tl-s" data-s="742.84" data-e="749.80">There was just everyone doing whatever they wanted to do as exhibited by Micah, setting up a fake temple in his house.</span> <span class="tl-s" data-s="750.18" data-e="755.04">Micah had forgotten who God was and reduced him down to a manageable size.</span></p>
+        <p><span class="tl-s" data-s="756.06" data-e="761.10">But a reduced God always reduces his followers.</span></p>
+        <p><span class="tl-s" data-s="762.72" data-e="763.90">And you know what?</span> <span class="tl-s" data-s="764.02" data-e="769.22">We too might attempt to reduce God down to a manageable size.</span> <span class="tl-s" data-s="770.12" data-e="774.24">We do this when we construct gods in our own image.</span> <span class="tl-s" data-s="775.12" data-e="779.28">Gods that have no reflection to the truth of the way the scriptures speak.</span> <span class="tl-s" data-s="779.70" data-e="781.84">And these gods do not challenge our feelings.</span> <span class="tl-s" data-s="783.06" data-e="786.88">They&#x27;re never able to ask us to obey even when it&#x27;s hard.</span> <span class="tl-s" data-s="787.46" data-e="793.20">These gods never speak to us contradictory things.</span> <span class="tl-s" data-s="794.18" data-e="799.94">These gods are always there at our disposal, ready to do what we want.</span> <span class="tl-s" data-s="801.00" data-e="804.44">They never ask us to believe things in the Bible that seem unreasonable.</span> <span class="tl-s" data-s="805.24" data-e="816.58">But we do just as Micah has done here in this passage, when we attempt to reduce the God of the Bible most high down into a small, manageable size.</span></p>
+        <p><span class="tl-s" data-s="817.46" data-e="822.64">And when we do that, friends, we&#x27;ve forgotten who God is.</span></p>
+        <p><span class="tl-s" data-s="824.80" data-e="825.60">Micah forgot.</span> <span class="tl-s" data-s="826.56" data-e="828.78">Are we in the process of forgetting?</span></p>
+        <p><span class="tl-s" data-s="831.92" data-e="835.06">The next character in Judges 17, he forgot as well.</span> <span class="tl-s" data-s="835.64" data-e="836.38">Everybody&#x27;s forgetting.</span> <span class="tl-s" data-s="836.64" data-e="838.82">We&#x27;ve met forgetful Micah.</span> <span class="tl-s" data-s="839.00" data-e="841.34">Now we meet the forgetful Levite.</span> <span class="tl-s" data-s="841.94" data-e="842.78">Verse 7.</span> <span class="tl-s" data-s="843.50" data-e="849.94">Now there was a young man of Bethlehem and Judah, of the family of Judah, who was a Levite, and he sojourned there.</span> <span class="tl-s" data-s="850.26" data-e="857.88">And the man departed from the town of Bethlehem in Judah to sojourn where he could find a place.</span> <span class="tl-s" data-s="858.54" data-e="863.32">And as he journeyed, he came to the hill country of Ephraim, to the house of Micah.</span> <span class="tl-s" data-s="863.34" data-e="867.24">Now, the problem here, again, red flags, alarms going off.</span> <span class="tl-s" data-s="867.50" data-e="869.82">The Levites already had a place.</span></p>
+        <p><span class="tl-s" data-s="870.24" data-e="880.98">He was commissioned by God most high to serve amongst other Levites in the tabernacle.</span> <span class="tl-s" data-s="881.32" data-e="885.98">But this one is blowing around like a tumbleweed trying to find a place to belong.</span> <span class="tl-s" data-s="886.72" data-e="889.26">He was born and commissioned by God, but he&#x27;s drifting.</span> <span class="tl-s" data-s="889.72" data-e="893.02">And he bumps into Micah and his fake temple operation.</span> <span class="tl-s" data-s="893.50" data-e="894.00">Verse 9.</span> <span class="tl-s" data-s="894.02" data-e="896.72">And Micah said to him, where do you come from?</span> <span class="tl-s" data-s="897.36" data-e="903.08">And he said to him, I&#x27;m a Levite of Bethlehem in Judah, and I&#x27;m going to sojourn where I might find a place.</span> <span class="tl-s" data-s="903.50" data-e="908.20">And Micah said to him, stay with me and be to me a father and a priest.</span></p>
+        <p><span class="tl-s" data-s="910.00" data-e="915.30">I will give you ten pieces of silver a year and a suit of clothes and you&#x27;re living.</span> <span class="tl-s" data-s="916.48" data-e="917.38">And the Levite went in.</span> <span class="tl-s" data-s="918.18" data-e="931.36">And the Levite was content to dwell with the man, and the young man became to him like one of his sons.</span> <span class="tl-s" data-s="931.94" data-e="936.82">Again, we&#x27;ve got dysfunction all around, all around, everywhere.</span> <span class="tl-s" data-s="936.84" data-e="946.46">We&#x27;ve got this unnamed Levite trundling down the road, and Micah is there with a job offer handy, full room and board, ten shekels a year.</span> <span class="tl-s" data-s="946.74" data-e="948.00">You&#x27;ve got a suit of clothes.</span> <span class="tl-s" data-s="948.10" data-e="948.82">You&#x27;ve got a 401k.</span> <span class="tl-s" data-s="949.50" data-e="950.62">I&#x27;m sure he had medical.</span> <span class="tl-s" data-s="951.04" data-e="952.94">And he says, I am there.</span> <span class="tl-s" data-s="953.04" data-e="954.06">I am yours.</span></p>
+        <p><span class="tl-s" data-s="955.14" data-e="956.14">The second the Levite.</span> <span class="tl-s" data-s="956.23" data-e="957.26">See, here&#x27;s what should have happened.</span> <span class="tl-s" data-s="957.36" data-e="961.60">The second the Levite understood the reality of Micah&#x27;s operation, he should have left.</span> <span class="tl-s" data-s="961.88" data-e="965.00">He should have left, and he should have warned Micah.</span> <span class="tl-s" data-s="965.02" data-e="968.56">This Levite should have warned Micah and said, this is not the way God is to be worshipped.</span> <span class="tl-s" data-s="968.80" data-e="970.36">You can&#x27;t just freelance this.</span> <span class="tl-s" data-s="970.60" data-e="973.46">You can&#x27;t just decide, hey, I want to set up a shrine.</span> <span class="tl-s" data-s="973.58" data-e="975.76">I want to be, I want to do my own thing.</span> <span class="tl-s" data-s="976.06" data-e="978.12">Nobody was invited to do their own thing.</span> <span class="tl-s" data-s="978.24" data-e="981.72">They were all called to go worship God in the tabernacle.</span></p>
+        <p><span class="tl-s" data-s="981.93" data-e="987.80">But here we have instead, we have God being worshipped in a false and ungodly way.</span> <span class="tl-s" data-s="987.82" data-e="993.62">And Micah should have been warned by this Levite, but instead, he just takes a job.</span></p>
+        <p><span class="tl-s" data-s="995.30" data-e="996.92">Notice the invitation in verse 10.</span> <span class="tl-s" data-s="997.24" data-e="1000.18">Stay with me and be to me a father and a priest.</span> <span class="tl-s" data-s="1000.96" data-e="1005.18">But we read in verse 11, and the young man became to him like one of his sons.</span> <span class="tl-s" data-s="1006.16" data-e="1007.72">See, all of this is a mess.</span> <span class="tl-s" data-s="1007.82" data-e="1008.84">It&#x27;s all out of whack.</span></p>
+        <p><span class="tl-s" data-s="1010.28" data-e="1012.52">And verses 12 and 13 are the worst so far.</span> <span class="tl-s" data-s="1013.76" data-e="1015.54">And Micah ordained the Levite.</span> <span class="tl-s" data-s="1015.90" data-e="1021.52">And you&#x27;ve got to stop and go, Micah, what authority do you have to do any of this?</span> <span class="tl-s" data-s="1022.36" data-e="1024.04">And Micah ordained the Levite.</span> <span class="tl-s" data-s="1024.06" data-e="1028.30">And the young man became his priest and was in the house of Micah.</span> <span class="tl-s" data-s="1029.10" data-e="1034.78">Then Micah said, now I know that the Lord will prosper me because I have a Levite as priest.</span> <span class="tl-s" data-s="1035.44" data-e="1039.94">Priests were to be ordained in the house of the Lord, not the house of Micah.</span></p>
+        <p><span class="tl-s" data-s="1041.58" data-e="1044.68">But Micah exhibits some seriously mixed up thinking.</span> <span class="tl-s" data-s="1044.92" data-e="1046.58">This is where it goes all wrong.</span> <span class="tl-s" data-s="1047.24" data-e="1053.72">He says this, now I know that the Lord will prosper me because I have a Levite as a priest.</span> <span class="tl-s" data-s="1053.90" data-e="1054.28">Really?</span> <span class="tl-s" data-s="1055.34" data-e="1056.20">That&#x27;s the key?</span></p>
+        <p><span class="tl-s" data-s="1057.82" data-e="1060.54">That&#x27;s the mystery there, Micah?</span></p>
+        <p><span class="tl-s" data-s="1062.02" data-e="1062.92">He knew.</span> <span class="tl-s" data-s="1063.32" data-e="1065.32">So again, you see, here&#x27;s Micah.</span> <span class="tl-s" data-s="1065.34" data-e="1071.24">He&#x27;s attempting to worship God most high in his own way, on his terms.</span> <span class="tl-s" data-s="1072.48" data-e="1075.56">But at the same time, what does he want to do?</span> <span class="tl-s" data-s="1075.66" data-e="1077.40">He wants to use God.</span> <span class="tl-s" data-s="1077.98" data-e="1079.58">He wants to use God.</span> <span class="tl-s" data-s="1079.68" data-e="1083.72">He says, now I know that the Lord will prosper me because I have a Levite as a priest.</span> <span class="tl-s" data-s="1084.28" data-e="1086.70">Now the Lord, he&#x27;s saying, has to bless me.</span> <span class="tl-s" data-s="1086.94" data-e="1090.34">My efforts, maybe they were questionable up until this point.</span> <span class="tl-s" data-s="1090.44" data-e="1093.02">But now, now, the Lord has to bless me.</span></p>
+        <p><span class="tl-s" data-s="1094.26" data-e="1095.82">That&#x27;s crazy, right?</span> <span class="tl-s" data-s="1096.04" data-e="1102.98">He thinks that if he can get the right priest in his fake little temple, God is forced to pay attention to him and bless him.</span> <span class="tl-s" data-s="1103.08" data-e="1104.96">Is God so easily fooled?</span></p>
+        <p><span class="tl-s" data-s="1106.98" data-e="1116.14">His motive, you can see, is not, it&#x27;s not to serve God, but to strong-arm God for blessings.</span> <span class="tl-s" data-s="1117.36" data-e="1118.04">And why not?</span> <span class="tl-s" data-s="1119.04" data-e="1119.78">Why not?</span> <span class="tl-s" data-s="1120.82" data-e="1135.46">He&#x27;s already reduced God down to manageable size, and it only follows, it only follows, given his thinking, that if he does all the right religious things, the Lord is duty-bound to bless him.</span></p>
+        <p><span class="tl-s" data-s="1137.42" data-e="1139.66">That&#x27;s how we know he doesn&#x27;t really know God.</span> <span class="tl-s" data-s="1139.88" data-e="1143.30">That&#x27;s how we know that if he ever knew God, he&#x27;s forgotten who God is.</span> <span class="tl-s" data-s="1143.82" data-e="1145.36">He doesn&#x27;t want to know God.</span> <span class="tl-s" data-s="1145.48" data-e="1147.04">He just wants things from God.</span> <span class="tl-s" data-s="1147.14" data-e="1148.46">He wants to use God.</span> <span class="tl-s" data-s="1148.84" data-e="1153.56">Micah&#x27;s trying to manipulate God and gain favor from God at the same time.</span></p>
+        <p><span class="tl-s" data-s="1155.58" data-e="1160.82">We might not ordain priests in our garage, but we can reduce God just the same.</span> <span class="tl-s" data-s="1161.26" data-e="1164.18">We reduce God when we make deals with him.</span> <span class="tl-s" data-s="1165.10" data-e="1171.68">It can be subtle, but we&#x27;re just like Micah when we say and think things like this.</span> <span class="tl-s" data-s="1172.14" data-e="1175.64">If I pray enough, he must bless me.</span> <span class="tl-s" data-s="1176.38" data-e="1177.54">Now, I&#x27;m not down on prayer.</span></p>
+        <p><span class="tl-s" data-s="1179.96" data-e="1183.82">If I obey more than I don&#x27;t, he must bless me.</span> <span class="tl-s" data-s="1184.42" data-e="1187.60">If I give a little extra, he must bless me.</span> <span class="tl-s" data-s="1187.96" data-e="1190.98">If I serve the less fortunate, he must bless me.</span> <span class="tl-s" data-s="1191.18" data-e="1194.82">If I read extra from the Bible, he must bless me.</span> <span class="tl-s" data-s="1195.64" data-e="1200.58">No, when we think like that, what we&#x27;re doing is that we&#x27;re showing we&#x27;re forgetting who God is.</span> <span class="tl-s" data-s="1201.02" data-e="1205.76">God is good, and he&#x27;s generous, and he delights to bless his people, for sure.</span> <span class="tl-s" data-s="1206.18" data-e="1210.70">But in his timing and in his way, we do not force his hand.</span> <span class="tl-s" data-s="1210.72" data-e="1219.26">And if we come to God just to get things from God, just to get blessings from God, we show that we don&#x27;t really know who God is.</span> <span class="tl-s" data-s="1219.42" data-e="1226.72">And if that&#x27;s our perspective right now, we&#x27;re right on the road, right in the middle, on the road of forgetting who God really is.</span></p>
+        <p><span class="tl-s" data-s="1228.20" data-e="1229.06">Don&#x27;t get me wrong.</span> <span class="tl-s" data-s="1229.08" data-e="1231.20">There&#x27;s nothing like knowing God.</span> <span class="tl-s" data-s="1231.54" data-e="1235.64">And as you know God, the more you know him, the more you will love him.</span> <span class="tl-s" data-s="1235.80" data-e="1237.84">The more you love him, the more you will trust him.</span> <span class="tl-s" data-s="1238.06" data-e="1242.48">And the more you trust him, you will recognize that from his hand comes blessings aplenty.</span> <span class="tl-s" data-s="1243.24" data-e="1249.04">But it starts first with knowing God on his terms, in his way, in his time.</span> <span class="tl-s" data-s="1249.78" data-e="1256.48">Not going to him as a vending machine who drops blessings if we put exactly the right change in.</span></p>
+        <p><span class="tl-s" data-s="1257.96" data-e="1262.06">If we believe that, we&#x27;re forgetting who God is.</span> <span class="tl-s" data-s="1262.18" data-e="1263.38">Micah, he forgot.</span> <span class="tl-s" data-s="1264.10" data-e="1265.90">The Levite, he forgot.</span> <span class="tl-s" data-s="1266.80" data-e="1269.62">Now we meet a whole tribe that forgot.</span></p>
+        <p><span class="tl-s" data-s="1271.38" data-e="1272.12">This is Dan.</span> <span class="tl-s" data-s="1272.26" data-e="1273.96">Let&#x27;s meet Dan, the forgetful tribe.</span> <span class="tl-s" data-s="1275.28" data-e="1276.58">Judges 18, verse 1.</span> <span class="tl-s" data-s="1277.38" data-e="1280.82">In those days, there was no king in Israel.</span> <span class="tl-s" data-s="1280.84" data-e="1287.74">And in those days, the tribe of the people of Dan was seeking for itself an inheritance to dwell in.</span> <span class="tl-s" data-s="1288.34" data-e="1293.24">For until then, no inheritance among the tribes of Israel had fallen to them.</span> <span class="tl-s" data-s="1293.92" data-e="1305.88">So the people of Dan sent five able men from the whole of their number, of their tribe, from Zorah and from Eshtaol, to spy out the land and to explore it.</span> <span class="tl-s" data-s="1306.16" data-e="1308.78">And they said to them, go and explore the land.</span> <span class="tl-s" data-s="1308.80" data-e="1313.92">And they came to the hill country of Ephraim, to the house of Micah, and lodged there.</span> <span class="tl-s" data-s="1314.40" data-e="1320.76">Now, the problem with this is Dan has already been allotted a portion of the promised land by God.</span></p>
+        <p><span class="tl-s" data-s="1321.58" data-e="1326.10">But because of their disobedience, they did not take possession of it.</span> <span class="tl-s" data-s="1326.40" data-e="1338.40">At the beginning of the book of Judges, when we first encounter the nation, we find that every tribe, every tribe goes in to try to possess their portion of the land.</span> <span class="tl-s" data-s="1338.54" data-e="1340.40">And they take part of it, but not all of it.</span> <span class="tl-s" data-s="1340.90" data-e="1343.16">Dan is the only one who gets none of it.</span> <span class="tl-s" data-s="1344.54" data-e="1348.08">The enemies in their section push them all the way out to the hill country.</span> <span class="tl-s" data-s="1348.10" data-e="1355.80">So when we catch up with Dan, the whole tribe here, this is a nomadic tribe that has no place.</span> <span class="tl-s" data-s="1355.94" data-e="1357.26">So they&#x27;re much like the Levite.</span> <span class="tl-s" data-s="1357.40" data-e="1358.50">Notice the connection here.</span> <span class="tl-s" data-s="1358.90" data-e="1360.68">The Levite should have had a place.</span> <span class="tl-s" data-s="1361.04" data-e="1362.34">Dan should have had a place.</span></p>
+        <p><span class="tl-s" data-s="1362.54" data-e="1366.52">They both didn&#x27;t have a place because they didn&#x27;t obey and follow the Lord.</span> <span class="tl-s" data-s="1367.56" data-e="1371.22">And so they join up with Micah.</span> <span class="tl-s" data-s="1371.36" data-e="1372.06">Look at verse 3.</span> <span class="tl-s" data-s="1372.10" data-e="1377.78">When they were in the house of Micah, they recognized the voice of the young Levite.</span> <span class="tl-s" data-s="1378.78" data-e="1381.60">And then they turned aside and said to him, who brought you here?</span> <span class="tl-s" data-s="1382.42" data-e="1383.86">What are you doing in this place?</span> <span class="tl-s" data-s="1384.50" data-e="1385.84">What is your business here?</span> <span class="tl-s" data-s="1386.70" data-e="1387.68">All good questions.</span> <span class="tl-s" data-s="1388.30" data-e="1391.00">And he said to them, this is how Micah has dealt with me.</span> <span class="tl-s" data-s="1391.20" data-e="1393.58">He hired me, and I have become his priest.</span></p>
+        <p><span class="tl-s" data-s="1394.08" data-e="1401.74">And they said to him, inquire of God, inquire of God, please, that we may know whether the journey on which we are setting out will succeed.</span> <span class="tl-s" data-s="1402.32" data-e="1404.12">And the priest said to them, go in peace.</span> <span class="tl-s" data-s="1404.82" data-e="1407.50">The journey on which you go is under the eye of the Lord.</span> <span class="tl-s" data-s="1408.10" data-e="1408.50">Lie.</span> <span class="tl-s" data-s="1408.74" data-e="1409.36">That&#x27;s not true.</span></p>
+        <p><span class="tl-s" data-s="1411.30" data-e="1417.10">So we should have read that when the Danites see, when they ask these series of questions, notice the questions.</span> <span class="tl-s" data-s="1417.40" data-e="1418.12">Who brought you here?</span> <span class="tl-s" data-s="1418.24" data-e="1419.20">What are you doing in this place?</span> <span class="tl-s" data-s="1419.30" data-e="1420.20">What&#x27;s your business here?</span> <span class="tl-s" data-s="1420.40" data-e="1422.32">They should have said, this is wrong.</span> <span class="tl-s" data-s="1422.84" data-e="1424.90">Micah, what you&#x27;ve done is an abomination.</span> <span class="tl-s" data-s="1425.30" data-e="1428.70">Young Levite person that we don&#x27;t know your name until the end of chapter 18.</span> <span class="tl-s" data-s="1428.96" data-e="1434.90">You are an abomination acting, acting on behalf of God in a way that you have no authority and no right to do.</span> <span class="tl-s" data-s="1435.30" data-e="1436.96">Instead, they&#x27;re impressed.</span> <span class="tl-s" data-s="1438.14" data-e="1444.28">And they asked this Levite to cosplay priest and get a fake blessing.</span></p>
+        <p><span class="tl-s" data-s="1444.94" data-e="1447.84">And the priest merely told them what they wanted to hear.</span> <span class="tl-s" data-s="1448.60" data-e="1457.84">See, one of the great challenges when we reduce God is that we can always find people who agree with us on a whole host of issues.</span> <span class="tl-s" data-s="1457.86" data-e="1466.54">You can find a chorus of voices on YouTube, Instagram, and legions of podcasts that will confirm your reduced view of God.</span> <span class="tl-s" data-s="1467.48" data-e="1470.46">Friends, your algorithm is not reliable.</span> <span class="tl-s" data-s="1470.66" data-e="1471.44">Your Bible is.</span> <span class="tl-s" data-s="1472.58" data-e="1473.52">We know this.</span> <span class="tl-s" data-s="1474.26" data-e="1475.06">Or we should.</span> <span class="tl-s" data-s="1475.22" data-e="1477.10">We must not be taken in by it.</span> <span class="tl-s" data-s="1478.30" data-e="1484.20">Anyway, Dan, the five spies, go find a quiet, peaceful people.</span> <span class="tl-s" data-s="1484.22" data-e="1489.92">And they realize they can go and conquer this land and layish very easily.</span></p>
+        <p><span class="tl-s" data-s="1490.46" data-e="1492.32">And this is wildly ungodly.</span> <span class="tl-s" data-s="1492.54" data-e="1499.22">What they&#x27;re trying to do is set up a place to be outside the parameters of the promised land.</span> <span class="tl-s" data-s="1500.00" data-e="1508.08">Dan is doing the expedient thing, the easy thing, the thing that didn&#x27;t take faith, that was disobedient, but it was easy.</span> <span class="tl-s" data-s="1508.26" data-e="1510.98">And because it&#x27;s easy to them, it felt like the right thing.</span> <span class="tl-s" data-s="1511.00" data-e="1518.72">And so the spies report back and return to the area with a fighting force of 600 soldiers.</span> <span class="tl-s" data-s="1519.86" data-e="1526.02">And their path leads them to, lo and behold, Micah and his fake temple.</span> <span class="tl-s" data-s="1526.80" data-e="1527.50">Verse 14.</span> <span class="tl-s" data-s="1528.18" data-e="1530.38">Then, so they come back.</span> <span class="tl-s" data-s="1530.48" data-e="1530.82">They go away.</span> <span class="tl-s" data-s="1530.90" data-e="1531.32">They come back.</span></p>
+        <p><span class="tl-s" data-s="1531.58" data-e="1543.30">The five men who had gone to scout out the country of Laish said to their brothers, Do you know that in these houses there&#x27;s an ephod, household gods, a carved image, and a metal image?</span> <span class="tl-s" data-s="1543.58" data-e="1547.32">Now, therefore, consider what you will do.</span></p>
+        <p><span class="tl-s" data-s="1548.94" data-e="1552.42">Right there, again, Dan should have said, this is an abomination.</span> <span class="tl-s" data-s="1552.88" data-e="1554.28">What we&#x27;re doing here is wrong.</span> <span class="tl-s" data-s="1554.54" data-e="1555.90">Let&#x27;s burn it all with fire.</span> <span class="tl-s" data-s="1556.02" data-e="1558.12">But instead, we read this, verse 15.</span> <span class="tl-s" data-s="1558.14" data-e="1566.14">And they turned aside there and came to the house of the young Levite at the home of Micah and asked him about his welfare.</span> <span class="tl-s" data-s="1567.06" data-e="1569.42">Asked about his welfare like they care at all.</span> <span class="tl-s" data-s="1570.66" data-e="1571.56">Verse 16.</span> <span class="tl-s" data-s="1571.70" data-e="1577.86">Now, the 600 men of the Danites, armed with their weapons of war, stood by the entrance of the gate.</span> <span class="tl-s" data-s="1577.88" data-e="1592.44">And the five men who had gone to scout out the land went up and entered and took the carved image, the ephod, the household gods, the metal image, while the priest stood by the entrance of the gate with the 600 men armed with weapons of war.</span> <span class="tl-s" data-s="1593.12" data-e="1600.04">And when these went into Micah&#x27;s house and took the carved image, the ephod, the household gods, and the metal image, the priest said to them, What are you doing?</span></p>
+        <p><span class="tl-s" data-s="1600.60" data-e="1602.04">And they said to him, Keep quiet.</span> <span class="tl-s" data-s="1602.78" data-e="1604.72">Put your hand on your mouth and come with us.</span> <span class="tl-s" data-s="1605.20" data-e="1607.22">And be to us a father and a priest.</span> <span class="tl-s" data-s="1607.24" data-e="1615.10">Is it better for you to be a priest to the house of one man or the priest to a tribe and clan of Israel?</span> <span class="tl-s" data-s="1615.80" data-e="1617.34">And the priest&#x27;s heart was glad.</span> <span class="tl-s" data-s="1618.12" data-e="1623.58">He took the ephod, the household gods, and the carved image and went along with the people.</span> <span class="tl-s" data-s="1624.24" data-e="1633.44">So this young, unnamed, Levitical priest from Bethlehem in Judah was excited because he got a better job offer.</span> <span class="tl-s" data-s="1634.68" data-e="1640.82">He signs the docusign right there at the gate because all he&#x27;s doing, he&#x27;s a mercenary.</span> <span class="tl-s" data-s="1640.84" data-e="1642.90">He&#x27;s a Levite.</span> <span class="tl-s" data-s="1643.02" data-e="1644.26">He&#x27;s a priest for hire.</span></p>
+        <p><span class="tl-s" data-s="1644.64" data-e="1649.90">He was willing to stick around with Micah as long as he had, as long as it was the best offer he had.</span> <span class="tl-s" data-s="1650.02" data-e="1651.56">Now the tribe of Dan shows up.</span> <span class="tl-s" data-s="1651.64" data-e="1652.50">It&#x27;s a better offer.</span> <span class="tl-s" data-s="1653.46" data-e="1661.86">Not only is he going to be a priest over a whole tribe, he&#x27;s going to have his future set.</span> <span class="tl-s" data-s="1662.48" data-e="1665.14">Now, never mind, none of this is remotely biblical.</span> <span class="tl-s" data-s="1666.04" data-e="1675.40">There is, there is, there&#x27;s, there&#x27;s no place in the Old Testament that dictates, listen, tribes, if you want, go ahead and set up your own, your own Levitical order.</span> <span class="tl-s" data-s="1676.18" data-e="1677.48">But that&#x27;s what happens.</span> <span class="tl-s" data-s="1678.42" data-e="1688.96">Then Micah, Micah sees his priest, his image, his ephod, his whole temple rig walking out with the Danites.</span> <span class="tl-s" data-s="1689.62" data-e="1696.76">Verse 21, so they turned and departed, putting the little ones and the livestock and the goods in front of them.</span> <span class="tl-s" data-s="1697.40" data-e="1706.88">When they had gone a distance from the home of Micah, the men who were in the houses near Micah&#x27;s house were called out and they overtook the people of Dan.</span></p>
+        <p><span class="tl-s" data-s="1707.88" data-e="1714.88">And they shouted to the people of Dan who turned around and said to Micah, what is the matter with you that you would come with such a company?</span> <span class="tl-s" data-s="1714.90" data-e="1721.84">And he said, you take my gods that I made and the priests and go away?</span> <span class="tl-s" data-s="1723.00" data-e="1724.58">And what have I left?</span> <span class="tl-s" data-s="1725.62" data-e="1727.30">How then do you ask me?</span> <span class="tl-s" data-s="1727.40" data-e="1728.44">What is the matter with you?</span> <span class="tl-s" data-s="1728.88" data-e="1739.60">And the people of Dan said to him, do not let your voice be heard among us, lest angry fellows fall upon you and you lose your life with the lives of your household.</span> <span class="tl-s" data-s="1739.62" data-e="1749.42">Then the people of Dan went their way and when Micah saw that they were too strong for him, he turned and went back to his home.</span></p>
+        <p><span class="tl-s" data-s="1751.12" data-e="1752.10">So ironic.</span> <span class="tl-s" data-s="1752.68" data-e="1754.40">Did you notice Micah&#x27;s complaint?</span> <span class="tl-s" data-s="1754.82" data-e="1757.04">You&#x27;re taking the gods that I made.</span></p>
+        <p><span class="tl-s" data-s="1759.54" data-e="1760.50">It&#x27;s a problem.</span> <span class="tl-s" data-s="1761.84" data-e="1766.74">False gods, they can be moved by other people who are stronger.</span> <span class="tl-s" data-s="1766.92" data-e="1768.86">And you&#x27;ve taken the priests that I&#x27;ve ordained.</span> <span class="tl-s" data-s="1769.16" data-e="1770.12">What do I have left?</span> <span class="tl-s" data-s="1770.48" data-e="1771.34">He lost everything.</span> <span class="tl-s" data-s="1771.46" data-e="1772.04">And you know what?</span> <span class="tl-s" data-s="1772.26" data-e="1778.74">It turns out that the curse his mother uttered for the theft of the silver did come upon her son.</span> <span class="tl-s" data-s="1778.76" data-e="1781.32">And the Danites, they head off.</span> <span class="tl-s" data-s="1781.86" data-e="1785.10">They destroy an unsuspecting people and they settle in.</span> <span class="tl-s" data-s="1785.82" data-e="1789.00">And we hear the resolution to the pitiful story in verse 29.</span></p>
+        <p><span class="tl-s" data-s="1790.76" data-e="1797.44">And they named the city Dan after the name of Dan, their ancestor, who was born to Israel.</span> <span class="tl-s" data-s="1798.12" data-e="1801.98">But the name of the city was Laish at first.</span> <span class="tl-s" data-s="1802.00" data-e="1806.22">And the people of Dan set up carved images for themselves.</span> <span class="tl-s" data-s="1807.34" data-e="1817.28">And Jonathan, the son of Gershom, the son of Moses, and his sons were priests to the tribe of the Danites until the day of the captivity of the land.</span> <span class="tl-s" data-s="1817.76" data-e="1826.72">So they set up Micah&#x27;s carved image that he made as long as the house of God was at Shiloh.</span> <span class="tl-s" data-s="1826.74" data-e="1835.94">In other words, this unnamed Levite, this unnamed Levite, he was of the line of Moses.</span> <span class="tl-s" data-s="1836.07" data-e="1836.90">His name was Jonathan.</span> <span class="tl-s" data-s="1837.50" data-e="1845.60">It turns out that Jonathan, being a direct descendant of Moses, was even infected with forgetfulness.</span></p>
+        <p><span class="tl-s" data-s="1847.26" data-e="1852.12">This should go to help us, those of us here who are in the room and we have parents who are Christians.</span> <span class="tl-s" data-s="1852.28" data-e="1853.70">We have grandparents that are Christians.</span> <span class="tl-s" data-s="1853.72" data-e="1855.70">That doesn&#x27;t mean you&#x27;re a Christian.</span> <span class="tl-s" data-s="1856.68" data-e="1859.04">God has no grandchildren, only children.</span></p>
+        <p><span class="tl-s" data-s="1862.24" data-e="1866.06">Forgetfulness was infiltrating the whole people.</span> <span class="tl-s" data-s="1867.00" data-e="1873.56">The image that was set up in Dan proved to be a snare for the people for centuries.</span></p>
+        <p><span class="tl-s" data-s="1875.50" data-e="1880.20">This was the most, this is the most, so far, depressing episode in Judges.</span> <span class="tl-s" data-s="1880.82" data-e="1881.94">And the problem is what?</span> <span class="tl-s" data-s="1881.96" data-e="1883.68">We hear this twice.</span> <span class="tl-s" data-s="1883.88" data-e="1886.00">In those days, there was no king in Israel.</span> <span class="tl-s" data-s="1886.54" data-e="1888.60">Therefore, everyone did what was right in their own eyes.</span> <span class="tl-s" data-s="1889.48" data-e="1890.28">That&#x27;s what happened.</span> <span class="tl-s" data-s="1890.38" data-e="1891.68">The problem is there&#x27;s no accountability.</span> <span class="tl-s" data-s="1891.86" data-e="1892.42">There&#x27;s no leadership.</span> <span class="tl-s" data-s="1892.59" data-e="1893.98">There&#x27;s no one there saying, hey, this is wrong.</span> <span class="tl-s" data-s="1894.24" data-e="1899.90">There&#x27;s no one in this picture who&#x27;s saying, you&#x27;ve got to turn back to the Lord and faithfulness.</span></p>
+        <p><span class="tl-s" data-s="1900.90" data-e="1902.42">But the sad truth is this.</span> <span class="tl-s" data-s="1902.54" data-e="1905.96">When kings show up, things do not improve much.</span> <span class="tl-s" data-s="1906.62" data-e="1918.98">Later, when the royal class is instituted, of the 39 kings, of the United Nations and then the separated, of the 39 kings, how many were godly?</span> <span class="tl-s" data-s="1919.52" data-e="1919.88">Eight.</span> <span class="tl-s" data-s="1921.04" data-e="1925.32">That means 31 of them took the nation further from the Lord.</span> <span class="tl-s" data-s="1925.34" data-e="1931.12">I read someone who said, the epitaph over Israel&#x27;s grave was, they soon forgot.</span></p>
+        <p><span class="tl-s" data-s="1934.32" data-e="1938.34">We can be in the process of dismissing God to the periphery of our life.</span> <span class="tl-s" data-s="1938.62" data-e="1940.88">We can be in the process of forgetting.</span> <span class="tl-s" data-s="1941.58" data-e="1948.56">It&#x27;s more, is he more easy, more or less easier, is he more or less easy for you to ignore today than he was yesterday?</span> <span class="tl-s" data-s="1948.80" data-e="1951.28">Is he just a dispenser of blessings for you?</span> <span class="tl-s" data-s="1951.58" data-e="1957.66">If the answer is yes to either of those things, you may right now be in the process of forgetting God.</span> <span class="tl-s" data-s="1958.76" data-e="1963.44">This nation, from here on, never really remember.</span></p>
+        <p><span class="tl-s" data-s="1965.70" data-e="1973.86">Friends, we must, as Christians today who know the Jewish Messiah, Jesus Christ, we must forget all but remember God.</span> <span class="tl-s" data-s="1974.52" data-e="1976.26">Forget all but remember God.</span> <span class="tl-s" data-s="1976.36" data-e="1977.44">This is what we must do.</span> <span class="tl-s" data-s="1977.54" data-e="1978.30">This is our call.</span> <span class="tl-s" data-s="1978.62" data-e="1980.82">We must forget all and remember God.</span> <span class="tl-s" data-s="1981.44" data-e="1983.60">It&#x27;s so easy to say, but maybe you&#x27;re like me.</span> <span class="tl-s" data-s="1984.02" data-e="1994.00">What I find that I want most, what I want more than just God&#x27;s presence with me or an awareness of God, is what I want more is a problem-free life.</span> <span class="tl-s" data-s="1994.02" data-e="1999.92">And if I can&#x27;t get a problem-free life, I&#x27;ll take an easy day or an easy couple of hours.</span></p>
+        <p><span class="tl-s" data-s="2001.70" data-e="2002.42">Sound familiar?</span></p>
+        <p><span class="tl-s" data-s="2005.30" data-e="2014.34">See, when we do that, what we&#x27;re doing is we&#x27;re saying, I don&#x27;t really want to trust you, Lord, because when things are going well, when the path is easy, what do we have to trust the Lord for?</span></p>
+        <p><span class="tl-s" data-s="2015.76" data-e="2025.94">See, if we just want to construct our lives free of problems and hardships, what we&#x27;re trying to do is say, I want to live in such a way so that the blessings I receive, I just want blessings from the Lord.</span> <span class="tl-s" data-s="2026.30" data-e="2030.48">I don&#x27;t want to live, I don&#x27;t want to have to have a faith in the unseen God.</span> <span class="tl-s" data-s="2030.74" data-e="2035.04">I want to live for the blessings I can see and touch and taste and anticipate.</span> <span class="tl-s" data-s="2035.80" data-e="2038.40">But that, friends, is a road to forgetting God.</span> <span class="tl-s" data-s="2039.28" data-e="2044.42">We may, we must forget all, but we must remember our God.</span> <span class="tl-s" data-s="2044.98" data-e="2048.24">Our highest purpose here is not to have an easy time of it.</span> <span class="tl-s" data-s="2048.74" data-e="2051.68">Friends, remember what Jesus says in Matthew chapter 7.</span> <span class="tl-s" data-s="2051.96" data-e="2054.78">The gate is narrow and the way is hard that leads to life.</span> <span class="tl-s" data-s="2055.06" data-e="2059.36">It&#x27;s hard because it&#x27;s a constant challenge to turn away from ourselves.</span> <span class="tl-s" data-s="2060.08" data-e="2068.82">The reason often that we are tempted to marginalize and forget God in our lives is that we&#x27;re so good at remembering ourselves and our needs and our wants.</span></p>
+        <p><span class="tl-s" data-s="2069.58" data-e="2074.26">We are always very connected to our needs and our wants and our fears and our worries.</span> <span class="tl-s" data-s="2074.76" data-e="2075.04">Why?</span> <span class="tl-s" data-s="2075.20" data-e="2079.18">Because we have a voice in our head that is speaking to us on the regular.</span> <span class="tl-s" data-s="2079.34" data-e="2089.58">All the time we have our needs and our wants and our fears and our worries being spoken to us in our head, and they seem to be the most pressing reality in our lives, but they are not.</span></p>
+        <p><span class="tl-s" data-s="2092.42" data-e="2100.16">God most high, the living one, the Lord and his purposes for you are better than the ones you want in your mind now.</span> <span class="tl-s" data-s="2100.58" data-e="2122.60">When I say that we should forget all and remember God, that does not mean we should live an ascetic life where we forget, where we go off and live by ourselves or we renounce all, you know, all pleasure or money or possessions, but what it does mean is that we remember that the most pressing reality about all of us is our God.</span> <span class="tl-s" data-s="2123.06" data-e="2128.22">Just like Tozer said, the most important thing about you is what you think of when you think of God.</span> <span class="tl-s" data-s="2128.92" data-e="2130.76">We may be apt to forget him.</span> <span class="tl-s" data-s="2130.78" data-e="2144.14">See, and we have to, as Christians, recognize this is what matters most for us, that we not forget him, that we not dismiss him to the periphery of our lives, that we not say that you&#x27;re important but not that important right now.</span> <span class="tl-s" data-s="2144.36" data-e="2157.54">The most pressing reality for all of us in any moment of the day, no matter who we are, is God most high, the living one, the beginning and the end, the ancient of days, the one who spoke and all things came into being.</span></p>
+        <p><span class="tl-s" data-s="2157.56" data-e="2161.64">That one is the most important, and we forget it to our detriment.</span></p>
+        <p><span class="tl-s" data-s="2163.82" data-e="2164.90">But guess what?</span> <span class="tl-s" data-s="2165.76" data-e="2170.04">Even though we are apt to forget him, he can never forget us.</span> <span class="tl-s" data-s="2170.88" data-e="2179.70">See, the glimmer of hope that we don&#x27;t see here in Judges chapter 17 and 18 is that God does not abandon his people after, even after this.</span> <span class="tl-s" data-s="2180.18" data-e="2184.10">Even after this, God does not abandon his people and say, you&#x27;ve gone too far.</span> <span class="tl-s" data-s="2185.18" data-e="2185.98">We know.</span> <span class="tl-s" data-s="2186.24" data-e="2188.38">Here&#x27;s the flash of mercy for us this morning.</span> <span class="tl-s" data-s="2188.70" data-e="2193.56">Even though we are apt to forget God, God cannot forget us.</span> <span class="tl-s" data-s="2194.66" data-e="2195.50">How do we know?</span> <span class="tl-s" data-s="2196.02" data-e="2198.36">He did not leave us to languish in our sins.</span> <span class="tl-s" data-s="2198.56" data-e="2200.00">He did not leave us alone.</span></p>
+        <p><span class="tl-s" data-s="2200.30" data-e="2215.32">He sent his son, his son to become a man, and that man to die, and die, be buried, and rise again, so that he might be able to say to us when he said to his disciples, behold, I am with you, even to the end of the age.</span> <span class="tl-s" data-s="2215.72" data-e="2224.50">This king we have is not removed and distant, but he&#x27;s our good shepherd, constantly praying and upholding us by his words.</span> <span class="tl-s" data-s="2224.74" data-e="2226.64">He is constantly thinking of us.</span> <span class="tl-s" data-s="2226.72" data-e="2227.48">He is our champion.</span> <span class="tl-s" data-s="2227.82" data-e="2228.76">He is our advocate.</span> <span class="tl-s" data-s="2229.14" data-e="2230.54">We may not think of him.</span> <span class="tl-s" data-s="2230.64" data-e="2235.84">We may not think of him as much as we ought, but he thinks of us far more than we can imagine.</span> <span class="tl-s" data-s="2236.44" data-e="2237.46">We may forget him.</span> <span class="tl-s" data-s="2237.70" data-e="2259.38">We may marginalize him, but he cannot forget us, and when we realize this is something that should enliven our spirit so that we recognize how good it is to come to him who is merciful and kind, and not saying, how could you forget me, but saying, come to me, all you who are weary and heavy laden, and I will give you rest.</span></p>
+        <p><span class="tl-s" data-s="2262.24" data-e="2266.54">The way we are to remember God is by focusing on Jesus Christ.</span> <span class="tl-s" data-s="2267.62" data-e="2272.62">We find in Jesus the glory of God in the face of Jesus Christ.</span> <span class="tl-s" data-s="2272.96" data-e="2273.92">He is our savior.</span> <span class="tl-s" data-s="2274.12" data-e="2274.98">He is our champion.</span> <span class="tl-s" data-s="2275.32" data-e="2276.26">He is our provider.</span> <span class="tl-s" data-s="2276.58" data-e="2277.38">He is our helper.</span> <span class="tl-s" data-s="2277.70" data-e="2278.96">He is our consolation.</span> <span class="tl-s" data-s="2279.36" data-e="2280.32">He is our advocate.</span> <span class="tl-s" data-s="2280.56" data-e="2282.22">He is our only hope.</span></p>
+        <p><span class="tl-s" data-s="2284.74" data-e="2289.24">Are you in danger of forgetting him?</span></p>
+        <p><span class="tl-s" data-s="2291.96" data-e="2298.66">Not becoming an atheist, but pushing him to the periphery of your life.</span></p>
+        <p><span class="tl-s" data-s="2300.08" data-e="2300.44">You know what?</span> <span class="tl-s" data-s="2300.46" data-e="2311.80">Sometimes this can happen when things in our lives go sideways, when they don&#x27;t go like we expect, when we experience hardships and difficulties.</span></p>
+        <p><span class="tl-s" data-s="2314.42" data-e="2321.12">But it&#x27;s in those hardships and difficulties often that we meet God and experience fullness of joy.</span> <span class="tl-s" data-s="2321.92" data-e="2336.58">It&#x27;s in those things that we didn&#x27;t expect where we find God and meet with him and recognize he has a plan better than we can conceive because we might think we know ourselves, but there&#x27;s no one who knows us like God Most High.</span> <span class="tl-s" data-s="2336.70" data-e="2341.24">We might think we know what&#x27;s best, but there&#x27;s no one who knows us better than God Most High.</span> <span class="tl-s" data-s="2341.38" data-e="2350.16">We might think we have a plan for our lives, a wonderful plan for our lives, but there&#x27;s no one who knows what we need, when we need it, how we need it, but God Most High.</span> <span class="tl-s" data-s="2351.20" data-e="2355.30">There is no one, no one more important than your God.</span> <span class="tl-s" data-s="2355.56" data-e="2357.34">May we forget all but remember him.</span> <span class="tl-s" data-s="2358.30" data-e="2359.82">May we build our lives.</span> <span class="tl-s" data-s="2359.96" data-e="2361.20">May we build our minds.</span> <span class="tl-s" data-s="2361.22" data-e="2379.16">May we build all that we are, all that we have, everything that we might become upon him and not forget him, to push him to the side, to push him to the outside, to pretend like he doesn&#x27;t matter because, friends, of all the things in your life, the thing that matters most today is your God.</span></p>
+        <p><span class="tl-s" data-s="2381.56" data-e="2386.64">May we forget all but remember him.</span> <span class="tl-s" data-s="2387.72" data-e="2388.44">Let&#x27;s pray.</span> <span class="tl-s" data-s="2388.46" data-e="2391.52">Let&#x27;s pray.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Live sermon feed: spotlight from /api/sermons, browsable archive from
+  // /api/sermons/search. Static fallback list stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function row(it) {
+      var meta = [it.speaker, fmtDate(it.date)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      var titleHtml = esc(it.title);
+      var tUrl = it.guid && transcriptMap[it.guid];
+      if (tUrl) titleHtml = '<a href="' + esc(tUrl) + '">' + titleHtml + "</a>";
+      return '<div class="sermon"><div><h3>' + titleHtml + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    fetch("/api/sermons?v=3")
+      .then(function (res) { if (!res.ok) throw new Error("feed " + res.status); return res.json(); })
+      .then(function (data) {
+        var spot = document.querySelector("[data-series-spotlight]");
+        if (data && data.series && spot) {
+          var s = data.series;
+          var art = spot.querySelector("[data-series-art]");
+          if (art && s.artwork) { art.src = s.artwork; } else if (art) { art.style.display = "none"; }
+          var nm = spot.querySelector("[data-series-name]");
+          if (nm) nm.textContent = s.name;
+          var bl = spot.querySelector("[data-series-blurb]");
+          if (bl) bl.textContent = s.blurb;
+          spot.hidden = false;
+        }
+      })
+      .catch(function () { /* spotlight stays hidden */ });
+
+    var PER = 10;
+    var state = { q: "", speaker: "", series: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var speakerSel = document.querySelector("[data-sermons-speaker]");
+    var seriesSel = document.querySelector("[data-sermons-series]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No messages found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(speakerSel, data.facets.speakers || [], function (e) { return e.name; }, function (e) { return e.name + " (" + e.count + ")"; });
+        fill(seriesSel, data.facets.series || [], function (e) { return e.name; }, function (e) { return e.name + " (" + e.count + ")"; });
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.speaker || data.series || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.speaker) parts.push("by " + data.speaker);
+          if (data.series) parts.push("in " + data.series);
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " result" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " messages";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/sermons/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.speaker ? "&speaker=" + encodeURIComponent(state.speaker) : "") +
+        (state.series ? "&series=" + encodeURIComponent(state.series) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () { /* keep current list on error */ });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.speaker = ""; state.series = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (speakerSel) speakerSel.value = "";
+      if (seriesSel) seriesSel.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    function bindSelect(sel, key) {
+      if (!sel) return;
+      sel.addEventListener("change", function () {
+        state[key] = sel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    bindSelect(speakerSel, "speaker");
+    bindSelect(seriesSel, "series");
+    bindSelect(monthSel, "month");
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: https://hub.centergilbert.com/media/judges-17-18 -->
+</body>
+</html>
