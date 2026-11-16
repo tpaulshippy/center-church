@@ -517,7 +517,20 @@ if placeholder:
               'Re-run <code>scripts/transcripts/add-transcript.sh</code> with <code>$ASSEMBLYAI_API_KEY</code> set '
               'to generate the full transcript.</p>\n')
 
-meta_bits = " · ".join(b for b in [speaker, series, pubdate, duration] if b)
+def fmt_pubdate(s):
+    """Render YYYY-MM-DD (or nearby variants) as 'May 27, 2026' to match
+    the podcast archive list (en-US) instead of raw ISO in the header."""
+    from datetime import datetime
+    s = (s or "").strip()
+    for fmt in ("%Y-%m-%d", "%Y/%m/%d", "%m/%d/%Y", "%b %d, %Y", "%B %d, %Y"):
+        try:
+            d = datetime.strptime(s, fmt)
+            return "%s %d, %d" % (d.strftime("%b"), d.day, d.year)
+        except ValueError:
+            continue
+    return s
+
+meta_bits = " · ".join(b for b in [speaker, series, fmt_pubdate(pubdate), duration] if b)
 
 kind_title = os.environ.get("KIND_TITLE", "Sermon")
 back_link = os.environ.get("BACK_LINK", "/sermons")
