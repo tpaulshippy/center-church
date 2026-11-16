@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Psalm 119 — Sermon Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Listen to the latest sermons from Center Church, or follow along on Apple Podcasts and Spotify." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=17" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a class="active" href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/sermons">&larr; All sermons</a>
+          <h1 class="display-lg">Psalm 119</h1>
+          <p class="transcript-meta">Rich Richardson · 2025-06-15 · 00:46:18</p>
+          <p class="transcript-desc">Call Out to The God Who Rescues</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/119cbef70/podcast/play/128974284/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-7%2F436123661-44100-2-f6bd47e12181dbb7.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><span class="tl-s" data-s="0.02" data-e="29.05">If you have a Bible, if you can open up to the book of Psalms, it is, if you&#x27;re new to the Bible, Psalms is the iTunes, Spotify of the Bible, whatever your service of choice is, this is where the songs are, we&#x27;re going to be in Psalm 119, which is the longest psalm by far, we&#x27;re going to be in Psalm 119, verse 121.</span> <span class="tl-s" data-s="29.05" data-e="37.21">If you don&#x27;t have a Bible, you can just put it into Google and Google will find it just the same.</span> <span class="tl-s" data-s="37.21" data-e="40.32">Psalm 119, verse 121.</span> <span class="tl-s" data-s="40.53" data-e="53.93">Whether you realize it or not, it is not a conspiracy to believe that the world and all its powers and influences are bent against Christ Jesus and his followers.</span> <span class="tl-s" data-s="54.17" data-e="57.54">This we know because the Bible tells us so.</span> <span class="tl-s" data-s="57.54" data-e="70.36">In fact, on the night that he was betrayed, Jesus himself told his followers, if the world hates you, know that it has hated me before it hated you.</span></p>
+        <p><span class="tl-s" data-s="70.42" data-e="74.65">If you were of the world, the world would love you as its own.</span> <span class="tl-s" data-s="74.74" data-e="81.79">But because you are not of the world, but I chose you out of the world, therefore the world hates you.</span> <span class="tl-s" data-s="82.01" data-e="84.72">That doesn&#x27;t often make Caleb&#x27;s verse of the day.</span> <span class="tl-s" data-s="84.72" data-e="90.57">We also know that Satan, the insufferable snake, has declared war on us as well.</span> <span class="tl-s" data-s="90.57" data-e="101.74">We read this in Revelation chapter 12, the dragon became furious with the woman and went off to make war on the rest of her offspring, which is us, on those who keep the commandments of God.</span> <span class="tl-s" data-s="101.74" data-e="110.88">Paul calls Satan the God of this world and refers to him as the prince of the power of air.</span> <span class="tl-s" data-s="110.88" data-e="116.10">Satan lives to attack and vex all who follow Jesus.</span> <span class="tl-s" data-s="116.41" data-e="125.77">So don&#x27;t wonder why it feels, sometimes more than others, that the deck is stacked against the followers of Jesus.</span> <span class="tl-s" data-s="126.01" data-e="127.32">Why?</span> <span class="tl-s" data-s="127.32" data-e="132.20">Because both Satan and the world are against us and that will not change.</span></p>
+        <p><span class="tl-s" data-s="132.20" data-e="137.80">And so we have to ask ourselves, how do we respond to this kind of systemic oppression?</span> <span class="tl-s" data-s="138.15" data-e="143.22">Sometimes the oppression comes so close and sometimes we witness it from afar.</span> <span class="tl-s" data-s="143.22" data-e="145.95">But what are we as thoughtful Christians to do?</span> <span class="tl-s" data-s="145.95" data-e="163.51">How will we respond individually when the day comes that we&#x27;re denied due process, have our property confiscated, when we&#x27;re denied or passed over for jobs, when professors give us bad grades for our beliefs, or when polite society begins to exclude Christians even more?</span> <span class="tl-s" data-s="163.51" data-e="164.55">What do we do?</span> <span class="tl-s" data-s="164.55" data-e="166.60">Are we to stand by and do nothing?</span> <span class="tl-s" data-s="166.60" data-e="167.94">Are we to be resigned?</span> <span class="tl-s" data-s="167.94" data-e="169.75">Are we to shrug our shoulders?</span> <span class="tl-s" data-s="169.75" data-e="171.28">No, we&#x27;re to fight back.</span> <span class="tl-s" data-s="171.28" data-e="172.10">But how?</span></p>
+        <p><span class="tl-s" data-s="173.58" data-e="175.56">The question is always how?</span> <span class="tl-s" data-s="175.56" data-e="184.05">Psalm 119 verse 121 through 128 helps us understand how to respond to unfair oppression.</span> <span class="tl-s" data-s="184.05" data-e="187.55">Now we&#x27;re not talking about oppression because we make stupid choices.</span> <span class="tl-s" data-s="187.65" data-e="189.18">That&#x27;s other psalms.</span> <span class="tl-s" data-s="189.30" data-e="190.39">Or because of our sin.</span> <span class="tl-s" data-s="190.39" data-e="191.86">That&#x27;s different psalms.</span> <span class="tl-s" data-s="191.86" data-e="194.16">Or because of mere feelings of opposition.</span> <span class="tl-s" data-s="194.37" data-e="196.93">Or if people say mean things about us.</span> <span class="tl-s" data-s="196.93" data-e="198.22">Those are other psalms.</span> <span class="tl-s" data-s="198.39" data-e="201.57">This stanza takes up the question, a specific question.</span></p>
+        <p><span class="tl-s" data-s="201.57" data-e="205.48">What are we to do when we are oppressed for following Jesus?</span> <span class="tl-s" data-s="205.48" data-e="210.38">What are we to do when we&#x27;re oppressed for following Jesus?</span> <span class="tl-s" data-s="210.51" data-e="212.46">We&#x27;re not left without hope.</span> <span class="tl-s" data-s="212.46" data-e="214.64">We&#x27;re not left without help.</span> <span class="tl-s" data-s="215.04" data-e="217.18">We&#x27;re not left without recourse.</span> <span class="tl-s" data-s="217.18" data-e="218.53">What are we to do?</span> <span class="tl-s" data-s="218.59" data-e="223.19">Call out to the God who always rescues his people from their oppressors.</span> <span class="tl-s" data-s="223.19" data-e="225.82">Here&#x27;s how we respond to those that oppress us.</span> <span class="tl-s" data-s="225.82" data-e="226.98">Here&#x27;s what we do.</span> <span class="tl-s" data-s="226.98" data-e="231.79">We call out to God who always rescues his people from their oppressors.</span></p>
+        <p><span class="tl-s" data-s="231.88" data-e="235.21">We must not shrug our shoulders and say, what do we do?</span> <span class="tl-s" data-s="235.21" data-e="236.16">What&#x27;s the use?</span> <span class="tl-s" data-s="236.16" data-e="240.18">We call out to the God who always rescues his people from their oppressors.</span> <span class="tl-s" data-s="240.18" data-e="244.20">We must not do nothing believing that nothing can really make any difference.</span> <span class="tl-s" data-s="244.20" data-e="248.60">We call out to God who always rescues his people from their oppressors.</span> <span class="tl-s" data-s="248.60" data-e="252.14">We must not grow cynical thinking that God doesn&#x27;t care.</span> <span class="tl-s" data-s="252.14" data-e="256.48">No, we call out to God who always rescues his people from their oppressors.</span> <span class="tl-s" data-s="256.50" data-e="257.39">Oppressors.</span> <span class="tl-s" data-s="257.39" data-e="261.48">And this passage, our passage today, will tell us how to do that.</span></p>
+        <p><span class="tl-s" data-s="263.82" data-e="265.90">Psalm 119, verse 121 through 128.</span> <span class="tl-s" data-s="265.90" data-e="274.11">And as you know, this is an acrostic and you can see in your Bibles that there are letters associated with each of these stanzas.</span> <span class="tl-s" data-s="274.20" data-e="278.11">This letter is associated with the letter, the Hebrew letter, Ayan.</span> <span class="tl-s" data-s="278.11" data-e="282.59">If you&#x27;re wondering what that is in English, there is no English letter that is Ayan.</span> <span class="tl-s" data-s="282.59" data-e="285.52">And if you&#x27;re thinking, is that hard for Hebrew students?</span> <span class="tl-s" data-s="285.52" data-e="286.66">Incredibly hard.</span></p>
+        <p><span class="tl-s" data-s="288.78" data-e="290.72">But we&#x27;ll leave that bad attitude to the side.</span> <span class="tl-s" data-s="290.72" data-e="291.14">Anyway.</span></p>
+        <p><span class="tl-s" data-s="293.54" data-e="301.54">Psalm 119, verse 121, says this, I have done what is just and right.</span> <span class="tl-s" data-s="301.63" data-e="304.34">Do not leave me to my oppressors.</span> <span class="tl-s" data-s="304.34" data-e="307.34">Give your servant a pledge of good.</span> <span class="tl-s" data-s="308.34" data-e="310.28">Let not the insolent oppress me.</span> <span class="tl-s" data-s="310.28" data-e="316.57">My eyes long for your salvation and for the fulfillment of your righteous promise.</span> <span class="tl-s" data-s="316.57" data-e="322.88">Deal with me, deal with your servant according to your steadfast love and teach me your statutes.</span> <span class="tl-s" data-s="322.88" data-e="324.22">I am your servant.</span> <span class="tl-s" data-s="324.22" data-e="328.16">Give me understanding that I may know your testimonies.</span> <span class="tl-s" data-s="328.16" data-e="333.87">It is time for the Lord to act, for your law has been broken.</span> <span class="tl-s" data-s="333.96" data-e="339.52">Therefore, I love your commandments above gold, above fine gold.</span></p>
+        <p><span class="tl-s" data-s="340.44" data-e="343.76">Therefore, I consider all your precepts to be right.</span> <span class="tl-s" data-s="343.76" data-e="347.22">I hate every false way.</span> <span class="tl-s" data-s="347.55" data-e="348.80">Let&#x27;s pray.</span></p>
+        <p><span class="tl-s" data-s="352.04" data-e="356.44">Lord, each week about this time, we open your word.</span> <span class="tl-s" data-s="356.44" data-e="359.80">And each week you address us from your word.</span> <span class="tl-s" data-s="360.48" data-e="374.80">We know today will be no different, but we ask, Lord, that you would help us as hearers to be attentive to the voice both of your word and your spirit in concert with your word.</span> <span class="tl-s" data-s="376.04" data-e="379.90">We are not here just looking to learn or gain information.</span> <span class="tl-s" data-s="379.90" data-e="382.82">We are here asking to be transformed.</span></p>
+        <p><span class="tl-s" data-s="384.46" data-e="394.82">I pray that you would help us to understand how to respond to oppression that comes, that&#x27;s unfair, wrong, unjust.</span></p>
+        <p><span class="tl-s" data-s="396.28" data-e="403.12">I pray that you would help us, strengthen us for these days that may be coming in our future with this passage.</span> <span class="tl-s" data-s="403.94" data-e="405.74">And it&#x27;s in your mighty name we pray.</span> <span class="tl-s" data-s="406.50" data-e="406.82">Amen.</span> <span class="tl-s" data-s="407.82" data-e="415.84">As we said, this stanza is going to direct us to call out to the God who always rescues his people from their oppressors.</span> <span class="tl-s" data-s="416.30" data-e="419.58">Call out to the God who always rescues his people from their oppressors.</span> <span class="tl-s" data-s="419.80" data-e="421.02">How do we call out?</span> <span class="tl-s" data-s="421.64" data-e="424.32">First, we call out to God for help.</span> <span class="tl-s" data-s="425.04" data-e="427.76">Notice this straight call for help.</span> <span class="tl-s" data-s="428.12" data-e="431.84">It&#x27;s in the second half of verse 121 and 122.</span> <span class="tl-s" data-s="432.32" data-e="436.26">He says, the psalmist says, Do not leave me to my oppressors.</span></p>
+        <p><span class="tl-s" data-s="436.42" data-e="439.62">And, do not let the insolent oppress me.</span> <span class="tl-s" data-s="439.88" data-e="441.90">He does not stay silent.</span> <span class="tl-s" data-s="442.20" data-e="444.74">He immediately calls to God for help.</span> <span class="tl-s" data-s="445.52" data-e="450.00">Notice, he says at the beginning of verse 121, I have done what is just and right.</span> <span class="tl-s" data-s="450.02" data-e="453.10">Here, he&#x27;s not claiming that he&#x27;s perfect.</span> <span class="tl-s" data-s="453.46" data-e="457.66">He&#x27;s saying that the general pattern of his life is godliness, is faithfulness.</span> <span class="tl-s" data-s="458.14" data-e="459.50">He&#x27;s a follower of Jesus.</span> <span class="tl-s" data-s="459.78" data-e="460.76">He&#x27;s not perfect.</span> <span class="tl-s" data-s="461.78" data-e="462.56">He fights sin.</span> <span class="tl-s" data-s="462.92" data-e="465.16">He&#x27;s got problems, just like the rest of us.</span></p>
+        <p><span class="tl-s" data-s="465.34" data-e="469.68">But, he&#x27;s keeping to himself, not out there doing overtly bad things.</span> <span class="tl-s" data-s="469.92" data-e="473.26">He keeps to himself and tries to live a peaceful and quiet life.</span> <span class="tl-s" data-s="473.54" data-e="477.42">And yet, his oppressors come upon him and cause him trouble.</span> <span class="tl-s" data-s="478.70" data-e="481.10">Note, it&#x27;s not just oppressor.</span> <span class="tl-s" data-s="481.18" data-e="482.98">Look at the second half of verse 121.</span> <span class="tl-s" data-s="483.22" data-e="485.06">Do not leave me to my oppressors.</span> <span class="tl-s" data-s="485.36" data-e="485.78">Plural.</span> <span class="tl-s" data-s="486.68" data-e="493.14">These oppressors come at him for the sole purpose of putting him down because he follows the Lord.</span> <span class="tl-s" data-s="493.26" data-e="497.56">He knows that it is dangerous for him to be by himself.</span> <span class="tl-s" data-s="497.86" data-e="502.52">So, he calls out, do not leave me to my oppressors.</span></p>
+        <p><span class="tl-s" data-s="503.24" data-e="505.16">Do not leave me to my oppressors.</span> <span class="tl-s" data-s="505.24" data-e="507.40">He calls out immediately for help.</span> <span class="tl-s" data-s="507.66" data-e="510.92">Notice, the first thing he does is not go off to strategize.</span> <span class="tl-s" data-s="511.18" data-e="513.84">He doesn&#x27;t hit up chat GPT to see what it would suggest.</span> <span class="tl-s" data-s="514.12" data-e="518.48">What he does is he calls out to God and says, do not leave me to my oppressors.</span> <span class="tl-s" data-s="518.70" data-e="524.40">And even more importantly, he doesn&#x27;t give himself the pass to go into self-pity.</span> <span class="tl-s" data-s="524.80" data-e="528.08">He doesn&#x27;t wallow around saying, why does this happen?</span> <span class="tl-s" data-s="529.20" data-e="531.02">What did I do to deserve this?</span> <span class="tl-s" data-s="532.06" data-e="534.90">Instead, he goes immediately to the Lord and cries for help.</span> <span class="tl-s" data-s="536.16" data-e="540.68">When we&#x27;re oppressed, it&#x27;s easy to give in to self-pity.</span></p>
+        <p><span class="tl-s" data-s="541.00" data-e="546.82">But self-pity just invites other trouble upon yourself.</span> <span class="tl-s" data-s="547.56" data-e="547.82">Why?</span> <span class="tl-s" data-s="548.96" data-e="566.96">Because when we feel sorry for ourselves and spend our energy brooding at the injustice and looking inside, we get trapped at times in our pain and this sense of injustice, and that slowly becomes our identity.</span> <span class="tl-s" data-s="567.98" data-e="573.58">Self-pity is a trap that is always foolish.</span></p>
+        <p><span class="tl-s" data-s="575.62" data-e="576.26">Why?</span> <span class="tl-s" data-s="576.54" data-e="585.02">Because when we only always rehearse our pain, we&#x27;ll slowly believe that the Lord can do nothing to help us.</span> <span class="tl-s" data-s="586.02" data-e="586.46">Why?</span> <span class="tl-s" data-s="586.58" data-e="589.22">Because the hurt is so real and it&#x27;s so intense.</span> <span class="tl-s" data-s="590.18" data-e="596.18">And before you know it, your pain and victimhood becomes your identity.</span> <span class="tl-s" data-s="597.14" data-e="598.00">And that&#x27;s there.</span> <span class="tl-s" data-s="598.12" data-e="601.96">We need to interrupt that internal dialogue and immediately call for help.</span> <span class="tl-s" data-s="602.16" data-e="603.24">That&#x27;s what the psalmist does.</span> <span class="tl-s" data-s="603.34" data-e="606.22">Do not leave me to my oppressors.</span> <span class="tl-s" data-s="606.44" data-e="608.16">Do not leave me alone.</span></p>
+        <p><span class="tl-s" data-s="608.48" data-e="613.92">Do not leave me to these evil men and women who look to push me down and grind me into powder.</span> <span class="tl-s" data-s="613.94" data-e="621.20">We need to interrupt that temptation towards self-pity or fear and say, help me.</span> <span class="tl-s" data-s="622.22" data-e="622.90">Help me.</span> <span class="tl-s" data-s="623.86" data-e="627.36">And the psalmist even gets a little bit more bold in verse 122.</span> <span class="tl-s" data-s="627.50" data-e="632.94">He says, give your servant a pledge of good.</span> <span class="tl-s" data-s="632.96" data-e="633.38">Give your servant a pledge of good.</span> <span class="tl-s" data-s="633.53" data-e="637.24">He says, I need a promise from you that you will do me good.</span> <span class="tl-s" data-s="638.64" data-e="639.86">He gets very bold.</span> <span class="tl-s" data-s="640.02" data-e="641.94">Give your servant a pledge of good.</span> <span class="tl-s" data-s="642.30" data-e="645.38">Take, in other words, this is saying, listen, I need a surety.</span></p>
+        <p><span class="tl-s" data-s="645.46" data-e="647.18">I need you to be my guarantor.</span> <span class="tl-s" data-s="647.66" data-e="653.30">I need you to guarantee good for me even in the face of these oppressors.</span> <span class="tl-s" data-s="653.38" data-e="654.02">That&#x27;s bold.</span> <span class="tl-s" data-s="655.22" data-e="663.38">He&#x27;s asking that the Lord would personally take up his cause and do good and guarantee good.</span> <span class="tl-s" data-s="663.40" data-e="665.80">That he would receive good.</span> <span class="tl-s" data-s="666.54" data-e="669.04">He says, get me out of this, essentially.</span> <span class="tl-s" data-s="670.22" data-e="673.74">Remove me from my oppressors and give me a pledge of good.</span> <span class="tl-s" data-s="674.26" data-e="675.70">That&#x27;s quite an ask.</span> <span class="tl-s" data-s="676.02" data-e="676.76">That&#x27;s bold.</span></p>
+        <p><span class="tl-s" data-s="678.92" data-e="686.86">And I wonder if we Christians at times are too timid in what we ask of the Lord.</span></p>
+        <p><span class="tl-s" data-s="689.14" data-e="702.34">If the Lord has pledged himself to us, and we know he has, we know he loves us, we know he does good for us, why should we hold back?</span> <span class="tl-s" data-s="703.18" data-e="707.38">We must go boldly and ask for help.</span> <span class="tl-s" data-s="708.40" data-e="715.62">I think most often, if you&#x27;re like me, it appears that our rescue comes from people.</span> <span class="tl-s" data-s="715.88" data-e="724.70">So we&#x27;ll be bold in asking other people for favors or advice or to come and help, but timid when we come to the Lord.</span> <span class="tl-s" data-s="725.00" data-e="728.40">Lord, if it&#x27;s your will, can you help me?</span> <span class="tl-s" data-s="728.98" data-e="732.56">But you call somebody on the phone or text them, I need something now.</span> <span class="tl-s" data-s="733.28" data-e="734.40">We need to reverse that.</span> <span class="tl-s" data-s="735.62" data-e="740.42">We must, I think, be more bold in what we ask God to do for us.</span> <span class="tl-s" data-s="740.80" data-e="742.88">Bolder than anything we ask of other people.</span> <span class="tl-s" data-s="743.74" data-e="750.94">Because the one that&#x27;s really going to make any difference in our life, as much of a blessing as other people are, but is the Lord God himself.</span></p>
+        <p><span class="tl-s" data-s="751.28" data-e="753.70">The Lord has pledged himself to us.</span> <span class="tl-s" data-s="754.12" data-e="757.76">And we know in him, there is no shadow of changing in him.</span> <span class="tl-s" data-s="757.78" data-e="761.78">And he&#x27;s the same yesterday, today, and forever.</span> <span class="tl-s" data-s="762.58" data-e="771.04">The psalmist could look back to Genesis chapter 15, when the Lord pledged himself to the people of God by way of a solemn covenant.</span> <span class="tl-s" data-s="771.86" data-e="773.46">The psalmist knows this.</span> <span class="tl-s" data-s="773.48" data-e="779.30">And he knows that the Lord has called the people of God his treasured possession in Exodus.</span> <span class="tl-s" data-s="779.82" data-e="785.24">Another pledge surely he had in his mind when it was this in Deuteronomy chapter 7, verse 9.</span> <span class="tl-s" data-s="785.62" data-e="798.00">He probably remembered the Lord saying, Know therefore that the Lord your God is God, the faithful God who keeps covenant and steadfast love with those who love him and keep his commandments to a thousand generations.</span> <span class="tl-s" data-s="799.06" data-e="807.92">The psalmist asked for a pledge from God of good, so that his foot would not slip and take him off into oblivion.</span></p>
+        <p><span class="tl-s" data-s="809.00" data-e="819.28">A pledge of good, so that the oppressors that push upon him unrelentingly, because he follows the Lord, that press him down and try to him him in.</span> <span class="tl-s" data-s="820.28" data-e="827.56">He asked for a pledge that the oppressors would not have their way and that he would receive good.</span></p>
+        <p><span class="tl-s" data-s="829.12" data-e="831.22">We should be this bold.</span></p>
+        <p><span class="tl-s" data-s="833.06" data-e="842.00">When we&#x27;re faced with trouble from our oppressors, do we have the ground to go to the Lord and ask for a pledge of good?</span> <span class="tl-s" data-s="842.10" data-e="842.56">We do.</span> <span class="tl-s" data-s="843.44" data-e="844.00">We do.</span> <span class="tl-s" data-s="844.14" data-e="846.84">We don&#x27;t have to look back at Genesis chapter 15.</span> <span class="tl-s" data-s="847.12" data-e="848.92">We look to a different place.</span> <span class="tl-s" data-s="849.54" data-e="855.72">A place where God forcefully and forever pledged himself to do and be our good.</span> <span class="tl-s" data-s="856.08" data-e="859.62">A place where God took up our cause once and for all.</span> <span class="tl-s" data-s="860.06" data-e="864.02">A place where this pledge was sealed with blood.</span> <span class="tl-s" data-s="865.24" data-e="867.46">A place of both infamy and hope.</span> <span class="tl-s" data-s="868.00" data-e="870.28">A place of justice and mercy.</span></p>
+        <p><span class="tl-s" data-s="870.62" data-e="872.40">A place of despair and promise.</span> <span class="tl-s" data-s="872.80" data-e="874.46">A place of suffering and glory.</span> <span class="tl-s" data-s="874.76" data-e="876.70">A place of condemnation and redemption.</span> <span class="tl-s" data-s="877.30" data-e="879.38">And a place of wrath and compassion.</span> <span class="tl-s" data-s="879.64" data-e="882.26">The cross of Jesus Christ is that place.</span> <span class="tl-s" data-s="883.54" data-e="891.30">And that is where we look to know that there is a pledge of good from God to us.</span> <span class="tl-s" data-s="891.52" data-e="892.06">Always.</span></p>
+        <p><span class="tl-s" data-s="893.48" data-e="896.30">He will not treat us as our sins deserve.</span></p>
+        <p><span class="tl-s" data-s="897.74" data-e="899.22">He loves us.</span> <span class="tl-s" data-s="900.22" data-e="901.10">How high?</span> <span class="tl-s" data-s="901.24" data-e="901.80">How much?</span> <span class="tl-s" data-s="902.42" data-e="902.90">Infinitely.</span> <span class="tl-s" data-s="903.70" data-e="913.78">So do you ever wonder if you have the ground to boldly ask of God for him to do good and push your oppressors away?</span> <span class="tl-s" data-s="914.06" data-e="914.70">Take heart.</span> <span class="tl-s" data-s="916.02" data-e="916.88">You do.</span> <span class="tl-s" data-s="918.20" data-e="919.66">Not because you&#x27;ve obeyed.</span> <span class="tl-s" data-s="920.24" data-e="921.70">Not because you&#x27;re a good person.</span> <span class="tl-s" data-s="922.66" data-e="924.90">But because you follow Jesus.</span></p>
+        <p><span class="tl-s" data-s="926.78" data-e="929.12">And he has taken your place.</span> <span class="tl-s" data-s="930.30" data-e="935.76">He has taken your sins upon himself and given you his righteousness.</span></p>
+        <p><span class="tl-s" data-s="938.48" data-e="940.14">You are now in him.</span> <span class="tl-s" data-s="941.30" data-e="942.06">So friends.</span> <span class="tl-s" data-s="942.90" data-e="944.70">When the oppressors push.</span> <span class="tl-s" data-s="945.60" data-e="946.64">Call out.</span> <span class="tl-s" data-s="947.24" data-e="947.94">Be bold.</span> <span class="tl-s" data-s="949.08" data-e="950.34">Go to the Lord.</span> <span class="tl-s" data-s="951.08" data-e="955.28">Be more bold in what you ask of God than what you ask of others.</span> <span class="tl-s" data-s="956.56" data-e="957.64">He can take it.</span></p>
+        <p><span class="tl-s" data-s="960.04" data-e="962.22">What are we to do when oppressors come at us?</span> <span class="tl-s" data-s="962.62" data-e="967.24">Call out to the Lord who always rescues his people from their oppressors.</span> <span class="tl-s" data-s="967.56" data-e="969.32">Call out boldly for help.</span> <span class="tl-s" data-s="970.02" data-e="970.40">Secondly.</span></p>
+        <p><span class="tl-s" data-s="972.30" data-e="974.80">Call out for help according to God&#x27;s character.</span> <span class="tl-s" data-s="975.88" data-e="978.96">Call out to help according to God&#x27;s character.</span> <span class="tl-s" data-s="979.88" data-e="982.30">I want you to notice where the psalmist looks.</span> <span class="tl-s" data-s="983.50" data-e="986.24">He tells us explicitly in verse 123.</span> <span class="tl-s" data-s="987.06" data-e="991.28">My eyes long for your salvation.</span> <span class="tl-s" data-s="992.18" data-e="994.86">My eyes long for your salvation.</span> <span class="tl-s" data-s="994.88" data-e="1002.74">His eyes were worn out looking for the Lord to rescue him from his oppressors.</span> <span class="tl-s" data-s="1003.68" data-e="1009.36">He fixes his eyes upon the Lord knowing that only the Lord can rescue him.</span> <span class="tl-s" data-s="1009.64" data-e="1014.08">He longs for the Lord to come and rescue him.</span> <span class="tl-s" data-s="1014.16" data-e="1016.52">He doesn&#x27;t try to strengthen himself by himself.</span></p>
+        <p><span class="tl-s" data-s="1017.30" data-e="1021.42">He doesn&#x27;t look within to a light that will guide him because all that&#x27;s nonsense.</span> <span class="tl-s" data-s="1021.88" data-e="1027.74">What he&#x27;s doing is he&#x27;s looking away from himself and longing for the rescue only the Lord can give.</span> <span class="tl-s" data-s="1028.42" data-e="1029.98">And his eyes are worn out.</span> <span class="tl-s" data-s="1030.22" data-e="1031.52">He looks to the Lord.</span> <span class="tl-s" data-s="1032.14" data-e="1039.02">He&#x27;s also not spending most of his time thinking, planning, or strategizing, but looking to the Lord to rescue him.</span> <span class="tl-s" data-s="1040.38" data-e="1043.46">And why is he confident that the Lord will rescue him?</span> <span class="tl-s" data-s="1043.56" data-e="1045.26">This is not an empty hope.</span> <span class="tl-s" data-s="1045.44" data-e="1047.28">Nor is it a vain imagination.</span> <span class="tl-s" data-s="1047.68" data-e="1052.68">He&#x27;s looking, the text says, for the fulfillment of your righteous promise.</span></p>
+        <p><span class="tl-s" data-s="1054.86" data-e="1057.04">The fulfillment of your righteous promise.</span> <span class="tl-s" data-s="1057.18" data-e="1058.26">Look again at verse 123.</span> <span class="tl-s" data-s="1058.84" data-e="1061.04">My eyes long for your salvation.</span> <span class="tl-s" data-s="1061.06" data-e="1062.48">I&#x27;m facing you.</span> <span class="tl-s" data-s="1062.64" data-e="1063.74">I&#x27;m fixed on you.</span> <span class="tl-s" data-s="1063.88" data-e="1065.02">I&#x27;m looking at you.</span> <span class="tl-s" data-s="1065.14" data-e="1066.64">I&#x27;m waiting for your rescue.</span> <span class="tl-s" data-s="1066.84" data-e="1069.02">And I&#x27;m waiting for the fulfillment of your righteous promise.</span> <span class="tl-s" data-s="1069.32" data-e="1073.54">Then he says, deal with your servant according to your steadfast love.</span> <span class="tl-s" data-s="1074.74" data-e="1081.46">This is why the psalmist knows that the Lord will rescue him from his oppressors.</span></p>
+        <p><span class="tl-s" data-s="1081.84" data-e="1083.78">The steadfast love of the Lord.</span> <span class="tl-s" data-s="1084.70" data-e="1090.62">The steadfast love of God is among the most important concepts in the whole Old Testament.</span> <span class="tl-s" data-s="1091.64" data-e="1096.06">You can see the importance of it here in verse 123 and throughout the whole Old Testament.</span></p>
+        <p><span class="tl-s" data-s="1098.26" data-e="1103.24">Notice he says in verse 123, he&#x27;s looking for the fulfillment of your righteous promise.</span> <span class="tl-s" data-s="1103.26" data-e="1105.32">He doesn&#x27;t say promise says.</span> <span class="tl-s" data-s="1105.58" data-e="1106.48">He says promise.</span> <span class="tl-s" data-s="1106.76" data-e="1107.66">This is singular.</span> <span class="tl-s" data-s="1108.16" data-e="1111.76">The psalmist is looking for the rescue God can bring.</span> <span class="tl-s" data-s="1112.08" data-e="1114.26">And he looks for it according to what?</span> <span class="tl-s" data-s="1114.74" data-e="1117.32">God&#x27;s steadfast love.</span> <span class="tl-s" data-s="1118.54" data-e="1120.32">God&#x27;s steadfast love.</span></p>
+        <p><span class="tl-s" data-s="1121.76" data-e="1130.08">Upon Mount Sinai, the Lord declared his steadfast love for the people of God.</span> <span class="tl-s" data-s="1130.10" data-e="1141.44">He declared not that he would love them from time to time or periodically, but that he would always only extend steadfast love toward his people.</span> <span class="tl-s" data-s="1142.40" data-e="1143.92">And the psalmist knows this.</span> <span class="tl-s" data-s="1144.14" data-e="1146.34">And he banks everything on this truth.</span> <span class="tl-s" data-s="1146.70" data-e="1149.70">On the truth of God&#x27;s unflagging love.</span> <span class="tl-s" data-s="1150.24" data-e="1155.78">The Lord&#x27;s steadfast love is not mere affection or kindness or sentimentality.</span> <span class="tl-s" data-s="1156.24" data-e="1158.16">That&#x27;s not the nature of his love.</span> <span class="tl-s" data-s="1158.78" data-e="1161.70">He doesn&#x27;t open his phone and see pictures from four years ago.</span> <span class="tl-s" data-s="1161.84" data-e="1162.96">Oh yeah, those were good times.</span> <span class="tl-s" data-s="1163.16" data-e="1164.40">That&#x27;s not how he does it.</span></p>
+        <p><span class="tl-s" data-s="1165.22" data-e="1171.50">He has steadfast love for his people that never fails and never flags.</span> <span class="tl-s" data-s="1172.52" data-e="1176.86">And it is in this love that the Lord binds himself to us.</span> <span class="tl-s" data-s="1176.88" data-e="1180.76">The bond between him and us is a bond of love.</span></p>
+        <p><span class="tl-s" data-s="1182.68" data-e="1188.82">And he has promised only always to express steadfast love toward those who are his.</span> <span class="tl-s" data-s="1189.00" data-e="1205.38">If you follow Jesus, if you are a Christian, this doesn&#x27;t apply to those that are not, but if you follow Jesus and are a Christian, you can know for sure and for certain that his steadfast love is constantly at work in your life.</span> <span class="tl-s" data-s="1205.48" data-e="1214.10">No matter our doubts, no matter our failings, no matter our sins, the Lord shows his steadfast love only and always to us.</span> <span class="tl-s" data-s="1214.88" data-e="1221.04">Our Lord chooses to love us not because we&#x27;re lovely, but because of who he is.</span></p>
+        <p><span class="tl-s" data-s="1223.30" data-e="1227.38">1 John says, God is love.</span> <span class="tl-s" data-s="1228.38" data-e="1231.88">That means God never had to learn to love.</span> <span class="tl-s" data-s="1232.56" data-e="1233.90">It doesn&#x27;t say God is loving.</span> <span class="tl-s" data-s="1234.40" data-e="1237.54">It&#x27;s not a characteristic that God put on himself one day.</span> <span class="tl-s" data-s="1237.76" data-e="1241.00">He didn&#x27;t wake up one day and say, you know what, I&#x27;m going to start loving people.</span> <span class="tl-s" data-s="1241.39" data-e="1244.52">God has always only been love.</span> <span class="tl-s" data-s="1244.90" data-e="1254.22">For all eternity, before mankind drew his first breath, God the Father, God the Son, and God the Spirit experienced together love.</span> <span class="tl-s" data-s="1254.58" data-e="1256.82">Love, eternal love.</span> <span class="tl-s" data-s="1257.06" data-e="1263.10">To hear the fact that God is love means that God, this is something God has always been.</span> <span class="tl-s" data-s="1263.37" data-e="1269.56">And so when God says that I love you, this is a very different kind of love than we&#x27;re used to experiencing.</span></p>
+        <p><span class="tl-s" data-s="1269.58" data-e="1282.04">What we have is the Father saying, I will extend to you the kind of love that I have enjoyed amongst my own Godhead for all eternity before creation began.</span> <span class="tl-s" data-s="1283.40" data-e="1286.98">And the psalmist cries out, deal with me according to that love.</span></p>
+        <p><span class="tl-s" data-s="1289.92" data-e="1290.40">Help!</span> <span class="tl-s" data-s="1291.48" data-e="1294.34">The psalmist is saying, it&#x27;s in your nature to help me.</span> <span class="tl-s" data-s="1294.58" data-e="1297.16">And don&#x27;t let my oppressors grind me into powder.</span> <span class="tl-s" data-s="1297.54" data-e="1297.92">Help!</span> <span class="tl-s" data-s="1299.14" data-e="1301.40">I know you have steadfast love for me.</span> <span class="tl-s" data-s="1301.46" data-e="1302.44">I know that&#x27;s who you are.</span> <span class="tl-s" data-s="1302.70" data-e="1303.00">Help!</span> <span class="tl-s" data-s="1303.40" data-e="1306.16">You see that I&#x27;m impressed by evildoers.</span> <span class="tl-s" data-s="1306.38" data-e="1308.84">And I&#x27;ve come to say, I look only to you.</span> <span class="tl-s" data-s="1309.00" data-e="1313.88">And I look to you because I know you only always have steadfast love for me.</span></p>
+        <p><span class="tl-s" data-s="1314.70" data-e="1315.76">That&#x27;s what he&#x27;s doing.</span> <span class="tl-s" data-s="1316.50" data-e="1323.90">When the oppressor pushes down upon us, and evil people seem to have their way, there seems to be this massive disconnect.</span></p>
+        <p><span class="tl-s" data-s="1327.46" data-e="1329.80">And we&#x27;re tempted to ask questions like this.</span> <span class="tl-s" data-s="1330.70" data-e="1336.74">If God really has this kind of steadfast love for me, why is this happening?</span></p>
+        <p><span class="tl-s" data-s="1340.12" data-e="1342.78">How could life be this unfair?</span> <span class="tl-s" data-s="1344.14" data-e="1345.22">This troubling?</span> <span class="tl-s" data-s="1346.00" data-e="1352.14">If the Lord has this kind of unflagging love, what is going on?</span> <span class="tl-s" data-s="1353.14" data-e="1359.74">Where is the steadfast love of God when all I feel is the steadfast trouble from my oppressors?</span></p>
+        <p><span class="tl-s" data-s="1362.24" data-e="1364.72">What are we to do with disconnects like that?</span> <span class="tl-s" data-s="1365.58" data-e="1366.50">Because that&#x27;s the reality.</span> <span class="tl-s" data-s="1367.58" data-e="1368.80">The psalmist knows this.</span> <span class="tl-s" data-s="1369.46" data-e="1372.40">He&#x27;s saying, deal with your servant according to your steadfast love.</span> <span class="tl-s" data-s="1372.66" data-e="1373.90">I need your help now.</span></p>
+        <p><span class="tl-s" data-s="1376.92" data-e="1385.50">But the psalmist also knows that his timeline is not often the same as the Lord&#x27;s timeline.</span> <span class="tl-s" data-s="1386.64" data-e="1389.20">That&#x27;s something we need to just get in our heads, right?</span></p>
+        <p><span class="tl-s" data-s="1391.12" data-e="1393.98">We want trouble to be gone like that.</span> <span class="tl-s" data-s="1394.66" data-e="1405.52">The Lord often allows us to experience trouble longer than we would want to.</span> <span class="tl-s" data-s="1406.70" data-e="1407.68">I don&#x27;t know about you.</span> <span class="tl-s" data-s="1407.80" data-e="1411.32">I want trouble in my life for about a nanosecond.</span> <span class="tl-s" data-s="1412.30" data-e="1413.70">And then I want it gone.</span></p>
+        <p><span class="tl-s" data-s="1415.88" data-e="1418.68">But what are we to do with the disconnect like that?</span> <span class="tl-s" data-s="1418.92" data-e="1438.12">To believe and to know, because the scriptures say this, that our God is a God who offers and only extends steadfast unflagging love to us and from time to time we face the hardships that come from wicked oppressors.</span> <span class="tl-s" data-s="1438.26" data-e="1439.28">What do we do?</span> <span class="tl-s" data-s="1439.44" data-e="1440.42">That&#x27;s a clash.</span> <span class="tl-s" data-s="1440.52" data-e="1441.22">That&#x27;s a disconnect.</span></p>
+        <p><span class="tl-s" data-s="1443.52" data-e="1444.70">Well, the psalmist knows.</span> <span class="tl-s" data-s="1445.36" data-e="1447.60">Look at the second half of verse 124.</span></p>
+        <p><span class="tl-s" data-s="1449.28" data-e="1451.80">He says, teach me your statutes.</span></p>
+        <p><span class="tl-s" data-s="1453.40" data-e="1454.76">I am your servant.</span> <span class="tl-s" data-s="1455.02" data-e="1456.14">Give me understanding.</span> <span class="tl-s" data-s="1457.26" data-e="1458.00">See what he&#x27;s saying?</span> <span class="tl-s" data-s="1459.18" data-e="1464.14">He&#x27;s saying, help me understand your word so that I know what&#x27;s going on.</span> <span class="tl-s" data-s="1464.66" data-e="1469.76">And notice that he also postures himself in verse 125 as the Lord&#x27;s servant.</span></p>
+        <p><span class="tl-s" data-s="1471.20" data-e="1473.88">We come to the Lord as his servant.</span> <span class="tl-s" data-s="1475.10" data-e="1480.98">We can go boldly to him and ask anything but we must never forget he is the servant.</span> <span class="tl-s" data-s="1481.52" data-e="1482.52">We are the servant.</span> <span class="tl-s" data-s="1482.70" data-e="1483.44">He is the master.</span> <span class="tl-s" data-s="1484.52" data-e="1485.36">That&#x27;s the idea.</span> <span class="tl-s" data-s="1485.68" data-e="1487.64">We serve him at his good pleasure.</span> <span class="tl-s" data-s="1488.00" data-e="1490.02">He is the one who is our master.</span> <span class="tl-s" data-s="1490.32" data-e="1493.14">He is the one who dictates what comes to us.</span> <span class="tl-s" data-s="1493.40" data-e="1499.04">He is the one who gives his steadfast love to us on a regular basis but we are his servants.</span></p>
+        <p><span class="tl-s" data-s="1500.64" data-e="1503.42">And he doesn&#x27;t always explain his terms.</span> <span class="tl-s" data-s="1504.16" data-e="1508.28">But I&#x27;ll tell you what, there&#x27;s a lot of explanation going on in this Bible.</span> <span class="tl-s" data-s="1508.58" data-e="1516.76">And so that&#x27;s why the psalmist says, okay, all right, here&#x27;s where I&#x27;m going to understand how this disconnect is, well, it&#x27;s remedied.</span> <span class="tl-s" data-s="1516.94" data-e="1517.60">Here&#x27;s what we do.</span> <span class="tl-s" data-s="1517.76" data-e="1523.18">I need to know how it works that you have steadfast love for me and my oppressors seem so powerful.</span> <span class="tl-s" data-s="1523.40" data-e="1524.48">How does that work together?</span> <span class="tl-s" data-s="1524.84" data-e="1525.44">Here&#x27;s how.</span></p>
+        <p><span class="tl-s" data-s="1527.20" data-e="1528.70">Teach me your statutes, Lord.</span> <span class="tl-s" data-s="1529.40" data-e="1533.46">In other words, illuminate your word to me so that I understand.</span></p>
+        <p><span class="tl-s" data-s="1535.64" data-e="1536.76">And that&#x27;s the key.</span> <span class="tl-s" data-s="1537.74" data-e="1544.92">When we feel the hand of our oppressors more than the hand of God, we&#x27;re not left without recourse.</span> <span class="tl-s" data-s="1545.38" data-e="1548.22">We have the very word of God.</span> <span class="tl-s" data-s="1548.48" data-e="1548.84">Guess what?</span> <span class="tl-s" data-s="1549.08" data-e="1550.52">It&#x27;s better than YouTube.</span> <span class="tl-s" data-s="1551.88" data-e="1553.62">It&#x27;s better than podcasts.</span> <span class="tl-s" data-s="1554.68" data-e="1557.46">It&#x27;s better than people talking about the word.</span> <span class="tl-s" data-s="1558.30" data-e="1564.98">We need the word of God to give us understanding so that we can know what the heck is going on.</span> <span class="tl-s" data-s="1565.64" data-e="1572.50">When we read in the Bible that he has steadfast love for us, but yet the oppressors have steadfast hatred for us.</span> <span class="tl-s" data-s="1573.30" data-e="1575.12">We have the very word of God.</span></p>
+        <p><span class="tl-s" data-s="1575.84" data-e="1577.86">And this is the way we gain understanding.</span> <span class="tl-s" data-s="1578.10" data-e="1585.14">If you come to the word only looking to gain information, only so that you can learn things, you&#x27;re not going to the word rightly.</span> <span class="tl-s" data-s="1585.38" data-e="1587.82">We go to the word to gain understanding.</span> <span class="tl-s" data-s="1587.84" data-e="1592.86">And the person who has understanding understands how to live and make it in this life.</span> <span class="tl-s" data-s="1593.36" data-e="1593.64">How?</span> <span class="tl-s" data-s="1594.04" data-e="1597.64">By the light that the word of God gives.</span> <span class="tl-s" data-s="1598.94" data-e="1601.90">The word of God gives understanding.</span> <span class="tl-s" data-s="1602.68" data-e="1607.60">That&#x27;s actually what this whole psalm, Psalm 119, that&#x27;s what the whole psalm celebrates.</span> <span class="tl-s" data-s="1608.70" data-e="1609.80">You can see it throughout.</span> <span class="tl-s" data-s="1610.92" data-e="1612.24">Here&#x27;s a couple examples.</span></p>
+        <p><span class="tl-s" data-s="1612.46" data-e="1617.88">In Psalm 119, verse 104, we read, through your precepts, I get understanding.</span> <span class="tl-s" data-s="1618.90" data-e="1625.70">And in verse 27, make me understand the way of your precepts, and I will meditate on your wondrous works.</span> <span class="tl-s" data-s="1626.06" data-e="1633.24">So the psalmist needs to understand how God, who loves him, would allow him to be oppressed.</span> <span class="tl-s" data-s="1633.40" data-e="1635.98">And the word of God gives us the answers.</span> <span class="tl-s" data-s="1636.98" data-e="1639.16">The word of God gives us the answers.</span></p>
+        <p><span class="tl-s" data-s="1640.88" data-e="1643.50">That&#x27;s how we put our life together.</span> <span class="tl-s" data-s="1643.66" data-e="1653.90">Listen, if you&#x27;re trying to construct a worldview separate from the word of God, you will be confused, discouraged, and given to self-pity.</span> <span class="tl-s" data-s="1655.18" data-e="1656.34">That&#x27;s how it goes.</span> <span class="tl-s" data-s="1657.60" data-e="1661.66">But friends, we serve a speaking God.</span> <span class="tl-s" data-s="1662.72" data-e="1666.58">A God who is there and is not silent and has not been silent.</span> <span class="tl-s" data-s="1667.62" data-e="1671.00">We serve a God who has given us his word.</span> <span class="tl-s" data-s="1672.36" data-e="1673.86">Sixty-six books.</span> <span class="tl-s" data-s="1674.48" data-e="1676.84">They all communicate in very different ways.</span></p>
+        <p><span class="tl-s" data-s="1679.24" data-e="1681.44">The Psalms, it&#x27;s poetry.</span> <span class="tl-s" data-s="1682.38" data-e="1684.18">Proverbs is wisdom for living.</span> <span class="tl-s" data-s="1685.00" data-e="1688.72">Narratives are stories that we read and go, man, they were bad.</span> <span class="tl-s" data-s="1688.82" data-e="1689.98">I&#x27;m glad I&#x27;m not like that.</span> <span class="tl-s" data-s="1690.70" data-e="1691.54">Makes you feel better.</span> <span class="tl-s" data-s="1692.72" data-e="1700.22">The epistles help us understand how to live just with straight, clear, didactic teaching.</span></p>
+        <p><span class="tl-s" data-s="1702.32" data-e="1704.42">But the word gives understanding.</span> <span class="tl-s" data-s="1705.26" data-e="1711.56">The word, the word is what directs our steps or should direct our steps.</span></p>
+        <p><span class="tl-s" data-s="1714.00" data-e="1718.14">So how, what kind of understanding can we get from the word?</span> <span class="tl-s" data-s="1718.50" data-e="1720.52">Notice, he directs us to get understanding.</span> <span class="tl-s" data-s="1720.54" data-e="1723.00">How do we get understanding from the word?</span> <span class="tl-s" data-s="1723.54" data-e="1729.56">Well, there&#x27;s a lot of reasons that the Lord would allow oppressors to temporarily have their way.</span> <span class="tl-s" data-s="1729.92" data-e="1735.72">And from the word, we&#x27;ll see two, I&#x27;ll just give two, there&#x27;s 12, 15, 20 different reasons in the Bible.</span> <span class="tl-s" data-s="1735.96" data-e="1741.06">But here&#x27;s two reasons the Lord allows oppressors to temporarily have their way.</span> <span class="tl-s" data-s="1741.30" data-e="1746.24">He&#x27;s not withholding his steadfast love, he&#x27;s teaching us according to his steadfast love.</span> <span class="tl-s" data-s="1746.90" data-e="1755.04">James says this, count it all joy my brothers that should read brothers and sisters when you meet trials of various kinds.</span> <span class="tl-s" data-s="1755.74" data-e="1756.38">Why, James?</span> <span class="tl-s" data-s="1756.52" data-e="1757.54">That seems crazy.</span></p>
+        <p><span class="tl-s" data-s="1757.76" data-e="1759.04">I don&#x27;t understand what you&#x27;re saying.</span> <span class="tl-s" data-s="1759.62" data-e="1760.76">See, that&#x27;s how you should read the Bible.</span> <span class="tl-s" data-s="1760.94" data-e="1772.50">When you read the Bible, you just go, oh, you know, you&#x27;re not reading the Bible like a robot, but when you read something like James and you go, and you see him say something crazy, dude, how can I do that?</span> <span class="tl-s" data-s="1772.74" data-e="1776.96">Count it all joy my brothers and sisters when you meet trials of various kinds.</span> <span class="tl-s" data-s="1777.68" data-e="1778.04">Why?</span> <span class="tl-s" data-s="1778.76" data-e="1786.12">For you know, because then you keep reading and gets the answer, for you know that the testing of your faith produces steadfastness.</span> <span class="tl-s" data-s="1786.84" data-e="1792.08">And let steadfastness have its full effect that you may be perfect and complete, lacking in nothing.</span> <span class="tl-s" data-s="1792.92" data-e="1793.96">You see what James is saying?</span> <span class="tl-s" data-s="1794.32" data-e="1801.54">Going through unjust oppression gives us grit and steadfastness to make it through.</span> <span class="tl-s" data-s="1801.82" data-e="1809.88">It makes us tough, not tough on ourselves, but we grow with a robust faith when that faith is tested.</span></p>
+        <p><span class="tl-s" data-s="1810.27" data-e="1816.22">When you trust in the Lord through your trials of various kinds and the Lord brings you through, you grow.</span> <span class="tl-s" data-s="1817.58" data-e="1832.10">That&#x27;s one of the reasons the Lord allows oppressors in our lives so that we might grow, so that we might be strengthened, so that we might recognize that our faith in Jesus is not for nothing, but it works.</span> <span class="tl-s" data-s="1833.10" data-e="1835.10">And you might say, I might not, I don&#x27;t have much faith.</span> <span class="tl-s" data-s="1835.22" data-e="1835.66">It&#x27;s okay.</span> <span class="tl-s" data-s="1835.98" data-e="1837.56">It doesn&#x27;t matter how much faith you have.</span> <span class="tl-s" data-s="1837.72" data-e="1839.16">It matters who your faith is in.</span></p>
+        <p><span class="tl-s" data-s="1841.64" data-e="1845.66">Your faith in Jesus, even if it&#x27;s teeny tiny, is enough.</span></p>
+        <p><span class="tl-s" data-s="1847.52" data-e="1854.28">That&#x27;s one reason the Lord allows oppressors, even as He loves us. another reason.</span> <span class="tl-s" data-s="1854.30" data-e="1856.38">Another reason is this.</span> <span class="tl-s" data-s="1857.46" data-e="1866.24">For this light and momentary affliction is preparing for us an eternal weight of glory beyond all comparison.</span> <span class="tl-s" data-s="1867.24" data-e="1871.78">As we look not to the things that are seen, but to the things that are unseen.</span> <span class="tl-s" data-s="1872.74" data-e="1875.02">For the things that are seen are transient.</span> <span class="tl-s" data-s="1875.18" data-e="1876.08">That means passing away.</span> <span class="tl-s" data-s="1876.96" data-e="1889.46">But the things that are unseen are eternal. the suffering we endure now from oppressors is preparing for us a glory that we cannot comprehend.</span></p>
+        <p><span class="tl-s" data-s="1893.46" data-e="1894.60">You know what that means?</span> <span class="tl-s" data-s="1895.17" data-e="1898.36">This is one of the ways the word gives us understanding when it comes to troubles.</span> <span class="tl-s" data-s="1899.00" data-e="1900.32">Here&#x27;s one of the things that means.</span> <span class="tl-s" data-s="1900.60" data-e="1908.26">It means that not once one ounce of your suffering at the hand of oppressors will be wasted.</span></p>
+        <p><span class="tl-s" data-s="1910.94" data-e="1914.40">No trouble that visits your life is for nothing.</span></p>
+        <p><span class="tl-s" data-s="1916.16" data-e="1931.46">Have you ever faced a challenge, an unspeakably difficult challenge, barely to make it through, maybe just to crawl out, pulling yourself by your fingernails out of that, barely trusting the Lord, coming out, and you think, I don&#x27;t even know what that&#x27;s for.</span> <span class="tl-s" data-s="1932.00" data-e="1933.06">What was that about?</span> <span class="tl-s" data-s="1933.18" data-e="1937.46">And you look back 10, 20, 30, 40 years and you think, I can&#x27;t see a purpose.</span> <span class="tl-s" data-s="1937.60" data-e="1938.28">Well, here&#x27;s a purpose.</span> <span class="tl-s" data-s="1939.46" data-e="1940.08">Here&#x27;s a purpose.</span></p>
+        <p><span class="tl-s" data-s="1942.36" data-e="1947.92">It was a preparation for the weight of glory that you will receive that&#x27;s beyond all comparison right now.</span> <span class="tl-s" data-s="1948.50" data-e="1949.62">What does that even mean?</span> <span class="tl-s" data-s="1949.72" data-e="1952.20">I have no idea, but it sounds great.</span></p>
+        <p><span class="tl-s" data-s="1957.30" data-e="1961.30">And it&#x27;s also a reminder that we can&#x27;t expect to construct heaven on earth.</span></p>
+        <p><span class="tl-s" data-s="1962.80" data-e="1970.32">I think too often we expect everything to go really well in a fallen world, but we forget.</span> <span class="tl-s" data-s="1970.52" data-e="1971.70">We live in a fallen world!</span></p>
+        <p><span class="tl-s" data-s="1976.20" data-e="1983.34">We&#x27;re not going to construct heaven on earth, even if you live in your dream home, even if you drive your dream car, even if you lose 25 pounds.</span></p>
+        <p><span class="tl-s" data-s="1984.88" data-e="1985.56">We&#x27;re not.</span></p>
+        <p><span class="tl-s" data-s="1987.70" data-e="2010.90">And sometimes the Lord allows the hand of oppressors to weigh heavily on us so that we might recognize there&#x27;s more than this. all the things in this world that seem so permanent are passing away like mist in the wind.</span></p>
+        <p><span class="tl-s" data-s="2015.38" data-e="2021.08">Suffering reminds us that we&#x27;re not made to live for mist in the wind.</span> <span class="tl-s" data-s="2022.40" data-e="2031.16">We&#x27;re made to live for the one who has steadfast love for us, who is preparing for us an eternal home.</span></p>
+        <p><span class="tl-s" data-s="2032.82" data-e="2035.96">Those are two ways the Lord gives understanding by His Word.</span> <span class="tl-s" data-s="2036.70" data-e="2037.24">See that?</span></p>
+        <p><span class="tl-s" data-s="2041.04" data-e="2044.46">Deal with me according to your steadfast love and teach me your statutes.</span> <span class="tl-s" data-s="2044.70" data-e="2052.22">And as you learn His statutes and as you gain understanding, you realize, okay, a couple things I need to remember when these oppressors come at me is this.</span> <span class="tl-s" data-s="2052.42" data-e="2061.52">First of all, it&#x27;s working something in me to make me stronger and help me not to trust myself and trust instead in Jesus Christ because I know He&#x27;s stronger than me and He will guide me through.</span> <span class="tl-s" data-s="2061.64" data-e="2062.26">That&#x27;s one thing.</span> <span class="tl-s" data-s="2062.52" data-e="2065.84">Another thing is to remind myself I am not home.</span> <span class="tl-s" data-s="2066.26" data-e="2080.74">I will not be home on this side of glory and all the troubles that I go through now, none of them are for nothing and all of them will work together to build for me some kind of experience that&#x27;s called glory and that weight of glory is beyond all comparison.</span> <span class="tl-s" data-s="2081.30" data-e="2082.30">Sign me up for that.</span></p>
+        <p><span class="tl-s" data-s="2083.54" data-e="2091.62">And it puts your oppressors and their words and their actions as real as it is, it puts them in perspective.</span></p>
+        <p><span class="tl-s" data-s="2094.14" data-e="2097.78">That&#x27;s why it&#x27;s so important to know the Lord through His Word.</span> <span class="tl-s" data-s="2098.08" data-e="2104.74">See, here&#x27;s where we need to shape our ragged emotions and desires because we do not want what we should want.</span> <span class="tl-s" data-s="2105.16" data-e="2114.14">And so often, what we do is we say to the emotions that we have in our lives that are very real, we say, emotions, why don&#x27;t you take the wheel of my life?</span> <span class="tl-s" data-s="2114.88" data-e="2115.96">You go wherever you want.</span> <span class="tl-s" data-s="2116.16" data-e="2118.70">That&#x27;s like giving a nine-year-old the keys to your car.</span></p>
+        <p><span class="tl-s" data-s="2120.16" data-e="2120.52">Right?</span> <span class="tl-s" data-s="2120.66" data-e="2123.40">When you say emotions, you be the key to all I am, right?</span> <span class="tl-s" data-s="2123.64" data-e="2128.46">Let&#x27;s might as well get some child from the children&#x27;s ministry and say, why don&#x27;t you drive my car?</span> <span class="tl-s" data-s="2129.02" data-e="2130.32">It&#x27;s going to go really poorly.</span> <span class="tl-s" data-s="2130.44" data-e="2131.20">You&#x27;re going to crash.</span> <span class="tl-s" data-s="2132.56" data-e="2133.52">They&#x27;re going to wreck it.</span> <span class="tl-s" data-s="2134.60" data-e="2143.84">And that&#x27;s what we do when we cede control of our lives only to what we feel in any given moment.</span> <span class="tl-s" data-s="2143.98" data-e="2146.24">We need to inform our feelings.</span> <span class="tl-s" data-s="2146.94" data-e="2149.54">Otherwise, we&#x27;ll get fired up about the wrong things.</span></p>
+        <p><span class="tl-s" data-s="2151.20" data-e="2153.22">Otherwise, we&#x27;ll go the wrong way.</span></p>
+        <p><span class="tl-s" data-s="2155.80" data-e="2169.06">Yet the Lord, in His kindness, and because of His steadfast love, reorients us through oppressors and as we understand His Word.</span></p>
+        <p><span class="tl-s" data-s="2172.94" data-e="2177.26">And just because we gain understanding does not mean we should sit idly by.</span> <span class="tl-s" data-s="2177.42" data-e="2180.94">We must continue to call out for help according to His character.</span> <span class="tl-s" data-s="2181.26" data-e="2181.50">Why?</span> <span class="tl-s" data-s="2181.72" data-e="2188.30">Because He is still, even in the midst of our troubles, He is still the God who always rescues His people from their oppressors.</span> <span class="tl-s" data-s="2189.42" data-e="2190.54">So call out for help.</span> <span class="tl-s" data-s="2190.96" data-e="2192.32">Call out according to His character.</span> <span class="tl-s" data-s="2192.44" data-e="2193.06">What&#x27;s His character?</span> <span class="tl-s" data-s="2193.38" data-e="2196.20">He is the God of steadfast love.</span> <span class="tl-s" data-s="2196.30" data-e="2198.42">And lastly, call out urgently.</span> <span class="tl-s" data-s="2199.02" data-e="2201.08">Call out urgently to God.</span></p>
+        <p><span class="tl-s" data-s="2201.18" data-e="2204.00">When you&#x27;re in trouble, call out urgently to God.</span> <span class="tl-s" data-s="2204.26" data-e="2205.64">Look at verse 126.</span> <span class="tl-s" data-s="2205.90" data-e="2207.58">He calls Himself a servant.</span> <span class="tl-s" data-s="2207.77" data-e="2208.86">Look at what He says to the Lord.</span> <span class="tl-s" data-s="2209.10" data-e="2211.44">It is time for the Lord to act now.</span> <span class="tl-s" data-s="2211.58" data-e="2213.16">I added now, but that&#x27;s the idea.</span> <span class="tl-s" data-s="2213.42" data-e="2214.90">It&#x27;s time for the Lord to act.</span> <span class="tl-s" data-s="2215.04" data-e="2215.42">Come on.</span> <span class="tl-s" data-s="2215.76" data-e="2216.52">What are you doing?</span> <span class="tl-s" data-s="2216.86" data-e="2217.52">Let&#x27;s go.</span></p>
+        <p><span class="tl-s" data-s="2219.06" data-e="2220.98">It&#x27;s time for the Lord to act.</span> <span class="tl-s" data-s="2221.18" data-e="2221.62">Come on.</span></p>
+        <p><span class="tl-s" data-s="2224.90" data-e="2226.78">Show your right hand of power.</span> <span class="tl-s" data-s="2227.68" data-e="2229.46">Show everybody here what&#x27;s up.</span> <span class="tl-s" data-s="2229.78" data-e="2232.80">Show everybody that you are God and we are not.</span> <span class="tl-s" data-s="2234.02" data-e="2236.48">But notice why He calls the Lord to act.</span></p>
+        <p><span class="tl-s" data-s="2239.80" data-e="2241.00">126, second half.</span> <span class="tl-s" data-s="2241.46" data-e="2244.84">For your law has been broken.</span></p>
+        <p><span class="tl-s" data-s="2246.62" data-e="2247.50">What&#x27;s He saying?</span> <span class="tl-s" data-s="2247.52" data-e="2254.12">The Lord and His word is being trampled upon by people.</span> <span class="tl-s" data-s="2254.38" data-e="2254.46">Right?</span> <span class="tl-s" data-s="2254.70" data-e="2255.94">So He&#x27;s transitioned.</span> <span class="tl-s" data-s="2256.88" data-e="2259.12">The oppressors are still in view.</span> <span class="tl-s" data-s="2259.86" data-e="2264.30">But the psalmist starts out by saying, don&#x27;t leave me to my oppressors.</span> <span class="tl-s" data-s="2264.40" data-e="2265.62">Give me a pledge of good.</span> <span class="tl-s" data-s="2265.90" data-e="2267.70">Don&#x27;t let the insolent oppress me.</span> <span class="tl-s" data-s="2267.98" data-e="2269.48">And then He expands His view.</span> <span class="tl-s" data-s="2269.80" data-e="2271.42">And He&#x27;s not just talking about Him anymore.</span></p>
+        <p><span class="tl-s" data-s="2271.50" data-e="2280.26">He&#x27;s saying, Lord, it&#x27;s time to act because your name and your word is being trampled by these oppressors and these evil ones are having their way.</span> <span class="tl-s" data-s="2280.64" data-e="2281.06">Act.</span></p>
+        <p><span class="tl-s" data-s="2282.86" data-e="2286.36">See, this is nothing less than calling for justice in an unjust world.</span> <span class="tl-s" data-s="2287.00" data-e="2289.92">And we find this kind of sentiment all over the Bible.</span> <span class="tl-s" data-s="2290.24" data-e="2292.30">Those are the parts of the Bible, especially in the Psalms.</span> <span class="tl-s" data-s="2292.52" data-e="2294.58">You read it, they&#x27;re called imprecatory Psalms.</span> <span class="tl-s" data-s="2294.82" data-e="2296.90">We read it and go, whoa, this is uncomfortable.</span> <span class="tl-s" data-s="2297.62" data-e="2302.64">But what the psalmists are doing is saying, Lord, bring your justice.</span> <span class="tl-s" data-s="2304.02" data-e="2310.00">Your people are being trampled on and your word is being discarded.</span> <span class="tl-s" data-s="2310.56" data-e="2310.96">Act.</span> <span class="tl-s" data-s="2312.26" data-e="2315.10">Maybe the most famous place is in Revelation chapter 6.</span> <span class="tl-s" data-s="2316.38" data-e="2317.16">This is in heaven.</span></p>
+        <p><span class="tl-s" data-s="2317.88" data-e="2318.90">These people aren&#x27;t sinning.</span></p>
+        <p><span class="tl-s" data-s="2321.34" data-e="2328.44">When He opened the fifth seal, I saw under the altar the souls of those who had been slain for the word of God and the witness they had borne.</span> <span class="tl-s" data-s="2328.76" data-e="2340.46">And they cried out with a loud voice, O sovereign Lord, holy and true, how long, how long before you will judge and avenge our blood on those who dwell on the earth?</span> <span class="tl-s" data-s="2341.50" data-e="2342.12">How long?</span> <span class="tl-s" data-s="2342.46" data-e="2347.98">There should be something in us as Christians that we cry out, how long?</span> <span class="tl-s" data-s="2349.08" data-e="2350.02">How long?</span> <span class="tl-s" data-s="2350.60" data-e="2358.14">How long will you let this evil that we see run rampant in our world?</span> <span class="tl-s" data-s="2358.16" data-e="2358.82">How long?</span></p>
+        <p><span class="tl-s" data-s="2360.30" data-e="2361.22">How long?</span> <span class="tl-s" data-s="2362.54" data-e="2370.10">There should be just a level of uncomfortableness that we have with the evil we see in the world.</span> <span class="tl-s" data-s="2371.38" data-e="2372.02">Wars.</span> <span class="tl-s" data-s="2372.82" data-e="2373.78">Rumors of wars.</span> <span class="tl-s" data-s="2374.44" data-e="2374.94">Sickness.</span> <span class="tl-s" data-s="2375.36" data-e="2375.76">Disease.</span></p>
+        <p><span class="tl-s" data-s="2377.44" data-e="2378.36">Lying leaders.</span></p>
+        <p><span class="tl-s" data-s="2380.40" data-e="2381.76">Trouble on every front.</span></p>
+        <p><span class="tl-s" data-s="2383.80" data-e="2384.36">Abortion.</span> <span class="tl-s" data-s="2385.50" data-e="2390.32">Sexual misconduct of every desire, of every flavor celebrated.</span></p>
+        <p><span class="tl-s" data-s="2393.08" data-e="2397.40">Lord, the psalmist says, your law has been broken.</span> <span class="tl-s" data-s="2397.82" data-e="2398.22">Act.</span> <span class="tl-s" data-s="2399.06" data-e="2399.58">Act.</span></p>
+        <p><span class="tl-s" data-s="2403.32" data-e="2405.28">But then he zooms into on himself.</span></p>
+        <p><span class="tl-s" data-s="2406.74" data-e="2410.38">And he goes from saying act for your broader glory.</span> <span class="tl-s" data-s="2411.06" data-e="2413.62">Now saying this about himself in verse 127.</span> <span class="tl-s" data-s="2413.92" data-e="2420.14">Therefore, I love your commandments above gold, above fine gold.</span></p>
+        <p><span class="tl-s" data-s="2421.64" data-e="2424.10">Therefore, I consider all your precepts to be right.</span> <span class="tl-s" data-s="2424.25" data-e="2426.32">I hate every false way.</span> <span class="tl-s" data-s="2427.30" data-e="2428.00">Notice what he&#x27;s saying.</span> <span class="tl-s" data-s="2428.20" data-e="2431.34">I love your commandments above gold, above fine gold.</span> <span class="tl-s" data-s="2431.36" data-e="2435.42">Do you love God&#x27;s word more than money?</span> <span class="tl-s" data-s="2435.76" data-e="2438.42">That&#x27;s what, that&#x27;s pretty crazy.</span> <span class="tl-s" data-s="2438.58" data-e="2445.12">Would someone, would you rather have the word of God for $20 million?</span></p>
+        <p><span class="tl-s" data-s="2447.92" data-e="2454.64">The psalmist is saying, I love your commandments, I love your word above fine gold.</span></p>
+        <p><span class="tl-s" data-s="2456.52" data-e="2457.16">Why?</span> <span class="tl-s" data-s="2458.18" data-e="2462.06">Because it gives light to us as believers.</span> <span class="tl-s" data-s="2462.30" data-e="2468.04">It shows us who God is and calls us, shows us how to live.</span></p>
+        <p><span class="tl-s" data-s="2470.60" data-e="2480.30">And so, because his word is fine gold, better than fine gold, he considers all the precepts, all the teaching of the word to be right.</span> <span class="tl-s" data-s="2480.64" data-e="2484.46">And therefore, he hates every false way.</span></p>
+        <p><span class="tl-s" data-s="2485.96" data-e="2492.10">Which, that means a lot of different things, but among other things, we must hate that which the Lord hates.</span></p>
+        <p><span class="tl-s" data-s="2494.00" data-e="2494.94">That&#x27;s hard.</span></p>
+        <p><span class="tl-s" data-s="2496.92" data-e="2513.78">It&#x27;s difficult because the world around us does its best to normalize sexual misconduct of every sort, drug use, excessive alcohol, living for money, leisure, reputation, all of those things.</span></p>
+        <p><span class="tl-s" data-s="2515.62" data-e="2519.22">Are we willing to hate those things that the Lord hates?</span> <span class="tl-s" data-s="2519.32" data-e="2524.34">Now, I&#x27;m not talking about hating people, but the evil that suffuses the whole world.</span></p>
+        <p><span class="tl-s" data-s="2528.56" data-e="2536.68">We can have eyes to see the evil and yet, call out to the God who always rescues his people from their oppressors.</span> <span class="tl-s" data-s="2537.26" data-e="2543.30">And, call out to the God who rescues people who call on him and ask for help.</span></p>
+        <p><span class="tl-s" data-s="2544.80" data-e="2557.76">Because there are people out there living for themselves, awash in evil, and they have no idea that there is a God out there who loves them with a steadfast love that will never, ever have an expiration date.</span></p>
+        <p><span class="tl-s" data-s="2560.18" data-e="2565.22">And part of the reason we&#x27;re still here is to tell people of this kind of love.</span></p>
+        <p><span class="tl-s" data-s="2566.80" data-e="2573.72">So we must be a people who call out to the God who always rescues his people from their oppressors.</span> <span class="tl-s" data-s="2573.86" data-e="2575.50">Friends, are you being oppressed?</span> <span class="tl-s" data-s="2575.80" data-e="2576.34">Call out.</span> <span class="tl-s" data-s="2576.88" data-e="2578.58">God always rescues his people.</span> <span class="tl-s" data-s="2578.98" data-e="2582.70">Not on your timetable, on his, but he always rescues his people.</span> <span class="tl-s" data-s="2582.83" data-e="2583.80">So do not give up.</span> <span class="tl-s" data-s="2584.08" data-e="2584.90">Do not lose heart.</span> <span class="tl-s" data-s="2585.16" data-e="2586.22">Do not resign yourself.</span> <span class="tl-s" data-s="2586.58" data-e="2599.24">Do not, most of all, be silent, but call out boldly before the God who has steadfast love for all his people knowing that he&#x27;s the God who always rescues his people from their oppressors.</span></p>
+        <p><span class="tl-s" data-s="2601.06" data-e="2601.78">Let&#x27;s pray.</span></p>
+        <p><span class="tl-s" data-s="2609.78" data-e="2614.72">Lord, I know that all of us in this room face trials of many kinds.</span> <span class="tl-s" data-s="2615.46" data-e="2624.72">Some of us in this room face trials where there are people who are actively working against them because they are believers in Jesus.</span></p>
+        <p><span class="tl-s" data-s="2626.34" data-e="2629.02">Maybe it&#x27;s an ex-husband or an ex-wife.</span> <span class="tl-s" data-s="2629.40" data-e="2631.56">Maybe it&#x27;s a mother-in-law or a father-in-law.</span> <span class="tl-s" data-s="2631.88" data-e="2634.82">Maybe it&#x27;s an environment at work or school.</span> <span class="tl-s" data-s="2635.24" data-e="2649.96">Maybe it&#x27;s things that I&#x27;m not even thinking of right now, but I do know that there are those in this room who have just the daily experience of being opposed by people who seem to just get their way.</span> <span class="tl-s" data-s="2651.02" data-e="2652.90">People who seem to push them down.</span> <span class="tl-s" data-s="2653.28" data-e="2657.70">People who seem to just act with impunity as if there is no God.</span> <span class="tl-s" data-s="2658.02" data-e="2662.66">Lord, will I call out on their behalf and say, rescue my brothers and sisters.</span> <span class="tl-s" data-s="2663.44" data-e="2664.18">Rescue them.</span> <span class="tl-s" data-s="2664.48" data-e="2665.50">Give them a respite.</span> <span class="tl-s" data-s="2666.72" data-e="2675.60">Rescue them not because they&#x27;ve been perfect this week, not because their faithfulness is so commendable, but rescue them because of your steadfast love.</span></p>
+        <p><span class="tl-s" data-s="2675.86" data-e="2691.06">And because you have chosen to bind yourself to us, not because of anything we&#x27;ve done, but because of your work for us, because you have chosen to set us aside as the ones that you love, we pray that you, I pray that you would rescue them.</span> <span class="tl-s" data-s="2691.82" data-e="2697.86">Even as you rejected your son so that you might rescue us, I pray that you would move to act.</span> <span class="tl-s" data-s="2698.14" data-e="2705.84">Move to act this week so that that oppression that feels so heavy and so so just unrelenting.</span> <span class="tl-s" data-s="2706.18" data-e="2708.20">I pray that oppression would lift.</span></p>
+        <p><span class="tl-s" data-s="2711.82" data-e="2719.62">And I pray that you would remind us that we serve a God who acts and doesn&#x27;t sit.</span></p>
+        <p><span class="tl-s" data-s="2721.12" data-e="2723.08">We serve a God who moves.</span></p>
+        <p><span class="tl-s" data-s="2724.68" data-e="2730.38">We serve the Lord of hosts. with Him nothing is impossible.</span> <span class="tl-s" data-s="2731.70" data-e="2733.90">And we pray that you would act.</span></p>
+        <p><span class="tl-s" data-s="2735.96" data-e="2743.42">And Lord, we&#x27;re grateful that the pledge of good that we have is not a promise where we say, oh, I&#x27;ll try to do better.</span> <span class="tl-s" data-s="2744.04" data-e="2754.36">But we look back to you, Jesus, who died so that we might live and lives so that we might now have hope.</span> <span class="tl-s" data-s="2755.68" data-e="2761.58">And so, Lord, we look to you and I know many people in this room have eyes that are worn out looking for you.</span> <span class="tl-s" data-s="2762.20" data-e="2771.44">I pray, Lord, that you would help them to set their gaze on you and I pray that they would boldly call you to rescue them.</span> <span class="tl-s" data-s="2772.62" data-e="2774.34">And it&#x27;s in your mighty name we pray.</span> <span class="tl-s" data-s="2775.66" data-e="2775.96">Amen.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Live sermon feed: spotlight from /api/sermons, browsable archive from
+  // /api/sermons/search. Static fallback list stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function row(it) {
+      var meta = [it.speaker, fmtDate(it.date)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      var titleHtml = esc(it.title);
+      var tUrl = it.guid && transcriptMap[it.guid];
+      if (tUrl) titleHtml = '<a href="' + esc(tUrl) + '">' + titleHtml + "</a>";
+      return '<div class="sermon"><div><h3>' + titleHtml + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    fetch("/api/sermons?v=3")
+      .then(function (res) { if (!res.ok) throw new Error("feed " + res.status); return res.json(); })
+      .then(function (data) {
+        var spot = document.querySelector("[data-series-spotlight]");
+        if (data && data.series && spot) {
+          var s = data.series;
+          var art = spot.querySelector("[data-series-art]");
+          if (art && s.artwork) { art.src = s.artwork; } else if (art) { art.style.display = "none"; }
+          var nm = spot.querySelector("[data-series-name]");
+          if (nm) nm.textContent = s.name;
+          var bl = spot.querySelector("[data-series-blurb]");
+          if (bl) bl.textContent = s.blurb;
+          spot.hidden = false;
+        }
+      })
+      .catch(function () { /* spotlight stays hidden */ });
+
+    var PER = 10;
+    var state = { q: "", speaker: "", series: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var speakerSel = document.querySelector("[data-sermons-speaker]");
+    var seriesSel = document.querySelector("[data-sermons-series]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No messages found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(speakerSel, data.facets.speakers || [], function (e) { return e.name; }, function (e) { return e.name + " (" + e.count + ")"; });
+        fill(seriesSel, data.facets.series || [], function (e) { return e.name; }, function (e) { return e.name + " (" + e.count + ")"; });
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.speaker || data.series || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.speaker) parts.push("by " + data.speaker);
+          if (data.series) parts.push("in " + data.series);
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " result" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " messages";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/sermons/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.speaker ? "&speaker=" + encodeURIComponent(state.speaker) : "") +
+        (state.series ? "&series=" + encodeURIComponent(state.series) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () { /* keep current list on error */ });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.speaker = ""; state.series = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (speakerSel) speakerSel.value = "";
+      if (seriesSel) seriesSel.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    function bindSelect(sel, key) {
+      if (!sel) return;
+      sel.addEventListener("change", function () {
+        state[key] = sel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    bindSelect(speakerSel, "speaker");
+    bindSelect(seriesSel, "series");
+    bindSelect(monthSel, "month");
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: https://hub.centergilbert.com/media/psalm-119-72 -->
+</body>
+</html>
