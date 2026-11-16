@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matt. 11 - Come to Me — Sermon Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Listen to the latest sermons from Center Church, or follow along on Apple Podcasts and Spotify." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=17" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a class="active" href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/sermons">&larr; All sermons</a>
+          <h1 class="display-lg">Matt. 11 - Come to Me</h1>
+          <p class="transcript-meta">Rich Richardson · 2024-12-01 · 00:45:02</p>
+          <p class="transcript-desc">Yoke to Him and we will never be outside His love.</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/119cbef70/podcast/play/128973900/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-7%2F436123568-44100-2-3f7cc70484e99771.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><span class="tl-s" data-s="0.85" data-e="2.92">Thanks, Joel.</span> <span class="tl-s" data-s="2.92" data-e="11.62">I hope you had a good, safe, well, you&#x27;re here, so it&#x27;s probably safe Thanksgiving, or at least you&#x27;re out of the emergency room by now.</span> <span class="tl-s" data-s="11.66" data-e="14.54">I hope you had a good time.</span> <span class="tl-s" data-s="14.78" data-e="19.38">If you have a Bible, open up the Bible to the book of Matthew.</span> <span class="tl-s" data-s="19.38" data-e="24.64">If you&#x27;re new to the Bible, the Bible is broken up into two main parts.</span> <span class="tl-s" data-s="24.64" data-e="28.25">Most of the Bible is what&#x27;s called the Old Testament.</span> <span class="tl-s" data-s="28.33" data-e="31.37">It starts in Genesis and goes all the way to Malachi.</span> <span class="tl-s" data-s="31.66" data-e="45.97">Matthew is the first book in what&#x27;s called the New Testament, and we&#x27;re going to be in Matthew chapter 11, and we&#x27;re going to just focus on three short verses beginning in verse 28 that I&#x27;ll read in just a moment.</span> <span class="tl-s" data-s="46.10" data-e="56.34">Bruce Catton penned his brilliant and Pulitzer Prize-winning book, A Stillness at Appomattox in 1953.</span> <span class="tl-s" data-s="56.34" data-e="63.62">In it, Catton does what most storytellers, most chronicles of history do.</span></p>
+        <p><span class="tl-s" data-s="63.62" data-e="65.52">He describes people.</span> <span class="tl-s" data-s="65.96" data-e="77.10">In just a few pages, we learned that a George Gordon Meade was lean and grizzled with a great hawk nose and a furious temper.</span> <span class="tl-s" data-s="78.10" data-e="91.89">We learned that a gentleman named Judson Kilpatrick was a wiry, restless, undersized man with blank eyes, a lantern jaw, a lantern jaw, and an imposing growth of sand-colored sideburns.</span> <span class="tl-s" data-s="92.31" data-e="94.55">It&#x27;s a big sideburn game there.</span> <span class="tl-s" data-s="94.80" data-e="100.56">Then he turned his attention to who would become the 18th president of the United States, Ulysses S.</span> <span class="tl-s" data-s="100.87" data-e="101.19">Grant.</span> <span class="tl-s" data-s="101.19" data-e="109.42">He says, Grant was five foot, eight inches tall, stooped, and unmilitary in his gait, creased.</span> <span class="tl-s" data-s="109.42" data-e="116.57">He had creased horizontal wrinkles across his brow, giving him a faintly harassed look.</span> <span class="tl-s" data-s="116.57" data-e="125.84">Now, if you read any biography, any history, you will find similar physical descriptions.</span> <span class="tl-s" data-s="125.93" data-e="141.97">But if you search all four of the Gospels, Matthew, Mark, Luke, and John, you will find exactly zero physical descriptions of Jesus the Galilean.</span></p>
+        <p><span class="tl-s" data-s="142.01" data-e="142.76">None.</span> <span class="tl-s" data-s="142.76" data-e="146.48">We have no idea how tall he was.</span> <span class="tl-s" data-s="146.58" data-e="149.23">We had no idea if he went bald.</span> <span class="tl-s" data-s="149.35" data-e="152.85">Even though you don&#x27;t picture Jesus bald, maybe he was bald.</span> <span class="tl-s" data-s="152.86" data-e="155.60">We don&#x27;t know how fast he walked.</span> <span class="tl-s" data-s="155.60" data-e="157.90">We don&#x27;t know if he was bow-legged.</span> <span class="tl-s" data-s="158.86" data-e="160.03">We don&#x27;t know the sound of his voice.</span> <span class="tl-s" data-s="160.03" data-e="162.36">We don&#x27;t know if he had all his teeth.</span> <span class="tl-s" data-s="163.34" data-e="165.72">We don&#x27;t know what kind of clothes he preferred to wear.</span> <span class="tl-s" data-s="165.86" data-e="168.22">We know nothing of what he looked like.</span></p>
+        <p><span class="tl-s" data-s="169.28" data-e="171.73">But that doesn&#x27;t mean we don&#x27;t know what he was like.</span> <span class="tl-s" data-s="171.81" data-e="174.33">We can know him.</span> <span class="tl-s" data-s="174.46" data-e="181.22">Now, we may not have a physical description of our Lord, but we know who he is.</span> <span class="tl-s" data-s="181.44" data-e="191.91">Today, we visit the one place in all 89 chapters of the Gospels where Jesus describes himself and what he&#x27;s like.</span> <span class="tl-s" data-s="191.92" data-e="193.52">What&#x27;s he like?</span> <span class="tl-s" data-s="193.52" data-e="206.41">Now, remember, what he was like on earth is what he is like in heaven because he is the Alpha and the Omega, the beginning and the end, the one who changes not.</span> <span class="tl-s" data-s="206.41" data-e="214.72">We&#x27;re going to venture again to Matthew 11 and meet Jesus again as we look at his only self-description.</span> <span class="tl-s" data-s="214.72" data-e="224.02">See, whether you&#x27;re here and you&#x27;re following Jesus or you&#x27;re here and you&#x27;re not following Jesus, what we both need is to meet Jesus again.</span> <span class="tl-s" data-s="224.02" data-e="232.65">If you&#x27;re following Jesus, we need to recognize that there is no such thing as growth apart from knowing Jesus more.</span></p>
+        <p><span class="tl-s" data-s="232.65" data-e="239.88">And if you&#x27;re here and you&#x27;re not following Jesus, there&#x27;s no such thing as success in life without following Jesus.</span></p>
+        <p><span class="tl-s" data-s="241.74" data-e="256.07">We find that Jesus, in this passage, is the one, the only one, who can help the troubled and the weary people of the weary people of our world.</span> <span class="tl-s" data-s="256.22" data-e="261.29">People who are harassed and harangued by life&#x27;s hardships in all its form.</span> <span class="tl-s" data-s="261.29" data-e="269.77">This is the one that we can come to, Jesus, because he is gentle toward the troubled and those who ask for help.</span> <span class="tl-s" data-s="269.77" data-e="272.51">So let&#x27;s look at Matthew chapter 11.</span> <span class="tl-s" data-s="272.51" data-e="276.10">I&#x27;m going to read verses 28 through 30.</span> <span class="tl-s" data-s="276.10" data-e="278.16">I&#x27;m going to read from the English Standard Version.</span> <span class="tl-s" data-s="278.16" data-e="280.22">If you have a Bible, you can follow along with me.</span></p>
+        <p><span class="tl-s" data-s="282.50" data-e="294.32">Jesus says, Come to me, all who labor and are heavy laden, and I will give you rest.</span> <span class="tl-s" data-s="294.32" data-e="299.70">Take my yoke upon you and learn from me.</span> <span class="tl-s" data-s="299.70" data-e="304.20">For I am gentle and lowly in heart.</span> <span class="tl-s" data-s="304.20" data-e="307.48">And you will find rest for your souls.</span> <span class="tl-s" data-s="307.48" data-e="313.58">For my yoke is easy and my burden is light.</span> <span class="tl-s" data-s="314.49" data-e="343.56">Let&#x27;s pray.</span> <span class="tl-s" data-s="343.56" data-e="357.12">Burdened, weighed down, burdened, weighed down, troubled, carrying an unseen weight on their backs, so heavy they think it might crush them down into the dirt.</span></p>
+        <p><span class="tl-s" data-s="359.18" data-e="371.62">I pray that you would help us all, whoever has those kinds of burdens, to look to you and find respite and rest in you.</span> <span class="tl-s" data-s="372.74" data-e="374.30">And it&#x27;s in your mighty name, Jesus, we pray.</span> <span class="tl-s" data-s="374.30" data-e="375.40">Amen.</span></p>
+        <p><span class="tl-s" data-s="377.08" data-e="378.61">Three simple points this morning.</span> <span class="tl-s" data-s="378.62" data-e="380.95">First, his self-description.</span> <span class="tl-s" data-s="380.95" data-e="383.22">Did you see how he described himself?</span> <span class="tl-s" data-s="383.22" data-e="386.62">If he didn&#x27;t pay close attention, you might have missed it.</span> <span class="tl-s" data-s="386.62" data-e="388.60">If you blinked, it might have gone right by you.</span> <span class="tl-s" data-s="388.64" data-e="391.24">But this is what he says of himself in verse 29.</span> <span class="tl-s" data-s="391.24" data-e="396.57">He says, For I am gentle and lowly in heart.</span> <span class="tl-s" data-s="396.58" data-e="399.70">I am gentle and lowly in heart.</span> <span class="tl-s" data-s="399.70" data-e="405.44">Whenever you see the word heart in the Bible, it doesn&#x27;t mean this thing that beats in your chest.</span> <span class="tl-s" data-s="405.46" data-e="408.38">It means it&#x27;s the control center of who you are.</span></p>
+        <p><span class="tl-s" data-s="408.50" data-e="411.18">Jesus, Jesus, Jesus, here is describing, here&#x27;s who I am, friends.</span> <span class="tl-s" data-s="411.23" data-e="413.22">I am gentle and I am lowly.</span> <span class="tl-s" data-s="413.22" data-e="415.08">That&#x27;s his self-description.</span> <span class="tl-s" data-s="416.12" data-e="423.34">That means he is, to say he&#x27;s gentle means that his natural disposition is to be gentle.</span> <span class="tl-s" data-s="423.54" data-e="424.75">He is never harsh.</span> <span class="tl-s" data-s="424.75" data-e="425.95">He is never rash.</span> <span class="tl-s" data-s="426.06" data-e="427.52">He is never impetuous.</span> <span class="tl-s" data-s="427.52" data-e="430.68">He never has to remind himself to calm down.</span> <span class="tl-s" data-s="431.40" data-e="433.78">He never has to take a moment to cool off.</span> <span class="tl-s" data-s="433.92" data-e="438.80">He never responds by flying off the handle.</span></p>
+        <p><span class="tl-s" data-s="438.83" data-e="439.60">He&#x27;s gentle.</span> <span class="tl-s" data-s="440.06" data-e="446.30">He&#x27;s eager to help the troubled, those that have hardships and are weighed down.</span> <span class="tl-s" data-s="446.30" data-e="453.18">He&#x27;s eager to help those people who have made their own trouble for themselves or who have trouble thrust upon him.</span> <span class="tl-s" data-s="454.28" data-e="456.43">He&#x27;s eager because he&#x27;s gentle.</span> <span class="tl-s" data-s="456.44" data-e="458.61">He&#x27;s gentle with the wayward.</span> <span class="tl-s" data-s="458.62" data-e="460.68">He&#x27;s gentle with the frail.</span> <span class="tl-s" data-s="460.92" data-e="462.42">He&#x27;s gentle with the weak.</span> <span class="tl-s" data-s="462.42" data-e="464.52">He&#x27;s gentle with the ignorant.</span> <span class="tl-s" data-s="464.52" data-e="466.78">He&#x27;s gentle with the fearful.</span> <span class="tl-s" data-s="467.28" data-e="469.54">He is gentle.</span></p>
+        <p><span class="tl-s" data-s="472.36" data-e="475.22">He&#x27;s tender and kind.</span> <span class="tl-s" data-s="476.30" data-e="485.12">Not for a moment, content to overlook sins, but he stands by us as an ever-present ally, holding us up.</span></p>
+        <p><span class="tl-s" data-s="487.16" data-e="503.08">Have you ever seen any of those videos where you&#x27;ve got a scared dog that&#x27;s not looking good, that&#x27;s hungry, that&#x27;s thirsty or whatever, and someone comes to try to help, and that dog, out of fear, snaps and snarls and gets upset?</span></p>
+        <p><span class="tl-s" data-s="506.08" data-e="509.90">That&#x27;s what we&#x27;re like oftentimes.</span> <span class="tl-s" data-s="510.75" data-e="518.46">Sometimes we have experiences that put us on edge, make us afraid.</span> <span class="tl-s" data-s="519.72" data-e="532.86">He&#x27;s the kind of friend who approaches slowly and calmly, provides words of reassurance, and gently comes alongside us to win us over.</span></p>
+        <p><span class="tl-s" data-s="535.18" data-e="536.72">John Owen says it this way.</span></p>
+        <p><span class="tl-s" data-s="543.54" data-e="550.78">Jesus is more gentle and patient than we would be, or that we are, than a loving father should cast away a tiny infant for his crying.</span> <span class="tl-s" data-s="550.78" data-e="566.32">He, that&#x27;s Jesus, is able with all meekness and gentleness, with all patience and moderation, to bear with the infirmities, sins, and provocations of his people, even as a father bears with the weaknesses of a poor infant.</span></p>
+        <p><span class="tl-s" data-s="567.92" data-e="576.76">Jesus is more gentle and patient than we would be, or that we are, with our brand-newborn children and grandchildren.</span></p>
+        <p><span class="tl-s" data-s="578.38" data-e="587.04">Who of us would be angry with a baby just a few hours old fussing because it was hungry?</span></p>
+        <p><span class="tl-s" data-s="588.74" data-e="592.46">Who of us would take that child and say, I never want to see this kid again?</span> <span class="tl-s" data-s="593.34" data-e="596.22">If this is the way this child&#x27;s going to act, forget it.</span> <span class="tl-s" data-s="596.92" data-e="597.70">It would be ridiculous.</span></p>
+        <p><span class="tl-s" data-s="599.20" data-e="603.72">Jesus is more gentle than that with you and me.</span> <span class="tl-s" data-s="605.00" data-e="609.48">He would never dream of sending you away just because you&#x27;re difficult or because you provoke him.</span> <span class="tl-s" data-s="610.48" data-e="610.94">Why?</span> <span class="tl-s" data-s="612.26" data-e="613.02">He&#x27;s gentle.</span> <span class="tl-s" data-s="614.26" data-e="615.54">He&#x27;s also lowly.</span></p>
+        <p><span class="tl-s" data-s="617.20" data-e="618.12">What does that mean?</span></p>
+        <p><span class="tl-s" data-s="619.68" data-e="629.50">It&#x27;s the same word Paul uses in Romans chapter 12, verse 16, when he directs the church, do not be haughty, but associate with the lowly.</span> <span class="tl-s" data-s="630.52" data-e="634.90">In other words, those people who are easily overlooked, that&#x27;s the lowly.</span> <span class="tl-s" data-s="635.32" data-e="639.02">They&#x27;re not the pretty or important or noble or influential people.</span> <span class="tl-s" data-s="639.30" data-e="641.74">They&#x27;re the ones who walk in a room and nobody notices.</span> <span class="tl-s" data-s="642.34" data-e="644.18">Paul says, don&#x27;t overlook them.</span> <span class="tl-s" data-s="644.88" data-e="646.94">So how is Jesus lowly?</span></p>
+        <p><span class="tl-s" data-s="648.36" data-e="652.10">Well, he&#x27;s approachable and he&#x27;s accessible to everyone and anyone.</span></p>
+        <p><span class="tl-s" data-s="653.94" data-e="657.54">He&#x27;s not too important for even your smallest concerns.</span></p>
+        <p><span class="tl-s" data-s="659.40" data-e="666.34">He is the ultimate paradox, high and lofty over all things, but low and meek toward us.</span> <span class="tl-s" data-s="667.54" data-e="670.48">You don&#x27;t know anyone more approachable than Jesus.</span> <span class="tl-s" data-s="671.74" data-e="674.32">You don&#x27;t have to make an appointment for him to notice you.</span> <span class="tl-s" data-s="675.18" data-e="682.32">You don&#x27;t have to perform specific religious activities like penance or confession to get him to listen to you.</span> <span class="tl-s" data-s="682.48" data-e="686.36">You don&#x27;t have to pray the right prayers or say just the right thing.</span></p>
+        <p><span class="tl-s" data-s="688.20" data-e="688.60">Why?</span> <span class="tl-s" data-s="688.60" data-e="688.64">Why?</span> <span class="tl-s" data-s="689.36" data-e="690.36">He&#x27;s lowly.</span> <span class="tl-s" data-s="691.14" data-e="691.90">You know what that means?</span> <span class="tl-s" data-s="692.80" data-e="693.98">He&#x27;s on our level.</span></p>
+        <p><span class="tl-s" data-s="696.66" data-e="698.24">He has to be on our level.</span> <span class="tl-s" data-s="699.22" data-e="700.90">We couldn&#x27;t rise to his.</span></p>
+        <p><span class="tl-s" data-s="702.64" data-e="709.38">We couldn&#x27;t rise from earth to go to heaven and present our concerns and our petitions to him.</span> <span class="tl-s" data-s="710.38" data-e="711.68">But he&#x27;s lowly.</span> <span class="tl-s" data-s="712.32" data-e="723.26">And so wherever we are, whatever we&#x27;re struggling with, whatever we carried into this room today, Jesus is at your level.</span></p>
+        <p><span class="tl-s" data-s="726.26" data-e="734.16">You&#x27;re interacting with people who just seem too good for everybody around them and they put off airs.</span></p>
+        <p><span class="tl-s" data-s="736.80" data-e="746.04">Maybe they act too busy by looking at their phone or just push away conversation because they can&#x27;t be bothered.</span></p>
+        <p><span class="tl-s" data-s="747.48" data-e="748.58">That&#x27;s not Jesus.</span> <span class="tl-s" data-s="749.56" data-e="750.68">He&#x27;s the opposite.</span></p>
+        <p><span class="tl-s" data-s="752.22" data-e="753.60">He draws you out.</span> <span class="tl-s" data-s="754.30" data-e="755.32">He comes close.</span> <span class="tl-s" data-s="756.42" data-e="757.22">He&#x27;s at our level.</span></p>
+        <p><span class="tl-s" data-s="759.54" data-e="762.62">Because he&#x27;s gentle and he&#x27;s lowly.</span></p>
+        <p><span class="tl-s" data-s="765.14" data-e="766.60">That&#x27;s his self-description.</span></p>
+        <p><span class="tl-s" data-s="768.16" data-e="770.42">Next we look to his invitation.</span> <span class="tl-s" data-s="771.18" data-e="772.30">What does he say?</span> <span class="tl-s" data-s="773.08" data-e="773.98">It&#x27;s real simple.</span></p>
+        <p><span class="tl-s" data-s="775.98" data-e="778.74">Right there at the beginning of verse 28.</span> <span class="tl-s" data-s="778.96" data-e="780.62">Come to me.</span> <span class="tl-s" data-s="781.88" data-e="782.90">Come to me.</span> <span class="tl-s" data-s="784.08" data-e="786.52">He doesn&#x27;t invite people to assemble in a waiting room.</span> <span class="tl-s" data-s="787.50" data-e="789.96">He doesn&#x27;t send us some angelic delegate.</span> <span class="tl-s" data-s="790.88" data-e="793.76">He says, come to me.</span></p>
+        <p><span class="tl-s" data-s="796.72" data-e="797.72">Who should come?</span></p>
+        <p><span class="tl-s" data-s="800.42" data-e="804.48">All who labor, he says, and are heavy laden.</span> <span class="tl-s" data-s="805.26" data-e="805.78">Who&#x27;s that?</span> <span class="tl-s" data-s="806.86" data-e="808.12">Who should come to him?</span> <span class="tl-s" data-s="808.30" data-e="811.32">Those who are weighed down by life&#x27;s trouble.</span> <span class="tl-s" data-s="812.48" data-e="814.64">Whether it&#x27;s of our own making or not.</span> <span class="tl-s" data-s="815.28" data-e="818.24">He invites all the troubled to come to him.</span></p>
+        <p><span class="tl-s" data-s="821.34" data-e="824.52">Notice he says, all who labor and are heavy laden.</span> <span class="tl-s" data-s="824.62" data-e="827.24">He doesn&#x27;t overly prescribe who can come.</span> <span class="tl-s" data-s="827.24" data-e="831.68">He doesn&#x27;t say, the good people who&#x27;ve messed up a few times.</span></p>
+        <p><span class="tl-s" data-s="833.84" data-e="842.38">He doesn&#x27;t say, he doesn&#x27;t say, he doesn&#x27;t say, he doesn&#x27;t say, he doesn&#x27;t say anything.</span> <span class="tl-s" data-s="843.44" data-e="848.26">Except, anyone who labors and is heavy laden.</span> <span class="tl-s" data-s="848.26" data-e="854.68">Anyone who carries on their back the burdens that they can&#x27;t shake.</span> <span class="tl-s" data-s="855.22" data-e="857.36">That&#x27;s the one who can come.</span> <span class="tl-s" data-s="857.36" data-e="862.54">And he&#x27;s the only one who can help.</span> <span class="tl-s" data-s="863.60" data-e="870.58">He being the only one who has access to the Father and being one with the Father.</span></p>
+        <p><span class="tl-s" data-s="872.50" data-e="879.90">The one who came into the world invites us to himself.</span></p>
+        <p><span class="tl-s" data-s="881.42" data-e="885.38">Any who are weighed down with life&#x27;s many troubles are welcome to come.</span> <span class="tl-s" data-s="886.02" data-e="887.48">Nothing is off limits.</span></p>
+        <p><span class="tl-s" data-s="890.44" data-e="892.88">He doesn&#x27;t care why you&#x27;re heavy laden.</span></p>
+        <p><span class="tl-s" data-s="894.84" data-e="901.62">He just says, if you&#x27;re troubled, come to me for rest and relief and refreshment.</span> <span class="tl-s" data-s="902.54" data-e="909.88">He&#x27;s willing to help because, he&#x27;s willing to help all because he knows burdens come in all kinds of shapes and sizes.</span> <span class="tl-s" data-s="910.06" data-e="912.58">Are you carrying a burden here this morning?</span> <span class="tl-s" data-s="913.36" data-e="916.96">Do you have the crushing weight of regret on your back?</span></p>
+        <p><span class="tl-s" data-s="919.60" data-e="926.50">Maybe it&#x27;s the weight of just the realization of the futility of running after one dollar more.</span> <span class="tl-s" data-s="926.50" data-e="930.18">Or the burden of the pointlessness of your life, you think.</span></p>
+        <p><span class="tl-s" data-s="932.54" data-e="937.22">Or the challenge of knowing that you need help but not knowing what to do.</span></p>
+        <p><span class="tl-s" data-s="938.88" data-e="943.42">Or the emptiness of getting all you ever wanted and wondering, is this it?</span></p>
+        <p><span class="tl-s" data-s="946.54" data-e="954.10">Or the trial of being enveloped in a cloud of anxiety and depression.</span> <span class="tl-s" data-s="954.72" data-e="961.10">Or the weight of feeling like you wasted everything and it&#x27;s too late for you.</span></p>
+        <p><span class="tl-s" data-s="965.18" data-e="968.92">Or whatever you&#x27;re thinking about right now.</span></p>
+        <p><span class="tl-s" data-s="972.58" data-e="973.80">Do you have troubles?</span> <span class="tl-s" data-s="974.44" data-e="975.82">Do you have a weight?</span></p>
+        <p><span class="tl-s" data-s="979.68" data-e="982.48">See, it&#x27;s easy to recognize we have troubles.</span> <span class="tl-s" data-s="982.92" data-e="985.36">It&#x27;s easy to recognize we have a weight.</span> <span class="tl-s" data-s="986.08" data-e="987.54">It&#x27;s hard to know where to go.</span></p>
+        <p><span class="tl-s" data-s="989.82" data-e="994.72">You watch pod, you listen to podcasts, you watch television, you check out your feeds.</span> <span class="tl-s" data-s="994.94" data-e="996.18">Everybody&#x27;s got suggestions.</span> <span class="tl-s" data-s="997.20" data-e="998.72">But none of it&#x27;s really that helpful.</span></p>
+        <p><span class="tl-s" data-s="1001.36" data-e="1002.64">What does Jesus say?</span> <span class="tl-s" data-s="1003.84" data-e="1005.52">Verse 28, come to me.</span> <span class="tl-s" data-s="1006.58" data-e="1014.64">He doesn&#x27;t tell us to unburden.</span> <span class="tl-s" data-s="1014.74" data-e="1015.44">He just says, come.</span> <span class="tl-s" data-s="1016.14" data-e="1018.64">He doesn&#x27;t expect us to have the right answers.</span> <span class="tl-s" data-s="1018.72" data-e="1019.50">He just says, come.</span> <span class="tl-s" data-s="1020.24" data-e="1022.52">He doesn&#x27;t say, if you can explain what happened.</span> <span class="tl-s" data-s="1022.70" data-e="1023.62">He just says, come.</span> <span class="tl-s" data-s="1024.06" data-e="1027.32">He doesn&#x27;t say, listen, if you&#x27;ve done so much wrong, don&#x27;t come.</span> <span class="tl-s" data-s="1027.36" data-e="1028.18">He just says, come.</span></p>
+        <p><span class="tl-s" data-s="1028.36" data-e="1029.84">He doesn&#x27;t say, you should know better.</span> <span class="tl-s" data-s="1029.90" data-e="1030.78">He says, just come.</span> <span class="tl-s" data-s="1031.02" data-e="1033.44">He doesn&#x27;t say, if you&#x27;ve sent too much, stay away.</span> <span class="tl-s" data-s="1033.52" data-e="1034.40">No, he says, come.</span> <span class="tl-s" data-s="1034.40" data-e="1036.80">He doesn&#x27;t say, if you&#x27;re weak, stay away.</span> <span class="tl-s" data-s="1037.32" data-e="1038.50">No, he just says, come.</span> <span class="tl-s" data-s="1038.64" data-e="1039.88">He doesn&#x27;t say, try harder.</span> <span class="tl-s" data-s="1040.00" data-e="1040.70">He says, come.</span> <span class="tl-s" data-s="1040.96" data-e="1043.22">He invites you to himself.</span></p>
+        <p><span class="tl-s" data-s="1045.64" data-e="1055.70">And it&#x27;s there with him that you and me and all of us can experience the rest only he can give.</span></p>
+        <p><span class="tl-s" data-s="1057.55" data-e="1067.50">Because Jesus is gentle and accessible toward the troubled who ask for help.</span></p>
+        <p><span class="tl-s" data-s="1069.56" data-e="1076.74">We&#x27;ve seen or heard his invitation come and his self-description.</span> <span class="tl-s" data-s="1076.98" data-e="1079.10">Now we hear about his yoke.</span> <span class="tl-s" data-s="1079.90" data-e="1081.10">Look at verse 29.</span></p>
+        <p><span class="tl-s" data-s="1082.94" data-e="1087.68">Take my yoke upon you and learn from me.</span> <span class="tl-s" data-s="1088.64" data-e="1091.42">For I am gentle and lowly in heart.</span> <span class="tl-s" data-s="1092.38" data-e="1096.66">And you will find rest for your souls.</span> <span class="tl-s" data-s="1097.38" data-e="1098.42">So what is a yoke?</span> <span class="tl-s" data-s="1099.42" data-e="1106.64">A yoke is a yoke is a beam that connects two working animals, generally in farming work.</span> <span class="tl-s" data-s="1107.22" data-e="1115.58">Often, oxen would be yoked together to plow a field, or horses might be yoked together to pull a wagon.</span> <span class="tl-s" data-s="1116.88" data-e="1124.38">Jesus invites us each to take up his yoke and be yoked to him.</span></p>
+        <p><span class="tl-s" data-s="1127.58" data-e="1137.56">And as we are, we will experience rest and refreshment and relief for the soul.</span> <span class="tl-s" data-s="1138.40" data-e="1139.46">Not for the body.</span></p>
+        <p><span class="tl-s" data-s="1140.98" data-e="1143.02">Following Jesus is often strenuous.</span> <span class="tl-s" data-s="1143.22" data-e="1144.92">It&#x27;s not some form of leisure.</span></p>
+        <p><span class="tl-s" data-s="1147.00" data-e="1149.52">It&#x27;s not as if you just sit back and just say, whatever.</span> <span class="tl-s" data-s="1150.04" data-e="1150.24">No.</span> <span class="tl-s" data-s="1150.58" data-e="1152.16">Following Jesus is often hard.</span> <span class="tl-s" data-s="1152.28" data-e="1156.06">But he offers a rest for the soul.</span></p>
+        <p><span class="tl-s" data-s="1157.58" data-e="1162.60">And what he means by rest for our souls becomes a bit clearer in verse 30.</span></p>
+        <p><span class="tl-s" data-s="1164.14" data-e="1170.56">He says, For my yoke is easy and my burden is light.</span> <span class="tl-s" data-s="1171.68" data-e="1177.28">In the New Testament, yoke is always used to refer to the discipline of discipleship.</span> <span class="tl-s" data-s="1177.56" data-e="1184.68">In other words, the yoke Jesus offers is another way of referring to a commitment to follow him.</span> <span class="tl-s" data-s="1185.42" data-e="1191.62">When he invites us to come, he offers the freedom that only following him can give.</span></p>
+        <p><span class="tl-s" data-s="1193.08" data-e="1197.00">Now, you might think serving Jesus or serving anyone is oppressive.</span> <span class="tl-s" data-s="1198.12" data-e="1199.20">Or limiting.</span></p>
+        <p><span class="tl-s" data-s="1202.46" data-e="1206.74">But the reality is, we all serve someone.</span></p>
+        <p><span class="tl-s" data-s="1209.52" data-e="1227.32">That great, I&#x27;d say, and underappreciated theologian, Bob Dylan, got to that idea when in his song, You Gotta Serve Somebody, he wrote in part, You may be an ambassador to England or France.</span> <span class="tl-s" data-s="1228.04" data-e="1229.52">You may like to gamble.</span> <span class="tl-s" data-s="1230.04" data-e="1231.40">You might like to dance.</span> <span class="tl-s" data-s="1232.50" data-e="1234.78">You may be the heavyweight champion of the world.</span> <span class="tl-s" data-s="1235.52" data-e="1238.24">You might be a socialite with a long string of pearls.</span> <span class="tl-s" data-s="1239.44" data-e="1241.28">But you&#x27;re gonna have to serve somebody.</span> <span class="tl-s" data-s="1242.48" data-e="1243.34">Yes, indeed.</span> <span class="tl-s" data-s="1243.76" data-e="1245.38">You&#x27;re gonna have to serve somebody.</span> <span class="tl-s" data-s="1246.38" data-e="1247.08">And that&#x27;s the truth.</span> <span class="tl-s" data-s="1247.20" data-e="1251.12">Every human is yoked to something or someone.</span></p>
+        <p><span class="tl-s" data-s="1251.64" data-e="1253.94">No one is entirely free, no matter what you think.</span> <span class="tl-s" data-s="1254.14" data-e="1256.12">No one lives this unyoked life.</span> <span class="tl-s" data-s="1256.22" data-e="1259.16">We all serve something or someone.</span> <span class="tl-s" data-s="1260.12" data-e="1265.64">And you can tell, you can tell what we serve by what&#x27;s most important to us.</span> <span class="tl-s" data-s="1266.48" data-e="1268.20">What we will sacrifice for.</span> <span class="tl-s" data-s="1268.40" data-e="1269.84">What we will give anything for.</span> <span class="tl-s" data-s="1269.84" data-e="1271.46">How we define our identity.</span></p>
+        <p><span class="tl-s" data-s="1274.70" data-e="1276.50">We&#x27;re all in service to something.</span> <span class="tl-s" data-s="1277.26" data-e="1279.54">Some of us are in service to the approval of others.</span> <span class="tl-s" data-s="1280.44" data-e="1284.52">Some of us live in service to keeping family harmony.</span> <span class="tl-s" data-s="1285.56" data-e="1288.56">Some of us live in service to achieving success.</span> <span class="tl-s" data-s="1288.82" data-e="1291.26">Some of us live in service to our children&#x27;s sports.</span> <span class="tl-s" data-s="1291.68" data-e="1294.12">Or earning our spouse&#x27;s respect.</span> <span class="tl-s" data-s="1294.44" data-e="1298.86">Or some of us live in service of getting married or gaining notoriety.</span> <span class="tl-s" data-s="1298.98" data-e="1301.48">None of these things in and of themselves are wrong.</span></p>
+        <p><span class="tl-s" data-s="1302.94" data-e="1308.20">But if they&#x27;re what we live for, we will be burdened and troubled.</span></p>
+        <p><span class="tl-s" data-s="1310.58" data-e="1315.72">None of these things give the rest that only Jesus offers.</span> <span class="tl-s" data-s="1316.32" data-e="1318.10">He offers rests.</span> <span class="tl-s" data-s="1318.64" data-e="1320.08">Rest for our souls.</span></p>
+        <p><span class="tl-s" data-s="1322.02" data-e="1324.60">And it&#x27;s only him who can give us this rest.</span> <span class="tl-s" data-s="1325.74" data-e="1333.66">Notice how many times Jesus refers to himself with the personal pronouns, me, my, or I.</span> <span class="tl-s" data-s="1334.14" data-e="1337.06">Look at verse 28 again and we&#x27;ll just count them off.</span> <span class="tl-s" data-s="1338.16" data-e="1342.56">Come to me, all who labor and are heavy laden.</span> <span class="tl-s" data-s="1342.74" data-e="1345.68">And I, he says, will give you rest.</span> <span class="tl-s" data-s="1346.06" data-e="1350.98">Take my yoke upon you and learn from me.</span> <span class="tl-s" data-s="1351.68" data-e="1355.10">For I am gentle and lowly in heart.</span> <span class="tl-s" data-s="1355.52" data-e="1357.40">And you will find rest for your souls.</span> <span class="tl-s" data-s="1357.40" data-e="1362.82">For my yoke is easy and my burden is light.</span> <span class="tl-s" data-s="1363.96" data-e="1370.42">Seven times in three short verses, Jesus essentially points to himself.</span></p>
+        <p><span class="tl-s" data-s="1372.54" data-e="1375.18">Jesus doesn&#x27;t give us a road map on where to go.</span> <span class="tl-s" data-s="1375.64" data-e="1376.92">He is the way to go.</span> <span class="tl-s" data-s="1377.48" data-e="1378.60">He is the way.</span> <span class="tl-s" data-s="1378.74" data-e="1383.36">If you are not following Jesus, you need to understand he is the way.</span> <span class="tl-s" data-s="1384.00" data-e="1388.02">If you are following Jesus, you need to recognize he is still the way.</span> <span class="tl-s" data-s="1388.84" data-e="1397.30">It&#x27;s way too easy for Christians to think that Jesus gets us into the kingdom and then we continue in the kingdom only by our strength.</span></p>
+        <p><span class="tl-s" data-s="1399.44" data-e="1400.98">Or by our hard work.</span></p>
+        <p><span class="tl-s" data-s="1402.54" data-e="1405.88">It&#x27;s not true.</span> <span class="tl-s" data-s="1406.24" data-e="1411.88">We are now, today, as Christians, united to Jesus Christ.</span></p>
+        <p><span class="tl-s" data-s="1413.46" data-e="1423.62">We Christians only grow as we understand and learn from Jesus and continue to be yoked to him.</span></p>
+        <p><span class="tl-s" data-s="1426.18" data-e="1428.14">What does he say about the yoke he offers?</span> <span class="tl-s" data-s="1428.36" data-e="1431.38">He says, my yoke is easy and my burden is light.</span> <span class="tl-s" data-s="1431.60" data-e="1435.26">He&#x27;s not saying, as we&#x27;ve said before, that this life will be easy.</span> <span class="tl-s" data-s="1436.62" data-e="1439.90">Elsewhere, this word easy is rendered kind.</span> <span class="tl-s" data-s="1440.36" data-e="1441.24">And that&#x27;s the idea.</span> <span class="tl-s" data-s="1442.36" data-e="1445.18">Jesus is saying, for my yoke is easy or kind.</span> <span class="tl-s" data-s="1445.26" data-e="1446.78">My yoke is kind.</span></p>
+        <p><span class="tl-s" data-s="1449.28" data-e="1450.54">And his burden, light.</span></p>
+        <p><span class="tl-s" data-s="1454.24" data-e="1459.50">Again, you might be thinking that it sounds burdensome to have this yoke, but consider this from Ortland.</span> <span class="tl-s" data-s="1460.16" data-e="1470.74">Somebody who would turn this down, it&#x27;s like a drowning man that must put on the burden of a life preserver only to hear him shout back, sputtering, no way, not me.</span> <span class="tl-s" data-s="1470.98" data-e="1473.44">This is hard enough drowning in these stormy waters.</span> <span class="tl-s" data-s="1473.44" data-e="1478.26">The last thing I need is the added burden of a life preserver around my body.</span></p>
+        <p><span class="tl-s" data-s="1481.08" data-e="1484.76">That&#x27;s what not being yoked to Jesus is like.</span></p>
+        <p><span class="tl-s" data-s="1490.98" data-e="1495.22">If you&#x27;re a Christian, you are yoked to him and he is yoked to you.</span></p>
+        <p><span class="tl-s" data-s="1497.14" data-e="1498.70">You&#x27;re united to him.</span> <span class="tl-s" data-s="1499.54" data-e="1509.62">Remember, we said before, the most common way a Christian is described is not with the word Christian, but with the two-word description in Christ.</span> <span class="tl-s" data-s="1510.36" data-e="1510.70">Why?</span> <span class="tl-s" data-s="1510.96" data-e="1513.46">Because we are united to him.</span></p>
+        <p><span class="tl-s" data-s="1515.76" data-e="1517.24">He&#x27;s in us and we&#x27;re in him.</span></p>
+        <p><span class="tl-s" data-s="1520.86" data-e="1522.92">We&#x27;re yoked to him and he&#x27;s yoked to us.</span></p>
+        <p><span class="tl-s" data-s="1524.92" data-e="1533.74">That means, because we&#x27;re in him and him and he&#x27;s in us, that he&#x27;s aware of our pain and our troubles and our disappointments and our hardships and our difficulties.</span> <span class="tl-s" data-s="1534.20" data-e="1536.46">He&#x27;s aware and he sees our tears.</span> <span class="tl-s" data-s="1537.54" data-e="1539.80">He&#x27;s aware and he knows of our fears.</span></p>
+        <p><span class="tl-s" data-s="1541.48" data-e="1544.30">And he says, come to me.</span></p>
+        <p><span class="tl-s" data-s="1547.12" data-e="1549.32">Continue to come to me.</span> <span class="tl-s" data-s="1550.40" data-e="1556.78">And the yoke he has given us, friends, especially if you&#x27;re a Christian, the yoke he has given us is a yoke of kindness.</span> <span class="tl-s" data-s="1556.78" data-e="1566.36">That means he will only always direct you and your life in the kindest possible way.</span> <span class="tl-s" data-s="1567.62" data-e="1569.66">Now, it&#x27;s not always going to feel that way.</span></p>
+        <p><span class="tl-s" data-s="1572.66" data-e="1573.54">Not at all.</span></p>
+        <p><span class="tl-s" data-s="1575.32" data-e="1582.96">There are going to be times, like we saw last week, that we face storms that, well, that threaten to blow us off the deck of our lives.</span></p>
+        <p><span class="tl-s" data-s="1584.96" data-e="1593.94">But we can know for sure and for certain that he will always be kind and that he will only always lead us in the path of kindness.</span></p>
+        <p><span class="tl-s" data-s="1595.82" data-e="1597.14">How do we know this?</span> <span class="tl-s" data-s="1598.44" data-e="1599.98">Well, because he loves us.</span></p>
+        <p><span class="tl-s" data-s="1601.52" data-e="1604.84">John tells us, God so loved the world that he gave his only son.</span> <span class="tl-s" data-s="1605.00" data-e="1606.60">God loves us in Christ.</span> <span class="tl-s" data-s="1606.88" data-e="1608.30">Christ loves us in God.</span> <span class="tl-s" data-s="1608.76" data-e="1609.52">We know this.</span> <span class="tl-s" data-s="1609.60" data-e="1613.40">But do you really know, Christian, that God loves you?</span></p>
+        <p><span class="tl-s" data-s="1614.88" data-e="1617.96">1 John tells us twice, God is love.</span></p>
+        <p><span class="tl-s" data-s="1620.46" data-e="1622.08">Here&#x27;s how we can know he&#x27;s kind.</span> <span class="tl-s" data-s="1622.56" data-e="1624.30">Here&#x27;s how we can know the yoke is easy.</span> <span class="tl-s" data-s="1624.60" data-e="1626.48">We know that God is love.</span> <span class="tl-s" data-s="1626.62" data-e="1628.12">God is not just loving.</span> <span class="tl-s" data-s="1629.06" data-e="1630.22">God is love.</span> <span class="tl-s" data-s="1630.86" data-e="1636.68">That means that love is not a character trait that God picked up over the years and that he&#x27;s grown in over the years.</span> <span class="tl-s" data-s="1636.76" data-e="1636.96">No.</span> <span class="tl-s" data-s="1637.24" data-e="1639.04">He is love.</span> <span class="tl-s" data-s="1640.26" data-e="1645.92">That means you do not understand who he is unless you realize he is love.</span> <span class="tl-s" data-s="1646.40" data-e="1648.90">Love is fundamental to who he is.</span></p>
+        <p><span class="tl-s" data-s="1651.78" data-e="1657.52">God is always, has always been, and will always be love.</span></p>
+        <p><span class="tl-s" data-s="1662.52" data-e="1669.04">Have you ever wondered why God created all things and especially created mankind?</span> <span class="tl-s" data-s="1670.20" data-e="1678.74">It wasn&#x27;t because he was bored or because he wanted company, but because he wanted to share his love.</span></p>
+        <p><span class="tl-s" data-s="1681.64" data-e="1694.14">God the Father, God the Son, and God the Holy Spirit from eternity past had always shared fellowship together in perfect harmony and love.</span></p>
+        <p><span class="tl-s" data-s="1700.84" data-e="1702.32">That&#x27;s who he is.</span></p>
+        <p><span class="tl-s" data-s="1704.62" data-e="1719.70">Now, mankind in mass has turned from that love, but in love, the Father sent the Son to bring a kind, easy, loving yoke to the troubled.</span></p>
+        <p><span class="tl-s" data-s="1723.58" data-e="1728.96">His yoke is easy and kind because he is love.</span> <span class="tl-s" data-s="1730.12" data-e="1734.22">Paul gets to the same idea when he records this prayer in the book of Ephesians.</span> <span class="tl-s" data-s="1734.48" data-e="1766.90">He prays that according to the riches of his glory, he may grant you, that&#x27;s plural, not singular, all of us, to be strengthened with power through his spirit in our inner being so that Christ may dwell in your hearts through faith, that you, being rooted and grounded in love, may have strength to comprehend with all the saints what is the breadth and length and height and depth and to know the love of Christ that surpasses knowledge that you may be filled with all the fullness of God.</span> <span class="tl-s" data-s="1768.04" data-e="1784.40">This is a prayer not to have the love of Christ or to earn the love of Christ but to know, Christian, that you are loved by Christ and to know what you already have.</span> <span class="tl-s" data-s="1785.46" data-e="1802.50">In fact, there&#x27;s a sense in which you will not be filled with the fullness of God unless you understand supernaturally the infinite dimensions of the love of Christ for you.</span></p>
+        <p><span class="tl-s" data-s="1804.10" data-e="1819.04">Friend, that sort of love is the sort of love Jesus offers and that&#x27;s how we can know his yoke is kind and easy.</span></p>
+        <p><span class="tl-s" data-s="1822.72" data-e="1833.96">As Christians, in his service yoke to him we will never be outside of his love.</span> <span class="tl-s" data-s="1835.30" data-e="1838.08">He will never direct you in a way that&#x27;s unloving.</span></p>
+        <p><span class="tl-s" data-s="1839.90" data-e="1847.18">He&#x27;ll direct you in a whole lot of ways you won&#x27;t understand but he won&#x27;t direct you in an unloving way ever.</span> <span class="tl-s" data-s="1848.18" data-e="1853.36">John Bunyan says, love in him is essential to his being.</span> <span class="tl-s" data-s="1854.10" data-e="1860.78">God is love Christ is God therefore for Christ is love love naturally.</span> <span class="tl-s" data-s="1860.78" data-e="1866.06">He may as well cease to be as cease to love.</span></p>
+        <p><span class="tl-s" data-s="1867.62" data-e="1882.92">So do you see if Jesus is love when you take his yoke upon you his kind and easy and easy yoke you can have rest.</span></p>
+        <p><span class="tl-s" data-s="1885.72" data-e="1887.50">It&#x27;s not all up to you anymore.</span></p>
+        <p><span class="tl-s" data-s="1888.98" data-e="1915.42">You don&#x27;t have to fight and grasp to make things come out the way you want. you have a loving kind Lord working things out for your good and taking you in his paths.</span></p>
+        <p><span class="tl-s" data-s="1916.88" data-e="1918.58">So what is Jesus like?</span> <span class="tl-s" data-s="1919.42" data-e="1922.38">Well we might not have a physical description but we know who he is.</span> <span class="tl-s" data-s="1923.02" data-e="1931.62">He&#x27;s gentle and lowly and if you have his yoke upon you you know his kindness.</span></p>
+        <p><span class="tl-s" data-s="1934.62" data-e="1938.32">But did you notice who he&#x27;s gentle and lowly to?</span> <span class="tl-s" data-s="1939.54" data-e="1941.34">Who&#x27;s he gentle and lowly toward?</span></p>
+        <p><span class="tl-s" data-s="1946.08" data-e="1947.26">Those who would come.</span></p>
+        <p><span class="tl-s" data-s="1949.30" data-e="1952.38">Those who are weighed down by trouble and know it.</span></p>
+        <p><span class="tl-s" data-s="1954.60" data-e="1958.10">Those who feel their trouble hanging over their heads.</span> <span class="tl-s" data-s="1959.16" data-e="1966.44">Those who know that they can&#x27;t chase away their trouble with sports, leisure, alcohol, homemaking or anything else.</span></p>
+        <p><span class="tl-s" data-s="1968.54" data-e="1972.74">See Jesus helps the troubled who know it and admit it.</span></p>
+        <p><span class="tl-s" data-s="1974.74" data-e="1976.60">He doesn&#x27;t help other kind of people.</span> <span class="tl-s" data-s="1977.84" data-e="1980.50">He doesn&#x27;t help the people that are smug and self satisfied.</span> <span class="tl-s" data-s="1981.52" data-e="1984.02">He doesn&#x27;t help the people who say I got it.</span></p>
+        <p><span class="tl-s" data-s="1985.45" data-e="1989.96">He helps the people who go I need help.</span></p>
+        <p><span class="tl-s" data-s="1995.04" data-e="1997.06">He helps the people who would come to him.</span> <span class="tl-s" data-s="1997.70" data-e="2000.24">Who are heavy laden.</span></p>
+        <p><span class="tl-s" data-s="2002.48" data-e="2006.24">Who don&#x27;t understand how to get out of where they are.</span></p>
+        <p><span class="tl-s" data-s="2007.86" data-e="2015.98">It need not be with pomp or circumstance but just in the quiet place of your heart you can come to him again today and ask for help.</span></p>
+        <p><span class="tl-s" data-s="2018.48" data-e="2035.66">Friends, one of the reasons we might feel the weight of our burdens this morning is to remind us we can&#x27;t do it alone. if you&#x27;re not following Jesus and you&#x27;re here, thanks for coming.</span></p>
+        <p><span class="tl-s" data-s="2038.88" data-e="2051.80">Church might be a weird strange thing as we talk about somebody you can&#x27;t see and somebody who lived 2,000 years ago from another country who spoke another language.</span></p>
+        <p><span class="tl-s" data-s="2054.38" data-e="2060.36">I&#x27;ll tell you what, Jesus is the most real thing in the universe.</span></p>
+        <p><span class="tl-s" data-s="2063.32" data-e="2070.10">If you&#x27;re here and you&#x27;re trying to meet him, you&#x27;re trying to get to know him, here&#x27;s what you need to know.</span> <span class="tl-s" data-s="2070.32" data-e="2073.76">He is gentle and lowly and he welcomes all who would come to him.</span> <span class="tl-s" data-s="2074.90" data-e="2076.76">He doesn&#x27;t tell you to clean your act up.</span></p>
+        <p><span class="tl-s" data-s="2079.08" data-e="2081.12">He doesn&#x27;t tell you to try harder.</span></p>
+        <p><span class="tl-s" data-s="2083.02" data-e="2088.46">He doesn&#x27;t tell you to try to obey your way into a good relationship with him.</span> <span class="tl-s" data-s="2088.62" data-e="2090.04">He tells you just come.</span></p>
+        <p><span class="tl-s" data-s="2091.62" data-e="2092.06">Come.</span></p>
+        <p><span class="tl-s" data-s="2094.52" data-e="2097.94">Even if you think I&#x27;ve done way too much for him to accept me.</span> <span class="tl-s" data-s="2098.00" data-e="2098.32">False.</span> <span class="tl-s" data-s="2098.50" data-e="2099.10">That&#x27;s not true.</span> <span class="tl-s" data-s="2100.38" data-e="2101.24">That&#x27;s not true.</span></p>
+        <p><span class="tl-s" data-s="2107.46" data-e="2114.60">The reason he&#x27;s able to offer that kind of rest to you is because of the yoke that was laid upon him.</span></p>
+        <p><span class="tl-s" data-s="2116.42" data-e="2122.20">He had this horrendously heavy yoke laid upon him.</span> <span class="tl-s" data-s="2122.88" data-e="2125.20">A burden that was anything but light.</span> <span class="tl-s" data-s="2126.04" data-e="2133.50">You see, Jesus Christ lived a life that was not just commendable but perfect.</span> <span class="tl-s" data-s="2134.36" data-e="2137.12">And he was affixed to a Roman cross.</span> <span class="tl-s" data-s="2137.82" data-e="2139.04">And he died.</span> <span class="tl-s" data-s="2139.38" data-e="2143.76">And in dying, it was far more than the physical pain that bothered him.</span> <span class="tl-s" data-s="2144.76" data-e="2149.32">We read in the New Testament that he was punished in the place of sinners.</span> <span class="tl-s" data-s="2150.00" data-e="2153.88">That the wrath of God was poured out upon him.</span></p>
+        <p><span class="tl-s" data-s="2156.16" data-e="2156.72">Why?</span> <span class="tl-s" data-s="2157.84" data-e="2159.10">Why did he do that?</span> <span class="tl-s" data-s="2159.66" data-e="2173.50">He died so that any who would come to him might experience any who come to him who are weighed down, who labor and are heavy laden, they might experience rest for their souls.</span> <span class="tl-s" data-s="2174.80" data-e="2178.94">The reason he&#x27;s able to offer that kind of rest is because he didn&#x27;t have any.</span></p>
+        <p><span class="tl-s" data-s="2184.62" data-e="2187.22">Paul says he was made sin for us.</span> <span class="tl-s" data-s="2188.22" data-e="2196.40">He was punished for sinners so that we might be able to take our burdens even if they&#x27;re sin.</span> <span class="tl-s" data-s="2196.84" data-e="2205.42">Even if it&#x27;s sin you&#x27;ve never told anybody about and lay them at his feet because he was yoked to the cross.</span> <span class="tl-s" data-s="2205.54" data-e="2224.34">He died and carried the burden into the grave but he arose from the dead proving proving not just that he was powerful but that his sacrifice was accepted and that&#x27;s why we can go to him now.</span> <span class="tl-s" data-s="2225.52" data-e="2227.60">That&#x27;s why we can come to him now.</span> <span class="tl-s" data-s="2227.60" data-e="2238.26">Whether you&#x27;re a Christian if you&#x27;re not a Christian you can go to him you can go to him in prayer you can talk to a Christian and say what is it like to follow Jesus they&#x27;ll tell you all about him.</span> <span class="tl-s" data-s="2239.42" data-e="2248.74">You might not see Jesus physically with your eyes we might not be able to describe what he looks like but I&#x27;ll tell you what you hang around Christians and you&#x27;ll see the resemblance of Jesus and other people.</span></p>
+        <p><span class="tl-s" data-s="2250.36" data-e="2700.86">That&#x27;s how you get to know who he is in addition to the Gospels and the New Testament and the whole Bible. if you&#x27;re not a Christian come to him he will not send you away if you are a Christian we need to recognize Christians can be troubled and burdened as well yes we&#x27;ve come to Jesus and he&#x27;s decisively and forever paid for our sins but we can walk in to this room today with weights as well one of the primary reasons the Lord allows this for us to feel these weights of trouble and hardship is so that we can be reminded we have to continually go to him we don&#x27;t just come to Jesus at the beginning and then figure everything out on our own later that&#x27;s not how the Christian life works we come to Jesus again and again and again and again and again and again and again forever and ever amen because without him we can do nothing right now I have a few challenges in my life that are unspeakably difficult that I literally cannot fix on my own I feel helpless and I hate that feeling why has the Lord allowed this well so that I might go again to him and again to him and again to him and ask for the rest only he can give see sometimes as Christians we try to engineer our rest by strategizing or by talking to other people to get best practices or by ignoring the problem or by trying to think our way out but none of these things provide rest none of these things provide the rest only Jesus can give are you burdened are you weighed down are you troubled go to Jesus Christian he may not remove the weight of the burden in that moment but he is with you he is helping you he is upholding you he is right now interceding for you and he will give you rest in his time go to him we might not have a physical description we might not know how tall he was we might not know how thick his beard was but we know who he is Jesus Jesus is gentle he&#x27;s gentle and lowly and welcomes all who would come to him all the troubled who would go to him and ask for help go to him let&#x27;s pray Lord I want to pray specifically for those in this room who walk in with troubles heaped upon their back that they can&#x27;t get off I want to pray for those who come in feeling like they&#x27;re at the end of themselves who feel like they have no idea what to do next who come in recognizing I tried everything want to pray for those who wake up each morning and feel this heavy weight on their backs and they can&#x27;t shake it but I want to pray that you would give them relief and rest I pray for those that are not Christians I pray that they would come to you and put their faith in you and trust you admit their sinners and ask for the remedy only you can give which is forgiveness I pray that they would willingly yoke themselves to you I pray for those of us that are Christians Lord pray you would forgive us for trying to do so many things in our own strength and by our own lights Lord we who are burdened Lord we come to you and say we don&#x27;t have the answers we don&#x27;t know what to do but we look to you and we will continually come to you again and again and again and again and Lord I pray for rest for my brothers and sisters we pray for relief Lord we don&#x27;t have all the answers but we do have you and that&#x27;s far better thank you for giving yourself to us thank you for inviting us to come thank you for not sending us away thank you for who you are kind gentle and lowly merciful and gracious thank you and it&#x27;s in your name we pray Jesus amen if you&#x27;re not a Christian I would encourage you to talk to someone you know who is and ask them what does it mean to follow Jesus if you don&#x27;t know any Christians I&#x27;ll be up here I can introduce you to a few I can talk to you for a little while if you are a Christian sometimes we need to tell other people about the burdens that we&#x27;re carrying and ask them to join us in prayer but only after we go to Jesus because sometimes we can go to all kinds of other people before we go to him go to him keep going to him keep going to him and invite others in as well but he is the one who will give you rest not the counsel from other peoples not advice from other ones but from Jesus because he is the one who helps the troubled who ask for help that&#x27;s our Jesus I hope you have a wonderful week and I&#x27;ll leave you with this ancient benediction that has been spoken over to the Lord&#x27;s people over the Lord&#x27;s people for centuries may the Lord bless you and keep you may the Lord make his face shine upon you and be gracious to you may the Lord lift up his countenance upon you and give you peace amen have a wonderful Sunday and we&#x27;ll see you next week</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=7"></script>
+  <script>
+  // Live sermon feed: spotlight from /api/sermons, browsable archive from
+  // /api/sermons/search. Static fallback list stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function row(it) {
+      var meta = [it.speaker, fmtDate(it.date)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      var titleHtml = esc(it.title);
+      var tUrl = it.guid && transcriptMap[it.guid];
+      if (tUrl) titleHtml = '<a href="' + esc(tUrl) + '">' + titleHtml + "</a>";
+      return '<div class="sermon"><div><h3>' + titleHtml + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    fetch("/api/sermons?v=3")
+      .then(function (res) { if (!res.ok) throw new Error("feed " + res.status); return res.json(); })
+      .then(function (data) {
+        var spot = document.querySelector("[data-series-spotlight]");
+        if (data && data.series && spot) {
+          var s = data.series;
+          var art = spot.querySelector("[data-series-art]");
+          if (art && s.artwork) { art.src = s.artwork; } else if (art) { art.style.display = "none"; }
+          var nm = spot.querySelector("[data-series-name]");
+          if (nm) nm.textContent = s.name;
+          var bl = spot.querySelector("[data-series-blurb]");
+          if (bl) bl.textContent = s.blurb;
+          spot.hidden = false;
+        }
+      })
+      .catch(function () { /* spotlight stays hidden */ });
+
+    var PER = 10;
+    var state = { q: "", speaker: "", series: "", month: "", page: 1 };
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var speakerSel = document.querySelector("[data-sermons-speaker]");
+    var seriesSel = document.querySelector("[data-sermons-series]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No messages found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(speakerSel, data.facets.speakers || [], function (e) { return e.name; }, function (e) { return e.name + " (" + e.count + ")"; });
+        fill(seriesSel, data.facets.series || [], function (e) { return e.name; }, function (e) { return e.name + " (" + e.count + ")"; });
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+      }
+      var active = Boolean(data.q || data.speaker || data.series || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.speaker) parts.push("by " + data.speaker);
+          if (data.series) parts.push("in " + data.series);
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " result" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " messages";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/sermons/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.speaker ? "&speaker=" + encodeURIComponent(state.speaker) : "") +
+        (state.series ? "&series=" + encodeURIComponent(state.series) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () { /* keep current list on error */ });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.speaker = ""; state.series = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (speakerSel) speakerSel.value = "";
+      if (seriesSel) seriesSel.value = "";
+      if (monthSel) monthSel.value = "";
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          load(false);
+        }, 250);
+      });
+    }
+    function bindSelect(sel, key) {
+      if (!sel) return;
+      sel.addEventListener("change", function () {
+        state[key] = sel.value;
+        state.page = 1;
+        load(false);
+      });
+    }
+    bindSelect(speakerSel, "speaker");
+    bindSelect(seriesSel, "series");
+    bindSelect(monthSel, "month");
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; load(true);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: https://hub.centergilbert.com/media/matt-11-come-to-me -->
+</body>
+</html>
