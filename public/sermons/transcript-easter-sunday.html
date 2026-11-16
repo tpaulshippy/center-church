@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Easter Sunday — Sermon Transcript — Center Church Gilbert</title>
+  <meta name="description" content="Listen to the latest sermons from Center Church, or follow along on Apple Podcasts and Spotify." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=17" />
+  <style>
+    /* Sermon transcript dark mode: follows the device preference only.
+       Inline here so only transcript pages are affected; the rest of the
+       site keeps its light theme. No toggle, no JS. */
+    /* Transcript header: calm type-led top (no photo hero). Single
+       title (page h1, read by the read-along mini-bar) and meta
+       line, then the description and the audio player grouped as the
+       .sermon unit below. */
+    .transcript-head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 1.75rem; }
+    .transcript-head h1 { margin-bottom: 0.6rem; }
+    .transcript-back { display: inline-block; margin-bottom: 1.25rem; font-weight: 700; font-size: 0.95rem; color: var(--clay-dark); text-decoration: none; }
+    .transcript-back:hover { text-decoration: underline; }
+    .transcript-meta { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .transcript-desc { color: var(--muted); font-size: 1rem; margin: 0.75rem 0 0; max-width: 38rem; }
+    .transcript-head .sermon { width: 100%; box-sizing: border-box; margin-top: 1.25rem; }
+    .transcript-head .sermon audio { margin-top: 0; }
+    @media (prefers-color-scheme: dark) {
+      .transcript-back { color: #e8a76f; }
+      .transcript-meta { color: var(--muted-dark); }
+      .transcript-desc { color: var(--muted-dark); }
+      body { background: var(--ink); color: var(--cream); }
+      /* Header stays light in dark mode: pin to the light-theme values
+         from styles.css so the bar, nav, dropdowns, and mobile menu
+         never go dark. */
+      .site-header { background: rgba(250, 246, 239, 0.92); border-bottom-color: var(--line); }
+      .brand-logo-dark { filter: invert(1); }
+      .nav-links a { color: var(--ink); }
+      .nav-links a:hover, .nav-links a.active { color: var(--clay-dark); }
+      .dropdown { background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent; background-clip: padding-box; }
+      .dropdown a { color: var(--ink); }
+      .dropdown a:hover { background: var(--cream-2); color: var(--ink); }
+      .dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+      .hamburger { color: var(--ink); border-color: var(--line); background: none; }
+      .mobile-menu { background: var(--cream); color: var(--ink); border-top-color: var(--line); }
+      .mobile-menu details { border-color: var(--line); }
+      .mobile-menu summary { color: var(--ink); }
+      .mobile-menu summary::after { color: var(--clay-dark); }
+      .mobile-menu details a, .mobile-menu > a.mobile-login { color: var(--ink); }
+      .sermon { background: var(--ink-2); border-color: var(--line-light); }
+      .sermon .meta { color: var(--muted-dark); }
+      .sermon audio { border-radius: 12px; background: #100d0a; }
+      .transcript p { color: #ece1d1; }
+      .transcript-notice { background: rgba(232, 167, 111, 0.1); border: 1px solid var(--line-light); border-radius: 12px; padding: 1rem 1.2rem; }
+      .transcript code { background: #100d0a; color: #e8a76f; border: 1px solid var(--line-light); border-radius: 6px; padding: 0.1em 0.35em; }
+    }
+  </style>
+  <link rel="stylesheet" href="/readalong.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="Center Church home">
+        <img class="brand-logo brand-logo-dark" src="/logo.png" alt="Center Church" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li class="has-menu">
+            <a href="/visit">New?</a>
+            <ul class="dropdown">
+              <li><a href="/visit">Plan Your Visit</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/connect">Connect</a>
+            <ul class="dropdown">
+              <li><a href="/connect">Ministries</a></li>
+              <li><a href="/calendar">Church Calendar</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a></li>
+              <li><a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a href="/about">About</a>
+            <ul class="dropdown">
+              <li><a href="/about">Our Mission</a></li>
+              <li><a href="/beliefs">Our Beliefs</a></li>
+              <li><a href="/leadership">Leadership</a></li>
+            </ul>
+          </li>
+          <li class="has-menu">
+            <a class="active" href="/sermons">Resources</a>
+            <ul class="dropdown">
+              <li><a class="active" href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="https://pushpay.com/g/centergilbert">GIVE</a>
+        <button class="hamburger" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <details>
+        <summary>New?</summary>
+        <a href="/visit">Plan Your Visit</a>
+        <a href="/contact">Contact Us</a>
+      </details>
+      <details>
+        <summary>Connect</summary>
+        <a href="/connect">Ministries</a>
+        <a href="/calendar">Church Calendar</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/groups/small-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment">Find a Small Group</a>
+        <a href="https://centerchurchgilbert.churchcenter.com/registrations">Serve With Us</a>
+      </details>
+      <details>
+        <summary>About</summary>
+        <a href="/about">Our Mission</a>
+        <a href="/beliefs">Our Beliefs</a>
+        <a href="/leadership">Leadership</a>
+      </details>
+      <details>
+        <summary>Resources</summary>
+        <a href="/sermons">Sermons</a>
+        <a href="/podcast">Fixed on Jesus Podcast</a>
+      </details>
+      <a class="mobile-login" href="https://centerchurchgilbert.churchcenter.com/login?return=/home">Login to the App</a>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="transcript-head">
+          <a class="transcript-back" href="/sermons">&larr; All sermons</a>
+          <h1 class="display-lg">Easter Sunday</h1>
+          <p class="transcript-meta">Rich Richardson · Mar 31, 2024 · 00:40:44</p>
+          <p class="transcript-desc">The Risen Christ Himself comes to us to fortify and strengthen us personally.</p>
+          <div class="sermon">
+            <audio controls preload="none" src="https://anchor.fm/s/119cbef70/podcast/play/128974219/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-7%2F436123900-44100-2-3217691b954c11d6.mp3"></audio>
+          </div>
+        </div>
+        <div class="transcript" style="white-space:pre-line">
+        <p><span class="tl-s" data-s="0.02" data-e="4.40">Good morning, everybody.</span> <span class="tl-s" data-s="5.60" data-e="14.00">If you have a Bible, if you could open, join with me in opening to John, chapter 20.</span></p>
+        <p><span class="tl-s" data-s="17.40" data-e="20.54">If you don&#x27;t know where that is in the Bible, it&#x27;s in the New Testament.</span> <span class="tl-s" data-s="21.62" data-e="28.22">John was one of, well, was Jesus&#x27; best friend, and he wrote an eyewitness account of his walk with Jesus.</span> <span class="tl-s" data-s="28.62" data-e="32.96">It goes Matthew, Mark, Luke, then John.</span> <span class="tl-s" data-s="33.94" data-e="36.02">If you make it to Acts, you&#x27;ve gone too far.</span> <span class="tl-s" data-s="36.92" data-e="41.36">If you don&#x27;t have a Bible, just put it in the Google machine, and last I checked, it works.</span> <span class="tl-s" data-s="42.74" data-e="44.34">It&#x27;ll be in John, chapter 20.</span> <span class="tl-s" data-s="45.10" data-e="52.58">And as we look at the empty tomb, and as we look at the risen Jesus, I&#x27;m going to ask you to ask a question.</span> <span class="tl-s" data-s="53.46" data-e="57.50">I&#x27;m going to ask you to ask a question of the empty tomb and of the risen Jesus.</span> <span class="tl-s" data-s="57.52" data-e="63.38">And I&#x27;m going to warn you in advance that this question might seem a little out of place here on Easter morning.</span> <span class="tl-s" data-s="64.06" data-e="66.32">It might even seem a bit disrespectful.</span></p>
+        <p><span class="tl-s" data-s="67.18" data-e="74.04">It&#x27;s a question that you might think is wrong to express at church, or maybe even irresponsible for a preacher to ask.</span> <span class="tl-s" data-s="74.98" data-e="78.54">It might even seem crass and unbecoming for an Easter sermon.</span> <span class="tl-s" data-s="79.26" data-e="80.14">But here we go.</span> <span class="tl-s" data-s="80.78" data-e="83.96">Here&#x27;s what I want you to ask of the empty tomb and of the risen Jesus.</span></p>
+        <p><span class="tl-s" data-s="85.46" data-e="86.38">What&#x27;s in it for me?</span></p>
+        <p><span class="tl-s" data-s="88.40" data-e="89.30">What&#x27;s in it for me?</span> <span class="tl-s" data-s="89.42" data-e="93.22">I want us to look at the stone rolled away and ask, what is in it for me?</span> <span class="tl-s" data-s="93.28" data-e="96.66">I want us to look at the empty tomb and ask, what&#x27;s in it for me?</span> <span class="tl-s" data-s="96.82" data-e="100.48">I want us to go back to that Sunday morning and ask, what&#x27;s in it for me?</span> <span class="tl-s" data-s="100.62" data-e="104.70">I want us to look in the eyes of the risen Jesus and say, what&#x27;s in it for me?</span> <span class="tl-s" data-s="105.10" data-e="105.46">Why?</span> <span class="tl-s" data-s="106.42" data-e="107.14">Two reasons.</span> <span class="tl-s" data-s="108.14" data-e="117.20">I think too often, those of us who are following Jesus are not helped enough by the truths that radiate from this empty tomb.</span> <span class="tl-s" data-s="117.90" data-e="122.72">It&#x27;s not enough this morning to be excited that Jesus is alive after dying.</span> <span class="tl-s" data-s="122.90" data-e="123.82">That&#x27;s significant.</span></p>
+        <p><span class="tl-s" data-s="125.52" data-e="126.48">It&#x27;s significant.</span> <span class="tl-s" data-s="126.80" data-e="137.02">But what we need to recognize is that if we don&#x27;t understand what it means and what the benefit we receive because he is alive, we don&#x27;t get the help in this life that we need.</span></p>
+        <p><span class="tl-s" data-s="139.14" data-e="140.40">So what&#x27;s in it for me?</span> <span class="tl-s" data-s="140.54" data-e="142.00">If you&#x27;re a Christian, you should ask.</span> <span class="tl-s" data-s="142.10" data-e="145.42">Also, if you&#x27;re not a Christian, thank you for being here.</span> <span class="tl-s" data-s="145.50" data-e="147.24">We know there&#x27;s lots of places you can be.</span> <span class="tl-s" data-s="148.28" data-e="154.68">But you need to recognize, if you&#x27;re not a Christian, that the resurrection of Jesus Christ is a real event.</span> <span class="tl-s" data-s="155.68" data-e="164.62">More than that, it&#x27;s not one truth among many, but the dominant truth you must grapple with today.</span> <span class="tl-s" data-s="165.74" data-e="172.60">And I realize if you&#x27;re here and you&#x27;re not a follower of Jesus, you might have questions about whether the resurrection really happened.</span> <span class="tl-s" data-s="173.36" data-e="179.20">We have a brief article in the lobby that will answer the list of most common questions.</span> <span class="tl-s" data-s="179.22" data-e="181.98">And if you have further questions, grab that article.</span> <span class="tl-s" data-s="182.11" data-e="183.94">My email address is at the bottom.</span></p>
+        <p><span class="tl-s" data-s="184.72" data-e="189.88">But I want you to ask as well, if you&#x27;re here and not following Jesus, what&#x27;s in it for me?</span> <span class="tl-s" data-s="191.26" data-e="192.24">What&#x27;s in it for me?</span></p>
+        <p><span class="tl-s" data-s="193.70" data-e="194.72">Well, the risen Jesus.</span> <span class="tl-s" data-s="194.94" data-e="195.68">Here&#x27;s what&#x27;s in it for you.</span> <span class="tl-s" data-s="195.90" data-e="202.66">The risen Jesus, Christ himself, comes to you and to me to strengthen and fortify us personally.</span> <span class="tl-s" data-s="203.68" data-e="211.68">And let me tell you, this strength is the kind of strength that we need weekly, daily, hourly, minute by minute just to make it in this world.</span> <span class="tl-s" data-s="211.70" data-e="215.04">Because this world is dark and it&#x27;s hard.</span> <span class="tl-s" data-s="215.96" data-e="217.40">And we cannot make it alone.</span> <span class="tl-s" data-s="217.84" data-e="221.06">We need strength from the risen Christ.</span> <span class="tl-s" data-s="221.54" data-e="224.70">Because no other strength, no other fortification will do.</span> <span class="tl-s" data-s="224.96" data-e="226.10">Not a stiff upper lip.</span> <span class="tl-s" data-s="226.40" data-e="227.18">Not stoicism.</span></p>
+        <p><span class="tl-s" data-s="227.52" data-e="228.86">Not escaping to leisure.</span> <span class="tl-s" data-s="229.24" data-e="230.32">Not family connections.</span> <span class="tl-s" data-s="230.88" data-e="231.64">Not money.</span> <span class="tl-s" data-s="232.04" data-e="237.08">Only the risen Christ can give you the strength to make it in this world.</span> <span class="tl-s" data-s="237.16" data-e="240.90">Because this world will kick you in the teeth and stomp you while you&#x27;re down.</span> <span class="tl-s" data-s="241.06" data-e="243.46">And you need someone on your side.</span> <span class="tl-s" data-s="244.80" data-e="246.16">Because Jesus is alive.</span> <span class="tl-s" data-s="246.26" data-e="246.88">You&#x27;re not alone.</span></p>
+        <p><span class="tl-s" data-s="248.82" data-e="250.14">So what&#x27;s in it for you?</span> <span class="tl-s" data-s="250.30" data-e="252.32">We&#x27;ll see everything that matters.</span></p>
+        <p><span class="tl-s" data-s="254.80" data-e="257.44">We&#x27;ll see this in two movements in John chapter 20.</span> <span class="tl-s" data-s="257.70" data-e="259.04">I&#x27;ll take them in two different chunks.</span> <span class="tl-s" data-s="259.06" data-e="262.42">First, what nobody expected but should have.</span> <span class="tl-s" data-s="262.96" data-e="267.42">I&#x27;ll be reading from verse 20, or I&#x27;m sorry, verse 1, chapter 20, down to verse 10.</span> <span class="tl-s" data-s="268.74" data-e="280.64">Now, on the first day of the week, Mary Magdalene came to the tomb early, while it was still dark, and saw that the stone had been taken away from the tomb.</span> <span class="tl-s" data-s="281.22" data-e="292.50">So she ran and went to Simon Peter and the other disciple, the one whom Jesus loved, and said to them, They have taken the Lord out of the tomb, and we do not know where they have laid him.</span> <span class="tl-s" data-s="293.26" data-e="297.34">So Peter went out with the other disciple, and they were going toward the tomb.</span> <span class="tl-s" data-s="297.36" data-e="299.36">Both of them were running together.</span> <span class="tl-s" data-s="300.14" data-e="303.52">But the other disciple outran Peter and reached the tomb first.</span> <span class="tl-s" data-s="304.90" data-e="310.12">And stooping to look in, he saw the linen cloths lying there, but he did not go in.</span></p>
+        <p><span class="tl-s" data-s="311.02" data-e="314.38">Then Simon Peter came, following him, and went into the tomb.</span> <span class="tl-s" data-s="314.90" data-e="324.78">He saw the linen cloths lying there, and the face cloth, which had been laid on Jesus&#x27; head, not lying with the linen cloths, but folded up in a place by itself.</span> <span class="tl-s" data-s="325.42" data-e="331.50">Then the other disciple, who had reached the tomb first, also went in, and he saw and believed.</span> <span class="tl-s" data-s="332.42" data-e="339.02">For as yet, they did not understand the scripture, that he must rise from the dead.</span> <span class="tl-s" data-s="340.12" data-e="353.98">Now, we know one thing for sure, as we go back in time to this Sunday morning so long ago, it&#x27;s that nobody expected Jesus to be alive.</span> <span class="tl-s" data-s="354.60" data-e="357.92">Nobody expected Jesus to have emerged from this tomb.</span> <span class="tl-s" data-s="358.44" data-e="367.92">Other passages tell us that Mary and friends came loaded down with 75 pounds of spices to anoint the dead body of Jesus.</span> <span class="tl-s" data-s="368.10" data-e="369.60">They were expecting him to be dead.</span> <span class="tl-s" data-s="369.92" data-e="379.40">And they were utterly and completely shocked when they arrived to the garden tomb to see the massive stone thrown to the side like a discarded grocery bag.</span></p>
+        <p><span class="tl-s" data-s="380.66" data-e="386.78">Now, again and again, Jesus told his followers that he would die and on the third day rise.</span> <span class="tl-s" data-s="386.88" data-e="391.80">If you read the Gospels, you&#x27;ll see that he says this over and over and over.</span> <span class="tl-s" data-s="391.96" data-e="393.06">Sounds like a broken record.</span> <span class="tl-s" data-s="393.48" data-e="395.60">He would die and on the third day rise.</span> <span class="tl-s" data-s="395.70" data-e="397.52">He would die and on the third day rise.</span> <span class="tl-s" data-s="397.62" data-e="402.50">But yet, we get to the third day, and no one seems to expect him to rise.</span> <span class="tl-s" data-s="402.82" data-e="404.28">And they&#x27;re all surprised.</span></p>
+        <p><span class="tl-s" data-s="405.90" data-e="407.52">That really used to bother me.</span> <span class="tl-s" data-s="408.22" data-e="415.86">I would think, how in the world could it be that Jesus would tell his followers that he would die and rise again, and none of them remembered it?</span> <span class="tl-s" data-s="416.38" data-e="417.54">None of them listened.</span> <span class="tl-s" data-s="418.92" data-e="420.76">It used to bother me so much.</span> <span class="tl-s" data-s="421.24" data-e="422.54">And then I had four kids.</span></p>
+        <p><span class="tl-s" data-s="425.86" data-e="429.76">And I realize they don&#x27;t listen to a great many things that I say.</span></p>
+        <p><span class="tl-s" data-s="431.50" data-e="438.06">I tell them things like, do the dishes, feed the dogs, pick up your sister at school.</span> <span class="tl-s" data-s="439.16" data-e="450.52">And then when the dishes pile up and the dogs become hypoglycemic, and my daughter thinks we forgot her at school because we did, I asked, what happened?</span> <span class="tl-s" data-s="451.24" data-e="456.10">I told you guys to do the dishes, feed the dogs, and most importantly, pick up your sister.</span> <span class="tl-s" data-s="456.86" data-e="457.86">And they said, what?</span> <span class="tl-s" data-s="458.86" data-e="460.04">You didn&#x27;t tell me that.</span> <span class="tl-s" data-s="461.16" data-e="462.44">I didn&#x27;t ever hear that.</span> <span class="tl-s" data-s="463.46" data-e="464.70">You must have told my brother.</span> <span class="tl-s" data-s="465.68" data-e="467.42">You must have been talking to someone else.</span></p>
+        <p><span class="tl-s" data-s="468.96" data-e="473.16">The reality is, the disciples were like my kids.</span> <span class="tl-s" data-s="473.52" data-e="475.38">And the truth is, we&#x27;re all like my kids.</span> <span class="tl-s" data-s="475.52" data-e="477.62">We don&#x27;t listen as well as we think we do.</span> <span class="tl-s" data-s="478.78" data-e="483.56">And so Mary sees the tomb in disarray and runs off.</span> <span class="tl-s" data-s="484.72" data-e="486.54">Spoiler, there&#x27;s a lot of running in this passage.</span> <span class="tl-s" data-s="486.84" data-e="492.50">She runs off and goes and gets Peter and John, and she says, he&#x27;s alive.</span> <span class="tl-s" data-s="493.10" data-e="493.86">He did what he said.</span> <span class="tl-s" data-s="493.97" data-e="497.24">No, actually, she says, they have taken our Lord out of the tomb.</span> <span class="tl-s" data-s="497.33" data-e="498.78">We do not know where they had laid him.</span> <span class="tl-s" data-s="499.00" data-e="502.48">And so Peter and John rip off toward the tomb to see for themselves.</span></p>
+        <p><span class="tl-s" data-s="503.20" data-e="505.32">Now, we find that John is faster.</span> <span class="tl-s" data-s="506.00" data-e="509.44">He beats Peter to the tomb because Peter has a bulky IT band.</span> <span class="tl-s" data-s="510.32" data-e="511.10">He&#x27;s in rehab.</span> <span class="tl-s" data-s="511.24" data-e="511.84">It&#x27;s in the Greek.</span> <span class="tl-s" data-s="512.44" data-e="517.40">John gets to the tomb and stops and does not go in.</span> <span class="tl-s" data-s="517.90" data-e="522.58">However, he does look and see Jesus&#x27; grave clothes on the ground.</span> <span class="tl-s" data-s="523.48" data-e="529.56">Now, Peter lumbers in later, barges right in, and goes to see what he sees inside the tomb.</span> <span class="tl-s" data-s="529.58" data-e="539.66">John reports that Peter sees the linen cloth folded up neatly in one place and the face cloth separately folded up somewhere else on the bench.</span> <span class="tl-s" data-s="539.78" data-e="542.42">Now, why all this folding detail?</span> <span class="tl-s" data-s="543.26" data-e="548.52">It&#x27;s interesting when you read it, John wants us to know that these linen cloths were not just strewn around.</span></p>
+        <p><span class="tl-s" data-s="548.68" data-e="553.74">They were folded up and set on what would be a bench inside the tomb.</span> <span class="tl-s" data-s="554.22" data-e="558.20">He&#x27;s not trying to tell us that Jesus listened to his mom and folded his clothes.</span> <span class="tl-s" data-s="559.20" data-e="560.82">There&#x27;s something else that&#x27;s going on here.</span> <span class="tl-s" data-s="560.84" data-e="565.82">There&#x27;s at least two reasons that John would show us these details about the linen cloths.</span> <span class="tl-s" data-s="565.84" data-e="571.88">First, the neatness tells us that robbers did not invade the tomb and steal the body of Jesus.</span> <span class="tl-s" data-s="573.08" data-e="575.70">What kind of thief looks to clean up after pillaging?</span> <span class="tl-s" data-s="576.86" data-e="585.72">What kind of brigand would say, hey, guys, everybody&#x27;s going to be real traumatized by what we&#x27;re doing here, so let&#x27;s just at least clean up and make it feel just a little better than it was when we got here?</span></p>
+        <p><span class="tl-s" data-s="587.26" data-e="591.02">Have you ever had your house robbed?</span> <span class="tl-s" data-s="591.58" data-e="594.84">You don&#x27;t come home and see the floor&#x27;s mopped and the carpet&#x27;s cleaned.</span></p>
+        <p><span class="tl-s" data-s="596.40" data-e="598.04">You see things in disarray.</span> <span class="tl-s" data-s="598.90" data-e="603.90">But Peter and John, they go into the tomb and they find that the tomb is not in disarray.</span> <span class="tl-s" data-s="604.84" data-e="608.92">They find the tomb has the grave clothes and the face cloth folded up.</span> <span class="tl-s" data-s="609.64" data-e="611.30">This is not the work of grave robbers.</span> <span class="tl-s" data-s="612.38" data-e="616.62">Another reason for the grave clothing detail is a comparison.</span> <span class="tl-s" data-s="617.64" data-e="623.32">In John chapter 11, Jesus called Lazarus, his friend, back from the dead.</span> <span class="tl-s" data-s="623.84" data-e="629.30">And the very first thing he told the bystanders was to remove his grave clothes.</span></p>
+        <p><span class="tl-s" data-s="630.88" data-e="636.30">Now, something different is happening here with Jesus versus Lazarus.</span> <span class="tl-s" data-s="636.64" data-e="639.24">Lazarus was called back to life only to die again.</span> <span class="tl-s" data-s="639.42" data-e="642.88">Jesus came back to life, never to die again.</span></p>
+        <p><span class="tl-s" data-s="644.54" data-e="649.90">But Peter and John, they don&#x27;t understand any of these details on that morning so long ago.</span> <span class="tl-s" data-s="650.68" data-e="653.96">And so, they leave.</span> <span class="tl-s" data-s="655.04" data-e="657.24">Like men, they don&#x27;t stick around and ask questions.</span> <span class="tl-s" data-s="657.45" data-e="657.88">They leave.</span> <span class="tl-s" data-s="658.32" data-e="659.12">They just take off.</span> <span class="tl-s" data-s="660.28" data-e="667.82">Now, if you look at the passage, we actually can see that John is dropping Easter eggs in this passage.</span> <span class="tl-s" data-s="668.88" data-e="674.26">Now, kids and video game enthusiasts understand what kind of Easter eggs I&#x27;m talking about.</span> <span class="tl-s" data-s="674.78" data-e="679.90">I&#x27;m not talking about the hunt that&#x27;s going to happen, weather permitting, in your backyard today.</span> <span class="tl-s" data-s="680.44" data-e="692.36">But for all the boomers and sheltered Gen Xers, an Easter egg is a hidden feature embedded in a video game that developers hide there for game players to discover.</span> <span class="tl-s" data-s="692.64" data-e="695.22">It&#x27;s an unexpected, subtle surprise.</span></p>
+        <p><span class="tl-s" data-s="695.24" data-e="699.80">If you still don&#x27;t understand what an Easter egg is, ask a teenager.</span></p>
+        <p><span class="tl-s" data-s="702.06" data-e="705.88">Now, there are two Easter eggs that John puts in the passage we just read.</span> <span class="tl-s" data-s="706.96" data-e="708.86">The first is in verse 1.</span> <span class="tl-s" data-s="710.24" data-e="720.66">Now, on the first day of the week, in all of Jesus&#x27; predictions about his death and resurrection, he always spoke of the third day.</span> <span class="tl-s" data-s="721.64" data-e="725.48">So, why would John not say the third day?</span> <span class="tl-s" data-s="726.06" data-e="728.20">Why would he say the first day?</span> <span class="tl-s" data-s="729.02" data-e="753.02">And the reason is, it&#x27;s because he wants us to have our memories go back to Genesis 1, verse 3, where we read, John wants us to think of the first day of creation.</span> <span class="tl-s" data-s="753.04" data-e="757.72">The day that God called forth light by the word of his power on that day.</span> <span class="tl-s" data-s="758.18" data-e="764.90">Now, on Easter, we have a new and better light that has been called forth by the same word of power.</span> <span class="tl-s" data-s="765.82" data-e="773.70">The Son of God, the light of the world, rose from the dead and ushered in a new creation on the first day of the week.</span></p>
+        <p><span class="tl-s" data-s="775.60" data-e="777.72">The next Easter egg is a little more subtle.</span></p>
+        <p><span class="tl-s" data-s="779.84" data-e="781.68">It&#x27;s an Old Testament allusion.</span> <span class="tl-s" data-s="782.38" data-e="790.44">Not allusion as in trick, but allusion with an A, as in making an indirect reference to a past event.</span></p>
+        <p><span class="tl-s" data-s="792.34" data-e="817.24">The event when Moses, the leader of Israel, came down, after receiving the Ten Commandments, and spending time with God, we read, when Moses came down from Mount Sinai with the two tablets of the testimony, that&#x27;s the Ten Commandments, in his hand, and he came down from the mountain, that&#x27;s Mount Sinai, Moses did not know that the skin of his face shone because he had been talking to God.</span> <span class="tl-s" data-s="818.52" data-e="826.04">Aaron and all the people of Israel saw Moses, and behold, the skin of his face shone, and they were afraid to come near him.</span> <span class="tl-s" data-s="826.17" data-e="827.24">And so you know what Moses did?</span></p>
+        <p><span class="tl-s" data-s="829.12" data-e="830.54">He got a face covering.</span></p>
+        <p><span class="tl-s" data-s="832.12" data-e="837.84">He got a face covering to cover it up so the people wouldn&#x27;t be afraid to come near him and his shiny face.</span> <span class="tl-s" data-s="839.24" data-e="843.26">Jesus, the new and better Moses, would not cover his face.</span> <span class="tl-s" data-s="844.22" data-e="845.12">He would not.</span> <span class="tl-s" data-s="845.22" data-e="845.82">He could not.</span> <span class="tl-s" data-s="845.92" data-e="847.60">He would never obscure his glory.</span> <span class="tl-s" data-s="848.60" data-e="855.92">We now see the glory of God in the face of Jesus Christ, and there is no covering to his face.</span> <span class="tl-s" data-s="857.18" data-e="860.66">He is the one who has ushered in the new creation.</span> <span class="tl-s" data-s="860.98" data-e="863.62">He is the one who has defeated sin and death.</span> <span class="tl-s" data-s="863.84" data-e="877.02">He is the one who has come back, and all of us, Christians and non-Christians alike, must look at him full in the face and recognize he, and he alone, is the one who holds all the answers to our lives.</span></p>
+        <p><span class="tl-s" data-s="879.24" data-e="880.12">So do you see?</span> <span class="tl-s" data-s="880.64" data-e="882.80">When we ask the question, what&#x27;s in it for me?</span> <span class="tl-s" data-s="883.64" data-e="885.00">It&#x27;s everything that matters.</span> <span class="tl-s" data-s="885.10" data-e="886.12">That&#x27;s what&#x27;s in it for us.</span> <span class="tl-s" data-s="887.36" data-e="889.26">One of the things we can see here is this.</span> <span class="tl-s" data-s="889.48" data-e="890.82">We don&#x27;t have to be afraid.</span> <span class="tl-s" data-s="891.84" data-e="893.98">We don&#x27;t have to be afraid.</span></p>
+        <p><span class="tl-s" data-s="895.46" data-e="908.48">This morning, this Sunday morning, this day of new creation, signals the end of darkness because darkness held sway over God&#x27;s creation for as long as anyone could remember.</span> <span class="tl-s" data-s="908.82" data-e="914.18">But on Easter morning that day so long ago, things began finally to change.</span> <span class="tl-s" data-s="914.96" data-e="916.94">A new order dawned.</span> <span class="tl-s" data-s="917.86" data-e="920.96">For so long, death seemed to have the upper hand.</span> <span class="tl-s" data-s="921.48" data-e="923.24">Darkness always won.</span> <span class="tl-s" data-s="924.06" data-e="927.46">And the darkness of death always consumed the light of life.</span></p>
+        <p><span class="tl-s" data-s="929.08" data-e="936.22">Until, until with the brightness of a thousand suns, Jesus got up and defeated darkness.</span></p>
+        <p><span class="tl-s" data-s="938.34" data-e="947.22">For John says in John 1, verse 5, the light shines in the darkness and the darkness has not overcome it.</span></p>
+        <p><span class="tl-s" data-s="948.94" data-e="954.70">You see, the resurrection, ushered in a new order to this sighing universe.</span> <span class="tl-s" data-s="955.70" data-e="964.06">No longer does death and the power of death stand as the most fearsome and the most powerful force in the universe.</span></p>
+        <p><span class="tl-s" data-s="965.96" data-e="968.84">Neither do those other powers that follow death.</span> <span class="tl-s" data-s="969.10" data-e="971.26">Things like fear and worry and fretfulness.</span> <span class="tl-s" data-s="971.48" data-e="971.76">Why?</span> <span class="tl-s" data-s="971.95" data-e="973.88">Why are those things not most powerful?</span> <span class="tl-s" data-s="974.18" data-e="976.30">Why will those things not hold sway forever?</span> <span class="tl-s" data-s="976.48" data-e="977.92">Because Jesus is alive.</span> <span class="tl-s" data-s="977.94" data-e="991.96">If you&#x27;re a Christian, you are a member of the new creation because Jesus is alive and you don&#x27;t have to worry, you don&#x27;t have to fret or live with a sense of foreboding because Jesus is alive and he is actively protecting you.</span> <span class="tl-s" data-s="992.98" data-e="1001.20">He is actively, personally interested in you and protecting you from all manner of evil.</span> <span class="tl-s" data-s="1002.56" data-e="1008.06">With his protection, you don&#x27;t have to be afraid anymore.</span> <span class="tl-s" data-s="1008.52" data-e="1010.86">Does that mean we&#x27;ll understand everything that&#x27;s going to come our way?</span></p>
+        <p><span class="tl-s" data-s="1010.95" data-e="1011.10">No.</span> <span class="tl-s" data-s="1012.50" data-e="1015.00">Does that mean we won&#x27;t have hard things that we&#x27;ll face?</span> <span class="tl-s" data-s="1015.12" data-e="1015.30">No.</span></p>
+        <p><span class="tl-s" data-s="1019.92" data-e="1030.84">Does it mean we&#x27;re always going to understand those things that come upon us that press us past the point of reasonableness?</span> <span class="tl-s" data-s="1031.68" data-e="1032.24">No.</span></p>
+        <p><span class="tl-s" data-s="1035.02" data-e="1045.60">Most often, we can&#x27;t understand the hardest trials in life, but we can look and see Jesus alive, protecting us.</span></p>
+        <p><span class="tl-s" data-s="1047.74" data-e="1053.24">Knowing that he will protect us from here until the end and beyond.</span> <span class="tl-s" data-s="1054.34" data-e="1066.32">While we may not be able to understand every hardship that we face, we can understand for sure and for certain that we&#x27;re safe and that we Christians are protected by him and there is no one who can snatch us out of his hand.</span> <span class="tl-s" data-s="1067.52" data-e="1072.12">And there is no rogue power in the universe that&#x27;s able to do what it wants with us.</span> <span class="tl-s" data-s="1072.22" data-e="1072.44">Why?</span> <span class="tl-s" data-s="1072.46" data-e="1075.48">Because Jesus is alive so what&#x27;s in it for me?</span> <span class="tl-s" data-s="1075.60" data-e="1076.80">We don&#x27;t have to be afraid.</span> <span class="tl-s" data-s="1077.92" data-e="1079.28">We don&#x27;t have to be afraid.</span> <span class="tl-s" data-s="1079.44" data-e="1082.96">That&#x27;s one of the ways Jesus fortifies and protects us.</span> <span class="tl-s" data-s="1083.16" data-e="1084.88">Our protector is alive.</span> <span class="tl-s" data-s="1086.24" data-e="1092.80">We move from what no one expected but should have and now we go to what everyone wants but don&#x27;t always know.</span></p>
+        <p><span class="tl-s" data-s="1095.02" data-e="1095.86">Verse 11.</span> <span class="tl-s" data-s="1096.20" data-e="1097.36">I&#x27;ll read down to verse 18.</span> <span class="tl-s" data-s="1098.54" data-e="1115.22">But Mary stood weeping outside the tomb and as she wept she stooped to look into the tomb and she saw two angels in white sitting where the body of Jesus had lain one at the head and one at the feet.</span> <span class="tl-s" data-s="1116.16" data-e="1118.60">They said to her, woman, why are you weeping?</span> <span class="tl-s" data-s="1119.28" data-e="1124.60">She said to them, they have taken away my Lord and I do not know where they have laid him.</span> <span class="tl-s" data-s="1125.52" data-e="1131.34">Having said this, she turned around and saw Jesus standing but she did not know that it was Jesus.</span> <span class="tl-s" data-s="1132.48" data-e="1134.44">Jesus said to her, woman, why are you weeping?</span> <span class="tl-s" data-s="1135.36" data-e="1136.16">Whom are you seeking?</span> <span class="tl-s" data-s="1137.36" data-e="1147.08">Supposing him to be the gardener, she said to him, sir, if you have carried him away, tell me where you have laid him and I will take him away.</span></p>
+        <p><span class="tl-s" data-s="1149.12" data-e="1152.08">Jesus said to her, Mary.</span></p>
+        <p><span class="tl-s" data-s="1154.48" data-e="1158.90">She turned and said to him in Aramaic, Rabboni, which means teacher.</span> <span class="tl-s" data-s="1160.26" data-e="1171.42">Jesus said to her, do not cling to me for I have not yet ascended to the Father but go to my brothers and say to them, I am ascending to my Father and your Father, to my God and your God.</span> <span class="tl-s" data-s="1172.64" data-e="1181.60">Mary Magdalene went and announced to the disciples, I have seen the Lord and that he had said these things to her.</span></p>
+        <p><span class="tl-s" data-s="1183.12" data-e="1188.98">Like we said before, Peter and John, like men, don&#x27;t stick around to try to find out what&#x27;s going on or ask questions, they just take off.</span> <span class="tl-s" data-s="1190.34" data-e="1198.74">And Mary is rooted to the spot and grief stricken and she doesn&#x27;t even, she seems kind of nonplussed by the presence of two angels, right?</span> <span class="tl-s" data-s="1198.92" data-e="1208.10">She looks in the tomb, it doesn&#x27;t say she was scared, it doesn&#x27;t say she was surprised, it doesn&#x27;t say anything except John just blandly reports, oh, there&#x27;s two angels inside the tomb now.</span> <span class="tl-s" data-s="1208.50" data-e="1210.44">Peter and John leave and here comes all the action.</span> <span class="tl-s" data-s="1210.96" data-e="1215.98">We have them sitting inside the tomb and they ask, woman, why are you weeping?</span> <span class="tl-s" data-s="1216.14" data-e="1221.00">Now, whenever we see the question in the Bible where it says, woman, why are you weeping?</span> <span class="tl-s" data-s="1221.52" data-e="1225.12">I don&#x27;t recommend you call another lady woman, right?</span> <span class="tl-s" data-s="1225.28" data-e="1228.06">I&#x27;ve never, I don&#x27;t say to my wife, woman, what&#x27;s for dinner?</span></p>
+        <p><span class="tl-s" data-s="1228.36" data-e="1231.60">I don&#x27;t say, hey woman, when are we leaving?</span> <span class="tl-s" data-s="1231.82" data-e="1233.02">Hey woman, let&#x27;s not be late.</span> <span class="tl-s" data-s="1233.26" data-e="1239.48">So whenever, in English it sounds really awkward and strange for the angels to ask, woman, why are you weeping?</span> <span class="tl-s" data-s="1240.80" data-e="1245.90">It would be much more like we could render it this way, ma&#x27;am, why are you weeping?</span> <span class="tl-s" data-s="1246.74" data-e="1249.34">So it&#x27;s not as offensive in the original.</span> <span class="tl-s" data-s="1249.80" data-e="1250.88">Ma&#x27;am, why are you weeping?</span></p>
+        <p><span class="tl-s" data-s="1252.66" data-e="1253.68">Why are you weeping?</span> <span class="tl-s" data-s="1254.48" data-e="1260.14">And she doesn&#x27;t seem to wonder why they&#x27;re there at all or how an angel can come and talk to her.</span> <span class="tl-s" data-s="1260.22" data-e="1262.12">She just says, I&#x27;m looking for the body of my Lord.</span></p>
+        <p><span class="tl-s" data-s="1263.62" data-e="1275.42">Now, John tells us in verse 12 that one of the angels is sitting in the spot where Jesus&#x27; head was and the other where Jesus&#x27; feet would have been.</span> <span class="tl-s" data-s="1276.10" data-e="1276.96">Why the detail?</span> <span class="tl-s" data-s="1277.60" data-e="1278.82">Well, here&#x27;s another Easter egg.</span> <span class="tl-s" data-s="1279.72" data-e="1281.58">This is an allusion to the Ark of the Covenant.</span> <span class="tl-s" data-s="1282.72" data-e="1291.32">God told Moses to make the lid of the Ark with two angels of hammered gold on either side of the Ark facing each other.</span> <span class="tl-s" data-s="1291.62" data-e="1303.14">Look at Exodus 25 says this and notice notice what God what God calls the lid of the Ark the mercy seat.</span></p>
+        <p><span class="tl-s" data-s="1304.60" data-e="1324.88">You shall make a mercy seat of pure gold two cubits and a half shall be its length and a cubit and a half its breadth and you shall make two cherubim of gold of hammered work shall you make them on two ends on two ends of the mercy seat which is the lid of the Ark of the Covenant.</span> <span class="tl-s" data-s="1326.28" data-e="1329.92">So, what does the Ark of the Covenant have to do with anything here?</span> <span class="tl-s" data-s="1330.04" data-e="1334.20">Well, the Ark of the Covenant was significant in the Jewish Day of Atonement.</span> <span class="tl-s" data-s="1334.32" data-e="1345.88">It was that day where the high priest would place on the Ark of the Covenant in the middle between the two angels blood from a bull and blood from goats from a goat for the sins of the people.</span></p>
+        <p><span class="tl-s" data-s="1348.06" data-e="1355.60">And now, John gives us this Easter egg to show us the location of the mercy seat has moved.</span></p>
+        <p><span class="tl-s" data-s="1357.02" data-e="1365.46">No longer is it in a piece of furniture that&#x27;s lugged around by Jewish Levites or priests.</span> <span class="tl-s" data-s="1366.58" data-e="1371.08">The blood of Jesus now speaks better, a better sacrifice.</span> <span class="tl-s" data-s="1371.80" data-e="1377.20">Speaks of a better sacrifice as the writer of the Hebrews says than the blood of bulls and goats.</span> <span class="tl-s" data-s="1378.02" data-e="1381.56">We do not go anymore to the Ark of the Covenant but we go to the King of the Covenant.</span> <span class="tl-s" data-s="1382.26" data-e="1388.16">The ground of our mercy before God is not the blood of bulls and goats but the blood of Jesus Christ.</span> <span class="tl-s" data-s="1389.56" data-e="1397.12">The positioning of the angels in the passage shows us that we plead the blood of Jesus for our sins and nothing else.</span> <span class="tl-s" data-s="1397.94" data-e="1402.28">Friends, his sacrifice covers your and my many sins.</span></p>
+        <p><span class="tl-s" data-s="1404.12" data-e="1405.16">What&#x27;s in it for you?</span> <span class="tl-s" data-s="1405.80" data-e="1409.84">Listen, some of us walk into this room with an immense amount of guilt and shame.</span> <span class="tl-s" data-s="1410.54" data-e="1418.98">It lies heavy upon us and we can&#x27;t shake it and it&#x27;s so tempting to let guilt and shame define us and it tries to but we must not.</span></p>
+        <p><span class="tl-s" data-s="1420.50" data-e="1425.40">We must not because Jesus did not receive mercy but was crushed.</span> <span class="tl-s" data-s="1426.18" data-e="1428.34">We can now receive mercy.</span> <span class="tl-s" data-s="1429.02" data-e="1439.26">The guilt you feel is real but the tug on your heart is meant to have you turn to Jesus so that he can give you mercy.</span></p>
+        <p><span class="tl-s" data-s="1440.68" data-e="1444.28">If you follow Jesus you don&#x27;t have to be defined by your past failures.</span> <span class="tl-s" data-s="1445.60" data-e="1452.28">There&#x27;s no longer any sacrifice necessary for your sins and this may be the greatest thing for us this morning.</span> <span class="tl-s" data-s="1452.58" data-e="1456.12">This may be the answer that we all need.</span> <span class="tl-s" data-s="1456.22" data-e="1457.02">What&#x27;s in it for me?</span> <span class="tl-s" data-s="1457.26" data-e="1469.70">There&#x27;s nothing else for us to do for our many sins. we have received mercy and not because a bull or a goat died but because our Savior died.</span> <span class="tl-s" data-s="1470.66" data-e="1480.26">Friends there is no sacrifice for our sin left because we Christians have already received complete and total forgiveness.</span> <span class="tl-s" data-s="1481.44" data-e="1490.84">Now if we&#x27;re honest there&#x27;s a part of us that wants to pay for our own sins still and you know how we do it?</span> <span class="tl-s" data-s="1492.16" data-e="1501.90">Not by killing animals but by things like hating ourselves thinking how could I do that again?</span></p>
+        <p><span class="tl-s" data-s="1505.08" data-e="1554.56">We want to pay for our sins by holding on to regret and letting it define us or carry shame thinking this is the least I can do or just promise to do better or try hard to make up for the past friends none of those things do anything for you but make you feel worse because none of us can do better enough none of us can wipe away the shame that we carry none of us should live with our past sins as our defining characteristic why?</span> <span class="tl-s" data-s="1554.98" data-e="2443.60">Because Jesus died and rose from the dead and he is now the ground of our hope we may be great sinners but we have a greater savior we may be people who deserve death and hell but we have one who has conquered death and hell we may be those that don&#x27;t deserve anything but punishment but the news this morning that gets us excited is not that we&#x27;ve avoided punishment only but Jesus received our punishment died and rose again and asks nothing for us for salvation except that we would believe that we&#x27;re sinners and we can trust him so what do you have to give to Jesus to accomplish your salvation nothing that&#x27;s what&#x27;s in it for you he did it all he did it all see Jesus comes to you and fortifies you by offering freely freely offering you forgiveness forgiveness and there&#x27;s no longer any sacrifice necessary for your sins now Mary doesn&#x27;t understand this yet she&#x27;s grief stricken and burdened with the thought that the body of Jesus had been stolen and she turns from a tomb full of angels to someone behind her who asks the same question as the angels woman why are you weeping now we the reader in a bit of dramatic irony know that the question asker is Jesus now whether it&#x27;s because her tears are filling her eyes or that he looks a little bit different she doesn&#x27;t recognize him and she thinks he&#x27;s the gardener still notice she&#x27;s not thinking that Jesus might be alive if you if you&#x27;re here and you&#x27;re not a believer and you think man there was this great conspiracy and the disciples they stole the body and they tricked everybody into believing Jesus was alive these eyewitness accounts show us that nobody was thinking that way here Mary has seen angels and she&#x27;s not thinking huh there&#x27;s something different going on something&#x27;s afoot at the circle K today she&#x27;s not thinking that and then Jesus asked the same question of Mary as he did of the Jews and the Romans when they came to arrest him on Thursday night he asked whom do you seek and then recognition thundered upon Mary with a word her name Mary huh and with that the scales fell off her eyes and she knew him and that&#x27;s how it works earlier in this book Jesus said the sheep hear my voice or hear his voice and he calls his own sheep by name and he leads them out Jesus knew her and called her by name he calls you by name too he knows your name Christian your name is never off his lips as he intercedes for you and prays for you you may not be able to hear him praying but that doesn&#x27;t mean he&#x27;s not it just means we have limited abilities of perception immediately Mary falls and grabs on to Jesus and we have this strange statement in verse 17 verse 17 Jesus says do not cling to me for I have not yet ascended to the father but go to my brothers and say to them I am ascending to my father and your father and to my God and your God so a couple things to notice she can grab him so this is no ghost but this is the physically resurrected Jesus Christ what&#x27;s confusing here is all this business about not ascended yet you read it and it&#x27;s like what is going on this isn&#x27;t very comforting this doesn&#x27;t seem very encouraging but what Jesus is doing is telling Mary where he must go to do the most good essentially he&#x27;s saying it would do no good for him to wander around the earth resurrected tumbling here and there he must ascend to the father to fulfill his mission and when he ascends to the father to fulfill his mission it&#x27;s there seated at the right hand of the father physically that he will be able to be present with his people for all times and in all places only if he ascends to the father and takes his place at the right hand so in verse 17 we could summarize or maybe paraphrase this to say something like Jesus is saying I&#x27;m not going to do any good for anyone if I stick around here with you holding on to me I got to go ascend soon go tell my brothers that I am alive but I am leaving soon did you notice that when he tells her to go speak to the disciples he doesn&#x27;t use the word disciples he uses the word brothers for I have not yet ascended to the father we see in verse 17 but go to my brothers and say to them I am ascending to my father now get this and your father to my God and your God now if there was a group of guys that did not deserve to be called his brothers it was the group of guys that abandoned him in his hour of need and yet here we have Jesus saying go tell my brothers not only tell my brothers I&#x27;m alive but tell them my father is now their father these guys who abandoned and rejected Jesus Jesus calls brothers Jesus never treats his people as their sins deserve and so as we look at the empty tomb and face the risen Jesus when we ask what&#x27;s in it for me adoption into his family friends we Christians are not merely forgiven as significant as that is but we are now family we&#x27;re included in the family of the most high God the risen Jesus calls himself brother and tells us to call his father our father why because he loves us too often we can think that the Lord is contractually obligated to forgive us because we ask Jesus in our heart when we were six that&#x27;s not why it&#x27;s because he loves us he loves us and he wants us in his family he wants us close he wants us close he wants us to be in his family and because as long as Jesus will be alive and that&#x27;s forever we will always Christians be his brothers he will always be our brother we will always be his brothers and sisters and his father will always be our father and he would not could not will never disown us discipline yes disown no if you&#x27;re a parent think about you with your children sometimes they make you spitting mad but you would never disown them why because you love them not just a love that says I love you but if you have a child you know as a parent you would do anything for this child and that doesn&#x27;t change when the child grows up you would if you could move heaven and earth and control everything you could for the good of that child friends friends our father and our brother think of us like that with that kind of love how does Jesus the risen Jesus come and fortify us and strengthen us personally by calling us family you and I Christians are forever adopted into his family and we will always have a place to belong so what&#x27;s in it for me what&#x27;s in it for us adoption into his family a gift that we would never presume to take but because it&#x27;s written here in scripture it&#x27;s a promise we must hold on to or we will miss the significance of the empty tomb and lastly one more Easter egg notice all of this took place in a garden you can tell because Mary thought Jesus was a gardener and he is kind of he was planted in the ground and he came up the garden setting here in John chapter 20 is meant to make us recall another garden setting a garden named Eden at Eden that was the place humanity betrayed God but here this is the place God shows his faithfulness to humanity at Eden that was the place where the serpent deceived the woman but here in the garden tomb this is the place where the son shows the woman all truth in Eden that was the place where sin and death entered the world here in the garden tomb is the place where sin and death have been defeated forever at Eden that was the place where the serpent promised that mankind could be like God but here in the garden tomb we see that God had become man at Eden we hear a talkative serpent and here at the garden tomb the serpent is completely silenced and out of the picture with nothing to say at Eden it was the place of Adam&#x27;s great failure that forever marked mankind but here in the garden tomb this is the place of Jesus&#x27; victory that forever marks all Christians at Eden it was a place of great loss here in the garden tomb more was gained then was lost why because Jesus rose from the dead and one day we Christians will all be welcomed to the garden city the new heavens and the new earth and in the new kingdom it will finally come and we will be citizens we are now but we will be there together with him forever why what&#x27;s in it for me because Jesus is alive friends because Jesus is alive everything that matters if you&#x27;re a Christian is now yours everything your today is secure your forever is secure you don&#x27;t have to be afraid you don&#x27;t have to worry about past sins you are adopted into his family why because he&#x27;s alive and he&#x27;s not dying again let&#x27;s pray but I pray that you would help all of us but I don&#x27;t know all the different stories of all the different people in this room but I do know Lord I do know that you are alive and so Lord I pray for those who are Christians I pray that you would build up and strengthen them I pray for those who are not Christians Lord I pray that you would pique their interest Lord for those that are Christians that came in feeling fear or regret or shame Lord I pray that they would be able to make a direct line from your risen the fact that you are risen again that you rose from the dead I pray that they would see that their guilt and shame and fear have been paid for and there&#x27;s no reason to carry those things around anymore Jesus thank you for taking our sin upon yourself so that we might receive your blessing in full measure for those here who are not Christians or anyone listening to my voice Lord you know that there&#x27;s no combination of words I can say to make somebody believe but we rely on your spirit to prick their hearts touch their consciences open their minds to the truth and Lord I ask I ask that there would be people today</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Center Church home">
+          <img class="brand-logo" src="/logo.png" alt="Center Church" />
+        </a>
+        <p>Center Church's goal is to help people remain fixed on Jesus in all areas of life. Wherever you are on your spiritual journey, you are welcome to join us.</p>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/beliefs">Beliefs</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/connect">Get Connected</a></li>
+          <li><a href="/sermons">Sermons</a></li>
+              <li><a href="/podcast">Fixed on Jesus Podcast</a></li>
+          <li><a href="/visit">Visit</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Information</h4>
+        <ul>
+          <li><a href="mailto:info@centergilbert.com">info@centergilbert.com</a></li>
+          <li><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ 85233</a></li>
+          <li><a href="https://centerchurchgilbert.churchcenter.com/home">Church Center App</a></li>
+          <li><a href="https://www.facebook.com/centergilbert">Facebook</a></li>
+          <li><a href="https://instagram.com/centergilbert_">Instagram</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/center-church-gilbert-sermons/id1667134073">Apple Podcasts</a></li>
+          <li><a href="https://open.spotify.com/show/4bPRAwHcRw08NO9uQWWtty">Spotify</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Center Church. All Rights Reserved.</span>
+      <span>Sundays · 10:00 AM · Gilbert, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=8"></script>
+  <script>
+  // Live sermon feed: spotlight from /api/sermons, browsable archive from
+  // /api/sermons/search. Static fallback list stays for no-JS.
+  (function () {
+    var list = document.querySelector("[data-sermons-list]");
+    if (!list) return;
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+    function fmtDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    function row(it) {
+      var meta = [it.speaker, fmtDate(it.date)].filter(Boolean).join(" · ");
+      var audio = it.audio
+        ? '<audio controls preload="none" src="' + esc(it.audio) + '"></audio>'
+        : "";
+      var longDesc = it.description && it.description.length > 220;
+      var desc = it.description
+        ? '<p class="sermon-desc' + (longDesc ? ' clamped' : '') + '" data-desc>' + esc(it.description) + "</p>" +
+          (longDesc ? '<button class="sermon-more" type="button" data-more aria-expanded="false">See more</button>' : '')
+        : "";
+      var titleHtml = esc(it.title);
+      var tUrl = it.guid && transcriptMap[it.guid];
+      if (tUrl) titleHtml = '<a href="' + esc(tUrl) + '">' + titleHtml + "</a>";
+      return '<div class="sermon"><div><h3>' + titleHtml + '</h3>' +
+        (meta ? '<div class="meta">' + esc(meta) + "</div>" : "") + desc + audio +
+        "</div></div>";
+    }
+
+    fetch("/api/sermons?v=3")
+      .then(function (res) { if (!res.ok) throw new Error("feed " + res.status); return res.json(); })
+      .then(function (data) {
+        var spot = document.querySelector("[data-series-spotlight]");
+        if (data && data.series && spot) {
+          var s = data.series;
+          var art = spot.querySelector("[data-series-art]");
+          if (art && s.artwork) { art.src = s.artwork; } else if (art) { art.style.display = "none"; }
+          var nm = spot.querySelector("[data-series-name]");
+          if (nm) nm.textContent = s.name;
+          var bl = spot.querySelector("[data-series-blurb]");
+          if (bl) bl.textContent = s.blurb;
+          spot.hidden = false;
+        }
+      })
+      .catch(function () { /* spotlight stays hidden */ });
+
+    var PER = 10;
+    var state = { q: "", speaker: "", series: "", month: "", page: 1 };
+    // List state <-> query string (?q=&speaker=&series=&month=&page=), so
+    // browser-back and episode-page-back restore the exact list.
+    function readURL() {
+      var p = new URLSearchParams(window.location.search);
+      state.q = p.get("q") || "";
+      state.speaker = p.get("speaker") || "";
+      state.series = p.get("series") || "";
+      state.month = p.get("month") || "";
+      var pg = parseInt(p.get("page") || "1", 10);
+      state.page = pg >= 1 ? pg : 1;
+    }
+    function writeURL(mode) {
+      var p = new URLSearchParams();
+      if (state.q) p.set("q", state.q);
+      if (state.speaker) p.set("speaker", state.speaker);
+      if (state.series) p.set("series", state.series);
+      if (state.month) p.set("month", state.month);
+      if (state.page > 1) p.set("page", String(state.page));
+      var qs = p.toString();
+      var next = window.location.pathname + (qs ? "?" + qs : "");
+      if (next === window.location.pathname + window.location.search) return;
+      try {
+        if (mode === "push") window.history.pushState(null, "", next);
+        else window.history.replaceState(null, "", next);
+      } catch (e) { /* history may throw in some private modes */ }
+    }
+    readURL();
+    // Episode guid -> transcript path (public/transcripts.json, maintained
+    // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
+    var transcriptMap = {};
+    var seq = 0;
+    var facetsLoaded = false;
+    var pager = document.querySelector("[data-sermons-pager]");
+    var prevBtn = document.querySelector("[data-sermons-prev]");
+    var nextBtn = document.querySelector("[data-sermons-next]");
+    var pageEl = document.querySelector("[data-sermons-page]");
+    var countEl = document.querySelector("[data-sermons-count]");
+    var searchBox = document.querySelector("[data-sermons-search]");
+    var input = document.querySelector("[data-sermons-q]");
+    var speakerSel = document.querySelector("[data-sermons-speaker]");
+    var seriesSel = document.querySelector("[data-sermons-series]");
+    var monthSel = document.querySelector("[data-sermons-month]");
+    var clearBtn = document.querySelector("[data-sermons-clear]");
+    if (input) input.value = state.q;
+
+    function fill(sel, entries, getValue, getLabel) {
+      if (!sel) return;
+      while (sel.options.length > 1) sel.remove(1);
+      entries.forEach(function (e) {
+        var o = document.createElement("option");
+        o.value = getValue(e);
+        o.textContent = getLabel(e);
+        sel.appendChild(o);
+      });
+    }
+
+    function render(data) {
+      if (!data || !data.items) return;
+      if (!data.items.length) {
+        list.innerHTML = '<p class="lede">No messages found. Try a different search.</p>';
+      } else {
+        list.innerHTML = data.items.map(row).join("");
+      }
+      if (data.facets && !facetsLoaded) {
+        facetsLoaded = true;
+        fill(speakerSel, data.facets.speakers || [], function (e) { return e.name; }, function (e) { return e.name + " (" + e.count + ")"; });
+        fill(seriesSel, data.facets.series || [], function (e) { return e.name; }, function (e) { return e.name + " (" + e.count + ")"; });
+        fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+        // Facet options are built once; re-apply URL-restored values.
+        if (speakerSel) speakerSel.value = state.speaker;
+        if (seriesSel) seriesSel.value = state.series;
+        if (monthSel) monthSel.value = state.month;
+      }
+      var active = Boolean(data.q || data.speaker || data.series || data.month);
+      if (countEl) {
+        if (active) {
+          var parts = [];
+          if (data.q) parts.push('"' + data.q + '"');
+          if (data.speaker) parts.push("by " + data.speaker);
+          if (data.series) parts.push("in " + data.series);
+          if (data.month_label) parts.push("in " + data.month_label);
+          countEl.textContent = data.total + " result" + (data.total === 1 ? "" : "s") +
+            (parts.length ? " for " + parts.join(" ") : "");
+        } else {
+          var start = data.total ? (data.page - 1) * data.per_page + 1 : 0;
+          var end = Math.min(data.total, data.page * data.per_page);
+          countEl.textContent = "Showing " + start + "–" + end + " of " + data.total + " messages";
+        }
+        countEl.hidden = false;
+      }
+      if (clearBtn) clearBtn.hidden = !active;
+      if (pager) {
+        var multi = data.total_pages > 1;
+        pager.hidden = !multi;
+        if (pageEl) pageEl.textContent = "Page " + data.page + " of " + data.total_pages;
+        if (prevBtn) prevBtn.disabled = data.page <= 1;
+        if (nextBtn) nextBtn.disabled = data.page >= data.total_pages;
+      }
+      state.page = data.page;
+    }
+
+    function load(scroll) {
+      var my = ++seq;
+      var url = "/api/sermons/search?per=" + PER + "&page=" + state.page +
+        (state.q ? "&q=" + encodeURIComponent(state.q) : "") +
+        (state.speaker ? "&speaker=" + encodeURIComponent(state.speaker) : "") +
+        (state.series ? "&series=" + encodeURIComponent(state.series) : "") +
+        (state.month ? "&month=" + encodeURIComponent(state.month) : "");
+      fetch(url)
+        .then(function (res) { if (!res.ok) throw new Error("search " + res.status); return res.json(); })
+        .then(function (data) {
+          if (my !== seq) return; // ignore out-of-order responses
+          render(data);
+          if (scroll && searchBox && searchBox.scrollIntoView) {
+            searchBox.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        })
+        .catch(function () { /* keep current list on error */ });
+    }
+
+    function resetFilters() {
+      state.q = ""; state.speaker = ""; state.series = ""; state.month = ""; state.page = 1;
+      if (input) input.value = "";
+      if (speakerSel) speakerSel.value = "";
+      if (seriesSel) seriesSel.value = "";
+      if (monthSel) monthSel.value = "";
+      writeURL("push");
+      load(false);
+    }
+
+    var deb = null;
+    if (input) {
+      input.addEventListener("input", function () {
+        clearTimeout(deb);
+        deb = setTimeout(function () {
+          state.q = input.value.trim();
+          state.page = 1;
+          writeURL("replace");
+          load(false);
+        }, 250);
+      });
+    }
+    function bindSelect(sel, key) {
+      if (!sel) return;
+      sel.addEventListener("change", function () {
+        state[key] = sel.value;
+        state.page = 1;
+        writeURL("push");
+        load(false);
+      });
+    }
+    bindSelect(speakerSel, "speaker");
+    bindSelect(seriesSel, "series");
+    bindSelect(monthSel, "month");
+    if (clearBtn) clearBtn.addEventListener("click", resetFilters);
+    if (prevBtn) prevBtn.addEventListener("click", function () {
+      if (state.page > 1) { state.page -= 1; writeURL("push"); load(true); }
+    });
+    if (nextBtn) nextBtn.addEventListener("click", function () {
+      state.page += 1; writeURL("push"); load(true);
+    });
+    // In-list back/forward restores the list without a full reload.
+    window.addEventListener("popstate", function () {
+      readURL();
+      if (input) input.value = state.q;
+      if (speakerSel) speakerSel.value = state.speaker;
+      if (seriesSel) seriesSel.value = state.series;
+      if (monthSel) monthSel.value = state.month;
+      load(false);
+    });
+    // "See more / See less" for long descriptions (event delegation so it
+    // works for every dynamically rendered row).
+    if (list) list.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest("[data-more]") : null;
+      if (!btn || !list.contains(btn)) return;
+      var card = btn.closest(".sermon");
+      var p = card ? card.querySelector("[data-desc]") : null;
+      if (!p) return;
+      var nowClamped = p.classList.toggle("clamped");
+      btn.textContent = nowClamped ? "See more" : "See less";
+      btn.setAttribute("aria-expanded", nowClamped ? "false" : "true");
+    });
+
+    // Transcript links: fetch the guid->path manifest first so titles link
+    // on first paint; the list still renders if the manifest fails.
+    fetch("/transcripts.json", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error("transcripts " + res.status); return res.json(); })
+      .then(function (m) { if (m) transcriptMap = m; load(false); },
+        function () { load(false); });
+  })();
+  </script>
+  <script src="/readalong.js?v=2"></script>
+<!-- guid: https://hub.centergilbert.com/media/easter-sunday-2183 -->
+</body>
+</html>
