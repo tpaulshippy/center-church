@@ -12,7 +12,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  <link rel="stylesheet" href="/styles.css?v=21" />
+  <link rel="stylesheet" href="/styles.css?v=22" />
 </head>
 <body>
   <header class="site-header">
@@ -326,12 +326,56 @@
     // as fake content. No-JS visitors keep the static fallback.
     var fallbackHTML = list.innerHTML;
     var hasLoaded = false;
-    function skeleton() {
-      var row = '<div class="cal-skel-row" aria-hidden="true">' +
-        '<span class="cal-skel-time"></span>' +
-        '<span class="cal-skel-main"><span class="cal-skel-bar w70"></span>' +
-        '<span class="cal-skel-bar w45"></span></span></div>';
-      return '<div class="cal-skel">' + row + row + row + row + "</div>";
+    var skelTimer = null;
+    function isDesktop() {
+      return window.matchMedia && window.matchMedia("(min-width: 901px)").matches;
+    }
+    // Agenda skeleton: same footprint as a .cal-row (time + title + sub + chevron).
+    // Container carries aria-hidden so screen readers skip the shimmer.
+    function skeletonList() {
+      var widths = [["w70", "w45"], ["w90", "w55"], ["w60", "w35"], ["w70", "w45"], ["w90", "w35"]];
+      var rows = widths.map(function (w) {
+        return '<div class="cal-skel-row">' +
+          '<span class="cal-skel-time"></span>' +
+          '<span class="cal-skel-main"><span class="cal-skel-bar ' + w[0] + '"></span>' +
+          '<span class="cal-skel-bar ' + w[1] + '"></span></span>' +
+          '<span class="cal-skel-chev"></span></div>';
+      }).join("");
+      return '<div class="cal-skel" aria-hidden="true">' + rows + "</div>";
+    }
+    // Month-grid skeleton: mirrors renderGrid — 7 day-of-week headers plus
+    // 35 day cells with a day-number dot and 0-2 chip-like shimmer bars.
+    // Returns flat children for [data-calendar-grid] (the .cal-grid
+    // container already provides the 7-column grid styling).
+    function skeletonGrid() {
+      var dows = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+      var html = dows.map(function (d) { return '<div class="cal-dow">' + d + "</div>"; }).join("");
+      var pattern = [2, 1, 1, 0, 2, 1, 0, 1, 2, 0, 1, 1, 2, 0, 1, 0, 2, 1, 0, 1, 2, 1, 0, 1, 0, 2, 1, 1, 0, 2, 1, 0, 1, 2, 0];
+      var cells = pattern.map(function (n, i) {
+        var chips = "";
+        for (var c = 0; c < n; c++) {
+          chips += '<span class="cal-chip-skel' + (c === 1 ? " short" : "") + '"></span>';
+        }
+        var dim = (i % 7 === 0 || i % 7 === 6) && n === 0 ? " is-dim" : "";
+        return '<div class="cal-day cal-day-skel' + dim + '" aria-hidden="true"><span class="cal-day-num cal-day-num-skel"></span>' + chips + "</div>";
+      }).join("");
+      return html + cells;
+    }
+    // Show the skeleton matching the current breakpoint; hide the empty
+    // message while loading so it never flashes next to shimmer.
+    function showSkeleton() {
+      if (emptyEl) emptyEl.hidden = true;
+      if (isDesktop()) {
+        if (grid) {
+          grid.setAttribute("aria-hidden", "true");
+          grid.innerHTML = skeletonGrid();
+        }
+      } else {
+        list.innerHTML = skeletonList();
+      }
+    }
+    function clearSkelTimer() {
+      if (skelTimer) { clearTimeout(skelTimer); skelTimer = null; }
     }
     // expanded adds full when-line, recurrence, description, and link.
     // The <details> row itself is the toggle — no See more button needed.
@@ -458,6 +502,7 @@
     function render(data) {
       var events = (data && data.events) || [];
       hasLoaded = true;
+      if (grid) grid.removeAttribute("aria-hidden");
       if (titleEl) titleEl.textContent = monthTitle(state.month);
       renderGrid(events);
       syncNav();
@@ -498,15 +543,33 @@
       var my = ++seq;
       if (titleEl) titleEl.textContent = monthTitle(state.month);
       syncNav();
-      if (!hasLoaded) list.innerHTML = skeleton();
+      if (emptyEl) emptyEl.hidden = true;
+      clearSkelTimer();
+      if (!hasLoaded) {
+        showSkeleton();
+      } else {
+        // Subsequent navigations: wait briefly so fast cached loads
+        // never flash a skeleton between real content.
+        skelTimer = setTimeout(function () {
+          skelTimer = null;
+          if (my !== seq) return;
+          showSkeleton();
+        }, 180);
+      }
       fetch(url())
         .then(function (res) { if (!res.ok) throw new Error("calendar " + res.status); return res.json(); })
         .then(function (data) {
           if (my !== seq) return;
+          clearSkelTimer();
           render(data);
         })
         .catch(function () {
-          if (!hasLoaded) list.innerHTML = fallbackHTML;
+          if (my !== seq) return;
+          clearSkelTimer();
+          if (!hasLoaded) {
+            list.innerHTML = fallbackHTML;
+            if (grid && isDesktop()) grid.innerHTML = "";
+          }
         });
     }
     if (prevBtn) prevBtn.addEventListener("click", function () {

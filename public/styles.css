@@ -489,11 +489,33 @@ a.chip:hover { background: rgba(0,0,0,0.55); }
 .cal-chip.is-allday time { color: #e8a76f; }
 span.cal-chip { cursor: default; }
 .cal-empty { margin-top: 1rem; color: var(--muted); font-weight: 600; }
+/* calendar loading shimmer: shared by list + grid skeletons */
+@keyframes cal-shimmer { to { background-position: -200% 0; } }
+.cal-skel-time, .cal-skel-bar, .cal-skel-chev,
+.cal-chip-skel, .cal-day-num-skel {
+  background: linear-gradient(90deg, var(--cream-2) 25%, #fff 50%, var(--cream-2) 75%);
+  background-size: 200% 100%;
+  animation: cal-shimmer 1.2s linear infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .cal-skel-time, .cal-skel-bar, .cal-skel-chev,
+  .cal-chip-skel, .cal-day-num-skel { animation: none; }
+}
 /* desktop shows the grid, mobile keeps the stacked list */
 .cal-grid-wrap { display: none; }
 @media (min-width: 901px) {
   .cal-grid-wrap { display: block; }
   .sermon-list[data-calendar-list] { display: none; }
+  /* month-grid skeleton: flat children of .cal-grid, mirroring renderGrid
+     (7 .cal-dow headers + day cells with number dot + chip shimmer bars).
+     Hidden on mobile via .cal-grid-wrap; list skeleton hidden on desktop
+     via .sermon-list[data-calendar-list]. */
+  .cal-day-skel { min-height: 118px; }
+  .cal-day-skel.is-dim { background: var(--cream-2); }
+  .cal-day-skel.is-dim .cal-day-num-skel { opacity: 0.6; }
+  .cal-day-num-skel { width: 1.4rem; height: 1.4rem; border-radius: 50%; flex: none; }
+  .cal-chip-skel { display: block; height: 1.9rem; border-radius: 8px; border: 1px solid var(--line); }
+  .cal-chip-skel.short { height: 1.4rem; width: 68%; }
 }
 
 /* responsive */
@@ -579,22 +601,21 @@ span.cal-chip { cursor: default; }
   /* loading skeletons: same footprint as agenda rows, shimmer while fetching */
   .cal-skel { display: grid; gap: 0.5rem; margin-top: 1.25rem; }
   .cal-skel-row {
-    display: grid; grid-template-columns: 3.9rem minmax(0, 1fr);
+    display: grid; grid-template-columns: 3.9rem minmax(0, 1fr) auto;
     gap: 0.75rem; align-items: start;
     background: #fff; border: 1px solid var(--line); border-radius: 14px;
     padding: 0.8rem 0.9rem;
   }
   .cal-skel-time { display: block; width: 3rem; height: 0.75rem; margin-top: 0.3rem; border-radius: 4px; }
-  .cal-skel-main { display: grid; gap: 0.5rem; padding-top: 0.15rem; }
+  .cal-skel-main { display: grid; gap: 0.5rem; padding-top: 0.15rem; min-width: 0; }
   .cal-skel-bar { display: block; height: 0.95rem; border-radius: 6px; }
   .cal-skel-bar.w70 { width: 70%; }
   .cal-skel-bar.w45 { width: 45%; height: 0.8rem; }
-  .cal-skel-time, .cal-skel-bar {
-    background: linear-gradient(90deg, var(--cream-2) 25%, #fff 50%, var(--cream-2) 75%);
-    background-size: 200% 100%;
-    animation: cal-shimmer 1.2s linear infinite;
-  }
-  @keyframes cal-shimmer { to { background-position: -200% 0; } }
+  .cal-skel-bar.w90 { width: 90%; }
+  .cal-skel-bar.w55 { width: 55%; height: 0.8rem; }
+  .cal-skel-bar.w60 { width: 60%; }
+  .cal-skel-bar.w35 { width: 35%; height: 0.8rem; }
+  .cal-skel-chev { display: block; width: 0.7rem; height: 1.1rem; margin-top: 0.2rem; border-radius: 4px; opacity: 0.7; }
 }
 @media (max-width: 600px) {
   .grid-3, .leader-grid, .quotes, .info-grid, .steps { grid-template-columns: 1fr; }
