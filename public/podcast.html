@@ -231,7 +231,7 @@
     </div>
   </footer>
 
-  <script src="/script.js?v=7"></script>
+  <script src="/script.js?v=8"></script>
   <script>
   // Fixed on Jesus episode archive, backed by /api/podcast/search.
   // Static fallback list above stays for no-JS.
@@ -292,6 +292,29 @@
 
     var PER = 10;
     var state = { q: "", month: "", page: 1 };
+    // List state <-> query string (?q=&month=&page=), so browser-back and
+    // episode-page-back restore the exact list.
+    function readURL() {
+      var p = new URLSearchParams(window.location.search);
+      state.q = p.get("q") || "";
+      state.month = p.get("month") || "";
+      var pg = parseInt(p.get("page") || "1", 10);
+      state.page = pg >= 1 ? pg : 1;
+    }
+    function writeURL(mode) {
+      var p = new URLSearchParams();
+      if (state.q) p.set("q", state.q);
+      if (state.month) p.set("month", state.month);
+      if (state.page > 1) p.set("page", String(state.page));
+      var qs = p.toString();
+      var next = window.location.pathname + (qs ? "?" + qs : "");
+      if (next === window.location.pathname + window.location.search) return;
+      try {
+        if (mode === "push") window.history.pushState(null, "", next);
+        else window.history.replaceState(null, "", next);
+      } catch (e) { /* history may throw in some private modes */ }
+    }
+    readURL();
     // Episode guid -> transcript path (public/transcripts.json, maintained
     // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
     var transcriptMap = {};
@@ -306,6 +329,7 @@
     var input = document.querySelector("[data-sermons-q]");
     var monthSel = document.querySelector("[data-sermons-month]");
     var clearBtn = document.querySelector("[data-sermons-clear]");
+    if (input) input.value = state.q;
 
     function fill(sel, entries, getValue, getLabel) {
       if (!sel) return;
@@ -328,6 +352,8 @@
       if (data.facets && !facetsLoaded) {
         facetsLoaded = true;
         fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+        // Facet options are built once; re-apply the URL-restored value.
+        if (monthSel) monthSel.value = state.month;
       }
       var active = Boolean(data.q || data.month);
       if (countEl) {
@@ -381,6 +407,7 @@
       state.q = ""; state.month = ""; state.page = 1;
       if (input) input.value = "";
       if (monthSel) monthSel.value = "";
+      writeURL("push");
       load(false);
     }
 
@@ -391,6 +418,7 @@
         deb = setTimeout(function () {
           state.q = input.value.trim();
           state.page = 1;
+          writeURL("replace");
           load(false);
         }, 250);
       });
@@ -399,15 +427,23 @@
       monthSel.addEventListener("change", function () {
         state.month = monthSel.value;
         state.page = 1;
+        writeURL("push");
         load(false);
       });
     }
     if (clearBtn) clearBtn.addEventListener("click", resetFilters);
     if (prevBtn) prevBtn.addEventListener("click", function () {
-      if (state.page > 1) { state.page -= 1; load(true); }
+      if (state.page > 1) { state.page -= 1; writeURL("push"); load(true); }
     });
     if (nextBtn) nextBtn.addEventListener("click", function () {
-      state.page += 1; load(true);
+      state.page += 1; writeURL("push"); load(true);
+    });
+    // In-list back/forward restores the list without a full reload.
+    window.addEventListener("popstate", function () {
+      readURL();
+      if (input) input.value = state.q;
+      if (monthSel) monthSel.value = state.month;
+      load(false);
     });
     // "See more / See less" for long descriptions (event delegation so it
     // works for every dynamically rendered row).

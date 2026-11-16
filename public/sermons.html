@@ -289,7 +289,7 @@
     </div>
   </footer>
 
-  <script src="/script.js?v=7"></script>
+  <script src="/script.js?v=8"></script>
   <script>
   // Live sermon feed: spotlight from /api/sermons, browsable archive from
   // /api/sermons/search. Static fallback list stays for no-JS.
@@ -345,6 +345,33 @@
 
     var PER = 10;
     var state = { q: "", speaker: "", series: "", month: "", page: 1 };
+    // List state <-> query string (?q=&speaker=&series=&month=&page=), so
+    // browser-back and episode-page-back restore the exact list.
+    function readURL() {
+      var p = new URLSearchParams(window.location.search);
+      state.q = p.get("q") || "";
+      state.speaker = p.get("speaker") || "";
+      state.series = p.get("series") || "";
+      state.month = p.get("month") || "";
+      var pg = parseInt(p.get("page") || "1", 10);
+      state.page = pg >= 1 ? pg : 1;
+    }
+    function writeURL(mode) {
+      var p = new URLSearchParams();
+      if (state.q) p.set("q", state.q);
+      if (state.speaker) p.set("speaker", state.speaker);
+      if (state.series) p.set("series", state.series);
+      if (state.month) p.set("month", state.month);
+      if (state.page > 1) p.set("page", String(state.page));
+      var qs = p.toString();
+      var next = window.location.pathname + (qs ? "?" + qs : "");
+      if (next === window.location.pathname + window.location.search) return;
+      try {
+        if (mode === "push") window.history.pushState(null, "", next);
+        else window.history.replaceState(null, "", next);
+      } catch (e) { /* history may throw in some private modes */ }
+    }
+    readURL();
     // Episode guid -> transcript path (public/transcripts.json, maintained
     // by scripts/transcripts/add-transcript.sh). Titles link when a transcript exists.
     var transcriptMap = {};
@@ -361,6 +388,7 @@
     var seriesSel = document.querySelector("[data-sermons-series]");
     var monthSel = document.querySelector("[data-sermons-month]");
     var clearBtn = document.querySelector("[data-sermons-clear]");
+    if (input) input.value = state.q;
 
     function fill(sel, entries, getValue, getLabel) {
       if (!sel) return;
@@ -385,6 +413,10 @@
         fill(speakerSel, data.facets.speakers || [], function (e) { return e.name; }, function (e) { return e.name + " (" + e.count + ")"; });
         fill(seriesSel, data.facets.series || [], function (e) { return e.name; }, function (e) { return e.name + " (" + e.count + ")"; });
         fill(monthSel, data.facets.months || [], function (e) { return e.id; }, function (e) { return e.label + " (" + e.count + ")"; });
+        // Facet options are built once; re-apply URL-restored values.
+        if (speakerSel) speakerSel.value = state.speaker;
+        if (seriesSel) seriesSel.value = state.series;
+        if (monthSel) monthSel.value = state.month;
       }
       var active = Boolean(data.q || data.speaker || data.series || data.month);
       if (countEl) {
@@ -439,6 +471,7 @@
       if (speakerSel) speakerSel.value = "";
       if (seriesSel) seriesSel.value = "";
       if (monthSel) monthSel.value = "";
+      writeURL("push");
       load(false);
     }
 
@@ -449,6 +482,7 @@
         deb = setTimeout(function () {
           state.q = input.value.trim();
           state.page = 1;
+          writeURL("replace");
           load(false);
         }, 250);
       });
@@ -458,6 +492,7 @@
       sel.addEventListener("change", function () {
         state[key] = sel.value;
         state.page = 1;
+        writeURL("push");
         load(false);
       });
     }
@@ -466,10 +501,19 @@
     bindSelect(monthSel, "month");
     if (clearBtn) clearBtn.addEventListener("click", resetFilters);
     if (prevBtn) prevBtn.addEventListener("click", function () {
-      if (state.page > 1) { state.page -= 1; load(true); }
+      if (state.page > 1) { state.page -= 1; writeURL("push"); load(true); }
     });
     if (nextBtn) nextBtn.addEventListener("click", function () {
-      state.page += 1; load(true);
+      state.page += 1; writeURL("push"); load(true);
+    });
+    // In-list back/forward restores the list without a full reload.
+    window.addEventListener("popstate", function () {
+      readURL();
+      if (input) input.value = state.q;
+      if (speakerSel) speakerSel.value = state.speaker;
+      if (seriesSel) seriesSel.value = state.series;
+      if (monthSel) monthSel.value = state.month;
+      load(false);
     });
     // "See more / See less" for long descriptions (event delegation so it
     // works for every dynamically rendered row).

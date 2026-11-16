@@ -12,6 +12,22 @@ document.addEventListener("DOMContentLoaded", () => {
     el.textContent = new Date().getFullYear();
   });
 
+  // Transcript "back" links preserve the archive list state: when arriving
+  // from /sermons or /podcast with a query string (?q=&...&page=), point the
+  // back link at that exact URL so the reader returns to the same list.
+  try {
+    const back = document.querySelector("a.transcript-back");
+    if (back && document.referrer) {
+      const r = new URL(document.referrer, window.location.origin);
+      const sameOrigin = r.origin === window.location.origin;
+      const fromArchive = ["/sermons", "/sermons.html", "/podcast", "/podcast.html"]
+        .includes(r.pathname);
+      if (sameOrigin && fromArchive && r.search) {
+        back.setAttribute("href", r.pathname.replace(/\.html$/, "") + r.search);
+      }
+    }
+  } catch (e) { /* keep the default back-link href */ }
+
   // Tap/click support for nav dropdowns (touch laptops, and backup for hover).
   // First tap opens the menu; second tap follows the link.
   document.querySelectorAll(".nav-links > li.has-menu > a").forEach((link) => {
