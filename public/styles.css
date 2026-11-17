@@ -13,16 +13,67 @@
   --radius: 22px;
   --font-display: "Inter Tight", "Archivo", -apple-system, "Segoe UI", sans-serif;
   --font-body: "Inter", -apple-system, "Segoe UI", sans-serif;
+
+  /* ---- theme surfaces ----
+     Every page follows the device's light/dark preference (no toggle, no JS).
+     Only these pale surfaces change between themes. The always-dark bands
+     (.hero, .page-hero, .dark, .verse, .site-footer, .series-spotlight,
+     .directions-split, .sunday-fixed) keep the literal --ink/--cream values
+     below, so they look identical in both themes. */
+  --page: var(--cream);
+  --page-2: var(--cream-2);
+  --surface: #fff;
+  --text: var(--ink);
+  --text-2: var(--muted);
+  --accent: var(--clay-dark);
+  --accent-soft: var(--clay);
+  --border: var(--line);
+  --shadow: rgba(23, 19, 16, 0.35);
+  --header-bg: rgba(250, 246, 239, 0.92);
+  --avatar-bg: var(--ink-2);
+  --avatar-fg: var(--cream);
+  --chip-bg: #fbf3e6;
+  --chip-bg-hover: #f7e7d2;
+  --chip-fg: var(--ink);
+  --chip-border: rgba(194, 112, 61, 0.35);
+  --logo-plate: #f4f1eb;
+  --btn-strong-hover: #000;
+}
+
+/* Dark theme: the same tokens re-pointed at the church's warm ink palette.
+   Values are picked for contrast on #14100c, not just inverted brightness. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --page: #14100c;
+    --page-2: #1d1713;
+    --surface: #241d17;
+    --text: #f3ebdf;
+    --text-2: var(--muted-dark);
+    --accent: #e8a76f;
+    --accent-soft: #e8a76f;
+    --border: rgba(250, 246, 239, 0.16);
+    --shadow: rgba(0, 0, 0, 0.6);
+    --header-bg: rgba(20, 16, 12, 0.92);
+    --avatar-bg: var(--cream);
+    --avatar-fg: var(--ink-2);
+    --chip-bg: rgba(194, 112, 61, 0.18);
+    --chip-bg-hover: rgba(194, 112, 61, 0.3);
+    --chip-fg: #f3ebdf;
+    --chip-border: rgba(232, 167, 111, 0.38);
+    --btn-strong-hover: #fff;
+  }
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { scroll-behavior: smooth; }
+/* light dark: lets the browser theme native UI (audio player, select menus,
+   scrollbars, carets) to match the page in both preferences. */
+html { scroll-behavior: smooth; color-scheme: light dark; }
 
 body {
   font-family: var(--font-body);
-  background: var(--cream);
-  color: var(--ink);
+  background: var(--page);
+  color: var(--text);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
@@ -39,7 +90,7 @@ a { color: inherit; }
   font-weight: 700;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--clay);
+  color: var(--accent-soft);
   margin-bottom: 0.9rem;
 }
 .eyebrow.on-dark { color: #e8a76f; }
@@ -53,7 +104,7 @@ h1, h2, h3, .display {
 .display-xl { font-size: clamp(2.9rem, 7.5vw, 6rem); font-weight: 800; text-transform: uppercase; }
 .display-lg { font-size: clamp(2rem, 4.6vw, 3.4rem); font-weight: 800; text-transform: uppercase; }
 .display-md { font-size: clamp(1.5rem, 3vw, 2.2rem); font-weight: 800; }
-.lede { font-size: clamp(1.05rem, 1.6vw, 1.3rem); color: var(--muted); }
+.lede { font-size: clamp(1.05rem, 1.6vw, 1.3rem); color: var(--text-2); }
 .lede.on-dark { color: #d9cdbd; }
 .section { padding: clamp(4rem, 8vw, 7rem) 0; }
 .center { text-align: center; }
@@ -68,12 +119,12 @@ h1, h2, h3, .display {
   transition: transform 0.15s ease, background 0.15s ease, color 0.15s ease;
 }
 .btn:hover { transform: translateY(-2px); }
-.btn-dark { background: var(--ink); color: var(--cream); }
-.btn-dark:hover { background: #000; }
+.btn-dark { background: var(--text); color: var(--page); }
+.btn-dark:hover { background: var(--btn-strong-hover); }
 .btn-clay { background: var(--clay); color: #fff; }
 .btn-clay:hover { background: var(--clay-dark); }
 .btn-light { background: var(--cream); color: var(--ink); }
-.btn-outline { border-color: var(--line); color: var(--ink); background: transparent; }
+.btn-outline { border-color: var(--border); color: var(--text); background: transparent; }
 .btn-outline-light { border-color: var(--line-light); color: var(--cream); }
 .btn-row { display: flex; flex-wrap: wrap; gap: 0.9rem; margin-top: 1.8rem; }
 .center .btn-row { justify-content: center; }
@@ -81,26 +132,30 @@ h1, h2, h3, .display {
 /* ---------- header ---------- */
 .site-header {
   position: relative; z-index: 50;
-  background: rgba(250, 246, 239, 0.92);
+  background: var(--header-bg);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid var(--border);
 }
 .nav-wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.5rem 0; }
 .brand { display: flex; align-items: center; gap: 0.7rem; text-decoration: none; }
 .brand-logo { height: 56px; width: auto; display: block; }
 /* Logo file is a white decal: invert to ink for the light header. */
 .brand-logo-dark { filter: invert(1); }
+/* ...and leave it white on the dark header. */
+@media (prefers-color-scheme: dark) {
+  .brand-logo-dark { filter: none; }
+}
 .site-footer .brand-logo { height: 48px; }
 .nav-links { display: flex; align-items: center; gap: 2rem; list-style: none; }
 .nav-links a { text-decoration: none; font-weight: 600; font-size: 1.05rem; letter-spacing: 0.06em; text-transform: uppercase; opacity: 0.82; }
-.nav-links a:hover, .nav-links a.active { opacity: 1; color: var(--clay-dark); }
+.nav-links a:hover, .nav-links a.active { opacity: 1; color: var(--accent); }
 /* hover dropdowns */
 .nav-links > li.has-menu { position: relative; padding: 0.8rem 0; margin: -0.8rem 0; }
 .dropdown {
   display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%);
-  background: #fff; border: 1px solid var(--line); border-top: 0.9rem solid transparent;
+  background: var(--surface); border: 1px solid var(--border); border-top: 0.9rem solid transparent;
   background-clip: padding-box; border-radius: 16px;
-  box-shadow: 0 24px 50px -20px rgba(23, 19, 16, 0.35);
+  box-shadow: 0 24px 50px -20px var(--shadow);
   list-style: none; min-width: 250px; padding: 0.6rem; z-index: 60;
 }
 .nav-links > li.has-menu:hover .dropdown,
@@ -110,14 +165,14 @@ h1, h2, h3, .display {
   display: block; padding: 0.7rem 1rem; border-radius: 10px; white-space: nowrap;
   font-size: 0.88rem; letter-spacing: 0.06em; text-transform: uppercase;
 }
-.dropdown a:hover { background: var(--cream-2); }
-.dropdown a.active { color: var(--clay-dark); background: var(--cream-2); }
+.dropdown a:hover { background: var(--page-2); }
+.dropdown a.active { color: var(--accent); background: var(--page-2); }
 .nav-cta { display: flex; align-items: center; gap: 0.8rem; }
 .nav-cta .btn { padding: 0.7rem 1.4rem; font-size: 0.88rem; }
-.hamburger { display: none; background: none; border: 1px solid var(--line); border-radius: 10px; padding: 0.5rem 0.7rem; font-size: 1.2rem; cursor: pointer; color: var(--ink); }
-.mobile-menu { display: none; border-top: 1px solid var(--line); padding: 0.6rem 4% 1.2rem; background: var(--cream); }
+.hamburger { display: none; background: none; border: 1px solid var(--border); border-radius: 10px; padding: 0.5rem 0.7rem; font-size: 1.2rem; cursor: pointer; color: var(--text); }
+.mobile-menu { display: none; border-top: 1px solid var(--border); padding: 0.6rem 4% 1.2rem; background: var(--page); }
 .mobile-menu.open { display: block; }
-.mobile-menu details { border-bottom: 1px solid var(--line); }
+.mobile-menu details { border-bottom: 1px solid var(--border); }
 .mobile-menu details:last-child { border-bottom: none; }
 .mobile-menu summary {
   display: flex; justify-content: space-between; align-items: center;
@@ -125,7 +180,7 @@ h1, h2, h3, .display {
   cursor: pointer; list-style: none;
 }
 .mobile-menu summary::-webkit-details-marker { display: none; }
-.mobile-menu summary::after { content: "+"; font-size: 1.3rem; color: var(--clay-dark); }
+.mobile-menu summary::after { content: "+"; font-size: 1.3rem; color: var(--accent); }
 .mobile-menu details[open] summary::after { content: "–"; }
 .mobile-menu details a {
   display: block; padding: 0.6rem 0 0.6rem 1rem; text-decoration: none;
@@ -183,35 +238,35 @@ a.chip:hover { background: rgba(0,0,0,0.55); }
 .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; margin-top: 2.5rem; }
 .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.4rem; margin-top: 2.5rem; }
 .card {
-  background: #fff; color: var(--ink); border: 1px solid var(--line); border-radius: var(--radius);
+  background: var(--surface); color: var(--text); border: 1px solid var(--border); border-radius: var(--radius);
   overflow: hidden; display: flex; flex-direction: column;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
-.card img { background: var(--cream-2); }
-.card:hover { transform: translateY(-4px); box-shadow: 0 18px 40px -18px rgba(23,19,16,0.35); }
+.card img { background: var(--page-2); }
+.card:hover { transform: translateY(-4px); box-shadow: 0 18px 40px -18px var(--shadow); }
 .card img { height: 210px; width: 100%; object-fit: cover; }
 .card-body { padding: 1.6rem; display: flex; flex-direction: column; gap: 0.7rem; flex: 1; }
 .card-body h3 { font-size: 1.3rem; font-weight: 800; }
-.card-body p { color: var(--muted); font-size: 0.98rem; }
-.card .meta { color: var(--muted); font-size: 0.9rem; font-weight: 600; }
+.card-body p { color: var(--text-2); font-size: 0.98rem; }
+.card .meta { color: var(--text-2); font-size: 0.9rem; font-weight: 600; }
 .card audio { width: 100%; }
 /* featured sermon cards: artwork is 16:9, show it whole instead of cropping */
 .featured-card img { height: auto; aspect-ratio: 16 / 9; }
-.card-link { margin-top: auto; padding-top: 0.6rem; font-weight: 800; color: var(--clay-dark); text-decoration: none; }
+.card-link { margin-top: auto; padding-top: 0.6rem; font-weight: 800; color: var(--accent); text-decoration: none; }
 .card-link:hover { text-decoration: underline; }
 
 /* value rows */
-.value-list { margin-top: 2.2rem; border-top: 1px solid var(--line); }
-.value-row { display: grid; grid-template-columns: 240px 1fr; gap: 1.5rem; padding: 1.6rem 0; border-bottom: 1px solid var(--line); }
+.value-list { margin-top: 2.2rem; border-top: 1px solid var(--border); }
+.value-row { display: grid; grid-template-columns: 240px 1fr; gap: 1.5rem; padding: 1.6rem 0; border-bottom: 1px solid var(--border); }
 .value-row h3 { font-size: 1.25rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.02em; }
-.value-row p { color: var(--muted); }
+.value-row p { color: var(--text-2); }
 
 /* split feature */
 .split { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1.5rem, 4vw, 3.5rem); align-items: center; }
 .split img { border-radius: var(--radius); width: 100%; height: 100%; min-height: 320px; object-fit: cover; }
 .split ul.check, ul.check { list-style: none; margin-top: 2rem; display: grid; gap: 1.4rem; }
-.split ul.check li, ul.check li { padding-left: 2rem; padding-block: 0.35rem; position: relative; color: var(--muted); line-height: 1.7; }
-.split ul.check li::before, ul.check li::before { content: "✓"; position: absolute; left: 0; color: var(--clay-dark); font-weight: 800; }
+.split ul.check li, ul.check li { padding-left: 2rem; padding-block: 0.35rem; position: relative; color: var(--text-2); line-height: 1.7; }
+.split ul.check li::before, ul.check li::before { content: "✓"; position: absolute; left: 0; color: var(--accent); font-weight: 800; }
 
 /* sunday fixed-background band (parallax effect from the previous site) */
 .sunday-fixed {
@@ -250,34 +305,34 @@ a.chip:hover { background: rgba(0,0,0,0.55); }
   border: 1px solid var(--line-light); border-radius: 16px;
   padding: 1.1rem 1.4rem; background: rgba(255,255,255,0.04);
 }
-.faq.light details { border-color: var(--line); background: #fff; }
+.faq.light details { border-color: var(--border); background: var(--surface); }
 .faq summary { cursor: pointer; font-weight: 800; font-size: 1.05rem; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
 .faq summary::-webkit-details-marker { display: none; }
-.faq summary::after { content: "+"; font-size: 1.4rem; font-weight: 400; flex: none; color: var(--clay); }
+.faq summary::after { content: "+"; font-size: 1.4rem; font-weight: 400; flex: none; color: var(--accent-soft); }
 .dark .faq summary::after { color: #e8a76f; }
 .faq details[open] summary::after { content: "–"; }
 .faq .faq-body { margin-top: 0.9rem; color: #d9cdbd; }
-.faq.light .faq-body { color: var(--muted); }
+.faq.light .faq-body { color: var(--text-2); }
 .faq .faq-body p + p { margin-top: 0.8rem; }
 
 /* leaders */
 .leader-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; margin-top: 2.5rem; }
-.leader { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 2rem 1.6rem; text-align: center; }
+.leader { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 2rem 1.6rem; text-align: center; }
 .avatar {
   width: 96px; height: 96px; border-radius: 50%; margin: 0 auto 1.1rem;
-  background: var(--ink-2); color: var(--cream);
+  background: var(--avatar-bg); color: var(--avatar-fg);
   display: grid; place-items: center;
   font-family: var(--font-display); font-weight: 800; font-size: 1.7rem;
 }
 .leader h3 { font-size: 1.2rem; }
-.leader .role { font-size: 0.82rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--clay-dark); margin: 0.3rem 0 0.8rem; }
-.leader p { color: var(--muted); font-size: 0.95rem; text-align: left; }
+.leader .role { font-size: 0.82rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin: 0.3rem 0 0.8rem; }
+.leader p { color: var(--text-2); font-size: 0.95rem; text-align: left; }
 
 /* quotes */
 .quotes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; margin-top: 2.2rem; }
-.quote { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 1.6rem; display: flex; flex-direction: column; gap: 0.8rem; }
+.quote { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.6rem; display: flex; flex-direction: column; gap: 0.8rem; }
 .quote p { font-size: 0.98rem; }
-.quote cite { font-style: normal; font-weight: 800; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--clay-dark); margin-top: auto; }
+.quote cite { font-style: normal; font-weight: 800; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin-top: auto; }
 
 /* steps */
 .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.2rem; margin-top: 2.2rem; counter-reset: step; }
@@ -289,13 +344,13 @@ a.chip:hover { background: rgba(0,0,0,0.55); }
 .step p { color: #d9cdbd; font-size: 0.95rem; }
 
 /* sermon list */
-.sermon { background: #fff; border: 1px solid var(--line); border-radius: 18px; padding: 1.3rem 1.5rem; min-width: 0; }
+.sermon { background: var(--surface); border: 1px solid var(--border); border-radius: 18px; padding: 1.3rem 1.5rem; min-width: 0; }
 .sermon-list { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0.9rem; margin-top: 2rem; }
 .sermon h3 { font-size: 1.15rem; }
 .sermon h3 a { color: inherit; text-decoration: none; }
-.sermon h3 a:hover { color: var(--clay-dark); text-decoration: underline; }
-.sermon .meta { color: var(--muted); font-size: 0.9rem; font-weight: 600; }
-.sermon-desc { color: var(--muted); font-size: 0.95rem; margin-top: 0.4rem; white-space: pre-line; }
+.sermon h3 a:hover { color: var(--accent); text-decoration: underline; }
+.sermon .meta { color: var(--text-2); font-size: 0.9rem; font-weight: 600; }
+.sermon-desc { color: var(--text-2); font-size: 0.95rem; margin-top: 0.4rem; white-space: pre-line; }
 /* collapsed episode descriptions (expanded via the See more toggle) */
 .sermon-desc.clamped {
   display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;
@@ -304,7 +359,7 @@ a.chip:hover { background: rgba(0,0,0,0.55); }
 .sermon-more {
   background: none; border: none; padding: 0; margin-top: 0.25rem;
   font: inherit; font-size: 0.9rem; font-weight: 700;
-  color: var(--clay-dark); cursor: pointer;
+  color: var(--accent); cursor: pointer;
 }
 .sermon-more:hover { text-decoration: underline; }
 
@@ -313,24 +368,24 @@ a.chip:hover { background: rgba(0,0,0,0.55); }
 .sermon-search input {
   width: 100%; font: inherit; font-size: 1rem;
   padding: 0.9rem 1.3rem; border-radius: 999px;
-  border: 1px solid var(--line); background: #fff; color: var(--ink);
+  border: 1px solid var(--border); background: var(--surface); color: var(--text);
 }
 .sermon-search input:focus { outline: 2px solid var(--clay); outline-offset: 1px; }
 .sermon-filters { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; margin-top: 0.8rem; }
 .sermon-filters select {
   width: 100%; font: inherit; font-size: 0.95rem;
   padding: 0.8rem 1rem; border-radius: 14px;
-  border: 1px solid var(--line); background: #fff; color: var(--ink);
+  border: 1px solid var(--border); background: var(--surface); color: var(--text);
 }
 .sermon-clear {
   background: none; border: none; cursor: pointer; padding: 0; margin-top: 0.7rem;
-  color: var(--clay-dark); font-weight: 700; font-size: 0.9rem; font-family: inherit;
+  color: var(--accent); font-weight: 700; font-size: 0.9rem; font-family: inherit;
 }
-.sermon-count { margin-top: 1.2rem; color: var(--muted); font-size: 0.9rem; font-weight: 600; }
+.sermon-count { margin-top: 1.2rem; color: var(--text-2); font-size: 0.9rem; font-weight: 600; }
 .pager { display: flex; align-items: center; justify-content: center; gap: 1rem; margin-top: 1.8rem; }
 .pager .btn { padding: 0.7rem 1.4rem; font-size: 0.88rem; }
 .pager .btn:disabled { opacity: 0.4; cursor: default; transform: none; }
-.pager-page { font-weight: 700; font-size: 0.9rem; color: var(--muted); white-space: nowrap; }
+.pager-page { font-weight: 700; font-size: 0.9rem; color: var(--text-2); white-space: nowrap; }
 .sermon audio { width: 100%; margin-top: 0.7rem; }
 /* mobile calendar cards: nothing unbreakable may push past the viewport */
 .sermon-list[data-calendar-list] .sermon > div { min-width: 0; }
@@ -377,21 +432,21 @@ a.chip:hover { background: rgba(0,0,0,0.55); }
 .directions p { opacity: 0.92; }
 
 /* explore + visit closer (replaces old "Explore Center Church" / map bands) */
-.explore { background: var(--cream); }
+.explore { background: var(--page); }
 .explore-card {
-  background: #fff; color: var(--ink); border: 1px solid var(--line); border-radius: var(--radius);
+  background: var(--surface); color: var(--text); border: 1px solid var(--border); border-radius: var(--radius);
   padding: 1.8rem; display: flex; flex-direction: column; gap: 0.9rem; text-decoration: none;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
-.explore-card:hover { transform: translateY(-4px); box-shadow: 0 18px 40px -18px rgba(23,19,16,0.35); }
+.explore-card:hover { transform: translateY(-4px); box-shadow: 0 18px 40px -18px var(--shadow); }
 .explore-icon {
   width: 52px; height: 52px; border-radius: 50%; display: grid; place-items: center;
-  background: var(--cream-2); color: var(--clay-dark); border: 1px solid var(--line);
+  background: var(--page-2); color: var(--accent); border: 1px solid var(--border);
 }
 .explore-icon svg { width: 26px; height: 26px; }
 .explore-card h3 { font-size: 1.3rem; font-weight: 800; }
-.explore-card p { color: var(--muted); font-size: 0.98rem; }
-.explore-card .more { margin-top: auto; padding-top: 0.6rem; font-weight: 800; color: var(--clay-dark); letter-spacing: 0.04em; text-transform: uppercase; font-size: 0.9rem; }
+.explore-card p { color: var(--text-2); font-size: 0.98rem; }
+.explore-card .more { margin-top: auto; padding-top: 0.6rem; font-weight: 800; color: var(--accent); letter-spacing: 0.04em; text-transform: uppercase; font-size: 0.9rem; }
 .explore-card:hover .more { text-decoration: underline; }
 
 .directions-split { background: var(--ink); color: var(--cream); }
@@ -408,8 +463,8 @@ a.chip:hover { background: rgba(0,0,0,0.55); }
 
 /* contact rows */
 .info-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; margin-top: 2.5rem; }
-.info-card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 1.8rem; text-align: center; }
-.info-card h3 { font-size: 0.85rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--clay-dark); margin-bottom: 0.5rem; }
+.info-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.8rem; text-align: center; }
+.info-card h3 { font-size: 0.85rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem; }
 .info-card p, .info-card a { font-weight: 700; font-size: 1.05rem; text-decoration: none; }
 .info-card a:hover { text-decoration: underline; }
 
@@ -425,11 +480,12 @@ a.chip:hover { background: rgba(0,0,0,0.55); }
 
 /* beliefs accordion long-form */
 .belief-detail h4 { font-size: 1rem; letter-spacing: 0.06em; text-transform: uppercase; margin: 1rem 0 0.3rem; color: #e8a76f; }
-.faq.light .belief-detail h4 { color: var(--clay-dark); }
+.faq.light .belief-detail h4 { color: var(--accent); }
 
-/* partner cards */
+/* partner cards — the logo plate stays light in both themes so the partner
+   marks (drawn for light backgrounds) keep their contrast. */
 .partner-feature {
-  display: block; background: #f4f1eb; border-radius: var(--radius);
+  display: block; background: var(--logo-plate); color: var(--ink); border-radius: var(--radius);
   padding: clamp(2rem, 5vw, 3.5rem) clamp(1.5rem, 4vw, 3rem); text-align: center;
 }
 .partner-feature img { height: 88px; width: auto; max-width: 100%; object-fit: contain; margin: 0 auto 1.5rem; }
@@ -437,7 +493,7 @@ a.chip:hover { background: rgba(0,0,0,0.55); }
 .partner-feature p a { color: var(--clay-dark); }
 .partner-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-top: 1rem; }
 .partner-card {
-  background: #f4f1eb; border-radius: var(--radius); display: grid; place-items: center;
+  background: var(--logo-plate); border-radius: var(--radius); display: grid; place-items: center;
   padding: 2.2rem 1.5rem; min-height: 190px;
   transition: transform 0.15s ease;
 }
@@ -446,9 +502,9 @@ a.chip:hover { background: rgba(0,0,0,0.55); }
 
 /* photo galleries (real church photos) */
 .photo-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-top: 2.5rem; }
-.photo-grid figure { margin: 0; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); background: #fff; }
+.photo-grid figure { margin: 0; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); background: var(--surface); }
 .photo-grid img { width: 100%; height: 220px; object-fit: cover; }
-.photo-grid figcaption { padding: 0.7rem 1rem; font-size: 0.85rem; font-weight: 600; color: var(--muted); }
+.photo-grid figcaption { padding: 0.7rem 1rem; font-size: 0.85rem; font-weight: 600; color: var(--text-2); }
 .photo-grid-3 { grid-template-columns: repeat(3, 1fr); }
 .photo-grid-3 img { height: 260px; }
 .ministry-photo { height: 210px; width: 100%; object-fit: cover; }
@@ -461,7 +517,7 @@ a.chip:hover { background: rgba(0,0,0,0.55); }
 .cal-nav-chev { display: none; }
 .cal-title { font-family: var(--font-display); font-weight: 800; font-size: 1.3rem; letter-spacing: -0.01em; min-width: 0; flex: 1 1 auto; text-align: center; }
 .cal-filter { display: grid; gap: 0.35rem; min-width: min(280px, 100%); max-width: 100%; }
-.cal-filter-label { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
+.cal-filter-label { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-2); }
 .cal-pills {
   display: flex; gap: 0.5rem; max-width: 100%;
   overflow-x: auto; padding-bottom: 0.35rem;
@@ -470,30 +526,30 @@ a.chip:hover { background: rgba(0,0,0,0.55); }
 .cal-pill {
   flex: 0 0 auto; font: inherit; font-size: 0.9rem; font-weight: 700;
   padding: 0.65rem 1.1rem; min-height: 44px; border-radius: 999px;
-  border: 1px solid var(--line); background: #fff; color: var(--ink);
+  border: 1px solid var(--border); background: var(--surface); color: var(--text);
   cursor: pointer; white-space: nowrap;
 }
 .cal-pill:hover { border-color: var(--clay); }
-.cal-pill.is-active { background: var(--ink); border-color: var(--ink); color: var(--cream); }
-.cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 1px; margin-top: 1.5rem; background: var(--line); border: 1px solid var(--line); border-radius: 18px; overflow: hidden; }
+.cal-pill.is-active { background: var(--text); border-color: var(--text); color: var(--page); }
+.cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 1px; margin-top: 1.5rem; background: var(--border); border: 1px solid var(--border); border-radius: 18px; overflow: hidden; }
 .cal-dow { background: var(--ink); color: var(--cream); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; text-align: center; padding: 0.8rem 0.25rem; }
-.cal-day { background: #fff; min-height: 118px; padding: 0.55rem; display: flex; flex-direction: column; gap: 0.35rem; min-width: 0; }
-.cal-day.is-outside { background: var(--cream-2); color: var(--muted); }
+.cal-day { background: var(--surface); min-height: 118px; padding: 0.55rem; display: flex; flex-direction: column; gap: 0.35rem; min-width: 0; }
+.cal-day.is-outside { background: var(--page-2); color: var(--text-2); }
 .cal-day.is-outside .cal-day-num { opacity: 0.55; }
 .cal-day-num { display: inline-grid; place-items: center; width: 1.9rem; height: 1.9rem; border-radius: 50%; font-weight: 800; font-size: 0.9rem; }
 .cal-day.is-today .cal-day-num { background: var(--clay); color: #fff; }
-.cal-chip { display: block; text-decoration: none; font-size: 0.78rem; line-height: 1.35; font-weight: 600; color: var(--ink); background: #fbf3e6; border: 1px solid rgba(194, 112, 61, 0.35); border-left: 3px solid var(--clay); border-radius: 8px; padding: 0.3rem 0.45rem; overflow: hidden; }
-.cal-chip:hover { background: #f7e7d2; }
+.cal-chip { display: block; text-decoration: none; font-size: 0.78rem; line-height: 1.35; font-weight: 600; color: var(--chip-fg); background: var(--chip-bg); border: 1px solid var(--chip-border); border-left: 3px solid var(--clay); border-radius: 8px; padding: 0.3rem 0.45rem; overflow: hidden; }
+.cal-chip:hover { background: var(--chip-bg-hover); }
 .cal-chip.is-allday { background: var(--ink); color: var(--cream); border-color: var(--ink); border-left-color: var(--sage); }
-.cal-chip time { display: block; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--clay-dark); }
+.cal-chip time { display: block; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); }
 .cal-chip.is-allday time { color: #e8a76f; }
 span.cal-chip { cursor: default; }
-.cal-empty { margin-top: 1rem; color: var(--muted); font-weight: 600; }
+.cal-empty { margin-top: 1rem; color: var(--text-2); font-weight: 600; }
 /* calendar loading shimmer: shared by list + grid skeletons */
 @keyframes cal-shimmer { to { background-position: -200% 0; } }
 .cal-skel-time, .cal-skel-bar, .cal-skel-chev,
 .cal-chip-skel, .cal-day-num-skel {
-  background: linear-gradient(90deg, var(--cream-2) 25%, #fff 50%, var(--cream-2) 75%);
+  background: linear-gradient(90deg, var(--page-2) 25%, var(--surface) 50%, var(--page-2) 75%);
   background-size: 200% 100%;
   animation: cal-shimmer 1.2s linear infinite;
 }
@@ -511,10 +567,10 @@ span.cal-chip { cursor: default; }
      Hidden on mobile via .cal-grid-wrap; list skeleton hidden on desktop
      via .sermon-list[data-calendar-list]. */
   .cal-day-skel { min-height: 118px; }
-  .cal-day-skel.is-dim { background: var(--cream-2); }
+  .cal-day-skel.is-dim { background: var(--page-2); }
   .cal-day-skel.is-dim .cal-day-num-skel { opacity: 0.6; }
   .cal-day-num-skel { width: 1.4rem; height: 1.4rem; border-radius: 50%; flex: none; }
-  .cal-chip-skel { display: block; height: 1.9rem; border-radius: 8px; border: 1px solid var(--line); }
+  .cal-chip-skel { display: block; height: 1.9rem; border-radius: 8px; border: 1px solid var(--border); }
   .cal-chip-skel.short { height: 1.4rem; width: 68%; }
 }
 
@@ -546,7 +602,7 @@ span.cal-chip { cursor: default; }
   .cal-month-nav [data-cal-today] {
     grid-column: 1 / -1; grid-row: 2; justify-self: center;
     background: none; border: none; padding: 0.2rem 0.6rem;
-    color: var(--clay-dark); font-size: 0.9rem;
+    color: var(--accent); font-size: 0.9rem;
   }
   /* mobile agenda: date-grouped expandable rows (desktop grid untouched) */
   .cal-filter { min-width: 0; }
@@ -556,12 +612,12 @@ span.cal-chip { cursor: default; }
   .cal-day-head {
     /* site header is static (not sticky), so day headers stick at viewport top */
     position: sticky; top: 0; z-index: 5;
-    background: var(--cream);
+    background: var(--page);
     font-size: 0.8rem; font-weight: 800; letter-spacing: 0.12em;
-    color: var(--clay-dark);
+    color: var(--accent);
     padding: 0.55rem 0.1rem; margin: 0;
   }
-  .cal-row { background: #fff; border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+  .cal-row { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; overflow: hidden; }
   .cal-row[open] { border-color: var(--clay); }
   .cal-row-sum {
     display: grid; grid-template-columns: 3.9rem minmax(0, 1fr) auto;
@@ -572,7 +628,7 @@ span.cal-chip { cursor: default; }
   .cal-row-sum::-webkit-details-marker { display: none; }
   .cal-row-time {
     font-size: 0.7rem; font-weight: 800; letter-spacing: 0.04em;
-    text-transform: uppercase; color: var(--clay-dark);
+    text-transform: uppercase; color: var(--accent);
     padding-top: 0.2rem; overflow-wrap: anywhere;
   }
   .cal-row-main { min-width: 0; }
@@ -583,27 +639,27 @@ span.cal-chip { cursor: default; }
   }
   .cal-row-sub {
     display: block; margin-top: 0.15rem;
-    color: var(--muted); font-size: 0.85rem; font-weight: 600; line-height: 1.4;
+    color: var(--text-2); font-size: 0.85rem; font-weight: 600; line-height: 1.4;
     overflow-wrap: anywhere;
   }
   .cal-row-chev {
-    font-size: 1.4rem; line-height: 1; font-weight: 400; color: var(--muted);
+    font-size: 1.4rem; line-height: 1; font-weight: 400; color: var(--text-2);
     transition: transform 0.15s ease; padding: 0 0.1rem;
   }
-  .cal-row[open] .cal-row-chev { transform: rotate(90deg); color: var(--clay-dark); }
+  .cal-row[open] .cal-row-chev { transform: rotate(90deg); color: var(--accent); }
   .cal-row-body { padding: 0 0.9rem 0.95rem 5.55rem; display: grid; gap: 0.5rem; }
-  .cal-row-body .meta { color: var(--muted); font-size: 0.85rem; font-weight: 600; overflow-wrap: anywhere; }
-  .cal-row-desc { color: var(--muted); font-size: 0.92rem; white-space: pre-line; overflow-wrap: anywhere; }
+  .cal-row-body .meta { color: var(--text-2); font-size: 0.85rem; font-weight: 600; overflow-wrap: anywhere; }
+  .cal-row-desc { color: var(--text-2); font-size: 0.92rem; white-space: pre-line; overflow-wrap: anywhere; }
   .cal-row-body .card-link {
     display: inline-block; margin-top: 0.2rem; padding: 0.4rem 0;
-    font-weight: 700; font-size: 0.92rem; color: var(--clay-dark);
+    font-weight: 700; font-size: 0.92rem; color: var(--accent);
   }
   /* loading skeletons: same footprint as agenda rows, shimmer while fetching */
   .cal-skel { display: grid; gap: 0.5rem; margin-top: 1.25rem; }
   .cal-skel-row {
     display: grid; grid-template-columns: 3.9rem minmax(0, 1fr) auto;
     gap: 0.75rem; align-items: start;
-    background: #fff; border: 1px solid var(--line); border-radius: 14px;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
     padding: 0.8rem 0.9rem;
   }
   .cal-skel-time { display: block; width: 3rem; height: 0.75rem; margin-top: 0.3rem; border-radius: 4px; }

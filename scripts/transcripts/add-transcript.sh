@@ -585,7 +585,7 @@ else:
 # (header + dark mode: device preference only, no toggle; sentence
 # highlight + sticky mini player) so all transcript pages stay in sync —
 # styles.css stays untouched and the rest of the site keeps its light theme.
-new = new.replace("</head>", '  <link rel="stylesheet" href="/transcript.css?v=2" />\n</head>', 1)
+new = new.replace("</head>", '  <link rel="stylesheet" href="/transcript.css?v=3" />\n</head>', 1)
 
 # Read-along audio (sticky mini player, sentence highlight, auto-follow).
 # Shared CSS above + public/readalong.js — bump ?v= in public/transcript.css,
