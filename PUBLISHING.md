@@ -3,23 +3,25 @@
 The site's speaker filter depends on one convention, because Spotify's RSS
 has no per-episode author field (Nucleus had `<itunes:author>`; Anchor drops it).
 
-## Required: first line of the description
+## Required: last line of the description
 
-Start every episode description with the speaker on its own line:
+End every episode description with the speaker on its own line:
 
 ```
+Acts 19:21-41 | Center Church
 Speaker: Rich Richardson
 ```
 
 The site reads that line for the speaker filter and hides it from the
-displayed description, so listeners never see it. Without it, the episode
-shows under no speaker until someone adds it by hand.
+displayed description, so listeners never see it. Putting it last keeps it
+out of the preview snippet on Spotify and Apple Podcasts. Without it, the
+episode shows under no speaker until someone adds it by hand.
 
 Examples that all work:
 
 ```
-Speaker: Rich Richardson
 Acts 19:21-41 | Center Church
+Speaker: Rich Richardson
 ```
 
 - Use the speaker's full name as it appears on the site (`Rich Richardson`,
@@ -39,4 +41,4 @@ shows the wrong speaker.
 ## After publishing
 
 New episodes appear on the site within ~5 minutes (worker cache). If the
-speaker filter misses one, check the description's first line first.
+speaker filter misses one, check the description's last line first.

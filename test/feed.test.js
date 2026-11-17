@@ -15,7 +15,7 @@ const RSS = `<?xml version="1.0" encoding="UTF-8"?>
 <pubDate>Sun, 09 Nov 2025 17:00:00 GMT</pubDate>
 <enclosure url="${TRACKING1}" type="audio/mpeg"/>
 <itunes:image href="https://example.com/art1.jpg"/>
-<description><![CDATA[Speaker: Rich Richardson<br>Paul in Ephesus.]]></description>
+<description><![CDATA[Paul in Ephesus.<br>Speaker: Rich Richardson]]></description>
 </item>
 <item>
 <title>Acts 20:13-38</title>
@@ -23,7 +23,7 @@ const RSS = `<?xml version="1.0" encoding="UTF-8"?>
 <pubDate>Sun, 02 Nov 2025 17:00:00 GMT</pubDate>
 <enclosure url="${DIRECT2}" type="audio/mpeg"/>
 <itunes:image href="https://example.com/art2.jpg"/>
-<description><![CDATA[Speaker: Frank Lundy<br>Paul's farewell.]]></description>
+<description><![CDATA[Paul's farewell.<br>Speaker: Frank Lundy]]></description>
 </item>
 <item>
 <guid>https://example.com/untitled</guid>

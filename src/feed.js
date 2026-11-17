@@ -20,9 +20,12 @@ export function parseFeed(xml) {
     const image = (b.match(/<itunes:image[^>]*href="([^"]+)"/i) || [])[1] || "";
     const duration = get(/<itunes:duration>([\s\S]*?)<\/itunes:duration>/i);
     const rawDesc = (b.match(/<(?:itunes:summary|description)>([\s\S]*?)<\/(?:itunes:summary|description)>/i) || [])[1] || "";
-    // Speaker convention for Spotify episodes: start the description with
-    // "Speaker: Full Name" on its own line (see PUBLISHING.md). The line is
-    // stripped from the displayed description below.
+    // Speaker convention for Spotify episodes: end the description with
+    // "Speaker: Full Name" on its own line (see PUBLISHING.md) so it stays
+    // out of the preview on Spotify/Apple Podcasts. The line is stripped
+    // from the displayed description below. The match is intentionally
+    // position-independent so legacy episodes with the line on top keep
+    // working.
     const richDesc = cleanRichText(rawDesc);
     const tagMatch = richDesc.match(/^\s*Speaker\s*:\s*(.+?)\s*$/im);
     const tagSpeaker = tagMatch ? tagMatch[1].split("|")[0].replace(/\s+/g, " ").trim() : "";
