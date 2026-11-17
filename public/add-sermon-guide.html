@@ -15,10 +15,12 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link rel="stylesheet" href="/styles.css?v=18" />
   <style>
+    /* Surfaces follow the theme tokens from styles.css, so this guide
+       matches the device's light/dark preference like the live pages. */
     .guide-wrap { max-width: 760px; }
     .guide-start {
-      background: #f4f1ea;
-      border: 1px solid #e2dccf;
+      background: var(--page-2);
+      border: 1px solid var(--border);
       border-radius: 16px;
       padding: 1.5rem 1.5rem 1.25rem;
       margin: 2rem 0 2.5rem;
@@ -26,16 +28,16 @@
     }
     .guide-start p.fallback {
       font-size: 0.85rem;
-      color: #6b6455;
+      color: var(--text-2);
       word-break: break-all;
       margin: 0.75rem 0 0;
     }
     .guide-step {
-      border: 1px solid #e7e2d6;
+      border: 1px solid var(--border);
       border-radius: 16px;
       padding: 1.5rem;
       margin: 0 0 1.25rem;
-      background: #fff;
+      background: var(--surface);
     }
     .guide-step h2 { margin: 0 0 0.5rem; font-size: 1.35rem; letter-spacing: -0.01em; }
     .guide-step .step-num {
@@ -44,7 +46,7 @@
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.08em;
-      color: #8a8271;
+      color: var(--text-2);
       margin-bottom: 0.35rem;
     }
     .guide-step p, .guide-step li { line-height: 1.6; }
@@ -54,22 +56,24 @@
       display: block;
       max-width: 100%;
       height: auto;
-      border: 1px solid #e2dccf;
+      border: 1px solid var(--border);
       border-radius: 12px;
       margin-top: 1rem;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      box-shadow: 0 8px 24px var(--shadow);
     }
     .callout {
-      border-left: 4px solid #b3562e;
-      background: #fdf6ef;
+      border-left: 4px solid var(--accent);
+      background: var(--chip-bg);
       border-radius: 0 12px 12px 0;
       padding: 1rem 1.25rem;
       margin: 1rem 0 0;
     }
     .callout strong { display: block; margin-bottom: 0.25rem; }
+    /* Deliberately dark in both themes: a terminal-style template block. */
     .template-block {
       background: #1e1b16;
       color: #f5f1e8;
+      border: 1px solid var(--border);
       border-radius: 12px;
       padding: 1.25rem 1.35rem;
       font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
@@ -83,13 +87,13 @@
     .staff-note {
       margin-top: 2.5rem;
       padding-top: 1.25rem;
-      border-top: 1px solid #e2dccf;
+      border-top: 1px solid var(--border);
       font-size: 0.9rem;
-      color: #6b6455;
+      color: var(--text-2);
     }
     code.inline {
-      background: #f4f1ea;
-      border: 1px solid #e2dccf;
+      background: var(--page-2);
+      border: 1px solid var(--border);
       border-radius: 6px;
       padding: 0.1em 0.4em;
       font-size: 0.92em;
