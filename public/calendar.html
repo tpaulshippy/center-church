@@ -255,6 +255,28 @@
       return new Date().toLocaleDateString("en-CA", { timeZone: TZ });
     }
     var state = { month: phoenixTodayKey().slice(0, 7), tag: "" };
+    // List state <-> query string (?month=YYYY-MM&tag=Name), so
+    // browser-back restores the exact month + ministry view.
+    function readURL() {
+      var p = new URLSearchParams(window.location.search);
+      var m = p.get("month") || "";
+      if (/^\d{4}-(0[1-9]|1[0-2])$/.test(m)) state.month = m;
+      else state.month = phoenixTodayKey().slice(0, 7);
+      state.tag = p.get("tag") || "";
+    }
+    function writeURL(mode) {
+      var p = new URLSearchParams();
+      if (state.month) p.set("month", state.month);
+      if (state.tag) p.set("tag", state.tag);
+      var qs = p.toString();
+      var next = window.location.pathname + (qs ? "?" + qs : "");
+      if (next === window.location.pathname + window.location.search) return;
+      try {
+        if (mode === "push") window.history.pushState(null, "", next);
+        else window.history.replaceState(null, "", next);
+      } catch (e) { /* history may throw in some private modes */ }
+    }
+    readURL();
 
     function esc(s) {
       return String(s == null ? "" : s)
@@ -574,14 +596,17 @@
     }
     if (prevBtn) prevBtn.addEventListener("click", function () {
       state.month = shiftMonth(state.month, -1);
+      writeURL("push");
       load();
     });
     if (nextBtn) nextBtn.addEventListener("click", function () {
       state.month = shiftMonth(state.month, 1);
+      writeURL("push");
       load();
     });
     if (todayBtn) todayBtn.addEventListener("click", function () {
       state.month = phoenixTodayKey().slice(0, 7);
+      writeURL("push");
       load();
     });
     if (pillsEl) pillsEl.addEventListener("click", function (e) {
@@ -590,6 +615,13 @@
       var next = btn.getAttribute("data-tag") || "";
       if (next === state.tag) return;
       state.tag = next;
+      syncPills();
+      writeURL("push");
+      load();
+    });
+    // In-view back/forward restores the month + ministry without a reload.
+    window.addEventListener("popstate", function () {
+      readURL();
       syncPills();
       load();
     });
