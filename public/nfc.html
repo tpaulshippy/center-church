@@ -23,17 +23,10 @@
         calc(2rem + env(safe-area-inset-bottom));
     }
     .nfc-wrap { width: 100%; max-width: 520px; margin: 0 auto; text-align: center; }
-    .nfc-brand {
-      font-family: var(--font-display);
-      font-weight: 800;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      line-height: 1.7;
-      font-size: 0.85rem;
-      color: var(--text);
+    .nfc-logo {
+      width: 200px; max-width: 60vw; height: auto;
+      margin: 0 auto; display: block;
     }
-    .nfc-brand span { display: block; }
-    .nfc-brand .nfc-tagline { letter-spacing: 0.32em; font-size: 0.7rem; color: var(--accent); }
     .nfc-title {
       font-family: var(--font-display);
       font-weight: 800;
@@ -80,8 +73,9 @@
     }
     .nfc-foot {
       margin-top: 2rem; font-size: 0.88rem; font-weight: 600;
-      color: var(--text-2);
+      color: var(--text-2); text-wrap: balance; line-height: 1.7;
     }
+    .nfc-foot-line { display: block; }
     .nfc-foot a { color: var(--accent); text-decoration: none; font-weight: 700; }
     .nfc-foot a:hover { text-decoration: underline; }
   </style>
@@ -89,7 +83,7 @@
 <body>
   <main class="nfc-page">
     <div class="nfc-wrap">
-      <p class="nfc-brand" aria-label="Center Church — Fixed on Jesus"><span>Center</span><span>Church</span><span class="nfc-tagline">Fixed on Jesus</span></p>
+      <img class="nfc-logo brand-logo-dark" src="/logo.png" alt="Center Church — Fixed on Jesus" width="1024" height="381" fetchpriority="high" />
       <h1 class="nfc-title">Welcome to Center Church</h1>
       <p class="nfc-sub">We&rsquo;re glad you&rsquo;re here! Find everything you need to get connected.</p>
 
@@ -126,7 +120,7 @@
         </a>
       </nav>
 
-      <p class="nfc-foot">Sundays &middot; 10:00 AM &middot; <a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ</a></p>
+      <p class="nfc-foot"><span class="nfc-foot-line">Sundays &middot; 10:00 AM</span><span class="nfc-foot-line"><a href="https://goo.gl/maps/6uehhrAmFvuPCn38A">1280 N. Cooper Rd, Gilbert, AZ</a></span></p>
     </div>
   </main>
 </body>
