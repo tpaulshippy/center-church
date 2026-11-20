@@ -1,5 +1,6 @@
 import { handleSermons, handleSermonSearch, handlePodcast, handlePodcastSearch } from "./src/sermons.js";
 import { handleCalendar } from "./src/calendar.js";
+import { handlePrayer } from "./src/prayer.js";
 import { handleSite } from "./src/site.js";
 import { logApp } from "./src/logging.js";
 
@@ -22,6 +23,9 @@ export default {
       }
       if (url.pathname === "/api/calendar") {
         return handleCalendar(request, env, ctx);
+      }
+      if (url.pathname === "/api/prayer") {
+        return handlePrayer(request, env);
       }
       return await handleSite(request, env);
     } catch (err) {
