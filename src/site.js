@@ -13,7 +13,7 @@ export const GROUP_SHORT_LINKS = {
   "caregiver": "https://centerchurchgilbert.churchcenter.com/groups/small-groups/3286072",
   "recovery": "https://centerchurchgilbert.churchcenter.com/groups/small-groups/3286073",
   "welcome": "https://centergilbert.com/connect",
-  "nfc": "https://centergilbert.com/",
+  "nfc": "https://centergilbert.com/nfc",
 };
 
 export async function handleSite(request, env) {
