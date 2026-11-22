@@ -102,7 +102,7 @@ export async function handlePrayer(request, env) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        from: "Center Church Prayer <prayer@centergilbert.com>",
+        from: "Center Church Prayer <info@centergilbert.com>",
         to: ["info@centergilbert.com"],
         subject: "New prayer request",
         text,
