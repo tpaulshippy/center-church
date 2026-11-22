@@ -12,8 +12,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Smart header (all breakpoints): hide on scroll down, reveal on scroll up
   // so navigation is one flick away. Stays pinned while the mobile menu or a
-  // desktop dropdown is open, while the pointer is over it, or while keyboard
-  // focus is inside it. Transform-only in CSS, so no layout shift.
+  // desktop dropdown is open, or while keyboard focus is inside it.
+  // Deliberately no :hover pin: on desktop the pointer often rests over the
+  // header while wheel-scrolling (and :hover can stick on touch), which would
+  // block hide-on-scroll-down. A hidden header is off-screen anyway, so hover
+  // can't re-reveal it — the check only served to prevent hiding.
+  // Transform-only in CSS, so no layout shift.
   const header = document.querySelector(".site-header");
   if (header) {
     let lastY = window.scrollY;
@@ -26,7 +30,6 @@ document.addEventListener("DOMContentLoaded", () => {
       const engaged =
         (menu && menu.classList.contains("open")) ||
         header.querySelector(".nav-links .open") ||
-        header.matches(":hover") ||
         header.contains(document.activeElement);
       if (engaged || y <= HIDE_AFTER) {
         header.classList.remove("is-hidden");
