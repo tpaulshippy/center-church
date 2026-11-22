@@ -1,5 +1,10 @@
 # Sermon + podcast transcripts
 
+> **Rule: never use AssemblyAI unless explicitly asked.** AssemblyAI
+> usage is limited — default to the free local whisper flow below
+> (run on the other machine if needed). AssemblyAI is opt-in per
+> request only.
+
 Everything for turning a sermon recording or podcast episode into a
 read-along transcript page lives here. `add-transcript.sh` handles both
 kinds via `--kind sermon|podcast` (default `sermon`, `--type` is an
@@ -38,7 +43,7 @@ Use `--pause-gap 1.4` for whisper timings (they run wider than
 AssemblyAI's; its default is 1.2). First run downloads a ~1.6GB model;
 a 40-minute sermon transcribes in ~2.5 minutes on Apple Silicon.
 
-## The paid flow (AssemblyAI)
+## The paid flow (AssemblyAI — only when explicitly requested)
 
 ```bash
 export ASSEMBLYAI_API_KEY='...'
