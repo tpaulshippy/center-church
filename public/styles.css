@@ -183,7 +183,19 @@ h1, h2, h3, .display {
 .nav-cta .btn { padding: 0.7rem 1.4rem; font-size: 0.88rem; }
 .hamburger { display: none; background: none; border: 1px solid var(--border); border-radius: 10px; padding: 0.5rem 0.7rem; font-size: 1.2rem; cursor: pointer; color: var(--text); }
 .mobile-menu { display: none; border-top: 1px solid var(--border); padding: 0.6rem 4% 1.2rem; background: var(--page); }
-.mobile-menu.open { display: block; }
+/* Open menu overlays page content instead of growing the sticky header and
+   pushing the page down: absolute under the header bar (the sticky header
+   is the positioned ancestor), full-width at any mobile viewport, solid
+   themed background + shadow so content underneath is covered. Closed state
+   stays display:none, so no in-flow height change either way. Scrolls
+   internally on short screens instead of running past the viewport. */
+.mobile-menu.open {
+  display: block;
+  position: absolute; top: 100%; left: 0; right: 0; z-index: 50;
+  max-height: 70vh; max-height: 70dvh; overflow-y: auto;
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 24px 40px -20px var(--shadow);
+}
 .mobile-menu details { border-bottom: 1px solid var(--border); }
 .mobile-menu details:last-child { border-bottom: none; }
 .mobile-menu summary {
