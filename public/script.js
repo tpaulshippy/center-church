@@ -6,7 +6,40 @@ document.addEventListener("DOMContentLoaded", () => {
     btn.addEventListener("click", () => {
       const open = menu.classList.toggle("open");
       btn.setAttribute("aria-expanded", open ? "true" : "false");
+      if (open) document.querySelector(".site-header")?.classList.remove("is-hidden");
     });
+  }
+
+  // Smart header (all breakpoints): hide on scroll down, reveal on scroll up
+  // so navigation is one flick away. Stays pinned while the mobile menu or a
+  // desktop dropdown is open, while the pointer is over it, or while keyboard
+  // focus is inside it. Transform-only in CSS, so no layout shift.
+  const header = document.querySelector(".site-header");
+  if (header) {
+    let lastY = window.scrollY;
+    let ticking = false;
+    const HIDE_AFTER = 140; // don't hide until the hero has had its moment
+    const TOLERANCE = 8; // ignore tiny jitter / trackpad noise
+    const sync = () => {
+      ticking = false;
+      const y = window.scrollY;
+      const engaged =
+        (menu && menu.classList.contains("open")) ||
+        header.querySelector(".nav-links .open") ||
+        header.matches(":hover") ||
+        header.contains(document.activeElement);
+      if (engaged || y <= HIDE_AFTER) {
+        header.classList.remove("is-hidden");
+      } else if (y > lastY + TOLERANCE) {
+        header.classList.add("is-hidden");
+      } else if (y < lastY - TOLERANCE) {
+        header.classList.remove("is-hidden");
+      }
+      lastY = y;
+    };
+    window.addEventListener("scroll", () => {
+      if (!ticking) { requestAnimationFrame(sync); ticking = true; }
+    }, { passive: true });
   }
   document.querySelectorAll("[data-year]").forEach((el) => {
     el.textContent = new Date().getFullYear();

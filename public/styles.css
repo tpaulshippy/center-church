@@ -130,11 +130,23 @@ h1, h2, h3, .display {
 .center .btn-row { justify-content: center; }
 
 /* ---------- header ---------- */
+/* Smart sticky header (all breakpoints): hides on scroll down, reveals on
+   scroll up (.is-hidden toggled in script.js). Transform-only, so hiding
+   never shifts page layout. Pinned visible while the mobile menu or a
+   desktop dropdown is open, or while keyboard focus is inside the header. */
 .site-header {
-  position: relative; z-index: 50;
+  position: sticky; top: 0; z-index: 50;
   background: var(--header-bg);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
+  transition: transform 0.25s ease;
+}
+.site-header.is-hidden { transform: translateY(-102%); }
+.site-header:has(.mobile-menu.open),
+.site-header:has(.nav-links .open),
+.site-header:focus-within { transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  .site-header { transition: none; }
 }
 .nav-wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.5rem 0; }
 .brand { display: flex; align-items: center; gap: 0.7rem; text-decoration: none; }
@@ -610,7 +622,8 @@ span.cal-chip { cursor: default; }
   .cal-day-group { display: grid; gap: 0.5rem; align-content: start; }
   .cal-day-group + .cal-day-group { margin-top: 1.25rem; }
   .cal-day-head {
-    /* site header is static (not sticky), so day headers stick at viewport top */
+    /* sticky under the smart header (which sits above at z-index 50);
+       when the header hides on scroll down, day headers rest at viewport top */
     position: sticky; top: 0; z-index: 5;
     background: var(--page);
     font-size: 0.8rem; font-weight: 800; letter-spacing: 0.12em;
